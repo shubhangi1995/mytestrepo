@@ -1,0 +1,22 @@
+name = IPWA
+description = Install the IPWA profile.
+version = 7.x-1.x
+core = 7.x
+
+;;; Core modules...
+dependencies[] = block
+dependencies[] = dblog
+dependencies[] = help
+dependencies[] = image
+dependencies[] = list
+dependencies[] = locale
+dependencies[] = menu
+dependencies[] = node
+dependencies[] = number
+dependencies[] = options
+dependencies[] = path
+dependencies[] = taxonomy
+dependencies[] = translation
+dependencies[] = user
+
+
