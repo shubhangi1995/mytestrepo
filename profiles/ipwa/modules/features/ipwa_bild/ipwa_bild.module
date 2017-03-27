@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the IPWA_bild feature.
+ */
+
+include_once 'ipwa_bild.features.inc';
