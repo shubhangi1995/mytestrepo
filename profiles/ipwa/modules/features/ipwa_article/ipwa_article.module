@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the IPWA_Article feature.
+ */
+
+include_once 'ipwa_article.features.inc';
