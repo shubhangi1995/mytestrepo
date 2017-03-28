@@ -31,21 +31,6 @@ function ipwa_base_field_default_field_bases() {
     'type' => 'text_with_summary',
   );
 
-  // Exported field_base: 'field_anzuzeigende_seitenmodule_'.
-  $field_bases['field_anzuzeigende_seitenmodule_'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_anzuzeigende_seitenmodule_',
-    'indexes' => array(),
-    'locked' => 0,
-    'module' => 'number',
-    'settings' => array(),
-    'translatable' => 0,
-    'type' => 'number_integer',
-  );
-
   // Exported field_base: 'field_bild'.
   $field_bases['field_bild'] = array(
     'active' => 1,
@@ -196,9 +181,6 @@ function ipwa_base_field_default_field_bases() {
       'handler' => 'base',
       'handler_settings' => array(
         'behaviors' => array(
-          'test_field_behavior' => array(
-            'status' => 0,
-          ),
           'views-select-list' => array(
             'status' => 0,
           ),
@@ -207,6 +189,7 @@ function ipwa_base_field_default_field_bases() {
           'type' => 'none',
         ),
         'target_bundles' => array(
+          'document' => 'document',
           'publikation' => 'publikation',
         ),
       ),
@@ -234,9 +217,6 @@ function ipwa_base_field_default_field_bases() {
       'handler' => 'base',
       'handler_settings' => array(
         'behaviors' => array(
-          'test_field_behavior' => array(
-            'status' => 0,
-          ),
           'views-select-list' => array(
             'status' => 0,
           ),
@@ -245,7 +225,7 @@ function ipwa_base_field_default_field_bases() {
           'type' => 'none',
         ),
         'target_bundles' => array(
-          '_funding_announcement' => '_funding_announcement',
+          'f_rderbekanntmachung' => 'f_rderbekanntmachung',
         ),
       ),
       'target_type' => 'node',
@@ -272,9 +252,6 @@ function ipwa_base_field_default_field_bases() {
       'handler' => 'base',
       'handler_settings' => array(
         'behaviors' => array(
-          'test_field_behavior' => array(
-            'status' => 0,
-          ),
           'views-select-list' => array(
             'status' => 0,
           ),
@@ -329,9 +306,6 @@ function ipwa_base_field_default_field_bases() {
       'handler' => 'base',
       'handler_settings' => array(
         'behaviors' => array(
-          'test_field_behavior' => array(
-            'status' => 0,
-          ),
           'views-select-list' => array(
             'status' => 0,
           ),
@@ -367,9 +341,6 @@ function ipwa_base_field_default_field_bases() {
       'handler' => 'base',
       'handler_settings' => array(
         'behaviors' => array(
-          'test_field_behavior' => array(
-            'status' => 0,
-          ),
           'views-select-list' => array(
             'status' => 0,
           ),
@@ -378,7 +349,7 @@ function ipwa_base_field_default_field_bases() {
           'type' => 'none',
         ),
         'target_bundles' => array(
-          'projects' => 'projects',
+          'projekt' => 'projekt',
         ),
       ),
       'target_type' => 'node',
@@ -482,9 +453,6 @@ function ipwa_base_field_default_field_bases() {
       'handler' => 'base',
       'handler_settings' => array(
         'behaviors' => array(
-          'test_field_behavior' => array(
-            'status' => 0,
-          ),
           'views-select-list' => array(
             'status' => 0,
           ),
