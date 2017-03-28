@@ -10,46 +10,6 @@
 function ipwa_bild_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-bild-field_alternative_bildbeschreibu'.
-  $field_instances['node-bild-field_alternative_bildbeschreibu'] = array(
-    'bundle' => 'bild',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'Dieser Text wird von Screenreadern und Suchmaschinen verwendet.',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 2,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_alternative_bildbeschreibu',
-    'label' => 'Alternative Bildbeschreibung',
-    'required' => 1,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => -2,
-    ),
-  );
-
   // Exported field_instance: 'node-bild-field_bild'.
   $field_instances['node-bild-field_bild'] = array(
     'bundle' => 'bild',
@@ -63,7 +23,7 @@ Erlaubte Dateitypen: png gif jpg jpeg.',
         'module' => 'file_image_formatters',
         'settings' => array(
           'image_link' => '',
-          'image_style' => '',
+          'image_style' => 'medium',
         ),
         'type' => 'file_image_image',
         'weight' => 1,
@@ -193,11 +153,9 @@ Erlaubte Dateitypen: png gif jpg jpeg.',
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Alternative Bildbeschreibung');
   t('Bild');
   t('Bildbeschreibung');
   t('Copyright');
-  t('Dieser Text wird von Screenreadern und Suchmaschinen verwendet.');
   t('Nur eine Datei möglich.
 1.96 GB Limit.
 Erlaubte Dateitypen: png gif jpg jpeg.');
