@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the IPWA_Protagonist feature.
+ */
+
+include_once 'ipwa_protagonist.features.inc';
