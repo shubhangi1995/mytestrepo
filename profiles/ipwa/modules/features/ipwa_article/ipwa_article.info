@@ -19,7 +19,6 @@ features[field_instance][] = node-article-field_datum
 features[field_instance][] = node-article-field_dokumente_und_publikatione
 features[field_instance][] = node-article-field_f_rderbekanntmachungen
 features[field_instance][] = node-article-field_initiatoren_zum_thema
-features[field_instance][] = node-article-field_kurztext
 features[field_instance][] = node-article-field_meldungen_zum_thema
 features[field_instance][] = node-article-field_projekte_zum_thema
 features[field_instance][] = node-article-field_quellenangabe
