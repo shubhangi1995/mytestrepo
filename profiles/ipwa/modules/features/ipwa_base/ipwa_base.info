@@ -25,6 +25,7 @@ features[field_base][] = field_datum
 features[field_base][] = field_dokumente_und_publikatione
 features[field_base][] = field_f_rderbekanntmachungen
 features[field_base][] = field_initiatoren_zum_thema
+features[field_base][] = field_kurztext
 features[field_base][] = field_meldungen_zum_thema
 features[field_base][] = field_projekte_zum_thema
 features[field_base][] = field_quellenangabe

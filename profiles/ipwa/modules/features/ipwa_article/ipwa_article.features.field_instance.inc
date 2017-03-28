@@ -364,6 +364,46 @@ function ipwa_article_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-article-field_kurztext'.
+  $field_instances['node-article-field_kurztext'] = array(
+    'bundle' => 'article',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 4,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 7,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_kurztext',
+    'label' => 'Kurztext',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 5,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 3,
+    ),
+  );
+
   // Exported field_instance: 'node-article-field_meldungen_zum_thema'.
   $field_instances['node-article-field_meldungen_zum_thema'] = array(
     'bundle' => 'article',
@@ -843,6 +883,7 @@ Schema für externe Links: http://www…',
   t('Förderbekanntmachungen');
   t('Fügen Sie die YouTube URL ein. Erlaubte Formate: https://www.youtube.com/watch?v=wM73y2Iu8pU oder https://youtu.be/wM73y2Iu8pU');
   t('Initiatoren zum Thema');
+  t('Kurztext');
   t('Maximale Anzahl zuzuordnender Themen: 3. Wählen Sie eine der vier Oberkategorien aus, sind deren zugeordnete Unterkategorien nicht auswählbar.');
   t('Meldungen zum Thema');
   t('Projekte zum Thema');
