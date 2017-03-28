@@ -1,5 +1,5 @@
 name = IPWA_förderbekanntmachung
-description =  Feature for CT Förderbekanntmachung, fields et
+description = Feature for CT Förderbekanntmachung, fields et
 core = 7.x
 package = IPWA
 version = 7.x-1.0

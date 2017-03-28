@@ -1,5 +1,5 @@
-name = IPWA_projekt 
-description =  Feature for CT projekt , fields et
+name = IPWA_projekt
+description = Feature for CT projekt , fields et
 core = 7.x
 package = IPWA
 version = 7.x-1.0
