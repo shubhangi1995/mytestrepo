@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the IPWA_Akteur feature.
+ */
+
+include_once 'ipwa_akteur.features.inc';

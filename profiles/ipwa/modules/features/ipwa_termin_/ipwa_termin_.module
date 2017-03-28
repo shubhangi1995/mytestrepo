@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the IPWA_termin  feature.
+ */
+
+include_once 'ipwa_termin_.features.inc';
