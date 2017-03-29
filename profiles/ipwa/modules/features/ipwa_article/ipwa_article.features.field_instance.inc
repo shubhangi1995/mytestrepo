@@ -55,6 +55,59 @@ function ipwa_article_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-article-field_anzuzeigende_seitenmodule_'.
+  $field_instances['node-article-field_anzuzeigende_seitenmodule_'] = array(
+    'bundle' => 'article',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'paragraphs',
+        'settings' => array(
+          'view_mode' => 'full',
+        ),
+        'type' => 'paragraphs_view',
+        'weight' => 7,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_anzuzeigende_seitenmodule_',
+    'label' => 'Anzuzeigende Seitenmodule (Paragraphen)',
+    'required' => 0,
+    'settings' => array(
+      'add_mode' => 'select',
+      'allowed_bundles' => array(
+        'flie_text_bereich' => -1,
+        'flie_text_mit_bild_links_' => -1,
+        'flie_text_mit_bild_rechts_' => -1,
+      ),
+      'bundle_weights' => array(
+        'flie_text_bereich' => 2,
+        'flie_text_mit_bild_links_' => 3,
+        'flie_text_mit_bild_rechts_' => 4,
+      ),
+      'default_edit_mode' => 'open',
+      'title' => 'Paragraph',
+      'title_multiple' => 'Paragraphs',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'paragraphs',
+      'settings' => array(),
+      'type' => 'paragraphs_embed',
+      'weight' => 8,
+    ),
+  );
+
   // Exported field_instance: 'node-article-field_bild_ref'.
   $field_instances['node-article-field_bild_ref'] = array(
     'bundle' => 'article',
@@ -466,7 +519,7 @@ function ipwa_article_field_default_field_instances() {
     'description' => 'Schema für Links: http://example.com',
     'display' => array(
       'default' => array(
-        'label' => 'hidden',
+        'label' => 'inline',
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
@@ -650,7 +703,7 @@ function ipwa_article_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'hidden',
+        'label' => 'inline',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
@@ -754,7 +807,7 @@ Schema für externe Links: http://www…',
         'configurable_class' => 0,
         'configurable_title' => 0,
         'rel' => '',
-        'target' => 'default',
+        'target' => '_blank',
         'title' => '',
       ),
       'display' => array(
@@ -828,6 +881,7 @@ Schema für externe Links: http://www…',
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('Anzuzeigende Seitenmodule (Paragraphen)');
   t('Bild');
   t('Datum');
   t('Dieses Datum erscheint im Frontend.');

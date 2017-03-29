@@ -18,12 +18,14 @@ function ipwa_preprocess_node(&$variables)
     // Don't show title
     $variables['title'] = '';
 
+    // Label change for field 'Copyright'
     if (!empty($variables['content']['field_copyright'])) {
       $variables['content']['field_copyright']['#title'] = '© Bildquelle';
     }
-
-}
-  if ($variables['type'] =='article'|| $variables['type'] =='publikation'){
-    $variables['content']['field_Quellenangabe']['#title'] = 'Quelle: ';
+  }
+  // Label change for field 'Videoquelle'
+  if (!empty($variables['content']['field_videoquelle'])) {
+    $variables['content']['field_videoquelle']['#title'] = '© Videoquelle';
   }
 }
+

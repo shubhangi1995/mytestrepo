@@ -245,11 +245,9 @@ function ipwa_base_field_default_field_bases() {
     ),
     'locked' => 0,
     'module' => 'text',
-    'settings' => array(
-      'max_length' => 255,
-    ),
+    'settings' => array(),
     'translatable' => 0,
-    'type' => 'text',
+    'type' => 'text_with_summary',
   );
 
   // Exported field_base: 'field_initiatoren_zum_thema'.
