@@ -66,8 +66,8 @@ function ipwa_article_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
-          'links' => TRUE,
-          'use_content_language' => TRUE,
+          'links' => 1,
+          'use_content_language' => 1,
           'view_mode' => 'default',
         ),
         'type' => 'entityreference_entity_view',
