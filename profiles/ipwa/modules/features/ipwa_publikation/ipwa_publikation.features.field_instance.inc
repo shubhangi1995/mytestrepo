@@ -52,6 +52,60 @@ function ipwa_publikation_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance:
+  // 'node-publikation-field_anzuzeigende_seitenmodule_'.
+  $field_instances['node-publikation-field_anzuzeigende_seitenmodule_'] = array(
+    'bundle' => 'publikation',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'paragraphs',
+        'settings' => array(
+          'view_mode' => 'full',
+        ),
+        'type' => 'paragraphs_view',
+        'weight' => 8,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_anzuzeigende_seitenmodule_',
+    'label' => 'Anzuzeigende Seitenmodule (Paragraphen)',
+    'required' => 0,
+    'settings' => array(
+      'add_mode' => 'button',
+      'allowed_bundles' => array(
+        'flie_text_bereich' => -1,
+        'flie_text_mit_bild_links_' => -1,
+        'flie_text_mit_bild_rechts_' => -1,
+      ),
+      'bundle_weights' => array(
+        'flie_text_bereich' => 2,
+        'flie_text_mit_bild_links_' => 3,
+        'flie_text_mit_bild_rechts_' => 4,
+      ),
+      'default_edit_mode' => 'open',
+      'title' => 'Paragraph',
+      'title_multiple' => 'Paragraphs',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'paragraphs',
+      'settings' => array(),
+      'type' => 'paragraphs_embed',
+      'weight' => 10,
+    ),
+  );
+
   // Exported field_instance: 'node-publikation-field_bild_ref'.
   $field_instances['node-publikation-field_bild_ref'] = array(
     'bundle' => 'publikation',
@@ -931,6 +985,7 @@ Schema für externe Links: http://www…',
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('Anzuzeigende Seitenmodule (Paragraphen)');
   t('Bild');
   t('Datum');
   t('Dieses Datum entspricht dem Veröffentlichungsdatum der Publikation.');

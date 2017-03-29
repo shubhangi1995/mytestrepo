@@ -231,6 +231,25 @@ function ipwa_base_field_default_field_bases() {
     'type' => 'entityreference',
   );
 
+  // Exported field_base: 'field_flie_text_bereich'.
+  $field_bases['field_flie_text_bereich'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_flie_text_bereich',
+    'indexes' => array(
+      'format' => array(
+        0 => 'format',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'text',
+    'settings' => array(),
+    'translatable' => 0,
+    'type' => 'text_with_summary',
+  );
+
   // Exported field_base: 'field_initiatoren_zum_thema'.
   $field_bases['field_initiatoren_zum_thema'] = array(
     'active' => 1,
