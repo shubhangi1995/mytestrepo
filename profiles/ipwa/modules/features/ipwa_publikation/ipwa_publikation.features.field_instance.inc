@@ -268,7 +268,7 @@ function ipwa_publikation_field_default_field_instances() {
     'description' => 'Sie können hier Inhalte vom Typ \'Förderbekanntmachung\' hinzufügen.',
     'display' => array(
       'default' => array(
-        'label' => 'hidden',
+        'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
           'link' => FALSE,
@@ -887,7 +887,7 @@ function ipwa_publikation_field_default_field_instances() {
 Schema für externe Links: http://www…',
     'display' => array(
       'default' => array(
-        'label' => 'hidden',
+        'label' => 'above',
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
