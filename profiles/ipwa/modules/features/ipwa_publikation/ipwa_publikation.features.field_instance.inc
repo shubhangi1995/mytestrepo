@@ -22,7 +22,7 @@ function ipwa_publikation_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 7,
+        'weight' => 8,
       ),
       'teaser' => array(
         'label' => 'hidden',
@@ -67,7 +67,7 @@ function ipwa_publikation_field_default_field_instances() {
           'view_mode' => 'full',
         ),
         'type' => 'paragraphs_view',
-        'weight' => 8,
+        'weight' => 9,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -117,12 +117,12 @@ function ipwa_publikation_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
-          'links' => TRUE,
-          'use_content_language' => TRUE,
+          'links' => 1,
+          'use_content_language' => 1,
           'view_mode' => 'default',
         ),
         'type' => 'entityreference_entity_view',
-        'weight' => 10,
+        'weight' => 11,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -133,7 +133,7 @@ function ipwa_publikation_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_bild_ref',
-    'label' => 'Bild',
+    'label' => '© Bildquelle',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -224,14 +224,9 @@ function ipwa_publikation_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'links' => TRUE,
-          'use_content_language' => TRUE,
-          'view_mode' => 'default',
-        ),
-        'type' => 'entityreference_entity_view',
-        'weight' => 14,
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 22,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -274,7 +269,7 @@ function ipwa_publikation_field_default_field_instances() {
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 19,
+        'weight' => 20,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -315,7 +310,7 @@ function ipwa_publikation_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 3,
+        'weight' => 4,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -355,12 +350,10 @@ function ipwa_publikation_field_default_field_instances() {
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
-          'links' => TRUE,
-          'use_content_language' => TRUE,
-          'view_mode' => 'default',
+          'link' => FALSE,
         ),
-        'type' => 'entityreference_entity_view',
-        'weight' => 17,
+        'type' => 'entityreference_label',
+        'weight' => 18,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -401,7 +394,7 @@ function ipwa_publikation_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 6,
+        'weight' => 7,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -440,12 +433,10 @@ function ipwa_publikation_field_default_field_instances() {
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
-          'links' => TRUE,
-          'use_content_language' => TRUE,
-          'view_mode' => 'default',
+          'link' => FALSE,
         ),
-        'type' => 'entityreference_entity_view',
-        'weight' => 16,
+        'type' => 'entityreference_label',
+        'weight' => 17,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -485,12 +476,10 @@ function ipwa_publikation_field_default_field_instances() {
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
-          'links' => TRUE,
-          'use_content_language' => TRUE,
-          'view_mode' => 'default',
+          'link' => FALSE,
         ),
-        'type' => 'entityreference_entity_view',
-        'weight' => 18,
+        'type' => 'entityreference_label',
+        'weight' => 19,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -530,12 +519,10 @@ function ipwa_publikation_field_default_field_instances() {
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
-          'links' => TRUE,
-          'use_content_language' => TRUE,
-          'view_mode' => 'default',
+          'link' => FALSE,
         ),
-        'type' => 'entityreference_entity_view',
-        'weight' => 9,
+        'type' => 'entityreference_label',
+        'weight' => 10,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -572,11 +559,11 @@ function ipwa_publikation_field_default_field_instances() {
     'description' => 'Schema für Links: http://example.com',
     'display' => array(
       'default' => array(
-        'label' => 'hidden',
+        'label' => 'inline',
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 5,
+        'weight' => 6,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -587,7 +574,7 @@ function ipwa_publikation_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_quellenangabe',
-    'label' => 'Quellenangabe',
+    'label' => 'Quelle',
     'required' => 0,
     'settings' => array(
       'absolute_url' => 1,
@@ -629,11 +616,11 @@ function ipwa_publikation_field_default_field_instances() {
     'description' => 'Maximale Anzahl zuzuordnender Themen: 3. Wählen Sie eine der vier Oberkategorien aus, sind deren zugeordnete Unterkategorien nicht auswählbar.',
     'display' => array(
       'default' => array(
-        'label' => 'hidden',
+        'label' => 'above',
         'module' => 'i18n_taxonomy',
         'settings' => array(),
         'type' => 'i18n_taxonomy_term_reference_link',
-        'weight' => 2,
+        'weight' => 3,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -644,7 +631,7 @@ function ipwa_publikation_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_themenzuweisung',
-    'label' => 'Themenzuweisung',
+    'label' => 'Dieser Artikel gehört zu',
     'required' => 1,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -670,7 +657,7 @@ function ipwa_publikation_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 1,
+        'weight' => 2,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -708,15 +695,15 @@ function ipwa_publikation_field_default_field_instances() {
         'label' => 'inline',
         'module' => 'date',
         'settings' => array(
-          'format_type' => 'long',
+          'format_type' => 'short',
           'fromto' => 'both',
           'multiple_from' => '',
           'multiple_number' => '',
           'multiple_to' => '',
-          'show_remaining_days' => FALSE,
+          'show_remaining_days' => 0,
         ),
         'type' => 'date_default',
-        'weight' => 4,
+        'weight' => 5,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -762,14 +749,9 @@ function ipwa_publikation_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'links' => TRUE,
-          'use_content_language' => TRUE,
-          'view_mode' => 'default',
-        ),
-        'type' => 'entityreference_entity_view',
-        'weight' => 15,
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 23,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -780,7 +762,7 @@ function ipwa_publikation_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_veranstaltungen',
-    'label' => 'Veranstaltungen',
+    'label' => 'Kommende Veranstaltungen',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -810,7 +792,7 @@ function ipwa_publikation_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 13,
+        'weight' => 14,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -821,7 +803,7 @@ function ipwa_publikation_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_videoquelle',
-    'label' => 'Videoquelle',
+    'label' => '© Videoquelle',
     'required' => 0,
     'settings' => array(
       'text_processing' => 0,
@@ -850,7 +832,7 @@ function ipwa_publikation_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 12,
+        'weight' => 13,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -891,7 +873,7 @@ Schema für externe Links: http://www…',
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 20,
+        'weight' => 21,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -958,7 +940,7 @@ Schema für externe Links: http://www…',
           'youtube_width' => NULL,
         ),
         'type' => 'youtube_video',
-        'weight' => 11,
+        'weight' => 12,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -986,8 +968,8 @@ Schema für externe Links: http://www…',
   // Translatables
   // Included for use with string extractors like potx.
   t('Anzuzeigende Seitenmodule (Paragraphen)');
-  t('Bild');
   t('Datum');
+  t('Dieser Artikel gehört zu');
   t('Dieses Datum entspricht dem Veröffentlichungsdatum der Publikation.');
   t('Dieses Datum erscheint im Frontend.');
   t('Dokumente und Publikationen');
@@ -997,12 +979,13 @@ Schema für externe Links: http://www…',
   t('Fügen Sie die YouTube URL ein. Erlaubte Formate: https://www.youtube.com/watch?v=wM73y2Iu8pU oder https://youtu.be/wM73y2Iu8pU');
   t('Herausgeber');
   t('Initiatoren zum Thema');
+  t('Kommende Veranstaltungen');
   t('Kurztext');
   t('Maximale Anzahl zuzuordnender Themen: 3. Wählen Sie eine der vier Oberkategorien aus, sind deren zugeordnete Unterkategorien nicht auswählbar.');
   t('Meldungen zum Thema');
   t('Projekte zum Thema');
   t('Publikation');
-  t('Quellenangabe');
+  t('Quelle');
   t('Schema für Links: http://example.com');
   t('Schema für interne Links: /node/id bzw. relativer Pfad bei Listenansichten z.B. /aktuelle-beitraege. 
 Schema für externe Links: http://www…');
@@ -1011,14 +994,13 @@ Schema für externe Links: http://www…');
   t('Sie können hier Inhalte vom Typ \'Nachricht\' hinzufügen.');
   t('Sie können hier Inhalte vom Typ \'Projekt\' hinzufügen.');
   t('Sie können hier Inhalte vom Typ \'Termin\' hinzufügen.');
-  t('Themenzuweisung');
   t('Untertitel');
-  t('Veranstaltungen');
   t('Veröffentlichungsdatum');
-  t('Videoquelle');
   t('Videounterschrift');
   t('Weiterführende Links');
   t('YouTube URL');
+  t('© Bildquelle');
+  t('© Videoquelle');
 
   return $field_instances;
 }

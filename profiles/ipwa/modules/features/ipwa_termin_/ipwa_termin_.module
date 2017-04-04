@@ -5,3 +5,23 @@
  */
 
 include_once 'ipwa_termin_.features.inc';
+
+/**
+ * Implementation of hook_views_pre_render
+ *
+ * @param $view
+ *
+ */
+function ipwa_views_pre_render(&$view) {
+  //For Related content: Kommende Veranstaltungen view
+  if ($view->name=='related_content') {
+    foreach($view->result as $key => $result) {
+      if (!empty($result->field_field_event_datum['0']['rendered']['#markup'])) {
+        // Display '-' instead of 'to' in date field
+        if (strpos($result->field_field_event_datum['0']['rendered']['#markup'], 'to') !== false) {
+          $view->result[$key]->field_field_event_datum['0']['rendered']['#markup'] =str_replace('to','-',$result->field_field_event_datum['0']['rendered']['#markup']);
+        }
+      }
+    }
+  }
+}

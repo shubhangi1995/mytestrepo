@@ -37,7 +37,7 @@ Erlaubte Dateitypen: png gif jpg jpeg.',
     ),
     'entity_type' => 'node',
     'field_name' => 'field_bild',
-    'label' => 'Bild',
+    'label' => '© Bildquelle:',
     'required' => 1,
     'settings' => array(
       'description_field' => 0,
@@ -62,7 +62,6 @@ Erlaubte Dateitypen: png gif jpg jpeg.',
         'browser_plugins' => array(
           'media_default--media_browser_1' => 0,
           'media_default--media_browser_my_files' => 0,
-          'media_internet' => 0,
           'upload' => 0,
         ),
       ),
@@ -82,7 +81,7 @@ Erlaubte Dateitypen: png gif jpg jpeg.',
         'label' => 'hidden',
         'module' => 'text',
         'settings' => array(),
-        'type' => 'text_default',
+        'type' => 'text_plain',
         'weight' => 3,
       ),
       'teaser' => array(
@@ -153,12 +152,12 @@ Erlaubte Dateitypen: png gif jpg jpeg.',
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Bild');
   t('Bildbeschreibung');
   t('Copyright');
   t('Nur eine Datei möglich.
 1.96 GB Limit.
 Erlaubte Dateitypen: png gif jpg jpeg.');
+  t('© Bildquelle:');
 
   return $field_instances;
 }

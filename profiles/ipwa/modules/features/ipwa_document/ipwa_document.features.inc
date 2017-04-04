@@ -23,8 +23,8 @@ function ipwa_document_node_info() {
       'base' => 'node_content',
       'description' => '',
       'has_title' => '1',
-      'title_label' => t('Title'),
-      'help' => '',
+      'title_label' => t('Interner Titel'),
+      'help' => t('Der Titel ist nur systemintern sichtbar.'),
     ),
   );
   drupal_alter('node_info', $items);
