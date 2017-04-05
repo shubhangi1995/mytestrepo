@@ -1,18 +1,18 @@
 <?php
 /**
  * @file
- * ipwa_f_rderbekanntmachung.features.field_instance.inc
+ * ipwa_nachricht.features.field_instance.inc
  */
 
 /**
  * Implements hook_field_default_field_instances().
  */
-function ipwa_f_rderbekanntmachung_field_default_field_instances() {
+function ipwa_nachricht_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-f_rderbekanntmachung-body'.
-  $field_instances['node-f_rderbekanntmachung-body'] = array(
-    'bundle' => 'f_rderbekanntmachung',
+  // Exported field_instance: 'node-nachricht-body'.
+  $field_instances['node-nachricht-body'] = array(
+    'bundle' => 'nachricht',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
@@ -22,7 +22,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 1,
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'hidden',

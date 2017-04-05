@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the IPWA_Nachricht feature.
+ */
+
+include_once 'ipwa_nachricht.features.inc';

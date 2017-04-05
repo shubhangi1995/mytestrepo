@@ -37,7 +37,7 @@ Erlaubte Dateitypen: png gif jpg jpeg.',
     ),
     'entity_type' => 'node',
     'field_name' => 'field_bild',
-    'label' => '© Bildquelle:',
+    'label' => 'Bild',
     'required' => 1,
     'settings' => array(
       'description_field' => 0,
@@ -66,7 +66,7 @@ Erlaubte Dateitypen: png gif jpg jpeg.',
         ),
       ),
       'type' => 'media_generic',
-      'weight' => -3,
+      'weight' => 2,
     ),
   );
 
@@ -106,7 +106,7 @@ Erlaubte Dateitypen: png gif jpg jpeg.',
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => -1,
+      'weight' => 3,
     ),
   );
 
@@ -133,7 +133,7 @@ Erlaubte Dateitypen: png gif jpg jpeg.',
     ),
     'entity_type' => 'node',
     'field_name' => 'field_copyright',
-    'label' => 'Copyright',
+    'label' => '© Bildquelle',
     'required' => 1,
     'settings' => array(
       'text_processing' => 0,
@@ -146,18 +146,18 @@ Erlaubte Dateitypen: png gif jpg jpeg.',
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 0,
+      'weight' => 4,
     ),
   );
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('Bild');
   t('Bildbeschreibung');
-  t('Copyright');
   t('Nur eine Datei möglich.
 1.96 GB Limit.
 Erlaubte Dateitypen: png gif jpg jpeg.');
-  t('© Bildquelle:');
+  t('© Bildquelle');
 
   return $field_instances;
 }

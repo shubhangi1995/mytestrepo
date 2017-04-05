@@ -22,7 +22,7 @@ function ipwa_document_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 1,
+        'weight' => 2,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -46,7 +46,49 @@ function ipwa_document_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => -2,
+      'weight' => 3,
+    ),
+  );
+
+  // Exported field_instance: 'node-document-field_datei_ist_nicht_barrierefr'.
+  $field_instances['node-document-field_datei_ist_nicht_barrierefr'] = array(
+    'bundle' => 'document',
+    'default_value' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 3,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_datei_ist_nicht_barrierefr',
+    'label' => 'Datei ist nicht barrierefrei',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'display_label' => 0,
+      ),
+      'type' => 'options_onoff',
+      'weight' => 4,
     ),
   );
 
@@ -62,7 +104,7 @@ Erlaubter Dateityp: *.pdf',
         'module' => 'file',
         'settings' => array(),
         'type' => 'file_default',
-        'weight' => 0,
+        'weight' => 1,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -96,19 +138,20 @@ Erlaubter Dateityp: *.pdf',
           'video' => 0,
         ),
         'browser_plugins' => array(
-          'media_default--media_browser_1' => 0,
+          'media_default--media_browser_1' => 'media_default--media_browser_1',
           'media_default--media_browser_my_files' => 0,
           'upload' => 'upload',
         ),
       ),
       'type' => 'media_generic',
-      'weight' => -4,
+      'weight' => 2,
     ),
   );
 
   // Translatables
   // Included for use with string extractors like potx.
   t('Copyright');
+  t('Datei ist nicht barrierefrei');
   t('Dokument');
   t('Nur eine Datei möglich, maximale Dateigröße: 1.96 GB Limit.
 Erlaubter Dateityp: *.pdf');

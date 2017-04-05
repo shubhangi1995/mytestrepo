@@ -133,7 +133,7 @@ function ipwa_publikation_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_bild_ref',
-    'label' => '© Bildquelle',
+    'label' => 'Bild',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -968,6 +968,7 @@ Schema für externe Links: http://www…',
   // Translatables
   // Included for use with string extractors like potx.
   t('Anzuzeigende Seitenmodule (Paragraphen)');
+  t('Bild');
   t('Datum');
   t('Dieser Artikel gehört zu');
   t('Dieses Datum entspricht dem Veröffentlichungsdatum der Publikation.');
@@ -999,7 +1000,6 @@ Schema für externe Links: http://www…');
   t('Videounterschrift');
   t('Weiterführende Links');
   t('YouTube URL');
-  t('© Bildquelle');
   t('© Videoquelle');
 
   return $field_instances;

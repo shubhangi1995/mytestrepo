@@ -1,40 +1,40 @@
 <?php
 /**
  * @file
- * ipwa_document.strongarm.inc
+ * ipwa_nachricht.strongarm.inc
  */
 
 /**
  * Implements hook_strongarm().
  */
-function ipwa_document_strongarm() {
+function ipwa_nachricht_strongarm() {
   $export = array();
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'diff_enable_revisions_page_node_document';
+  $strongarm->name = 'diff_enable_revisions_page_node_nachricht';
   $strongarm->value = 1;
-  $export['diff_enable_revisions_page_node_document'] = $strongarm;
+  $export['diff_enable_revisions_page_node_nachricht'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'diff_show_preview_changes_node_document';
+  $strongarm->name = 'diff_show_preview_changes_node_nachricht';
   $strongarm->value = 1;
-  $export['diff_show_preview_changes_node_document'] = $strongarm;
+  $export['diff_show_preview_changes_node_nachricht'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'diff_view_mode_preview_node_document';
+  $strongarm->name = 'diff_view_mode_preview_node_nachricht';
   $strongarm->value = 'full';
-  $export['diff_view_mode_preview_node_document'] = $strongarm;
+  $export['diff_view_mode_preview_node_nachricht'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'field_bundle_settings_node__document';
+  $strongarm->name = 'field_bundle_settings_node__nachricht';
   $strongarm->value = array(
     'view_modes' => array(
       'teaser' => array(
@@ -53,60 +53,60 @@ function ipwa_document_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'title' => array(
-          'weight' => '0',
+          'weight' => '-5',
         ),
       ),
       'display' => array(),
     ),
   );
-  $export['field_bundle_settings_node__document'] = $strongarm;
+  $export['field_bundle_settings_node__nachricht'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'language_content_type_document';
+  $strongarm->name = 'language_content_type_nachricht';
   $strongarm->value = '0';
-  $export['language_content_type_document'] = $strongarm;
+  $export['language_content_type_nachricht'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'menu_options_document';
+  $strongarm->name = 'menu_options_nachricht';
   $strongarm->value = array(
     0 => 'main-menu',
   );
-  $export['menu_options_document'] = $strongarm;
+  $export['menu_options_nachricht'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'menu_parent_document';
+  $strongarm->name = 'menu_parent_nachricht';
   $strongarm->value = 'main-menu:0';
-  $export['menu_parent_document'] = $strongarm;
+  $export['menu_parent_nachricht'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'node_options_document';
+  $strongarm->name = 'node_options_nachricht';
   $strongarm->value = array(
     0 => 'status',
     1 => 'promote',
   );
-  $export['node_options_document'] = $strongarm;
+  $export['node_options_nachricht'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'node_preview_document';
-  $strongarm->value = '0';
-  $export['node_preview_document'] = $strongarm;
+  $strongarm->name = 'node_preview_nachricht';
+  $strongarm->value = '1';
+  $export['node_preview_nachricht'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'node_submitted_document';
-  $strongarm->value = 0;
-  $export['node_submitted_document'] = $strongarm;
+  $strongarm->name = 'node_submitted_nachricht';
+  $strongarm->value = 1;
+  $export['node_submitted_nachricht'] = $strongarm;
 
   return $export;
 }

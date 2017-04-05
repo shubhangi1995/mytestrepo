@@ -1,13 +1,13 @@
 <?php
 /**
  * @file
- * ipwa_publikation.features.inc
+ * ipwa_nachricht.features.inc
  */
 
 /**
  * Implements hook_ctools_plugin_api().
  */
-function ipwa_publikation_ctools_plugin_api($module = NULL, $api = NULL) {
+function ipwa_nachricht_ctools_plugin_api($module = NULL, $api = NULL) {
   if ($module == "field_group" && $api == "field_group") {
     return array("version" => "1");
   }
@@ -19,10 +19,10 @@ function ipwa_publikation_ctools_plugin_api($module = NULL, $api = NULL) {
 /**
  * Implements hook_node_info().
  */
-function ipwa_publikation_node_info() {
+function ipwa_nachricht_node_info() {
   $items = array(
-    'publikation' => array(
-      'name' => t('Publikation'),
+    'nachricht' => array(
+      'name' => t('Nachricht'),
       'base' => 'node_content',
       'description' => '',
       'has_title' => '1',
