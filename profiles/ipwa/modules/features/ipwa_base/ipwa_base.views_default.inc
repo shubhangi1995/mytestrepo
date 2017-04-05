@@ -63,8 +63,8 @@ function ipwa_base_views_default_views() {
   $handler->display->display_options['filters']['status']['group'] = 1;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
 
-  /* Display: Block */
-  $handler = $view->new_display('block', 'Block', 'block_1');
+  /* Display: Kommende Veranstaltungen */
+  $handler = $view->new_display('block', 'Kommende Veranstaltungen', 'block_1');
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['title'] = 'Kommende Veranstaltungen';
   $handler->display->display_options['defaults']['relationships'] = FALSE;
@@ -145,17 +145,17 @@ function ipwa_base_views_default_views() {
   $handler->display->display_options['fields']['filesize']['relationship'] = 'node_to_file';
   $handler->display->display_options['fields']['filesize']['label'] = '';
   $handler->display->display_options['fields']['filesize']['element_label_colon'] = FALSE;
-  /* Field: Content: Dokument */
-  $handler->display->display_options['fields']['field_dokument']['id'] = 'field_dokument';
-  $handler->display->display_options['fields']['field_dokument']['table'] = 'field_data_field_dokument';
-  $handler->display->display_options['fields']['field_dokument']['field'] = 'field_dokument';
-  $handler->display->display_options['fields']['field_dokument']['relationship'] = 'field_dokumente_und_publikatione_target_id';
-  $handler->display->display_options['fields']['field_dokument']['label'] = '';
-  $handler->display->display_options['fields']['field_dokument']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_dokument']['click_sort_column'] = 'fid';
-  $handler->display->display_options['fields']['field_dokument']['settings'] = array(
-    'text' => 'Download [file:name]',
-  );
+  /* Field: Content: Datei ist nicht barrierefrei */
+  $handler->display->display_options['fields']['field_datei_ist_nicht_barrierefr']['id'] = 'field_datei_ist_nicht_barrierefr';
+  $handler->display->display_options['fields']['field_datei_ist_nicht_barrierefr']['table'] = 'field_data_field_datei_ist_nicht_barrierefr';
+  $handler->display->display_options['fields']['field_datei_ist_nicht_barrierefr']['field'] = 'field_datei_ist_nicht_barrierefr';
+  $handler->display->display_options['fields']['field_datei_ist_nicht_barrierefr']['relationship'] = 'field_dokumente_und_publikatione_target_id';
+  $handler->display->display_options['fields']['field_datei_ist_nicht_barrierefr']['label'] = '';
+  $handler->display->display_options['fields']['field_datei_ist_nicht_barrierefr']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_datei_ist_nicht_barrierefr']['alter']['text'] = 'datei ist nicht barrierefrei';
+  $handler->display->display_options['fields']['field_datei_ist_nicht_barrierefr']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_datei_ist_nicht_barrierefr']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['field_datei_ist_nicht_barrierefr']['hide_alter_empty'] = FALSE;
   $handler->display->display_options['block_description'] = 'Dokumente und Publikationen';
   $translatables['related_content'] = array(
     t('Master'),
@@ -177,9 +177,9 @@ function ipwa_base_views_default_views() {
     t('Content entity referenced from field_dokumente_und_publikatione'),
     t('Datum'),
     t('All'),
-    t('Block'),
     t('Kommende Veranstaltungen'),
     t('Content entity referenced from field_veranstaltungen'),
+    t('datei ist nicht barrierefrei'),
   );
   $export['related_content'] = $view;
 
