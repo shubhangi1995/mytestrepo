@@ -64,3 +64,4 @@ features[paragraphs][] = flie_text_bereich
 features[paragraphs][] = flie_text_mit_bild_links_
 features[paragraphs][] = flie_text_mit_bild_rechts_
 features[variable][] = date_format_custom
+features[views_view][] = related_content
