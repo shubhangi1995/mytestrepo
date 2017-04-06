@@ -17,27 +17,32 @@ function ipwa_preprocess_node(&$variables) {
     // Don't show title
     $variables['title'] = '';
   }
-
+//  print_r($variables['content'] );
+//  die();
   // Display view 'Kommende Veranstaltungen' instaed of field 'Veranstaltungen'
-  $views = views_get_view_result("related_content", "block_1", $variables['nid']);
-  $related_event_view = '';
-  if (!empty($views)) {
-    $related_event_view = '<h2 class="view-title">' . t('Kommende Veranstaltungen') . '</h2>';
-    //for embedding view Kommende Veranstaltungen
-    $related_event_view .= views_embed_view("related_content", "block_1", $variables['nid']);
-    $variables['content']['related_event']['#markup'] = $related_event_view;
-    $variables['content']['related_event']['#weight'] = $variables['elements']['#fieldgroups']['group_related_event']->weight;
+  if (!empty($variables['field_veranstaltungen'])) {
+    $views = views_get_view_result("related_content", "block_1", $variables['nid']);
+    $related_event_view = '';
+    if (!empty($views)) {
+      $related_event_view = '<h2 class="view-title">' . t('Kommende Veranstaltungen') . '</h2>';
+      //for embedding view Kommende Veranstaltungen
+      $related_event_view .= views_embed_view("related_content", "block_1", $variables['nid']);
+      $variables['content']['related_event']['#markup'] = $related_event_view;
+      $variables['content']['related_event']['#weight'] = $variables['elements']['#fieldgroups']['group_related_event']->weight;
+    }
   }
 
   // display view 'Dokumente und Publikationen' instead of field 'Dokumente und Publikationen'
-  $view = views_get_view_result("related_content", "block_2", $variables['nid']);
-  $related_doc_view = '';
-  if (!empty($view)) {
-    $related_doc_view = '<h2 class="view-title">' . t('Dokumente und Publikationen') . '</h2>';
-    //for embedding view Kommende Veranstaltungen
-    $related_doc_view .= views_embed_view("related_content", "block_2", $variables['nid']);
-    $variables['content']['related_doc']['#markup'] = $related_doc_view;
-    $variables['content']['related_doc']['#weight'] = $variables['elements']['#fieldgroups']['group_related_doc']->weight;
+  if(!empty($variables['field_dokumente_und_publikatione'])) {
+    $view = views_get_view_result("related_content", "block_2", $variables['nid']);
+    $related_doc_view = '';
+    if (!empty($view)) {
+      $related_doc_view = '<h2 class="view-title">' . t('Dokumente und Publikationen') . '</h2>';
+      //for embedding view Kommende Veranstaltungen
+      $related_doc_view .= views_embed_view("related_content", "block_2", $variables['nid']);
+      $variables['content']['related_doc']['#markup'] = $related_doc_view;
+      $variables['content']['related_doc']['#weight'] = $variables['elements']['#fieldgroups']['group_related_doc']->weight;
+    }
   }
 
   // Change position of title field
@@ -45,7 +50,7 @@ function ipwa_preprocess_node(&$variables) {
   if(isset($variables['title']) && $variables['title']){
     $variables['content']['title'] = array(
       '#markup' => '<h1 class="page-title">' . $variables['title'] . '</h1>',
-      '#weight' => $variables['elements']['#fieldgroups']['group_title']->weight,);
+      '#weight' => isset($variables['elements']['#fieldgroups']['group_title']) ? $variables['elements']['#fieldgroups']['group_title']->weight : 1);
   }
 }
 
@@ -60,9 +65,8 @@ function ipwa_preprocess_node(&$variables) {
  */
 
 // to link the lable of referenced node with the actual node
-function ipwa_preprocess_field(&$variables)
-{
- $fields = array("field_meldungen_zum_thema","field_initiatoren_zum_thema", "field_projekte_zum_thema", "field_f_rderbekanntmachungen", "field_publikation");
+function ipwa_preprocess_field(&$variables) {
+  $fields = array("field_meldungen_zum_thema","field_initiatoren_zum_thema", "field_projekte_zum_thema", "field_f_rderbekanntmachungen", "field_publikation");
   if (in_array($variables['element']['#field_name'],$fields)) {
     foreach ($variables['items'] as $key => $item) {
       // alter field value to link to respective node.
