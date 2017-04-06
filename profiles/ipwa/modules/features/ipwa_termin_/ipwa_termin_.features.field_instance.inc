@@ -61,7 +61,7 @@ function ipwa_termin__field_default_field_instances() {
     'description' => 'Tragen Sie hier den Veranstaltungstag ein.',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'date',
         'settings' => array(
           'format_type' => 'short',

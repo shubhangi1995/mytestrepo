@@ -123,14 +123,63 @@ function ipwa_base_views_default_views() {
   $handler->display->display_options['relationships']['node_to_file']['field'] = 'node_to_file';
   $handler->display->display_options['relationships']['node_to_file']['relationship'] = 'field_dokumente_und_publikatione_target_id';
   $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Type */
+  $handler->display->display_options['fields']['type']['id'] = 'type';
+  $handler->display->display_options['fields']['type']['table'] = 'node';
+  $handler->display->display_options['fields']['type']['field'] = 'type';
+  $handler->display->display_options['fields']['type']['relationship'] = 'field_dokumente_und_publikatione_target_id';
+  $handler->display->display_options['fields']['type']['label'] = '';
+  $handler->display->display_options['fields']['type']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['type']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['type']['machine_name'] = TRUE;
+  /* Field: Content: Dokument */
+  $handler->display->display_options['fields']['field_dokument']['id'] = 'field_dokument';
+  $handler->display->display_options['fields']['field_dokument']['table'] = 'field_data_field_dokument';
+  $handler->display->display_options['fields']['field_dokument']['field'] = 'field_dokument';
+  $handler->display->display_options['fields']['field_dokument']['relationship'] = 'field_dokumente_und_publikatione_target_id';
+  $handler->display->display_options['fields']['field_dokument']['label'] = '';
+  $handler->display->display_options['fields']['field_dokument']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_dokument']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_dokument']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_dokument']['type'] = 'file_url_plain';
+  $handler->display->display_options['fields']['field_dokument']['settings'] = array(
+    'file_view_mode' => 'default',
+  );
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['relationship'] = 'field_dokumente_und_publikatione_target_id';
   $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['exclude'] = TRUE;
   $handler->display->display_options['fields']['title']['alter']['make_link'] = TRUE;
+  $handler->display->display_options['fields']['title']['alter']['path'] = '[field_dokument]';
+  $handler->display->display_options['fields']['title']['alter']['target'] = '_blank';
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title_1']['id'] = 'title_1';
+  $handler->display->display_options['fields']['title_1']['table'] = 'node';
+  $handler->display->display_options['fields']['title_1']['field'] = 'title';
+  $handler->display->display_options['fields']['title_1']['relationship'] = 'field_dokumente_und_publikatione_target_id';
+  $handler->display->display_options['fields']['title_1']['label'] = '';
+  $handler->display->display_options['fields']['title_1']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['title_1']['alter']['make_link'] = TRUE;
+  $handler->display->display_options['fields']['title_1']['alter']['path'] = '/node/[nid]';
+  $handler->display->display_options['fields']['title_1']['alter']['absolute'] = TRUE;
+  $handler->display->display_options['fields']['title_1']['element_label_colon'] = FALSE;
+  /* Field: Views: Views Conditional */
+  $handler->display->display_options['fields']['views_conditional']['id'] = 'views_conditional';
+  $handler->display->display_options['fields']['views_conditional']['table'] = 'views_conditional';
+  $handler->display->display_options['fields']['views_conditional']['field'] = 'views_conditional';
+  $handler->display->display_options['fields']['views_conditional']['label'] = '';
+  $handler->display->display_options['fields']['views_conditional']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['views_conditional']['if'] = 'type';
+  $handler->display->display_options['fields']['views_conditional']['condition'] = '1';
+  $handler->display->display_options['fields']['views_conditional']['equalto'] = 'publikation';
+  $handler->display->display_options['fields']['views_conditional']['then'] = '[title_1]';
+  $handler->display->display_options['fields']['views_conditional']['or'] = '[title]';
+  $handler->display->display_options['fields']['views_conditional']['strip_tags'] = 0;
   /* Field: File: Extension */
   $handler->display->display_options['fields']['extension']['id'] = 'extension';
   $handler->display->display_options['fields']['extension']['table'] = 'file_managed';
@@ -152,10 +201,10 @@ function ipwa_base_views_default_views() {
   $handler->display->display_options['fields']['field_datei_ist_nicht_barrierefr']['relationship'] = 'field_dokumente_und_publikatione_target_id';
   $handler->display->display_options['fields']['field_datei_ist_nicht_barrierefr']['label'] = '';
   $handler->display->display_options['fields']['field_datei_ist_nicht_barrierefr']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['field_datei_ist_nicht_barrierefr']['alter']['text'] = 'datei ist nicht barrierefrei';
+  $handler->display->display_options['fields']['field_datei_ist_nicht_barrierefr']['alter']['text'] = 'Datei ist nicht barrierefrei';
   $handler->display->display_options['fields']['field_datei_ist_nicht_barrierefr']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_datei_ist_nicht_barrierefr']['hide_empty'] = TRUE;
-  $handler->display->display_options['fields']['field_datei_ist_nicht_barrierefr']['hide_alter_empty'] = FALSE;
+  $handler->display->display_options['fields']['field_datei_ist_nicht_barrierefr']['empty_zero'] = TRUE;
   $handler->display->display_options['block_description'] = 'Dokumente und Publikationen';
   $translatables['related_content'] = array(
     t('Master'),
@@ -179,7 +228,7 @@ function ipwa_base_views_default_views() {
     t('All'),
     t('Kommende Veranstaltungen'),
     t('Content entity referenced from field_veranstaltungen'),
-    t('datei ist nicht barrierefrei'),
+    t('Datei ist nicht barrierefrei'),
   );
   $export['related_content'] = $view;
 
