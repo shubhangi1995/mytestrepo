@@ -21,7 +21,7 @@ function ipwa_nachricht_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'title',
-    'weight' => '3',
+    'weight' => '1',
     'children' => array(),
     'format_type' => 'html-element',
     'format_settings' => array(

@@ -49,11 +49,14 @@ function ipwa_nachricht_strongarm() {
       'diff_standard' => array(
         'custom_settings' => FALSE,
       ),
+      'token' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
         'title' => array(
-          'weight' => '-5',
+          'weight' => '1',
         ),
       ),
       'display' => array(),
@@ -105,7 +108,7 @@ function ipwa_nachricht_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'node_submitted_nachricht';
-  $strongarm->value = 1;
+  $strongarm->value = 0;
   $export['node_submitted_nachricht'] = $strongarm;
 
   return $export;
