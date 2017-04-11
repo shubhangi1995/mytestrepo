@@ -56,7 +56,7 @@ function ipwa_nachricht_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'title' => array(
-          'weight' => '1',
+          'weight' => '0',
         ),
       ),
       'display' => array(),

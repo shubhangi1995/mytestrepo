@@ -260,17 +260,16 @@ function ipwa_base_views_default_views() {
   $handler->display->display_options['fields']['field_dokument']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_dokument']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_dokument']['type'] = 'file_url_plain';
-  /* Field: Content: Titel */
-  $handler->display->display_options['fields']['title']['id'] = 'title';
-  $handler->display->display_options['fields']['title']['table'] = 'node';
-  $handler->display->display_options['fields']['title']['field'] = 'title';
-  $handler->display->display_options['fields']['title']['relationship'] = 'field_publication_target_id';
-  $handler->display->display_options['fields']['title']['label'] = '';
-  $handler->display->display_options['fields']['title']['alter']['make_link'] = TRUE;
-  $handler->display->display_options['fields']['title']['alter']['path'] = '[field_dokument]';
-  $handler->display->display_options['fields']['title']['alter']['target'] = '_blank';
-  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
+  /* Field: Global: Custom text */
+  $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['table'] = 'views';
+  $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['label'] = '';
+  $handler->display->display_options['fields']['nothing']['alter']['text'] = 'Publikation downloaden';
+  $handler->display->display_options['fields']['nothing']['alter']['make_link'] = TRUE;
+  $handler->display->display_options['fields']['nothing']['alter']['path'] = '[field_dokument]';
+  $handler->display->display_options['fields']['nothing']['alter']['absolute'] = TRUE;
+  $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
   $handler->display->display_options['block_description'] = 'publikation';
   $translatables['related_content'] = array(
     t('Master'),
@@ -298,6 +297,7 @@ function ipwa_base_views_default_views() {
     t('datei ist nicht barrierefrei'),
     t('publikation'),
     t('Content entity referenced from field_publication'),
+    t('Publikation downloaden'),
   );
   $export['related_content'] = $view;
 

@@ -172,17 +172,9 @@ function ipwa_publikation_field_default_field_instances() {
         'weight' => 0,
       ),
       'teaser' => array(
-        'label' => 'hidden',
-        'module' => 'date',
-        'settings' => array(
-          'format_type' => 'long',
-          'fromto' => 'both',
-          'multiple_from' => '',
-          'multiple_number' => '',
-          'multiple_to' => '',
-          'show_remaining_days' => FALSE,
-        ),
-        'type' => 'date_default',
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 0,
       ),
     ),
@@ -202,7 +194,7 @@ function ipwa_publikation_field_default_field_instances() {
       'module' => 'date',
       'settings' => array(
         'increment' => 15,
-        'input_format' => 'm/d/Y - H:i:s',
+        'input_format' => 'd.m.Y',
         'input_format_custom' => '',
         'label_position' => 'above',
         'no_fieldset' => 0,
@@ -686,7 +678,7 @@ function ipwa_publikation_field_default_field_instances() {
   $field_instances['node-publikation-field_ver_ffentlichungsdatum'] = array(
     'bundle' => 'publikation',
     'deleted' => 0,
-    'description' => 'Dieses Datum entspricht dem Veröffentlichungsdatum der Publikation.',
+    'description' => 'Dieses Datum entspricht dem Veröffentlichungsdatum der Publikation',
     'display' => array(
       'default' => array(
         'label' => 'inline',
@@ -706,7 +698,7 @@ function ipwa_publikation_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 15,
+        'weight' => 0,
       ),
     ),
     'entity_type' => 'node',
@@ -725,7 +717,7 @@ function ipwa_publikation_field_default_field_instances() {
       'module' => 'date',
       'settings' => array(
         'increment' => 15,
-        'input_format' => 'm/d/Y - H:i:s',
+        'input_format' => 'd.m.Y',
         'input_format_custom' => '',
         'label_position' => 'above',
         'no_fieldset' => 0,
@@ -968,7 +960,7 @@ Schema für externe Links: http://www…',
   t('Bild');
   t('Datum');
   t('Dieser Artikel gehört zu');
-  t('Dieses Datum entspricht dem Veröffentlichungsdatum der Publikation.');
+  t('Dieses Datum entspricht dem Veröffentlichungsdatum der Publikation');
   t('Dieses Datum erscheint im Frontend.');
   t('Dokumente und Publikationen');
   t('Fließtext');

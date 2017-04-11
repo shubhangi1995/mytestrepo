@@ -32,6 +32,7 @@ features[field_base][] = field_bild
 features[field_base][] = field_bild_ref
 features[field_base][] = field_bildbeschreibung
 features[field_base][] = field_copyright
+features[field_base][] = field_date
 features[field_base][] = field_datum
 features[field_base][] = field_dokumente_und_publikatione
 features[field_base][] = field_event_datum

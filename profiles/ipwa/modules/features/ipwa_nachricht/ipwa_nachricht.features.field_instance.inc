@@ -157,7 +157,7 @@ function ipwa_nachricht_field_default_field_instances() {
   $field_instances['node-nachricht-field_datum'] = array(
     'bundle' => 'nachricht',
     'deleted' => 0,
-    'description' => 'Dieses Datum erscheint im Frontend',
+    'description' => 'Dieses Datum erscheint im Frontend.',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -204,7 +204,7 @@ function ipwa_nachricht_field_default_field_instances() {
         'year_range' => '-3:+3',
       ),
       'type' => 'date_popup',
-      'weight' => 0,
+      'weight' => 2,
     ),
   );
 
@@ -590,7 +590,7 @@ function ipwa_nachricht_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 2,
+      'weight' => 1,
     ),
   );
 
