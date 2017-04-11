@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the webform feature.
+ */
+
+include_once 'ipwa_webform.features.inc';
