@@ -257,7 +257,7 @@ function ipwa_article_field_default_field_instances() {
       'active' => 1,
       'module' => 'entityreference',
       'settings' => array(
-        'match_operator' => 'CONTAINS',
+        'match_operator' => 'STARTS_WITH',
         'path' => '',
         'size' => 60,
       ),
@@ -305,7 +305,7 @@ function ipwa_article_field_default_field_instances() {
       'active' => 1,
       'module' => 'entityreference',
       'settings' => array(
-        'match_operator' => 'CONTAINS',
+        'match_operator' => 'STARTS_WITH',
         'path' => '',
         'size' => 60,
       ),
@@ -353,7 +353,7 @@ function ipwa_article_field_default_field_instances() {
       'active' => 1,
       'module' => 'entityreference',
       'settings' => array(
-        'match_operator' => 'CONTAINS',
+        'match_operator' => 'STARTS_WITH',
         'path' => '',
         'size' => 60,
       ),
@@ -489,7 +489,7 @@ function ipwa_article_field_default_field_instances() {
       'active' => 1,
       'module' => 'entityreference',
       'settings' => array(
-        'match_operator' => 'CONTAINS',
+        'match_operator' => 'STARTS_WITH',
         'path' => '',
         'size' => 60,
       ),
@@ -538,7 +538,7 @@ function ipwa_article_field_default_field_instances() {
       ),
       'enable_tokens' => 1,
       'rel_remove' => 'default',
-      'title' => 'none',
+      'title' => 'optional',
       'title_label_use_field_label' => 0,
       'title_maxlength' => 128,
       'title_value' => '',
@@ -668,7 +668,7 @@ function ipwa_article_field_default_field_instances() {
       'active' => 1,
       'module' => 'entityreference',
       'settings' => array(
-        'match_operator' => 'CONTAINS',
+        'match_operator' => 'STARTS_WITH',
         'path' => '',
         'size' => 60,
       ),

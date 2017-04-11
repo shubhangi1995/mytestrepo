@@ -48,7 +48,7 @@ function ipwa_publikation_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 9,
+      'weight' => 10,
     ),
   );
 
@@ -102,7 +102,7 @@ function ipwa_publikation_field_default_field_instances() {
       'module' => 'paragraphs',
       'settings' => array(),
       'type' => 'paragraphs_embed',
-      'weight' => 10,
+      'weight' => 11,
     ),
   );
 
@@ -147,7 +147,7 @@ function ipwa_publikation_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 8,
+      'weight' => 9,
     ),
   );
 
@@ -344,7 +344,7 @@ function ipwa_publikation_field_default_field_instances() {
     'bundle' => 'publikation',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Sie können hier Inhalte vom Typ \'Akteur\' hinzufügen.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -373,7 +373,7 @@ function ipwa_publikation_field_default_field_instances() {
       'active' => 1,
       'module' => 'entityreference',
       'settings' => array(
-        'match_operator' => 'CONTAINS',
+        'match_operator' => 'STARTS_WITH',
         'path' => '',
         'size' => 60,
       ),
@@ -508,21 +508,18 @@ function ipwa_publikation_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-publikation-field_publikation'.
-  $field_instances['node-publikation-field_publikation'] = array(
+  // Exported field_instance: 'node-publikation-field_publication'.
+  $field_instances['node-publikation-field_publication'] = array(
     'bundle' => 'publikation',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Fügen Sie die Originalquelle hinzu indem Sie einen Inhalt vom Typ \'Dokument\' verlinken.',
+    'description' => 'Fügen Sie die Originalquelle hinzu indem Sie einen Inhalt vom Typ \'Dokument\' verlinken.t',
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'link' => FALSE,
-        ),
-        'type' => 'entityreference_label',
-        'weight' => 10,
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 23,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -532,8 +529,8 @@ function ipwa_publikation_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_publikation',
-    'label' => 'Publikation',
+    'field_name' => 'field_publication',
+    'label' => 'publikation',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -542,12 +539,12 @@ function ipwa_publikation_field_default_field_instances() {
       'active' => 1,
       'module' => 'entityreference',
       'settings' => array(
-        'match_operator' => 'CONTAINS',
+        'match_operator' => 'STARTS_WITH',
         'path' => '',
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 11,
+      'weight' => 8,
     ),
   );
 
@@ -751,7 +748,7 @@ function ipwa_publikation_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 23,
+        'weight' => 24,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -976,7 +973,7 @@ Schema für externe Links: http://www…',
   t('Dokumente und Publikationen');
   t('Fließtext');
   t('Förderbekanntmachungen');
-  t('Fügen Sie die Originalquelle hinzu indem Sie einen Inhalt vom Typ \'Dokument\' verlinken.');
+  t('Fügen Sie die Originalquelle hinzu indem Sie einen Inhalt vom Typ \'Dokument\' verlinken.t');
   t('Fügen Sie die YouTube URL ein. Erlaubte Formate: https://www.youtube.com/watch?v=wM73y2Iu8pU oder https://youtu.be/wM73y2Iu8pU');
   t('Herausgeber');
   t('Initiatoren zum Thema');
@@ -985,11 +982,11 @@ Schema für externe Links: http://www…',
   t('Maximale Anzahl zuzuordnender Themen: 3. Wählen Sie eine der vier Oberkategorien aus, sind deren zugeordnete Unterkategorien nicht auswählbar.');
   t('Meldungen zum Thema');
   t('Projekte zum Thema');
-  t('Publikation');
   t('Quelle');
   t('Schema für Links: http://example.com');
   t('Schema für interne Links: /node/id bzw. relativer Pfad bei Listenansichten z.B. /aktuelle-beitraege. 
 Schema für externe Links: http://www…');
+  t('Sie können hier Inhalte vom Typ \'Akteur\' hinzufügen.');
   t('Sie können hier Inhalte vom Typ \'Dokument\' oder \'Publikation\' hinzufügen.');
   t('Sie können hier Inhalte vom Typ \'Förderbekanntmachung\' hinzufügen.');
   t('Sie können hier Inhalte vom Typ \'Nachricht\' hinzufügen.');
@@ -1000,6 +997,7 @@ Schema für externe Links: http://www…');
   t('Videounterschrift');
   t('Weiterführende Links');
   t('YouTube URL');
+  t('publikation');
   t('© Videoquelle');
 
   return $field_instances;

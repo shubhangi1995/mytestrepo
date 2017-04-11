@@ -157,7 +157,7 @@ function ipwa_nachricht_field_default_field_instances() {
   $field_instances['node-nachricht-field_datum'] = array(
     'bundle' => 'nachricht',
     'deleted' => 0,
-    'description' => 'Datum',
+    'description' => 'Dieses Datum erscheint im Frontend',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -239,7 +239,7 @@ function ipwa_nachricht_field_default_field_instances() {
       'active' => 1,
       'module' => 'entityreference',
       'settings' => array(
-        'match_operator' => 'CONTAINS',
+        'match_operator' => 'STARTS_WITH',
         'path' => '',
         'size' => 60,
       ),
@@ -282,7 +282,7 @@ function ipwa_nachricht_field_default_field_instances() {
       'active' => 1,
       'module' => 'entityreference',
       'settings' => array(
-        'match_operator' => 'CONTAINS',
+        'match_operator' => 'STARTS_WITH',
         'path' => '',
         'size' => 60,
       ),
@@ -325,7 +325,7 @@ function ipwa_nachricht_field_default_field_instances() {
       'active' => 1,
       'module' => 'entityreference',
       'settings' => array(
-        'match_operator' => 'CONTAINS',
+        'match_operator' => 'STARTS_WITH',
         'path' => '',
         'size' => 60,
       ),
@@ -408,7 +408,7 @@ function ipwa_nachricht_field_default_field_instances() {
       'active' => 1,
       'module' => 'entityreference',
       'settings' => array(
-        'match_operator' => 'CONTAINS',
+        'match_operator' => 'STARTS_WITH',
         'path' => '',
         'size' => 60,
       ),
@@ -422,7 +422,7 @@ function ipwa_nachricht_field_default_field_instances() {
     'bundle' => 'nachricht',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Sie können hier Inhalte vom Typ \'Projekt\' hinzufügen.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -451,7 +451,7 @@ function ipwa_nachricht_field_default_field_instances() {
       'active' => 1,
       'module' => 'entityreference',
       'settings' => array(
-        'match_operator' => 'CONTAINS',
+        'match_operator' => 'STARTS_WITH',
         'path' => '',
         'size' => 60,
       ),
@@ -465,7 +465,7 @@ function ipwa_nachricht_field_default_field_instances() {
     'bundle' => 'nachricht',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Dieses Datum erscheint im Frontend',
     'display' => array(
       'default' => array(
         'label' => 'inline',
@@ -522,7 +522,7 @@ function ipwa_nachricht_field_default_field_instances() {
     'bundle' => 'nachricht',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Dieses Datum erscheint im Frontend.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -625,7 +625,7 @@ function ipwa_nachricht_field_default_field_instances() {
       'active' => 1,
       'module' => 'entityreference',
       'settings' => array(
-        'match_operator' => 'CONTAINS',
+        'match_operator' => 'STARTS_WITH',
         'path' => '',
         'size' => 60,
       ),
@@ -824,6 +824,8 @@ Schema für externe Links: http://www…',
   t('Anzuzeigende Seitenmodule (Paragraphen)');
   t('Datum');
   t('Dieser Artikel gehört zu');
+  t('Dieses Datum erscheint im Frontend');
+  t('Dieses Datum erscheint im Frontend.');
   t('Dokumente und Publikationen');
   t('Fließtext');
   t('Förderbekanntmachungen');
@@ -840,6 +842,7 @@ Schema für externe Links: http://www…');
   t('Sie können hier Inhalte vom Typ \'Dokument\' oder \'Publikation\' hinzufügen.');
   t('Sie können hier Inhalte vom Typ \'Förderbekanntmachung\' hinzufügen.');
   t('Sie können hier Inhalte vom Typ \'Nachricht\' hinzufügen.');
+  t('Sie können hier Inhalte vom Typ \'Projekt\' hinzufügen.');
   t('Sie können hier Inhalte vom Typ \'Termin\' hinzufügen.');
   t('Untertitel');
   t('Videounterschrift');
