@@ -49,9 +49,16 @@ function ipwa_f_rderbekanntmachung_strongarm() {
       'diff_standard' => array(
         'custom_settings' => FALSE,
       ),
+      'token' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
-      'form' => array(),
+      'form' => array(
+        'title' => array(
+          'weight' => '0',
+        ),
+      ),
       'display' => array(),
     ),
   );
@@ -85,8 +92,7 @@ function ipwa_f_rderbekanntmachung_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'node_options_f_rderbekanntmachung';
   $strongarm->value = array(
-    0 => 'status',
-    1 => 'promote',
+    0 => 'promote',
   );
   $export['node_options_f_rderbekanntmachung'] = $strongarm;
 
