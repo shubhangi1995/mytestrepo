@@ -1,27 +1,27 @@
 <?php
 /**
  * @file
- * ipwa_termin_.field_group.inc
+ * ipwa_publikation.field_group.inc
  */
 
 /**
  * Implements hook_field_group_info().
  */
-function ipwa_termin__field_group_info() {
+function ipwa_publikation_field_group_info() {
   $field_groups = array();
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
-  $field_group->identifier = 'group_rel_pub|node|termin|default';
+  $field_group->identifier = 'group_rel_pub|node|publikation|default';
   $field_group->group_name = 'group_rel_pub';
   $field_group->entity_type = 'node';
-  $field_group->bundle = 'termin';
+  $field_group->bundle = 'publikation';
   $field_group->mode = 'default';
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'rel_pub',
-    'weight' => '11',
+    'weight' => '10',
     'children' => array(),
     'format_type' => 'html-element',
     'format_settings' => array(
@@ -37,20 +37,20 @@ function ipwa_termin__field_group_info() {
       ),
     ),
   );
-  $field_groups['group_rel_pub|node|termin|default'] = $field_group;
+  $field_groups['group_rel_pub|node|publikation|default'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
-  $field_group->identifier = 'group_related_doc|node|termin|default';
+  $field_group->identifier = 'group_related_doc|node|publikation|default';
   $field_group->group_name = 'group_related_doc';
   $field_group->entity_type = 'node';
-  $field_group->bundle = 'termin';
+  $field_group->bundle = 'publikation';
   $field_group->mode = 'default';
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Related_doc',
-    'weight' => '13',
+    'weight' => '15',
     'children' => array(),
     'format_type' => 'html-element',
     'format_settings' => array(
@@ -66,20 +66,20 @@ function ipwa_termin__field_group_info() {
       ),
     ),
   );
-  $field_groups['group_related_doc|node|termin|default'] = $field_group;
+  $field_groups['group_related_doc|node|publikation|default'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
-  $field_group->identifier = 'group_related_event|node|termin|default';
+  $field_group->identifier = 'group_related_event|node|publikation|default';
   $field_group->group_name = 'group_related_event';
   $field_group->entity_type = 'node';
-  $field_group->bundle = 'termin';
+  $field_group->bundle = 'publikation';
   $field_group->mode = 'default';
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Related event',
-    'weight' => '14',
+    'weight' => '16',
     'children' => array(),
     'format_type' => 'html-element',
     'format_settings' => array(
@@ -95,15 +95,15 @@ function ipwa_termin__field_group_info() {
       ),
     ),
   );
-  $field_groups['group_related_event|node|termin|default'] = $field_group;
+  $field_groups['group_related_event|node|publikation|default'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
-  $field_group->identifier = 'group_title|node|termin|default';
+  $field_group->identifier = 'group_title|node|publikation|default';
   $field_group->group_name = 'group_title';
   $field_group->entity_type = 'node';
-  $field_group->bundle = 'termin';
+  $field_group->bundle = 'publikation';
   $field_group->mode = 'default';
   $field_group->parent_name = '';
   $field_group->data = array(
@@ -124,7 +124,7 @@ function ipwa_termin__field_group_info() {
       ),
     ),
   );
-  $field_groups['group_title|node|termin|default'] = $field_group;
+  $field_groups['group_title|node|publikation|default'] = $field_group;
 
   // Translatables
   // Included for use with string extractors like potx.
