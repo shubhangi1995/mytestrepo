@@ -29,8 +29,8 @@ function ipwa_preprocess_node(&$variables)
       //for embedding view Kommende Veranstaltungen
       $related_event_view .= views_embed_view("related_content", "block_1", $variables['nid']);
       $variables['content']['related_event']['#markup'] = $related_event_view;
-      $variables['content']['related_event']['#weight'] = $variables['elements']['#fieldgroups']['group_related_event']->weight;
-    }
+      $variables['content']['related_event']['#weight'] =isset($variables['elements']['#fieldgroups']['related_event']) ? $variables['elements']['#fieldgroups']['related_event']->weight : -1;
+  }
   }
 
   // display view 'Dokumente und Publikationen' instead of field 'Dokumente und Publikationen'
@@ -42,7 +42,7 @@ function ipwa_preprocess_node(&$variables)
       //for embedding view Kommende Veranstaltungen
       $related_doc_view .= views_embed_view("related_content", "block_2", $variables['nid']);
       $variables['content']['related_doc']['#markup'] = $related_doc_view;
-      $variables['content']['related_doc']['#weight'] = $variables['elements']['#fieldgroups']['group_related_doc']->weight;
+      $variables['content']['related_doc']['#weight'] = isset($variables['elements']['#fieldgroups']['related_doc']) ? $variables['elements']['#fieldgroups']['related_doc']->weight : -1;
     }
   }
 
@@ -55,7 +55,7 @@ function ipwa_preprocess_node(&$variables)
       //for embedding view Kommende Veranstaltungen
       $related_pub_view .= views_embed_view("related_content", "block_3", $variables['nid']);
       $variables['content']['rel_pub']['#markup'] = $related_pub_view;
-      $variables['content']['rel_pub']['#weight'] = $variables['elements']['#fieldgroups']['group_rel_pub']->weight;
+      $variables['content']['rel_pub']['#weight'] = isset($variables['elements']['#fieldgroups']['group_title']) ? $variables['elements']['#fieldgroups']['group_title']->weight : -1 -1;
     }
   }
 
