@@ -109,5 +109,75 @@ function ipwa_base_strongarm() {
   $strongarm->value = 1;
   $export['linkchecker_scan_blocks'] = $strongarm;
 
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'linkchecker_scan_node_article';
+  $strongarm->value = 1;
+  $export['linkchecker_scan_node_article'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'linkchecker_scan_node_bild';
+  $strongarm->value = 1;
+  $export['linkchecker_scan_node_bild'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'linkchecker_scan_node_document';
+  $strongarm->value = 1;
+  $export['linkchecker_scan_node_document'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'linkchecker_scan_node_f_rderbekanntmachung';
+  $strongarm->value = 1;
+  $export['linkchecker_scan_node_f_rderbekanntmachung'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'linkchecker_scan_node_nachricht';
+  $strongarm->value = 1;
+  $export['linkchecker_scan_node_nachricht'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'linkchecker_scan_node_projekt';
+  $strongarm->value = 1;
+  $export['linkchecker_scan_node_projekt'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'linkchecker_scan_node_protagonist';
+  $strongarm->value = 1;
+  $export['linkchecker_scan_node_protagonist'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'linkchecker_scan_node_publikation';
+  $strongarm->value = 1;
+  $export['linkchecker_scan_node_publikation'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'linkchecker_scan_node_termin';
+  $strongarm->value = 1;
+  $export['linkchecker_scan_node_termin'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'linkchecker_scan_node_webform';
+  $strongarm->value = 1;
+  $export['linkchecker_scan_node_webform'] = $strongarm;
+
   return $export;
 }
