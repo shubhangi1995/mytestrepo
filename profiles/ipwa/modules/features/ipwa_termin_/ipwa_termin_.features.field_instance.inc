@@ -644,7 +644,7 @@ function ipwa_termin__field_default_field_instances() {
     'bundle' => 'termin',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Maximale Anzahl zuzuordnender Themen: 3. Wählen Sie eine der vier Oberkategorien aus, sind deren zugeordnete Unterkategorien nicht auswählbar.',
+    'description' => 'Drücken Sie die "Strg"-Taste um mehrere Themen auszuwählen. Maximale Anzahl zuzuordnender Themen: 3. Wählen Sie eine der vier Oberkategorien aus, sind deren zugeordnete Unterkategorien nicht auswählbar.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -1028,12 +1028,12 @@ Schema für externe Links: http://www…',
   t('Datum');
   t('Dieser Artikel gehört zu');
   t('Dokumente und Publikationen');
+  t('Drücken Sie die "Strg"-Taste um mehrere Themen auszuwählen. Maximale Anzahl zuzuordnender Themen: 3. Wählen Sie eine der vier Oberkategorien aus, sind deren zugeordnete Unterkategorien nicht auswählbar.');
   t('Fließtext');
   t('Förderbekanntmachungen');
   t('Initiatoren zum Thema');
   t('Kommende Veranstaltungen');
   t('Kurztext');
-  t('Maximale Anzahl zuzuordnender Themen: 3. Wählen Sie eine der vier Oberkategorien aus, sind deren zugeordnete Unterkategorien nicht auswählbar.');
   t('Meldungen zum Thema');
   t('Ort');
   t('Projekte zum Thema');
