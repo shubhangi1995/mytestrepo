@@ -10,6 +10,50 @@
 function ipwa_termin__field_default_field_instances() {
   $field_instances = array();
 
+  // Exported field_instance: 'node-termin-body'.
+  $field_instances['node-termin-body'] = array(
+    'bundle' => 'termin',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 3,
+      ),
+      'teaser' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(
+          'trim_length' => 600,
+        ),
+        'type' => 'text_summary_or_trimmed',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'body',
+    'label' => 'Body',
+    'required' => FALSE,
+    'settings' => array(
+      'display_summary' => TRUE,
+      'text_processing' => 1,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 20,
+        'summary_rows' => 5,
+      ),
+      'type' => 'text_textarea_with_summary',
+      'weight' => 3,
+    ),
+  );
+
   // Exported field_instance: 'node-termin-field_anzuzeigende_seitenmodule_'.
   $field_instances['node-termin-field_anzuzeigende_seitenmodule_'] = array(
     'bundle' => 'termin',
@@ -980,6 +1024,7 @@ Schema für externe Links: http://www…',
   // Translatables
   // Included for use with string extractors like potx.
   t('Anzuzeigende Seitenmodule (Paragraphen)');
+  t('Body');
   t('Datum');
   t('Dieser Artikel gehört zu');
   t('Dokumente und Publikationen');

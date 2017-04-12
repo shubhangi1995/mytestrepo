@@ -15,6 +15,7 @@ features[field_group][] = group_rel_pub|node|termin|default
 features[field_group][] = group_related_doc|node|termin|default
 features[field_group][] = group_related_event|node|termin|default
 features[field_group][] = group_title|node|termin|default
+features[field_instance][] = node-termin-body
 features[field_instance][] = node-termin-field_anzuzeigende_seitenmodule_
 features[field_instance][] = node-termin-field_bild_ref
 features[field_instance][] = node-termin-field_body

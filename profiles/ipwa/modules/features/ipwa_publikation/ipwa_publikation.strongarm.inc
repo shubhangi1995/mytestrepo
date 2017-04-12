@@ -49,9 +49,6 @@ function ipwa_publikation_strongarm() {
       'diff_standard' => array(
         'custom_settings' => FALSE,
       ),
-      'token' => array(
-        'custom_settings' => FALSE,
-      ),
     ),
     'extra_fields' => array(
       'form' => array(
@@ -92,8 +89,7 @@ function ipwa_publikation_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'node_options_publikation';
   $strongarm->value = array(
-    0 => 'status',
-    1 => 'promote',
+    0 => 'promote',
   );
   $export['node_options_publikation'] = $strongarm;
 

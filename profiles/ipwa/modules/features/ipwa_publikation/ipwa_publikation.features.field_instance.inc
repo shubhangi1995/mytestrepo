@@ -540,6 +540,49 @@ function ipwa_publikation_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-publikation-field_publikation'.
+  $field_instances['node-publikation-field_publikation'] = array(
+    'bundle' => 'publikation',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Fügen Sie die Originalquelle hinzu indem Sie einen Inhalt vom Typ \'Dokument\' verlinken.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 10,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_publikation',
+    'label' => 'Publikation',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'entityreference',
+      'settings' => array(
+        'match_operator' => 'CONTAINS',
+        'path' => '',
+        'size' => 60,
+      ),
+      'type' => 'entityreference_autocomplete',
+      'weight' => 11,
+    ),
+  );
+
   // Exported field_instance: 'node-publikation-field_quellenangabe'.
   $field_instances['node-publikation-field_quellenangabe'] = array(
     'bundle' => 'publikation',
@@ -966,6 +1009,7 @@ Schema für externe Links: http://www…',
   t('Drücken Sie die "Strg"-Taste um mehrere Themen auszuwählen. Maximale Anzahl zuzuordnender Themen: 3. Wählen Sie eine der vier Oberkategorien aus, sind deren zugeordnete Unterkategorien nicht auswählbar.');
   t('Fließtext');
   t('Förderbekanntmachungen');
+  t('Fügen Sie die Originalquelle hinzu indem Sie einen Inhalt vom Typ \'Dokument\' verlinken.');
   t('Fügen Sie die Originalquelle hinzu indem Sie einen Inhalt vom Typ \'Dokument\' verlinken.t');
   t('Fügen Sie die YouTube URL ein. Erlaubte Formate: https://www.youtube.com/watch?v=wM73y2Iu8pU oder https://youtu.be/wM73y2Iu8pU');
   t('Herausgeber');
@@ -974,6 +1018,7 @@ Schema für externe Links: http://www…',
   t('Kurztext');
   t('Meldungen zum Thema');
   t('Projekte zum Thema');
+  t('Publikation');
   t('Quelle');
   t('Schema für Links: http://example.com');
   t('Schema für interne Links: /node/id bzw. relativer Pfad bei Listenansichten z.B. /aktuelle-beitraege. 

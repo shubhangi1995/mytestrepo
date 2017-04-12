@@ -89,8 +89,7 @@ function ipwa_document_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'node_options_document';
   $strongarm->value = array(
-    0 => 'status',
-    1 => 'promote',
+    0 => 'promote',
   );
   $export['node_options_document'] = $strongarm;
 
