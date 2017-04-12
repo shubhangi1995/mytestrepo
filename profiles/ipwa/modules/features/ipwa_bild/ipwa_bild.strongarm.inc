@@ -89,8 +89,7 @@ function ipwa_bild_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'node_options_bild';
   $strongarm->value = array(
-    0 => 'status',
-    1 => 'promote',
+    0 => 'promote',
   );
   $export['node_options_bild'] = $strongarm;
 
