@@ -119,9 +119,11 @@ function ipwa_projekt__field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
-          'link' => FALSE,
+          'links' => TRUE,
+          'use_content_language' => TRUE,
+          'view_mode' => 'default',
         ),
-        'type' => 'entityreference_label',
+        'type' => 'entityreference_entity_view',
         'weight' => 6,
       ),
       'teaser' => array(
