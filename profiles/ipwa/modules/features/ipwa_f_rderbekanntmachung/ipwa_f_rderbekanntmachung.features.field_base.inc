@@ -39,31 +39,6 @@ function ipwa_f_rderbekanntmachung_field_default_field_bases() {
     'type' => 'link_field',
   );
 
-  // Exported field_base: 'field_bis_auf_weiteres'.
-  $field_bases['field_bis_auf_weiteres'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_bis_auf_weiteres',
-    'indexes' => array(
-      'value' => array(
-        0 => 'value',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'list',
-    'settings' => array(
-      'allowed_values' => array(
-        0 => 0,
-        1 => 1,
-      ),
-      'allowed_values_function' => '',
-    ),
-    'translatable' => 0,
-    'type' => 'list_boolean',
-  );
-
   // Exported field_base: 'field_stichtag'.
   $field_bases['field_stichtag'] = array(
     'active' => 1,

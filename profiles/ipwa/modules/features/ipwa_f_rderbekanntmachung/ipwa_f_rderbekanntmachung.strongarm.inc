@@ -93,6 +93,7 @@ function ipwa_f_rderbekanntmachung_strongarm() {
   $strongarm->name = 'node_options_f_rderbekanntmachung';
   $strongarm->value = array(
     0 => 'promote',
+    1 => 'revision',
   );
   $export['node_options_f_rderbekanntmachung'] = $strongarm;
 
@@ -109,6 +110,20 @@ function ipwa_f_rderbekanntmachung_strongarm() {
   $strongarm->name = 'node_submitted_f_rderbekanntmachung';
   $strongarm->value = 0;
   $export['node_submitted_f_rderbekanntmachung'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'scheduler_publish_enable_f_rderbekanntmachung';
+  $strongarm->value = 1;
+  $export['scheduler_publish_enable_f_rderbekanntmachung'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'scheduler_unpublish_enable_f_rderbekanntmachung';
+  $strongarm->value = 1;
+  $export['scheduler_unpublish_enable_f_rderbekanntmachung'] = $strongarm;
 
   return $export;
 }
