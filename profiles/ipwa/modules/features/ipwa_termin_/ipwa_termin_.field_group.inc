@@ -99,6 +99,35 @@ function ipwa_termin__field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_related_ort|node|termin|default';
+  $field_group->group_name = 'group_related_ort';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'termin';
+  $field_group->mode = 'default';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'related_ort',
+    'weight' => '7',
+    'children' => array(),
+    'format_type' => 'html-element',
+    'format_settings' => array(
+      'formatter' => '',
+      'instance_settings' => array(
+        'element' => 'div',
+        'show_label' => 0,
+        'label_element' => 'div',
+        'classes' => 'group-related-ort field-group-html-element',
+        'attributes' => '',
+        'required_fields' => 1,
+        'id' => '',
+      ),
+    ),
+  );
+  $field_groups['group_related_ort|node|termin|default'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_title|node|termin|default';
   $field_group->group_name = 'group_title';
   $field_group->entity_type = 'node';
@@ -130,6 +159,7 @@ function ipwa_termin__field_group_info() {
   t('Related event');
   t('Related publication');
   t('Related_doc');
+  t('related_ort');
   t('title');
 
   return $field_groups;
