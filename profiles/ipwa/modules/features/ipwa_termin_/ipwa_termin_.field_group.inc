@@ -20,20 +20,19 @@ function ipwa_termin__field_group_info() {
   $field_group->mode = 'default';
   $field_group->parent_name = '';
   $field_group->data = array(
-    'label' => 'rel_pub',
-    'weight' => '11',
+    'label' => 'Related publication',
+    'weight' => '13',
     'children' => array(),
     'format_type' => 'html-element',
     'format_settings' => array(
-      'formatter' => '',
+      'label' => 'Related publication',
       'instance_settings' => array(
-        'element' => 'div',
-        'show_label' => 0,
-        'label_element' => 'div',
-        'classes' => 'group-rel-pub field-group-html-element',
-        'attributes' => '',
-        'required_fields' => 1,
         'id' => '',
+        'classes' => 'group-rel-pub field-group-html-element',
+        'element' => 'div',
+        'show_label' => '0',
+        'label_element' => 'div',
+        'attributes' => '',
       ),
     ),
   );
@@ -50,7 +49,7 @@ function ipwa_termin__field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Related_doc',
-    'weight' => '13',
+    'weight' => '15',
     'children' => array(),
     'format_type' => 'html-element',
     'format_settings' => array(
@@ -79,7 +78,7 @@ function ipwa_termin__field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Related event',
-    'weight' => '14',
+    'weight' => '16',
     'children' => array(),
     'format_type' => 'html-element',
     'format_settings' => array(
@@ -129,8 +128,8 @@ function ipwa_termin__field_group_info() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Related event');
+  t('Related publication');
   t('Related_doc');
-  t('rel_pub');
   t('title');
 
   return $field_groups;
