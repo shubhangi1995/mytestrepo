@@ -152,46 +152,6 @@ function ipwa_termin__field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-termin-field_body'.
-  $field_instances['node-termin-field_body'] = array(
-    'bundle' => 'termin',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 9,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_body',
-    'label' => 'Fließtext',
-    'required' => 1,
-    'settings' => array(
-      'text_processing' => 1,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'text',
-      'settings' => array(
-        'rows' => 5,
-      ),
-      'type' => 'text_textarea',
-      'weight' => 11,
-    ),
-  );
-
   // Exported field_instance: 'node-termin-field_dokumente_und_publikatione'.
   $field_instances['node-termin-field_dokumente_und_publikatione'] = array(
     'bundle' => 'termin',
@@ -1029,7 +989,6 @@ Schema für externe Links: http://www…',
   t('Dieser Artikel gehört zu');
   t('Dokumente und Publikationen');
   t('Drücken Sie die "Strg"-Taste um mehrere Themen auszuwählen. Maximale Anzahl zuzuordnender Themen: 3. Wählen Sie eine der vier Oberkategorien aus, sind deren zugeordnete Unterkategorien nicht auswählbar.');
-  t('Fließtext');
   t('Förderbekanntmachungen');
   t('Initiatoren zum Thema');
   t('Kommende Veranstaltungen');
