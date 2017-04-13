@@ -12,7 +12,8 @@
  * @params $variables
  *
  */
-function ipwa_preprocess_node(&$variables) {
+function ipwa_preprocess_node(&$variables)
+{
   if ($variables['type'] == 'bild') {
     // Don't show title
     $variables['title'] = '';
@@ -26,8 +27,8 @@ function ipwa_preprocess_node(&$variables) {
       //for embedding view Kommende Veranstaltungen
       $related_event_view .= views_embed_view("related_content", "block_1", $variables['nid']);
       $variables['content']['related_event']['#markup'] = $related_event_view;
-      $variables['content']['related_event']['#weight'] =isset($variables['elements']['#fieldgroups']['group_related_event']) ? $variables['elements']['#fieldgroups']['group_related_event']->weight : -1;
-  }
+      $variables['content']['related_event']['#weight'] = isset($variables['elements']['#fieldgroups']['group_related_event']) ? $variables['elements']['#fieldgroups']['group_related_event']->weight : -1;
+    }
   }
 
   // display view 'Dokumente und Publikation' instead of field 'Dokumente und Publikationen'
@@ -43,7 +44,7 @@ function ipwa_preprocess_node(&$variables) {
     }
   }
 
-// display view 'Publikationen' instead of field 'Publikation'
+  // display view 'Publikationen' instead of field 'Publikation'
   if (!empty($variables['field_publication'])) {
     $view = views_get_view_result("related_content", "block_3", $variables['nid']);
     $related_pub_view = '';
@@ -59,21 +60,22 @@ function ipwa_preprocess_node(&$variables) {
   // Change position of title field
   // (mostly will be displayed under date field)
   if (isset($variables['title']) && $variables['title']) {
-      $variables['content']['title'] = array(
-        '#markup' => '<h1 class="page-title">' . $variables['title'] . '</h1>',
-        '#weight' => isset($variables['elements']['#fieldgroups']['group_title']) ? $variables['elements']['#fieldgroups']['group_title']->weight : -1);
-    }
+    $variables['content']['title'] = array(
+      '#markup' => '<h1 class="page-title">' . $variables['title'] . '</h1>',
+      '#weight' => isset($variables['elements']['#fieldgroups']['group_title']) ? $variables['elements']['#fieldgroups']['group_title']->weight : -1);
   }
 
+ // print_r($variables['content']);
 
-  /**
-   * Implements ipwa_preprocess_field().
-   *
-   * Theme preprocess function for field.tpl.php
-   *
-   * @params $variables
-   *
-   */
+}
+/**
+ * Implements ipwa_preprocess_field().
+ *
+ * Theme preprocess function for field.tpl.php
+ *
+ * @params $variables
+ *
+ */
 
 // to link the lable of referenced node with the actual node
   function ipwa_preprocess_field(&$variables) {
