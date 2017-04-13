@@ -12,7 +12,7 @@ include_once 'ipwa_f_rderbekanntmachung.features.inc';
  * @params $node
  *
  */
-function ipwa_node_view($node, $view_mode, $langcode) {
+function ipwa_f_rderbekanntmachung_node_view($node, $view_mode, $langcode) {
   // for CT Förderbekanntmachung
   if ($node->type == 'f_rderbekanntmachung' && !empty($node->content['field_bis_auf_weiteres'])) {
     // if field 'bis auf weiteres' is checked

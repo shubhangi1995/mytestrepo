@@ -12,7 +12,7 @@ include_once 'ipwa_termin_.features.inc';
  * @param $view
  *
  */
-function ipwa_views_pre_render(&$view) {
+function ipwa_termin__views_pre_render(&$view) {
   //For Related content: Kommende Veranstaltungen view
   if ($view->name=='related_content') {
     foreach($view->result as $key => $result) {

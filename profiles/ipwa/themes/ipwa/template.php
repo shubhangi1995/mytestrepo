@@ -65,7 +65,22 @@ function ipwa_preprocess_node(&$variables)
       '#weight' => isset($variables['elements']['#fieldgroups']['group_title']) ? $variables['elements']['#fieldgroups']['group_title']->weight : -1);
   }
 
- // print_r($variables['content']);
+
+  if ($variables['type'] == 'termin') {
+    // Display of Ort field
+    if(!empty($variables['field_ort'])) {
+      $variables['content']['rel_ort']['#markup'] = $variables['field_ort'][0]['value'];
+      $variables['content']['rel_ort']['#weight'] = isset($variables['elements']['#fieldgroups']['group_related_ort']) ? $variables['elements']['#fieldgroups']['group_related_ort']->weight : -1;
+
+      // show field 'Ort' appended with value of  field 'Zusätzliche Informationen zum Ort' if provided
+      if (!empty($variables['field_zus_tzliche_informationen_'])) {
+        $variables['content']['field_ort'][0]['#markup'] = $variables['content']['field_ort'][0]['#markup'] . ' ' . $variables['field_zus_tzliche_informationen_']['und'][0]['value'];
+      }
+    }
+  }
+
+
+
 
 }
 /**
