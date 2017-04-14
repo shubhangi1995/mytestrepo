@@ -21,7 +21,7 @@ function ipwa_termin__field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Related publication',
-    'weight' => '13',
+    'weight' => '11',
     'children' => array(),
     'format_type' => 'html-element',
     'format_settings' => array(
@@ -48,20 +48,19 @@ function ipwa_termin__field_group_info() {
   $field_group->mode = 'default';
   $field_group->parent_name = '';
   $field_group->data = array(
-    'label' => 'Related_doc',
-    'weight' => '15',
+    'label' => 'Related doc',
+    'weight' => '13',
     'children' => array(),
     'format_type' => 'html-element',
     'format_settings' => array(
-      'formatter' => '',
+      'label' => 'Related doc',
       'instance_settings' => array(
-        'element' => 'div',
-        'show_label' => 0,
-        'label_element' => 'div',
-        'classes' => 'group-related-doc field-group-html-element',
-        'attributes' => '',
-        'required_fields' => 1,
         'id' => '',
+        'classes' => 'group-related-doc field-group-html-element',
+        'element' => 'div',
+        'show_label' => '0',
+        'label_element' => 'div',
+        'attributes' => '',
       ),
     ),
   );
@@ -78,7 +77,7 @@ function ipwa_termin__field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Related event',
-    'weight' => '16',
+    'weight' => '14',
     'children' => array(),
     'format_type' => 'html-element',
     'format_settings' => array(
@@ -106,20 +105,19 @@ function ipwa_termin__field_group_info() {
   $field_group->mode = 'default';
   $field_group->parent_name = '';
   $field_group->data = array(
-    'label' => 'related_ort',
-    'weight' => '7',
+    'label' => 'Related ort',
+    'weight' => '0',
     'children' => array(),
     'format_type' => 'html-element',
     'format_settings' => array(
-      'formatter' => '',
+      'label' => 'Related ort',
       'instance_settings' => array(
-        'element' => 'div',
-        'show_label' => 0,
-        'label_element' => 'div',
-        'classes' => 'group-related-ort field-group-html-element',
-        'attributes' => '',
-        'required_fields' => 1,
         'id' => '',
+        'classes' => 'group-related-ort field-group-html-element',
+        'element' => 'div',
+        'show_label' => '0',
+        'label_element' => 'div',
+        'attributes' => '',
       ),
     ),
   );
@@ -156,10 +154,10 @@ function ipwa_termin__field_group_info() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('Related doc');
   t('Related event');
+  t('Related ort');
   t('Related publication');
-  t('Related_doc');
-  t('related_ort');
   t('title');
 
   return $field_groups;
