@@ -17,6 +17,13 @@ function ipwa_termin__ctools_plugin_api($module = NULL, $api = NULL) {
 }
 
 /**
+ * Implements hook_views_api().
+ */
+function ipwa_termin__views_api($module = NULL, $api = NULL) {
+  return array("api" => "3.0");
+}
+
+/**
  * Implements hook_node_info().
  */
 function ipwa_termin__node_info() {

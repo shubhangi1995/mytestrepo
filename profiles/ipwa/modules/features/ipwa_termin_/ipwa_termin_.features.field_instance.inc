@@ -24,6 +24,13 @@ function ipwa_termin__field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 3,
       ),
+      'ical' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 3,
+      ),
       'teaser' => array(
         'label' => 'hidden',
         'module' => 'text',
@@ -36,15 +43,14 @@ function ipwa_termin__field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'body',
-    'label' => 'Fließtext',
-    'required' => 0,
+    'label' => 'Body',
+    'required' => FALSE,
     'settings' => array(
-      'display_summary' => 1,
+      'display_summary' => TRUE,
       'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
-      'active' => 1,
       'module' => 'text',
       'settings' => array(
         'rows' => 20,
@@ -63,6 +69,15 @@ function ipwa_termin__field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'paragraphs',
+        'settings' => array(
+          'view_mode' => 'full',
+        ),
+        'type' => 'paragraphs_view',
+        'weight' => 10,
+      ),
+      'ical' => array(
         'label' => 'hidden',
         'module' => 'paragraphs',
         'settings' => array(
@@ -126,6 +141,17 @@ function ipwa_termin__field_default_field_instances() {
         'type' => 'entityreference_entity_view',
         'weight' => 12,
       ),
+      'ical' => array(
+        'label' => 'hidden',
+        'module' => 'entityreference',
+        'settings' => array(
+          'links' => TRUE,
+          'use_content_language' => TRUE,
+          'view_mode' => 'default',
+        ),
+        'type' => 'entityreference_entity_view',
+        'weight' => 12,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -153,6 +179,53 @@ function ipwa_termin__field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-termin-field_body'.
+  $field_instances['node-termin-field_body'] = array(
+    'bundle' => 'termin',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 9,
+      ),
+      'ical' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 9,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_body',
+    'label' => 'Fließtext',
+    'required' => 1,
+    'settings' => array(
+      'text_processing' => 1,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 5,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 11,
+    ),
+  );
+
   // Exported field_instance: 'node-termin-field_dokumente_und_publikatione'.
   $field_instances['node-termin-field_dokumente_und_publikatione'] = array(
     'bundle' => 'termin',
@@ -164,7 +237,13 @@ function ipwa_termin__field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 25,
+        'weight' => 24,
+      ),
+      'ical' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 24,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -211,7 +290,21 @@ function ipwa_termin__field_default_field_instances() {
           'show_remaining_days' => 0,
         ),
         'type' => 'date_default',
-        'weight' => 5,
+        'weight' => 4,
+      ),
+      'ical' => array(
+        'label' => 'above',
+        'module' => 'date',
+        'settings' => array(
+          'format_type' => 'short',
+          'fromto' => 'both',
+          'multiple_from' => '',
+          'multiple_number' => '',
+          'multiple_to' => '',
+          'show_remaining_days' => 0,
+        ),
+        'type' => 'date_default',
+        'weight' => 4,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -264,6 +357,15 @@ function ipwa_termin__field_default_field_instances() {
         'type' => 'entityreference_label',
         'weight' => 21,
       ),
+      'ical' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => 0,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 21,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -299,6 +401,15 @@ function ipwa_termin__field_default_field_instances() {
     'description' => 'Sie können hier Inhalte vom Typ \'Akteur\' hinzufügen.',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 16,
+      ),
+      'ical' => array(
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
@@ -346,7 +457,14 @@ function ipwa_termin__field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 9,
+        'weight' => 8,
+      ),
+      'ical' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 8,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -390,6 +508,15 @@ function ipwa_termin__field_default_field_instances() {
         'type' => 'entityreference_label',
         'weight' => 15,
       ),
+      'ical' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 15,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -425,11 +552,18 @@ function ipwa_termin__field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'inline',
+        'label' => 'hidden',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 7,
+        'weight' => 0,
+      ),
+      'ical' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -465,6 +599,15 @@ function ipwa_termin__field_default_field_instances() {
     'description' => 'Sie können hier Inhalte vom Typ \'Projekt\' hinzufügen.',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 17,
+      ),
+      'ical' => array(
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
@@ -516,6 +659,15 @@ function ipwa_termin__field_default_field_instances() {
         'type' => 'entityreference_label',
         'weight' => 23,
       ),
+      'ical' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 23,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -555,7 +707,14 @@ function ipwa_termin__field_default_field_instances() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 8,
+        'weight' => 7,
+      ),
+      'ical' => array(
+        'label' => 'inline',
+        'module' => 'link',
+        'settings' => array(),
+        'type' => 'link_default',
+        'weight' => 7,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -612,7 +771,14 @@ function ipwa_termin__field_default_field_instances() {
         'module' => 'i18n_taxonomy',
         'settings' => array(),
         'type' => 'i18n_taxonomy_term_reference_link',
-        'weight' => 4,
+        'weight' => 3,
+      ),
+      'ical' => array(
+        'label' => 'above',
+        'module' => 'i18n_taxonomy',
+        'settings' => array(),
+        'type' => 'i18n_taxonomy_term_reference_link',
+        'weight' => 3,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -645,6 +811,13 @@ function ipwa_termin__field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 2,
+      ),
+      'ical' => array(
         'label' => 'hidden',
         'module' => 'text',
         'settings' => array(),
@@ -688,7 +861,13 @@ function ipwa_termin__field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 26,
+        'weight' => 25,
+      ),
+      'ical' => array(
+        'label' => 'hidden',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 25,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -725,6 +904,13 @@ function ipwa_termin__field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'inline',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 20,
+      ),
+      'ical' => array(
         'label' => 'inline',
         'module' => 'text',
         'settings' => array(),
@@ -771,6 +957,13 @@ function ipwa_termin__field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 19,
       ),
+      'ical' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 19,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -806,6 +999,13 @@ function ipwa_termin__field_default_field_instances() {
 Schema für externe Links: http://www…',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'link',
+        'settings' => array(),
+        'type' => 'link_default',
+        'weight' => 22,
+      ),
+      'ical' => array(
         'label' => 'above',
         'module' => 'link',
         'settings' => array(),
@@ -879,6 +1079,23 @@ Schema für externe Links: http://www…',
         'type' => 'youtube_video',
         'weight' => 18,
       ),
+      'ical' => array(
+        'label' => 'hidden',
+        'module' => 'youtube',
+        'settings' => array(
+          'youtube_autohide' => FALSE,
+          'youtube_autoplay' => FALSE,
+          'youtube_controls' => FALSE,
+          'youtube_height' => NULL,
+          'youtube_iv_load_policy' => FALSE,
+          'youtube_loop' => FALSE,
+          'youtube_showinfo' => FALSE,
+          'youtube_size' => '420x315',
+          'youtube_width' => NULL,
+        ),
+        'type' => 'youtube_video',
+        'weight' => 18,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -914,7 +1131,14 @@ Schema für externe Links: http://www…',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 6,
+        'weight' => 5,
+      ),
+      'ical' => array(
+        'label' => 'inline',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 5,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -951,9 +1175,17 @@ Schema für externe Links: http://www…',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
+        'module' => 'text',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 24,
+        'type' => 'text_default',
+        'weight' => 6,
+      ),
+      'ical' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 6,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -984,6 +1216,7 @@ Schema für externe Links: http://www…',
   // Translatables
   // Included for use with string extractors like potx.
   t('Anzuzeigende Seitenmodule (Paragraphen)');
+  t('Body');
   t('Datum');
   t('Dieser Artikel gehört zu');
   t('Dokumente und Publikationen');

@@ -49,6 +49,9 @@ function ipwa_termin__strongarm() {
       'diff_standard' => array(
         'custom_settings' => FALSE,
       ),
+      'ical' => array(
+        'custom_settings' => TRUE,
+      ),
       'token' => array(
         'custom_settings' => FALSE,
       ),
