@@ -233,7 +233,7 @@ function ipwa_termin__field_default_field_instances() {
     'description' => 'Tragen Sie hier den Veranstaltungstag ein.',
     'display' => array(
       'default' => array(
-        'label' => 'hidden',
+        'label' => 'inline',
         'module' => 'date',
         'settings' => array(
           'format_type' => 'short',
@@ -506,7 +506,7 @@ function ipwa_termin__field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'hidden',
+        'label' => 'inline',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
@@ -606,11 +606,8 @@ function ipwa_termin__field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'link' => FALSE,
-        ),
-        'type' => 'entityreference_label',
+        'settings' => array(),
+        'type' => 'hidden',
         'weight' => 25,
       ),
       'ical' => array(
