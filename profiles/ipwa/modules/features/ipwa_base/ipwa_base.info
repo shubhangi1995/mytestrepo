@@ -18,6 +18,7 @@ dependencies[] = link
 dependencies[] = linkchecker
 dependencies[] = number
 dependencies[] = paragraphs
+dependencies[] = piwik
 dependencies[] = revisioning
 dependencies[] = scheduler
 dependencies[] = strongarm
