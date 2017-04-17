@@ -43,7 +43,7 @@ Erlaubte Dateitypen: png gif jpg jpeg.',
       'description_field' => 0,
       'file_directory' => '',
       'file_extensions' => 'png gif jpg jpeg',
-      'max_filesize' => '',
+      'max_filesize' => '1.96 GB',
       'user_register_form' => FALSE,
     ),
     'widget' => array(

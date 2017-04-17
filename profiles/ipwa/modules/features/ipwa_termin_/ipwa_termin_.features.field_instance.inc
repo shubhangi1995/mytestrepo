@@ -76,7 +76,7 @@ function ipwa_termin__field_default_field_instances() {
           'view_mode' => 'full',
         ),
         'type' => 'paragraphs_view',
-        'weight' => 11,
+        'weight' => 10,
       ),
       'ical' => array(
         'label' => 'hidden',
@@ -140,7 +140,7 @@ function ipwa_termin__field_default_field_instances() {
           'view_mode' => 'default',
         ),
         'type' => 'entityreference_entity_view',
-        'weight' => 13,
+        'weight' => 12,
       ),
       'ical' => array(
         'label' => 'hidden',
@@ -191,7 +191,7 @@ function ipwa_termin__field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 25,
+        'weight' => 23,
       ),
       'ical' => array(
         'label' => 'hidden',
@@ -309,7 +309,7 @@ function ipwa_termin__field_default_field_instances() {
           'link' => 0,
         ),
         'type' => 'entityreference_label',
-        'weight' => 22,
+        'weight' => 21,
       ),
       'ical' => array(
         'label' => 'above',
@@ -361,7 +361,7 @@ function ipwa_termin__field_default_field_instances() {
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 17,
+        'weight' => 16,
       ),
       'ical' => array(
         'label' => 'above',
@@ -460,7 +460,7 @@ function ipwa_termin__field_default_field_instances() {
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 16,
+        'weight' => 15,
       ),
       'ical' => array(
         'label' => 'above',
@@ -559,7 +559,7 @@ function ipwa_termin__field_default_field_instances() {
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 18,
+        'weight' => 17,
       ),
       'ical' => array(
         'label' => 'above',
@@ -611,7 +611,7 @@ function ipwa_termin__field_default_field_instances() {
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 24,
+        'weight' => 25,
       ),
       'ical' => array(
         'label' => 'above',
@@ -631,7 +631,7 @@ function ipwa_termin__field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_publication',
-    'label' => 'publikation',
+    'label' => 'Publikation',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -815,7 +815,7 @@ function ipwa_termin__field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 26,
+        'weight' => 24,
       ),
       'ical' => array(
         'label' => 'hidden',
@@ -862,7 +862,7 @@ function ipwa_termin__field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 21,
+        'weight' => 20,
       ),
       'ical' => array(
         'label' => 'inline',
@@ -909,7 +909,7 @@ function ipwa_termin__field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 20,
+        'weight' => 19,
       ),
       'ical' => array(
         'label' => 'hidden',
@@ -957,7 +957,7 @@ Schema für externe Links: http://www…',
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 23,
+        'weight' => 22,
       ),
       'ical' => array(
         'label' => 'above',
@@ -1031,7 +1031,7 @@ Schema für externe Links: http://www…',
           'youtube_width' => NULL,
         ),
         'type' => 'youtube_video',
-        'weight' => 19,
+        'weight' => 18,
       ),
       'ical' => array(
         'label' => 'hidden',
@@ -1131,7 +1131,7 @@ Schema für externe Links: http://www…',
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 27,
+        'weight' => 26,
       ),
       'ical' => array(
         'label' => 'hidden',
@@ -1181,6 +1181,7 @@ Schema für externe Links: http://www…',
   t('Meldungen zum Thema');
   t('Ort');
   t('Projekte zum Thema');
+  t('Publikation');
   t('Quelle');
   t('Schema für interne Links: /node/id bzw. relativer Pfad bei Listenansichten z.B. /aktuelle-beitraege. 
 Schema für externe Links: http://www…');
@@ -1197,7 +1198,6 @@ Schema für externe Links: http://www…');
   t('YouTube URL');
   t('Zeit');
   t('Zusätzliche Informationen zum Ort');
-  t('publikation');
   t('© Bildquelle');
   t('© Videoquelle');
 

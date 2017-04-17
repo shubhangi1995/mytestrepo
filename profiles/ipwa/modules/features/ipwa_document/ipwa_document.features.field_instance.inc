@@ -165,7 +165,7 @@ Erlaubter Dateityp: *.pdf',
       'description_field' => 1,
       'file_directory' => '',
       'file_extensions' => 'pdf',
-      'max_filesize' => '196 GB',
+      'max_filesize' => '1.96 GB',
       'user_register_form' => FALSE,
     ),
     'widget' => array(
