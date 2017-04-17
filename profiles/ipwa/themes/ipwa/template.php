@@ -12,8 +12,7 @@
  * @params $variables
  *
  */
-function ipwa_preprocess_node(&$variables)
-{
+function ipwa_preprocess_node(&$variables) {
   if ($variables['type'] == 'bild') {
     // Don't show title
     $variables['title'] = '';
@@ -68,9 +67,9 @@ function ipwa_preprocess_node(&$variables)
 
   if ($variables['type'] == 'termin') {
     // Display of Ort field
-    if(!empty($variables['field_ort'])) {
+    if(isset($variables['content']['field_ort']) && !empty($variables['content']['field_ort'])) {
       $variables['content']['rel_ort'] = '';
-      $variables['content']['rel_ort']['#markup'] = $variables['field_ort'][0]['value'];
+      $variables['content']['rel_ort']['#markup'] = $variables['content']['field_ort'][0]['#markup'];
       $variables['content']['rel_ort']['#weight'] = isset($variables['elements']['#fieldgroups']['group_related_ort']) ? $variables['elements']['#fieldgroups']['group_related_ort']->weight : -1;
 
       // show field 'Ort' appended with value of  field 'Zusätzliche Informationen zum Ort' if provided
@@ -79,9 +78,8 @@ function ipwa_preprocess_node(&$variables)
       }
     }
   }
+}
 
-
- }
 /**
  * Implements ipwa_preprocess_field().
  *
