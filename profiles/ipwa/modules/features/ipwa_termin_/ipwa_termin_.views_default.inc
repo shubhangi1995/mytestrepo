@@ -88,6 +88,30 @@ function ipwa_termin__views_default_views() {
 
   /* Display: Termin */
   $handler = $view->new_display('page', 'Termin', 'page');
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Titel */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  /* Field: Content: Datum */
+  $handler->display->display_options['fields']['field_event_datum']['id'] = 'field_event_datum';
+  $handler->display->display_options['fields']['field_event_datum']['table'] = 'field_data_field_event_datum';
+  $handler->display->display_options['fields']['field_event_datum']['field'] = 'field_event_datum';
+  $handler->display->display_options['fields']['field_event_datum']['settings'] = array(
+    'format_type' => 'short',
+    'fromto' => 'both',
+    'multiple_number' => '',
+    'multiple_from' => '',
+    'multiple_to' => '',
+    'show_remaining_days' => 0,
+  );
+  /* Field: Content: Ort */
+  $handler->display->display_options['fields']['field_ort']['id'] = 'field_ort';
+  $handler->display->display_options['fields']['field_ort']['table'] = 'field_data_field_ort';
+  $handler->display->display_options['fields']['field_ort']['field'] = 'field_ort';
   $handler->display->display_options['defaults']['arguments'] = FALSE;
   /* Contextual filter: Content: Nid */
   $handler->display->display_options['arguments']['nid']['id'] = 'nid';
@@ -107,13 +131,41 @@ function ipwa_termin__views_default_views() {
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['style_plugin'] = 'date_ical';
   $handler->display->display_options['style_options']['cal_name'] = 'Termin Calander';
+  $handler->display->display_options['style_options']['exclude_dtstamp'] = TRUE;
   $handler->display->display_options['row_plugin'] = 'date_ical_fields';
   $handler->display->display_options['row_options']['date_field'] = 'field_event_datum';
   $handler->display->display_options['row_options']['title_field'] = 'title';
-  $handler->display->display_options['row_options']['description_field'] = 'field_themenzuweisung';
+  $handler->display->display_options['row_options']['location_field'] = 'field_ort';
   $handler->display->display_options['row_options']['additional_settings'] = array(
     'skip_blank_dates' => 0,
   );
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Titel */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  /* Field: Content: Datum */
+  $handler->display->display_options['fields']['field_event_datum']['id'] = 'field_event_datum';
+  $handler->display->display_options['fields']['field_event_datum']['table'] = 'field_data_field_event_datum';
+  $handler->display->display_options['fields']['field_event_datum']['field'] = 'field_event_datum';
+  $handler->display->display_options['fields']['field_event_datum']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_event_datum']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_event_datum']['alter']['text'] = '[field_event_datum]';
+  $handler->display->display_options['fields']['field_event_datum']['settings'] = array(
+    'format_type' => 'short',
+    'fromto' => 'both',
+    'multiple_number' => '',
+    'multiple_from' => '',
+    'multiple_to' => '',
+    'show_remaining_days' => 0,
+  );
+  /* Field: Content: Ort */
+  $handler->display->display_options['fields']['field_ort']['id'] = 'field_ort';
+  $handler->display->display_options['fields']['field_ort']['table'] = 'field_data_field_ort';
+  $handler->display->display_options['fields']['field_ort']['field'] = 'field_ort';
   $handler->display->display_options['path'] = 'calendar/ical/%/calendar.ics';
   $handler->display->display_options['displays'] = array(
     'block_1' => 'block_1',
@@ -159,7 +211,9 @@ function ipwa_termin__views_default_views() {
     t('Dieser Artikel gehört zu'),
     t('Datum'),
     t('All'),
+    t('Ort'),
     t('Feed'),
+    t('[field_event_datum]'),
     t('Calendar Block'),
     t('Calendar'),
   );
