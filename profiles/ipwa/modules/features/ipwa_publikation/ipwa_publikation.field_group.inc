@@ -20,20 +20,19 @@ function ipwa_publikation_field_group_info() {
   $field_group->mode = 'default';
   $field_group->parent_name = '';
   $field_group->data = array(
-    'label' => 'rel_pub',
+    'label' => 'Related publication',
     'weight' => '10',
     'children' => array(),
     'format_type' => 'html-element',
     'format_settings' => array(
-      'formatter' => '',
+      'label' => 'Related publication',
       'instance_settings' => array(
-        'element' => 'div',
-        'show_label' => 0,
-        'label_element' => 'div',
-        'classes' => 'group-rel-pub field-group-html-element',
-        'attributes' => '',
-        'required_fields' => 1,
         'id' => '',
+        'classes' => 'group-rel-pub field-group-html-element',
+        'element' => 'div',
+        'show_label' => '0',
+        'label_element' => 'div',
+        'attributes' => '',
       ),
     ),
   );
@@ -49,20 +48,19 @@ function ipwa_publikation_field_group_info() {
   $field_group->mode = 'default';
   $field_group->parent_name = '';
   $field_group->data = array(
-    'label' => 'Related_doc',
+    'label' => 'Related doc',
     'weight' => '15',
     'children' => array(),
     'format_type' => 'html-element',
     'format_settings' => array(
-      'formatter' => '',
+      'label' => 'Related doc',
       'instance_settings' => array(
-        'element' => 'div',
-        'show_label' => 0,
-        'label_element' => 'div',
-        'classes' => 'group-related-doc field-group-html-element',
-        'attributes' => '',
-        'required_fields' => 1,
         'id' => '',
+        'classes' => 'group-related-doc field-group-html-element',
+        'element' => 'div',
+        'show_label' => '0',
+        'label_element' => 'div',
+        'attributes' => '',
       ),
     ),
   );
@@ -128,9 +126,9 @@ function ipwa_publikation_field_group_info() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('Related doc');
   t('Related event');
-  t('Related_doc');
-  t('rel_pub');
+  t('Related publication');
   t('title');
 
   return $field_groups;

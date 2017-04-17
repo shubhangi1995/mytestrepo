@@ -210,6 +210,50 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance:
+  // 'node-f_rderbekanntmachung-field_bis_auf_weiteres'.
+  $field_instances['node-f_rderbekanntmachung-field_bis_auf_weiteres'] = array(
+    'bundle' => 'f_rderbekanntmachung',
+    'default_value' => array(
+      0 => array(
+        'value' => 0,
+      ),
+    ),
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'inline',
+        'module' => 'list',
+        'settings' => array(),
+        'type' => 'list_default',
+        'weight' => 5,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_bis_auf_weiteres',
+    'label' => 'Bis auf Weiteres',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(
+        'display_label' => 1,
+      ),
+      'type' => 'options_onoff',
+      'weight' => 6,
+    ),
+  );
+
   // Exported field_instance: 'node-f_rderbekanntmachung-field_datum'.
   $field_instances['node-f_rderbekanntmachung-field_datum'] = array(
     'bundle' => 'f_rderbekanntmachung',
@@ -943,6 +987,7 @@ Schema für externe Links: http://www…',
   // Included for use with string extractors like potx.
   t('Anzuzeigende Seitenmodule (Paragraphen)');
   t('Ausschreibende Stelle');
+  t('Bis auf Weiteres');
   t('Datum');
   t('Dieser Artikel gehört zu');
   t('Dieses Datum entspricht der Bewerbungsfrist. ');
