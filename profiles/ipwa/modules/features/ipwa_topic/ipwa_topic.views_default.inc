@@ -29,7 +29,7 @@ function ipwa_topic_views_default_views() {
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'better_exposed_filters';
-  $handler->display->display_options['exposed_form']['options']['exposed_sorts_label'] = 'sort  by';
+  $handler->display->display_options['exposed_form']['options']['exposed_sorts_label'] = '<none>';
   $handler->display->display_options['exposed_form']['options']['expose_sort_order'] = FALSE;
   $handler->display->display_options['exposed_form']['options']['bef'] = array(
     'general' => array(
@@ -138,7 +138,7 @@ function ipwa_topic_views_default_views() {
     t('more'),
     t('Apply'),
     t('Reset'),
-    t('sort  by'),
+    t('<none>'),
     t('Asc'),
     t('Desc'),
     t('Select any filter and click on Apply to see results'),
