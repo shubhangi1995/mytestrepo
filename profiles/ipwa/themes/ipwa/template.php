@@ -53,7 +53,7 @@ function ipwa_preprocess_node(&$variables)
       //for embedding view publikation
       $related_pub_view .= views_embed_view("related_content", "block_3", $variables['nid']);
       $variables['content']['rel_pub']['#markup'] = $related_pub_view;
-      $variables['content']['rel_pub']['#weight'] = isset($variables['elements']['#fieldgroups']['group_title']) ? $variables['elements']['#fieldgroups']['group_title']->weight : -1;
+      $variables['content']['rel_pub']['#weight'] = isset($variables['elements']['#fieldgroups']['group_rel_pub']) ? $variables['elements']['#fieldgroups']['group_rel_pub']->weight : -1;
     }
   }
 
@@ -100,7 +100,14 @@ function ipwa_preprocess_field(&$variables) {
   }
 }
 
-
+/**
+ * Implements theme_preprocess_page().
+ *
+ * Theme preprocess function for page.tpl.php
+ *
+ * @params $variables
+ *
+ */
 function ipwa_preprocess_page(&$variables) {
   if (arg(0) == 'taxonomy' && arg(1) == 'term' && is_numeric(arg(2))) {
     $term = taxonomy_term_load(arg(2));
