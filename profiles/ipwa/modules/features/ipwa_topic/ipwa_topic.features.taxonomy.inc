@@ -13,7 +13,7 @@ function ipwa_topic_taxonomy_default_vocabularies() {
       'name' => 'Themenzuweisung',
       'machine_name' => 'themenzuweisung',
       'description' => 'vocabulary for article content type',
-      'hierarchy' => 0,
+      'hierarchy' => 1,
       'module' => 'taxonomy',
       'weight' => 0,
       'language' => 'und',
