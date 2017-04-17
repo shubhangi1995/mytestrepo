@@ -69,6 +69,7 @@ function ipwa_preprocess_node(&$variables)
   if ($variables['type'] == 'termin') {
     // Display of Ort field
     if(!empty($variables['field_ort'])) {
+      $variables['content']['rel_ort'] = '';
       $variables['content']['rel_ort']['#markup'] = $variables['field_ort'][0]['value'];
       $variables['content']['rel_ort']['#weight'] = isset($variables['elements']['#fieldgroups']['group_related_ort']) ? $variables['elements']['#fieldgroups']['group_related_ort']->weight : -1;
 
@@ -80,9 +81,7 @@ function ipwa_preprocess_node(&$variables)
   }
 
 
-
-
-}
+ }
 /**
  * Implements ipwa_preprocess_field().
  *
@@ -91,15 +90,20 @@ function ipwa_preprocess_node(&$variables)
  * @params $variables
  *
  */
-
-// to link the lable of referenced node with the actual node
-  function ipwa_preprocess_field(&$variables) {
-    $fields = array("field_meldungen_zum_thema", "field_initiatoren_zum_thema", "field_projekte_zum_thema", "field_f_rderbekanntmachungen", "field_publikation");
-    if (in_array($variables['element']['#field_name'], $fields)) {
-      foreach ($variables['items'] as $key => $item) {
-        // alter field value to link to respective node.
-        $variables['items'][$key]['#markup'] = l($item['#markup'], 'node/' . $variables['element']['#items'][$key]['target_id']);
-      }
+function ipwa_preprocess_field(&$variables) {
+  $fields = array("field_meldungen_zum_thema", "field_initiatoren_zum_thema", "field_projekte_zum_thema", "field_f_rderbekanntmachungen", "field_publikation");
+  if (in_array($variables['element']['#field_name'], $fields)) {
+    foreach ($variables['items'] as $key => $item) {
+      // alter field value to link to respective node.
+      $variables['items'][$key]['#markup'] = l($item['#markup'], 'node/' . $variables['element']['#items'][$key]['target_id']);
     }
   }
+}
 
+
+function ipwa_preprocess_page(&$variables) {
+  if (arg(0) == 'taxonomy' && arg(1) == 'term' && is_numeric(arg(2))) {
+    $term = taxonomy_term_load(arg(2));
+    $variables['theme_hook_suggestions'][] = 'page__vocabulary__' . $term->vocabulary_machine_name;
+  }
+}
