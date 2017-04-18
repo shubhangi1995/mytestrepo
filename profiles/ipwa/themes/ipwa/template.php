@@ -77,6 +77,12 @@ function ipwa_preprocess_node(&$variables) {
         $variables['content']['field_ort'][0]['#markup'] = $variables['content']['field_ort'][0]['#markup'] . ' ' . $variables['field_zus_tzliche_informationen_']['und'][0]['value'];
       }
     }
+      if(!empty($variables['field_event_datum'][0]['value2'])){
+        if (strpos($variables['content']['field_event_datum'][0]['#markup'], 'to') !== false) {
+          $variables['content']['field_event_datum'][0]['#markup'] =str_replace('to','-',$variables['content']['field_event_datum'][0]['#markup']);
+        }
+
+      }
   }
 }
 
