@@ -111,7 +111,7 @@ function ipwa_article_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'scheduler_publish_enable_article';
-  $strongarm->value = 1;
+  $strongarm->value = 0;
   $export['scheduler_publish_enable_article'] = $strongarm;
 
   $strongarm = new stdClass();
