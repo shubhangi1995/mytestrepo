@@ -11,6 +11,398 @@ function ipwa_base_views_default_views() {
   $export = array();
 
   $view = new view();
+  $view->name = 'aktuelles';
+  $view->description = '';
+  $view->tag = 'default';
+  $view->base_table = 'node';
+  $view->human_name = 'Aktuelles';
+  $view->core = 7;
+  $view->api_version = '3.0';
+  $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
+
+  /* Display: Master */
+  $handler = $view->new_display('default', 'Master', 'default');
+  $handler->display->display_options['title'] = 'Aktuelles';
+  $handler->display->display_options['use_more_always'] = FALSE;
+  $handler->display->display_options['access']['type'] = 'perm';
+  $handler->display->display_options['cache']['type'] = 'none';
+  $handler->display->display_options['query']['type'] = 'views_query';
+  $handler->display->display_options['exposed_form']['type'] = 'better_exposed_filters';
+  $handler->display->display_options['exposed_form']['options']['exposed_sorts_label'] = '<none>';
+  $handler->display->display_options['exposed_form']['options']['expose_sort_order'] = FALSE;
+  $handler->display->display_options['exposed_form']['options']['bef'] = array(
+    'general' => array(
+      'input_required' => 0,
+      'text_input_required' => array(
+        'text_input_required' => array(
+          'value' => 'Select any filter and click on Apply to see results',
+          'format' => 'wysiwyg',
+        ),
+      ),
+      'allow_secondary' => 0,
+      'secondary_label' => 'Advanced options',
+      'secondary_collapse_override' => '0',
+    ),
+    'sort' => array(
+      'bef_format' => 'bef_links',
+      'advanced' => array(
+        'collapsible' => 0,
+        'collapsible_label' => 'Sort options',
+        'combine' => 0,
+        'combine_param' => 'sort_bef_combine',
+        'combine_rewrite' => '',
+        'reset' => 0,
+        'reset_label' => '',
+        'is_secondary' => 0,
+        'autosubmit' => 1,
+      ),
+    ),
+    'type' => array(
+      'bef_format' => 'bef',
+      'more_options' => array(
+        'bef_select_all_none' => FALSE,
+        'bef_collapsible' => 0,
+        'autosubmit' => 1,
+        'is_secondary' => 0,
+        'any_label' => 'Alles anzeigen',
+        'bef_filter_description' => '',
+        'tokens' => array(
+          'available' => array(
+            0 => 'global_types',
+          ),
+        ),
+        'rewrite' => array(
+          'filter_rewrite_values' => '',
+        ),
+      ),
+    ),
+    'field_themenzuweisung_tid' => array(
+      'bef_format' => 'default',
+      'more_options' => array(
+        'bef_select_all_none' => FALSE,
+        'bef_select_all_none_nested' => FALSE,
+        'bef_term_description' => 0,
+        'bef_collapsible' => 0,
+        'autosubmit' => 1,
+        'is_secondary' => 0,
+        'any_label' => 'Politik & Gesellschaft',
+        'bef_filter_description' => '',
+        'tokens' => array(
+          'available' => array(
+            0 => 'global_types',
+            1 => 'vocabulary',
+          ),
+        ),
+        'rewrite' => array(
+          'filter_rewrite_values' => '',
+        ),
+      ),
+    ),
+    'field_themenzuweisung_tid_1' => array(
+      'bef_format' => 'default',
+      'more_options' => array(
+        'bef_select_all_none' => FALSE,
+        'bef_select_all_none_nested' => FALSE,
+        'bef_term_description' => 0,
+        'bef_collapsible' => 0,
+        'autosubmit' => 1,
+        'is_secondary' => 0,
+        'any_label' => 'Wirtschaft & Arbeit',
+        'bef_filter_description' => '',
+        'tokens' => array(
+          'available' => array(
+            0 => 'global_types',
+            1 => 'vocabulary',
+          ),
+        ),
+        'rewrite' => array(
+          'filter_rewrite_values' => '',
+        ),
+      ),
+    ),
+    'field_themenzuweisung_tid_2' => array(
+      'bef_format' => 'default',
+      'more_options' => array(
+        'bef_select_all_none' => FALSE,
+        'bef_select_all_none_nested' => FALSE,
+        'bef_term_description' => 0,
+        'bef_collapsible' => 0,
+        'autosubmit' => 1,
+        'is_secondary' => 0,
+        'any_label' => 'Infos für Unternehmen',
+        'bef_filter_description' => '',
+        'tokens' => array(
+          'available' => array(
+            0 => 'global_types',
+            1 => 'vocabulary',
+          ),
+        ),
+        'rewrite' => array(
+          'filter_rewrite_values' => '',
+        ),
+      ),
+    ),
+    'field_themenzuweisung_tid_3' => array(
+      'bef_format' => 'default',
+      'more_options' => array(
+        'bef_select_all_none' => FALSE,
+        'bef_select_all_none_nested' => FALSE,
+        'bef_term_description' => 0,
+        'bef_collapsible' => 0,
+        'autosubmit' => 1,
+        'is_secondary' => 0,
+        'any_label' => 'Infos für Beschäftigte',
+        'bef_filter_description' => '',
+        'tokens' => array(
+          'available' => array(
+            0 => 'global_types',
+            1 => 'vocabulary',
+          ),
+        ),
+        'rewrite' => array(
+          'filter_rewrite_values' => '',
+        ),
+      ),
+    ),
+  );
+  $handler->display->display_options['pager']['type'] = 'full';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '10';
+  $handler->display->display_options['style_plugin'] = 'grid';
+  $handler->display->display_options['style_options']['columns'] = '3';
+  $handler->display->display_options['row_plugin'] = 'fields';
+  /* Header: Global: Text area */
+  $handler->display->display_options['header']['area']['id'] = 'area';
+  $handler->display->display_options['header']['area']['table'] = 'views';
+  $handler->display->display_options['header']['area']['field'] = 'area';
+  $handler->display->display_options['header']['area']['content'] = '[headline] this needs to be carified, about its content';
+  $handler->display->display_options['header']['area']['format'] = 'wysiwyg';
+  /* Field: Content: Type */
+  $handler->display->display_options['fields']['type']['id'] = 'type';
+  $handler->display->display_options['fields']['type']['table'] = 'node';
+  $handler->display->display_options['fields']['type']['field'] = 'type';
+  $handler->display->display_options['fields']['type']['label'] = '';
+  $handler->display->display_options['fields']['type']['element_label_colon'] = FALSE;
+  /* Field: Content: Titel */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  /* Field: Content: Datum */
+  $handler->display->display_options['fields']['field_datum']['id'] = 'field_datum';
+  $handler->display->display_options['fields']['field_datum']['table'] = 'field_data_field_datum';
+  $handler->display->display_options['fields']['field_datum']['field'] = 'field_datum';
+  $handler->display->display_options['fields']['field_datum']['label'] = '';
+  $handler->display->display_options['fields']['field_datum']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_datum']['settings'] = array(
+    'format_type' => 'short',
+    'fromto' => 'both',
+    'multiple_number' => '',
+    'multiple_from' => '',
+    'multiple_to' => '',
+    'show_remaining_days' => 0,
+  );
+  /* Field: Content: Dieser Artikel gehört zu */
+  $handler->display->display_options['fields']['field_themenzuweisung']['id'] = 'field_themenzuweisung';
+  $handler->display->display_options['fields']['field_themenzuweisung']['table'] = 'field_data_field_themenzuweisung';
+  $handler->display->display_options['fields']['field_themenzuweisung']['field'] = 'field_themenzuweisung';
+  $handler->display->display_options['fields']['field_themenzuweisung']['delta_offset'] = '0';
+  /* Sort criterion: Content: Datum (field_datum) */
+  $handler->display->display_options['sorts']['field_datum_value']['id'] = 'field_datum_value';
+  $handler->display->display_options['sorts']['field_datum_value']['table'] = 'field_data_field_datum';
+  $handler->display->display_options['sorts']['field_datum_value']['field'] = 'field_datum_value';
+  $handler->display->display_options['sorts']['field_datum_value']['order'] = 'DESC';
+  $handler->display->display_options['sorts']['field_datum_value']['exposed'] = TRUE;
+  $handler->display->display_options['sorts']['field_datum_value']['expose']['label'] = 'neueste zuerst';
+  /* Sort criterion: Content: Titel */
+  $handler->display->display_options['sorts']['title']['id'] = 'title';
+  $handler->display->display_options['sorts']['title']['table'] = 'node';
+  $handler->display->display_options['sorts']['title']['field'] = 'title';
+  $handler->display->display_options['sorts']['title']['exposed'] = TRUE;
+  $handler->display->display_options['sorts']['title']['expose']['label'] = 'A-Z';
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'f_rderbekanntmachung' => 'f_rderbekanntmachung',
+    'nachricht' => 'nachricht',
+    'publikation' => 'publikation',
+  );
+  $handler->display->display_options['filters']['type']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['type']['expose']['operator_id'] = 'type_op';
+  $handler->display->display_options['filters']['type']['expose']['operator'] = 'type_op';
+  $handler->display->display_options['filters']['type']['expose']['identifier'] = 'type';
+  $handler->display->display_options['filters']['type']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+  );
+  $handler->display->display_options['filters']['type']['expose']['reduce'] = TRUE;
+  /* Filter criterion: Content: Dieser Artikel gehört zu (field_themenzuweisung) */
+  $handler->display->display_options['filters']['field_themenzuweisung_tid']['id'] = 'field_themenzuweisung_tid';
+  $handler->display->display_options['filters']['field_themenzuweisung_tid']['table'] = 'field_data_field_themenzuweisung';
+  $handler->display->display_options['filters']['field_themenzuweisung_tid']['field'] = 'field_themenzuweisung_tid';
+  $handler->display->display_options['filters']['field_themenzuweisung_tid']['value'] = array(
+    1 => '1',
+    2 => '2',
+    3 => '3',
+    4 => '4',
+    5 => '5',
+    6 => '6',
+    7 => '7',
+    8 => '8',
+    9 => '9',
+    10 => '10',
+  );
+  $handler->display->display_options['filters']['field_themenzuweisung_tid']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['field_themenzuweisung_tid']['expose']['operator_id'] = 'field_themenzuweisung_tid_op';
+  $handler->display->display_options['filters']['field_themenzuweisung_tid']['expose']['operator'] = 'field_themenzuweisung_tid_op';
+  $handler->display->display_options['filters']['field_themenzuweisung_tid']['expose']['identifier'] = 'field_themenzuweisung_tid';
+  $handler->display->display_options['filters']['field_themenzuweisung_tid']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+  );
+  $handler->display->display_options['filters']['field_themenzuweisung_tid']['expose']['reduce'] = TRUE;
+  $handler->display->display_options['filters']['field_themenzuweisung_tid']['type'] = 'select';
+  $handler->display->display_options['filters']['field_themenzuweisung_tid']['vocabulary'] = 'themenzuweisung';
+  $handler->display->display_options['filters']['field_themenzuweisung_tid']['hierarchy'] = 1;
+  /* Filter criterion: Content: Dieser Artikel gehört zu (field_themenzuweisung) */
+  $handler->display->display_options['filters']['field_themenzuweisung_tid_1']['id'] = 'field_themenzuweisung_tid_1';
+  $handler->display->display_options['filters']['field_themenzuweisung_tid_1']['table'] = 'field_data_field_themenzuweisung';
+  $handler->display->display_options['filters']['field_themenzuweisung_tid_1']['field'] = 'field_themenzuweisung_tid';
+  $handler->display->display_options['filters']['field_themenzuweisung_tid_1']['value'] = array(
+    11 => '11',
+    12 => '12',
+    14 => '14',
+    15 => '15',
+    16 => '16',
+    17 => '17',
+    19 => '19',
+    20 => '20',
+    21 => '21',
+    22 => '22',
+    23 => '23',
+  );
+  $handler->display->display_options['filters']['field_themenzuweisung_tid_1']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['field_themenzuweisung_tid_1']['expose']['operator_id'] = 'field_themenzuweisung_tid_1_op';
+  $handler->display->display_options['filters']['field_themenzuweisung_tid_1']['expose']['operator'] = 'field_themenzuweisung_tid_1_op';
+  $handler->display->display_options['filters']['field_themenzuweisung_tid_1']['expose']['identifier'] = 'field_themenzuweisung_tid_1';
+  $handler->display->display_options['filters']['field_themenzuweisung_tid_1']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+  );
+  $handler->display->display_options['filters']['field_themenzuweisung_tid_1']['expose']['reduce'] = TRUE;
+  $handler->display->display_options['filters']['field_themenzuweisung_tid_1']['type'] = 'select';
+  $handler->display->display_options['filters']['field_themenzuweisung_tid_1']['vocabulary'] = 'themenzuweisung';
+  $handler->display->display_options['filters']['field_themenzuweisung_tid_1']['hierarchy'] = 1;
+  /* Filter criterion: Content: Dieser Artikel gehört zu (field_themenzuweisung) */
+  $handler->display->display_options['filters']['field_themenzuweisung_tid_2']['id'] = 'field_themenzuweisung_tid_2';
+  $handler->display->display_options['filters']['field_themenzuweisung_tid_2']['table'] = 'field_data_field_themenzuweisung';
+  $handler->display->display_options['filters']['field_themenzuweisung_tid_2']['field'] = 'field_themenzuweisung_tid';
+  $handler->display->display_options['filters']['field_themenzuweisung_tid_2']['value'] = array(
+    24 => '24',
+    25 => '25',
+    26 => '26',
+    27 => '27',
+    28 => '28',
+    29 => '29',
+    30 => '30',
+    31 => '31',
+    32 => '32',
+    33 => '33',
+  );
+  $handler->display->display_options['filters']['field_themenzuweisung_tid_2']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['field_themenzuweisung_tid_2']['expose']['operator_id'] = 'field_themenzuweisung_tid_2_op';
+  $handler->display->display_options['filters']['field_themenzuweisung_tid_2']['expose']['operator'] = 'field_themenzuweisung_tid_2_op';
+  $handler->display->display_options['filters']['field_themenzuweisung_tid_2']['expose']['identifier'] = 'field_themenzuweisung_tid_2';
+  $handler->display->display_options['filters']['field_themenzuweisung_tid_2']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+  );
+  $handler->display->display_options['filters']['field_themenzuweisung_tid_2']['expose']['reduce'] = TRUE;
+  $handler->display->display_options['filters']['field_themenzuweisung_tid_2']['type'] = 'select';
+  $handler->display->display_options['filters']['field_themenzuweisung_tid_2']['vocabulary'] = 'themenzuweisung';
+  $handler->display->display_options['filters']['field_themenzuweisung_tid_2']['hierarchy'] = 1;
+  /* Filter criterion: Content: Dieser Artikel gehört zu (field_themenzuweisung) */
+  $handler->display->display_options['filters']['field_themenzuweisung_tid_3']['id'] = 'field_themenzuweisung_tid_3';
+  $handler->display->display_options['filters']['field_themenzuweisung_tid_3']['table'] = 'field_data_field_themenzuweisung';
+  $handler->display->display_options['filters']['field_themenzuweisung_tid_3']['field'] = 'field_themenzuweisung_tid';
+  $handler->display->display_options['filters']['field_themenzuweisung_tid_3']['value'] = array(
+    34 => '34',
+    35 => '35',
+    36 => '36',
+    38 => '38',
+    39 => '39',
+    40 => '40',
+    41 => '41',
+    42 => '42',
+  );
+  $handler->display->display_options['filters']['field_themenzuweisung_tid_3']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['field_themenzuweisung_tid_3']['expose']['operator_id'] = 'field_themenzuweisung_tid_3_op';
+  $handler->display->display_options['filters']['field_themenzuweisung_tid_3']['expose']['operator'] = 'field_themenzuweisung_tid_3_op';
+  $handler->display->display_options['filters']['field_themenzuweisung_tid_3']['expose']['identifier'] = 'field_themenzuweisung_tid_3';
+  $handler->display->display_options['filters']['field_themenzuweisung_tid_3']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+  );
+  $handler->display->display_options['filters']['field_themenzuweisung_tid_3']['expose']['reduce'] = TRUE;
+  $handler->display->display_options['filters']['field_themenzuweisung_tid_3']['type'] = 'select';
+  $handler->display->display_options['filters']['field_themenzuweisung_tid_3']['vocabulary'] = 'themenzuweisung';
+  $handler->display->display_options['filters']['field_themenzuweisung_tid_3']['hierarchy'] = 1;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type_1']['id'] = 'type_1';
+  $handler->display->display_options['filters']['type_1']['table'] = 'node';
+  $handler->display->display_options['filters']['type_1']['field'] = 'type';
+  $handler->display->display_options['filters']['type_1']['value'] = array(
+    'f_rderbekanntmachung' => 'f_rderbekanntmachung',
+    'nachricht' => 'nachricht',
+    'publikation' => 'publikation',
+  );
+
+  /* Display: Page */
+  $handler = $view->new_display('page', 'Page', 'page');
+  $handler->display->display_options['path'] = 'aktuelles';
+  $translatables['aktuelles'] = array(
+    t('Master'),
+    t('Aktuelles'),
+    t('more'),
+    t('Apply'),
+    t('Reset'),
+    t('<none>'),
+    t('Asc'),
+    t('Desc'),
+    t('Select any filter and click on Apply to see results'),
+    t('Advanced options'),
+    t('Sort options'),
+    t('Alles anzeigen'),
+    t('Politik & Gesellschaft'),
+    t('Wirtschaft & Arbeit'),
+    t('Infos für Unternehmen'),
+    t('Infos für Beschäftigte'),
+    t('Items per page'),
+    t('- All -'),
+    t('Offset'),
+    t('« first'),
+    t('‹ previous'),
+    t('next ›'),
+    t('last »'),
+    t('[headline] this needs to be carified, about its content'),
+    t('Dieser Artikel gehört zu'),
+    t('neueste zuerst'),
+    t('A-Z'),
+    t('Page'),
+  );
+  $export['aktuelles'] = $view;
+
+  $view = new view();
   $view->name = 'clone_of_administration_nodes';
   $view->description = 'Find and manage content.';
   $view->tag = 'admin';
@@ -670,6 +1062,140 @@ function ipwa_base_views_default_views() {
     t('Publikation downloaden'),
   );
   $export['related_content'] = $view;
+
+  $view = new view();
+  $view->name = 'themenzuweisung_flyouts';
+  $view->description = '';
+  $view->tag = 'default';
+  $view->base_table = 'taxonomy_term_data';
+  $view->human_name = 'Themenzuweisung Flyouts';
+  $view->core = 7;
+  $view->api_version = '3.0';
+  $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
+
+  /* Display: Master */
+  $handler = $view->new_display('default', 'Master', 'default');
+  $handler->display->display_options['title'] = 'Infos für Unternehmen';
+  $handler->display->display_options['use_more_always'] = FALSE;
+  $handler->display->display_options['access']['type'] = 'perm';
+  $handler->display->display_options['cache']['type'] = 'none';
+  $handler->display->display_options['query']['type'] = 'views_query';
+  $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['pager']['type'] = 'none';
+  $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['row_plugin'] = 'fields';
+  /* Header: Global: Text area */
+  $handler->display->display_options['header']['area']['id'] = 'area';
+  $handler->display->display_options['header']['area']['table'] = 'views';
+  $handler->display->display_options['header']['area']['field'] = 'area';
+  $handler->display->display_options['header']['area']['label'] = 'Themen in fokus';
+  $handler->display->display_options['header']['area']['content'] = 'Themen in Fokus';
+  $handler->display->display_options['header']['area']['format'] = 'wysiwyg';
+  /* Field: Taxonomy term: Name */
+  $handler->display->display_options['fields']['name']['id'] = 'name';
+  $handler->display->display_options['fields']['name']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['fields']['name']['field'] = 'name';
+  $handler->display->display_options['fields']['name']['label'] = '';
+  $handler->display->display_options['fields']['name']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['name']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['name']['link_to_taxonomy'] = TRUE;
+  /* Filter criterion: Taxonomy vocabulary: Machine name */
+  $handler->display->display_options['filters']['machine_name']['id'] = 'machine_name';
+  $handler->display->display_options['filters']['machine_name']['table'] = 'taxonomy_vocabulary';
+  $handler->display->display_options['filters']['machine_name']['field'] = 'machine_name';
+  $handler->display->display_options['filters']['machine_name']['value'] = array(
+    'themenzuweisung' => 'themenzuweisung',
+  );
+  /* Filter criterion: Taxonomy term: Parent term */
+  $handler->display->display_options['filters']['parent']['id'] = 'parent';
+  $handler->display->display_options['filters']['parent']['table'] = 'taxonomy_term_hierarchy';
+  $handler->display->display_options['filters']['parent']['field'] = 'parent';
+  $handler->display->display_options['filters']['parent']['value']['value'] = '34';
+
+  /* Display: Politik & Gesellschaft right view */
+  $handler = $view->new_display('block', 'Politik & Gesellschaft right view', 'block');
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Taxonomy vocabulary: Machine name */
+  $handler->display->display_options['filters']['machine_name']['id'] = 'machine_name';
+  $handler->display->display_options['filters']['machine_name']['table'] = 'taxonomy_vocabulary';
+  $handler->display->display_options['filters']['machine_name']['field'] = 'machine_name';
+  $handler->display->display_options['filters']['machine_name']['value'] = array(
+    'themenzuweisung' => 'themenzuweisung',
+  );
+  /* Filter criterion: Taxonomy term: Parent term */
+  $handler->display->display_options['filters']['parent']['id'] = 'parent';
+  $handler->display->display_options['filters']['parent']['table'] = 'taxonomy_term_hierarchy';
+  $handler->display->display_options['filters']['parent']['field'] = 'parent';
+  $handler->display->display_options['filters']['parent']['value']['value'] = '1';
+
+  /* Display: Wirtschaft & Arbeit right view */
+  $handler = $view->new_display('block', 'Wirtschaft & Arbeit right view', 'block_1');
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Taxonomy vocabulary: Machine name */
+  $handler->display->display_options['filters']['machine_name']['id'] = 'machine_name';
+  $handler->display->display_options['filters']['machine_name']['table'] = 'taxonomy_vocabulary';
+  $handler->display->display_options['filters']['machine_name']['field'] = 'machine_name';
+  $handler->display->display_options['filters']['machine_name']['value'] = array(
+    'themenzuweisung' => 'themenzuweisung',
+  );
+  /* Filter criterion: Taxonomy term: Parent term */
+  $handler->display->display_options['filters']['parent']['id'] = 'parent';
+  $handler->display->display_options['filters']['parent']['table'] = 'taxonomy_term_hierarchy';
+  $handler->display->display_options['filters']['parent']['field'] = 'parent';
+  $handler->display->display_options['filters']['parent']['value']['value'] = '11';
+
+  /* Display: Infos für Unternehmen right view */
+  $handler = $view->new_display('block', 'Infos für Unternehmen right view', 'block_2');
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Taxonomy vocabulary: Machine name */
+  $handler->display->display_options['filters']['machine_name']['id'] = 'machine_name';
+  $handler->display->display_options['filters']['machine_name']['table'] = 'taxonomy_vocabulary';
+  $handler->display->display_options['filters']['machine_name']['field'] = 'machine_name';
+  $handler->display->display_options['filters']['machine_name']['value'] = array(
+    'themenzuweisung' => 'themenzuweisung',
+  );
+  /* Filter criterion: Taxonomy term: Parent term */
+  $handler->display->display_options['filters']['parent']['id'] = 'parent';
+  $handler->display->display_options['filters']['parent']['table'] = 'taxonomy_term_hierarchy';
+  $handler->display->display_options['filters']['parent']['field'] = 'parent';
+  $handler->display->display_options['filters']['parent']['value']['value'] = '24';
+
+  /* Display: Infos für Beschäftigte */
+  $handler = $view->new_display('block', 'Infos für Beschäftigte', 'block_3');
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Taxonomy vocabulary: Machine name */
+  $handler->display->display_options['filters']['machine_name']['id'] = 'machine_name';
+  $handler->display->display_options['filters']['machine_name']['table'] = 'taxonomy_vocabulary';
+  $handler->display->display_options['filters']['machine_name']['field'] = 'machine_name';
+  $handler->display->display_options['filters']['machine_name']['value'] = array(
+    'themenzuweisung' => 'themenzuweisung',
+  );
+  /* Filter criterion: Taxonomy term: Parent term */
+  $handler->display->display_options['filters']['parent']['id'] = 'parent';
+  $handler->display->display_options['filters']['parent']['table'] = 'taxonomy_term_hierarchy';
+  $handler->display->display_options['filters']['parent']['field'] = 'parent';
+  $handler->display->display_options['filters']['parent']['value']['value'] = '34';
+  $translatables['themenzuweisung_flyouts'] = array(
+    t('Master'),
+    t('Infos für Unternehmen'),
+    t('more'),
+    t('Apply'),
+    t('Reset'),
+    t('Sort by'),
+    t('Asc'),
+    t('Desc'),
+    t('Themen in fokus'),
+    t('Themen in Fokus'),
+    t('Politik & Gesellschaft right view'),
+    t('Wirtschaft & Arbeit right view'),
+    t('Infos für Unternehmen right view'),
+    t('Infos für Beschäftigte'),
+  );
+  $export['themenzuweisung_flyouts'] = $view;
 
   return $export;
 }
