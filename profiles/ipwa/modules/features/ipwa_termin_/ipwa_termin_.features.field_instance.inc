@@ -22,7 +22,7 @@ function ipwa_termin__field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 3,
+        'weight' => 10,
       ),
       'ical' => array(
         'label' => 'hidden',
@@ -58,7 +58,7 @@ function ipwa_termin__field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 3,
+      'weight' => 4,
     ),
   );
 
@@ -76,7 +76,7 @@ function ipwa_termin__field_default_field_instances() {
           'view_mode' => 'full',
         ),
         'type' => 'paragraphs_view',
-        'weight' => 10,
+        'weight' => 11,
       ),
       'ical' => array(
         'label' => 'hidden',
@@ -176,7 +176,7 @@ function ipwa_termin__field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 10,
+      'weight' => 11,
     ),
   );
 
@@ -245,7 +245,7 @@ function ipwa_termin__field_default_field_instances() {
           'show_repeat_rule' => 'show',
         ),
         'type' => 'date_default',
-        'weight' => 5,
+        'weight' => 4,
       ),
       'ical' => array(
         'label' => 'above',
@@ -294,7 +294,7 @@ function ipwa_termin__field_default_field_instances() {
         'year_range' => '-3:+3',
       ),
       'type' => 'date_popup',
-      'weight' => 4,
+      'weight' => 5,
     ),
   );
 
@@ -449,6 +449,69 @@ function ipwa_termin__field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-termin-field_link_zur_anmeldung'.
+  $field_instances['node-termin-field_link_zur_anmeldung'] = array(
+    'bundle' => 'termin',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Tragen Sie hier den externen Link zur Anmeldung ein. ',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'link',
+        'settings' => array(),
+        'type' => 'link_default',
+        'weight' => 7,
+      ),
+      'ical' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_link_zur_anmeldung',
+    'label' => 'Link zur Anmeldung',
+    'required' => 0,
+    'settings' => array(
+      'absolute_url' => 1,
+      'attributes' => array(
+        'class' => '',
+        'configurable_class' => 0,
+        'configurable_title' => 0,
+        'rel' => '',
+        'target' => 'default',
+        'title' => '',
+      ),
+      'display' => array(
+        'url_cutoff' => 80,
+      ),
+      'enable_tokens' => 1,
+      'rel_remove' => 'default',
+      'title' => 'value',
+      'title_label_use_field_label' => 0,
+      'title_maxlength' => 128,
+      'title_value' => ' Jetzt anmelden',
+      'url' => 0,
+      'user_register_form' => FALSE,
+      'validate_url' => 1,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'link',
+      'settings' => array(),
+      'type' => 'link_field',
+      'weight' => 9,
+    ),
+  );
+
   // Exported field_instance: 'node-termin-field_meldungen_zum_thema'.
   $field_instances['node-termin-field_meldungen_zum_thema'] = array(
     'bundle' => 'termin',
@@ -513,7 +576,7 @@ function ipwa_termin__field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 7,
+        'weight' => 6,
       ),
       'ical' => array(
         'label' => 'hidden',
@@ -544,7 +607,7 @@ function ipwa_termin__field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 6,
+      'weight' => 7,
     ),
   );
 
@@ -597,55 +660,6 @@ function ipwa_termin__field_default_field_instances() {
       ),
       'type' => 'entityreference_autocomplete',
       'weight' => 20,
-    ),
-  );
-
-  // Exported field_instance: 'node-termin-field_publication'.
-  $field_instances['node-termin-field_publication'] = array(
-    'bundle' => 'termin',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 25,
-      ),
-      'ical' => array(
-        'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'link' => FALSE,
-        ),
-        'type' => 'entityreference_label',
-        'weight' => 23,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_publication',
-    'label' => 'Publikation',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'entityreference',
-      'settings' => array(
-        'match_operator' => 'STARTS_WITH',
-        'path' => '',
-        'size' => 60,
-      ),
-      'type' => 'entityreference_autocomplete',
-      'weight' => 9,
     ),
   );
 
@@ -709,7 +723,7 @@ function ipwa_termin__field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 8,
+      'weight' => 10,
     ),
   );
 
@@ -725,7 +739,7 @@ function ipwa_termin__field_default_field_instances() {
         'module' => 'i18n_taxonomy',
         'settings' => array(),
         'type' => 'i18n_taxonomy_term_reference_link',
-        'weight' => 4,
+        'weight' => 3,
       ),
       'ical' => array(
         'label' => 'above',
@@ -1078,14 +1092,14 @@ Schema für externe Links: http://www…',
     'bundle' => 'termin',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Geben Sie die Uhrzeit nach folgendem Schema ein: 12:00 Uhr oder auch 12:00 Uhr - 15:45 Uhr.',
     'display' => array(
       'default' => array(
         'label' => 'inline',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 6,
+        'weight' => 5,
       ),
       'ical' => array(
         'label' => 'inline',
@@ -1116,7 +1130,7 @@ Schema für externe Links: http://www…',
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 5,
+      'weight' => 6,
     ),
   );
 
@@ -1131,7 +1145,7 @@ Schema für externe Links: http://www…',
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 26,
+        'weight' => 25,
       ),
       'ical' => array(
         'label' => 'hidden',
@@ -1162,7 +1176,7 @@ Schema für externe Links: http://www…',
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 7,
+      'weight' => 8,
     ),
   );
 
@@ -1175,13 +1189,14 @@ Schema für externe Links: http://www…',
   t('Drücken Sie die "Strg"-Taste um mehrere Themen auszuwählen. Maximale Anzahl zuzuordnender Themen: 3. Wählen Sie eine der vier Oberkategorien aus, sind deren zugeordnete Unterkategorien nicht auswählbar.');
   t('Fließtext');
   t('Förderbekanntmachungen');
+  t('Geben Sie die Uhrzeit nach folgendem Schema ein: 12:00 Uhr oder auch 12:00 Uhr - 15:45 Uhr.');
   t('Initiatoren zum Thema');
   t('Kommende Veranstaltungen');
   t('Kurztext');
+  t('Link zur Anmeldung');
   t('Meldungen zum Thema');
   t('Ort');
   t('Projekte zum Thema');
-  t('Publikation');
   t('Quelle');
   t('Schema für interne Links: /node/id bzw. relativer Pfad bei Listenansichten z.B. /aktuelle-beitraege. 
 Schema für externe Links: http://www…');
@@ -1192,6 +1207,7 @@ Schema für externe Links: http://www…');
   t('Sie können hier Inhalte vom Typ \'Projekt\' hinzufügen.');
   t('Sie können hier Inhalte vom Typ \'Termin\' hinzufügen.');
   t('Tragen Sie hier den Veranstaltungstag ein.');
+  t('Tragen Sie hier den externen Link zur Anmeldung ein. ');
   t('Untertitel');
   t('Videounterschrift');
   t('Weiterführende Links');
