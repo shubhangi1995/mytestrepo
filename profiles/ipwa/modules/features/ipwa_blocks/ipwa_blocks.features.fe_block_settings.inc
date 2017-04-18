@@ -40,6 +40,34 @@ function ipwa_blocks_default_fe_block_settings() {
     'visibility' => 0,
   );
 
+  $export['block-infos_fur_unternehmen_left_menu'] = array(
+    'cache' => -1,
+    'custom' => 0,
+    'i18n_block_language' => array(),
+    'i18n_mode' => 0,
+    'machine_name' => 'infos_fur_unternehmen_left_menu',
+    'module' => 'block',
+    'node_types' => array(),
+    'pages' => '',
+    'roles' => array(),
+    'themes' => array(
+      'bartik' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'bartik',
+        'weight' => 0,
+      ),
+      'ipwa' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'ipwa',
+        'weight' => 0,
+      ),
+    ),
+    'title' => 'Immer gut informiert',
+    'visibility' => 0,
+  );
+
   $export['block-politik_gesellschaft_left_block'] = array(
     'cache' => -1,
     'custom' => 0,
