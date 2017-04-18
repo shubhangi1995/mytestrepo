@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the IPWA_blocks feature.
+ */
+
+include_once 'ipwa_blocks.features.inc';
