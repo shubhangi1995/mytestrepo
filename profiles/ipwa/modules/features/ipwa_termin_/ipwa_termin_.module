@@ -25,3 +25,26 @@ function ipwa_termin__views_pre_render(&$view) {
     }
   }
 }
+
+/**
+ * Implements hook_node_view().
+ *
+ * @params $node
+ *
+ */
+function ipwa_termin__node_view($node, $view_mode, $langcode) {
+  // For Recurring event, show in format of start date - end date
+  if (!empty($node->content['field_event_datum'])) {
+    $occurence = count($node->content['field_event_datum']['#items']);
+    $startDate = date("d.m.Y", strtotime($node->content['field_event_datum']['#items'][0]['value']));
+    $enddate = date("d.m.Y", strtotime($node->content['field_event_datum']['#items'][$occurence-1]['value']));
+    if ($occurence > 1) {
+      // Repeat rule
+      $output = date_repeat_rrule_description($node->content['field_event_datum']['#items'][0]['rrule']);
+
+      $output = '<div class="date-repeat-rule">' . $output . '</div>';
+      $output .= '<div class="date-display-range"><span class="date-display-start">' . $startDate . '</span> to <span class="date-display-end">' . $enddate . '</span></div>';
+      $node->content['field_event_datum'][0]['#markup'] = '<div class="field-event-datum recurring">' . $output . '</div>';
+    }
+  }
+}
