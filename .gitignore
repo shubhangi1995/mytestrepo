@@ -1,6 +1,15 @@
 # Ignore configuration files that may contain sensitive information.
-sites/*/settings*.php
+# sites/*/settings*.php
+sites/*/local.settings.php
 
 # Ignore paths that contain user-generated content.
 sites/*/files
 sites/*/private
+
+/profiles/ipwa/themes/ipwa/.sass-cache
+/profiles/ipwa/themes/ipwa/node_modules
+
+# Ignore ide files.
+.idea
+
+profiles/ipwa/themes/ipwa/scss/style.css
