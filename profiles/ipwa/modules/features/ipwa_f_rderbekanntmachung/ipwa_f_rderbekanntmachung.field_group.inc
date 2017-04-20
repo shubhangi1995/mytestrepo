@@ -20,19 +20,20 @@ function ipwa_f_rderbekanntmachung_field_group_info() {
   $field_group->mode = 'default';
   $field_group->parent_name = '';
   $field_group->data = array(
-    'label' => 'Related doc',
-    'weight' => '11',
+    'label' => 'Related_doc',
+    'weight' => '14',
     'children' => array(),
     'format_type' => 'html-element',
     'format_settings' => array(
-      'label' => 'Related doc',
+      'formatter' => '',
       'instance_settings' => array(
-        'id' => '',
-        'classes' => 'group-related-doc field-group-html-element',
         'element' => 'div',
-        'show_label' => '0',
+        'show_label' => 0,
         'label_element' => 'div',
+        'classes' => 'group-related-doc field-group-html-element',
         'attributes' => '',
+        'required_fields' => 1,
+        'id' => '',
       ),
     ),
   );
@@ -49,7 +50,7 @@ function ipwa_f_rderbekanntmachung_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Related event',
-    'weight' => '12',
+    'weight' => '15',
     'children' => array(),
     'format_type' => 'html-element',
     'format_settings' => array(
@@ -98,7 +99,6 @@ function ipwa_f_rderbekanntmachung_field_group_info() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Related doc');
   t('Related event');
   t('title');
 
