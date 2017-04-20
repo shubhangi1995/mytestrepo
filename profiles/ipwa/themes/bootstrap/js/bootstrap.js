@@ -122,7 +122,7 @@ var Drupal = Drupal || {};
         for (var i = 0; i < elements.length; i++) {
           var $element = $(elements[i]);
           var options = $.extend({}, settings.bootstrap.tooltipOptions, $element.data());
-          $element.tooltip(options);
+          //$element.tooltip(options);
         }
       }
     }

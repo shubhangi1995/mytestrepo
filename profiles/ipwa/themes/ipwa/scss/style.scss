@@ -1,6 +1,12 @@
+//-----bootstrap---------//
+@import "bootstrap-sass/bootstrap";
 
+//--------helpers---------//
+@import "helpers/variables";
 
 //------------layout------//
 @import "layout/header";
 @import "layout/footer";
 
+//---------frontpage----------//
+@import "pages/frontpage";
