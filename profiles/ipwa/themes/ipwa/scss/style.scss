@@ -3,10 +3,12 @@
 
 //--------helpers---------//
 @import "helpers/variables";
-
+//-------- base css -----------//
+@import "base/fonts";
 //------------layout------//
 @import "layout/header";
 @import "layout/footer";
 
 //---------frontpage----------//
 @import "pages/frontpage";
+@import "pages/common";

@@ -6106,6 +6106,36 @@ button.close {
   /* line 18, ../scss/bootstrap-sass/bootstrap/mixins/_responsive-visibility.scss */
   .hidden-print {
     display: none !important; } }
+@font-face {
+  font-family: 'BentonSans-Regular';
+  src: url("../fonts/BentonSans-Regular.eot");
+  src: url("../fonts/BentonSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/BentonSans-Regular.woff") format("woff"), url("../fonts/BentonSans-Regular.ttf") format("truetype");
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased; }
+@font-face {
+  font-family: 'BentonSans-Bold';
+  src: url("../fonts/BentonSans-Bold.eot");
+  src: url("../fonts/BentonSans-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/BentonSans-Bold.woff") format("woff"), url("../fonts/BentonSans-Bold.ttf") format("truetype");
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased; }
+@font-face {
+  font-family: 'FontAwesome';
+  src: url("../fonts/FontAwesome.eot");
+  src: url("../fonts/FontAwesome.eot?#iefix") format("embedded-opentype"), url("../fonts/FontAwesome.woff") format("woff"), url("../fonts/FontAwesome.ttf") format("truetype"), url("../fonts/FontAwesome.svg#bundessans_webbold") format("svg");
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased; }
 /* line 1, ../scss/layout/_header.scss */
 header {
   background: none;
@@ -6125,5 +6155,9 @@ front {
   /* line 3, ../scss/pages/_frontpage.scss */
   front a {
     text-decoration: none; }
+
+/* line 1, ../scss/pages/_common.scss */
+body {
+  font-family: "BentonSans-Regular"; }
 
 /*# sourceMappingURL=style.css.map */
