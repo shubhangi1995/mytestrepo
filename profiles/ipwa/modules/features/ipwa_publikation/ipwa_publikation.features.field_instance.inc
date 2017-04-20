@@ -24,6 +24,13 @@ function ipwa_publikation_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 8,
       ),
+      'rss' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 8,
+      ),
       'teaser' => array(
         'label' => 'hidden',
         'settings' => array(),
@@ -61,6 +68,15 @@ function ipwa_publikation_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'paragraphs',
+        'settings' => array(
+          'view_mode' => 'full',
+        ),
+        'type' => 'paragraphs_view',
+        'weight' => 9,
+      ),
+      'rss' => array(
         'label' => 'above',
         'module' => 'paragraphs',
         'settings' => array(
@@ -124,6 +140,17 @@ function ipwa_publikation_field_default_field_instances() {
         'type' => 'entityreference_entity_view',
         'weight' => 11,
       ),
+      'rss' => array(
+        'label' => 'hidden',
+        'module' => 'entityreference',
+        'settings' => array(
+          'links' => 1,
+          'use_content_language' => 1,
+          'view_mode' => 'default',
+        ),
+        'type' => 'entityreference_entity_view',
+        'weight' => 11,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -167,6 +194,22 @@ function ipwa_publikation_field_default_field_instances() {
           'multiple_number' => '',
           'multiple_to' => '',
           'show_remaining_days' => 0,
+          'show_repeat_rule' => 'show',
+        ),
+        'type' => 'date_default',
+        'weight' => 0,
+      ),
+      'rss' => array(
+        'label' => 'hidden',
+        'module' => 'date',
+        'settings' => array(
+          'format_type' => 'short',
+          'fromto' => 'both',
+          'multiple_from' => '',
+          'multiple_number' => '',
+          'multiple_to' => '',
+          'show_remaining_days' => 0,
+          'show_repeat_rule' => 'show',
         ),
         'type' => 'date_default',
         'weight' => 0,
@@ -198,6 +241,7 @@ function ipwa_publikation_field_default_field_instances() {
         'input_format_custom' => '',
         'label_position' => 'above',
         'no_fieldset' => 0,
+        'repeat_collapsed' => 0,
         'text_parts' => array(),
         'year_range' => '-3:+3',
       ),
@@ -215,6 +259,12 @@ function ipwa_publikation_field_default_field_instances() {
     'description' => 'Sie können hier Inhalte vom Typ \'Dokument\' oder \'Publikation\' hinzufügen.',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 22,
+      ),
+      'rss' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -255,6 +305,15 @@ function ipwa_publikation_field_default_field_instances() {
     'description' => 'Sie können hier Inhalte vom Typ \'Förderbekanntmachung\' hinzufügen.',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 20,
+      ),
+      'rss' => array(
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
@@ -304,6 +363,13 @@ function ipwa_publikation_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 4,
       ),
+      'rss' => array(
+        'label' => 'inline',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 4,
+      ),
       'teaser' => array(
         'label' => 'above',
         'module' => 'text',
@@ -339,6 +405,15 @@ function ipwa_publikation_field_default_field_instances() {
     'description' => 'Sie können hier Inhalte vom Typ \'Akteur\' hinzufügen.',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 18,
+      ),
+      'rss' => array(
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
@@ -388,6 +463,13 @@ function ipwa_publikation_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 7,
       ),
+      'rss' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 7,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -422,6 +504,15 @@ function ipwa_publikation_field_default_field_instances() {
     'description' => 'Sie können hier Inhalte vom Typ \'Nachricht\' hinzufügen.',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 17,
+      ),
+      'rss' => array(
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
@@ -473,6 +564,15 @@ function ipwa_publikation_field_default_field_instances() {
         'type' => 'entityreference_label',
         'weight' => 19,
       ),
+      'rss' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 19,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -508,6 +608,12 @@ function ipwa_publikation_field_default_field_instances() {
     'description' => 'Fügen Sie die Originalquelle hinzu indem Sie einen Inhalt vom Typ \'Dokument\' verlinken.t',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 23,
+      ),
+      'rss' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -556,6 +662,15 @@ function ipwa_publikation_field_default_field_instances() {
         'type' => 'entityreference_label',
         'weight' => 10,
       ),
+      'rss' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 10,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -591,6 +706,13 @@ function ipwa_publikation_field_default_field_instances() {
     'description' => 'Schema für Links: http://example.com',
     'display' => array(
       'default' => array(
+        'label' => 'inline',
+        'module' => 'link',
+        'settings' => array(),
+        'type' => 'link_default',
+        'weight' => 6,
+      ),
+      'rss' => array(
         'label' => 'inline',
         'module' => 'link',
         'settings' => array(),
@@ -654,6 +776,13 @@ function ipwa_publikation_field_default_field_instances() {
         'type' => 'i18n_taxonomy_term_reference_link',
         'weight' => 3,
       ),
+      'rss' => array(
+        'label' => 'above',
+        'module' => 'i18n_taxonomy',
+        'settings' => array(),
+        'type' => 'i18n_taxonomy_term_reference_link',
+        'weight' => 3,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -685,6 +814,13 @@ function ipwa_publikation_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 2,
+      ),
+      'rss' => array(
         'label' => 'hidden',
         'module' => 'text',
         'settings' => array(),
@@ -733,6 +869,22 @@ function ipwa_publikation_field_default_field_instances() {
           'multiple_number' => '',
           'multiple_to' => '',
           'show_remaining_days' => 0,
+          'show_repeat_rule' => 'show',
+        ),
+        'type' => 'date_default',
+        'weight' => 5,
+      ),
+      'rss' => array(
+        'label' => 'inline',
+        'module' => 'date',
+        'settings' => array(
+          'format_type' => 'short',
+          'fromto' => 'both',
+          'multiple_from' => '',
+          'multiple_number' => '',
+          'multiple_to' => '',
+          'show_remaining_days' => 0,
+          'show_repeat_rule' => 'show',
         ),
         'type' => 'date_default',
         'weight' => 5,
@@ -764,6 +916,7 @@ function ipwa_publikation_field_default_field_instances() {
         'input_format_custom' => '',
         'label_position' => 'above',
         'no_fieldset' => 0,
+        'repeat_collapsed' => 0,
         'text_parts' => array(),
         'year_range' => '-3:+3',
       ),
@@ -780,6 +933,12 @@ function ipwa_publikation_field_default_field_instances() {
     'description' => 'Sie können hier Inhalte vom Typ \'Termin\' hinzufügen.',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 24,
+      ),
+      'rss' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -826,6 +985,13 @@ function ipwa_publikation_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 14,
       ),
+      'rss' => array(
+        'label' => 'inline',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 14,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -860,6 +1026,13 @@ function ipwa_publikation_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 13,
+      ),
+      'rss' => array(
         'label' => 'hidden',
         'module' => 'text',
         'settings' => array(),
@@ -901,6 +1074,13 @@ function ipwa_publikation_field_default_field_instances() {
 Schema für externe Links: http://www…',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'link',
+        'settings' => array(),
+        'type' => 'link_default',
+        'weight' => 21,
+      ),
+      'rss' => array(
         'label' => 'above',
         'module' => 'link',
         'settings' => array(),
@@ -958,6 +1138,23 @@ Schema für externe Links: http://www…',
     'description' => 'Fügen Sie die YouTube URL ein. Erlaubte Formate: https://www.youtube.com/watch?v=wM73y2Iu8pU oder https://youtu.be/wM73y2Iu8pU',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'youtube',
+        'settings' => array(
+          'youtube_autohide' => FALSE,
+          'youtube_autoplay' => FALSE,
+          'youtube_controls' => FALSE,
+          'youtube_height' => NULL,
+          'youtube_iv_load_policy' => FALSE,
+          'youtube_loop' => FALSE,
+          'youtube_showinfo' => FALSE,
+          'youtube_size' => '420x315',
+          'youtube_width' => NULL,
+        ),
+        'type' => 'youtube_video',
+        'weight' => 12,
+      ),
+      'rss' => array(
         'label' => 'hidden',
         'module' => 'youtube',
         'settings' => array(
