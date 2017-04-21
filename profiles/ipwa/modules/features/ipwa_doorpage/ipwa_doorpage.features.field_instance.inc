@@ -22,7 +22,7 @@ function ipwa_doorpage_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 0,
+        'weight' => 2,
       ),
       'teaser' => array(
         'label' => 'hidden',
@@ -62,13 +62,13 @@ function ipwa_doorpage_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'paragraphs',
         'settings' => array(
           'view_mode' => 'full',
         ),
         'type' => 'paragraphs_view',
-        'weight' => 2,
+        'weight' => 3,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -82,7 +82,7 @@ function ipwa_doorpage_field_default_field_instances() {
     'label' => 'Anzuzeigende Seitenmodule (Paragraphen)',
     'required' => 0,
     'settings' => array(
-      'add_mode' => 'button',
+      'add_mode' => 'select',
       'allowed_bundles' => array(
         'flie_text_bereich' => -1,
         'flie_text_mit_bild_links_' => -1,
@@ -117,11 +117,11 @@ function ipwa_doorpage_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 3,
+        'weight' => 1,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -157,11 +157,11 @@ function ipwa_doorpage_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 1,
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'above',
