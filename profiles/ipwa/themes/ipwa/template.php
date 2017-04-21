@@ -13,7 +13,8 @@
  *
  */
 function ipwa_preprocess_node(&$variables) {
-  if ($variables['type'] == 'bild') {
+  //For CT 'Bild' or frontpage don't show title
+  if ($variables['type'] == 'bild' || drupal_is_front_page()) {
     // Don't show title
     $variables['title'] = '';
   }
