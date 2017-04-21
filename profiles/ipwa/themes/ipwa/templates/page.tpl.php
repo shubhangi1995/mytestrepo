@@ -73,6 +73,8 @@
  * @ingroup templates
  */
 ?>
+
+<?php global $base_url;?>
 <header id="navbar" role="banner" class="<?php print $navbar_classes; ?>">
   <div class="<?php print $container_class; ?>">
     <div class="navbar-header">
@@ -94,6 +96,12 @@
           <span class="icon-bar"></span>
         </button>
       <?php endif; ?>
+    </div>
+
+    <div class="nrw-eu-logo">
+      <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
+        <img src="<?php echo $base_url . '/' . drupal_get_path('theme', 'ipwa'); ?>/nrw_eu_logo.png">
+      </a>
     </div>
 
     <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
