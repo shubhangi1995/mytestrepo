@@ -6136,50 +6136,61 @@ button.close {
   font-variant: normal;
   text-transform: none;
   -webkit-font-smoothing: antialiased; }
-/* line 2, ../scss/layout/_header.scss */
+/* line 3, ../scss/layout/_header.scss */
 header.navbar-default {
+  width: 100%;
   background: none;
-  border: none; }
-/* line 8, ../scss/layout/_header.scss */
+  border: none;
+  -webkit-box-shadow: 0px 28px 38px 2px rgba(162, 162, 162, 0.65);
+  -moz-box-shadow: 0px 28px 38px 2px rgba(162, 162, 162, 0.65);
+  box-shadow: 0px 28px 38px 2px rgba(162, 162, 162, 0.65); }
+/* line 13, ../scss/layout/_header.scss */
 header .navbar-header .navbar-brand {
   display: none; }
-/* line 13, ../scss/layout/_header.scss */
+/* line 19, ../scss/layout/_header.scss */
+header .nrw-eu-logo a {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  float: left;
+  padding-left: 10px; }
+/* line 27, ../scss/layout/_header.scss */
 header .navbar-collapse {
   padding: 0; }
-  /* line 16, ../scss/layout/_header.scss */
+  /* line 30, ../scss/layout/_header.scss */
   header .navbar-collapse ul.navbar-nav {
     float: right; }
-    /* line 19, ../scss/layout/_header.scss */
+    /* line 33, ../scss/layout/_header.scss */
     header .navbar-collapse ul.navbar-nav li a {
       color: #273753;
       font-size: 18px; }
-      /* line 23, ../scss/layout/_header.scss */
+      /* line 37, ../scss/layout/_header.scss */
       header .navbar-collapse ul.navbar-nav li a:hover, header .navbar-collapse ul.navbar-nav li a:focus {
         background: none;
         border: none; }
-    /* line 30, ../scss/layout/_header.scss */
+    /* line 44, ../scss/layout/_header.scss */
     header .navbar-collapse ul.navbar-nav .open a {
       background: none;
       border: none; }
-      /* line 34, ../scss/layout/_header.scss */
+      /* line 48, ../scss/layout/_header.scss */
       header .navbar-collapse ul.navbar-nav .open a:hover, header .navbar-collapse ul.navbar-nav .open a:focus {
         background: none;
         border: none; }
-  /* line 42, ../scss/layout/_header.scss */
+  /* line 56, ../scss/layout/_header.scss */
   header .navbar-collapse .region-navigation {
     width: 100%;
-    clear: both; }
-    /* line 46, ../scss/layout/_header.scss */
+    clear: both;
+    padding-top: 30px; }
+    /* line 61, ../scss/layout/_header.scss */
     header .navbar-collapse .region-navigation .tb-megamenu {
       background: none; }
-      /* line 49, ../scss/layout/_header.scss */
+      /* line 64, ../scss/layout/_header.scss */
       header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li a {
         color: #273753;
         border-right: none;
         font-size: 20px;
         padding-left: 0;
         width: 50%; }
-        /* line 56, ../scss/layout/_header.scss */
+        /* line 71, ../scss/layout/_header.scss */
         header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li a .caret {
           display: none; }
 
