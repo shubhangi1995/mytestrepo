@@ -1,7 +1,19 @@
 footer{
-background:none;
-color:white;
-  a{
-    text-decoration:none;
+#block-menu-menu-footer-navigation{
+  ul li{
+    display:inline-block;
+	 a{
+	   color:$header-menu;
+	   padding-left:0;
+	   font-size:18px;
+	   font-family:$font-family-light;
+	   
+	   &:hover, &:focus{
+	     background:none;
+		 outline:none;
+	   }
+	 }
   }
+
+}
 }

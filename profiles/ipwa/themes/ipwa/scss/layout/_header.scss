@@ -1,4 +1,34 @@
 header{
-background:none;
-color:white;
+&.navbar-default{
+  background:none;
+  border:none;
+}
+.navbar-collapse {
+ul.navbar-nav{
+  float:right;
+  li a{
+  color:$header-menu;
+  font-size:18px;
+    &:hover,&:focus{
+	  background:none;
+	  border:none;
+	}
+  }
+}
+ .region-navigation{
+       width:100%;
+	   clear:both;
+ .tb-megamenu{
+   background:none;
+   ul.tb-megamenu-nav li a{
+     color:$header-menu;
+	 border-right:none;
+	 font-size:20px;
+   }
+ }
+ 
+ }
+
+
+}
 }

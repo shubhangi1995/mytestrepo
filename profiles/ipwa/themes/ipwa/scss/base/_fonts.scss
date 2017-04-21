@@ -1,9 +1,9 @@
 @font-face {
-    font-family: 'BentonSans-Regular';
-    src: url('../fonts/BentonSans-Regular.eot');
-    src: url('../fonts/BentonSans-Regular.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/BentonSans-Regular.woff') format('woff'),
-         url('../fonts/BentonSans-Regular.ttf') format('truetype');
+    font-family: 'adellesans-regular-webfont';
+    src: url('../fonts/adellesans-regular-webfont.eot');
+    src: url('../fonts/adellesans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/adellesans-regular-webfont.woff') format('woff'),
+         url('../fonts/adellesans-regular-webfont.ttf') format('truetype');
   speak: none;
 font-style: normal;
 font-weight: normal;
@@ -13,11 +13,25 @@ text-transform: none;
 }
 
 @font-face {
-    font-family: 'BentonSans-Bold';
-    src: url('../fonts/BentonSans-Bold.eot');
-    src: url('../fonts/BentonSans-Bold.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/BentonSans-Bold.woff') format('woff'),
-         url('../fonts/BentonSans-Bold.ttf') format('truetype');
+    font-family: 'adellesans-semibold-webfont';
+    src: url('../fonts/adellesans-semibold-webfont.eot');
+    src: url('../fonts/adellesans-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/adellesans-semibold-webfont.woff') format('woff'),
+         url('../fonts/adellesans-semibold-webfont.ttf') format('truetype');
+   speak: none;
+font-style: normal;
+font-weight: normal;
+font-variant: normal;
+text-transform: none;
+-webkit-font-smoothing: antialiased;
+}
+
+@font-face {
+    font-family: 'adellesans-light-webfont';
+    src: url('../fonts/adellesans-light-webfont.eot');
+    src: url('../fonts/adellesans-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/adellesans-light-webfont.woff') format('woff'),
+         url('../fonts/adellesans-light-webfont.ttf') format('truetype');
    speak: none;
 font-style: normal;
 font-weight: normal;
