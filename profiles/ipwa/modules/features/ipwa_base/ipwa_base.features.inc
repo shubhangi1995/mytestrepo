@@ -43,6 +43,11 @@ function ipwa_base_paragraphs_info() {
       'bundle' => 'flie_text_mit_bild_rechts_',
       'locked' => '1',
     ),
+    'views' => array(
+      'name' => 'Views',
+      'bundle' => 'views',
+      'locked' => '1',
+    ),
   );
   return $items;
 }
