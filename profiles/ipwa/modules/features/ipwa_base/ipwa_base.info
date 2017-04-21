@@ -41,7 +41,6 @@ features[fe_block_settings][] = block-infos_fur_beschaftigte
 features[fe_block_settings][] = block-infos_fur_unternehmen_left_menu
 features[fe_block_settings][] = block-politik_gesellschaft_left_block
 features[fe_block_settings][] = block-wirtschaft_arbeit_left_block
-features[fe_block_settings][] = views-neueste_informationen-block
 features[fe_block_settings][] = views-rss-block_1
 features[features_api][] = api:2
 features[field_base][] = body
