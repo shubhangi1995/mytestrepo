@@ -11,8 +11,20 @@ footer{
 	   &:hover, &:focus{
 	     background:none;
 		 outline:none;
+		 outline-offset:none;
 	   }
 	 }
+	 .open {
+                a {
+                    background: none;
+                    border: none;
+
+                    &:hover, &:focus {
+                        background: none;
+                        border: none;
+                    }
+                }
+            }
   }
 
 }
