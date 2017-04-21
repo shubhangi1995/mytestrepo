@@ -6144,36 +6144,44 @@ header.navbar-default {
 header .navbar-header .navbar-brand {
   display: none; }
 /* line 13, ../scss/layout/_header.scss */
-header .navbar-collapse ul.navbar-nav {
-  float: right; }
-  /* line 15, ../scss/layout/_header.scss */
-  header .navbar-collapse ul.navbar-nav li a {
-    color: #273753;
-    font-size: 18px; }
-    /* line 18, ../scss/layout/_header.scss */
-    header .navbar-collapse ul.navbar-nav li a:hover, header .navbar-collapse ul.navbar-nav li a:focus {
-      background: none;
-      border: none; }
-  /* line 24, ../scss/layout/_header.scss */
-  header .navbar-collapse ul.navbar-nav .open a {
-    background: none;
-    border: none; }
-    /* line 27, ../scss/layout/_header.scss */
-    header .navbar-collapse ul.navbar-nav .open a:hover, header .navbar-collapse ul.navbar-nav .open a:focus {
-      background: none;
-      border: none; }
-/* line 33, ../scss/layout/_header.scss */
-header .navbar-collapse .region-navigation {
-  width: 100%;
-  clear: both; }
-  /* line 36, ../scss/layout/_header.scss */
-  header .navbar-collapse .region-navigation .tb-megamenu {
-    background: none; }
-    /* line 38, ../scss/layout/_header.scss */
-    header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li a {
+header .navbar-collapse {
+  padding: 0; }
+  /* line 16, ../scss/layout/_header.scss */
+  header .navbar-collapse ul.navbar-nav {
+    float: right; }
+    /* line 19, ../scss/layout/_header.scss */
+    header .navbar-collapse ul.navbar-nav li a {
       color: #273753;
-      border-right: none;
-      font-size: 20px; }
+      font-size: 18px; }
+      /* line 23, ../scss/layout/_header.scss */
+      header .navbar-collapse ul.navbar-nav li a:hover, header .navbar-collapse ul.navbar-nav li a:focus {
+        background: none;
+        border: none; }
+    /* line 30, ../scss/layout/_header.scss */
+    header .navbar-collapse ul.navbar-nav .open a {
+      background: none;
+      border: none; }
+      /* line 34, ../scss/layout/_header.scss */
+      header .navbar-collapse ul.navbar-nav .open a:hover, header .navbar-collapse ul.navbar-nav .open a:focus {
+        background: none;
+        border: none; }
+  /* line 42, ../scss/layout/_header.scss */
+  header .navbar-collapse .region-navigation {
+    width: 100%;
+    clear: both; }
+    /* line 46, ../scss/layout/_header.scss */
+    header .navbar-collapse .region-navigation .tb-megamenu {
+      background: none; }
+      /* line 49, ../scss/layout/_header.scss */
+      header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li a {
+        color: #273753;
+        border-right: none;
+        font-size: 20px;
+        padding-left: 0;
+        width: 50%; }
+        /* line 56, ../scss/layout/_header.scss */
+        header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li a .caret {
+          display: none; }
 
 /* line 3, ../scss/layout/_footer.scss */
 footer #block-menu-menu-footer-navigation ul li {
