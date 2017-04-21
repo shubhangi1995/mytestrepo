@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the IPWA Doorpage feature.
+ */
+
+include_once 'ipwa_doorpage.features.inc';
