@@ -6136,7 +6136,7 @@ button.close {
   font-variant: normal;
   text-transform: none;
   -webkit-font-smoothing: antialiased; }
-/* line 3, ../scss/layout/_header.scss */
+/* line 2, ../scss/layout/_header.scss */
 header.navbar-default {
   width: 100%;
   background: none;
@@ -6144,58 +6144,88 @@ header.navbar-default {
   -webkit-box-shadow: 0px 28px 38px 2px rgba(162, 162, 162, 0.65);
   -moz-box-shadow: 0px 28px 38px 2px rgba(162, 162, 162, 0.65);
   box-shadow: 0px 28px 38px 2px rgba(162, 162, 162, 0.65); }
-/* line 13, ../scss/layout/_header.scss */
+/* line 12, ../scss/layout/_header.scss */
 header .navbar-header .navbar-brand {
   display: none; }
-/* line 19, ../scss/layout/_header.scss */
+/* line 18, ../scss/layout/_header.scss */
 header .nrw-eu-logo a {
   margin-top: 8px;
   margin-bottom: 8px;
   float: left;
-  padding-left: 10px; }
-/* line 27, ../scss/layout/_header.scss */
+  padding-left: 25px; }
+/* line 26, ../scss/layout/_header.scss */
 header .navbar-collapse {
   padding: 0; }
-  /* line 30, ../scss/layout/_header.scss */
+  /* line 29, ../scss/layout/_header.scss */
   header .navbar-collapse ul.navbar-nav {
     float: right; }
-    /* line 33, ../scss/layout/_header.scss */
+    /* line 32, ../scss/layout/_header.scss */
     header .navbar-collapse ul.navbar-nav li a {
       color: #273753;
       font-size: 18px; }
-      /* line 37, ../scss/layout/_header.scss */
+      /* line 36, ../scss/layout/_header.scss */
       header .navbar-collapse ul.navbar-nav li a:hover, header .navbar-collapse ul.navbar-nav li a:focus {
         background: none;
         border: none; }
-    /* line 44, ../scss/layout/_header.scss */
+    /* line 43, ../scss/layout/_header.scss */
     header .navbar-collapse ul.navbar-nav .open a {
       background: none;
       border: none; }
-      /* line 48, ../scss/layout/_header.scss */
+      /* line 47, ../scss/layout/_header.scss */
       header .navbar-collapse ul.navbar-nav .open a:hover, header .navbar-collapse ul.navbar-nav .open a:focus {
         background: none;
         border: none; }
-  /* line 56, ../scss/layout/_header.scss */
+  /* line 55, ../scss/layout/_header.scss */
   header .navbar-collapse .region-navigation {
     width: 100%;
     clear: both;
     padding-top: 30px; }
-    /* line 61, ../scss/layout/_header.scss */
+    /* line 60, ../scss/layout/_header.scss */
     header .navbar-collapse .region-navigation .tb-megamenu {
       background: none; }
-      /* line 64, ../scss/layout/_header.scss */
+      /* line 63, ../scss/layout/_header.scss */
       header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li {
-        width: 20%; }
-        /* line 66, ../scss/layout/_header.scss */
+        width: 20%;
+        position: static; }
+        /* line 67, ../scss/layout/_header.scss */
         header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li a {
           color: #273753;
           border-right: none;
           font-size: 20px;
           padding-left: 0;
           width: 50%; }
-          /* line 73, ../scss/layout/_header.scss */
+          /* line 74, ../scss/layout/_header.scss */
           header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li a .caret {
             display: none; }
+        /* line 79, ../scss/layout/_header.scss */
+        header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu {
+          background-color: #3c506e;
+          border: none;
+          width: 100%; }
+          /* line 84, ../scss/layout/_header.scss */
+          header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu:before {
+            background: #3c506e;
+            content: "";
+            width: 100%;
+            display: block;
+            height: 100%;
+            top: 0px;
+            position: absolute;
+            left: -100%; }
+          /* line 95, ../scss/layout/_header.scss */
+          header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu:after {
+            background: #3c506e;
+            content: "";
+            width: 100%;
+            display: block;
+            height: 100%;
+            top: 0px;
+            position: absolute;
+            right: -100%; }
+          /* line 106, ../scss/layout/_header.scss */
+          header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu a {
+            color: #ffffff;
+            text-decoration: none; }
 
 /* line 3, ../scss/layout/_footer.scss */
 footer #block-menu-menu-footer-navigation ul li {
@@ -6218,6 +6248,10 @@ footer #block-menu-menu-footer-navigation ul li {
     footer #block-menu-menu-footer-navigation ul li .open a:hover, footer #block-menu-menu-footer-navigation ul li .open a:focus {
       background: none;
       border: none; }
+/* line 33, ../scss/layout/_footer.scss */
+footer .footer-copyright {
+  font-size: 18px;
+  color: #273753; }
 
 /* line 1, ../scss/pages/_frontpage.scss */
 #block-views-neueste-informationen-block {
