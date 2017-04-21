@@ -3,6 +3,12 @@ header{
   background:none;
   border:none;
 }
+
+.navbar-header {
+  .navbar-brand{
+    display:none;
+  }
+}
 .navbar-collapse {
 ul.navbar-nav{
   float:right;
@@ -14,6 +20,15 @@ ul.navbar-nav{
 	  border:none;
 	}
   }
+  .open{
+   a{
+   background:none;
+   border:none;
+    &:hover,&:focus{
+	  background:none;
+	  border:none;
+	}
+  }}
 }
  .region-navigation{
        width:100%;
