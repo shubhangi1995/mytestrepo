@@ -755,7 +755,7 @@ function ipwa_base_views_default_views() {
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['title'] = 'Neueste Informationen';
+  $handler->display->display_options['title'] = '<none>';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
@@ -765,6 +765,12 @@ function ipwa_base_views_default_views() {
   $handler->display->display_options['pager']['options']['items_per_page'] = '3';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'fields';
+  /* Header: Global: Text area */
+  $handler->display->display_options['header']['area']['id'] = 'area';
+  $handler->display->display_options['header']['area']['table'] = 'views';
+  $handler->display->display_options['header']['area']['field'] = 'area';
+  $handler->display->display_options['header']['area']['content'] = '<h2 class="pane-title">Neueste Informationen</h2>';
+  $handler->display->display_options['header']['area']['format'] = 'wysiwyg';
   /* Field: Content: Titel */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
@@ -857,13 +863,15 @@ function ipwa_base_views_default_views() {
   );
   $translatables['neueste_informationen'] = array(
     t('Master'),
-    t('Neueste Informationen'),
+    t('<none>'),
     t('more'),
     t('Apply'),
     t('Reset'),
     t('Sort by'),
     t('Asc'),
     t('Desc'),
+    t('<h2 class="pane-title">Neueste Informationen</h2>'),
+    t('Neueste Informationen'),
     t('<div class="link-outer-block">
 	<div class="link-inner-block-1">
 		<a href="/aktuelles">mehr Aktuelles</a>
