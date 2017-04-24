@@ -167,8 +167,7 @@ function ipwa_base_views_default_views() {
   );
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['pager']['options']['items_per_page'] = '10';
-  $handler->display->display_options['style_plugin'] = 'grid';
-  $handler->display->display_options['style_options']['columns'] = '3';
+  $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'fields';
   /* Header: Global: Text area */
   $handler->display->display_options['header']['area']['id'] = 'area';
@@ -208,6 +207,12 @@ function ipwa_base_views_default_views() {
   $handler->display->display_options['fields']['field_themenzuweisung']['table'] = 'field_data_field_themenzuweisung';
   $handler->display->display_options['fields']['field_themenzuweisung']['field'] = 'field_themenzuweisung';
   $handler->display->display_options['fields']['field_themenzuweisung']['delta_offset'] = '0';
+  /* Sort criterion: Content: Titel */
+  $handler->display->display_options['sorts']['title']['id'] = 'title';
+  $handler->display->display_options['sorts']['title']['table'] = 'node';
+  $handler->display->display_options['sorts']['title']['field'] = 'title';
+  $handler->display->display_options['sorts']['title']['exposed'] = TRUE;
+  $handler->display->display_options['sorts']['title']['expose']['label'] = 'A-Z';
   /* Sort criterion: Content: Datum (field_datum) */
   $handler->display->display_options['sorts']['field_datum_value']['id'] = 'field_datum_value';
   $handler->display->display_options['sorts']['field_datum_value']['table'] = 'field_data_field_datum';
@@ -215,12 +220,6 @@ function ipwa_base_views_default_views() {
   $handler->display->display_options['sorts']['field_datum_value']['order'] = 'DESC';
   $handler->display->display_options['sorts']['field_datum_value']['exposed'] = TRUE;
   $handler->display->display_options['sorts']['field_datum_value']['expose']['label'] = 'neueste zuerst';
-  /* Sort criterion: Content: Titel */
-  $handler->display->display_options['sorts']['title']['id'] = 'title';
-  $handler->display->display_options['sorts']['title']['table'] = 'node';
-  $handler->display->display_options['sorts']['title']['field'] = 'title';
-  $handler->display->display_options['sorts']['title']['exposed'] = TRUE;
-  $handler->display->display_options['sorts']['title']['expose']['label'] = 'A-Z';
   /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
@@ -396,8 +395,8 @@ function ipwa_base_views_default_views() {
     t('last »'),
     t('[headline] this needs to be carified, about its content'),
     t('Dieser Artikel gehört zu'),
-    t('neueste zuerst'),
     t('A-Z'),
+    t('neueste zuerst'),
     t('Page'),
   );
   $export['aktuelles'] = $view;
