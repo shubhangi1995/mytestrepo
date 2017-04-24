@@ -1,8 +1,9 @@
-#block-views-neueste-informationen-block{
+.view-neueste-informationen{
 background-color:$color-light-blue;
- 
 
-  .view-neueste-informationen{
+    
+
+ 
       .views-row{
 	    @extend .col-md-4;
 	  }
@@ -11,4 +12,3 @@ background-color:$color-light-blue;
   }
 
 
-}

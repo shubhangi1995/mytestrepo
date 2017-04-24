@@ -29,7 +29,30 @@ header {
         ul.navbar-nav {
             float: right;
 
-            li a {
+            li {
+			  &.active {
+			      a,a:hover,a:focus,a:active{
+				    background:none;
+					color:$active-menu;
+				  }
+			  }
+			  &.open {
+                a {
+                    background: none;
+                    border: none;
+					color:$active-menu;
+					
+
+                    &:hover, &:focus {
+                        background: none;
+                        border: none;
+						color:$active-menu;
+                    }
+                }
+            }
+			  
+			  
+			a {
                 color: $header-menu;
                 font-size: 18px;
 
@@ -39,19 +62,9 @@ header {
                 }
             }
 
-            .open {
-                a {
-                    background: none;
-                    border: none;
-
-                    &:hover, &:focus {
-                        background: none;
-                        border: none;
-                    }
-                }
-            }
+            
         }
-
+}
         .region-navigation {
             width: 100%;
             clear: both;
@@ -79,7 +92,9 @@ header {
                     }
 					&.active a{
 					  background:none;
-					  color:#e54e4b;
+					  color:$active-menu;
+					  padding-bottom:0;
+					  border-bottom:2px solid $active-menu;
 					}
 
                     .dropdown-menu {
@@ -139,21 +154,21 @@ header {
 						.mega-dropdown-inner {
 						
 						.tb-submenu-left{
-						    width:40%;
+						    width:30%;
 							float:left;
 							 a{
 							 font-size:16px;
 							 }
 						}
 						.tb-submenu-right{
-						    width:60%;
+						    width:70%;
 							float:left;
 							margin:0;
 						}
 						}
                     }
 					&.dropdown.open .dropdown-toggle {
-					   border-bottom:2px solid $header-menu-border;
+					   border-bottom:2px solid $active-menu;
 					}
                 }
             }

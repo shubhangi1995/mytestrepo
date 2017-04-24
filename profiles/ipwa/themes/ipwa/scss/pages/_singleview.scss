@@ -1,0 +1,62 @@
+.field-name-field-themenzuweisung{
+  .field-label{
+     font-size:20px;
+  }
+ .field-items .field-item{
+    @extend .col-md-4;
+	a{
+	 font-size:20px;
+	 text-decoration:none;
+	 color:$header-menu;
+
+
+	}
+ }
+
+}
+
+.paragraphs-items{
+
+ .paragraphs-item-flie-text-bereich{
+ 
+ 
+ }
+
+}
+
+.field-name-field-youtube-url{
+  text-align:center;
+}
+
+
+//------------Aktuelles------------//
+.page-aktuelles{
+.region-content{ background:$color-light-blue;
+.view-aktuelles {
+ .view-filters{
+   .views-exposed-form #edit-type-wrapper{ width:100%;
+   .form-item{
+     display:inline-block;
+	 padding-right:20px;
+   }
+ }
+ }
+
+  .view-content{
+    .views-row{
+	  @extend .col-md-4;
+	  padding: 10px;
+    height: 200px;
+	  .views-field-type{
+	    color:$active-menu;
+		font-size:22px;
+	  }
+	}
+  }
+  
+  .views-submit-button{
+     display:none;
+  }
+  }
+}
+}

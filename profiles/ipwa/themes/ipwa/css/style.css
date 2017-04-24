@@ -913,7 +913,7 @@ pre {
     clear: both; }
 
 /* line 11, ../scss/bootstrap-sass/bootstrap/mixins/_grid-framework.scss */
-.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, #block-views-neueste-informationen-block .view-neueste-informationen .views-row, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .view-neueste-informationen .views-row, .field-name-field-themenzuweisung .field-items .field-item, .page-aktuelles .region-content .view-aktuelles .view-content .views-row, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
@@ -1337,7 +1337,7 @@ pre {
     margin-left: 100%; } }
 @media (min-width: 992px) {
   /* line 27, ../scss/bootstrap-sass/bootstrap/mixins/_grid-framework.scss */
-  .col-md-1, .col-md-2, .col-md-3, .col-md-4, #block-views-neueste-informationen-block .view-neueste-informationen .views-row, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .view-neueste-informationen .views-row, .field-name-field-themenzuweisung .field-items .field-item, .page-aktuelles .region-content .view-aktuelles .view-content .views-row, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
     float: left; }
 
   /* line 35, ../scss/bootstrap-sass/bootstrap/mixins/_grid-framework.scss */
@@ -1353,7 +1353,7 @@ pre {
     width: 25%; }
 
   /* line 35, ../scss/bootstrap-sass/bootstrap/mixins/_grid-framework.scss */
-  .col-md-4, #block-views-neueste-informationen-block .view-neueste-informationen .views-row {
+  .col-md-4, .view-neueste-informationen .views-row, .field-name-field-themenzuweisung .field-items .field-item, .page-aktuelles .region-content .view-aktuelles .view-content .views-row {
     width: 33.33333333%; }
 
   /* line 35, ../scss/bootstrap-sass/bootstrap/mixins/_grid-framework.scss */
@@ -6159,35 +6159,41 @@ header .navbar-collapse {
   /* line 29, ../scss/layout/_header.scss */
   header .navbar-collapse ul.navbar-nav {
     float: right; }
-    /* line 32, ../scss/layout/_header.scss */
+    /* line 34, ../scss/layout/_header.scss */
+    header .navbar-collapse ul.navbar-nav li.active a, header .navbar-collapse ul.navbar-nav li.active a:hover, header .navbar-collapse ul.navbar-nav li.active a:focus, header .navbar-collapse ul.navbar-nav li.active a:active {
+      background: none;
+      color: #e74712; }
+    /* line 40, ../scss/layout/_header.scss */
+    header .navbar-collapse ul.navbar-nav li.open a {
+      background: none;
+      border: none;
+      color: #e74712; }
+      /* line 46, ../scss/layout/_header.scss */
+      header .navbar-collapse ul.navbar-nav li.open a:hover, header .navbar-collapse ul.navbar-nav li.open a:focus {
+        background: none;
+        border: none;
+        color: #e74712; }
+    /* line 55, ../scss/layout/_header.scss */
     header .navbar-collapse ul.navbar-nav li a {
       color: #273753;
       font-size: 18px; }
-      /* line 36, ../scss/layout/_header.scss */
+      /* line 59, ../scss/layout/_header.scss */
       header .navbar-collapse ul.navbar-nav li a:hover, header .navbar-collapse ul.navbar-nav li a:focus {
         background: none;
         border: none; }
-    /* line 43, ../scss/layout/_header.scss */
-    header .navbar-collapse ul.navbar-nav .open a {
-      background: none;
-      border: none; }
-      /* line 47, ../scss/layout/_header.scss */
-      header .navbar-collapse ul.navbar-nav .open a:hover, header .navbar-collapse ul.navbar-nav .open a:focus {
-        background: none;
-        border: none; }
-  /* line 55, ../scss/layout/_header.scss */
+  /* line 68, ../scss/layout/_header.scss */
   header .navbar-collapse .region-navigation {
     width: 100%;
     clear: both;
     padding-top: 30px; }
-    /* line 60, ../scss/layout/_header.scss */
+    /* line 73, ../scss/layout/_header.scss */
     header .navbar-collapse .region-navigation .tb-megamenu {
       background: none; }
-      /* line 63, ../scss/layout/_header.scss */
+      /* line 76, ../scss/layout/_header.scss */
       header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li {
         width: 20%;
         position: static; }
-        /* line 67, ../scss/layout/_header.scss */
+        /* line 80, ../scss/layout/_header.scss */
         header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li > a {
           color: #273753;
           border-right: none;
@@ -6196,21 +6202,23 @@ header .navbar-collapse {
           width: 50%;
           padding-bottom: 0;
           margin-bottom: 20px; }
-          /* line 76, ../scss/layout/_header.scss */
+          /* line 89, ../scss/layout/_header.scss */
           header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li > a .caret {
             display: none; }
-        /* line 80, ../scss/layout/_header.scss */
+        /* line 93, ../scss/layout/_header.scss */
         header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li.active a {
           background: none;
-          color: #e54e4b; }
-        /* line 85, ../scss/layout/_header.scss */
+          color: #e74712;
+          padding-bottom: 0;
+          border-bottom: 2px solid #e74712; }
+        /* line 100, ../scss/layout/_header.scss */
         header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu {
           background-color: #3c506e;
           border: none;
           width: 100%;
           padding-top: 40px;
           padding-bottom: 40px; }
-          /* line 93, ../scss/layout/_header.scss */
+          /* line 108, ../scss/layout/_header.scss */
           header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu:before {
             background: #3c506e;
             content: "";
@@ -6220,7 +6228,7 @@ header .navbar-collapse {
             top: 0px;
             position: absolute;
             left: -100%; }
-          /* line 104, ../scss/layout/_header.scss */
+          /* line 119, ../scss/layout/_header.scss */
           header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu:after {
             background: #3c506e;
             content: "";
@@ -6230,41 +6238,41 @@ header .navbar-collapse {
             top: 0px;
             position: absolute;
             right: -100%; }
-          /* line 115, ../scss/layout/_header.scss */
+          /* line 130, ../scss/layout/_header.scss */
           header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu a {
             color: #ffffff;
             text-decoration: none; }
-          /* line 120, ../scss/layout/_header.scss */
+          /* line 135, ../scss/layout/_header.scss */
           header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .block-title {
             color: #ffffff; }
-          /* line 125, ../scss/layout/_header.scss */
+          /* line 140, ../scss/layout/_header.scss */
           header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-header {
             color: #ffffff;
             font-size: 18px; }
-          /* line 129, ../scss/layout/_header.scss */
+          /* line 144, ../scss/layout/_header.scss */
           header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-content .views-row {
             display: inline-block;
             padding: 5px; }
-            /* line 132, ../scss/layout/_header.scss */
+            /* line 147, ../scss/layout/_header.scss */
             header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-content .views-row a {
               background: #273753;
               font-size: 16px;
               padding: 10px; }
-          /* line 141, ../scss/layout/_header.scss */
+          /* line 156, ../scss/layout/_header.scss */
           header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-left {
-            width: 40%;
+            width: 30%;
             float: left; }
-            /* line 144, ../scss/layout/_header.scss */
+            /* line 159, ../scss/layout/_header.scss */
             header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-left a {
               font-size: 16px; }
-          /* line 148, ../scss/layout/_header.scss */
+          /* line 163, ../scss/layout/_header.scss */
           header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-right {
-            width: 60%;
+            width: 70%;
             float: left;
             margin: 0; }
-        /* line 155, ../scss/layout/_header.scss */
+        /* line 170, ../scss/layout/_header.scss */
         header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li.dropdown.open .dropdown-toggle {
-          border-bottom: 2px solid #e54e4b; }
+          border-bottom: 2px solid #e74712; }
 
 /* line 3, ../scss/layout/_footer.scss */
 footer #block-menu-menu-footer-navigation ul li {
@@ -6293,11 +6301,46 @@ footer .footer-copyright {
   color: #273753; }
 
 /* line 1, ../scss/pages/_frontpage.scss */
-#block-views-neueste-informationen-block {
+.view-neueste-informationen {
   background-color: #eff2f7; }
 
 /* line 1, ../scss/pages/_common.scss */
 body {
   font-family: "BentonSans-Regular"; }
+
+/* line 2, ../scss/pages/_singleview.scss */
+.field-name-field-themenzuweisung .field-label {
+  font-size: 20px; }
+/* line 7, ../scss/pages/_singleview.scss */
+.field-name-field-themenzuweisung .field-items .field-item a {
+  font-size: 20px;
+  text-decoration: none;
+  color: #273753; }
+
+/* line 27, ../scss/pages/_singleview.scss */
+.field-name-field-youtube-url {
+  text-align: center; }
+
+/* line 34, ../scss/pages/_singleview.scss */
+.page-aktuelles .region-content {
+  background: #eff2f7; }
+  /* line 37, ../scss/pages/_singleview.scss */
+  .page-aktuelles .region-content .view-aktuelles .view-filters .views-exposed-form #edit-type-wrapper {
+    width: 100%; }
+    /* line 38, ../scss/pages/_singleview.scss */
+    .page-aktuelles .region-content .view-aktuelles .view-filters .views-exposed-form #edit-type-wrapper .form-item {
+      display: inline-block;
+      padding-right: 20px; }
+  /* line 46, ../scss/pages/_singleview.scss */
+  .page-aktuelles .region-content .view-aktuelles .view-content .views-row {
+    padding: 10px;
+    height: 200px; }
+    /* line 50, ../scss/pages/_singleview.scss */
+    .page-aktuelles .region-content .view-aktuelles .view-content .views-row .views-field-type {
+      color: #e74712;
+      font-size: 22px; }
+  /* line 57, ../scss/pages/_singleview.scss */
+  .page-aktuelles .region-content .view-aktuelles .views-submit-button {
+    display: none; }
 
 /*# sourceMappingURL=style.css.map */
