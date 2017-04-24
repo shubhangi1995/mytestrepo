@@ -21,7 +21,7 @@ function ipwa_publikation_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Related publication',
-    'weight' => '10',
+    'weight' => '11',
     'children' => array(),
     'format_type' => 'html-element',
     'format_settings' => array(
@@ -49,7 +49,7 @@ function ipwa_publikation_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Related doc',
-    'weight' => '15',
+    'weight' => '17',
     'children' => array(),
     'format_type' => 'html-element',
     'format_settings' => array(
@@ -77,7 +77,7 @@ function ipwa_publikation_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Related event',
-    'weight' => '16',
+    'weight' => '18',
     'children' => array(),
     'format_type' => 'html-element',
     'format_settings' => array(

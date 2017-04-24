@@ -58,13 +58,13 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 9,
+      'weight' => 10,
     ),
   );
 
   // Exported field_instance:
-  // 'node-f_rderbekanntmachung-field_anzuzeigende_seitenmodule_'.
-  $field_instances['node-f_rderbekanntmachung-field_anzuzeigende_seitenmodule_'] = array(
+  // 'node-f_rderbekanntmachung-field_anzuzeigende_seitenmodule'.
+  $field_instances['node-f_rderbekanntmachung-field_anzuzeigende_seitenmodule'] = array(
     'bundle' => 'f_rderbekanntmachung',
     'default_value' => NULL,
     'deleted' => 0,
@@ -77,16 +77,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
           'view_mode' => 'full',
         ),
         'type' => 'paragraphs_view',
-        'weight' => 10,
-      ),
-      'rss' => array(
-        'label' => 'hidden',
-        'module' => 'paragraphs',
-        'settings' => array(
-          'view_mode' => 'full',
-        ),
-        'type' => 'paragraphs_view',
-        'weight' => 10,
+        'weight' => 11,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -96,20 +87,22 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_anzuzeigende_seitenmodule_',
+    'field_name' => 'field_anzuzeigende_seitenmodule',
     'label' => 'Anzuzeigende Seitenmodule (Paragraphen)',
     'required' => 0,
     'settings' => array(
       'add_mode' => 'select',
       'allowed_bundles' => array(
         'flie_text_bereich' => -1,
-        'flie_text_mit_bild_links_' => -1,
-        'flie_text_mit_bild_rechts_' => -1,
+        'flie_text_mit_bild_links' => -1,
+        'flie_text_mit_bild_rechts' => -1,
+        'views' => -1,
       ),
       'bundle_weights' => array(
         'flie_text_bereich' => 2,
-        'flie_text_mit_bild_links_' => 3,
-        'flie_text_mit_bild_rechts_' => 4,
+        'flie_text_mit_bild_links' => 3,
+        'flie_text_mit_bild_rechts' => 4,
+        'views' => 5,
       ),
       'default_edit_mode' => 'open',
       'title' => 'Paragraph',
@@ -121,7 +114,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
       'module' => 'paragraphs',
       'settings' => array(),
       'type' => 'paragraphs_embed',
-      'weight' => 11,
+      'weight' => 12,
     ),
   );
 
@@ -186,7 +179,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 6,
+      'weight' => 7,
     ),
   );
 
@@ -204,7 +197,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 19,
+        'weight' => 20,
       ),
       'rss' => array(
         'label' => 'hidden',
@@ -238,7 +231,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 8,
+      'weight' => 9,
     ),
   );
 
@@ -377,7 +370,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 22,
+        'weight' => 23,
       ),
       'rss' => array(
         'label' => 'above',
@@ -408,7 +401,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 19,
+      'weight' => 16,
     ),
   );
 
@@ -427,7 +420,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 20,
+        'weight' => 21,
       ),
       'rss' => array(
         'label' => 'above',
@@ -461,7 +454,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 29,
+      'weight' => 21,
     ),
   );
 
@@ -480,7 +473,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 17,
+        'weight' => 18,
       ),
       'rss' => array(
         'label' => 'above',
@@ -514,7 +507,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 25,
+      'weight' => 19,
     ),
   );
 
@@ -580,7 +573,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 16,
+        'weight' => 17,
       ),
       'rss' => array(
         'label' => 'above',
@@ -614,7 +607,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 23,
+      'weight' => 18,
     ),
   );
 
@@ -633,7 +626,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 18,
+        'weight' => 19,
       ),
       'rss' => array(
         'label' => 'above',
@@ -667,7 +660,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 27,
+      'weight' => 20,
     ),
   );
 
@@ -731,7 +724,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 7,
+      'weight' => 8,
     ),
   );
 
@@ -910,7 +903,7 @@ Quelle',
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 23,
+        'weight' => 24,
       ),
       'rss' => array(
         'label' => 'above',
@@ -941,7 +934,7 @@ Quelle',
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 21,
+      'weight' => 17,
     ),
   );
 
@@ -957,7 +950,7 @@ Quelle',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 13,
+        'weight' => 14,
       ),
       'rss' => array(
         'label' => 'inline',
@@ -988,7 +981,7 @@ Quelle',
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 17,
+      'weight' => 15,
     ),
   );
 
@@ -1005,7 +998,7 @@ Quelle',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 12,
+        'weight' => 13,
       ),
       'rss' => array(
         'label' => 'inline',
@@ -1036,7 +1029,7 @@ Quelle',
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 15,
+      'weight' => 14,
     ),
   );
 
@@ -1054,7 +1047,7 @@ Schema für externe Links: http://www…',
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 21,
+        'weight' => 22,
       ),
       'rss' => array(
         'label' => 'above',
@@ -1102,7 +1095,7 @@ Schema für externe Links: http://www…',
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 31,
+      'weight' => 22,
     ),
   );
 
@@ -1128,7 +1121,7 @@ Schema für externe Links: http://www…',
           'youtube_width' => NULL,
         ),
         'type' => 'youtube_video',
-        'weight' => 11,
+        'weight' => 12,
       ),
       'rss' => array(
         'label' => 'hidden',

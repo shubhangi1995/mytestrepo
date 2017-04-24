@@ -54,8 +54,8 @@ function ipwa_doorpage_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-doorpage-field_anzuzeigende_seitenmodule_'.
-  $field_instances['node-doorpage-field_anzuzeigende_seitenmodule_'] = array(
+  // Exported field_instance: 'node-doorpage-field_anzuzeigende_seitenmodule'.
+  $field_instances['node-doorpage-field_anzuzeigende_seitenmodule'] = array(
     'bundle' => 'doorpage',
     'default_value' => NULL,
     'deleted' => 0,
@@ -68,7 +68,7 @@ function ipwa_doorpage_field_default_field_instances() {
           'view_mode' => 'full',
         ),
         'type' => 'paragraphs_view',
-        'weight' => 3,
+        'weight' => 4,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -78,22 +78,22 @@ function ipwa_doorpage_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_anzuzeigende_seitenmodule_',
+    'field_name' => 'field_anzuzeigende_seitenmodule',
     'label' => 'Anzuzeigende Seitenmodule (Paragraphen)',
     'required' => 0,
     'settings' => array(
       'add_mode' => 'select',
       'allowed_bundles' => array(
         'flie_text_bereich' => -1,
-        'flie_text_mit_bild_links_' => -1,
-        'flie_text_mit_bild_rechts_' => -1,
-        'front_para' => -1,
+        'flie_text_mit_bild_links' => -1,
+        'flie_text_mit_bild_rechts' => -1,
+        'views' => -1,
       ),
       'bundle_weights' => array(
         'flie_text_bereich' => 2,
-        'flie_text_mit_bild_links_' => 3,
-        'flie_text_mit_bild_rechts_' => 4,
-        'front_para' => 5,
+        'flie_text_mit_bild_links' => 3,
+        'flie_text_mit_bild_rechts' => 4,
+        'views' => 5,
       ),
       'default_edit_mode' => 'open',
       'title' => 'Paragraph',
@@ -105,7 +105,7 @@ function ipwa_doorpage_field_default_field_instances() {
       'module' => 'paragraphs',
       'settings' => array(),
       'type' => 'paragraphs_embed',
-      'weight' => 4,
+      'weight' => 6,
     ),
   );
 
