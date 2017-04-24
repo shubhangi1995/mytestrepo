@@ -23,18 +23,10 @@ function ipwa_document_field_group_info() {
     'label' => 'title',
     'weight' => '0',
     'children' => array(),
-    'format_type' => 'html-element',
+    'format_type' => 'hidden',
     'format_settings' => array(
       'formatter' => '',
-      'instance_settings' => array(
-        'element' => 'div',
-        'show_label' => 0,
-        'label_element' => 'div',
-        'classes' => 'group-title field-group-html-element',
-        'attributes' => '',
-        'required_fields' => 1,
-        'id' => '',
-      ),
+      'instance_settings' => array(),
     ),
   );
   $field_groups['group_title|node|document|default'] = $field_group;
