@@ -12,13 +12,13 @@ function ipwa_menu_default_fe_block_settings() {
 
   $export['version'] = '2.0';
 
-  $export['menu-menu-footer-navigation'] = array(
+  $export['block-footer_copyright'] = array(
     'cache' => -1,
     'custom' => 0,
-    'delta' => 'menu-footer-navigation',
     'i18n_block_language' => array(),
     'i18n_mode' => 0,
-    'module' => 'menu',
+    'machine_name' => 'footer_copyright',
+    'module' => 'block',
     'node_types' => array(),
     'pages' => '',
     'roles' => array(),
@@ -33,104 +33,20 @@ function ipwa_menu_default_fe_block_settings() {
         'region' => 'footer',
         'status' => 1,
         'theme' => 'ipwa',
-        'weight' => -21,
-      ),
-    ),
-    'title' => '',
-    'visibility' => 0,
-  );
-
-  $export['menu-menu-meta-navigation'] = array(
-    'cache' => -1,
-    'custom' => 0,
-    'delta' => 'menu-meta-navigation',
-    'i18n_block_language' => array(),
-    'i18n_mode' => 0,
-    'module' => 'menu',
-    'node_types' => array(),
-    'pages' => '',
-    'roles' => array(),
-    'themes' => array(
-      'bartik' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'bartik',
-        'weight' => 0,
-      ),
-      'ipwa' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'ipwa',
-        'weight' => -7,
-      ),
-    ),
-    'title' => '',
-    'visibility' => 0,
-  );
-
-  $export['tb_megamenu-menu-footer-navigation'] = array(
-    'cache' => -1,
-    'custom' => 0,
-    'delta' => 'menu-footer-navigation',
-    'i18n_block_language' => array(),
-    'i18n_mode' => 0,
-    'module' => 'tb_megamenu',
-    'node_types' => array(),
-    'pages' => '',
-    'roles' => array(),
-    'themes' => array(
-      'bartik' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'bartik',
-        'weight' => 0,
-      ),
-      'ipwa' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'ipwa',
-        'weight' => -19,
-      ),
-    ),
-    'title' => '',
-    'visibility' => 0,
-  );
-
-  $export['tb_megamenu-menu-meta-navigation'] = array(
-    'cache' => -1,
-    'custom' => 0,
-    'delta' => 'menu-meta-navigation',
-    'i18n_block_language' => array(),
-    'i18n_mode' => 0,
-    'module' => 'tb_megamenu',
-    'node_types' => array(),
-    'pages' => '',
-    'roles' => array(),
-    'themes' => array(
-      'bartik' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'bartik',
-        'weight' => 0,
-      ),
-      'ipwa' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'ipwa',
         'weight' => -22,
       ),
     ),
-    'title' => '',
+    'title' => '<none>',
     'visibility' => 0,
   );
 
-  $export['views-themenzuweisung_flyouts-block'] = array(
+  $export['block-infos_fur_beschaftigte'] = array(
     'cache' => -1,
     'custom' => 0,
-    'delta' => 'themenzuweisung_flyouts-block',
     'i18n_block_language' => array(),
     'i18n_mode' => 0,
-    'module' => 'views',
+    'machine_name' => 'infos_fur_beschaftigte',
+    'module' => 'block',
     'node_types' => array(),
     'pages' => '',
     'roles' => array(),
@@ -145,20 +61,20 @@ function ipwa_menu_default_fe_block_settings() {
         'region' => '',
         'status' => 0,
         'theme' => 'ipwa',
-        'weight' => 9,
+        'weight' => 0,
       ),
     ),
-    'title' => '',
+    'title' => 'Immer gut informiert',
     'visibility' => 0,
   );
 
-  $export['views-themenzuweisung_flyouts-block_1'] = array(
+  $export['block-infos_fur_unternehmen_left_menu'] = array(
     'cache' => -1,
     'custom' => 0,
-    'delta' => 'themenzuweisung_flyouts-block_1',
     'i18n_block_language' => array(),
     'i18n_mode' => 0,
-    'module' => 'views',
+    'machine_name' => 'infos_fur_unternehmen_left_menu',
+    'module' => 'block',
     'node_types' => array(),
     'pages' => '',
     'roles' => array(),
@@ -173,20 +89,20 @@ function ipwa_menu_default_fe_block_settings() {
         'region' => '',
         'status' => 0,
         'theme' => 'ipwa',
-        'weight' => 10,
+        'weight' => 0,
       ),
     ),
-    'title' => '',
+    'title' => 'Immer gut informiert',
     'visibility' => 0,
   );
 
-  $export['views-themenzuweisung_flyouts-block_2'] = array(
+  $export['block-politik_gesellschaft_left_block'] = array(
     'cache' => -1,
     'custom' => 0,
-    'delta' => 'themenzuweisung_flyouts-block_2',
     'i18n_block_language' => array(),
     'i18n_mode' => 0,
-    'module' => 'views',
+    'machine_name' => 'politik_gesellschaft_left_block',
+    'module' => 'block',
     'node_types' => array(),
     'pages' => '',
     'roles' => array(),
@@ -201,20 +117,20 @@ function ipwa_menu_default_fe_block_settings() {
         'region' => '',
         'status' => 0,
         'theme' => 'ipwa',
-        'weight' => 8,
+        'weight' => 0,
       ),
     ),
-    'title' => '',
+    'title' => 'Immer gut informiert',
     'visibility' => 0,
   );
 
-  $export['views-themenzuweisung_flyouts-block_3'] = array(
+  $export['block-wirtschaft_arbeit_left_block'] = array(
     'cache' => -1,
     'custom' => 0,
-    'delta' => 'themenzuweisung_flyouts-block_3',
     'i18n_block_language' => array(),
     'i18n_mode' => 0,
-    'module' => 'views',
+    'machine_name' => 'wirtschaft_arbeit_left_block',
+    'module' => 'block',
     'node_types' => array(),
     'pages' => '',
     'roles' => array(),
@@ -229,10 +145,10 @@ function ipwa_menu_default_fe_block_settings() {
         'region' => '',
         'status' => 0,
         'theme' => 'ipwa',
-        'weight' => 7,
+        'weight' => 0,
       ),
     ),
-    'title' => '',
+    'title' => 'Immer gut informiert',
     'visibility' => 0,
   );
 
