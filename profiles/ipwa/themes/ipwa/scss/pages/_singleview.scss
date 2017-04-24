@@ -1,9 +1,14 @@
 .field-name-field-themenzuweisung{
+padding-top:20px;
+padding-bottom:40px;
   .field-label{
      font-size:20px;
+	 color:$active-menu;
   }
  .field-items .field-item{
     @extend .col-md-4;
+
+	padding-left:0;
 	a{
 	 font-size:20px;
 	 text-decoration:none;
@@ -11,8 +16,30 @@
 
 
 	}
- }
+ 
+}
+}
 
+.field-name-field-untertitel{
+   font-size:22px;
+}
+
+
+
+.field-name-field-quellenangabe{
+  width:100%;
+  clear:both;
+  
+  .field-label{
+    font-size:20px;
+	color:$active-menu;
+  
+  }
+  
+  .field-items{
+    width:100%;
+	clear:both;
+  }
 }
 
 .paragraphs-items{

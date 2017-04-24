@@ -14,4 +14,10 @@ jQuery(document).ready(function(){
             jQuery(this).attr('target', '_blank');
         }
     });
+	
+	
+	jQuery('#views-exposed-form-aktuelles-page select').select2({
+        minimumResultsForSearch: Infinity
+	}); 
+	
 });
