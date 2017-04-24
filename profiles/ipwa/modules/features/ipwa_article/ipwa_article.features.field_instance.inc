@@ -55,8 +55,8 @@ function ipwa_article_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-article-field_anzuzeigende_seitenmodule_'.
-  $field_instances['node-article-field_anzuzeigende_seitenmodule_'] = array(
+  // Exported field_instance: 'node-article-field_anzuzeigende_seitenmodule'.
+  $field_instances['node-article-field_anzuzeigende_seitenmodule'] = array(
     'bundle' => 'article',
     'default_value' => NULL,
     'deleted' => 0,
@@ -69,7 +69,7 @@ function ipwa_article_field_default_field_instances() {
           'view_mode' => 'full',
         ),
         'type' => 'paragraphs_view',
-        'weight' => 8,
+        'weight' => 9,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -79,20 +79,22 @@ function ipwa_article_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_anzuzeigende_seitenmodule_',
+    'field_name' => 'field_anzuzeigende_seitenmodule',
     'label' => 'Anzuzeigende Seitenmodule (Paragraphen)',
     'required' => 0,
     'settings' => array(
       'add_mode' => 'select',
       'allowed_bundles' => array(
         'flie_text_bereich' => -1,
-        'flie_text_mit_bild_links_' => -1,
-        'flie_text_mit_bild_rechts_' => -1,
+        'flie_text_mit_bild_links' => -1,
+        'flie_text_mit_bild_rechts' => -1,
+        'views' => -1,
       ),
       'bundle_weights' => array(
         'flie_text_bereich' => 2,
-        'flie_text_mit_bild_links_' => 3,
-        'flie_text_mit_bild_rechts_' => 4,
+        'flie_text_mit_bild_links' => 3,
+        'flie_text_mit_bild_rechts' => 4,
+        'views' => 5,
       ),
       'default_edit_mode' => 'open',
       'title' => 'Paragraph',
@@ -104,7 +106,7 @@ function ipwa_article_field_default_field_instances() {
       'module' => 'paragraphs',
       'settings' => array(),
       'type' => 'paragraphs_embed',
-      'weight' => 8,
+      'weight' => 9,
     ),
   );
 
@@ -226,7 +228,7 @@ function ipwa_article_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 19,
+        'weight' => 20,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -256,7 +258,7 @@ function ipwa_article_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 12,
+      'weight' => 13,
     ),
   );
 
@@ -274,7 +276,7 @@ function ipwa_article_field_default_field_instances() {
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 17,
+        'weight' => 18,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -304,7 +306,7 @@ function ipwa_article_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 17,
+      'weight' => 18,
     ),
   );
 
@@ -322,7 +324,7 @@ function ipwa_article_field_default_field_instances() {
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 15,
+        'weight' => 16,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -352,7 +354,7 @@ function ipwa_article_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 15,
+      'weight' => 16,
     ),
   );
 
@@ -410,7 +412,7 @@ function ipwa_article_field_default_field_instances() {
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 14,
+        'weight' => 15,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -440,7 +442,7 @@ function ipwa_article_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 14,
+      'weight' => 15,
     ),
   );
 
@@ -458,7 +460,7 @@ function ipwa_article_field_default_field_instances() {
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 16,
+        'weight' => 17,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -488,7 +490,7 @@ function ipwa_article_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 16,
+      'weight' => 17,
     ),
   );
 
@@ -637,7 +639,7 @@ function ipwa_article_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 20,
+        'weight' => 21,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -667,7 +669,7 @@ function ipwa_article_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 13,
+      'weight' => 14,
     ),
   );
 
@@ -683,7 +685,7 @@ function ipwa_article_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 11,
+        'weight' => 12,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -707,7 +709,7 @@ function ipwa_article_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 11,
+      'weight' => 12,
     ),
   );
 
@@ -723,7 +725,7 @@ function ipwa_article_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 10,
+        'weight' => 11,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -746,7 +748,7 @@ function ipwa_article_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 10,
+      'weight' => 11,
     ),
   );
 
@@ -763,7 +765,7 @@ Schema für externe Links: http://www…',
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 18,
+        'weight' => 19,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -804,7 +806,7 @@ Schema für externe Links: http://www…',
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 18,
+      'weight' => 19,
     ),
   );
 
@@ -830,7 +832,7 @@ Schema für externe Links: http://www…',
           'youtube_width' => NULL,
         ),
         'type' => 'youtube_video',
-        'weight' => 9,
+        'weight' => 10,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -851,7 +853,7 @@ Schema für externe Links: http://www…',
       'module' => 'youtube',
       'settings' => array(),
       'type' => 'youtube',
-      'weight' => 9,
+      'weight' => 10,
     ),
   );
 
