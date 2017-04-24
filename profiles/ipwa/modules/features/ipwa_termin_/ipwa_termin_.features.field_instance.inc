@@ -22,7 +22,7 @@ function ipwa_termin__field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 10,
+        'weight' => 11,
       ),
       'ical' => array(
         'label' => 'hidden',
@@ -58,7 +58,7 @@ function ipwa_termin__field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 4,
+      'weight' => 11,
     ),
   );
 
@@ -76,7 +76,7 @@ function ipwa_termin__field_default_field_instances() {
           'view_mode' => 'full',
         ),
         'type' => 'paragraphs_view',
-        'weight' => 11,
+        'weight' => 10,
       ),
       'ical' => array(
         'label' => 'hidden',
@@ -140,7 +140,7 @@ function ipwa_termin__field_default_field_instances() {
           'view_mode' => 'default',
         ),
         'type' => 'entityreference_entity_view',
-        'weight' => 12,
+        'weight' => 13,
       ),
       'ical' => array(
         'label' => 'hidden',
@@ -176,7 +176,7 @@ function ipwa_termin__field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 11,
+      'weight' => 10,
     ),
   );
 
@@ -191,7 +191,7 @@ function ipwa_termin__field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 23,
+        'weight' => 24,
       ),
       'ical' => array(
         'label' => 'hidden',
@@ -294,7 +294,7 @@ function ipwa_termin__field_default_field_instances() {
         'year_range' => '-3:+3',
       ),
       'type' => 'date_popup',
-      'weight' => 5,
+      'weight' => 4,
     ),
   );
 
@@ -312,7 +312,7 @@ function ipwa_termin__field_default_field_instances() {
           'link' => 0,
         ),
         'type' => 'entityreference_label',
-        'weight' => 21,
+        'weight' => 22,
       ),
       'ical' => array(
         'label' => 'above',
@@ -364,7 +364,7 @@ function ipwa_termin__field_default_field_instances() {
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 16,
+        'weight' => 20,
       ),
       'ical' => array(
         'label' => 'above',
@@ -508,7 +508,7 @@ function ipwa_termin__field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 9,
+      'weight' => 8,
     ),
   );
 
@@ -526,7 +526,7 @@ function ipwa_termin__field_default_field_instances() {
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 15,
+        'weight' => 19,
       ),
       'ical' => array(
         'label' => 'above',
@@ -607,7 +607,7 @@ function ipwa_termin__field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 7,
+      'weight' => 6,
     ),
   );
 
@@ -625,7 +625,7 @@ function ipwa_termin__field_default_field_instances() {
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 17,
+        'weight' => 21,
       ),
       'ical' => array(
         'label' => 'above',
@@ -723,7 +723,7 @@ function ipwa_termin__field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 10,
+      'weight' => 9,
     ),
   );
 
@@ -829,7 +829,7 @@ function ipwa_termin__field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 24,
+        'weight' => 25,
       ),
       'ical' => array(
         'label' => 'hidden',
@@ -876,7 +876,7 @@ function ipwa_termin__field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 20,
+        'weight' => 16,
       ),
       'ical' => array(
         'label' => 'inline',
@@ -923,7 +923,7 @@ function ipwa_termin__field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 19,
+        'weight' => 15,
       ),
       'ical' => array(
         'label' => 'hidden',
@@ -944,7 +944,7 @@ function ipwa_termin__field_default_field_instances() {
     'label' => 'Videounterschrift',
     'required' => 0,
     'settings' => array(
-      'text_processing' => 1,
+      'text_processing' => 0,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -971,7 +971,7 @@ Schema für externe Links: http://www…',
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 22,
+        'weight' => 23,
       ),
       'ical' => array(
         'label' => 'above',
@@ -1045,7 +1045,7 @@ Schema für externe Links: http://www…',
           'youtube_width' => NULL,
         ),
         'type' => 'youtube_video',
-        'weight' => 18,
+        'weight' => 14,
       ),
       'ical' => array(
         'label' => 'hidden',
@@ -1130,7 +1130,7 @@ Schema für externe Links: http://www…',
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 6,
+      'weight' => 5,
     ),
   );
 
@@ -1145,7 +1145,7 @@ Schema für externe Links: http://www…',
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 25,
+        'weight' => 26,
       ),
       'ical' => array(
         'label' => 'hidden',
@@ -1176,7 +1176,7 @@ Schema für externe Links: http://www…',
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 8,
+      'weight' => 7,
     ),
   );
 

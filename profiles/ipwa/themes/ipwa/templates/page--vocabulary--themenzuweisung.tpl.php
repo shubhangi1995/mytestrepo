@@ -113,7 +113,7 @@
     <?php endif; ?>
   </div>
 </header>
-
+<div> <a id="top" name="top"></a></div>
 <div class="main-container <?php print $container_class; ?>">
 
   <header role="banner" id="page-header">
@@ -195,3 +195,4 @@
     <?php print render($page['footer']); ?>
   </footer>
 <?php endif; ?>
+<a href="#top">Top</a>
