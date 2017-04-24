@@ -33,14 +33,14 @@ function ipwa_base_paragraphs_info() {
       'bundle' => 'flie_text_bereich',
       'locked' => '1',
     ),
-    'flie_text_mit_bild_links_' => array(
+    'flie_text_mit_bild_links' => array(
       'name' => 'Fließtext mit Bild (links)',
-      'bundle' => 'flie_text_mit_bild_links_',
+      'bundle' => 'flie_text_mit_bild_links',
       'locked' => '1',
     ),
-    'flie_text_mit_bild_rechts_' => array(
+    'flie_text_mit_bild_rechts' => array(
       'name' => 'Fließtext mit Bild (rechts)',
-      'bundle' => 'flie_text_mit_bild_rechts_',
+      'bundle' => 'flie_text_mit_bild_rechts',
       'locked' => '1',
     ),
   );

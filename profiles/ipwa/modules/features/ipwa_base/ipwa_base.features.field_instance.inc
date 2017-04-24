@@ -54,9 +54,9 @@ function ipwa_base_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'paragraphs_item-flie_text_mit_bild_links_-field_bild_ref'.
-  $field_instances['paragraphs_item-flie_text_mit_bild_links_-field_bild_ref'] = array(
-    'bundle' => 'flie_text_mit_bild_links_',
+  // 'paragraphs_item-flie_text_mit_bild_links-field_bild_ref'.
+  $field_instances['paragraphs_item-flie_text_mit_bild_links-field_bild_ref'] = array(
+    'bundle' => 'flie_text_mit_bild_links',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
@@ -100,9 +100,9 @@ function ipwa_base_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'paragraphs_item-flie_text_mit_bild_links_-field_flie_text_bereich'.
-  $field_instances['paragraphs_item-flie_text_mit_bild_links_-field_flie_text_bereich'] = array(
-    'bundle' => 'flie_text_mit_bild_links_',
+  // 'paragraphs_item-flie_text_mit_bild_links-field_flie_text_bereich'.
+  $field_instances['paragraphs_item-flie_text_mit_bild_links-field_flie_text_bereich'] = array(
+    'bundle' => 'flie_text_mit_bild_links',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
@@ -143,9 +143,9 @@ function ipwa_base_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'paragraphs_item-flie_text_mit_bild_rechts_-field_bild_ref'.
-  $field_instances['paragraphs_item-flie_text_mit_bild_rechts_-field_bild_ref'] = array(
-    'bundle' => 'flie_text_mit_bild_rechts_',
+  // 'paragraphs_item-flie_text_mit_bild_rechts-field_bild_ref'.
+  $field_instances['paragraphs_item-flie_text_mit_bild_rechts-field_bild_ref'] = array(
+    'bundle' => 'flie_text_mit_bild_rechts',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
@@ -159,7 +159,7 @@ function ipwa_base_field_default_field_instances() {
           'view_mode' => 'default',
         ),
         'type' => 'entityreference_entity_view',
-        'weight' => 2,
+        'weight' => 0,
       ),
       'paragraphs_editor_preview' => array(
         'label' => 'above',
@@ -184,14 +184,14 @@ function ipwa_base_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 0,
+      'weight' => 2,
     ),
   );
 
   // Exported field_instance:
-  // 'paragraphs_item-flie_text_mit_bild_rechts_-field_flie_text_bereich'.
-  $field_instances['paragraphs_item-flie_text_mit_bild_rechts_-field_flie_text_bereich'] = array(
-    'bundle' => 'flie_text_mit_bild_rechts_',
+  // 'paragraphs_item-flie_text_mit_bild_rechts-field_flie_text_bereich'.
+  $field_instances['paragraphs_item-flie_text_mit_bild_rechts-field_flie_text_bereich'] = array(
+    'bundle' => 'flie_text_mit_bild_rechts',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
@@ -201,7 +201,7 @@ function ipwa_base_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 3,
+        'weight' => 1,
       ),
       'paragraphs_editor_preview' => array(
         'label' => 'above',
@@ -227,7 +227,7 @@ function ipwa_base_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 1,
+      'weight' => 4,
     ),
   );
 
