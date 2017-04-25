@@ -764,6 +764,12 @@ function ipwa_base_views_default_views() {
   $handler->display->display_options['pager']['options']['items_per_page'] = '3';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'fields';
+  /* Header: Global: Text area */
+  $handler->display->display_options['header']['area']['id'] = 'area';
+  $handler->display->display_options['header']['area']['table'] = 'views';
+  $handler->display->display_options['header']['area']['field'] = 'area';
+  $handler->display->display_options['header']['area']['content'] = '<h2 class="pane-title">Neueste Informationen</h2>';
+  $handler->display->display_options['header']['area']['format'] = 'wysiwyg';
   /* Field: Content: Titel */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
@@ -863,6 +869,7 @@ function ipwa_base_views_default_views() {
     t('Sort by'),
     t('Asc'),
     t('Desc'),
+    t('<h2 class="pane-title">Neueste Informationen</h2>'),
     t('<div class="link-outer-block">
 	<div class="link-inner-block-1">
 		<a href="/aktuelles">mehr Aktuelles</a>
