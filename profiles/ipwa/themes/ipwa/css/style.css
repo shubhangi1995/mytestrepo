@@ -6983,25 +6983,25 @@ header.navbar-default {
 /* line 51, ../scss/pages/_singleview.scss */
 .page-aktuelles {
   font-family: "BentonSans-Regular"; }
-  /* line 53, ../scss/pages/_singleview.scss */
+  /* line 54, ../scss/pages/_singleview.scss */
   .page-aktuelles .page-header {
     padding-left: 250px; }
-  /* line 57, ../scss/pages/_singleview.scss */
+  /* line 59, ../scss/pages/_singleview.scss */
   .page-aktuelles .view-aktuelles .view-header {
     color: #e74712;
     font-size: 26px;
     padding-left: 250px; }
-  /* line 64, ../scss/pages/_singleview.scss */
+  /* line 66, ../scss/pages/_singleview.scss */
   .page-aktuelles .view-aktuelles .view-filters .views-exposed-form #edit-type-wrapper {
     width: 100%; }
-    /* line 67, ../scss/pages/_singleview.scss */
+    /* line 69, ../scss/pages/_singleview.scss */
     .page-aktuelles .view-aktuelles .view-filters .views-exposed-form #edit-type-wrapper .form-item {
       display: inline-block;
       padding-right: 20px; }
-      /* line 70, ../scss/pages/_singleview.scss */
+      /* line 73, ../scss/pages/_singleview.scss */
       .page-aktuelles .view-aktuelles .view-filters .views-exposed-form #edit-type-wrapper .form-item input[attribute="Checked"] {
         display: none; }
-  /* line 76, ../scss/pages/_singleview.scss */
+  /* line 79, ../scss/pages/_singleview.scss */
   .page-aktuelles .view-aktuelles .view-filters .categories-filter {
     margin-top: 30px;
     margin-bottom: 30px;
@@ -7011,52 +7011,62 @@ header.navbar-default {
     clear: both;
     display: inline-block;
     width: 100%; }
-    /* line 87, ../scss/pages/_singleview.scss */
+    /* line 89, ../scss/pages/_singleview.scss */
     .page-aktuelles .view-aktuelles .view-filters .categories-filter .views-exposed-widget {
       padding: 0;
       width: 25%;
       float: left; }
-      /* line 92, ../scss/pages/_singleview.scss */
+      /* line 94, ../scss/pages/_singleview.scss */
       .page-aktuelles .view-aktuelles .view-filters .categories-filter .views-exposed-widget .select2-container--default .select2-selection--single {
         background: 0;
         border: 0;
         border-radius: 0;
         font-size: 20px; }
-        /* line 98, ../scss/pages/_singleview.scss */
+        /* line 100, ../scss/pages/_singleview.scss */
         .page-aktuelles .view-aktuelles .view-filters .categories-filter .views-exposed-widget .select2-container--default .select2-selection--single .select2-selection__rendered {
           color: #ffffff; }
-  /* line 104, ../scss/pages/_singleview.scss */
+  /* line 107, ../scss/pages/_singleview.scss */
   .page-aktuelles .view-aktuelles .view-filters .views-widget-sort-by {
-    float: right; }
-    /* line 105, ../scss/pages/_singleview.scss */
+    float: right;
+    padding: 0; }
+    /* line 111, ../scss/pages/_singleview.scss */
     .page-aktuelles .view-aktuelles .view-filters .views-widget-sort-by .bef-select-as-links .form-type-bef-link {
-      display: inline-block; }
-      /* line 107, ../scss/pages/_singleview.scss */
+      display: inline-block;
+      font-size: 20px;
+      padding-left: 15px; }
+      /* line 116, ../scss/pages/_singleview.scss */
       .page-aktuelles .view-aktuelles .view-filters .views-widget-sort-by .bef-select-as-links .form-type-bef-link a {
         color: #273753;
-        padding-left: 10px; }
-    /* line 112, ../scss/pages/_singleview.scss */
+        text-decoration: none; }
+        /* line 121, ../scss/pages/_singleview.scss */
+        .page-aktuelles .view-aktuelles .view-filters .views-widget-sort-by .bef-select-as-links .form-type-bef-link a.active {
+          padding-bottom: 10px;
+          border-bottom: 2px solid #e74712; }
+    /* line 128, ../scss/pages/_singleview.scss */
     .page-aktuelles .view-aktuelles .view-filters .views-widget-sort-by .select2-container {
       display: none; }
-  /* line 119, ../scss/pages/_singleview.scss */
+  /* line 134, ../scss/pages/_singleview.scss */
   .page-aktuelles .view-aktuelles .view-content {
-    display: table; }
-    /* line 120, ../scss/pages/_singleview.scss */
+    margin-left: -15px;
+    margin-right: -15px; }
+    /* line 138, ../scss/pages/_singleview.scss */
     .page-aktuelles .view-aktuelles .view-content .views-row {
-      font-size: 22px;
-      display: table-cell; }
-      /* line 125, ../scss/pages/_singleview.scss */
+      font-size: 22px; }
+      /* line 144, ../scss/pages/_singleview.scss */
       .page-aktuelles .view-aktuelles .view-content .views-row .row-container {
         background: #ffffff;
-        padding: 10px; }
-        /* line 128, ../scss/pages/_singleview.scss */
+        padding: 10px;
+        height: 350px;
+        margin-bottom: 30px;
+        margin-bottom: 30px; }
+        /* line 151, ../scss/pages/_singleview.scss */
         .page-aktuelles .view-aktuelles .view-content .views-row .row-container .views-field-type {
           color: #e74712; }
-        /* line 133, ../scss/pages/_singleview.scss */
+        /* line 156, ../scss/pages/_singleview.scss */
         .page-aktuelles .view-aktuelles .view-content .views-row .row-container .views-field-title a {
           text-decoration: none;
           color: #273753; }
-  /* line 141, ../scss/pages/_singleview.scss */
+  /* line 165, ../scss/pages/_singleview.scss */
   .page-aktuelles .view-aktuelles .views-submit-button {
     display: none; }
 

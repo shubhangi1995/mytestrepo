@@ -49,15 +49,17 @@
 
 //------------Aktuelles------------//
 .page-aktuelles {
-   font-family:$font-family-primary;
-    .page-header{ padding-left:250px;
-	}
+    font-family: $font-family-primary;
+
+    .page-header {
+        padding-left: 250px;
+    }
 
     .view-aktuelles {
         .view-header {
             color: $active-menu;
             font-size: 26px;
-			padding-left:250px;
+            padding-left: 250px;
         }
 
         .view-filters {
@@ -67,12 +69,13 @@
                 .form-item {
                     display: inline-block;
                     padding-right: 20px;
-					input[attribute="Checked"]{
-					     display:none;
-					
+
+                    input[attribute="Checked"] {
+                        display: none;
+                    }
                 }
             }
-}
+
             .categories-filter {
                 margin-top: 30px;
                 margin-bottom: 30px;
@@ -81,8 +84,7 @@
                 background: $header-menu;
                 clear: both;
                 display: inline-block;
-				width:100%;
-				
+                width: 100%;
 
                 .views-exposed-widget {
                     padding: 0;
@@ -101,41 +103,63 @@
                     }
                 }
             }
-			.views-widget-sort-by { float:right;
-			   .bef-select-as-links  .form-type-bef-link{
-				    display:inline-block;
-					  a{
-					   color:$header-menu;
-					   padding-left:10px;
-					  }
-				 }
-			.select2-container{
-			   display:none;
-			}
-			
-			}
-        
-}
-        .view-content { display:table;
-            .views-row {
-                @extend .col-md-4;             
-                font-size: 22px;
-				display:table-cell;
-                
-            .row-container{
-			      background:$color-white;
-				  padding: 10px;
-                .views-field-type {
-                    color: $active-menu;
-                   
+
+            .views-widget-sort-by {
+                float: right;
+				padding:0;
+
+                .bef-select-as-links .form-type-bef-link {
+                    display: inline-block;
+					 font-size:20px;
+					 padding-left:15px;
+					
+                    a {
+                        color: $header-menu;
+                        
+						text-decoration:none;
+						
+						&.active{
+						   padding-bottom:10px;
+						   border-bottom:2px solid $active-menu;
+						}
+                    }
                 }
-				.views-field-title{
-				   a{
-				     text-decoration:none;
-					 color:$header-menu;
-				   }
-				}
-            }}
+
+                .select2-container {
+                    display: none;
+                }
+            }
+        }
+
+        .view-content {
+            margin-left: -15px;
+            margin-right: -15px;
+
+            .views-row {
+                @extend .col-md-4;
+
+                font-size: 22px;
+                
+
+                .row-container {
+                    background: $color-white;
+                    padding: 10px;
+					height:350px;
+					margin-bottom:30px;
+					margin-bottom:30px;
+
+                    .views-field-type {
+                        color: $active-menu;
+                    }
+
+                    .views-field-title {
+                        a {
+                            text-decoration: none;
+                            color: $header-menu;
+                        }
+                    }
+                }
+            }
         }
 
         .views-submit-button {
