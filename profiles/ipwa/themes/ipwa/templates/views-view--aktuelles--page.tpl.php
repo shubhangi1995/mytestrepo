@@ -86,8 +86,9 @@
 <?php $front_nid = explode('/', $front_url); ?>
 <?php $front_nid = end($front_nid); ?>
 <?php $node = node_load($front_nid); ?>
-<?php if(isset($node->field_anzuzeigende_seitenmodule_) && !empty($node->field_anzuzeigende_seitenmodule_)): ?>
-  <?php foreach ($node->field_anzuzeigende_seitenmodule_['und'] as $pid): ?>
+
+<?php if(isset($node->field_anzuzeigende_seitenmodule) && !empty($node->field_anzuzeigende_seitenmodule)): ?>
+  <?php foreach ($node->field_anzuzeigende_seitenmodule['und'] as $pid): ?>
     <?php $entity_data = entity_load('paragraphs_item', array($pid['value'])); ?>
     <?php if(!empty($entity_data)): ?>
       <?php if($entity_data[$pid['value']]->bundle == 'frontpage_map_teaser_paragraph'): ?>
