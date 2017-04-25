@@ -642,13 +642,13 @@ function ipwa_doorpage_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'field_collection',
         'settings' => array(
-          'add' => 'Add',
-          'delete' => 'Delete',
-          'description' => TRUE,
-          'edit' => 'Edit',
+          'add' => '',
+          'delete' => '',
+          'description' => 0,
+          'edit' => '',
           'view_mode' => 'full',
         ),
         'type' => 'field_collection_view',
