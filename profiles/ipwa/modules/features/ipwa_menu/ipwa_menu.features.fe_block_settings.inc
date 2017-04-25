@@ -152,5 +152,33 @@ function ipwa_menu_default_fe_block_settings() {
     'visibility' => 0,
   );
 
+  $export['menu-menu-footer-navigation'] = array(
+    'cache' => -1,
+    'custom' => 0,
+    'delta' => 'menu-footer-navigation',
+    'i18n_block_language' => array(),
+    'i18n_mode' => 0,
+    'module' => 'menu',
+    'node_types' => array(),
+    'pages' => '',
+    'roles' => array(),
+    'themes' => array(
+      'bartik' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'bartik',
+        'weight' => 0,
+      ),
+      'ipwa' => array(
+        'region' => 'footer',
+        'status' => 1,
+        'theme' => 'ipwa',
+        'weight' => -21,
+      ),
+    ),
+    'title' => '<none>',
+    'visibility' => 0,
+  );
+
   return $export;
 }

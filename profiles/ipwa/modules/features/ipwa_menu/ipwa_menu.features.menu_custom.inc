@@ -13,7 +13,7 @@ function ipwa_menu_menu_default_menu_custom() {
   // Exported menu: menu-footer-navigation.
   $menus['menu-footer-navigation'] = array(
     'menu_name' => 'menu-footer-navigation',
-    'title' => '<none>',
+    'title' => 'Footer navigation',
     'description' => '',
   );
   // Exported menu: menu-meta-navigation.
@@ -24,7 +24,7 @@ function ipwa_menu_menu_default_menu_custom() {
   );
   // Translatables
   // Included for use with string extractors like potx.
-  t('<none>');
+  t('Footer navigation');
   t('meta_navigation');
 
   return $menus;
