@@ -11,15 +11,15 @@ function ipwa_topic_field_default_field_instances() {
   $field_instances = array();
 
   // Exported field_instance:
-  // 'taxonomy_term-themenzuweisung-field_anzuzeigende_seitenmodule_'.
-  $field_instances['taxonomy_term-themenzuweisung-field_anzuzeigende_seitenmodule_'] = array(
+  // 'taxonomy_term-themenzuweisung-field_anzuzeigende_seitenmodule'.
+  $field_instances['taxonomy_term-themenzuweisung-field_anzuzeigende_seitenmodule'] = array(
     'bundle' => 'themenzuweisung',
     'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'hidden',
+        'label' => 'above',
         'module' => 'paragraphs',
         'settings' => array(
           'view_mode' => 'full',
@@ -29,20 +29,26 @@ function ipwa_topic_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'taxonomy_term',
-    'field_name' => 'field_anzuzeigende_seitenmodule_',
+    'field_name' => 'field_anzuzeigende_seitenmodule',
     'label' => 'Anzuzeigende Seitenmodule (Paragraphen)',
     'required' => 0,
     'settings' => array(
       'add_mode' => 'select',
       'allowed_bundles' => array(
         'flie_text_bereich' => -1,
-        'flie_text_mit_bild_links_' => -1,
-        'flie_text_mit_bild_rechts_' => -1,
+        'flie_text_mit_bild_links' => -1,
+        'flie_text_mit_bild_rechts' => -1,
+        'frontpage_map_teaser_paragraph' => -1,
+        'topic_teaser_paragraph' => -1,
+        'views' => -1,
       ),
       'bundle_weights' => array(
         'flie_text_bereich' => 2,
-        'flie_text_mit_bild_links_' => 3,
-        'flie_text_mit_bild_rechts_' => 4,
+        'flie_text_mit_bild_links' => 3,
+        'flie_text_mit_bild_rechts' => 4,
+        'frontpage_map_teaser_paragraph' => 5,
+        'topic_teaser_paragraph' => 6,
+        'views' => 7,
       ),
       'default_edit_mode' => 'open',
       'title' => 'Paragraph',
@@ -54,7 +60,7 @@ function ipwa_topic_field_default_field_instances() {
       'module' => 'paragraphs',
       'settings' => array(),
       'type' => 'paragraphs_embed',
-      'weight' => 5,
+      'weight' => 6,
     ),
   );
 
