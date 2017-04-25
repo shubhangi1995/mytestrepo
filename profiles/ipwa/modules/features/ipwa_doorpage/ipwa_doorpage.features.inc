@@ -43,6 +43,11 @@ function ipwa_doorpage_node_info() {
  */
 function ipwa_doorpage_paragraphs_info() {
   $items = array(
+    'frontpage_map_teaser_paragraph' => array(
+      'name' => 'Frontpage Map Teaser Paragraph',
+      'bundle' => 'frontpage_map_teaser_paragraph',
+      'locked' => '1',
+    ),
     'topic_teaser_paragraph' => array(
       'name' => 'Topic Teaser paragraph',
       'bundle' => 'topic_teaser_paragraph',
