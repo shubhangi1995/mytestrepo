@@ -175,6 +175,15 @@ function ipwa_base_views_default_views() {
   $handler->display->display_options['header']['area']['field'] = 'area';
   $handler->display->display_options['header']['area']['content'] = '[headline] this needs to be carified, about its content';
   $handler->display->display_options['header']['area']['format'] = 'wysiwyg';
+  /* Field: Content: Dieser Artikel gehört zu */
+  $handler->display->display_options['fields']['field_themenzuweisung']['id'] = 'field_themenzuweisung';
+  $handler->display->display_options['fields']['field_themenzuweisung']['table'] = 'field_data_field_themenzuweisung';
+  $handler->display->display_options['fields']['field_themenzuweisung']['field'] = 'field_themenzuweisung';
+  $handler->display->display_options['fields']['field_themenzuweisung']['label'] = '';
+  $handler->display->display_options['fields']['field_themenzuweisung']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_themenzuweisung']['group_column'] = 'entity_id';
+  $handler->display->display_options['fields']['field_themenzuweisung']['delta_offset'] = '0';
+  $handler->display->display_options['fields']['field_themenzuweisung']['separator'] = '';
   /* Field: Content: Type */
   $handler->display->display_options['fields']['type']['id'] = 'type';
   $handler->display->display_options['fields']['type']['table'] = 'node';
@@ -202,11 +211,7 @@ function ipwa_base_views_default_views() {
     'multiple_to' => '',
     'show_remaining_days' => 0,
   );
-  /* Field: Content: Dieser Artikel gehört zu */
-  $handler->display->display_options['fields']['field_themenzuweisung']['id'] = 'field_themenzuweisung';
-  $handler->display->display_options['fields']['field_themenzuweisung']['table'] = 'field_data_field_themenzuweisung';
-  $handler->display->display_options['fields']['field_themenzuweisung']['field'] = 'field_themenzuweisung';
-  $handler->display->display_options['fields']['field_themenzuweisung']['delta_offset'] = '0';
+  $handler->display->display_options['fields']['field_datum']['group_column'] = 'entity_id';
   /* Sort criterion: Content: Titel */
   $handler->display->display_options['sorts']['title']['id'] = 'title';
   $handler->display->display_options['sorts']['title']['table'] = 'node';
@@ -394,7 +399,6 @@ function ipwa_base_views_default_views() {
     t('next ›'),
     t('last »'),
     t('[headline] this needs to be carified, about its content'),
-    t('Dieser Artikel gehört zu'),
     t('A-Z'),
     t('neueste zuerst'),
     t('Page'),
