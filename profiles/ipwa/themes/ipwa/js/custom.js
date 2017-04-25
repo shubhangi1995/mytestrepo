@@ -20,17 +20,11 @@ jQuery(document).ready(function(){
         minimumResultsForSearch: Infinity
 	}); 
 	
-	
-	//jQuery('input[type=radio]').on('change',function(e) {
-      //jQuery("#edit-type-wrapper .form-item-type label").css('border-bottom', '2px solid #273753');
-//});
-	
-	
-	jQuery("input[name='type']:radio").on('change',function(e){ 	  
-               
-            jQuery('#edit-type-wrapper .form-item-type label').css('border-bottom', '2px solid #e74712');
-            
-            
-    });
+	jQuery("input:radio").each(function(){
+  if(jQuery(this).is(':checked'))
+  {
+	jQuery(this).parent("label").css('border-bottom', '2px solid #e74712');
+  }
+}); 
 	
 });

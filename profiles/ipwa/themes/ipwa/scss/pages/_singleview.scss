@@ -69,11 +69,14 @@
                 .form-item {
                     display: inline-block;
                     padding-right: 50px;
-					font-size:20px;
-					label{ padding-left:0;			
-					 input{
-					    visibility:hidden;
-					  }
+                    font-size: 20px;
+
+                    label {
+                        padding-left: 0;
+
+                        input {
+                            visibility: hidden;
+                        }
                     }
                 }
             }
@@ -108,22 +111,21 @@
 
             .views-widget-sort-by {
                 float: right;
-				padding:0;
+                padding: 0;
 
                 .bef-select-as-links .form-type-bef-link {
                     display: inline-block;
-					 font-size:20px;
-					 padding-left:15px;
-					
+                    font-size: 20px;
+                    padding-left: 15px;
+
                     a {
                         color: $header-menu;
-                        
-						text-decoration:none;
-						
-						&.active{
-						   padding-bottom:10px;
-						   border-bottom:2px solid $active-menu;
-						}
+                        text-decoration: none;
+
+                        &.active {
+                            padding-bottom: 10px;
+                            border-bottom: 2px solid $active-menu;
+                        }
                     }
                 }
 
@@ -141,14 +143,13 @@
                 @extend .col-md-4;
 
                 font-size: 22px;
-                
 
                 .row-container {
                     background: $color-white;
                     padding: 10px;
-					height:350px;
-					margin-bottom:30px;
-					margin-bottom:30px;
+                    height: 350px;
+                    margin-bottom: 30px;
+                    margin-bottom: 30px;
 
                     .views-field-type {
                         color: $active-menu;
@@ -166,6 +167,41 @@
 
         .views-submit-button {
             display: none;
+        }
+
+        .view-map-teaser {
+            clear: both;
+
+            .view-content {
+                margin: 0;
+
+                .views-row {
+                    @extend .col-md-8;
+
+                    background: $header-menu;
+                   padding:40px;
+				   
+
+                    .views-field-field-bild img {
+                        color: $active-menu;
+                    }
+
+                    .views-field-field-paragraph-title {
+                        color: $color-white;
+                        font-size: 38px;
+                    }
+
+                    .views-field-field-flie-text-bereich {
+                        color: $color-white;
+                        font-size: 20px;
+                    }
+
+                    .views-field-field-quellenangabe a {
+                        color: $color-white;
+                        font-size: 20px;
+                    }
+                }
+            }
         }
     }
 }
