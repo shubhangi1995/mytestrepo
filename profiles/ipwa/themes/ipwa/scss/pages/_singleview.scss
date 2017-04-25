@@ -1,89 +1,145 @@
-.field-name-field-themenzuweisung{
-padding-top:20px;
-padding-bottom:40px;
-  .field-label{
-     font-size:20px;
-	 color:$active-menu;
-  }
- .field-items .field-item{
-    @extend .col-md-4;
+.field-name-field-themenzuweisung {
+    padding-top: 20px;
+    padding-bottom: 40px;
 
-	padding-left:0;
-	a{
-	 font-size:20px;
-	 text-decoration:none;
-	 color:$header-menu;
+    .field-label {
+        font-size: 20px;
+        color: $active-menu;
+    }
 
+    .field-items .field-item {
+        @extend .col-md-4;
 
-	}
- 
-}
-}
+        padding-left: 0;
 
-.field-name-field-untertitel{
-   font-size:22px;
+        a {
+            font-size: 20px;
+            text-decoration: none;
+            color: $header-menu;
+        }
+    }
 }
 
-
-
-.field-name-field-quellenangabe{
-  width:100%;
-  clear:both;
-  
-  .field-label{
-    font-size:20px;
-	color:$active-menu;
-  
-  }
-  
-  .field-items{
-    width:100%;
-	clear:both;
-  }
+.field-name-field-untertitel {
+    font-size: 22px;
 }
 
-.paragraphs-items{
+.field-name-field-quellenangabe {
+    width: 100%;
+    clear: both;
 
- .paragraphs-item-flie-text-bereich{
- 
- 
- }
+    .field-label {
+        font-size: 20px;
+        color: $active-menu;
+    }
 
+    .field-items {
+        width: 100%;
+        clear: both;
+    }
 }
 
-.field-name-field-youtube-url{
-  text-align:center;
+.paragraphs-items {
+    .paragraphs-item-flie-text-bereich {}
 }
 
+.field-name-field-youtube-url {
+    text-align: center;
+}
 
 //------------Aktuelles------------//
-.page-aktuelles{
-.region-content{ background:$color-light-blue;
-.view-aktuelles {
- .view-filters{
-   .views-exposed-form #edit-type-wrapper{ width:100%;
-   .form-item{
-     display:inline-block;
-	 padding-right:20px;
-   }
- }
- }
-
-  .view-content{
-    .views-row{
-	  @extend .col-md-4;
-	  padding: 10px;
-    height: 200px;
-	  .views-field-type{
-	    color:$active-menu;
-		font-size:22px;
-	  }
+.page-aktuelles {
+   font-family:$font-family-primary;
+    .page-header{ padding-left:250px;
 	}
-  }
-  
-  .views-submit-button{
-     display:none;
-  }
-  }
+
+    .view-aktuelles {
+        .view-header {
+            color: $active-menu;
+            font-size: 26px;
+			padding-left:250px;
+        }
+
+        .view-filters {
+            .views-exposed-form #edit-type-wrapper {
+                width: 100%;
+
+                .form-item {
+                    display: inline-block;
+                    padding-right: 20px;
+					input[attribute="Checked"]{
+					     display:none;
+					
+                }
+            }
 }
+            .categories-filter {
+                margin-top: 30px;
+                margin-bottom: 30px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                background: $header-menu;
+                clear: both;
+                display: inline-block;
+				width:100%;
+				
+
+                .views-exposed-widget {
+                    padding: 0;
+                    width: 25%;
+                    float: left;
+
+                    .select2-container--default .select2-selection--single {
+                        background: 0;
+                        border: 0;
+                        border-radius: 0;
+                        font-size: 20px;
+
+                        .select2-selection__rendered {
+                            color: $color-white;
+                        }
+                    }
+                }
+            }
+			.views-widget-sort-by { float:right;
+			   .bef-select-as-links  .form-type-bef-link{
+				    display:inline-block;
+					  a{
+					   color:$header-menu;
+					   padding-left:10px;
+					  }
+				 }
+			.select2-container{
+			   display:none;
+			}
+			
+			}
+        
+}
+        .view-content { display:table;
+            .views-row {
+                @extend .col-md-4;             
+                font-size: 22px;
+				display:table-cell;
+                
+            .row-container{
+			      background:$color-white;
+				  padding: 10px;
+                .views-field-type {
+                    color: $active-menu;
+                   
+                }
+				.views-field-title{
+				   a{
+				     text-decoration:none;
+					 color:$header-menu;
+				   }
+				}
+            }}
+        }
+
+        .views-submit-button {
+            display: none;
+        }
+    }
 }
