@@ -24,6 +24,31 @@ function ipwa_base_views_api($module = NULL, $api = NULL) {
 }
 
 /**
+ * Implements hook_image_default_styles().
+ */
+function ipwa_base_image_default_styles() {
+  $styles = array();
+
+  // Exported image style: themen_icon_36x36.
+  $styles['themen_icon_36x36'] = array(
+    'label' => 'Themen icon (36x36)',
+    'effects' => array(
+      1 => array(
+        'name' => 'image_scale',
+        'data' => array(
+          'width' => 36,
+          'height' => 36,
+          'upscale' => 0,
+        ),
+        'weight' => 1,
+      ),
+    ),
+  );
+
+  return $styles;
+}
+
+/**
  * Implements hook_paragraphs_info().
  */
 function ipwa_base_paragraphs_info() {

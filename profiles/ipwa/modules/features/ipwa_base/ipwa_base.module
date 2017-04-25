@@ -15,5 +15,50 @@ function ipwa_base_views_pre_render(&$view) {
     $view->attachment_before = '<div class="view-result-count">';
     $view->attachment_before .= $view->total_rows . ' ' . t('Treffer');
     $view->attachment_before .= '</div>';
+
+    foreach($view->result as $result) {
+      $parent_ids = array();
+      if (!empty($result->field_field_themenzuweisung)) {
+        foreach($result->field_field_themenzuweisung as $key => $val) {
+          $icon = array();
+          $tid = $val['raw']['tid'];
+          $term = taxonomy_term_load($tid);
+
+          //check if there are parent
+          $parent = taxonomy_get_parents($tid);
+
+          if (!empty($parent)) {
+            //if this term is also child of same parent as previous one,
+            // there is no point of showing same icon, in that case remove the term
+            if (in_array($parent[1]->tid, $parent_ids)) {
+              unset($result->field_field_themenzuweisung[1]);
+            } else {
+              // add parent term id in array
+              $parent_ids[] = $parent[1]->tid;
+              if (!empty($parent[1]->field_bild)) {
+                // Show Icon of parent term
+                $icon = $parent[1]->field_bild['und'][0];
+              }
+            }
+          } else {
+            if (!empty($term->field_bild)) {
+              // For main category(1st level), show their uploaded icon
+              $icon = $term->field_bild['und'][0];
+            }
+          }
+
+          if (!empty($icon)) {
+            $result->field_field_themenzuweisung[$key]['rendered'] = array(
+              '#theme' => 'image_formatter',
+              '#item' => $icon,
+              '#image_style' => 'themen_icon_36x36',
+              '#path' => '',
+              '#access' => 1
+            );
+            $result->field_field_themenzuweisung[$key]['raw'] = $icon;
+          }
+        }
+      }
+    }
   }
 }

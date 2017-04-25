@@ -6,6 +6,7 @@ version = 7.x-1.0
 features[ctools][] = views:views_default:3.0
 features[features_api][] = api:2
 features[field_instance][] = taxonomy_term-themenzuweisung-field_anzuzeigende_seitenmodule_
+features[field_instance][] = taxonomy_term-themenzuweisung-field_bild
 features[field_instance][] = taxonomy_term-themenzuweisung-field_kurztext
 features[field_instance][] = taxonomy_term-themenzuweisung-field_untertitel
 features[taxonomy][] = themenzuweisung
