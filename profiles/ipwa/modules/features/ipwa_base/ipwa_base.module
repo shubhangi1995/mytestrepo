@@ -28,16 +28,18 @@ function ipwa_base_views_pre_render(&$view) {
           $parent = taxonomy_get_parents($tid);
 
           if (!empty($parent)) {
-            //if this term is also child of same parent as previous one,
-            // there is no point of showing same icon, in that case remove the term
-            if (in_array($parent[1]->tid, $parent_ids)) {
-              unset($result->field_field_themenzuweisung[1]);
-            } else {
-              // add parent term id in array
-              $parent_ids[] = $parent[1]->tid;
-              if (!empty($parent[1]->field_bild)) {
-                // Show Icon of parent term
-                $icon = $parent[1]->field_bild['und'][0];
+            foreach($parent as $pid => $parent_term) {
+              //if this term is also child of same parent as previous one,
+              // there is no point of showing same icon, in that case remove the term
+              if (in_array($parent_term->tid, $parent_ids)) {
+                unset($result->field_field_themenzuweisung[1]);
+              } else {
+                // add parent term id in array
+                $parent_ids[] = $parent_term->tid;
+                if (!empty($parent_term->field_bild)) {
+                  // Show Icon of parent term
+                  $icon = $parent_term->field_bild['und'][0];
+                }
               }
             }
           } else {
