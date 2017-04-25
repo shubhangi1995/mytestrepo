@@ -14,7 +14,7 @@ function ipwa_menu_default_fe_block_boxes() {
   $fe_block_boxes->info = 'Footer copyright';
   $fe_block_boxes->format = 'wysiwyg';
   $fe_block_boxes->machine_name = 'footer_copyright';
-  $fe_block_boxes->body = '<div class="footer-copyright"><span style="color:#000000">© 2017 <strong>&nbsp;Ministerium&nbsp;für Wirtschaft, Energie, Industrie,&nbsp;Mittelstand und &nbsp;Handwerk des Lands Nordrhein-Westfalen</strong></span></div>
+  $fe_block_boxes->body = '<div class="footer-copyright">© 2017 &nbsp;Ministerium&nbsp;für Wirtschaft, Energie, Industrie,&nbsp;Mittelstand und &nbsp;Handwerk des Lands Nordrhein-Westfalen</div>
 ';
 
   $export['footer_copyright'] = $fe_block_boxes;
