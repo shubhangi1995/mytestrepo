@@ -13,6 +13,7 @@ dependencies[] = list
 dependencies[] = media
 dependencies[] = panelizer
 dependencies[] = paragraphs_id
+dependencies[] = views_content
 features[ctools][] = field_group:field_group:1
 features[ctools][] = panelizer:panelizer:1
 features[ctools][] = strongarm:strongarm:1
