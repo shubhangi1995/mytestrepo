@@ -41,7 +41,6 @@ features[field_instance][] = node-doorpage-field_untertitel
 features[field_instance][] = paragraphs_item-frontpage_map_teaser_paragraph-eb_background
 features[field_instance][] = paragraphs_item-frontpage_map_teaser_paragraph-field_bild
 features[field_instance][] = paragraphs_item-frontpage_map_teaser_paragraph-field_flie_text_bereich
-features[field_instance][] = paragraphs_item-frontpage_map_teaser_paragraph-field_map_teaser
 features[field_instance][] = paragraphs_item-frontpage_map_teaser_paragraph-field_paragraph_title
 features[field_instance][] = paragraphs_item-frontpage_map_teaser_paragraph-field_projekt_reference
 features[field_instance][] = paragraphs_item-frontpage_map_teaser_paragraph-field_quellenangabe

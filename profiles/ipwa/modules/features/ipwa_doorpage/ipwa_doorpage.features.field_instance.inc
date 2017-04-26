@@ -607,50 +607,6 @@ function ipwa_doorpage_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'paragraphs_item-frontpage_map_teaser_paragraph-field_map_teaser'.
-  $field_instances['paragraphs_item-frontpage_map_teaser_paragraph-field_map_teaser'] = array(
-    'bundle' => 'frontpage_map_teaser_paragraph',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'module' => 'field_collection',
-        'settings' => array(
-          'add' => '',
-          'delete' => '',
-          'description' => 0,
-          'edit' => '',
-          'view_mode' => 'full',
-        ),
-        'type' => 'field_collection_view',
-        'weight' => 1,
-      ),
-      'paragraphs_editor_preview' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'paragraphs_item',
-    'field_name' => 'field_map_teaser',
-    'label' => 'Map Teaser',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 0,
-      'module' => 'field_collection',
-      'settings' => array(),
-      'type' => 'field_collection_embed',
-      'weight' => 3,
-    ),
-  );
-
-  // Exported field_instance:
   // 'paragraphs_item-frontpage_map_teaser_paragraph-field_paragraph_title'.
   $field_instances['paragraphs_item-frontpage_map_teaser_paragraph-field_paragraph_title'] = array(
     'bundle' => 'frontpage_map_teaser_paragraph',
