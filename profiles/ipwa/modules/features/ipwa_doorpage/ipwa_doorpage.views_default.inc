@@ -33,36 +33,28 @@ function ipwa_doorpage_views_default_views() {
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'fields';
-  /* Relationship: Paragraphs item: Map Teaser (field_map_teaser) */
-  $handler->display->display_options['relationships']['field_map_teaser_value']['id'] = 'field_map_teaser_value';
-  $handler->display->display_options['relationships']['field_map_teaser_value']['table'] = 'field_data_field_map_teaser';
-  $handler->display->display_options['relationships']['field_map_teaser_value']['field'] = 'field_map_teaser_value';
-  $handler->display->display_options['relationships']['field_map_teaser_value']['delta'] = '-1';
   /* Field: Field: Icon */
   $handler->display->display_options['fields']['field_bild']['id'] = 'field_bild';
   $handler->display->display_options['fields']['field_bild']['table'] = 'field_data_field_bild';
   $handler->display->display_options['fields']['field_bild']['field'] = 'field_bild';
-  $handler->display->display_options['fields']['field_bild']['relationship'] = 'field_map_teaser_value';
   $handler->display->display_options['fields']['field_bild']['label'] = '';
   $handler->display->display_options['fields']['field_bild']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_bild']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_bild']['type'] = 'file_image_image';
   $handler->display->display_options['fields']['field_bild']['settings'] = array(
-    'image_style' => 'themen_icon_36x36',
+    'image_style' => 'map_teaser_icon_68x68',
     'image_link' => '',
   );
   /* Field: Field: Title */
   $handler->display->display_options['fields']['field_paragraph_title']['id'] = 'field_paragraph_title';
   $handler->display->display_options['fields']['field_paragraph_title']['table'] = 'field_data_field_paragraph_title';
   $handler->display->display_options['fields']['field_paragraph_title']['field'] = 'field_paragraph_title';
-  $handler->display->display_options['fields']['field_paragraph_title']['relationship'] = 'field_map_teaser_value';
   $handler->display->display_options['fields']['field_paragraph_title']['label'] = '';
   $handler->display->display_options['fields']['field_paragraph_title']['element_label_colon'] = FALSE;
   /* Field: Field: Fließtext-Bereich */
   $handler->display->display_options['fields']['field_flie_text_bereich']['id'] = 'field_flie_text_bereich';
   $handler->display->display_options['fields']['field_flie_text_bereich']['table'] = 'field_data_field_flie_text_bereich';
   $handler->display->display_options['fields']['field_flie_text_bereich']['field'] = 'field_flie_text_bereich';
-  $handler->display->display_options['fields']['field_flie_text_bereich']['relationship'] = 'field_map_teaser_value';
   $handler->display->display_options['fields']['field_flie_text_bereich']['label'] = '';
   $handler->display->display_options['fields']['field_flie_text_bereich']['alter']['trim'] = TRUE;
   $handler->display->display_options['fields']['field_flie_text_bereich']['element_label_colon'] = FALSE;
@@ -70,7 +62,6 @@ function ipwa_doorpage_views_default_views() {
   $handler->display->display_options['fields']['field_quellenangabe']['id'] = 'field_quellenangabe';
   $handler->display->display_options['fields']['field_quellenangabe']['table'] = 'field_data_field_quellenangabe';
   $handler->display->display_options['fields']['field_quellenangabe']['field'] = 'field_quellenangabe';
-  $handler->display->display_options['fields']['field_quellenangabe']['relationship'] = 'field_map_teaser_value';
   $handler->display->display_options['fields']['field_quellenangabe']['label'] = '';
   $handler->display->display_options['fields']['field_quellenangabe']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_quellenangabe']['click_sort_column'] = 'url';
@@ -102,7 +93,6 @@ function ipwa_doorpage_views_default_views() {
     t('Sort by'),
     t('Asc'),
     t('Desc'),
-    t('field collection item from field_map_teaser'),
     t('All'),
     t('Block'),
   );
