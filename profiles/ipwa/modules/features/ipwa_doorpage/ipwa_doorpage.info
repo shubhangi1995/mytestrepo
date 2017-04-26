@@ -30,7 +30,6 @@ features[field_group][] = group_eb_image|field_collection_item|eb_background|for
 features[field_instance][] = field_collection_item-eb_background-eb_selection
 features[field_instance][] = field_collection_item-eb_background-field_eb_image
 features[field_instance][] = field_collection_item-eb_background-field_eb_image_style
-features[field_instance][] = field_collection_item-field_topic_teaser-field_bild
 features[field_instance][] = field_collection_item-field_topic_teaser-field_flie_text_bereich
 features[field_instance][] = field_collection_item-field_topic_teaser-field_paragraph_title
 features[field_instance][] = field_collection_item-field_topic_teaser-field_quellenangabe
