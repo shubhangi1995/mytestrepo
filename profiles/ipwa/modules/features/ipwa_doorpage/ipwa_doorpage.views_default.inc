@@ -48,7 +48,7 @@ function ipwa_doorpage_views_default_views() {
   $handler->display->display_options['fields']['field_bild']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_bild']['type'] = 'file_image_image';
   $handler->display->display_options['fields']['field_bild']['settings'] = array(
-    'image_style' => 'thumbnail',
+    'image_style' => 'themen_icon_36x36',
     'image_link' => '',
   );
   /* Field: Field: Title */

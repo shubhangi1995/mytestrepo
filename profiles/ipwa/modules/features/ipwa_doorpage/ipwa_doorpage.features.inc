@@ -48,6 +48,22 @@ function ipwa_doorpage_image_default_styles() {
     ),
   );
 
+  // Exported image style: themen_icon_54x54.
+  $styles['themen_icon_54x54'] = array(
+    'label' => 'Themen icon (54x54)',
+    'effects' => array(
+      2 => array(
+        'name' => 'image_scale',
+        'data' => array(
+          'width' => 54,
+          'height' => 54,
+          'upscale' => 0,
+        ),
+        'weight' => 1,
+      ),
+    ),
+  );
+
   return $styles;
 }
 
