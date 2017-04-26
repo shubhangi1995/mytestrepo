@@ -111,6 +111,59 @@ function ipwa_doorpage_field_default_field_instances() {
   );
 
   // Exported field_instance:
+  // 'field_collection_item-field_topic_teaser-field_bild'.
+  $field_instances['field_collection_item-field_topic_teaser-field_bild'] = array(
+    'bundle' => 'field_topic_teaser',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'file_image_formatters',
+        'settings' => array(
+          'image_link' => '',
+          'image_style' => 'themen_icon_54x54',
+        ),
+        'type' => 'file_image_image',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'field_collection_item',
+    'field_name' => 'field_bild',
+    'label' => 'Icon',
+    'required' => 0,
+    'settings' => array(
+      'description_field' => 0,
+      'file_directory' => '',
+      'file_extensions' => 'png gif jpg jpeg',
+      'max_filesize' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'media',
+      'settings' => array(
+        'allowed_schemes' => array(
+          'public' => 'public',
+        ),
+        'allowed_types' => array(
+          'audio' => 0,
+          'document' => 0,
+          'image' => 'image',
+          'video' => 0,
+        ),
+        'browser_plugins' => array(
+          'media_default--media_browser_1' => 0,
+          'media_default--media_browser_my_files' => 0,
+          'upload' => 0,
+        ),
+      ),
+      'type' => 'media_generic',
+      'weight' => 0,
+    ),
+  );
+
+  // Exported field_instance:
   // 'field_collection_item-field_topic_teaser-field_flie_text_bereich'.
   $field_instances['field_collection_item-field_topic_teaser-field_flie_text_bereich'] = array(
     'bundle' => 'field_topic_teaser',
@@ -178,7 +231,7 @@ function ipwa_doorpage_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 3,
+      'weight' => 1,
     ),
   );
 
