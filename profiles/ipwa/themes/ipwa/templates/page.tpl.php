@@ -122,7 +122,7 @@
   </div>
 </header>
 <div> <a id="top" name="top"></a></div>
-<div class="main-container <?php print $container_class; ?>">
+<div class="main-container container-fluid">
 
   <header role="banner" id="page-header">
     <?php if (!empty($site_slogan)): ?>

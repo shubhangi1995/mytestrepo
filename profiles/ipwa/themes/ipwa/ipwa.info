@@ -25,6 +25,8 @@ regions[page_bottom]    = 'Page bottom'
 ;;;;;;;;;;;;;;;;;;;;;
 
 stylesheets[all][] = css/style.css
+stylesheets[all][] = css/simplebar.css
+
 
 
 ;;;;;;;;;;;;;;;;;;;;;
@@ -44,7 +46,10 @@ stylesheets[all][] = css/style.css
 ; scripts[] = 'bootstrap/js/tab.js'
 ; scripts[] = 'bootstrap/js/transition.js'
 scripts[]='js/select2.min.js'
+scripts[] = 'js/simplebar.js'
 scripts[] = 'js/custom.js'
+
+
 
 
 ; Disable the CDN provider so compiled source files can be used.

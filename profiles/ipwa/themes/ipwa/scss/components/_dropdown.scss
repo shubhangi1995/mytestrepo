@@ -1,0 +1,8 @@
+.select2-container--default .select2-results 
+> ul.select2-results__options{
+  background:$header-menu;
+  overflow-y: initial;
+  .select2-results__option[aria-selected]{
+    color:$color-white;
+  }
+}

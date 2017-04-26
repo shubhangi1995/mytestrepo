@@ -53,10 +53,13 @@
 	background:$color-light-blue;
 
     .page-header {
-        padding-left: 250px;
+        padding-left: 350px;
+		border:none;
+		margin:0;
+		
     }
 
-    .view-aktuelles {
+    .view-aktuelles { @extend .container;
         .view-header {
             color: $active-menu;
             font-size: 26px;

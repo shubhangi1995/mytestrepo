@@ -26,5 +26,8 @@ jQuery(document).ready(function(){
 	jQuery(this).parent("label").css('border-bottom', '2px solid #e74712');
   }
 }); 
+
+
+jQuery(".select2-container--default .select2-results > #select2-edit-field-themenzuweisung-tid-results").simplebar();
 	
 });
