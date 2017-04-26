@@ -197,5 +197,36 @@ function ipwa_doorpage_strongarm() {
   $strongarm->value = 0;
   $export['node_submitted_doorpage'] = $strongarm;
 
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'panelizer_defaults_paragraphs_item_frontpage_map_teaser_paragraph';
+  $strongarm->value = array(
+    'status' => 1,
+    'help' => '',
+    'view modes' => array(
+      'default' => array(
+        'status' => 1,
+        'substitute' => '',
+        'default' => 1,
+        'choice' => 1,
+      ),
+      'paragraphs_editor_preview' => array(
+        'status' => 0,
+        'substitute' => 0,
+        'default' => 0,
+        'choice' => 0,
+      ),
+    ),
+  );
+  $export['panelizer_defaults_paragraphs_item_frontpage_map_teaser_paragraph'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'panelizer_paragraphs_item:frontpage_map_teaser_paragraph:default_selection';
+  $strongarm->value = 'paragraphs_item:frontpage_map_teaser_paragraph:default:default';
+  $export['panelizer_paragraphs_item:frontpage_map_teaser_paragraph:default_selection'] = $strongarm;
+
   return $export;
 }

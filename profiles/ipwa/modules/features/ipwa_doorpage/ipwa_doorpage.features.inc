@@ -8,6 +8,9 @@
  * Implements hook_ctools_plugin_api().
  */
 function ipwa_doorpage_ctools_plugin_api($module = NULL, $api = NULL) {
+  if ($module == "panelizer" && $api == "panelizer") {
+    return array("version" => "1");
+  }
   if ($module == "strongarm" && $api == "strongarm") {
     return array("version" => "1");
   }
@@ -18,6 +21,31 @@ function ipwa_doorpage_ctools_plugin_api($module = NULL, $api = NULL) {
  */
 function ipwa_doorpage_views_api($module = NULL, $api = NULL) {
   return array("api" => "3.0");
+}
+
+/**
+ * Implements hook_image_default_styles().
+ */
+function ipwa_doorpage_image_default_styles() {
+  $styles = array();
+
+  // Exported image style: map_teaser_icon_68x68.
+  $styles['map_teaser_icon_68x68'] = array(
+    'label' => 'Map Teaser Icon (68x68)',
+    'effects' => array(
+      1 => array(
+        'name' => 'image_scale',
+        'data' => array(
+          'width' => 68,
+          'height' => 68,
+          'upscale' => 0,
+        ),
+        'weight' => 1,
+      ),
+    ),
+  );
+
+  return $styles;
 }
 
 /**
