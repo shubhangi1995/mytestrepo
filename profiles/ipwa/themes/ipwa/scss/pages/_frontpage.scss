@@ -11,6 +11,9 @@
 	   padding:30px;
 	 }
 	.panel-col-first{
+	width:60%;
+	float:left;
+	border-right:1px solid $color-light-grey;
 	.pane-paragraphs-item-field-paragraph-title{
 	  color:$color-white;
 	  font-size:36px;
@@ -22,12 +25,24 @@
 	.pane-paragraphs-item-field-quellenangabe a{
 	  color:$color-white;
 	  font-size:20px;
-	  text-decoration:none;
-	  border-bottom:2px solid $color-white;
+	  
+	  
+	  
+	  &:before{
+	    content:"\f061";
+		font-family:FontAwesome;
+		color:$active-menu;
+		text-decoration:none;
+		padding-right:10px;
+	  }
 	
 	}
 	}
 	.panel-col-last{
+	 width:40%;
+	 float:left;
+	 padding-left:30px;
+	 
 	 .view-right-front-map-teaser .views-row{
 	 .views-field-type{
 	   color:$active-menu;
@@ -40,8 +55,13 @@
 	 .views-field-view-node a{
 	 color:$color-white;
 	 font-size:20px;
-	 text-decoration:none;
-	  border-bottom:2px solid $color-white;
+	   &:before{
+	    content:"\f041";
+		font-family:FontAwesome;
+		color:$active-menu;
+		text-decoration:none;
+		padding-right:10px;
+	   }
 	 }
 	 }
 	 
@@ -137,11 +157,12 @@ background:$color-light-blue;
 				
 				.content{
 				padding:25px;
-				height:300px;
+				height:360px;
 
                 .field-type-file img {
-                    
-					padding-bottom:10px;
+                    width:54px;
+					height:54px;
+					
                 }
 
                 .field-name-field-paragraph-title {
