@@ -7053,20 +7053,18 @@ footer .footer-copyright {
       height: 300px; }
       /* line 142, ../scss/pages/_frontpage.scss */
       .field-name-field-anzuzeigende-seitenmodule .field-name-field-topic-teaser > .field-items > .field-item .field-collection-view .content .field-type-file img {
-        width: 100%;
-        float: left;
         padding-bottom: 10px; }
-      /* line 148, ../scss/pages/_frontpage.scss */
+      /* line 147, ../scss/pages/_frontpage.scss */
       .field-name-field-anzuzeigende-seitenmodule .field-name-field-topic-teaser > .field-items > .field-item .field-collection-view .content .field-name-field-paragraph-title {
         font-size: 26px;
         color: #e74712;
         padding: 10px 0; }
-      /* line 155, ../scss/pages/_frontpage.scss */
+      /* line 154, ../scss/pages/_frontpage.scss */
       .field-name-field-anzuzeigende-seitenmodule .field-name-field-topic-teaser > .field-items > .field-item .field-collection-view .content .field-name-field-quellenangabe a {
         font-size: 20px;
         color: #273753;
         text-decoration: none; }
-      /* line 162, ../scss/pages/_frontpage.scss */
+      /* line 161, ../scss/pages/_frontpage.scss */
       .field-name-field-anzuzeigende-seitenmodule .field-name-field-topic-teaser > .field-items > .field-item .field-collection-view .content .field-name-field-flie-text-bereich .field-item p {
         font-size: 20px;
         color: #273753; }
