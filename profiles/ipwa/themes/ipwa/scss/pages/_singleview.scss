@@ -63,7 +63,10 @@
         }
 
         .view-filters {
-            .views-exposed-form #edit-type-wrapper {
+            .views-exposed-form .views-exposed-widgets{
+			margin-bottom:0;
+
+			#edit-type-wrapper {
                 width: 100%;
 
                 .form-item {
@@ -83,7 +86,7 @@
 
             .categories-filter {
                 margin-top: 30px;
-                margin-bottom: 30px;
+                
                 padding-top: 10px;
                 padding-bottom: 10px;
                 background: $header-menu;
@@ -111,7 +114,7 @@
 
             .views-widget-sort-by {
                 float: right;
-                padding: 0;
+                padding:30px 0;
 
                 .bef-select-as-links .form-type-bef-link {
                     display: inline-block;
@@ -123,7 +126,7 @@
                         text-decoration: none;
 
                         &.active {
-                            padding-bottom: 10px;
+                           
                             border-bottom: 2px solid $active-menu;
                         }
                     }
@@ -134,6 +137,12 @@
                 }
             }
         }
+		}
+		.attachment-before .view-result-count{
+		    margin-top: -88px;
+    font-size: 20px;
+    padding: 30px 0;
+		}
 
         .view-content {
             margin-left: -15px;
@@ -146,10 +155,20 @@
 
                 .row-container {
                     background: $color-white;
-                    padding: 10px;
+                    padding: 25px;
                     height: 350px;
                     margin-bottom: 30px;
-                    margin-bottom: 30px;
+					position:relative;
+                   
+				   
+				   .views-field-field-themenzuweisung{
+				      img{
+					   display:inline-block;
+					   padding-right:5px;
+					   padding-bottom:10px;
+					  }
+				   
+				   }
 
                     .views-field-type {
                         color: $active-menu;
@@ -161,6 +180,14 @@
                             color: $header-menu;
                         }
                     }
+					.views-field-field-datum{
+					position:absolute;
+					bottom:10px;
+					   .date-display-single{
+					     font-size:17px;
+						 color:$color-light-grey;
+					   }
+					}
                 }
             }
         }

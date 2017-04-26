@@ -1,14 +1,85 @@
-.view-neueste-informationen{
-background-color:$color-light-blue;
+.field-name-field-anzuzeigende-seitenmodule {
+    .view-neueste-informationen {
+        .view-content {
+            margin-left: -15px;
+            margin-right: -15px;
 
-    
+            .views-row {
+                @extend .col-md-4;
 
- 
-      .views-row{
-	    @extend .col-md-4;
-	  }
-  
-  
-  }
+                font-size: 22px;
 
+                .row-container {
+                    background: $color-white;
+                    padding: 10px;
 
+                    .views-field-type {
+                        color: $active-menu;
+                    }
+
+                    .views-field-title {
+                        a {
+                            text-decoration: none;
+                            color: $header-menu;
+                        }
+                    }
+                }
+            }
+        }
+
+        .view-footer {
+            clear: both;
+
+            .link-outer-block .link-inner-block-1, .link-outer-block .link-inner-block-2 {
+                display: inline-block;
+
+                a {
+                    text-decoration: none;
+                    color: $header-menu;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+    .field-name-field-topic-teaser > .field-items {
+        padding: 60px 0;
+        float: left;
+
+        > .field-item {
+            @extend .col-md-6;
+
+            padding: 0;
+
+            .field-collection-view {
+                margin: 0;
+                padding: 0;
+                border: 0;
+
+                .field-type-file img {
+                    width: 100%;
+                    float: left;
+                }
+
+                .field-name-field-paragraph-title {
+                    font-size: 26px;
+                    color: $active-menu;
+                    padding: 10px 0;
+                }
+
+                .field-name-field-quellenangabe {
+                    a {
+                        font-size: 20px;
+                        color: $header-menu;
+                        text-decoration: none;
+                    }
+                }
+
+                .field-name-field-flie-text-bereich .field-item p {
+                    font-size: 20px;
+                    color: $header-menu;
+                }
+            }
+        }
+    }
+}

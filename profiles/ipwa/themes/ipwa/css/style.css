@@ -913,7 +913,7 @@ pre {
     clear: both; }
 
 /* line 11, ../scss/bootstrap-sass/bootstrap/mixins/_grid-framework.scss */
-.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .view-neueste-informationen .views-row, .field-name-field-themenzuweisung .field-items .field-item, .page-aktuelles .view-aktuelles .view-content .views-row, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .page-aktuelles .view-aktuelles .view-map-teaser .view-content .views-row, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .field-name-field-anzuzeigende-seitenmodule .view-neueste-informationen .view-content .views-row, .field-name-field-themenzuweisung .field-items .field-item, .page-aktuelles .view-aktuelles .view-content .views-row, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .field-name-field-anzuzeigende-seitenmodule .field-name-field-topic-teaser > .field-items > .field-item, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .page-aktuelles .view-aktuelles .view-map-teaser .view-content .views-row, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
@@ -1337,7 +1337,7 @@ pre {
     margin-left: 100%; } }
 @media (min-width: 992px) {
   /* line 27, ../scss/bootstrap-sass/bootstrap/mixins/_grid-framework.scss */
-  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .view-neueste-informationen .views-row, .field-name-field-themenzuweisung .field-items .field-item, .page-aktuelles .view-aktuelles .view-content .views-row, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .page-aktuelles .view-aktuelles .view-map-teaser .view-content .views-row, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .field-name-field-anzuzeigende-seitenmodule .view-neueste-informationen .view-content .views-row, .field-name-field-themenzuweisung .field-items .field-item, .page-aktuelles .view-aktuelles .view-content .views-row, .col-md-5, .col-md-6, .field-name-field-anzuzeigende-seitenmodule .field-name-field-topic-teaser > .field-items > .field-item, .col-md-7, .col-md-8, .page-aktuelles .view-aktuelles .view-map-teaser .view-content .views-row, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
     float: left; }
 
   /* line 35, ../scss/bootstrap-sass/bootstrap/mixins/_grid-framework.scss */
@@ -1353,7 +1353,7 @@ pre {
     width: 25%; }
 
   /* line 35, ../scss/bootstrap-sass/bootstrap/mixins/_grid-framework.scss */
-  .col-md-4, .view-neueste-informationen .views-row, .field-name-field-themenzuweisung .field-items .field-item, .page-aktuelles .view-aktuelles .view-content .views-row {
+  .col-md-4, .field-name-field-anzuzeigende-seitenmodule .view-neueste-informationen .view-content .views-row, .field-name-field-themenzuweisung .field-items .field-item, .page-aktuelles .view-aktuelles .view-content .views-row {
     width: 33.33333333%; }
 
   /* line 35, ../scss/bootstrap-sass/bootstrap/mixins/_grid-framework.scss */
@@ -1361,7 +1361,7 @@ pre {
     width: 41.66666667%; }
 
   /* line 35, ../scss/bootstrap-sass/bootstrap/mixins/_grid-framework.scss */
-  .col-md-6 {
+  .col-md-6, .field-name-field-anzuzeigende-seitenmodule .field-name-field-topic-teaser > .field-items > .field-item {
     width: 50%; }
 
   /* line 35, ../scss/bootstrap-sass/bootstrap/mixins/_grid-framework.scss */
@@ -6930,9 +6930,65 @@ footer .footer-copyright {
 .select2-container--classic.select2-container--open .select2-dropdown {
   border-color: #5897fb; }
 
-/* line 1, ../scss/pages/_frontpage.scss */
-.view-neueste-informationen {
-  background-color: #eff2f7; }
+/* line 3, ../scss/pages/_frontpage.scss */
+.field-name-field-anzuzeigende-seitenmodule .view-neueste-informationen .view-content {
+  margin-left: -15px;
+  margin-right: -15px; }
+  /* line 7, ../scss/pages/_frontpage.scss */
+  .field-name-field-anzuzeigende-seitenmodule .view-neueste-informationen .view-content .views-row {
+    font-size: 22px; }
+    /* line 12, ../scss/pages/_frontpage.scss */
+    .field-name-field-anzuzeigende-seitenmodule .view-neueste-informationen .view-content .views-row .row-container {
+      background: #ffffff;
+      padding: 10px; }
+      /* line 16, ../scss/pages/_frontpage.scss */
+      .field-name-field-anzuzeigende-seitenmodule .view-neueste-informationen .view-content .views-row .row-container .views-field-type {
+        color: #e74712; }
+      /* line 21, ../scss/pages/_frontpage.scss */
+      .field-name-field-anzuzeigende-seitenmodule .view-neueste-informationen .view-content .views-row .row-container .views-field-title a {
+        text-decoration: none;
+        color: #273753; }
+/* line 30, ../scss/pages/_frontpage.scss */
+.field-name-field-anzuzeigende-seitenmodule .view-neueste-informationen .view-footer {
+  clear: both; }
+  /* line 33, ../scss/pages/_frontpage.scss */
+  .field-name-field-anzuzeigende-seitenmodule .view-neueste-informationen .view-footer .link-outer-block .link-inner-block-1, .field-name-field-anzuzeigende-seitenmodule .view-neueste-informationen .view-footer .link-outer-block .link-inner-block-2 {
+    display: inline-block; }
+    /* line 36, ../scss/pages/_frontpage.scss */
+    .field-name-field-anzuzeigende-seitenmodule .view-neueste-informationen .view-footer .link-outer-block .link-inner-block-1 a, .field-name-field-anzuzeigende-seitenmodule .view-neueste-informationen .view-footer .link-outer-block .link-inner-block-2 a {
+      text-decoration: none;
+      color: #273753;
+      font-size: 20px; }
+/* line 45, ../scss/pages/_frontpage.scss */
+.field-name-field-anzuzeigende-seitenmodule .field-name-field-topic-teaser > .field-items {
+  padding: 60px 0;
+  float: left; }
+  /* line 49, ../scss/pages/_frontpage.scss */
+  .field-name-field-anzuzeigende-seitenmodule .field-name-field-topic-teaser > .field-items > .field-item {
+    padding: 0; }
+    /* line 54, ../scss/pages/_frontpage.scss */
+    .field-name-field-anzuzeigende-seitenmodule .field-name-field-topic-teaser > .field-items > .field-item .field-collection-view {
+      margin: 0;
+      padding: 0;
+      border: 0; }
+      /* line 59, ../scss/pages/_frontpage.scss */
+      .field-name-field-anzuzeigende-seitenmodule .field-name-field-topic-teaser > .field-items > .field-item .field-collection-view .field-type-file img {
+        width: 100%;
+        float: left; }
+      /* line 64, ../scss/pages/_frontpage.scss */
+      .field-name-field-anzuzeigende-seitenmodule .field-name-field-topic-teaser > .field-items > .field-item .field-collection-view .field-name-field-paragraph-title {
+        font-size: 26px;
+        color: #e74712;
+        padding: 10px 0; }
+      /* line 71, ../scss/pages/_frontpage.scss */
+      .field-name-field-anzuzeigende-seitenmodule .field-name-field-topic-teaser > .field-items > .field-item .field-collection-view .field-name-field-quellenangabe a {
+        font-size: 20px;
+        color: #273753;
+        text-decoration: none; }
+      /* line 78, ../scss/pages/_frontpage.scss */
+      .field-name-field-anzuzeigende-seitenmodule .field-name-field-topic-teaser > .field-items > .field-item .field-collection-view .field-name-field-flie-text-bereich .field-item p {
+        font-size: 20px;
+        color: #273753; }
 
 /* line 1, ../scss/pages/_common.scss */
 body {
@@ -6992,109 +7048,128 @@ header.navbar-default {
     font-size: 26px;
     padding-left: 250px; }
   /* line 66, ../scss/pages/_singleview.scss */
-  .page-aktuelles .view-aktuelles .view-filters .views-exposed-form #edit-type-wrapper {
-    width: 100%; }
+  .page-aktuelles .view-aktuelles .view-filters .views-exposed-form .views-exposed-widgets {
+    margin-bottom: 0; }
     /* line 69, ../scss/pages/_singleview.scss */
-    .page-aktuelles .view-aktuelles .view-filters .views-exposed-form #edit-type-wrapper .form-item {
-      display: inline-block;
-      padding-right: 50px;
-      font-size: 20px; }
-      /* line 74, ../scss/pages/_singleview.scss */
-      .page-aktuelles .view-aktuelles .view-filters .views-exposed-form #edit-type-wrapper .form-item label {
-        padding-left: 0; }
-        /* line 77, ../scss/pages/_singleview.scss */
-        .page-aktuelles .view-aktuelles .view-filters .views-exposed-form #edit-type-wrapper .form-item label input {
-          visibility: hidden; }
-  /* line 84, ../scss/pages/_singleview.scss */
-  .page-aktuelles .view-aktuelles .view-filters .categories-filter {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background: #273753;
-    clear: both;
-    display: inline-block;
-    width: 100%; }
-    /* line 94, ../scss/pages/_singleview.scss */
-    .page-aktuelles .view-aktuelles .view-filters .categories-filter .views-exposed-widget {
-      padding: 0;
-      width: 25%;
-      float: left; }
-      /* line 99, ../scss/pages/_singleview.scss */
-      .page-aktuelles .view-aktuelles .view-filters .categories-filter .views-exposed-widget .select2-container--default .select2-selection--single {
-        background: 0;
-        border: 0;
-        border-radius: 0;
+    .page-aktuelles .view-aktuelles .view-filters .views-exposed-form .views-exposed-widgets #edit-type-wrapper {
+      width: 100%; }
+      /* line 72, ../scss/pages/_singleview.scss */
+      .page-aktuelles .view-aktuelles .view-filters .views-exposed-form .views-exposed-widgets #edit-type-wrapper .form-item {
+        display: inline-block;
+        padding-right: 50px;
         font-size: 20px; }
-        /* line 105, ../scss/pages/_singleview.scss */
-        .page-aktuelles .view-aktuelles .view-filters .categories-filter .views-exposed-widget .select2-container--default .select2-selection--single .select2-selection__rendered {
-          color: #ffffff; }
-  /* line 112, ../scss/pages/_singleview.scss */
-  .page-aktuelles .view-aktuelles .view-filters .views-widget-sort-by {
-    float: right;
-    padding: 0; }
-    /* line 116, ../scss/pages/_singleview.scss */
-    .page-aktuelles .view-aktuelles .view-filters .views-widget-sort-by .bef-select-as-links .form-type-bef-link {
+        /* line 77, ../scss/pages/_singleview.scss */
+        .page-aktuelles .view-aktuelles .view-filters .views-exposed-form .views-exposed-widgets #edit-type-wrapper .form-item label {
+          padding-left: 0; }
+          /* line 80, ../scss/pages/_singleview.scss */
+          .page-aktuelles .view-aktuelles .view-filters .views-exposed-form .views-exposed-widgets #edit-type-wrapper .form-item label input {
+            visibility: hidden; }
+    /* line 87, ../scss/pages/_singleview.scss */
+    .page-aktuelles .view-aktuelles .view-filters .views-exposed-form .views-exposed-widgets .categories-filter {
+      margin-top: 30px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      background: #273753;
+      clear: both;
       display: inline-block;
-      font-size: 20px;
-      padding-left: 15px; }
-      /* line 121, ../scss/pages/_singleview.scss */
-      .page-aktuelles .view-aktuelles .view-filters .views-widget-sort-by .bef-select-as-links .form-type-bef-link a {
-        color: #273753;
-        text-decoration: none; }
-        /* line 125, ../scss/pages/_singleview.scss */
-        .page-aktuelles .view-aktuelles .view-filters .views-widget-sort-by .bef-select-as-links .form-type-bef-link a.active {
-          padding-bottom: 10px;
-          border-bottom: 2px solid #e74712; }
-    /* line 132, ../scss/pages/_singleview.scss */
-    .page-aktuelles .view-aktuelles .view-filters .views-widget-sort-by .select2-container {
-      display: none; }
-  /* line 138, ../scss/pages/_singleview.scss */
+      width: 100%; }
+      /* line 97, ../scss/pages/_singleview.scss */
+      .page-aktuelles .view-aktuelles .view-filters .views-exposed-form .views-exposed-widgets .categories-filter .views-exposed-widget {
+        padding: 0;
+        width: 25%;
+        float: left; }
+        /* line 102, ../scss/pages/_singleview.scss */
+        .page-aktuelles .view-aktuelles .view-filters .views-exposed-form .views-exposed-widgets .categories-filter .views-exposed-widget .select2-container--default .select2-selection--single {
+          background: 0;
+          border: 0;
+          border-radius: 0;
+          font-size: 20px; }
+          /* line 108, ../scss/pages/_singleview.scss */
+          .page-aktuelles .view-aktuelles .view-filters .views-exposed-form .views-exposed-widgets .categories-filter .views-exposed-widget .select2-container--default .select2-selection--single .select2-selection__rendered {
+            color: #ffffff; }
+    /* line 115, ../scss/pages/_singleview.scss */
+    .page-aktuelles .view-aktuelles .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by {
+      float: right;
+      padding: 30px 0; }
+      /* line 119, ../scss/pages/_singleview.scss */
+      .page-aktuelles .view-aktuelles .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .bef-select-as-links .form-type-bef-link {
+        display: inline-block;
+        font-size: 20px;
+        padding-left: 15px; }
+        /* line 124, ../scss/pages/_singleview.scss */
+        .page-aktuelles .view-aktuelles .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .bef-select-as-links .form-type-bef-link a {
+          color: #273753;
+          text-decoration: none; }
+          /* line 128, ../scss/pages/_singleview.scss */
+          .page-aktuelles .view-aktuelles .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .bef-select-as-links .form-type-bef-link a.active {
+            border-bottom: 2px solid #e74712; }
+      /* line 135, ../scss/pages/_singleview.scss */
+      .page-aktuelles .view-aktuelles .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .select2-container {
+        display: none; }
+  /* line 141, ../scss/pages/_singleview.scss */
+  .page-aktuelles .view-aktuelles .attachment-before .view-result-count {
+    margin-top: -88px;
+    font-size: 20px;
+    padding: 30px 0; }
+  /* line 147, ../scss/pages/_singleview.scss */
   .page-aktuelles .view-aktuelles .view-content {
     margin-left: -15px;
     margin-right: -15px; }
-    /* line 142, ../scss/pages/_singleview.scss */
+    /* line 151, ../scss/pages/_singleview.scss */
     .page-aktuelles .view-aktuelles .view-content .views-row {
       font-size: 22px; }
-      /* line 147, ../scss/pages/_singleview.scss */
+      /* line 156, ../scss/pages/_singleview.scss */
       .page-aktuelles .view-aktuelles .view-content .views-row .row-container {
         background: #ffffff;
-        padding: 10px;
+        padding: 25px;
         height: 350px;
         margin-bottom: 30px;
-        margin-bottom: 30px; }
-        /* line 154, ../scss/pages/_singleview.scss */
+        position: relative; }
+        /* line 165, ../scss/pages/_singleview.scss */
+        .page-aktuelles .view-aktuelles .view-content .views-row .row-container .views-field-field-themenzuweisung img {
+          display: inline-block;
+          padding-right: 5px;
+          padding-bottom: 10px; }
+        /* line 173, ../scss/pages/_singleview.scss */
         .page-aktuelles .view-aktuelles .view-content .views-row .row-container .views-field-type {
           color: #e74712; }
-        /* line 159, ../scss/pages/_singleview.scss */
+        /* line 178, ../scss/pages/_singleview.scss */
         .page-aktuelles .view-aktuelles .view-content .views-row .row-container .views-field-title a {
           text-decoration: none;
           color: #273753; }
-  /* line 168, ../scss/pages/_singleview.scss */
+        /* line 183, ../scss/pages/_singleview.scss */
+        .page-aktuelles .view-aktuelles .view-content .views-row .row-container .views-field-field-datum {
+          position: absolute;
+          bottom: 10px; }
+          /* line 186, ../scss/pages/_singleview.scss */
+          .page-aktuelles .view-aktuelles .view-content .views-row .row-container .views-field-field-datum .date-display-single {
+            font-size: 17px;
+            color: #949d9e; }
+  /* line 195, ../scss/pages/_singleview.scss */
   .page-aktuelles .view-aktuelles .views-submit-button {
     display: none; }
-  /* line 172, ../scss/pages/_singleview.scss */
+  /* line 199, ../scss/pages/_singleview.scss */
   .page-aktuelles .view-aktuelles .view-map-teaser {
     clear: both; }
-    /* line 175, ../scss/pages/_singleview.scss */
+    /* line 202, ../scss/pages/_singleview.scss */
     .page-aktuelles .view-aktuelles .view-map-teaser .view-content {
       margin: 0; }
-      /* line 178, ../scss/pages/_singleview.scss */
+      /* line 205, ../scss/pages/_singleview.scss */
       .page-aktuelles .view-aktuelles .view-map-teaser .view-content .views-row {
         background: #273753;
         padding: 40px; }
-        /* line 185, ../scss/pages/_singleview.scss */
+        /* line 212, ../scss/pages/_singleview.scss */
         .page-aktuelles .view-aktuelles .view-map-teaser .view-content .views-row .views-field-field-bild img {
           color: #e74712; }
-        /* line 189, ../scss/pages/_singleview.scss */
+        /* line 216, ../scss/pages/_singleview.scss */
         .page-aktuelles .view-aktuelles .view-map-teaser .view-content .views-row .views-field-field-paragraph-title {
           color: #ffffff;
           font-size: 38px; }
-        /* line 194, ../scss/pages/_singleview.scss */
+        /* line 221, ../scss/pages/_singleview.scss */
         .page-aktuelles .view-aktuelles .view-map-teaser .view-content .views-row .views-field-field-flie-text-bereich {
           color: #ffffff;
           font-size: 20px; }
-        /* line 199, ../scss/pages/_singleview.scss */
+        /* line 226, ../scss/pages/_singleview.scss */
         .page-aktuelles .view-aktuelles .view-map-teaser .view-content .views-row .views-field-field-quellenangabe a {
           color: #ffffff;
           font-size: 20px; }
