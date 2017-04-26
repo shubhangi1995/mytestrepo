@@ -24,7 +24,30 @@ function ipwa_termin__views_pre_render(&$view) {
       }
     }
   }
+  if ($view->name=='termin'){
+    foreach($view->result as $key => $result) {
+      if (!empty($view->result[$key]->field_field_event_datum)) {
+        $occurence = count($view->result[$key]->field_field_event_datum);
+        $startDate = date("d.m.Y", strtotime($view->result[$key]->field_field_event_datum[0]['raw']['value']));
+        $enddate = date("d.m.Y", strtotime($view->result[$key]->field_field_event_datum[$occurence - 1]['raw']['value2']));
+        if (($occurence > 1)) {
+          // Repeat rule
+          $output = '';
+          $output = '<div class="date-repeat-rule">' . $output . '</div>';
+          $output .= '<div class="date-display-range"><span class="date-display-start">' . $startDate . '</span> - <span class="date-display-end">' . $enddate . '</span></div>';
+          $view->result[$key]->field_field_event_datum[0]['rendered']['#markup'] = '<div class="field-event-datum recurring">' . $output . '</div>';
+        }
+        $index =1;
+        while($occurence > 1) {
+          $view->result[$key]->field_field_event_datum[$index]['rendered']['#access'] = '0';
+          $index++;
+          $occurence--;
+        }
+      }
+    }
+  }
 }
+
 
 /**
  * Implements hook_node_view().
@@ -40,8 +63,7 @@ function ipwa_termin__node_view($node, $view_mode, $langcode) {
     $enddate = date("d.m.Y", strtotime($node->content['field_event_datum']['#items'][$occurence-1]['value']));
     if ($occurence > 1) {
       // Repeat rule
-      $output = date_repeat_rrule_description($node->content['field_event_datum']['#items'][0]['rrule']);
-
+      $output =' ';
       $output = '<div class="date-repeat-rule">' . $output . '</div>';
       $output .= '<div class="date-display-range"><span class="date-display-start">' . $startDate . '</span> to <span class="date-display-end">' . $enddate . '</span></div>';
       $node->content['field_event_datum'][0]['#markup'] = '<div class="field-event-datum recurring">' . $output . '</div>';

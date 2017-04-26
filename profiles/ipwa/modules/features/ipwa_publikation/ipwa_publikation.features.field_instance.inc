@@ -584,7 +584,7 @@ function ipwa_publikation_field_default_field_instances() {
     'bundle' => 'publikation',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Fügen Sie die Originalquelle hinzu indem Sie einen Inhalt vom Typ \'Dokument\' verlinken.t',
+    'description' => 'Fügen Sie die Originalquelle hinzu, indem Sie einen Inhalt vom Typ \'Dokument\' verlinken.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -630,7 +630,7 @@ function ipwa_publikation_field_default_field_instances() {
     'bundle' => 'publikation',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Fügen Sie die Originalquelle hinzu indem Sie einen Inhalt vom Typ \'Dokument\' verlinken.',
+    'description' => 'Fügen Sie die Originalquelle hinzu, indem Sie einen Inhalt vom Typ \'Dokument\' verlinken',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -1185,8 +1185,8 @@ Schema für externe Links: http://www…',
   t('Drücken Sie die "Strg"-Taste um mehrere Themen auszuwählen. Maximale Anzahl zuzuordnender Themen: 3. Wählen Sie eine der vier Oberkategorien aus, sind deren zugeordnete Unterkategorien nicht auswählbar.');
   t('Fließtext');
   t('Förderbekanntmachungen');
-  t('Fügen Sie die Originalquelle hinzu indem Sie einen Inhalt vom Typ \'Dokument\' verlinken.');
-  t('Fügen Sie die Originalquelle hinzu indem Sie einen Inhalt vom Typ \'Dokument\' verlinken.t');
+  t('Fügen Sie die Originalquelle hinzu, indem Sie einen Inhalt vom Typ \'Dokument\' verlinken');
+  t('Fügen Sie die Originalquelle hinzu, indem Sie einen Inhalt vom Typ \'Dokument\' verlinken.');
   t('Fügen Sie die YouTube URL ein. Erlaubte Formate: https://www.youtube.com/watch?v=wM73y2Iu8pU oder https://youtu.be/wM73y2Iu8pU');
   t('Herausgeber');
   t('Initiatoren zum Thema');
