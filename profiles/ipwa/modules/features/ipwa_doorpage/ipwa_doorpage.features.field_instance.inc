@@ -41,36 +41,6 @@ function ipwa_doorpage_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'field_collection_item-eb_background-field_eb_color'.
-  $field_instances['field_collection_item-eb_background-field_eb_color'] = array(
-    'bundle' => 'eb_background',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'field_collection_item',
-    'field_name' => 'field_eb_color',
-    'label' => 'Color',
-    'required' => FALSE,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'module' => 'jquery_colorpicker',
-      'settings' => array(),
-      'type' => 'jquery_colorpicker',
-      'weight' => 0,
-    ),
-  );
-
-  // Exported field_instance:
   // 'field_collection_item-eb_background-field_eb_image'.
   $field_instances['field_collection_item-eb_background-field_eb_image'] = array(
     'bundle' => 'eb_background',
@@ -137,79 +107,6 @@ function ipwa_doorpage_field_default_field_instances() {
       'settings' => array(),
       'type' => 'options_select',
       'weight' => 2,
-    ),
-  );
-
-  // Exported field_instance:
-  // 'field_collection_item-eb_background-field_eb_parallax_image'.
-  $field_instances['field_collection_item-eb_background-field_eb_parallax_image'] = array(
-    'bundle' => 'eb_background',
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 3,
-      ),
-    ),
-    'entity_type' => 'field_collection_item',
-    'field_name' => 'field_eb_parallax_image',
-    'label' => 'Image',
-    'required' => FALSE,
-    'settings' => array(
-      'alt_field' => 0,
-      'default_image' => 0,
-      'file_directory' => '',
-      'file_extensions' => 'png gif jpg jpeg',
-      'max_filesize' => '',
-      'max_resolution' => '',
-      'min_resolution' => '',
-      'title_field' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'module' => 'image',
-      'settings' => array(
-        'preview_image_style' => 'thumbnail',
-        'progress_indicator' => 'throbber',
-      ),
-      'type' => 'image_image',
-      'weight' => 3,
-    ),
-  );
-
-  // Exported field_instance:
-  // 'field_collection_item-eb_background-field_eb_parallax_speed'.
-  $field_instances['field_collection_item-eb_background-field_eb_parallax_speed'] = array(
-    'bundle' => 'eb_background',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 4,
-      ),
-    ),
-    'entity_type' => 'field_collection_item',
-    'field_name' => 'field_eb_parallax_speed',
-    'label' => 'Speed',
-    'required' => FALSE,
-    'settings' => array(
-      'text_processing' => 0,
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'module' => 'text',
-      'settings' => array(
-        'size' => 60,
-      ),
-      'type' => 'text_textfield',
-      'weight' => 4,
     ),
   );
 
@@ -775,7 +672,6 @@ function ipwa_doorpage_field_default_field_instances() {
   t('Anzuzeigende Seitenmodule (Paragraphen)');
   t('Background');
   t('Body');
-  t('Color');
   t('Icon');
   t('Image');
   t('Kurztext');
@@ -783,7 +679,6 @@ function ipwa_doorpage_field_default_field_instances() {
   t('Map Teaser');
   t('Projekt Reference');
   t('Selection');
-  t('Speed');
   t('Style');
   t('Teaser');
   t('Title');
