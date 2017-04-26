@@ -32,7 +32,7 @@ function ipwa_base_views_pre_render(&$view) {
               //if this term is also child of same parent as previous one,
               // there is no point of showing same icon, in that case remove the term
               if (in_array($parent_term->tid, $parent_ids)) {
-                unset($result->field_field_themenzuweisung[1]);
+                unset($result->field_field_themenzuweisung[$key]);
               } else {
                 // add parent term id in array
                 $parent_ids[] = $parent_term->tid;
