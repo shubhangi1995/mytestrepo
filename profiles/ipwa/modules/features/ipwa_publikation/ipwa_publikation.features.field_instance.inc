@@ -1176,6 +1176,7 @@ Schema für externe Links: http://www…',
   // Translatables
   // Included for use with string extractors like potx.
   t('Anzuzeigende Seitenmodule (Paragraphen)');
+  t('© Bildquelle');
   t('Datum');
   t('Dieser Artikel gehört zu');
   t('Dieses Datum entspricht dem Veröffentlichungsdatum der Publikation');
@@ -1210,7 +1211,6 @@ Schema für externe Links: http://www…');
   t('Weiterführende Links');
   t('YouTube URL');
   t('publikation');
-  t('© Bildquelle');
   t('© Videoquelle');
 
   return $field_instances;
