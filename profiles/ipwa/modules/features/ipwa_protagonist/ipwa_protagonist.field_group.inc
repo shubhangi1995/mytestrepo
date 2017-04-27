@@ -20,7 +20,7 @@ function ipwa_protagonist_field_group_info() {
   $field_group->mode = 'default';
   $field_group->parent_name = '';
   $field_group->data = array(
-    'label' => 'Related_doc',
+    'label' => 'Related doc',
     'weight' => '12',
     'children' => array(),
     'format_type' => 'html-element',
@@ -99,8 +99,8 @@ function ipwa_protagonist_field_group_info() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('Related doc');
   t('Related event');
-  t('Related_doc');
   t('title');
 
   return $field_groups;
