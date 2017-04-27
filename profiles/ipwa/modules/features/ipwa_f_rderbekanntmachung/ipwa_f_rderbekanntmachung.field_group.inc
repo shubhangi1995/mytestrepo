@@ -21,7 +21,7 @@ function ipwa_f_rderbekanntmachung_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Related doc',
-    'weight' => '27',
+    'weight' => '14',
     'children' => array(),
     'format_type' => 'html-element',
     'format_settings' => array(
@@ -50,7 +50,7 @@ function ipwa_f_rderbekanntmachung_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Related event',
-    'weight' => '16',
+    'weight' => '15',
     'children' => array(),
     'format_type' => 'html-element',
     'format_settings' => array(
