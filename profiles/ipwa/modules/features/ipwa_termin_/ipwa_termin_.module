@@ -25,7 +25,7 @@ function ipwa_termin__views_pre_render(&$view)
             }
         }
     }
-    if ($view->name == 'termin') {
+    if (($view->name == 'termin')||($view->name == 'related_content')) {
         foreach ($view->result as $key => $result){
          if(!empty($result->field_field_event_datum)){
            $occurence = count($result->field_field_event_datum);
