@@ -20,8 +20,8 @@ function ipwa_f_rderbekanntmachung_field_group_info() {
   $field_group->mode = 'default';
   $field_group->parent_name = '';
   $field_group->data = array(
-    'label' => 'Related_doc',
-    'weight' => '15',
+    'label' => 'Related doc',
+    'weight' => '27',
     'children' => array(),
     'format_type' => 'html-element',
     'format_settings' => array(
@@ -99,6 +99,7 @@ function ipwa_f_rderbekanntmachung_field_group_info() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('Related doc');
   t('Related event');
   t('title');
 

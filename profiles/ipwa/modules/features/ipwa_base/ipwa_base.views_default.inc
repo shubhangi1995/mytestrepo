@@ -1071,6 +1071,7 @@ function ipwa_base_views_default_views() {
   $handler->display->display_options['fields']['title_1']['exclude'] = TRUE;
   $handler->display->display_options['fields']['title_1']['alter']['make_link'] = TRUE;
   $handler->display->display_options['fields']['title_1']['alter']['path'] = '[field_dokument]';
+  $handler->display->display_options['fields']['title_1']['alter']['target'] = '_blank';
   $handler->display->display_options['fields']['title_1']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title_1']['link_to_node'] = FALSE;
   /* Field: Content: Titel */
@@ -1100,6 +1101,8 @@ function ipwa_base_views_default_views() {
   $handler->display->display_options['fields']['extension']['field'] = 'extension';
   $handler->display->display_options['fields']['extension']['relationship'] = 'node_to_file';
   $handler->display->display_options['fields']['extension']['label'] = '';
+  $handler->display->display_options['fields']['extension']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['extension']['alter']['text'] = 'PDF';
   $handler->display->display_options['fields']['extension']['element_label_colon'] = FALSE;
   /* Field: File: Size */
   $handler->display->display_options['fields']['filesize']['id'] = 'filesize';
@@ -1206,6 +1209,7 @@ function ipwa_base_views_default_views() {
     t('Kommende Veranstaltungen'),
     t('Content entity referenced from field_veranstaltungen'),
     t('Dokumente und Publikationen'),
+    t('PDF'),
     t('datei ist nicht barrierefrei'),
     t('publikation'),
     t('Content entity referenced from field_publication'),

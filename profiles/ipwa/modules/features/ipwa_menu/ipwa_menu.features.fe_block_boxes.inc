@@ -53,7 +53,7 @@ function ipwa_menu_default_fe_block_boxes() {
   $fe_block_boxes->machine_name = 'politik_gesellschaft_left_block';
   $fe_block_boxes->body = '<p><a href="/aktuelles?type=nachricht">Nachrichten</a></p>
 
-<p><a href="/node/2">Termine</a></p>
+<p><a href="/termin">Termine</a></p>
 
 <p><a href="http://ipwa.dd:8083/aktuelles?type=publikation">Publikation</a></p>
 
@@ -68,7 +68,7 @@ function ipwa_menu_default_fe_block_boxes() {
   $fe_block_boxes->machine_name = 'wirtschaft_arbeit_left_block';
   $fe_block_boxes->body = '<p><a href="/aktuelles?type=nachricht">Nachrichten&nbsp;</a></p>
 
-<p><a href="/node/2">Termine</a></p>
+<p><a href="/termin">Termine</a></p>
 
 <p><a href="/aktuelles?type=publikation">Publikation</a></p>
 
