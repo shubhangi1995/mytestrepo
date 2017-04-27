@@ -1,189 +1,234 @@
-
-
 .field-name-field-anzuzeigende-seitenmodule {
-    
-	
-	.panelizer-view-mode{
-	padding:60px 0;
-	 .panel-2col{
-	   @extend .container;
-	   background:$header-menu;
-	   padding:30px;
-	 }
-	.panel-col-first{
-	width:60%;
-	float:left;
-	border-right:1px solid $color-light-grey;
-	.pane-paragraphs-item-field-paragraph-title{
-	  color:$color-white;
-	  font-size:36px;
-	}
-	.pane-paragraphs-item-field-flie-text-bereich{
-	  color:$color-white;
-	  font-size:22px;
-	}
-	.pane-paragraphs-item-field-quellenangabe a{
-	  color:$color-white;
-	  font-size:20px;
-	  
-	  
-	  
-	  &:before{
-	    content:"\f061";
-		font-family:FontAwesome;
-		color:$active-menu;
-		text-decoration:none;
-		padding-right:10px;
-	  }
-	
-	}
-	}
-	.panel-col-last{
-	 width:40%;
-	 float:left;
-	 padding-left:30px;
-	 
-	 .view-right-front-map-teaser .views-row{
-	 .views-field-type{
-	   color:$active-menu;
-	   font-size:22px;
-	 }
-	 .views-field-title a{
-	   color:$color-white;
-	   font-size:22px;
-	}
-	 .views-field-view-node a{
-	 color:$color-white;
-	 font-size:20px;
-	   &:before{
-	    content:"\f041";
-		font-family:FontAwesome;
-		color:$active-menu;
-		text-decoration:none;
-		padding-right:10px;
-	   }
-	 }
-	 }
-	 
-	
-	}
-}
+    .panelizer-view-mode {
+        padding: 60px 0;
 
-.field-name-field-paragraph-view{
-background:$color-light-blue;
-    .view-neueste-informationen {	
-	position:relative;
-	    padding: 30px 0;
-		@extend .container;
-	
-	 
-	.view-header{
-	  color:$header-menu;
-	  padding-bottom:20px;
-	  
-	}					
+        .panel-2col {
+            @extend .container;
+
+            background: $header-menu;
+            padding: 30px;
+        }
+
+        .panel-col-first {
+            width: 60%;
+            float: left;
+            border-right: 1px solid $color-light-grey;
+			
+			.inside{
+			 position:relative;
+			 height:250px;
+			 margin:0;
+
+            .pane-paragraphs-item-field-paragraph-title {
+                color: $color-white;
+                font-size: 36px;
+            }
+
+            .pane-paragraphs-item-field-flie-text-bereich {
+                color: $color-white;
+                font-size: 22px;
+            }
+
+            .pane-paragraphs-item-field-quellenangabe a {
+                color: $color-white;
+                font-size: 20px;
+				position:absolute;
+				bottom:0;
+
+                &:before {
+                    content: "\f061";
+                    font-family: FontAwesome;
+                    color: $active-menu;
+                    text-decoration: none;
+                    padding-right: 10px;
+                }
+            }
+        }
+}
+        .panel-col-last {
+            width: 40%;
+            float: left;
+            padding-left: 30px;
+
+            .view-right-front-map-teaser .views-row {
+			   position:relative;
+			   height:250px;
+			
+                .views-field-type {
+                    color: $active-menu;
+                    font-size: 22px;
+                }
+
+                .views-field-title a {
+                    color: $color-white;
+                    font-size: 22px;
+                }
+
+                .views-field-view-node a {
+                    color: $color-white;
+                    font-size: 20px;
+					position:absolute;
+					bottom:0;
+
+                    &:before {
+                        content: "\f041";
+                        font-family: FontAwesome;
+                        color: $active-menu;
+                        text-decoration: none;
+                        padding-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    .field-name-field-paragraph-view {
+        background: $color-light-blue;
+
+        .view-neueste-informationen {
+            position: relative;
+            padding: 30px 0;
+
+            @extend .container;
+
+            .view-header {
+                color: $header-menu;
+                padding-bottom: 20px;
+            }
+
+            .view-content {
+                margin-left: -15px;
+                margin-right: -15px;
+
+                .views-row {
+                    @extend .col-md-4;
+
+                    font-size: 22px;
+
+                    .row-container {
+                        background: $color-white;
+                        padding: 25px;
+                        height: 350px;
+                        margin-bottom: 30px;
+                        position: relative;
 						
-        .view-content {
+						.views-field-field-themenzuweisung{
+						     padding-bottom:10px;
+							 img{
+							   display:inline-block;
+							   margin-right:10px;
+							  
+							 }
+						}
+
+                        .views-field-type {
+                            color: $active-menu;
+                        }
+
+                        .views-field-title {
+                            a {
+                                text-decoration: none;
+                                color: $header-menu;
+                            }
+                        }
+
+                        .views-field-field-datum {
+                            position: absolute;
+                            bottom: 10px;
+
+                            .date-display-single {
+                                font-size: 17px;
+                                color: $color-light-grey;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .view-footer {
+                clear: both;
+
+                .link-outer-block .link-inner-block-1, .link-outer-block .link-inner-block-2 {
+                    display: inline-block;
+
+                    a {
+                        text-decoration: none;
+                        color: $header-menu;
+                        font-size: 20px;
+                        padding-right: 15px;
+
+                        &:before {
+                            content: "\f061";
+                            font-family: FontAwesome;
+                            color: $active-menu;
+                            text-decoration: none;
+                            padding-right: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .field-name-field-topic-teaser {
+        @extend .container;
+
+        > .field-items {
+            padding: 60px 0;
+            float: left;
             margin-left: -15px;
             margin-right: -15px;
 
-            .views-row {
-                @extend .col-md-4;
+            > .field-item {
+                @extend .col-md-6;
 
-                font-size: 22px;
+                .field-collection-view {
+                    margin: 0;
+                    padding: 0;
+                    border: 0;
+                    background: $color-light-blue;
+					position:relative;
 
-                .row-container {
-                   background: $color-white;;
-    padding: 25px;
-    height: 350px;
-    margin-bottom: 30px;
-    position: relative;
+                    .content {
+                        padding: 25px;
+                        height: 360px;
 
-                    .views-field-type {
-                        color: $active-menu;
-                    }
+                        .field-type-file img {
+                            width: 54px;
+                            height: 54px;
+                        }
 
-                    .views-field-title {
-                        a {
-                            text-decoration: none;
+                        .field-name-field-paragraph-title {
+                            font-size: 26px;
+                            color: $active-menu;
+                            padding: 10px 0;
+                        }
+
+                        .field-name-field-quellenangabe {
+                            a {
+                                font-size: 20px;
+                                color: $header-menu;
+                                text-decoration: none;
+								position:absolute;
+								bottom:30px;
+
+                                &:before {
+                                    content: "\f061";
+                                    font-family: FontAwesome;
+                                    color: $active-menu;
+                                    text-decoration: none;
+                                    padding-right: 10px;
+                                }
+                            }
+                        }
+
+                        .field-name-field-flie-text-bereich .field-item p {
+                            font-size: 20px;
                             color: $header-menu;
                         }
                     }
-					.views-field-field-datum{
-					position:absolute;
-					bottom:10px;
-					   .date-display-single{
-					     font-size:17px;
-						 color:$color-light-grey;
-					   }
-					}
-                }
-            }
-        }
-
-        .view-footer {
-            clear: both;
-
-            .link-outer-block .link-inner-block-1, .link-outer-block .link-inner-block-2 {
-                display: inline-block;
-
-                a {
-                    text-decoration: none;
-                    color: $header-menu;
-                    font-size: 20px;
-					padding-right:15px;
                 }
             }
         }
     }
 }
-    .field-name-field-topic-teaser {
-	  @extend .container;
-	> .field-items {
-        padding: 60px 0;
-        float: left;
-		margin-left:-15px;
-		margin-right:-15px;
-
-        > .field-item {
-            @extend .col-md-6;
-
-
-            .field-collection-view {
-                margin: 0;
-                padding: 0;
-                border: 0;
-				background:$color-light-blue;
-				
-				.content{
-				padding:25px;
-				height:360px;
-
-                .field-type-file img {
-                    width:54px;
-					height:54px;
-					
-                }
-
-                .field-name-field-paragraph-title {
-                    font-size: 26px;
-                    color: $active-menu;
-                    padding: 10px 0;
-                }
-
-                .field-name-field-quellenangabe {
-                    a {
-                        font-size: 20px;
-                        color: $header-menu;
-                        text-decoration: none;
-                    }
-                }
-
-                .field-name-field-flie-text-bereich .field-item p {
-                    font-size: 20px;
-                    color: $header-menu;
-                }
-            }}
-        }
-    }
-}}
