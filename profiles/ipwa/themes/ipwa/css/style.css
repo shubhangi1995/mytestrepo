@@ -6151,81 +6151,135 @@ header.navbar-default {
   -webkit-box-shadow: 0px 28px 38px 2px rgba(162, 162, 162, 0.65);
   -moz-box-shadow: 0px 28px 38px 2px rgba(162, 162, 162, 0.65);
   box-shadow: 0px 28px 38px 2px rgba(162, 162, 162, 0.65); }
-/* line 12, ../scss/layout/_header.scss */
+/* line 11, ../scss/layout/_header.scss */
 header .navbar-header .navbar-brand {
   display: none; }
-/* line 18, ../scss/layout/_header.scss */
+/* line 17, ../scss/layout/_header.scss */
 header .nrw-eu-logo a {
   margin-top: 8px;
   margin-bottom: 8px;
   float: left;
   padding-left: 25px; }
-/* line 26, ../scss/layout/_header.scss */
+/* line 25, ../scss/layout/_header.scss */
 header .navbar-collapse {
   padding: 0; }
-  /* line 29, ../scss/layout/_header.scss */
+  /* line 28, ../scss/layout/_header.scss */
   header .navbar-collapse ul.navbar-nav {
     float: right; }
-    /* line 34, ../scss/layout/_header.scss */
+    /* line 33, ../scss/layout/_header.scss */
     header .navbar-collapse ul.navbar-nav li.active a, header .navbar-collapse ul.navbar-nav li.active a:hover, header .navbar-collapse ul.navbar-nav li.active a:focus, header .navbar-collapse ul.navbar-nav li.active a:active {
       background: none;
       color: #e74712; }
-    /* line 40, ../scss/layout/_header.scss */
-    header .navbar-collapse ul.navbar-nav li.open a {
-      background: none;
-      border: none;
-      color: #e74712; }
-      /* line 46, ../scss/layout/_header.scss */
-      header .navbar-collapse ul.navbar-nav li.open a:hover, header .navbar-collapse ul.navbar-nav li.open a:focus {
-        background: none;
-        border: none;
-        color: #e74712; }
-    /* line 55, ../scss/layout/_header.scss */
+    /* line 39, ../scss/layout/_header.scss */
     header .navbar-collapse ul.navbar-nav li a {
       color: #273753;
       font-size: 18px; }
-      /* line 59, ../scss/layout/_header.scss */
+      /* line 43, ../scss/layout/_header.scss */
       header .navbar-collapse ul.navbar-nav li a:hover, header .navbar-collapse ul.navbar-nav li a:focus {
         background: none;
         border: none; }
-  /* line 68, ../scss/layout/_header.scss */
+  /* line 51, ../scss/layout/_header.scss */
   header .navbar-collapse .region-navigation {
     width: 100%;
     clear: both;
     padding-top: 30px; }
-    /* line 73, ../scss/layout/_header.scss */
+    /* line 56, ../scss/layout/_header.scss */
     header .navbar-collapse .region-navigation .tb-megamenu {
       background: none; }
-      /* line 76, ../scss/layout/_header.scss */
+      /* line 59, ../scss/layout/_header.scss */
       header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li {
         width: 20%;
         position: static; }
-        /* line 80, ../scss/layout/_header.scss */
+        /* line 63, ../scss/layout/_header.scss */
         header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li > a {
           color: #273753;
           border-right: none;
           font-size: 20px;
-          padding-left: 0;
-          width: 50%;
-          padding-bottom: 0;
-          margin-bottom: 20px; }
-          /* line 89, ../scss/layout/_header.scss */
+          padding: 0;
+          margin-bottom: 20px;
+          margin-left: 55px;
+          position: relative;
+          width: 60%; }
+          /* line 73, ../scss/layout/_header.scss */
           header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li > a .caret {
             display: none; }
-        /* line 93, ../scss/layout/_header.scss */
+          /* line 77, ../scss/layout/_header.scss */
+          header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li > a:before {
+            content: "";
+            width: 45px;
+            height: 45px;
+            display: inline-block;
+            float: left;
+            margin-top: 5px;
+            padding-left: 0;
+            margin-right: 10px;
+            left: -55px;
+            position: absolute; }
+        /* line 92, ../scss/layout/_header.scss */
+        header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li.menu-politik > a:before {
+          background: url("../images/politik.png") no-repeat; }
+        /* line 98, ../scss/layout/_header.scss */
+        header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li.menu-wirtschaft > a:before {
+          background: url("../images/wirtschft.png") no-repeat; }
+        /* line 104, ../scss/layout/_header.scss */
+        header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li.menu-unternehmen > a:before {
+          background: url("../images/infos.png") no-repeat; }
+        /* line 110, ../scss/layout/_header.scss */
+        header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li.menu-beschaftigte > a:before {
+          background: url("../images/Bescha.png") no-repeat; }
+        /* line 116, ../scss/layout/_header.scss */
+        header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li.menu-schaufenster > a:before {
+          background: url("../images/Digitales.png") no-repeat; }
+        /* line 121, ../scss/layout/_header.scss */
+        header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li.open > a {
+          background: none;
+          border: none;
+          color: #e74712; }
+          /* line 126, ../scss/layout/_header.scss */
+          header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li.open > a:hover, header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li.open > a:focus {
+            background: none;
+            border: none;
+            color: #e74712; }
+          /* line 132, ../scss/layout/_header.scss */
+          header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li.open > a:before {
+            content: "";
+            width: 45px;
+            height: 45px;
+            display: inline-block;
+            float: left;
+            margin-top: 5px; }
+        /* line 143, ../scss/layout/_header.scss */
+        header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li.open.menu-politik > a:before {
+          background: url("../images/politik-active.png") no-repeat; }
+        /* line 149, ../scss/layout/_header.scss */
+        header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li.open.menu-wirtschaft > a:before {
+          background: url("../images/wirtschft-active.png") no-repeat; }
+        /* line 155, ../scss/layout/_header.scss */
+        header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li.open.menu-unternehmen > a:before {
+          background: url("../images/infos-active.png") no-repeat; }
+        /* line 161, ../scss/layout/_header.scss */
+        header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li.open.menu-beschaftigte > a:before {
+          background: url("../images/Bescha-active.png") no-repeat; }
+        /* line 167, ../scss/layout/_header.scss */
+        header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li.open.menu-schaufenster > a:before {
+          background: url("../images/Digitales-active.png") no-repeat; }
+        /* line 172, ../scss/layout/_header.scss */
         header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li.active a {
           background: none;
           color: #e74712;
           padding-bottom: 0;
           border-bottom: 2px solid #e74712; }
-        /* line 100, ../scss/layout/_header.scss */
+        /* line 179, ../scss/layout/_header.scss */
+        header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li.dropdown.open > a {
+          border-bottom: 2px solid #e74712; }
+        /* line 183, ../scss/layout/_header.scss */
         header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu {
           background-color: #3c506e;
           border: none;
           width: 100%;
           padding-top: 40px;
           padding-bottom: 40px; }
-          /* line 108, ../scss/layout/_header.scss */
+          /* line 190, ../scss/layout/_header.scss */
           header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu:before {
             background: #3c506e;
             content: "";
@@ -6235,7 +6289,7 @@ header .navbar-collapse {
             top: 0px;
             position: absolute;
             left: -100%; }
-          /* line 119, ../scss/layout/_header.scss */
+          /* line 201, ../scss/layout/_header.scss */
           header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu:after {
             background: #3c506e;
             content: "";
@@ -6245,41 +6299,38 @@ header .navbar-collapse {
             top: 0px;
             position: absolute;
             right: -100%; }
-          /* line 130, ../scss/layout/_header.scss */
+          /* line 212, ../scss/layout/_header.scss */
           header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu a {
             color: #ffffff;
             text-decoration: none; }
-          /* line 135, ../scss/layout/_header.scss */
+          /* line 217, ../scss/layout/_header.scss */
           header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .block-title {
             color: #ffffff; }
-          /* line 140, ../scss/layout/_header.scss */
+          /* line 222, ../scss/layout/_header.scss */
           header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-header {
             color: #ffffff;
             font-size: 18px; }
-          /* line 144, ../scss/layout/_header.scss */
+          /* line 227, ../scss/layout/_header.scss */
           header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-content .views-row {
             display: inline-block;
             padding: 5px; }
-            /* line 147, ../scss/layout/_header.scss */
+            /* line 231, ../scss/layout/_header.scss */
             header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-content .views-row a {
               background: #273753;
               font-size: 16px;
               padding: 10px; }
-          /* line 156, ../scss/layout/_header.scss */
+          /* line 240, ../scss/layout/_header.scss */
           header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-left {
             width: 30%;
             float: left; }
-            /* line 159, ../scss/layout/_header.scss */
+            /* line 244, ../scss/layout/_header.scss */
             header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-left a {
               font-size: 16px; }
-          /* line 163, ../scss/layout/_header.scss */
+          /* line 249, ../scss/layout/_header.scss */
           header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-right {
             width: 70%;
             float: left;
             margin: 0; }
-        /* line 170, ../scss/layout/_header.scss */
-        header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li.dropdown.open .dropdown-toggle {
-          border-bottom: 2px solid #e74712; }
 
 /* line 3, ../scss/layout/_footer.scss */
 footer #block-menu-menu-footer-navigation ul li {
