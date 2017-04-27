@@ -6269,17 +6269,26 @@ header .navbar-collapse {
           color: #e74712;
           padding-bottom: 0;
           border-bottom: 2px solid #e74712; }
-        /* line 179, ../scss/layout/_header.scss */
+          /* line 178, ../scss/layout/_header.scss */
+          header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li.active a:before {
+            background: url("../images/Digitales-active.png") no-repeat;
+            content: "";
+            width: 45px;
+            height: 45px;
+            display: inline-block;
+            float: left;
+            margin-top: 5px; }
+        /* line 189, ../scss/layout/_header.scss */
         header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li.dropdown.open > a {
           border-bottom: 2px solid #e74712; }
-        /* line 183, ../scss/layout/_header.scss */
+        /* line 193, ../scss/layout/_header.scss */
         header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu {
           background-color: #3c506e;
           border: none;
           width: 100%;
           padding-top: 40px;
           padding-bottom: 40px; }
-          /* line 190, ../scss/layout/_header.scss */
+          /* line 200, ../scss/layout/_header.scss */
           header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu:before {
             background: #3c506e;
             content: "";
@@ -6289,7 +6298,7 @@ header .navbar-collapse {
             top: 0px;
             position: absolute;
             left: -100%; }
-          /* line 201, ../scss/layout/_header.scss */
+          /* line 211, ../scss/layout/_header.scss */
           header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu:after {
             background: #3c506e;
             content: "";
@@ -6299,34 +6308,34 @@ header .navbar-collapse {
             top: 0px;
             position: absolute;
             right: -100%; }
-          /* line 212, ../scss/layout/_header.scss */
+          /* line 222, ../scss/layout/_header.scss */
           header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu a {
             color: #ffffff;
             text-decoration: none; }
-          /* line 217, ../scss/layout/_header.scss */
+          /* line 227, ../scss/layout/_header.scss */
           header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .block-title {
             color: #ffffff; }
-          /* line 222, ../scss/layout/_header.scss */
+          /* line 232, ../scss/layout/_header.scss */
           header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-header {
             color: #ffffff;
             font-size: 18px; }
-          /* line 227, ../scss/layout/_header.scss */
+          /* line 237, ../scss/layout/_header.scss */
           header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-content .views-row {
             display: inline-block;
             padding: 5px; }
-            /* line 231, ../scss/layout/_header.scss */
+            /* line 241, ../scss/layout/_header.scss */
             header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-content .views-row a {
               background: #273753;
               font-size: 16px;
               padding: 10px; }
-          /* line 240, ../scss/layout/_header.scss */
+          /* line 250, ../scss/layout/_header.scss */
           header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-left {
             width: 30%;
             float: left; }
-            /* line 244, ../scss/layout/_header.scss */
+            /* line 254, ../scss/layout/_header.scss */
             header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-left a {
               font-size: 16px; }
-          /* line 249, ../scss/layout/_header.scss */
+          /* line 259, ../scss/layout/_header.scss */
           header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-right {
             width: 70%;
             float: left;
