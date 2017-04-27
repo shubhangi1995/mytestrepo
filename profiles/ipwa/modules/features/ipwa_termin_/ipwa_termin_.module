@@ -12,41 +12,22 @@ include_once 'ipwa_termin_.features.inc';
  * @param $view
  *
  */
-function ipwa_termin__views_pre_render(&$view) {
-  //For Related content: Kommende Veranstaltungen view
-  if ($view->name=='related_content') {
-    foreach($view->result as $key => $result) {
-      if (!empty($result->field_field_event_datum['0']['rendered']['#markup'])) {
-        // Display '-' instead of 'to' in date field
-        if (strpos($result->field_field_event_datum['0']['rendered']['#markup'], 'to') !== false) {
-          $view->result[$key]->field_field_event_datum['0']['rendered']['#markup'] =str_replace('to','-',$result->field_field_event_datum['0']['rendered']['#markup']);
+function ipwa_termin__views_pre_render(&$view)
+{
+    //For Related content: Kommende Veranstaltungen view
+    if ($view->name == 'related_content') {
+        foreach ($view->result as $key => $result) {
+            if (!empty($result->field_field_event_datum['0']['rendered']['#markup'])) {
+                // Display '-' instead of 'to' in date field
+                if (strpos($result->field_field_event_datum['0']['rendered']['#markup'], 'to') !== false) {
+                    $view->result[$key]->field_field_event_datum['0']['rendered']['#markup'] = str_replace('to', '-', $result->field_field_event_datum['0']['rendered']['#markup']);
+                }
+            }
         }
-      }
     }
-  }
-  if ($view->name=='termin'){
-    foreach($view->result as $key => $result) {
-      if (!empty($view->result[$key]->field_field_event_datum)) {
-        $occurence = count($view->result[$key]->field_field_event_datum);
-        $startDate = date("d.m.Y", strtotime($view->result[$key]->field_field_event_datum[0]['raw']['value']));
-        $enddate = date("d.m.Y", strtotime($view->result[$key]->field_field_event_datum[$occurence - 1]['raw']['value2']));
-        if (($occurence > 1)) {
-          // Repeat rule
-          $output = '';
-          $output = '<div class="date-repeat-rule">' . $output . '</div>';
-          $output .= '<div class="date-display-range"><span class="date-display-start">' . $startDate . '</span> - <span class="date-display-end">' . $enddate . '</span></div>';
-          $view->result[$key]->field_field_event_datum[0]['rendered']['#markup'] = '<div class="field-event-datum recurring">' . $output . '</div>';
-        }
-        $index =1;
-        while($occurence > 1) {
-          $view->result[$key]->field_field_event_datum[$index]['rendered']['#access'] = '0';
-          $index++;
-          $occurence--;
-        }
-      }
-    }
-  }
 }
+
+
 
 
 /**

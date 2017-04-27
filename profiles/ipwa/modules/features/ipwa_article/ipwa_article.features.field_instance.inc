@@ -85,15 +85,19 @@ function ipwa_article_field_default_field_instances() {
     'settings' => array(
       'add_mode' => 'select',
       'allowed_bundles' => array(
-        'flie_text_bereich' => -1,
-        'flie_text_mit_bild_links' => -1,
-        'flie_text_mit_bild_rechts' => -1,
+        'flie_text_bereich' => 'flie_text_bereich',
+        'flie_text_mit_bild_links' => 'flie_text_mit_bild_links',
+        'flie_text_mit_bild_rechts' => 'flie_text_mit_bild_rechts',
+        'frontpage_map_teaser_paragraph' => -1,
+        'topic_teaser_paragraph' => -1,
         'views' => -1,
       ),
       'bundle_weights' => array(
         'flie_text_bereich' => 2,
         'flie_text_mit_bild_links' => 3,
         'flie_text_mit_bild_rechts' => 4,
+        'frontpage_map_teaser_paragraph' => 10,
+        'topic_teaser_paragraph' => 11,
         'views' => 5,
       ),
       'default_edit_mode' => 'open',

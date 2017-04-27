@@ -63,6 +63,7 @@ function ipwa_publikation_field_default_field_instances() {
   // 'node-publikation-field_anzuzeigende_seitenmodule'.
   $field_instances['node-publikation-field_anzuzeigende_seitenmodule'] = array(
     'bundle' => 'publikation',
+    'default_value' => NULL,
     'deleted' => 0,
     'description' => '',
     'display' => array(
@@ -85,15 +86,32 @@ function ipwa_publikation_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_anzuzeigende_seitenmodule',
     'label' => 'Anzuzeigende Seitenmodule (Paragraphen)',
-    'required' => FALSE,
+    'required' => 0,
     'settings' => array(
-      'allowed_bundles' => array(),
-      'bundle_weights' => array(),
+      'add_mode' => 'select',
+      'allowed_bundles' => array(
+        'flie_text_bereich' => 'flie_text_bereich',
+        'flie_text_mit_bild_links' => 'flie_text_mit_bild_links',
+        'flie_text_mit_bild_rechts' => 'flie_text_mit_bild_rechts',
+        'frontpage_map_teaser_paragraph' => -1,
+        'topic_teaser_paragraph' => -1,
+        'views' => -1,
+      ),
+      'bundle_weights' => array(
+        'flie_text_bereich' => 2,
+        'flie_text_mit_bild_links' => 3,
+        'flie_text_mit_bild_rechts' => 4,
+        'frontpage_map_teaser_paragraph' => 5,
+        'topic_teaser_paragraph' => 6,
+        'views' => 7,
+      ),
+      'default_edit_mode' => 'open',
       'title' => 'Paragraph',
       'title_multiple' => 'Paragraphs',
       'user_register_form' => FALSE,
     ),
     'widget' => array(
+      'active' => 0,
       'module' => 'paragraphs',
       'settings' => array(),
       'type' => 'paragraphs_embed',
@@ -1211,6 +1229,7 @@ Schema für externe Links: http://www…');
   t('Weiterführende Links');
   t('YouTube URL');
   t('publikation');
+  t('© Bildquelle');
   t('© Videoquelle');
 
   return $field_instances;
