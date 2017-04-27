@@ -22,7 +22,7 @@ function ipwa_termin__field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 12,
+        'weight' => 11,
       ),
       'ical' => array(
         'label' => 'hidden',
@@ -58,7 +58,7 @@ function ipwa_termin__field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 12,
+      'weight' => 13,
     ),
   );
 
@@ -76,7 +76,7 @@ function ipwa_termin__field_default_field_instances() {
           'view_mode' => 'full',
         ),
         'type' => 'paragraphs_view',
-        'weight' => 11,
+        'weight' => 10,
       ),
       'ical' => array(
         'label' => 'above',
@@ -143,7 +143,7 @@ function ipwa_termin__field_default_field_instances() {
           'view_mode' => 'default',
         ),
         'type' => 'entityreference_entity_view',
-        'weight' => 13,
+        'weight' => 12,
       ),
       'ical' => array(
         'label' => 'hidden',
@@ -179,7 +179,7 @@ function ipwa_termin__field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 11,
+      'weight' => 12,
     ),
   );
 
@@ -194,7 +194,7 @@ function ipwa_termin__field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 24,
+        'weight' => 23,
       ),
       'ical' => array(
         'label' => 'hidden',
@@ -315,7 +315,7 @@ function ipwa_termin__field_default_field_instances() {
           'link' => 0,
         ),
         'type' => 'entityreference_label',
-        'weight' => 22,
+        'weight' => 21,
       ),
       'ical' => array(
         'label' => 'above',
@@ -367,7 +367,7 @@ function ipwa_termin__field_default_field_instances() {
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 20,
+        'weight' => 19,
       ),
       'ical' => array(
         'label' => 'above',
@@ -511,7 +511,7 @@ function ipwa_termin__field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 8,
+      'weight' => 9,
     ),
   );
 
@@ -529,7 +529,7 @@ function ipwa_termin__field_default_field_instances() {
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 19,
+        'weight' => 18,
       ),
       'ical' => array(
         'label' => 'above',
@@ -628,7 +628,7 @@ function ipwa_termin__field_default_field_instances() {
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 21,
+        'weight' => 20,
       ),
       'ical' => array(
         'label' => 'above',
@@ -726,7 +726,7 @@ function ipwa_termin__field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 10,
+      'weight' => 11,
     ),
   );
 
@@ -832,7 +832,7 @@ function ipwa_termin__field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 25,
+        'weight' => 24,
       ),
       'ical' => array(
         'label' => 'hidden',
@@ -879,7 +879,7 @@ function ipwa_termin__field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 16,
+        'weight' => 15,
       ),
       'ical' => array(
         'label' => 'inline',
@@ -926,7 +926,7 @@ function ipwa_termin__field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 15,
+        'weight' => 14,
       ),
       'ical' => array(
         'label' => 'hidden',
@@ -974,7 +974,7 @@ Schema für externe Links: http://www…',
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 23,
+        'weight' => 22,
       ),
       'ical' => array(
         'label' => 'above',
@@ -1048,7 +1048,7 @@ Schema für externe Links: http://www…',
           'youtube_width' => NULL,
         ),
         'type' => 'youtube_video',
-        'weight' => 14,
+        'weight' => 13,
       ),
       'ical' => array(
         'label' => 'hidden',
@@ -1137,8 +1137,8 @@ Schema für externe Links: http://www…',
     ),
   );
 
-  // Exported field_instance: 'node-termin-field_zus_tzliche_informationen_'.
-  $field_instances['node-termin-field_zus_tzliche_informationen_'] = array(
+  // Exported field_instance: 'node-termin-field_zus_tzliche_informationen'.
+  $field_instances['node-termin-field_zus_tzliche_informationen'] = array(
     'bundle' => 'termin',
     'default_value' => NULL,
     'deleted' => 0,
@@ -1151,11 +1151,10 @@ Schema für externe Links: http://www…',
         'weight' => 26,
       ),
       'ical' => array(
-        'label' => 'hidden',
-        'module' => 'text',
+        'label' => 'above',
         'settings' => array(),
-        'type' => 'text_default',
-        'weight' => 6,
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -1165,7 +1164,7 @@ Schema für externe Links: http://www…',
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_zus_tzliche_informationen_',
+    'field_name' => 'field_zus_tzliche_informationen',
     'label' => 'Zusätzliche Informationen zum Ort',
     'required' => 0,
     'settings' => array(

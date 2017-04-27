@@ -49,7 +49,7 @@ function ipwa_termin__field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Related doc',
-    'weight' => '17',
+    'weight' => '16',
     'children' => array(),
     'format_type' => 'html-element',
     'format_settings' => array(
@@ -77,7 +77,7 @@ function ipwa_termin__field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Related event',
-    'weight' => '18',
+    'weight' => '17',
     'children' => array(),
     'format_type' => 'html-element',
     'format_settings' => array(

@@ -243,6 +243,7 @@ function ipwa_termin__views_default_views() {
   );
   $handler->display->display_options['fields']['field_event_datum']['group_column'] = 'entity_id';
   $handler->display->display_options['fields']['field_event_datum']['delta_offset'] = '0';
+  $handler->display->display_options['fields']['field_event_datum']['separator'] = '<none>';
   /* Field: Content: Titel */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
@@ -413,7 +414,7 @@ function ipwa_termin__views_default_views() {
   $handler->display->display_options['footer']['area']['content'] = '<div class="link-outer-block">
 	<div class="link-inner-block-1">
 		<a href="/termin">Alle Termine</a>
-	</div>	
+	</div>
 </div>';
   $handler->display->display_options['footer']['area']['format'] = 'wysiwyg';
   $handler->display->display_options['defaults']['fields'] = FALSE;
@@ -517,7 +518,7 @@ function ipwa_termin__views_default_views() {
     t('<div class="link-outer-block">
 	<div class="link-inner-block-1">
 		<a href="/termin">Alle Termine</a>
-	</div>	
+	</div>
 </div>'),
   );
   $export['termin'] = $view;

@@ -79,13 +79,13 @@ function ipwa_termin__field_default_field_bases() {
     'type' => 'text',
   );
 
-  // Exported field_base: 'field_zus_tzliche_informationen_'.
-  $field_bases['field_zus_tzliche_informationen_'] = array(
+  // Exported field_base: 'field_zus_tzliche_informationen'.
+  $field_bases['field_zus_tzliche_informationen'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_zus_tzliche_informationen_',
+    'field_name' => 'field_zus_tzliche_informationen',
     'indexes' => array(
       'format' => array(
         0 => 'format',

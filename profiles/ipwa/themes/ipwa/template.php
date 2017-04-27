@@ -12,7 +12,8 @@
  * @params $variables
  *
  */
-function ipwa_preprocess_node(&$variables) {
+function ipwa_preprocess_node(&$variables)
+{
   //For CT 'Bild' or frontpage don't show title
   if ($variables['type'] == 'bild' || drupal_is_front_page()) {
     // Don't show title
@@ -61,8 +62,8 @@ function ipwa_preprocess_node(&$variables) {
   // (mostly will be displayed under date field)
   if (isset($variables['title']) && $variables['title']) {
     $variables['content']['title'] = array(
-      '#markup' => '<h1 class="page-title">' . $variables['title'] . '</h1>',
-      '#weight' => isset($variables['elements']['#fieldgroups']['group_title']) ? $variables['elements']['#fieldgroups']['group_title']->weight : -1);
+        '#markup' => '<h1 class="page-title">' . $variables['title'] . '</h1>',
+        '#weight' => isset($variables['elements']['#fieldgroups']['group_title']) ? $variables['elements']['#fieldgroups']['group_title']->weight : -1);
   }
 
 
@@ -74,8 +75,8 @@ function ipwa_preprocess_node(&$variables) {
       $variables['content']['rel_ort']['#weight'] = isset($variables['elements']['#fieldgroups']['group_related_ort']) ? $variables['elements']['#fieldgroups']['group_related_ort']->weight : -1;
 
       // show field 'Ort' appended with value of  field 'Zusätzliche Informationen zum Ort' if provided
-      if (!empty($variables['field_zus_tzliche_informationen_'])) {
-        $variables['content']['field_ort'][0]['#markup'] = $variables['content']['field_ort'][0]['#markup'] . ' ' . $variables['field_zus_tzliche_informationen_']['und'][0]['value'];
+      if (!empty($variables['field_zus_tzliche_informationen'])) {
+        $variables['content']['field_ort'][0]['#markup'] = $variables['content']['field_ort'][0]['#markup'] . ' ' . $variables['field_zus_tzliche_informationen']['und'][0]['value'];
       }
     }
 
