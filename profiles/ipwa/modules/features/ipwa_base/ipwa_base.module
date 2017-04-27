@@ -22,11 +22,6 @@ function ipwa_base_views_pre_render(&$view) {
     ($view->name == 'neueste_informationen' && $view->current_display == 'block') ||
     ($view->name == 'termin' && $view->current_display == 'block_2')){
 
-    // get view result count
-    $view->attachment_before = '<div class="view-result-count">';
-    $view->attachment_before .= $view->total_rows . ' ' . t('Treffer');
-    $view->attachment_before .= '</div>';
-
     foreach($view->result as $result) {
       $parent_ids = array();
       if (!empty($result->field_field_themenzuweisung)) {
