@@ -68,6 +68,7 @@ features_exclude[dependencies][options] = options
 features_exclude[dependencies][paragraphs] = paragraphs
 features_exclude[dependencies][youtube] = youtube
 features_exclude[dependencies][views] = views
+features_exclude[dependencies][better_exposed_filters] = better_exposed_filters
 features_exclude[field_base][field_ort] = field_ort
 features_exclude[field_base][field_event_datum] = field_event_datum
 features_exclude[field_base][field_anzuzeigende_seitenmodule_] = field_anzuzeigende_seitenmodule_
