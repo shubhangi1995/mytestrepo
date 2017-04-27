@@ -15,8 +15,11 @@ function ipwa_base_views_pre_render(&$view) {
     $view->attachment_before = '<div class="view-result-count">';
     $view->attachment_before .= $view->total_rows . ' ' . t('Treffer');
     $view->attachment_before .= '</div>';
+  }
 
-    foreach($view->result as $result) {
+  if (($view->name == 'aktuelles' && $view->current_display == 'page') ||
+    ($view->name == 'neueste_informationen' && $view->current_display == 'block')) {
+      foreach($view->result as $result) {
       $parent_ids = array();
       if (!empty($result->field_field_themenzuweisung)) {
         foreach($result->field_field_themenzuweisung as $key => $val) {
