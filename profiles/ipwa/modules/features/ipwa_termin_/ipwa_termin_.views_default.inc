@@ -143,7 +143,7 @@ function ipwa_termin__views_default_views() {
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
-    'termin' => 'termin',
+    'f_rderbekanntmachung' => 'f_rderbekanntmachung',
   );
 
   /* Display: Termin */
@@ -380,6 +380,108 @@ function ipwa_termin__views_default_views() {
   $handler->display->display_options['arguments']['nid']['summary']['number_of_records'] = '0';
   $handler->display->display_options['arguments']['nid']['summary']['format'] = 'default_summary';
   $handler->display->display_options['arguments']['nid']['summary_options']['items_per_page'] = '25';
+
+  /* Display: Aktuelle Veranstaltungen */
+  $handler = $view->new_display('block', 'Aktuelle Veranstaltungen', 'block_2');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'Aktuelle Veranstaltungen';
+  $handler->display->display_options['defaults']['group_by'] = FALSE;
+  $handler->display->display_options['defaults']['exposed_form'] = FALSE;
+  $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '3';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['defaults']['header'] = FALSE;
+  /* Header: Global: Text area */
+  $handler->display->display_options['header']['area']['id'] = 'area';
+  $handler->display->display_options['header']['area']['table'] = 'views';
+  $handler->display->display_options['header']['area']['field'] = 'area';
+  $handler->display->display_options['header']['area']['content'] = '<h2 class="pane-title">Aktuelle Veranstaltungen</h2>';
+  $handler->display->display_options['header']['area']['format'] = 'wysiwyg';
+  $handler->display->display_options['defaults']['footer'] = FALSE;
+  /* Footer: Global: Text area */
+  $handler->display->display_options['footer']['area']['id'] = 'area';
+  $handler->display->display_options['footer']['area']['table'] = 'views';
+  $handler->display->display_options['footer']['area']['field'] = 'area';
+  $handler->display->display_options['footer']['area']['content'] = '<div class="link-outer-block">
+	<div class="link-inner-block-1">
+		<a href="/termin">Alle Termine</a>
+	</div>	
+</div>';
+  $handler->display->display_options['footer']['area']['format'] = 'wysiwyg';
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Dieser Artikel gehört zu */
+  $handler->display->display_options['fields']['field_themenzuweisung']['id'] = 'field_themenzuweisung';
+  $handler->display->display_options['fields']['field_themenzuweisung']['table'] = 'field_data_field_themenzuweisung';
+  $handler->display->display_options['fields']['field_themenzuweisung']['field'] = 'field_themenzuweisung';
+  $handler->display->display_options['fields']['field_themenzuweisung']['label'] = '';
+  $handler->display->display_options['fields']['field_themenzuweisung']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_themenzuweisung']['delta_offset'] = '0';
+  $handler->display->display_options['fields']['field_themenzuweisung']['separator'] = '';
+  /* Field: Content: Datum */
+  $handler->display->display_options['fields']['field_event_datum']['id'] = 'field_event_datum';
+  $handler->display->display_options['fields']['field_event_datum']['table'] = 'field_data_field_event_datum';
+  $handler->display->display_options['fields']['field_event_datum']['field'] = 'field_event_datum';
+  $handler->display->display_options['fields']['field_event_datum']['label'] = '';
+  $handler->display->display_options['fields']['field_event_datum']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_event_datum']['settings'] = array(
+    'format_type' => 'short',
+    'fromto' => 'both',
+    'multiple_number' => '',
+    'multiple_from' => '',
+    'multiple_to' => '',
+    'show_remaining_days' => 0,
+    'show_repeat_rule' => 'show',
+  );
+  $handler->display->display_options['fields']['field_event_datum']['delta_offset'] = '0';
+  $handler->display->display_options['fields']['field_event_datum']['separator'] = '';
+  /* Field: Content: Titel */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  /* Field: Content: Ort */
+  $handler->display->display_options['fields']['field_ort']['id'] = 'field_ort';
+  $handler->display->display_options['fields']['field_ort']['table'] = 'field_data_field_ort';
+  $handler->display->display_options['fields']['field_ort']['field'] = 'field_ort';
+  $handler->display->display_options['fields']['field_ort']['label'] = '';
+  $handler->display->display_options['fields']['field_ort']['element_label_colon'] = FALSE;
+  $handler->display->display_options['defaults']['sorts'] = FALSE;
+  $handler->display->display_options['defaults']['arguments'] = FALSE;
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'termin' => 'termin',
+  );
+  /* Filter criterion: Content: Datum -  start date (field_event_datum) */
+  $handler->display->display_options['filters']['field_event_datum_value']['id'] = 'field_event_datum_value';
+  $handler->display->display_options['filters']['field_event_datum_value']['table'] = 'field_data_field_event_datum';
+  $handler->display->display_options['filters']['field_event_datum_value']['field'] = 'field_event_datum_value';
+  $handler->display->display_options['filters']['field_event_datum_value']['operator'] = '>=';
+  $handler->display->display_options['filters']['field_event_datum_value']['form_type'] = 'date_text';
+  $handler->display->display_options['filters']['field_event_datum_value']['default_date'] = 'now';
+  $handler->display->display_options['filters']['field_event_datum_value']['year_range'] = '-0:+10';
   $translatables['termin'] = array(
     t('Master'),
     t('Termin'),
@@ -409,6 +511,14 @@ function ipwa_termin__views_default_views() {
     t('Ort'),
     t('Calendar Block'),
     t('in kalender eintragen'),
+    t('Aktuelle Veranstaltungen'),
+    t('Sort by'),
+    t('<h2 class="pane-title">Aktuelle Veranstaltungen</h2>'),
+    t('<div class="link-outer-block">
+	<div class="link-inner-block-1">
+		<a href="/termin">Alle Termine</a>
+	</div>	
+</div>'),
   );
   $export['termin'] = $view;
 
