@@ -35,6 +35,16 @@ header {
                         color: $active-menu;
                     }
                 }
+				&.open{
+				    > a{
+					    background:none;
+						color:$active-menu;
+						&:hover,&:focus{
+						  background:none;
+						}
+					}
+				
+				}
 
                 a {
                     color: $header-menu;
