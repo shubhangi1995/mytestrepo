@@ -1122,11 +1122,23 @@ function ipwa_base_views_default_views() {
   $handler->display->display_options['fields']['field_datei_ist_nicht_barrierefr']['field'] = 'field_datei_ist_nicht_barrierefr';
   $handler->display->display_options['fields']['field_datei_ist_nicht_barrierefr']['relationship'] = 'field_dokumente_und_publikatione_target_id';
   $handler->display->display_options['fields']['field_datei_ist_nicht_barrierefr']['label'] = '';
-  $handler->display->display_options['fields']['field_datei_ist_nicht_barrierefr']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['field_datei_ist_nicht_barrierefr']['alter']['text'] = '[extension]  [filesize][field_datei_ist_nicht_barrierefr]';
+  $handler->display->display_options['fields']['field_datei_ist_nicht_barrierefr']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_datei_ist_nicht_barrierefr']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_datei_ist_nicht_barrierefr']['hide_empty'] = TRUE;
+  $handler->display->display_options['fields']['field_datei_ist_nicht_barrierefr']['empty_zero'] = TRUE;
   $handler->display->display_options['fields']['field_datei_ist_nicht_barrierefr']['hide_alter_empty'] = FALSE;
+  /* Field: Views: Views Conditional */
+  $handler->display->display_options['fields']['views_conditional_2']['id'] = 'views_conditional_2';
+  $handler->display->display_options['fields']['views_conditional_2']['table'] = 'views_conditional';
+  $handler->display->display_options['fields']['views_conditional_2']['field'] = 'views_conditional';
+  $handler->display->display_options['fields']['views_conditional_2']['label'] = '';
+  $handler->display->display_options['fields']['views_conditional_2']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['views_conditional_2']['if'] = 'field_datei_ist_nicht_barrierefr';
+  $handler->display->display_options['fields']['views_conditional_2']['condition'] = '1';
+  $handler->display->display_options['fields']['views_conditional_2']['equalto'] = '1';
+  $handler->display->display_options['fields']['views_conditional_2']['then'] = '[extension] [filesize], Datei ist nicht barrierefrei';
+  $handler->display->display_options['fields']['views_conditional_2']['or'] = '[extension] [filesize]';
+  $handler->display->display_options['fields']['views_conditional_2']['strip_tags'] = 0;
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
   /* Filter criterion: Content: Published */
@@ -1215,7 +1227,6 @@ function ipwa_base_views_default_views() {
     t('Content entity referenced from field_veranstaltungen'),
     t('Dokumente und Publikationen'),
     t('PDF'),
-    t('[extension]  [filesize][field_datei_ist_nicht_barrierefr]'),
     t('publikation'),
     t('Content entity referenced from field_publication'),
     t('Publikation downloaden'),
