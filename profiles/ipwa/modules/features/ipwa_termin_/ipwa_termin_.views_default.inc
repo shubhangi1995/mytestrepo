@@ -226,6 +226,14 @@ function ipwa_termin__views_default_views() {
     ),
   );
   $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Dieser Artikel gehört zu */
+  $handler->display->display_options['fields']['field_themenzuweisung']['id'] = 'field_themenzuweisung';
+  $handler->display->display_options['fields']['field_themenzuweisung']['table'] = 'field_data_field_themenzuweisung';
+  $handler->display->display_options['fields']['field_themenzuweisung']['field'] = 'field_themenzuweisung';
+  $handler->display->display_options['fields']['field_themenzuweisung']['label'] = '';
+  $handler->display->display_options['fields']['field_themenzuweisung']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_themenzuweisung']['group_column'] = 'entity_id';
+  $handler->display->display_options['fields']['field_themenzuweisung']['delta_offset'] = '0';
   /* Field: Content: Datum */
   $handler->display->display_options['fields']['field_event_datum']['id'] = 'field_event_datum';
   $handler->display->display_options['fields']['field_event_datum']['table'] = 'field_data_field_event_datum';
@@ -243,6 +251,7 @@ function ipwa_termin__views_default_views() {
   );
   $handler->display->display_options['fields']['field_event_datum']['group_column'] = 'entity_id';
   $handler->display->display_options['fields']['field_event_datum']['delta_offset'] = '0';
+  $handler->display->display_options['fields']['field_event_datum']['separator'] = '';
   /* Field: Content: Titel */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
