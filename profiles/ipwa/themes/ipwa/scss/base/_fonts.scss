@@ -27,16 +27,13 @@ text-transform: none;
 }
 
 @font-face {
-    font-family: 'MaterialIcons-Regular';
-    src: url('../fonts/MaterialIcons-Regular.eot');
-    src: url('../fonts/MaterialIcons-Regular.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/MaterialIcons-Regular.woff') format('woff'),
-         url('../fonts/MaterialIcons-Regular.ttf') format('truetype'),
-         url('../fonts/MaterialIcons-Regular.svg#bundessans_webbold') format('svg');
-   speak: none;
-font-style: normal;
-font-weight: normal;
-font-variant: normal;
-text-transform: none;
--webkit-font-smoothing: antialiased;
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/MaterialIcons-Regular.eot'); /* For IE6-8 */
+  src: local('Material Icons'),
+    local('MaterialIcons-Regular'),
+    url('../fonts/MaterialIcons-Regular.woff2') format('woff2'),
+    url('../fonts/MaterialIcons-Regular.woff') format('woff'),
+    url('../fonts/MaterialIcons-Regular.ttf') format('truetype');
 }

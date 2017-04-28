@@ -1,3 +1,5 @@
+//-----------------------------------//
+
 .field-name-field-anzuzeigende-seitenmodule {
     .panelizer-view-mode {
         padding: 60px 0;
@@ -13,47 +15,48 @@
             width: 60%;
             float: left;
             border-right: 1px solid $color-light-grey;
-			
-			.inside{
-			 position:relative;
-			 height:250px;
-			 margin:0;
 
-            .pane-paragraphs-item-field-paragraph-title {
-                color: $color-white;
-                font-size: 36px;
-            }
+            .inside {
+                position: relative;
+                height: 250px;
+                margin: 0;
 
-            .pane-paragraphs-item-field-flie-text-bereich {
-                color: $color-white;
-                font-size: 22px;
-            }
+                .pane-paragraphs-item-field-paragraph-title {
+                    color: $color-white;
+                    font-size: 36px;
+                }
 
-            .pane-paragraphs-item-field-quellenangabe a {
-                color: $color-white;
-                font-size: 20px;
-				position:absolute;
-				bottom:0;
+                .pane-paragraphs-item-field-flie-text-bereich {
+                    color: $color-white;
+                    font-size: 22px;
+                }
 
-                &:before {
-                    content: "\f061";
-                    font-family: FontAwesome;
-                    color: $active-menu;
-                    text-decoration: none;
-                    padding-right: 10px;
+                .pane-paragraphs-item-field-quellenangabe a {
+                    color: $color-white;
+                    font-size: 20px;
+                    position: absolute;
+                    bottom: 0;
+
+                    &:before {
+                        content: "\f061";
+                        font-family: FontAwesome;
+                        color: $active-menu;
+                        text-decoration: none;
+                        padding-right: 10px;
+                    }
                 }
             }
         }
-}
+
         .panel-col-last {
             width: 40%;
             float: left;
             padding-left: 30px;
 
             .view-right-front-map-teaser .views-row {
-			   position:relative;
-			   height:250px;
-			
+                position: relative;
+                height: 250px;
+
                 .views-field-type {
                     color: $active-menu;
                     font-size: 22px;
@@ -67,8 +70,8 @@
                 .views-field-view-node a {
                     color: $color-white;
                     font-size: 20px;
-					position:absolute;
-					bottom:0;
+                    position: absolute;
+                    bottom: 0;
 
                     &:before {
                         content: "\f041";
@@ -81,6 +84,10 @@
             }
         }
     }
+	
+	
+//-----------------------------//
+
 
     .field-name-field-paragraph-view {
         background: $color-light-blue;
@@ -111,15 +118,15 @@
                         height: 350px;
                         margin-bottom: 30px;
                         position: relative;
-						
-						.views-field-field-themenzuweisung{
-						     padding-bottom:10px;
-							 img{
-							   display:inline-block;
-							   margin-right:10px;
-							  
-							 }
-						}
+
+                        .views-field-field-themenzuweisung {
+                            padding-bottom: 10px;
+
+                            img {
+                                display: inline-block;
+                                margin-right: 10px;
+                            }
+                        }
 
                         .views-field-type {
                             color: $active-menu;
@@ -169,7 +176,7 @@
             }
         }
     }
-
+//---------------------------------//
     .field-name-field-topic-teaser {
         @extend .container;
 
@@ -187,7 +194,7 @@
                     padding: 0;
                     border: 0;
                     background: $color-light-blue;
-					position:relative;
+                    position: relative;
 
                     .content {
                         padding: 25px;
@@ -209,15 +216,14 @@
                                 font-size: 20px;
                                 color: $header-menu;
                                 text-decoration: none;
-								position:absolute;
-								bottom:30px;
+                                position: absolute;
+                                bottom: 30px;
 
                                 &:before {
-                                    content: "\f2ee";
-                                    font-family: MaterialIcons-Regular;
+                                    @extend .material-icons;
+
+                                    content: "arrow-right";
                                     color: $active-menu;
-                                    text-decoration: none;
-                                    padding-right: 10px;
                                 }
                             }
                         }
@@ -226,6 +232,94 @@
                             font-size: 20px;
                             color: $header-menu;
                         }
+                    }
+                }
+            }
+        }
+    }
+//-------------------------------------//
+    .view-termin {
+        @extend .container;
+
+        padding: 60px 0;
+        background: $header-menu;
+
+        .view-header {
+            h2 {
+                color: $color-white;
+                padding-bottom: 40px;
+            }
+        }
+
+        .view-content {
+            margin-left: -15px;
+            margin-right: -15px;
+
+            .views-row {
+                @extend .col-md-4;
+
+                position: relative;
+
+                .row-container {
+                    background: $color-white;
+                    padding: 30px;
+                    height: 300px;
+
+                    .views-field-field-themenzuweisung {
+                        padding-bottom: 10px;
+
+                        img {
+                            display: inline-block;
+                            margin-right: 10px;
+                        }
+                    }
+
+                    .views-field-field-event-datum {
+                        .date-display-range span {
+                            color: $active-menu;
+                            font-size: 22px;
+                        }
+                    }
+
+                    .views-field-title {
+                        a {
+                            text-decoration: none;
+                            font-size: 22px;
+                            color: $header-menu;
+                        }
+                    }
+
+                    .views-field-field-ort {
+                        .field-content {
+                            position: absolute;
+                            bottom: 30px;
+                            font-size: 20px;
+                            color: $header-menu;
+                        }
+                    }
+                }
+            }
+        }
+
+        .view-footer {
+            clear: both;
+
+            .link-outer-block .link-inner-block-1 {
+               
+
+                a {
+                    text-decoration: none;
+                   
+                    font-size: 20px;
+                    padding-right: 15px;
+					color:$color-white;
+
+                    &:before {
+                        content: "\f061";
+                        font-family: FontAwesome;
+                        color: $active-menu;
+                        text-decoration: none;
+                        padding-right: 10px;
                     }
                 }
             }
