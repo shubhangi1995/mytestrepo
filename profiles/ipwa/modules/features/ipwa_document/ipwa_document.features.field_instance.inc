@@ -21,7 +21,7 @@ function ipwa_document_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 3,
+        'weight' => 2,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -63,8 +63,8 @@ function ipwa_document_field_default_field_instances() {
       'default' => array(
         'label' => 'hidden',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 1,
+        'type' => 'i18n_list_default',
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -100,9 +100,10 @@ Erlaubter Dateityp: *.pdf',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
+        'module' => 'file',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 2,
+        'type' => 'file_default',
+        'weight' => 1,
       ),
       'teaser' => array(
         'label' => 'above',

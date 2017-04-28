@@ -58,7 +58,7 @@ function ipwa_termin__field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 13,
+      'weight' => 12,
     ),
   );
 
@@ -123,7 +123,7 @@ function ipwa_termin__field_default_field_instances() {
       'module' => 'paragraphs',
       'settings' => array(),
       'type' => 'paragraphs_embed',
-      'weight' => 14,
+      'weight' => 13,
     ),
   );
 
@@ -179,7 +179,7 @@ function ipwa_termin__field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 12,
+      'weight' => 11,
     ),
   );
 
@@ -194,7 +194,7 @@ function ipwa_termin__field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 23,
+        'weight' => 24,
       ),
       'ical' => array(
         'label' => 'hidden',
@@ -225,7 +225,7 @@ function ipwa_termin__field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 18,
+      'weight' => 17,
     ),
   );
 
@@ -349,7 +349,7 @@ function ipwa_termin__field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 23,
+      'weight' => 22,
     ),
   );
 
@@ -401,7 +401,7 @@ function ipwa_termin__field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 21,
+      'weight' => 20,
     ),
   );
 
@@ -563,7 +563,7 @@ function ipwa_termin__field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 20,
+      'weight' => 19,
     ),
   );
 
@@ -610,7 +610,7 @@ function ipwa_termin__field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 6,
+      'weight' => 7,
     ),
   );
 
@@ -662,7 +662,7 @@ function ipwa_termin__field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 22,
+      'weight' => 21,
     ),
   );
 
@@ -726,7 +726,7 @@ function ipwa_termin__field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 11,
+      'weight' => 10,
     ),
   );
 
@@ -832,7 +832,7 @@ function ipwa_termin__field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 24,
+        'weight' => 25,
       ),
       'ical' => array(
         'label' => 'hidden',
@@ -863,7 +863,7 @@ function ipwa_termin__field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 19,
+      'weight' => 18,
     ),
   );
 
@@ -910,7 +910,7 @@ function ipwa_termin__field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 17,
+      'weight' => 16,
     ),
   );
 
@@ -957,7 +957,7 @@ function ipwa_termin__field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 16,
+      'weight' => 15,
     ),
   );
 
@@ -1022,7 +1022,7 @@ Schema für externe Links: http://www…',
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 24,
+      'weight' => 23,
     ),
   );
 
@@ -1086,7 +1086,7 @@ Schema für externe Links: http://www…',
       'module' => 'youtube',
       'settings' => array(),
       'type' => 'youtube',
-      'weight' => 15,
+      'weight' => 14,
     ),
   );
 
@@ -1133,7 +1133,7 @@ Schema für externe Links: http://www…',
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 5,
+      'weight' => 6,
     ),
   );
 
@@ -1178,7 +1178,7 @@ Schema für externe Links: http://www…',
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 7,
+      'weight' => 8,
     ),
   );
 

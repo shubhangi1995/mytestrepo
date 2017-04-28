@@ -22,7 +22,7 @@ function ipwa_protagonist_ctools_plugin_api($module = NULL, $api = NULL) {
 function ipwa_protagonist_node_info() {
   $items = array(
     'protagonist' => array(
-      'name' => t('Protagonist'),
+      'name' => t('Akteur'),
       'base' => 'node_content',
       'description' => '',
       'has_title' => '1',

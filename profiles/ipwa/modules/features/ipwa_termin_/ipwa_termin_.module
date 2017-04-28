@@ -14,96 +14,42 @@ include_once 'ipwa_termin_.features.inc';
  */
 function ipwa_termin__views_pre_render(&$view)
 {
-
-  //
-    //For Related content: Kommende Veranstaltungen view
-    if ($view->name == 'related_content') {
-        foreach ($view->result as $key => $result) {
-            if (!empty($result->field_field_event_datum['0']['rendered']['#markup'])) {
-                // Display '-' instead of 'to' in date field
-                if (strpos($result->field_field_event_datum['0']['rendered']['#markup'], 'to') !== false) {
-                    $view->result[$key]->field_field_event_datum['0']['rendered']['#markup'] = str_replace('to', '-', $result->field_field_event_datum['0']['rendered']['#markup']);
-                }
-            }
-        }
-    }
-    if (($view->name == 'termin')||($view->name == 'related_content')) {
-      foreach ($view->result as $key => $result){
-
-       if(!empty($result->field_field_event_datum)){
-         $occurence = count($result->field_field_event_datum);
-
-         $startDate = date("d.m.Y", strtotime($result->field_field_event_datum[0]['raw']['value']));
-         $enddate = date("d.m.Y", strtotime($result->field_field_event_datum[$occurence - 1]['raw']['value2']));
-         if (($occurence > 1) || ((!empty($result->field_field_event_datum[0]['raw']['rrule'])))) {
-           $output =' ';
-           $output = '<div class="date-repeat-rule">' . $output . '</div>';
-           $output .= '<div class="date-display-range"><span class="date-display-start">' . $startDate . '</span> - <span class="date-display-end">' . $enddate . '</span></div>';
-           $result->field_field_event_datum[0]['rendered']['#markup'] = '<div class="field-event-datum recurring">' . $output . '</div>';
-           if (strpos($result->field_field_event_datum['0']['rendered']['#markup'], 'to') !== false) {
-             $result->field_field_event_datum['0']['rendered']['#markup'] = str_replace('to', '-', $result->field_field_event_datum['0']['rendered']['#markup']);
-           }
-           $index = 1;
-           while ($occurence > 1) {
-             $result->field_field_event_datum[$index]['rendered']['#access'] = 0;
-             $index++;
-             $occurence--;
-           }
-         }
+  //For Related content: Kommende Veranstaltungen view
+  if ($view->name == 'related_content') {
+    foreach ($view->result as $key => $result) {
+      if (!empty($result->field_field_event_datum['0']['rendered']['#markup'])) {
+        // Display '-' instead of 'to' in date field
+        if (strpos($result->field_field_event_datum['0']['rendered']['#markup'], 'to') !== false) {
+          $view->result[$key]->field_field_event_datum['0']['rendered']['#markup'] = str_replace('to', '-', $result->field_field_event_datum['0']['rendered']['#markup']);
         }
       }
     }
-  if (($view->name == 'termin')) {
-    foreach ($view->result as $result) {
-      $parent_ids = array();
-      if (!empty($result->field_field_themenzuweisung)) {
-        foreach ($result->field_field_themenzuweisung as $key => $val) {
-          $icon = array();
-          $tid = $val['raw']['tid'];
-          $term = taxonomy_term_load($tid);
-          //check if there are parent
-          $parent = taxonomy_get_parents($tid);
-          if (!empty($parent)) {
-            foreach ($parent as $pid => $parent_term) {
-              //if this term is also child of same parent as previous one,
-              // there is no point of showing same icon, in that case remove the term
-              if (in_array($parent_term->tid, $parent_ids)) {
-                unset($result->field_field_themenzuweisung[$key]);
-              } else {
-                // add parent term id in array
-                $parent_ids[] = $parent_term->tid;
-                if (!empty($parent_term->field_bild)) {
-                  // Show Icon of parent term
-                  $icon = $parent_term->field_bild['und'][0];
-                }
-              }
-            }
-          } else {
-            if (!empty($term->field_bild)) {
-              // For main category(1st level), show their uploaded icon
-              $icon = $term->field_bild['und'][0];
-            }
+  }
+  if (($view->name == 'termin') || ($view->name == 'related_content')) {
+    foreach ($view->result as $key => $result) {
+      if (!empty($result->field_field_event_datum)) {
+        $occurence = count($result->field_field_event_datum);
+        $startDate = date("d.m.Y", strtotime($result->field_field_event_datum[0]['raw']['value']));
+        $enddate = date("d.m.Y", strtotime($result->field_field_event_datum[$occurence - 1]['raw']['value2']));
+        if (($occurence > 1) || ((!empty($result->field_field_event_datum[0]['raw']['rrule'])))) {
+          $output = ' ';
+          $output = '<div class="date-repeat-rule">' . $output . '</div>';
+          $output .= '<div class="date-display-range"><span class="date-display-start">' . $startDate . '</span> - <span class="date-display-end">' . $enddate . '</span></div>';
+          $result->field_field_event_datum[0]['rendered']['#markup'] = '<div class="field-event-datum recurring">' . $output . '</div>';
+          if (strpos($result->field_field_event_datum['0']['rendered']['#markup'], 'to') !== false) {
+            $result->field_field_event_datum['0']['rendered']['#markup'] = str_replace('to', '-', $result->field_field_event_datum['0']['rendered']['#markup']);
           }
-
-          if (!empty($icon)) {
-            $result->field_field_themenzuweisung[$key]['rendered'] = array(
-              '#theme' => 'image_formatter',
-              '#item' => $icon,
-              '#image_style' => 'themen_icon_36x36',
-              '#path' => '',
-              '#access' => 1
-            );
-            $result->field_field_themenzuweisung[$key]['raw'] = $icon;
+          $index = 1;
+          while ($occurence > 1) {
+            $result->field_field_event_datum[$index]['rendered']['#access'] = 0;
+            $index++;
+            $occurence--;
           }
         }
       }
     }
   }
 }
-
-
-
-
 /**
  * Implements hook_node_view().
  *
