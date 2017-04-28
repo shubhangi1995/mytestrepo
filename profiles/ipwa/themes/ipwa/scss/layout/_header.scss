@@ -169,7 +169,7 @@ header {
                         }
                     }
 
-                    &.active a {
+                    &.active > a {
                         background: none;
                         color: $active-menu;
                         padding-bottom: 0;

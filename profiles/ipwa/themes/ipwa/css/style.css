@@ -861,29 +861,29 @@ pre {
   overflow-y: scroll; }
 
 /* line 10, ../scss/bootstrap-sass/bootstrap/_grid.scss */
-.container, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col, .field-name-field-anzuzeigende-seitenmodule .field-name-field-paragraph-view .view-neueste-informationen, .field-name-field-anzuzeigende-seitenmodule .field-name-field-topic-teaser, .page-aktuelles .view-aktuelles {
+.container, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col, .field-name-field-anzuzeigende-seitenmodule .field-name-field-paragraph-view .view-neueste-informationen, .field-name-field-anzuzeigende-seitenmodule .field-name-field-topic-teaser, .page-aktuelles .view-aktuelles, .node-protagonist {
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px; }
   /* line 14, ../scss/bootstrap-sass/bootstrap/mixins/_clearfix.scss */
-  .container:before, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col:before, .field-name-field-anzuzeigende-seitenmodule .field-name-field-paragraph-view .view-neueste-informationen:before, .field-name-field-anzuzeigende-seitenmodule .field-name-field-topic-teaser:before, .page-aktuelles .view-aktuelles:before, .container:after, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col:after, .field-name-field-anzuzeigende-seitenmodule .field-name-field-paragraph-view .view-neueste-informationen:after, .field-name-field-anzuzeigende-seitenmodule .field-name-field-topic-teaser:after, .page-aktuelles .view-aktuelles:after {
+  .container:before, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col:before, .field-name-field-anzuzeigende-seitenmodule .field-name-field-paragraph-view .view-neueste-informationen:before, .field-name-field-anzuzeigende-seitenmodule .field-name-field-topic-teaser:before, .page-aktuelles .view-aktuelles:before, .node-protagonist:before, .container:after, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col:after, .field-name-field-anzuzeigende-seitenmodule .field-name-field-paragraph-view .view-neueste-informationen:after, .field-name-field-anzuzeigende-seitenmodule .field-name-field-topic-teaser:after, .page-aktuelles .view-aktuelles:after, .node-protagonist:after {
     content: " ";
     display: table; }
   /* line 19, ../scss/bootstrap-sass/bootstrap/mixins/_clearfix.scss */
-  .container:after, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col:after, .field-name-field-anzuzeigende-seitenmodule .field-name-field-paragraph-view .view-neueste-informationen:after, .field-name-field-anzuzeigende-seitenmodule .field-name-field-topic-teaser:after, .page-aktuelles .view-aktuelles:after {
+  .container:after, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col:after, .field-name-field-anzuzeigende-seitenmodule .field-name-field-paragraph-view .view-neueste-informationen:after, .field-name-field-anzuzeigende-seitenmodule .field-name-field-topic-teaser:after, .page-aktuelles .view-aktuelles:after, .node-protagonist:after {
     clear: both; }
   @media (min-width: 768px) {
     /* line 10, ../scss/bootstrap-sass/bootstrap/_grid.scss */
-    .container, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col, .field-name-field-anzuzeigende-seitenmodule .field-name-field-paragraph-view .view-neueste-informationen, .field-name-field-anzuzeigende-seitenmodule .field-name-field-topic-teaser, .page-aktuelles .view-aktuelles {
+    .container, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col, .field-name-field-anzuzeigende-seitenmodule .field-name-field-paragraph-view .view-neueste-informationen, .field-name-field-anzuzeigende-seitenmodule .field-name-field-topic-teaser, .page-aktuelles .view-aktuelles, .node-protagonist {
       width: 750px; } }
   @media (min-width: 992px) {
     /* line 10, ../scss/bootstrap-sass/bootstrap/_grid.scss */
-    .container, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col, .field-name-field-anzuzeigende-seitenmodule .field-name-field-paragraph-view .view-neueste-informationen, .field-name-field-anzuzeigende-seitenmodule .field-name-field-topic-teaser, .page-aktuelles .view-aktuelles {
+    .container, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col, .field-name-field-anzuzeigende-seitenmodule .field-name-field-paragraph-view .view-neueste-informationen, .field-name-field-anzuzeigende-seitenmodule .field-name-field-topic-teaser, .page-aktuelles .view-aktuelles, .node-protagonist {
       width: 970px; } }
   @media (min-width: 1200px) {
     /* line 10, ../scss/bootstrap-sass/bootstrap/_grid.scss */
-    .container, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col, .field-name-field-anzuzeigende-seitenmodule .field-name-field-paragraph-view .view-neueste-informationen, .field-name-field-anzuzeigende-seitenmodule .field-name-field-topic-teaser, .page-aktuelles .view-aktuelles {
+    .container, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col, .field-name-field-anzuzeigende-seitenmodule .field-name-field-paragraph-view .view-neueste-informationen, .field-name-field-anzuzeigende-seitenmodule .field-name-field-topic-teaser, .page-aktuelles .view-aktuelles, .node-protagonist {
       width: 1170px; } }
 
 /* line 30, ../scss/bootstrap-sass/bootstrap/_grid.scss */
@@ -3644,24 +3644,26 @@ tbody.collapse.in {
       max-height: 200px; } }
 
 /* line 108, ../scss/bootstrap-sass/bootstrap/_navbar.scss */
-.container > .navbar-header, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col > .navbar-header, .field-name-field-anzuzeigende-seitenmodule .field-name-field-paragraph-view .view-neueste-informationen > .navbar-header, .field-name-field-anzuzeigende-seitenmodule .field-name-field-topic-teaser > .navbar-header, .page-aktuelles .view-aktuelles > .navbar-header,
+.container > .navbar-header, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col > .navbar-header, .field-name-field-anzuzeigende-seitenmodule .field-name-field-paragraph-view .view-neueste-informationen > .navbar-header, .field-name-field-anzuzeigende-seitenmodule .field-name-field-topic-teaser > .navbar-header, .page-aktuelles .view-aktuelles > .navbar-header, .node-protagonist > .navbar-header,
 .container > .navbar-collapse,
 .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col > .navbar-collapse,
 .field-name-field-anzuzeigende-seitenmodule .field-name-field-paragraph-view .view-neueste-informationen > .navbar-collapse,
 .field-name-field-anzuzeigende-seitenmodule .field-name-field-topic-teaser > .navbar-collapse,
 .page-aktuelles .view-aktuelles > .navbar-collapse,
+.node-protagonist > .navbar-collapse,
 .container-fluid > .navbar-header,
 .container-fluid > .navbar-collapse {
   margin-right: -15px;
   margin-left: -15px; }
   @media (min-width: 768px) {
     /* line 108, ../scss/bootstrap-sass/bootstrap/_navbar.scss */
-    .container > .navbar-header, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col > .navbar-header, .field-name-field-anzuzeigende-seitenmodule .field-name-field-paragraph-view .view-neueste-informationen > .navbar-header, .field-name-field-anzuzeigende-seitenmodule .field-name-field-topic-teaser > .navbar-header, .page-aktuelles .view-aktuelles > .navbar-header,
+    .container > .navbar-header, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col > .navbar-header, .field-name-field-anzuzeigende-seitenmodule .field-name-field-paragraph-view .view-neueste-informationen > .navbar-header, .field-name-field-anzuzeigende-seitenmodule .field-name-field-topic-teaser > .navbar-header, .page-aktuelles .view-aktuelles > .navbar-header, .node-protagonist > .navbar-header,
     .container > .navbar-collapse,
     .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col > .navbar-collapse,
     .field-name-field-anzuzeigende-seitenmodule .field-name-field-paragraph-view .view-neueste-informationen > .navbar-collapse,
     .field-name-field-anzuzeigende-seitenmodule .field-name-field-topic-teaser > .navbar-collapse,
     .page-aktuelles .view-aktuelles > .navbar-collapse,
+    .node-protagonist > .navbar-collapse,
     .container-fluid > .navbar-header,
     .container-fluid > .navbar-collapse {
       margin-right: 0;
@@ -3715,7 +3717,7 @@ tbody.collapse.in {
     display: block; }
   @media (min-width: 768px) {
     /* line 180, ../scss/bootstrap-sass/bootstrap/_navbar.scss */
-    .navbar > .container .navbar-brand, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .navbar > .panel-2col .navbar-brand, .field-name-field-anzuzeigende-seitenmodule .field-name-field-paragraph-view .navbar > .view-neueste-informationen .navbar-brand, .field-name-field-anzuzeigende-seitenmodule .navbar > .field-name-field-topic-teaser .navbar-brand, .page-aktuelles .navbar > .view-aktuelles .navbar-brand, .navbar > .container-fluid .navbar-brand {
+    .navbar > .container .navbar-brand, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .navbar > .panel-2col .navbar-brand, .field-name-field-anzuzeigende-seitenmodule .field-name-field-paragraph-view .navbar > .view-neueste-informationen .navbar-brand, .field-name-field-anzuzeigende-seitenmodule .navbar > .field-name-field-topic-teaser .navbar-brand, .page-aktuelles .navbar > .view-aktuelles .navbar-brand, .navbar > .node-protagonist .navbar-brand, .navbar > .container-fluid .navbar-brand {
       margin-left: -15px; } }
 
 /* line 193, ../scss/bootstrap-sass/bootstrap/_navbar.scss */
@@ -4373,12 +4375,12 @@ a.badge:hover, a.badge:focus {
   .jumbotron > hr {
     border-top-color: #d5d5d5; }
   /* line 28, ../scss/bootstrap-sass/bootstrap/_jumbotron.scss */
-  .container .jumbotron, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col .jumbotron, .field-name-field-anzuzeigende-seitenmodule .field-name-field-paragraph-view .view-neueste-informationen .jumbotron, .field-name-field-anzuzeigende-seitenmodule .field-name-field-topic-teaser .jumbotron, .page-aktuelles .view-aktuelles .jumbotron, .container-fluid .jumbotron {
+  .container .jumbotron, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col .jumbotron, .field-name-field-anzuzeigende-seitenmodule .field-name-field-paragraph-view .view-neueste-informationen .jumbotron, .field-name-field-anzuzeigende-seitenmodule .field-name-field-topic-teaser .jumbotron, .page-aktuelles .view-aktuelles .jumbotron, .node-protagonist .jumbotron, .container-fluid .jumbotron {
     border-radius: 6px;
     padding-left: 15px;
     padding-right: 15px; }
   /* line 35, ../scss/bootstrap-sass/bootstrap/_jumbotron.scss */
-  .jumbotron .container, .jumbotron .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .jumbotron .panel-2col, .jumbotron .field-name-field-anzuzeigende-seitenmodule .field-name-field-paragraph-view .view-neueste-informationen, .field-name-field-anzuzeigende-seitenmodule .field-name-field-paragraph-view .jumbotron .view-neueste-informationen, .jumbotron .field-name-field-anzuzeigende-seitenmodule .field-name-field-topic-teaser, .field-name-field-anzuzeigende-seitenmodule .jumbotron .field-name-field-topic-teaser, .jumbotron .page-aktuelles .view-aktuelles, .page-aktuelles .jumbotron .view-aktuelles {
+  .jumbotron .container, .jumbotron .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .jumbotron .panel-2col, .jumbotron .field-name-field-anzuzeigende-seitenmodule .field-name-field-paragraph-view .view-neueste-informationen, .field-name-field-anzuzeigende-seitenmodule .field-name-field-paragraph-view .jumbotron .view-neueste-informationen, .jumbotron .field-name-field-anzuzeigende-seitenmodule .field-name-field-topic-teaser, .field-name-field-anzuzeigende-seitenmodule .jumbotron .field-name-field-topic-teaser, .jumbotron .page-aktuelles .view-aktuelles, .page-aktuelles .jumbotron .view-aktuelles, .jumbotron .node-protagonist {
     max-width: 100%; }
   @media screen and (min-width: 768px) {
     /* line 6, ../scss/bootstrap-sass/bootstrap/_jumbotron.scss */
@@ -4386,7 +4388,7 @@ a.badge:hover, a.badge:focus {
       padding-top: 48px;
       padding-bottom: 48px; }
       /* line 43, ../scss/bootstrap-sass/bootstrap/_jumbotron.scss */
-      .container .jumbotron, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col .jumbotron, .field-name-field-anzuzeigende-seitenmodule .field-name-field-paragraph-view .view-neueste-informationen .jumbotron, .field-name-field-anzuzeigende-seitenmodule .field-name-field-topic-teaser .jumbotron, .page-aktuelles .view-aktuelles .jumbotron, .container-fluid .jumbotron {
+      .container .jumbotron, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col .jumbotron, .field-name-field-anzuzeigende-seitenmodule .field-name-field-paragraph-view .view-neueste-informationen .jumbotron, .field-name-field-anzuzeigende-seitenmodule .field-name-field-topic-teaser .jumbotron, .page-aktuelles .view-aktuelles .jumbotron, .node-protagonist .jumbotron, .container-fluid .jumbotron {
         padding-left: 60px;
         padding-right: 60px; }
       /* line 49, ../scss/bootstrap-sass/bootstrap/_jumbotron.scss */
@@ -6135,9 +6137,9 @@ button.close {
   text-transform: none;
   -webkit-font-smoothing: antialiased; }
 @font-face {
-  font-family: 'FontAwesome';
-  src: url("../fonts/FontAwesome.eot");
-  src: url("../fonts/FontAwesome.eot?#iefix") format("embedded-opentype"), url("../fonts/FontAwesome.woff") format("woff"), url("../fonts/FontAwesome.ttf") format("truetype"), url("../fonts/FontAwesome.svg#bundessans_webbold") format("svg");
+  font-family: 'MaterialIcons-Regular';
+  src: url("../fonts/MaterialIcons-Regular.eot");
+  src: url("../fonts/MaterialIcons-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/MaterialIcons-Regular.woff") format("woff"), url("../fonts/MaterialIcons-Regular.ttf") format("truetype"), url("../fonts/MaterialIcons-Regular.svg#bundessans_webbold") format("svg");
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -6264,13 +6266,13 @@ header .navbar-collapse {
         header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li.open.menu-schaufenster > a:before {
           background: url("../images/Digitales-active.png") no-repeat; }
         /* line 172, ../scss/layout/_header.scss */
-        header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li.active a {
+        header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li.active > a {
           background: none;
           color: #e74712;
           padding-bottom: 0;
           border-bottom: 2px solid #e74712; }
           /* line 178, ../scss/layout/_header.scss */
-          header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li.active a:before {
+          header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li.active > a:before {
             background: url("../images/Digitales-active.png") no-repeat;
             content: "";
             width: 45px;
@@ -7177,8 +7179,8 @@ footer .footer-copyright {
         bottom: 30px; }
         /* line 215, ../scss/pages/_frontpage.scss */
         .field-name-field-anzuzeigende-seitenmodule .field-name-field-topic-teaser > .field-items > .field-item .field-collection-view .content .field-name-field-quellenangabe a:before {
-          content: "\f061";
-          font-family: FontAwesome;
+          content: "\f2ee";
+          font-family: MaterialIcons-Regular;
           color: #e74712;
           text-decoration: none;
           padding-right: 10px; }
@@ -7390,5 +7392,13 @@ header.navbar-default {
         .page-aktuelles .view-aktuelles .view-map-teaser .view-content .views-row .views-field-field-quellenangabe a {
           color: #ffffff;
           font-size: 20px; }
+
+/* line 260, ../scss/pages/_singleview.scss */
+.node-protagonist .view-related-content .views-row .views-field-views-conditional a {
+  text-decoration: none;
+  font-size: 20px; }
+/* line 265, ../scss/pages/_singleview.scss */
+.node-protagonist .view-related-content .views-row .views-field-extension .view-content {
+  font-size: 16px; }
 
 /*# sourceMappingURL=style.css.map */

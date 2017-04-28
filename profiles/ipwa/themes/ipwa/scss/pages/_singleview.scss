@@ -248,3 +248,23 @@
         }
     }
 }
+
+//---------------node-protagonist--------------//
+
+.node-protagonist{
+  @extend .container;
+  
+  .view-related-content .views-row{
+    
+	  .views-field-views-conditional{
+	  a{
+	     text-decoration:none;
+		 font-size:20px;
+	  }
+	}
+	.views-field-extension .view-content{
+	  font-size:16px;
+	}
+  
+  }
+}
