@@ -1003,6 +1003,8 @@ function ipwa_base_views_default_views() {
     'multiple_to' => '',
     'show_remaining_days' => 0,
   );
+  $handler->display->display_options['fields']['field_event_datum']['delta_offset'] = '0';
+  $handler->display->display_options['fields']['field_event_datum']['separator'] = '';
   /* Field: Content: Titel */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
@@ -1095,22 +1097,24 @@ function ipwa_base_views_default_views() {
   $handler->display->display_options['fields']['views_conditional']['then'] = '[title]';
   $handler->display->display_options['fields']['views_conditional']['or'] = '[title_1]';
   $handler->display->display_options['fields']['views_conditional']['strip_tags'] = 0;
-  /* Field: File: Extension */
-  $handler->display->display_options['fields']['extension']['id'] = 'extension';
-  $handler->display->display_options['fields']['extension']['table'] = 'file_managed';
-  $handler->display->display_options['fields']['extension']['field'] = 'extension';
-  $handler->display->display_options['fields']['extension']['relationship'] = 'node_to_file';
-  $handler->display->display_options['fields']['extension']['label'] = '';
-  $handler->display->display_options['fields']['extension']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['extension']['alter']['text'] = 'PDF';
-  $handler->display->display_options['fields']['extension']['element_label_colon'] = FALSE;
   /* Field: File: Size */
   $handler->display->display_options['fields']['filesize']['id'] = 'filesize';
   $handler->display->display_options['fields']['filesize']['table'] = 'file_managed';
   $handler->display->display_options['fields']['filesize']['field'] = 'filesize';
   $handler->display->display_options['fields']['filesize']['relationship'] = 'node_to_file';
   $handler->display->display_options['fields']['filesize']['label'] = '';
+  $handler->display->display_options['fields']['filesize']['exclude'] = TRUE;
   $handler->display->display_options['fields']['filesize']['element_label_colon'] = FALSE;
+  /* Field: File: Extension */
+  $handler->display->display_options['fields']['extension']['id'] = 'extension';
+  $handler->display->display_options['fields']['extension']['table'] = 'file_managed';
+  $handler->display->display_options['fields']['extension']['field'] = 'extension';
+  $handler->display->display_options['fields']['extension']['relationship'] = 'node_to_file';
+  $handler->display->display_options['fields']['extension']['label'] = '';
+  $handler->display->display_options['fields']['extension']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['extension']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['extension']['alter']['text'] = 'PDF';
+  $handler->display->display_options['fields']['extension']['element_label_colon'] = FALSE;
   /* Field: Content: Datei ist nicht barrierefrei */
   $handler->display->display_options['fields']['field_datei_ist_nicht_barrierefr']['id'] = 'field_datei_ist_nicht_barrierefr';
   $handler->display->display_options['fields']['field_datei_ist_nicht_barrierefr']['table'] = 'field_data_field_datei_ist_nicht_barrierefr';
@@ -1118,7 +1122,7 @@ function ipwa_base_views_default_views() {
   $handler->display->display_options['fields']['field_datei_ist_nicht_barrierefr']['relationship'] = 'field_dokumente_und_publikatione_target_id';
   $handler->display->display_options['fields']['field_datei_ist_nicht_barrierefr']['label'] = '';
   $handler->display->display_options['fields']['field_datei_ist_nicht_barrierefr']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['field_datei_ist_nicht_barrierefr']['alter']['text'] = 'datei ist nicht barrierefrei';
+  $handler->display->display_options['fields']['field_datei_ist_nicht_barrierefr']['alter']['text'] = '[extension]  [filesize][field_datei_ist_nicht_barrierefr]';
   $handler->display->display_options['fields']['field_datei_ist_nicht_barrierefr']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_datei_ist_nicht_barrierefr']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_datei_ist_nicht_barrierefr']['hide_alter_empty'] = FALSE;
@@ -1210,7 +1214,7 @@ function ipwa_base_views_default_views() {
     t('Content entity referenced from field_veranstaltungen'),
     t('Dokumente und Publikationen'),
     t('PDF'),
-    t('datei ist nicht barrierefrei'),
+    t('[extension]  [filesize][field_datei_ist_nicht_barrierefr]'),
     t('publikation'),
     t('Content entity referenced from field_publication'),
     t('Publikation downloaden'),

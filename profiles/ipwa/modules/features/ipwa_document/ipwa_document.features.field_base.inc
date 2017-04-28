@@ -26,8 +26,8 @@ function ipwa_document_field_default_field_bases() {
     'module' => 'list',
     'settings' => array(
       'allowed_values' => array(
-        0 => 0,
-        1 => 1,
+        0 => '<none>',
+        1 => ', Datei ist nicht barrierefrei',
       ),
       'allowed_values_function' => '',
     ),
