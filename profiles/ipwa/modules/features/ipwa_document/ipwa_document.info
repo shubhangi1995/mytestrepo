@@ -10,7 +10,6 @@ features[ctools][] = strongarm:strongarm:1
 features[features_api][] = api:2
 features[field_base][] = field_datei_ist_nicht_barrierefr
 features[field_base][] = field_dokument
-features[field_group][] = group_title|node|document|default
 features[field_instance][] = node-document-field_copyright
 features[field_instance][] = node-document-field_datei_ist_nicht_barrierefr
 features[field_instance][] = node-document-field_dokument
