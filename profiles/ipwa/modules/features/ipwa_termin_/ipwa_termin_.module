@@ -12,8 +12,7 @@ include_once 'ipwa_termin_.features.inc';
  * @param $view
  *
  */
-function ipwa_termin__views_pre_render(&$view)
-{
+function ipwa_termin__views_pre_render(&$view) {
   //For Related content: Kommende Veranstaltungen view
   if ($view->name == 'related_content') {
     foreach ($view->result as $key => $result) {
@@ -25,6 +24,8 @@ function ipwa_termin__views_pre_render(&$view)
       }
     }
   }
+
+  //For changing output of recurring events in views in format start date- end date
   if (($view->name == 'termin') || ($view->name == 'related_content')) {
     foreach ($view->result as $key => $result) {
       if (!empty($result->field_field_event_datum)) {
