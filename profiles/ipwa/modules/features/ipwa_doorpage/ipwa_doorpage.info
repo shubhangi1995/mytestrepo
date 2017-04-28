@@ -66,6 +66,7 @@ features[variable][] = node_preview_doorpage
 features[variable][] = node_submitted_doorpage
 features[variable][] = panelizer_defaults_paragraphs_item_frontpage_map_teaser_paragraph
 features[variable][] = panelizer_paragraphs_item:frontpage_map_teaser_paragraph:default_selection
+features[views_view][] = alle_themen_teaser
 features[views_view][] = map_teaser
 features[views_view][] = right_front_map_teaser
 features_exclude[field_base][field_anzuzeigende_seitenmodule_] = field_anzuzeigende_seitenmodule_
