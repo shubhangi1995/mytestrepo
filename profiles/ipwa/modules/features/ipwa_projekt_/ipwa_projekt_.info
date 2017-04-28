@@ -16,6 +16,7 @@ features[field_group][] = group_title|node|projekt|default
 features[field_instance][] = node-projekt-body
 features[field_instance][] = node-projekt-field_anzuzeigende_seitenmodule
 features[field_instance][] = node-projekt-field_bild_ref
+features[field_instance][] = node-projekt-field_datum
 features[field_instance][] = node-projekt-field_dokumente_und_publikatione
 features[field_instance][] = node-projekt-field_f_rderbekanntmachungen
 features[field_instance][] = node-projekt-field_initiatoren_zum_thema
