@@ -50,16 +50,17 @@
 //------------Aktuelles------------//
 .page-aktuelles {
     font-family: $font-family-primary;
-	background:$color-light-blue;
+    background: $color-light-blue;
 
     .page-header {
         padding-left: 350px;
-		border:none;
-		margin:0;
-		
+        border: none;
+        margin: 0;
     }
 
-    .view-aktuelles { @extend .container;
+    .view-aktuelles {
+        @extend .container;
+
         .view-header {
             color: $active-menu;
             font-size: 26px;
@@ -67,99 +68,100 @@
         }
 
         .view-filters {
-            .views-exposed-form .views-exposed-widgets{
-			margin-bottom:0;
+            .views-exposed-form .views-exposed-widgets {
+                margin-bottom: 0;
 
-			#edit-type-wrapper {
-                width: 100%;
+                #edit-type-wrapper {
+                    width: 100%;
 
-                .form-item {
-                    display: inline-block;
-                    padding-right: 50px;
-                    font-size: 20px;
-
-                    label {
-                        padding-left: 0;
-
-                        input {
-                            visibility: hidden;
-                        }
-                    }
-                }
-            }
-
-            .categories-filter {
-                margin-top: 30px;            
-                                clear: both;
-                display: inline-block;
-                width: 100%;
-
-                .views-exposed-widget {
-                    padding: 0;
-                    width: 25%;
-                    float: left;
-					padding:10px 0;
-                background: $header-menu;
-				border-right: 1px solid $color-light-grey;
-
-                    .select2-container--default .select2-selection--single {
-                        background: 0;
-                        border: 0;
-                        border-radius: 0;
+                    .form-item {
+                        display: inline-block;
+                        padding-right: 50px;
                         font-size: 20px;
-						&:before{
-						content:"\f107";
-						font-family:FontAwesome;
-						color:$color-white;
-						position: absolute;
-    float: right;
-    right: 8px;
-						
-						}
 
-                        .select2-selection__rendered {
-                            color: $color-white;
+                        label {
+                            padding-left: 0;
+
+                            input {
+                                visibility: hidden;
+                            }
                         }
-						.select2-selection__arrow{
-						  display:none;
-						}
                     }
                 }
-            }
 
-            .views-widget-sort-by {
-                float: right;
-                padding:30px 0;
-
-                .bef-select-as-links .form-type-bef-link {
+                .categories-filter {
+                    margin-top: 30px;
+                    clear: both;
                     display: inline-block;
-                    font-size: 20px;
-                    padding-left: 15px;
+                    width: 100%;
 
-                    a {
-                        color: $header-menu;
-                        text-decoration: none;
+                    .views-exposed-widget {
+                        padding: 0;
+                        width: 25%;
+                        float: left;
+                        padding: 10px 0;
+                        background: $header-menu;
+                        border-right: 1px solid $color-light-grey;
 
-                        &.active {
-                           
-                            border-bottom: 2px solid $active-menu;
+                        .select2-container--default .select2-selection--single {
+                            background: 0;
+                            border: 0;
+                            border-radius: 0;
+                            font-size: 20px;
+
+                            &:before {
+                                content: "\f107";
+                                font-family: FontAwesome;
+                                color: $color-white;
+                                position: absolute;
+                                float: right;
+                                right: 8px;
+                            }
+
+                            .select2-selection__rendered {
+                                color: $color-white;
+                            }
+
+                            .select2-selection__arrow {
+                                display: none;
+                            }
                         }
                     }
                 }
 
-                .select2-container {
-                    display: none;
+                .views-widget-sort-by {
+                    float: right;
+                    padding: 30px 0;
+
+                    .bef-select-as-links .form-type-bef-link {
+                        display: inline-block;
+                        font-size: 20px;
+                        padding-left: 15px;
+
+                        a {
+                            color: $header-menu;
+                            text-decoration: none;
+
+                            &.active {
+                                border-bottom: 2px solid $active-menu;
+                            }
+                        }
+                    }
+
+                    .select2-container {
+                        display: none;
+                    }
                 }
             }
         }
-		}
-		.attachment-before .view-result-count{
-		    margin-top: -88px;
-    font-size: 20px;
-    padding: 30px 0;
-		}
 
-        .view-content {
+        .attachment-before .view-result-count {
+            margin-top: -88px;
+            font-size: 20px;
+            padding: 30px 0;
+        }
+
+> .view-content {
             margin-left: -15px;
             margin-right: -15px;
 
@@ -170,21 +172,19 @@
 
                 .row-container {
                     background: $color-white;
-                    padding: 25px;
+                    padding: 30px;
                     height: 350px;
                     margin-bottom: 30px;
-					position:relative;
-                   
-				   
-				   .views-field-field-themenzuweisung{
-				   padding-bottom:10px;
-				      img{
-					   display:inline-block;
-					   margin-right:10px;
-					   
-					  }
-				   
-				   }
+                    position: relative;
+
+                    .views-field-field-themenzuweisung {
+                        padding-bottom: 10px;
+
+                        img {
+                            display: inline-block;
+                            margin-right: 10px;
+                        }
+                    }
 
                     .views-field-type {
                         color: $active-menu;
@@ -196,14 +196,16 @@
                             color: $header-menu;
                         }
                     }
-					.views-field-field-datum{
-					position:absolute;
-					bottom:10px;
-					   .date-display-single{
-					     font-size:17px;
-						 color:$color-light-grey;
-					   }
-					}
+
+                    .views-field-field-datum {
+                        position: absolute;
+                        bottom: 30px;
+
+                        .date-display-single {
+                            font-size: 17px;
+                            color: $color-light-grey;
+                        }
+                    }
                 }
             }
         }
@@ -222,8 +224,7 @@
                     @extend .col-md-8;
 
                     background: $header-menu;
-                   padding:40px;
-				   
+                    padding: 40px;
 
                     .views-field-field-bild img {
                         color: $active-menu;
@@ -251,20 +252,19 @@
 
 //---------------node-protagonist--------------//
 
-.node-protagonist{
-  @extend .container;
-  
-  .view-related-content .views-row{
-    
-	  .views-field-views-conditional{
-	  a{
-	     text-decoration:none;
-		 font-size:20px;
-	  }
-	}
-	.views-field-extension .view-content{
-	  font-size:16px;
-	}
-  
-  }
+.node-protagonist {
+    @extend .container;
+
+    .view-related-content .views-row {
+        .views-field-views-conditional {
+            a {
+                text-decoration: none;
+                font-size: 20px;
+            }
+        }
+
+        .views-field-extension .view-content {
+            font-size: 16px;
+        }
+    }
 }
