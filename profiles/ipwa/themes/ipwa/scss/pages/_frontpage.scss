@@ -36,11 +36,16 @@
                     font-size: 20px;
                     position: absolute;
                     bottom: 0;
+                    padding-left: 25px;
 
                     &:before {
-                         @extend .material-icons;
-                                    content: "arrow_forward";
-                                    color: $active-menu;
+                        @extend .material-icons;
+
+                        content: "arrow_forward";
+                        color: $active-menu;
+                        position: absolute;
+                        top: 4px;
+                        left: 0;
                     }
                 }
             }
@@ -82,10 +87,8 @@
             }
         }
     }
-	
-	
-//-----------------------------//
 
+    //-----------------------------//
 
     .field-name-field-paragraph-view {
         background: $color-light-blue;
@@ -152,6 +155,7 @@
 
             .view-footer {
                 clear: both;
+				
 
                 .link-outer-block .link-inner-block-1, .link-outer-block .link-inner-block-2 {
                     display: inline-block;
@@ -161,18 +165,23 @@
                         color: $header-menu;
                         font-size: 20px;
                         padding-right: 15px;
+                        padding-left: 25px;position:relative;
 
                         &:before {
                             @extend .material-icons;
-                                    content: "arrow_forward";
-                                    color: $active-menu;
+                            content: "arrow_forward";
+                            color: $active-menu;
+                            position: absolute;
+                            top: 3px;
+                            left: 0;
                         }
                     }
                 }
             }
         }
     }
-//---------------------------------//
+
+    //---------------------------------//
     .field-name-field-topic-teaser {
         @extend .container;
 
@@ -214,11 +223,16 @@
                                 text-decoration: none;
                                 position: absolute;
                                 bottom: 30px;
+                                padding-left: 25px;
 
                                 &:before {
                                     @extend .material-icons;
+
                                     content: "arrow_forward";
                                     color: $active-menu;
+                                    position: absolute;
+                                    top: 4px;
+                                    left: 0;
                                 }
                             }
                         }
@@ -232,7 +246,8 @@
             }
         }
     }
-//-------------------------------------//
+
+    //-------------------------------------//
     .view-termin {
         @extend .container;
 
@@ -298,21 +313,24 @@
 
         .view-footer {
             clear: both;
+			position:relative;
 
             .link-outer-block .link-inner-block-1 {
-               
-
                 a {
                     text-decoration: none;
-                   
                     font-size: 20px;
                     padding-right: 15px;
-					color:$color-white;
+                    color: $color-white;
+                    padding-left: 25px;
 
                     &:before {
                         @extend .material-icons;
-                                    content: "arrow_forward";
-                                    color: $active-menu;
+
+                        content: "arrow_forward";
+                        color: $active-menu;
+                        position: absolute;
+                        top: 4px;
+                        left: 0;
                     }
                 }
             }
