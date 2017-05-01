@@ -35,16 +35,17 @@ header {
                         color: $active-menu;
                     }
                 }
-				&.open{
-				    > a{
-					    background:none;
-						color:$active-menu;
-						&:hover,&:focus{
-						  background:none;
-						}
-					}
-				
-				}
+
+                &.open {
+                    > a {
+                        background: none;
+                        color: $active-menu;
+
+                        &:hover, &:focus {
+                            background: none;
+                        }
+                    }
+                }
 
                 a {
                     color: $header-menu;
@@ -65,6 +66,7 @@ header {
 
             .tb-megamenu {
                 background: none;
+                position: static;
 
                 ul.tb-megamenu-nav li {
                     width: 20%;
@@ -184,16 +186,16 @@ header {
                         color: $active-menu;
                         padding-bottom: 0;
                         border-bottom: 2px solid $active-menu;
-						
-						&:before{
-						   background: url("../images/Digitales-active.png") no-repeat;
-						   content: "";
+
+                        &:before {
+                            background: url("../images/Digitales-active.png") no-repeat;
+                            content: "";
                             width: 45px;
                             height: 45px;
                             display: inline-block;
                             float: left;
                             margin-top: 5px;
-						}
+                        }
                     }
 
                     &.dropdown.open > a {
@@ -206,28 +208,6 @@ header {
                         width: 100%;
                         padding-top: 40px;
                         padding-bottom: 40px;
-
-                        &:before {
-                            background: $header-dropdown-menu;
-                            content: "";
-                            width: 100%;
-                            display: block;
-                            height: 100%;
-                            top: 0px;
-                            position: absolute;
-                            left: -100%;
-                        }
-
-                        &:after {
-                            background: $header-dropdown-menu;
-                            content: "";
-                            width: 100%;
-                            display: block;
-                            height: 100%;
-                            top: 0px;
-                            position: absolute;
-                            right: -100%;
-                        }
 
                         a {
                             color: $color-white;
@@ -257,6 +237,9 @@ header {
                         }
 
                         .mega-dropdown-inner {
+                            width: 1170px;
+                            margin: 0 auto;
+
                             .tb-submenu-left {
                                 width: 30%;
                                 float: left;

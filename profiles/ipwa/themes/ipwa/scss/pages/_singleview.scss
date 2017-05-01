@@ -161,7 +161,7 @@
             padding: 30px 0;
         }
 
-> .view-content {
+        > .view-content {
             margin-left: -15px;
             margin-right: -15px;
 
@@ -251,35 +251,74 @@
 }
 
 //---------------node-protagonist--------------//
-.node-type-protagonist{
- background:$color-light-blue;
+.node-type-protagonist {
+    background: $color-light-blue;
 
-.node-protagonist {
-    @extend .container;
+    .node-protagonist {
+        @extend .container;
 
-   .view-display-id-block_2 .views-row {
-        .views-field-views-conditional {
-            a {
-                text-decoration: none;
-                font-size: 20px;
+        .view-display-id-block_2 .views-row {
+            .views-field-views-conditional {
+                a {
+                    text-decoration: none;
+                    font-size: 20px;
+                }
+            }
+
+            .views-field-views-conditional-2 .field-content {
+                font-size: 16px;
             }
         }
 
-        .views-field-views-conditional-2 .field-content {
-            font-size: 16px;
+        .view-display-id-block_1 .views-row {
+            .views-field-field-event-datum {
+                .field-content {
+                    color: $active-menu;
+                    font-size: 22px;
+                }
+            }
         }
     }
-	
-	
-	.view-display-id-block_1 .views-row{
-	  .views-field-field-event-datum{
-	    .field-content{
-		   color:$active-menu;
-		   font-size:22px;
-		}
-	  }
-	
-	}
-}
+
+    .field-name-field-weiterf-hrende-links {
+        .field-label {
+            font-size: 24px;
+        }
+
+        .field-items a.external-link {
+            font-size: 20px;
+            text-decoration: none;
+            color: $header-menu;
+        }
+    }
 }
 
+//-------------node-doorpage-----------//
+/*.node-doorpage{
+  @extend .container;
+    .page-title{  padding-left: 350px;
+    border: none;
+    margin: 0;}
+  
+  .field-name-field-untertitel .field-item{
+  color: $active-menu;
+    font-size: 26px;
+    padding-left: 350px;
+  }
+  .field-name-field-kurztext .field-item{
+  padding-left: 350px;
+  font-size:22px;
+  }
+  .field-name-body{
+    padding-left:350px;
+    font-size:20px;
+  }
+  .paragraphs-items-field-anzuzeigende-seitenmodule{
+   .field-item{
+     @extend .col-md-6;
+   
+   }
+  
+  }
+  
+}*/

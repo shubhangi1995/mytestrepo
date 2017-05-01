@@ -188,7 +188,7 @@
     //---------------------------------//
     .field-name-field-topic-teaser {
         @extend .container;
-
+           padding:0;
         > .field-items {
             padding: 60px 0;
             float: left;
@@ -257,30 +257,29 @@
 
         padding: 60px 0;
         background: $header-menu;
-		position:relative;
-		
- &:before {
-                            background: $header-menu;
-                            content: "";
-                            width: 100%;
-                            display: block;
-                            height: 100%;
-                            top: 0px;
-                            position: absolute;
-                            left: -100%;
-                        }
+        position: relative;
 
-                        &:after {
-                            background: $header-menu;
-                            content: "";
-                            width: 100%;
-                            display: block;
-                            height: 100%;
-                            top: 0px;
-                            position: absolute;
-                            right: -100%;
-                        }
-		
+        &:before {
+            background: $header-menu;
+            content: "";
+            width: 100%;
+            display: block;
+            height: 100%;
+            top: 0px;
+            position: absolute;
+            left: -100%;
+        }
+
+        &:after {
+            background: $header-menu;
+            content: "";
+            width: 100%;
+            display: block;
+            height: 100%;
+            top: 0px;
+            position: absolute;
+            right: -100%;
+        }
 
         .view-header {
             h2 {
@@ -342,7 +341,7 @@
         .view-footer {
             clear: both;
             position: relative;
-			padding-top:30px;
+            padding-top: 30px;
 
             .link-outer-block .link-inner-block-1 {
                 a {
@@ -360,10 +359,21 @@
                         position: absolute;
                         top: 4px;
                         left: 0;
-						padding-top:30px;
+                        padding-top: 30px;
                     }
                 }
             }
         }
+    }
+}
+
+//-------------mobile------------//
+@media (max-width: $screen-xs-max) {
+    .field-name-field-anzuzeigende-seitenmodule .field-name-field-paragraph-view .view-neueste-informationen .view-content {
+        margin: 0;
+    }
+
+    .field-name-field-anzuzeigende-seitenmodule .view-termin .view-content {
+        margin: 0;
     }
 }
