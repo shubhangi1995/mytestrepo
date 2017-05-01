@@ -33,3 +33,10 @@ header.navbar-default{
     /* Support for IE. */
     font-feature-settings: 'liga';
 }
+
+
+//-----------backend theme changes-----------//
+.field-name-field-weitere-details,.field-name-field-zur-website{
+  float:left;
+  width:50%;
+}

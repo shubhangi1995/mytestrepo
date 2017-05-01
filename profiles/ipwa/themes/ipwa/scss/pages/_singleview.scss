@@ -251,6 +251,8 @@
 }
 
 //---------------node-protagonist--------------//
+.node-type-protagonist{
+ background:$color-light-blue;
 
 .node-protagonist {
     @extend .container;
@@ -263,8 +265,10 @@
             }
         }
 
-        .views-field-extension .view-content {
+        .views-field-views-conditional-2 .field-content {
             font-size: 16px;
         }
     }
 }
+}
+

@@ -75,13 +75,16 @@
                     font-size: 20px;
                     position: absolute;
                     bottom: 0;
+                    padding-left: 25px;
 
                     &:before {
-                        content: "\f041";
-                        font-family: FontAwesome;
+                        @extend .material-icons;
+
+                        content: "place";
                         color: $active-menu;
-                        text-decoration: none;
-                        padding-right: 10px;
+                        position: absolute;
+                        top: 4px;
+                        left: 0;
                     }
                 }
             }
@@ -155,7 +158,6 @@
 
             .view-footer {
                 clear: both;
-				
 
                 .link-outer-block .link-inner-block-1, .link-outer-block .link-inner-block-2 {
                     display: inline-block;
@@ -165,10 +167,12 @@
                         color: $header-menu;
                         font-size: 20px;
                         padding-right: 15px;
-                        padding-left: 25px;position:relative;
+                        padding-left: 25px;
+                        position: relative;
 
                         &:before {
                             @extend .material-icons;
+
                             content: "arrow_forward";
                             color: $active-menu;
                             position: absolute;
@@ -253,6 +257,30 @@
 
         padding: 60px 0;
         background: $header-menu;
+		position:relative;
+		
+ &:before {
+                            background: $header-menu;
+                            content: "";
+                            width: 100%;
+                            display: block;
+                            height: 100%;
+                            top: 0px;
+                            position: absolute;
+                            left: -100%;
+                        }
+
+                        &:after {
+                            background: $header-menu;
+                            content: "";
+                            width: 100%;
+                            display: block;
+                            height: 100%;
+                            top: 0px;
+                            position: absolute;
+                            right: -100%;
+                        }
+		
 
         .view-header {
             h2 {
@@ -313,7 +341,7 @@
 
         .view-footer {
             clear: both;
-			position:relative;
+            position: relative;
 
             .link-outer-block .link-inner-block-1 {
                 a {
