@@ -768,9 +768,9 @@ function ipwa_publikation_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'i18n_taxonomy',
+        'module' => 'taxonomy',
         'settings' => array(),
-        'type' => 'i18n_taxonomy_term_reference_link',
+        'type' => 'taxonomy_term_reference_plain',
         'weight' => 3,
       ),
       'rss' => array(
@@ -1194,7 +1194,6 @@ Schema für externe Links: http://www…',
   // Translatables
   // Included for use with string extractors like potx.
   t('Anzuzeigende Seitenmodule (Paragraphen)');
-  t('© Bildquelle');
   t('Datum');
   t('Dieser Artikel gehört zu');
   t('Dieses Datum entspricht dem Veröffentlichungsdatum der Publikation');

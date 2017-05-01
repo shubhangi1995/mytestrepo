@@ -232,7 +232,7 @@ function ipwa_article_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 20,
+        'weight' => 13,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -280,7 +280,7 @@ function ipwa_article_field_default_field_instances() {
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 18,
+        'weight' => 11,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -328,7 +328,7 @@ function ipwa_article_field_default_field_instances() {
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 16,
+        'weight' => 9,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -416,7 +416,7 @@ function ipwa_article_field_default_field_instances() {
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 15,
+        'weight' => 8,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -464,7 +464,7 @@ function ipwa_article_field_default_field_instances() {
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 17,
+        'weight' => 10,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -510,7 +510,7 @@ function ipwa_article_field_default_field_instances() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 5,
+        'weight' => 4,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -566,7 +566,7 @@ function ipwa_article_field_default_field_instances() {
         'label' => 'above',
         'module' => 'taxonomy',
         'settings' => array(),
-        'type' => 'taxonomy_term_reference_link',
+        'type' => 'taxonomy_term_reference_plain',
         'weight' => 3,
       ),
       'teaser' => array(
@@ -643,7 +643,7 @@ function ipwa_article_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 21,
+        'weight' => 14,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -769,7 +769,7 @@ Schema für externe Links: http://www…',
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 19,
+        'weight' => 12,
       ),
       'teaser' => array(
         'label' => 'above',

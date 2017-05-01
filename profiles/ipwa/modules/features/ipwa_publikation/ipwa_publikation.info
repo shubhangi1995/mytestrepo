@@ -60,6 +60,7 @@ features_exclude[dependencies][ctools] = ctools
 features_exclude[dependencies][youtube] = youtube
 features_exclude[dependencies][paragraphs] = paragraphs
 features_exclude[dependencies][field_group] = field_group
+features_exclude[dependencies][taxonomy] = taxonomy
 features_exclude[field_base][field_anzuzeigende_seitenmodule_] = field_anzuzeigende_seitenmodule_
 features_exclude[field_base][field_herausgeber] = field_herausgeber
 features_exclude[field_base][field_ver_ffentlichungsdatum] = field_ver_ffentlichungsdatum

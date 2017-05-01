@@ -21,16 +21,15 @@ function ipwa_article_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Body Container',
-    'weight' => '4',
+    'weight' => '5',
     'children' => array(
       0 => 'field_bild_ref',
-      1 => 'field_quellenangabe',
-      2 => 'field_videoquelle',
-      3 => 'field_videounterschrift',
-      4 => 'field_youtube_url',
-      5 => 'body',
-      6 => 'field_kurztext',
-      7 => 'field_anzuzeigende_seitenmodule',
+      1 => 'field_videoquelle',
+      2 => 'field_videounterschrift',
+      3 => 'field_youtube_url',
+      4 => 'body',
+      5 => 'field_kurztext',
+      6 => 'field_anzuzeigende_seitenmodule',
     ),
     'format_type' => 'html-element',
     'format_settings' => array(
