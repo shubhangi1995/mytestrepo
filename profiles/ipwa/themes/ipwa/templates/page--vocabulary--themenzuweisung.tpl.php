@@ -155,6 +155,27 @@
       <?php endif; ?>
       <?php //print render($page['content']); ?>
 
+      <?php //show term icon, parent icon in case of child term
+      $parent = taxonomy_get_parents(arg(2)); ?>
+      <?php if (!empty($page['content']['system_main']['term_heading']['term']['field_bild']) && empty($parent)) : ?>
+        <?php print render($page['content']['system_main']['term_heading']['term']['field_bild']); ?>
+      <?php else : ?>
+        <?php if (!empty($parent)): ?>
+          <?php foreach($parent as $pid => $parent_term): ?>
+            <?php $icon_img = array(
+              '#theme' => 'image_formatter',
+              '#item' => $parent_term->field_bild['und'][0],
+              '#image_style' => '',
+              '#path' => '',
+              '#access' => 1
+            ); ?>
+            <div class="field-name-field-bild">
+              <?php print render($icon_img); ?>
+            </div>
+          <?php endforeach; ?>
+        <?php endif; ?>
+      <?php endif ?>
+
       <?php if(!empty($page['content']['system_main']['term_heading']['term']['field_untertitel'])): ?>
         <?php print render($page['content']['system_main']['term_heading']['term']['field_untertitel']); ?>
       <?php endif; ?>
@@ -170,13 +191,16 @@
       <?php endif; ?>
 
 
-      <?php  $view = views_get_view_result("alles_zum_thema", "block",arg(2)); ?>
-      <?php $term_view = ''; ?>
-      <?php if (!empty($view)): ?>
-        <?php $term_view = '<h2 class="view-title">' . t('Alles zum thema') . '</h2>'; ?>
-        <?php //for embedding view 'Alles zum thema'
-        $term_view .= views_embed_view("alles_zum_thema", "block", arg(2)); ?>
-        <?php print $term_view; ?>
+      <?php // Show 'Alles zum thema' view only for children terms
+      if (!empty(taxonomy_get_parents(arg(2)))): ?>
+        <?php  $view = views_get_view_result("alles_zum_thema", "block",arg(2)); ?>
+        <?php $term_view = ''; ?>
+        <?php if (!empty($view)): ?>
+          <?php $term_view = '<h2 class="view-title">' . t('Alles zum thema') . '</h2>'; ?>
+          <?php //for embedding view 'Alles zum thema'
+          $term_view .= views_embed_view("alles_zum_thema", "block", arg(2)); ?>
+          <?php print $term_view; ?>
+        <?php endif; ?>
       <?php endif; ?>
 
     </section>
