@@ -7265,21 +7265,23 @@ footer .footer-copyright {
   /* line 342, ../scss/pages/_frontpage.scss */
   .field-name-field-anzuzeigende-seitenmodule .view-termin .view-footer {
     clear: both;
-    position: relative; }
-    /* line 347, ../scss/pages/_frontpage.scss */
+    position: relative;
+    padding-top: 30px; }
+    /* line 348, ../scss/pages/_frontpage.scss */
     .field-name-field-anzuzeigende-seitenmodule .view-termin .view-footer .link-outer-block .link-inner-block-1 a {
       text-decoration: none;
       font-size: 20px;
       padding-right: 15px;
       color: #ffffff;
       padding-left: 25px; }
-      /* line 354, ../scss/pages/_frontpage.scss */
+      /* line 355, ../scss/pages/_frontpage.scss */
       .field-name-field-anzuzeigende-seitenmodule .view-termin .view-footer .link-outer-block .link-inner-block-1 a:before {
         content: "arrow_forward";
         color: #e74712;
         position: absolute;
         top: 4px;
-        left: 0; }
+        left: 0;
+        padding-top: 30px; }
 
 /* line 1, ../scss/pages/_common.scss */
 body {
@@ -7519,11 +7521,15 @@ header.navbar-default {
 .node-type-protagonist {
   background: #eff2f7; }
   /* line 262, ../scss/pages/_singleview.scss */
-  .node-type-protagonist .node-protagonist .view-related-content .views-row .views-field-views-conditional a {
+  .node-type-protagonist .node-protagonist .view-display-id-block_2 .views-row .views-field-views-conditional a {
     text-decoration: none;
     font-size: 20px; }
   /* line 268, ../scss/pages/_singleview.scss */
-  .node-type-protagonist .node-protagonist .view-related-content .views-row .views-field-views-conditional-2 .field-content {
+  .node-type-protagonist .node-protagonist .view-display-id-block_2 .views-row .views-field-views-conditional-2 .field-content {
     font-size: 16px; }
+  /* line 276, ../scss/pages/_singleview.scss */
+  .node-type-protagonist .node-protagonist .view-display-id-block_1 .views-row .views-field-field-event-datum .field-content {
+    color: #e74712;
+    font-size: 22px; }
 
 /*# sourceMappingURL=style.css.map */
