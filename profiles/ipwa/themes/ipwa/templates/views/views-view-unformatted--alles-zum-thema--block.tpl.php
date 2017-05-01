@@ -1,11 +1,4 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: pram
- * Date: 4/28/2017
- * Time: 1:46 PM
- */
-
 
 /**
  * @file
@@ -15,13 +8,12 @@
  */
 ?>
 <?php if (!empty($title)): ?>
-  <h3><?php print $title; ?></h3>
+    <h3><?php print $title; ?></h3>
 <?php endif; ?>
 <?php foreach ($rows as $id => $row): ?>
-  <div<?php if ($classes_array[$id]) { print ' class="' . $classes_array[$id] .'"';  } ?>>
-    <div class="row-container">
-      <?php print $row; ?>
-      <?php print $view;?>
+    <div<?php if ($classes_array[$id]) { print ' class="' . $classes_array[$id] .'"';  } ?>>
+    <div class="row-container <?php if (isset($node_type)) {print ($node_type[$id] == 'projekt') ? 'project-blue' : '' ; }?>">
+        <?php print $row; ?>
     </div>
-  </div>
+    </div>
 <?php endforeach; ?>

@@ -244,47 +244,6 @@ Zeile 6 (bspw. E-Mail-Adresse)',
     ),
   );
 
-  // Exported field_instance: 'node-protagonist-field_contact'.
-  $field_instances['node-protagonist-field_contact'] = array(
-    'bundle' => 'protagonist',
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'module' => 'field_collection',
-        'settings' => array(
-          'add' => 'Add',
-          'delete' => 'Delete',
-          'description' => TRUE,
-          'edit' => 'Edit',
-          'view_mode' => 'full',
-        ),
-        'type' => 'field_collection_view',
-        'weight' => 25,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_contact',
-    'label' => 'contact',
-    'required' => FALSE,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'module' => 'field_collection',
-      'settings' => array(),
-      'type' => 'field_collection_hidden',
-      'weight' => 23,
-    ),
-  );
-
   // Exported field_instance:
   // 'node-protagonist-field_dokumente_und_publikatione'.
   $field_instances['node-protagonist-field_dokumente_und_publikatione'] = array(
@@ -1030,7 +989,6 @@ Schema für externe Links: http://www…');
   t('Weitere Details');
   t('Weiterführende Links');
   t('YouTube URL');
-  t('contact');
   t('zur Website');
   t('© Bildquelle');
   t('© Videoquelle');

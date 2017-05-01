@@ -121,3 +121,18 @@ function ipwa_preprocess_page(&$variables) {
     $variables['theme_hook_suggestions'][] = 'page__vocabulary__' . $term->vocabulary_machine_name;
   }
 }
+
+function ipwa_preprocess_views_view_unformatted(&$vars) {
+  $function_name = __FUNCTION__ . '__' . $vars['view']->name;
+  if (function_exists($function_name)) {
+    $function_name($vars);
+  }
+}
+
+function ipwa_preprocess_views_view_unformatted__alles_zum_thema(&$vars){
+  $view = $vars['view'];
+  foreach($view->result as $id => $value) {
+    $vars['node_type'][$id] = $value->node_type;
+  }
+}
+
