@@ -105,6 +105,37 @@ function ipwa_preprocess_field(&$variables) {
       $variables['items'][$key]['#markup'] = l($item['#markup'], 'node/' . $variables['element']['#items'][$key]['target_id']);
     }
   }
+
+  // show parent term icon (if child term) before term names in field 'Dieser Artikel gehört zu'
+  if ($variables['element']['#field_name'] == 'field_themenzuweisung') {
+    if (!empty($variables['items'])) {
+      foreach ($variables['items'] as $key => $item) {
+        // print_r($item);
+        // alter field value to link to respective node.
+        $tid = $variables['element']['#items'][$key]['tid'];
+        $parent = taxonomy_get_parents($tid);
+        if (!empty($parent)) {
+          foreach($parent as $pid => $parent_term) {
+            $icon = $parent_term->field_bild['und'][0];
+          }
+        }
+        else {
+          $icon = $variables['element']['#items'][$key]['taxonomy_term']->field_bild['und'][0];
+        }
+        if (!empty($icon)) {
+          $icon_img = array(
+            '#theme' => 'image_formatter',
+            '#item' => $icon,
+            '#image_style' => 'themen_icon_36x36',
+            '#path' => '',
+            '#access' => 1
+          );
+          $variables['items'][$key]['#markup'] = drupal_render($icon_img);
+        }
+        $variables['items'][$key]['#markup'] .= l($item['#markup'], 'taxonom/term/' . $tid, array('html' => TRUE));
+      }
+    }
+  }
 }
 
 /**
