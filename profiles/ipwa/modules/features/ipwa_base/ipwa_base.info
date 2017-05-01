@@ -104,6 +104,7 @@ features[variable][] = linkchecker_scan_node_termin
 features[variable][] = linkchecker_scan_node_webform
 features[views_view][] = aktuelles
 features[views_view][] = clone_of_administration_nodes
+features[views_view][] = neueste_digital_projekte
 features[views_view][] = neueste_informationen
 features[views_view][] = related_content
 features[views_view][] = rss

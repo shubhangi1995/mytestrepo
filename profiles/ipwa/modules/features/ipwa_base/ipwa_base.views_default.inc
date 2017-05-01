@@ -747,6 +747,96 @@ function ipwa_base_views_default_views() {
   $export['clone_of_administration_nodes'] = $view;
 
   $view = new view();
+  $view->name = 'neueste_digital_projekte';
+  $view->description = '';
+  $view->tag = 'default';
+  $view->base_table = 'node';
+  $view->human_name = 'Neueste Digital-Projekte';
+  $view->core = 7;
+  $view->api_version = '3.0';
+  $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
+
+  /* Display: Master */
+  $handler = $view->new_display('default', 'Master', 'default');
+  $handler->display->display_options['use_more_always'] = FALSE;
+  $handler->display->display_options['access']['type'] = 'perm';
+  $handler->display->display_options['cache']['type'] = 'none';
+  $handler->display->display_options['query']['type'] = 'views_query';
+  $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '3';
+  $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['row_options']['hide_empty'] = TRUE;
+  /* Header: Global: Text area */
+  $handler->display->display_options['header']['area']['id'] = 'area';
+  $handler->display->display_options['header']['area']['table'] = 'views';
+  $handler->display->display_options['header']['area']['field'] = 'area';
+  $handler->display->display_options['header']['area']['content'] = '<h2 class="pane-title">Neueste Digital-Projekte in NRW</h2>';
+  $handler->display->display_options['header']['area']['format'] = 'wysiwyg';
+  /* Footer: Global: Text area */
+  $handler->display->display_options['footer']['area']['id'] = 'area';
+  $handler->display->display_options['footer']['area']['table'] = 'views';
+  $handler->display->display_options['footer']['area']['field'] = 'area';
+  $handler->display->display_options['footer']['area']['content'] = '<a href ="/article">Karte öffnen</a>';
+  $handler->display->display_options['footer']['area']['format'] = 'wysiwyg';
+  /* Field: Content: Dieser Artikel gehört zu */
+  $handler->display->display_options['fields']['field_themenzuweisung']['id'] = 'field_themenzuweisung';
+  $handler->display->display_options['fields']['field_themenzuweisung']['table'] = 'field_data_field_themenzuweisung';
+  $handler->display->display_options['fields']['field_themenzuweisung']['field'] = 'field_themenzuweisung';
+  $handler->display->display_options['fields']['field_themenzuweisung']['label'] = '';
+  $handler->display->display_options['fields']['field_themenzuweisung']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_themenzuweisung']['delta_offset'] = '0';
+  /* Field: Content: Type */
+  $handler->display->display_options['fields']['type']['id'] = 'type';
+  $handler->display->display_options['fields']['type']['table'] = 'node';
+  $handler->display->display_options['fields']['type']['field'] = 'type';
+  $handler->display->display_options['fields']['type']['label'] = '';
+  $handler->display->display_options['fields']['type']['element_label_colon'] = FALSE;
+  /* Field: Content: Titel */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  /* Sort criterion: Content: Datum (field_datum) */
+  $handler->display->display_options['sorts']['field_datum_value']['id'] = 'field_datum_value';
+  $handler->display->display_options['sorts']['field_datum_value']['table'] = 'field_data_field_datum';
+  $handler->display->display_options['sorts']['field_datum_value']['field'] = 'field_datum_value';
+  $handler->display->display_options['sorts']['field_datum_value']['order'] = 'DESC';
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'projekt' => 'projekt',
+  );
+
+  /* Display: Block */
+  $handler = $view->new_display('block', 'Block', 'block');
+  $translatables['neueste_digital_projekte'] = array(
+    t('Master'),
+    t('more'),
+    t('Apply'),
+    t('Reset'),
+    t('Sort by'),
+    t('Asc'),
+    t('Desc'),
+    t('<h2 class="pane-title">Neueste Digital-Projekte in NRW</h2>'),
+    t('<a href ="/article">Karte öffnen</a>'),
+    t('Block'),
+  );
+  $export['neueste_digital_projekte'] = $view;
+
+  $view = new view();
   $view->name = 'neueste_informationen';
   $view->description = '';
   $view->tag = 'default';
