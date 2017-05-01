@@ -132,7 +132,7 @@ function ipwa_preprocess_field(&$variables) {
           );
           $variables['items'][$key]['#markup'] = drupal_render($icon_img);
         }
-        $variables['items'][$key]['#markup'] .= l($item['#markup'], 'taxonom/term/' . $tid, array('html' => TRUE));
+        $variables['items'][$key]['#markup'] .= l($item['#markup'], 'taxonomy/term/' . $tid, array('html' => TRUE));
       }
     }
   }
