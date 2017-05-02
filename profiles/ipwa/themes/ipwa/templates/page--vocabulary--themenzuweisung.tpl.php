@@ -186,8 +186,8 @@
       <?php if(!empty($page['content']['system_main']['term_heading']['term']['description'])):?>
       <?php print render($page['content']['system_main']['term_heading']['term']['description']['#markup']);?>
       <?php endif; ?>
-      <?php if(!empty($page['content']['system_main']['term_heading']['term']['field_anzuzeigende_seitenmodule_'])): ?>
-      <?php print render($page['content']['system_main']['term_heading']['term']['field_anzuzeigende_seitenmodule_']); ?>
+      <?php if(!empty($page['content']['system_main']['term_heading']['term']['field_anzuzeigende_seitenmodule'])): ?>
+      <?php print render($page['content']['system_main']['term_heading']['term']['field_anzuzeigende_seitenmodule']); ?>
       <?php endif; ?>
 
 
