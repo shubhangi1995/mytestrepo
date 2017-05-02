@@ -66,6 +66,17 @@ function ipwa_preprocess_node(&$variables)
         '#weight' => isset($variables['elements']['#fieldgroups']['group_title']) ? $variables['elements']['#fieldgroups']['group_title']->weight : -1);
   }
 
+  // For doorpage add title container in page_info container
+  //at top position
+  if ($variables['type'] == 'doorpage') {
+    if (isset($variables['title']) && $variables['title']) {
+      $variables['content']['title'] = array(
+        '#markup' => '<h1 class="page-title">' . $variables['title'] . '</h1>',
+        '#weight' => -1);
+    }
+    $vars['elements']['#group_children']['title'] = 'group_page_info';
+  }
+
 
   if ($variables['type'] == 'termin') {
     // Display of Ort field
