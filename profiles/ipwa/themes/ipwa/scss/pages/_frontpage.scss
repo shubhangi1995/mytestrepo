@@ -6,7 +6,6 @@
 
             .panel-2col {
                 @extend .container;
-
                 background: $header-menu;
                 padding: 30px;
             }
@@ -93,15 +92,17 @@
 
         //-----------------------------//
 
-        .field-name-field-paragraph-view {
-            background: $color-light-blue;
+        
 
             .view-neueste-informationen {
-                position: relative;
+                background:$color-light-blue;
+
+				.view-sub-wrapper{
+				position: relative;
                 padding: 30px 0;
 
                 @extend .container;
-
+				
                 .view-header {
                     color: $header-menu;
                     padding-bottom: 20px;
@@ -187,33 +188,14 @@
 
         //-------------------------------------//
         .view-termin {
+            background: $header-menu;
+
+			.view-sub-wrapper{
             @extend .container;
 
             padding: 60px 0;
-            background: $header-menu;
+            
             position: relative;
-
-            &:before {
-                background: $header-menu;
-                content: "";
-                width: 100%;
-                display: block;
-                height: 100%;
-                top: 0px;
-                position: absolute;
-                left: -100%;
-            }
-
-            &:after {
-                background: $header-menu;
-                content: "";
-                width: 100%;
-                display: block;
-                height: 100%;
-                top: 0px;
-                position: absolute;
-                right: -100%;
-            }
 
             .view-header {
                 h2 {
@@ -298,7 +280,7 @@
                     }
                 }
             }
-        }
+       } }
     }
 }
 
