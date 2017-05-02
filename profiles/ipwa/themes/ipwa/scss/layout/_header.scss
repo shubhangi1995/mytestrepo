@@ -212,7 +212,7 @@ padding:0;
                         width: 100%;
                         padding-top: 40px;
                         padding-bottom: 40px;
-						display:block;
+						
 
                         a {
                             color: $color-white;
@@ -221,6 +221,7 @@ padding:0;
 
                         .block-title {
                             color: $color-white;
+							
                         }
 
                         .view-themenzuweisung-flyouts {
@@ -252,7 +253,13 @@ padding:0;
                             .tb-submenu-left {
                                 width: 30%;
                                 float: left;
-
+                            
+							.block-title{
+							   font-size:18px;
+							   font-weight:normal;
+							   text-transform:capitalize;
+							}
+							
                                 a {
                                     font-size: 16px;
 									position:relative;
