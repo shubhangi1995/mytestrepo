@@ -21,6 +21,7 @@ dependencies[] = link
 dependencies[] = linkchecker
 dependencies[] = number
 dependencies[] = paragraphs
+dependencies[] = pathauto
 dependencies[] = piwik
 dependencies[] = revisioning
 dependencies[] = scheduler
