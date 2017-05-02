@@ -1,110 +1,225 @@
 //-----------------------------------//
-.front{
-.field-name-field-anzuzeigende-seitenmodule {
-    .panelizer-view-mode {
-        padding: 60px 0;
+.front {
+    .field-name-field-anzuzeigende-seitenmodule {
+        .panelizer-view-mode {
+            padding: 60px 0;
 
-        .panel-2col {
+            .panel-2col {
+                @extend .container;
+
+                background: $header-menu;
+                padding: 30px;
+            }
+
+            .panel-col-first {
+                width: 60%;
+                float: left;
+                border-right: 1px solid $color-light-grey;
+
+                .inside {
+                    position: relative;
+                    height: 250px;
+                    margin: 0;
+
+                    .pane-paragraphs-item-field-paragraph-title {
+                        color: $color-white;
+                        font-size: 36px;
+                    }
+
+                    .pane-paragraphs-item-field-flie-text-bereich {
+                        color: $color-white;
+                        font-size: 22px;
+                    }
+
+                    .pane-paragraphs-item-field-quellenangabe a {
+                        color: $color-white;
+                        font-size: 20px;
+                        position: absolute;
+                        bottom: 0;
+                        padding-left: 25px;
+
+                        &:before {
+                            @extend .material-icons;
+
+                            content: "arrow_forward";
+                            color: $active-menu;
+                            position: absolute;
+                            top: 4px;
+                            left: 0;
+                        }
+                    }
+                }
+            }
+
+            .panel-col-last {
+                width: 40%;
+                float: left;
+                padding-left: 30px;
+
+                .view-right-front-map-teaser .views-row {
+                    position: relative;
+                    height: 250px;
+
+                    .views-field-type {
+                        color: $active-menu;
+                        font-size: 22px;
+                    }
+
+                    .views-field-title a {
+                        color: $color-white;
+                        font-size: 22px;
+                    }
+
+                    .views-field-view-node a {
+                        color: $color-white;
+                        font-size: 20px;
+                        position: absolute;
+                        bottom: 0;
+                        padding-left: 25px;
+
+                        &:before {
+                            @extend .material-icons;
+
+                            content: "place";
+                            color: $active-menu;
+                            position: absolute;
+                            top: 4px;
+                            left: 0;
+                        }
+                    }
+                }
+            }
+        }
+
+        //-----------------------------//
+
+        .field-name-field-paragraph-view {
+            background: $color-light-blue;
+
+            .view-neueste-informationen {
+                position: relative;
+                padding: 30px 0;
+
+                @extend .container;
+
+                .view-header {
+                    color: $header-menu;
+                    padding-bottom: 20px;
+                }
+
+                .view-content {
+                    margin-left: -15px;
+                    margin-right: -15px;
+
+                    .views-row {
+                        @extend .col-md-4;
+
+                        font-size: 22px;
+
+                        .row-container {
+                            background: $color-white;
+                            padding: 25px;
+                            height: 350px;
+                            margin-bottom: 30px;
+                            position: relative;
+
+                            .views-field-field-themenzuweisung {
+                                padding-bottom: 10px;
+
+                                img {
+                                    display: inline-block;
+                                    margin-right: 10px;
+                                }
+                            }
+
+                            .views-field-type {
+                                color: $active-menu;
+                            }
+
+                            .views-field-title {
+                                a {
+                                    text-decoration: none;
+                                    color: $header-menu;
+                                }
+                            }
+
+                            .views-field-field-datum {
+                                position: absolute;
+                                bottom: 10px;
+
+                                .date-display-single {
+                                    font-size: 17px;
+                                    color: $color-light-grey;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .view-footer {
+                    clear: both;
+
+                    .link-outer-block .link-inner-block-1, .link-outer-block .link-inner-block-2 {
+                        display: inline-block;
+
+                        a {
+                            text-decoration: none;
+                            color: $header-menu;
+                            font-size: 20px;
+                            padding-right: 15px;
+                            padding-left: 25px;
+                            position: relative;
+
+                            &:before {
+                                @extend .material-icons;
+
+                                content: "arrow_forward";
+                                color: $active-menu;
+                                position: absolute;
+                                top: 3px;
+                                left: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        //-------------------------------------//
+        .view-termin {
             @extend .container;
 
+            padding: 60px 0;
             background: $header-menu;
-            padding: 30px;
-        }
-
-        .panel-col-first {
-            width: 60%;
-            float: left;
-            border-right: 1px solid $color-light-grey;
-
-            .inside {
-                position: relative;
-                height: 250px;
-                margin: 0;
-
-                .pane-paragraphs-item-field-paragraph-title {
-                    color: $color-white;
-                    font-size: 36px;
-                }
-
-                .pane-paragraphs-item-field-flie-text-bereich {
-                    color: $color-white;
-                    font-size: 22px;
-                }
-
-                .pane-paragraphs-item-field-quellenangabe a {
-                    color: $color-white;
-                    font-size: 20px;
-                    position: absolute;
-                    bottom: 0;
-                    padding-left: 25px;
-
-                    &:before {
-                        @extend .material-icons;
-
-                        content: "arrow_forward";
-                        color: $active-menu;
-                        position: absolute;
-                        top: 4px;
-                        left: 0;
-                    }
-                }
-            }
-        }
-
-        .panel-col-last {
-            width: 40%;
-            float: left;
-            padding-left: 30px;
-
-            .view-right-front-map-teaser .views-row {
-                position: relative;
-                height: 250px;
-
-                .views-field-type {
-                    color: $active-menu;
-                    font-size: 22px;
-                }
-
-                .views-field-title a {
-                    color: $color-white;
-                    font-size: 22px;
-                }
-
-                .views-field-view-node a {
-                    color: $color-white;
-                    font-size: 20px;
-                    position: absolute;
-                    bottom: 0;
-                    padding-left: 25px;
-
-                    &:before {
-                        @extend .material-icons;
-
-                        content: "place";
-                        color: $active-menu;
-                        position: absolute;
-                        top: 4px;
-                        left: 0;
-                    }
-                }
-            }
-        }
-    }
-
-    //-----------------------------//
-
-    .field-name-field-paragraph-view {
-        background: $color-light-blue;
-
-        .view-neueste-informationen {
             position: relative;
-            padding: 30px 0;
 
-            @extend .container;
+            &:before {
+                background: $header-menu;
+                content: "";
+                width: 100%;
+                display: block;
+                height: 100%;
+                top: 0px;
+                position: absolute;
+                left: -100%;
+            }
+
+            &:after {
+                background: $header-menu;
+                content: "";
+                width: 100%;
+                display: block;
+                height: 100%;
+                top: 0px;
+                position: absolute;
+                right: -100%;
+            }
 
             .view-header {
-                color: $header-menu;
-                padding-bottom: 20px;
+                h2 {
+                    color: $color-white;
+                    padding-bottom: 40px;
+                }
             }
 
             .view-content {
@@ -114,14 +229,12 @@
                 .views-row {
                     @extend .col-md-4;
 
-                    font-size: 22px;
+                    position: relative;
 
                     .row-container {
                         background: $color-white;
-                        padding: 25px;
-                        height: 350px;
-                        margin-bottom: 30px;
-                        position: relative;
+                        padding: 30px;
+                        height: 300px;
 
                         .views-field-field-themenzuweisung {
                             padding-bottom: 10px;
@@ -132,24 +245,27 @@
                             }
                         }
 
-                        .views-field-type {
-                            color: $active-menu;
+                        .views-field-field-event-datum {
+                            .date-display-range span {
+                                color: $active-menu;
+                                font-size: 22px;
+                            }
                         }
 
                         .views-field-title {
                             a {
                                 text-decoration: none;
+                                font-size: 22px;
                                 color: $header-menu;
                             }
                         }
 
-                        .views-field-field-datum {
-                            position: absolute;
-                            bottom: 10px;
-
-                            .date-display-single {
-                                font-size: 17px;
-                                color: $color-light-grey;
+                        .views-field-field-ort {
+                            .field-content {
+                                position: absolute;
+                                bottom: 30px;
+                                font-size: 20px;
+                                color: $header-menu;
                             }
                         }
                     }
@@ -158,17 +274,16 @@
 
             .view-footer {
                 clear: both;
+                position: relative;
+                padding-top: 30px;
 
-                .link-outer-block .link-inner-block-1, .link-outer-block .link-inner-block-2 {
-                    display: inline-block;
-
+                .link-outer-block .link-inner-block-1 {
                     a {
                         text-decoration: none;
-                        color: $header-menu;
                         font-size: 20px;
                         padding-right: 15px;
+                        color: $color-white;
                         padding-left: 25px;
-                        position: relative;
 
                         &:before {
                             @extend .material-icons;
@@ -176,196 +291,91 @@
                             content: "arrow_forward";
                             color: $active-menu;
                             position: absolute;
-                            top: 3px;
+                            top: 4px;
                             left: 0;
+                            padding-top: 30px;
                         }
                     }
                 }
             }
         }
     }
+}
 
-    //---------------------------------//
-    .field-name-field-topic-teaser {
-        @extend .container;
-           padding:0;
-        > .field-items {
-            padding: 60px 0;
-            float: left;
-            margin-left: -15px;
-            margin-right: -15px;
+//---------------------------------//
+.paragraphs-item-topic-teaser-paragraph {
+    .field-collection-container {
+        border-bottom: none;
+        margin-bottom: 0;
 
-            > .field-item {
-                @extend .col-md-6;
+        .field-name-field-topic-teaser {
+            @extend .container;
 
-                .field-collection-view {
-                    margin: 0;
-                    padding: 0;
-                    border: 0;
-                    background: $color-light-blue;
-                    position: relative;
+            padding: 0;
 
-                    .content {
-                        padding: 25px;
-                        height: 360px;
+            > .field-items {
+                padding: 60px 0;
+                float: left;
+                margin-left: -15px;
+                margin-right: -15px;
 
-                        .field-type-file img {
-                            width: 54px;
-                            height: 54px;
-                        }
+                > .field-item {
+                    @extend .col-md-6;
 
-                        .field-name-field-paragraph-title {
-                            font-size: 26px;
-                            color: $active-menu;
-                            padding: 10px 0;
-                        }
+                    .field-collection-view {
+                        margin: 0;
+                        padding: 0;
+                        border: 0;
+                        background: $color-light-blue;
+                        position: relative;
 
-                        .field-name-field-quellenangabe {
-                            a {
-                                font-size: 20px;
-                                color: $header-menu;
-                                text-decoration: none;
-                                position: absolute;
-                                bottom: 30px;
-                                padding-left: 25px;
+                        .content {
+                            padding: 25px;
+                            height: 360px;
 
-                                &:before {
-                                    @extend .material-icons;
+                            .field-type-file img {
+                                width: 54px;
+                                height: 54px;
+                            }
 
-                                    content: "arrow_forward";
-                                    color: $active-menu;
+                            .field-name-field-paragraph-title {
+                                font-size: 26px;
+                                color: $active-menu;
+                                padding: 10px 0;
+                            }
+
+                            .field-name-field-quellenangabe {
+                                a {
+                                    font-size: 20px;
+                                    color: $header-menu;
+                                    text-decoration: none;
                                     position: absolute;
-                                    top: 4px;
-                                    left: 0;
+                                    bottom: 30px;
+                                    padding-left: 25px;
+
+                                    &:before {
+                                        @extend .material-icons;
+
+                                        content: "arrow_forward";
+                                        color: $active-menu;
+                                        position: absolute;
+                                        top: 4px;
+                                        left: 0;
+                                    }
                                 }
                             }
-                        }
 
-                        .field-name-field-flie-text-bereich .field-item p {
-                            font-size: 20px;
-                            color: $header-menu;
+                            .field-name-field-flie-text-bereich .field-item p {
+                                font-size: 20px;
+                                color: $header-menu;
+                            }
                         }
                     }
                 }
             }
         }
     }
-
-    //-------------------------------------//
-    .view-termin {
-        @extend .container;
-
-        padding: 60px 0;
-        background: $header-menu;
-        position: relative;
-
-        &:before {
-            background: $header-menu;
-            content: "";
-            width: 100%;
-            display: block;
-            height: 100%;
-            top: 0px;
-            position: absolute;
-            left: -100%;
-        }
-
-        &:after {
-            background: $header-menu;
-            content: "";
-            width: 100%;
-            display: block;
-            height: 100%;
-            top: 0px;
-            position: absolute;
-            right: -100%;
-        }
-
-        .view-header {
-            h2 {
-                color: $color-white;
-                padding-bottom: 40px;
-            }
-        }
-
-        .view-content {
-            margin-left: -15px;
-            margin-right: -15px;
-
-            .views-row {
-                @extend .col-md-4;
-
-                position: relative;
-
-                .row-container {
-                    background: $color-white;
-                    padding: 30px;
-                    height: 300px;
-
-                    .views-field-field-themenzuweisung {
-                        padding-bottom: 10px;
-
-                        img {
-                            display: inline-block;
-                            margin-right: 10px;
-                        }
-                    }
-
-                    .views-field-field-event-datum {
-                        .date-display-range span {
-                            color: $active-menu;
-                            font-size: 22px;
-                        }
-                    }
-
-                    .views-field-title {
-                        a {
-                            text-decoration: none;
-                            font-size: 22px;
-                            color: $header-menu;
-                        }
-                    }
-
-                    .views-field-field-ort {
-                        .field-content {
-                            position: absolute;
-                            bottom: 30px;
-                            font-size: 20px;
-                            color: $header-menu;
-                        }
-                    }
-                }
-            }
-        }
-
-        .view-footer {
-            clear: both;
-            position: relative;
-            padding-top: 30px;
-
-            .link-outer-block .link-inner-block-1 {
-                a {
-                    text-decoration: none;
-                    font-size: 20px;
-                    padding-right: 15px;
-                    color: $color-white;
-                    padding-left: 25px;
-
-                    &:before {
-                        @extend .material-icons;
-
-                        content: "arrow_forward";
-                        color: $active-menu;
-                        position: absolute;
-                        top: 4px;
-                        left: 0;
-                        padding-top: 30px;
-                    }
-                }
-            }
-        }
-    }
-}}
+}
 
 //-------------mobile------------//
 @media (max-width: $screen-xs-max) {
