@@ -21,7 +21,7 @@ function ipwa_article_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Body Container',
-    'weight' => '6',
+    'weight' => '2',
     'children' => array(
       0 => 'field_bild_ref',
       1 => 'field_videoquelle',
@@ -58,8 +58,16 @@ function ipwa_article_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Entity Container',
-    'weight' => '14',
-    'children' => array(),
+    'weight' => '3',
+    'children' => array(
+      0 => 'field_f_rderbekanntmachungen',
+      1 => 'field_initiatoren_zum_thema',
+      2 => 'field_meldungen_zum_thema',
+      3 => 'field_projekte_zum_thema',
+      4 => 'field_weiterf_hrende_links',
+      5 => 'group_related_doc',
+      6 => 'group_related_event',
+    ),
     'format_type' => 'html-element',
     'format_settings' => array(
       'formatter' => '',
