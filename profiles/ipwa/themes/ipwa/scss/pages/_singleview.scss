@@ -318,7 +318,14 @@
         padding-left: 350px;
         font-size: 20px;
     }
+.view-alle-themen-teaser {
+.view-content .views-row{
+  @extend .col-md-4;
+  padding:10px;
 
+}
+
+}
     
 }
 
