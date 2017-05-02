@@ -64,8 +64,7 @@ function ipwa_topic_views_default_views() {
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['pager']['options']['id'] = '0';
   $handler->display->display_options['pager']['options']['quantity'] = '9';
-  $handler->display->display_options['style_plugin'] = 'grid';
-  $handler->display->display_options['style_options']['columns'] = '3';
+  $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'fields';
   /* Field: Content: Type */
   $handler->display->display_options['fields']['type']['id'] = 'type';
@@ -114,10 +113,25 @@ function ipwa_topic_views_default_views() {
   $handler->display->display_options['filters']['status']['value'] = 1;
   $handler->display->display_options['filters']['status']['group'] = 1;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'f_rderbekanntmachung' => 'f_rderbekanntmachung',
+    'nachricht' => 'nachricht',
+    'projekt' => 'projekt',
+  );
 
   /* Display: Alles zum thema */
   $handler = $view->new_display('block', 'Alles zum thema', 'block');
   $handler->display->display_options['defaults']['sorts'] = FALSE;
+  /* Sort criterion: Content: Titel */
+  $handler->display->display_options['sorts']['title']['id'] = 'title';
+  $handler->display->display_options['sorts']['title']['table'] = 'node';
+  $handler->display->display_options['sorts']['title']['field'] = 'title';
+  $handler->display->display_options['sorts']['title']['exposed'] = TRUE;
+  $handler->display->display_options['sorts']['title']['expose']['label'] = 'A-Z';
   /* Sort criterion: Content: Datum (field_datum) */
   $handler->display->display_options['sorts']['field_datum_value']['id'] = 'field_datum_value';
   $handler->display->display_options['sorts']['field_datum_value']['table'] = 'field_data_field_datum';
@@ -125,12 +139,6 @@ function ipwa_topic_views_default_views() {
   $handler->display->display_options['sorts']['field_datum_value']['order'] = 'DESC';
   $handler->display->display_options['sorts']['field_datum_value']['exposed'] = TRUE;
   $handler->display->display_options['sorts']['field_datum_value']['expose']['label'] = 'neueste zuerst';
-  /* Sort criterion: Content: Titel */
-  $handler->display->display_options['sorts']['title']['id'] = 'title';
-  $handler->display->display_options['sorts']['title']['table'] = 'node';
-  $handler->display->display_options['sorts']['title']['field'] = 'title';
-  $handler->display->display_options['sorts']['title']['exposed'] = TRUE;
-  $handler->display->display_options['sorts']['title']['expose']['label'] = 'A-Z';
   $handler->display->display_options['block_description'] = 'Alles zum thema';
   $translatables['alles_zum_thema'] = array(
     t('Master'),
@@ -152,8 +160,8 @@ function ipwa_topic_views_default_views() {
     t('next ›'),
     t('last »'),
     t('All'),
-    t('neueste zuerst'),
     t('A-Z'),
+    t('neueste zuerst'),
   );
   $export['alles_zum_thema'] = $view;
 
