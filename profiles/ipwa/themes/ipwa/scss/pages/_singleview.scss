@@ -295,10 +295,10 @@
 
 //-------------node-doorpage-----------//
 .not-front .node-doorpage {
-    @extend .container;
+    
 
     .page-title {
-        padding-left: 350px;
+       
         border: none;
         margin: 0;
     }
@@ -306,126 +306,160 @@
     .field-name-field-untertitel .field-item {
         color: $active-menu;
         font-size: 26px;
-        padding-left: 350px;
+        
     }
 
     .field-name-field-kurztext .field-item {
-        padding-left: 350px;
+       
         font-size: 22px;
     }
 
     .field-name-body {
-        padding-left: 350px;
+       
         font-size: 20px;
     }
-.view-alle-themen-teaser {
-.view-content .views-row{
-  @extend .col-md-4;
-  padding:10px;
 
+    .view-alle-themen-teaser {
+	    background: $color-light-blue;
+	   .view-sub-wrapper{
+	    @extend .container;
+        .view-content {
+		margin-left:-15px;
+		margin-right:-15px;
+		   .term-title{
+		   color: $header-menu;
+                font-size: 28px;
+                padding-bottom: 40px;
+				padding-top:40px;
+		   }
+		   
+		   p{
+		     color:$header-menu;
+			 font-size:20px;
+		   
+		   }
+		.views-row {
+            @extend .col-md-4;
+          
+            padding: 10px;
+			
+			.views-field-name a{
+			  background:$header-menu;
+			  text-decoration:none;
+			  padding:10px;
+			  font-size:18px;
+			  color:$color-white;
+			  float:left;
+			}
+        }
+    }
+	.view-footer {
+            padding-top: 40px;
+            clear: both;
+			padding-bottom:20px;
+
+            a {
+                text-decoration: none;
+                color: $header-menu;
+                font-size: 20px;
+                position: relative;
+               padding-left:30px;
+				
+
+                &:before {
+                    @extend .material-icons;
+
+                    content: "arrow_forward";
+                    color: $active-menu;
+                    position: absolute;
+                    top: 4px;
+                    left: 2px;
+                }
+            }
+        }
+}}
 }
 
-}
-    
-}
+
+
 
 //----------view-neueste-digital-projekte------------//
 .view-neueste-digital-projekte {
     background: $header-dropdown-menu;
 
-    @extend .container;
+    .view-sub-wrapper {
+        @extend .container;
 
-    padding: 60px 0;
-    position: relative;
+        padding: 60px 0;
+        position: relative;
 
-    &:before {
-        background: $header-dropdown-menu;
-        content: "";
-        width: 100%;
-        display: block;
-        height: 100%;
-        top: 0px;
-        position: absolute;
-        left: -100%;
-    }
-
-    &:after {
-        background: $header-dropdown-menu;
-        content: "";
-        width: 100%;
-        display: block;
-        height: 100%;
-        top: 0px;
-        position: absolute;
-        right: -100%;
-    }
-
-    .view-header {
-        .pane-title {
-            color: $color-white;
-            font-size: 28px;
-            padding-bottom: 40px;
+        .view-header {
+            .pane-title {
+                color: $color-white;
+                font-size: 28px;
+                padding-bottom: 40px;
+            }
         }
-    }
 
-    .view-content {
-        margin-left: -15px;
-        margin-right: -15px;
+        .view-content {
+            margin-left: -15px;
+            margin-right: -15px;
 
-        .views-row {
-            @extend .col-md-4;
+            .views-row {
+                @extend .col-md-4;
 
-            .row-container {
-                background: $header-menu;
-                padding: 25px;
-				height:350px;
+                .row-container {
+                    background: $header-menu;
+                    padding: 25px;
+                    height: 350px;
 
-                .views-field-field-themenzuweisung {
-                    margin-bottom: 10px;
+                    .views-field-field-themenzuweisung {
+                        margin-bottom: 10px;
 
-                    img {
-                        display: inline-block;
-                        margin-right: 10px;
+                        img {
+                            display: inline-block;
+                            margin-right: 10px;
+                        }
                     }
-                }
 
-                .views-field-type {
-                    .field-content {
-                        color: $active-menu;
-                        font-size: 22px;
+                    .views-field-type {
+                        .field-content {
+                            color: $active-menu;
+                            font-size: 22px;
+                        }
                     }
-                }
 
-                .views-field-title {
-                    a {
-                        color: $color-white;
-                        text-decoration: none;
-                        font-size: 22px;
+                    .views-field-title {
+                        a {
+                            color: $color-white;
+                            text-decoration: none;
+                            font-size: 22px;
+                        }
                     }
                 }
             }
         }
-    }
 
-    .view-footer {
-        padding-top: 40px;
-        clear: both;
+        .view-footer {
+            padding-top: 40px;
+            clear: both;
 
-        a {
-            text-decoration: none;
-            color: $color-white;
-            font-size: 20px;
-            position: relative;
-            padding-left: 30px;
+            a {
+                text-decoration: none;
+                color: $color-white;
+                font-size: 20px;
+                position: relative;
+                padding-left: 30px;
 
-            &:before {
-                @extend .material-icons;
+                &:before {
+                    @extend .material-icons;
 
-                content: "arrow_forward";
-                color: $active-menu;
-                position: absolute;
-                top: 4px;
-                left: 0;
+                    content: "arrow_forward";
+                    color: $active-menu;
+                    position: absolute;
+                    top: 4px;
+                    left: 0;
+                }
             }
         }
     }

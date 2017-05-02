@@ -6,7 +6,10 @@ header {
         -moz-box-shadow: 0px 28px 38px 2px rgba(162, 162, 162, 0.65);
         box-shadow: 0px 28px 38px 2px rgba(162, 162, 162, 0.65);
     }
-
+.container{
+padding:0;
+	
+	
     .navbar-header {
         .navbar-brand {
             display: none;
@@ -81,6 +84,7 @@ header {
                         margin-left: 55px;
                         position: relative;
                         width: 60%;
+						font-weight:normal;
 
                         .caret {
                             display: none;
@@ -208,6 +212,7 @@ header {
                         width: 100%;
                         padding-top: 40px;
                         padding-bottom: 40px;
+						display:block;
 
                         a {
                             color: $color-white;
@@ -232,6 +237,10 @@ header {
                                     background: $header-menu;
                                     font-size: 16px;
                                     padding: 10px;
+									
+									&:hover{
+									 background:$active-menu;
+									}
                                 }
                             }
                         }
@@ -246,6 +255,17 @@ header {
 
                                 a {
                                     font-size: 16px;
+									position:relative;
+									 &:before {
+                        @extend .material-icons;
+
+                        content: "arrow_forward";
+                        color: $active-menu;
+                        position: absolute;
+                        font-size:16px;
+                        left: 0;
+                        
+                    }
                                 }
                             }
 
@@ -259,5 +279,5 @@ header {
                 }
             }
         }
-    }
+    }}
 }
