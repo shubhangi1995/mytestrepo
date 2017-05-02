@@ -295,10 +295,7 @@
 
 //-------------node-doorpage-----------//
 .not-front .node-doorpage {
-    
-
     .page-title {
-       
         border: none;
         margin: 0;
     }
@@ -306,82 +303,80 @@
     .field-name-field-untertitel .field-item {
         color: $active-menu;
         font-size: 26px;
-        
     }
 
     .field-name-field-kurztext .field-item {
-       
         font-size: 22px;
     }
 
     .field-name-body {
-       
         font-size: 20px;
     }
 
     .view-alle-themen-teaser {
-	    background: $color-light-blue;
-	   .view-sub-wrapper{
-	    @extend .container;
-        .view-content {
-		margin-left:-15px;
-		margin-right:-15px;
-		   .term-title{
-		   color: $header-menu;
-                font-size: 28px;
-                padding-bottom: 40px;
-				padding-top:40px;
-		   }
-		   
-		   p{
-		     color:$header-menu;
-			 font-size:20px;
-		   
-		   }
-		.views-row {
-            @extend .col-md-4;
-          
-            padding: 10px;
-			
-			.views-field-name a{
-			  background:$header-menu;
-			  text-decoration:none;
-			  padding:10px;
-			  font-size:18px;
-			  color:$color-white;
-			  float:left;
-			}
-        }
-    }
-	.view-footer {
-            padding-top: 40px;
-            clear: both;
-			padding-bottom:20px;
+        background: $color-light-blue;
 
-            a {
-                text-decoration: none;
-                color: $header-menu;
-                font-size: 20px;
-                position: relative;
-               padding-left:30px;
-				
+        .view-sub-wrapper {
+            @extend .container;
 
-                &:before {
-                    @extend .material-icons;
+            .view-content {
+                margin-left: -15px;
+                margin-right: -15px;
 
-                    content: "arrow_forward";
-                    color: $active-menu;
-                    position: absolute;
-                    top: 4px;
-                    left: 2px;
+                .term-title {
+                    color: $header-menu;
+                    font-size: 28px;
+                    padding-bottom: 40px;
+                    padding-top: 40px;
+                }
+
+                p {
+                    color: $header-menu;
+                    font-size: 20px;
+                }
+
+                .views-row {
+                    @extend .col-md-4;
+
+                    padding: 10px;
+
+                    .views-field-name a {
+                        background: $header-menu;
+                        text-decoration: none;
+                        padding: 10px;
+                        font-size: 18px;
+                        color: $color-white;
+                        float: left;
+                    }
+                }
+            }
+
+            .view-footer {
+                padding-top: 40px;
+                clear: both;
+                padding-bottom: 20px;
+
+                a {
+                    text-decoration: none;
+                    color: $header-menu;
+                    font-size: 20px;
+                    position: relative;
+                    padding-left: 30px;
+
+                    &:before {
+                        @extend .material-icons;
+
+                        content: "arrow_forward";
+                        color: $active-menu;
+                        position: absolute;
+                        top: 4px;
+                        left: 2px;
+                    }
                 }
             }
         }
-}}
+    }
 }
-
-
-
 
 //----------view-neueste-digital-projekte------------//
 .view-neueste-digital-projekte {
