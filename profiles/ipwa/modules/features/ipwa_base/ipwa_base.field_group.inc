@@ -18,10 +18,10 @@ function ipwa_base_field_group_info() {
   $field_group->entity_type = 'node';
   $field_group->bundle = 'article';
   $field_group->mode = 'default';
-  $field_group->parent_name = 'group_entity_container';
+  $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Related doc',
-    'weight' => '1',
+    'weight' => '13',
     'children' => array(),
     'format_type' => 'html-element',
     'format_settings' => array(
@@ -46,10 +46,10 @@ function ipwa_base_field_group_info() {
   $field_group->entity_type = 'node';
   $field_group->bundle = 'article';
   $field_group->mode = 'default';
-  $field_group->parent_name = 'group_entity_container';
+  $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Related event',
-    'weight' => '2',
+    'weight' => '14',
     'children' => array(),
     'format_type' => 'html-element',
     'format_settings' => array(
@@ -75,7 +75,7 @@ function ipwa_base_field_group_info() {
   $field_group->entity_type = 'node';
   $field_group->bundle = 'article';
   $field_group->mode = 'default';
-  $field_group->parent_name = 'group_main_container';
+  $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'title',
     'weight' => '1',
