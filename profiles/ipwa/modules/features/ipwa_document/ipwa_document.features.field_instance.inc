@@ -62,8 +62,9 @@ function ipwa_document_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'hidden',
+        'module' => 'list',
         'settings' => array(),
-        'type' => 'i18n_list_default',
+        'type' => 'list_default',
         'weight' => 0,
       ),
       'teaser' => array(

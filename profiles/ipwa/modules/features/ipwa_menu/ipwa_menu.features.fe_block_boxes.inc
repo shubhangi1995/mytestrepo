@@ -38,10 +38,10 @@ function ipwa_menu_default_fe_block_boxes() {
   $fe_block_boxes->info = 'Infos für Unternehmen left menu';
   $fe_block_boxes->format = 'wysiwyg';
   $fe_block_boxes->machine_name = 'infos_fur_unternehmen_left_menu';
-  $fe_block_boxes->body = '<p><a href="/node/5">&nbsp;Projekte</a><br />
-<a href="/node/9">&nbsp;Beratung</a><br />
-<a href="/aktuelles?type=f_rderbekanntmachung">&nbsp;Förderung&nbsp;</a><br />
-<a href="/node/11">&nbsp;Unternehmen als Partner finden</a><br />
+  $fe_block_boxes->body = '<p><a href="/node/5">&nbsp;Projekte</a>
+<a href="/node/9">&nbsp;Beratung</a>
+<a href="/aktuelles?type=f_rderbekanntmachung">&nbsp;Förderung&nbsp;</a>
+<a href="/node/11">&nbsp;Unternehmen als Partner finden</a>
 <a href="/node/5">&nbsp;FuE-Einrichtungen als Partner finden</a></p>
 ';
 
