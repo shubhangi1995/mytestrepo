@@ -34,6 +34,7 @@ features[ckeditor_profile][] = Full
 features[ctools][] = field_group:field_group:1
 features[ctools][] = strongarm:strongarm:1
 features[ctools][] = views:views_default:3.0
+features[fe_block_settings][] = views-neueste_digital_projekte-block
 features[fe_block_settings][] = views-rss-block_1
 features[features_api][] = api:2
 features[field_base][] = body

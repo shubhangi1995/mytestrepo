@@ -897,7 +897,7 @@ function ipwa_base_views_default_views() {
 		<a href="/aktuelles">mehr Aktuelles</a>
 	</div>
 	<div class="link-inner-block-2">
-		<a href="">Themenübersicht</a>
+		<a href="/node/67">Themenübersicht</a>
 	</div>
 </div>';
   $handler->display->display_options['footer']['area']['format'] = 'wysiwyg';
@@ -978,7 +978,7 @@ function ipwa_base_views_default_views() {
 		<a href="/aktuelles">mehr Aktuelles</a>
 	</div>
 	<div class="link-inner-block-2">
-		<a href="">Themenübersicht</a>
+		<a href="/node/67">Themenübersicht</a>
 	</div>
 </div>'),
   );
