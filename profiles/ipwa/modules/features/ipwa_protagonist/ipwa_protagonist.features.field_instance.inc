@@ -773,7 +773,7 @@ Zeile 6 (bspw. E-Mail-Adresse)',
     ),
     'entity_type' => 'node',
     'field_name' => 'field_weitere_details',
-    'label' => 'Weitere Details',
+    'label' => 'Beschreibungstext',
     'required' => 0,
     'settings' => array(
       'text_processing' => 0,
@@ -918,7 +918,7 @@ Schema für externe Links: http://www…',
     ),
     'entity_type' => 'node',
     'field_name' => 'field_zur_website',
-    'label' => 'zur Website',
+    'label' => 'Website-Link',
     'required' => 0,
     'settings' => array(
       'absolute_url' => 1,
@@ -958,6 +958,7 @@ Schema für externe Links: http://www…',
   t('Akteurstyp');
   t('Ansprechpartner & Kontaktdaten');
   t('Anzuzeigende Seitenmodule (Paragraphen)');
+  t('Beschreibungstext');
   t('Bitte nach folgendem Muster, soweit  vorhanden, ausfüllen:
 Zeile 1 (bspw. Firma)
 Zeile 2 (bspw. Vorname Nachname)
@@ -986,10 +987,9 @@ Schema für externe Links: http://www…');
   t('Sie können hier Inhalte vom Typ \'Termin\' hinzufügen.');
   t('Untertitel');
   t('Videounterschrift');
-  t('Weitere Details');
+  t('Website-Link');
   t('Weiterführende Links');
   t('YouTube URL');
-  t('zur Website');
   t('© Bildquelle');
   t('© Videoquelle');
 

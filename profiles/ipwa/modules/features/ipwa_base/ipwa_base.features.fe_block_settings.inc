@@ -36,7 +36,7 @@ function ipwa_base_default_fe_block_settings() {
         'region' => 'content',
         'status' => 1,
         'theme' => 'ipwa',
-        'weight' => -24,
+        'weight' => -25,
       ),
     ),
     'title' => '',
