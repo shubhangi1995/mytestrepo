@@ -73,6 +73,8 @@
  * @ingroup templates
  */
 ?>
+
+<?php global $base_url; ?>
 <header id="navbar" role="banner" class="<?php print $navbar_classes; ?>">
   <div class="<?php print $container_class; ?>">
     <div class="navbar-header">
@@ -96,6 +98,12 @@
       <?php endif; ?>
     </div>
 
+    <div class="nrw-eu-logo">
+      <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
+        <img src="<?php echo $base_url . '/' . drupal_get_path('theme', 'ipwa'); ?>/nrw_eu_logo.png">
+      </a>
+    </div>
+
     <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
       <div class="navbar-collapse collapse" id="navbar-collapse">
         <nav role="navigation">
@@ -114,7 +122,7 @@
   </div>
 </header>
 <div> <a id="top" name="top"></a></div>
-<div class="main-container <?php print $container_class; ?>">
+<div class="main-container container-fluid">
 
   <header role="banner" id="page-header">
     <?php if (!empty($site_slogan)): ?>
@@ -151,48 +159,51 @@
       <?php endif; ?>
       <?php //print render($page['content']); ?>
 
-      <?php //show term icon, parent icon in case of child term
-      $parent = taxonomy_get_parents(arg(2)); ?>
-      <?php if (!empty($page['content']['system_main']['term_heading']['term']['field_bild']) && empty($parent)) : ?>
-        <?php print render($page['content']['system_main']['term_heading']['term']['field_bild']); ?>
-      <?php else : ?>
-        <?php if (!empty($parent)): ?>
-          <?php foreach($parent as $pid => $parent_term): ?>
-            <?php $icon_img = array(
-              '#theme' => 'image_formatter',
-              '#item' => $parent_term->field_bild['und'][0],
-              '#image_style' => '',
-              '#path' => '',
-              '#access' => 1
-            ); ?>
-            <div class="field-name-field-bild">
-              <?php print render($icon_img); ?>
-            </div>
-          <?php endforeach; ?>
-        <?php endif; ?>
-      <?php endif ?>
-	  
-	   <div class="themenzuweisung-right-block">	  
-	  <?php print render($title_prefix); ?>
-      <?php if (!empty($title) && empty($node)): ?>
-        <h1 class="page-header"><?php print $title; ?></h1>
-      <?php endif; ?>
-      <?php print render($title_suffix); ?>
+      <div class="group-page-info field-group-html-element">
+        <?php //show term icon, parent icon in case of child term
+        $parent = taxonomy_get_parents(arg(2)); ?>
+        <?php if (!empty($page['content']['system_main']['term_heading']['term']['field_bild']) && empty($parent)) : ?>
+          <?php print render($page['content']['system_main']['term_heading']['term']['field_bild']); ?>
+        <?php else : ?>
+          <?php if (!empty($parent)): ?>
+            <?php foreach($parent as $pid => $parent_term): ?>
+              <?php $icon_img = array(
+                '#theme' => 'image_formatter',
+                '#item' => $parent_term->field_bild['und'][0],
+                '#image_style' => '',
+                '#path' => '',
+                '#access' => 1
+              ); ?>
+              <div class="field-name-field-bild">
+                <?php print render($icon_img); ?>
+              </div>
+            <?php endforeach; ?>
+          <?php endif; ?>
+        <?php endif ?>
 
-      <?php if(!empty($page['content']['system_main']['term_heading']['term']['field_untertitel'])): ?>
-        <?php print render($page['content']['system_main']['term_heading']['term']['field_untertitel']); ?>
-      <?php endif; ?>
+        <div class="themenzuweisung-right-block">
+          <?php print render($title_prefix); ?>
+          <?php if (!empty($title) && empty($node)): ?>
+            <h1 class="page-header"><?php print $title; ?></h1>
+          <?php endif; ?>
+          <?php print render($title_suffix); ?>
 
-      <?php if(!empty($page['content']['system_main']['term_heading']['term']['field_kurztext'])): ?>
-       <?php print render($page['content']['system_main']['term_heading']['term']['field_kurztext']);?>
-      <?php endif; ?>
-      <?php if(!empty($page['content']['system_main']['term_heading']['term']['description'])):?>
-      <?php print render($page['content']['system_main']['term_heading']['term']['description']['#markup']);?>
-      <?php endif; ?>
+          <?php if(!empty($page['content']['system_main']['term_heading']['term']['field_untertitel'])): ?>
+            <?php print render($page['content']['system_main']['term_heading']['term']['field_untertitel']); ?>
+          <?php endif; ?>
+
+          <?php if(!empty($page['content']['system_main']['term_heading']['term']['field_kurztext'])): ?>
+            <?php print render($page['content']['system_main']['term_heading']['term']['field_kurztext']);?>
+          <?php endif; ?>
+          <?php if(!empty($page['content']['system_main']['term_heading']['term']['description'])):?>
+            <?php print render($page['content']['system_main']['term_heading']['term']['description']['#markup']);?>
+          <?php endif; ?>
+        </div>
+      </div>
+
       <?php if(!empty($page['content']['system_main']['term_heading']['term']['field_anzuzeigende_seitenmodule'])): ?>
-      <?php print render($page['content']['system_main']['term_heading']['term']['field_anzuzeigende_seitenmodule']); ?>
+        <?php print render($page['content']['system_main']['term_heading']['term']['field_anzuzeigende_seitenmodule']); ?>
       <?php endif; ?>
-     </div>
 
       <?php // Show 'Alles zum thema' view only for children terms
       if (!empty(taxonomy_get_parents(arg(2)))): ?>
