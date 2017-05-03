@@ -50,3 +50,68 @@ header.navbar-default{
 	font-size:44px;
 }
 
+//pagination
+
+.text-center{
+  text-align:left;
+  clear:both;
+  ul.pagination{
+  
+  li.pager-first,li.pager-last{
+    display:none;
+  }
+  
+  li.prev a{
+font-size:0;
+padding-left:60px;
+  &:before{
+     @extend .material-icons;
+
+                            content: "keyboard_arrow_left";
+                            color: $header-menu;
+                            position: absolute;
+							font-size:26px;
+							top:13px;
+  }
+  
+  }
+  
+   li.next a{
+font-size:0;
+padding-right:60px;
+
+  &:before{
+     @extend .material-icons;
+
+                            content: "keyboard_arrow_right";
+                            color: $header-menu;
+                            position: absolute;
+							font-size:26px;
+							top:13px;
+  }
+  
+  }
+  
+  > li > span {
+   border:none;
+   color:$header-menu;
+  }
+  >li >a{
+    color:$header-menu;
+	background:none;
+	border:none;
+	font-size:26px;
+  }
+  > .active > a,
+  > .active > a:hover, 
+  > .active > a:focus, 
+  > .active > span, 
+  > .active > span:hover,
+  > .active > span:focus{
+  background:none;
+  color:$active-menu;
+  font-size:26px;
+  }
+  
+  }
+}

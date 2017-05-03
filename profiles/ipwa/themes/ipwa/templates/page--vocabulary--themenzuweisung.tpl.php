@@ -175,6 +175,13 @@
           <?php endforeach; ?>
         <?php endif; ?>
       <?php endif ?>
+	  
+	   <div class="themenzuweisung-right-block">	  
+	  <?php print render($title_prefix); ?>
+      <?php if (!empty($title) && empty($node)): ?>
+        <h1 class="page-header"><?php print $title; ?></h1>
+      <?php endif; ?>
+      <?php print render($title_suffix); ?>
 
       <?php if(!empty($page['content']['system_main']['term_heading']['term']['field_untertitel'])): ?>
         <?php print render($page['content']['system_main']['term_heading']['term']['field_untertitel']); ?>
@@ -189,7 +196,7 @@
       <?php if(!empty($page['content']['system_main']['term_heading']['term']['field_anzuzeigende_seitenmodule'])): ?>
       <?php print render($page['content']['system_main']['term_heading']['term']['field_anzuzeigende_seitenmodule']); ?>
       <?php endif; ?>
-
+     </div>
 
       <?php // Show 'Alles zum thema' view only for children terms
       if (!empty(taxonomy_get_parents(arg(2)))): ?>
