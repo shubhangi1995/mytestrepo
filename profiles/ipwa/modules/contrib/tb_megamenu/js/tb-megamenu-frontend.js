@@ -38,9 +38,11 @@ Drupal.TBMegaMenu = Drupal.TBMegaMenu || {};
           }
         });
       });
-      
-      
-      var isTouch = 'ontouchstart' in window && !(/hp-tablet/gi).test(navigator.appVersion);
+
+
+      if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        var isTouch = 'ontouchstart' in window && !(/hp-tablet/gi).test(navigator.appVersion);
+      }
       if(!isTouch){
         $(document).ready(function($){
           var mm_duration = 0;
