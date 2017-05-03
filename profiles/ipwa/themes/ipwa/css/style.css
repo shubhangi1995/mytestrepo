@@ -7333,32 +7333,32 @@ header.navbar-default {
   /* Support for IE. */
   font-feature-settings: 'liga'; }
 
-/* line 42, ../scss/pages/_common.scss */
+/* line 44, ../scss/pages/_common.scss */
 .field-name-field-weitere-details, .field-name-field-zur-website {
   float: left;
   width: 50%; }
 
-/* line 48, ../scss/pages/_common.scss */
+/* line 50, ../scss/pages/_common.scss */
 .page-title {
   margin: 25px 0 30px;
   font-size: 44px; }
 
-/* line 55, ../scss/pages/_common.scss */
+/* line 57, ../scss/pages/_common.scss */
 .text-center {
   text-align: left;
   clear: both; }
-  /* line 58, ../scss/pages/_common.scss */
+  /* line 61, ../scss/pages/_common.scss */
   .text-center ul.pagination {
     margin: 0;
     padding: 0; }
-    /* line 61, ../scss/pages/_common.scss */
+    /* line 65, ../scss/pages/_common.scss */
     .text-center ul.pagination li.pager-first, .text-center ul.pagination li.pager-last {
       display: none; }
-    /* line 65, ../scss/pages/_common.scss */
+    /* line 69, ../scss/pages/_common.scss */
     .text-center ul.pagination li.prev a {
       font-size: 0;
       position: relative; }
-      /* line 69, ../scss/pages/_common.scss */
+      /* line 73, ../scss/pages/_common.scss */
       .text-center ul.pagination li.prev a:before {
         content: "keyboard_arrow_left";
         color: #273753;
@@ -7366,11 +7366,11 @@ header.navbar-default {
         font-size: 26px;
         top: 13px;
         left: 0; }
-    /* line 82, ../scss/pages/_common.scss */
+    /* line 85, ../scss/pages/_common.scss */
     .text-center ul.pagination li.next a {
       font-size: 0;
       position: relative; }
-      /* line 86, ../scss/pages/_common.scss */
+      /* line 89, ../scss/pages/_common.scss */
       .text-center ul.pagination li.next a:before {
         content: "keyboard_arrow_right";
         color: #273753;
@@ -7378,20 +7378,20 @@ header.navbar-default {
         font-size: 26px;
         top: 13px;
         right: 0px; }
-    /* line 98, ../scss/pages/_common.scss */
+    /* line 101, ../scss/pages/_common.scss */
     .text-center ul.pagination > li > span {
       border: none;
       color: #273753; }
-    /* line 102, ../scss/pages/_common.scss */
+    /* line 106, ../scss/pages/_common.scss */
     .text-center ul.pagination > li > a {
       color: #273753;
       background: none;
       border: none;
       font-size: 26px; }
-      /* line 107, ../scss/pages/_common.scss */
+      /* line 112, ../scss/pages/_common.scss */
       .text-center ul.pagination > li > a.progress-disabled {
         float: left; }
-    /* line 111, ../scss/pages/_common.scss */
+    /* line 117, ../scss/pages/_common.scss */
     .text-center ul.pagination > .active > a,
     .text-center ul.pagination > .active > a:hover,
     .text-center ul.pagination > .active > a:focus,
@@ -7401,6 +7401,24 @@ header.navbar-default {
       background: none;
       color: #e74712;
       font-size: 26px; }
+
+/* line 132, ../scss/pages/_common.scss */
+.breadcrumb {
+  padding: 0;
+  margin-bottom: 20px;
+  list-style: none;
+  background: none;
+  border-radius: 0; }
+  /* line 138, ../scss/pages/_common.scss */
+  .breadcrumb li a {
+    text-decoration: none;
+    color: #273753;
+    font-size: 18px;
+    border-bottom: 2px solid #949d9e; }
+  /* line 145, ../scss/pages/_common.scss */
+  .breadcrumb li.active {
+    border-bottom: 2px solid #e74712;
+    color: #273753; }
 
 /* line 1, ../scss/pages/_singleview.scss */
 .field-name-field-themenzuweisung {
