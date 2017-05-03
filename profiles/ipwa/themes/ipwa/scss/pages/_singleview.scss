@@ -1,15 +1,23 @@
 .field-name-field-themenzuweisung {
-    padding-top: 20px;
-    padding-bottom: 40px;
+    //padding-top: 20px;
+    //padding-bottom: 40px;
+	display: inline-block;
+	margin: 60px 0 40px;
+	width: 100%;
 
     .field-label {
         font-size: 20px;
         color: $active-menu;
 		font-weight:normal;
+		margin-bottom:15px;
     }
 
     .field-items .field-item {
         @extend .col-md-4;
+		padding-right:45px;
+		&:last-child{
+			padding-right:0;
+		}
 
         padding-left: 0;
 
@@ -17,7 +25,15 @@
             // font-size: 20px;
             text-decoration: none;
             color: $header-menu;
+			border-bottom:1px solid $single-border-color;
+			padding-bottom:5px;
         }
+		img{
+			display:inline-block;
+			width:33px;
+			height:33px;
+			margin-right:10px;
+		}
     }
 }
 
@@ -32,6 +48,7 @@
     .field-label {
         font-size: 20px;
         color: $active-menu;
+		font-weight:normal;
     }
 
     .field-items {
@@ -465,5 +482,10 @@
 
 .node-type-article{
 	background-color:$color-light-blue;
+}
+
+.group-page-info{
+	@extend .page_inner;
+	padding:30px 0;
 }
 
