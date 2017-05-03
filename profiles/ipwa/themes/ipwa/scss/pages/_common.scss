@@ -130,6 +130,7 @@ header.navbar-default {
 //breadcrumb
 
 .breadcrumb {
+@extend .container;
     padding: 0;
     margin-bottom: 20px;
     list-style: none;
