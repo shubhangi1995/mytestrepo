@@ -7347,51 +7347,60 @@ header.navbar-default {
 .text-center {
   text-align: left;
   clear: both; }
-  /* line 60, ../scss/pages/_common.scss */
-  .text-center ul.pagination li.pager-first, .text-center ul.pagination li.pager-last {
-    display: none; }
-  /* line 64, ../scss/pages/_common.scss */
-  .text-center ul.pagination li.prev a {
-    font-size: 0;
-    padding-left: 60px; }
-    /* line 67, ../scss/pages/_common.scss */
-    .text-center ul.pagination li.prev a:before {
-      content: "keyboard_arrow_left";
+  /* line 58, ../scss/pages/_common.scss */
+  .text-center ul.pagination {
+    margin: 0;
+    padding: 0; }
+    /* line 61, ../scss/pages/_common.scss */
+    .text-center ul.pagination li.pager-first, .text-center ul.pagination li.pager-last {
+      display: none; }
+    /* line 65, ../scss/pages/_common.scss */
+    .text-center ul.pagination li.prev a {
+      font-size: 0;
+      position: relative; }
+      /* line 69, ../scss/pages/_common.scss */
+      .text-center ul.pagination li.prev a:before {
+        content: "keyboard_arrow_left";
+        color: #273753;
+        position: absolute;
+        font-size: 26px;
+        top: 13px;
+        left: 0; }
+    /* line 82, ../scss/pages/_common.scss */
+    .text-center ul.pagination li.next a {
+      font-size: 0;
+      position: relative; }
+      /* line 86, ../scss/pages/_common.scss */
+      .text-center ul.pagination li.next a:before {
+        content: "keyboard_arrow_right";
+        color: #273753;
+        position: absolute;
+        font-size: 26px;
+        top: 13px;
+        right: 0px; }
+    /* line 98, ../scss/pages/_common.scss */
+    .text-center ul.pagination > li > span {
+      border: none;
+      color: #273753; }
+    /* line 102, ../scss/pages/_common.scss */
+    .text-center ul.pagination > li > a {
       color: #273753;
-      position: absolute;
-      font-size: 26px;
-      top: 13px; }
-  /* line 79, ../scss/pages/_common.scss */
-  .text-center ul.pagination li.next a {
-    font-size: 0;
-    padding-right: 60px; }
-    /* line 83, ../scss/pages/_common.scss */
-    .text-center ul.pagination li.next a:before {
-      content: "keyboard_arrow_right";
-      color: #273753;
-      position: absolute;
-      font-size: 26px;
-      top: 13px; }
-  /* line 95, ../scss/pages/_common.scss */
-  .text-center ul.pagination > li > span {
-    border: none;
-    color: #273753; }
-  /* line 99, ../scss/pages/_common.scss */
-  .text-center ul.pagination > li > a {
-    color: #273753;
-    background: none;
-    border: none;
-    font-size: 26px; }
-  /* line 105, ../scss/pages/_common.scss */
-  .text-center ul.pagination > .active > a,
-  .text-center ul.pagination > .active > a:hover,
-  .text-center ul.pagination > .active > a:focus,
-  .text-center ul.pagination > .active > span,
-  .text-center ul.pagination > .active > span:hover,
-  .text-center ul.pagination > .active > span:focus {
-    background: none;
-    color: #e74712;
-    font-size: 26px; }
+      background: none;
+      border: none;
+      font-size: 26px; }
+      /* line 107, ../scss/pages/_common.scss */
+      .text-center ul.pagination > li > a.progress-disabled {
+        float: left; }
+    /* line 111, ../scss/pages/_common.scss */
+    .text-center ul.pagination > .active > a,
+    .text-center ul.pagination > .active > a:hover,
+    .text-center ul.pagination > .active > a:focus,
+    .text-center ul.pagination > .active > span,
+    .text-center ul.pagination > .active > span:hover,
+    .text-center ul.pagination > .active > span:focus {
+      background: none;
+      color: #e74712;
+      font-size: 26px; }
 
 /* line 1, ../scss/pages/_singleview.scss */
 .field-name-field-themenzuweisung {

@@ -56,38 +56,41 @@ header.navbar-default{
   text-align:left;
   clear:both;
   ul.pagination{
-  
+  margin:0;
+  padding:0;
   li.pager-first,li.pager-last{
     display:none;
   }
   
   li.prev a{
 font-size:0;
-padding-left:60px;
+position:relative;
+
   &:before{
      @extend .material-icons;
-
                             content: "keyboard_arrow_left";
                             color: $header-menu;
                             position: absolute;
 							font-size:26px;
 							top:13px;
+							left:0;
+							
   }
   
   }
   
    li.next a{
 font-size:0;
-padding-right:60px;
+position:relative;
 
   &:before{
      @extend .material-icons;
-
                             content: "keyboard_arrow_right";
                             color: $header-menu;
                             position: absolute;
 							font-size:26px;
 							top:13px;
+							right: 0px;
   }
   
   }
@@ -101,6 +104,9 @@ padding-right:60px;
 	background:none;
 	border:none;
 	font-size:26px;
+	&.progress-disabled{
+float:left;
+}
   }
   > .active > a,
   > .active > a:hover, 
