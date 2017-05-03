@@ -22,7 +22,7 @@ function ipwa_nachricht_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 6,
+        'weight' => 3,
       ),
       'rss' => array(
         'label' => 'hidden',
@@ -76,7 +76,7 @@ function ipwa_nachricht_field_default_field_instances() {
           'view_mode' => 'full',
         ),
         'type' => 'paragraphs_view',
-        'weight' => 9,
+        'weight' => 5,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -137,7 +137,7 @@ function ipwa_nachricht_field_default_field_instances() {
           'view_mode' => 'default',
         ),
         'type' => 'entityreference_entity_view',
-        'weight' => 7,
+        'weight' => 4,
       ),
       'rss' => array(
         'label' => 'hidden',
@@ -196,7 +196,7 @@ function ipwa_nachricht_field_default_field_instances() {
           'show_repeat_rule' => 'show',
         ),
         'type' => 'date_default',
-        'weight' => 0,
+        'weight' => 1,
       ),
       'rss' => array(
         'label' => 'hidden',
@@ -260,7 +260,7 @@ function ipwa_nachricht_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 21,
+        'weight' => 11,
       ),
       'rss' => array(
         'label' => 'above',
@@ -309,7 +309,7 @@ function ipwa_nachricht_field_default_field_instances() {
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 18,
+        'weight' => 8,
       ),
       'rss' => array(
         'label' => 'above',
@@ -361,7 +361,7 @@ function ipwa_nachricht_field_default_field_instances() {
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 16,
+        'weight' => 6,
       ),
       'rss' => array(
         'label' => 'above',
@@ -411,7 +411,7 @@ function ipwa_nachricht_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 5,
+        'weight' => 2,
       ),
       'rss' => array(
         'label' => 'hidden',
@@ -460,7 +460,7 @@ function ipwa_nachricht_field_default_field_instances() {
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 15,
+        'weight' => 5,
       ),
       'rss' => array(
         'label' => 'above',
@@ -512,7 +512,7 @@ function ipwa_nachricht_field_default_field_instances() {
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 17,
+        'weight' => 7,
       ),
       'rss' => array(
         'label' => 'above',
@@ -562,7 +562,7 @@ function ipwa_nachricht_field_default_field_instances() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 4,
+        'weight' => 5,
       ),
       'rss' => array(
         'label' => 'inline',
@@ -626,7 +626,7 @@ function ipwa_nachricht_field_default_field_instances() {
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_plain',
-        'weight' => 3,
+        'weight' => 4,
       ),
       'rss' => array(
         'label' => 'above',
@@ -670,7 +670,7 @@ function ipwa_nachricht_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 2,
+        'weight' => 3,
       ),
       'rss' => array(
         'label' => 'hidden',
@@ -716,7 +716,7 @@ function ipwa_nachricht_field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 20,
+        'weight' => 10,
       ),
       'rss' => array(
         'label' => 'hidden',
@@ -763,7 +763,7 @@ function ipwa_nachricht_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 12,
+        'weight' => 8,
       ),
       'rss' => array(
         'label' => 'inline',
@@ -810,7 +810,7 @@ function ipwa_nachricht_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 11,
+        'weight' => 7,
       ),
       'rss' => array(
         'label' => 'hidden',
@@ -858,7 +858,7 @@ Schema für externe Links: http://www…',
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 19,
+        'weight' => 9,
       ),
       'rss' => array(
         'label' => 'above',
@@ -932,7 +932,7 @@ Schema für externe Links: http://www…',
           'youtube_width' => NULL,
         ),
         'type' => 'youtube_video',
-        'weight' => 10,
+        'weight' => 6,
       ),
       'rss' => array(
         'label' => 'hidden',

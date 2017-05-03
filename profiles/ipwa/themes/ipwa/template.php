@@ -27,8 +27,8 @@ function ipwa_preprocess_node(&$variables)
       $related_event_view = '<h2 class="view-title">' . t('Kommende Veranstaltungen') . '</h2>';
       //for embedding view Kommende Veranstaltungen
       $related_event_view .= views_embed_view("related_content", "block_1", $variables['nid']);
-      $variables['content']['related_event']['#markup'] = $related_event_view;
-      $variables['content']['related_event']['#weight'] = isset($variables['elements']['#fieldgroups']['group_related_event']) ? $variables['elements']['#fieldgroups']['group_related_event']->weight : -1;
+      $variables['content']['group_page_bottom']['related_event']['#markup'] = $related_event_view;
+      $variables['content']['group_page_bottom']['related_event']['#weight'] = isset($variables['elements']['#fieldgroups']['group_related_event']) ? $variables['elements']['#fieldgroups']['group_related_event']->weight : -1;
     }
   }
 
@@ -40,8 +40,8 @@ function ipwa_preprocess_node(&$variables)
       $related_doc_view = '<h2 class="view-title">' . t('Dokumente und Publikationen') . '</h2>';
       //for embedding view Dokumente und Publikation
       $related_doc_view .= views_embed_view("related_content", "block_2", $variables['nid']);
-      $variables['content']['related_doc']['#markup'] = $related_doc_view;
-      $variables['content']['related_doc']['#weight'] = isset($variables['elements']['#fieldgroups']['group_related_doc']) ? $variables['elements']['#fieldgroups']['group_related_doc']->weight : -1;
+      $variables['content']['group_page_bottom']['related_doc']['#markup'] = $related_doc_view;
+      $variables['content']['group_page_bottom']['related_doc']['#weight'] = isset($variables['elements']['#fieldgroups']['group_related_doc']) ? $variables['elements']['#fieldgroups']['group_related_doc']->weight : -1;
     }
   }
 
@@ -61,9 +61,9 @@ function ipwa_preprocess_node(&$variables)
   // Change position of title field
   // (mostly will be displayed under date field)
   if (isset($variables['title']) && $variables['title']) {
-    $variables['content']['title'] = array(
-        '#markup' => '<h1 class="page-title">' . $variables['title'] . '</h1>',
-        '#weight' => isset($variables['elements']['#fieldgroups']['group_title']) ? $variables['elements']['#fieldgroups']['group_title']->weight : -1);
+    $variables['content']['group_page_info']['title'] = array(
+      '#markup' => '<h1 class="page-title">' . $variables['title'] . '</h1>',
+      '#weight' => isset($variables['elements']['#fieldgroups']['group_title']) ? $variables['elements']['#fieldgroups']['group_title']->weight : -1);
   }
 
   // For doorpage add title container in page_info container
