@@ -1,7 +1,14 @@
+// Single views inner container
+$page-inner: 875px;
+.page_inner{
+	max-width:$page-inner;
+	margin:0 auto;
+}
+
 $font-family-primary:"BentonSans-Regular";
 $font-family-bold:"BentonSans-Bold";
 
-
+$main-color:#273753;
 $header-menu:#273753;
 $footer-menu:#616c81;
 $header-shadow:#a2a2a2;

@@ -1,6 +1,8 @@
 body{
  overflow-x:hidden;
  font-family:$font-family-primary;
+ color:$main-color;
+ font-size:20px;
 }
 
 header.navbar-default{
@@ -40,5 +42,11 @@ header.navbar-default{
 .field-name-field-weitere-details,.field-name-field-zur-website{
   float:left;
   width:50%;
+}
+
+// Page title
+.page-title{
+	margin:25px 0 30px;
+	font-size:44px;
 }
 
