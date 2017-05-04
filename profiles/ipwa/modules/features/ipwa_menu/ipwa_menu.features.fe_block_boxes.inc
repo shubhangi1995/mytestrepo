@@ -72,7 +72,7 @@ function ipwa_menu_default_fe_block_boxes() {
 	<li>
 	<p><a href="http://ipwa.dd:8083/aktuelles?type=publikation">Publikation</a></p>
 	</li>
-	<li>
+	<li class="ubersicht">
 	<p><a href="taxonomy/term/1">Übersicht</a></p>
 	</li>
 </ul>
@@ -94,7 +94,7 @@ function ipwa_menu_default_fe_block_boxes() {
 	<li>
 	<p><a href="/aktuelles?type=publikation">Publikation</a></p>
 	</li>
-	<li>
+	<li class="ubersicht">
 	<p><a href="taxonomy/term/11">Übersicht</a></p>
 	</li>
 </ul>

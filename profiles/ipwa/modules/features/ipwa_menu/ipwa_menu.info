@@ -19,5 +19,6 @@ features[fe_block_settings][] = block-politik_gesellschaft_left_block
 features[fe_block_settings][] = block-wirtschaft_arbeit_left_block
 features[fe_block_settings][] = menu-menu-footer-navigation
 features[features_api][] = api:2
+features[menu_custom][] = main-menu
 features[menu_custom][] = menu-footer-navigation
 features[menu_custom][] = menu-meta-navigation
