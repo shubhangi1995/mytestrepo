@@ -6,7 +6,8 @@
 
             .panel-2col {
                 @extend .container;
-                background: $header-menu;
+
+                background: $main-color;
                 padding: 30px;
             }
 
@@ -92,19 +93,16 @@
 
         //-----------------------------//
 
-        
+        .view-neueste-informationen {
+            background: $color-light-blue;
 
-            .view-neueste-informationen {
-                background:$color-light-blue;
-
-				.view-sub-wrapper{
-				position: relative;
+            .view-sub-wrapper {
+                position: relative;
                 padding: 30px 0;
 
                 @extend .container;
-				
+
                 .view-header {
-                    color: $header-menu;
                     padding-bottom: 20px;
                 }
 
@@ -140,7 +138,7 @@
                             .views-field-title {
                                 a {
                                     text-decoration: none;
-                                    color: $header-menu;
+                                    color: $main-color;
                                 }
                             }
 
@@ -165,7 +163,7 @@
 
                         a {
                             text-decoration: none;
-                            color: $header-menu;
+                            color: $main-color;
                             font-size: 20px;
                             padding-right: 15px;
                             padding-left: 25px;
@@ -188,99 +186,98 @@
 
         //-------------------------------------//
         .view-termin {
-            background: $header-menu;
+            background: $main-color;
 
-			.view-sub-wrapper{
-            @extend .container;
+            .view-sub-wrapper {
+                @extend .container;
 
-            padding: 60px 0;
-            
-            position: relative;
-
-            .view-header {
-                h2 {
-                    color: $color-white;
-                    padding-bottom: 40px;
-                }
-            }
-
-            .view-content {
-                margin-left: -15px;
-                margin-right: -15px;
-
-                .views-row {
-                    @extend .col-md-4;
-
-                    position: relative;
-
-                    .row-container {
-                        background: $color-white;
-                        padding: 30px;
-                        height: 300px;
-
-                        .views-field-field-themenzuweisung {
-                            padding-bottom: 10px;
-
-                            img {
-                                display: inline-block;
-                                margin-right: 10px;
-                            }
-                        }
-
-                        .views-field-field-event-datum {
-                            .date-display-range span {
-                                color: $active-menu;
-                                font-size: 22px;
-                            }
-                        }
-
-                        .views-field-title {
-                            a {
-                                text-decoration: none;
-                                font-size: 22px;
-                                color: $header-menu;
-                            }
-                        }
-
-                        .views-field-field-ort {
-                            .field-content {
-                                position: absolute;
-                                bottom: 30px;
-                                font-size: 20px;
-                                color: $header-menu;
-                            }
-                        }
-                    }
-                }
-            }
-
-            .view-footer {
-                clear: both;
+                padding: 60px 0;
                 position: relative;
-                padding-top: 30px;
 
-                .link-outer-block .link-inner-block-1 {
-                    a {
-                        text-decoration: none;
-                        font-size: 20px;
-                        padding-right: 15px;
+                .view-header {
+                    h2 {
                         color: $color-white;
-                        padding-left: 25px;
+                        padding-bottom: 40px;
+                    }
+                }
 
-                        &:before {
-                            @extend .material-icons;
+                .view-content {
+                    margin-left: -15px;
+                    margin-right: -15px;
 
-                            content: "arrow_forward";
-                            color: $active-menu;
-                            position: absolute;
-                            top: 4px;
-                            left: 0;
-                            padding-top: 30px;
+                    .views-row {
+                        @extend .col-md-4;
+
+                        position: relative;
+
+                        .row-container {
+                            background: $color-white;
+                            padding: 30px;
+                            height: 300px;
+
+                            .views-field-field-themenzuweisung {
+                                padding-bottom: 10px;
+
+                                img {
+                                    display: inline-block;
+                                    margin-right: 10px;
+                                }
+                            }
+
+                            .views-field-field-event-datum {
+                                .date-display-range span {
+                                    color: $active-menu;
+                                    font-size: 22px;
+                                }
+                            }
+
+                            .views-field-title {
+                                a {
+                                    text-decoration: none;
+                                    font-size: 22px;
+                                    color: $main-color;
+                                }
+                            }
+
+                            .views-field-field-ort {
+                                .field-content {
+                                    position: absolute;
+                                    bottom: 30px;
+                                    font-size: 20px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .view-footer {
+                    clear: both;
+                    position: relative;
+                    padding-top: 30px;
+
+                    .link-outer-block .link-inner-block-1 {
+                        a {
+                            text-decoration: none;
+                            font-size: 20px;
+                            padding-right: 15px;
+                            color: $color-white;
+                            padding-left: 25px;
+
+                            &:before {
+                                @extend .material-icons;
+
+                                content: "arrow_forward";
+                                color: $active-menu;
+                                position: absolute;
+                                top: 4px;
+                                left: 0;
+                                padding-top: 30px;
+                            }
                         }
                     }
                 }
             }
-       } }
+        }
     }
 }
 
@@ -329,7 +326,7 @@
                             .field-name-field-quellenangabe {
                                 a {
                                     font-size: 20px;
-                                    color: $header-menu;
+                                    color: $main-color;
                                     text-decoration: none;
                                     position: absolute;
                                     bottom: 30px;
@@ -349,7 +346,7 @@
 
                             .field-name-field-flie-text-bereich .field-item p {
                                 font-size: 20px;
-                                color: $header-menu;
+                                color: $main-color;
                             }
                         }
                     }

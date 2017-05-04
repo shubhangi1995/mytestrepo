@@ -1,20 +1,21 @@
-footer{
-#block-menu-menu-footer-navigation{
-  ul li{
-    display:inline-block;
-	 a{
-	   color:$header-menu;
-	   padding-left:0;
-	   font-size:18px;
-	   
-	   
-	   &:hover, &:focus{
-	     background:none;
-		 outline:none;
-		 outline-offset:none;
-	   }
-	 }
-	 .open {
+footer {
+    #block-menu-menu-footer-navigation {
+        ul li {
+            display: inline-block;
+
+            a {
+                color: $main-color;
+                padding-left: 0;
+                font-size: 18px;
+
+                &:hover, &:focus {
+                    background: none;
+                    outline: none;
+                    outline-offset: none;
+                }
+            }
+
+            .open {
                 a {
                     background: none;
                     border: none;
@@ -25,14 +26,11 @@ footer{
                     }
                 }
             }
-  }
+        }
+    }
 
-}
-
-
-.footer-copyright{
-font-size:18px;
-color:$header-menu;
-
-}
+    .footer-copyright {
+        font-size: 18px;
+        color: $main-color;
+    }
 }

@@ -1,135 +1,140 @@
 .page-taxonomy-term {
-   background:$color-light-blue;
-   
-   .view-title{
-       @extend .container;
-	   padding:0;
-	   font-size:20px;
-	   font-weight:normal;
-	   margin:0 auto;
-   }
-   .group-page-info{
-       @extend .container;
-	   padding:0;
-   .field-name-field-bild{
-     width:30%;
-	 float:left;
-	 
-   
-   }
-   
-   .themenzuweisung-right-block{
-    float:left;
-	width:70%;
-	
-	.page-header{
-	  border-bottom:none;
-	  margin:0;
-	  
-	}
-	.field-name-field-untertitel{
-	.field-items {
-	 color:$active-menu;
-	}
-	}
-   
-   }
-}
-    .view-alles-zum-thema {
-	
-	.view-sub-wrapper{
-		@extend .container;
-		padding:0;
-		
-        .view-filters {
-            .views-submit-button {
-                display: none;
+    background: $color-light-blue;
+
+    .view-title {
+        @extend .container;
+
+        padding: 0;
+        font-size: 20px;
+        font-weight: normal;
+        margin: 0 auto;
+    }
+
+    .group-page-info {
+        @extend .container;
+
+        padding: 0;
+
+        .field-name-field-bild {
+            width: 30%;
+            float: left;
+        }
+
+        .themenzuweisung-right-block {
+            float: left;
+            width: 70%;
+
+            .page-header {
+                border-bottom: none;
+                margin: 0;
             }
 
-            .views-exposed-form .views-exposed-widgets .views-widget-sort-by {
-			float:right;
-			padding:30px 0;
-			
-			.bef-select-as-links .form-type-bef-link {
-                display: inline-block;
-                font-size: 20px;
-                padding-left: 15px;
+            .field-name-field-untertitel {
+                .field-items {
+                    color: $active-menu;
+                }
+            }
+        }
+    }
 
-                a {
-                    color: $header-menu;
-                    text-decoration: none;
+    .view-alles-zum-thema {
+        .view-sub-wrapper {
+            @extend .container;
 
-                    &.active {
-                        border-bottom: 2px solid $active-menu;
+            padding: 0;
+
+            .view-filters {
+                .views-submit-button {
+                    display: none;
+                }
+
+                .views-exposed-form .views-exposed-widgets .views-widget-sort-by {
+                    float: right;
+                    padding: 30px 0;
+
+                    .bef-select-as-links .form-type-bef-link {
+                        display: inline-block;
+                        font-size: 20px;
+                        padding-left: 15px;
+
+                        a {
+                            color: $main-color;
+                            text-decoration: none;
+
+                            &.active {
+                                border-bottom: 2px solid $active-menu;
+                            }
+                        }
                     }
                 }
             }
-        }}
 
-        .view-content {
-            margin-left: -15px;
-            margin-right: -15px;
+            .view-content {
+                margin-left: -15px;
+                margin-right: -15px;
 
-            .views-row {
-                @extend .col-md-4;
+                .views-row {
+                    @extend .col-md-4;
 
-                .row-container {
-                    background: $color-white;
-                    padding: 25px;
-                    height: 350px;
-                    margin-bottom: 30px;
-                    position: relative;
+                    .row-container {
+                        background: $color-white;
+                        padding: 25px;
+                        height: 350px;
+                        margin-bottom: 30px;
+                        position: relative;
 
-                    &.project-blue {
-                        background: $header-menu;
+                        &.project-blue {
+                            background: $main-color;
+
+                            .views-field-title {
+                                a {
+                                    color: $color-white;
+                                }
+                            }
+
+                            .views-field-views-conditional {
+                                .date-display-single {
+                                    color: $color-white;
+                                }
+                            }
+                        }
+
+                        .views-field-field-themenzuweisung {
+                            margin-bottom: 10px;
+
+                            img {
+                                display: inline-block;
+                                margin-right: 10px;
+                            }
+                        }
+
+                        .views-field-type {
+                            .field-content {
+                                color: $active-menu;
+                                font-size: 22px;
+                            }
+                        }
 
                         .views-field-title {
                             a {
-                                color: $color-white;
+                                text-decoration: none;
+                                color: $main-color;
+                                font-size: 22px;
                             }
                         }
 
                         .views-field-views-conditional {
+                            position: absolute;
+                            bottom: 30px;
+
                             .date-display-single {
-                                color: $color-white;
+                                font-size: 17px;
+                                color: $color-light-grey;
                             }
-                        }
-                    }
-
-					.views-field-field-themenzuweisung{
-					  margin-bottom:10px;
-					  img{
-					    display:inline-block;
-						margin-right:10px;
-					  }
-					}
-					
-                    .views-field-type {
-                        .field-content {
-                            color: $active-menu;
-                            font-size: 22px;
-                        }
-                    }
-
-                    .views-field-title {
-                        a {
-                            text-decoration: none;
-                            color: $header-menu;
-                            font-size: 22px;
-                        }
-                    }
-
-                    .views-field-views-conditional {
-                        position: absolute;
-                        bottom: 30px;
-
-                        .date-display-single {
-                            font-size: 17px;
-                            color: $color-light-grey;
                         }
                     }
                 }
             }
         }
-    }}
+    }
 }

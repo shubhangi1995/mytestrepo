@@ -74,7 +74,7 @@ header.navbar-default {
                 @extend .material-icons;
 
                 content: "keyboard_arrow_left";
-                color: $header-menu;
+                color: $main-color;
                 position: absolute;
                 font-size: 26px;
                 top: 13px;
@@ -90,7 +90,7 @@ header.navbar-default {
                 @extend .material-icons;
 
                 content: "keyboard_arrow_right";
-                color: $header-menu;
+                color: $main-color;
                 position: absolute;
                 font-size: 26px;
                 top: 13px;
@@ -100,11 +100,11 @@ header.navbar-default {
 
         > li > span {
             border: none;
-            color: $header-menu;
+            color: $main-color;
         }
 
         > li > a {
-            color: $header-menu;
+            color: $main-color;
             background: none;
             border: none;
             font-size: 26px;
@@ -130,21 +130,23 @@ header.navbar-default {
 //breadcrumb
 
 .breadcrumb {
-@extend .container;
+    @extend .container;
+
     padding: 0;
     margin-bottom: 20px;
     list-style: none;
     background: none;
     border-radius: 0;
+
     li a {
         text-decoration: none;
-        color: $header-menu;
+        color: $main-color;
         font-size: 18px;
         border-bottom: 2px solid $color-light-grey;
     }
 
     li.active {
         border-bottom: 2px solid $active-menu;
-		color:$header-menu;
+        color: $main-color;
     }
 }

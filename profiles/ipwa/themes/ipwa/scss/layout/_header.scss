@@ -6,286 +6,284 @@ header {
         -moz-box-shadow: 0px 28px 38px 2px rgba(162, 162, 162, 0.65);
         box-shadow: 0px 28px 38px 2px rgba(162, 162, 162, 0.65);
     }
-.container{
-padding:0;
-	
-	
-    .navbar-header {
-        .navbar-brand {
-            display: none;
-        }
-    }
 
-    .nrw-eu-logo {
-        a {
-            margin-top: 8px;
-            margin-bottom: 8px;
-            float: left;
-            padding-left: 25px;
-        }
-    }
-
-    .navbar-collapse {
+    .container {
         padding: 0;
 
-        ul.navbar-nav {
-            float: right;
-
-            li {
-                &.active {
-                    a, a:hover, a:focus, a:active {
-                        background: none;
-                        color: $active-menu;
-                    }
-                }
-
-                &.open {
-                    > a {
-                        background: none;
-                        color: $active-menu;
-
-                        &:hover, &:focus {
-                            background: none;
-                        }
-                    }
-                }
-
-                a {
-                    color: $header-menu;
-                    font-size: 18px;
-
-                    &:hover, &:focus {
-                        background: none;
-                        border: none;
-                    }
-                }
+        .navbar-header {
+            .navbar-brand {
+                display: none;
             }
         }
 
-        .region-navigation {
-            width: 100%;
-            clear: both;
-            padding-top: 30px;
+        .nrw-eu-logo {
+            a {
+                margin-top: 8px;
+                margin-bottom: 8px;
+                float: left;
+                padding-left: 25px;
+            }
+        }
 
-            .tb-megamenu {
-                background: none;
-                position: static;
+        .navbar-collapse {
+            padding: 0;
 
-                ul.tb-megamenu-nav li {
-                    width: 20%;
-                    position: static;
+            ul.navbar-nav {
+                float: right;
 
-                    > a {
-                        color: $header-menu;
-                        border-right: none;
-                        font-size: 20px;
-                        padding: 0;
-                        margin-bottom: 20px;
-                        margin-left: 55px;
-                        position: relative;
-                        width: 60%;
-						font-weight:normal;
-
-                        .caret {
-                            display: none;
-                        }
-
-                        &:before {
-                            content: "";
-                            width: 45px;
-                            height: 45px;
-                            display: inline-block;
-                            float: left;
-                            margin-top: 5px;
-                            padding-left: 0;
-                            margin-right: 10px;
-                            left: -55px;
-                            position: absolute;
+                li {
+                    &.active {
+                        a, a:hover, a:focus, a:active {
+                            background: none;
+                            color: $active-menu;
                         }
                     }
 
-                    &.menu-politik > a {
-                        &:before {
-                            background: url("../images/politik.png") no-repeat;
+                    &.open {
+                        > a {
+                            background: none;
+                            color: $active-menu;
+
+                            &:hover, &:focus {
+                                background: none;
+                            }
                         }
                     }
 
-                    &.menu-wirtschaft > a {
-                        &:before {
-                            background: url("../images/wirtschft.png") no-repeat;
-                        }
-                    }
-
-                    &.menu-unternehmen > a {
-                        &:before {
-                            background: url("../images/infos.png") no-repeat;
-                        }
-                    }
-
-                    &.menu-beschaftigte > a {
-                        &:before {
-                            background: url("../images/Bescha.png") no-repeat;
-                        }
-                    }
-
-                    &.menu-schaufenster > a {
-                        &:before {
-                            background: url("../images/Digitales.png") no-repeat;
-                        }
-                    }
-
-                    &.open > a {
-                        background: none;
-                        border: none;
-                        color: $active-menu;
+                    a {
+                        color: $main-color;
+                        font-size: 18px;
 
                         &:hover, &:focus {
                             background: none;
                             border: none;
-                            color: $active-menu;
-                        }
-
-                        &:before {
-                            content: "";
-                            width: 45px;
-                            height: 45px;
-                            display: inline-block;
-                            float: left;
-                            margin-top: 5px;
                         }
                     }
+                }
+            }
 
-                    &.open.menu-politik > a {
-                        &:before {
-                            background: url("../images/politik-active.png") no-repeat;
-                        }
-                    }
+            .region-navigation {
+                width: 100%;
+                clear: both;
+                padding-top: 30px;
 
-                    &.open.menu-wirtschaft > a {
-                        &:before {
-                            background: url("../images/wirtschft-active.png") no-repeat;
-                        }
-                    }
+                .tb-megamenu {
+                    background: none;
+                    position: static;
 
-                    &.open.menu-unternehmen > a {
-                        &:before {
-                            background: url("../images/infos-active.png") no-repeat;
-                        }
-                    }
+                    ul.tb-megamenu-nav li {
+                        width: 20%;
+                        position: static;
 
-                    &.open.menu-beschaftigte > a {
-                        &:before {
-                            background: url("../images/Bescha-active.png") no-repeat;
-                        }
-                    }
+                        > a {
+                            color: $main-color;
+                            border-right: none;
+                            font-size: 20px;
+                            padding: 0;
+                            margin-bottom: 20px;
+                            margin-left: 55px;
+                            position: relative;
+                            width: 60%;
+                            font-weight: normal;
 
-                    &.open.menu-schaufenster > a {
-                        &:before {
-                            background: url("../images/Digitales-active.png") no-repeat;
-                        }
-                    }
-
-                    &.active > a {
-                        background: none;
-                        color: $active-menu;
-                        padding-bottom: 0;
-                        border-bottom: 2px solid $active-menu;
-
-                        &:before {
-                            background: url("../images/Digitales-active.png") no-repeat;
-                            content: "";
-                            width: 45px;
-                            height: 45px;
-                            display: inline-block;
-                            float: left;
-                            margin-top: 5px;
-                        }
-                    }
-
-                    &.dropdown.open > a {
-                        border-bottom: 2px solid $active-menu;
-                    }
-
-                    .dropdown-menu {
-                        background-color: $header-dropdown-menu;
-                        border: none;
-                        width: 100%;
-                        padding-top: 40px;
-                        padding-bottom: 40px;
-						
-
-                        a {
-                            color: $color-white;
-                            text-decoration: none;
-                        }
-
-                        .block-title {
-                            color: $color-white;
-							
-                        }
-
-                        .view-themenzuweisung-flyouts {
-                            .view-header {
-                                color: $color-white;
-                                font-size: 18px;
+                            .caret {
+                                display: none;
                             }
 
-                            .view-content .views-row {
+                            &:before {
+                                content: "";
+                                width: 45px;
+                                height: 45px;
                                 display: inline-block;
-                                padding: 5px;
-
-                                a {
-                                    background: $header-menu;
-                                    font-size: 16px;
-                                    padding: 10px;
-									
-									&:hover{
-									 background:$active-menu;
-									}
-                                }
+                                float: left;
+                                margin-top: 5px;
+                                padding-left: 0;
+                                margin-right: 10px;
+                                left: -55px;
+                                position: absolute;
                             }
                         }
 
-                        .mega-dropdown-inner {
-                            width: 1170px;
-                            margin: 0 auto;
+                        &.menu-politik > a {
+                            &:before {
+                                background: url("../images/politik.png") no-repeat;
+                            }
+                        }
 
-                            .tb-submenu-left {
-                                width: 30%;
+                        &.menu-wirtschaft > a {
+                            &:before {
+                                background: url("../images/wirtschft.png") no-repeat;
+                            }
+                        }
+
+                        &.menu-unternehmen > a {
+                            &:before {
+                                background: url("../images/infos.png") no-repeat;
+                            }
+                        }
+
+                        &.menu-beschaftigte > a {
+                            &:before {
+                                background: url("../images/Bescha.png") no-repeat;
+                            }
+                        }
+
+                        &.menu-schaufenster > a {
+                            &:before {
+                                background: url("../images/Digitales.png") no-repeat;
+                            }
+                        }
+
+                        &.open > a {
+                            background: none;
+                            border: none;
+                            color: $active-menu;
+
+                            &:hover, &:focus {
+                                background: none;
+                                border: none;
+                                color: $active-menu;
+                            }
+
+                            &:before {
+                                content: "";
+                                width: 45px;
+                                height: 45px;
+                                display: inline-block;
                                 float: left;
-                            
-							.block-title{
-							   font-size:18px;
-							   font-weight:normal;
-							   text-transform:capitalize;
-							}
-							
-                                a {
-                                    font-size: 16px;
-									position:relative;
-									padding-left:25px;
-									 &:before {
-                        @extend .material-icons;
+                                margin-top: 5px;
+                            }
+                        }
 
-                        content: "arrow_forward";
-                        color: $active-menu;
-                        position: absolute;
-                        
-                        left: 0;
-                        
-                    }
+                        &.open.menu-politik > a {
+                            &:before {
+                                background: url("../images/politik-active.png") no-repeat;
+                            }
+                        }
+
+                        &.open.menu-wirtschaft > a {
+                            &:before {
+                                background: url("../images/wirtschft-active.png") no-repeat;
+                            }
+                        }
+
+                        &.open.menu-unternehmen > a {
+                            &:before {
+                                background: url("../images/infos-active.png") no-repeat;
+                            }
+                        }
+
+                        &.open.menu-beschaftigte > a {
+                            &:before {
+                                background: url("../images/Bescha-active.png") no-repeat;
+                            }
+                        }
+
+                        &.open.menu-schaufenster > a {
+                            &:before {
+                                background: url("../images/Digitales-active.png") no-repeat;
+                            }
+                        }
+
+                        &.active > a {
+                            background: none;
+                            color: $active-menu;
+                            padding-bottom: 0;
+                            border-bottom: 2px solid $active-menu;
+
+                            &:before {
+                                background: url("../images/Digitales-active.png") no-repeat;
+                                content: "";
+                                width: 45px;
+                                height: 45px;
+                                display: inline-block;
+                                float: left;
+                                margin-top: 5px;
+                            }
+                        }
+
+                        &.dropdown.open > a {
+                            border-bottom: 2px solid $active-menu;
+                        }
+
+                        .dropdown-menu {
+                            background-color: $header-dropdown-menu;
+                            border: none;
+                            width: 100%;
+                            padding-top: 40px;
+                            padding-bottom: 40px;
+
+                            a {
+                                color: $color-white;
+                                text-decoration: none;
+                            }
+
+                            .block-title {
+                                color: $color-white;
+                            }
+
+                            .view-themenzuweisung-flyouts {
+                                .view-header {
+                                    color: $color-white;
+                                    font-size: 18px;
+                                }
+
+                                .view-content .views-row {
+                                    display: inline-block;
+                                    padding: 5px;
+
+                                    a {
+                                        background: $main-color;
+                                        font-size: 16px;
+                                        padding: 10px;
+
+                                        &:hover {
+                                            background: $active-menu;
+                                        }
+                                    }
                                 }
                             }
 
-                            .tb-submenu-right {
-                                width: 70%;
-                                float: left;
-                                margin: 0;
+                            .mega-dropdown-inner {
+                                width: 1170px;
+                                margin: 0 auto;
+
+                                .tb-submenu-left {
+                                    width: 30%;
+                                    float: left;
+
+                                    .block-title {
+                                        font-size: 18px;
+                                        font-weight: normal;
+                                        text-transform: capitalize;
+                                    }
+
+                                    a {
+                                        font-size: 16px;
+                                        position: relative;
+                                        padding-left: 25px;
+
+                                        &:before {
+                                            @extend .material-icons;
+
+                                            content: "arrow_forward";
+                                            color: $active-menu;
+                                            position: absolute;
+                                            left: 0;
+                                        }
+                                    }
+                                }
+
+                                .tb-submenu-right {
+                                    width: 70%;
+                                    float: left;
+                                    margin: 0;
+                                }
                             }
                         }
                     }
                 }
             }
         }
-    }}
+    }
 }

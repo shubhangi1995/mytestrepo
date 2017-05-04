@@ -1,39 +1,39 @@
 .field-name-field-themenzuweisung {
     //padding-top: 20px;
     //padding-bottom: 40px;
-	display: inline-block;
-	margin: 60px 0 40px;
-	width: 100%;
+    display: inline-block;
+    margin: 60px 0 40px;
+    width: 100%;
 
     .field-label {
-        font-size: 20px;
         color: $active-menu;
-		font-weight:normal;
-		margin-bottom:15px;
+        font-weight: normal;
+        margin-bottom: 15px;
     }
 
     .field-items .field-item {
         @extend .col-md-4;
-		padding-right:45px;
-		&:last-child{
-			padding-right:0;
-		}
+
+        padding-right: 45px;
+
+        &:last-child {
+            padding-right: 0;
+        }
 
         padding-left: 0;
 
         a {
-            // font-size: 20px;
             text-decoration: none;
-            color: $header-menu;
-			border-bottom:1px solid $single-border-color;
-			padding-bottom:5px;
+            border-bottom: 1px solid $single-border-color;
+            padding-bottom: 5px;
         }
-		img{
-			display:inline-block;
-			width:33px;
-			height:33px;
-			margin-right:10px;
-		}
+
+        img {
+            display: inline-block;
+            width: 33px;
+            height: 33px;
+            margin-right: 10px;
+        }
     }
 }
 
@@ -46,9 +46,8 @@
     clear: both;
 
     .field-label {
-        font-size: 20px;
         color: $active-menu;
-		font-weight:normal;
+        font-weight: normal;
     }
 
     .field-items {
@@ -67,7 +66,6 @@
 
 //------------Aktuelles------------//
 .page-aktuelles {
-    font-family: $font-family-primary;
     background: $color-light-blue;
 
     .page-header {
@@ -95,7 +93,6 @@
                     .form-item {
                         display: inline-block;
                         padding-right: 50px;
-                        font-size: 20px;
 
                         label {
                             padding-left: 0;
@@ -118,14 +115,13 @@
                         width: 25%;
                         float: left;
                         padding: 10px 0;
-                        background: $header-menu;
+                        background: $main-color;
                         border-right: 1px solid $color-light-grey;
 
                         .select2-container--default .select2-selection--single {
                             background: 0;
                             border: 0;
                             border-radius: 0;
-                            font-size: 20px;
 
                             &:before {
                                 content: "\f107";
@@ -153,11 +149,9 @@
 
                     .bef-select-as-links .form-type-bef-link {
                         display: inline-block;
-                        font-size: 20px;
                         padding-left: 15px;
 
                         a {
-                            color: $header-menu;
                             text-decoration: none;
 
                             &.active {
@@ -175,7 +169,6 @@
 
         .attachment-before .view-result-count {
             margin-top: -88px;
-            font-size: 20px;
             padding: 30px 0;
         }
 
@@ -211,7 +204,7 @@
                     .views-field-title {
                         a {
                             text-decoration: none;
-                            color: $header-menu;
+                            color: $main-color;
                         }
                     }
 
@@ -241,7 +234,7 @@
                 .views-row {
                     @extend .col-md-8;
 
-                    background: $header-menu;
+                    background: $main-color;
                     padding: 40px;
 
                     .views-field-field-bild img {
@@ -255,12 +248,10 @@
 
                     .views-field-field-flie-text-bereich {
                         color: $color-white;
-                        font-size: 20px;
                     }
 
                     .views-field-field-quellenangabe a {
                         color: $color-white;
-                        font-size: 20px;
                     }
                 }
             }
@@ -279,7 +270,6 @@
             .views-field-views-conditional {
                 a {
                     text-decoration: none;
-                    font-size: 20px;
                 }
             }
 
@@ -304,9 +294,8 @@
         }
 
         .field-items a.external-link {
-            font-size: 20px;
             text-decoration: none;
-            color: $header-menu;
+            color: $main-color;
         }
     }
 }
@@ -327,9 +316,7 @@
         font-size: 22px;
     }
 
-    .field-name-body {
-        font-size: 20px;
-    }
+    .field-name-body {}
 
     .view-alle-themen-teaser {
         background: $color-light-blue;
@@ -342,15 +329,14 @@
                 margin-right: -15px;
 
                 .term-title {
-                    color: $header-menu;
+                    color: $main-color;
                     font-size: 28px;
                     padding-bottom: 40px;
                     padding-top: 40px;
                 }
 
                 p {
-                    color: $header-menu;
-                    font-size: 20px;
+                    color: $main-color;
                 }
 
                 .views-row {
@@ -359,7 +345,7 @@
                     padding: 10px;
 
                     .views-field-name a {
-                        background: $header-menu;
+                        background: $main-color;
                         text-decoration: none;
                         padding: 10px;
                         font-size: 18px;
@@ -376,8 +362,7 @@
 
                 a {
                     text-decoration: none;
-                    color: $header-menu;
-                    font-size: 20px;
+                    color: $main-color;
                     position: relative;
                     padding-left: 30px;
 
@@ -422,7 +407,7 @@
                 @extend .col-md-4;
 
                 .row-container {
-                    background: $header-menu;
+                    background: $main-color;
                     padding: 25px;
                     height: 350px;
 
@@ -480,12 +465,12 @@
 
 // Article single view
 
-.node-type-article{
-	background-color:$color-light-blue;
+.node-type-article {
+    background-color: $color-light-blue;
 }
 
-.group-page-info{
-	@extend .page_inner;
-	padding:30px 0;
-}
+.group-page-info {
+    @extend .page_inner;
 
+    padding: 30px 0;
+}

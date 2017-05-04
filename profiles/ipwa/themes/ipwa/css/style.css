@@ -6169,7 +6169,7 @@ header.navbar-default {
   -webkit-box-shadow: 0px 28px 38px 2px rgba(162, 162, 162, 0.65);
   -moz-box-shadow: 0px 28px 38px 2px rgba(162, 162, 162, 0.65);
   box-shadow: 0px 28px 38px 2px rgba(162, 162, 162, 0.65); }
-/* line 9, ../scss/layout/_header.scss */
+/* line 10, ../scss/layout/_header.scss */
 header .container, header .front .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col, .front .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode header .panel-2col, header .front .field-name-field-anzuzeigende-seitenmodule .view-neueste-informationen .view-sub-wrapper, .front .field-name-field-anzuzeigende-seitenmodule .view-neueste-informationen header .view-sub-wrapper, header .front .field-name-field-anzuzeigende-seitenmodule .view-termin .view-sub-wrapper, .front .field-name-field-anzuzeigende-seitenmodule .view-termin header .view-sub-wrapper, header .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser, .paragraphs-item-topic-teaser-paragraph .field-collection-container header .field-name-field-topic-teaser, header .breadcrumb, header .page-aktuelles .view-aktuelles, .page-aktuelles header .view-aktuelles, header .node-type-protagonist .node-protagonist, .node-type-protagonist header .node-protagonist, header .not-front .node-doorpage .view-alle-themen-teaser .view-sub-wrapper, .not-front .node-doorpage .view-alle-themen-teaser header .view-sub-wrapper, header .view-neueste-digital-projekte .view-sub-wrapper, .view-neueste-digital-projekte header .view-sub-wrapper, header .page-taxonomy-term .view-title, .page-taxonomy-term header .view-title, header .page-taxonomy-term .group-page-info, .page-taxonomy-term header .group-page-info, header .page-taxonomy-term .view-alles-zum-thema .view-sub-wrapper, .page-taxonomy-term .view-alles-zum-thema header .view-sub-wrapper {
   padding: 0; }
   /* line 14, ../scss/layout/_header.scss */
@@ -6318,54 +6318,54 @@ header .container, header .front .field-name-field-anzuzeigende-seitenmodule .pa
             width: 100%;
             padding-top: 40px;
             padding-bottom: 40px; }
-            /* line 217, ../scss/layout/_header.scss */
+            /* line 216, ../scss/layout/_header.scss */
             header .container .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu a, header .front .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu a, .front .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode header .panel-2col .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu a, header .front .field-name-field-anzuzeigende-seitenmodule .view-neueste-informationen .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu a, .front .field-name-field-anzuzeigende-seitenmodule .view-neueste-informationen header .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu a, header .front .field-name-field-anzuzeigende-seitenmodule .view-termin .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu a, .front .field-name-field-anzuzeigende-seitenmodule .view-termin header .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu a, header .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu a, .paragraphs-item-topic-teaser-paragraph .field-collection-container header .field-name-field-topic-teaser .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu a, header .breadcrumb .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu a, header .page-aktuelles .view-aktuelles .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu a, .page-aktuelles header .view-aktuelles .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu a, header .node-type-protagonist .node-protagonist .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu a, .node-type-protagonist header .node-protagonist .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu a, header .not-front .node-doorpage .view-alle-themen-teaser .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu a, .not-front .node-doorpage .view-alle-themen-teaser header .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu a, header .view-neueste-digital-projekte .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu a, .view-neueste-digital-projekte header .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu a, header .page-taxonomy-term .view-title .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu a, .page-taxonomy-term header .view-title .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu a, header .page-taxonomy-term .group-page-info .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu a, .page-taxonomy-term header .group-page-info .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu a, header .page-taxonomy-term .view-alles-zum-thema .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu a, .page-taxonomy-term .view-alles-zum-thema header .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu a {
               color: #ffffff;
               text-decoration: none; }
-            /* line 222, ../scss/layout/_header.scss */
+            /* line 221, ../scss/layout/_header.scss */
             header .container .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .block-title, header .front .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .block-title, .front .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode header .panel-2col .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .block-title, header .front .field-name-field-anzuzeigende-seitenmodule .view-neueste-informationen .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .block-title, .front .field-name-field-anzuzeigende-seitenmodule .view-neueste-informationen header .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .block-title, header .front .field-name-field-anzuzeigende-seitenmodule .view-termin .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .block-title, .front .field-name-field-anzuzeigende-seitenmodule .view-termin header .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .block-title, header .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .block-title, .paragraphs-item-topic-teaser-paragraph .field-collection-container header .field-name-field-topic-teaser .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .block-title, header .breadcrumb .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .block-title, header .page-aktuelles .view-aktuelles .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .block-title, .page-aktuelles header .view-aktuelles .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .block-title, header .node-type-protagonist .node-protagonist .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .block-title, .node-type-protagonist header .node-protagonist .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .block-title, header .not-front .node-doorpage .view-alle-themen-teaser .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .block-title, .not-front .node-doorpage .view-alle-themen-teaser header .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .block-title, header .view-neueste-digital-projekte .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .block-title, .view-neueste-digital-projekte header .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .block-title, header .page-taxonomy-term .view-title .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .block-title, .page-taxonomy-term header .view-title .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .block-title, header .page-taxonomy-term .group-page-info .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .block-title, .page-taxonomy-term header .group-page-info .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .block-title, header .page-taxonomy-term .view-alles-zum-thema .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .block-title, .page-taxonomy-term .view-alles-zum-thema header .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .block-title {
               color: #ffffff; }
-            /* line 228, ../scss/layout/_header.scss */
+            /* line 226, ../scss/layout/_header.scss */
             header .container .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-header, header .front .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-header, .front .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode header .panel-2col .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-header, header .front .field-name-field-anzuzeigende-seitenmodule .view-neueste-informationen .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-header, .front .field-name-field-anzuzeigende-seitenmodule .view-neueste-informationen header .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-header, header .front .field-name-field-anzuzeigende-seitenmodule .view-termin .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-header, .front .field-name-field-anzuzeigende-seitenmodule .view-termin header .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-header, header .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-header, .paragraphs-item-topic-teaser-paragraph .field-collection-container header .field-name-field-topic-teaser .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-header, header .breadcrumb .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-header, header .page-aktuelles .view-aktuelles .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-header, .page-aktuelles header .view-aktuelles .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-header, header .node-type-protagonist .node-protagonist .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-header, .node-type-protagonist header .node-protagonist .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-header, header .not-front .node-doorpage .view-alle-themen-teaser .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-header, .not-front .node-doorpage .view-alle-themen-teaser header .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-header, header .view-neueste-digital-projekte .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-header, .view-neueste-digital-projekte header .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-header, header .page-taxonomy-term .view-title .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-header, .page-taxonomy-term header .view-title .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-header, header .page-taxonomy-term .group-page-info .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-header, .page-taxonomy-term header .group-page-info .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-header, header .page-taxonomy-term .view-alles-zum-thema .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-header, .page-taxonomy-term .view-alles-zum-thema header .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-header {
               color: #ffffff;
               font-size: 18px; }
-            /* line 233, ../scss/layout/_header.scss */
+            /* line 231, ../scss/layout/_header.scss */
             header .container .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-content .views-row, header .front .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-content .views-row, .front .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode header .panel-2col .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-content .views-row, header .front .field-name-field-anzuzeigende-seitenmodule .view-neueste-informationen .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-content .views-row, .front .field-name-field-anzuzeigende-seitenmodule .view-neueste-informationen header .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-content .views-row, header .front .field-name-field-anzuzeigende-seitenmodule .view-termin .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-content .views-row, .front .field-name-field-anzuzeigende-seitenmodule .view-termin header .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-content .views-row, header .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-content .views-row, .paragraphs-item-topic-teaser-paragraph .field-collection-container header .field-name-field-topic-teaser .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-content .views-row, header .breadcrumb .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-content .views-row, header .page-aktuelles .view-aktuelles .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-content .views-row, .page-aktuelles header .view-aktuelles .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-content .views-row, header .node-type-protagonist .node-protagonist .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-content .views-row, .node-type-protagonist header .node-protagonist .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-content .views-row, header .not-front .node-doorpage .view-alle-themen-teaser .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-content .views-row, .not-front .node-doorpage .view-alle-themen-teaser header .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-content .views-row, header .view-neueste-digital-projekte .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-content .views-row, .view-neueste-digital-projekte header .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-content .views-row, header .page-taxonomy-term .view-title .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-content .views-row, .page-taxonomy-term header .view-title .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-content .views-row, header .page-taxonomy-term .group-page-info .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-content .views-row, .page-taxonomy-term header .group-page-info .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-content .views-row, header .page-taxonomy-term .view-alles-zum-thema .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-content .views-row, .page-taxonomy-term .view-alles-zum-thema header .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-content .views-row {
               display: inline-block;
               padding: 5px; }
-              /* line 237, ../scss/layout/_header.scss */
+              /* line 235, ../scss/layout/_header.scss */
               header .container .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-content .views-row a, header .front .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-content .views-row a, .front .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode header .panel-2col .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-content .views-row a, header .front .field-name-field-anzuzeigende-seitenmodule .view-neueste-informationen .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-content .views-row a, .front .field-name-field-anzuzeigende-seitenmodule .view-neueste-informationen header .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-content .views-row a, header .front .field-name-field-anzuzeigende-seitenmodule .view-termin .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-content .views-row a, .front .field-name-field-anzuzeigende-seitenmodule .view-termin header .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-content .views-row a, header .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-content .views-row a, .paragraphs-item-topic-teaser-paragraph .field-collection-container header .field-name-field-topic-teaser .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-content .views-row a, header .breadcrumb .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-content .views-row a, header .page-aktuelles .view-aktuelles .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-content .views-row a, .page-aktuelles header .view-aktuelles .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-content .views-row a, header .node-type-protagonist .node-protagonist .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-content .views-row a, .node-type-protagonist header .node-protagonist .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-content .views-row a, header .not-front .node-doorpage .view-alle-themen-teaser .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-content .views-row a, .not-front .node-doorpage .view-alle-themen-teaser header .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-content .views-row a, header .view-neueste-digital-projekte .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-content .views-row a, .view-neueste-digital-projekte header .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-content .views-row a, header .page-taxonomy-term .view-title .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-content .views-row a, .page-taxonomy-term header .view-title .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-content .views-row a, header .page-taxonomy-term .group-page-info .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-content .views-row a, .page-taxonomy-term header .group-page-info .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-content .views-row a, header .page-taxonomy-term .view-alles-zum-thema .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-content .views-row a, .page-taxonomy-term .view-alles-zum-thema header .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-content .views-row a {
                 background: #273753;
                 font-size: 16px;
                 padding: 10px; }
-                /* line 242, ../scss/layout/_header.scss */
+                /* line 240, ../scss/layout/_header.scss */
                 header .container .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-content .views-row a:hover, header .front .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-content .views-row a:hover, .front .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode header .panel-2col .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-content .views-row a:hover, header .front .field-name-field-anzuzeigende-seitenmodule .view-neueste-informationen .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-content .views-row a:hover, .front .field-name-field-anzuzeigende-seitenmodule .view-neueste-informationen header .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-content .views-row a:hover, header .front .field-name-field-anzuzeigende-seitenmodule .view-termin .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-content .views-row a:hover, .front .field-name-field-anzuzeigende-seitenmodule .view-termin header .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-content .views-row a:hover, header .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-content .views-row a:hover, .paragraphs-item-topic-teaser-paragraph .field-collection-container header .field-name-field-topic-teaser .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-content .views-row a:hover, header .breadcrumb .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-content .views-row a:hover, header .page-aktuelles .view-aktuelles .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-content .views-row a:hover, .page-aktuelles header .view-aktuelles .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-content .views-row a:hover, header .node-type-protagonist .node-protagonist .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-content .views-row a:hover, .node-type-protagonist header .node-protagonist .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-content .views-row a:hover, header .not-front .node-doorpage .view-alle-themen-teaser .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-content .views-row a:hover, .not-front .node-doorpage .view-alle-themen-teaser header .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-content .views-row a:hover, header .view-neueste-digital-projekte .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-content .views-row a:hover, .view-neueste-digital-projekte header .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-content .views-row a:hover, header .page-taxonomy-term .view-title .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-content .views-row a:hover, .page-taxonomy-term header .view-title .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-content .views-row a:hover, header .page-taxonomy-term .group-page-info .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-content .views-row a:hover, .page-taxonomy-term header .group-page-info .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-content .views-row a:hover, header .page-taxonomy-term .view-alles-zum-thema .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-content .views-row a:hover, .page-taxonomy-term .view-alles-zum-thema header .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-content .views-row a:hover {
                   background: #e74712; }
-            /* line 249, ../scss/layout/_header.scss */
+            /* line 247, ../scss/layout/_header.scss */
             header .container .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner, header .front .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner, .front .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode header .panel-2col .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner, header .front .field-name-field-anzuzeigende-seitenmodule .view-neueste-informationen .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner, .front .field-name-field-anzuzeigende-seitenmodule .view-neueste-informationen header .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner, header .front .field-name-field-anzuzeigende-seitenmodule .view-termin .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner, .front .field-name-field-anzuzeigende-seitenmodule .view-termin header .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner, header .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner, .paragraphs-item-topic-teaser-paragraph .field-collection-container header .field-name-field-topic-teaser .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner, header .breadcrumb .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner, header .page-aktuelles .view-aktuelles .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner, .page-aktuelles header .view-aktuelles .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner, header .node-type-protagonist .node-protagonist .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner, .node-type-protagonist header .node-protagonist .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner, header .not-front .node-doorpage .view-alle-themen-teaser .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner, .not-front .node-doorpage .view-alle-themen-teaser header .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner, header .view-neueste-digital-projekte .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner, .view-neueste-digital-projekte header .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner, header .page-taxonomy-term .view-title .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner, .page-taxonomy-term header .view-title .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner, header .page-taxonomy-term .group-page-info .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner, .page-taxonomy-term header .group-page-info .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner, header .page-taxonomy-term .view-alles-zum-thema .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner, .page-taxonomy-term .view-alles-zum-thema header .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner {
               width: 1170px;
               margin: 0 auto; }
-              /* line 253, ../scss/layout/_header.scss */
+              /* line 251, ../scss/layout/_header.scss */
               header .container .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-left, header .front .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-left, .front .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode header .panel-2col .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-left, header .front .field-name-field-anzuzeigende-seitenmodule .view-neueste-informationen .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-left, .front .field-name-field-anzuzeigende-seitenmodule .view-neueste-informationen header .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-left, header .front .field-name-field-anzuzeigende-seitenmodule .view-termin .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-left, .front .field-name-field-anzuzeigende-seitenmodule .view-termin header .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-left, header .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-left, .paragraphs-item-topic-teaser-paragraph .field-collection-container header .field-name-field-topic-teaser .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-left, header .breadcrumb .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-left, header .page-aktuelles .view-aktuelles .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-left, .page-aktuelles header .view-aktuelles .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-left, header .node-type-protagonist .node-protagonist .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-left, .node-type-protagonist header .node-protagonist .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-left, header .not-front .node-doorpage .view-alle-themen-teaser .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-left, .not-front .node-doorpage .view-alle-themen-teaser header .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-left, header .view-neueste-digital-projekte .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-left, .view-neueste-digital-projekte header .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-left, header .page-taxonomy-term .view-title .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-left, .page-taxonomy-term header .view-title .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-left, header .page-taxonomy-term .group-page-info .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-left, .page-taxonomy-term header .group-page-info .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-left, header .page-taxonomy-term .view-alles-zum-thema .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-left, .page-taxonomy-term .view-alles-zum-thema header .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-left {
                 width: 30%;
                 float: left; }
-                /* line 257, ../scss/layout/_header.scss */
+                /* line 255, ../scss/layout/_header.scss */
                 header .container .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-left .block-title, header .front .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-left .block-title, .front .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode header .panel-2col .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-left .block-title, header .front .field-name-field-anzuzeigende-seitenmodule .view-neueste-informationen .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-left .block-title, .front .field-name-field-anzuzeigende-seitenmodule .view-neueste-informationen header .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-left .block-title, header .front .field-name-field-anzuzeigende-seitenmodule .view-termin .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-left .block-title, .front .field-name-field-anzuzeigende-seitenmodule .view-termin header .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-left .block-title, header .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-left .block-title, .paragraphs-item-topic-teaser-paragraph .field-collection-container header .field-name-field-topic-teaser .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-left .block-title, header .breadcrumb .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-left .block-title, header .page-aktuelles .view-aktuelles .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-left .block-title, .page-aktuelles header .view-aktuelles .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-left .block-title, header .node-type-protagonist .node-protagonist .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-left .block-title, .node-type-protagonist header .node-protagonist .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-left .block-title, header .not-front .node-doorpage .view-alle-themen-teaser .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-left .block-title, .not-front .node-doorpage .view-alle-themen-teaser header .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-left .block-title, header .view-neueste-digital-projekte .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-left .block-title, .view-neueste-digital-projekte header .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-left .block-title, header .page-taxonomy-term .view-title .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-left .block-title, .page-taxonomy-term header .view-title .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-left .block-title, header .page-taxonomy-term .group-page-info .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-left .block-title, .page-taxonomy-term header .group-page-info .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-left .block-title, header .page-taxonomy-term .view-alles-zum-thema .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-left .block-title, .page-taxonomy-term .view-alles-zum-thema header .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-left .block-title {
                   font-size: 18px;
                   font-weight: normal;
                   text-transform: capitalize; }
-                /* line 263, ../scss/layout/_header.scss */
+                /* line 261, ../scss/layout/_header.scss */
                 header .container .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-left a, header .front .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-left a, .front .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode header .panel-2col .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-left a, header .front .field-name-field-anzuzeigende-seitenmodule .view-neueste-informationen .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-left a, .front .field-name-field-anzuzeigende-seitenmodule .view-neueste-informationen header .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-left a, header .front .field-name-field-anzuzeigende-seitenmodule .view-termin .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-left a, .front .field-name-field-anzuzeigende-seitenmodule .view-termin header .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-left a, header .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-left a, .paragraphs-item-topic-teaser-paragraph .field-collection-container header .field-name-field-topic-teaser .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-left a, header .breadcrumb .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-left a, header .page-aktuelles .view-aktuelles .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-left a, .page-aktuelles header .view-aktuelles .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-left a, header .node-type-protagonist .node-protagonist .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-left a, .node-type-protagonist header .node-protagonist .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-left a, header .not-front .node-doorpage .view-alle-themen-teaser .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-left a, .not-front .node-doorpage .view-alle-themen-teaser header .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-left a, header .view-neueste-digital-projekte .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-left a, .view-neueste-digital-projekte header .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-left a, header .page-taxonomy-term .view-title .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-left a, .page-taxonomy-term header .view-title .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-left a, header .page-taxonomy-term .group-page-info .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-left a, .page-taxonomy-term header .group-page-info .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-left a, header .page-taxonomy-term .view-alles-zum-thema .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-left a, .page-taxonomy-term .view-alles-zum-thema header .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-left a {
                   font-size: 16px;
                   position: relative;
                   padding-left: 25px; }
-                  /* line 267, ../scss/layout/_header.scss */
+                  /* line 266, ../scss/layout/_header.scss */
                   header .container .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-left a:before, header .front .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-left a:before, .front .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode header .panel-2col .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-left a:before, header .front .field-name-field-anzuzeigende-seitenmodule .view-neueste-informationen .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-left a:before, .front .field-name-field-anzuzeigende-seitenmodule .view-neueste-informationen header .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-left a:before, header .front .field-name-field-anzuzeigende-seitenmodule .view-termin .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-left a:before, .front .field-name-field-anzuzeigende-seitenmodule .view-termin header .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-left a:before, header .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-left a:before, .paragraphs-item-topic-teaser-paragraph .field-collection-container header .field-name-field-topic-teaser .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-left a:before, header .breadcrumb .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-left a:before, header .page-aktuelles .view-aktuelles .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-left a:before, .page-aktuelles header .view-aktuelles .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-left a:before, header .node-type-protagonist .node-protagonist .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-left a:before, .node-type-protagonist header .node-protagonist .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-left a:before, header .not-front .node-doorpage .view-alle-themen-teaser .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-left a:before, .not-front .node-doorpage .view-alle-themen-teaser header .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-left a:before, header .view-neueste-digital-projekte .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-left a:before, .view-neueste-digital-projekte header .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-left a:before, header .page-taxonomy-term .view-title .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-left a:before, .page-taxonomy-term header .view-title .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-left a:before, header .page-taxonomy-term .group-page-info .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-left a:before, .page-taxonomy-term header .group-page-info .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-left a:before, header .page-taxonomy-term .view-alles-zum-thema .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-left a:before, .page-taxonomy-term .view-alles-zum-thema header .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-left a:before {
                     content: "arrow_forward";
                     color: #e74712;
                     position: absolute;
                     left: 0; }
-              /* line 280, ../scss/layout/_header.scss */
+              /* line 277, ../scss/layout/_header.scss */
               header .container .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-right, header .front .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-right, .front .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode header .panel-2col .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-right, header .front .field-name-field-anzuzeigende-seitenmodule .view-neueste-informationen .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-right, .front .field-name-field-anzuzeigende-seitenmodule .view-neueste-informationen header .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-right, header .front .field-name-field-anzuzeigende-seitenmodule .view-termin .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-right, .front .field-name-field-anzuzeigende-seitenmodule .view-termin header .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-right, header .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-right, .paragraphs-item-topic-teaser-paragraph .field-collection-container header .field-name-field-topic-teaser .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-right, header .breadcrumb .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-right, header .page-aktuelles .view-aktuelles .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-right, .page-aktuelles header .view-aktuelles .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-right, header .node-type-protagonist .node-protagonist .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-right, .node-type-protagonist header .node-protagonist .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-right, header .not-front .node-doorpage .view-alle-themen-teaser .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-right, .not-front .node-doorpage .view-alle-themen-teaser header .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-right, header .view-neueste-digital-projekte .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-right, .view-neueste-digital-projekte header .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-right, header .page-taxonomy-term .view-title .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-right, .page-taxonomy-term header .view-title .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-right, header .page-taxonomy-term .group-page-info .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-right, .page-taxonomy-term header .group-page-info .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-right, header .page-taxonomy-term .view-alles-zum-thema .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-right, .page-taxonomy-term .view-alles-zum-thema header .view-sub-wrapper .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .mega-dropdown-inner .tb-submenu-right {
                 width: 70%;
                 float: left;
@@ -6374,7 +6374,7 @@ header .container, header .front .field-name-field-anzuzeigende-seitenmodule .pa
 /* line 3, ../scss/layout/_footer.scss */
 footer #block-menu-menu-footer-navigation ul li {
   display: inline-block; }
-  /* line 5, ../scss/layout/_footer.scss */
+  /* line 6, ../scss/layout/_footer.scss */
   footer #block-menu-menu-footer-navigation ul li a {
     color: #273753;
     padding-left: 0;
@@ -6384,15 +6384,15 @@ footer #block-menu-menu-footer-navigation ul li {
       background: none;
       outline: none;
       outline-offset: none; }
-  /* line 18, ../scss/layout/_footer.scss */
+  /* line 19, ../scss/layout/_footer.scss */
   footer #block-menu-menu-footer-navigation ul li .open a {
     background: none;
     border: none; }
-    /* line 22, ../scss/layout/_footer.scss */
+    /* line 23, ../scss/layout/_footer.scss */
     footer #block-menu-menu-footer-navigation ul li .open a:hover, footer #block-menu-menu-footer-navigation ul li .open a:focus {
       background: none;
       border: none; }
-/* line 33, ../scss/layout/_footer.scss */
+/* line 32, ../scss/layout/_footer.scss */
 footer .footer-copyright {
   font-size: 18px;
   color: #273753; }
@@ -7045,123 +7045,122 @@ footer .footer-copyright {
   .front .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col {
     background: #273753;
     padding: 30px; }
-  /* line 13, ../scss/pages/_frontpage.scss */
+  /* line 14, ../scss/pages/_frontpage.scss */
   .front .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-col-first {
     width: 60%;
     float: left;
     border-right: 1px solid #949d9e; }
-    /* line 18, ../scss/pages/_frontpage.scss */
+    /* line 19, ../scss/pages/_frontpage.scss */
     .front .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-col-first .inside {
       position: relative;
       height: 250px;
       margin: 0; }
-      /* line 23, ../scss/pages/_frontpage.scss */
+      /* line 24, ../scss/pages/_frontpage.scss */
       .front .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-col-first .inside .pane-paragraphs-item-field-paragraph-title {
         color: #ffffff;
         font-size: 36px; }
-      /* line 28, ../scss/pages/_frontpage.scss */
+      /* line 29, ../scss/pages/_frontpage.scss */
       .front .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-col-first .inside .pane-paragraphs-item-field-flie-text-bereich {
         color: #ffffff;
         font-size: 22px; }
-      /* line 33, ../scss/pages/_frontpage.scss */
+      /* line 34, ../scss/pages/_frontpage.scss */
       .front .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-col-first .inside .pane-paragraphs-item-field-quellenangabe a {
         color: #ffffff;
         font-size: 20px;
         position: absolute;
         bottom: 0;
         padding-left: 25px; }
-        /* line 40, ../scss/pages/_frontpage.scss */
+        /* line 41, ../scss/pages/_frontpage.scss */
         .front .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-col-first .inside .pane-paragraphs-item-field-quellenangabe a:before {
           content: "arrow_forward";
           color: #e74712;
           position: absolute;
           top: 4px;
           left: 0; }
-  /* line 53, ../scss/pages/_frontpage.scss */
+  /* line 54, ../scss/pages/_frontpage.scss */
   .front .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-col-last {
     width: 40%;
     float: left;
     padding-left: 30px; }
-    /* line 58, ../scss/pages/_frontpage.scss */
+    /* line 59, ../scss/pages/_frontpage.scss */
     .front .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-col-last .view-right-front-map-teaser .views-row {
       position: relative;
       height: 250px; }
-      /* line 62, ../scss/pages/_frontpage.scss */
+      /* line 63, ../scss/pages/_frontpage.scss */
       .front .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-col-last .view-right-front-map-teaser .views-row .views-field-type {
         color: #e74712;
         font-size: 22px; }
-      /* line 67, ../scss/pages/_frontpage.scss */
+      /* line 68, ../scss/pages/_frontpage.scss */
       .front .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-col-last .view-right-front-map-teaser .views-row .views-field-title a {
         color: #ffffff;
         font-size: 22px; }
-      /* line 72, ../scss/pages/_frontpage.scss */
+      /* line 73, ../scss/pages/_frontpage.scss */
       .front .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-col-last .view-right-front-map-teaser .views-row .views-field-view-node a {
         color: #ffffff;
         font-size: 20px;
         position: absolute;
         bottom: 0;
         padding-left: 25px; }
-        /* line 79, ../scss/pages/_frontpage.scss */
+        /* line 80, ../scss/pages/_frontpage.scss */
         .front .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-col-last .view-right-front-map-teaser .views-row .views-field-view-node a:before {
           content: "place";
           color: #e74712;
           position: absolute;
           top: 4px;
           left: 0; }
-/* line 97, ../scss/pages/_frontpage.scss */
+/* line 96, ../scss/pages/_frontpage.scss */
 .front .field-name-field-anzuzeigende-seitenmodule .view-neueste-informationen {
   background: #eff2f7; }
-  /* line 100, ../scss/pages/_frontpage.scss */
+  /* line 99, ../scss/pages/_frontpage.scss */
   .front .field-name-field-anzuzeigende-seitenmodule .view-neueste-informationen .view-sub-wrapper {
     position: relative;
     padding: 30px 0; }
-    /* line 106, ../scss/pages/_frontpage.scss */
+    /* line 105, ../scss/pages/_frontpage.scss */
     .front .field-name-field-anzuzeigende-seitenmodule .view-neueste-informationen .view-sub-wrapper .view-header {
-      color: #273753;
       padding-bottom: 20px; }
-    /* line 111, ../scss/pages/_frontpage.scss */
+    /* line 109, ../scss/pages/_frontpage.scss */
     .front .field-name-field-anzuzeigende-seitenmodule .view-neueste-informationen .view-sub-wrapper .view-content {
       margin-left: -15px;
       margin-right: -15px; }
-      /* line 115, ../scss/pages/_frontpage.scss */
+      /* line 113, ../scss/pages/_frontpage.scss */
       .front .field-name-field-anzuzeigende-seitenmodule .view-neueste-informationen .view-sub-wrapper .view-content .views-row {
         font-size: 22px; }
-        /* line 120, ../scss/pages/_frontpage.scss */
+        /* line 118, ../scss/pages/_frontpage.scss */
         .front .field-name-field-anzuzeigende-seitenmodule .view-neueste-informationen .view-sub-wrapper .view-content .views-row .row-container {
           background: #ffffff;
           padding: 25px;
           height: 350px;
           margin-bottom: 30px;
           position: relative; }
-          /* line 127, ../scss/pages/_frontpage.scss */
+          /* line 125, ../scss/pages/_frontpage.scss */
           .front .field-name-field-anzuzeigende-seitenmodule .view-neueste-informationen .view-sub-wrapper .view-content .views-row .row-container .views-field-field-themenzuweisung {
             padding-bottom: 10px; }
-            /* line 130, ../scss/pages/_frontpage.scss */
+            /* line 128, ../scss/pages/_frontpage.scss */
             .front .field-name-field-anzuzeigende-seitenmodule .view-neueste-informationen .view-sub-wrapper .view-content .views-row .row-container .views-field-field-themenzuweisung img {
               display: inline-block;
               margin-right: 10px; }
-          /* line 136, ../scss/pages/_frontpage.scss */
+          /* line 134, ../scss/pages/_frontpage.scss */
           .front .field-name-field-anzuzeigende-seitenmodule .view-neueste-informationen .view-sub-wrapper .view-content .views-row .row-container .views-field-type {
             color: #e74712; }
-          /* line 141, ../scss/pages/_frontpage.scss */
+          /* line 139, ../scss/pages/_frontpage.scss */
           .front .field-name-field-anzuzeigende-seitenmodule .view-neueste-informationen .view-sub-wrapper .view-content .views-row .row-container .views-field-title a {
             text-decoration: none;
             color: #273753; }
-          /* line 147, ../scss/pages/_frontpage.scss */
+          /* line 145, ../scss/pages/_frontpage.scss */
           .front .field-name-field-anzuzeigende-seitenmodule .view-neueste-informationen .view-sub-wrapper .view-content .views-row .row-container .views-field-field-datum {
             position: absolute;
             bottom: 10px; }
-            /* line 151, ../scss/pages/_frontpage.scss */
+            /* line 149, ../scss/pages/_frontpage.scss */
             .front .field-name-field-anzuzeigende-seitenmodule .view-neueste-informationen .view-sub-wrapper .view-content .views-row .row-container .views-field-field-datum .date-display-single {
               font-size: 17px;
               color: #949d9e; }
-    /* line 160, ../scss/pages/_frontpage.scss */
+    /* line 158, ../scss/pages/_frontpage.scss */
     .front .field-name-field-anzuzeigende-seitenmodule .view-neueste-informationen .view-sub-wrapper .view-footer {
       clear: both; }
-      /* line 163, ../scss/pages/_frontpage.scss */
+      /* line 161, ../scss/pages/_frontpage.scss */
       .front .field-name-field-anzuzeigende-seitenmodule .view-neueste-informationen .view-sub-wrapper .view-footer .link-outer-block .link-inner-block-1, .front .field-name-field-anzuzeigende-seitenmodule .view-neueste-informationen .view-sub-wrapper .view-footer .link-outer-block .link-inner-block-2 {
         display: inline-block; }
-        /* line 166, ../scss/pages/_frontpage.scss */
+        /* line 164, ../scss/pages/_frontpage.scss */
         .front .field-name-field-anzuzeigende-seitenmodule .view-neueste-informationen .view-sub-wrapper .view-footer .link-outer-block .link-inner-block-1 a, .front .field-name-field-anzuzeigende-seitenmodule .view-neueste-informationen .view-sub-wrapper .view-footer .link-outer-block .link-inner-block-2 a {
           text-decoration: none;
           color: #273753;
@@ -7169,71 +7168,70 @@ footer .footer-copyright {
           padding-right: 15px;
           padding-left: 25px;
           position: relative; }
-          /* line 174, ../scss/pages/_frontpage.scss */
+          /* line 172, ../scss/pages/_frontpage.scss */
           .front .field-name-field-anzuzeigende-seitenmodule .view-neueste-informationen .view-sub-wrapper .view-footer .link-outer-block .link-inner-block-1 a:before, .front .field-name-field-anzuzeigende-seitenmodule .view-neueste-informationen .view-sub-wrapper .view-footer .link-outer-block .link-inner-block-2 a:before {
             content: "arrow_forward";
             color: #e74712;
             position: absolute;
             top: 3px;
             left: 0; }
-/* line 190, ../scss/pages/_frontpage.scss */
+/* line 188, ../scss/pages/_frontpage.scss */
 .front .field-name-field-anzuzeigende-seitenmodule .view-termin {
   background: #273753; }
-  /* line 193, ../scss/pages/_frontpage.scss */
+  /* line 191, ../scss/pages/_frontpage.scss */
   .front .field-name-field-anzuzeigende-seitenmodule .view-termin .view-sub-wrapper {
     padding: 60px 0;
     position: relative; }
-    /* line 201, ../scss/pages/_frontpage.scss */
+    /* line 198, ../scss/pages/_frontpage.scss */
     .front .field-name-field-anzuzeigende-seitenmodule .view-termin .view-sub-wrapper .view-header h2 {
       color: #ffffff;
       padding-bottom: 40px; }
-    /* line 207, ../scss/pages/_frontpage.scss */
+    /* line 204, ../scss/pages/_frontpage.scss */
     .front .field-name-field-anzuzeigende-seitenmodule .view-termin .view-sub-wrapper .view-content {
       margin-left: -15px;
       margin-right: -15px; }
-      /* line 211, ../scss/pages/_frontpage.scss */
+      /* line 208, ../scss/pages/_frontpage.scss */
       .front .field-name-field-anzuzeigende-seitenmodule .view-termin .view-sub-wrapper .view-content .views-row {
         position: relative; }
-        /* line 216, ../scss/pages/_frontpage.scss */
+        /* line 213, ../scss/pages/_frontpage.scss */
         .front .field-name-field-anzuzeigende-seitenmodule .view-termin .view-sub-wrapper .view-content .views-row .row-container {
           background: #ffffff;
           padding: 30px;
           height: 300px; }
-          /* line 221, ../scss/pages/_frontpage.scss */
+          /* line 218, ../scss/pages/_frontpage.scss */
           .front .field-name-field-anzuzeigende-seitenmodule .view-termin .view-sub-wrapper .view-content .views-row .row-container .views-field-field-themenzuweisung {
             padding-bottom: 10px; }
-            /* line 224, ../scss/pages/_frontpage.scss */
+            /* line 221, ../scss/pages/_frontpage.scss */
             .front .field-name-field-anzuzeigende-seitenmodule .view-termin .view-sub-wrapper .view-content .views-row .row-container .views-field-field-themenzuweisung img {
               display: inline-block;
               margin-right: 10px; }
-          /* line 231, ../scss/pages/_frontpage.scss */
+          /* line 228, ../scss/pages/_frontpage.scss */
           .front .field-name-field-anzuzeigende-seitenmodule .view-termin .view-sub-wrapper .view-content .views-row .row-container .views-field-field-event-datum .date-display-range span {
             color: #e74712;
             font-size: 22px; }
-          /* line 238, ../scss/pages/_frontpage.scss */
+          /* line 235, ../scss/pages/_frontpage.scss */
           .front .field-name-field-anzuzeigende-seitenmodule .view-termin .view-sub-wrapper .view-content .views-row .row-container .views-field-title a {
             text-decoration: none;
             font-size: 22px;
             color: #273753; }
-          /* line 246, ../scss/pages/_frontpage.scss */
+          /* line 243, ../scss/pages/_frontpage.scss */
           .front .field-name-field-anzuzeigende-seitenmodule .view-termin .view-sub-wrapper .view-content .views-row .row-container .views-field-field-ort .field-content {
             position: absolute;
             bottom: 30px;
-            font-size: 20px;
-            color: #273753; }
-    /* line 257, ../scss/pages/_frontpage.scss */
+            font-size: 20px; }
+    /* line 253, ../scss/pages/_frontpage.scss */
     .front .field-name-field-anzuzeigende-seitenmodule .view-termin .view-sub-wrapper .view-footer {
       clear: both;
       position: relative;
       padding-top: 30px; }
-      /* line 263, ../scss/pages/_frontpage.scss */
+      /* line 259, ../scss/pages/_frontpage.scss */
       .front .field-name-field-anzuzeigende-seitenmodule .view-termin .view-sub-wrapper .view-footer .link-outer-block .link-inner-block-1 a {
         text-decoration: none;
         font-size: 20px;
         padding-right: 15px;
         color: #ffffff;
         padding-left: 25px; }
-        /* line 270, ../scss/pages/_frontpage.scss */
+        /* line 266, ../scss/pages/_frontpage.scss */
         .front .field-name-field-anzuzeigende-seitenmodule .view-termin .view-sub-wrapper .view-footer .link-outer-block .link-inner-block-1 a:before {
           content: "arrow_forward";
           color: #e74712;
@@ -7242,40 +7240,40 @@ footer .footer-copyright {
           left: 0;
           padding-top: 30px; }
 
-/* line 289, ../scss/pages/_frontpage.scss */
+/* line 286, ../scss/pages/_frontpage.scss */
 .paragraphs-item-topic-teaser-paragraph .field-collection-container {
   border-bottom: none;
   margin-bottom: 0; }
-  /* line 293, ../scss/pages/_frontpage.scss */
+  /* line 290, ../scss/pages/_frontpage.scss */
   .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser {
     padding: 0; }
-    /* line 298, ../scss/pages/_frontpage.scss */
+    /* line 295, ../scss/pages/_frontpage.scss */
     .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items {
       padding: 60px 0;
       float: left;
       margin-left: -15px;
       margin-right: -15px; }
-      /* line 307, ../scss/pages/_frontpage.scss */
+      /* line 304, ../scss/pages/_frontpage.scss */
       .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items > .field-item .field-collection-view {
         margin: 0;
         padding: 0;
         border: 0;
         background: #eff2f7;
         position: relative; }
-        /* line 314, ../scss/pages/_frontpage.scss */
+        /* line 311, ../scss/pages/_frontpage.scss */
         .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items > .field-item .field-collection-view .content {
           padding: 25px;
           height: 360px; }
-          /* line 318, ../scss/pages/_frontpage.scss */
+          /* line 315, ../scss/pages/_frontpage.scss */
           .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items > .field-item .field-collection-view .content .field-type-file img {
             width: 54px;
             height: 54px; }
-          /* line 323, ../scss/pages/_frontpage.scss */
+          /* line 320, ../scss/pages/_frontpage.scss */
           .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items > .field-item .field-collection-view .content .field-name-field-paragraph-title {
             font-size: 26px;
             color: #e74712;
             padding: 10px 0; }
-          /* line 330, ../scss/pages/_frontpage.scss */
+          /* line 327, ../scss/pages/_frontpage.scss */
           .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items > .field-item .field-collection-view .content .field-name-field-quellenangabe a {
             font-size: 20px;
             color: #273753;
@@ -7283,24 +7281,24 @@ footer .footer-copyright {
             position: absolute;
             bottom: 30px;
             padding-left: 25px; }
-            /* line 338, ../scss/pages/_frontpage.scss */
+            /* line 335, ../scss/pages/_frontpage.scss */
             .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items > .field-item .field-collection-view .content .field-name-field-quellenangabe a:before {
               content: "arrow_forward";
               color: #e74712;
               position: absolute;
               top: 4px;
               left: 0; }
-          /* line 350, ../scss/pages/_frontpage.scss */
+          /* line 347, ../scss/pages/_frontpage.scss */
           .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items > .field-item .field-collection-view .content .field-name-field-flie-text-bereich .field-item p {
             font-size: 20px;
             color: #273753; }
 
 @media (max-width: 767px) {
-  /* line 364, ../scss/pages/_frontpage.scss */
+  /* line 361, ../scss/pages/_frontpage.scss */
   .field-name-field-anzuzeigende-seitenmodule .field-name-field-paragraph-view .view-neueste-informationen .view-content {
     margin: 0; }
 
-  /* line 368, ../scss/pages/_frontpage.scss */
+  /* line 365, ../scss/pages/_frontpage.scss */
   .field-name-field-anzuzeigende-seitenmodule .view-termin .view-content {
     margin: 0; } }
 /* line 1, ../scss/pages/_common.scss */
@@ -7417,13 +7415,13 @@ header.navbar-default {
   list-style: none;
   background: none;
   border-radius: 0; }
-  /* line 139, ../scss/pages/_common.scss */
+  /* line 141, ../scss/pages/_common.scss */
   .breadcrumb li a {
     text-decoration: none;
     color: #273753;
     font-size: 18px;
     border-bottom: 2px solid #949d9e; }
-  /* line 146, ../scss/pages/_common.scss */
+  /* line 148, ../scss/pages/_common.scss */
   .breadcrumb li.active {
     border-bottom: 2px solid #e74712;
     color: #273753; }
@@ -7435,21 +7433,19 @@ header.navbar-default {
   width: 100%; }
   /* line 8, ../scss/pages/_singleview.scss */
   .field-name-field-themenzuweisung .field-label {
-    font-size: 20px;
     color: #e74712;
     font-weight: normal;
     margin-bottom: 15px; }
-  /* line 15, ../scss/pages/_singleview.scss */
+  /* line 14, ../scss/pages/_singleview.scss */
   .field-name-field-themenzuweisung .field-items .field-item {
     padding-right: 45px;
     padding-left: 0; }
-    /* line 18, ../scss/pages/_singleview.scss */
+    /* line 19, ../scss/pages/_singleview.scss */
     .field-name-field-themenzuweisung .field-items .field-item:last-child {
       padding-right: 0; }
-    /* line 24, ../scss/pages/_singleview.scss */
+    /* line 25, ../scss/pages/_singleview.scss */
     .field-name-field-themenzuweisung .field-items .field-item a {
       text-decoration: none;
-      color: #273753;
       border-bottom: 1px solid #c5cbd5;
       padding-bottom: 5px; }
     /* line 31, ../scss/pages/_singleview.scss */
@@ -7469,56 +7465,53 @@ header.navbar-default {
   clear: both; }
   /* line 48, ../scss/pages/_singleview.scss */
   .field-name-field-quellenangabe .field-label {
-    font-size: 20px;
     color: #e74712;
     font-weight: normal; }
-  /* line 54, ../scss/pages/_singleview.scss */
+  /* line 53, ../scss/pages/_singleview.scss */
   .field-name-field-quellenangabe .field-items {
     width: 100%;
     clear: both; }
 
-/* line 64, ../scss/pages/_singleview.scss */
+/* line 63, ../scss/pages/_singleview.scss */
 .field-name-field-youtube-url {
   text-align: center; }
 
-/* line 69, ../scss/pages/_singleview.scss */
+/* line 68, ../scss/pages/_singleview.scss */
 .page-aktuelles {
-  font-family: "BentonSans-Regular";
   background: #eff2f7; }
-  /* line 73, ../scss/pages/_singleview.scss */
+  /* line 71, ../scss/pages/_singleview.scss */
   .page-aktuelles .page-header {
     padding-left: 350px;
     border: none;
     margin: 0; }
-  /* line 82, ../scss/pages/_singleview.scss */
+  /* line 80, ../scss/pages/_singleview.scss */
   .page-aktuelles .view-aktuelles .view-header {
     color: #e74712;
     font-size: 26px;
     padding-left: 250px; }
-  /* line 89, ../scss/pages/_singleview.scss */
+  /* line 87, ../scss/pages/_singleview.scss */
   .page-aktuelles .view-aktuelles .view-filters .views-exposed-form .views-exposed-widgets {
     margin-bottom: 0; }
-    /* line 92, ../scss/pages/_singleview.scss */
+    /* line 90, ../scss/pages/_singleview.scss */
     .page-aktuelles .view-aktuelles .view-filters .views-exposed-form .views-exposed-widgets #edit-type-wrapper {
       width: 100%; }
-      /* line 95, ../scss/pages/_singleview.scss */
+      /* line 93, ../scss/pages/_singleview.scss */
       .page-aktuelles .view-aktuelles .view-filters .views-exposed-form .views-exposed-widgets #edit-type-wrapper .form-item {
         display: inline-block;
-        padding-right: 50px;
-        font-size: 20px; }
-        /* line 100, ../scss/pages/_singleview.scss */
+        padding-right: 50px; }
+        /* line 97, ../scss/pages/_singleview.scss */
         .page-aktuelles .view-aktuelles .view-filters .views-exposed-form .views-exposed-widgets #edit-type-wrapper .form-item label {
           padding-left: 0; }
-          /* line 103, ../scss/pages/_singleview.scss */
+          /* line 100, ../scss/pages/_singleview.scss */
           .page-aktuelles .view-aktuelles .view-filters .views-exposed-form .views-exposed-widgets #edit-type-wrapper .form-item label input {
             visibility: hidden; }
-    /* line 110, ../scss/pages/_singleview.scss */
+    /* line 107, ../scss/pages/_singleview.scss */
     .page-aktuelles .view-aktuelles .view-filters .views-exposed-form .views-exposed-widgets .categories-filter {
       margin-top: 30px;
       clear: both;
       display: inline-block;
       width: 100%; }
-      /* line 116, ../scss/pages/_singleview.scss */
+      /* line 113, ../scss/pages/_singleview.scss */
       .page-aktuelles .view-aktuelles .view-filters .views-exposed-form .views-exposed-widgets .categories-filter .views-exposed-widget {
         padding: 0;
         width: 25%;
@@ -7526,13 +7519,12 @@ header.navbar-default {
         padding: 10px 0;
         background: #273753;
         border-right: 1px solid #949d9e; }
-        /* line 124, ../scss/pages/_singleview.scss */
+        /* line 121, ../scss/pages/_singleview.scss */
         .page-aktuelles .view-aktuelles .view-filters .views-exposed-form .views-exposed-widgets .categories-filter .views-exposed-widget .select2-container--default .select2-selection--single {
           background: 0;
           border: 0;
-          border-radius: 0;
-          font-size: 20px; }
-          /* line 130, ../scss/pages/_singleview.scss */
+          border-radius: 0; }
+          /* line 126, ../scss/pages/_singleview.scss */
           .page-aktuelles .view-aktuelles .view-filters .views-exposed-form .views-exposed-widgets .categories-filter .views-exposed-widget .select2-container--default .select2-selection--single:before {
             content: "\f107";
             font-family: FontAwesome;
@@ -7540,159 +7532,148 @@ header.navbar-default {
             position: absolute;
             float: right;
             right: 8px; }
-          /* line 139, ../scss/pages/_singleview.scss */
+          /* line 135, ../scss/pages/_singleview.scss */
           .page-aktuelles .view-aktuelles .view-filters .views-exposed-form .views-exposed-widgets .categories-filter .views-exposed-widget .select2-container--default .select2-selection--single .select2-selection__rendered {
             color: #ffffff; }
-          /* line 143, ../scss/pages/_singleview.scss */
+          /* line 139, ../scss/pages/_singleview.scss */
           .page-aktuelles .view-aktuelles .view-filters .views-exposed-form .views-exposed-widgets .categories-filter .views-exposed-widget .select2-container--default .select2-selection--single .select2-selection__arrow {
             display: none; }
-    /* line 150, ../scss/pages/_singleview.scss */
+    /* line 146, ../scss/pages/_singleview.scss */
     .page-aktuelles .view-aktuelles .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by {
       float: right;
       padding: 30px 0; }
-      /* line 154, ../scss/pages/_singleview.scss */
+      /* line 150, ../scss/pages/_singleview.scss */
       .page-aktuelles .view-aktuelles .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .bef-select-as-links .form-type-bef-link {
         display: inline-block;
-        font-size: 20px;
         padding-left: 15px; }
-        /* line 159, ../scss/pages/_singleview.scss */
+        /* line 154, ../scss/pages/_singleview.scss */
         .page-aktuelles .view-aktuelles .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .bef-select-as-links .form-type-bef-link a {
-          color: #273753;
           text-decoration: none; }
-          /* line 163, ../scss/pages/_singleview.scss */
+          /* line 157, ../scss/pages/_singleview.scss */
           .page-aktuelles .view-aktuelles .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .bef-select-as-links .form-type-bef-link a.active {
             border-bottom: 2px solid #e74712; }
-      /* line 169, ../scss/pages/_singleview.scss */
+      /* line 163, ../scss/pages/_singleview.scss */
       .page-aktuelles .view-aktuelles .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .select2-container {
         display: none; }
-  /* line 176, ../scss/pages/_singleview.scss */
+  /* line 170, ../scss/pages/_singleview.scss */
   .page-aktuelles .view-aktuelles .attachment-before .view-result-count {
     margin-top: -88px;
-    font-size: 20px;
     padding: 30px 0; }
-  /* line 182, ../scss/pages/_singleview.scss */
+  /* line 175, ../scss/pages/_singleview.scss */
   .page-aktuelles .view-aktuelles > .view-content {
     margin-left: -15px;
     margin-right: -15px; }
-    /* line 186, ../scss/pages/_singleview.scss */
+    /* line 179, ../scss/pages/_singleview.scss */
     .page-aktuelles .view-aktuelles > .view-content .views-row {
       font-size: 22px; }
-      /* line 191, ../scss/pages/_singleview.scss */
+      /* line 184, ../scss/pages/_singleview.scss */
       .page-aktuelles .view-aktuelles > .view-content .views-row .row-container {
         background: #ffffff;
         padding: 30px;
         height: 350px;
         margin-bottom: 30px;
         position: relative; }
-        /* line 198, ../scss/pages/_singleview.scss */
+        /* line 191, ../scss/pages/_singleview.scss */
         .page-aktuelles .view-aktuelles > .view-content .views-row .row-container .views-field-field-themenzuweisung {
           padding-bottom: 10px; }
-          /* line 201, ../scss/pages/_singleview.scss */
+          /* line 194, ../scss/pages/_singleview.scss */
           .page-aktuelles .view-aktuelles > .view-content .views-row .row-container .views-field-field-themenzuweisung img {
             display: inline-block;
             margin-right: 10px; }
-        /* line 207, ../scss/pages/_singleview.scss */
+        /* line 200, ../scss/pages/_singleview.scss */
         .page-aktuelles .view-aktuelles > .view-content .views-row .row-container .views-field-type {
           color: #e74712; }
-        /* line 212, ../scss/pages/_singleview.scss */
+        /* line 205, ../scss/pages/_singleview.scss */
         .page-aktuelles .view-aktuelles > .view-content .views-row .row-container .views-field-title a {
           text-decoration: none;
           color: #273753; }
-        /* line 218, ../scss/pages/_singleview.scss */
+        /* line 211, ../scss/pages/_singleview.scss */
         .page-aktuelles .view-aktuelles > .view-content .views-row .row-container .views-field-field-datum {
           position: absolute;
           bottom: 30px; }
-          /* line 222, ../scss/pages/_singleview.scss */
+          /* line 215, ../scss/pages/_singleview.scss */
           .page-aktuelles .view-aktuelles > .view-content .views-row .row-container .views-field-field-datum .date-display-single {
             font-size: 17px;
             color: #949d9e; }
-  /* line 231, ../scss/pages/_singleview.scss */
+  /* line 224, ../scss/pages/_singleview.scss */
   .page-aktuelles .view-aktuelles .views-submit-button {
     display: none; }
-  /* line 235, ../scss/pages/_singleview.scss */
+  /* line 228, ../scss/pages/_singleview.scss */
   .page-aktuelles .view-aktuelles .view-map-teaser {
     clear: both; }
-    /* line 238, ../scss/pages/_singleview.scss */
+    /* line 231, ../scss/pages/_singleview.scss */
     .page-aktuelles .view-aktuelles .view-map-teaser .view-content {
       margin: 0; }
-      /* line 241, ../scss/pages/_singleview.scss */
+      /* line 234, ../scss/pages/_singleview.scss */
       .page-aktuelles .view-aktuelles .view-map-teaser .view-content .views-row {
         background: #273753;
         padding: 40px; }
-        /* line 247, ../scss/pages/_singleview.scss */
+        /* line 240, ../scss/pages/_singleview.scss */
         .page-aktuelles .view-aktuelles .view-map-teaser .view-content .views-row .views-field-field-bild img {
           color: #e74712; }
-        /* line 251, ../scss/pages/_singleview.scss */
+        /* line 244, ../scss/pages/_singleview.scss */
         .page-aktuelles .view-aktuelles .view-map-teaser .view-content .views-row .views-field-field-paragraph-title {
           color: #ffffff;
           font-size: 38px; }
-        /* line 256, ../scss/pages/_singleview.scss */
+        /* line 249, ../scss/pages/_singleview.scss */
         .page-aktuelles .view-aktuelles .view-map-teaser .view-content .views-row .views-field-field-flie-text-bereich {
-          color: #ffffff;
-          font-size: 20px; }
-        /* line 261, ../scss/pages/_singleview.scss */
+          color: #ffffff; }
+        /* line 253, ../scss/pages/_singleview.scss */
         .page-aktuelles .view-aktuelles .view-map-teaser .view-content .views-row .views-field-field-quellenangabe a {
-          color: #ffffff;
-          font-size: 20px; }
+          color: #ffffff; }
 
-/* line 272, ../scss/pages/_singleview.scss */
+/* line 263, ../scss/pages/_singleview.scss */
 .node-type-protagonist {
   background: #eff2f7; }
-  /* line 280, ../scss/pages/_singleview.scss */
+  /* line 271, ../scss/pages/_singleview.scss */
   .node-type-protagonist .node-protagonist .view-display-id-block_2 .views-row .views-field-views-conditional a {
-    text-decoration: none;
-    font-size: 20px; }
-  /* line 286, ../scss/pages/_singleview.scss */
+    text-decoration: none; }
+  /* line 276, ../scss/pages/_singleview.scss */
   .node-type-protagonist .node-protagonist .view-display-id-block_2 .views-row .views-field-views-conditional-2 .field-content {
     font-size: 16px; }
-  /* line 293, ../scss/pages/_singleview.scss */
+  /* line 283, ../scss/pages/_singleview.scss */
   .node-type-protagonist .node-protagonist .view-display-id-block_1 .views-row .views-field-field-event-datum .field-content {
     color: #e74712;
     font-size: 22px; }
-  /* line 302, ../scss/pages/_singleview.scss */
+  /* line 292, ../scss/pages/_singleview.scss */
   .node-type-protagonist .field-name-field-weiterf-hrende-links .field-label {
     font-size: 24px; }
-  /* line 306, ../scss/pages/_singleview.scss */
+  /* line 296, ../scss/pages/_singleview.scss */
   .node-type-protagonist .field-name-field-weiterf-hrende-links .field-items a.external-link {
-    font-size: 20px;
     text-decoration: none;
     color: #273753; }
 
-/* line 316, ../scss/pages/_singleview.scss */
+/* line 305, ../scss/pages/_singleview.scss */
 .not-front .node-doorpage .page-title {
   border: none;
   margin: 0; }
-/* line 321, ../scss/pages/_singleview.scss */
+/* line 310, ../scss/pages/_singleview.scss */
 .not-front .node-doorpage .field-name-field-untertitel .field-item {
   color: #e74712;
   font-size: 26px; }
-/* line 326, ../scss/pages/_singleview.scss */
+/* line 315, ../scss/pages/_singleview.scss */
 .not-front .node-doorpage .field-name-field-kurztext .field-item {
   font-size: 22px; }
-/* line 330, ../scss/pages/_singleview.scss */
-.not-front .node-doorpage .field-name-body {
-  font-size: 20px; }
-/* line 334, ../scss/pages/_singleview.scss */
+/* line 321, ../scss/pages/_singleview.scss */
 .not-front .node-doorpage .view-alle-themen-teaser {
   background: #eff2f7; }
-  /* line 340, ../scss/pages/_singleview.scss */
+  /* line 327, ../scss/pages/_singleview.scss */
   .not-front .node-doorpage .view-alle-themen-teaser .view-sub-wrapper .view-content {
     margin-left: -15px;
     margin-right: -15px; }
-    /* line 344, ../scss/pages/_singleview.scss */
+    /* line 331, ../scss/pages/_singleview.scss */
     .not-front .node-doorpage .view-alle-themen-teaser .view-sub-wrapper .view-content .term-title {
       color: #273753;
       font-size: 28px;
       padding-bottom: 40px;
       padding-top: 40px; }
-    /* line 351, ../scss/pages/_singleview.scss */
+    /* line 338, ../scss/pages/_singleview.scss */
     .not-front .node-doorpage .view-alle-themen-teaser .view-sub-wrapper .view-content p {
-      color: #273753;
-      font-size: 20px; }
-    /* line 356, ../scss/pages/_singleview.scss */
+      color: #273753; }
+    /* line 342, ../scss/pages/_singleview.scss */
     .not-front .node-doorpage .view-alle-themen-teaser .view-sub-wrapper .view-content .views-row {
       padding: 10px; }
-      /* line 361, ../scss/pages/_singleview.scss */
+      /* line 347, ../scss/pages/_singleview.scss */
       .not-front .node-doorpage .view-alle-themen-teaser .view-sub-wrapper .view-content .views-row .views-field-name a {
         background: #273753;
         text-decoration: none;
@@ -7700,19 +7681,18 @@ header.navbar-default {
         font-size: 18px;
         color: #ffffff;
         float: left; }
-  /* line 372, ../scss/pages/_singleview.scss */
+  /* line 358, ../scss/pages/_singleview.scss */
   .not-front .node-doorpage .view-alle-themen-teaser .view-sub-wrapper .view-footer {
     padding-top: 40px;
     clear: both;
     padding-bottom: 20px; }
-    /* line 377, ../scss/pages/_singleview.scss */
+    /* line 363, ../scss/pages/_singleview.scss */
     .not-front .node-doorpage .view-alle-themen-teaser .view-sub-wrapper .view-footer a {
       text-decoration: none;
       color: #273753;
-      font-size: 20px;
       position: relative;
       padding-left: 30px; }
-      /* line 384, ../scss/pages/_singleview.scss */
+      /* line 369, ../scss/pages/_singleview.scss */
       .not-front .node-doorpage .view-alle-themen-teaser .view-sub-wrapper .view-footer a:before {
         content: "arrow_forward";
         color: #e74712;
@@ -7720,55 +7700,55 @@ header.navbar-default {
         top: 4px;
         left: 2px; }
 
-/* line 400, ../scss/pages/_singleview.scss */
+/* line 385, ../scss/pages/_singleview.scss */
 .view-neueste-digital-projekte {
   background: #3c506e; }
-  /* line 403, ../scss/pages/_singleview.scss */
+  /* line 388, ../scss/pages/_singleview.scss */
   .view-neueste-digital-projekte .view-sub-wrapper {
     padding: 60px 0;
     position: relative; }
-    /* line 410, ../scss/pages/_singleview.scss */
+    /* line 395, ../scss/pages/_singleview.scss */
     .view-neueste-digital-projekte .view-sub-wrapper .view-header .pane-title {
       color: #ffffff;
       font-size: 28px;
       padding-bottom: 40px; }
-    /* line 417, ../scss/pages/_singleview.scss */
+    /* line 402, ../scss/pages/_singleview.scss */
     .view-neueste-digital-projekte .view-sub-wrapper .view-content {
       margin-left: -15px;
       margin-right: -15px; }
-      /* line 424, ../scss/pages/_singleview.scss */
+      /* line 409, ../scss/pages/_singleview.scss */
       .view-neueste-digital-projekte .view-sub-wrapper .view-content .views-row .row-container {
         background: #273753;
         padding: 25px;
         height: 350px; }
-        /* line 429, ../scss/pages/_singleview.scss */
+        /* line 414, ../scss/pages/_singleview.scss */
         .view-neueste-digital-projekte .view-sub-wrapper .view-content .views-row .row-container .views-field-field-themenzuweisung {
           margin-bottom: 10px; }
-          /* line 432, ../scss/pages/_singleview.scss */
+          /* line 417, ../scss/pages/_singleview.scss */
           .view-neueste-digital-projekte .view-sub-wrapper .view-content .views-row .row-container .views-field-field-themenzuweisung img {
             display: inline-block;
             margin-right: 10px; }
-        /* line 439, ../scss/pages/_singleview.scss */
+        /* line 424, ../scss/pages/_singleview.scss */
         .view-neueste-digital-projekte .view-sub-wrapper .view-content .views-row .row-container .views-field-type .field-content {
           color: #e74712;
           font-size: 22px; }
-        /* line 446, ../scss/pages/_singleview.scss */
+        /* line 431, ../scss/pages/_singleview.scss */
         .view-neueste-digital-projekte .view-sub-wrapper .view-content .views-row .row-container .views-field-title a {
           color: #ffffff;
           text-decoration: none;
           font-size: 22px; }
-    /* line 456, ../scss/pages/_singleview.scss */
+    /* line 441, ../scss/pages/_singleview.scss */
     .view-neueste-digital-projekte .view-sub-wrapper .view-footer {
       padding-top: 40px;
       clear: both; }
-      /* line 460, ../scss/pages/_singleview.scss */
+      /* line 445, ../scss/pages/_singleview.scss */
       .view-neueste-digital-projekte .view-sub-wrapper .view-footer a {
         text-decoration: none;
         color: #ffffff;
         font-size: 20px;
         position: relative;
         padding-left: 30px; }
-        /* line 467, ../scss/pages/_singleview.scss */
+        /* line 452, ../scss/pages/_singleview.scss */
         .view-neueste-digital-projekte .view-sub-wrapper .view-footer a:before {
           content: "arrow_forward";
           color: #e74712;
@@ -7776,11 +7756,11 @@ header.navbar-default {
           top: 4px;
           left: 0; }
 
-/* line 483, ../scss/pages/_singleview.scss */
+/* line 468, ../scss/pages/_singleview.scss */
 .node-type-article {
   background-color: #eff2f7; }
 
-/* line 487, ../scss/pages/_singleview.scss */
+/* line 472, ../scss/pages/_singleview.scss */
 .group-page-info {
   padding: 30px 0; }
 
@@ -7793,87 +7773,87 @@ header.navbar-default {
     font-size: 20px;
     font-weight: normal;
     margin: 0 auto; }
-  /* line 11, ../scss/pages/_listview.scss */
+  /* line 13, ../scss/pages/_listview.scss */
   .page-taxonomy-term .group-page-info {
     padding: 0; }
-    /* line 14, ../scss/pages/_listview.scss */
+    /* line 18, ../scss/pages/_listview.scss */
     .page-taxonomy-term .group-page-info .field-name-field-bild {
       width: 30%;
       float: left; }
-    /* line 21, ../scss/pages/_listview.scss */
+    /* line 23, ../scss/pages/_listview.scss */
     .page-taxonomy-term .group-page-info .themenzuweisung-right-block {
       float: left;
       width: 70%; }
-      /* line 25, ../scss/pages/_listview.scss */
+      /* line 27, ../scss/pages/_listview.scss */
       .page-taxonomy-term .group-page-info .themenzuweisung-right-block .page-header {
         border-bottom: none;
         margin: 0; }
-      /* line 31, ../scss/pages/_listview.scss */
+      /* line 33, ../scss/pages/_listview.scss */
       .page-taxonomy-term .group-page-info .themenzuweisung-right-block .field-name-field-untertitel .field-items {
         color: #e74712; }
-  /* line 40, ../scss/pages/_listview.scss */
+  /* line 41, ../scss/pages/_listview.scss */
   .page-taxonomy-term .view-alles-zum-thema .view-sub-wrapper {
     padding: 0; }
-    /* line 45, ../scss/pages/_listview.scss */
+    /* line 47, ../scss/pages/_listview.scss */
     .page-taxonomy-term .view-alles-zum-thema .view-sub-wrapper .view-filters .views-submit-button {
       display: none; }
-    /* line 49, ../scss/pages/_listview.scss */
+    /* line 51, ../scss/pages/_listview.scss */
     .page-taxonomy-term .view-alles-zum-thema .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by {
       float: right;
       padding: 30px 0; }
-      /* line 53, ../scss/pages/_listview.scss */
+      /* line 55, ../scss/pages/_listview.scss */
       .page-taxonomy-term .view-alles-zum-thema .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .bef-select-as-links .form-type-bef-link {
         display: inline-block;
         font-size: 20px;
         padding-left: 15px; }
-        /* line 58, ../scss/pages/_listview.scss */
+        /* line 60, ../scss/pages/_listview.scss */
         .page-taxonomy-term .view-alles-zum-thema .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .bef-select-as-links .form-type-bef-link a {
           color: #273753;
           text-decoration: none; }
-          /* line 62, ../scss/pages/_listview.scss */
+          /* line 64, ../scss/pages/_listview.scss */
           .page-taxonomy-term .view-alles-zum-thema .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .bef-select-as-links .form-type-bef-link a.active {
             border-bottom: 2px solid #e74712; }
-    /* line 69, ../scss/pages/_listview.scss */
+    /* line 72, ../scss/pages/_listview.scss */
     .page-taxonomy-term .view-alles-zum-thema .view-sub-wrapper .view-content {
       margin-left: -15px;
       margin-right: -15px; }
-      /* line 76, ../scss/pages/_listview.scss */
+      /* line 79, ../scss/pages/_listview.scss */
       .page-taxonomy-term .view-alles-zum-thema .view-sub-wrapper .view-content .views-row .row-container {
         background: #ffffff;
         padding: 25px;
         height: 350px;
         margin-bottom: 30px;
         position: relative; }
-        /* line 83, ../scss/pages/_listview.scss */
+        /* line 86, ../scss/pages/_listview.scss */
         .page-taxonomy-term .view-alles-zum-thema .view-sub-wrapper .view-content .views-row .row-container.project-blue {
           background: #273753; }
-          /* line 87, ../scss/pages/_listview.scss */
+          /* line 90, ../scss/pages/_listview.scss */
           .page-taxonomy-term .view-alles-zum-thema .view-sub-wrapper .view-content .views-row .row-container.project-blue .views-field-title a {
             color: #ffffff; }
-          /* line 93, ../scss/pages/_listview.scss */
+          /* line 96, ../scss/pages/_listview.scss */
           .page-taxonomy-term .view-alles-zum-thema .view-sub-wrapper .view-content .views-row .row-container.project-blue .views-field-views-conditional .date-display-single {
             color: #ffffff; }
-        /* line 99, ../scss/pages/_listview.scss */
+        /* line 102, ../scss/pages/_listview.scss */
         .page-taxonomy-term .view-alles-zum-thema .view-sub-wrapper .view-content .views-row .row-container .views-field-field-themenzuweisung {
           margin-bottom: 10px; }
-          /* line 101, ../scss/pages/_listview.scss */
+          /* line 105, ../scss/pages/_listview.scss */
           .page-taxonomy-term .view-alles-zum-thema .view-sub-wrapper .view-content .views-row .row-container .views-field-field-themenzuweisung img {
             display: inline-block;
             margin-right: 10px; }
-        /* line 108, ../scss/pages/_listview.scss */
+        /* line 112, ../scss/pages/_listview.scss */
         .page-taxonomy-term .view-alles-zum-thema .view-sub-wrapper .view-content .views-row .row-container .views-field-type .field-content {
           color: #e74712;
           font-size: 22px; }
-        /* line 115, ../scss/pages/_listview.scss */
+        /* line 119, ../scss/pages/_listview.scss */
         .page-taxonomy-term .view-alles-zum-thema .view-sub-wrapper .view-content .views-row .row-container .views-field-title a {
           text-decoration: none;
           color: #273753;
           font-size: 22px; }
-        /* line 122, ../scss/pages/_listview.scss */
+        /* line 126, ../scss/pages/_listview.scss */
         .page-taxonomy-term .view-alles-zum-thema .view-sub-wrapper .view-content .views-row .row-container .views-field-views-conditional {
           position: absolute;
           bottom: 30px; }
-          /* line 126, ../scss/pages/_listview.scss */
+          /* line 130, ../scss/pages/_listview.scss */
           .page-taxonomy-term .view-alles-zum-thema .view-sub-wrapper .view-content .views-row .row-container .views-field-views-conditional .date-display-single {
             font-size: 17px;
             color: #949d9e; }
