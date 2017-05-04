@@ -139,9 +139,7 @@ function ipwa_article_field_group_info() {
         'show_label' => '0',
         'label_element' => 'div',
         'attributes' => '',
-        'required_fields' => 1,
       ),
-      'formatter' => '',
     ),
   );
   $field_groups['group_related_doc|node|article|default'] = $field_group;
