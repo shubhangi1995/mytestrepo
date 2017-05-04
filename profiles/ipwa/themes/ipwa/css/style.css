@@ -6131,7 +6131,7 @@ button.close {
   .hidden-print {
     display: none !important; } }
 /* line 3, ../scss/helpers/_variables.scss */
-.page_inner, .group-page-info {
+.page_inner, .group-page-info, .group-page-bottom, .group-body-container > * {
   max-width: 875px;
   margin: 0 auto; }
 
@@ -7447,71 +7447,73 @@ header.navbar-default {
     .field-name-field-themenzuweisung .field-items .field-item a {
       text-decoration: none;
       border-bottom: 1px solid #c5cbd5;
-      padding-bottom: 5px; }
-    /* line 31, ../scss/pages/_singleview.scss */
+      padding-bottom: 5px;
+      color: #273753; }
+    /* line 32, ../scss/pages/_singleview.scss */
     .field-name-field-themenzuweisung .field-items .field-item img {
       display: inline-block;
       width: 33px;
       height: 33px;
       margin-right: 10px; }
 
-/* line 40, ../scss/pages/_singleview.scss */
+/* line 41, ../scss/pages/_singleview.scss */
 .field-name-field-untertitel {
   font-size: 22px; }
 
-/* line 44, ../scss/pages/_singleview.scss */
+/* line 45, ../scss/pages/_singleview.scss */
 .field-name-field-quellenangabe {
   width: 100%;
   clear: both; }
-  /* line 48, ../scss/pages/_singleview.scss */
+  /* line 49, ../scss/pages/_singleview.scss */
   .field-name-field-quellenangabe .field-label {
     color: #e74712;
-    font-weight: normal; }
-  /* line 53, ../scss/pages/_singleview.scss */
+    font-weight: normal;
+    margin-bottom: 10px; }
+  /* line 55, ../scss/pages/_singleview.scss */
   .field-name-field-quellenangabe .field-items {
     width: 100%;
     clear: both; }
 
-/* line 63, ../scss/pages/_singleview.scss */
+/* line 65, ../scss/pages/_singleview.scss */
 .field-name-field-youtube-url {
   text-align: center; }
 
-/* line 68, ../scss/pages/_singleview.scss */
+/* line 70, ../scss/pages/_singleview.scss */
 .page-aktuelles {
   background: #eff2f7; }
-  /* line 71, ../scss/pages/_singleview.scss */
+  /* line 73, ../scss/pages/_singleview.scss */
   .page-aktuelles .page-header {
     padding-left: 350px;
     border: none;
     margin: 0; }
-  /* line 80, ../scss/pages/_singleview.scss */
+  /* line 82, ../scss/pages/_singleview.scss */
   .page-aktuelles .view-aktuelles .view-header {
     color: #e74712;
     font-size: 26px;
     padding-left: 250px; }
-  /* line 87, ../scss/pages/_singleview.scss */
+  /* line 89, ../scss/pages/_singleview.scss */
   .page-aktuelles .view-aktuelles .view-filters .views-exposed-form .views-exposed-widgets {
     margin-bottom: 0; }
-    /* line 90, ../scss/pages/_singleview.scss */
+    /* line 92, ../scss/pages/_singleview.scss */
     .page-aktuelles .view-aktuelles .view-filters .views-exposed-form .views-exposed-widgets #edit-type-wrapper {
       width: 100%; }
-      /* line 93, ../scss/pages/_singleview.scss */
+      /* line 95, ../scss/pages/_singleview.scss */
       .page-aktuelles .view-aktuelles .view-filters .views-exposed-form .views-exposed-widgets #edit-type-wrapper .form-item {
         display: inline-block;
         padding-right: 50px; }
-        /* line 97, ../scss/pages/_singleview.scss */
+        /* line 99, ../scss/pages/_singleview.scss */
         .page-aktuelles .view-aktuelles .view-filters .views-exposed-form .views-exposed-widgets #edit-type-wrapper .form-item label {
           padding-left: 0; }
-          /* line 100, ../scss/pages/_singleview.scss */
+          /* line 102, ../scss/pages/_singleview.scss */
           .page-aktuelles .view-aktuelles .view-filters .views-exposed-form .views-exposed-widgets #edit-type-wrapper .form-item label input {
             visibility: hidden; }
-    /* line 107, ../scss/pages/_singleview.scss */
+    /* line 109, ../scss/pages/_singleview.scss */
     .page-aktuelles .view-aktuelles .view-filters .views-exposed-form .views-exposed-widgets .categories-filter {
       margin-top: 30px;
       clear: both;
       display: inline-block;
       width: 100%; }
-      /* line 113, ../scss/pages/_singleview.scss */
+      /* line 115, ../scss/pages/_singleview.scss */
       .page-aktuelles .view-aktuelles .view-filters .views-exposed-form .views-exposed-widgets .categories-filter .views-exposed-widget {
         padding: 0;
         width: 25%;
@@ -7519,12 +7521,12 @@ header.navbar-default {
         padding: 10px 0;
         background: #273753;
         border-right: 1px solid #949d9e; }
-        /* line 121, ../scss/pages/_singleview.scss */
+        /* line 123, ../scss/pages/_singleview.scss */
         .page-aktuelles .view-aktuelles .view-filters .views-exposed-form .views-exposed-widgets .categories-filter .views-exposed-widget .select2-container--default .select2-selection--single {
           background: 0;
           border: 0;
           border-radius: 0; }
-          /* line 126, ../scss/pages/_singleview.scss */
+          /* line 128, ../scss/pages/_singleview.scss */
           .page-aktuelles .view-aktuelles .view-filters .views-exposed-form .views-exposed-widgets .categories-filter .views-exposed-widget .select2-container--default .select2-selection--single:before {
             content: "\f107";
             font-family: FontAwesome;
@@ -7532,148 +7534,144 @@ header.navbar-default {
             position: absolute;
             float: right;
             right: 8px; }
-          /* line 135, ../scss/pages/_singleview.scss */
+          /* line 137, ../scss/pages/_singleview.scss */
           .page-aktuelles .view-aktuelles .view-filters .views-exposed-form .views-exposed-widgets .categories-filter .views-exposed-widget .select2-container--default .select2-selection--single .select2-selection__rendered {
             color: #ffffff; }
-          /* line 139, ../scss/pages/_singleview.scss */
+          /* line 141, ../scss/pages/_singleview.scss */
           .page-aktuelles .view-aktuelles .view-filters .views-exposed-form .views-exposed-widgets .categories-filter .views-exposed-widget .select2-container--default .select2-selection--single .select2-selection__arrow {
             display: none; }
-    /* line 146, ../scss/pages/_singleview.scss */
+    /* line 148, ../scss/pages/_singleview.scss */
     .page-aktuelles .view-aktuelles .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by {
       float: right;
       padding: 30px 0; }
-      /* line 150, ../scss/pages/_singleview.scss */
+      /* line 152, ../scss/pages/_singleview.scss */
       .page-aktuelles .view-aktuelles .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .bef-select-as-links .form-type-bef-link {
         display: inline-block;
         padding-left: 15px; }
-        /* line 154, ../scss/pages/_singleview.scss */
+        /* line 156, ../scss/pages/_singleview.scss */
         .page-aktuelles .view-aktuelles .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .bef-select-as-links .form-type-bef-link a {
           text-decoration: none; }
-          /* line 157, ../scss/pages/_singleview.scss */
+          /* line 159, ../scss/pages/_singleview.scss */
           .page-aktuelles .view-aktuelles .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .bef-select-as-links .form-type-bef-link a.active {
             border-bottom: 2px solid #e74712; }
-      /* line 163, ../scss/pages/_singleview.scss */
+      /* line 165, ../scss/pages/_singleview.scss */
       .page-aktuelles .view-aktuelles .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .select2-container {
         display: none; }
-  /* line 170, ../scss/pages/_singleview.scss */
+  /* line 172, ../scss/pages/_singleview.scss */
   .page-aktuelles .view-aktuelles .attachment-before .view-result-count {
     margin-top: -88px;
     padding: 30px 0; }
-  /* line 175, ../scss/pages/_singleview.scss */
+  /* line 177, ../scss/pages/_singleview.scss */
   .page-aktuelles .view-aktuelles > .view-content {
     margin-left: -15px;
     margin-right: -15px; }
-    /* line 179, ../scss/pages/_singleview.scss */
+    /* line 181, ../scss/pages/_singleview.scss */
     .page-aktuelles .view-aktuelles > .view-content .views-row {
       font-size: 22px; }
-      /* line 184, ../scss/pages/_singleview.scss */
+      /* line 186, ../scss/pages/_singleview.scss */
       .page-aktuelles .view-aktuelles > .view-content .views-row .row-container {
         background: #ffffff;
         padding: 30px;
         height: 350px;
         margin-bottom: 30px;
         position: relative; }
-        /* line 191, ../scss/pages/_singleview.scss */
+        /* line 193, ../scss/pages/_singleview.scss */
         .page-aktuelles .view-aktuelles > .view-content .views-row .row-container .views-field-field-themenzuweisung {
           padding-bottom: 10px; }
-          /* line 194, ../scss/pages/_singleview.scss */
+          /* line 196, ../scss/pages/_singleview.scss */
           .page-aktuelles .view-aktuelles > .view-content .views-row .row-container .views-field-field-themenzuweisung img {
             display: inline-block;
             margin-right: 10px; }
-        /* line 200, ../scss/pages/_singleview.scss */
+        /* line 202, ../scss/pages/_singleview.scss */
         .page-aktuelles .view-aktuelles > .view-content .views-row .row-container .views-field-type {
           color: #e74712; }
-        /* line 205, ../scss/pages/_singleview.scss */
+        /* line 207, ../scss/pages/_singleview.scss */
         .page-aktuelles .view-aktuelles > .view-content .views-row .row-container .views-field-title a {
           text-decoration: none;
           color: #273753; }
-        /* line 211, ../scss/pages/_singleview.scss */
+        /* line 213, ../scss/pages/_singleview.scss */
         .page-aktuelles .view-aktuelles > .view-content .views-row .row-container .views-field-field-datum {
           position: absolute;
           bottom: 30px; }
-          /* line 215, ../scss/pages/_singleview.scss */
+          /* line 217, ../scss/pages/_singleview.scss */
           .page-aktuelles .view-aktuelles > .view-content .views-row .row-container .views-field-field-datum .date-display-single {
             font-size: 17px;
             color: #949d9e; }
-  /* line 224, ../scss/pages/_singleview.scss */
+  /* line 226, ../scss/pages/_singleview.scss */
   .page-aktuelles .view-aktuelles .views-submit-button {
     display: none; }
-  /* line 228, ../scss/pages/_singleview.scss */
+  /* line 230, ../scss/pages/_singleview.scss */
   .page-aktuelles .view-aktuelles .view-map-teaser {
     clear: both; }
-    /* line 231, ../scss/pages/_singleview.scss */
+    /* line 233, ../scss/pages/_singleview.scss */
     .page-aktuelles .view-aktuelles .view-map-teaser .view-content {
       margin: 0; }
-      /* line 234, ../scss/pages/_singleview.scss */
+      /* line 236, ../scss/pages/_singleview.scss */
       .page-aktuelles .view-aktuelles .view-map-teaser .view-content .views-row {
         background: #273753;
         padding: 40px; }
-        /* line 240, ../scss/pages/_singleview.scss */
+        /* line 242, ../scss/pages/_singleview.scss */
         .page-aktuelles .view-aktuelles .view-map-teaser .view-content .views-row .views-field-field-bild img {
           color: #e74712; }
-        /* line 244, ../scss/pages/_singleview.scss */
+        /* line 246, ../scss/pages/_singleview.scss */
         .page-aktuelles .view-aktuelles .view-map-teaser .view-content .views-row .views-field-field-paragraph-title {
           color: #ffffff;
           font-size: 38px; }
-        /* line 249, ../scss/pages/_singleview.scss */
+        /* line 251, ../scss/pages/_singleview.scss */
         .page-aktuelles .view-aktuelles .view-map-teaser .view-content .views-row .views-field-field-flie-text-bereich {
           color: #ffffff; }
-        /* line 253, ../scss/pages/_singleview.scss */
+        /* line 255, ../scss/pages/_singleview.scss */
         .page-aktuelles .view-aktuelles .view-map-teaser .view-content .views-row .views-field-field-quellenangabe a {
           color: #ffffff; }
 
-/* line 263, ../scss/pages/_singleview.scss */
+/* line 265, ../scss/pages/_singleview.scss */
 .node-type-protagonist {
   background: #eff2f7; }
-  /* line 271, ../scss/pages/_singleview.scss */
+  /* line 273, ../scss/pages/_singleview.scss */
   .node-type-protagonist .node-protagonist .view-display-id-block_2 .views-row .views-field-views-conditional a {
     text-decoration: none; }
-  /* line 276, ../scss/pages/_singleview.scss */
+  /* line 278, ../scss/pages/_singleview.scss */
   .node-type-protagonist .node-protagonist .view-display-id-block_2 .views-row .views-field-views-conditional-2 .field-content {
     font-size: 16px; }
-  /* line 283, ../scss/pages/_singleview.scss */
+  /* line 285, ../scss/pages/_singleview.scss */
   .node-type-protagonist .node-protagonist .view-display-id-block_1 .views-row .views-field-field-event-datum .field-content {
     color: #e74712;
     font-size: 22px; }
-  /* line 292, ../scss/pages/_singleview.scss */
+  /* line 294, ../scss/pages/_singleview.scss */
   .node-type-protagonist .field-name-field-weiterf-hrende-links .field-label {
     font-size: 24px; }
-  /* line 296, ../scss/pages/_singleview.scss */
-  .node-type-protagonist .field-name-field-weiterf-hrende-links .field-items a.external-link {
-    text-decoration: none;
-    color: #273753; }
 
-/* line 305, ../scss/pages/_singleview.scss */
+/* line 302, ../scss/pages/_singleview.scss */
 .not-front .node-doorpage .page-title {
   border: none;
   margin: 0; }
-/* line 310, ../scss/pages/_singleview.scss */
+/* line 307, ../scss/pages/_singleview.scss */
 .not-front .node-doorpage .field-name-field-untertitel .field-item {
   color: #e74712;
   font-size: 26px; }
-/* line 315, ../scss/pages/_singleview.scss */
+/* line 312, ../scss/pages/_singleview.scss */
 .not-front .node-doorpage .field-name-field-kurztext .field-item {
   font-size: 22px; }
-/* line 321, ../scss/pages/_singleview.scss */
+/* line 318, ../scss/pages/_singleview.scss */
 .not-front .node-doorpage .view-alle-themen-teaser {
   background: #eff2f7; }
-  /* line 327, ../scss/pages/_singleview.scss */
+  /* line 324, ../scss/pages/_singleview.scss */
   .not-front .node-doorpage .view-alle-themen-teaser .view-sub-wrapper .view-content {
     margin-left: -15px;
     margin-right: -15px; }
-    /* line 331, ../scss/pages/_singleview.scss */
+    /* line 328, ../scss/pages/_singleview.scss */
     .not-front .node-doorpage .view-alle-themen-teaser .view-sub-wrapper .view-content .term-title {
       color: #273753;
       font-size: 28px;
       padding-bottom: 40px;
       padding-top: 40px; }
-    /* line 338, ../scss/pages/_singleview.scss */
+    /* line 335, ../scss/pages/_singleview.scss */
     .not-front .node-doorpage .view-alle-themen-teaser .view-sub-wrapper .view-content p {
       color: #273753; }
-    /* line 342, ../scss/pages/_singleview.scss */
+    /* line 339, ../scss/pages/_singleview.scss */
     .not-front .node-doorpage .view-alle-themen-teaser .view-sub-wrapper .view-content .views-row {
       padding: 10px; }
-      /* line 347, ../scss/pages/_singleview.scss */
+      /* line 344, ../scss/pages/_singleview.scss */
       .not-front .node-doorpage .view-alle-themen-teaser .view-sub-wrapper .view-content .views-row .views-field-name a {
         background: #273753;
         text-decoration: none;
@@ -7681,18 +7679,18 @@ header.navbar-default {
         font-size: 18px;
         color: #ffffff;
         float: left; }
-  /* line 358, ../scss/pages/_singleview.scss */
+  /* line 355, ../scss/pages/_singleview.scss */
   .not-front .node-doorpage .view-alle-themen-teaser .view-sub-wrapper .view-footer {
     padding-top: 40px;
     clear: both;
     padding-bottom: 20px; }
-    /* line 363, ../scss/pages/_singleview.scss */
+    /* line 360, ../scss/pages/_singleview.scss */
     .not-front .node-doorpage .view-alle-themen-teaser .view-sub-wrapper .view-footer a {
       text-decoration: none;
       color: #273753;
       position: relative;
       padding-left: 30px; }
-      /* line 369, ../scss/pages/_singleview.scss */
+      /* line 366, ../scss/pages/_singleview.scss */
       .not-front .node-doorpage .view-alle-themen-teaser .view-sub-wrapper .view-footer a:before {
         content: "arrow_forward";
         color: #e74712;
@@ -7700,55 +7698,55 @@ header.navbar-default {
         top: 4px;
         left: 2px; }
 
-/* line 385, ../scss/pages/_singleview.scss */
+/* line 382, ../scss/pages/_singleview.scss */
 .view-neueste-digital-projekte {
   background: #3c506e; }
-  /* line 388, ../scss/pages/_singleview.scss */
+  /* line 385, ../scss/pages/_singleview.scss */
   .view-neueste-digital-projekte .view-sub-wrapper {
     padding: 60px 0;
     position: relative; }
-    /* line 395, ../scss/pages/_singleview.scss */
+    /* line 392, ../scss/pages/_singleview.scss */
     .view-neueste-digital-projekte .view-sub-wrapper .view-header .pane-title {
       color: #ffffff;
       font-size: 28px;
       padding-bottom: 40px; }
-    /* line 402, ../scss/pages/_singleview.scss */
+    /* line 399, ../scss/pages/_singleview.scss */
     .view-neueste-digital-projekte .view-sub-wrapper .view-content {
       margin-left: -15px;
       margin-right: -15px; }
-      /* line 409, ../scss/pages/_singleview.scss */
+      /* line 406, ../scss/pages/_singleview.scss */
       .view-neueste-digital-projekte .view-sub-wrapper .view-content .views-row .row-container {
         background: #273753;
         padding: 25px;
         height: 350px; }
-        /* line 414, ../scss/pages/_singleview.scss */
+        /* line 411, ../scss/pages/_singleview.scss */
         .view-neueste-digital-projekte .view-sub-wrapper .view-content .views-row .row-container .views-field-field-themenzuweisung {
           margin-bottom: 10px; }
-          /* line 417, ../scss/pages/_singleview.scss */
+          /* line 414, ../scss/pages/_singleview.scss */
           .view-neueste-digital-projekte .view-sub-wrapper .view-content .views-row .row-container .views-field-field-themenzuweisung img {
             display: inline-block;
             margin-right: 10px; }
-        /* line 424, ../scss/pages/_singleview.scss */
+        /* line 421, ../scss/pages/_singleview.scss */
         .view-neueste-digital-projekte .view-sub-wrapper .view-content .views-row .row-container .views-field-type .field-content {
           color: #e74712;
           font-size: 22px; }
-        /* line 431, ../scss/pages/_singleview.scss */
+        /* line 428, ../scss/pages/_singleview.scss */
         .view-neueste-digital-projekte .view-sub-wrapper .view-content .views-row .row-container .views-field-title a {
           color: #ffffff;
           text-decoration: none;
           font-size: 22px; }
-    /* line 441, ../scss/pages/_singleview.scss */
+    /* line 438, ../scss/pages/_singleview.scss */
     .view-neueste-digital-projekte .view-sub-wrapper .view-footer {
       padding-top: 40px;
       clear: both; }
-      /* line 445, ../scss/pages/_singleview.scss */
+      /* line 442, ../scss/pages/_singleview.scss */
       .view-neueste-digital-projekte .view-sub-wrapper .view-footer a {
         text-decoration: none;
         color: #ffffff;
         font-size: 20px;
         position: relative;
         padding-left: 30px; }
-        /* line 452, ../scss/pages/_singleview.scss */
+        /* line 449, ../scss/pages/_singleview.scss */
         .view-neueste-digital-projekte .view-sub-wrapper .view-footer a:before {
           content: "arrow_forward";
           color: #e74712;
@@ -7756,13 +7754,149 @@ header.navbar-default {
           top: 4px;
           left: 0; }
 
-/* line 468, ../scss/pages/_singleview.scss */
+/* line 465, ../scss/pages/_singleview.scss */
 .node-type-article {
   background-color: #eff2f7; }
 
-/* line 472, ../scss/pages/_singleview.scss */
-.group-page-info {
-  padding: 30px 0; }
+/* line 469, ../scss/pages/_singleview.scss */
+.group-page-info, .group-page-bottom {
+  padding: 60px 0 45px; }
+
+/* line 473, ../scss/pages/_singleview.scss */
+.group-body-container {
+  background-color: #ffffff;
+  padding: 60px 0 45px; }
+  /* line 476, ../scss/pages/_singleview.scss */
+  .group-body-container p, .group-body-container h2, .group-body-container h3, .group-body-container .field-name-field-kurztext .field-item {
+    margin: 0 0 40px 0; }
+  /* line 479, ../scss/pages/_singleview.scss */
+  .group-body-container h2 {
+    font-size: 20px;
+    color: #e74712; }
+  /* line 483, ../scss/pages/_singleview.scss */
+  .group-body-container h3 {
+    font-size: 26px;
+    color: #e74712; }
+  /* line 487, ../scss/pages/_singleview.scss */
+  .group-body-container a {
+    color: #273753;
+    text-decoration: none;
+    border-bottom: 1px solid #6e798c;
+    margin: 0 5px;
+    text-transform: capitalize;
+    display: inline-block; }
+    /* line 494, ../scss/pages/_singleview.scss */
+    .group-body-container a:hover {
+      color: #e74712;
+      border-color: #e74712; }
+  /* line 499, ../scss/pages/_singleview.scss */
+  .group-body-container ul, .group-body-container ol {
+    list-style: none;
+    padding-left: 55px;
+    line-height: 35px;
+    margin-bottom: 40px; }
+  /* line 506, ../scss/pages/_singleview.scss */
+  .group-body-container ul li, .group-body-container ol li {
+    position: relative; }
+    /* line 508, ../scss/pages/_singleview.scss */
+    .group-body-container ul li::before, .group-body-container ol li::before {
+      content: "\002022";
+      color: #e74712;
+      font-size: 28px;
+      font-weight: bold;
+      left: -25px;
+      position: absolute;
+      top: -1px; }
+  /* line 520, ../scss/pages/_singleview.scss */
+  .group-body-container ol li {
+    counter-increment: list; }
+    /* line 522, ../scss/pages/_singleview.scss */
+    .group-body-container ol li::before {
+      content: counter(list) ".";
+      font-size: 19px; }
+
+/* line 529, ../scss/pages/_singleview.scss */
+.group-body-container > * {
+  margin-bottom: 15px; }
+
+/* line 533, ../scss/pages/_singleview.scss */
+.field-name-field-bild-ref, .field-name-field-youtube-url {
+  margin: 70px auto; }
+
+/* line 536, ../scss/pages/_singleview.scss */
+.field-name-field-bild {
+  margin-bottom: 25px; }
+  /* line 539, ../scss/pages/_singleview.scss */
+  .field-name-field-bild .field-item img {
+    width: 890px;
+    height: 490px; }
+
+/* line 545, ../scss/pages/_singleview.scss */
+.field-name-field-bildbeschreibung, .field-name-field-videounterschrift {
+  float: left;
+  margin-right: 5px; }
+  /* line 548, ../scss/pages/_singleview.scss */
+  .field-name-field-bildbeschreibung .field-item, .field-name-field-videounterschrift .field-item {
+    font-size: 18px; }
+
+/* line 552, ../scss/pages/_singleview.scss */
+.field .field-label {
+  font-weight: normal; }
+
+/* line 556, ../scss/pages/_singleview.scss */
+.field-name-field-copyright .field-label, .field-name-field-copyright .field-item, .field-name-field-videoquelle .field-label, .field-name-field-videoquelle .field-item {
+  font-size: 16px;
+  color: #919BAA; }
+
+/* line 561, ../scss/pages/_singleview.scss */
+.field-name-field-copyright {
+  display: inline-block;
+  margin-top: 2px; }
+
+/* line 565, ../scss/pages/_singleview.scss */
+.field-name-field-youtube-url {
+  margin-bottom: 25px; }
+  /* line 567, ../scss/pages/_singleview.scss */
+  .field-name-field-youtube-url iframe {
+    width: 870px;
+    height: 490px; }
+
+/* line 572, ../scss/pages/_singleview.scss */
+.field-name-field-videounterschrift, .field-name-field-videoquelle {
+  margin-bottom: 0; }
+
+/* line 576, ../scss/pages/_singleview.scss */
+.group-page-bottom > * {
+  margin-bottom: 40px; }
+/* line 579, ../scss/pages/_singleview.scss */
+.group-page-bottom .view-title, .group-page-bottom .field-label {
+  font-size: 24px;
+  font-weight: normal;
+  margin-bottom: 30px; }
+/* line 584, ../scss/pages/_singleview.scss */
+.group-page-bottom a {
+  color: #273753;
+  text-decoration: none; }
+/* line 589, ../scss/pages/_singleview.scss */
+.group-page-bottom .view-sub-wrapper .views-row {
+  border-bottom: 1px solid #d2d6dc;
+  padding-bottom: 15px;
+  margin-bottom: 15px; }
+  /* line 593, ../scss/pages/_singleview.scss */
+  .group-page-bottom .view-sub-wrapper .views-row:last-child {
+    border: none;
+    padding-bottom: 0;
+    margin-bottom: 0; }
+  /* line 600, ../scss/pages/_singleview.scss */
+  .group-page-bottom .view-sub-wrapper .views-row .views-field:last-child .field-content {
+    font-size: 16px;
+    color: #3c506e; }
+
+/* line 613, ../scss/pages/_singleview.scss */
+.external-link {
+  text-decoration: none;
+  color: #273753;
+  font-size: 18px; }
 
 /* line 1, ../scss/pages/_listview.scss */
 .page-taxonomy-term {
