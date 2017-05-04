@@ -29,6 +29,37 @@ function ipwa_base_views_api($module = NULL, $api = NULL) {
 function ipwa_base_image_default_styles() {
   $styles = array();
 
+  // Exported image style: scale.
+  $styles['scale'] = array(
+    'label' => 'scale',
+    'effects' => array(
+      1 => array(
+        'name' => 'image_scale',
+        'data' => array(
+          'width' => 860,
+          'height' => 484,
+          'upscale' => 0,
+        ),
+        'weight' => 1,
+      ),
+    ),
+  );
+
+  // Exported image style: scale_and_crop.
+  $styles['scale_and_crop'] = array(
+    'label' => 'scale and crop',
+    'effects' => array(
+      2 => array(
+        'name' => 'image_scale_and_crop',
+        'data' => array(
+          'width' => 860,
+          'height' => 484,
+        ),
+        'weight' => 1,
+      ),
+    ),
+  );
+
   // Exported image style: themen_icon_36x36.
   $styles['themen_icon_36x36'] = array(
     'label' => 'Themen icon (36x36)',
