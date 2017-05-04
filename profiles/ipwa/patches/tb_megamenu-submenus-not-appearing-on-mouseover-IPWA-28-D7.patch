@@ -1,0 +1,22 @@
+Index: profiles/ipwa/modules/contrib/tb_megamenu/js/tb-megamenu-frontend.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>windows-1252
+===================================================================
+--- profiles/ipwa/modules/contrib/tb_megamenu/js/tb-megamenu-frontend.js	(revision 6150a84abab7b928c17c2168ca927992c60ca1aa)
++++ profiles/ipwa/modules/contrib/tb_megamenu/js/tb-megamenu-frontend.js	(revision )
+@@ -38,9 +38,11 @@
+           }
+         });
+       });
+-      
+-      
++
++
++      if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+-      var isTouch = 'ontouchstart' in window && !(/hp-tablet/gi).test(navigator.appVersion);
++        var isTouch = 'ontouchstart' in window && !(/hp-tablet/gi).test(navigator.appVersion);
++      }
+       if(!isTouch){
+         $(document).ready(function($){
+           var mm_duration = 0;
