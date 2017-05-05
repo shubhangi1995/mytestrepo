@@ -3,6 +3,7 @@ body {
     font-family: $font-family-primary;
     color: $main-color;
     font-size: 20px;
+    line-height: normal;
 }
 
 header.navbar-default {
@@ -57,6 +58,7 @@ header.navbar-default {
 .text-center {
     text-align: left;
     clear: both;
+    padding: 10px 0 40px 0;
 
     ul.pagination {
         margin: 0;
@@ -123,6 +125,8 @@ header.navbar-default {
             background: none;
             color: $active-menu;
             font-size: 26px;
+            border-bottom: 2px solid $active-menu;
+            padding-bottom: 0;
         }
     }
 }
@@ -150,3 +154,53 @@ header.navbar-default {
         color: $main-color;
     }
 }
+
+//dropdown
+
+.select2-container {
+    min-width: 200px;
+
+    .select2-dropdown {
+        border: 0;
+        top: 10px;
+        background: $header-dropdown-menu;
+
+        .select2-results {
+            height: 200px;
+			color: $color-white;
+			
+			.simplebar-track .simplebar-scrollbar {
+    background: $main-color;
+}
+
+            ul.select2-results__options {
+                
+                height: auto;
+                overflow: hidden;
+                max-height: none;
+				
+				
+				.select2-results__option{
+				padding-left:20px !important;
+				}
+
+                
+            }
+        }
+
+        .select2-search--dropdown {
+            display: none;
+        }
+    }
+
+    .select2-results__option[aria-selected=true] {
+        background: 0;
+		
+    }
+
+    .select2-results__option--highlighted[aria-selected] {
+        background: $main-color;
+		
+    }
+}
+

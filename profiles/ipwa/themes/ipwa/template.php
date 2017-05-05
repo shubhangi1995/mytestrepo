@@ -12,7 +12,8 @@
  * @params $variables
  *
  */
-function ipwa_preprocess_node(&$variables) {
+function ipwa_preprocess_node(&$variables)
+{
   //For CT 'Bild' or frontpage don't show title
   if ($variables['type'] == 'bild' || drupal_is_front_page()) {
     // Don't show title
@@ -162,30 +163,6 @@ function ipwa_preprocess_views_view_unformatted__alles_zum_thema(&$vars){
   $view = $vars['view'];
   foreach($view->result as $id => $value) {
     $vars['node_type'][$id] = $value->node_type;
-  }
-}
-
-/**
- * Implements theme_preprocess_views_view().
- *
- * Theme preprocess function for views-view.tpl.php
- *
- * @params $vars
- *
- */
-function ipwa_preprocess_views_view(&$vars) {
-  if($vars['name'] == 'latest_content_doorpage' && $vars['display_id'] == 'block_5'){
-    // variable to embedd latest CT publication view
-    $vars['latest_publication_pg'] = views_embed_view("latest_content_doorpage", "block_1", arg(2));
-    // variable to embedd latest CT termin view
-    $vars['latest_termin_pg'] = views_embed_view("latest_content_doorpage", "block_2", arg(2));
-  }
-
-  if($vars['name'] == 'latest_content_doorpage' && $vars['display_id'] == 'block_3'){
-    // variable to embedd latest CT publication view
-    $vars['latest_publication_wa'] = views_embed_view("latest_content_doorpage", "block_4", arg(2));
-    // variable to embedd latest CT termin view
-    $vars['latest_termin_wa'] = views_embed_view("latest_content_doorpage", "block_6", arg(2));
   }
 }
 
