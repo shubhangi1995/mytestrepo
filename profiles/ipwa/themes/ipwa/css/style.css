@@ -7886,10 +7886,6 @@ header.navbar-default {
 /* line 570, ../scss/pages/_singleview.scss */
 .field-name-field-bild {
   margin-bottom: 25px; }
-  /* line 573, ../scss/pages/_singleview.scss */
-  .field-name-field-bild .field-item img {
-    width: 890px;
-    height: 490px; }
 
 /* line 579, ../scss/pages/_singleview.scss */
 .field-name-field-bildbeschreibung, .field-name-field-videounterschrift {
@@ -7951,8 +7947,18 @@ header.navbar-default {
   .group-page-bottom .view-sub-wrapper .views-row .views-field:last-child .field-content {
     font-size: 16px;
     color: #3c506e; }
+/* line 644, ../scss/pages/_singleview.scss */
+.group-page-bottom > .field .field-items .field-item {
+  border-bottom: 1px solid #d2d6dc;
+  padding-bottom: 15px;
+  margin-bottom: 15px; }
+  /* line 648, ../scss/pages/_singleview.scss */
+  .group-page-bottom > .field .field-items .field-item:last-child {
+    border: none;
+    padding-bottom: 0;
+    margin-bottom: 0; }
 
-/* line 647, ../scss/pages/_singleview.scss */
+/* line 661, ../scss/pages/_singleview.scss */
 .external-link {
   text-decoration: none;
   color: #273753;
