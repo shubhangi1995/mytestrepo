@@ -1068,6 +1068,9 @@ function ipwa_base_views_default_views() {
   $handler = $view->new_display('block', 'Kommende Veranstaltungen', 'block_1');
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['title'] = 'Kommende Veranstaltungen';
+  $handler->display->display_options['defaults']['query'] = FALSE;
+  $handler->display->display_options['query']['type'] = 'views_query';
+  $handler->display->display_options['query']['options']['distinct'] = TRUE;
   $handler->display->display_options['defaults']['relationships'] = FALSE;
   /* Relationship: File Usage: File */
   $handler->display->display_options['relationships']['node_to_file']['id'] = 'node_to_file';
