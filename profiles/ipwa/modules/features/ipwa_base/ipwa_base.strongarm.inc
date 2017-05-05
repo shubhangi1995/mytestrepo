@@ -182,6 +182,20 @@ function ipwa_base_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'path_breadcrumbs_delimiter';
+  $strongarm->value = '>';
+  $export['path_breadcrumbs_delimiter'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'path_breadcrumbs_home_link_title';
+  $strongarm->value = 'Homepage';
+  $export['path_breadcrumbs_home_link_title'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'site_map_page_title';
   $strongarm->value = 'Sitemap';
   $export['site_map_page_title'] = $strongarm;
