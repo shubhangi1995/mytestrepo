@@ -13,8 +13,28 @@ include_once 'ipwa_termin_.features.inc';
  *
  */
 function ipwa_termin__views_pre_render(&$view) {
+  if ($view->name == "termin" && $view->current_display == 'page') {
+    $front_url = drupal_get_normal_path(variable_get('site_frontpage', 'node'));
+    $front_nid = explode('/', $front_url);
+    $front_nid = end($front_nid);
+    $node = node_load($front_nid);
+    if(isset($node->field_anzuzeigende_seitenmodule) && !empty($node->field_anzuzeigende_seitenmodule)) {
+      foreach ($node->field_anzuzeigende_seitenmodule['und'] as $pid) {
+        $entity_data = entity_load('paragraphs_item', array($pid['value']));
+        if(!empty($entity_data)) {
+          if($entity_data[$pid['value']]->bundle == 'frontpage_map_teaser_paragraph') {
+            $id = $pid['value'];
+          }
+        }
+      }
+    }
+    if(isset($id)){
+      $view->attachment_after = views_embed_view('map_teaser', 'block', $id);
+    }
+  }
   //For Related content: Kommende Veranstaltungen view
-  if ($view->name == 'related_content') {
+  if ($view->name == 'related_content' ||
+    ($view->name == 'latest_content_doorpage' && ($view->current_display == 'block_2' || $view->current_display == 'block_6'))) {
     foreach ($view->result as $key => $result) {
       if (!empty($result->field_field_event_datum['0']['rendered']['#markup'])) {
         // Display '-' instead of 'to' in date field
@@ -26,7 +46,8 @@ function ipwa_termin__views_pre_render(&$view) {
   }
 
   //For changing output of recurring events in views in format start date- end date
-  if (($view->name == 'termin') || ($view->name == 'related_content')) {
+  if (($view->name == 'termin') || ($view->name == 'related_content')
+    || ($view->name == 'latest_content_doorpage' && ($view->current_display == 'block_2' || $view->current_display == 'block_6'))) {
     foreach ($view->result as $key => $result) {
       if (!empty($result->field_field_event_datum)) {
         $occurence = count($result->field_field_event_datum);

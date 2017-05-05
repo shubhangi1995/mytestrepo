@@ -22,7 +22,7 @@ function ipwa_article_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 6,
+        'weight' => 23,
       ),
       'teaser' => array(
         'label' => 'hidden',
@@ -69,7 +69,7 @@ function ipwa_article_field_default_field_instances() {
           'view_mode' => 'full',
         ),
         'type' => 'paragraphs_view',
-        'weight' => 8,
+        'weight' => 25,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -130,7 +130,7 @@ function ipwa_article_field_default_field_instances() {
           'view_mode' => 'default',
         ),
         'type' => 'entityreference_entity_view',
-        'weight' => 7,
+        'weight' => 24,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -374,7 +374,7 @@ function ipwa_article_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 5,
+        'weight' => 22,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -689,7 +689,7 @@ function ipwa_article_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 11,
+        'weight' => 28,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -729,7 +729,7 @@ function ipwa_article_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 10,
+        'weight' => 27,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -836,7 +836,7 @@ Schema für externe Links: http://www…',
           'youtube_width' => NULL,
         ),
         'type' => 'youtube_video',
-        'weight' => 9,
+        'weight' => 26,
       ),
       'teaser' => array(
         'label' => 'above',

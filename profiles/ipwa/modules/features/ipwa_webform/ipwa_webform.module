@@ -5,3 +5,6 @@
  */
 
 include_once 'ipwa_webform.features.inc';
+function ipwa_form_webform_node_form_alter( &$form, &$form_state,$form_id ){
+  honeypot_add_form_protection($form, $form_state, array('honeypot', 'time_restriction'));
+}
