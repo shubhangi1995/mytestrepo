@@ -22,7 +22,7 @@ function ipwa_topic_views_default_views() {
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['title'] = 'Alles zum thema';
+  $handler->display->display_options['title'] = 'Alles Zum Thema';
   $handler->display->display_options['use_ajax'] = TRUE;
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
@@ -145,8 +145,9 @@ function ipwa_topic_views_default_views() {
     'projekt' => 'projekt',
   );
 
-  /* Display: Alles zum thema */
-  $handler = $view->new_display('block', 'Alles zum thema', 'block');
+  /* Display: Alles Zum Thema */
+  $handler = $view->new_display('block', 'Alles Zum Thema', 'block');
+  $handler->display->display_options['defaults']['use_ajax'] = FALSE;
   $handler->display->display_options['defaults']['sorts'] = FALSE;
   /* Sort criterion: Content: Titel */
   $handler->display->display_options['sorts']['title']['id'] = 'title';
@@ -161,10 +162,10 @@ function ipwa_topic_views_default_views() {
   $handler->display->display_options['sorts']['field_datum_value']['order'] = 'DESC';
   $handler->display->display_options['sorts']['field_datum_value']['exposed'] = TRUE;
   $handler->display->display_options['sorts']['field_datum_value']['expose']['label'] = 'neueste zuerst';
-  $handler->display->display_options['block_description'] = 'Alles zum thema';
+  $handler->display->display_options['block_description'] = 'Alles Zum Thema';
   $translatables['alles_zum_thema'] = array(
     t('Master'),
-    t('Alles zum thema'),
+    t('Alles Zum Thema'),
     t('more'),
     t('Apply'),
     t('Reset'),
