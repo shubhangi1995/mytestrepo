@@ -32,6 +32,9 @@ function ipwa_termin__views_pre_render(&$view) {
     if(isset($id)){
       $view->attachment_after = views_embed_view('map_teaser', 'block', $id);
     }
+    $view->attachment_before = '<div class="view-result-count">';
+    $view->attachment_before .= $view->total_rows . ' ' . t('Treffer');
+    $view->attachment_before .= '</div>';
   }
   //For Related content: Kommende Veranstaltungen view
   if ($view->name == 'related_content' ||
