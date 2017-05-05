@@ -507,14 +507,17 @@
 .group-body-container{
 	background-color:$color-white;
 	padding: 60px 0 45px;
-	p, h2, h3, .field-name-field-kurztext .field-item{
+	p, h3, h4, .field-name-field-kurztext .field-item{
 		margin:0 0 40px 0;
 	}
-	h2{
+	h1, h2{
+		display:none;
+	}
+	h3{
 		font-size:20px;
 		color:$active-menu;
 	}
-	h3{
+	h4{
 		font-size:26px;
 		color:$active-menu;
 	}
@@ -608,11 +611,11 @@
 }
 .group-page-bottom{
 	> *{
-		margin-bottom:55px; 
+		margin-bottom:80px; 
 	}
 	.view-title, .field-label{
 		font-size:24px;
-		font-weight:normal;
+		font-weight:bold;
 		margin-bottom:30px;
 	}
 	a{
@@ -654,6 +657,233 @@
 		}
 	}
 }
+
+//view-latest-content-doorpage
+
+.view-latest-content-doorpage {
+    > .view-sub-wrapper {
+        @extend .container;
+        padding: 0;
+
+        .left-block {
+            width: 70%;
+            float: left;
+			.view-header{
+			  padding-bottom:30px;
+			  padding-top:60px;
+			  font-size:28px;
+			
+			}
+
+            .inner-wrapper {
+                width: 45%;
+                float: left;
+				margin-right:5%;
+
+                .view-content .views-row {
+                    .row-container {
+                        background: $color-white;
+                        height: 350px;
+                        padding: 30px;
+						position:relative;
+						.views-field-field-themenzuweisung {
+                            margin-bottom: 30px;
+
+                            img {
+                                display: inline-block;
+                                margin-right: 10px;
+                            }
+                        }
+
+                        .views-field-type {
+                            color: $active-menu;
+                            font-weight: bold;
+                            padding-bottom: 15px;
+                        }
+
+                        .views-field-title {
+                            padding-bottom: 70px;
+
+                            a {
+                                text-decoration: none;
+                                color: $main-color;
+                            }
+                        }
+
+                        .views-field-field-datum {
+                            position: absolute;
+                            bottom: 30px;
+
+                            .date-display-single {
+                                font-size: 17px;
+                                color: $color-light-grey;
+                            }
+                        }
+                    }
+                }
+            }
+
+			.view-footer{
+			padding-top:30px;
+			padding-bottom:60px;
+			  a{
+			  text-decoration: none;
+                color: $main-color;
+                font-size: 20px;
+                position: relative;
+                padding-left: 30px;
+
+                &:before {
+                    @extend .material-icons;
+
+                    content: "arrow_forward";
+                    color: $active-menu;
+                    position: absolute;
+                    top: 4px;
+                    left: 0;
+                }
+			  
+			  }
+			
+			}
+            > .view-latest-content-doorpage {
+                width: 45%;
+                float: left;
+				margin-right:5%;
+				
+				.view-sub-wrapper{
+				width:auto;
+
+                .view-content .views-row {
+                    .row-container {
+                        background: $color-white;
+                        height: 350px;
+                        padding: 30px;
+						position:relative;
+
+                        .views-field-field-themenzuweisung {
+                            margin-bottom: 30px;
+
+                            img {
+                                display: inline-block;
+                                margin-right: 10px;
+                            }
+                        }
+
+                        .views-field-type {
+                            color: $active-menu;
+                            font-weight: bold;
+                            padding-bottom: 15px;
+                        }
+
+                        .views-field-title {
+                            padding-bottom: 70px;
+
+                            a {
+                                text-decoration: none;
+                                color: $main-color;
+                            }
+                        }
+
+                        .views-field-field-datum {
+                            position: absolute;
+                            bottom: 30px;
+
+                            .date-display-single {
+                                font-size: 17px;
+                                color: $color-light-grey;
+                            }
+                        }
+                    }
+                }
+				
+            }
+        }
+}
+
+
+        > .view-latest-content-doorpage {
+            width: 30%;
+            float: left;
+			
+			.view-sub-wrapper{
+				width:auto;
+				
+			.view-header{
+			  padding-bottom:30px;
+			  padding-top:60px;
+			  font-size:28px;
+			
+			}
+			.view-content .views-row {
+                    .row-container {
+                        background: $color-white;
+                        height: 350px;
+                        padding: 30px;
+						position:relative;
+
+                        .views-field-field-themenzuweisung {
+                            margin-bottom: 30px;
+
+                            img {
+                                display: inline-block;
+                                margin-right: 10px;
+                            }
+                        }
+
+                        .views-field-type {
+                            color: $active-menu;
+                            font-weight: bold;
+                            padding-bottom: 15px;
+                        }
+
+                        .views-field-title {
+                            padding-bottom: 70px;
+
+                            a {
+                                text-decoration: none;
+                                color: $main-color;
+                            }
+                        }
+
+                        .views-field-field-ort {
+                            position: absolute;
+                            bottom: 30px;
+
+                            .field-content {
+                                font-size: 17px;
+                                color: $color-light-grey;
+                            }
+                        }
+                    }
+                }
+			.view-footer{
+			padding-top:30px;
+			padding-bottom:60px;
+			  a{
+			  text-decoration: none;
+                color: $main-color;
+                font-size: 20px;
+                position: relative;
+                padding-left: 30px;
+
+                &:before {
+                    @extend .material-icons;
+
+                    content: "arrow_forward";
+                    color: $active-menu;
+                    position: absolute;
+                    top: 4px;
+                    left: 0;
+                }
+			  
+			  }
+			
+			}
+			
+        }
+    }
+}}
 
 
 // External link
