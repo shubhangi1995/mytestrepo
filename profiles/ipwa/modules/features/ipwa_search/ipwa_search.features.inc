@@ -23,7 +23,17 @@ function ipwa_search_default_search_api_index() {
     "server" : "ipwa_solr_server",
     "item_type" : "node",
     "options" : {
-      "datasource" : { "bundles" : [] },
+      "datasource" : { "bundles" : [
+          "protagonist",
+          "article",
+          "document",
+          "f_rderbekanntmachung",
+          "nachricht",
+          "projekt",
+          "publikation",
+          "termin"
+        ]
+      },
       "index_directly" : 0,
       "cron_limit" : "50",
       "fields" : {
