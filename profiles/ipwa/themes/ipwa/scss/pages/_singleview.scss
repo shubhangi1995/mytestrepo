@@ -504,6 +504,9 @@
     @extend .page_inner;
     padding: 60px 0 45px;
 }
+.group-page-info  + .paragraphs-items-field-anzuzeigende-seitenmodule-full{
+	@extend .container;
+}
 .group-body-container{
 	background-color:$color-white;
 	padding: 60px 0 45px;
@@ -588,9 +591,12 @@
 				font-size:18px;
 			}
 		}
+} 
+
 // Paragraph inside body container
 		.paragraphs-item-flie-text-mit-bild-links, .paragraphs-item-flie-text-mit-bild-rechts{
-			margin:40px 0 ;
+			margin:40px 0;
+			overflow:hidden;
 			.field-name-field-bild-ref, .field-name-field-flie-text-bereich{
 				margin:0;
 				padding-right:30px;
@@ -607,7 +613,6 @@
 				padding:0;
 			}
 		}
-} 
 .field .field-label{
 	font-weight:normal;
 }
@@ -908,6 +913,10 @@
         }
     }
 }}
+
+.paragraphs-items-field-anzuzeigende-seitenmodule-full{
+	//@extend .container;
+}
 
 
 // External link
