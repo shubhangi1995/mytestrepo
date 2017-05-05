@@ -571,8 +571,8 @@
 	margin-bottom:25px;
 	.field-item{
 		img{
-			width:890px;
-			height:490px;
+			//width:890px;
+			// height:490px;
 		}
 	}
 }
@@ -635,6 +635,20 @@
 						font-size:16px;
 						color:$header-dropdown-menu;
 					}
+				}
+			}
+		}
+	}
+	> .field{
+		.field-items{
+			.field-item{
+				border-bottom:1px solid $single-view-border-color;
+				padding-bottom:15px;
+				margin-bottom:15px;
+				&:last-child{
+					border:none;
+					padding-bottom:0;
+					margin-bottom:0;
 				}
 			}
 		}
