@@ -1,30 +1,39 @@
 <?php
-
 /**
  * @file
- * Tests for file.module.
+ * ipwa_menu.features.menu_custom.inc
  */
 
 /**
- * Provides methods specifically for testing File module's field handling.
+ * Implements hook_menu_default_menu_custom().
  */
-class FileFieldTestCase extends DrupalWebTestCase
-{
-  protected $admin_user;
+function ipwa_menu_menu_default_menu_custom() {
+  $menus = array();
 
-  function setUp()
-  {
-    // Since this is a base class for many test cases, support the same
-    // flexibility that DrupalWebTestCase::setUp() has for the modules to be
-    // passed in as either an array or a variable number of string arguments.
-    $modules = func_get_args();
-    if (isset($modules[0]) && is_array($modules[0])) {
-      $modules = $modules[0];
-    }
-    $modules[] = 'file';
-    $modules[] = 'file_module_test';
-    parent::setUp($modules);
-    $this->admin_user = $this->drupalCreateUser(array('access content', 'access administration pages', 'administer site configuration', 'administer users', 'administer permissions', 'administer content types', 'administer nodes', 'bypass node access', 'administer fields'));
-    $this->drupalLogin($this->admin_user);
-  }
+  // Exported menu: main-menu.
+  $menus['main-menu'] = array(
+    'menu_name' => 'main-menu',
+    'title' => 'Main menu',
+    'description' => 'The <em>Main</em> menu is used on many sites to show the major sections of the site, often in a top navigation bar.',
+  );
+  // Exported menu: menu-footer-navigation.
+  $menus['menu-footer-navigation'] = array(
+    'menu_name' => 'menu-footer-navigation',
+    'title' => 'Footer navigation',
+    'description' => '',
+  );
+  // Exported menu: menu-meta-navigation.
+  $menus['menu-meta-navigation'] = array(
+    'menu_name' => 'menu-meta-navigation',
+    'title' => 'meta_navigation',
+    'description' => '',
+  );
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('Footer navigation');
+  t('Main menu');
+  t('The <em>Main</em> menu is used on many sites to show the major sections of the site, often in a top navigation bar.');
+  t('meta_navigation');
+
+  return $menus;
 }
