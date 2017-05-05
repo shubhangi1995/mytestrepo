@@ -72,6 +72,9 @@
         padding-left: 350px;
         border: none;
         margin: 0;
+		padding-bottom:35px;
+		font-weight:normal;
+		padding-top: 80px;
     }
 
     .view-aktuelles {
@@ -81,6 +84,7 @@
             color: $active-menu;
             font-size: 26px;
             padding-left: 250px;
+			padding-bottom:60px;
         }
 
         .view-filters {
@@ -92,10 +96,11 @@
 
                     .form-item {
                         display: inline-block;
-                        padding-right: 50px;
+                        padding-right: 60px;
 
                         label {
                             padding-left: 0;
+							padding-bottom:15px;
 
                             input {
                                 visibility: hidden;
@@ -115,7 +120,7 @@
                         width: 25%;
                         float: left;
                         padding: 10px 0;
-                        background: $main-color;
+                        background: $header-dropdown-menu;
                         border-right: 1px solid $color-light-grey;
 
                         .select2-container--default .select2-selection--single {
@@ -123,17 +128,23 @@
                             border: 0;
                             border-radius: 0;
 
+
                             &:before {
                                 content: "\f107";
                                 font-family: FontAwesome;
                                 color: $color-white;
                                 position: absolute;
                                 float: right;
-                                right: 8px;
+                                right: 20px;
+								top:3px;
                             }
+							
 
                             .select2-selection__rendered {
                                 color: $color-white;
+								padding-left:20px;
+								
+							
                             }
 
                             .select2-selection__arrow {
@@ -153,6 +164,7 @@
 
                         a {
                             text-decoration: none;
+							color:$main-color;
 
                             &.active {
                                 border-bottom: 2px solid $active-menu;
@@ -170,6 +182,8 @@
         .attachment-before .view-result-count {
             margin-top: -88px;
             padding: 30px 0;
+			font-size:22px;
+			font-weight:bold;
         }
 
         > .view-content {
@@ -184,12 +198,12 @@
                 .row-container {
                     background: $color-white;
                     padding: 30px;
-                    height: 350px;
+                    height: 430px;
                     margin-bottom: 30px;
                     position: relative;
 
                     .views-field-field-themenzuweisung {
-                        padding-bottom: 10px;
+                        padding-bottom: 35px;
 
                         img {
                             display: inline-block;
@@ -199,9 +213,12 @@
 
                     .views-field-type {
                         color: $active-menu;
+						font-weight:bold;
+						padding-bottom:15px;
                     }
 
                     .views-field-title {
+					padding-bottom:70px;
                         a {
                             text-decoration: none;
                             color: $main-color;
@@ -235,71 +252,46 @@
                     @extend .col-md-8;
 
                     background: $main-color;
-                    padding: 40px;
+                    padding: 45px;
 
-                    .views-field-field-bild img {
+                    .views-field-field-bild {
+					padding-bottom:20px;
+					img {
                         color: $active-menu;
-                    }
+                    }}
 
                     .views-field-field-paragraph-title {
                         color: $color-white;
                         font-size: 38px;
+						font-weight:bold;
+						padding-bottom:20px;
                     }
 
                     .views-field-field-flie-text-bereich {
                         color: $color-white;
+						padding-bottom:35px;
                     }
 
                     .views-field-field-quellenangabe a {
                         color: $color-white;
+						position:relative;
+						padding-left:30px;
+						
+						&:before {
+                                @extend .material-icons;
+
+                                content: "arrow_forward";
+                                color: $active-menu;
+                                position: absolute;
+                                top: 3px;
+                                left: 0;
+                            }
                     }
                 }
             }
         }
     }
 }
-
-//---------------node-protagonist--------------//
-.node-type-protagonist {
-    background: $color-light-blue;
-
-    .node-protagonist {
-        @extend .container;
-
-        .view-display-id-block_2 .views-row {
-            .views-field-views-conditional {
-                a {
-                    text-decoration: none;
-                }
-            }
-
-            .views-field-views-conditional-2 .field-content {
-                font-size: 16px;
-            }
-        }
-
-        .view-display-id-block_1 .views-row {
-            .views-field-field-event-datum {
-                .field-content {
-                    color: $active-menu;
-                    font-size: 22px;
-                }
-            }
-        }
-    }
-
-    .field-name-field-weiterf-hrende-links {
-        .field-label {
-            font-size: 24px;
-        }
-
-        .field-items a.external-link {
-            text-decoration: none;
-            color: $main-color;
-        }
-    }
-}
-
 //-------------node-doorpage-----------//
 .not-front .node-doorpage {
     .page-title {

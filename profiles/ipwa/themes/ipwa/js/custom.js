@@ -27,7 +27,16 @@ jQuery(document).ready(function(){
   }
 }); 
 
+jQuery('select').select2().on("select2:open", function(){
+ jQuery('.select2-results').addClass("simplebar");
+ jQuery('.select2-results').simplebar();
+});
+	
+	
 
-jQuery(".select2-container--default .select2-results > #select2-edit-field-themenzuweisung-tid-results").simplebar();
+
+
+
+
 	
 });
