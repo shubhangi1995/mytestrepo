@@ -176,16 +176,25 @@ function ipwa_preprocess_views_view_unformatted__alles_zum_thema(&$vars){
 function ipwa_preprocess_views_view(&$vars) {
   if($vars['name'] == 'latest_content_doorpage' && $vars['display_id'] == 'block_5'){
     // variable to embedd latest CT publication view
-    $vars['latest_publication_pg'] = views_embed_view("latest_content_doorpage", "block_1", arg(2));
+    if (!empty(views_get_view_result("latest_content_doorpage", "block_1", arg(2)))) {
+      $vars['latest_publication_pg'] = views_embed_view("latest_content_doorpage", "block_1", arg(2));
+    }
     // variable to embedd latest CT termin view
-    $vars['latest_termin_pg'] = views_embed_view("latest_content_doorpage", "block_2", arg(2));
+    if (!empty(views_get_view_result("latest_content_doorpage", "block_2", arg(2)))) {
+      $vars['latest_termin_pg'] = views_embed_view("latest_content_doorpage", "block_2", arg(2));
+    }
   }
 
   if($vars['name'] == 'latest_content_doorpage' && $vars['display_id'] == 'block_3'){
     // variable to embedd latest CT publication view
-    $vars['latest_publication_wa'] = views_embed_view("latest_content_doorpage", "block_4", arg(2));
+    if (!empty(views_get_view_result("latest_content_doorpage", "block_4", arg(2)))) {
+      $vars['latest_publication_wa'] = views_embed_view("latest_content_doorpage", "block_4", arg(2));
+    }
     // variable to embedd latest CT termin view
-    $vars['latest_termin_wa'] = views_embed_view("latest_content_doorpage", "block_6", arg(2));
+    if (!empty(views_get_view_result("latest_content_doorpage", "block_6", arg(2)))) {
+      $vars['latest_termin_wa'] = views_embed_view("latest_content_doorpage", "block_6", arg(2));
+    }
+
   }
 }
 

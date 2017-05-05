@@ -40,9 +40,11 @@
   <div class="view-sub-wrapper">
     <div class="left-block">
       <?php if ($header): ?>
-        <div class="view-header">
-          <?php print $header; ?>
-        </div>
+        <?php if ($rows || (isset($latest_publication_wa) && $latest_publication_wa)): ?>
+          <div class="view-header">
+            <?php print $header; ?>
+          </div>
+        <?php endif; ?>
       <?php endif; ?>
 
       <?php if ($exposed): ?>

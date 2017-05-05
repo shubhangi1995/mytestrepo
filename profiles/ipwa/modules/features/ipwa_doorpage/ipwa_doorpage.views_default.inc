@@ -456,6 +456,14 @@ function ipwa_doorpage_views_default_views() {
 
   /* Display: News P&G */
   $handler = $view->new_display('block', 'News P&G', 'block_5');
+  $handler->display->display_options['defaults']['header'] = FALSE;
+  /* Header: Global: Text area */
+  $handler->display->display_options['header']['area']['id'] = 'area';
+  $handler->display->display_options['header']['area']['table'] = 'views';
+  $handler->display->display_options['header']['area']['field'] = 'area';
+  $handler->display->display_options['header']['area']['empty'] = TRUE;
+  $handler->display->display_options['header']['area']['content'] = '<h2 class="pane-title">Bestens informiert - letzte Meldungen für Sie</h2>';
+  $handler->display->display_options['header']['area']['format'] = 'wysiwyg';
   $handler->display->display_options['defaults']['footer'] = FALSE;
   /* Footer: Global: Text area */
   $handler->display->display_options['footer']['area']['id'] = 'area';
@@ -580,6 +588,14 @@ function ipwa_doorpage_views_default_views() {
 
   /* Display: News W&A */
   $handler = $view->new_display('block', 'News W&A', 'block_3');
+  $handler->display->display_options['defaults']['header'] = FALSE;
+  /* Header: Global: Text area */
+  $handler->display->display_options['header']['area']['id'] = 'area';
+  $handler->display->display_options['header']['area']['table'] = 'views';
+  $handler->display->display_options['header']['area']['field'] = 'area';
+  $handler->display->display_options['header']['area']['empty'] = TRUE;
+  $handler->display->display_options['header']['area']['content'] = '<h2 class="pane-title">Bestens informiert - letzte Meldungen für Sie</h2>';
+  $handler->display->display_options['header']['area']['format'] = 'wysiwyg';
   $handler->display->display_options['defaults']['footer'] = FALSE;
   /* Footer: Global: Text area */
   $handler->display->display_options['footer']['area']['id'] = 'area';
