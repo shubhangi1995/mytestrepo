@@ -34,7 +34,7 @@ function ipwa_termin__views_pre_render(&$view) {
   }
   //For Related content: Kommende Veranstaltungen view
   if ($view->name == 'related_content' ||
-    ($view->name == 'latest_content_doorpage' && $view->current_display == 'block_2')) {
+    ($view->name == 'latest_content_doorpage' && ($view->current_display == 'block_2' || $view->current_display == 'block_6'))) {
     foreach ($view->result as $key => $result) {
       if (!empty($result->field_field_event_datum['0']['rendered']['#markup'])) {
         // Display '-' instead of 'to' in date field
@@ -47,7 +47,7 @@ function ipwa_termin__views_pre_render(&$view) {
 
   //For changing output of recurring events in views in format start date- end date
   if (($view->name == 'termin') || ($view->name == 'related_content')
-    || ($view->name == 'latest_content_doorpage' && $view->current_display == 'block_2')) {
+    || ($view->name == 'latest_content_doorpage' && ($view->current_display == 'block_2' || $view->current_display == 'block_6'))) {
     foreach ($view->result as $key => $result) {
       if (!empty($result->field_field_event_datum)) {
         $occurence = count($result->field_field_event_datum);

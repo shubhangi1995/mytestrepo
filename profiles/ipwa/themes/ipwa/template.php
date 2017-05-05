@@ -185,7 +185,7 @@ function ipwa_preprocess_views_view(&$vars) {
     // variable to embedd latest CT publication view
     $vars['latest_publication_wa'] = views_embed_view("latest_content_doorpage", "block_4", arg(2));
     // variable to embedd latest CT termin view
-    $vars['latest_termin_wa'] = views_embed_view("latest_content_doorpage", "block_2", arg(2));
+    $vars['latest_termin_wa'] = views_embed_view("latest_content_doorpage", "block_6", arg(2));
   }
 }
 
