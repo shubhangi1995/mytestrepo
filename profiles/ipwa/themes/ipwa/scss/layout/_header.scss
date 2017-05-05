@@ -258,18 +258,24 @@ header {
                                         text-transform: capitalize;
                                     }
 
-                                    a {
-                                        font-size: 16px;
-                                        position: relative;
-                                        padding-left: 25px;
+                                    ul {
+                                        li {
+                                            width: 100%;
 
-                                        &:before {
-                                            @extend .material-icons;
+                                            a {
+                                                font-size: 16px;
+                                                position: relative;
+                                                padding-left: 25px;
 
-                                            content: "arrow_forward";
-                                            color: $active-menu;
-                                            position: absolute;
-                                            left: 0;
+                                                &:before {
+                                                    @extend .material-icons;
+
+                                                    content: "arrow_forward";
+                                                    color: $active-menu;
+                                                    position: absolute;
+                                                    left: 0;
+                                                }
+                                            }
                                         }
                                     }
                                 }

@@ -5,3 +5,66 @@
  */
 
 include_once 'ipwa_search.features.inc';
+
+/**
+ * Implements hook_form_FORM_ID_alter().
+ */
+function ipwa_search_form_views_exposed_form_alter(&$form, $form_state, $form_id) {
+  if($form['#id'] == 'views-exposed-form-search-list-page') {
+    $form['search_api_views_fulltext']['#attributes']['placeholder'] = t('Suchbegriff eingeben');
+    $form['field_ort']['#attributes']['placeholder'] = t('PLZ oder Ort eingeben');
+  }
+}
+
+/**
+ * Implements hook_block_info().
+ */
+function ipwa_search_block_info() {
+  $blocks['search_block'] = array(
+    'info' => t('Search Block'),
+  );
+  return $blocks;
+}
+
+/**
+ * Implements hook_block_view().
+ */
+function ipwa_search_block_view($delta = '') {
+  $block = '';
+  switch ($delta) {
+    case 'search_block':
+      $content = drupal_get_form('ipwa_search_block_form');
+      $block['content'] = drupal_render($content);
+      break;
+  }
+  return $block;
+}
+
+/**
+ * Implements hook_block_form().
+ */
+function ipwa_search_block_form($form, &$form_state) {
+  global $base_url;
+  $form['search_text'] = array(
+    '#title' => 'Suche',
+    '#type' => 'textfield',
+    '#required' => False,
+    '#attributes' => array('placeholder'=> 'Suchbegriff eingeben'),
+  );
+  $form['submit'] = array(
+    '#type' => 'submit',
+    '#value' => t('Search'),
+  );
+  $form['#action'] = $base_url. '/search';
+  $form['#submit'][] = 'ipwa_search_custom_form_submit';
+  return $form;
+}
+
+/**
+ * Implements hook_form_submit().
+ */
+function ipwa_search_custom_form_submit($form, &$form_state){
+  global $base_url;
+  $form_state['redirect'] = $base_url . '/search?search_api_views_fulltext='.$form_state['values']['search_text'];
+  //drupal_goto('search', array('query' => array('search_api_views_fulltext' => $form_state['values']['search_text'])));
+}
