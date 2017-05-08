@@ -51,6 +51,7 @@ function ipwa_search_default_search_api_index() {
         "nid" : { "type" : "integer" },
         "search_api_aggregation_1" : { "type" : "text", "boost" : "5.0" },
         "search_api_language" : { "type" : "string" },
+        "status" : { "type" : "integer" },
         "title" : { "type" : "string", "boost" : "5.0" },
         "type" : { "type" : "string" }
       },
