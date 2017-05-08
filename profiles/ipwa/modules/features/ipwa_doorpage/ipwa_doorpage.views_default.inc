@@ -647,7 +647,7 @@ function ipwa_doorpage_views_default_views() {
   $handler->display->display_options['footer']['area']['id'] = 'area';
   $handler->display->display_options['footer']['area']['table'] = 'views';
   $handler->display->display_options['footer']['area']['field'] = 'area';
-  $handler->display->display_options['footer']['area']['content'] = '<a href="/termin?field_themenzuweisung_tid=11">weitere Termine</a>';
+  $handler->display->display_options['footer']['area']['content'] = '<a href="/termine?field_themenzuweisung_tid=11">weitere Termine</a>';
   $handler->display->display_options['footer']['area']['format'] = 'wysiwyg';
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Content: Dieser Artikel gehört zu */
@@ -735,13 +735,13 @@ function ipwa_doorpage_views_default_views() {
     t('<a href="/aktuelles?type=publikation&field_themenzuweisung_tid=!1">weitere Publikationen</a>'),
     t('Termin P&G'),
     t('<h2 class="pane-title">Termine</h2>'),
-    t('<a href="/termin?field_themenzuweisung_tid=1">weitere Termine</a>'),
+    t('<a href="/termine?field_themenzuweisung_tid=1">weitere Termine</a>'),
     t('News W&A'),
     t('<a href="/aktuelles?type=nachricht&field_themenzuweisung_tid_1=!1">weitere Nachrichten </a>'),
     t('Publikation W&A'),
     t('<a href="/aktuelles?type=publikation&field_themenzuweisung_tid_1=!1">weitere Publikationen</a>'),
     t('Termin W&A'),
-    t('<a href="/termin?field_themenzuweisung_tid=11">weitere Termine</a>'),
+    t('<a href="/termine?field_themenzuweisung_tid=11">weitere Termine</a>'),
   );
   $export['latest_content_doorpage'] = $view;
 
