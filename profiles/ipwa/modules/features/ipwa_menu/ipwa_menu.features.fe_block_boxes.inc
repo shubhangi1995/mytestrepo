@@ -63,18 +63,10 @@ function ipwa_menu_default_fe_block_boxes() {
   $fe_block_boxes->format = 'wysiwyg';
   $fe_block_boxes->machine_name = 'politik_gesellschaft_left_block';
   $fe_block_boxes->body = '<ul>
-	<li>
-	<a href="/aktuelles?type=nachricht">Nachrichten</a>
-	</li>
-	<li>
-	<a href="/termin">Termine</a>
-	</li>
-	<li>
-	<a href="http://ipwa.dd:8083/aktuelles?type=publikation">Publikation</a>
-	</li>
-	<li class="ubersicht">
-	<a href="taxonomy/term/1">Übersicht</a>
-	</li>
+	<li><a href="/aktuelles?type=nachricht">Nachrichten</a></li>
+	<li><a href="/termine">Termine</a></li>
+	<li><a href="http://ipwa.dd:8083/aktuelles?type=publikation">Publikation</a></li>
+	<li class="ubersicht"><a href="taxonomy/term/1">Übersicht</a></li>
 </ul>
 ';
 
@@ -85,18 +77,10 @@ function ipwa_menu_default_fe_block_boxes() {
   $fe_block_boxes->format = 'wysiwyg';
   $fe_block_boxes->machine_name = 'wirtschaft_arbeit_left_block';
   $fe_block_boxes->body = '<ul>
-	<li>
-	<a href="/aktuelles?type=nachricht">Nachrichten&nbsp;</a>
-	</li>
-	<li>
-	<a href="/termin">Termine</a>
-	</li>
-	<li>
-	<a href="/aktuelles?type=publikation">Publikation</a>
-	</li>
-	<li class="ubersicht">
-	<a href="taxonomy/term/11">Übersicht</a>
-	</li>
+	<li><a href="/aktuelles?type=nachricht">Nachrichten&nbsp;</a></li>
+	<li><a href="/termine">Termine</a></li>
+	<li><a href="/aktuelles?type=publikation">Publikation</a></li>
+	<li class="ubersicht"><a href="taxonomy/term/11">Übersicht</a></li>
 </ul>
 ';
 
