@@ -322,7 +322,7 @@ function ipwa_search_views_default_views() {
   $handler->display->display_options['fields']['views_conditional_1']['field'] = 'views_conditional';
   $handler->display->display_options['fields']['views_conditional_1']['label'] = '';
   $handler->display->display_options['fields']['views_conditional_1']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['views_conditional_1']['if'] = 'type_1';
+  $handler->display->display_options['fields']['views_conditional_1']['if'] = 'type';
   $handler->display->display_options['fields']['views_conditional_1']['condition'] = '1';
   $handler->display->display_options['fields']['views_conditional_1']['equalto'] = 'projekt';
   $handler->display->display_options['fields']['views_conditional_1']['then'] = '[type] [title] [field_ort]';
@@ -333,7 +333,7 @@ function ipwa_search_views_default_views() {
   $handler->display->display_options['fields']['views_conditional_2']['field'] = 'views_conditional';
   $handler->display->display_options['fields']['views_conditional_2']['label'] = '';
   $handler->display->display_options['fields']['views_conditional_2']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['views_conditional_2']['if'] = 'type_1';
+  $handler->display->display_options['fields']['views_conditional_2']['if'] = 'type';
   $handler->display->display_options['fields']['views_conditional_2']['condition'] = '1';
   $handler->display->display_options['fields']['views_conditional_2']['equalto'] = 'f_rderbekanntmachung';
   $handler->display->display_options['fields']['views_conditional_2']['then'] = '[type] [title] [views_conditional_6]';
@@ -344,7 +344,7 @@ function ipwa_search_views_default_views() {
   $handler->display->display_options['fields']['views_conditional_3']['field'] = 'views_conditional';
   $handler->display->display_options['fields']['views_conditional_3']['label'] = '';
   $handler->display->display_options['fields']['views_conditional_3']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['views_conditional_3']['if'] = 'type_1';
+  $handler->display->display_options['fields']['views_conditional_3']['if'] = 'type';
   $handler->display->display_options['fields']['views_conditional_3']['condition'] = '1';
   $handler->display->display_options['fields']['views_conditional_3']['equalto'] = 'publikation';
   $handler->display->display_options['fields']['views_conditional_3']['then'] = '[type] [title] [field_herausgeber] [field_ver_ffentlichungsdatum]';
@@ -355,7 +355,7 @@ function ipwa_search_views_default_views() {
   $handler->display->display_options['fields']['views_conditional_4']['field'] = 'views_conditional';
   $handler->display->display_options['fields']['views_conditional_4']['label'] = '';
   $handler->display->display_options['fields']['views_conditional_4']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['views_conditional_4']['if'] = 'type_1';
+  $handler->display->display_options['fields']['views_conditional_4']['if'] = 'type';
   $handler->display->display_options['fields']['views_conditional_4']['condition'] = '1';
   $handler->display->display_options['fields']['views_conditional_4']['equalto'] = 'termin';
   $handler->display->display_options['fields']['views_conditional_4']['then'] = '[type] [title] [field_ort] [field_event_datum]';

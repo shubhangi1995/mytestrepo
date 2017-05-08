@@ -66,5 +66,34 @@ function ipwa_search_block_form($form, &$form_state) {
 function ipwa_search_custom_form_submit($form, &$form_state){
   global $base_url;
   $form_state['redirect'] = $base_url . '/search?search_api_views_fulltext='.$form_state['values']['search_text'];
-  //drupal_goto('search', array('query' => array('search_api_views_fulltext' => $form_state['values']['search_text'])));
+}
+
+/**
+ * Implements hook_views_pre_render().
+ */
+function ipwa_search_views_pre_render(&$view) {
+  if ($view->name == 'search_list' && $view->current_display == 'page') {
+    $results = &$view->result;
+    $view->style_plugin->render_fields($view->result);
+    $i = 0;
+    foreach ($results as $key => $result) {
+      $result = is_object($result->entity) ? $result->entity : node_load($result->entity);
+      if (!empty($result->field_event_datum) && ($result->type == 'termin')) {
+        $occurence = count($result->field_event_datum['und']);
+        $startDate = date("d.m.Y", strtotime($result->field_event_datum['und'][0]['value']));
+        $enddate = date("d.m.Y", strtotime($result->field_event_datum['und'][$occurence - 1]['value2']));
+        if($startDate != $enddate){
+          if(($occurence > 1)){
+            $output = '<div class="date-display-range">	<span class="date-display-start">' . $startDate . '</span> - <span class="date-display-end">' . $enddate . '</span></div>';
+          }else {
+            $output = '<div class="date-display-range">	<span class="date-display-start">' . $startDate . '</span> - <span class="date-display-end">' . $enddate . '</span></div>';
+          }
+        }else{
+          $output = '<div class="date-display-range">	<span class="date-display-single">'. $startDate .'</span></div>';
+        }
+        $view->style_plugin->rendered_fields[$i]['field_event_datum'] = $output;
+      }
+      $i++;
+    }
+  }
 }
