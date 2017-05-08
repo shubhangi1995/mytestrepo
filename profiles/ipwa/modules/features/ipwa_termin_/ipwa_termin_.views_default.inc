@@ -433,7 +433,7 @@ function ipwa_termin__views_default_views() {
   $handler->display->display_options['footer']['area']['field'] = 'area';
   $handler->display->display_options['footer']['area']['content'] = '<div class="link-outer-block">
 	<div class="link-inner-block-1">
-		<a href="/termin">Alle Termine</a>
+		<a href="/termine">Alle Termine</a>
 	</div>	
 </div>';
   $handler->display->display_options['footer']['area']['format'] = 'wysiwyg';
@@ -544,7 +544,7 @@ function ipwa_termin__views_default_views() {
     t('<h2 class="pane-title">Aktuelle Veranstaltungen</h2>'),
     t('<div class="link-outer-block">
 	<div class="link-inner-block-1">
-		<a href="/termin">Alle Termine</a>
+		<a href="/termine">Alle Termine</a>
 	</div>	
 </div>'),
   );

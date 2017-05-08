@@ -183,6 +183,60 @@ function ipwa_termin__field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-termin-field_datum'.
+  $field_instances['node-termin-field_datum'] = array(
+    'bundle' => 'termin',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 24,
+      ),
+      'ical' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_datum',
+    'label' => 'Datum',
+    'required' => 0,
+    'settings' => array(
+      'default_value' => 'now',
+      'default_value2' => 'same',
+      'default_value_code' => '',
+      'default_value_code2' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'date',
+      'settings' => array(
+        'increment' => 15,
+        'input_format' => 'd.m.Y',
+        'input_format_custom' => '',
+        'label_position' => 'above',
+        'no_fieldset' => 0,
+        'repeat_collapsed' => 0,
+        'text_parts' => array(),
+        'year_range' => '-3:+3',
+      ),
+      'type' => 'date_popup',
+      'weight' => 2,
+    ),
+  );
+
   // Exported field_instance: 'node-termin-field_dokumente_und_publikatione'.
   $field_instances['node-termin-field_dokumente_und_publikatione'] = array(
     'bundle' => 'termin',
@@ -194,7 +248,7 @@ function ipwa_termin__field_default_field_instances() {
         'label' => 'hidden',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 24,
+        'weight' => 23,
       ),
       'ical' => array(
         'label' => 'hidden',

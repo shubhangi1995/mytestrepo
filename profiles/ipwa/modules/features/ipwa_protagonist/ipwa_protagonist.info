@@ -25,6 +25,7 @@ features[field_instance][] = node-protagonist-field_akteurstyp
 features[field_instance][] = node-protagonist-field_ansprechpartner_kontaktdat
 features[field_instance][] = node-protagonist-field_anzuzeigende_seitenmodule
 features[field_instance][] = node-protagonist-field_bild_ref
+features[field_instance][] = node-protagonist-field_datum
 features[field_instance][] = node-protagonist-field_dokumente_und_publikatione
 features[field_instance][] = node-protagonist-field_f_rderbekanntmachungen
 features[field_instance][] = node-protagonist-field_initiatoren_zum_thema
