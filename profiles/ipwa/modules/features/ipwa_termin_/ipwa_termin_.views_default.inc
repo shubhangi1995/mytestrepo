@@ -22,7 +22,7 @@ function ipwa_termin__views_default_views() {
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['title'] = 'Termin';
+  $handler->display->display_options['title'] = 'Termine';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['group_by'] = TRUE;
   $handler->display->display_options['access']['type'] = 'perm';
@@ -152,8 +152,8 @@ function ipwa_termin__views_default_views() {
     'f_rderbekanntmachung' => 'f_rderbekanntmachung',
   );
 
-  /* Display: Termin */
-  $handler = $view->new_display('page', 'Termin', 'page');
+  /* Display: Termine */
+  $handler = $view->new_display('page', 'Termine', 'page');
   $handler->display->display_options['defaults']['use_ajax'] = FALSE;
   $handler->display->display_options['defaults']['group_by'] = FALSE;
   $handler->display->display_options['group_by'] = TRUE;
@@ -326,7 +326,7 @@ function ipwa_termin__views_default_views() {
     'termin' => 'termin',
   );
   $handler->display->display_options['filters']['type']['group'] = 1;
-  $handler->display->display_options['path'] = 'termin';
+  $handler->display->display_options['path'] = 'termine';
 
   /* Display: Feed */
   $handler = $view->new_display('feed', 'Feed', 'feed_1');
@@ -510,7 +510,7 @@ function ipwa_termin__views_default_views() {
   $handler->display->display_options['filters']['field_event_datum_value2']['default_date'] = 'now';
   $translatables['termin'] = array(
     t('Master'),
-    t('Termin'),
+    t('Termine'),
     t('more'),
     t('Apply'),
     t('Reset'),
