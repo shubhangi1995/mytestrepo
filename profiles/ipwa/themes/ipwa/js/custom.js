@@ -10,7 +10,7 @@ jQuery(document).ready(function(){
         // Test if current host (domain) is in it
         if(!hostname.test(url)){
             // a link that does not contain the current host i.e external link
-            jQuery(this).addClass('external-link');
+            jQuery(this).addClass('external-link').append("<span class='ext'></span>");
             jQuery(this).attr('target', '_blank');
         }
     });

@@ -526,14 +526,14 @@
 	}
 	a{
 		color:$main-color;
-		text-decoration:none;
-		border-bottom:1px solid $body-link-border-color;
-		margin:0 5px;
+		text-decoration:underline;
+		//border-bottom:1px solid $body-link-border-color;
+		margin:0 7px 0 5px;
 		text-transform:capitalize;
 		display:inline-block;
 		&:hover{
 			color:$active-menu;
-			border-color:$active-menu;
+			//border-color:$active-menu;
 		}
 	}
 	ul, ol{
@@ -575,6 +575,13 @@
 		.field-name-field-bild-ref, .field-name-field-youtube-url{
 			margin:70px 0;
 		}
+		.field-name-field-youtube-url{
+			margin-bottom:25px;
+			iframe{
+				//width:870px;
+				//height:490px;
+			}
+		}
 		.field-name-field-bild{
 			margin-bottom:25px;
 			.field-item{
@@ -589,6 +596,34 @@
 			margin-right:5px ;
 			.field-item{
 				font-size:18px;
+			}
+		}
+		// External link
+
+		.external-link {
+			color: $main-color;
+			text-decoration:underline;
+			padding:0;
+			&::before{
+				content:none;
+			}
+			.ext{
+				display:inline-block;
+				&::after{
+					font-family:$icomoon;
+					content:"\e948";
+					color:$icons-color;
+					font-size:16px;
+					margin-left: 7px; 
+					display:inline-block;
+				}
+			}
+			&:hover{
+				.ext{
+					&::after{
+						color:$active-menu;
+					}
+				}
 			}
 		}
 } 
@@ -619,19 +654,12 @@
 .field-name-field-copyright, .field-name-field-videoquelle {
 	.field-label, .field-item{
 		font-size:16px;
-		color:$copyright-color;
+		color:$icons-color;
 	}
 }
 .field-name-field-copyright{
 	display:inline-block;
 	margin-top:2px;
-}
-.field-name-field-youtube-url{
-	margin-bottom:25px;
-	iframe{
-		width:870px;
-		height:490px;
-	}
 }
 .field-name-field-videounterschrift, .field-name-field-videoquelle{
 	margin-bottom:0;
@@ -685,6 +713,56 @@
 	}
 }
 
+// document and publication view
+.view-id-related_content{
+	&.view-display-id-block_2{
+		.views-row{
+			.row-container{
+				.views-field{
+					.field-content{
+						a{
+							padding-left: 35px;
+							position: relative;
+							&::before{
+								font-family:$icomoon;
+								content:"\e944";
+								color:$download-icon-color;
+								font-size: 17px;
+								left: 0;
+								position: absolute;
+								top: 6px;
+							}
+						}
+					}
+					&:last-child{
+						padding-left: 35px;
+					}
+				}
+			}
+		}
+	}
+}
+
+.field-name-field-meldungen-zum-thema, .field-name-field-initiatoren-zum-thema, .field-name-field-projekte-zum-thema, .field-name-field-f-rderbekanntmachungen{
+	.field-items{
+		.field-item{
+			a{
+				position:relative;
+				display: inline-block;
+				padding-left: 35px;
+				&::before{
+					font-family:$icomoon;
+					content:"\e93f";
+					color:$download-icon-color; 
+					font-size: 17px;
+					left: 0;
+					position: absolute;
+					top: 6px;
+				}
+			}
+		}
+	}
+}
 
 
 //view-latest-content-doorpage
@@ -915,14 +993,29 @@
 }}
 
 .paragraphs-items-field-anzuzeigende-seitenmodule-full{
-	//@extend .container;
+	// @extend .container;
 }
 
 
-// External link
 
-.external-link {
-	text-decoration: none;
-	color: $main-color;
-	font-size:18px;
-}
+//.field-name-field-quellenangabe{
+	.external-link{
+		color:$main-color;
+		padding-left: 35px;
+		text-decoration:none;
+		font-size:18px;
+		position: relative;
+		&::before{
+			left:0;
+			position:absolute;
+			top:0; 
+			font-family:$icomoon;
+			content:"\e948";
+			color:$icons-color;
+			font-size:16px;
+		}
+		.ext{
+			display:none;
+		}
+	}
+//}
