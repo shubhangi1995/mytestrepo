@@ -21,6 +21,7 @@ features[field_group][] = group_title|node|termin|default
 features[field_instance][] = node-termin-body
 features[field_instance][] = node-termin-field_anzuzeigende_seitenmodule
 features[field_instance][] = node-termin-field_bild_ref
+features[field_instance][] = node-termin-field_datum
 features[field_instance][] = node-termin-field_dokumente_und_publikatione
 features[field_instance][] = node-termin-field_event_datum
 features[field_instance][] = node-termin-field_f_rderbekanntmachungen

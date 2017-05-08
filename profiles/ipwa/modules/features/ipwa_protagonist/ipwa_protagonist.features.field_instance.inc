@@ -51,7 +51,7 @@ function ipwa_protagonist_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 11,
+      'weight' => 10,
     ),
   );
 
@@ -88,7 +88,7 @@ function ipwa_protagonist_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 4,
+      'weight' => 5,
     ),
   );
 
@@ -135,7 +135,7 @@ Zeile 6 (bspw. E-Mail-Adresse)',
         'rows' => 6,
       ),
       'type' => 'text_textarea',
-      'weight' => 5,
+      'weight' => 6,
     ),
   );
 
@@ -195,7 +195,7 @@ Zeile 6 (bspw. E-Mail-Adresse)',
       'module' => 'paragraphs',
       'settings' => array(),
       'type' => 'paragraphs_embed',
-      'weight' => 12,
+      'weight' => 11,
     ),
   );
 
@@ -240,7 +240,55 @@ Zeile 6 (bspw. E-Mail-Adresse)',
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 10,
+      'weight' => 9,
+    ),
+  );
+
+  // Exported field_instance: 'node-protagonist-field_datum'.
+  $field_instances['node-protagonist-field_datum'] = array(
+    'bundle' => 'protagonist',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 5,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_datum',
+    'label' => 'Datum',
+    'required' => 0,
+    'settings' => array(
+      'default_value' => 'now',
+      'default_value2' => 'same',
+      'default_value_code' => '',
+      'default_value_code2' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'date',
+      'settings' => array(
+        'increment' => 15,
+        'input_format' => 'd.m.Y',
+        'input_format_custom' => '',
+        'label_position' => 'above',
+        'no_fieldset' => 0,
+        'repeat_collapsed' => 0,
+        'text_parts' => array(),
+        'year_range' => '-3:+3',
+      ),
+      'type' => 'date_popup',
+      'weight' => 2,
     ),
   );
 
@@ -256,7 +304,7 @@ Zeile 6 (bspw. E-Mail-Adresse)',
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 10,
+        'weight' => 3,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -281,7 +329,7 @@ Zeile 6 (bspw. E-Mail-Adresse)',
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 16,
+      'weight' => 15,
     ),
   );
 
@@ -324,7 +372,7 @@ Zeile 6 (bspw. E-Mail-Adresse)',
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 21,
+      'weight' => 20,
     ),
   );
 
@@ -367,7 +415,7 @@ Zeile 6 (bspw. E-Mail-Adresse)',
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 19,
+      'weight' => 18,
     ),
   );
 
@@ -407,7 +455,7 @@ Zeile 6 (bspw. E-Mail-Adresse)',
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 2,
+      'weight' => 3,
     ),
   );
 
@@ -450,7 +498,7 @@ Zeile 6 (bspw. E-Mail-Adresse)',
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 18,
+      'weight' => 17,
     ),
   );
 
@@ -493,7 +541,7 @@ Zeile 6 (bspw. E-Mail-Adresse)',
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 20,
+      'weight' => 19,
     ),
   );
 
@@ -550,7 +598,7 @@ Zeile 6 (bspw. E-Mail-Adresse)',
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 9,
+      'weight' => 8,
     ),
   );
 
@@ -587,7 +635,7 @@ Zeile 6 (bspw. E-Mail-Adresse)',
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 3,
+      'weight' => 4,
     ),
   );
 
@@ -641,7 +689,7 @@ Zeile 6 (bspw. E-Mail-Adresse)',
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 11,
+        'weight' => 4,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -666,7 +714,7 @@ Zeile 6 (bspw. E-Mail-Adresse)',
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 17,
+      'weight' => 16,
     ),
   );
 
@@ -706,7 +754,7 @@ Zeile 6 (bspw. E-Mail-Adresse)',
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 15,
+      'weight' => 14,
     ),
   );
 
@@ -746,7 +794,7 @@ Zeile 6 (bspw. E-Mail-Adresse)',
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 14,
+      'weight' => 13,
     ),
   );
 
@@ -844,7 +892,7 @@ Schema für externe Links: http://www…',
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 22,
+      'weight' => 21,
     ),
   );
 
@@ -891,7 +939,7 @@ Schema für externe Links: http://www…',
       'module' => 'youtube',
       'settings' => array(),
       'type' => 'youtube',
-      'weight' => 13,
+      'weight' => 12,
     ),
   );
 
@@ -967,6 +1015,7 @@ Zeile 3 (bspw. Straße Hausnummer)
 Zeile 4 (bspw. PLZ, Ort)
 Zeile 5 (bspw. Vorwahl / Telefonnummer)
 Zeile 6 (bspw. E-Mail-Adresse)');
+  t('Datum');
   t('Dieser Artikel gehört zu');
   t('Dokumente und Publikationen');
   t('Fließtext');
