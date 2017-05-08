@@ -284,6 +284,18 @@ function ipwa_search_views_default_views() {
   $handler->display->display_options['fields']['field_dokument']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_dokument']['type'] = 'file_url_plain';
   /* Field: Views: Views Conditional */
+  $handler->display->display_options['fields']['views_conditional_9']['id'] = 'views_conditional_9';
+  $handler->display->display_options['fields']['views_conditional_9']['table'] = 'views_conditional';
+  $handler->display->display_options['fields']['views_conditional_9']['field'] = 'views_conditional';
+  $handler->display->display_options['fields']['views_conditional_9']['label'] = '';
+  $handler->display->display_options['fields']['views_conditional_9']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['views_conditional_9']['if'] = 'type_1';
+  $handler->display->display_options['fields']['views_conditional_9']['condition'] = '1';
+  $handler->display->display_options['fields']['views_conditional_9']['equalto'] = 'document';
+  $handler->display->display_options['fields']['views_conditional_9']['then'] = '[title_1]';
+  $handler->display->display_options['fields']['views_conditional_9']['or'] = '[title]';
+  $handler->display->display_options['fields']['views_conditional_9']['strip_tags'] = 0;
+  /* Field: Views: Views Conditional */
   $handler->display->display_options['fields']['views_conditional_6']['id'] = 'views_conditional_6';
   $handler->display->display_options['fields']['views_conditional_6']['table'] = 'views_conditional';
   $handler->display->display_options['fields']['views_conditional_6']['field'] = 'views_conditional';
@@ -381,18 +393,6 @@ function ipwa_search_views_default_views() {
   $handler->display->display_options['fields']['title_1']['alter']['path'] = '[field_dokument]';
   $handler->display->display_options['fields']['title_1']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title_1']['link_to_entity'] = 0;
-  /* Field: Views: Views Conditional */
-  $handler->display->display_options['fields']['views_conditional_9']['id'] = 'views_conditional_9';
-  $handler->display->display_options['fields']['views_conditional_9']['table'] = 'views_conditional';
-  $handler->display->display_options['fields']['views_conditional_9']['field'] = 'views_conditional';
-  $handler->display->display_options['fields']['views_conditional_9']['label'] = '';
-  $handler->display->display_options['fields']['views_conditional_9']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['views_conditional_9']['if'] = 'type_1';
-  $handler->display->display_options['fields']['views_conditional_9']['condition'] = '1';
-  $handler->display->display_options['fields']['views_conditional_9']['equalto'] = 'document';
-  $handler->display->display_options['fields']['views_conditional_9']['then'] = '[title_1]';
-  $handler->display->display_options['fields']['views_conditional_9']['or'] = '[title]';
-  $handler->display->display_options['fields']['views_conditional_9']['strip_tags'] = 0;
   $handler->display->display_options['defaults']['sorts'] = FALSE;
   /* Sort criterion: Indexed Node: Titel */
   $handler->display->display_options['sorts']['title']['id'] = 'title';
@@ -474,6 +474,13 @@ function ipwa_search_views_default_views() {
     'termin' => 'termin',
   );
   $handler->display->display_options['filters']['type']['group'] = 1;
+  /* Filter criterion: Indexed Node: Status */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'search_api_index_ipwa_solr_index';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = array(
+    1 => '1',
+  );
   $handler->display->display_options['path'] = 'search';
   $translatables['search_list'] = array(
     t('Master'),
