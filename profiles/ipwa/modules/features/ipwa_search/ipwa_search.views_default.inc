@@ -190,6 +190,18 @@ function ipwa_search_views_default_views() {
   $handler->display->display_options['fields']['title']['exclude'] = TRUE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title']['link_to_entity'] = 1;
+  /* Field: Views: Views Conditional */
+  $handler->display->display_options['fields']['views_conditional_9']['id'] = 'views_conditional_9';
+  $handler->display->display_options['fields']['views_conditional_9']['table'] = 'views_conditional';
+  $handler->display->display_options['fields']['views_conditional_9']['field'] = 'views_conditional';
+  $handler->display->display_options['fields']['views_conditional_9']['label'] = '';
+  $handler->display->display_options['fields']['views_conditional_9']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['views_conditional_9']['if'] = 'type_1';
+  $handler->display->display_options['fields']['views_conditional_9']['condition'] = '1';
+  $handler->display->display_options['fields']['views_conditional_9']['equalto'] = 'document';
+  $handler->display->display_options['fields']['views_conditional_9']['then'] = '[title_1]';
+  $handler->display->display_options['fields']['views_conditional_9']['or'] = '[title]';
+  $handler->display->display_options['fields']['views_conditional_9']['strip_tags'] = 0;
   /* Field: Indexed Node: Datum */
   $handler->display->display_options['fields']['field_event_datum']['id'] = 'field_event_datum';
   $handler->display->display_options['fields']['field_event_datum']['table'] = 'search_api_index_ipwa_solr_index';
@@ -283,18 +295,6 @@ function ipwa_search_views_default_views() {
   $handler->display->display_options['fields']['field_dokument']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_dokument']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_dokument']['type'] = 'file_url_plain';
-  /* Field: Views: Views Conditional */
-  $handler->display->display_options['fields']['views_conditional_9']['id'] = 'views_conditional_9';
-  $handler->display->display_options['fields']['views_conditional_9']['table'] = 'views_conditional';
-  $handler->display->display_options['fields']['views_conditional_9']['field'] = 'views_conditional';
-  $handler->display->display_options['fields']['views_conditional_9']['label'] = '';
-  $handler->display->display_options['fields']['views_conditional_9']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['views_conditional_9']['if'] = 'type_1';
-  $handler->display->display_options['fields']['views_conditional_9']['condition'] = '1';
-  $handler->display->display_options['fields']['views_conditional_9']['equalto'] = 'document';
-  $handler->display->display_options['fields']['views_conditional_9']['then'] = '[title_1]';
-  $handler->display->display_options['fields']['views_conditional_9']['or'] = '[title]';
-  $handler->display->display_options['fields']['views_conditional_9']['strip_tags'] = 0;
   /* Field: Views: Views Conditional */
   $handler->display->display_options['fields']['views_conditional_6']['id'] = 'views_conditional_6';
   $handler->display->display_options['fields']['views_conditional_6']['table'] = 'views_conditional';
