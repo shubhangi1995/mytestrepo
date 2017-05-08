@@ -4,7 +4,6 @@
  * ipwa_search.views_default.inc
  */
 
-
 /**
  * Implements hook_views_default_views().
  */
