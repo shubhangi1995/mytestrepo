@@ -326,6 +326,12 @@ function ipwa_termin__views_default_views() {
     'termin' => 'termin',
   );
   $handler->display->display_options['filters']['type']['group'] = 1;
+  /* Filter criterion: Content: Datum - end date (field_event_datum:value2) */
+  $handler->display->display_options['filters']['field_event_datum_value2']['id'] = 'field_event_datum_value2';
+  $handler->display->display_options['filters']['field_event_datum_value2']['table'] = 'field_data_field_event_datum';
+  $handler->display->display_options['filters']['field_event_datum_value2']['field'] = 'field_event_datum_value2';
+  $handler->display->display_options['filters']['field_event_datum_value2']['operator'] = '>=';
+  $handler->display->display_options['filters']['field_event_datum_value2']['default_date'] = 'now';
   $handler->display->display_options['path'] = 'termine';
 
   /* Display: Feed */
