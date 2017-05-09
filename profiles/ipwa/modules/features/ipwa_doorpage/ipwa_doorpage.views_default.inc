@@ -735,7 +735,7 @@ function ipwa_doorpage_views_default_views() {
     t('<a href="/aktuelles?type=publikation&field_themenzuweisung_tid=!1">weitere Publikationen</a>'),
     t('Termin P&G'),
     t('<h2 class="pane-title">Termine</h2>'),
-    t('<a href="/termine?field_themenzuweisung_tid=1">weitere Termine</a>'),
+    t('<a href="/termin?field_themenzuweisung_tid=1">weitere Termine</a>'),
     t('News W&A'),
     t('<a href="/aktuelles?type=nachricht&field_themenzuweisung_tid_1=!1">weitere Nachrichten </a>'),
     t('Publikation W&A'),
@@ -785,6 +785,8 @@ function ipwa_doorpage_views_default_views() {
   $handler->display->display_options['fields']['field_paragraph_title']['table'] = 'field_data_field_paragraph_title';
   $handler->display->display_options['fields']['field_paragraph_title']['field'] = 'field_paragraph_title';
   $handler->display->display_options['fields']['field_paragraph_title']['label'] = '';
+  $handler->display->display_options['fields']['field_paragraph_title']['alter']['max_length'] = '150';
+  $handler->display->display_options['fields']['field_paragraph_title']['alter']['trim'] = TRUE;
   $handler->display->display_options['fields']['field_paragraph_title']['element_label_colon'] = FALSE;
   /* Field: Field: Fließtext-Bereich */
   $handler->display->display_options['fields']['field_flie_text_bereich']['id'] = 'field_flie_text_bereich';
@@ -900,6 +902,31 @@ function ipwa_doorpage_views_default_views() {
 
   /* Display: Right front map teaser */
   $handler = $view->new_display('block', 'Right front map teaser', 'block');
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Type */
+  $handler->display->display_options['fields']['type']['id'] = 'type';
+  $handler->display->display_options['fields']['type']['table'] = 'node';
+  $handler->display->display_options['fields']['type']['field'] = 'type';
+  $handler->display->display_options['fields']['type']['relationship'] = 'field_projekt_reference_target_id';
+  $handler->display->display_options['fields']['type']['label'] = '';
+  $handler->display->display_options['fields']['type']['element_label_colon'] = FALSE;
+  /* Field: Content: Titel */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['relationship'] = 'field_projekt_reference_target_id';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['max_length'] = '150';
+  $handler->display->display_options['fields']['title']['alter']['trim'] = TRUE;
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  /* Field: Content: Link */
+  $handler->display->display_options['fields']['view_node']['id'] = 'view_node';
+  $handler->display->display_options['fields']['view_node']['table'] = 'views_entity_node';
+  $handler->display->display_options['fields']['view_node']['field'] = 'view_node';
+  $handler->display->display_options['fields']['view_node']['relationship'] = 'field_projekt_reference_target_id';
+  $handler->display->display_options['fields']['view_node']['label'] = '';
+  $handler->display->display_options['fields']['view_node']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['view_node']['text'] = 'ansehen';
   $translatables['right_front_map_teaser'] = array(
     t('Master'),
     t('more'),
