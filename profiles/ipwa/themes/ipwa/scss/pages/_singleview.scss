@@ -504,7 +504,7 @@
     @extend .page_inner;
     padding: 60px 0 45px;
 }
-.group-page-info  + .paragraphs-items-field-anzuzeigende-seitenmodule-full{
+.group-page-info{
 	@extend .container;
 }
 .group-body-container{
@@ -768,6 +768,8 @@
 //view-latest-content-doorpage
 
 .view-latest-content-doorpage {
+
+padding-top:50px;
     > .view-sub-wrapper {
         @extend .container;
         padding: 0;
@@ -854,6 +856,7 @@
 			
 			}
             > .view-latest-content-doorpage {
+			padding:0;
                 width: 45%;
                 float: left;
 				margin-right:5%;
@@ -910,6 +913,7 @@
 
 
         > .view-latest-content-doorpage {
+		padding:0;
             width: 30%;
             float: left;
 			
@@ -992,9 +996,7 @@
     }
 }}
 
-.paragraphs-items-field-anzuzeigende-seitenmodule-full{
-	// @extend .container;
-}
+
 
 
 

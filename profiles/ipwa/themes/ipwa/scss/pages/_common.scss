@@ -135,23 +135,27 @@ header.navbar-default {
 
 .breadcrumb {
     @extend .container;
-
     padding: 0;
     margin-bottom: 20px;
     list-style: none;
     background: none;
     border-radius: 0;
 
-    li a {
+    .inline.first{
+	margin-right:10px;
+	a {
         text-decoration: none;
         color: $main-color;
         font-size: 18px;
         border-bottom: 2px solid $color-light-grey;
+		padding-bottom: 5px;
     }
-
-    li.active {
+}
+    .inline.last {
+	margin-left:10px;
         border-bottom: 2px solid $active-menu;
         color: $main-color;
+		padding-bottom: 5px;
     }
 }
 
