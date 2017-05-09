@@ -7952,8 +7952,8 @@ header.navbar-default {
   padding: 60px 0 45px; }
 
 /* line 511, ../scss/pages/_singleview.scss */
-.group-page-info .field .field-item a {
-  color: main-color; }
+.group-page-info .field:first-child .field-item a {
+  color: #273753; }
 
 /* line 517, ../scss/pages/_singleview.scss */
 .group-body-container {

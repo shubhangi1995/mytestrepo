@@ -506,10 +506,10 @@
 }
 .group-page-info{
 	@extend .container;
-	.field{
+	.field:first-child{
 		.field-item{
 			a{
-				color:main-color;
+				color:$main-color; 
 			}
 		}
 	}
