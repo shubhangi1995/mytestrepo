@@ -45,12 +45,21 @@ function ipwa_search_block_view($delta = '') {
  */
 function ipwa_search_block_form($form, &$form_state) {
   global $base_url;
+  $param = drupal_get_query_parameters();
+  $default_value = !empty($param['search_api_views_fulltext']) ? $param['search_api_views_fulltext'] : '';
   $form['search_text'] = array(
     '#title' => 'Suche',
     '#type' => 'textfield',
     '#required' => False,
+    '#default_value' => $default_value,
     '#attributes' => array('placeholder'=> 'Suchbegriff eingeben'),
   );
+
+  $form['search_close'] = array(
+    '#type' => 'markup',
+    '#markup' => '<div class="cross-link" > <a hrerf="javascript:null(0)">Schliessen</a></div>'
+  );
+
   $form['submit'] = array(
     '#type' => 'submit',
     '#value' => t('Search'),
