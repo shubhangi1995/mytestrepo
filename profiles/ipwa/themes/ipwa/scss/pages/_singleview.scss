@@ -296,11 +296,11 @@
 }
 
 //---------------node-protagonist--------------//
-.node-type-protagonist {
+/* .node-type-protagonist {
     background: $color-light-blue;
 
     .node-protagonist {
-        @extend .container;
+        //@extend .container;
 
         .view-display-id-block_2 .views-row {
             .views-field-views-conditional {
@@ -329,7 +329,7 @@
             font-size: 24px;
         }
     }
-}
+} */
 
 //-------------node-doorpage-----------//
 .not-front .node-doorpage {
@@ -506,6 +506,13 @@
 }
 .group-page-info{
 	@extend .container;
+	.field{
+		.field-item{
+			a{
+				color:main-color;
+			}
+		}
+	}
 }
 .group-body-container{
 	background-color:$color-white;
@@ -743,6 +750,8 @@
 	}
 }
 
+// Other common views 
+
 .field-name-field-meldungen-zum-thema, .field-name-field-initiatoren-zum-thema, .field-name-field-projekte-zum-thema, .field-name-field-f-rderbekanntmachungen{
 	.field-items{
 		.field-item{
@@ -763,6 +772,31 @@
 		}
 	}
 }
+
+// view with date field
+
+.view-id-related_content{
+	&.view-display-id-block_1{
+		.views-row{
+			.row-container{
+				.views-field{
+					// font-size:22px;
+					&.views-field-field-event-datum{
+						float:left;
+						margin-right:8px;
+						.field-content{
+							color:$active-menu;
+							font-weight:bold;
+						}
+					}
+					.field-content{
+						font-size:22px;
+					}
+				}
+			}
+		}
+	}
+} 
 
 
 //view-latest-content-doorpage
