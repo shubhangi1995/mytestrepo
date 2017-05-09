@@ -1112,6 +1112,7 @@ function ipwa_base_views_default_views() {
   $handler->display->display_options['fields']['field_event_datum']['field'] = 'field_event_datum';
   $handler->display->display_options['fields']['field_event_datum']['relationship'] = 'field_veranstaltungen_target_id';
   $handler->display->display_options['fields']['field_event_datum']['label'] = '';
+  $handler->display->display_options['fields']['field_event_datum']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_event_datum']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_event_datum']['settings'] = array(
     'format_type' => 'short',
@@ -1124,13 +1125,24 @@ function ipwa_base_views_default_views() {
   );
   $handler->display->display_options['fields']['field_event_datum']['delta_offset'] = '0';
   $handler->display->display_options['fields']['field_event_datum']['separator'] = '';
+  /* Field: Content: Path */
+  $handler->display->display_options['fields']['path']['id'] = 'path';
+  $handler->display->display_options['fields']['path']['table'] = 'node';
+  $handler->display->display_options['fields']['path']['field'] = 'path';
+  $handler->display->display_options['fields']['path']['relationship'] = 'field_veranstaltungen_target_id';
+  $handler->display->display_options['fields']['path']['label'] = '';
+  $handler->display->display_options['fields']['path']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['path']['element_label_colon'] = FALSE;
   /* Field: Content: Titel */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['relationship'] = 'field_veranstaltungen_target_id';
   $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['title']['alter']['text'] = '[field_event_datum]<a href="[path]">[title]</a>';
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
   /* Field: Content: Ort */
   $handler->display->display_options['fields']['field_ort']['id'] = 'field_ort';
   $handler->display->display_options['fields']['field_ort']['table'] = 'field_data_field_ort';
@@ -1350,6 +1362,7 @@ function ipwa_base_views_default_views() {
     t('All'),
     t('Kommende Veranstaltungen'),
     t('Content entity referenced from field_veranstaltungen'),
+    t('[field_event_datum]<a href="[path]">[title]</a>'),
     t('Dokumente und Publikationen'),
     t('PDF'),
     t('publikation'),
