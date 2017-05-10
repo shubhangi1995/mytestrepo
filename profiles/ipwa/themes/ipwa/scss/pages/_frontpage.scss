@@ -214,10 +214,10 @@
                         .row-container {
                             background: $color-white;
                             padding: 30px;
-                            height: 385px;
+                            height: 400px;
 
                             .views-field-field-themenzuweisung {
-                                padding-bottom: 10px;
+                                padding-bottom: 30px;
 
                                 img {
                                     display: inline-block;
@@ -245,11 +245,13 @@
                             }
 
                             .views-field-field-ort {
+							 position: absolute;
+							  bottom: 30px;
                                 .field-content {
-                                    position: absolute;
+                                   
                                     color: $color-light-grey;
                                     font-size: 20px;
-                                    bottom: 30px;
+                                   
                                 }
                             }
                         }
