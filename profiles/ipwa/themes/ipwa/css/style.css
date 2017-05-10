@@ -913,7 +913,7 @@ pre {
     clear: both; }
 
 /* line 11, ../scss/bootstrap-sass/bootstrap/mixins/_grid-framework.scss */
-.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .front .field-name-field-anzuzeigende-seitenmodule .view-neueste-informationen .view-sub-wrapper .view-content .views-row, .front .field-name-field-anzuzeigende-seitenmodule .view-termin.view-display-id-block_2 .view-sub-wrapper .view-content .views-row, .field-name-field-themenzuweisung .field-items .field-item, .page-aktuelles .view-aktuelles > .view-content .views-row, .not-front .node-doorpage .view-alle-themen-teaser .view-sub-wrapper .view-content .views-row, .view-neueste-digital-projekte .view-sub-wrapper .view-content .views-row, .page-taxonomy-term .view-alles-zum-thema .view-sub-wrapper .view-content .views-row, .view-termin.view-display-id-page > .view-sub-wrapper .view-content > .views-row, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items > .field-item, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .view-map-teaser .view-content .views-row, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .front .field-name-field-anzuzeigende-seitenmodule .view-neueste-informationen .view-sub-wrapper .view-content .views-row, .front .field-name-field-anzuzeigende-seitenmodule .view-termin.view-display-id-block_2 .view-sub-wrapper .view-content .views-row, .field-name-field-themenzuweisung .field-items .field-item, .page-aktuelles .view-aktuelles > .view-content .views-row, .not-front .node-doorpage .view-alle-themen-teaser .view-sub-wrapper .view-content .views-row, .view-neueste-digital-projekte .view-sub-wrapper .view-content .views-row, .page-taxonomy-term .view-alles-zum-thema .view-sub-wrapper .view-content .views-row, .view-termin.view-display-id-page > .view-sub-wrapper > .view-content > .views-row, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items > .field-item, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .view-map-teaser .view-content .views-row, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
@@ -1337,7 +1337,7 @@ pre {
     margin-left: 100%; } }
 @media (min-width: 992px) {
   /* line 27, ../scss/bootstrap-sass/bootstrap/mixins/_grid-framework.scss */
-  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .front .field-name-field-anzuzeigende-seitenmodule .view-neueste-informationen .view-sub-wrapper .view-content .views-row, .front .field-name-field-anzuzeigende-seitenmodule .view-termin.view-display-id-block_2 .view-sub-wrapper .view-content .views-row, .field-name-field-themenzuweisung .field-items .field-item, .page-aktuelles .view-aktuelles > .view-content .views-row, .not-front .node-doorpage .view-alle-themen-teaser .view-sub-wrapper .view-content .views-row, .view-neueste-digital-projekte .view-sub-wrapper .view-content .views-row, .page-taxonomy-term .view-alles-zum-thema .view-sub-wrapper .view-content .views-row, .view-termin.view-display-id-page > .view-sub-wrapper .view-content > .views-row, .col-md-5, .col-md-6, .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items > .field-item, .col-md-7, .col-md-8, .view-map-teaser .view-content .views-row, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .front .field-name-field-anzuzeigende-seitenmodule .view-neueste-informationen .view-sub-wrapper .view-content .views-row, .front .field-name-field-anzuzeigende-seitenmodule .view-termin.view-display-id-block_2 .view-sub-wrapper .view-content .views-row, .field-name-field-themenzuweisung .field-items .field-item, .page-aktuelles .view-aktuelles > .view-content .views-row, .not-front .node-doorpage .view-alle-themen-teaser .view-sub-wrapper .view-content .views-row, .view-neueste-digital-projekte .view-sub-wrapper .view-content .views-row, .page-taxonomy-term .view-alles-zum-thema .view-sub-wrapper .view-content .views-row, .view-termin.view-display-id-page > .view-sub-wrapper > .view-content > .views-row, .col-md-5, .col-md-6, .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items > .field-item, .col-md-7, .col-md-8, .view-map-teaser .view-content .views-row, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
     float: left; }
 
   /* line 35, ../scss/bootstrap-sass/bootstrap/mixins/_grid-framework.scss */
@@ -1353,7 +1353,7 @@ pre {
     width: 25%; }
 
   /* line 35, ../scss/bootstrap-sass/bootstrap/mixins/_grid-framework.scss */
-  .col-md-4, .front .field-name-field-anzuzeigende-seitenmodule .view-neueste-informationen .view-sub-wrapper .view-content .views-row, .front .field-name-field-anzuzeigende-seitenmodule .view-termin.view-display-id-block_2 .view-sub-wrapper .view-content .views-row, .field-name-field-themenzuweisung .field-items .field-item, .page-aktuelles .view-aktuelles > .view-content .views-row, .not-front .node-doorpage .view-alle-themen-teaser .view-sub-wrapper .view-content .views-row, .view-neueste-digital-projekte .view-sub-wrapper .view-content .views-row, .page-taxonomy-term .view-alles-zum-thema .view-sub-wrapper .view-content .views-row, .view-termin.view-display-id-page > .view-sub-wrapper .view-content > .views-row {
+  .col-md-4, .front .field-name-field-anzuzeigende-seitenmodule .view-neueste-informationen .view-sub-wrapper .view-content .views-row, .front .field-name-field-anzuzeigende-seitenmodule .view-termin.view-display-id-block_2 .view-sub-wrapper .view-content .views-row, .field-name-field-themenzuweisung .field-items .field-item, .page-aktuelles .view-aktuelles > .view-content .views-row, .not-front .node-doorpage .view-alle-themen-teaser .view-sub-wrapper .view-content .views-row, .view-neueste-digital-projekte .view-sub-wrapper .view-content .views-row, .page-taxonomy-term .view-alles-zum-thema .view-sub-wrapper .view-content .views-row, .view-termin.view-display-id-page > .view-sub-wrapper > .view-content > .views-row {
     width: 33.33333333%; }
 
   /* line 35, ../scss/bootstrap-sass/bootstrap/mixins/_grid-framework.scss */
@@ -7861,34 +7861,37 @@ header.navbar-default {
     .view-map-teaser .view-content .views-row {
       background: #273753;
       padding: 45px; }
-      /* line 270, ../scss/pages/_singleview.scss */
-      .view-map-teaser .view-content .views-row .row-container .views-field-field-bild {
-        padding-bottom: 20px; }
-        /* line 272, ../scss/pages/_singleview.scss */
-        .view-map-teaser .view-content .views-row .row-container .views-field-field-bild img {
-          color: #e74712; }
-      /* line 276, ../scss/pages/_singleview.scss */
-      .view-map-teaser .view-content .views-row .row-container .views-field-field-paragraph-title {
-        color: #ffffff;
-        font-size: 38px;
-        font-weight: bold;
-        padding-bottom: 20px; }
-      /* line 283, ../scss/pages/_singleview.scss */
-      .view-map-teaser .view-content .views-row .row-container .views-field-field-flie-text-bereich {
-        color: #ffffff;
-        padding-bottom: 35px; }
-      /* line 288, ../scss/pages/_singleview.scss */
-      .view-map-teaser .view-content .views-row .row-container .views-field-field-quellenangabe a {
-        color: #ffffff;
-        position: relative;
-        padding-left: 30px; }
-        /* line 293, ../scss/pages/_singleview.scss */
-        .view-map-teaser .view-content .views-row .row-container .views-field-field-quellenangabe a:before {
-          content: "arrow_forward";
-          color: #e74712;
-          position: absolute;
-          top: 3px;
-          left: 0; }
+      /* line 268, ../scss/pages/_singleview.scss */
+      .view-map-teaser .view-content .views-row .row-container {
+        background: none; }
+        /* line 270, ../scss/pages/_singleview.scss */
+        .view-map-teaser .view-content .views-row .row-container .views-field-field-bild {
+          padding-bottom: 20px; }
+          /* line 272, ../scss/pages/_singleview.scss */
+          .view-map-teaser .view-content .views-row .row-container .views-field-field-bild img {
+            color: #e74712; }
+        /* line 276, ../scss/pages/_singleview.scss */
+        .view-map-teaser .view-content .views-row .row-container .views-field-field-paragraph-title {
+          color: #ffffff;
+          font-size: 38px;
+          font-weight: bold;
+          padding-bottom: 20px; }
+        /* line 283, ../scss/pages/_singleview.scss */
+        .view-map-teaser .view-content .views-row .row-container .views-field-field-flie-text-bereich {
+          color: #ffffff;
+          padding-bottom: 35px; }
+        /* line 288, ../scss/pages/_singleview.scss */
+        .view-map-teaser .view-content .views-row .row-container .views-field-field-quellenangabe a {
+          color: #ffffff;
+          position: relative;
+          padding-left: 30px; }
+          /* line 293, ../scss/pages/_singleview.scss */
+          .view-map-teaser .view-content .views-row .row-container .views-field-field-quellenangabe a:before {
+            content: "arrow_forward";
+            color: #e74712;
+            position: absolute;
+            top: 3px;
+            left: 0; }
 
 /* .node-type-protagonist {
     background: $color-light-blue;
@@ -8566,40 +8569,40 @@ header.navbar-default {
   .view-termin.view-display-id-page > .view-sub-wrapper {
     padding: 60px 0; }
     /* line 159, ../scss/pages/_listview.scss */
-    .view-termin.view-display-id-page > .view-sub-wrapper .view-content {
+    .view-termin.view-display-id-page > .view-sub-wrapper > .view-content {
       margin-left: -15px;
       margin-right: -15px; }
       /* line 167, ../scss/pages/_listview.scss */
-      .view-termin.view-display-id-page > .view-sub-wrapper .view-content > .views-row > .row-container {
+      .view-termin.view-display-id-page > .view-sub-wrapper > .view-content > .views-row > .row-container {
         background: #ffffff;
         padding: 30px;
         height: 385px;
         margin-bottom: 30px;
         position: relative; }
         /* line 174, ../scss/pages/_listview.scss */
-        .view-termin.view-display-id-page > .view-sub-wrapper .view-content > .views-row > .row-container .views-field-field-themenzuweisung {
+        .view-termin.view-display-id-page > .view-sub-wrapper > .view-content > .views-row > .row-container .views-field-field-themenzuweisung {
           padding-bottom: 10px; }
           /* line 177, ../scss/pages/_listview.scss */
-          .view-termin.view-display-id-page > .view-sub-wrapper .view-content > .views-row > .row-container .views-field-field-themenzuweisung img {
+          .view-termin.view-display-id-page > .view-sub-wrapper > .view-content > .views-row > .row-container .views-field-field-themenzuweisung img {
             display: inline-block;
             margin-right: 10px; }
         /* line 183, ../scss/pages/_listview.scss */
-        .view-termin.view-display-id-page > .view-sub-wrapper .view-content > .views-row > .row-container .views-field-field-event-datum {
+        .view-termin.view-display-id-page > .view-sub-wrapper > .view-content > .views-row > .row-container .views-field-field-event-datum {
           padding-bottom: 20px; }
           /* line 185, ../scss/pages/_listview.scss */
-          .view-termin.view-display-id-page > .view-sub-wrapper .view-content > .views-row > .row-container .views-field-field-event-datum .date-display-range span {
+          .view-termin.view-display-id-page > .view-sub-wrapper > .view-content > .views-row > .row-container .views-field-field-event-datum .date-display-range span {
             color: #e74712;
             font-size: 22px; }
         /* line 191, ../scss/pages/_listview.scss */
-        .view-termin.view-display-id-page > .view-sub-wrapper .view-content > .views-row > .row-container .views-field-title {
+        .view-termin.view-display-id-page > .view-sub-wrapper > .view-content > .views-row > .row-container .views-field-title {
           padding-bottom: 40px; }
           /* line 193, ../scss/pages/_listview.scss */
-          .view-termin.view-display-id-page > .view-sub-wrapper .view-content > .views-row > .row-container .views-field-title a {
+          .view-termin.view-display-id-page > .view-sub-wrapper > .view-content > .views-row > .row-container .views-field-title a {
             text-decoration: none;
             font-size: 22px;
             color: #273753; }
         /* line 201, ../scss/pages/_listview.scss */
-        .view-termin.view-display-id-page > .view-sub-wrapper .view-content > .views-row > .row-container .views-field-field-ort .field-content {
+        .view-termin.view-display-id-page > .view-sub-wrapper > .view-content > .views-row > .row-container .views-field-field-ort .field-content {
           position: absolute;
           bottom: 30px;
           font-size: 20px;
