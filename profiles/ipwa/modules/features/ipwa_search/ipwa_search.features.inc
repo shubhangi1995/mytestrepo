@@ -34,7 +34,7 @@ function ipwa_search_default_search_api_index() {
           "termin"
         ]
       },
-      "index_directly" : 0,
+      "index_directly" : 1,
       "cron_limit" : "50",
       "fields" : {
         "author" : { "type" : "integer", "entity_type" : "user" },
@@ -104,7 +104,7 @@ function ipwa_search_default_search_api_index() {
         "search_api_transliteration" : {
           "status" : 1,
           "weight" : "15",
-          "settings" : { "fields" : { "title" : true, "search_api_aggregation_1" : true, "body:value" : true } }
+          "settings" : { "fields" : { "search_api_aggregation_1" : true, "body:value" : true } }
         },
         "search_api_tokenizer" : {
           "status" : 1,
