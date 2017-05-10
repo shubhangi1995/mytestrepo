@@ -185,7 +185,7 @@
         }
 
         //-------------------------------------//
-        .view-termin {
+        .view-termin.view-display-id-block_2 {
             background: $main-color;
 
             .view-sub-wrapper {
@@ -213,7 +213,7 @@
                         .row-container {
                             background: $color-white;
                             padding: 30px;
-                            height: 300px;
+                            height: 385px;
 
                             .views-field-field-themenzuweisung {
                                 padding-bottom: 10px;
@@ -225,6 +225,7 @@
                             }
 
                             .views-field-field-event-datum {
+							padding-bottom:20px;
                                 .date-display-range span {
                                     color: $active-menu;
                                     font-size: 22px;
@@ -232,6 +233,7 @@
                             }
 
                             .views-field-title {
+							padding-bottom:40px;
                                 a {
                                     text-decoration: none;
                                     font-size: 22px;
@@ -242,8 +244,9 @@
                             .views-field-field-ort {
                                 .field-content {
                                     position: absolute;
-                                    bottom: 30px;
+                                    color:$color-light-grey;
                                     font-size: 20px;
+									    bottom: 30px;
                                 }
                             }
                         }

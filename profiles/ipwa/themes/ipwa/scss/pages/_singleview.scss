@@ -244,17 +244,28 @@
             display: none;
         }
 
-        .view-map-teaser {
+        
+    }
+}
+
+
+// view-map-teaser //
+
+.view-map-teaser {
             clear: both;
 
             .view-content {
                 margin: 0;
-
+				
+				
+                     
                 .views-row {
                     @extend .col-md-8;
 
-                    background: $main-color;
+                      background: $main-color;
                     padding: 45px;
+					
+					.row-container{
 
                     .views-field-field-bild {
 					padding-bottom:20px;
@@ -292,8 +303,9 @@
                 }
             }
         }
-    }
 }
+
+
 
 //---------------node-protagonist--------------//
 /* .node-type-protagonist {
@@ -439,8 +451,8 @@
 
                 .row-container {
                     background: $main-color;
-                    padding: 25px;
-                    height: 350px;
+                    padding:30px;
+                    height: 385px;
 
                     .views-field-field-themenzuweisung {
                         margin-bottom: 10px;
