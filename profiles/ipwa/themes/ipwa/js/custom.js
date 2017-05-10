@@ -30,9 +30,9 @@ jQuery(document).ready(function(){
 
 // scrollbar
 
-jQuery('select').select2().on("select2:open", function(){
- jQuery('.select2-results').addClass("simplebar");
- jQuery('.select2-results').simplebar();
+jQuery('.page-aktuelles select').select2().on("select2:open", function(){
+ jQuery('.page-aktuelles .select2-results').addClass("simplebar");
+ jQuery('.page-aktuelles .select2-results').simplebar();
 });
 	
 //search
