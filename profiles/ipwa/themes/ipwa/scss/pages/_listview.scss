@@ -166,9 +166,7 @@ background: $color-light-blue;
 
     > .view-sub-wrapper {
         @extend .container;
-
-        padding: 60px 0;
-		
+        
 		.view-header {
             color: $active-menu;
             font-size: 26px;
@@ -184,7 +182,7 @@ background: $color-light-blue;
 			   
 			   }
 			
-                .views-exposed-widgets .views-widget-sort-by {
+                .views-widget-sort-by {
                     float: right;
                     padding: 30px 0;
 

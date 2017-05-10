@@ -8575,85 +8575,82 @@ header.navbar-default {
     padding-bottom: 35px;
     font-weight: normal;
     padding-top: 80px; }
-  /* line 167, ../scss/pages/_listview.scss */
-  .page-termine .view-termin.view-display-id-page > .view-sub-wrapper {
-    padding: 60px 0; }
-    /* line 172, ../scss/pages/_listview.scss */
-    .page-termine .view-termin.view-display-id-page > .view-sub-wrapper .view-header {
-      color: #e74712;
-      font-size: 26px;
-      padding-left: 250px;
-      padding-bottom: 60px; }
-    /* line 181, ../scss/pages/_listview.scss */
-    .page-termine .view-termin.view-display-id-page > .view-sub-wrapper .view-filters .views-exposed-form #edit-field-themenzuweisung-tid-wrapper {
-      width: 100%;
-      clear: both; }
-    /* line 187, ../scss/pages/_listview.scss */
-    .page-termine .view-termin.view-display-id-page > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by {
-      float: right;
-      padding: 30px 0; }
-      /* line 191, ../scss/pages/_listview.scss */
-      .page-termine .view-termin.view-display-id-page > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .bef-select-as-links .form-type-bef-link {
-        display: inline-block;
-        padding-left: 15px; }
-        /* line 195, ../scss/pages/_listview.scss */
-        .page-termine .view-termin.view-display-id-page > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .bef-select-as-links .form-type-bef-link a {
+  /* line 170, ../scss/pages/_listview.scss */
+  .page-termine .view-termin.view-display-id-page > .view-sub-wrapper .view-header {
+    color: #e74712;
+    font-size: 26px;
+    padding-left: 250px;
+    padding-bottom: 60px; }
+  /* line 179, ../scss/pages/_listview.scss */
+  .page-termine .view-termin.view-display-id-page > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets #edit-field-themenzuweisung-tid-wrapper {
+    width: 100%;
+    clear: both; }
+  /* line 185, ../scss/pages/_listview.scss */
+  .page-termine .view-termin.view-display-id-page > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by {
+    float: right;
+    padding: 30px 0; }
+    /* line 189, ../scss/pages/_listview.scss */
+    .page-termine .view-termin.view-display-id-page > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .bef-select-as-links .form-type-bef-link {
+      display: inline-block;
+      padding-left: 15px; }
+      /* line 193, ../scss/pages/_listview.scss */
+      .page-termine .view-termin.view-display-id-page > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .bef-select-as-links .form-type-bef-link a {
+        text-decoration: none;
+        color: #273753; }
+        /* line 196, ../scss/pages/_listview.scss */
+        .page-termine .view-termin.view-display-id-page > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .bef-select-as-links .form-type-bef-link a.active {
+          border-bottom: 2px solid #e74712; }
+  /* line 201, ../scss/pages/_listview.scss */
+  .page-termine .view-termin.view-display-id-page > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-submit-button {
+    display: none; }
+  /* line 205, ../scss/pages/_listview.scss */
+  .page-termine .view-termin.view-display-id-page > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .select2-container--default .select2-selection--single {
+    display: none; }
+  /* line 211, ../scss/pages/_listview.scss */
+  .page-termine .view-termin.view-display-id-page > .view-sub-wrapper .attachment-before .view-result-count {
+    margin-top: -88px;
+    padding: 30px 0;
+    font-size: 22px;
+    font-weight: bold; }
+  /* line 218, ../scss/pages/_listview.scss */
+  .page-termine .view-termin.view-display-id-page > .view-sub-wrapper > .view-content {
+    margin-left: -15px;
+    margin-right: -15px; }
+    /* line 225, ../scss/pages/_listview.scss */
+    .page-termine .view-termin.view-display-id-page > .view-sub-wrapper > .view-content > .views-row > .row-container {
+      background: #ffffff;
+      padding: 30px;
+      height: 400px;
+      margin-bottom: 30px;
+      position: relative; }
+      /* line 232, ../scss/pages/_listview.scss */
+      .page-termine .view-termin.view-display-id-page > .view-sub-wrapper > .view-content > .views-row > .row-container .views-field-field-themenzuweisung {
+        padding-bottom: 30px; }
+        /* line 235, ../scss/pages/_listview.scss */
+        .page-termine .view-termin.view-display-id-page > .view-sub-wrapper > .view-content > .views-row > .row-container .views-field-field-themenzuweisung img {
+          display: inline-block;
+          margin-right: 10px; }
+      /* line 241, ../scss/pages/_listview.scss */
+      .page-termine .view-termin.view-display-id-page > .view-sub-wrapper > .view-content > .views-row > .row-container .views-field-field-event-datum {
+        padding-bottom: 20px;
+        font-weight: bold; }
+        /* line 245, ../scss/pages/_listview.scss */
+        .page-termine .view-termin.view-display-id-page > .view-sub-wrapper > .view-content > .views-row > .row-container .views-field-field-event-datum .date-display-range span {
+          color: #e74712;
+          font-size: 22px; }
+      /* line 251, ../scss/pages/_listview.scss */
+      .page-termine .view-termin.view-display-id-page > .view-sub-wrapper > .view-content > .views-row > .row-container .views-field-title {
+        padding-bottom: 40px; }
+        /* line 254, ../scss/pages/_listview.scss */
+        .page-termine .view-termin.view-display-id-page > .view-sub-wrapper > .view-content > .views-row > .row-container .views-field-title a {
           text-decoration: none;
+          font-size: 22px;
           color: #273753; }
-          /* line 198, ../scss/pages/_listview.scss */
-          .page-termine .view-termin.view-display-id-page > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .bef-select-as-links .form-type-bef-link a.active {
-            border-bottom: 2px solid #e74712; }
-    /* line 203, ../scss/pages/_listview.scss */
-    .page-termine .view-termin.view-display-id-page > .view-sub-wrapper .view-filters .views-exposed-form .views-submit-button {
-      display: none; }
-    /* line 207, ../scss/pages/_listview.scss */
-    .page-termine .view-termin.view-display-id-page > .view-sub-wrapper .view-filters .views-exposed-form .select2-container--default .select2-selection--single {
-      display: none; }
-    /* line 213, ../scss/pages/_listview.scss */
-    .page-termine .view-termin.view-display-id-page > .view-sub-wrapper .attachment-before .view-result-count {
-      margin-top: -88px;
-      padding: 30px 0;
-      font-size: 22px;
-      font-weight: bold; }
-    /* line 220, ../scss/pages/_listview.scss */
-    .page-termine .view-termin.view-display-id-page > .view-sub-wrapper > .view-content {
-      margin-left: -15px;
-      margin-right: -15px; }
-      /* line 227, ../scss/pages/_listview.scss */
-      .page-termine .view-termin.view-display-id-page > .view-sub-wrapper > .view-content > .views-row > .row-container {
-        background: #ffffff;
-        padding: 30px;
-        height: 400px;
-        margin-bottom: 30px;
-        position: relative; }
-        /* line 234, ../scss/pages/_listview.scss */
-        .page-termine .view-termin.view-display-id-page > .view-sub-wrapper > .view-content > .views-row > .row-container .views-field-field-themenzuweisung {
-          padding-bottom: 30px; }
-          /* line 237, ../scss/pages/_listview.scss */
-          .page-termine .view-termin.view-display-id-page > .view-sub-wrapper > .view-content > .views-row > .row-container .views-field-field-themenzuweisung img {
-            display: inline-block;
-            margin-right: 10px; }
-        /* line 243, ../scss/pages/_listview.scss */
-        .page-termine .view-termin.view-display-id-page > .view-sub-wrapper > .view-content > .views-row > .row-container .views-field-field-event-datum {
-          padding-bottom: 20px;
-          font-weight: bold; }
-          /* line 247, ../scss/pages/_listview.scss */
-          .page-termine .view-termin.view-display-id-page > .view-sub-wrapper > .view-content > .views-row > .row-container .views-field-field-event-datum .date-display-range span {
-            color: #e74712;
-            font-size: 22px; }
-        /* line 253, ../scss/pages/_listview.scss */
-        .page-termine .view-termin.view-display-id-page > .view-sub-wrapper > .view-content > .views-row > .row-container .views-field-title {
-          padding-bottom: 40px; }
-          /* line 256, ../scss/pages/_listview.scss */
-          .page-termine .view-termin.view-display-id-page > .view-sub-wrapper > .view-content > .views-row > .row-container .views-field-title a {
-            text-decoration: none;
-            font-size: 22px;
-            color: #273753; }
-        /* line 264, ../scss/pages/_listview.scss */
-        .page-termine .view-termin.view-display-id-page > .view-sub-wrapper > .view-content > .views-row > .row-container .views-field-field-ort .field-content {
-          position: absolute;
-          bottom: 30px;
-          font-size: 20px;
-          color: #949d9e; }
+      /* line 262, ../scss/pages/_listview.scss */
+      .page-termine .view-termin.view-display-id-page > .view-sub-wrapper > .view-content > .views-row > .row-container .views-field-field-ort .field-content {
+        position: absolute;
+        bottom: 30px;
+        font-size: 20px;
+        color: #949d9e; }
 
 /*# sourceMappingURL=style.css.map */
