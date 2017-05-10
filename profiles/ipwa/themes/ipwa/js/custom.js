@@ -40,12 +40,12 @@ jQuery('select').select2().on("select2:open", function(){
     //open popup
     jQuery('.search-icon').on('click', function(event){
         event.preventDefault();
-        jQuery('.block-ipwa-search').toggleClass('is-visible');
+        jQuery('.block-ipwa-search').addClass('is-visible');
     });
     
     // close popup 
     jQuery(".cross-link").on('click',function(){
-		jQuery(".block-ipwa-search").hide();
+		jQuery(".block-ipwa-search").removeClass('is-visible');
 		
 		
 	});
