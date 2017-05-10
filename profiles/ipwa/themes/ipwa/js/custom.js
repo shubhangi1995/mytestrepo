@@ -40,11 +40,13 @@ jQuery('.page-aktuelles select').select2().on("select2:open", function(){
     //open popup
     jQuery('.search-icon').on('click', function(event){
         event.preventDefault();
+		jQuery(this).addClass('active');
         jQuery('.block-ipwa-search').addClass('is-visible');
     });
     
     // close popup 
     jQuery(".cross-link").on('click',function(){
+		jQuery(".search-icon").removeClass('active');
 		jQuery(".block-ipwa-search").removeClass('is-visible');
 		
 		
