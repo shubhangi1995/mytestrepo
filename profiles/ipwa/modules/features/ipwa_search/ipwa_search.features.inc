@@ -101,14 +101,15 @@ function ipwa_search_default_search_api_index() {
             "tags" : "h1 = 5\\r\\nh2 = 3\\r\\nh3 = 2\\r\\nstrong = 2\\r\\nb = 2\\r\\nem = 1.5\\r\\nu = 1.5"
           }
         },
+        "search_api_transliteration" : {
+          "status" : 1,
+          "weight" : "15",
+          "settings" : { "fields" : { "title" : true, "search_api_aggregation_1" : true, "body:value" : true } }
+        },
         "search_api_tokenizer" : {
           "status" : 1,
           "weight" : "20",
-          "settings" : {
-            "fields" : { "field_ort" : true },
-            "spaces" : "[^[:alnum:]]",
-            "ignorable" : "[\\u0027]"
-          }
+          "settings" : { "fields" : [], "spaces" : "[^[:alnum:]]", "ignorable" : "[\\u0027]" }
         },
         "search_api_stopwords" : {
           "status" : 0,

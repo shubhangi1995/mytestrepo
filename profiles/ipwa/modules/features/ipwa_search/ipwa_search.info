@@ -7,6 +7,7 @@ dependencies[] = fe_block
 dependencies[] = search_api_solr
 dependencies[] = search_api_spellcheck
 dependencies[] = search_api_views
+dependencies[] = transliteration
 features[ctools][] = views:views_default:3.0
 features[fe_block_settings][] = ipwa_search-search_block
 features[features_api][] = api:2
