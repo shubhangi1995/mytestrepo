@@ -192,7 +192,7 @@ function ipwa_base_path_breadcrumbs_settings_info() {
       0 => 'Termine',
     ),
     'paths' => array(
-      0 => 'termin',
+      0 => 'termine',
     ),
     'home' => 1,
     'translatable' => 0,
