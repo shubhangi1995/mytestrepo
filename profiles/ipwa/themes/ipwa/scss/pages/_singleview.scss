@@ -11,7 +11,7 @@
         margin-bottom: 15px;
     }
 
-    .field-items .field-item { 
+    .field-items .field-item {
         @extend .col-md-4;
 
         padding-right: 45px;
@@ -26,7 +26,7 @@
             text-decoration: none;
             border-bottom: 1px solid $single-border-color;
             padding-bottom: 5px;
-			color:$main-color; 
+            color: $main-color;
         }
 
         img {
@@ -49,7 +49,7 @@
     .field-label {
         color: $active-menu;
         font-weight: normal;
-		margin-bottom:10px;
+        margin-bottom: 10px;
     }
 
     .field-items {
@@ -74,9 +74,9 @@
         padding-left: 350px;
         border: none;
         margin: 0;
-		padding-bottom:35px;
-		font-weight:normal;
-		padding-top: 80px;
+        padding-bottom: 35px;
+        font-weight: normal;
+        padding-top: 80px;
     }
 
     .view-aktuelles {
@@ -86,7 +86,7 @@
             color: $active-menu;
             font-size: 26px;
             padding-left: 250px;
-			padding-bottom:60px;
+            padding-bottom: 60px;
         }
 
         .view-filters {
@@ -102,7 +102,7 @@
 
                         label {
                             padding-left: 0;
-							padding-bottom:15px;
+                            padding-bottom: 15px;
 
                             input {
                                 visibility: hidden;
@@ -130,7 +130,6 @@
                             border: 0;
                             border-radius: 0;
 
-
                             &:before {
                                 content: "\f107";
                                 font-family: FontAwesome;
@@ -138,15 +137,12 @@
                                 position: absolute;
                                 float: right;
                                 right: 20px;
-								top:3px;
+                                top: 3px;
                             }
-							
 
                             .select2-selection__rendered {
                                 color: $color-white;
-								padding-left:20px;
-								
-							
+                                padding-left: 20px;
                             }
 
                             .select2-selection__arrow {
@@ -166,7 +162,7 @@
 
                         a {
                             text-decoration: none;
-							color:$main-color;
+                            color: $main-color;
 
                             &.active {
                                 border-bottom: 2px solid $active-menu;
@@ -184,8 +180,8 @@
         .attachment-before .view-result-count {
             margin-top: -88px;
             padding: 30px 0;
-			font-size:22px;
-			font-weight:bold;
+            font-size: 22px;
+            font-weight: bold;
         }
 
         > .view-content {
@@ -215,12 +211,13 @@
 
                     .views-field-type {
                         color: $active-menu;
-						font-weight:bold;
-						padding-bottom:15px;
+                        font-weight: bold;
+                        padding-bottom: 15px;
                     }
 
                     .views-field-title {
-					padding-bottom:40px;
+                        padding-bottom: 40px;
+
                         a {
                             text-decoration: none;
                             color: $main-color;
@@ -243,70 +240,65 @@
         .views-submit-button {
             display: none;
         }
-
-        
     }
 }
-
 
 // view-map-teaser //
 
 .view-map-teaser {
-            clear: both;
+    clear: both;
 
-            .view-content {
-                margin: 0;
-				
-				
-                     
-                .views-row {
-                    @extend .col-md-8;
+    .view-content {
+        margin: 0;
 
-                      background: $main-color;
-                    padding: 45px;
-					
-					.row-container{
-                      background:none;
-					  
-                    .views-field-field-bild {
-					padding-bottom:20px;
-					img {
+        .views-row {
+            @extend .col-md-8;
+
+            background: $main-color;
+            padding: 45px;
+
+            .row-container {
+                background: none;
+
+                .views-field-field-bild {
+                    padding-bottom: 20px;
+
+                    img {
                         color: $active-menu;
-                    }}
-
-                    .views-field-field-paragraph-title {
-                        color: $color-white;
-                        font-size: 38px;
-						font-weight:bold;
-						padding-bottom:20px;
                     }
+                }
 
-                    .views-field-field-flie-text-bereich {
-                        color: $color-white;
-						padding-bottom:35px;
-                    }
+                .views-field-field-paragraph-title {
+                    color: $color-white;
+                    font-size: 38px;
+                    font-weight: bold;
+                    padding-bottom: 20px;
+                }
 
-                    .views-field-field-quellenangabe a {
-                        color: $color-white;
-						position:relative;
-						padding-left:30px;
-						
-						&:before {
-                                @extend .material-icons;
+                .views-field-field-flie-text-bereich {
+                    color: $color-white;
+                    padding-bottom: 35px;
+                }
 
-                                content: "arrow_forward";
-                                color: $active-menu;
-                                position: absolute;
-                                top: 3px;
-                                left: 0;
-                            }
+                .views-field-field-quellenangabe a {
+                    color: $color-white;
+                    position: relative;
+                    padding-left: 30px;
+
+                    &:before {
+                        @extend .material-icons;
+
+                        content: "arrow_forward";
+                        color: $active-menu;
+                        position: absolute;
+                        top: 3px;
+                        left: 0;
                     }
                 }
             }
         }
+    }
 }
-
-
 
 //---------------node-protagonist--------------//
 /* .node-type-protagonist {
@@ -452,7 +444,7 @@
 
                 .row-container {
                     background: $main-color;
-                    padding:30px;
+                    padding: 30px;
                     height: 385px;
 
                     .views-field-field-themenzuweisung {
@@ -515,408 +507,386 @@
 
 .group-page-info, .group-page-bottom {
     @extend .page_inner;
+
     padding: 60px 0 45px;
 }
-.group-page-info{
-	@extend .container;
-	.field:first-child{
-		.field-item{
-			a{
-				color:$main-color; 
-			}
-		}
-	}
+
+.group-page-info {
+    @extend .container;
+
+    .field:first-child {
+        .field-item {
+            a {
+                color: $main-color;
+            }
+        }
+    }
 }
-.group-body-container{
-	background-color:$color-white;
-	padding: 60px 0 45px;
-	p, h3, h4, .field-name-field-kurztext .field-item{
-		margin:0 0 40px 0;
-	}
-	h1, h2{
-		display:none;
-	}
-	h3{
-		font-size:20px;
-		color:$active-menu;
-	}
-	h4{
-		font-size:26px;
-		color:$active-menu;
-	}
-	a{
-		color:$main-color;
-		text-decoration:underline;
-		//border-bottom:1px solid $body-link-border-color;
-		margin:0 7px 0 5px;
-		text-transform:capitalize;
-		display:inline-block;
-		&:hover{
-			color:$active-menu;
-			//border-color:$active-menu;
-		}
-	}
-	ul, ol{
-	list-style:none;
-	padding-left:55px;
-	line-height:35px;
-	margin-bottom:40px;
-	}
-	ul, ol{
-		li{
-			position:relative;
-			&::before{
-				content:"\002022";
-				color:$active-menu;
-				font-size: 28px;
-				font-weight: bold;
-				left: -25px;
-				position: absolute;
-				top: -1px;
-			}
-		}
-	}
-	ol{
-		li{
-			counter-increment: list;
-			&::before{
-				content:counter(list) ".";
-				font-size: 19px;
-			}
-		}
-	}
-}
+
 .group-body-container {
-		> *{
-			@extend .page_inner;
-			margin-bottom:15px;
+    background-color: $color-white;
+    padding: 60px 0 45px;
 
-		}
-		.field-name-field-bild-ref, .field-name-field-youtube-url{
-			margin:70px 0;
-		}
-		.field-name-field-youtube-url{
-			margin-bottom:25px;
-			iframe{
-				//width:870px;
-				//height:490px;
-			}
-		}
-		.field-name-field-bild{
-			margin-bottom:25px;
-			.field-item{
-				img{
-					//width:890px;
-					// height:490px;
-				}
-			}
-		}
-		.field-name-field-bildbeschreibung, .field-name-field-videounterschrift{
-			float:left;
-			margin-right:5px ;
-			.field-item{
-				font-size:18px;
-			}
-		}
-		// External link
+    p, h3, h4, .field-name-field-kurztext .field-item {
+        margin: 0 0 40px 0;
+    }
 
-		.external-link {
-			color: $main-color;
-			text-decoration:underline;
-			padding:0;
-			&::before{
-				content:none;
-			}
-			.ext{
-				display:inline-block;
-				&::after{
-					font-family:$icomoon;
-					content:"\e948";
-					color:$icons-color;
-					font-size:16px;
-					margin-left: 7px; 
-					display:inline-block;
-				}
-			}
-			&:hover{
-				.ext{
-					&::after{
-						color:$active-menu;
-					}
-				}
-			}
-		}
-} 
+    h1, h2 {
+        display: none;
+    }
+
+    h3 {
+        font-size: 20px;
+        color: $active-menu;
+    }
+
+    h4 {
+        font-size: 26px;
+        color: $active-menu;
+    }
+
+    a {
+        color: $main-color;
+        text-decoration: underline;
+
+        //border-bottom:1px solid $body-link-border-color;
+        margin: 0 7px 0 5px;
+        text-transform: capitalize;
+        display: inline-block;
+
+        &:hover {
+            color: $active-menu;
+
+            //border-color:$active-menu;
+       
+        }
+    }
+
+    ul, ol {
+        list-style: none;
+        padding-left: 55px;
+        line-height: 35px;
+        margin-bottom: 40px;
+    }
+
+    ul, ol {
+        li {
+            position: relative;
+
+            &::before {
+                content: "\002022";
+                color: $active-menu;
+                font-size: 28px;
+                font-weight: bold;
+                left: -25px;
+                position: absolute;
+                top: -1px;
+            }
+        }
+    }
+
+    ol {
+        li {
+            counter-increment: list;
+
+            &::before {
+                content: counter(list) ".";
+                font-size: 19px;
+            }
+        }
+    }
+}
+
+.group-body-container {
+    > * {
+        @extend .page_inner;
+
+        margin-bottom: 15px;
+    }
+
+    .field-name-field-bild-ref, .field-name-field-youtube-url {
+        margin: 70px 0;
+    }
+
+    .field-name-field-youtube-url {
+        margin-bottom: 25px;
+
+        iframe {
+            //width:870px;
+            //height:490px;
+       
+        }
+    }
+
+    .field-name-field-bild {
+        margin-bottom: 25px;
+
+        .field-item {
+            img {
+                //width:890px;
+                // height:490px;
+           
+            }
+        }
+    }
+
+    .field-name-field-bildbeschreibung, .field-name-field-videounterschrift {
+        float: left;
+        margin-right: 5px;
+
+        .field-item {
+            font-size: 18px;
+        }
+    }
+
+    // External link
+
+    .external-link {
+        color: $main-color;
+        text-decoration: underline;
+        padding: 0;
+
+        &::before {
+            content: none;
+        }
+
+        .ext {
+            display: inline-block;
+
+            &::after {
+                font-family: $icomoon;
+                content: "\e948";
+                color: $icons-color;
+                font-size: 16px;
+                margin-left: 7px;
+                display: inline-block;
+            }
+        }
+
+        &:hover {
+            .ext {
+                &::after {
+                    color: $active-menu;
+                }
+            }
+        }
+    }
+}
 
 // Paragraph inside body container
-		.paragraphs-item-flie-text-mit-bild-links, .paragraphs-item-flie-text-mit-bild-rechts{
-			margin:40px 0;
-			overflow:hidden;
-			.field-name-field-bild-ref, .field-name-field-flie-text-bereich{
-				margin:0;
-				padding-right:30px;
-			}
-			.content{
-				> *{
-					float:left;
-					width:50%;
-				}
-			}
-		}	
-		.paragraphs-item-flie-text-mit-bild-rechts{
-			.field-name-field-bild-ref{
-				padding:0;
-			}
-		}
-.field .field-label{
-	font-weight:normal;
+.paragraphs-item-flie-text-mit-bild-links, .paragraphs-item-flie-text-mit-bild-rechts {
+    margin: 40px 0;
+    overflow: hidden;
+
+    .field-name-field-bild-ref, .field-name-field-flie-text-bereich {
+        margin: 0;
+        padding-right: 30px;
+    }
+
+    .content {
+        > * {
+            float: left;
+            width: 50%;
+        }
+    }
 }
+
+.paragraphs-item-flie-text-mit-bild-rechts {
+    .field-name-field-bild-ref {
+        padding: 0;
+    }
+}
+
+.field .field-label {
+    font-weight: normal;
+}
+
 .field-name-field-copyright, .field-name-field-videoquelle {
-	.field-label, .field-item{
-		font-size:16px;
-		color:$icons-color;
-	}
+    .field-label, .field-item {
+        font-size: 16px;
+        color: $icons-color;
+    }
 }
-.field-name-field-copyright{
-	display:inline-block;
-	margin-top:2px;
+
+.field-name-field-copyright {
+    display: inline-block;
+    margin-top: 2px;
 }
-.field-name-field-videounterschrift, .field-name-field-videoquelle{
-	margin-bottom:0;
+
+.field-name-field-videounterschrift, .field-name-field-videoquelle {
+    margin-bottom: 0;
 }
-.group-page-bottom{
-	> *{
-		margin-bottom:80px; 
-	}
-	.view-title, .field-label{
-		font-size:24px;
-		font-weight:bold;
-		margin-bottom:30px;
-	}
-	a{
-		color:$main-color;
-		text-decoration:none;
-	}
-	.view-sub-wrapper{
-		.views-row{
-			border-bottom:1px solid $single-view-border-color;
-			padding-bottom:15px;
-			margin-bottom:15px;
-			&:last-child{
-				border:none;
-				padding-bottom:0;
-				margin-bottom:0;
-			}
-			.views-field{
-				&:last-child{
-					.field-content{
-						font-size:16px;
-						color:$header-dropdown-menu;
-					}
-				}
-			}
-		}
-	}
-	> .field{
-		.field-items{
-			.field-item{
-				border-bottom:1px solid $single-view-border-color;
-				padding-bottom:15px;
-				margin-bottom:15px;
-				&:last-child{
-					border:none;
-					padding-bottom:0;
-					margin-bottom:0;
-				}
-			}
-		}
-	}
+
+.group-page-bottom {
+    > * {
+        margin-bottom: 80px;
+    }
+
+    .view-title, .field-label {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+
+    a {
+        color: $main-color;
+        text-decoration: none;
+    }
+
+    .view-sub-wrapper {
+        .views-row {
+            border-bottom: 1px solid $single-view-border-color;
+            padding-bottom: 15px;
+            margin-bottom: 15px;
+
+            &:last-child {
+                border: none;
+                padding-bottom: 0;
+                margin-bottom: 0;
+            }
+
+            .views-field {
+                &:last-child {
+                    .field-content {
+                        font-size: 16px;
+                        color: $header-dropdown-menu;
+                    }
+                }
+            }
+        }
+    }
+
+    > .field {
+        .field-items {
+            .field-item {
+                border-bottom: 1px solid $single-view-border-color;
+                padding-bottom: 15px;
+                margin-bottom: 15px;
+
+                &:last-child {
+                    border: none;
+                    padding-bottom: 0;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
 }
 
 // document and publication view
-.view-id-related_content{
-	&.view-display-id-block_2{
-		.views-row{
-			.row-container{
-				.views-field{
-					.field-content{
-						a{
-							padding-left: 35px;
-							position: relative;
-							&::before{
-								font-family:$icomoon;
-								content:"\e944";
-								color:$download-icon-color;
-								font-size: 17px;
-								left: 0;
-								position: absolute;
-								top: 6px;
-							}
-						}
-					}
-					&:last-child{
-						padding-left: 35px;
-					}
-				}
-			}
-		}
-	}
+.view-id-related_content {
+    &.view-display-id-block_2 {
+        .views-row {
+            .row-container {
+                .views-field {
+                    .field-content {
+                        a {
+                            padding-left: 35px;
+                            position: relative;
+
+                            &::before {
+                                font-family: $icomoon;
+                                content: "\e944";
+                                color: $download-icon-color;
+                                font-size: 17px;
+                                left: 0;
+                                position: absolute;
+                                top: 6px;
+                            }
+                        }
+                    }
+
+                    &:last-child {
+                        padding-left: 35px;
+                    }
+                }
+            }
+        }
+    }
 }
 
-// Other common views 
+// Other common views
 
-.field-name-field-meldungen-zum-thema, .field-name-field-initiatoren-zum-thema, .field-name-field-projekte-zum-thema, .field-name-field-f-rderbekanntmachungen{
-	.field-items{
-		.field-item{
-			a{
-				position:relative;
-				display: inline-block;
-				padding-left: 35px;
-				&::before{
-					font-family:$icomoon;
-					content:"\e93f";
-					color:$download-icon-color; 
-					font-size: 17px;
-					left: 0;
-					position: absolute;
-					top: 6px;
-				}
-			}
-		}
-	}
+.field-name-field-meldungen-zum-thema, .field-name-field-initiatoren-zum-thema, .field-name-field-projekte-zum-thema, .field-name-field-f-rderbekanntmachungen {
+    .field-items {
+        .field-item {
+            a {
+                position: relative;
+                display: inline-block;
+                padding-left: 35px;
+
+                &::before {
+                    font-family: $icomoon;
+                    content: "\e93f";
+                    color: $download-icon-color;
+                    font-size: 17px;
+                    left: 0;
+                    position: absolute;
+                    top: 6px;
+                }
+            }
+        }
+    }
 }
 
 // view with date field
 
-.view-id-related_content{
-	&.view-display-id-block_1{
-		.views-row{
-			.row-container{
-				.views-field{
-					// font-size:22px;
-					&.views-field-field-event-datum{
-						float:left;
-						margin-right:8px;
-						.field-content{
-							color:$active-menu;
-							font-weight:bold;
-						}
-					}
-					.field-content{
-						font-size:22px;
-					}
-				}
-			}
-		}
-	}
-} 
+.view-id-related_content {
+    &.view-display-id-block_1 {
+        .views-row {
+            .row-container {
+                .views-field {
+                    // font-size:22px;
+                    &.views-field-field-event-datum {
+                        float: left;
+                        margin-right: 8px;
 
+                        .field-content {
+                            color: $active-menu;
+                            font-weight: bold;
+                        }
+                    }
+
+                    .field-content {
+                        font-size: 22px;
+                    }
+                }
+            }
+        }
+    }
+}
 
 //view-latest-content-doorpage
 
 .view-latest-content-doorpage {
+    padding-top: 50px;
 
-padding-top:50px;
     > .view-sub-wrapper {
         @extend .container;
+
         padding: 0;
 
         .left-block {
             width: 70%;
             float: left;
-			.view-header{
-			  padding-bottom:30px;
-			  padding-top:60px;
-			  font-size:28px;
-			
-			}
+
+            .view-header {
+                padding-bottom: 30px;
+                padding-top: 60px;
+                font-size: 28px;
+            }
 
             .inner-wrapper {
                 width: 45%;
                 float: left;
-				margin-right:5%;
+                margin-right: 5%;
 
                 .view-content .views-row {
                     .row-container {
                         background: $color-white;
                         height: 350px;
                         padding: 30px;
-						position:relative;
-						.views-field-field-themenzuweisung {
-                            margin-bottom: 30px;
-
-                            img {
-                                display: inline-block;
-                                margin-right: 10px;
-                            }
-                        }
-
-                        .views-field-type {
-                            color: $active-menu;
-                            font-weight: bold;
-                            padding-bottom: 15px;
-                        }
-
-                        .views-field-title {
-                            padding-bottom: 70px;
-
-                            a {
-                                text-decoration: none;
-                                color: $main-color;
-                            }
-                        }
-
-                        .views-field-field-datum {
-                            position: absolute;
-                            bottom: 30px;
-
-                            .date-display-single {
-                                font-size: 17px;
-                                color: $color-light-grey;
-                            }
-                        }
-                    }
-                }
-            }
-
-			.view-footer{
-			padding-top:30px;
-			padding-bottom:60px;
-			  a{
-			  text-decoration: none;
-                color: $main-color;
-                font-size: 20px;
-                position: relative;
-                padding-left: 30px;
-
-                &:before {
-                    @extend .material-icons;
-
-                    content: "arrow_forward";
-                    color: $active-menu;
-                    position: absolute;
-                    top: 4px;
-                    left: 0;
-                }
-			  
-			  }
-			
-			}
-            > .view-latest-content-doorpage {
-			padding:0;
-                width: 45%;
-                float: left;
-				margin-right:5%;
-				
-				.view-sub-wrapper{
-				width:auto;
-
-                .view-content .views-row {
-                    .row-container {
-                        background: $color-white;
-                        height: 350px;
-                        padding: 30px;
-						position:relative;
+                        position: relative;
 
                         .views-field-field-themenzuweisung {
                             margin-bottom: 30px;
@@ -953,32 +923,106 @@ padding-top:50px;
                         }
                     }
                 }
-				
+            }
+
+            .view-footer {
+                padding-top: 30px;
+                padding-bottom: 60px;
+
+                a {
+                    text-decoration: none;
+                    color: $main-color;
+                    font-size: 20px;
+                    position: relative;
+                    padding-left: 30px;
+
+                    &:before {
+                        @extend .material-icons;
+
+                        content: "arrow_forward";
+                        color: $active-menu;
+                        position: absolute;
+                        top: 4px;
+                        left: 0;
+                    }
+                }
+            }
+
+            > .view-latest-content-doorpage {
+                padding: 0;
+                width: 45%;
+                float: left;
+                margin-right: 5%;
+
+                .view-sub-wrapper {
+                    width: auto;
+
+                    .view-content .views-row {
+                        .row-container {
+                            background: $color-white;
+                            height: 350px;
+                            padding: 30px;
+                            position: relative;
+
+                            .views-field-field-themenzuweisung {
+                                margin-bottom: 30px;
+
+                                img {
+                                    display: inline-block;
+                                    margin-right: 10px;
+                                }
+                            }
+
+                            .views-field-type {
+                                color: $active-menu;
+                                font-weight: bold;
+                                padding-bottom: 15px;
+                            }
+
+                            .views-field-title {
+                                padding-bottom: 70px;
+
+                                a {
+                                    text-decoration: none;
+                                    color: $main-color;
+                                }
+                            }
+
+                            .views-field-field-datum {
+                                position: absolute;
+                                bottom: 30px;
+
+                                .date-display-single {
+                                    font-size: 17px;
+                                    color: $color-light-grey;
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
-}
-
 
         > .view-latest-content-doorpage {
-		padding:0;
+            padding: 0;
             width: 30%;
             float: left;
-			
-			.view-sub-wrapper{
-				width:auto;
-				
-			.view-header{
-			  padding-bottom:30px;
-			  padding-top:60px;
-			  font-size:28px;
-			
-			}
-			.view-content .views-row {
+
+            .view-sub-wrapper {
+                width: auto;
+
+                .view-header {
+                    padding-bottom: 30px;
+                    padding-top: 60px;
+                    font-size: 28px;
+                }
+
+                .view-content .views-row {
                     .row-container {
                         background: $color-white;
                         height: 350px;
                         padding: 30px;
-						position:relative;
+                        position: relative;
 
                         .views-field-field-themenzuweisung {
                             margin-bottom: 30px;
@@ -1015,56 +1059,55 @@ padding-top:50px;
                         }
                     }
                 }
-			.view-footer{
-			padding-top:30px;
-			padding-bottom:60px;
-			  a{
-			  text-decoration: none;
-                color: $main-color;
-                font-size: 20px;
-                position: relative;
-                padding-left: 30px;
 
-                &:before {
-                    @extend .material-icons;
+                .view-footer {
+                    padding-top: 30px;
+                    padding-bottom: 60px;
 
-                    content: "arrow_forward";
-                    color: $active-menu;
-                    position: absolute;
-                    top: 4px;
-                    left: 0;
+                    a {
+                        text-decoration: none;
+                        color: $main-color;
+                        font-size: 20px;
+                        position: relative;
+                        padding-left: 30px;
+
+                        &:before {
+                            @extend .material-icons;
+
+                            content: "arrow_forward";
+                            color: $active-menu;
+                            position: absolute;
+                            top: 4px;
+                            left: 0;
+                        }
+                    }
                 }
-			  
-			  }
-			
-			}
-			
+            }
         }
     }
-}}
-
-
-
-
+}
 
 //.field-name-field-quellenangabe{
-	.external-link{
-		color:$main-color;
-		padding-left: 35px;
-		text-decoration:none;
-		font-size:18px;
-		position: relative;
-		&::before{
-			left:0;
-			position:absolute;
-			top:0; 
-			font-family:$icomoon;
-			content:"\e948";
-			color:$icons-color;
-			font-size:16px;
-		}
-		.ext{
-			display:none;
-		}
-	}
+.external-link {
+    color: $main-color;
+    padding-left: 35px;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+
+    &::before {
+        left: 0;
+        position: absolute;
+        top: 0;
+        font-family: $icomoon;
+        content: "\e948";
+        color: $icons-color;
+        font-size: 16px;
+    }
+
+    .ext {
+        display: none;
+    }
+}
+
 //}
