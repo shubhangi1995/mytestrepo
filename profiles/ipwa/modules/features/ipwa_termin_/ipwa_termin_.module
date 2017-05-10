@@ -87,7 +87,7 @@ function ipwa_termin__node_view($node, $view_mode, $langcode) {
   if (!empty($node->content['field_event_datum'])) {
     $occurence = count($node->content['field_event_datum']['#items']);
     $startDate = date("d.m.Y", strtotime($node->content['field_event_datum']['#items'][0]['value']));
-    $enddate = date("d.m.Y", strtotime($node->content['field_event_datum']['#items'][$occurence-1]['value']));
+    $enddate = date("d.m.Y", strtotime($node->content['field_event_datum']['#items'][$occurence-1]['value2']));
     if ($occurence > 1) {
       // Repeat rule
       $output =' ';

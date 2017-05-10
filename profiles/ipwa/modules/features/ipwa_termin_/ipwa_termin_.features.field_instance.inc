@@ -299,7 +299,7 @@ function ipwa_termin__field_default_field_instances() {
           'multiple_number' => 1,
           'multiple_to' => '',
           'show_remaining_days' => 0,
-          'show_repeat_rule' => 'show',
+          'show_repeat_rule' => 'hide',
         ),
         'type' => 'date_default',
         'weight' => 4,
