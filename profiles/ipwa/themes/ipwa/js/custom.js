@@ -33,6 +33,26 @@ jQuery('select').select2().on("select2:open", function(){
 });
 	
 	
+	
+	
+//search	
+	
+	
+	
+//jQuery(".search-icon").click(function(){
+	//jQuery(".block-ipwa-search").toggleClass("popupwindow");
+	 
+	
+    //open popup
+    jQuery('.search-icon').on('click', function(event){
+        event.preventDefault();
+        jQuery('.block-ipwa-search').toggleClass('is-visible');
+    });
+    
+       
+    
+
+	
 
 
 

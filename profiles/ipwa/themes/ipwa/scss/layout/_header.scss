@@ -27,9 +27,11 @@ header {
 
         .navbar-collapse {
             padding: 0;
+            text-align: right;
 
             ul.navbar-nav {
-                float: right;
+                display: inline-block;
+                float: none;
 
                 li {
                     &.active {
@@ -62,10 +64,87 @@ header {
                 }
             }
 
+            .search-icon {
+                display: inline-block;
+                position: relative;
+                font-size: 14px;
+                padding: 15px;
+                padding-top: 30px;
+                cursor: pointer;
+
+                &:before {
+                    @extend .material-icons;
+
+                    content: "search";
+                    position: absolute;
+                    padding-bottom: 25px;
+                    left: 18px;
+                    top: 9px;
+                    font-size: 20px;
+                }
+            }
+
             .region-navigation {
+                text-align: left;
                 width: 100%;
                 clear: both;
                 padding-top: 30px;
+
+                .block-ipwa-search {
+				  top:190px;
+                    position: fixed;
+                    height: 100%;
+                    width: 100%;
+                    left: 0;
+                    top: 0;
+                    background-color: rgba(94, 110, 141, 0.9);
+                    opacity: 0;
+                    visibility: hidden;
+                    -webkit-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+                    -moz-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+                    transition: opacity 0.3s 0s, visibility 0s 0.3s;
+                    z-index: 999;
+
+                    &.is-visible {
+                        opacity: 1;
+                        visibility: visible;
+                        -webkit-transition: opacity 0.3s 0s, visibility 0s 0s;
+                        -moz-transition: opacity 0.3s 0s, visibility 0s 0s;
+                        transition: opacity 0.3s 0s, visibility 0s 0s;
+                    }
+
+                    #ipwa-search-block-form {
+                        position: fixed;
+                        top: 50%;
+                        vertical-align: middle;
+                        margin: -40px auto 0;
+                        left: 0;
+                        right: 0;
+                        width: 685px;
+
+                        .control-label {
+                            display: none;
+                        }
+
+                        .form-group {
+                            margin-bottom: 0;
+
+                            .form-control {
+                                height: 100px;
+                                width: 700px;
+                                border-radius: 0;
+                                font-weight: bold;
+                                font-size: 22px;
+                            }
+                        }
+
+                        .btn-primary {
+                            position: absolute;
+                            top: 40px;
+                            right: 30px;
+                        }
+                    }
+                }
 
                 .tb-megamenu {
                     background: none;
@@ -266,7 +345,7 @@ header {
                                                 font-size: 16px;
                                                 position: relative;
                                                 padding-left: 25px;
-												margin:0;
+                                                margin: 0;
 
                                                 &:before {
                                                     @extend .material-icons;
