@@ -57,7 +57,7 @@ function ipwa_termin__views_pre_render(&$view) {
         $occurence = count($result->field_field_event_datum);
         $startDate = date("d.m.Y", strtotime($result->field_field_event_datum[0]['raw']['value']));
         $enddate = date("d.m.Y", strtotime($result->field_field_event_datum[$occurence - 1]['raw']['value2']));
-        if (($occurence > 1) || ((!empty($result->field_field_event_datum[0]['raw']['rrule'])))) {
+        if (($occurence > 1) || (($result->field_field_event_datum[0]['raw']['value'] != $result->field_field_event_datum[0]['raw']['value2']))) {
           $output = ' ';
           $output = '<div class="date-repeat-rule">' . $output . '</div>';
           $output .= '<div class="date-display-range"><span class="date-display-start">' . $startDate . '</span> - <span class="date-display-end">' . $enddate . '</span></div>';
