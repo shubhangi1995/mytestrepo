@@ -70,16 +70,16 @@ header {
                 float: right;
                 padding: 15px;
                 cursor: pointer;
-                padding-left: 25px;
+                
                 font-size: 18px;
 
                 &:before {
-                    @extend .material-icons;
-
-                    content: "search";
-                    position: absolute;
-                    left: 0;
-                    top: 17px;
+                 font-family: $icomoon;
+                content: "\e94e";
+                color: $icons-color;
+                font-size: 16px;
+                margin-right:10px;
+                display: inline-block;
                 }
             }
 
@@ -91,10 +91,10 @@ header {
 
                 .block-ipwa-search {
                     position: fixed;
-                    height: 100%;
+                    height: 100px;
                     width: 100%;
                     left: 0;
-                    top: 190px;
+                    top:87px;
                     background-color: rgba(94, 110, 141, 0.9);
                     opacity: 0;
                     visibility: hidden;
@@ -113,7 +113,7 @@ header {
 
                     #ipwa-search-block-form {
                         position: fixed;
-                        top: 50%;
+                        top: 148px;
                         vertical-align: middle;
                         margin: -40px auto 0;
                         left: 0;
@@ -124,7 +124,7 @@ header {
                             position: absolute;
                             cursor: pointer;
                             right: 3px;
-                            top: -22px;
+                            top: -25px;
 
                             a {
                                 text-decoration: none;
@@ -133,10 +133,11 @@ header {
 
                                 &:after {
                                     font-family: $icomoon;
-                                    content: "\e901";
-                                    color: $icons-color;
-                                    margin-left: 7px;
-                                    display: inline-block;
+                content: "\e948";
+                color: $icons-color;
+                font-size: 16px;
+                margin-left: 7px;
+                display: inline-block;
                                 }
                             }
                         }
@@ -149,7 +150,7 @@ header {
                             margin-bottom: 0;
 
                             .form-control {
-                                height: 100px;
+                                height:70px;
                                 width: 700px;
                                 border-radius: 0;
                                 font-weight: bold;
@@ -159,7 +160,7 @@ header {
 
                         .btn-primary {
                             position: absolute;
-                            top: 40px;
+                            top: 19px;
                             right: 30px;
                         }
                     }
@@ -359,6 +360,7 @@ header {
                                     ul {
                                         li {
                                             width: 100%;
+											margin-bottom:10px;
 
                                             a {
                                                 font-size: 16px;
@@ -367,12 +369,13 @@ header {
                                                 margin: 0;
 
                                                 &:before {
-                                                    @extend .material-icons;
-
-                                                    content: "arrow_forward";
-                                                    color: $active-menu;
-                                                    position: absolute;
-                                                    left: 0;
+                                                    font-family: $icomoon;
+                                        content: "\e93f";
+                                        color: $active-menu;
+                                        font-size: 12px;
+                                        position: absolute;
+                                        left: 0;                                        
+                                        display: inline-block;
                                                 }
                                             }
                                         }

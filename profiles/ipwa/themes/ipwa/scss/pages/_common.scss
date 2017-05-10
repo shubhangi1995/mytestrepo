@@ -151,6 +151,24 @@ header.navbar-default {
 		padding-bottom: 5px;
     }
 }
+.delimiter {
+   font-size:0;
+   &:before{
+   font-family: $icomoon;
+                content: "\e940";
+                color: $icons-color;
+                font-size: 14px;
+                
+                display: inline-block;
+   
+   
+   
+   
+   }
+
+
+}
+
     .inline.last {
 	margin-left:10px;
         border-bottom: 2px solid $active-menu;
