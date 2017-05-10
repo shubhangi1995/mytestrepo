@@ -141,14 +141,20 @@ header.navbar-default {
     background: none;
     border-radius: 0;
 
-    .inline.first{
-	margin-right:10px;
+    .inline{
+	// margin-right:10px;
 	a {
         text-decoration: none;
         color: $main-color;
         font-size: 18px;
-        border-bottom: 2px solid $color-light-grey;
-		padding-bottom: 5px;
+        border-bottom: 1px solid $color-light-grey;
+		padding-bottom: 4px;
+    }
+	   &.last {
+	// margin-left:10px;
+		a{
+			border-color: $active-menu;
+		}
     }
 }
 .delimiter {
@@ -157,24 +163,14 @@ header.navbar-default {
    font-family: $icomoon;
                 content: "\e940";
                 color: $icons-color;
-                font-size: 14px;
-                
+				font-size: 11px;
+				margin: 0 10px;
                 display: inline-block;
-   
-   
-   
-   
    }
 
 
 }
 
-    .inline.last {
-	margin-left:10px;
-        border-bottom: 2px solid $active-menu;
-        color: $main-color;
-		padding-bottom: 5px;
-    }
 }
 
 //dropdown

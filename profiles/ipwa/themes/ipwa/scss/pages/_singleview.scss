@@ -501,13 +501,12 @@
 
 // Article single view
 
-.node-type-article {
+.node-type-article, .node-type-protagonist, .node-type-nachricht, .node-type-termin, .node-type-projekt, .node-type-publikation {
     background-color: $color-light-blue;
 }
 
 .group-page-info, .group-page-bottom {
     @extend .page_inner;
-
     padding: 60px 0 45px;
 }
 
@@ -529,6 +528,7 @@
 
     p, h3, h4, .field-name-field-kurztext .field-item {
         margin: 0 0 40px 0;
+		line-height:30px; 
     }
 
     h1, h2 {
@@ -574,7 +574,7 @@
             position: relative;
 
             &::before {
-                content: "\002022";
+                content: "\002022"; 
                 color: $active-menu;
                 font-size: 28px;
                 font-weight: bold;
@@ -634,8 +634,8 @@
         float: left;
         margin-right: 5px;
 
-        .field-item {
-            font-size: 18px;
+        .field-item {  
+            font-size: 18px;    
         }
     }
 

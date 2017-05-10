@@ -6586,31 +6586,34 @@ header .container, header .front .field-name-field-anzuzeigende-seitenmodule .pa
                 float: left;
                 margin: 0; }
 
-/* line 3, ../scss/layout/_footer.scss */
-footer #block-menu-menu-footer-navigation ul li {
-  display: inline-block; }
-  /* line 6, ../scss/layout/_footer.scss */
-  footer #block-menu-menu-footer-navigation ul li a {
-    color: #273753;
-    padding-left: 0;
-    font-size: 18px; }
-    /* line 11, ../scss/layout/_footer.scss */
-    footer #block-menu-menu-footer-navigation ul li a:hover, footer #block-menu-menu-footer-navigation ul li a:focus {
-      background: none;
-      outline: none;
-      outline-offset: none; }
-  /* line 19, ../scss/layout/_footer.scss */
-  footer #block-menu-menu-footer-navigation ul li .open a {
-    background: none;
-    border: none; }
-    /* line 23, ../scss/layout/_footer.scss */
-    footer #block-menu-menu-footer-navigation ul li .open a:hover, footer #block-menu-menu-footer-navigation ul li .open a:focus {
+/* line 1, ../scss/layout/_footer.scss */
+footer {
+  margin-top: 40px; }
+  /* line 4, ../scss/layout/_footer.scss */
+  footer #block-menu-menu-footer-navigation ul li {
+    display: inline-block; }
+    /* line 7, ../scss/layout/_footer.scss */
+    footer #block-menu-menu-footer-navigation ul li a {
+      color: #273753;
+      padding-left: 0;
+      font-size: 18px; }
+      /* line 12, ../scss/layout/_footer.scss */
+      footer #block-menu-menu-footer-navigation ul li a:hover, footer #block-menu-menu-footer-navigation ul li a:focus {
+        background: none;
+        outline: none;
+        outline-offset: none; }
+    /* line 20, ../scss/layout/_footer.scss */
+    footer #block-menu-menu-footer-navigation ul li .open a {
       background: none;
       border: none; }
-/* line 32, ../scss/layout/_footer.scss */
-footer .footer-copyright {
-  font-size: 18px;
-  color: #273753; }
+      /* line 24, ../scss/layout/_footer.scss */
+      footer #block-menu-menu-footer-navigation ul li .open a:hover, footer #block-menu-menu-footer-navigation ul li .open a:focus {
+        background: none;
+        border: none; }
+  /* line 33, ../scss/layout/_footer.scss */
+  footer .footer-copyright {
+    font-size: 18px;
+    color: #273753; }
 
 /* line 1, ../scss/vendors/_custom-select.scss */
 .select2-container {
@@ -7651,63 +7654,58 @@ header.navbar-default {
   list-style: none;
   background: none;
   border-radius: 0; }
-  /* line 144, ../scss/pages/_common.scss */
-  .breadcrumb .inline.first {
-    margin-right: 10px; }
-    /* line 146, ../scss/pages/_common.scss */
-    .breadcrumb .inline.first a {
-      text-decoration: none;
-      color: #273753;
-      font-size: 18px;
-      border-bottom: 2px solid #949d9e;
-      padding-bottom: 5px; }
-  /* line 154, ../scss/pages/_common.scss */
+  /* line 146, ../scss/pages/_common.scss */
+  .breadcrumb .inline a {
+    text-decoration: none;
+    color: #273753;
+    font-size: 18px;
+    border-bottom: 1px solid #949d9e;
+    padding-bottom: 4px; }
+  /* line 155, ../scss/pages/_common.scss */
+  .breadcrumb .inline.last a {
+    border-color: #e74712; }
+  /* line 160, ../scss/pages/_common.scss */
   .breadcrumb .delimiter {
     font-size: 0; }
-    /* line 156, ../scss/pages/_common.scss */
+    /* line 162, ../scss/pages/_common.scss */
     .breadcrumb .delimiter:before {
       font-family: "icomoon";
       content: "\e940";
       color: #919BAA;
-      font-size: 14px;
+      font-size: 11px;
+      margin: 0 10px;
       display: inline-block; }
-  /* line 172, ../scss/pages/_common.scss */
-  .breadcrumb .inline.last {
-    margin-left: 10px;
-    border-bottom: 2px solid #e74712;
-    color: #273753;
-    padding-bottom: 5px; }
 
-/* line 182, ../scss/pages/_common.scss */
+/* line 178, ../scss/pages/_common.scss */
 .select2-container {
   min-width: 200px; }
-  /* line 185, ../scss/pages/_common.scss */
+  /* line 181, ../scss/pages/_common.scss */
   .select2-container .select2-dropdown {
     border: 0;
     top: 10px;
     background: #3c506e; }
-    /* line 190, ../scss/pages/_common.scss */
+    /* line 186, ../scss/pages/_common.scss */
     .select2-container .select2-dropdown .select2-results {
       height: 200px;
       color: #ffffff; }
-      /* line 194, ../scss/pages/_common.scss */
+      /* line 190, ../scss/pages/_common.scss */
       .select2-container .select2-dropdown .select2-results .simplebar-track .simplebar-scrollbar {
         background: #273753; }
-      /* line 198, ../scss/pages/_common.scss */
+      /* line 194, ../scss/pages/_common.scss */
       .select2-container .select2-dropdown .select2-results ul.select2-results__options {
         height: auto;
         overflow: hidden;
         max-height: none; }
-        /* line 205, ../scss/pages/_common.scss */
+        /* line 201, ../scss/pages/_common.scss */
         .select2-container .select2-dropdown .select2-results ul.select2-results__options .select2-results__option {
           padding-left: 20px !important; }
-    /* line 213, ../scss/pages/_common.scss */
+    /* line 209, ../scss/pages/_common.scss */
     .select2-container .select2-dropdown .select2-search--dropdown {
       display: none; }
-  /* line 218, ../scss/pages/_common.scss */
+  /* line 214, ../scss/pages/_common.scss */
   .select2-container .select2-results__option[aria-selected=true] {
     background: 0; }
-  /* line 223, ../scss/pages/_common.scss */
+  /* line 219, ../scss/pages/_common.scss */
   .select2-container .select2-results__option--highlighted[aria-selected] {
     background: #273753; }
 
@@ -8091,24 +8089,25 @@ header.navbar-default {
           left: 0; }
 
 /* line 504, ../scss/pages/_singleview.scss */
-.node-type-article {
+.node-type-article, .node-type-protagonist, .node-type-nachricht, .node-type-termin, .node-type-projekt, .node-type-publikation {
   background-color: #eff2f7; }
 
 /* line 508, ../scss/pages/_singleview.scss */
 .group-page-info, .group-page-bottom {
   padding: 60px 0 45px; }
 
-/* line 519, ../scss/pages/_singleview.scss */
+/* line 518, ../scss/pages/_singleview.scss */
 .group-page-info .field:first-child .field-item a {
   color: #273753; }
 
-/* line 526, ../scss/pages/_singleview.scss */
+/* line 525, ../scss/pages/_singleview.scss */
 .group-body-container {
   background-color: #ffffff;
   padding: 60px 0 45px; }
-  /* line 530, ../scss/pages/_singleview.scss */
+  /* line 529, ../scss/pages/_singleview.scss */
   .group-body-container p, .group-body-container h3, .group-body-container h4, .group-body-container .field-name-field-kurztext .field-item {
-    margin: 0 0 40px 0; }
+    margin: 0 0 40px 0;
+    line-height: 30px; }
   /* line 534, ../scss/pages/_singleview.scss */
   .group-body-container h1, .group-body-container h2 {
     display: none; }
