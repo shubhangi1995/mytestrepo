@@ -182,6 +182,13 @@ function ipwa_base_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'pathauto_transliterate';
+  $strongarm->value = 1;
+  $export['pathauto_transliterate'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'path_breadcrumbs_delimiter';
   $strongarm->value = '>';
   $export['path_breadcrumbs_delimiter'] = $strongarm;
