@@ -23,13 +23,7 @@ function ipwa_nachricht_field_group_info() {
     'label' => 'Body Container',
     'weight' => '1',
     'children' => array(
-      0 => 'body',
-      1 => 'field_bild_ref',
-      2 => 'field_kurztext',
-      3 => 'field_videoquelle',
-      4 => 'field_videounterschrift',
-      5 => 'field_youtube_url',
-      6 => 'field_anzuzeigende_seitenmodule',
+      0 => 'group_body_sub_wrapper',
     ),
     'format_type' => 'html-element',
     'format_settings' => array(
@@ -45,6 +39,42 @@ function ipwa_nachricht_field_group_info() {
     ),
   );
   $field_groups['group_body_container|node|nachricht|default'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_body_sub_wrapper|node|nachricht|default';
+  $field_group->group_name = 'group_body_sub_wrapper';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'nachricht';
+  $field_group->mode = 'default';
+  $field_group->parent_name = 'group_body_container';
+  $field_group->data = array(
+    'label' => 'Body Sub Wrapper',
+    'weight' => '14',
+    'children' => array(
+      0 => 'body',
+      1 => 'field_bild_ref',
+      2 => 'field_kurztext',
+      3 => 'field_videoquelle',
+      4 => 'field_videounterschrift',
+      5 => 'field_youtube_url',
+      6 => 'field_anzuzeigende_seitenmodule',
+    ),
+    'format_type' => 'html-element',
+    'format_settings' => array(
+      'label' => 'Body Sub Wrapper',
+      'instance_settings' => array(
+        'id' => '',
+        'classes' => 'group-body-sub-wrapper field-group-html-element',
+        'element' => 'div',
+        'show_label' => '0',
+        'label_element' => 'div',
+        'attributes' => '',
+      ),
+    ),
+  );
+  $field_groups['group_body_sub_wrapper|node|nachricht|default'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -187,15 +217,14 @@ function ipwa_nachricht_field_group_info() {
     'children' => array(),
     'format_type' => 'html-element',
     'format_settings' => array(
-      'formatter' => '',
+      'label' => 'title',
       'instance_settings' => array(
-        'element' => 'div',
-        'show_label' => 0,
-        'label_element' => 'div',
-        'classes' => 'group-title field-group-html-element',
-        'attributes' => '',
-        'required_fields' => 1,
         'id' => '',
+        'classes' => 'group-title field-group-html-element',
+        'element' => 'div',
+        'show_label' => '0',
+        'label_element' => 'div',
+        'attributes' => '',
       ),
     ),
   );
@@ -204,6 +233,7 @@ function ipwa_nachricht_field_group_info() {
   // Translatables
   // Included for use with string extractors like potx.
   t('Body Container');
+  t('Body Sub Wrapper');
   t('Page Bottom');
   t('Page Info');
   t('Related doc');

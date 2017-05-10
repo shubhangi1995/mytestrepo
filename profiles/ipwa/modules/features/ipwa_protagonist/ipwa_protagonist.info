@@ -13,6 +13,7 @@ features[field_base][] = field_ansprechpartner_kontaktdat
 features[field_base][] = field_weitere_details
 features[field_base][] = field_zur_website
 features[field_group][] = group_body_container|node|protagonist|default
+features[field_group][] = group_body_sub_wrapper|node|protagonist|default
 features[field_group][] = group_contact|node|protagonist|form
 features[field_group][] = group_page_bottom|node|protagonist|default
 features[field_group][] = group_page_info|node|protagonist|default

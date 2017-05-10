@@ -22,7 +22,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 9,
+        'weight' => 20,
       ),
       'rss' => array(
         'label' => 'hidden',
@@ -77,7 +77,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
           'view_mode' => 'full',
         ),
         'type' => 'paragraphs_view',
-        'weight' => 10,
+        'weight' => 22,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -135,7 +135,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 6,
+        'weight' => 7,
       ),
       'rss' => array(
         'label' => 'inline',
@@ -201,7 +201,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 19,
+        'weight' => 21,
       ),
       'rss' => array(
         'label' => 'hidden',
@@ -221,7 +221,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_bild_ref',
-    'label' => '© Bildquelle',
+    'label' => 'Bild',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -256,7 +256,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 4,
+        'weight' => 5,
       ),
       'rss' => array(
         'label' => 'inline',
@@ -309,7 +309,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
           'show_repeat_rule' => 'show',
         ),
         'type' => 'date_default',
-        'weight' => 0,
+        'weight' => 1,
       ),
       'rss' => array(
         'label' => 'hidden',
@@ -374,7 +374,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 22,
+        'weight' => 11,
       ),
       'rss' => array(
         'label' => 'above',
@@ -424,7 +424,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 20,
+        'weight' => 9,
       ),
       'rss' => array(
         'label' => 'above',
@@ -477,7 +477,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 17,
+        'weight' => 6,
       ),
       'rss' => array(
         'label' => 'above',
@@ -527,7 +527,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 8,
+        'weight' => 19,
       ),
       'rss' => array(
         'label' => 'hidden',
@@ -577,7 +577,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 16,
+        'weight' => 5,
       ),
       'rss' => array(
         'label' => 'above',
@@ -630,7 +630,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 18,
+        'weight' => 7,
       ),
       'rss' => array(
         'label' => 'above',
@@ -680,7 +680,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 7,
+        'weight' => 8,
       ),
       'rss' => array(
         'label' => 'inline',
@@ -751,7 +751,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
           'show_repeat_rule' => 'show',
         ),
         'type' => 'date_default',
-        'weight' => 5,
+        'weight' => 6,
       ),
       'rss' => array(
         'label' => 'inline',
@@ -817,7 +817,7 @@ Quelle',
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_plain',
-        'weight' => 3,
+        'weight' => 4,
       ),
       'rss' => array(
         'label' => 'above',
@@ -861,7 +861,7 @@ Quelle',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 2,
+        'weight' => 3,
       ),
       'rss' => array(
         'label' => 'hidden',
@@ -907,7 +907,7 @@ Quelle',
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 23,
+        'weight' => 12,
       ),
       'rss' => array(
         'label' => 'above',
@@ -954,7 +954,7 @@ Quelle',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 13,
+        'weight' => 25,
       ),
       'rss' => array(
         'label' => 'inline',
@@ -1002,7 +1002,7 @@ Quelle',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 12,
+        'weight' => 24,
       ),
       'rss' => array(
         'label' => 'inline',
@@ -1051,7 +1051,7 @@ Schema für externe Links: http://www…',
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 21,
+        'weight' => 10,
       ),
       'rss' => array(
         'label' => 'above',
@@ -1125,7 +1125,7 @@ Schema für externe Links: http://www…',
           'youtube_width' => NULL,
         ),
         'type' => 'youtube_video',
-        'weight' => 11,
+        'weight' => 23,
       ),
       'rss' => array(
         'label' => 'hidden',
@@ -1171,6 +1171,7 @@ Schema für externe Links: http://www…',
   // Included for use with string extractors like potx.
   t('Anzuzeigende Seitenmodule (Paragraphen)');
   t('Ausschreibende Stelle');
+  t('Bild');
   t('Bis auf Weiteres');
   t('Datum');
   t('Dieser Artikel gehört zu');
@@ -1202,7 +1203,6 @@ Schema für externe Links: http://www…');
   t('Videounterschrift');
   t('Weiterführende Links');
   t('YouTube URL');
-  t('© Bildquelle');
   t('© Videoquelle');
 
   return $field_instances;

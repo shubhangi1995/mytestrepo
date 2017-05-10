@@ -22,7 +22,7 @@ function ipwa_nachricht_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 3,
+        'weight' => 16,
       ),
       'rss' => array(
         'label' => 'hidden',
@@ -76,7 +76,7 @@ function ipwa_nachricht_field_default_field_instances() {
           'view_mode' => 'full',
         ),
         'type' => 'paragraphs_view',
-        'weight' => 5,
+        'weight' => 18,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -137,7 +137,7 @@ function ipwa_nachricht_field_default_field_instances() {
           'view_mode' => 'default',
         ),
         'type' => 'entityreference_entity_view',
-        'weight' => 4,
+        'weight' => 17,
       ),
       'rss' => array(
         'label' => 'hidden',
@@ -159,7 +159,7 @@ function ipwa_nachricht_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_bild_ref',
-    'label' => '© Bildquelle',
+    'label' => 'Bild',
     'required' => 0,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -411,7 +411,7 @@ function ipwa_nachricht_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 2,
+        'weight' => 15,
       ),
       'rss' => array(
         'label' => 'hidden',
@@ -763,7 +763,7 @@ function ipwa_nachricht_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 8,
+        'weight' => 21,
       ),
       'rss' => array(
         'label' => 'inline',
@@ -810,7 +810,7 @@ function ipwa_nachricht_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 7,
+        'weight' => 20,
       ),
       'rss' => array(
         'label' => 'hidden',
@@ -932,7 +932,7 @@ Schema für externe Links: http://www…',
           'youtube_width' => NULL,
         ),
         'type' => 'youtube_video',
-        'weight' => 6,
+        'weight' => 19,
       ),
       'rss' => array(
         'label' => 'hidden',
@@ -977,6 +977,7 @@ Schema für externe Links: http://www…',
   // Translatables
   // Included for use with string extractors like potx.
   t('Anzuzeigende Seitenmodule (Paragraphen)');
+  t('Bild');
   t('Datum');
   t('Dieser Artikel gehört zu');
   t('Dieses Datum erscheint im Frontend');
@@ -1004,7 +1005,6 @@ Schema für externe Links: http://www…');
   t('Videounterschrift');
   t('Weiterführende Links');
   t('YouTube URL');
-  t('© Bildquelle');
   t('© Videoquelle');
 
   return $field_instances;
