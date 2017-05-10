@@ -20,6 +20,7 @@ jQuery(document).ready(function(){
         minimumResultsForSearch: Infinity
 	}); 
 	
+	
 	jQuery("input:radio").each(function(){
   if(jQuery(this).is(':checked'))
   {
@@ -27,21 +28,14 @@ jQuery(document).ready(function(){
   }
 }); 
 
+// scrollbar
+
 jQuery('select').select2().on("select2:open", function(){
  jQuery('.select2-results').addClass("simplebar");
  jQuery('.select2-results').simplebar();
 });
 	
-	
-	
-	
-//search	
-	
-	
-	
-//jQuery(".search-icon").click(function(){
-	//jQuery(".block-ipwa-search").toggleClass("popupwindow");
-	 
+//search
 	
     //open popup
     jQuery('.search-icon').on('click', function(event){
@@ -49,8 +43,12 @@ jQuery('select').select2().on("select2:open", function(){
         jQuery('.block-ipwa-search').toggleClass('is-visible');
     });
     
-       
-    
+    // close popup 
+    jQuery(".cross-link").on('click',function(){
+		jQuery(".block-ipwa-search").hide();
+		
+		
+	});
 
 	
 
