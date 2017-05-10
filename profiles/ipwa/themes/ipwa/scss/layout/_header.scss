@@ -67,20 +67,19 @@ header {
             .search-icon {
                 display: inline-block;
                 position: relative;
-                font-size: 14px;
+                float: right;
                 padding: 15px;
-                padding-top: 30px;
                 cursor: pointer;
+                padding-left: 25px;
+                font-size: 18px;
 
                 &:before {
                     @extend .material-icons;
 
                     content: "search";
                     position: absolute;
-                    padding-bottom: 25px;
-                    left: 18px;
-                    top: 9px;
-                    font-size: 20px;
+                    left: 0;
+                    top: 17px;
                 }
             }
 
@@ -91,12 +90,11 @@ header {
                 padding-top: 30px;
 
                 .block-ipwa-search {
-				  top:190px;
                     position: fixed;
                     height: 100%;
                     width: 100%;
                     left: 0;
-                    top: 0;
+                    top: 190px;
                     background-color: rgba(94, 110, 141, 0.9);
                     opacity: 0;
                     visibility: hidden;
