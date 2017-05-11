@@ -6,7 +6,7 @@
 
             .panel-2col {
                 @extend .container;
-
+                position: relative;         
                 background: $main-color;
                 padding: 45px;
                 height: 400px;
@@ -17,7 +17,7 @@
                     border-right: 1px solid $color-border;
 
                     .inside {
-                        position: relative;                        
+                                       
                         margin: 0;
 
                         .pane-paragraphs-item-field-bild {
@@ -70,7 +70,7 @@
                     .view-right-front-map-teaser .views-row {
 					
 					.row-container{
-                        position: relative;
+                        
 						
 
                         .views-field-type {
