@@ -45,15 +45,15 @@ function ipwa_preprocess_node(&$variables) {
   }
 
   // display view 'Publikationen' instead of field 'Publikation'
-  if (!empty($variables['field_publication'])) {
+  if (!empty($variables['field_publikation'])) {
     $view = views_get_view_result("related_content", "block_3", $variables['nid']);
     $related_pub_view = '';
     if (!empty($view)) {
-      $related_pub_view = '<h2 class="view-title">' . t('Publikation') . '</h2>';
+      $related_pub_view = '<h3 class="view-title">' . t('Publikation') . '</h3>';
       //for embedding view publikation
       $related_pub_view .= views_embed_view("related_content", "block_3", $variables['nid']);
-      $variables['content']['rel_pub']['#markup'] = $related_pub_view;
-      $variables['content']['rel_pub']['#weight'] = isset($variables['elements']['#fieldgroups']['group_rel_pub']) ? $variables['elements']['#fieldgroups']['group_rel_pub']->weight : -1;
+      $variables['content']['group_body_container']['group_body_sub_wrapper']['rel_pub']['#markup'] = $related_pub_view;
+      $variables['content']['group_body_container']['group_body_sub_wrapper']['rel_pub']['#weight'] = isset($variables['elements']['#fieldgroups']['group_rel_pub']) ? $variables['elements']['#fieldgroups']['group_rel_pub']->weight : -1;
     }
   }
 
