@@ -118,6 +118,58 @@
                 }
             }
         }}
+		
+		
+		
+		
+}
+//--------view-termin----------//
+
+.view-termin{
+background: $main-color;
+
+.view-sub-wrapper{
+
+.view-header {
+                    
+                        color: $color-white;
+                        padding-bottom: 30px;
+						padding-left:0;
+						padding-top:40px;
+                    
+                }
+	.view-footer {
+                    clear: both;
+                    padding-top: 10px;
+                    padding-bottom:60px;
+
+                    .link-outer-block .link-inner-block-1 {
+                        a {
+                            text-decoration: none;
+                            font-size: 20px;
+                            color: $color-white;
+                            margin-left: 25px;
+                            position: relative;
+                            padding-bottom: 4px;
+                            border-bottom: 1px solid $color-light-grey;
+
+                            &:before {
+                                font-family: $icomoon;
+                                content: "\e93f";
+                                color: $active-menu;
+                                font-size: 14px;
+                                position: absolute;
+                                left: -20px;
+                                top: 6px;
+                                display: inline-block;
+                            }
+                        }
+                    }
+                }			
+
+}
+
+}
 
         //-----------------------------//
 
@@ -155,6 +207,7 @@
                             margin-bottom: 30px;
                             position: relative;
                             cursor: pointer;
+							border: 1px solid $color-white;
 
                             &:hover {
                                 background: $color-light-blue;
@@ -226,107 +279,7 @@
             }
         }
 
-        //--------------Termin-view-----------------------//
-
-        .view-termin.view-display-id-block_2 {
-            background: $main-color;
-
-            .view-sub-wrapper {
-                @extend .container;
-
-                padding: 40px 0;
-                position: relative;
-
-                .view-header {
-                    .pane-title {
-                        color: $color-white;
-                        padding-bottom: 30px;
-                    }
-                }
-
-                .view-content {
-                    margin-left: -15px;
-                    margin-right: -15px;
-
-                    .views-row {
-                        @extend .col-md-4;
-
-                        position: relative;
-
-                        .row-container {
-                            background: $color-white;
-                            padding: 30px;
-                            height: 400px;
-                            cursor: pointer;
-
-                            .views-field-field-themenzuweisung {
-                                padding-bottom: 30px;
-
-                                img {
-                                    display: inline-block;
-                                    margin-right: 20px;
-                                }
-                            }
-
-                            .views-field-field-event-datum {
-                                padding-bottom: 20px;
-                                color: $active-menu;
-                                font-size: 22px;
-                                font-weight: bold;
-                            }
-
-                            .views-field-title {
-                                padding-bottom: 40px;
-
-                                a {
-                                    text-decoration: none;
-                                    font-size: 22px;
-                                    color: $main-color;
-                                }
-                            }
-
-                            .views-field-field-ort {
-                                position: absolute;
-                                bottom: 30px;
-                                color: $color-light-grey;
-                                font-size: 20px;
-                            }
-                        }
-                    }
-                }
-
-                .view-footer {
-                    clear: both;
-                    padding-top: 40px;
-                    padding-bottom: 20px;
-
-                    .link-outer-block .link-inner-block-1 {
-                        a {
-                            text-decoration: none;
-                            font-size: 20px;
-                            color: $color-white;
-                            margin-left: 25px;
-                            position: relative;
-                            padding-bottom: 4px;
-                            border-bottom: 1px solid $color-light-grey;
-
-                            &:before {
-                                font-family: $icomoon;
-                                content: "\e93f";
-                                color: $active-menu;
-                                font-size: 14px;
-                                position: absolute;
-                                left: -20px;
-                                top: 6px;
-                                display: inline-block;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
+        
 
 //---------------------------------//
 .paragraphs-item-topic-teaser-paragraph {
@@ -412,7 +365,7 @@
         }
     }
 }
-
+}
 //-------------mobile------------//
 @media (max-width: $screen-xs-max) {
     .front {
