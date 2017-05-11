@@ -179,4 +179,4 @@
     <?php print render($page['footer']); ?>
   </footer>
 <?php endif; ?>
-<a href="#top">Top</a>
+<a class="top"href="#top">Top</a>
