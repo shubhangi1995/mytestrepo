@@ -8,7 +8,9 @@
                 @extend .container;
                 background: $main-color;
                 padding: 30px;
-            }
+				height:400px;
+				
+            
 
             .panel-col-first {
                 width: 60%;
@@ -23,19 +25,23 @@
                     .pane-paragraphs-item-field-paragraph-title {
                         color: $color-white;
                         font-size: 36px;
+						padding-bottom:25px;
                     }
 
                     .pane-paragraphs-item-field-flie-text-bereich {
                         color: $color-white;
                         font-size: 22px;
+						padding-bottom:35px;
                     }
 
                     .pane-paragraphs-item-field-quellenangabe a {
                         color: $color-white;
                         font-size: 20px;
-                        position: absolute;
+                        position: relative;
                         bottom: 0;
-                        padding-left: 25px;
+                        margin-left: 25px;
+						border-bottom:1px solid $color-white;
+						text-decoration:none;
 
                         &:before {
                             font-family: $icomoon;
@@ -43,7 +49,7 @@
                             color: $active-menu;
                             font-size: 14px;
                             position: absolute;
-                            left: 0;
+                            left:-20px;
                             top: 6px;
                             display: inline-block;
                         }
@@ -91,7 +97,7 @@
                 }
             }
         }
-
+}
         //-----------------------------//
 
         .view-neueste-informationen {
@@ -117,13 +123,13 @@
 
                         .row-container {
                             background: $color-white;
-                            padding: 25px;
-                            height: 350px;
+                            padding:30px;
+                            height: 400px;
                             margin-bottom: 30px;
                             position: relative;
 
                             .views-field-field-themenzuweisung {
-                                padding-bottom: 10px;
+                                padding-bottom: 30px;
 
                                 img {
                                     display: inline-block;
@@ -133,6 +139,8 @@
 
                             .views-field-type {
                                 color: $active-menu;
+								font-weight:bold;
+								padding-bottom:20px;
                             }
 
                             .views-field-title {
@@ -144,12 +152,11 @@
 
                             .views-field-field-datum {
                                 position: absolute;
-                                bottom: 10px;
-
-                                .date-display-single {
-                                    font-size: 17px;
+                                bottom: 30px;
+								font-size: 17px;
                                     color: $color-light-grey;
-                                }
+
+                                
                             }
                         }
                     }
@@ -228,11 +235,11 @@
 
                             .views-field-field-event-datum {
                                 padding-bottom: 20px;
-
-                                .date-display-range span {
-                                    color: $active-menu;
+								color: $active-menu;
                                     font-size: 22px;
-                                }
+									font-weight:bold;
+
+                                
                             }
 
                             .views-field-title {
@@ -248,11 +255,10 @@
                             .views-field-field-ort {
                                 position: absolute;
                                 bottom: 30px;
-
-                                .field-content {
-                                    color: $color-light-grey;
+								 color: $color-light-grey;
                                     font-size: 20px;
-                                }
+
+                                
                             }
                         }
                     }
@@ -320,18 +326,20 @@
                         position: relative;
 
                         .content {
-                            padding: 25px;
-                            height: 360px;
+                            padding:30px;
+                            height: 365px;
+							padding-right:165px;
 
-                            .field-type-file img {
-                                width: 54px;
-                                height: 54px;
+                            .field-type-file  {
+                                padding-bottom:30px
                             }
 
                             .field-name-field-paragraph-title {
                                 font-size: 26px;
                                 color: $active-menu;
-                                padding: 10px 0;
+                                padding-bottom:25px;
+								font-weight:bold;
+								    
                             }
 
                             .field-name-field-quellenangabe {
@@ -370,11 +378,30 @@
 
 //-------------mobile------------//
 @media (max-width: $screen-xs-max) {
-    .field-name-field-anzuzeigende-seitenmodule .field-name-field-paragraph-view .view-neueste-informationen .view-content {
+.front   {
+
+   .field-name-field-anzuzeigende-seitenmodule {
+   
+   .field-name-field-paragraph-view .view-neueste-informationen .view-content {
         margin: 0;
     }
 
-    .field-name-field-anzuzeigende-seitenmodule .view-termin .view-content {
+    .view-termin .view-content {
         margin: 0;
     }
-}
+	
+ .panelizer-view-mode {
+ .panel-col-first {
+	   width:100%;
+	   float:left;
+	   clear:both;
+	   border:none;
+	
+	}
+	.panel-col-last{
+	width:100%;
+	   float:left;
+	   clear:both;
+	
+	}}
+}}}
