@@ -96,7 +96,7 @@ function ipwa_termin__views_default_views() {
   $handler->display->display_options['header']['area']['table'] = 'views';
   $handler->display->display_options['header']['area']['field'] = 'area';
   $handler->display->display_options['header']['area']['content'] = '[headline] 
-<a href ="/calendar">zur Kalendersicht</a>';
+';
   $handler->display->display_options['header']['area']['format'] = 'wysiwyg';
   /* Field: Content: Titel */
   $handler->display->display_options['fields']['title']['id'] = 'title';
@@ -525,7 +525,7 @@ function ipwa_termin__views_default_views() {
     t('next ›'),
     t('last »'),
     t('[headline] 
-<a href ="/calendar">zur Kalendersicht</a>'),
+'),
     t('Dieser Artikel gehört zu'),
     t('Datum'),
     t('All'),

@@ -33,6 +33,7 @@
   <?php print $title; ?>
 <?php endif; ?>
 <?php print render($title_suffix); ?>
+  <div class="view-sub-wrapper">
 <?php if ($header): ?>
   <div class="view-header">
     <?php print $header; ?>
@@ -101,7 +102,7 @@
 <?php if(isset($id)): ?>
   <?php print views_embed_view('map_teaser', 'block', $id);  ?>
 <?php endif; ?>
-
+</div>
 <?php if ($feed_icon): ?>
   <div class="feed-icon">
     <?php print $feed_icon; ?>
