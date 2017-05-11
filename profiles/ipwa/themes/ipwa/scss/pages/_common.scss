@@ -152,9 +152,9 @@ header.navbar-default {
     }
 	   &.last {
 	// margin-left:10px;
-		a{
-			border-color: $active-menu;
-		}
+	border-bottom:1px solid $active-menu;
+	padding-bottom:4px;
+		
     }
 }
 .delimiter {

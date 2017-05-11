@@ -7661,9 +7661,10 @@ header.navbar-default {
     font-size: 18px;
     border-bottom: 1px solid #949d9e;
     padding-bottom: 4px; }
-  /* line 155, ../scss/pages/_common.scss */
-  .breadcrumb .inline.last a {
-    border-color: #e74712; }
+  /* line 153, ../scss/pages/_common.scss */
+  .breadcrumb .inline.last {
+    border-bottom: 1px solid #e74712;
+    padding-bottom: 4px; }
   /* line 160, ../scss/pages/_common.scss */
   .breadcrumb .delimiter {
     font-size: 0; }
@@ -8691,20 +8692,18 @@ header.navbar-default {
       /* line 255, ../scss/pages/_listview.scss */
       .page-termine .view-termin.view-display-id-page > .view-sub-wrapper > .view-content > .views-row > .row-container .views-field-field-event-datum {
         padding-bottom: 20px;
-        font-weight: bold; }
-        /* line 259, ../scss/pages/_listview.scss */
-        .page-termine .view-termin.view-display-id-page > .view-sub-wrapper > .view-content > .views-row > .row-container .views-field-field-event-datum .date-display-range span {
-          color: #e74712;
-          font-size: 22px; }
-      /* line 265, ../scss/pages/_listview.scss */
+        font-weight: bold;
+        color: #e74712;
+        font-size: 22px; }
+      /* line 264, ../scss/pages/_listview.scss */
       .page-termine .view-termin.view-display-id-page > .view-sub-wrapper > .view-content > .views-row > .row-container .views-field-title {
         padding-bottom: 40px; }
-        /* line 268, ../scss/pages/_listview.scss */
+        /* line 267, ../scss/pages/_listview.scss */
         .page-termine .view-termin.view-display-id-page > .view-sub-wrapper > .view-content > .views-row > .row-container .views-field-title a {
           text-decoration: none;
           font-size: 22px;
           color: #273753; }
-      /* line 276, ../scss/pages/_listview.scss */
+      /* line 275, ../scss/pages/_listview.scss */
       .page-termine .view-termin.view-display-id-page > .view-sub-wrapper > .view-content > .views-row > .row-container .views-field-field-ort .field-content {
         position: absolute;
         bottom: 30px;
