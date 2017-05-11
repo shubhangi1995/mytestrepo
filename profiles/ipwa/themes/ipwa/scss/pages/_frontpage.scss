@@ -6,98 +6,119 @@
 
             .panel-2col {
                 @extend .container;
+
                 background: $main-color;
-                padding: 30px;
-				height:400px;
-				
-            
+                padding: 45px;
+                height: 400px;
 
-            .panel-col-first {
-                width: 60%;
-                float: left;
-                border-right: 1px solid $color-light-grey;
+                .panel-col-first {
+                    width: 60%;
+                    float: left;
+                    border-right: 1px solid $color-border;
 
-                .inside {
-                    position: relative;
-                    height: 250px;
-                    margin: 0;
+                    .inside {
+                        position: relative;                        
+                        margin: 0;
 
-                    .pane-paragraphs-item-field-paragraph-title {
-                        color: $color-white;
-                        font-size: 36px;
-						padding-bottom:25px;
+                        .pane-paragraphs-item-field-bild {
+                            padding-bottom: 25px;
+                        }
+
+                        .pane-paragraphs-item-field-paragraph-title {
+                            color: $color-white;
+                            font-size: 38px;
+                            padding-bottom: 25px;
+                            font-weight: bold;
+                        }
+
+                        .pane-paragraphs-item-field-flie-text-bereich {
+                            color: $color-white;
+                            padding-bottom: 35px;
+                        }
+
+                        .pane-paragraphs-item-field-quellenangabe a {
+                            color: $color-white;
+                            position: absolute;
+                            bottom: 50px;
+                            margin-left: 25px;
+                            border-bottom: 1px solid $color-white;
+                            text-decoration: none;
+
+                            &:before {
+                                font-family: $icomoon;
+                                content: "\e93f";
+                                color: $active-menu;
+                                font-size: 14px;
+                                position: absolute;
+                                left: -20px;
+                                top: 6px;
+                                display: inline-block;
+                            }
+                        }
                     }
 
-                    .pane-paragraphs-item-field-flie-text-bereich {
-                        color: $color-white;
-                        font-size: 22px;
-						padding-bottom:35px;
+                    .panel-separator {
+                        display: none;
                     }
+                }
 
-                    .pane-paragraphs-item-field-quellenangabe a {
-                        color: $color-white;
-                        font-size: 20px;
+                .panel-col-last {
+                    width: 40%;
+                    float: left;
+                    padding-left: 30px;
+
+                    .view-right-front-map-teaser .views-row {
+					
+					.row-container{
                         position: relative;
-                        bottom: 0;
-                        margin-left: 25px;
-						border-bottom:1px solid $color-white;
-						text-decoration:none;
+						
 
-                        &:before {
-                            font-family: $icomoon;
-                            content: "\e93f";
+                        .views-field-type {
                             color: $active-menu;
-                            font-size: 14px;
-                            position: absolute;
-                            left:-20px;
-                            top: 6px;
-                            display: inline-block;
+                            font-size: 22px;
+                            font-weight: bold;
+                            padding-bottom: 15px;
                         }
+
+                        .views-field-title {
+                            padding-bottom: 60px;
+
+                            a {
+                                color: $color-white;
+                                font-size: 22px;
+                                text-decoration: none;
+                            }
+                        }
+
+                        .views-field-view-node a {
+                            color: $color-white;
+                            font-size: 20px;
+                            position: absolute;
+                            bottom: 50px;
+                            margin-left: 25px;
+                            border-bottom: 1px solid $color-white;
+                            text-decoration: none;
+
+                            &:before {
+                                font-family: $icomoon;
+                                content: "\e94a";
+                                color: $active-menu;
+                                font-size: 14px;
+                                position: absolute;
+                                left: -20px;
+                                top: 6px;
+                                display: inline-block;
+                            }
+                        }
+                    }
+
+                    .panel-separator {
+                        display: none;
                     }
                 }
             }
+        }}
 
-            .panel-col-last {
-                width: 40%;
-                float: left;
-                padding-left: 30px;
-
-                .view-right-front-map-teaser .views-row {
-                    position: relative;
-                    height: 250px;
-
-                    .views-field-type {
-                        color: $active-menu;
-                        font-size: 22px;
-                    }
-
-                    .views-field-title a {
-                        color: $color-white;
-                        font-size: 22px;
-                    }
-
-                    .views-field-view-node a {
-                        color: $color-white;
-                        font-size: 20px;
-                        position: absolute;
-                        bottom: 0;
-                        padding-left: 25px;
-
-                        &:before {
-                            font-family: $icomoon;
-                            content: "\e94a";
-                            color: $active-menu;
-                            font-size: 14px;
-                            position: absolute;
-                            left: 0;
-                            top: 6px;
-                            display: inline-block;
-                        }
-                    }
-                }
-            }
-        }
-}
         //-----------------------------//
 
         .view-neueste-informationen {
@@ -105,12 +126,17 @@
 
             .view-sub-wrapper {
                 position: relative;
-                padding: 30px 0;
+                padding: 40px 0;
 
                 @extend .container;
 
                 .view-header {
-                    padding-bottom: 20px;
+                    padding-bottom: 30px;
+
+                    .pane-title {
+                        font-size: 28px;
+                        font-weight: bold;
+                    }
                 }
 
                 .view-content {
@@ -119,28 +145,35 @@
 
                     .views-row {
                         @extend .col-md-4;
+
                         font-size: 22px;
 
                         .row-container {
                             background: $color-white;
-                            padding:30px;
+                            padding: 30px;
                             height: 400px;
                             margin-bottom: 30px;
                             position: relative;
+                            cursor: pointer;
+
+                            &:hover {
+                                background: $color-light-blue;
+                                border: 1px solid $color-border;
+                            }
 
                             .views-field-field-themenzuweisung {
                                 padding-bottom: 30px;
 
                                 img {
                                     display: inline-block;
-                                    margin-right: 10px;
+                                    margin-right: 20px;
                                 }
                             }
 
                             .views-field-type {
                                 color: $active-menu;
-								font-weight:bold;
-								padding-bottom:20px;
+                                font-weight: bold;
+                                padding-bottom: 20px;
                             }
 
                             .views-field-title {
@@ -153,10 +186,8 @@
                             .views-field-field-datum {
                                 position: absolute;
                                 bottom: 30px;
-								font-size: 17px;
-                                    color: $color-light-grey;
-
-                                
+                                font-size: 17px;
+                                color: $color-light-grey;
                             }
                         }
                     }
@@ -164,6 +195,7 @@
 
                 .view-footer {
                     clear: both;
+                    padding: 20px 0;
 
                     .link-outer-block .link-inner-block-1, .link-outer-block .link-inner-block-2 {
                         display: inline-block;
@@ -172,9 +204,11 @@
                             text-decoration: none;
                             color: $main-color;
                             font-size: 20px;
-                            padding-right: 15px;
-                            padding-left: 25px;
+                            margin-right: 15px;
+                            margin-left: 25px;
                             position: relative;
+                            padding-bottom: 4px;
+                            border-bottom: 1px solid $color-light-grey;
 
                             &:before {
                                 font-family: $icomoon;
@@ -182,7 +216,7 @@
                                 color: $active-menu;
                                 font-size: 14px;
                                 position: absolute;
-                                left: 0;
+                                left: -20px;
                                 top: 6px;
                                 display: inline-block;
                             }
@@ -200,13 +234,13 @@
             .view-sub-wrapper {
                 @extend .container;
 
-                padding: 60px 0;
+                padding: 40px 0;
                 position: relative;
 
                 .view-header {
-                    h2 {
+                    .pane-title {
                         color: $color-white;
-                        padding-bottom: 40px;
+                        padding-bottom: 30px;
                     }
                 }
 
@@ -223,23 +257,22 @@
                             background: $color-white;
                             padding: 30px;
                             height: 400px;
+                            cursor: pointer;
 
                             .views-field-field-themenzuweisung {
                                 padding-bottom: 30px;
 
                                 img {
                                     display: inline-block;
-                                    margin-right: 10px;
+                                    margin-right: 20px;
                                 }
                             }
 
                             .views-field-field-event-datum {
                                 padding-bottom: 20px;
-								color: $active-menu;
-                                    font-size: 22px;
-									font-weight:bold;
-
-                                
+                                color: $active-menu;
+                                font-size: 22px;
+                                font-weight: bold;
                             }
 
                             .views-field-title {
@@ -255,10 +288,8 @@
                             .views-field-field-ort {
                                 position: absolute;
                                 bottom: 30px;
-								 color: $color-light-grey;
-                                    font-size: 20px;
-
-                                
+                                color: $color-light-grey;
+                                font-size: 20px;
                             }
                         }
                     }
@@ -266,17 +297,18 @@
 
                 .view-footer {
                     clear: both;
-                    position: relative;
-                    padding-top: 30px;
+                    padding-top: 40px;
+                    padding-bottom: 20px;
 
                     .link-outer-block .link-inner-block-1 {
                         a {
                             text-decoration: none;
                             font-size: 20px;
-                            padding-right: 15px;
                             color: $color-white;
-                            padding-left: 25px;
-                            position: absolute;
+                            margin-left: 25px;
+                            position: relative;
+                            padding-bottom: 4px;
+                            border-bottom: 1px solid $color-light-grey;
 
                             &:before {
                                 font-family: $icomoon;
@@ -284,7 +316,7 @@
                                 color: $active-menu;
                                 font-size: 14px;
                                 position: absolute;
-                                left: 0;
+                                left: -20px;
                                 top: 6px;
                                 display: inline-block;
                             }
@@ -326,20 +358,19 @@
                         position: relative;
 
                         .content {
-                            padding:30px;
+                            padding: 30px;
                             height: 365px;
-							padding-right:165px;
+                            padding-right: 165px;
 
-                            .field-type-file  {
-                                padding-bottom:30px
+                            .field-type-file {
+                                padding-bottom: 30px;
                             }
 
                             .field-name-field-paragraph-title {
                                 font-size: 26px;
                                 color: $active-menu;
-                                padding-bottom:25px;
-								font-weight:bold;
-								    
+                                padding-bottom: 25px;
+                                font-weight: bold;
                             }
 
                             .field-name-field-quellenangabe {
@@ -347,9 +378,11 @@
                                     font-size: 20px;
                                     color: $main-color;
                                     text-decoration: none;
-                                    position: absolute;
                                     bottom: 30px;
-                                    padding-left: 25px;
+                                    margin-left: 25px;
+                                    position: absolute;
+                                    padding-bottom: 4px;
+                                    border-bottom: 1px solid $color-light-grey;
 
                                     &:before {
                                         font-family: $icomoon;
@@ -357,16 +390,20 @@
                                         color: $active-menu;
                                         font-size: 14px;
                                         position: absolute;
-                                        left: 0;
+                                        left: -20px;
                                         top: 6px;
                                         display: inline-block;
                                     }
                                 }
                             }
 
-                            .field-name-field-flie-text-bereich .field-item p {
-                                font-size: 20px;
-                                color: $main-color;
+                            .field-name-field-flie-text-bereich {
+                                padding-bottom: 50px;
+
+                                .field-item p {
+                                    font-size: 20px;
+                                    color: $main-color;
+                                }
                             }
                         }
                     }
@@ -378,30 +415,30 @@
 
 //-------------mobile------------//
 @media (max-width: $screen-xs-max) {
-.front   {
+    .front {
+        .field-name-field-anzuzeigende-seitenmodule {
+            .field-name-field-paragraph-view .view-neueste-informationen .view-content {
+                margin: 0;
+            }
 
-   .field-name-field-anzuzeigende-seitenmodule {
-   
-   .field-name-field-paragraph-view .view-neueste-informationen .view-content {
-        margin: 0;
-    }
+            .view-termin .view-content {
+                margin: 0;
+            }
 
-    .view-termin .view-content {
-        margin: 0;
+            .panelizer-view-mode {
+                .panel-col-first {
+                    width: 100%;
+                    float: left;
+                    clear: both;
+                    border: none;
+                }
+
+                .panel-col-last {
+                    width: 100%;
+                    float: left;
+                    clear: both;
+                }
+            }
+        }
     }
-	
- .panelizer-view-mode {
- .panel-col-first {
-	   width:100%;
-	   float:left;
-	   clear:both;
-	   border:none;
-	
-	}
-	.panel-col-last{
-	width:100%;
-	   float:left;
-	   clear:both;
-	
-	}}
-}}}
+}
