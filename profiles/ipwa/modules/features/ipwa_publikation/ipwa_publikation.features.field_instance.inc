@@ -597,52 +597,6 @@ function ipwa_publikation_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-publikation-field_publication'.
-  $field_instances['node-publikation-field_publication'] = array(
-    'bundle' => 'publikation',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'Fügen Sie die Originalquelle hinzu, indem Sie einen Inhalt vom Typ \'Dokument\' verlinken.',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 11,
-      ),
-      'rss' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 23,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_publication',
-    'label' => 'publikation',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'entityreference',
-      'settings' => array(
-        'match_operator' => 'STARTS_WITH',
-        'path' => '',
-        'size' => 60,
-      ),
-      'type' => 'entityreference_autocomplete',
-      'weight' => 8,
-    ),
-  );
-
   // Exported field_instance: 'node-publikation-field_publikation'.
   $field_instances['node-publikation-field_publikation'] = array(
     'bundle' => 'publikation',
@@ -1204,7 +1158,6 @@ Schema für externe Links: http://www…',
   t('Fließtext');
   t('Förderbekanntmachungen');
   t('Fügen Sie die Originalquelle hinzu, indem Sie einen Inhalt vom Typ \'Dokument\' verlinken');
-  t('Fügen Sie die Originalquelle hinzu, indem Sie einen Inhalt vom Typ \'Dokument\' verlinken.');
   t('Fügen Sie die YouTube URL ein. Erlaubte Formate: https://www.youtube.com/watch?v=wM73y2Iu8pU oder https://youtu.be/wM73y2Iu8pU');
   t('Herausgeber');
   t('Initiatoren zum Thema');
@@ -1228,7 +1181,6 @@ Schema für externe Links: http://www…');
   t('Videounterschrift');
   t('Weiterführende Links');
   t('YouTube URL');
-  t('publikation');
   t('© Videoquelle');
 
   return $field_instances;
