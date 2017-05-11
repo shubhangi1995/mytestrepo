@@ -154,6 +154,10 @@ header.navbar-default {
 	// margin-left:10px;
 	border-bottom:1px solid $active-menu;
 	padding-bottom:4px;
+	font-size: 18px;
+	a{
+		border-color:$active-menu;
+	}
 		
     }
 }

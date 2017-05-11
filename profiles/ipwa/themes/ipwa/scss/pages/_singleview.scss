@@ -527,7 +527,7 @@
     background-color: $color-white;
     padding: 60px 0 45px;
 
-    p, h3, h4, .field-name-field-kurztext .field-item {
+    p, h3, h4, .field-name-field-kurztext .field-item, .view-id-related_content.view-display-id-block_3 .views-row{
         margin: 0 0 40px 0;
 		line-height:30px; 
     }
@@ -562,6 +562,11 @@
        
         }
     }
+	.view-id-related_content.view-display-id-block_3 .views-row{
+		a{
+			margin-left:0; 
+		}
+	}
 
     ul, ol {
         list-style: none;
@@ -838,7 +843,7 @@
             .row-container {
                 .views-field {
                     // font-size:22px;
-                    &.views-field-field-event-datum {
+                    /* &.views-field-field-event-datum {
                         float: left;
                         margin-right: 8px;
 
@@ -846,11 +851,26 @@
                             color: $active-menu;
                             font-weight: bold;
                         }
-                    }
+                    }  */
 
                     .field-content {
                         font-size: 22px;
                     }
+					.field-event-datum{
+						.date-display-range{
+							float:left;
+							margin-right:8px;
+						}
+						*{
+							color:$active-menu;
+							font-weight:bold;
+						}
+					}
+					.date-display-single{
+						color:$active-menu;
+						margin-right:8px;
+						font-weight:bold;
+					}					
                 }
             }
         }
