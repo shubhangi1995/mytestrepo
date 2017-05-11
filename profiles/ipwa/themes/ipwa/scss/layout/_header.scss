@@ -11,11 +11,15 @@ header {
         padding: 0;
 
         .navbar-header {
+		      
+		
             .navbar-brand {
                 display: none;
             }
         }
 
+		
+		
         .nrw-eu-logo {
             a {
                 margin-top: 8px;
@@ -415,4 +419,36 @@ header {
             }
         }
     }
+}
+
+//desktop 
+
+@media (min-width: $screen-sm-min) {
+.navbar-header{
+  .logo {
+  .big{display:block;}
+  .small{
+    display:none;
+  }
+}
+}
+
+
+}
+
+
+//mobile-view
+
+
+
+@media (max-width: $screen-xs-max) {
+.navbar-header{
+  .logo {
+  .big{display:none;}
+  .small{
+    display:block;
+  }
+}
+}
+
 }

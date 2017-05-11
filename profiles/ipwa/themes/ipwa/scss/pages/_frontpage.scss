@@ -6,7 +6,6 @@
 
             .panel-2col {
                 @extend .container;
-
                 background: $main-color;
                 padding: 30px;
             }
@@ -114,7 +113,6 @@
 
                     .views-row {
                         @extend .col-md-4;
-
                         font-size: 22px;
 
                         .row-container {
