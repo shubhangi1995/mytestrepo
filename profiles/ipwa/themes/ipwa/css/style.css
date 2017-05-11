@@ -7281,7 +7281,7 @@ footer {
     .front .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col .panel-col-first {
       width: 60%;
       float: left;
-      border-right: 1px solid #b3b3b3; }
+      border-right: 1px solid #dbdfe3; }
       /* line 19, ../scss/pages/_frontpage.scss */
       .front .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col .panel-col-first .inside {
         margin: 0; }
@@ -7392,7 +7392,7 @@ footer {
           /* line 159, ../scss/pages/_frontpage.scss */
           .front .field-name-field-anzuzeigende-seitenmodule .view-neueste-informationen .view-sub-wrapper .view-content .views-row .row-container:hover {
             background: #eff2f7;
-            border: 1px solid #b3b3b3; }
+            border: 1px solid #dbdfe3; }
           /* line 164, ../scss/pages/_frontpage.scss */
           .front .field-name-field-anzuzeigende-seitenmodule .view-neueste-informationen .view-sub-wrapper .view-content .views-row .row-container .views-field-field-themenzuweisung {
             padding-bottom: 30px; }
@@ -8718,8 +8718,7 @@ header.navbar-default {
   /* line 179, ../scss/pages/_listview.scss */
   .page-termine .view-termin.view-display-id-page > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets #edit-term-node-tid-depth-wrapper {
     width: 100%;
-    clear: both;
-    border-bottom: 1px solid #273753; }
+    clear: both; }
     /* line 186, ../scss/pages/_listview.scss */
     .page-termine .view-termin.view-display-id-page > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets #edit-term-node-tid-depth-wrapper .form-item .form-type-bef-link:first-child {
       display: none; }
