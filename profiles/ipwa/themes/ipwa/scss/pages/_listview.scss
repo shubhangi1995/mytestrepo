@@ -146,342 +146,349 @@
     }
 }
 
-//termine//
+//termine and aktuelles//
 
-.page-termine ,.page-aktuelles {
+.page-termine, .page-aktuelles {
     background: $color-light-blue;
 
     .page-header {
-	  @extend .container;
+        @extend .container;
+
         padding-left: 250px;
-        border: none;       
+        border: none;
         padding-bottom: 35px;
         font-weight: normal;
         padding-top: 80px;
-    } 
+    }
 }
-	
-       .view-aktuelles,.view-termin{
-	       
-		   
-		   > .view-sub-wrapper{
-		   @extend .container;
-		   padding:0;
-		   
-		   .view-header {
-			
-                color: $active-menu;
-                font-size: 26px;
-                padding-left: 250px;
-                padding-bottom: 60px;
-				
-            }
-	   
 
-            .attachment-before .view-result-count {
-                margin-top: -88px;
-                padding: 30px 0;
-                font-size: 22px;
-                font-weight: bold;
-            }
+.view-aktuelles, .view-termin {
+    > .view-sub-wrapper {
+        @extend .container;
 
-            .view-content {
-                margin-left: -15px;
-                margin-right: -15px;
+        padding: 0;
 
-                .views-row {
-                    @extend .col-md-4;
-
-                    .row-container {
-                        background: $color-white;
-                        padding: 30px;
-                        height: 400px;
-                        margin-bottom: 30px;
-                        position: relative;
-
-                        .views-field-field-themenzuweisung {
-                            padding-bottom: 30px;
-
-                            img {
-                                display: inline-block;
-                                margin-right: 10px;
-                            }
-                        }
-
-                        .views-field-field-event-datum {
-                            padding-bottom: 20px;
-                            font-weight: bold;
-							 color: $active-menu;
-                                font-size: 22px;
-
-                            
-                        }
-
-                        .views-field-title {
-                            padding-bottom: 40px;
-
-                            a {
-                                text-decoration: none;
-                                font-size: 22px;
-                                color: $main-color;
-                            }
-                        }
-
-                        .views-field-field-ort {
-                            .field-content {
-                                position: absolute;
-                                bottom: 30px;
-                                font-size: 20px;
-                                color: $color-light-grey;
-                            }
-                        }
-                    }
-                }
-            }
-        
-	.view-map-teaser {
-    clear: both;
-    .view-sub-wrapper{
-    .view-content {
-        margin: 0;
-
-        .views-row {
-            @extend .col-md-8;
-            background: $main-color;
-            
-
-            .row-container {
-                background: none;
-				height:auto;
-				margin-bottom:0;
-				padding: 45px 150px 45px 50px;
-
-                .views-field-field-bild {
-                    padding-bottom: 20px;
-
-                    img {
-                        color: $active-menu;
-                    }
-                }
-
-                .views-field-field-paragraph-title {
-                    color: $color-white;
-                    font-size: 38px;
-                    font-weight: bold;
-                    padding-bottom: 20px;
-                }
-
-                .views-field-field-flie-text-bereich {
-                    color: $color-white;
-                    padding-bottom: 35px;
-                }
-
-                .views-field-field-quellenangabe a {
-                    color: $color-white;
-                    position: relative;
-                    margin-left: 30px;
-					border-bottom:1px solid $color-white;
-					text-decoration:none;
-					padding-bottom:4px;
-
-                    &:before {
-                        font-family: $icomoon;
-                                content: "\e93f";
-                                color: $active-menu;
-                                font-size: 14px;
-                                position: absolute;
-                                left: -20px;
-                                top: 6px;
-                                display: inline-block;
-                    }
-                }
-            }
+        .view-header {
+            color: $active-menu;
+            font-size: 26px;
+            padding-left: 250px;
+            padding-bottom: 60px;
         }
-    }}
-}}
-   }
-   
-   
-.page-aktuelles .view-aktuelles {   
 
-   
-	   .view-sub-wrapper  .view-content{
-	      .views-row  .row-container{
-			    .views-field-type{
-				padding-bottom: 20px;
-                            font-weight: bold;
-							 color: $active-menu;
-                                font-size: 22px;
-				
-				
-				}	
-						
-			.views-field-field-datum{
-			.field-content {
-                                position: absolute;
-                                bottom: 30px;
-                                font-size: 20px;
-                                color: $color-light-grey;
-                            }
-			
-			
-			}
-	   
-	   }
-	
-	
-	}
+        .attachment-before .view-result-count {
+            margin-top: -88px;
+            padding: 30px 0;
+            font-size: 22px;
+            font-weight: bold;
+        }
 
+        .view-content {
+            margin-left: -15px;
+            margin-right: -15px;
 
-    .view-filters {
-            .views-exposed-form .views-exposed-widgets {
-                margin-bottom: 0;
+            .views-row {
+                @extend .col-md-4;
 
-                #edit-type-wrapper {
-                    width: 100%;
+                .row-container {
+                    background: $color-white;
+                    padding: 30px;
+                    height: 400px;
+                    margin-bottom: 30px;
+                    position: relative;
+					border:1px solid $color-white;
+					cursor:pointer;
+					&:hover{
+					 background: $color-light-blue;
+                                border: 1px solid $color-border;
+					
+					}
 
-                    .form-item {
-                        display: inline-block;
-                        padding-right: 60px;
+                    .views-field-field-themenzuweisung {
+                        padding-bottom: 30px;
 
-                        label {
-                            padding-left: 0;
-                            padding-bottom: 15px;
-
-                            input {
-                                visibility: hidden;
-                            }
+                        img {
+                            display: inline-block;
+                            margin-right: 10px;
                         }
                     }
-                }
 
-       
-   
-     .categories-filter {
-                    margin-top: 30px;
-                    clear: both;
-                    display: inline-block;
-                    width: 100%;
-
-                    .views-exposed-widget {
-                        padding: 0;
-                        width: 25%;
-                        float: left;
-                        padding: 10px 0;
-                        background: $header-dropdown-menu;
-                        border-right: 1px solid $color-light-grey;
-
-                        .select2-container--default .select2-selection--single {
-                            background: 0;
-                            border: 0;
-                            border-radius: 0;
-
-                            &:before {
-                                content: "\f107";
-                                font-family: FontAwesome;
-                                color: $color-white;
-                                position: absolute;
-                                float: right;
-                                right: 20px;
-                                top: 3px;
-                            }
-
-                            .select2-selection__rendered {
-                                color: $color-white;
-                                padding-left: 20px;
-                            }
-
-                            .select2-selection__arrow {
-                                display: none;
-                            }
-                        }
+                    .views-field-field-event-datum {
+                        padding-bottom: 20px;
+                        font-weight: bold;
+                        color: $active-menu;
+                        font-size: 22px;
                     }
-                }
 
-                .views-widget-sort-by {
-                    float: right;
-                    padding: 30px 0;
-
-                    .bef-select-as-links .form-type-bef-link {
-                        display: inline-block;
-                        padding-left: 15px;
+                    .views-field-title {
+                        padding-bottom: 40px;
 
                         a {
                             text-decoration: none;
+                            font-size: 22px;
                             color: $main-color;
-
-                            &.active {
-                                border-bottom: 2px solid $active-menu;
-                            }
                         }
                     }
 
-                    .select2-container {
-                        display: none;
+                    .views-field-field-ort {
+                        .field-content {
+                            position: absolute;
+                            bottom: 30px;
+                            font-size: 20px;
+                            color: $color-light-grey;
+                        }
                     }
                 }
             }
-      }
-	   .views-submit-button {
-            display: none;
         }
-	  
-	  }
-	  
-	  
-	  .page-termine .view-termin{
-	   .view-filters {
-                .views-exposed-form .views-exposed-widgets {
-                    #edit-term-node-tid-depth-wrapper {
-                        width: 100%;
-                        clear: both;
-						
 
-                        .form-item {
-						  .form-type-bef-link{
-						      &:first-child{
-							    display:none;
-							  }
-                            a {
-                                display: inline-block;
-                                float: left;
+        // view-map-teaser //
+
+        .view-map-teaser {
+            clear: both;
+
+            .view-sub-wrapper {
+                .view-content {
+                    margin: 0;
+
+                    .views-row {
+                        @extend .col-md-8;
+
+                        background: $main-color;
+
+                        .row-container {
+                            background: none;
+                            height: auto;
+                            margin-bottom: 0;
+                            padding: 45px 150px 45px 50px;
+							border:none;
+
+                            .views-field-field-bild {
+                                padding-bottom: 20px;
+
+                                img {
+                                    color: $active-menu;
+                                }
+                            }
+
+                            .views-field-field-paragraph-title {
+                                color: $color-white;
+                                font-size: 38px;
+                                font-weight: bold;
+                                padding-bottom: 20px;
+                            }
+
+                            .views-field-field-flie-text-bereich {
+                                color: $color-white;
+                                padding-bottom: 35px;
+                            }
+
+                            .views-field-field-quellenangabe a {
+                                color: $color-white;
+                                position: relative;
+                                margin-left: 30px;
+                                border-bottom: 1px solid $color-white;
                                 text-decoration: none;
-                                color: $main-color;
-                                margin-right: 60px;
-                                padding-bottom: 15px;
+                                padding-bottom: 4px;
 
-                                &.active {
-                                    border-bottom: 2px Solid $active-menu;
+                                &:before {
+                                    font-family: $icomoon;
+                                    content: "\e93f";
+                                    color: $active-menu;
+                                    font-size: 14px;
+                                    position: absolute;
+                                    left: -20px;
+                                    top: 6px;
+                                    display: inline-block;
                                 }
                             }
                         }
-                    }}
-
-                    .views-widget-sort-by {
-                        float: right;
-                        padding: 30px 0;
-
-                        .bef-select-as-links .form-type-bef-link {
-                            display: inline-block;
-                            padding-left: 15px;
-
-                            a {
-                                text-decoration: none;
-                                color: $main-color;
-
-                                &.active {
-                                    border-bottom: 2px solid #e74712;
-                                }
-                            }
-                        }
-                    }
-
-                    .views-submit-button {
-                        display: none;
-                    }
-
-                    .select2-container--default .select2-selection--single {
-                        display: none;
                     }
                 }
-           } }
+            }
+        }
+    }
+}
+
+//only-aktuelles//
+
+.page-aktuelles .view-aktuelles {
+    .view-sub-wrapper .view-content {
+        .views-row .row-container {
+            .views-field-type {
+                padding-bottom: 20px;
+                font-weight: bold;
+                color: $active-menu;
+                font-size: 22px;
+            }
+
+            .views-field-field-datum {
+                .field-content {
+                    position: absolute;
+                    bottom: 30px;
+                    font-size: 20px;
+                    color: $color-light-grey;
+                }
+            }
+        }
+    }
+
+    .view-filters {
+        .views-exposed-form .views-exposed-widgets {
+            margin-bottom: 0;
+
+            #edit-type-wrapper {
+                width: 100%;
+
+                .form-item {
+                    display: inline-block;
+                    padding-right: 60px;
+
+                    label {
+                        padding-left: 0;
+                        padding-bottom: 15px;
+
+                        input {
+                            visibility: hidden;
+                        }
+                    }
+                }
+            }
+
+            .categories-filter {
+                margin-top: 30px;
+                clear: both;
+                display: inline-block;
+                width: 100%;
+
+                .views-exposed-widget {
+                    padding: 0;
+                    width: 25%;
+                    float: left;
+                    padding: 10px 0;
+                    background: $header-dropdown-menu;
+                    border-right: 1px solid $color-light-grey;
+
+                    .select2-container--default .select2-selection--single {
+                        background: 0;
+                        border: 0;
+                        border-radius: 0;
+
+                        &:before {
+                            content: "\f107";
+                            font-family: FontAwesome;
+                            color: $color-white;
+                            position: absolute;
+                            float: right;
+                            right: 20px;
+                            top: 3px;
+                        }
+
+                        .select2-selection__rendered {
+                            color: $color-white;
+                            padding-left: 20px;
+                        }
+
+                        .select2-selection__arrow {
+                            display: none;
+                        }
+                    }
+                }
+            }
+
+            .views-widget-sort-by {
+                float: right;
+                padding: 30px 0;
+
+                .bef-select-as-links .form-type-bef-link {
+                    display: inline-block;
+                    padding-left: 15px;
+
+                    a {
+                        text-decoration: none;
+                        color: $main-color;
+
+                        &.active {
+                            border-bottom: 2px solid $active-menu;
+                        }
+                    }
+                }
+
+                .select2-container {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .views-submit-button {
+        display: none;
+    }
+}
+
+//only-termine//
+.page-termine .view-termin {
+    .view-filters {
+        .views-exposed-form .views-exposed-widgets {
+            #edit-term-node-tid-depth-wrapper {
+                width: 80%;
+				float:left;
+				padding:0;
+                clear: both;
+
+                .form-item {
+                    .form-type-bef-link {
+                        &:first-child {
+                            display: none;
+                        }
+
+                        a {
+                            display: inline-block;
+                            float: left;
+                            text-decoration: none;
+                            color: $main-color;
+                            margin-right: 60px;
+                            padding-bottom: 15px;
+
+                            &.active {
+                                border-bottom: 2px Solid $active-menu;
+                            }
+                        }
+                    }
+                }
+            }
+			
+			.calendar-link{
+			  width:20%;
+			  float:left;
+			
+			}
+
+            .views-widget-sort-by {
+                float: right;
+                padding: 30px 0;
+
+                .bef-select-as-links .form-type-bef-link {
+                    display: inline-block;
+                    padding-left: 15px;
+
+                    a {
+                        text-decoration: none;
+                        color: $main-color;
+
+                        &.active {
+                            border-bottom: 2px solid #e74712;
+                        }
+                    }
+                }
+            }
+
+            .views-submit-button {
+                display: none;
+            }
+
+            .select2-container--default .select2-selection--single {
+                display: none;
+            }
+        }
+    }
+}
