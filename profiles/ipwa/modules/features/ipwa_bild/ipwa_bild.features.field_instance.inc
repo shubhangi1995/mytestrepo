@@ -23,7 +23,7 @@ Erlaubte Dateitypen: png gif jpg jpeg.',
         'module' => 'file_image_formatters',
         'settings' => array(
           'image_link' => '',
-          'image_style' => 'medium',
+          'image_style' => 'test_200',
         ),
         'type' => 'file_image_image',
         'weight' => 1,
@@ -41,6 +41,13 @@ Erlaubte Dateitypen: png gif jpg jpeg.',
     'required' => 1,
     'settings' => array(
       'description_field' => 0,
+      'epsacrop' => array(
+        'styles' => array(
+          'test_200' => 'test_200',
+          'test_300' => 'test_300',
+          'test_500' => 'test_500',
+        ),
+      ),
       'file_directory' => '',
       'file_extensions' => 'png gif jpg jpeg',
       'max_filesize' => '1.96 GB',

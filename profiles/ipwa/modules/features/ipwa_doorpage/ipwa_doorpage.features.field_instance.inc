@@ -57,10 +57,19 @@ function ipwa_doorpage_field_default_field_instances() {
     'entity_type' => 'field_collection_item',
     'field_name' => 'field_eb_image',
     'label' => 'Image',
-    'required' => FALSE,
+    'required' => 0,
     'settings' => array(
       'alt_field' => 0,
       'default_image' => 0,
+      'epsacrop' => array(
+        'styles' => array(
+          'epsacrop_thumb' => 0,
+          'large' => 0,
+          'test' => 'test',
+          'test_300' => 'test_300',
+          'test_450' => 'test_450',
+        ),
+      ),
       'file_directory' => '',
       'file_extensions' => 'png gif jpg jpeg',
       'max_filesize' => '',
@@ -70,6 +79,7 @@ function ipwa_doorpage_field_default_field_instances() {
       'user_register_form' => FALSE,
     ),
     'widget' => array(
+      'active' => 1,
       'module' => 'image',
       'settings' => array(
         'preview_image_style' => 'thumbnail',
