@@ -54,6 +54,9 @@
                                 top: 6px;
                                 display: inline-block;
                             }
+							&:hover{
+							  border-bottom:1px solid $active-menu;
+							}
                         }
                     }
 
@@ -109,6 +112,9 @@
                                 top: 6px;
                                 display: inline-block;
                             }
+							&:hover{
+							  border-bottom:1px solid $active-menu;
+							}
                         }
                     }
 
@@ -163,6 +169,9 @@ background: $main-color;
                                 top: 6px;
                                 display: inline-block;
                             }
+							&:hover{
+							  border-bottom:1px solid $active-menu;
+							}
                         }
                     }
                 }			
@@ -273,6 +282,9 @@ background: $main-color;
                                 top: 6px;
                                 display: inline-block;
                             }
+							&:hover{
+							 border-bottom:1px solid $active-menu;
+							}
                         }
                     }
                 }
@@ -347,6 +359,9 @@ background: $main-color;
                                         top: 6px;
                                         display: inline-block;
                                     }
+									&:hover{
+							  border-bottom:1px solid $active-menu;
+							}
                                 }
                             }
 
