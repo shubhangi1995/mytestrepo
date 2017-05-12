@@ -8445,7 +8445,7 @@ header.navbar-default {
           text-decoration: none; }
           /* line 71, ../scss/pages/_listview.scss */
           .page-taxonomy-term .view-alles-zum-thema .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .bef-select-as-links .form-type-bef-link a.active {
-            border-bottom: 2px solid #e74712; }
+            border-bottom: 1px solid #e74712; }
     /* line 79, ../scss/pages/_listview.scss */
     .page-taxonomy-term .view-alles-zum-thema .view-sub-wrapper .view-content {
       margin-left: -15px;
@@ -8690,7 +8690,7 @@ header.navbar-default {
         color: #273753; }
         /* line 410, ../scss/pages/_listview.scss */
         .page-aktuelles .view-aktuelles .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .bef-select-as-links .form-type-bef-link a.active {
-          border-bottom: 2px solid #e74712; }
+          border-bottom: 1px solid #e74712; }
     /* line 416, ../scss/pages/_listview.scss */
     .page-aktuelles .view-aktuelles .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .select2-container {
       display: none; }
@@ -8703,44 +8703,64 @@ header.navbar-default {
   width: 80%;
   float: left;
   padding: 0;
-  clear: both; }
-  /* line 440, ../scss/pages/_listview.scss */
+  clear: both;
+  margin-bottom: 30px; }
+  /* line 441, ../scss/pages/_listview.scss */
   .page-termine .view-termin .view-filters .views-exposed-form .views-exposed-widgets #edit-term-node-tid-depth-wrapper .form-item .form-type-bef-link:first-child {
     display: none; }
-  /* line 444, ../scss/pages/_listview.scss */
+  /* line 445, ../scss/pages/_listview.scss */
   .page-termine .view-termin .view-filters .views-exposed-form .views-exposed-widgets #edit-term-node-tid-depth-wrapper .form-item .form-type-bef-link a {
     display: inline-block;
     float: left;
     text-decoration: none;
     color: #273753;
-    margin-right: 60px;
-    padding-bottom: 15px; }
-    /* line 452, ../scss/pages/_listview.scss */
+    margin-right: 60px; }
+    /* line 453, ../scss/pages/_listview.scss */
     .page-termine .view-termin .view-filters .views-exposed-form .views-exposed-widgets #edit-term-node-tid-depth-wrapper .form-item .form-type-bef-link a.active {
-      border-bottom: 2px Solid #e74712; }
-/* line 460, ../scss/pages/_listview.scss */
+      border-bottom: 1px Solid #e74712; }
+/* line 461, ../scss/pages/_listview.scss */
 .page-termine .view-termin .view-filters .views-exposed-form .views-exposed-widgets .calendar-link {
   width: 20%;
-  float: left; }
-/* line 466, ../scss/pages/_listview.scss */
+  float: left;
+  text-align: right;
+  position: relative;
+  margin-bottom: 30px; }
+  /* line 467, ../scss/pages/_listview.scss */
+  .page-termine .view-termin .view-filters .views-exposed-form .views-exposed-widgets .calendar-link a {
+    text-decoration: none;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #949d9e;
+    color: #273753;
+    font-weight: bold; }
+    /* line 474, ../scss/pages/_listview.scss */
+    .page-termine .view-termin .view-filters .views-exposed-form .views-exposed-widgets .calendar-link a:before {
+      content: '\e949';
+      font-family: "icomoon";
+      color: #e74712;
+      font-size: 14px;
+      position: absolute;
+      left: 40px;
+      top: 9px;
+      display: inline-block; }
+/* line 489, ../scss/pages/_listview.scss */
 .page-termine .view-termin .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by {
   float: right;
   padding: 30px 0; }
-  /* line 470, ../scss/pages/_listview.scss */
+  /* line 493, ../scss/pages/_listview.scss */
   .page-termine .view-termin .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .bef-select-as-links .form-type-bef-link {
     display: inline-block;
     padding-left: 15px; }
-    /* line 474, ../scss/pages/_listview.scss */
+    /* line 497, ../scss/pages/_listview.scss */
     .page-termine .view-termin .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .bef-select-as-links .form-type-bef-link a {
       text-decoration: none;
       color: #273753; }
-      /* line 478, ../scss/pages/_listview.scss */
+      /* line 501, ../scss/pages/_listview.scss */
       .page-termine .view-termin .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .bef-select-as-links .form-type-bef-link a.active {
-        border-bottom: 2px solid #e74712; }
-/* line 485, ../scss/pages/_listview.scss */
+        border-bottom: 1px solid #e74712; }
+/* line 508, ../scss/pages/_listview.scss */
 .page-termine .view-termin .view-filters .views-exposed-form .views-exposed-widgets .views-submit-button {
   display: none; }
-/* line 489, ../scss/pages/_listview.scss */
+/* line 512, ../scss/pages/_listview.scss */
 .page-termine .view-termin .view-filters .views-exposed-form .views-exposed-widgets .select2-container--default .select2-selection--single {
   display: none; }
 

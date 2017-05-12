@@ -69,7 +69,7 @@
                             text-decoration: none;
 
                             &.active {
-                                border-bottom: 2px solid $active-menu;
+                                border-bottom: 1px solid $active-menu;
                             }
                         }
                     }
@@ -408,7 +408,7 @@
                         color: $main-color;
 
                         &.active {
-                            border-bottom: 2px solid $active-menu;
+                            border-bottom: 1px solid $active-menu;
                         }
                     }
                 }
@@ -434,6 +434,7 @@
 				float:left;
 				padding:0;
                 clear: both;
+				margin-bottom:30px;
 
                 .form-item {
                     .form-type-bef-link {
@@ -447,10 +448,10 @@
                             text-decoration: none;
                             color: $main-color;
                             margin-right: 60px;
-                            padding-bottom: 15px;
+                           
 
                             &.active {
-                                border-bottom: 2px Solid $active-menu;
+                                border-bottom: 1px Solid $active-menu;
                             }
                         }
                     }
@@ -460,6 +461,28 @@
 			.calendar-link{
 			  width:20%;
 			  float:left;
+			  text-align:right;
+			  position:relative;
+			  margin-bottom:30px;
+			   a{
+			    text-decoration:none;
+				padding-bottom:4px;
+				border-bottom:1px solid $color-light-grey;
+				color:$main-color;
+				font-weight:bold;
+				
+				&:before{
+				   content:'\e949';
+				   font-family: $icomoon;                                        
+                                        color: $active-menu;
+                                        font-size: 14px;
+                                        position: absolute;
+                                        left: 40px;
+                                        top: 9px;
+                                        display: inline-block;				
+				}
+				
+			   }
 			
 			}
 
@@ -476,7 +499,7 @@
                         color: $main-color;
 
                         &.active {
-                            border-bottom: 2px solid #e74712;
+                            border-bottom: 1px solid #e74712;
                         }
                     }
                 }

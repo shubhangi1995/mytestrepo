@@ -24,7 +24,7 @@ jQuery(document).ready(function(){
 	jQuery("input:radio").each(function(){
   if(jQuery(this).is(':checked'))
   {
-	jQuery(this).parent("label").css('border-bottom', '2px solid #e74712');
+	jQuery(this).parent("label").css('border-bottom', '1px solid #e74712');
   }
 }); 
 
