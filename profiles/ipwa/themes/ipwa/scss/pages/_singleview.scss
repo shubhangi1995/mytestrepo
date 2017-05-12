@@ -70,60 +70,7 @@
 
 // view-map-teaser //
 
-.view-map-teaser {
-    clear: both;
 
-    .view-content {
-        margin: 0;
-
-        .views-row {
-            @extend .col-md-8;
-
-            background: $main-color;
-            padding: 45px;
-
-            .row-container {
-                background: none;
-
-                .views-field-field-bild {
-                    padding-bottom: 20px;
-
-                    img {
-                        color: $active-menu;
-                    }
-                }
-
-                .views-field-field-paragraph-title {
-                    color: $color-white;
-                    font-size: 38px;
-                    font-weight: bold;
-                    padding-bottom: 20px;
-                }
-
-                .views-field-field-flie-text-bereich {
-                    color: $color-white;
-                    padding-bottom: 35px;
-                }
-
-                .views-field-field-quellenangabe a {
-                    color: $color-white;
-                    position: relative;
-                    padding-left: 30px;
-
-                    &:before {
-                        @extend .material-icons;
-
-                        content: "arrow_forward";
-                        color: $active-menu;
-                        position: absolute;
-                        top: 3px;
-                        left: 0;
-                    }
-                }
-            }
-        }
-    }
-}
 
 //---------------node-protagonist--------------//
 /* .node-type-protagonist {

@@ -164,7 +164,7 @@
        .view-aktuelles,.view-termin{
 	       
 		   
-		   .view-sub-wrapper{
+		   > .view-sub-wrapper{
 		   @extend .container;
 		   padding:0;
 		   
@@ -185,14 +185,14 @@
                 font-weight: bold;
             }
 
-            > .view-content {
+            .view-content {
                 margin-left: -15px;
                 margin-right: -15px;
 
-                > .views-row {
+                .views-row {
                     @extend .col-md-4;
 
-                    > .row-container {
+                    .row-container {
                         background: $color-white;
                         padding: 30px;
                         height: 400px;
@@ -238,7 +238,67 @@
                     }
                 }
             }
+        
+	.view-map-teaser {
+    clear: both;
+    .view-sub-wrapper{
+    .view-content {
+        margin: 0;
+
+        .views-row {
+            @extend .col-md-8;
+            background: $main-color;
+            
+
+            .row-container {
+                background: none;
+				height:auto;
+				margin-bottom:0;
+				padding: 45px 150px 45px 50px;
+
+                .views-field-field-bild {
+                    padding-bottom: 20px;
+
+                    img {
+                        color: $active-menu;
+                    }
+                }
+
+                .views-field-field-paragraph-title {
+                    color: $color-white;
+                    font-size: 38px;
+                    font-weight: bold;
+                    padding-bottom: 20px;
+                }
+
+                .views-field-field-flie-text-bereich {
+                    color: $color-white;
+                    padding-bottom: 35px;
+                }
+
+                .views-field-field-quellenangabe a {
+                    color: $color-white;
+                    position: relative;
+                    margin-left: 30px;
+					border-bottom:1px solid $color-white;
+					text-decoration:none;
+					padding-bottom:4px;
+
+                    &:before {
+                        font-family: $icomoon;
+                                content: "\e93f";
+                                color: $active-menu;
+                                font-size: 14px;
+                                position: absolute;
+                                left: -20px;
+                                top: 6px;
+                                display: inline-block;
+                    }
+                }
+            }
         }
+    }}
+}}
    }
    
    
