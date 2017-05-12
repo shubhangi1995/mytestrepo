@@ -10,6 +10,13 @@ $base = array(
   0xD0 => 'D', 'N', 'O', 'O', 'O', 'O', 'O', 'x', 'O', 'U', 'U', 'U', 'U', 'Y', 'Th', 'ss',
   0xE0 => 'a', 'a', 'a', 'a', 'a', 'a', 'ae', 'c', 'e', 'e', 'e', 'e', 'i', 'i', 'i', 'i',
   0xF0 => 'd', 'n', 'o', 'o', 'o', 'o', 'o', '/', 'o', 'u', 'u', 'u', 'u', 'y', 'th', 'y',
+  0xC4 => 'Ae',
+  0xD6 => 'Oe',
+  0xDC => 'Ue',
+  0xE4 => 'ae',
+  0xF6 => 'oe',
+  0xFC => 'ue',
+  0xDF => 'ss',
 );
 
 // Overrides for Danish input.
@@ -23,7 +30,7 @@ $variant['da'] = array(
 );
 
 // Overrides for German input.
-$variant['de'] = array(
+/*$variant['de'] = array(
   0xC4 => 'Ae',
   0xD6 => 'Oe',
   0xDC => 'Ue',
@@ -31,7 +38,7 @@ $variant['de'] = array(
   0xF6 => 'oe',
   0xFC => 'ue',
   0xDF => 'ss',
-);
+);*/
 
 // Overrides for Spanish input.
 $variant['es'] = array(
