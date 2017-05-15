@@ -135,46 +135,47 @@ header.navbar-default {
 
 .breadcrumb {
     @extend .container;
+
     padding: 0;
     margin-bottom: 20px;
     list-style: none;
     background: none;
     border-radius: 0;
 
-    .inline{
-	// margin-right:10px;
-	a {
-        text-decoration: none;
-        color: $main-color;
-        font-size: 18px;
-        border-bottom: 1px solid $color-light-grey;
-		padding-bottom: 4px;
+    .inline {
+        // margin-right:10px;
+        a {
+            text-decoration: none;
+            color: $main-color;
+            font-size: 18px;
+            border-bottom: 1px solid $color-light-grey;
+            padding-bottom: 4px;
+        }
+
+        &.last {
+            // margin-left:10px;
+            border-bottom: 1px solid $active-menu;
+            padding-bottom: 4px;
+            font-size: 18px;
+
+            a {
+                border-color: $active-menu;
+            }
+        }
     }
-	   &.last {
-	// margin-left:10px;
-	border-bottom:1px solid $active-menu;
-	padding-bottom:4px;
-	font-size: 18px;
-	a{
-		border-color:$active-menu;
-	}
-		
+
+    .delimiter {
+        font-size: 0;
+
+        &:before {
+            font-family: $icomoon;
+            content: "\e940";
+            color: $icons-color;
+            font-size: 11px;
+            margin: 0 10px;
+            display: inline-block;
+        }
     }
-}
-.delimiter {
-   font-size:0;
-   &:before{
-   font-family: $icomoon;
-                content: "\e940";
-                color: $icons-color;
-				font-size: 11px;
-				margin: 0 10px;
-                display: inline-block;
-   }
-
-
-}
-
 }
 
 //dropdown
@@ -189,24 +190,20 @@ header.navbar-default {
 
         .select2-results {
             height: 200px;
-			color: $color-white;
-			
-			.simplebar-track .simplebar-scrollbar {
-    background: $main-color;
-}
+            color: $color-white;
+
+            .simplebar-track .simplebar-scrollbar {
+                background: $main-color;
+            }
 
             ul.select2-results__options {
-                
                 height: auto;
                 overflow: hidden;
                 max-height: none;
-				
-				
-				.select2-results__option{
-				padding-left:20px !important;
-				}
 
-                
+                .select2-results__option {
+                    padding-left: 20px !important;
+                }
             }
         }
 
@@ -217,74 +214,93 @@ header.navbar-default {
 
     .select2-results__option[aria-selected=true] {
         background: 0;
-		
     }
 
     .select2-results__option--highlighted[aria-selected] {
         background: $main-color;
-		
     }
 }
 
-
 //-----------view-content-----------//
 
-.view-neueste-informationen ,.view-termin,.view-aktuelles ,.view-neueste-digital-projekte{
+.view-neueste-informationen, .view-termin, .view-aktuelles, .view-neueste-digital-projekte {
+    .view-sub-wrapper > .view-content {
+        margin-left: -15px;
+        margin-right: -15px;
 
- .view-sub-wrapper  > .view-content {
-            margin-left: -15px;
-            margin-right: -15px;
+        .views-row {
+            @extend .col-md-4;
 
-            .views-row {
-                @extend .col-md-4;
+            .row-container {
+                background: $color-white;
+                padding: 30px;
+                height: 400px;
+                margin-bottom: 30px;
+                position: relative;
+                border: 1px solid $color-white;
+                cursor: pointer;
 
-                .row-container {
-                    background: $color-white;
-                    padding: 30px;
-                    height: 400px;
-                    margin-bottom: 30px;
-                    position: relative;
-					border:1px solid $color-white;
-					cursor:pointer;
-					&:hover{
-					 background: $color-light-blue;
-                                border: 1px solid $color-border;
-					
-					}
+                &:hover {
+                    background: $color-light-blue;
+                    border: 1px solid $color-border;
+                }
 
-                    .views-field-field-themenzuweisung {
-                        padding-bottom: 30px;
+                .views-field-field-themenzuweisung {
+                    padding-bottom: 30px;
 
-                        img {
-                            display: inline-block;
-                            margin-right: 10px;
-                        }
-                    }
-
-                    .views-field-field-event-datum {
-                        padding-bottom: 20px;
-                        font-weight: bold;
-                        color: $active-menu;
-                        font-size: 22px;
-                    }
-
-                    .views-field-title {
-                        padding-bottom: 40px;
-
-                        a {
-                            text-decoration: none;
-                            font-size: 22px;
-                            color: $main-color;
-                        }
-                    }
-
-                    .views-field-field-ort {
-                        .field-content {
-                            position: absolute;
-                            bottom: 30px;
-                            font-size: 20px;
-                            color: $color-light-grey;
-                        }
+                    img {
+                        display: inline-block;
+                        margin-right: 10px;
                     }
                 }
-}}}
+
+                .views-field-field-event-datum {
+                    padding-bottom: 20px;
+                    font-weight: bold;
+                    color: $active-menu;
+                    font-size: 22px;
+                }
+
+                .views-field-title {
+                    padding-bottom: 40px;
+
+                    a {
+                        text-decoration: none;
+                        font-size: 22px;
+                        color: $main-color;
+                    }
+                }
+
+                .views-field-field-ort {
+                    .field-content {
+                        position: absolute;
+                        bottom: 30px;
+                        font-size: 20px;
+                        color: $color-light-grey;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.common-button {
+    font-size: 20px;    
+    text-decoration: none;
+    bottom: 30px;
+    margin-left: 25px;
+    position: absolute;
+    padding-bottom: 4px;
+    border-bottom: 1px solid $color-light-grey;
+
+    &:before {
+        font-family: $icomoon;
+        content: "\e93f";
+        color: $active-menu;
+        font-size: 14px;
+        position: absolute;
+        left: -20px;
+        top: 6px;
+        display: inline-block;
+    }
+}
