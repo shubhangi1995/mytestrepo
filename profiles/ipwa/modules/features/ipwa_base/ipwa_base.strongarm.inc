@@ -182,6 +182,69 @@ function ipwa_base_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'pathauto_node_article_pattern';
+  $strongarm->value = 'artikel/[node:title]';
+  $export['pathauto_node_article_pattern'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'pathauto_node_f_rderbekanntmachung_pattern';
+  $strongarm->value = 'aktuelles/foerderbekanntmachungen/[node:title]';
+  $export['pathauto_node_f_rderbekanntmachung_pattern'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'pathauto_node_nachricht_pattern';
+  $strongarm->value = 'aktuelles/nachrichten/[node:title]';
+  $export['pathauto_node_nachricht_pattern'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'pathauto_node_projekt_pattern';
+  $strongarm->value = 'schaufenster-digitales-nrw/projekte/[node:title]';
+  $export['pathauto_node_projekt_pattern'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'pathauto_node_protagonist_pattern';
+  $strongarm->value = 'schaufenster-digitales-nrw/akteure/[node:title]';
+  $export['pathauto_node_protagonist_pattern'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'pathauto_node_publikation_pattern';
+  $strongarm->value = 'aktuelles/publikationen/[node:title]';
+  $export['pathauto_node_publikation_pattern'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'pathauto_node_termin_pattern';
+  $strongarm->value = '/termine/[node:title]';
+  $export['pathauto_node_termin_pattern'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'pathauto_taxonomy_term_pattern';
+  $strongarm->value = '[term:vocabulary]/[term:name]';
+  $export['pathauto_taxonomy_term_pattern'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'pathauto_taxonomy_term_themenzuweisung_pattern';
+  $strongarm->value = '[term:parent]/[term:name]';
+  $export['pathauto_taxonomy_term_themenzuweisung_pattern'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'pathauto_transliterate';
   $strongarm->value = 1;
   $export['pathauto_transliterate'] = $strongarm;
