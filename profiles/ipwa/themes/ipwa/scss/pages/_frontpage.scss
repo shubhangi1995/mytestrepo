@@ -1,104 +1,103 @@
 //-----------------------------------//
 
-    .field-name-field-anzuzeigende-seitenmodule {
-        .panelizer-view-mode {
-            padding: 60px 0;
+.field-name-field-anzuzeigende-seitenmodule {
+    .panelizer-view-mode {
+        padding: 60px 0;
 
-            .panel-2col {
-                @extend .container;
-                position: relative;
-                background: $main-color;
-                padding: 45px;
-                height: 400px;
+        .panel-2col {
+            @extend .container;
 
-                .panel-col-first {
-                    width: 60%;
-                    float: left;
-                    border-right: 1px solid $color-border;
+            position: relative;
+            background: $main-color;
+            padding: 45px;
+            height: 400px;
 
-                    .inside {
-                        margin: 0;
+            .panel-col-first {
+                width: 60%;
+                float: left;
+                border-right: 1px solid $color-border;
 
-                        .pane-paragraphs-item-field-bild {
-                            padding-bottom: 25px;
-                        }
+                .inside {
+                    margin: 0;
+                    color: $color-white;
 
-                        .pane-paragraphs-item-field-paragraph-title {
-                            color: $color-white;
-                            font-size: 38px;
-                            padding-bottom: 25px;
-                            font-weight: bold;
-                        }
-
-                        .pane-paragraphs-item-field-flie-text-bereich {
-                            color: $color-white;
-                            padding-bottom: 35px;
-                        }
-
-                        .pane-paragraphs-item-field-quellenangabe a {
-						     color:$color-white;
-                             @extend .common-button;
-
-                            &:hover {
-                                border-bottom: 1px solid $active-menu;
-                            }
-                        }
+                    .pane-paragraphs-item-field-bild {
+                        padding-bottom: 25px;
                     }
 
-                    .panel-separator {
-                        display: none;
+                    .pane-paragraphs-item-field-paragraph-title {
+                        font-size: 38px;
+                        padding-bottom: 25px;
+                        font-weight: bold;
+                    }
+
+                    .pane-paragraphs-item-field-flie-text-bereich {
+                        padding-bottom: 35px;
+                    }
+
+                    .pane-paragraphs-item-field-quellenangabe a {
+                        color: $color-white;
+
+                        @extend .common-button;
+
+                        &:hover {
+                            border-bottom: 1px solid $active-menu;
+                        }
                     }
                 }
 
-                .panel-col-last {
-                    width: 40%;
-                    float: left;
-                    padding-left: 30px;
+                .panel-separator {
+                    display: none;
+                }
+            }
 
-                    .view-right-front-map-teaser .views-row {
-                        width: 100%;
+            .panel-col-last {
+                width: 40%;
+                float: left;
+                padding-left: 30px;
 
-                        .views-field-type {
-                            color: $active-menu;
+                .view-right-front-map-teaser .views-row {
+                    width: 100%;
+
+                    .views-field-type {
+                        color: $active-menu;
+                        font-size: 22px;
+                        font-weight: bold;
+                        padding-bottom: 15px;
+                    }
+
+                    .views-field-title {
+                        padding-bottom: 60px;
+
+                        a {
+                            color: $color-white;
                             font-size: 22px;
-                            font-weight: bold;
-                            padding-bottom: 15px;
-                        }
-
-                        .views-field-title {
-                            padding-bottom: 60px;
-
-                            a {
-                                color: $color-white;
-                                font-size: 22px;
-                                text-decoration: none;
-                            }
-                        }
-
-                        .views-field-view-node a {
-                            @extend .common-button;
-                            color:$color-white;
-							
-                            &:before {                               
-                                content: "\e94a" !important;                                
-                            }
-
-                            &:hover {
-                                border-bottom: 1px solid $active-menu;
-                            }
+                            text-decoration: none;
                         }
                     }
 
-                    .panel-separator {
-                        display: none;
+                    .views-field-view-node a {
+                        @extend .common-button;
+
+                        color: $color-white;
+
+                        &:before {
+                            content: "\e94a" !important;
+                        }
+
+                        &:hover {
+                            border-bottom: 1px solid $active-menu;
+                        }
                     }
                 }
             }
         }
     }
+}
 
-    //--------view-termin----------//
+//--------view-termin----------//
 
+.front {
     .view-termin {
         background: $main-color;
 
@@ -114,12 +113,13 @@
                 clear: both;
                 padding-top: 10px;
                 padding-bottom: 60px;
-				position:relative;
+                position: relative;
 
                 .link-outer-block .link-inner-block-1 {
                     a {
                         @extend .common-button;
-						color:$color-white;
+
+                        color: $color-white;
 
                         &:hover {
                             border-bottom: 1px solid $active-menu;
@@ -129,7 +129,7 @@
             }
         }
     }
-
+}
 
 //-----------------------------//
 
@@ -169,18 +169,17 @@
         .view-footer {
             clear: both;
             padding: 20px 0;
-			
-
 
             .link-outer-block .link-inner-block-1, .link-outer-block .link-inner-block-2 {
                 display: inline-block;
 
                 a {
-				     position:relative !important;
-                     @extend .common-button;
-					 color:$main-color;
-					 bottom:0 !important;
-					 
+                    position: relative !important;
+
+                    @extend .common-button;
+
+                    color: $main-color;
+                    bottom: 0 !important;
 
                     &:hover {
                         border-bottom: 1px solid $active-menu;
@@ -238,8 +237,9 @@
 
                             .field-name-field-quellenangabe {
                                 a {
-                                   @extend .common-button;
-								   color:$main-color;
+                                    @extend .common-button;
+
+                                    color: $main-color;
 
                                     &:hover {
                                         border-bottom: 1px solid $active-menu;
