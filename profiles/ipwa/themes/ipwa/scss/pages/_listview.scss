@@ -232,23 +232,8 @@
                     }
 
                     .views-field-field-quellenangabe a {
-                        color: $color-white;
-                        position: relative;
-                        margin-left: 30px;
-                        border-bottom: 1px solid $color-white;
-                        text-decoration: none;
-                        padding-bottom: 4px;
-
-                        &:before {
-                            font-family: $icomoon;
-                            content: "\e93f";
-                            color: $active-menu;
-                            font-size: 14px;
-                            position: absolute;
-                            left: -20px;
-                            top: 6px;
-                            display: inline-block;
-                        }
+                       @extend .common-button;
+					   color:$color-white;
                     }
                 }
             }
