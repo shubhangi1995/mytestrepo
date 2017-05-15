@@ -6,7 +6,8 @@
 
             .panel-2col {
                 @extend .container;
-                position: relative;         
+
+                position: relative;
                 background: $main-color;
                 padding: 45px;
                 height: 400px;
@@ -17,7 +18,6 @@
                     border-right: 1px solid $color-border;
 
                     .inside {
-                                       
                         margin: 0;
 
                         .pane-paragraphs-item-field-bild {
@@ -54,9 +54,10 @@
                                 top: 6px;
                                 display: inline-block;
                             }
-							&:hover{
-							  border-bottom:1px solid $active-menu;
-							}
+
+                            &:hover {
+                                border-bottom: 1px solid $active-menu;
+                            }
                         }
                     }
 
@@ -71,227 +72,180 @@
                     padding-left: 30px;
 
                     .view-right-front-map-teaser .views-row {
-					
-					.row-container{
+					    width:100%;
                         
-						
-
-                        .views-field-type {
-                            color: $active-menu;
-                            font-size: 22px;
-                            font-weight: bold;
-                            padding-bottom: 15px;
-                        }
-
-                        .views-field-title {
-                            padding-bottom: 60px;
-
-                            a {
-                                color: $color-white;
-                                font-size: 22px;
-                                text-decoration: none;
-                            }
-                        }
-
-                        .views-field-view-node a {
-                            color: $color-white;
-                            font-size: 20px;
-                            position: absolute;
-                            bottom: 50px;
-                            margin-left: 25px;
-                            border-bottom: 1px solid $color-white;
-                            text-decoration: none;
-
-                            &:before {
-                                font-family: $icomoon;
-                                content: "\e94a";
-                                color: $active-menu;
-                                font-size: 14px;
-                                position: absolute;
-                                left: -20px;
-                                top: 6px;
-                                display: inline-block;
-                            }
-							&:hover{
-							  border-bottom:1px solid $active-menu;
-							}
-                        }
-                    }
-
-                    .panel-separator {
-                        display: none;
-                    }
-                }
-            }
-        }}
-		
-		
-		
-		
-}
-//--------view-termin----------//
-
-.view-termin{
-background: $main-color;
-
-.view-sub-wrapper{
-
-.view-header {
-                    
-                        color: $color-white;
-                        padding-bottom: 30px;
-						padding-left:0;
-						padding-top:40px;
-                    
-                }
-	.view-footer {
-                    clear: both;
-                    padding-top: 10px;
-                    padding-bottom:60px;
-
-                    .link-outer-block .link-inner-block-1 {
-                        a {
-                            text-decoration: none;
-                            font-size: 20px;
-                            color: $color-white;
-                            margin-left: 25px;
-                            position: relative;
-                            padding-bottom: 4px;
-                            border-bottom: 1px solid $color-light-grey;
-
-                            &:before {
-                                font-family: $icomoon;
-                                content: "\e93f";
-                                color: $active-menu;
-                                font-size: 14px;
-                                position: absolute;
-                                left: -20px;
-                                top: 6px;
-                                display: inline-block;
-                            }
-							&:hover{
-							  border-bottom:1px solid $active-menu;
-							}
-                        }
-                    }
-                }			
-
-}
-
-}
-
-        //-----------------------------//
-
-        .view-neueste-informationen {
-            background: $color-light-blue;
-
-            .view-sub-wrapper {
-                position: relative;
-                padding: 40px 0;
-
-                @extend .container;
-
-                .view-header {
-                    padding-bottom: 30px;
-
-                    .pane-title {
-                        font-size: 28px;
-                        font-weight: bold;
-                    }
-                }
-
-                .view-content {
-                    margin-left: -15px;
-                    margin-right: -15px;
-
-                    .views-row {
-                        @extend .col-md-4;
-
-                        font-size: 22px;
-
-                        .row-container {
-                            background: $color-white;
-                            padding: 30px;
-                            height: 400px;
-                            margin-bottom: 30px;
-                            position: relative;
-                            cursor: pointer;
-							border: 1px solid $color-white;
-
-                            &:hover {
-                                background: $color-light-blue;
-                                border: 1px solid $color-border;
-                            }
-
-                            .views-field-field-themenzuweisung {
-                                padding-bottom: 30px;
-
-                                img {
-                                    display: inline-block;
-                                    margin-right: 20px;
-                                }
-                            }
-
                             .views-field-type {
                                 color: $active-menu;
+                                font-size: 22px;
                                 font-weight: bold;
-                                padding-bottom: 20px;
+                                padding-bottom: 15px;
                             }
 
                             .views-field-title {
+                                padding-bottom: 60px;
+
                                 a {
+                                    color: $color-white;
+                                    font-size: 22px;
                                     text-decoration: none;
-                                    color: $main-color;
                                 }
                             }
 
-                            .views-field-field-datum {
+                            .views-field-view-node a {
+                                color: $color-white;
+                                font-size: 20px;
                                 position: absolute;
-                                bottom: 30px;
-                                font-size: 17px;
-                                color: $color-light-grey;
+                                bottom: 50px;
+                                margin-left: 25px;
+                                border-bottom: 1px solid $color-white;
+                                text-decoration: none;
+
+                                &:before {
+                                    font-family: $icomoon;
+                                    content: "\e94a";
+                                    color: $active-menu;
+                                    font-size: 14px;
+                                    position: absolute;
+                                    left: -20px;
+                                    top: 6px;
+                                    display: inline-block;
+                                }
+
+                                &:hover {
+                                    border-bottom: 1px solid $active-menu;
+                                }
                             }
                         }
-                    }
-                }
 
-                .view-footer {
-                    clear: both;
-                    padding: 20px 0;
-
-                    .link-outer-block .link-inner-block-1, .link-outer-block .link-inner-block-2 {
-                        display: inline-block;
-
-                        a {
-                            text-decoration: none;
-                            color: $main-color;
-                            font-size: 20px;
-                            margin-right: 15px;
-                            margin-left: 25px;
-                            position: relative;
-                            padding-bottom: 4px;
-                            border-bottom: 1px solid $color-light-grey;
-
-                            &:before {
-                                font-family: $icomoon;
-                                content: "\e93f";
-                                color: $active-menu;
-                                font-size: 14px;
-                                position: absolute;
-                                left: -20px;
-                                top: 6px;
-                                display: inline-block;
-                            }
-							&:hover{
-							 border-bottom:1px solid $active-menu;
-							}
+                        .panel-separator {
+                            display: none;
                         }
                     }
                 }
             }
         }
+    
 
-        
+    //--------view-termin----------//
+
+    .view-termin {
+        background: $main-color;
+
+        .view-sub-wrapper {
+            .view-header {
+                color: $color-white;
+                padding-bottom: 30px;
+                padding-left: 0;
+                padding-top: 40px;
+            }
+
+            .view-footer {
+                clear: both;
+                padding-top: 10px;
+                padding-bottom: 60px;
+
+                .link-outer-block .link-inner-block-1 {
+                    a {
+                        text-decoration: none;
+                        font-size: 20px;
+                        color: $color-white;
+                        margin-left: 25px;
+                        position: relative;
+                        padding-bottom: 4px;
+                        border-bottom: 1px solid $color-light-grey;
+
+                        &:before {
+                            font-family: $icomoon;
+                            content: "\e93f";
+                            color: $active-menu;
+                            font-size: 14px;
+                            position: absolute;
+                            left: -20px;
+                            top: 6px;
+                            display: inline-block;
+                        }
+
+                        &:hover {
+                            border-bottom: 1px solid $active-menu;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+    //-----------------------------//
+
+    .view-neueste-informationen {
+        background: $color-light-blue;
+
+        .view-sub-wrapper {
+            position: relative;
+            padding: 40px 0;
+
+            @extend .container;
+
+            .view-header {
+                padding-bottom: 30px;
+
+                .pane-title {
+                    font-size: 28px;
+                    font-weight: bold;
+                }
+            }
+
+            .view-content .views-row .row-container {
+                .views-field-type {
+                    color: $active-menu;
+                    font-weight: bold;
+                    padding-bottom: 20px;
+                }
+
+                .views-field-field-datum {
+                    position: absolute;
+                    bottom: 30px;
+                    font-size: 17px;
+                    color: $color-light-grey;
+                }
+            }
+
+            .view-footer {
+                clear: both;
+                padding: 20px 0;
+
+                .link-outer-block .link-inner-block-1, .link-outer-block .link-inner-block-2 {
+                    display: inline-block;
+
+                    a {
+                        text-decoration: none;
+                        color: $main-color;
+                        font-size: 20px;
+                        margin-right: 15px;
+                        margin-left: 25px;
+                        position: relative;
+                        padding-bottom: 4px;
+                        border-bottom: 1px solid $color-light-grey;
+
+                        &:before {
+                            font-family: $icomoon;
+                            content: "\e93f";
+                            color: $active-menu;
+                            font-size: 14px;
+                            position: absolute;
+                            left: -20px;
+                            top: 6px;
+                            display: inline-block;
+                        }
+
+                        &:hover {
+                            border-bottom: 1px solid $active-menu;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
 
 //---------------------------------//
 .paragraphs-item-topic-teaser-paragraph {
@@ -359,9 +313,10 @@ background: $main-color;
                                         top: 6px;
                                         display: inline-block;
                                     }
-									&:hover{
-							  border-bottom:1px solid $active-menu;
-							}
+
+                                    &:hover {
+                                        border-bottom: 1px solid $active-menu;
+                                    }
                                 }
                             }
 
@@ -380,7 +335,7 @@ background: $main-color;
         }
     }
 }
-}
+
 //-------------mobile------------//
 @media (max-width: $screen-xs-max) {
     .front {
