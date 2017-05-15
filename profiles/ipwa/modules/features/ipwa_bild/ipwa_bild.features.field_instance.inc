@@ -125,7 +125,7 @@ Erlaubte Dateitypen: png gif jpg jpeg.',
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'inline',
+        'label' => 'hidden',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
