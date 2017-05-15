@@ -259,7 +259,7 @@ function ipwa_publikation_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 10,
+        'weight' => 3,
       ),
       'rss' => array(
         'label' => 'above',
@@ -606,12 +606,9 @@ function ipwa_publikation_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'module' => 'entityreference',
-        'settings' => array(
-          'link' => FALSE,
-        ),
-        'type' => 'entityreference_label',
-        'weight' => 6,
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 5,
       ),
       'rss' => array(
         'label' => 'above',
@@ -887,7 +884,7 @@ function ipwa_publikation_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 12,
+        'weight' => 4,
       ),
       'rss' => array(
         'label' => 'above',

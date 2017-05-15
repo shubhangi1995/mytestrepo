@@ -1021,6 +1021,7 @@ function ipwa_base_views_default_views() {
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
   $handler->display->display_options['title'] = 'Publikation';
+  $handler->display->display_options['use_ajax'] = TRUE;
   $handler->display->display_options['use_more'] = TRUE;
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
@@ -1296,16 +1297,16 @@ function ipwa_base_views_default_views() {
   $handler->display->display_options['relationships']['node_to_file']['table'] = 'file_usage';
   $handler->display->display_options['relationships']['node_to_file']['field'] = 'node_to_file';
   /* Relationship: Entity Reference: Referenced Entity */
-  $handler->display->display_options['relationships']['field_publication_target_id']['id'] = 'field_publication_target_id';
-  $handler->display->display_options['relationships']['field_publication_target_id']['table'] = 'field_data_field_publication';
-  $handler->display->display_options['relationships']['field_publication_target_id']['field'] = 'field_publication_target_id';
-  $handler->display->display_options['relationships']['field_publication_target_id']['required'] = TRUE;
+  $handler->display->display_options['relationships']['field_publikation_target_id']['id'] = 'field_publikation_target_id';
+  $handler->display->display_options['relationships']['field_publikation_target_id']['table'] = 'field_data_field_publikation';
+  $handler->display->display_options['relationships']['field_publikation_target_id']['field'] = 'field_publikation_target_id';
+  $handler->display->display_options['relationships']['field_publikation_target_id']['required'] = TRUE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Content: Titel */
   $handler->display->display_options['fields']['title_1']['id'] = 'title_1';
   $handler->display->display_options['fields']['title_1']['table'] = 'node';
   $handler->display->display_options['fields']['title_1']['field'] = 'title';
-  $handler->display->display_options['fields']['title_1']['relationship'] = 'field_publication_target_id';
+  $handler->display->display_options['fields']['title_1']['relationship'] = 'field_publikation_target_id';
   $handler->display->display_options['fields']['title_1']['label'] = '';
   $handler->display->display_options['fields']['title_1']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title_1']['link_to_node'] = FALSE;
@@ -1313,7 +1314,7 @@ function ipwa_base_views_default_views() {
   $handler->display->display_options['fields']['field_dokument']['id'] = 'field_dokument';
   $handler->display->display_options['fields']['field_dokument']['table'] = 'field_data_field_dokument';
   $handler->display->display_options['fields']['field_dokument']['field'] = 'field_dokument';
-  $handler->display->display_options['fields']['field_dokument']['relationship'] = 'field_publication_target_id';
+  $handler->display->display_options['fields']['field_dokument']['relationship'] = 'field_publikation_target_id';
   $handler->display->display_options['fields']['field_dokument']['label'] = '';
   $handler->display->display_options['fields']['field_dokument']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_dokument']['element_label_colon'] = FALSE;
@@ -1358,7 +1359,7 @@ function ipwa_base_views_default_views() {
     t('last »'),
     t('File'),
     t('Content entity referenced from field_dokumente_und_publikatione'),
-    t('Content referencing Content from field_publication'),
+    t('reverse_field_publication_node'),
     t('All'),
     t('Kommende Veranstaltungen'),
     t('Content entity referenced from field_veranstaltungen'),
@@ -1366,7 +1367,7 @@ function ipwa_base_views_default_views() {
     t('Dokumente und Publikationen'),
     t('PDF'),
     t('publikation'),
-    t('Content entity referenced from field_publication'),
+    t('Content entity referenced from field_publikation'),
     t('Publikation downloaden'),
   );
   $export['related_content'] = $view;

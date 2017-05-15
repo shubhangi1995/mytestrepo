@@ -79,6 +79,39 @@ function ipwa_termin__field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_left_top_wrapper|node|termin|default';
+  $field_group->group_name = 'group_left_top_wrapper';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'termin';
+  $field_group->mode = 'default';
+  $field_group->parent_name = 'group_top_wrapper';
+  $field_group->data = array(
+    'label' => 'Left top wrapper',
+    'weight' => '19',
+    'children' => array(
+      0 => 'field_event_datum',
+      1 => 'field_ort',
+      2 => 'field_zeit',
+    ),
+    'format_type' => 'html-element',
+    'format_settings' => array(
+      'formatter' => '',
+      'instance_settings' => array(
+        'element' => 'div',
+        'show_label' => 0,
+        'label_element' => 'div',
+        'classes' => 'group-left-top-wrapper field-group-html-element',
+        'attributes' => '',
+        'required_fields' => 1,
+        'id' => '',
+      ),
+    ),
+  );
+  $field_groups['group_left_top_wrapper|node|termin|default'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_page_bottom|node|termin|default';
   $field_group->group_name = 'group_page_bottom';
   $field_group->entity_type = 'node';
@@ -125,15 +158,12 @@ function ipwa_termin__field_group_info() {
     'label' => 'Page info',
     'weight' => '0',
     'children' => array(
-      0 => 'field_event_datum',
-      1 => 'field_ort',
-      2 => 'field_quellenangabe',
-      3 => 'field_themenzuweisung',
-      4 => 'field_untertitel',
-      5 => 'field_zeit',
-      6 => 'field_link_zur_anmeldung',
-      7 => 'group_related_ort',
-      8 => 'group_title',
+      0 => 'field_quellenangabe',
+      1 => 'field_themenzuweisung',
+      2 => 'field_untertitel',
+      3 => 'group_related_ort',
+      4 => 'group_title',
+      5 => 'group_top_wrapper',
     ),
     'format_type' => 'html-element',
     'format_settings' => array(
@@ -265,6 +295,37 @@ function ipwa_termin__field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_right_top_wrapper|node|termin|default';
+  $field_group->group_name = 'group_right_top_wrapper';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'termin';
+  $field_group->mode = 'default';
+  $field_group->parent_name = 'group_top_wrapper';
+  $field_group->data = array(
+    'label' => 'Right top wrapper',
+    'weight' => '20',
+    'children' => array(
+      0 => 'field_link_zur_anmeldung',
+    ),
+    'format_type' => 'html-element',
+    'format_settings' => array(
+      'formatter' => '',
+      'instance_settings' => array(
+        'element' => 'div',
+        'show_label' => 0,
+        'label_element' => 'div',
+        'classes' => 'group-right-top-wrapper field-group-html-element',
+        'attributes' => '',
+        'required_fields' => 1,
+        'id' => '',
+      ),
+    ),
+  );
+  $field_groups['group_right_top_wrapper|node|termin|default'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_title|node|termin|default';
   $field_group->group_name = 'group_title';
   $field_group->entity_type = 'node';
@@ -290,17 +351,52 @@ function ipwa_termin__field_group_info() {
   );
   $field_groups['group_title|node|termin|default'] = $field_group;
 
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_top_wrapper|node|termin|default';
+  $field_group->group_name = 'group_top_wrapper';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'termin';
+  $field_group->mode = 'default';
+  $field_group->parent_name = 'group_page_info';
+  $field_group->data = array(
+    'label' => 'top wrapper',
+    'weight' => '5',
+    'children' => array(
+      0 => 'group_left_top_wrapper',
+      1 => 'group_right_top_wrapper',
+    ),
+    'format_type' => 'html-element',
+    'format_settings' => array(
+      'formatter' => '',
+      'instance_settings' => array(
+        'element' => 'div',
+        'show_label' => 0,
+        'label_element' => 'div',
+        'classes' => 'group-top-wrapper field-group-html-element',
+        'attributes' => '',
+        'required_fields' => 1,
+        'id' => '',
+      ),
+    ),
+  );
+  $field_groups['group_top_wrapper|node|termin|default'] = $field_group;
+
   // Translatables
   // Included for use with string extractors like potx.
   t('Body Container');
   t('Body Sub Wrapper');
+  t('Left top wrapper');
   t('Page Bottom');
   t('Page info');
   t('Related doc');
   t('Related event');
   t('Related ort');
   t('Related publication');
+  t('Right top wrapper');
   t('title');
+  t('top wrapper');
 
   return $field_groups;
 }

@@ -12,7 +12,8 @@
  * @params $variables
  *
  */
-function ipwa_preprocess_node(&$variables) {
+function ipwa_preprocess_node(&$variables)
+{
   //For CT 'Bild' or frontpage don't show title
   if ($variables['type'] == 'bild' || drupal_is_front_page()) {
     // Don't show title
@@ -61,13 +62,13 @@ function ipwa_preprocess_node(&$variables) {
   // (mostly will be displayed under date field)
   if (isset($variables['title']) && $variables['title']) {
     $variables['content']['group_page_info']['title'] = array(
-      '#markup' => '<h1 class="page-title">' . $variables['title'] . '</h1>',
-      '#weight' => isset($variables['elements']['#fieldgroups']['group_title']) ? $variables['elements']['#fieldgroups']['group_title']->weight : -1);
+        '#markup' => '<h1 class="page-title">' . $variables['title'] . '</h1>',
+        '#weight' => isset($variables['elements']['#fieldgroups']['group_title']) ? $variables['elements']['#fieldgroups']['group_title']->weight : -1);
   }
 
   if ($variables['type'] == 'termin') {
     // Display of Ort field
-    if(isset($variables['content']['field_ort']) && !empty($variables['content']['field_ort'])) {
+    if (isset($variables['content']['field_ort']) && !empty($variables['content']['field_ort'])) {
       $variables['content']['rel_ort'] = '';
       $variables['content']['rel_ort']['#markup'] = $variables['content']['field_ort'][0]['#markup'];
       $variables['content']['rel_ort']['#weight'] = isset($variables['elements']['#fieldgroups']['group_related_ort']) ? $variables['elements']['#fieldgroups']['group_related_ort']->weight : -1;
@@ -85,8 +86,14 @@ function ipwa_preprocess_node(&$variables) {
       }
     }
   }
+/** for puuting content of field 'descrition to field 'copyright' and to hide field 'descrition' */
+  if ($variables['type'] == 'bild') {
+    if((isset($variables['content']['field_bildbeschreibung']) && !(empty($variables['content']['field_bildbeschreibung']))) || (!empty($variables['content']['copyright']))) {
+      $variables['content']['field_copyright'][0]['#markup'] = $variables['content']['field_bildbeschreibung'][0]['#markup'] . ' <span class ="copyright">' . $variables['content']['field_copyright']['#title'] . ':  ' . $variables['content']['field_copyright'][0]['#markup'] . '</span>';
+      hide($variables['content']['field_bildbeschreibung']);
+    }
+  }
 }
-
 /**
  * Implements ipwa_preprocess_field().
  *
