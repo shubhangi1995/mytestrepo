@@ -465,16 +465,17 @@
 }
 
 .field-name-field-copyright, .field-name-field-videoquelle {
-    .field-label, .field-item {
+	font-size:18px;
+    .copyright {
         font-size: 16px;
         color: $icons-color;
     }
 }
 
-.field-name-field-copyright {
+/* .field-name-field-copyright {
     display: inline-block;
     margin-top: 2px;
-}
+} */
 
 .field-name-field-videounterschrift, .field-name-field-videoquelle {
     margin-bottom: 0;
@@ -867,6 +868,44 @@
         }
     }
 }
+
+
+// Event page datum content
+
+.group-top-wrapper{
+	margin-bottom:40px;
+	overflow:hidden;
+	.group-left-top-wrapper{
+		float:left;
+		 > *{
+			margin-bottom:10px;
+			&:last-child{
+				margin:0;
+			}
+		 }
+	}
+	.group-right-top-wrapper{
+		float:right;
+	}
+}
+
+.field-name-field-link-zur-anmeldung{
+	a{
+		@extend .common-button;
+		position:relative;
+		bottom:auto;
+		border:none;
+		background-color:$color-white; 
+		padding:14px 40px 14px 55px;
+		margin:26px 0px 0 0;
+		float:right; 
+		&::before{
+			left: 25px;
+			top: 19px;
+		}
+	}
+}
+
 
 //.field-name-field-quellenangabe{
 .external-link {

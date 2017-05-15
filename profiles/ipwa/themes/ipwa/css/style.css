@@ -7697,7 +7697,7 @@ header.navbar-default {
       color: #949d9e; }
 
 /* line 288, ../scss/pages/_common.scss */
-.common-button, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col .panel-col-first .inside .pane-paragraphs-item-field-quellenangabe a, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col .panel-col-last .view-right-front-map-teaser .views-row .views-field-view-node a, .view-termin .view-sub-wrapper .view-footer .link-outer-block .link-inner-block-1 a, .view-neueste-informationen .view-sub-wrapper .view-footer .link-outer-block .link-inner-block-1 a, .view-neueste-informationen .view-sub-wrapper .view-footer .link-outer-block .link-inner-block-2 a, .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items > .field-item .field-collection-view .content .field-name-field-quellenangabe a, .view-map-teaser .view-sub-wrapper .view-content .views-row .row-container .views-field-field-quellenangabe a {
+.common-button, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col .panel-col-first .inside .pane-paragraphs-item-field-quellenangabe a, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col .panel-col-last .view-right-front-map-teaser .views-row .views-field-view-node a, .view-termin .view-sub-wrapper .view-footer .link-outer-block .link-inner-block-1 a, .view-neueste-informationen .view-sub-wrapper .view-footer .link-outer-block .link-inner-block-1 a, .view-neueste-informationen .view-sub-wrapper .view-footer .link-outer-block .link-inner-block-2 a, .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items > .field-item .field-collection-view .content .field-name-field-quellenangabe a, .field-name-field-link-zur-anmeldung a, .view-map-teaser .view-sub-wrapper .view-content .views-row .row-container .views-field-field-quellenangabe a {
   font-size: 20px;
   text-decoration: none;
   bottom: 30px;
@@ -7706,7 +7706,7 @@ header.navbar-default {
   padding-bottom: 4px;
   border-bottom: 1px solid #949d9e; }
   /* line 297, ../scss/pages/_common.scss */
-  .common-button:before, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col .panel-col-first .inside .pane-paragraphs-item-field-quellenangabe a:before, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col .panel-col-last .view-right-front-map-teaser .views-row .views-field-view-node a:before, .view-termin .view-sub-wrapper .view-footer .link-outer-block .link-inner-block-1 a:before, .view-neueste-informationen .view-sub-wrapper .view-footer .link-outer-block .link-inner-block-1 a:before, .view-neueste-informationen .view-sub-wrapper .view-footer .link-outer-block .link-inner-block-2 a:before, .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items > .field-item .field-collection-view .content .field-name-field-quellenangabe a:before, .view-map-teaser .view-sub-wrapper .view-content .views-row .row-container .views-field-field-quellenangabe a:before {
+  .common-button:before, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col .panel-col-first .inside .pane-paragraphs-item-field-quellenangabe a:before, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col .panel-col-last .view-right-front-map-teaser .views-row .views-field-view-node a:before, .view-termin .view-sub-wrapper .view-footer .link-outer-block .link-inner-block-1 a:before, .view-neueste-informationen .view-sub-wrapper .view-footer .link-outer-block .link-inner-block-1 a:before, .view-neueste-informationen .view-sub-wrapper .view-footer .link-outer-block .link-inner-block-2 a:before, .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items > .field-item .field-collection-view .content .field-name-field-quellenangabe a:before, .field-name-field-link-zur-anmeldung a:before, .view-map-teaser .view-sub-wrapper .view-content .views-row .row-container .views-field-field-quellenangabe a:before {
     font-family: "icomoon";
     content: "\e93f";
     color: #e74712;
@@ -8045,62 +8045,64 @@ header.navbar-default {
 .field .field-label {
   font-weight: normal; }
 
-/* line 468, ../scss/pages/_singleview.scss */
-.field-name-field-copyright .field-label, .field-name-field-copyright .field-item, .field-name-field-videoquelle .field-label, .field-name-field-videoquelle .field-item {
-  font-size: 16px;
-  color: #919BAA; }
+/* line 467, ../scss/pages/_singleview.scss */
+.field-name-field-copyright, .field-name-field-videoquelle {
+  font-size: 18px; }
+  /* line 469, ../scss/pages/_singleview.scss */
+  .field-name-field-copyright .copyright, .field-name-field-videoquelle .copyright {
+    font-size: 16px;
+    color: #919BAA; }
 
-/* line 474, ../scss/pages/_singleview.scss */
-.field-name-field-copyright {
-  display: inline-block;
-  margin-top: 2px; }
-
-/* line 479, ../scss/pages/_singleview.scss */
+/* .field-name-field-copyright {
+    display: inline-block;
+    margin-top: 2px;
+} */
+/* line 480, ../scss/pages/_singleview.scss */
 .field-name-field-videounterschrift, .field-name-field-videoquelle {
   margin-bottom: 0; }
 
-/* line 484, ../scss/pages/_singleview.scss */
+/* line 485, ../scss/pages/_singleview.scss */
 .group-page-bottom > * {
   margin-bottom: 80px; }
-/* line 488, ../scss/pages/_singleview.scss */
+/* line 489, ../scss/pages/_singleview.scss */
 .group-page-bottom .view-title, .group-page-bottom .field-label {
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 30px; }
-/* line 494, ../scss/pages/_singleview.scss */
+/* line 495, ../scss/pages/_singleview.scss */
 .group-page-bottom a {
   color: #273753;
   text-decoration: none; }
-/* line 500, ../scss/pages/_singleview.scss */
+/* line 501, ../scss/pages/_singleview.scss */
 .group-page-bottom .view-sub-wrapper .views-row {
   border-bottom: 1px solid #d2d6dc;
   padding-bottom: 15px;
   margin-bottom: 15px; }
-  /* line 505, ../scss/pages/_singleview.scss */
+  /* line 506, ../scss/pages/_singleview.scss */
   .group-page-bottom .view-sub-wrapper .views-row:last-child {
     border: none;
     padding-bottom: 0;
     margin-bottom: 0; }
-  /* line 513, ../scss/pages/_singleview.scss */
+  /* line 514, ../scss/pages/_singleview.scss */
   .group-page-bottom .view-sub-wrapper .views-row .views-field:last-child .field-content {
     font-size: 16px;
     color: #3c506e; }
-/* line 524, ../scss/pages/_singleview.scss */
+/* line 525, ../scss/pages/_singleview.scss */
 .group-page-bottom > .field .field-items .field-item {
   border-bottom: 1px solid #d2d6dc;
   padding-bottom: 15px;
   margin-bottom: 15px; }
-  /* line 529, ../scss/pages/_singleview.scss */
+  /* line 530, ../scss/pages/_singleview.scss */
   .group-page-bottom > .field .field-items .field-item:last-child {
     border: none;
     padding-bottom: 0;
     margin-bottom: 0; }
 
-/* line 546, ../scss/pages/_singleview.scss */
+/* line 547, ../scss/pages/_singleview.scss */
 .view-id-related_content.view-display-id-block_2 .views-row .row-container .views-field .field-content a {
   padding-left: 35px;
   position: relative; }
-  /* line 550, ../scss/pages/_singleview.scss */
+  /* line 551, ../scss/pages/_singleview.scss */
   .view-id-related_content.view-display-id-block_2 .views-row .row-container .views-field .field-content a::before {
     font-family: "icomoon";
     content: "\e944";
@@ -8109,16 +8111,16 @@ header.navbar-default {
     left: 0;
     position: absolute;
     top: 6px; }
-/* line 562, ../scss/pages/_singleview.scss */
+/* line 563, ../scss/pages/_singleview.scss */
 .view-id-related_content.view-display-id-block_2 .views-row .row-container .views-field:last-child {
   padding-left: 35px; }
 
-/* line 576, ../scss/pages/_singleview.scss */
+/* line 577, ../scss/pages/_singleview.scss */
 .field-name-field-meldungen-zum-thema .field-items .field-item a, .field-name-field-initiatoren-zum-thema .field-items .field-item a, .field-name-field-projekte-zum-thema .field-items .field-item a, .field-name-field-f-rderbekanntmachungen .field-items .field-item a {
   position: relative;
   display: inline-block;
   padding-left: 35px; }
-  /* line 581, ../scss/pages/_singleview.scss */
+  /* line 582, ../scss/pages/_singleview.scss */
   .field-name-field-meldungen-zum-thema .field-items .field-item a::before, .field-name-field-initiatoren-zum-thema .field-items .field-item a::before, .field-name-field-projekte-zum-thema .field-items .field-item a::before, .field-name-field-f-rderbekanntmachungen .field-items .field-item a::before {
     font-family: "icomoon";
     content: "\e93f";
@@ -8128,7 +8130,7 @@ header.navbar-default {
     position: absolute;
     top: 6px; }
 
-/* line 601, ../scss/pages/_singleview.scss */
+/* line 602, ../scss/pages/_singleview.scss */
 .view-id-related_content.view-display-id-block_1 .views-row .row-container .views-field {
                     /* &.views-field-field-event-datum {
                         float: left;
@@ -8139,194 +8141,194 @@ header.navbar-default {
                             font-weight: bold;
                         }
                     }  */ }
-  /* line 613, ../scss/pages/_singleview.scss */
+  /* line 614, ../scss/pages/_singleview.scss */
   .view-id-related_content.view-display-id-block_1 .views-row .row-container .views-field .field-content {
     font-size: 22px; }
-  /* line 618, ../scss/pages/_singleview.scss */
+  /* line 619, ../scss/pages/_singleview.scss */
   .view-id-related_content.view-display-id-block_1 .views-row .row-container .views-field .field-event-datum .date-display-range {
     float: left;
     margin-right: 8px; }
-  /* line 623, ../scss/pages/_singleview.scss */
+  /* line 624, ../scss/pages/_singleview.scss */
   .view-id-related_content.view-display-id-block_1 .views-row .row-container .views-field .field-event-datum * {
     color: #e74712;
     font-weight: bold; }
-  /* line 629, ../scss/pages/_singleview.scss */
+  /* line 630, ../scss/pages/_singleview.scss */
   .view-id-related_content.view-display-id-block_1 .views-row .row-container .views-field .date-display-single {
     color: #e74712;
     margin-right: 8px;
     font-weight: bold; }
 
-/* line 642, ../scss/pages/_singleview.scss */
+/* line 643, ../scss/pages/_singleview.scss */
 .view-latest-content-doorpage {
   padding-top: 50px; }
-  /* line 645, ../scss/pages/_singleview.scss */
+  /* line 646, ../scss/pages/_singleview.scss */
   .view-latest-content-doorpage > .view-sub-wrapper {
     padding: 0; }
-    /* line 650, ../scss/pages/_singleview.scss */
+    /* line 651, ../scss/pages/_singleview.scss */
     .view-latest-content-doorpage > .view-sub-wrapper .left-block {
       width: 70%;
       float: left; }
-      /* line 654, ../scss/pages/_singleview.scss */
+      /* line 655, ../scss/pages/_singleview.scss */
       .view-latest-content-doorpage > .view-sub-wrapper .left-block .view-header {
         padding-bottom: 30px;
         padding-top: 60px;
         font-size: 28px; }
-      /* line 660, ../scss/pages/_singleview.scss */
+      /* line 661, ../scss/pages/_singleview.scss */
       .view-latest-content-doorpage > .view-sub-wrapper .left-block .inner-wrapper {
         width: 45%;
         float: left;
         margin-right: 5%; }
-        /* line 666, ../scss/pages/_singleview.scss */
+        /* line 667, ../scss/pages/_singleview.scss */
         .view-latest-content-doorpage > .view-sub-wrapper .left-block .inner-wrapper .view-content .views-row .row-container {
           background: #ffffff;
           height: 350px;
           padding: 30px;
           position: relative; }
-          /* line 672, ../scss/pages/_singleview.scss */
+          /* line 673, ../scss/pages/_singleview.scss */
           .view-latest-content-doorpage > .view-sub-wrapper .left-block .inner-wrapper .view-content .views-row .row-container .views-field-field-themenzuweisung {
             margin-bottom: 30px; }
-            /* line 675, ../scss/pages/_singleview.scss */
+            /* line 676, ../scss/pages/_singleview.scss */
             .view-latest-content-doorpage > .view-sub-wrapper .left-block .inner-wrapper .view-content .views-row .row-container .views-field-field-themenzuweisung img {
               display: inline-block;
               margin-right: 10px; }
-          /* line 681, ../scss/pages/_singleview.scss */
+          /* line 682, ../scss/pages/_singleview.scss */
           .view-latest-content-doorpage > .view-sub-wrapper .left-block .inner-wrapper .view-content .views-row .row-container .views-field-type {
             color: #e74712;
             font-weight: bold;
             padding-bottom: 15px; }
-          /* line 687, ../scss/pages/_singleview.scss */
+          /* line 688, ../scss/pages/_singleview.scss */
           .view-latest-content-doorpage > .view-sub-wrapper .left-block .inner-wrapper .view-content .views-row .row-container .views-field-title {
             padding-bottom: 70px; }
-            /* line 690, ../scss/pages/_singleview.scss */
+            /* line 691, ../scss/pages/_singleview.scss */
             .view-latest-content-doorpage > .view-sub-wrapper .left-block .inner-wrapper .view-content .views-row .row-container .views-field-title a {
               text-decoration: none;
               color: #273753; }
-          /* line 696, ../scss/pages/_singleview.scss */
+          /* line 697, ../scss/pages/_singleview.scss */
           .view-latest-content-doorpage > .view-sub-wrapper .left-block .inner-wrapper .view-content .views-row .row-container .views-field-field-datum {
             position: absolute;
             bottom: 30px; }
-            /* line 700, ../scss/pages/_singleview.scss */
+            /* line 701, ../scss/pages/_singleview.scss */
             .view-latest-content-doorpage > .view-sub-wrapper .left-block .inner-wrapper .view-content .views-row .row-container .views-field-field-datum .date-display-single {
               font-size: 17px;
               color: #949d9e; }
-      /* line 709, ../scss/pages/_singleview.scss */
+      /* line 710, ../scss/pages/_singleview.scss */
       .view-latest-content-doorpage > .view-sub-wrapper .left-block .view-footer {
         padding-top: 30px;
         padding-bottom: 60px; }
-        /* line 713, ../scss/pages/_singleview.scss */
+        /* line 714, ../scss/pages/_singleview.scss */
         .view-latest-content-doorpage > .view-sub-wrapper .left-block .view-footer a {
           text-decoration: none;
           color: #273753;
           font-size: 20px;
           position: relative;
           padding-left: 30px; }
-          /* line 720, ../scss/pages/_singleview.scss */
+          /* line 721, ../scss/pages/_singleview.scss */
           .view-latest-content-doorpage > .view-sub-wrapper .left-block .view-footer a:before {
             content: "arrow_forward";
             color: #e74712;
             position: absolute;
             top: 4px;
             left: 0; }
-      /* line 732, ../scss/pages/_singleview.scss */
+      /* line 733, ../scss/pages/_singleview.scss */
       .view-latest-content-doorpage > .view-sub-wrapper .left-block > .view-latest-content-doorpage {
         padding: 0;
         width: 45%;
         float: left;
         margin-right: 5%; }
-        /* line 738, ../scss/pages/_singleview.scss */
+        /* line 739, ../scss/pages/_singleview.scss */
         .view-latest-content-doorpage > .view-sub-wrapper .left-block > .view-latest-content-doorpage .view-sub-wrapper {
           width: auto; }
-          /* line 742, ../scss/pages/_singleview.scss */
+          /* line 743, ../scss/pages/_singleview.scss */
           .view-latest-content-doorpage > .view-sub-wrapper .left-block > .view-latest-content-doorpage .view-sub-wrapper .view-content .views-row .row-container {
             background: #ffffff;
             height: 350px;
             padding: 30px;
             position: relative; }
-            /* line 748, ../scss/pages/_singleview.scss */
+            /* line 749, ../scss/pages/_singleview.scss */
             .view-latest-content-doorpage > .view-sub-wrapper .left-block > .view-latest-content-doorpage .view-sub-wrapper .view-content .views-row .row-container .views-field-field-themenzuweisung {
               margin-bottom: 30px; }
-              /* line 751, ../scss/pages/_singleview.scss */
+              /* line 752, ../scss/pages/_singleview.scss */
               .view-latest-content-doorpage > .view-sub-wrapper .left-block > .view-latest-content-doorpage .view-sub-wrapper .view-content .views-row .row-container .views-field-field-themenzuweisung img {
                 display: inline-block;
                 margin-right: 10px; }
-            /* line 757, ../scss/pages/_singleview.scss */
+            /* line 758, ../scss/pages/_singleview.scss */
             .view-latest-content-doorpage > .view-sub-wrapper .left-block > .view-latest-content-doorpage .view-sub-wrapper .view-content .views-row .row-container .views-field-type {
               color: #e74712;
               font-weight: bold;
               padding-bottom: 15px; }
-            /* line 763, ../scss/pages/_singleview.scss */
+            /* line 764, ../scss/pages/_singleview.scss */
             .view-latest-content-doorpage > .view-sub-wrapper .left-block > .view-latest-content-doorpage .view-sub-wrapper .view-content .views-row .row-container .views-field-title {
               padding-bottom: 70px; }
-              /* line 766, ../scss/pages/_singleview.scss */
+              /* line 767, ../scss/pages/_singleview.scss */
               .view-latest-content-doorpage > .view-sub-wrapper .left-block > .view-latest-content-doorpage .view-sub-wrapper .view-content .views-row .row-container .views-field-title a {
                 text-decoration: none;
                 color: #273753; }
-            /* line 772, ../scss/pages/_singleview.scss */
+            /* line 773, ../scss/pages/_singleview.scss */
             .view-latest-content-doorpage > .view-sub-wrapper .left-block > .view-latest-content-doorpage .view-sub-wrapper .view-content .views-row .row-container .views-field-field-datum {
               position: absolute;
               bottom: 30px; }
-              /* line 776, ../scss/pages/_singleview.scss */
+              /* line 777, ../scss/pages/_singleview.scss */
               .view-latest-content-doorpage > .view-sub-wrapper .left-block > .view-latest-content-doorpage .view-sub-wrapper .view-content .views-row .row-container .views-field-field-datum .date-display-single {
                 font-size: 17px;
                 color: #949d9e; }
-    /* line 787, ../scss/pages/_singleview.scss */
+    /* line 788, ../scss/pages/_singleview.scss */
     .view-latest-content-doorpage > .view-sub-wrapper > .view-latest-content-doorpage {
       padding: 0;
       width: 30%;
       float: left; }
-      /* line 792, ../scss/pages/_singleview.scss */
+      /* line 793, ../scss/pages/_singleview.scss */
       .view-latest-content-doorpage > .view-sub-wrapper > .view-latest-content-doorpage .view-sub-wrapper {
         width: auto; }
-        /* line 795, ../scss/pages/_singleview.scss */
+        /* line 796, ../scss/pages/_singleview.scss */
         .view-latest-content-doorpage > .view-sub-wrapper > .view-latest-content-doorpage .view-sub-wrapper .view-header {
           padding-bottom: 30px;
           padding-top: 60px;
           font-size: 28px; }
-        /* line 802, ../scss/pages/_singleview.scss */
+        /* line 803, ../scss/pages/_singleview.scss */
         .view-latest-content-doorpage > .view-sub-wrapper > .view-latest-content-doorpage .view-sub-wrapper .view-content .views-row .row-container {
           background: #ffffff;
           height: 350px;
           padding: 30px;
           position: relative; }
-          /* line 808, ../scss/pages/_singleview.scss */
+          /* line 809, ../scss/pages/_singleview.scss */
           .view-latest-content-doorpage > .view-sub-wrapper > .view-latest-content-doorpage .view-sub-wrapper .view-content .views-row .row-container .views-field-field-themenzuweisung {
             margin-bottom: 30px; }
-            /* line 811, ../scss/pages/_singleview.scss */
+            /* line 812, ../scss/pages/_singleview.scss */
             .view-latest-content-doorpage > .view-sub-wrapper > .view-latest-content-doorpage .view-sub-wrapper .view-content .views-row .row-container .views-field-field-themenzuweisung img {
               display: inline-block;
               margin-right: 10px; }
-          /* line 817, ../scss/pages/_singleview.scss */
+          /* line 818, ../scss/pages/_singleview.scss */
           .view-latest-content-doorpage > .view-sub-wrapper > .view-latest-content-doorpage .view-sub-wrapper .view-content .views-row .row-container .views-field-type {
             color: #e74712;
             font-weight: bold;
             padding-bottom: 15px; }
-          /* line 823, ../scss/pages/_singleview.scss */
+          /* line 824, ../scss/pages/_singleview.scss */
           .view-latest-content-doorpage > .view-sub-wrapper > .view-latest-content-doorpage .view-sub-wrapper .view-content .views-row .row-container .views-field-title {
             padding-bottom: 70px; }
-            /* line 826, ../scss/pages/_singleview.scss */
+            /* line 827, ../scss/pages/_singleview.scss */
             .view-latest-content-doorpage > .view-sub-wrapper > .view-latest-content-doorpage .view-sub-wrapper .view-content .views-row .row-container .views-field-title a {
               text-decoration: none;
               color: #273753; }
-          /* line 832, ../scss/pages/_singleview.scss */
+          /* line 833, ../scss/pages/_singleview.scss */
           .view-latest-content-doorpage > .view-sub-wrapper > .view-latest-content-doorpage .view-sub-wrapper .view-content .views-row .row-container .views-field-field-ort {
             position: absolute;
             bottom: 30px; }
-            /* line 836, ../scss/pages/_singleview.scss */
+            /* line 837, ../scss/pages/_singleview.scss */
             .view-latest-content-doorpage > .view-sub-wrapper > .view-latest-content-doorpage .view-sub-wrapper .view-content .views-row .row-container .views-field-field-ort .field-content {
               font-size: 17px;
               color: #949d9e; }
-        /* line 844, ../scss/pages/_singleview.scss */
+        /* line 845, ../scss/pages/_singleview.scss */
         .view-latest-content-doorpage > .view-sub-wrapper > .view-latest-content-doorpage .view-sub-wrapper .view-footer {
           padding-top: 30px;
           padding-bottom: 60px; }
-          /* line 848, ../scss/pages/_singleview.scss */
+          /* line 849, ../scss/pages/_singleview.scss */
           .view-latest-content-doorpage > .view-sub-wrapper > .view-latest-content-doorpage .view-sub-wrapper .view-footer a {
             text-decoration: none;
             color: #273753;
             font-size: 20px;
             position: relative;
             padding-left: 30px; }
-            /* line 855, ../scss/pages/_singleview.scss */
+            /* line 856, ../scss/pages/_singleview.scss */
             .view-latest-content-doorpage > .view-sub-wrapper > .view-latest-content-doorpage .view-sub-wrapper .view-footer a:before {
               content: "arrow_forward";
               color: #e74712;
@@ -8334,14 +8336,45 @@ header.navbar-default {
               top: 4px;
               left: 0; }
 
-/* line 872, ../scss/pages/_singleview.scss */
+/* line 875, ../scss/pages/_singleview.scss */
+.group-top-wrapper {
+  margin-bottom: 40px;
+  overflow: hidden; }
+  /* line 878, ../scss/pages/_singleview.scss */
+  .group-top-wrapper .group-left-top-wrapper {
+    float: left; }
+    /* line 880, ../scss/pages/_singleview.scss */
+    .group-top-wrapper .group-left-top-wrapper > * {
+      margin-bottom: 10px; }
+      /* line 882, ../scss/pages/_singleview.scss */
+      .group-top-wrapper .group-left-top-wrapper > *:last-child {
+        margin: 0; }
+  /* line 887, ../scss/pages/_singleview.scss */
+  .group-top-wrapper .group-right-top-wrapper {
+    float: right; }
+
+/* line 893, ../scss/pages/_singleview.scss */
+.field-name-field-link-zur-anmeldung a {
+  position: relative;
+  bottom: auto;
+  border: none;
+  background-color: #ffffff;
+  padding: 14px 40px 14px 55px;
+  margin: 26px 0px 0 0;
+  float: right; }
+  /* line 902, ../scss/pages/_singleview.scss */
+  .field-name-field-link-zur-anmeldung a::before {
+    left: 25px;
+    top: 19px; }
+
+/* line 911, ../scss/pages/_singleview.scss */
 .external-link {
   color: #273753;
   padding-left: 35px;
   text-decoration: none;
   font-size: 18px;
   position: relative; }
-  /* line 879, ../scss/pages/_singleview.scss */
+  /* line 918, ../scss/pages/_singleview.scss */
   .external-link::before {
     left: 0;
     position: absolute;
@@ -8350,7 +8383,7 @@ header.navbar-default {
     content: "\e948";
     color: #919BAA;
     font-size: 16px; }
-  /* line 889, ../scss/pages/_singleview.scss */
+  /* line 928, ../scss/pages/_singleview.scss */
   .external-link .ext {
     display: none; }
 
