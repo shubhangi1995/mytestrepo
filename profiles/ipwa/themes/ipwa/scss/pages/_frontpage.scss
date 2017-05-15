@@ -1,12 +1,11 @@
 //-----------------------------------//
-.front {
+
     .field-name-field-anzuzeigende-seitenmodule {
         .panelizer-view-mode {
             padding: 60px 0;
 
             .panel-2col {
                 @extend .container;
-
                 position: relative;
                 background: $main-color;
                 padding: 45px;
@@ -130,7 +129,7 @@
             }
         }
     }
-}
+
 
 //-----------------------------//
 
@@ -170,15 +169,18 @@
         .view-footer {
             clear: both;
             padding: 20px 0;
-			position:relative;
+			
 
 
             .link-outer-block .link-inner-block-1, .link-outer-block .link-inner-block-2 {
                 display: inline-block;
 
                 a {
+				     position:relative !important;
                      @extend .common-button;
 					 color:$main-color;
+					 bottom:0 !important;
+					 
 
                     &:hover {
                         border-bottom: 1px solid $active-menu;
