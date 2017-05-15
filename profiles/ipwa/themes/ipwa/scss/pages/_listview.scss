@@ -181,78 +181,74 @@
             font-size: 22px;
             font-weight: bold;
         }
-}}
-        
-       
-        
+    }
+}
 
-        // view-map-teaser //
+// view-map-teaser //
 
-        .view-map-teaser {
-            clear: both;
+.view-map-teaser {
+    clear: both;
 
-            .view-sub-wrapper {
-                .view-content {
-                    margin: 0;
+    .view-sub-wrapper {
+        .view-content {
+            margin: 0;
 
-                    .views-row {
-                        @extend .col-md-8;
+            .views-row {
+                @extend .col-md-8;
 
-                        background: $main-color;
+                background: $main-color;
 
-                        .row-container {
-                            background: none;
-                            height: auto;
-                            margin-bottom: 0;
-                            padding: 45px 150px 45px 50px;
-							border:none;
+                .row-container {
+                    background: none;
+                    height: auto;
+                    margin-bottom: 0;
+                    padding: 45px 150px 45px 50px;
+                    border: none;
 
-                            .views-field-field-bild {
-                                padding-bottom: 20px;
+                    .views-field-field-bild {
+                        padding-bottom: 20px;
 
-                                img {
-                                    color: $active-menu;
-                                }
-                            }
+                        img {
+                            color: $active-menu;
+                        }
+                    }
 
-                            .views-field-field-paragraph-title {
-                                color: $color-white;
-                                font-size: 38px;
-                                font-weight: bold;
-                                padding-bottom: 20px;
-                            }
+                    .views-field-field-paragraph-title {
+                        color: $color-white;
+                        font-size: 38px;
+                        font-weight: bold;
+                        padding-bottom: 20px;
+                    }
 
-                            .views-field-field-flie-text-bereich {
-                                color: $color-white;
-                                padding-bottom: 35px;
-                            }
+                    .views-field-field-flie-text-bereich {
+                        color: $color-white;
+                        padding-bottom: 35px;
+                    }
 
-                            .views-field-field-quellenangabe a {
-                                color: $color-white;
-                                position: relative;
-                                margin-left: 30px;
-                                border-bottom: 1px solid $color-white;
-                                text-decoration: none;
-                                padding-bottom: 4px;
+                    .views-field-field-quellenangabe a {
+                        color: $color-white;
+                        position: relative;
+                        margin-left: 30px;
+                        border-bottom: 1px solid $color-white;
+                        text-decoration: none;
+                        padding-bottom: 4px;
 
-                                &:before {
-                                    font-family: $icomoon;
-                                    content: "\e93f";
-                                    color: $active-menu;
-                                    font-size: 14px;
-                                    position: absolute;
-                                    left: -20px;
-                                    top: 6px;
-                                    display: inline-block;
-                                }
-                            }
+                        &:before {
+                            font-family: $icomoon;
+                            content: "\e93f";
+                            color: $active-menu;
+                            font-size: 14px;
+                            position: absolute;
+                            left: -20px;
+                            top: 6px;
+                            display: inline-block;
                         }
                     }
                 }
             }
         }
- 
-
+    }
+}
 
 //only-aktuelles//
 
@@ -376,10 +372,10 @@
         .views-exposed-form .views-exposed-widgets {
             #edit-term-node-tid-depth-wrapper {
                 width: 80%;
-				float:left;
-				padding:0;
+                float: left;
+                padding: 0;
                 clear: both;
-				margin-bottom:30px;
+                margin-bottom: 30px;
 
                 .form-item {
                     .form-type-bef-link {
@@ -393,7 +389,6 @@
                             text-decoration: none;
                             color: $main-color;
                             margin-right: 60px;
-                           
 
                             &.active {
                                 border-bottom: 1px Solid $active-menu;
@@ -402,34 +397,33 @@
                     }
                 }
             }
-			
-			.calendar-link{
-			  width:20%;
-			  float:left;
-			  text-align:right;
-			  position:relative;
-			  margin-bottom:30px;
-			   a{
-			    text-decoration:none;
-				padding-bottom:4px;
-				border-bottom:1px solid $color-light-grey;
-				color:$main-color;
-				font-weight:bold;
-				
-				&:before{
-				   content:'\e949';
-				   font-family: $icomoon;                                        
-                                        color: $active-menu;
-                                        font-size: 14px;
-                                        position: absolute;
-                                        left: 40px;
-                                        top: 9px;
-                                        display: inline-block;				
-				}
-				
-			   }
-			
-			}
+
+            .calendar-link {
+                width: 20%;
+                float: left;
+                text-align: right;
+                position: relative;
+                margin-bottom: 30px;
+
+                a {
+                    text-decoration: none;
+                    padding-bottom: 4px;
+                    border-bottom: 1px solid $color-light-grey;
+                    color: $main-color;
+                    font-weight: bold;
+
+                    &:before {
+                        content: '\e949';
+                        font-family: $icomoon;
+                        color: $active-menu;
+                        font-size: 14px;
+                        position: absolute;
+                        left: 40px;
+                        top: 9px;
+                        display: inline-block;
+                    }
+                }
+            }
 
             .views-widget-sort-by {
                 float: right;

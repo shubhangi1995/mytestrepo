@@ -72,59 +72,58 @@
                     padding-left: 30px;
 
                     .view-right-front-map-teaser .views-row {
-					    width:100%;
-                        
-                            .views-field-type {
-                                color: $active-menu;
-                                font-size: 22px;
-                                font-weight: bold;
-                                padding-bottom: 15px;
-                            }
+                        width: 100%;
 
-                            .views-field-title {
-                                padding-bottom: 60px;
+                        .views-field-type {
+                            color: $active-menu;
+                            font-size: 22px;
+                            font-weight: bold;
+                            padding-bottom: 15px;
+                        }
 
-                                a {
-                                    color: $color-white;
-                                    font-size: 22px;
-                                    text-decoration: none;
-                                }
-                            }
+                        .views-field-title {
+                            padding-bottom: 60px;
 
-                            .views-field-view-node a {
+                            a {
                                 color: $color-white;
-                                font-size: 20px;
-                                position: absolute;
-                                bottom: 50px;
-                                margin-left: 25px;
-                                border-bottom: 1px solid $color-white;
+                                font-size: 22px;
                                 text-decoration: none;
-
-                                &:before {
-                                    font-family: $icomoon;
-                                    content: "\e94a";
-                                    color: $active-menu;
-                                    font-size: 14px;
-                                    position: absolute;
-                                    left: -20px;
-                                    top: 6px;
-                                    display: inline-block;
-                                }
-
-                                &:hover {
-                                    border-bottom: 1px solid $active-menu;
-                                }
                             }
                         }
 
-                        .panel-separator {
-                            display: none;
+                        .views-field-view-node a {
+                            color: $color-white;
+                            font-size: 20px;
+                            position: absolute;
+                            bottom: 50px;
+                            margin-left: 25px;
+                            border-bottom: 1px solid $color-white;
+                            text-decoration: none;
+
+                            &:before {
+                                font-family: $icomoon;
+                                content: "\e94a";
+                                color: $active-menu;
+                                font-size: 14px;
+                                position: absolute;
+                                left: -20px;
+                                top: 6px;
+                                display: inline-block;
+                            }
+
+                            &:hover {
+                                border-bottom: 1px solid $active-menu;
+                            }
                         }
+                    }
+
+                    .panel-separator {
+                        display: none;
                     }
                 }
             }
         }
-    
+    }
 
     //--------view-termin----------//
 
@@ -174,78 +173,78 @@
         }
     }
 }
-    //-----------------------------//
 
-    .view-neueste-informationen {
-        background: $color-light-blue;
+//-----------------------------//
 
-        .view-sub-wrapper {
-            position: relative;
-            padding: 40px 0;
+.view-neueste-informationen {
+    background: $color-light-blue;
 
-            @extend .container;
+    .view-sub-wrapper {
+        position: relative;
+        padding: 40px 0;
 
-            .view-header {
-                padding-bottom: 30px;
+        @extend .container;
 
-                .pane-title {
-                    font-size: 28px;
-                    font-weight: bold;
-                }
+        .view-header {
+            padding-bottom: 30px;
+
+            .pane-title {
+                font-size: 28px;
+                font-weight: bold;
+            }
+        }
+
+        .view-content .views-row .row-container {
+            .views-field-type {
+                color: $active-menu;
+                font-weight: bold;
+                padding-bottom: 20px;
             }
 
-            .view-content .views-row .row-container {
-                .views-field-type {
-                    color: $active-menu;
-                    font-weight: bold;
-                    padding-bottom: 20px;
-                }
-
-                .views-field-field-datum {
-                    position: absolute;
-                    bottom: 30px;
-                    font-size: 17px;
-                    color: $color-light-grey;
-                }
+            .views-field-field-datum {
+                position: absolute;
+                bottom: 30px;
+                font-size: 17px;
+                color: $color-light-grey;
             }
+        }
 
-            .view-footer {
-                clear: both;
-                padding: 20px 0;
+        .view-footer {
+            clear: both;
+            padding: 20px 0;
 
-                .link-outer-block .link-inner-block-1, .link-outer-block .link-inner-block-2 {
-                    display: inline-block;
+            .link-outer-block .link-inner-block-1, .link-outer-block .link-inner-block-2 {
+                display: inline-block;
 
-                    a {
-                        text-decoration: none;
-                        color: $main-color;
-                        font-size: 20px;
-                        margin-right: 15px;
-                        margin-left: 25px;
-                        position: relative;
-                        padding-bottom: 4px;
-                        border-bottom: 1px solid $color-light-grey;
+                a {
+                    text-decoration: none;
+                    color: $main-color;
+                    font-size: 20px;
+                    margin-right: 15px;
+                    margin-left: 25px;
+                    position: relative;
+                    padding-bottom: 4px;
+                    border-bottom: 1px solid $color-light-grey;
 
-                        &:before {
-                            font-family: $icomoon;
-                            content: "\e93f";
-                            color: $active-menu;
-                            font-size: 14px;
-                            position: absolute;
-                            left: -20px;
-                            top: 6px;
-                            display: inline-block;
-                        }
+                    &:before {
+                        font-family: $icomoon;
+                        content: "\e93f";
+                        color: $active-menu;
+                        font-size: 14px;
+                        position: absolute;
+                        left: -20px;
+                        top: 6px;
+                        display: inline-block;
+                    }
 
-                        &:hover {
-                            border-bottom: 1px solid $active-menu;
-                        }
+                    &:hover {
+                        border-bottom: 1px solid $active-menu;
                     }
                 }
             }
         }
     }
-
+}
 
 //---------------------------------//
 .paragraphs-item-topic-teaser-paragraph {

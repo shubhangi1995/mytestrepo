@@ -66,12 +66,6 @@
     text-align: center;
 }
 
-
-
-
-
-
-
 //---------------node-protagonist--------------//
 /* .node-type-protagonist {
     background: $color-light-blue;
@@ -207,41 +201,30 @@
             }
         }
 
-        .view-content {
-            margin-left: -15px;
-            margin-right: -15px;
+        .view-content .views-row {
+            .row-container {
+                background: $main-color;
+                border: none;
 
-            .views-row {
-                @extend .col-md-4;
+                .views-field-type {
+                    color: $active-menu;
+                    font-weight: bold;
+                    padding-bottom: 20px;
+                }
 
-                .row-container {
+                .views-field-title {
+                    padding-bottom: 60px;
+
+                    a {
+                        color: $color-white;
+                        font-size: 22px;
+                        text-decoration: none;
+                    }
+                }
+
+                &:hover {
                     background: $main-color;
-                    padding: 30px;
-                    height: 385px;
-
-                    .views-field-field-themenzuweisung {
-                        margin-bottom: 10px;
-
-                        img {
-                            display: inline-block;
-                            margin-right: 10px;
-                        }
-                    }
-
-                    .views-field-type {
-                        .field-content {
-                            color: $active-menu;
-                            font-size: 22px;
-                        }
-                    }
-
-                    .views-field-title {
-                        a {
-                            color: $color-white;
-                            text-decoration: none;
-                            font-size: 22px;
-                        }
-                    }
+                    border: none;
                 }
             }
         }
@@ -279,6 +262,7 @@
 
 .group-page-info, .group-page-bottom {
     @extend .page_inner;
+
     padding: 60px 0 45px;
 }
 
@@ -298,9 +282,9 @@
     background-color: $color-white;
     padding: 60px 0 45px;
 
-    p, h3, h4, .field-name-field-kurztext .field-item, .view-id-related_content.view-display-id-block_3 .views-row{
+    p, h3, h4, .field-name-field-kurztext .field-item, .view-id-related_content.view-display-id-block_3 .views-row {
         margin: 0 0 40px 0;
-		line-height:30px; 
+        line-height: 30px;
     }
 
     h1, h2 {
@@ -333,11 +317,12 @@
        
         }
     }
-	.view-id-related_content.view-display-id-block_3 .views-row{
-		a{
-			margin-left:0; 
-		}
-	}
+
+    .view-id-related_content.view-display-id-block_3 .views-row {
+        a {
+            margin-left: 0;
+        }
+    }
 
     ul, ol {
         list-style: none;
@@ -351,7 +336,7 @@
             position: relative;
 
             &::before {
-                content: "\002022"; 
+                content: "\002022";
                 color: $active-menu;
                 font-size: 28px;
                 font-weight: bold;
@@ -411,8 +396,8 @@
         float: left;
         margin-right: 5px;
 
-        .field-item {  
-            font-size: 18px;    
+        .field-item {
+            font-size: 18px;
         }
     }
 
@@ -627,21 +612,24 @@
                     .field-content {
                         font-size: 22px;
                     }
-					.field-event-datum{
-						.date-display-range{
-							float:left;
-							margin-right:8px;
-						}
-						*{
-							color:$active-menu;
-							font-weight:bold;
-						}
-					}
-					.date-display-single{
-						color:$active-menu;
-						margin-right:8px;
-						font-weight:bold;
-					}					
+
+                    .field-event-datum {
+                        .date-display-range {
+                            float: left;
+                            margin-right: 8px;
+                        }
+
+                        * {
+                            color: $active-menu;
+                            font-weight: bold;
+                        }
+                    }
+
+                    .date-display-single {
+                        color: $active-menu;
+                        margin-right: 8px;
+                        font-weight: bold;
+                    }
                 }
             }
         }
