@@ -32,6 +32,29 @@ function ipwa_base_views_api($module = NULL, $api = NULL) {
 function ipwa_base_image_default_styles() {
   $styles = array();
 
+  // Exported image style: main_image_870_489.
+  $styles['main_image_870_489'] = array(
+    'label' => 'Main Image 870x489',
+    'effects' => array(
+      2 => array(
+        'name' => 'epsacrop_crop',
+        'data' => array(
+          'width' => 870,
+          'height' => 489,
+          'anchor' => 'center-center',
+          'disable_scale' => 0,
+          'jcrop_settings' => array(
+            'aspect_ratio' => '',
+            'bgcolor' => 'black',
+            'bgopacity' => 0.6,
+            'fallback' => 0,
+          ),
+        ),
+        'weight' => 1,
+      ),
+    ),
+  );
+
   // Exported image style: themen_icon_36x36.
   $styles['themen_icon_36x36'] = array(
     'label' => 'Themen icon (36x36)',
