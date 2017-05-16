@@ -49,6 +49,32 @@
             @extend .container;
 
             padding: 0;
+			
+			
+			.attachment-before .view-result-count {
+    margin-top: -88px;
+    padding: 30px 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+			
+			.view-content .views-row .row-container {
+            .views-field-type {
+                color: $active-menu;
+                font-weight: bold;
+                padding-bottom: 20px;
+            }
+			.views-field-views-conditional{
+			position: absolute;
+                bottom: 30px;
+                font-size: 17px;
+                color: $color-light-grey;
+			
+			
+			}
+			
+			
+			}
 
             .view-filters {
                 .views-submit-button {
@@ -76,72 +102,7 @@
                 }
             }
 
-            .view-content {
-                margin-left: -15px;
-                margin-right: -15px;
 
-                .views-row {
-                    @extend .col-md-4;
-
-                    .row-container {
-                        background: $color-white;
-                        padding: 25px;
-                        height: 350px;
-                        margin-bottom: 30px;
-                        position: relative;
-
-                        &.project-blue {
-                            background: $main-color;
-
-                            .views-field-title {
-                                a {
-                                    color: $color-white;
-                                }
-                            }
-
-                            .views-field-views-conditional {
-                                .date-display-single {
-                                    color: $color-white;
-                                }
-                            }
-                        }
-
-                        .views-field-field-themenzuweisung {
-                            margin-bottom: 10px;
-
-                            img {
-                                display: inline-block;
-                                margin-right: 10px;
-                            }
-                        }
-
-                        .views-field-type {
-                            .field-content {
-                                color: $active-menu;
-                                font-size: 22px;
-                            }
-                        }
-
-                        .views-field-title {
-                            a {
-                                text-decoration: none;
-                                color: $main-color;
-                                font-size: 22px;
-                            }
-                        }
-
-                        .views-field-views-conditional {
-                            position: absolute;
-                            bottom: 30px;
-
-                            .date-display-single {
-                                font-size: 17px;
-                                color: $color-light-grey;
-                            }
-                        }
-                    }
-                }
-            }
         }
     }
 }

@@ -223,7 +223,7 @@ header.navbar-default {
 
 //-----------view-content-----------//
 
-.view-neueste-informationen, .view-termin, .view-aktuelles, .view-neueste-digital-projekte {
+.view-neueste-informationen, .view-termin, .view-aktuelles, .view-neueste-digital-projekte ,.view-alles-zum-thema{
     .view-sub-wrapper > .view-content {
         margin-left: -15px;
         margin-right: -15px;
@@ -240,6 +240,9 @@ header.navbar-default {
                 border: 1px solid $color-white;
                 cursor: pointer;
 				transition: all 0.5s ease;
+				
+				&.project-blue {
+                            background: $main-color;}
 
                 &:hover {
                     background: $color-light-blue;
