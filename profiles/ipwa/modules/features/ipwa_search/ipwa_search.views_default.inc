@@ -393,18 +393,18 @@ function ipwa_search_views_default_views() {
   $handler->display->display_options['fields']['views_conditional_5']['then'] = '[type] [title] [field_akteurstyp]';
   $handler->display->display_options['fields']['views_conditional_5']['strip_tags'] = 0;
   $handler->display->display_options['defaults']['sorts'] = FALSE;
-  /* Sort criterion: Indexed Node: Titel */
-  $handler->display->display_options['sorts']['title']['id'] = 'title';
-  $handler->display->display_options['sorts']['title']['table'] = 'search_api_index_ipwa_solr_index';
-  $handler->display->display_options['sorts']['title']['field'] = 'title';
-  $handler->display->display_options['sorts']['title']['exposed'] = TRUE;
-  $handler->display->display_options['sorts']['title']['expose']['label'] = 'A-Z';
   /* Sort criterion: Indexed Node: Datum */
   $handler->display->display_options['sorts']['field_datum']['id'] = 'field_datum';
   $handler->display->display_options['sorts']['field_datum']['table'] = 'search_api_index_ipwa_solr_index';
   $handler->display->display_options['sorts']['field_datum']['field'] = 'field_datum';
   $handler->display->display_options['sorts']['field_datum']['exposed'] = TRUE;
   $handler->display->display_options['sorts']['field_datum']['expose']['label'] = 'Neueste zuerst';
+  /* Sort criterion: Indexed Node: Titel */
+  $handler->display->display_options['sorts']['title']['id'] = 'title';
+  $handler->display->display_options['sorts']['title']['table'] = 'search_api_index_ipwa_solr_index';
+  $handler->display->display_options['sorts']['title']['field'] = 'title';
+  $handler->display->display_options['sorts']['title']['exposed'] = TRUE;
+  $handler->display->display_options['sorts']['title']['expose']['label'] = 'A-Z';
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
   /* Filter criterion: Search: Fulltext search */
@@ -510,8 +510,8 @@ function ipwa_search_views_default_views() {
     t('last »'),
     t('Bis auf weiteres'),
     t('Herausgeber: [field_herausgeber]'),
-    t('A-Z'),
     t('Neueste zuerst'),
+    t('A-Z'),
   );
   $export['search_list'] = $view;
 
