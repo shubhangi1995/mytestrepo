@@ -23,7 +23,7 @@ Erlaubte Dateitypen: png gif jpg jpeg.',
         'module' => 'file_image_formatters',
         'settings' => array(
           'image_link' => '',
-          'image_style' => 'image_200x200',
+          'image_style' => 'main_image_870_489',
         ),
         'type' => 'file_image_image',
         'weight' => 1,
@@ -43,8 +43,7 @@ Erlaubte Dateitypen: png gif jpg jpeg.',
       'description_field' => 0,
       'epsacrop' => array(
         'styles' => array(
-          'image_200x200' => 'image_200x200',
-          'image_450' => 'image_450',
+          'main_image_870_489' => 'main_image_870_489',
         ),
       ),
       'file_directory' => '',

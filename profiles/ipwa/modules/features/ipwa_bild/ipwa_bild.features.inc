@@ -25,47 +25,13 @@ function ipwa_bild_image_default_styles() {
   // Exported image style: image_200x200.
   $styles['image_200x200'] = array(
     'label' => 'Image 200x200',
-    'effects' => array(
-      37 => array(
-        'name' => 'epsacrop_crop',
-        'data' => array(
-          'width' => 200,
-          'height' => 200,
-          'anchor' => 'center-center',
-          'disable_scale' => 0,
-          'jcrop_settings' => array(
-            'aspect_ratio' => '',
-            'bgcolor' => 'black',
-            'bgopacity' => 0.6,
-            'fallback' => 0,
-          ),
-        ),
-        'weight' => 1,
-      ),
-    ),
+    'effects' => array(),
   );
 
   // Exported image style: image_450.
   $styles['image_450'] = array(
     'label' => 'Image 450x250',
-    'effects' => array(
-      38 => array(
-        'name' => 'epsacrop_crop',
-        'data' => array(
-          'width' => 450,
-          'height' => 250,
-          'anchor' => 'center-center',
-          'disable_scale' => 0,
-          'jcrop_settings' => array(
-            'aspect_ratio' => '',
-            'bgcolor' => 'black',
-            'bgopacity' => 0.6,
-            'fallback' => 0,
-          ),
-        ),
-        'weight' => 1,
-      ),
-    ),
+    'effects' => array(),
   );
 
   return $styles;
