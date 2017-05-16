@@ -7273,197 +7273,195 @@ footer {
   .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col {
     position: relative;
     background: #273753;
-    padding: 45px;
+    padding: 45px !important;
     height: 400px; }
-    /* line 15, ../scss/pages/_frontpage.scss */
+    /* line 14, ../scss/pages/_frontpage.scss */
     .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col .panel-col-first {
       width: 60%;
       float: left;
       border-right: 1px solid #dbdfe3; }
-      /* line 20, ../scss/pages/_frontpage.scss */
+      /* line 19, ../scss/pages/_frontpage.scss */
       .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col .panel-col-first .inside {
         margin: 0;
         color: #ffffff; }
-        /* line 24, ../scss/pages/_frontpage.scss */
+        /* line 23, ../scss/pages/_frontpage.scss */
         .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col .panel-col-first .inside .pane-paragraphs-item-field-bild {
           padding-bottom: 25px; }
-        /* line 28, ../scss/pages/_frontpage.scss */
+        /* line 27, ../scss/pages/_frontpage.scss */
         .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col .panel-col-first .inside .pane-paragraphs-item-field-paragraph-title {
           font-size: 38px;
           padding-bottom: 25px;
           font-weight: bold; }
-        /* line 34, ../scss/pages/_frontpage.scss */
+        /* line 33, ../scss/pages/_frontpage.scss */
         .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col .panel-col-first .inside .pane-paragraphs-item-field-flie-text-bereich {
           padding-bottom: 35px; }
-        /* line 38, ../scss/pages/_frontpage.scss */
+        /* line 37, ../scss/pages/_frontpage.scss */
         .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col .panel-col-first .inside .pane-paragraphs-item-field-quellenangabe a {
           color: #ffffff; }
-          /* line 43, ../scss/pages/_frontpage.scss */
+          /* line 42, ../scss/pages/_frontpage.scss */
           .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col .panel-col-first .inside .pane-paragraphs-item-field-quellenangabe a:hover {
             border-bottom: 1px solid #e74712; }
-      /* line 49, ../scss/pages/_frontpage.scss */
+      /* line 48, ../scss/pages/_frontpage.scss */
       .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col .panel-col-first .panel-separator {
         display: none; }
-    /* line 54, ../scss/pages/_frontpage.scss */
+    /* line 53, ../scss/pages/_frontpage.scss */
     .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col .panel-col-last {
       width: 40%;
       float: left;
       padding-left: 30px; }
-      /* line 59, ../scss/pages/_frontpage.scss */
+      /* line 58, ../scss/pages/_frontpage.scss */
       .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col .panel-col-last .view-right-front-map-teaser .views-row {
         width: 100%; }
-        /* line 62, ../scss/pages/_frontpage.scss */
+        /* line 61, ../scss/pages/_frontpage.scss */
         .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col .panel-col-last .view-right-front-map-teaser .views-row .views-field-type {
           color: #e74712;
           font-size: 22px;
           font-weight: bold;
           padding-bottom: 15px; }
-        /* line 69, ../scss/pages/_frontpage.scss */
+        /* line 68, ../scss/pages/_frontpage.scss */
         .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col .panel-col-last .view-right-front-map-teaser .views-row .views-field-title {
           padding-bottom: 60px; }
-          /* line 72, ../scss/pages/_frontpage.scss */
+          /* line 71, ../scss/pages/_frontpage.scss */
           .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col .panel-col-last .view-right-front-map-teaser .views-row .views-field-title a {
             color: #ffffff;
             font-size: 22px;
             text-decoration: none; }
-        /* line 79, ../scss/pages/_frontpage.scss */
+        /* line 78, ../scss/pages/_frontpage.scss */
         .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col .panel-col-last .view-right-front-map-teaser .views-row .views-field-view-node a {
           color: #ffffff; }
-          /* line 84, ../scss/pages/_frontpage.scss */
+          /* line 83, ../scss/pages/_frontpage.scss */
           .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col .panel-col-last .view-right-front-map-teaser .views-row .views-field-view-node a:before {
             content: "\e94a" !important; }
-          /* line 88, ../scss/pages/_frontpage.scss */
+          /* line 87, ../scss/pages/_frontpage.scss */
           .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col .panel-col-last .view-right-front-map-teaser .views-row .views-field-view-node a:hover {
             border-bottom: 1px solid #e74712; }
 
-/* line 101, ../scss/pages/_frontpage.scss */
+/* line 100, ../scss/pages/_frontpage.scss */
 .front .view-termin {
   background: #273753; }
-  /* line 105, ../scss/pages/_frontpage.scss */
+  /* line 104, ../scss/pages/_frontpage.scss */
   .front .view-termin .view-sub-wrapper .view-header {
     color: #ffffff;
     padding-bottom: 30px;
     padding-left: 0;
     padding-top: 40px; }
-  /* line 112, ../scss/pages/_frontpage.scss */
+  /* line 111, ../scss/pages/_frontpage.scss */
   .front .view-termin .view-sub-wrapper .view-footer {
     clear: both;
     padding-top: 10px;
     padding-bottom: 60px;
     position: relative; }
-    /* line 119, ../scss/pages/_frontpage.scss */
+    /* line 118, ../scss/pages/_frontpage.scss */
     .front .view-termin .view-sub-wrapper .view-footer .link-outer-block .link-inner-block-1 a {
       color: #ffffff; }
-      /* line 124, ../scss/pages/_frontpage.scss */
+      /* line 122, ../scss/pages/_frontpage.scss */
       .front .view-termin .view-sub-wrapper .view-footer .link-outer-block .link-inner-block-1 a:hover {
         border-bottom: 1px solid #e74712; }
 
-/* line 136, ../scss/pages/_frontpage.scss */
+/* line 134, ../scss/pages/_frontpage.scss */
 .view-neueste-informationen {
   background: #eff2f7; }
-  /* line 139, ../scss/pages/_frontpage.scss */
+  /* line 137, ../scss/pages/_frontpage.scss */
   .view-neueste-informationen .view-sub-wrapper {
-    position: relative;
-    padding: 40px 0; }
-    /* line 145, ../scss/pages/_frontpage.scss */
+    position: relative; }
+    /* line 141, ../scss/pages/_frontpage.scss */
     .view-neueste-informationen .view-sub-wrapper .view-header {
+      padding-top: 30px;
       padding-bottom: 30px; }
-      /* line 148, ../scss/pages/_frontpage.scss */
+      /* line 145, ../scss/pages/_frontpage.scss */
       .view-neueste-informationen .view-sub-wrapper .view-header .pane-title {
         font-size: 28px;
         font-weight: bold; }
-    /* line 155, ../scss/pages/_frontpage.scss */
+    /* line 152, ../scss/pages/_frontpage.scss */
     .view-neueste-informationen .view-sub-wrapper .view-content .views-row .row-container .views-field-type {
       color: #e74712;
       font-weight: bold;
       padding-bottom: 20px; }
-    /* line 161, ../scss/pages/_frontpage.scss */
+    /* line 158, ../scss/pages/_frontpage.scss */
     .view-neueste-informationen .view-sub-wrapper .view-content .views-row .row-container .views-field-field-datum {
       position: absolute;
       bottom: 30px;
       font-size: 17px;
       color: #949d9e; }
-    /* line 169, ../scss/pages/_frontpage.scss */
+    /* line 166, ../scss/pages/_frontpage.scss */
     .view-neueste-informationen .view-sub-wrapper .view-footer {
       clear: both;
-      padding: 20px 0; }
-      /* line 173, ../scss/pages/_frontpage.scss */
+      padding-top: 10px;
+      padding-bottom: 60px; }
+      /* line 171, ../scss/pages/_frontpage.scss */
       .view-neueste-informationen .view-sub-wrapper .view-footer .link-outer-block .link-inner-block-1, .view-neueste-informationen .view-sub-wrapper .view-footer .link-outer-block .link-inner-block-2 {
         display: inline-block; }
-        /* line 176, ../scss/pages/_frontpage.scss */
+        /* line 174, ../scss/pages/_frontpage.scss */
         .view-neueste-informationen .view-sub-wrapper .view-footer .link-outer-block .link-inner-block-1 a, .view-neueste-informationen .view-sub-wrapper .view-footer .link-outer-block .link-inner-block-2 a {
           position: relative !important;
           color: #273753;
           bottom: 0 !important; }
-          /* line 184, ../scss/pages/_frontpage.scss */
+          /* line 182, ../scss/pages/_frontpage.scss */
           .view-neueste-informationen .view-sub-wrapper .view-footer .link-outer-block .link-inner-block-1 a:hover, .view-neueste-informationen .view-sub-wrapper .view-footer .link-outer-block .link-inner-block-2 a:hover {
             border-bottom: 1px solid #e74712; }
 
-/* line 194, ../scss/pages/_frontpage.scss */
+/* line 192, ../scss/pages/_frontpage.scss */
 .paragraphs-item-topic-teaser-paragraph {
   background: #ffffff; }
-  /* line 197, ../scss/pages/_frontpage.scss */
+  /* line 195, ../scss/pages/_frontpage.scss */
   .paragraphs-item-topic-teaser-paragraph .field-collection-container {
     border-bottom: none;
     margin-bottom: 0; }
-    /* line 201, ../scss/pages/_frontpage.scss */
-    .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser {
-      padding: 0; }
-      /* line 206, ../scss/pages/_frontpage.scss */
-      .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items {
-        padding: 60px 0;
-        float: left;
-        margin-left: -15px;
-        margin-right: -15px; }
-        /* line 215, ../scss/pages/_frontpage.scss */
-        .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items > .field-item .field-collection-view {
-          margin: 0;
-          padding: 0;
-          border: 0;
-          background: #eff2f7;
-          position: relative; }
-          /* line 222, ../scss/pages/_frontpage.scss */
-          .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items > .field-item .field-collection-view .content {
-            padding: 30px;
-            height: 365px;
-            padding-right: 165px; }
-            /* line 227, ../scss/pages/_frontpage.scss */
-            .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items > .field-item .field-collection-view .content .field-type-file {
-              padding-bottom: 30px; }
-            /* line 231, ../scss/pages/_frontpage.scss */
-            .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items > .field-item .field-collection-view .content .field-name-field-paragraph-title {
-              font-size: 26px;
-              color: #e74712;
-              padding-bottom: 25px;
-              font-weight: bold; }
-            /* line 239, ../scss/pages/_frontpage.scss */
-            .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items > .field-item .field-collection-view .content .field-name-field-quellenangabe a {
-              color: #273753; }
-              /* line 244, ../scss/pages/_frontpage.scss */
-              .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items > .field-item .field-collection-view .content .field-name-field-quellenangabe a:hover {
-                border-bottom: 1px solid #e74712; }
+    /* line 203, ../scss/pages/_frontpage.scss */
+    .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items {
+      padding: 60px 0;
+      float: left;
+      margin-left: -15px;
+      margin-right: -15px; }
+      /* line 212, ../scss/pages/_frontpage.scss */
+      .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items > .field-item .field-collection-view {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        background: #eff2f7;
+        position: relative; }
+        /* line 219, ../scss/pages/_frontpage.scss */
+        .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items > .field-item .field-collection-view .content {
+          padding: 30px;
+          height: 365px;
+          padding-right: 165px; }
+          /* line 224, ../scss/pages/_frontpage.scss */
+          .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items > .field-item .field-collection-view .content .field-type-file {
+            padding-bottom: 30px; }
+          /* line 228, ../scss/pages/_frontpage.scss */
+          .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items > .field-item .field-collection-view .content .field-name-field-paragraph-title {
+            font-size: 26px;
+            color: #e74712;
+            padding-bottom: 25px;
+            font-weight: bold; }
+          /* line 236, ../scss/pages/_frontpage.scss */
+          .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items > .field-item .field-collection-view .content .field-name-field-quellenangabe a {
+            color: #273753; }
+            /* line 241, ../scss/pages/_frontpage.scss */
+            .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items > .field-item .field-collection-view .content .field-name-field-quellenangabe a:hover {
+              border-bottom: 1px solid #e74712; }
+          /* line 247, ../scss/pages/_frontpage.scss */
+          .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items > .field-item .field-collection-view .content .field-name-field-flie-text-bereich {
+            padding-bottom: 50px; }
             /* line 250, ../scss/pages/_frontpage.scss */
-            .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items > .field-item .field-collection-view .content .field-name-field-flie-text-bereich {
-              padding-bottom: 50px; }
-              /* line 253, ../scss/pages/_frontpage.scss */
-              .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items > .field-item .field-collection-view .content .field-name-field-flie-text-bereich .field-item p {
-                font-size: 20px;
-                color: #273753; }
+            .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items > .field-item .field-collection-view .content .field-name-field-flie-text-bereich .field-item p {
+              font-size: 20px;
+              color: #273753; }
 
 @media (max-width: 767px) {
-  /* line 270, ../scss/pages/_frontpage.scss */
+  /* line 267, ../scss/pages/_frontpage.scss */
   .front .field-name-field-anzuzeigende-seitenmodule .field-name-field-paragraph-view .view-neueste-informationen .view-content {
     margin: 0; }
-  /* line 274, ../scss/pages/_frontpage.scss */
+  /* line 271, ../scss/pages/_frontpage.scss */
   .front .field-name-field-anzuzeigende-seitenmodule .view-termin .view-content {
     margin: 0; }
-  /* line 279, ../scss/pages/_frontpage.scss */
+  /* line 276, ../scss/pages/_frontpage.scss */
   .front .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-col-first {
     width: 100%;
     float: left;
     clear: both;
     border: none; }
-  /* line 286, ../scss/pages/_frontpage.scss */
+  /* line 283, ../scss/pages/_frontpage.scss */
   .front .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-col-last {
     width: 100%;
     float: left;
@@ -7495,39 +7493,44 @@ header.navbar-default {
   font-size: 44px; }
 
 /* line 33, ../scss/pages/_common.scss */
+.container, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col, .view-neueste-informationen .view-sub-wrapper, .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser, .breadcrumb, .not-front .node-doorpage .view-alle-themen-teaser .view-sub-wrapper, .view-neueste-digital-projekte .view-sub-wrapper, .group-page-info, .view-latest-content-doorpage > .view-sub-wrapper, .page-taxonomy-term .view-title, .page-taxonomy-term .group-page-info, .page-taxonomy-term .view-alles-zum-thema .view-sub-wrapper, .page-termine .page-header, .page-aktuelles .page-header, .view-aktuelles > .view-sub-wrapper, .view-termin > .view-sub-wrapper {
+  width: 1170px;
+  padding: 0; }
+
+/* line 40, ../scss/pages/_common.scss */
 .text-center {
   text-align: left;
   clear: both;
   padding: 10px 0 40px 0; }
-  /* line 38, ../scss/pages/_common.scss */
+  /* line 45, ../scss/pages/_common.scss */
   .text-center ul.pagination {
     margin: 0;
     padding: 0; }
-    /* line 42, ../scss/pages/_common.scss */
+    /* line 49, ../scss/pages/_common.scss */
     .text-center ul.pagination li.pager-first, .text-center ul.pagination li.pager-last {
       display: none; }
-    /* line 46, ../scss/pages/_common.scss */
+    /* line 53, ../scss/pages/_common.scss */
     .text-center ul.pagination li.prev a {
       font-size: 0;
       position: relative; }
-    /* line 53, ../scss/pages/_common.scss */
+    /* line 60, ../scss/pages/_common.scss */
     .text-center ul.pagination li.next a {
       font-size: 0;
       position: relative; }
-    /* line 60, ../scss/pages/_common.scss */
+    /* line 67, ../scss/pages/_common.scss */
     .text-center ul.pagination > li > span {
       border: none;
       color: #273753; }
-    /* line 65, ../scss/pages/_common.scss */
+    /* line 72, ../scss/pages/_common.scss */
     .text-center ul.pagination > li > a {
       color: #273753;
       background: none;
       border: none;
       font-size: 26px; }
-      /* line 71, ../scss/pages/_common.scss */
+      /* line 78, ../scss/pages/_common.scss */
       .text-center ul.pagination > li > a.progress-disabled {
         float: left; }
-    /* line 76, ../scss/pages/_common.scss */
+    /* line 83, ../scss/pages/_common.scss */
     .text-center ul.pagination > .active > a,
     .text-center ul.pagination > .active > a:hover,
     .text-center ul.pagination > .active > a:focus,
@@ -7540,32 +7543,32 @@ header.navbar-default {
       border-bottom: 2px solid #e74712;
       padding-bottom: 0; }
 
-/* line 93, ../scss/pages/_common.scss */
+/* line 100, ../scss/pages/_common.scss */
 .breadcrumb {
   padding: 0;
   margin-bottom: 20px;
   list-style: none;
   background: none;
   border-radius: 0; }
-  /* line 104, ../scss/pages/_common.scss */
+  /* line 111, ../scss/pages/_common.scss */
   .breadcrumb .inline a {
     text-decoration: none;
     color: #273753;
     font-size: 18px;
     border-bottom: 1px solid #949d9e;
     padding-bottom: 4px; }
-  /* line 112, ../scss/pages/_common.scss */
+  /* line 119, ../scss/pages/_common.scss */
   .breadcrumb .inline.last {
     border-bottom: 1px solid #e74712;
     padding-bottom: 4px;
     font-size: 18px; }
-    /* line 118, ../scss/pages/_common.scss */
+    /* line 125, ../scss/pages/_common.scss */
     .breadcrumb .inline.last a {
       border-color: #e74712; }
-  /* line 124, ../scss/pages/_common.scss */
+  /* line 131, ../scss/pages/_common.scss */
   .breadcrumb .delimiter {
     font-size: 0; }
-    /* line 127, ../scss/pages/_common.scss */
+    /* line 134, ../scss/pages/_common.scss */
     .breadcrumb .delimiter:before {
       font-family: "icomoon";
       content: "\e940";
@@ -7574,44 +7577,44 @@ header.navbar-default {
       margin: 0 10px;
       display: inline-block; }
 
-/* line 140, ../scss/pages/_common.scss */
+/* line 147, ../scss/pages/_common.scss */
 .select2-container {
   min-width: 200px; }
-  /* line 143, ../scss/pages/_common.scss */
+  /* line 150, ../scss/pages/_common.scss */
   .select2-container .select2-dropdown {
     border: 0;
     top: 10px;
     background: #3c506e; }
-    /* line 148, ../scss/pages/_common.scss */
+    /* line 155, ../scss/pages/_common.scss */
     .select2-container .select2-dropdown .select2-results {
       height: 200px;
       color: #ffffff; }
-      /* line 152, ../scss/pages/_common.scss */
+      /* line 159, ../scss/pages/_common.scss */
       .select2-container .select2-dropdown .select2-results .simplebar-track .simplebar-scrollbar {
         background: #273753; }
-      /* line 156, ../scss/pages/_common.scss */
+      /* line 163, ../scss/pages/_common.scss */
       .select2-container .select2-dropdown .select2-results ul.select2-results__options {
         height: auto;
         overflow: hidden;
         max-height: none; }
-        /* line 161, ../scss/pages/_common.scss */
+        /* line 168, ../scss/pages/_common.scss */
         .select2-container .select2-dropdown .select2-results ul.select2-results__options .select2-results__option {
           padding-left: 20px !important; }
-    /* line 167, ../scss/pages/_common.scss */
+    /* line 174, ../scss/pages/_common.scss */
     .select2-container .select2-dropdown .select2-search--dropdown {
       display: none; }
-  /* line 172, ../scss/pages/_common.scss */
+  /* line 179, ../scss/pages/_common.scss */
   .select2-container .select2-results__option[aria-selected=true] {
     background: 0; }
-  /* line 176, ../scss/pages/_common.scss */
+  /* line 183, ../scss/pages/_common.scss */
   .select2-container .select2-results__option--highlighted[aria-selected] {
     background: #273753; }
 
-/* line 184, ../scss/pages/_common.scss */
+/* line 191, ../scss/pages/_common.scss */
 .view-neueste-informationen .view-sub-wrapper > .view-content, .view-termin .view-sub-wrapper > .view-content, .view-aktuelles .view-sub-wrapper > .view-content, .view-neueste-digital-projekte .view-sub-wrapper > .view-content, .view-alles-zum-thema .view-sub-wrapper > .view-content {
   margin-left: -15px;
   margin-right: -15px; }
-  /* line 191, ../scss/pages/_common.scss */
+  /* line 198, ../scss/pages/_common.scss */
   .view-neueste-informationen .view-sub-wrapper > .view-content .views-row .row-container, .view-termin .view-sub-wrapper > .view-content .views-row .row-container, .view-aktuelles .view-sub-wrapper > .view-content .views-row .row-container, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row .row-container, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row .row-container {
     background: #ffffff;
     padding: 30px;
@@ -7621,43 +7624,43 @@ header.navbar-default {
     border: 1px solid #ffffff;
     cursor: pointer;
     transition: all 0.5s ease; }
-    /* line 201, ../scss/pages/_common.scss */
+    /* line 208, ../scss/pages/_common.scss */
     .view-neueste-informationen .view-sub-wrapper > .view-content .views-row .row-container.project-blue, .view-termin .view-sub-wrapper > .view-content .views-row .row-container.project-blue, .view-aktuelles .view-sub-wrapper > .view-content .views-row .row-container.project-blue, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row .row-container.project-blue, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row .row-container.project-blue {
       background: #273753; }
-    /* line 204, ../scss/pages/_common.scss */
+    /* line 211, ../scss/pages/_common.scss */
     .view-neueste-informationen .view-sub-wrapper > .view-content .views-row .row-container:hover, .view-termin .view-sub-wrapper > .view-content .views-row .row-container:hover, .view-aktuelles .view-sub-wrapper > .view-content .views-row .row-container:hover, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row .row-container:hover, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row .row-container:hover {
       background: #eff2f7;
       border: 1px solid #dbdfe3; }
-    /* line 209, ../scss/pages/_common.scss */
+    /* line 216, ../scss/pages/_common.scss */
     .view-neueste-informationen .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-themenzuweisung, .view-termin .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-themenzuweisung, .view-aktuelles .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-themenzuweisung, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-themenzuweisung, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-themenzuweisung {
       padding-bottom: 30px; }
-      /* line 212, ../scss/pages/_common.scss */
+      /* line 219, ../scss/pages/_common.scss */
       .view-neueste-informationen .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-themenzuweisung img, .view-termin .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-themenzuweisung img, .view-aktuelles .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-themenzuweisung img, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-themenzuweisung img, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-themenzuweisung img {
         display: inline-block;
         margin-right: 10px; }
-    /* line 218, ../scss/pages/_common.scss */
+    /* line 225, ../scss/pages/_common.scss */
     .view-neueste-informationen .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-event-datum, .view-termin .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-event-datum, .view-aktuelles .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-event-datum, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-event-datum, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-event-datum {
       padding-bottom: 20px;
       font-weight: bold;
       color: #e74712;
       font-size: 22px; }
-    /* line 225, ../scss/pages/_common.scss */
+    /* line 232, ../scss/pages/_common.scss */
     .view-neueste-informationen .view-sub-wrapper > .view-content .views-row .row-container .views-field-title, .view-termin .view-sub-wrapper > .view-content .views-row .row-container .views-field-title, .view-aktuelles .view-sub-wrapper > .view-content .views-row .row-container .views-field-title, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row .row-container .views-field-title, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row .row-container .views-field-title {
       padding-bottom: 40px; }
-      /* line 228, ../scss/pages/_common.scss */
+      /* line 235, ../scss/pages/_common.scss */
       .view-neueste-informationen .view-sub-wrapper > .view-content .views-row .row-container .views-field-title a, .view-termin .view-sub-wrapper > .view-content .views-row .row-container .views-field-title a, .view-aktuelles .view-sub-wrapper > .view-content .views-row .row-container .views-field-title a, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row .row-container .views-field-title a, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row .row-container .views-field-title a {
         text-decoration: none;
         font-size: 22px;
         color: #273753; }
-    /* line 236, ../scss/pages/_common.scss */
+    /* line 243, ../scss/pages/_common.scss */
     .view-neueste-informationen .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-ort .field-content, .view-termin .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-ort .field-content, .view-aktuelles .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-ort .field-content, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-ort .field-content, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-ort .field-content {
       position: absolute;
       bottom: 30px;
       font-size: 20px;
       color: #949d9e; }
 
-/* line 248, ../scss/pages/_common.scss */
-.common-button, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col .panel-col-first .inside .pane-paragraphs-item-field-quellenangabe a, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col .panel-col-last .view-right-front-map-teaser .views-row .views-field-view-node a, .front .view-termin .view-sub-wrapper .view-footer .link-outer-block .link-inner-block-1 a, .view-neueste-informationen .view-sub-wrapper .view-footer .link-outer-block .link-inner-block-1 a, .view-neueste-informationen .view-sub-wrapper .view-footer .link-outer-block .link-inner-block-2 a, .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items > .field-item .field-collection-view .content .field-name-field-quellenangabe a, .field-name-field-link-zur-anmeldung a, .view-map-teaser .view-sub-wrapper .view-content .views-row .row-container .views-field-field-quellenangabe a {
+/* line 255, ../scss/pages/_common.scss */
+.common-button, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col .panel-col-first .inside .pane-paragraphs-item-field-quellenangabe a, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col .panel-col-last .view-right-front-map-teaser .views-row .views-field-view-node a, .front .view-termin .view-sub-wrapper .view-footer .link-outer-block .link-inner-block-1 a, .view-neueste-informationen .view-sub-wrapper .view-footer .link-outer-block .link-inner-block-1 a, .view-neueste-informationen .view-sub-wrapper .view-footer .link-outer-block .link-inner-block-2 a, .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items > .field-item .field-collection-view .content .field-name-field-quellenangabe a, .view-neueste-digital-projekte .view-sub-wrapper .view-footer a, .field-name-field-link-zur-anmeldung a, .view-map-teaser .view-sub-wrapper .view-content .views-row .row-container .views-field-field-quellenangabe a {
   font-size: 20px;
   text-decoration: none;
   bottom: 30px;
@@ -7665,8 +7668,8 @@ header.navbar-default {
   position: absolute;
   padding-bottom: 4px;
   border-bottom: 1px solid #949d9e; }
-  /* line 257, ../scss/pages/_common.scss */
-  .common-button:before, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col .panel-col-first .inside .pane-paragraphs-item-field-quellenangabe a:before, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col .panel-col-last .view-right-front-map-teaser .views-row .views-field-view-node a:before, .front .view-termin .view-sub-wrapper .view-footer .link-outer-block .link-inner-block-1 a:before, .view-neueste-informationen .view-sub-wrapper .view-footer .link-outer-block .link-inner-block-1 a:before, .view-neueste-informationen .view-sub-wrapper .view-footer .link-outer-block .link-inner-block-2 a:before, .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items > .field-item .field-collection-view .content .field-name-field-quellenangabe a:before, .field-name-field-link-zur-anmeldung a:before, .view-map-teaser .view-sub-wrapper .view-content .views-row .row-container .views-field-field-quellenangabe a:before {
+  /* line 264, ../scss/pages/_common.scss */
+  .common-button:before, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col .panel-col-first .inside .pane-paragraphs-item-field-quellenangabe a:before, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col .panel-col-last .view-right-front-map-teaser .views-row .views-field-view-node a:before, .front .view-termin .view-sub-wrapper .view-footer .link-outer-block .link-inner-block-1 a:before, .view-neueste-informationen .view-sub-wrapper .view-footer .link-outer-block .link-inner-block-1 a:before, .view-neueste-informationen .view-sub-wrapper .view-footer .link-outer-block .link-inner-block-2 a:before, .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items > .field-item .field-collection-view .content .field-name-field-quellenangabe a:before, .view-neueste-digital-projekte .view-sub-wrapper .view-footer a:before, .field-name-field-link-zur-anmeldung a:before, .view-map-teaser .view-sub-wrapper .view-content .views-row .row-container .views-field-field-quellenangabe a:before {
     font-family: "icomoon";
     content: "\e93f";
     color: #e74712;
@@ -7848,15 +7851,15 @@ header.navbar-default {
         border: none; }
     /* line 225, ../scss/pages/_singleview.scss */
     .view-neueste-digital-projekte .view-sub-wrapper .view-footer {
-      padding-top: 40px;
-      clear: both; }
-      /* line 229, ../scss/pages/_singleview.scss */
+      padding-top: 10px;
+      clear: both;
+      padding-bottom: 40px; }
+      /* line 230, ../scss/pages/_singleview.scss */
       .view-neueste-digital-projekte .view-sub-wrapper .view-footer a {
-        text-decoration: none;
-        color: #ffffff;
-        font-size: 20px;
-        position: relative;
-        padding-left: 30px; }
+        color: #ffffff; }
+        /* line 233, ../scss/pages/_singleview.scss */
+        .view-neueste-digital-projekte .view-sub-wrapper .view-footer a:hover {
+          border-bottom: 1px solid #e74712; }
 
 /* line 244, ../scss/pages/_singleview.scss */
 .node-type-article, .node-type-protagonist, .node-type-nachricht, .node-type-termin, .node-type-projekt, .node-type-publikation {
@@ -8352,50 +8355,50 @@ header.navbar-default {
       /* line 40, ../scss/pages/_listview.scss */
       .page-taxonomy-term .group-page-info .themenzuweisung-right-block .field-name-field-untertitel .field-items {
         color: #e74712; }
-  /* line 48, ../scss/pages/_listview.scss */
+  /* line 51, ../scss/pages/_listview.scss */
   .page-taxonomy-term .view-alles-zum-thema .view-sub-wrapper {
     padding: 0; }
-    /* line 54, ../scss/pages/_listview.scss */
+    /* line 57, ../scss/pages/_listview.scss */
     .page-taxonomy-term .view-alles-zum-thema .view-sub-wrapper .attachment-before .view-result-count {
       margin-top: -88px;
       padding: 30px 0;
       font-size: 22px;
       font-weight: bold; }
-    /* line 62, ../scss/pages/_listview.scss */
+    /* line 65, ../scss/pages/_listview.scss */
     .page-taxonomy-term .view-alles-zum-thema .view-sub-wrapper .view-content .views-row .row-container .views-field-type {
       color: #e74712;
       font-weight: bold;
       padding-bottom: 20px; }
-    /* line 67, ../scss/pages/_listview.scss */
+    /* line 70, ../scss/pages/_listview.scss */
     .page-taxonomy-term .view-alles-zum-thema .view-sub-wrapper .view-content .views-row .row-container .views-field-views-conditional {
       position: absolute;
       bottom: 30px;
       font-size: 17px;
       color: #949d9e; }
-    /* line 80, ../scss/pages/_listview.scss */
+    /* line 83, ../scss/pages/_listview.scss */
     .page-taxonomy-term .view-alles-zum-thema .view-sub-wrapper .view-filters .views-submit-button {
       display: none; }
-    /* line 84, ../scss/pages/_listview.scss */
+    /* line 87, ../scss/pages/_listview.scss */
     .page-taxonomy-term .view-alles-zum-thema .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by {
       float: right;
       padding: 30px 0; }
-      /* line 88, ../scss/pages/_listview.scss */
+      /* line 91, ../scss/pages/_listview.scss */
       .page-taxonomy-term .view-alles-zum-thema .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .bef-select-as-links .form-type-bef-link {
         display: inline-block;
         font-size: 20px;
         padding-left: 15px; }
-        /* line 93, ../scss/pages/_listview.scss */
+        /* line 96, ../scss/pages/_listview.scss */
         .page-taxonomy-term .view-alles-zum-thema .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .bef-select-as-links .form-type-bef-link a {
           color: #273753;
           text-decoration: none; }
-          /* line 97, ../scss/pages/_listview.scss */
+          /* line 100, ../scss/pages/_listview.scss */
           .page-taxonomy-term .view-alles-zum-thema .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .bef-select-as-links .form-type-bef-link a.active {
             border-bottom: 1px solid #e74712; }
 
-/* line 112, ../scss/pages/_listview.scss */
+/* line 115, ../scss/pages/_listview.scss */
 .page-termine, .page-aktuelles {
   background: #eff2f7; }
-  /* line 115, ../scss/pages/_listview.scss */
+  /* line 118, ../scss/pages/_listview.scss */
   .page-termine .page-header, .page-aktuelles .page-header {
     padding-left: 250px;
     border: none;
@@ -8403,98 +8406,98 @@ header.navbar-default {
     font-weight: normal;
     padding-top: 80px; }
 
-/* line 127, ../scss/pages/_listview.scss */
+/* line 130, ../scss/pages/_listview.scss */
 .view-aktuelles > .view-sub-wrapper, .view-termin > .view-sub-wrapper {
   padding: 0; }
-  /* line 132, ../scss/pages/_listview.scss */
+  /* line 135, ../scss/pages/_listview.scss */
   .view-aktuelles > .view-sub-wrapper .view-header, .view-termin > .view-sub-wrapper .view-header {
     color: #e74712;
     font-size: 26px;
     padding-left: 250px;
     padding-bottom: 60px; }
-  /* line 139, ../scss/pages/_listview.scss */
+  /* line 142, ../scss/pages/_listview.scss */
   .view-aktuelles > .view-sub-wrapper .attachment-before .view-result-count, .view-termin > .view-sub-wrapper .attachment-before .view-result-count {
     margin-top: -88px;
     padding: 30px 0;
     font-size: 22px;
     font-weight: bold; }
 
-/* line 150, ../scss/pages/_listview.scss */
+/* line 153, ../scss/pages/_listview.scss */
 .view-map-teaser {
   clear: both; }
-  /* line 154, ../scss/pages/_listview.scss */
+  /* line 157, ../scss/pages/_listview.scss */
   .view-map-teaser .view-sub-wrapper .view-content {
     margin: 0; }
-    /* line 157, ../scss/pages/_listview.scss */
+    /* line 160, ../scss/pages/_listview.scss */
     .view-map-teaser .view-sub-wrapper .view-content .views-row {
       background: #273753; }
-      /* line 162, ../scss/pages/_listview.scss */
+      /* line 165, ../scss/pages/_listview.scss */
       .view-map-teaser .view-sub-wrapper .view-content .views-row .row-container {
         background: none;
         height: auto;
         margin-bottom: 0;
         padding: 45px 150px 45px 50px;
         border: none; }
-        /* line 169, ../scss/pages/_listview.scss */
+        /* line 172, ../scss/pages/_listview.scss */
         .view-map-teaser .view-sub-wrapper .view-content .views-row .row-container:hover {
           background: none;
           border: none; }
-        /* line 175, ../scss/pages/_listview.scss */
+        /* line 178, ../scss/pages/_listview.scss */
         .view-map-teaser .view-sub-wrapper .view-content .views-row .row-container .views-field-field-bild {
           padding-bottom: 20px; }
-          /* line 178, ../scss/pages/_listview.scss */
+          /* line 181, ../scss/pages/_listview.scss */
           .view-map-teaser .view-sub-wrapper .view-content .views-row .row-container .views-field-field-bild img {
             color: #e74712; }
-        /* line 183, ../scss/pages/_listview.scss */
+        /* line 186, ../scss/pages/_listview.scss */
         .view-map-teaser .view-sub-wrapper .view-content .views-row .row-container .views-field-field-paragraph-title {
           color: #ffffff;
           font-size: 38px;
           font-weight: bold;
           padding-bottom: 20px; }
-        /* line 190, ../scss/pages/_listview.scss */
+        /* line 193, ../scss/pages/_listview.scss */
         .view-map-teaser .view-sub-wrapper .view-content .views-row .row-container .views-field-field-flie-text-bereich {
           color: #ffffff;
           padding-bottom: 35px; }
-        /* line 195, ../scss/pages/_listview.scss */
+        /* line 198, ../scss/pages/_listview.scss */
         .view-map-teaser .view-sub-wrapper .view-content .views-row .row-container .views-field-field-quellenangabe a {
           color: #ffffff; }
 
-/* line 210, ../scss/pages/_listview.scss */
+/* line 213, ../scss/pages/_listview.scss */
 .page-aktuelles .view-aktuelles .view-sub-wrapper .view-content .views-row .row-container .views-field-type {
   padding-bottom: 20px;
   font-weight: bold;
   color: #e74712;
   font-size: 22px; }
-/* line 218, ../scss/pages/_listview.scss */
+/* line 221, ../scss/pages/_listview.scss */
 .page-aktuelles .view-aktuelles .view-sub-wrapper .view-content .views-row .row-container .views-field-field-datum .field-content {
   position: absolute;
   bottom: 30px;
   font-size: 20px;
   color: #949d9e; }
-/* line 229, ../scss/pages/_listview.scss */
+/* line 232, ../scss/pages/_listview.scss */
 .page-aktuelles .view-aktuelles .view-filters .views-exposed-form .views-exposed-widgets {
   margin-bottom: 0; }
-  /* line 232, ../scss/pages/_listview.scss */
+  /* line 235, ../scss/pages/_listview.scss */
   .page-aktuelles .view-aktuelles .view-filters .views-exposed-form .views-exposed-widgets #edit-type-wrapper {
     width: 100%; }
-    /* line 235, ../scss/pages/_listview.scss */
+    /* line 238, ../scss/pages/_listview.scss */
     .page-aktuelles .view-aktuelles .view-filters .views-exposed-form .views-exposed-widgets #edit-type-wrapper .form-item {
       display: inline-block;
       padding-right: 60px; }
-      /* line 239, ../scss/pages/_listview.scss */
+      /* line 242, ../scss/pages/_listview.scss */
       .page-aktuelles .view-aktuelles .view-filters .views-exposed-form .views-exposed-widgets #edit-type-wrapper .form-item label {
         padding-left: 0;
         padding-bottom: 15px; }
-        /* line 243, ../scss/pages/_listview.scss */
+        /* line 246, ../scss/pages/_listview.scss */
         .page-aktuelles .view-aktuelles .view-filters .views-exposed-form .views-exposed-widgets #edit-type-wrapper .form-item label input {
           visibility: hidden; }
-  /* line 250, ../scss/pages/_listview.scss */
+  /* line 253, ../scss/pages/_listview.scss */
   .page-aktuelles .view-aktuelles .view-filters .views-exposed-form .views-exposed-widgets .categories-filter {
     margin-top: 30px;
     clear: both;
     display: inline-block;
     width: 100%; }
-    /* line 256, ../scss/pages/_listview.scss */
+    /* line 259, ../scss/pages/_listview.scss */
     .page-aktuelles .view-aktuelles .view-filters .views-exposed-form .views-exposed-widgets .categories-filter .views-exposed-widget {
       padding: 0;
       width: 25%;
@@ -8502,12 +8505,12 @@ header.navbar-default {
       padding: 10px 0;
       background: #3c506e;
       border-right: 1px solid #949d9e; }
-      /* line 264, ../scss/pages/_listview.scss */
+      /* line 267, ../scss/pages/_listview.scss */
       .page-aktuelles .view-aktuelles .view-filters .views-exposed-form .views-exposed-widgets .categories-filter .views-exposed-widget .select2-container--default .select2-selection--single {
         background: 0;
         border: 0;
         border-radius: 0; }
-        /* line 269, ../scss/pages/_listview.scss */
+        /* line 272, ../scss/pages/_listview.scss */
         .page-aktuelles .view-aktuelles .view-filters .views-exposed-form .views-exposed-widgets .categories-filter .views-exposed-widget .select2-container--default .select2-selection--single:before {
           content: "\f107";
           font-family: FontAwesome;
@@ -8516,70 +8519,70 @@ header.navbar-default {
           float: right;
           right: 20px;
           top: 3px; }
-        /* line 279, ../scss/pages/_listview.scss */
+        /* line 282, ../scss/pages/_listview.scss */
         .page-aktuelles .view-aktuelles .view-filters .views-exposed-form .views-exposed-widgets .categories-filter .views-exposed-widget .select2-container--default .select2-selection--single .select2-selection__rendered {
           color: #ffffff;
           padding-left: 20px; }
-        /* line 284, ../scss/pages/_listview.scss */
+        /* line 287, ../scss/pages/_listview.scss */
         .page-aktuelles .view-aktuelles .view-filters .views-exposed-form .views-exposed-widgets .categories-filter .views-exposed-widget .select2-container--default .select2-selection--single .select2-selection__arrow {
           display: none; }
-  /* line 291, ../scss/pages/_listview.scss */
+  /* line 294, ../scss/pages/_listview.scss */
   .page-aktuelles .view-aktuelles .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by {
     float: right;
     padding: 30px 0; }
-    /* line 295, ../scss/pages/_listview.scss */
+    /* line 298, ../scss/pages/_listview.scss */
     .page-aktuelles .view-aktuelles .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .bef-select-as-links .form-type-bef-link {
       display: inline-block;
       padding-left: 15px; }
-      /* line 299, ../scss/pages/_listview.scss */
+      /* line 302, ../scss/pages/_listview.scss */
       .page-aktuelles .view-aktuelles .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .bef-select-as-links .form-type-bef-link a {
         text-decoration: none;
         color: #273753; }
-        /* line 303, ../scss/pages/_listview.scss */
+        /* line 306, ../scss/pages/_listview.scss */
         .page-aktuelles .view-aktuelles .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .bef-select-as-links .form-type-bef-link a.active {
           border-bottom: 1px solid #e74712; }
-    /* line 309, ../scss/pages/_listview.scss */
+    /* line 312, ../scss/pages/_listview.scss */
     .page-aktuelles .view-aktuelles .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .select2-container {
       display: none; }
-/* line 316, ../scss/pages/_listview.scss */
+/* line 319, ../scss/pages/_listview.scss */
 .page-aktuelles .view-aktuelles .views-submit-button {
   display: none; }
 
-/* line 325, ../scss/pages/_listview.scss */
+/* line 328, ../scss/pages/_listview.scss */
 .page-termine .view-termin .view-filters .views-exposed-form .views-exposed-widgets #edit-term-node-tid-depth-wrapper {
   width: 80%;
   float: left;
   padding: 0;
   clear: both;
   margin-bottom: 30px; }
-  /* line 334, ../scss/pages/_listview.scss */
+  /* line 337, ../scss/pages/_listview.scss */
   .page-termine .view-termin .view-filters .views-exposed-form .views-exposed-widgets #edit-term-node-tid-depth-wrapper .form-item .form-type-bef-link:first-child {
     display: none; }
-  /* line 338, ../scss/pages/_listview.scss */
+  /* line 341, ../scss/pages/_listview.scss */
   .page-termine .view-termin .view-filters .views-exposed-form .views-exposed-widgets #edit-term-node-tid-depth-wrapper .form-item .form-type-bef-link a {
     display: inline-block;
     float: left;
     text-decoration: none;
     color: #273753;
     margin-right: 60px; }
-    /* line 345, ../scss/pages/_listview.scss */
+    /* line 348, ../scss/pages/_listview.scss */
     .page-termine .view-termin .view-filters .views-exposed-form .views-exposed-widgets #edit-term-node-tid-depth-wrapper .form-item .form-type-bef-link a.active {
       border-bottom: 1px Solid #e74712; }
-/* line 353, ../scss/pages/_listview.scss */
+/* line 356, ../scss/pages/_listview.scss */
 .page-termine .view-termin .view-filters .views-exposed-form .views-exposed-widgets .calendar-link {
   width: 20%;
   float: left;
   text-align: right;
   position: relative;
   margin-bottom: 30px; }
-  /* line 360, ../scss/pages/_listview.scss */
+  /* line 363, ../scss/pages/_listview.scss */
   .page-termine .view-termin .view-filters .views-exposed-form .views-exposed-widgets .calendar-link a {
     text-decoration: none;
     padding-bottom: 4px;
     border-bottom: 1px solid #949d9e;
     color: #273753;
     font-weight: bold; }
-    /* line 367, ../scss/pages/_listview.scss */
+    /* line 370, ../scss/pages/_listview.scss */
     .page-termine .view-termin .view-filters .views-exposed-form .views-exposed-widgets .calendar-link a:before {
       content: '\e949';
       font-family: "icomoon";
@@ -8589,25 +8592,25 @@ header.navbar-default {
       left: 40px;
       top: 9px;
       display: inline-block; }
-/* line 380, ../scss/pages/_listview.scss */
+/* line 383, ../scss/pages/_listview.scss */
 .page-termine .view-termin .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by {
   float: right;
   padding: 30px 0; }
-  /* line 384, ../scss/pages/_listview.scss */
+  /* line 387, ../scss/pages/_listview.scss */
   .page-termine .view-termin .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .bef-select-as-links .form-type-bef-link {
     display: inline-block;
     padding-left: 15px; }
-    /* line 388, ../scss/pages/_listview.scss */
+    /* line 391, ../scss/pages/_listview.scss */
     .page-termine .view-termin .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .bef-select-as-links .form-type-bef-link a {
       text-decoration: none;
       color: #273753; }
-      /* line 392, ../scss/pages/_listview.scss */
+      /* line 395, ../scss/pages/_listview.scss */
       .page-termine .view-termin .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .bef-select-as-links .form-type-bef-link a.active {
         border-bottom: 1px solid #e74712; }
-/* line 399, ../scss/pages/_listview.scss */
+/* line 402, ../scss/pages/_listview.scss */
 .page-termine .view-termin .view-filters .views-exposed-form .views-exposed-widgets .views-submit-button {
   display: none; }
-/* line 403, ../scss/pages/_listview.scss */
+/* line 406, ../scss/pages/_listview.scss */
 .page-termine .view-termin .view-filters .views-exposed-form .views-exposed-widgets .select2-container--default .select2-selection--single {
   display: none; }
 

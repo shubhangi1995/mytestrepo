@@ -6,10 +6,9 @@
 
         .panel-2col {
             @extend .container;
-
             position: relative;
             background: $main-color;
-            padding: 45px;
+            padding: 45px !important;
             height: 400px;
 
             .panel-col-first {
@@ -118,7 +117,6 @@
                 .link-outer-block .link-inner-block-1 {
                     a {
                         @extend .common-button;
-
                         color: $color-white;
 
                         &:hover {
@@ -138,11 +136,10 @@
 
     .view-sub-wrapper {
         position: relative;
-        padding: 40px 0;
-
         @extend .container;
 
         .view-header {
+		    padding-top:30px;
             padding-bottom: 30px;
 
             .pane-title {
@@ -168,7 +165,8 @@
 
         .view-footer {
             clear: both;
-            padding: 20px 0;
+           padding-top:10px;
+		   padding-bottom:60px;
 
             .link-outer-block .link-inner-block-1, .link-outer-block .link-inner-block-2 {
                 display: inline-block;
@@ -201,8 +199,7 @@
         .field-name-field-topic-teaser {
             @extend .container;
 
-            padding: 0;
-
+            
             > .field-items {
                 padding: 60px 0;
                 float: left;
