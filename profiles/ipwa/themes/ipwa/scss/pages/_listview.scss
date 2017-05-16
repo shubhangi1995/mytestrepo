@@ -44,7 +44,10 @@
         }
     }
 	
+	.field-type-paragraphs{
+	  @extend .container;
 	
+	}
 	
 
     .view-alles-zum-thema {
@@ -159,7 +162,6 @@
 
             .views-row {
                 @extend .col-md-8;
-
                 background: $main-color;
 
                 .row-container {

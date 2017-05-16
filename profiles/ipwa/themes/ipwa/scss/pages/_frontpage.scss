@@ -8,7 +8,7 @@
             @extend .container;
             position: relative;
             background: $main-color;
-            padding: 45px !important;
+            padding: 45px ;
             height: 400px;
 
             .panel-col-first {
@@ -168,15 +168,9 @@
                 display: inline-block;
 
                 a {
-                    
-
                     @extend .common-button;
-
-                    color: $main-color;
-                    
+                    color: $main-color;                    
 					margin-right:20px;
-
-                    
                 }
             }
         }
