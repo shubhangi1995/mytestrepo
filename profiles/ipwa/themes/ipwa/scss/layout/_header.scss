@@ -2,7 +2,7 @@ header {
     &.navbar-default {
         width: 100%;
         border: none;
-		position:relative;
+        position: relative;
         -webkit-box-shadow: 0px 28px 38px 2px rgba(162, 162, 162, 0.65);
         -moz-box-shadow: 0px 28px 38px 2px rgba(162, 162, 162, 0.65);
         box-shadow: 0px 28px 38px 2px rgba(162, 162, 162, 0.65);
@@ -12,15 +12,11 @@ header {
         padding: 0;
 
         .navbar-header {
-		      
-		
             .navbar-brand {
                 display: none;
             }
         }
 
-		
-		
         .nrw-eu-logo {
             a {
                 margin-top: 8px;
@@ -75,25 +71,25 @@ header {
                 float: right;
                 padding: 15px;
                 cursor: pointer;
-                
                 font-size: 18px;
 
                 &:before {
-                 font-family: $icomoon;
-                content: "\e94e";
-                color: $icons-color;
-                font-size: 15px;
-                margin-right:10px;
-                display: inline-block;
+                    font-family: $icomoon;
+                    content: "\e94e";
+                    color: $icons-color;
+                    font-size: 15px;
+                    margin-right: 10px;
+                    display: inline-block;
                 }
-				&.active{
-				 background:#6d7c98;
-				 color:$color-white;
-				 &:before{
-				   color:$color-white;
-				 }
-				
-				}
+
+                &.active {
+                    background: #6d7c98;
+                    color: $color-white;
+
+                    &:before {
+                        color: $color-white;
+                    }
+                }
             }
 
             .region-navigation {
@@ -103,11 +99,11 @@ header {
                 padding-top: 30px;
 
                 .block-ipwa-search {
-                    position:absolute;
-                    padding:38px 0;
-                    width: 100%;                    
-                    top:53px;
-					left:0;
+                    position: absolute;
+                    padding: 38px 0;
+                    width: 100%;
+                    top: 53px;
+                    left: 0;
                     background-color: rgba(94, 110, 141, 0.9);
                     opacity: 0;
                     visibility: hidden;
@@ -125,10 +121,9 @@ header {
                     }
 
                     #ipwa-search-block-form {
-                        position: relative;                        
-                        margin:0 auto;                       
-                        width:700px;
-						
+                        position: relative;
+                        margin: 0 auto;
+                        width: 700px;
 
                         .cross-link {
                             position: absolute;
@@ -143,11 +138,11 @@ header {
 
                                 &:after {
                                     font-family: $icomoon;
-                content: "\e948";
-                color: $icons-color;
-                font-size: 16px;
-                margin-left: 7px;
-                display: inline-block;
+                                    content: "\e948";
+                                    color: $icons-color;
+                                    font-size: 16px;
+                                    margin-left: 7px;
+                                    display: inline-block;
                                 }
                             }
                         }
@@ -160,31 +155,29 @@ header {
                             margin-bottom: 0;
 
                             .form-control {
-                                height:40px;
+                                height: 40px;
                                 width: 700px;
                                 border-radius: 0;
                                 font-weight: bold;
-                                
                             }
                         }
 
                         .btn-primary {
                             position: absolute;
                             top: 4px;
-                            right:0;
-							font-size:0;
-							background:none;
-							border:none;
-							&:before{
-							font-family: $icomoon;
-                content: "\e94e";
-                color: $icons-color;
-                font-size: 16px;
-                margin-left: 7px;
-                display: inline-block;
-							
-							
-							}
+                            right: 0;
+                            font-size: 0;
+                            background: none;
+                            border: none;
+
+                            &:before {
+                                font-family: $icomoon;
+                                content: "\e94e";
+                                color: $icons-color;
+                                font-size: 16px;
+                                margin-left: 7px;
+                                display: inline-block;
+                            }
                         }
                     }
                 }
@@ -353,7 +346,6 @@ header {
                                 .view-content .views-row {
                                     display: inline-block;
                                     padding: 5px;
-									
 
                                     a {
                                         background: $main-color;
@@ -365,91 +357,95 @@ header {
                                         }
                                     }
                                 }
-                            }}
+                            }
+                        }
 
-                            .mega-dropdown-inner {
-                                width: 1170px;
-                                margin: 0 auto;
+                        .mega-dropdown-inner {
+                            width: 1170px;
+                            margin: 0 auto;
 
-                                .tb-submenu-left {
-                                    width: 30%;
-                                    float: left;
+                            .tb-submenu-left {
+                                width: 30%;
+                                float: left;
 
-                                    .block-title {
-                                        font-size: 18px;
-                                        font-weight: normal;
-                                        text-transform: capitalize;
-                                    }
+                                .block-title {
+                                    font-size: 18px;
+                                    font-weight: normal;
+                                    text-transform: capitalize;
+                                }
 
-                                    ul {
-                                        li {
-                                            width: 100%;
-											margin-bottom:10px;
+                                ul {
+                                    li {
+                                        width: 100%;
+                                        margin-bottom: 10px;
 
-                                            a {
-                                                font-size: 16px;
-                                                position: relative;
-                                                padding-left: 25px;
-                                                margin: 0;
+                                        a {
+                                            font-size: 16px;
+                                            position: relative;
+                                            padding-left: 25px;
+                                            margin: 0;
 
-                                                &:before {
-                                                    font-family: $icomoon;
-                                        content: "\e93f";
-                                        color: $active-menu;
-                                        font-size: 12px;
-                                        position: absolute;
-                                        left: 0;                                        
-                                        display: inline-block;
-                                                }
+                                            &:before {
+                                                font-family: $icomoon;
+                                                content: "\e93f";
+                                                color: $active-menu;
+                                                font-size: 12px;
+                                                position: absolute;
+                                                left: 0;
+                                                display: inline-block;
                                             }
                                         }
                                     }
                                 }
+                            }
 
-                                .tb-submenu-right {
-                                    width: 70%;
-                                    float: left;
-                                    margin: 0;
-                                }
+                            .tb-submenu-right {
+                                width: 70%;
+                                float: left;
+                                margin: 0;
                             }
                         }
                     }
                 }
             }
         }
-    
+    }
 }
 
-//desktop 
+//desktop
 
 @media (min-width: $screen-sm-min) {
-.navbar-header{
-  .logo {
-  .big{display:block;}
-  .small{
-    display:none;
-  }
-}
-}
+    .navbar-header {
+        .logo {
+            .big {
+                display: block;
+            }
 
-
+            .small {
+                display: none;
+            }
+        }
+    }
 }
-
 
 //mobile-view
 
-
-
 @media (max-width: $screen-xs-max) {
-.navbar-header{
-  .logo {
-   padding-left:20px;
-  .big{display:none;}
-  .small{
-    display:block;
-  }
-}
-}
-.nrw-eu-logo{display:none;}
+    .navbar-header {
+        .logo {
+            padding-left: 20px;
 
+            .big {
+                display: none;
+            }
+
+            .small {
+                display: block;
+            }
+        }
+    }
+
+    .nrw-eu-logo {
+        display: none;
+    }
 }

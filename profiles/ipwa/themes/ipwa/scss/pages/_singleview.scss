@@ -112,10 +112,12 @@
     .field-name-field-untertitel .field-item {
         color: $active-menu;
         font-size: 26px;
+        padding: 30px 0;
     }
 
     .field-name-field-kurztext .field-item {
         font-size: 22px;
+        padding-bottom: 30px;
     }
 
     .field-name-body {}
@@ -161,16 +163,17 @@
                 padding-top: 40px;
                 clear: both;
                 padding-bottom: 20px;
-				position:relative;
+                position: relative;
 
                 a {
                     @extend .common-button;
-                     color:$main-color;
-					 bottom:0 !important;
-					 &:hover{
-					 border-bottom:1px solid $active-menu;
-					 }
-                    
+
+                    color: $main-color;
+                    bottom: 0 !important;
+
+                    &:hover {
+                        border-bottom: 1px solid $active-menu;
+                    }
                 }
             }
         }
@@ -199,7 +202,7 @@
             .row-container {
                 background: $main-color;
                 border: none;
-				cursor:pointer;
+                cursor: pointer;
 
                 .views-field-type {
                     color: $active-menu;
@@ -227,14 +230,11 @@
         .view-footer {
             padding-top: 10px;
             clear: both;
-			
 
             a {
                 @extend .common-button;
-				color:$color-white;
-				
-               
-                
+
+                color: $color-white;
             }
         }
     }
@@ -450,7 +450,8 @@
 }
 
 .field-name-field-copyright, .field-name-field-videoquelle {
-	font-size:18px;
+    font-size: 18px;
+
     .copyright {
         font-size: 16px;
         color: $icons-color;
@@ -634,10 +635,10 @@
         padding: 0;
 
         .left-block {
-             @extend .col-md-8;
-			 padding-left:0;
-			 padding-right:0;
-			 
+            @extend .col-md-8;
+
+            padding-left: 0;
+            padding-right: 0;
 
             .view-header {
                 padding-bottom: 30px;
@@ -647,7 +648,8 @@
 
             .inner-wrapper {
                 @extend .col-md-6;
-				padding-left:0;
+
+                padding-left: 0;
 
                 .view-content .views-row {
                     .row-container {
@@ -696,23 +698,21 @@
             .view-footer {
                 padding-top: 30px;
                 padding-bottom: 60px;
-				position:relative;
+                position: relative;
 
                 a {
-				@extend .common-button;
-				color:$main-color;
-				
-				 
-                    
+                    @extend .common-button;
+
+                    color: $main-color;
                 }
             }
 
             > .view-latest-content-doorpage {
                 @extend .col-md-6;
-				padding-top:0;
-				padding-left:0;
-				padding-right:0;
-				
+
+                padding-top: 0;
+                padding-left: 0;
+                padding-right: 0;
 
                 .view-sub-wrapper {
                     width: auto;
@@ -764,14 +764,13 @@
         }
 
         > .view-latest-content-doorpage {
-           
-           @extend .col-md-4;
-		   padding-right:0;
-		   padding-top:0;
+            @extend .col-md-4;
+
+            padding-right: 0;
+            padding-top: 0;
 
             .view-sub-wrapper {
                 width: auto;
-				
 
                 .view-header {
                     padding-bottom: 30px;
@@ -825,13 +824,12 @@
                 .view-footer {
                     padding-top: 30px;
                     padding-bottom: 60px;
-					position:relative;
+                    position: relative;
 
                     a {
                         @extend .common-button;
-						color:$main-color;
-                            
-                        
+
+                        color: $main-color;
                     }
                 }
             }
@@ -839,43 +837,47 @@
     }
 }
 
-
 // Event page datum content
 
-.group-top-wrapper{
-	margin-bottom:40px;
-	overflow:hidden;
-	.group-left-top-wrapper{
-		float:left;
-		 > *{
-			margin-bottom:10px;
-			&:last-child{
-				margin:0;
-			}
-		 }
-	}
-	.group-right-top-wrapper{
-		float:right;
-	}
+.group-top-wrapper {
+    margin-bottom: 40px;
+    overflow: hidden;
+
+    .group-left-top-wrapper {
+        float: left;
+
+        > * {
+            margin-bottom: 10px;
+
+            &:last-child {
+                margin: 0;
+            }
+        }
+    }
+
+    .group-right-top-wrapper {
+        float: right;
+    }
 }
 
-.field-name-field-link-zur-anmeldung{
-	a{
-		@extend .common-button;
-		position:relative;
-		bottom:auto;
-		border:none;
-		background-color:$color-white; 
-		padding:14px 40px 14px 55px;
-		margin:26px 0px 0 0;
-		float: right;    
-		&::before{
-			left: 24px;
-			top: 19px;
-		}
-	}
-}
+.field-name-field-link-zur-anmeldung {
+    a {
+        @extend .common-button;
 
+        position: relative;
+        bottom: auto;
+        border: none;
+        background-color: $color-white;
+        padding: 14px 40px 14px 55px;
+        margin: 26px 0px 0 0;
+        float: right;
+
+        &::before {
+            left: 24px;
+            top: 19px;
+        }
+    }
+}
 
 //.field-name-field-quellenangabe{
 .external-link {
@@ -901,3 +903,77 @@
 }
 
 //}
+
+//node-type-webform
+
+.node-type-webform {
+    background: $color-light-blue;
+
+    .node-webform {
+        @extend .container;
+
+        .field-name-field-untertitel {
+            color: $active-menu;
+            font-size: 26px;
+            padding: 30px 0;
+        }
+
+        .webform-client-form {
+            padding-top: 40px;
+
+            .panel-heading {
+                display: none;
+            }
+
+            .panel-body {
+                background: $main-color;
+
+                .form-group {
+                    margin-bottom: 40px;
+
+                    label {
+                        color: $color-white;
+
+                        .form-required {
+                            color: $active-menu;
+                        }
+                    }
+
+                    .form-control {
+                        border-radius: 0;
+                    }
+
+                    p {
+                        color: $color-white;
+
+                        a {
+                            text-decoration: none;
+                            color: $active-menu;
+                        }
+                    }
+                }
+            }
+
+            .webform-submit {
+                background: $active-menu;
+                color: $color-white;
+                border: 0;
+                border-radius: 0;
+                padding: 10px 40px;
+                cursor: pointer;
+                position: relative;
+                font-size: 20px;
+
+                &:before {
+                    font-family: $icomoon;
+                    content: "\e93f";
+                    color: $main-color;
+                    font-size: 14px;
+                    position: absolute;
+                    left: 15px;
+                    top: 14px;
+                }
+            }
+        }
+    }
+}

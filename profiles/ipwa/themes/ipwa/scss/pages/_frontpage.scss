@@ -6,9 +6,10 @@
 
         .panel-2col {
             @extend .container;
+
             position: relative;
             background: $main-color;
-            padding: 45px ;
+            padding: 45px;
             height: 400px;
 
             .panel-col-first {
@@ -36,11 +37,11 @@
 
                     .pane-paragraphs-item-field-quellenangabe a {
                         color: $color-white;
-                        @extend .common-button;
-						bottom:30px;
-						position:absolute !important;
 
-                        
+                        @extend .common-button;
+
+                        bottom: 30px;
+                        position: absolute !important;
                     }
                 }
 
@@ -78,14 +79,12 @@
                         @extend .common-button;
 
                         color: $color-white;
-						bottom:30px;
-						position:absolute !important;
+                        bottom: 30px;
+                        position: absolute !important;
 
                         &:before {
                             content: "\e94a" !important;
                         }
-
-                        
                     }
                 }
             }
@@ -116,8 +115,8 @@
                 .link-outer-block .link-inner-block-1 {
                     a {
                         @extend .common-button;
-                        color: $color-white;
 
+                        color: $color-white;
                     }
                 }
             }
@@ -132,10 +131,11 @@
 
     .view-sub-wrapper {
         position: relative;
+
         @extend .container;
 
         .view-header {
-		    padding-top:30px;
+            padding-top: 30px;
             padding-bottom: 30px;
 
             .pane-title {
@@ -161,16 +161,17 @@
 
         .view-footer {
             clear: both;
-           padding-top:10px;
-		   padding-bottom:60px;
+            padding-top: 10px;
+            padding-bottom: 60px;
 
             .link-outer-block .link-inner-block-1, .link-outer-block .link-inner-block-2 {
                 display: inline-block;
 
                 a {
                     @extend .common-button;
-                    color: $main-color;                    
-					margin-right:20px;
+
+                    color: $main-color;
+                    margin-right: 20px;
                 }
             }
         }
@@ -188,7 +189,6 @@
         .field-name-field-topic-teaser {
             @extend .container;
 
-            
             > .field-items {
                 padding: 60px 0;
                 float: left;
@@ -226,10 +226,8 @@
                                     @extend .common-button;
 
                                     color: $main-color;
-									position:absolute !important;
-									bottom:30px;
-
-                                    
+                                    position: absolute !important;
+                                    bottom: 30px;
                                 }
                             }
 
