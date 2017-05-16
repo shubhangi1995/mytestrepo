@@ -47,7 +47,8 @@
 
 <div class="<?php print $classes; ?>"<?php print $attributes; ?>>
   <?php if ((!$label_hidden)): ?>
-    <?php if ($element['#field_name'] == 'field_copyright' || $element['#field_name'] == 'field_videoquelle'):?>
+    <?php if ($element['#field_name'] == 'field_copyright' || $element['#field_name'] == 'field_videoquelle'
+      || $element['#field_name'] == 'field_bis_auf_weiteres'):?>
     <div class="field-label"<?php print $title_attributes; ?>><?php print $label ?>:&nbsp;</div>
     <?php else: ?>
       <div class="field-label"<?php print $title_attributes; ?>><?php print $label ?>&nbsp;</div>

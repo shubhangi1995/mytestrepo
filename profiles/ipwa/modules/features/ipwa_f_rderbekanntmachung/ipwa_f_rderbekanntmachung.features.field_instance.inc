@@ -135,7 +135,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 7,
+        'weight' => 8,
       ),
       'rss' => array(
         'label' => 'inline',
@@ -198,6 +198,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -207,6 +208,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -297,7 +299,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
     'description' => 'Dieses Datum erscheint im Frontend.',
     'display' => array(
       'default' => array(
-        'label' => 'hidden',
+        'label' => 'inline',
         'module' => 'date',
         'settings' => array(
           'format_type' => 'short',
@@ -309,7 +311,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
           'show_repeat_rule' => 'show',
         ),
         'type' => 'date_default',
-        'weight' => 1,
+        'weight' => 6,
       ),
       'rss' => array(
         'label' => 'hidden',
@@ -335,7 +337,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_datum',
-    'label' => 'Datum',
+    'label' => 'Stichtag',
     'required' => 0,
     'settings' => array(
       'default_value' => 'now',
@@ -374,7 +376,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 11,
+        'weight' => 3,
       ),
       'rss' => array(
         'label' => 'above',
@@ -421,6 +423,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -430,6 +433,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -474,6 +478,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -483,6 +488,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -574,6 +580,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -583,6 +590,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -627,6 +635,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -636,6 +645,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -680,7 +690,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 8,
+        'weight' => 9,
       ),
       'rss' => array(
         'label' => 'inline',
@@ -740,18 +750,9 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'inline',
-        'module' => 'date',
-        'settings' => array(
-          'format_type' => 'short',
-          'fromto' => 'both',
-          'multiple_from' => '',
-          'multiple_number' => '',
-          'multiple_to' => '',
-          'show_remaining_days' => 0,
-          'show_repeat_rule' => 'show',
-        ),
-        'type' => 'date_default',
-        'weight' => 6,
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 5,
       ),
       'rss' => array(
         'label' => 'inline',
@@ -777,7 +778,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_stichtag',
-    'label' => 'Stichtag',
+    'label' => 'Stichtag old',
     'required' => 0,
     'settings' => array(
       'default_value' => 'now',
@@ -907,7 +908,7 @@ Quelle',
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 12,
+        'weight' => 4,
       ),
       'rss' => array(
         'label' => 'above',
@@ -1173,7 +1174,6 @@ Schema für externe Links: http://www…',
   t('Ausschreibende Stelle');
   t('Bild');
   t('Bis auf Weiteres');
-  t('Datum');
   t('Dieser Artikel gehört zu');
   t('Dieses Datum entspricht der Bewerbungsfrist. ');
   t('Dieses Datum erscheint im Frontend.');
@@ -1199,6 +1199,7 @@ Schema für externe Links: http://www…');
   t('Sie können hier Inhalte vom Typ \'Projekt\' hinzufügen.');
   t('Sie können hier Inhalte vom Typ \'Termin\' hinzufügen.');
   t('Stichtag');
+  t('Stichtag old');
   t('Untertitel');
   t('Videounterschrift');
   t('Weiterführende Links');

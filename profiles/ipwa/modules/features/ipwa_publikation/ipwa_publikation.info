@@ -8,6 +8,7 @@ dependencies[] = text
 features[ctools][] = field_group:field_group:1
 features[ctools][] = strongarm:strongarm:1
 features[features_api][] = api:2
+features[field_base][] = field_publication
 features[field_group][] = group_body_container|node|publikation|default
 features[field_group][] = group_body_sub_wrapper|node|publikation|default
 features[field_group][] = group_page_bottom|node|publikation|default

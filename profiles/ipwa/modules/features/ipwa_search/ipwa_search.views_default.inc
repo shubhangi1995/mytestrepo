@@ -247,10 +247,25 @@ function ipwa_search_views_default_views() {
   $handler->display->display_options['fields']['field_bis_auf_weiteres']['field'] = 'field_bis_auf_weiteres';
   $handler->display->display_options['fields']['field_bis_auf_weiteres']['label'] = '';
   $handler->display->display_options['fields']['field_bis_auf_weiteres']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['field_bis_auf_weiteres']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['field_bis_auf_weiteres']['alter']['text'] = 'Bis auf weiteres';
   $handler->display->display_options['fields']['field_bis_auf_weiteres']['element_label_colon'] = FALSE;
-  /* Field: Indexed Node: Stichtag */
+  /* Field: Indexed Node: Datum */
+  $handler->display->display_options['fields']['field_datum_1']['id'] = 'field_datum_1';
+  $handler->display->display_options['fields']['field_datum_1']['table'] = 'search_api_index_ipwa_solr_index';
+  $handler->display->display_options['fields']['field_datum_1']['field'] = 'field_datum';
+  $handler->display->display_options['fields']['field_datum_1']['label'] = '';
+  $handler->display->display_options['fields']['field_datum_1']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_datum_1']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_datum_1']['settings'] = array(
+    'format_type' => 'short',
+    'custom_date_format' => '',
+    'fromto' => 'both',
+    'multiple_number' => '',
+    'multiple_from' => '',
+    'multiple_to' => '',
+    'show_remaining_days' => 0,
+    'show_repeat_rule' => 'show',
+  );
+  /* Field: Indexed Node: Stichtag old */
   $handler->display->display_options['fields']['field_stichtag']['id'] = 'field_stichtag';
   $handler->display->display_options['fields']['field_stichtag']['table'] = 'search_api_index_ipwa_solr_index';
   $handler->display->display_options['fields']['field_stichtag']['field'] = 'field_stichtag';
@@ -309,11 +324,13 @@ function ipwa_search_views_default_views() {
   $handler->display->display_options['fields']['views_conditional_6']['table'] = 'views_conditional';
   $handler->display->display_options['fields']['views_conditional_6']['field'] = 'views_conditional';
   $handler->display->display_options['fields']['views_conditional_6']['label'] = '';
+  $handler->display->display_options['fields']['views_conditional_6']['exclude'] = TRUE;
   $handler->display->display_options['fields']['views_conditional_6']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['views_conditional_6']['if'] = 'field_stichtag';
-  $handler->display->display_options['fields']['views_conditional_6']['condition'] = '5';
-  $handler->display->display_options['fields']['views_conditional_6']['then'] = '[field_bis_auf_weiteres]';
-  $handler->display->display_options['fields']['views_conditional_6']['or'] = '[field_stichtag]';
+  $handler->display->display_options['fields']['views_conditional_6']['if'] = 'field_bis_auf_weiteres';
+  $handler->display->display_options['fields']['views_conditional_6']['condition'] = '1';
+  $handler->display->display_options['fields']['views_conditional_6']['equalto'] = '1';
+  $handler->display->display_options['fields']['views_conditional_6']['then'] = 'Bis auf Weiteres';
+  $handler->display->display_options['fields']['views_conditional_6']['or'] = '[field_datum_1]';
   $handler->display->display_options['fields']['views_conditional_6']['strip_tags'] = 0;
   /* Field: Views: Views Conditional */
   $handler->display->display_options['fields']['views_conditional_7']['id'] = 'views_conditional_7';
@@ -392,19 +409,41 @@ function ipwa_search_views_default_views() {
   $handler->display->display_options['fields']['views_conditional_5']['equalto'] = 'protagonist';
   $handler->display->display_options['fields']['views_conditional_5']['then'] = '[type] [title] [field_akteurstyp]';
   $handler->display->display_options['fields']['views_conditional_5']['strip_tags'] = 0;
+  /* Field: Views: Views Conditional */
+  $handler->display->display_options['fields']['views_conditional_8']['id'] = 'views_conditional_8';
+  $handler->display->display_options['fields']['views_conditional_8']['table'] = 'views_conditional';
+  $handler->display->display_options['fields']['views_conditional_8']['field'] = 'views_conditional';
+  $handler->display->display_options['fields']['views_conditional_8']['label'] = '';
+  $handler->display->display_options['fields']['views_conditional_8']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['views_conditional_8']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['views_conditional_8']['if'] = 'views_conditional_6';
+  $handler->display->display_options['fields']['views_conditional_8']['condition'] = '6';
+  $handler->display->display_options['fields']['views_conditional_8']['then'] = 'Stichtag: [views_conditional_6]';
+  $handler->display->display_options['fields']['views_conditional_8']['strip_tags'] = 0;
+  /* Field: Views: Views Conditional */
+  $handler->display->display_options['fields']['views_conditional_10']['id'] = 'views_conditional_10';
+  $handler->display->display_options['fields']['views_conditional_10']['table'] = 'views_conditional';
+  $handler->display->display_options['fields']['views_conditional_10']['field'] = 'views_conditional';
+  $handler->display->display_options['fields']['views_conditional_10']['label'] = '';
+  $handler->display->display_options['fields']['views_conditional_10']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['views_conditional_10']['if'] = 'type';
+  $handler->display->display_options['fields']['views_conditional_10']['condition'] = '1';
+  $handler->display->display_options['fields']['views_conditional_10']['equalto'] = 'Förderbekanntmachung';
+  $handler->display->display_options['fields']['views_conditional_10']['then'] = '[views_conditional_8]';
+  $handler->display->display_options['fields']['views_conditional_10']['strip_tags'] = 0;
   $handler->display->display_options['defaults']['sorts'] = FALSE;
-  /* Sort criterion: Indexed Node: Datum */
-  $handler->display->display_options['sorts']['field_datum']['id'] = 'field_datum';
-  $handler->display->display_options['sorts']['field_datum']['table'] = 'search_api_index_ipwa_solr_index';
-  $handler->display->display_options['sorts']['field_datum']['field'] = 'field_datum';
-  $handler->display->display_options['sorts']['field_datum']['exposed'] = TRUE;
-  $handler->display->display_options['sorts']['field_datum']['expose']['label'] = 'Neueste zuerst';
   /* Sort criterion: Indexed Node: Titel */
   $handler->display->display_options['sorts']['title']['id'] = 'title';
   $handler->display->display_options['sorts']['title']['table'] = 'search_api_index_ipwa_solr_index';
   $handler->display->display_options['sorts']['title']['field'] = 'title';
   $handler->display->display_options['sorts']['title']['exposed'] = TRUE;
   $handler->display->display_options['sorts']['title']['expose']['label'] = 'A-Z';
+  /* Sort criterion: Indexed Node: Datum */
+  $handler->display->display_options['sorts']['field_datum']['id'] = 'field_datum';
+  $handler->display->display_options['sorts']['field_datum']['table'] = 'search_api_index_ipwa_solr_index';
+  $handler->display->display_options['sorts']['field_datum']['field'] = 'field_datum';
+  $handler->display->display_options['sorts']['field_datum']['exposed'] = TRUE;
+  $handler->display->display_options['sorts']['field_datum']['expose']['label'] = 'Neueste zuerst';
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
   /* Filter criterion: Search: Fulltext search */
@@ -508,10 +547,9 @@ function ipwa_search_views_default_views() {
     t('‹'),
     t(' ›'),
     t('last »'),
-    t('Bis auf weiteres'),
     t('Herausgeber: [field_herausgeber]'),
-    t('Neueste zuerst'),
     t('A-Z'),
+    t('Neueste zuerst'),
   );
   $export['search_list'] = $view;
 
