@@ -255,11 +255,10 @@ header.navbar-default {
 .common-button {
     font-size: 20px;    
     text-decoration: none;
-    bottom: 30px;
-    margin-left: 25px;
-    position: absolute;
+    margin-left: 25px;   
     padding-bottom: 4px;
     border-bottom: 1px solid $color-light-grey;
+	position:relative;
 
     &:before {
         font-family: $icomoon;
@@ -271,4 +270,8 @@ header.navbar-default {
         top: 6px;
         display: inline-block;
     }
+	&:hover {
+                        border-bottom: 1px solid $active-menu;
+                    }
+	
 }

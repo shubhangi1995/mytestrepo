@@ -161,13 +161,15 @@
                 padding-top: 40px;
                 clear: both;
                 padding-bottom: 20px;
+				position:relative;
 
                 a {
-                    text-decoration: none;
-                    color: $main-color;
-                    position: relative;
-                    padding-left: 30px;
-
+                    @extend .common-button;
+                     color:$main-color;
+					 bottom:0 !important;
+					 &:hover{
+					 border-bottom:1px solid $active-menu;
+					 }
                     
                 }
             }
@@ -182,7 +184,7 @@
     .view-sub-wrapper {
         @extend .container;
 
-        padding: 60px 0;
+        padding: 40px 0;
         position: relative;
 
         .view-header {
@@ -225,14 +227,13 @@
         .view-footer {
             padding-top: 10px;
             clear: both;
-			padding-bottom:40px;
+			
 
             a {
                 @extend .common-button;
 				color:$color-white;
-                &:hover{
-				   border-bottom:1px solid $active-menu;
-				}
+				
+               
                 
             }
         }
@@ -633,8 +634,10 @@
         padding: 0;
 
         .left-block {
-            width: 70%;
-            float: left;
+             @extend .col-md-8;
+			 padding-left:0;
+			 padding-right:0;
+			 
 
             .view-header {
                 padding-bottom: 30px;
@@ -643,9 +646,8 @@
             }
 
             .inner-wrapper {
-                width: 45%;
-                float: left;
-                margin-right: 5%;
+                @extend .col-md-6;
+				padding-left:0;
 
                 .view-content .views-row {
                     .row-container {
@@ -694,23 +696,23 @@
             .view-footer {
                 padding-top: 30px;
                 padding-bottom: 60px;
+				position:relative;
 
                 a {
-                    text-decoration: none;
-                    color: $main-color;
-                    font-size: 20px;
-                    position: relative;
-                    padding-left: 30px;
-
+				@extend .common-button;
+				color:$main-color;
+				
+				 
                     
                 }
             }
 
             > .view-latest-content-doorpage {
-                padding: 0;
-                width: 45%;
-                float: left;
-                margin-right: 5%;
+                @extend .col-md-6;
+				padding-top:0;
+				padding-left:0;
+				padding-right:0;
+				
 
                 .view-sub-wrapper {
                     width: auto;
@@ -762,12 +764,14 @@
         }
 
         > .view-latest-content-doorpage {
-            padding: 0;
-            width: 30%;
-            float: left;
+           
+           @extend .col-md-4;
+		   padding-right:0;
+		   padding-top:0;
 
             .view-sub-wrapper {
                 width: auto;
+				
 
                 .view-header {
                     padding-bottom: 30px;
@@ -821,14 +825,12 @@
                 .view-footer {
                     padding-top: 30px;
                     padding-bottom: 60px;
+					position:relative;
 
                     a {
-                        text-decoration: none;
-                        color: $main-color;
-                        font-size: 20px;
-                        position: relative;
-                        padding-left: 30px;
-
+                        @extend .common-button;
+						color:$main-color;
+                            
                         
                     }
                 }

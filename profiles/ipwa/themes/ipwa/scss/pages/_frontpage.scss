@@ -36,12 +36,11 @@
 
                     .pane-paragraphs-item-field-quellenangabe a {
                         color: $color-white;
-
                         @extend .common-button;
+						bottom:30px;
+						position:absolute !important;
 
-                        &:hover {
-                            border-bottom: 1px solid $active-menu;
-                        }
+                        
                     }
                 }
 
@@ -79,14 +78,14 @@
                         @extend .common-button;
 
                         color: $color-white;
+						bottom:30px;
+						position:absolute !important;
 
                         &:before {
                             content: "\e94a" !important;
                         }
 
-                        &:hover {
-                            border-bottom: 1px solid $active-menu;
-                        }
+                        
                     }
                 }
             }
@@ -119,9 +118,6 @@
                         @extend .common-button;
                         color: $color-white;
 
-                        &:hover {
-                            border-bottom: 1px solid $active-menu;
-                        }
                     }
                 }
             }
@@ -172,16 +168,15 @@
                 display: inline-block;
 
                 a {
-                    position: relative !important;
+                    
 
                     @extend .common-button;
 
                     color: $main-color;
-                    bottom: 0 !important;
+                    
+					margin-right:20px;
 
-                    &:hover {
-                        border-bottom: 1px solid $active-menu;
-                    }
+                    
                 }
             }
         }
@@ -237,10 +232,10 @@
                                     @extend .common-button;
 
                                     color: $main-color;
+									position:absolute !important;
+									bottom:30px;
 
-                                    &:hover {
-                                        border-bottom: 1px solid $active-menu;
-                                    }
+                                    
                                 }
                             }
 
