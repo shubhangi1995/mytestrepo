@@ -213,12 +213,6 @@ function ipwa_base_views_default_views() {
     'show_remaining_days' => 0,
   );
   $handler->display->display_options['fields']['field_datum']['group_column'] = 'entity_id';
-  /* Sort criterion: Content: Titel */
-  $handler->display->display_options['sorts']['title']['id'] = 'title';
-  $handler->display->display_options['sorts']['title']['table'] = 'node';
-  $handler->display->display_options['sorts']['title']['field'] = 'title';
-  $handler->display->display_options['sorts']['title']['exposed'] = TRUE;
-  $handler->display->display_options['sorts']['title']['expose']['label'] = 'A-Z';
   /* Sort criterion: Content: Datum (field_datum) */
   $handler->display->display_options['sorts']['field_datum_value']['id'] = 'field_datum_value';
   $handler->display->display_options['sorts']['field_datum_value']['table'] = 'field_data_field_datum';
@@ -226,6 +220,12 @@ function ipwa_base_views_default_views() {
   $handler->display->display_options['sorts']['field_datum_value']['order'] = 'DESC';
   $handler->display->display_options['sorts']['field_datum_value']['exposed'] = TRUE;
   $handler->display->display_options['sorts']['field_datum_value']['expose']['label'] = 'neueste zuerst';
+  /* Sort criterion: Content: Titel */
+  $handler->display->display_options['sorts']['title']['id'] = 'title';
+  $handler->display->display_options['sorts']['title']['table'] = 'node';
+  $handler->display->display_options['sorts']['title']['field'] = 'title';
+  $handler->display->display_options['sorts']['title']['exposed'] = TRUE;
+  $handler->display->display_options['sorts']['title']['expose']['label'] = 'A-Z';
   /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
@@ -400,8 +400,8 @@ function ipwa_base_views_default_views() {
     t('next ›'),
     t('last »'),
     t('[headline] this needs to be carified, about its content'),
-    t('A-Z'),
     t('neueste zuerst'),
+    t('A-Z'),
     t('Page'),
   );
   $export['aktuelles'] = $view;
@@ -1359,7 +1359,7 @@ function ipwa_base_views_default_views() {
     t('last »'),
     t('File'),
     t('Content entity referenced from field_dokumente_und_publikatione'),
-    t('reverse_field_publication_node'),
+    t('Content referencing Content from field_publication'),
     t('All'),
     t('Kommende Veranstaltungen'),
     t('Content entity referenced from field_veranstaltungen'),

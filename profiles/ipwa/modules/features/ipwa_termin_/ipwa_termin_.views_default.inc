@@ -265,12 +265,6 @@ function ipwa_termin__views_default_views() {
   $handler->display->display_options['fields']['field_ort']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_ort']['group_column'] = 'entity_id';
   $handler->display->display_options['defaults']['sorts'] = FALSE;
-  /* Sort criterion: Content: Titel */
-  $handler->display->display_options['sorts']['title']['id'] = 'title';
-  $handler->display->display_options['sorts']['title']['table'] = 'node';
-  $handler->display->display_options['sorts']['title']['field'] = 'title';
-  $handler->display->display_options['sorts']['title']['exposed'] = TRUE;
-  $handler->display->display_options['sorts']['title']['expose']['label'] = 'A-Z';
   /* Sort criterion: Content: Datum -  start date (field_event_datum) */
   $handler->display->display_options['sorts']['field_event_datum_value']['id'] = 'field_event_datum_value';
   $handler->display->display_options['sorts']['field_event_datum_value']['table'] = 'field_data_field_event_datum';
@@ -278,6 +272,12 @@ function ipwa_termin__views_default_views() {
   $handler->display->display_options['sorts']['field_event_datum_value']['order'] = 'DESC';
   $handler->display->display_options['sorts']['field_event_datum_value']['exposed'] = TRUE;
   $handler->display->display_options['sorts']['field_event_datum_value']['expose']['label'] = 'neueste zuerst';
+  /* Sort criterion: Content: Titel */
+  $handler->display->display_options['sorts']['title']['id'] = 'title';
+  $handler->display->display_options['sorts']['title']['table'] = 'node';
+  $handler->display->display_options['sorts']['title']['field'] = 'title';
+  $handler->display->display_options['sorts']['title']['exposed'] = TRUE;
+  $handler->display->display_options['sorts']['title']['expose']['label'] = 'A-Z';
   $handler->display->display_options['defaults']['arguments'] = FALSE;
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
@@ -529,8 +529,8 @@ function ipwa_termin__views_default_views() {
     t('Dieser Artikel gehört zu'),
     t('Datum'),
     t('All'),
-    t('A-Z'),
     t('neueste zuerst'),
+    t('A-Z'),
     t('Feed'),
     t('[field_event_datum]'),
     t('Ort'),
