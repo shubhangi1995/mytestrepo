@@ -44,15 +44,13 @@
         }
     }
 
-    .field-type-paragraphs {
-        @extend .container;
-    }
+    
 
     .view-alles-zum-thema {
         .view-sub-wrapper {
             @extend .container;
 
-            padding: 0;
+           
 
             .attachment-before .view-result-count {
                 margin-top: -88px;

@@ -247,32 +247,4 @@
     }
 }
 
-//-------------mobile------------//
-@media (max-width: $screen-xs-max) {
-    .front {
-        .field-name-field-anzuzeigende-seitenmodule {
-            .field-name-field-paragraph-view .view-neueste-informationen .view-content {
-                margin: 0;
-            }
 
-            .view-termin .view-content {
-                margin: 0;
-            }
-
-            .panelizer-view-mode {
-                .panel-col-first {
-                    width: 100%;
-                    float: left;
-                    clear: both;
-                    border: none;
-                }
-
-                .panel-col-last {
-                    width: 100%;
-                    float: left;
-                    clear: both;
-                }
-            }
-        }
-    }
-}
