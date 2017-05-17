@@ -7915,7 +7915,7 @@ header.navbar-default {
         color: #ffffff; }
 
 /* line 245, ../scss/pages/_singleview.scss */
-.node-type-article, .node-type-protagonist, .node-type-nachricht, .node-type-termin, .node-type-projekt, .node-type-publikation {
+.node-type-article, .node-type-protagonist, .node-type-nachricht, .node-type-termin, .node-type-projekt, .node-type-publikation, .node-type-f-rderbekanntmachung {
   background-color: #eff2f7; }
 
 /* line 249, ../scss/pages/_singleview.scss */
@@ -8117,13 +8117,13 @@ header.navbar-default {
 .view-id-related_content.view-display-id-block_2 .views-row .row-container .views-field:last-child {
   padding-left: 35px; }
 
-/* line 563, ../scss/pages/_singleview.scss */
-.field-name-field-meldungen-zum-thema .field-items .field-item a, .field-name-field-initiatoren-zum-thema .field-items .field-item a, .field-name-field-projekte-zum-thema .field-items .field-item a, .field-name-field-f-rderbekanntmachungen .field-items .field-item a {
+/* line 564, ../scss/pages/_singleview.scss */
+.field-name-field-meldungen-zum-thema .field-items .field-item a:not(.external-link), .field-name-field-initiatoren-zum-thema .field-items .field-item a:not(.external-link), .field-name-field-projekte-zum-thema .field-items .field-item a:not(.external-link), .field-name-field-f-rderbekanntmachungen .field-items .field-item a:not(.external-link), .field-name-field-weiterf-hrende-links .field-items .field-item a:not(.external-link) {
   position: relative;
   display: inline-block;
   padding-left: 35px; }
-  /* line 568, ../scss/pages/_singleview.scss */
-  .field-name-field-meldungen-zum-thema .field-items .field-item a::before, .field-name-field-initiatoren-zum-thema .field-items .field-item a::before, .field-name-field-projekte-zum-thema .field-items .field-item a::before, .field-name-field-f-rderbekanntmachungen .field-items .field-item a::before {
+  /* line 569, ../scss/pages/_singleview.scss */
+  .field-name-field-meldungen-zum-thema .field-items .field-item a:not(.external-link)::before, .field-name-field-initiatoren-zum-thema .field-items .field-item a:not(.external-link)::before, .field-name-field-projekte-zum-thema .field-items .field-item a:not(.external-link)::before, .field-name-field-f-rderbekanntmachungen .field-items .field-item a:not(.external-link)::before, .field-name-field-weiterf-hrende-links .field-items .field-item a:not(.external-link)::before {
     font-family: "icomoon";
     content: "\e93f";
     color: #8893a5;
@@ -8132,7 +8132,7 @@ header.navbar-default {
     position: absolute;
     top: 6px; }
 
-/* line 588, ../scss/pages/_singleview.scss */
+/* line 590, ../scss/pages/_singleview.scss */
 .view-id-related_content.view-display-id-block_1 .views-row .row-container .views-field {
                     /* &.views-field-field-event-datum {
                         float: left;
@@ -8143,195 +8143,195 @@ header.navbar-default {
                             font-weight: bold;
                         }
                     }  */ }
-  /* line 600, ../scss/pages/_singleview.scss */
+  /* line 602, ../scss/pages/_singleview.scss */
   .view-id-related_content.view-display-id-block_1 .views-row .row-container .views-field .field-content {
     font-size: 22px; }
-  /* line 605, ../scss/pages/_singleview.scss */
+  /* line 607, ../scss/pages/_singleview.scss */
   .view-id-related_content.view-display-id-block_1 .views-row .row-container .views-field .field-event-datum .date-display-range {
     float: left;
     margin-right: 8px; }
-  /* line 610, ../scss/pages/_singleview.scss */
+  /* line 612, ../scss/pages/_singleview.scss */
   .view-id-related_content.view-display-id-block_1 .views-row .row-container .views-field .field-event-datum * {
     color: #e74712;
     font-weight: bold; }
-  /* line 616, ../scss/pages/_singleview.scss */
+  /* line 618, ../scss/pages/_singleview.scss */
   .view-id-related_content.view-display-id-block_1 .views-row .row-container .views-field .date-display-single {
     color: #e74712;
     margin-right: 8px;
     font-weight: bold; }
 
-/* line 629, ../scss/pages/_singleview.scss */
+/* line 631, ../scss/pages/_singleview.scss */
 .view-latest-content-doorpage {
   padding-top: 50px; }
-  /* line 632, ../scss/pages/_singleview.scss */
+  /* line 634, ../scss/pages/_singleview.scss */
   .view-latest-content-doorpage > .view-sub-wrapper {
     padding: 0; }
-    /* line 637, ../scss/pages/_singleview.scss */
+    /* line 639, ../scss/pages/_singleview.scss */
     .view-latest-content-doorpage > .view-sub-wrapper .left-block {
       padding-left: 0;
       padding-right: 0; }
-      /* line 643, ../scss/pages/_singleview.scss */
+      /* line 645, ../scss/pages/_singleview.scss */
       .view-latest-content-doorpage > .view-sub-wrapper .left-block .view-header {
         padding-bottom: 30px;
         padding-top: 60px;
         font-size: 28px; }
-      /* line 649, ../scss/pages/_singleview.scss */
+      /* line 651, ../scss/pages/_singleview.scss */
       .view-latest-content-doorpage > .view-sub-wrapper .left-block .inner-wrapper {
         padding-left: 0; }
-        /* line 655, ../scss/pages/_singleview.scss */
+        /* line 657, ../scss/pages/_singleview.scss */
         .view-latest-content-doorpage > .view-sub-wrapper .left-block .inner-wrapper .view-content .views-row .row-container {
           background: #ffffff;
           height: 350px;
           padding: 30px;
           position: relative; }
-          /* line 661, ../scss/pages/_singleview.scss */
+          /* line 663, ../scss/pages/_singleview.scss */
           .view-latest-content-doorpage > .view-sub-wrapper .left-block .inner-wrapper .view-content .views-row .row-container .views-field-field-themenzuweisung {
             margin-bottom: 30px; }
-            /* line 664, ../scss/pages/_singleview.scss */
+            /* line 666, ../scss/pages/_singleview.scss */
             .view-latest-content-doorpage > .view-sub-wrapper .left-block .inner-wrapper .view-content .views-row .row-container .views-field-field-themenzuweisung img {
               display: inline-block;
               margin-right: 10px; }
-          /* line 670, ../scss/pages/_singleview.scss */
+          /* line 672, ../scss/pages/_singleview.scss */
           .view-latest-content-doorpage > .view-sub-wrapper .left-block .inner-wrapper .view-content .views-row .row-container .views-field-type {
             color: #e74712;
             font-weight: bold;
             padding-bottom: 15px; }
-          /* line 676, ../scss/pages/_singleview.scss */
+          /* line 678, ../scss/pages/_singleview.scss */
           .view-latest-content-doorpage > .view-sub-wrapper .left-block .inner-wrapper .view-content .views-row .row-container .views-field-title {
             padding-bottom: 70px; }
-            /* line 679, ../scss/pages/_singleview.scss */
+            /* line 681, ../scss/pages/_singleview.scss */
             .view-latest-content-doorpage > .view-sub-wrapper .left-block .inner-wrapper .view-content .views-row .row-container .views-field-title a {
               text-decoration: none;
               color: #273753; }
-          /* line 685, ../scss/pages/_singleview.scss */
+          /* line 687, ../scss/pages/_singleview.scss */
           .view-latest-content-doorpage > .view-sub-wrapper .left-block .inner-wrapper .view-content .views-row .row-container .views-field-field-datum {
             position: absolute;
             bottom: 30px; }
-            /* line 689, ../scss/pages/_singleview.scss */
+            /* line 691, ../scss/pages/_singleview.scss */
             .view-latest-content-doorpage > .view-sub-wrapper .left-block .inner-wrapper .view-content .views-row .row-container .views-field-field-datum .date-display-single {
               font-size: 17px;
               color: #949d9e; }
-      /* line 698, ../scss/pages/_singleview.scss */
+      /* line 700, ../scss/pages/_singleview.scss */
       .view-latest-content-doorpage > .view-sub-wrapper .left-block .view-footer {
         padding-top: 30px;
         padding-bottom: 60px;
         position: relative; }
-        /* line 703, ../scss/pages/_singleview.scss */
+        /* line 705, ../scss/pages/_singleview.scss */
         .view-latest-content-doorpage > .view-sub-wrapper .left-block .view-footer a {
           color: #273753; }
-      /* line 710, ../scss/pages/_singleview.scss */
+      /* line 712, ../scss/pages/_singleview.scss */
       .view-latest-content-doorpage > .view-sub-wrapper .left-block > .view-latest-content-doorpage {
         padding-top: 0;
         padding-left: 0;
         padding-right: 0; }
-        /* line 717, ../scss/pages/_singleview.scss */
+        /* line 719, ../scss/pages/_singleview.scss */
         .view-latest-content-doorpage > .view-sub-wrapper .left-block > .view-latest-content-doorpage .view-sub-wrapper {
           width: auto; }
-          /* line 721, ../scss/pages/_singleview.scss */
+          /* line 723, ../scss/pages/_singleview.scss */
           .view-latest-content-doorpage > .view-sub-wrapper .left-block > .view-latest-content-doorpage .view-sub-wrapper .view-content .views-row .row-container {
             background: #ffffff;
             height: 350px;
             padding: 30px;
             position: relative; }
-            /* line 727, ../scss/pages/_singleview.scss */
+            /* line 729, ../scss/pages/_singleview.scss */
             .view-latest-content-doorpage > .view-sub-wrapper .left-block > .view-latest-content-doorpage .view-sub-wrapper .view-content .views-row .row-container .views-field-field-themenzuweisung {
               margin-bottom: 30px; }
-              /* line 730, ../scss/pages/_singleview.scss */
+              /* line 732, ../scss/pages/_singleview.scss */
               .view-latest-content-doorpage > .view-sub-wrapper .left-block > .view-latest-content-doorpage .view-sub-wrapper .view-content .views-row .row-container .views-field-field-themenzuweisung img {
                 display: inline-block;
                 margin-right: 10px; }
-            /* line 736, ../scss/pages/_singleview.scss */
+            /* line 738, ../scss/pages/_singleview.scss */
             .view-latest-content-doorpage > .view-sub-wrapper .left-block > .view-latest-content-doorpage .view-sub-wrapper .view-content .views-row .row-container .views-field-type {
               color: #e74712;
               font-weight: bold;
               padding-bottom: 15px; }
-            /* line 742, ../scss/pages/_singleview.scss */
+            /* line 744, ../scss/pages/_singleview.scss */
             .view-latest-content-doorpage > .view-sub-wrapper .left-block > .view-latest-content-doorpage .view-sub-wrapper .view-content .views-row .row-container .views-field-title {
               padding-bottom: 70px; }
-              /* line 745, ../scss/pages/_singleview.scss */
+              /* line 747, ../scss/pages/_singleview.scss */
               .view-latest-content-doorpage > .view-sub-wrapper .left-block > .view-latest-content-doorpage .view-sub-wrapper .view-content .views-row .row-container .views-field-title a {
                 text-decoration: none;
                 color: #273753; }
-            /* line 751, ../scss/pages/_singleview.scss */
+            /* line 753, ../scss/pages/_singleview.scss */
             .view-latest-content-doorpage > .view-sub-wrapper .left-block > .view-latest-content-doorpage .view-sub-wrapper .view-content .views-row .row-container .views-field-field-datum {
               position: absolute;
               bottom: 30px; }
-              /* line 755, ../scss/pages/_singleview.scss */
+              /* line 757, ../scss/pages/_singleview.scss */
               .view-latest-content-doorpage > .view-sub-wrapper .left-block > .view-latest-content-doorpage .view-sub-wrapper .view-content .views-row .row-container .views-field-field-datum .date-display-single {
                 font-size: 17px;
                 color: #949d9e; }
-    /* line 766, ../scss/pages/_singleview.scss */
+    /* line 768, ../scss/pages/_singleview.scss */
     .view-latest-content-doorpage > .view-sub-wrapper > .view-latest-content-doorpage {
       padding-right: 0;
       padding-top: 0; }
-      /* line 772, ../scss/pages/_singleview.scss */
+      /* line 774, ../scss/pages/_singleview.scss */
       .view-latest-content-doorpage > .view-sub-wrapper > .view-latest-content-doorpage .view-sub-wrapper {
         width: auto; }
-        /* line 775, ../scss/pages/_singleview.scss */
+        /* line 777, ../scss/pages/_singleview.scss */
         .view-latest-content-doorpage > .view-sub-wrapper > .view-latest-content-doorpage .view-sub-wrapper .view-header {
           padding-bottom: 30px;
           padding-top: 60px;
           font-size: 28px; }
-        /* line 782, ../scss/pages/_singleview.scss */
+        /* line 784, ../scss/pages/_singleview.scss */
         .view-latest-content-doorpage > .view-sub-wrapper > .view-latest-content-doorpage .view-sub-wrapper .view-content .views-row .row-container {
           background: #ffffff;
           height: 350px;
           padding: 30px;
           position: relative; }
-          /* line 788, ../scss/pages/_singleview.scss */
+          /* line 790, ../scss/pages/_singleview.scss */
           .view-latest-content-doorpage > .view-sub-wrapper > .view-latest-content-doorpage .view-sub-wrapper .view-content .views-row .row-container .views-field-field-themenzuweisung {
             margin-bottom: 30px; }
-            /* line 791, ../scss/pages/_singleview.scss */
+            /* line 793, ../scss/pages/_singleview.scss */
             .view-latest-content-doorpage > .view-sub-wrapper > .view-latest-content-doorpage .view-sub-wrapper .view-content .views-row .row-container .views-field-field-themenzuweisung img {
               display: inline-block;
               margin-right: 10px; }
-          /* line 797, ../scss/pages/_singleview.scss */
+          /* line 799, ../scss/pages/_singleview.scss */
           .view-latest-content-doorpage > .view-sub-wrapper > .view-latest-content-doorpage .view-sub-wrapper .view-content .views-row .row-container .views-field-type {
             color: #e74712;
             font-weight: bold;
             padding-bottom: 15px; }
-          /* line 803, ../scss/pages/_singleview.scss */
+          /* line 805, ../scss/pages/_singleview.scss */
           .view-latest-content-doorpage > .view-sub-wrapper > .view-latest-content-doorpage .view-sub-wrapper .view-content .views-row .row-container .views-field-title {
             padding-bottom: 70px; }
-            /* line 806, ../scss/pages/_singleview.scss */
+            /* line 808, ../scss/pages/_singleview.scss */
             .view-latest-content-doorpage > .view-sub-wrapper > .view-latest-content-doorpage .view-sub-wrapper .view-content .views-row .row-container .views-field-title a {
               text-decoration: none;
               color: #273753; }
-          /* line 812, ../scss/pages/_singleview.scss */
+          /* line 814, ../scss/pages/_singleview.scss */
           .view-latest-content-doorpage > .view-sub-wrapper > .view-latest-content-doorpage .view-sub-wrapper .view-content .views-row .row-container .views-field-field-ort {
             position: absolute;
             bottom: 30px; }
-            /* line 816, ../scss/pages/_singleview.scss */
+            /* line 818, ../scss/pages/_singleview.scss */
             .view-latest-content-doorpage > .view-sub-wrapper > .view-latest-content-doorpage .view-sub-wrapper .view-content .views-row .row-container .views-field-field-ort .field-content {
               font-size: 17px;
               color: #949d9e; }
-        /* line 824, ../scss/pages/_singleview.scss */
+        /* line 826, ../scss/pages/_singleview.scss */
         .view-latest-content-doorpage > .view-sub-wrapper > .view-latest-content-doorpage .view-sub-wrapper .view-footer {
           padding-top: 30px;
           padding-bottom: 60px;
           position: relative; }
-          /* line 829, ../scss/pages/_singleview.scss */
+          /* line 831, ../scss/pages/_singleview.scss */
           .view-latest-content-doorpage > .view-sub-wrapper > .view-latest-content-doorpage .view-sub-wrapper .view-footer a {
             color: #273753; }
 
-/* line 842, ../scss/pages/_singleview.scss */
+/* line 844, ../scss/pages/_singleview.scss */
 .group-top-wrapper {
   margin-bottom: 40px;
   overflow: hidden; }
-  /* line 846, ../scss/pages/_singleview.scss */
+  /* line 848, ../scss/pages/_singleview.scss */
   .group-top-wrapper .group-left-top-wrapper {
     float: left; }
-    /* line 849, ../scss/pages/_singleview.scss */
+    /* line 851, ../scss/pages/_singleview.scss */
     .group-top-wrapper .group-left-top-wrapper > * {
       margin-bottom: 10px; }
-      /* line 852, ../scss/pages/_singleview.scss */
+      /* line 854, ../scss/pages/_singleview.scss */
       .group-top-wrapper .group-left-top-wrapper > *:last-child {
         margin: 0; }
-  /* line 858, ../scss/pages/_singleview.scss */
+  /* line 860, ../scss/pages/_singleview.scss */
   .group-top-wrapper .group-right-top-wrapper {
     float: right; }
 
-/* line 864, ../scss/pages/_singleview.scss */
+/* line 866, ../scss/pages/_singleview.scss */
 .field-name-field-link-zur-anmeldung a {
   position: relative;
   bottom: auto;
@@ -8340,19 +8340,45 @@ header.navbar-default {
   padding: 14px 40px 14px 55px;
   margin: 26px 0px 0 0;
   float: right; }
-  /* line 875, ../scss/pages/_singleview.scss */
+  /* line 877, ../scss/pages/_singleview.scss */
   .field-name-field-link-zur-anmeldung a::before {
     left: 24px;
     top: 19px; }
 
-/* line 883, ../scss/pages/_singleview.scss */
+/* line 886, ../scss/pages/_singleview.scss */
+.field-name-field-bis-auf-weiteres, .field-name-field-stichtag {
+  font-size: 28px;
+  color: #e74712;
+  border-bottom: 1px solid #c5cbd5;
+  padding-bottom: 15px;
+  margin-bottom: 15px; }
+  /* line 892, ../scss/pages/_singleview.scss */
+  .field-name-field-bis-auf-weiteres .field-label, .field-name-field-stichtag .field-label {
+    font-weight: bold; }
+
+/* line 896, ../scss/pages/_singleview.scss */
+.field-name-field-ausschreibende-stelle {
+  margin-bottom: 45px;
+  font-size: 22px; }
+  /* line 899, ../scss/pages/_singleview.scss */
+  .field-name-field-ausschreibende-stelle .external-link {
+    padding-left: 5px;
+    padding-right: 35px;
+    font-size: 22px; }
+    /* line 903, ../scss/pages/_singleview.scss */
+    .field-name-field-ausschreibende-stelle .external-link::before {
+      left: auto;
+      right: 0;
+      top: 3px; }
+
+/* line 912, ../scss/pages/_singleview.scss */
 .external-link {
   color: #273753;
   padding-left: 35px;
   text-decoration: none;
   font-size: 18px;
   position: relative; }
-  /* line 890, ../scss/pages/_singleview.scss */
+  /* line 919, ../scss/pages/_singleview.scss */
   .external-link::before {
     left: 0;
     position: absolute;
@@ -8361,7 +8387,7 @@ header.navbar-default {
     content: "\e948";
     color: #919BAA;
     font-size: 16px; }
-  /* line 900, ../scss/pages/_singleview.scss */
+  /* line 929, ../scss/pages/_singleview.scss */
   .external-link .ext {
     display: none; }
 
