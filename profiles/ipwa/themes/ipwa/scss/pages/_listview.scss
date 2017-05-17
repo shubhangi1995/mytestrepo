@@ -123,12 +123,12 @@
     > .view-sub-wrapper {
         @extend .container;
 
-        padding: 0;
+        
 
         .view-header {
             color: $active-menu;
             font-size: 26px;
-            padding-left: 250px;
+            
             padding-bottom: 60px;
         }
 

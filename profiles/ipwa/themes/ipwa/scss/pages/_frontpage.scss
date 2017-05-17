@@ -9,13 +9,19 @@
 
             position: relative;
             background: $main-color;
-            padding: 45px;
-            height: 400px;
+            padding: 45px !important;
+			@include devicebreak (medium){
+            height: 400px;}
 
             .panel-col-first {
+			   width:100%;
+			
+				@include devicebreak (medium){
                 width: 60%;
                 float: left;
                 border-right: 1px solid $color-border;
+				padding-right:100px;
+				}
 
                 .inside {
                     margin: 0;
@@ -51,9 +57,11 @@
             }
 
             .panel-col-last {
+			  width:100%;
+			@include devicebreak (medium){
                 width: 40%;
                 float: left;
-                padding-left: 30px;
+                padding-left: 30px;}
 
                 .view-right-front-map-teaser .views-row {
                     width: 100%;
@@ -90,6 +98,8 @@
             }
         }
     }
+	
+	
 }
 
 //--------view-termin----------//
@@ -102,7 +112,7 @@
             .view-header {
                 color: $color-white;
                 padding-bottom: 30px;
-                padding-left: 0;
+                
                 padding-top: 40px;
             }
 
@@ -166,6 +176,10 @@
 
             .link-outer-block .link-inner-block-1, .link-outer-block .link-inner-block-2 {
                 display: inline-block;
+				
+				@include devicebreak(small){
+				 margin-bottom:20px;
+				}
 
                 a {
                     @extend .common-button;
@@ -208,7 +222,8 @@
                         .content {
                             padding: 30px;
                             height: 365px;
-                            padding-right: 165px;
+							@include devicebreak(medium){
+                            padding-right: 165px;}
 
                             .field-type-file {
                                 padding-bottom: 30px;
