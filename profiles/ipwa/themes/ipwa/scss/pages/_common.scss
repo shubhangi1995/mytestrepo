@@ -176,11 +176,10 @@ header.navbar-default {
 
 .view-neueste-informationen, .view-termin, .view-aktuelles, .view-neueste-digital-projekte, .view-alles-zum-thema {
     .view-sub-wrapper > .view-content {
-        margin-left: -15px;
-        margin-right: -15px;
+        
 
         .views-row {
-            @extend .col-md-4;
+            @extend .col-md-4,.col-sm-6;
 
             .row-container {
                 background: $color-white;
@@ -227,7 +226,7 @@ header.navbar-default {
                     }
                 }
 
-                .views-field-field-ort {
+                .views-field-field-ort,.views-field-views-conditional-1 {
                     .field-content {
                         position: absolute;
                         bottom: 30px;
@@ -237,6 +236,9 @@ header.navbar-default {
                 }
             }
         }
+		@include devicebreak (medium) {
+		margin-left: -15px;
+        margin-right: -15px;}
     }
 }
 
