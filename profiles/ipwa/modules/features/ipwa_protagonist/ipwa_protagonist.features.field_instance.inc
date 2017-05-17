@@ -107,7 +107,7 @@ Zeile 5 (bspw. Vorwahl / Telefonnummer)
 Zeile 6 (bspw. E-Mail-Adresse)',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
@@ -806,7 +806,7 @@ Zeile 6 (bspw. E-Mail-Adresse)',
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
