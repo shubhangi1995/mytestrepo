@@ -8334,62 +8334,6 @@ header.navbar-default {
   .external-link .ext {
     display: none; }
 
-/* line 909, ../scss/pages/_singleview.scss */
-.node-type-webform {
-  background: #eff2f7; }
-  /* line 915, ../scss/pages/_singleview.scss */
-  .node-type-webform .node-webform .field-name-field-untertitel {
-    color: #e74712;
-    font-size: 26px;
-    padding: 30px 0; }
-  /* line 921, ../scss/pages/_singleview.scss */
-  .node-type-webform .node-webform .webform-client-form {
-    padding-top: 40px; }
-    /* line 924, ../scss/pages/_singleview.scss */
-    .node-type-webform .node-webform .webform-client-form .panel-heading {
-      display: none; }
-    /* line 928, ../scss/pages/_singleview.scss */
-    .node-type-webform .node-webform .webform-client-form .panel-body {
-      background: #273753; }
-      /* line 931, ../scss/pages/_singleview.scss */
-      .node-type-webform .node-webform .webform-client-form .panel-body .form-group {
-        margin-bottom: 40px; }
-        /* line 934, ../scss/pages/_singleview.scss */
-        .node-type-webform .node-webform .webform-client-form .panel-body .form-group label {
-          color: #ffffff; }
-          /* line 936, ../scss/pages/_singleview.scss */
-          .node-type-webform .node-webform .webform-client-form .panel-body .form-group label .form-required {
-            color: #e74712; }
-        /* line 941, ../scss/pages/_singleview.scss */
-        .node-type-webform .node-webform .webform-client-form .panel-body .form-group .form-control {
-          border-radius: 0; }
-        /* line 945, ../scss/pages/_singleview.scss */
-        .node-type-webform .node-webform .webform-client-form .panel-body .form-group p {
-          color: #ffffff; }
-          /* line 948, ../scss/pages/_singleview.scss */
-          .node-type-webform .node-webform .webform-client-form .panel-body .form-group p a {
-            text-decoration: none;
-            color: #e74712; }
-    /* line 955, ../scss/pages/_singleview.scss */
-    .node-type-webform .node-webform .webform-client-form .webform-submit {
-      background: #e74712;
-      color: #ffffff;
-      border: 0;
-      border-radius: 0;
-      padding: 10px 40px;
-      cursor: pointer;
-      position: relative;
-      font-size: 20px; }
-      /* line 965, ../scss/pages/_singleview.scss */
-      .node-type-webform .node-webform .webform-client-form .webform-submit:before {
-        font-family: "icomoon";
-        content: "\e93f";
-        color: #273753;
-        font-size: 14px;
-        position: absolute;
-        left: 15px;
-        top: 14px; }
-
 /* line 1, ../scss/pages/_listview.scss */
 .page-taxonomy-term {
   background: #eff2f7; }
