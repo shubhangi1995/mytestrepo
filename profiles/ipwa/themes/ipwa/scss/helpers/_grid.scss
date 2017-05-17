@@ -1,0 +1,57 @@
+@mixin col($col, $devicebreak) {
+  width: 100%;
+  float: left;
+  @if $devicebreak == "xl" {
+    @include devicebreak(X-large) {
+      width: percentage($col/12);
+    }
+  }
+  @if $devicebreak == "lg" {
+    @include devicebreak(large) {
+      width: percentage($col/12);
+    }
+  }
+  @else if $devicebreak =="md" {
+    @include devicebreak(medium) {
+      width: percentage($col/12);
+    }
+  }
+  @else if $devicebreak =="sm" {
+    @include devicebreak(small) {
+      width: percentage($col/12);
+    }
+  }
+}
+
+@mixin devicebreak($point) {
+  @if $point==x-large {
+  /* Over Desktop design */
+    @media (min-width: 1025px) {
+      @content;
+    }
+  }
+  @else if $point==large {
+  /* Desktop design */
+    @media (min-width: 960px) {
+      @content;
+    }
+  }
+   @else if $point==x-medium {
+  /* Tablet design */
+    @media (min-width: 767px) {
+      @content;
+    }
+  }
+  @else if $point==medium {
+  /* Tablet design */
+    @media (min-width: 520px) {
+      @content;
+    }
+  }
+  @else if $point==small {
+  /* Mobile design */
+    @media (min-width: 320px) {
+      @content;
+    }
+  }
+}

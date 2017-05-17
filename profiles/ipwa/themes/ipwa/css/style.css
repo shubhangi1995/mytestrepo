@@ -8322,20 +8322,20 @@ header.navbar-default {
         /* line 934, ../scss/pages/_singleview.scss */
         .node-type-webform .node-webform .webform-client-form .panel-body .form-group label {
           color: #ffffff; }
-          /* line 937, ../scss/pages/_singleview.scss */
+          /* line 936, ../scss/pages/_singleview.scss */
           .node-type-webform .node-webform .webform-client-form .panel-body .form-group label .form-required {
             color: #e74712; }
-        /* line 942, ../scss/pages/_singleview.scss */
+        /* line 941, ../scss/pages/_singleview.scss */
         .node-type-webform .node-webform .webform-client-form .panel-body .form-group .form-control {
           border-radius: 0; }
-        /* line 946, ../scss/pages/_singleview.scss */
+        /* line 945, ../scss/pages/_singleview.scss */
         .node-type-webform .node-webform .webform-client-form .panel-body .form-group p {
           color: #ffffff; }
-          /* line 949, ../scss/pages/_singleview.scss */
+          /* line 948, ../scss/pages/_singleview.scss */
           .node-type-webform .node-webform .webform-client-form .panel-body .form-group p a {
             text-decoration: none;
             color: #e74712; }
-    /* line 957, ../scss/pages/_singleview.scss */
+    /* line 955, ../scss/pages/_singleview.scss */
     .node-type-webform .node-webform .webform-client-form .webform-submit {
       background: #e74712;
       color: #ffffff;
@@ -8345,7 +8345,7 @@ header.navbar-default {
       cursor: pointer;
       position: relative;
       font-size: 20px; }
-      /* line 967, ../scss/pages/_singleview.scss */
+      /* line 965, ../scss/pages/_singleview.scss */
       .node-type-webform .node-webform .webform-client-form .webform-submit:before {
         font-family: "icomoon";
         content: "\e93f";
