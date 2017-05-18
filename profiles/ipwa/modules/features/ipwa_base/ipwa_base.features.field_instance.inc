@@ -156,7 +156,7 @@ function ipwa_base_field_default_field_instances() {
         'settings' => array(
           'links' => 1,
           'use_content_language' => 1,
-          'view_mode' => 'default',
+          'view_mode' => 'paragraph',
         ),
         'type' => 'entityreference_entity_view',
         'weight' => 1,
