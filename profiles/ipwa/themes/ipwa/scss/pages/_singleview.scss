@@ -639,8 +639,7 @@
         .left-block {
             @extend .col-md-8;
 
-            padding-left: 0;
-            padding-right: 0;
+            
 
             .view-header {
                 padding-bottom: 30px;
@@ -713,7 +712,7 @@
                 @extend .col-md-6;
 
                 padding-top: 0;
-                padding-left: 0;
+               
                 padding-right: 0;
 
                 .view-sub-wrapper {
@@ -768,7 +767,7 @@
         > .view-latest-content-doorpage {
             @extend .col-md-4;
 
-            padding-right: 0;
+           
             padding-top: 0;
 
             .view-sub-wrapper {
