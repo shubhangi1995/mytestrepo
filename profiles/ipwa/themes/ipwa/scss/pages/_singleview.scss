@@ -267,6 +267,7 @@
 .group-body-container {
     background-color: $color-white;
     padding: 60px 0 45px;
+	overflow:hidden;
 
     p, h3, h4, .field-name-field-kurztext .field-item, .view-id-related_content.view-display-id-block_3 .views-row {
         margin: 0 0 40px 0;
@@ -451,11 +452,10 @@
 
 .field-name-field-copyright, .field-name-field-videoquelle {
     font-size: 18px;
-
-    .copyright {
-        font-size: 16px;
-        color: $icons-color;
-    }
+}
+.copyright, .field-name-field-videoquelle .field-item, .field-name-field-videoquelle .field-label {
+	font-size: 16px;
+	color: $icons-color;
 }
 
 /* .field-name-field-copyright {
@@ -845,7 +845,7 @@
     overflow: hidden;
 
     .group-left-top-wrapper {
-        float: left;
+       // float: left;
 
         > * {
             margin-bottom: 10px;
@@ -857,11 +857,27 @@
     }
 
     .group-right-top-wrapper {
-        float: right;
+        // float: right;
     }
+	.field-name-field-event-datum, .field-name-field-zeit, .field-name-field-ort{
+		border-bottom: 1px solid $single-border-color;
+		padding-bottom:15px;
+		margin-bottom:15px;
+	}
+	.field-name-field-ort{
+		border:none; 
+	}
+	.field-name-field-event-datum{
+		font-size:28px;
+		color:$active-menu;
+		font-weight:bold;
+		.field-label{
+				font-weight:bold;
+		}
+	}
 }
 
-.field-name-field-link-zur-anmeldung {
+.field-name-field-link-zur-anmeldung, .field-name-field-zur-website {
     a {
         @extend .common-button;
 
@@ -870,14 +886,20 @@
         border: none;
         background-color: $color-white;
         padding: 14px 40px 14px 55px;
-        margin: 26px 0px 0 0;
-        float: right;
+		margin:26px 0 0;
+        float: left;
 
         &::before {
             left: 24px;
             top: 19px;
         }
     }
+}
+
+.field-name-field-zur-website{
+	a{
+		margin:26px 0 45px;
+	}
 }
 
 // Funding annoucements
@@ -905,6 +927,29 @@
 			top:3px;
 		}
 	}
+}
+
+// Publication
+
+.field-name-field-herausgeber{
+	border-bottom: 1px solid $single-border-color;
+	padding-bottom:15px;
+	margin-bottom:15px;
+}
+.field-name-field-herausgeber, .field-name-field-ver-ffentlichungsdatum{
+	font-size:18px;
+}
+.field-name-field-ver-ffentlichungsdatum{
+	margin-bottom:45px;
+}
+
+// protagonist view
+
+.field-name-field-ansprechpartner-kontaktdat, .field-name-field-weitere-details{
+	border-bottom: 1px solid $single-border-color;
+	padding-bottom:15px;
+	margin-bottom:15px;
+	font-size:18px;
 }
 
 //.field-name-field-quellenangabe{

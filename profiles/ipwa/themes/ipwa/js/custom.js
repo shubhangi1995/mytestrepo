@@ -51,8 +51,17 @@ jQuery('.page-aktuelles select').select2().on("select2:open", function(){
 		
 		
 	});
-
 	
+	// Copyright for video block single view
+	
+	if(jQuery(document).find(".field-name-field-videounterschrift").length > 0){
+		var copyText1 = jQuery(".field-name-field-videoquelle .field-label").text(), 
+		copyText2 = jQuery(".field-name-field-videoquelle .field-items .field-item").text(), 
+		copyText = copyText1 + copyText2;
+		jQuery(".field-name-field-videounterschrift .field-item").append("<span class='copyright'> " + copyText + "</span>");
+		jQuery(".field-name-field-videoquelle").hide();
+	}
+
 
 
 

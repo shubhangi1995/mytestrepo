@@ -15,10 +15,10 @@ header.navbar-default {
 }
 
 //-----------backend theme changes-----------//
-.field-name-field-weitere-details, .field-name-field-zur-website {
+/* .field-name-field-weitere-details, .field-name-field-zur-website {
     float: left;
     width: 50%;
-}
+} */  
 
 // Page title
 .page-title {
@@ -110,7 +110,7 @@ header.navbar-default {
             font-size: 18px;
 
             a {
-                border-color: $active-menu;
+                // border-color: $active-menu;
             }
         }
     }
