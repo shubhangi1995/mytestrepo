@@ -16,11 +16,11 @@ function ipwa_f_rderbekanntmachung_node_view($node, $view_mode, $langcode) {
   // for CT Förderbekanntmachung
   if ($node->type == 'f_rderbekanntmachung' && !empty($node->content['field_bis_auf_weiteres'])) {
     if ($node->content['field_bis_auf_weiteres']['#items'][0]['value'] == 1) {
-      $node->content['field_bis_auf_weiteres']['#title'] = $node->content['field_datum']['#title'];
+      $node->content['field_bis_auf_weiteres']['#title'] = 'Stichtag';
       $node->content['field_bis_auf_weiteres'][0]['#markup'] = 'Bis auf Weiteres';
     }else{
       if (!empty($node->content['field_datum'])) {
-        $node->content['field_bis_auf_weiteres']['#title'] = $node->content['field_datum']['#title'];
+        $node->content['field_bis_auf_weiteres']['#title'] = 'Stichtag:';
         $node->content['field_bis_auf_weiteres'][0]['#markup'] = $node->content['field_datum'][0]['#markup'];
       }else{
         $node->content['field_bis_auf_weiteres']['#access'] = 0;

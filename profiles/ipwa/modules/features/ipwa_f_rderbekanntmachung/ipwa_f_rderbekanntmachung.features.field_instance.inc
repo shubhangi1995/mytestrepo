@@ -742,69 +742,6 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-f_rderbekanntmachung-field_stichtag'.
-  $field_instances['node-f_rderbekanntmachung-field_stichtag'] = array(
-    'bundle' => 'f_rderbekanntmachung',
-    'deleted' => 0,
-    'description' => 'Dieses Datum entspricht der Bewerbungsfrist. ',
-    'display' => array(
-      'default' => array(
-        'label' => 'inline',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 5,
-      ),
-      'rss' => array(
-        'label' => 'inline',
-        'module' => 'date',
-        'settings' => array(
-          'format_type' => 'short',
-          'fromto' => 'both',
-          'multiple_from' => '',
-          'multiple_number' => '',
-          'multiple_to' => '',
-          'show_remaining_days' => 0,
-          'show_repeat_rule' => 'show',
-        ),
-        'type' => 'date_default',
-        'weight' => 5,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_stichtag',
-    'label' => 'Stichtag old',
-    'required' => 0,
-    'settings' => array(
-      'default_value' => 'now',
-      'default_value2' => 'same',
-      'default_value_code' => '',
-      'default_value_code2' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'date',
-      'settings' => array(
-        'increment' => 15,
-        'input_format' => 'd.m.Y',
-        'input_format_custom' => '',
-        'label_position' => 'above',
-        'no_fieldset' => 0,
-        'repeat_collapsed' => 0,
-        'text_parts' => array(),
-        'year_range' => '-3:+3',
-      ),
-      'type' => 'date_popup',
-      'weight' => 5,
-    ),
-  );
-
   // Exported field_instance: 'node-f_rderbekanntmachung-field_themenzuweisung'.
   $field_instances['node-f_rderbekanntmachung-field_themenzuweisung'] = array(
     'bundle' => 'f_rderbekanntmachung',
@@ -1175,7 +1112,6 @@ Schema für externe Links: http://www…',
   t('Bild');
   t('Bis auf Weiteres');
   t('Dieser Artikel gehört zu');
-  t('Dieses Datum entspricht der Bewerbungsfrist. ');
   t('Dieses Datum erscheint im Frontend.');
   t('Dokumente und Publikationen');
   t('Drücken Sie die "Strg"-Taste um mehrere Themen auszuwählen. Maximale Anzahl zuzuordnender Themen: 3. Wählen Sie eine der vier Oberkategorien aus, sind deren zugeordnete Unterkategorien nicht auswählbar.
@@ -1199,7 +1135,6 @@ Schema für externe Links: http://www…');
   t('Sie können hier Inhalte vom Typ \'Projekt\' hinzufügen.');
   t('Sie können hier Inhalte vom Typ \'Termin\' hinzufügen.');
   t('Stichtag');
-  t('Stichtag old');
   t('Untertitel');
   t('Videounterschrift');
   t('Weiterführende Links');

@@ -265,22 +265,6 @@ function ipwa_search_views_default_views() {
     'show_remaining_days' => 0,
     'show_repeat_rule' => 'show',
   );
-  /* Field: Indexed Node: Stichtag old */
-  $handler->display->display_options['fields']['field_stichtag']['id'] = 'field_stichtag';
-  $handler->display->display_options['fields']['field_stichtag']['table'] = 'search_api_index_ipwa_solr_index';
-  $handler->display->display_options['fields']['field_stichtag']['field'] = 'field_stichtag';
-  $handler->display->display_options['fields']['field_stichtag']['label'] = '';
-  $handler->display->display_options['fields']['field_stichtag']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['field_stichtag']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_stichtag']['settings'] = array(
-    'format_type' => 'short',
-    'fromto' => 'both',
-    'multiple_number' => '',
-    'multiple_from' => '',
-    'multiple_to' => '',
-    'show_remaining_days' => 0,
-    'show_repeat_rule' => 'show',
-  );
   /* Field: Indexed Node: Ort */
   $handler->display->display_options['fields']['field_ort']['id'] = 'field_ort';
   $handler->display->display_options['fields']['field_ort']['table'] = 'search_api_index_ipwa_solr_index';
