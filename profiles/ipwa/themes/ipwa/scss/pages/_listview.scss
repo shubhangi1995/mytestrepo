@@ -15,6 +15,7 @@
 
         padding: 0;
 		padding-top:85px;
+		padding-bottom: 50px;
 
         .field-name-field-bild {
             width: 30%;
@@ -46,7 +47,12 @@
         }
     }
 
-    
+    .paragraphs-items-field-anzuzeigende-seitenmodule{
+	.paragraphs-item-flie-text-mit-bild-links,.paragraphs-item-flie-text-bereich,.paragraphs-item-flie-text-mit-bild-rechts{
+	  @extend .container;
+	}
+	
+	}
 
     .view-alles-zum-thema {
         .view-sub-wrapper {

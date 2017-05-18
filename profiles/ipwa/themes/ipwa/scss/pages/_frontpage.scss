@@ -9,27 +9,28 @@
 
             position: relative;
             background: $main-color;
-            padding-top:45px;
-			@include devicebreak (x-large){
-            height: 400px;
-			padding: 45px !important;}
+            padding-top: 45px;
+
+            @include devicebreak(x-large) {
+                height: 400px;
+                padding: 45px !important;
+            }
+
 
             .panel-col-first {
-			    position:relative;				  
-			     width:100%;
-				 height:400px;
-				 border-bottom:1px solid $color-border;
-			   
-			   
-@include devicebreak (x-large){
-                width: 60%;
-                float: left;
-                border-right: 1px solid $color-border;
-				padding-right:100px;
-				border-bottom:none;
-				height:auto;
-				}
-				
+                width: 100%;
+                height: 400px;
+                border-bottom: 1px solid $color-border;
+
+                @include devicebreak(x-large) {
+                    width: 60%;
+                    float: left;
+                    border-right: 1px solid $color-border;
+                    padding-right: 100px;
+                    border-bottom: none;
+                    height: auto;
+                }
+
 
                 .inside {
                     margin: 0;
@@ -65,20 +66,17 @@
             }
 
             .panel-col-last {
-			
-			width:100%;
-			height:400px;
-			padding-top:30px;
-			
-			
-			  
-			@include devicebreak (x-large){
-                width: 40%;
-                float: left;
-                padding-left: 30px;
-				padding-top:0;
-				 
-				}
+                width: 100%;
+                height: 400px;
+                padding-top: 30px;
+
+                @include devicebreak(x-large) {
+                    width: 40%;
+                    float: left;
+                    padding-left: 30px;
+                    padding-top: 0;
+                }
+
 
                 .view-right-front-map-teaser .views-row {
                     width: 100%;
@@ -115,8 +113,6 @@
             }
         }
     }
-	
-	
 }
 
 //--------view-termin----------//
@@ -129,7 +125,6 @@
             .view-header {
                 color: $color-white;
                 padding-bottom: 30px;
-                
                 padding-top: 40px;
             }
 
@@ -193,10 +188,11 @@
 
             .link-outer-block .link-inner-block-1, .link-outer-block .link-inner-block-2 {
                 display: inline-block;
-				
-				@include devicebreak(small){
-				 margin-bottom:20px;
-				}
+
+                @include devicebreak(small) {
+                    margin-bottom: 20px;
+                }
+
 
                 a {
                     @extend .common-button;
@@ -239,8 +235,11 @@
                         .content {
                             padding: 30px;
                             height: 400px;
-							@include devicebreak(medium){
-                            padding-right: 165px;}
+
+                            @include devicebreak(medium) {
+                                padding-right: 165px;
+                            }
+
 
                             .field-type-file {
                                 padding-bottom: 30px;
@@ -278,5 +277,3 @@
         }
     }
 }
-
-
