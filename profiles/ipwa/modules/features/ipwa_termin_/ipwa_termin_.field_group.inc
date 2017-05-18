@@ -89,9 +89,40 @@ function ipwa_termin__field_group_info() {
     'label' => 'Left top wrapper',
     'weight' => '19',
     'children' => array(
+      0 => 'field_ort',
+      1 => 'field_zeit',
+      2 => 'group_middle_wrapper',
+    ),
+    'format_type' => 'html-element',
+    'format_settings' => array(
+      'label' => 'Left top wrapper',
+      'instance_settings' => array(
+        'id' => '',
+        'classes' => 'group-left-top-wrapper field-group-html-element',
+        'element' => 'div',
+        'show_label' => '0',
+        'label_element' => 'div',
+        'attributes' => '',
+      ),
+    ),
+  );
+  $field_groups['group_left_top_wrapper|node|termin|default'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_middle_wrapper|node|termin|default';
+  $field_group->group_name = 'group_middle_wrapper';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'termin';
+  $field_group->mode = 'default';
+  $field_group->parent_name = 'group_left_top_wrapper';
+  $field_group->data = array(
+    'label' => 'Middle Wrapper',
+    'weight' => '26',
+    'children' => array(
       0 => 'field_event_datum',
-      1 => 'field_ort',
-      2 => 'field_zeit',
+      1 => 'group_ical',
     ),
     'format_type' => 'html-element',
     'format_settings' => array(
@@ -100,14 +131,14 @@ function ipwa_termin__field_group_info() {
         'element' => 'div',
         'show_label' => 0,
         'label_element' => 'div',
-        'classes' => 'group-left-top-wrapper field-group-html-element',
+        'classes' => 'group-middle-wrapper field-group-html-element',
         'attributes' => '',
         'required_fields' => 1,
         'id' => '',
       ),
     ),
   );
-  $field_groups['group_left_top_wrapper|node|termin|default'] = $field_group;
+  $field_groups['group_middle_wrapper|node|termin|default'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -303,21 +334,20 @@ function ipwa_termin__field_group_info() {
   $field_group->parent_name = 'group_top_wrapper';
   $field_group->data = array(
     'label' => 'Right top wrapper',
-    'weight' => '20',
+    'weight' => '21',
     'children' => array(
       0 => 'field_link_zur_anmeldung',
     ),
     'format_type' => 'html-element',
     'format_settings' => array(
-      'formatter' => '',
+      'label' => 'Right top wrapper',
       'instance_settings' => array(
-        'element' => 'div',
-        'show_label' => 0,
-        'label_element' => 'div',
-        'classes' => 'group-right-top-wrapper field-group-html-element',
-        'attributes' => '',
-        'required_fields' => 1,
         'id' => '',
+        'classes' => 'group-right-top-wrapper field-group-html-element',
+        'element' => 'div',
+        'show_label' => '0',
+        'label_element' => 'div',
+        'attributes' => '',
       ),
     ),
   );
@@ -369,15 +399,14 @@ function ipwa_termin__field_group_info() {
     ),
     'format_type' => 'html-element',
     'format_settings' => array(
-      'formatter' => '',
+      'label' => 'top wrapper',
       'instance_settings' => array(
-        'element' => 'div',
-        'show_label' => 0,
-        'label_element' => 'div',
-        'classes' => 'group-top-wrapper field-group-html-element',
-        'attributes' => '',
-        'required_fields' => 1,
         'id' => '',
+        'classes' => 'group-top-wrapper field-group-html-element',
+        'element' => 'div',
+        'show_label' => '0',
+        'label_element' => 'div',
+        'attributes' => '',
       ),
     ),
   );
@@ -388,6 +417,7 @@ function ipwa_termin__field_group_info() {
   t('Body Container');
   t('Body Sub Wrapper');
   t('Left top wrapper');
+  t('Middle Wrapper');
   t('Page Bottom');
   t('Page info');
   t('Related doc');

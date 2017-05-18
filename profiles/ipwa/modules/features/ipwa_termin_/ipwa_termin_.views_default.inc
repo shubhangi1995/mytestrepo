@@ -149,7 +149,7 @@ function ipwa_termin__views_default_views() {
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
-    'f_rderbekanntmachung' => 'f_rderbekanntmachung',
+    'termin' => 'termin',
   );
 
   /* Display: Termine */
@@ -376,13 +376,21 @@ function ipwa_termin__views_default_views() {
   /* Display: Calendar Block */
   $handler = $view->new_display('block', 'Calendar Block', 'block_1');
   $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['defaults']['header'] = FALSE;
+  /* Header: Global: Text area */
+  $handler->display->display_options['header']['area']['id'] = 'area';
+  $handler->display->display_options['header']['area']['table'] = 'views';
+  $handler->display->display_options['header']['area']['field'] = 'area';
+  $handler->display->display_options['header']['area']['content'] = 'in Kalender
+eintragen
+';
+  $handler->display->display_options['header']['area']['format'] = 'wysiwyg';
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Global: Custom text */
   $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
   $handler->display->display_options['fields']['nothing']['table'] = 'views';
   $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
   $handler->display->display_options['fields']['nothing']['label'] = '';
-  $handler->display->display_options['fields']['nothing']['alter']['text'] = 'in kalender eintragen';
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
   $handler->display->display_options['defaults']['arguments'] = FALSE;
   /* Contextual filter: Content: Nid */
@@ -535,7 +543,9 @@ function ipwa_termin__views_default_views() {
     t('[field_event_datum]'),
     t('Ort'),
     t('Calendar Block'),
-    t('in kalender eintragen'),
+    t('in Kalender
+eintragen
+'),
     t('Aktuelle Veranstaltungen'),
     t('Sort by'),
     t('<h2 class="pane-title">Aktuelle Veranstaltungen</h2>'),

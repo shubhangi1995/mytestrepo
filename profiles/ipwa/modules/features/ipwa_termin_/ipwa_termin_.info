@@ -16,6 +16,7 @@ features[field_base][] = field_zus_tzliche_informationen
 features[field_group][] = group_body_container|node|termin|default
 features[field_group][] = group_body_sub_wrapper|node|termin|default
 features[field_group][] = group_left_top_wrapper|node|termin|default
+features[field_group][] = group_middle_wrapper|node|termin|default
 features[field_group][] = group_page_bottom|node|termin|default
 features[field_group][] = group_page_info|node|termin|default
 features[field_group][] = group_rel_pub|node|termin|default

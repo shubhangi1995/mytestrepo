@@ -66,6 +66,17 @@ function ipwa_preprocess_node(&$variables)
         '#weight' => isset($variables['elements']['#fieldgroups']['group_title']) ? $variables['elements']['#fieldgroups']['group_title']->weight : -1);
   }
 
+  //change the position if ical view
+  if($variables['type'] == 'termin') {
+    $view = views_get_view_result("termin", "block_1", $variables['nid']);
+    $related_ical = '';
+    if(!empty($view)) {
+      $related_ical .= views_embed_view("termin", "block_1", $variables['nid']);
+      $variables['content']['group_page_info']['group_top_wrapper']['group_left_top_wrapper']['group_middle_wrapper']['ical']['#markup'] = $related_ical;
+      $variables['content']['group_page_info']['group_top_wrapper']['group_left_top_wrapper']['group_middle_wrapper']['ical']['#weight'] = isset($variables['elements']['#fieldgroups']['group_ical']) ? $variables['elements']['#fieldgroups']['ical']->weight : -1;
+      print_r($variables['content']['group_page_info']['group_top_wrapper']['group_left_top_wrapper']['group_middle_wrapper'] ['ical']);
+    }
+  }
   if ($variables['type'] == 'termin') {
     // Display of Ort field
     if (isset($variables['content']['field_ort']) && !empty($variables['content']['field_ort'])) {
