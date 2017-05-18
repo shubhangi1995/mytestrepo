@@ -189,18 +189,6 @@ function ipwa_topic_views_default_views() {
     'show_remaining_days' => 0,
     'show_repeat_rule' => 'show',
   );
-  /* Field: Views: Views Conditional */
-  $handler->display->display_options['fields']['views_conditional']['id'] = 'views_conditional';
-  $handler->display->display_options['fields']['views_conditional']['table'] = 'views_conditional';
-  $handler->display->display_options['fields']['views_conditional']['field'] = 'views_conditional';
-  $handler->display->display_options['fields']['views_conditional']['label'] = '';
-  $handler->display->display_options['fields']['views_conditional']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['views_conditional']['if'] = 'type';
-  $handler->display->display_options['fields']['views_conditional']['condition'] = '1';
-  $handler->display->display_options['fields']['views_conditional']['equalto'] = 'Projekt';
-  $handler->display->display_options['fields']['views_conditional']['then'] = '<none>';
-  $handler->display->display_options['fields']['views_conditional']['or'] = '[field_datum]';
-  $handler->display->display_options['fields']['views_conditional']['strip_tags'] = 0;
   /* Field: Content: Bis auf Weiteres */
   $handler->display->display_options['fields']['field_bis_auf_weiteres']['id'] = 'field_bis_auf_weiteres';
   $handler->display->display_options['fields']['field_bis_auf_weiteres']['table'] = 'field_data_field_bis_auf_weiteres';
@@ -208,6 +196,19 @@ function ipwa_topic_views_default_views() {
   $handler->display->display_options['fields']['field_bis_auf_weiteres']['label'] = '';
   $handler->display->display_options['fields']['field_bis_auf_weiteres']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_bis_auf_weiteres']['element_label_colon'] = FALSE;
+  /* Field: Views: Views Conditional */
+  $handler->display->display_options['fields']['views_conditional']['id'] = 'views_conditional';
+  $handler->display->display_options['fields']['views_conditional']['table'] = 'views_conditional';
+  $handler->display->display_options['fields']['views_conditional']['field'] = 'views_conditional';
+  $handler->display->display_options['fields']['views_conditional']['label'] = '';
+  $handler->display->display_options['fields']['views_conditional']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['views_conditional']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['views_conditional']['if'] = 'type';
+  $handler->display->display_options['fields']['views_conditional']['condition'] = '7';
+  $handler->display->display_options['fields']['views_conditional']['equalto'] = 'Förderbekanntmachung';
+  $handler->display->display_options['fields']['views_conditional']['then'] = '<none>';
+  $handler->display->display_options['fields']['views_conditional']['or'] = '[field_datum]';
+  $handler->display->display_options['fields']['views_conditional']['strip_tags'] = 0;
   /* Field: Views: Views Conditional */
   $handler->display->display_options['fields']['views_conditional_1']['id'] = 'views_conditional_1';
   $handler->display->display_options['fields']['views_conditional_1']['table'] = 'views_conditional';
@@ -231,7 +232,32 @@ function ipwa_topic_views_default_views() {
   $handler->display->display_options['fields']['views_conditional_2']['condition'] = '1';
   $handler->display->display_options['fields']['views_conditional_2']['equalto'] = 'Förderbekanntmachung';
   $handler->display->display_options['fields']['views_conditional_2']['then'] = '[views_conditional_1]';
+  $handler->display->display_options['fields']['views_conditional_2']['or'] = '<none>';
   $handler->display->display_options['fields']['views_conditional_2']['strip_tags'] = 0;
+  /* Field: Views: Views Conditional */
+  $handler->display->display_options['fields']['views_conditional_3']['id'] = 'views_conditional_3';
+  $handler->display->display_options['fields']['views_conditional_3']['table'] = 'views_conditional';
+  $handler->display->display_options['fields']['views_conditional_3']['field'] = 'views_conditional';
+  $handler->display->display_options['fields']['views_conditional_3']['label'] = '';
+  $handler->display->display_options['fields']['views_conditional_3']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['views_conditional_3']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['views_conditional_3']['if'] = 'views_conditional';
+  $handler->display->display_options['fields']['views_conditional_3']['condition'] = '5';
+  $handler->display->display_options['fields']['views_conditional_3']['then'] = '<none>';
+  $handler->display->display_options['fields']['views_conditional_3']['or'] = '[views_conditional]';
+  $handler->display->display_options['fields']['views_conditional_3']['strip_tags'] = 0;
+  /* Field: Views: Views Conditional */
+  $handler->display->display_options['fields']['views_conditional_4']['id'] = 'views_conditional_4';
+  $handler->display->display_options['fields']['views_conditional_4']['table'] = 'views_conditional';
+  $handler->display->display_options['fields']['views_conditional_4']['field'] = 'views_conditional';
+  $handler->display->display_options['fields']['views_conditional_4']['label'] = '';
+  $handler->display->display_options['fields']['views_conditional_4']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['views_conditional_4']['if'] = 'type';
+  $handler->display->display_options['fields']['views_conditional_4']['condition'] = '1';
+  $handler->display->display_options['fields']['views_conditional_4']['equalto'] = 'Projekt';
+  $handler->display->display_options['fields']['views_conditional_4']['then'] = '<none>';
+  $handler->display->display_options['fields']['views_conditional_4']['or'] = '[views_conditional_3]';
+  $handler->display->display_options['fields']['views_conditional_4']['strip_tags'] = 0;
   $handler->display->display_options['defaults']['sorts'] = FALSE;
   /* Sort criterion: Content: Datum (field_datum) */
   $handler->display->display_options['sorts']['field_datum_value']['id'] = 'field_datum_value';
