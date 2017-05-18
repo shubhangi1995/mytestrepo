@@ -306,6 +306,7 @@ function ipwa_nachricht_field_default_field_instances() {
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -315,6 +316,7 @@ function ipwa_nachricht_field_default_field_instances() {
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -358,6 +360,7 @@ function ipwa_nachricht_field_default_field_instances() {
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -367,6 +370,7 @@ function ipwa_nachricht_field_default_field_instances() {
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -457,6 +461,7 @@ function ipwa_nachricht_field_default_field_instances() {
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -466,6 +471,7 @@ function ipwa_nachricht_field_default_field_instances() {
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -509,6 +515,7 @@ function ipwa_nachricht_field_default_field_instances() {
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -518,6 +525,7 @@ function ipwa_nachricht_field_default_field_instances() {
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -921,15 +929,15 @@ Schema für externe Links: http://www…',
         'label' => 'hidden',
         'module' => 'youtube',
         'settings' => array(
-          'youtube_autohide' => FALSE,
-          'youtube_autoplay' => FALSE,
-          'youtube_controls' => FALSE,
-          'youtube_height' => NULL,
-          'youtube_iv_load_policy' => FALSE,
-          'youtube_loop' => FALSE,
-          'youtube_showinfo' => FALSE,
-          'youtube_size' => '420x315',
-          'youtube_width' => NULL,
+          'youtube_autohide' => 0,
+          'youtube_autoplay' => 0,
+          'youtube_controls' => 0,
+          'youtube_height' => 489,
+          'youtube_iv_load_policy' => 0,
+          'youtube_loop' => 0,
+          'youtube_showinfo' => 0,
+          'youtube_size' => 'custom',
+          'youtube_width' => 870,
         ),
         'type' => 'youtube_video',
         'weight' => 19,
