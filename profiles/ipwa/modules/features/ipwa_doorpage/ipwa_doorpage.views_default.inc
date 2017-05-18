@@ -785,7 +785,7 @@ function ipwa_doorpage_views_default_views() {
   $handler->display->display_options['fields']['field_paragraph_title']['table'] = 'field_data_field_paragraph_title';
   $handler->display->display_options['fields']['field_paragraph_title']['field'] = 'field_paragraph_title';
   $handler->display->display_options['fields']['field_paragraph_title']['label'] = '';
-  $handler->display->display_options['fields']['field_paragraph_title']['alter']['max_length'] = '150';
+  $handler->display->display_options['fields']['field_paragraph_title']['alter']['max_length'] = '140';
   $handler->display->display_options['fields']['field_paragraph_title']['alter']['trim'] = TRUE;
   $handler->display->display_options['fields']['field_paragraph_title']['element_label_colon'] = FALSE;
   /* Field: Field: Fließtext-Bereich */
@@ -916,7 +916,7 @@ function ipwa_doorpage_views_default_views() {
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['relationship'] = 'field_projekt_reference_target_id';
   $handler->display->display_options['fields']['title']['label'] = '';
-  $handler->display->display_options['fields']['title']['alter']['max_length'] = '150';
+  $handler->display->display_options['fields']['title']['alter']['max_length'] = '140';
   $handler->display->display_options['fields']['title']['alter']['trim'] = TRUE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   /* Field: Content: Link */
