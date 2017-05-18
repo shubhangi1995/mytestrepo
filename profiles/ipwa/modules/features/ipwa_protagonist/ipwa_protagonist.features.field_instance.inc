@@ -24,6 +24,13 @@ function ipwa_protagonist_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 14,
       ),
+      'paragraph' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 14,
+      ),
       'teaser' => array(
         'label' => 'hidden',
         'module' => 'text',
@@ -63,6 +70,13 @@ function ipwa_protagonist_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'i18n_taxonomy',
+        'settings' => array(),
+        'type' => 'i18n_taxonomy_term_reference_link',
+        'weight' => 1,
+      ),
+      'paragraph' => array(
         'label' => 'hidden',
         'module' => 'i18n_taxonomy',
         'settings' => array(),
@@ -113,6 +127,13 @@ Zeile 6 (bspw. E-Mail-Adresse)',
         'type' => 'text_default',
         'weight' => 5,
       ),
+      'paragraph' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 5,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -148,6 +169,15 @@ Zeile 6 (bspw. E-Mail-Adresse)',
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'paragraphs',
+        'settings' => array(
+          'view_mode' => 'full',
+        ),
+        'type' => 'paragraphs_view',
+        'weight' => 16,
+      ),
+      'paragraph' => array(
         'label' => 'hidden',
         'module' => 'paragraphs',
         'settings' => array(
@@ -217,6 +247,17 @@ Zeile 6 (bspw. E-Mail-Adresse)',
         'type' => 'entityreference_entity_view',
         'weight' => 15,
       ),
+      'paragraph' => array(
+        'label' => 'hidden',
+        'module' => 'entityreference',
+        'settings' => array(
+          'links' => TRUE,
+          'use_content_language' => TRUE,
+          'view_mode' => 'default',
+        ),
+        'type' => 'entityreference_entity_view',
+        'weight' => 15,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -251,6 +292,12 @@ Zeile 6 (bspw. E-Mail-Adresse)',
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 5,
+      ),
+      'paragraph' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -306,6 +353,12 @@ Zeile 6 (bspw. E-Mail-Adresse)',
         'type' => 'hidden',
         'weight' => 3,
       ),
+      'paragraph' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 3,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -341,6 +394,16 @@ Zeile 6 (bspw. E-Mail-Adresse)',
     'description' => 'Sie können hier Inhalte vom Typ \'Förderbekanntmachung\' hinzufügen.',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'bypass_access' => FALSE,
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 8,
+      ),
+      'paragraph' => array(
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
@@ -394,6 +457,16 @@ Zeile 6 (bspw. E-Mail-Adresse)',
         'type' => 'entityreference_label',
         'weight' => 6,
       ),
+      'paragraph' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'bypass_access' => FALSE,
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 6,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -435,6 +508,13 @@ Zeile 6 (bspw. E-Mail-Adresse)',
         'type' => 'text_default',
         'weight' => 13,
       ),
+      'paragraph' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 13,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -469,6 +549,16 @@ Zeile 6 (bspw. E-Mail-Adresse)',
     'description' => 'Sie können hier Inhalte vom Typ \'Nachricht\' hinzufügen.',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'bypass_access' => FALSE,
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 5,
+      ),
+      'paragraph' => array(
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
@@ -522,6 +612,16 @@ Zeile 6 (bspw. E-Mail-Adresse)',
         'type' => 'entityreference_label',
         'weight' => 7,
       ),
+      'paragraph' => array(
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'bypass_access' => FALSE,
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 7,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -557,6 +657,13 @@ Zeile 6 (bspw. E-Mail-Adresse)',
     'description' => 'Schema für Links: http://example.com',
     'display' => array(
       'default' => array(
+        'label' => 'inline',
+        'module' => 'link',
+        'settings' => array(),
+        'type' => 'link_default',
+        'weight' => 8,
+      ),
+      'paragraph' => array(
         'label' => 'inline',
         'module' => 'link',
         'settings' => array(),
@@ -620,6 +727,13 @@ Zeile 6 (bspw. E-Mail-Adresse)',
         'type' => 'taxonomy_term_reference_plain',
         'weight' => 4,
       ),
+      'paragraph' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_plain',
+        'weight' => 4,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -651,6 +765,13 @@ Zeile 6 (bspw. E-Mail-Adresse)',
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 3,
+      ),
+      'paragraph' => array(
         'label' => 'hidden',
         'module' => 'text',
         'settings' => array(),
@@ -690,6 +811,12 @@ Zeile 6 (bspw. E-Mail-Adresse)',
     'description' => 'Sie können hier Inhalte vom Typ \'Termin\' hinzufügen.',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 4,
+      ),
+      'paragraph' => array(
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
@@ -736,6 +863,13 @@ Zeile 6 (bspw. E-Mail-Adresse)',
         'type' => 'text_default',
         'weight' => 19,
       ),
+      'paragraph' => array(
+        'label' => 'inline',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 19,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -770,6 +904,13 @@ Zeile 6 (bspw. E-Mail-Adresse)',
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 18,
+      ),
+      'paragraph' => array(
         'label' => 'hidden',
         'module' => 'text',
         'settings' => array(),
@@ -816,6 +957,13 @@ Zeile 6 (bspw. E-Mail-Adresse)',
         'type' => 'text_default',
         'weight' => 6,
       ),
+      'paragraph' => array(
+        'label' => 'hidden',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 6,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -851,6 +999,13 @@ Zeile 6 (bspw. E-Mail-Adresse)',
 Schema für externe Links: http://www…',
     'display' => array(
       'default' => array(
+        'label' => 'above',
+        'module' => 'link',
+        'settings' => array(),
+        'type' => 'link_default',
+        'weight' => 9,
+      ),
+      'paragraph' => array(
         'label' => 'above',
         'module' => 'link',
         'settings' => array(),
@@ -924,6 +1079,23 @@ Schema für externe Links: http://www…',
         'type' => 'youtube_video',
         'weight' => 17,
       ),
+      'paragraph' => array(
+        'label' => 'hidden',
+        'module' => 'youtube',
+        'settings' => array(
+          'youtube_autohide' => 0,
+          'youtube_autoplay' => 0,
+          'youtube_controls' => 0,
+          'youtube_height' => 489,
+          'youtube_iv_load_policy' => 0,
+          'youtube_loop' => 0,
+          'youtube_showinfo' => 0,
+          'youtube_size' => 'custom',
+          'youtube_width' => 870,
+        ),
+        'type' => 'youtube_video',
+        'weight' => 17,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -955,6 +1127,13 @@ Schema für externe Links: http://www…',
     'description' => '',
     'display' => array(
       'default' => array(
+        'label' => 'hidden',
+        'module' => 'link',
+        'settings' => array(),
+        'type' => 'link_default',
+        'weight' => 7,
+      ),
+      'paragraph' => array(
         'label' => 'hidden',
         'module' => 'link',
         'settings' => array(),

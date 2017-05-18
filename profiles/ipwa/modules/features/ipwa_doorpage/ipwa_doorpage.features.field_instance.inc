@@ -311,6 +311,12 @@ function ipwa_doorpage_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 4,
       ),
+      'paragraph' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'teaser' => array(
         'label' => 'hidden',
         'module' => 'text',
@@ -356,6 +362,12 @@ function ipwa_doorpage_field_default_field_instances() {
         ),
         'type' => 'paragraphs_view',
         'weight' => 4,
+      ),
+      'paragraph' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -410,6 +422,12 @@ function ipwa_doorpage_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 3,
       ),
+      'paragraph' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -449,6 +467,12 @@ function ipwa_doorpage_field_default_field_instances() {
         'settings' => array(),
         'type' => 'text_default',
         'weight' => 2,
+      ),
+      'paragraph' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'above',

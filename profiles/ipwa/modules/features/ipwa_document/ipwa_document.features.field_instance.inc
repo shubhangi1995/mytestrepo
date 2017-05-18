@@ -23,6 +23,12 @@ function ipwa_document_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 3,
       ),
+      'paragraph' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -67,6 +73,12 @@ function ipwa_document_field_default_field_instances() {
         'type' => 'list_default',
         'weight' => 0,
       ),
+      'paragraph' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -103,6 +115,12 @@ function ipwa_document_field_default_field_instances() {
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 2,
+      ),
+      'paragraph' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -153,6 +171,12 @@ Erlaubter Dateityp: *.pdf',
         'settings' => array(),
         'type' => 'file_default',
         'weight' => 1,
+      ),
+      'paragraph' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'above',

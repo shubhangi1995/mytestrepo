@@ -55,6 +55,29 @@ function ipwa_base_image_default_styles() {
     ),
   );
 
+  // Exported image style: paragraph_image_556_313.
+  $styles['paragraph_image_556_313'] = array(
+    'label' => 'Paragraph Image 556x313',
+    'effects' => array(
+      7 => array(
+        'name' => 'epsacrop_crop',
+        'data' => array(
+          'width' => 556,
+          'height' => 313,
+          'anchor' => 'center-center',
+          'disable_scale' => 0,
+          'jcrop_settings' => array(
+            'aspect_ratio' => '',
+            'bgcolor' => 'black',
+            'bgopacity' => 0.6,
+            'fallback' => 0,
+          ),
+        ),
+        'weight' => 1,
+      ),
+    ),
+  );
+
   // Exported image style: themen_icon_36x36.
   $styles['themen_icon_36x36'] = array(
     'label' => 'Themen icon (36x36)',

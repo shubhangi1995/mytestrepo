@@ -65,9 +65,9 @@ function ipwa_base_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
-          'links' => TRUE,
-          'use_content_language' => TRUE,
-          'view_mode' => 'default',
+          'links' => 1,
+          'use_content_language' => 1,
+          'view_mode' => 'paragraph',
         ),
         'type' => 'entityreference_entity_view',
         'weight' => 0,
@@ -154,8 +154,8 @@ function ipwa_base_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
-          'links' => TRUE,
-          'use_content_language' => TRUE,
+          'links' => 1,
+          'use_content_language' => 1,
           'view_mode' => 'default',
         ),
         'type' => 'entityreference_entity_view',

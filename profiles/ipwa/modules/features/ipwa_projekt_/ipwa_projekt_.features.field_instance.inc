@@ -24,6 +24,12 @@ function ipwa_projekt__field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 3,
       ),
+      'paragraph' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'teaser' => array(
         'label' => 'hidden',
         'module' => 'text',
@@ -69,6 +75,12 @@ function ipwa_projekt__field_default_field_instances() {
         ),
         'type' => 'paragraphs_view',
         'weight' => 5,
+      ),
+      'paragraph' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -131,6 +143,12 @@ function ipwa_projekt__field_default_field_instances() {
         'type' => 'entityreference_entity_view',
         'weight' => 4,
       ),
+      'paragraph' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -169,6 +187,12 @@ function ipwa_projekt__field_default_field_instances() {
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 10,
+      ),
+      'paragraph' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -219,6 +243,12 @@ function ipwa_projekt__field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 11,
       ),
+      'paragraph' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -262,6 +292,12 @@ function ipwa_projekt__field_default_field_instances() {
         ),
         'type' => 'entityreference_label',
         'weight' => 8,
+      ),
+      'paragraph' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -307,6 +343,12 @@ function ipwa_projekt__field_default_field_instances() {
         'type' => 'entityreference_label',
         'weight' => 6,
       ),
+      'paragraph' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -347,6 +389,12 @@ function ipwa_projekt__field_default_field_instances() {
         'settings' => array(),
         'type' => 'text_default',
         'weight' => 2,
+      ),
+      'paragraph' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -390,6 +438,12 @@ function ipwa_projekt__field_default_field_instances() {
         ),
         'type' => 'entityreference_label',
         'weight' => 5,
+      ),
+      'paragraph' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -435,6 +489,12 @@ function ipwa_projekt__field_default_field_instances() {
         'type' => 'entityreference_label',
         'weight' => 7,
       ),
+      'paragraph' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -475,6 +535,12 @@ function ipwa_projekt__field_default_field_instances() {
         'settings' => array(),
         'type' => 'link_default',
         'weight' => 4,
+      ),
+      'paragraph' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -533,6 +599,12 @@ function ipwa_projekt__field_default_field_instances() {
         'type' => 'taxonomy_term_reference_plain',
         'weight' => 3,
       ),
+      'paragraph' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -569,6 +641,12 @@ function ipwa_projekt__field_default_field_instances() {
         'settings' => array(),
         'type' => 'text_default',
         'weight' => 2,
+      ),
+      'paragraph' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -608,6 +686,12 @@ function ipwa_projekt__field_default_field_instances() {
         'settings' => array(),
         'type' => 'hidden',
         'weight' => 12,
+      ),
+      'paragraph' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -650,6 +734,12 @@ function ipwa_projekt__field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 8,
       ),
+      'paragraph' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'teaser' => array(
         'label' => 'above',
         'settings' => array(),
@@ -689,6 +779,12 @@ function ipwa_projekt__field_default_field_instances() {
         'settings' => array(),
         'type' => 'text_default',
         'weight' => 7,
+      ),
+      'paragraph' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -730,6 +826,12 @@ Schema für externe Links: http://www…',
         'settings' => array(),
         'type' => 'link_default',
         'weight' => 9,
+      ),
+      'paragraph' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -797,6 +899,12 @@ Schema für externe Links: http://www…',
         ),
         'type' => 'youtube_video',
         'weight' => 6,
+      ),
+      'paragraph' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'above',

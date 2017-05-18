@@ -55,6 +55,9 @@ function ipwa_document_strongarm() {
       'token' => array(
         'custom_settings' => FALSE,
       ),
+      'paragraph' => array(
+        'custom_settings' => TRUE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
@@ -113,6 +116,13 @@ function ipwa_document_strongarm() {
   $strongarm->name = 'node_submitted_document';
   $strongarm->value = 0;
   $export['node_submitted_document'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'pathauto_node_document_pattern';
+  $strongarm->value = '';
+  $export['pathauto_node_document_pattern'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */

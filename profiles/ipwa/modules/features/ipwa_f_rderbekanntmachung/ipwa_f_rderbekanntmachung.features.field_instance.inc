@@ -24,6 +24,12 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 20,
       ),
+      'paragraph' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'rss' => array(
         'label' => 'hidden',
         'module' => 'text',
@@ -78,6 +84,12 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
         ),
         'type' => 'paragraphs_view',
         'weight' => 22,
+      ),
+      'paragraph' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -136,6 +148,12 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
         'settings' => array(),
         'type' => 'link_default',
         'weight' => 8,
+      ),
+      'paragraph' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'rss' => array(
         'label' => 'inline',
@@ -204,6 +222,12 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
         'type' => 'entityreference_label',
         'weight' => 21,
       ),
+      'paragraph' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'rss' => array(
         'label' => 'hidden',
         'module' => 'entityreference',
@@ -260,6 +284,12 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
         'type' => 'list_default',
         'weight' => 5,
       ),
+      'paragraph' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'rss' => array(
         'label' => 'inline',
         'module' => 'list',
@@ -312,6 +342,12 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
         ),
         'type' => 'date_default',
         'weight' => 6,
+      ),
+      'paragraph' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'rss' => array(
         'label' => 'hidden',
@@ -378,6 +414,12 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
         'type' => 'hidden',
         'weight' => 3,
       ),
+      'paragraph' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'rss' => array(
         'label' => 'above',
         'settings' => array(),
@@ -428,6 +470,12 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
         ),
         'type' => 'entityreference_label',
         'weight' => 9,
+      ),
+      'paragraph' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'rss' => array(
         'label' => 'above',
@@ -484,6 +532,12 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
         'type' => 'entityreference_label',
         'weight' => 6,
       ),
+      'paragraph' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'rss' => array(
         'label' => 'above',
         'module' => 'entityreference',
@@ -535,6 +589,12 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
         'type' => 'text_default',
         'weight' => 19,
       ),
+      'paragraph' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'rss' => array(
         'label' => 'hidden',
         'module' => 'text',
@@ -585,6 +645,12 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
         ),
         'type' => 'entityreference_label',
         'weight' => 5,
+      ),
+      'paragraph' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'rss' => array(
         'label' => 'above',
@@ -641,6 +707,12 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
         'type' => 'entityreference_label',
         'weight' => 7,
       ),
+      'paragraph' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'rss' => array(
         'label' => 'above',
         'module' => 'entityreference',
@@ -691,6 +763,12 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
         'settings' => array(),
         'type' => 'link_default',
         'weight' => 9,
+      ),
+      'paragraph' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'rss' => array(
         'label' => 'inline',
@@ -757,6 +835,12 @@ Quelle',
         'type' => 'taxonomy_term_reference_plain',
         'weight' => 4,
       ),
+      'paragraph' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'rss' => array(
         'label' => 'above',
         'module' => 'i18n_taxonomy',
@@ -800,6 +884,12 @@ Quelle',
         'settings' => array(),
         'type' => 'text_default',
         'weight' => 3,
+      ),
+      'paragraph' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'rss' => array(
         'label' => 'hidden',
@@ -847,6 +937,12 @@ Quelle',
         'type' => 'hidden',
         'weight' => 4,
       ),
+      'paragraph' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'rss' => array(
         'label' => 'above',
         'settings' => array(),
@@ -893,6 +989,12 @@ Quelle',
         'settings' => array(),
         'type' => 'text_default',
         'weight' => 25,
+      ),
+      'paragraph' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'rss' => array(
         'label' => 'inline',
@@ -942,6 +1044,12 @@ Quelle',
         'type' => 'text_default',
         'weight' => 24,
       ),
+      'paragraph' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
       'rss' => array(
         'label' => 'inline',
         'module' => 'text',
@@ -990,6 +1098,12 @@ Schema für externe Links: http://www…',
         'settings' => array(),
         'type' => 'link_default',
         'weight' => 10,
+      ),
+      'paragraph' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'rss' => array(
         'label' => 'above',
@@ -1064,6 +1178,12 @@ Schema für externe Links: http://www…',
         ),
         'type' => 'youtube_video',
         'weight' => 23,
+      ),
+      'paragraph' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
       ),
       'rss' => array(
         'label' => 'hidden',
