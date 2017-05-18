@@ -56,8 +56,8 @@
     <div class="categories-filter">
       <?php foreach ($widgets as $id => $widget): ?>
         <?php if (in_array($id, array('filter-field_themenzuweisung_tid', 'filter-field_themenzuweisung_tid_1',
-          'filter-field_themenzuweisung_tid_2', 'filter-field_themenzuweisung_tid_3'))): ?>
-          <div id="<?php print $widget->id; ?>-wrapper" class="views-exposed-widget views-widget-<?php print $id; ?>">
+          'filter-field_themenzuweisung_tid_2', 'filter-field_themenzuweisung_tid_3', 'filter-term_node_tid_depth', 'filter-term_node_tid_depth_1','filter-term_node_tid_depth_2', 'filter-term_node_tid_depth_3'))): ?>
+          <div id="<?php print $widget->id; ?>wrapper" class="views-exposed-widget views-widget-<?php print $id; ?>">
             <?php if (!empty($widget->label)): ?>
               <label for="<?php print $widget->id; ?>">
                 <?php print $widget->label; ?>
