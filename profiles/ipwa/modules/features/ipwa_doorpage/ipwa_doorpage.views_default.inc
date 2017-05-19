@@ -469,7 +469,7 @@ function ipwa_doorpage_views_default_views() {
   $handler->display->display_options['footer']['area']['id'] = 'area';
   $handler->display->display_options['footer']['area']['table'] = 'views';
   $handler->display->display_options['footer']['area']['field'] = 'area';
-  $handler->display->display_options['footer']['area']['content'] = '<a href="/aktuelles?type=nachricht&field_themenzuweisung_tid=!1">weitere Nachrichten </a>';
+  $handler->display->display_options['footer']['area']['content'] = '<a href="aktuelles?type=nachricht&term_node_tid_depth=1">weitere Nachrichten </a>';
   $handler->display->display_options['footer']['area']['format'] = 'wysiwyg';
   $handler->display->display_options['footer']['area']['tokenize'] = TRUE;
 
@@ -481,7 +481,7 @@ function ipwa_doorpage_views_default_views() {
   $handler->display->display_options['footer']['area']['id'] = 'area';
   $handler->display->display_options['footer']['area']['table'] = 'views';
   $handler->display->display_options['footer']['area']['field'] = 'area';
-  $handler->display->display_options['footer']['area']['content'] = '<a href="/aktuelles?type=publikation&field_themenzuweisung_tid=!1">weitere Publikationen</a>';
+  $handler->display->display_options['footer']['area']['content'] = '<a href="/aktuelles?type=nachricht&term_node_tid_depth=!1">weitere Publikationen</a>';
   $handler->display->display_options['footer']['area']['format'] = 'wysiwyg';
   $handler->display->display_options['footer']['area']['tokenize'] = TRUE;
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
@@ -515,7 +515,7 @@ function ipwa_doorpage_views_default_views() {
   $handler->display->display_options['footer']['area']['id'] = 'area';
   $handler->display->display_options['footer']['area']['table'] = 'views';
   $handler->display->display_options['footer']['area']['field'] = 'area';
-  $handler->display->display_options['footer']['area']['content'] = '<a href="/termin?field_themenzuweisung_tid=1">weitere Termine</a>';
+  $handler->display->display_options['footer']['area']['content'] = '<a href="/termine?term_node_tid_depth=1">weitere Termine</a>';
   $handler->display->display_options['footer']['area']['format'] = 'wysiwyg';
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Content: Dieser Artikel gehört zu */
@@ -601,7 +601,7 @@ function ipwa_doorpage_views_default_views() {
   $handler->display->display_options['footer']['area']['id'] = 'area';
   $handler->display->display_options['footer']['area']['table'] = 'views';
   $handler->display->display_options['footer']['area']['field'] = 'area';
-  $handler->display->display_options['footer']['area']['content'] = '<a href="/aktuelles?type=nachricht&field_themenzuweisung_tid_1=!1">weitere Nachrichten </a>';
+  $handler->display->display_options['footer']['area']['content'] = '<a href="/aktuelles?type=nachricht&term_node_tid_depth_1=!1">weitere Nachrichten </a>';
   $handler->display->display_options['footer']['area']['format'] = 'wysiwyg';
   $handler->display->display_options['footer']['area']['tokenize'] = TRUE;
 
@@ -613,7 +613,7 @@ function ipwa_doorpage_views_default_views() {
   $handler->display->display_options['footer']['area']['id'] = 'area';
   $handler->display->display_options['footer']['area']['table'] = 'views';
   $handler->display->display_options['footer']['area']['field'] = 'area';
-  $handler->display->display_options['footer']['area']['content'] = '<a href="/aktuelles?type=publikation&field_themenzuweisung_tid_1=!1">weitere Publikationen</a>';
+  $handler->display->display_options['footer']['area']['content'] = '<a href="/aktuelles?type=publikation&term_node_tid_depth_1=!1">weitere Publikationen</a>';
   $handler->display->display_options['footer']['area']['format'] = 'wysiwyg';
   $handler->display->display_options['footer']['area']['tokenize'] = TRUE;
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
@@ -730,16 +730,16 @@ function ipwa_doorpage_views_default_views() {
     t('<a href="/aktuelles?type=publikation&field_themenzuweisung_tid=1">weitere Publikationen</a>'),
     t('All'),
     t('News P&G'),
-    t('<a href="/aktuelles?type=nachricht&field_themenzuweisung_tid=!1">weitere Nachrichten </a>'),
+    t('<a href="aktuelles?type=nachricht&term_node_tid_depth=1">weitere Nachrichten </a>'),
     t('Publikation P&G'),
-    t('<a href="/aktuelles?type=publikation&field_themenzuweisung_tid=!1">weitere Publikationen</a>'),
+    t('<a href="/aktuelles?type=nachricht&term_node_tid_depth=!1">weitere Publikationen</a>'),
     t('Termin P&G'),
     t('<h2 class="pane-title">Termine</h2>'),
-    t('<a href="/termin?field_themenzuweisung_tid=1">weitere Termine</a>'),
+    t('<a href="/termine?term_node_tid_depth=1">weitere Termine</a>'),
     t('News W&A'),
-    t('<a href="/aktuelles?type=nachricht&field_themenzuweisung_tid_1=!1">weitere Nachrichten </a>'),
+    t('<a href="/aktuelles?type=nachricht&term_node_tid_depth_1=!1">weitere Nachrichten </a>'),
     t('Publikation W&A'),
-    t('<a href="/aktuelles?type=publikation&field_themenzuweisung_tid_1=!1">weitere Publikationen</a>'),
+    t('<a href="/aktuelles?type=publikation&term_node_tid_depth_1=!1">weitere Publikationen</a>'),
     t('Termin W&A'),
     t('<a href="/termine?field_themenzuweisung_tid=11">weitere Termine</a>'),
   );
@@ -941,6 +941,111 @@ function ipwa_doorpage_views_default_views() {
     t('Right front map teaser'),
   );
   $export['right_front_map_teaser'] = $view;
+
+  $view = new view();
+  $view->name = 'wahlen_sie_einen_themenbereich';
+  $view->description = '';
+  $view->tag = 'default';
+  $view->base_table = 'taxonomy_term_data';
+  $view->human_name = 'Wählen Sie einen Themenbereich';
+  $view->core = 7;
+  $view->api_version = '3.0';
+  $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
+
+  /* Display: Master */
+  $handler = $view->new_display('default', 'Master', 'default');
+  $handler->display->display_options['title'] = 'Wählen Sie einen Themenbereich';
+  $handler->display->display_options['use_ajax'] = TRUE;
+  $handler->display->display_options['use_more_always'] = FALSE;
+  $handler->display->display_options['access']['type'] = 'perm';
+  $handler->display->display_options['cache']['type'] = 'none';
+  $handler->display->display_options['query']['type'] = 'views_query';
+  $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['pager']['type'] = 'mini';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '4';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['pager']['options']['id'] = '0';
+  $handler->display->display_options['pager']['options']['tags']['previous'] = '<';
+  $handler->display->display_options['pager']['options']['tags']['next'] = '>';
+  $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['row_plugin'] = 'fields';
+  /* Header: Global: Text area */
+  $handler->display->display_options['header']['area']['id'] = 'area';
+  $handler->display->display_options['header']['area']['table'] = 'views';
+  $handler->display->display_options['header']['area']['field'] = 'area';
+  $handler->display->display_options['header']['area']['content'] = '<h2 class="pane-title">Wählen Sie einen Themenbereich</a>';
+  $handler->display->display_options['header']['area']['format'] = 'wysiwyg';
+  /* Field: Taxonomy term: Term ID */
+  $handler->display->display_options['fields']['tid']['id'] = 'tid';
+  $handler->display->display_options['fields']['tid']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['fields']['tid']['field'] = 'tid';
+  $handler->display->display_options['fields']['tid']['label'] = '';
+  $handler->display->display_options['fields']['tid']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['tid']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['tid']['separator'] = '';
+  /* Field: Taxonomy term: Name */
+  $handler->display->display_options['fields']['name']['id'] = 'name';
+  $handler->display->display_options['fields']['name']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['fields']['name']['field'] = 'name';
+  $handler->display->display_options['fields']['name']['label'] = '';
+  $handler->display->display_options['fields']['name']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['name']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['name']['link_to_taxonomy'] = TRUE;
+  /* Field: Field: Kurztext */
+  $handler->display->display_options['fields']['field_kurztext']['id'] = 'field_kurztext';
+  $handler->display->display_options['fields']['field_kurztext']['table'] = 'field_data_field_kurztext';
+  $handler->display->display_options['fields']['field_kurztext']['field'] = 'field_kurztext';
+  $handler->display->display_options['fields']['field_kurztext']['label'] = '';
+  $handler->display->display_options['fields']['field_kurztext']['element_label_colon'] = FALSE;
+  /* Field: Global: Custom text */
+  $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['table'] = 'views';
+  $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['label'] = '';
+  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<a href="/taxonomy/term/[tid]">Zur Themenseite</a>';
+  $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
+  /* Contextual filter: Taxonomy term: Parent term */
+  $handler->display->display_options['arguments']['parent']['id'] = 'parent';
+  $handler->display->display_options['arguments']['parent']['table'] = 'taxonomy_term_hierarchy';
+  $handler->display->display_options['arguments']['parent']['field'] = 'parent';
+  $handler->display->display_options['arguments']['parent']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['parent']['default_argument_type'] = 'taxonomy_tid';
+  $handler->display->display_options['arguments']['parent']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['parent']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['parent']['summary_options']['items_per_page'] = '25';
+  /* Filter criterion: Taxonomy term: Vocabulary */
+  $handler->display->display_options['filters']['vid']['id'] = 'vid';
+  $handler->display->display_options['filters']['vid']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['filters']['vid']['field'] = 'vid';
+  $handler->display->display_options['filters']['vid']['value'] = array(
+    1 => '1',
+  );
+
+  /* Display: Block */
+  $handler = $view->new_display('block', 'Block', 'block');
+  $translatables['wahlen_sie_einen_themenbereich'] = array(
+    t('Master'),
+    t('Wählen Sie einen Themenbereich'),
+    t('more'),
+    t('Apply'),
+    t('Reset'),
+    t('Sort by'),
+    t('Asc'),
+    t('Desc'),
+    t('Items per page'),
+    t('- All -'),
+    t('Offset'),
+    t('« first'),
+    t('<'),
+    t('>'),
+    t('last »'),
+    t('<h2 class="pane-title">Wählen Sie einen Themenbereich</a>'),
+    t('.'),
+    t('<a href="/taxonomy/term/[tid]">Zur Themenseite</a>'),
+    t('All'),
+    t('Block'),
+  );
+  $export['wahlen_sie_einen_themenbereich'] = $view;
 
   return $export;
 }
