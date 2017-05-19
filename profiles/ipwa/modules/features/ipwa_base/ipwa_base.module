@@ -75,9 +75,8 @@ function ipwa_base_views_pre_render(&$view) {
 }
 
 
-function ipwa_base_form_alter(&$form, &$form_state, $form_id)
-{
-  if ($form_id == 'views_exposed_form') {
+function ipwa_base_form_alter(&$form, &$form_state, $form_id) {
+  if ($form['#id'] == 'views-exposed-form-aktuelles-page') {
     $form['term_node_tid_depth']['#options'][0]->option[1] = $form['term_node_tid_depth_1']['#options'][11]->option[11] =
     $form['term_node_tid_depth_2']['#options'][22]->option[24] = $form['term_node_tid_depth_3']['#options'][32]->option[34] = 'Alle Themen';
 
