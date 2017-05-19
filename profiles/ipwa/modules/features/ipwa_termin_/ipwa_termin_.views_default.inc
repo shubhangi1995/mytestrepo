@@ -388,8 +388,7 @@ function ipwa_termin__views_default_views() {
   $handler->display->display_options['header']['area']['id'] = 'area';
   $handler->display->display_options['header']['area']['table'] = 'views';
   $handler->display->display_options['header']['area']['field'] = 'area';
-  $handler->display->display_options['header']['area']['content'] = 'in Kalender
-eintragen
+  $handler->display->display_options['header']['area']['content'] = 'in Kalender eintragen
 ';
   $handler->display->display_options['header']['area']['format'] = 'wysiwyg';
   $handler->display->display_options['defaults']['fields'] = FALSE;
@@ -550,8 +549,7 @@ eintragen
     t('[field_event_datum]'),
     t('Ort'),
     t('Calendar Block'),
-    t('in Kalender
-eintragen
+    t('in Kalender eintragen
 '),
     t('Aktuelle Veranstaltungen'),
     t('Sort by'),
