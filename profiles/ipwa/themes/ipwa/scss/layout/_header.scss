@@ -428,24 +428,5 @@ header {
     }
 }
 
-//mobile-view
 
-@media (max-width: $screen-xs-max) {
-    .navbar-header {
-        .logo {
-            padding-left: 20px;
 
-            .big {
-                display: none;
-            }
-
-            .small {
-                display: block;
-            }
-        }
-    }
-
-    .nrw-eu-logo {
-        display: none;
-    }
-}

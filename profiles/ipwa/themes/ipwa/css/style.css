@@ -6601,19 +6601,101 @@ header .container, header .field-name-field-anzuzeigende-seitenmodule .panelizer
   .navbar-header .logo .small {
     display: none; } }
 @media (max-width: 767px) {
-  /* line 435, ../scss/layout/_header.scss */
-  .navbar-header .logo {
+  /* line 4, ../scss/layout/_header-mobile-view.scss */
+  header .navbar-header .logo {
     padding-left: 20px; }
-    /* line 438, ../scss/layout/_header.scss */
-    .navbar-header .logo .big {
+    /* line 7, ../scss/layout/_header-mobile-view.scss */
+    header .navbar-header .logo .big {
       display: none; }
-    /* line 442, ../scss/layout/_header.scss */
-    .navbar-header .logo .small {
+    /* line 11, ../scss/layout/_header-mobile-view.scss */
+    header .navbar-header .logo .small {
       display: block; }
-
-  /* line 448, ../scss/layout/_header.scss */
-  .nrw-eu-logo {
-    display: none; } }
+  /* line 16, ../scss/layout/_header-mobile-view.scss */
+  header .navbar-header .navbar-toggle {
+    border: none; }
+    /* line 19, ../scss/layout/_header-mobile-view.scss */
+    header .navbar-header .navbar-toggle:hover, header .navbar-header .navbar-toggle:focus {
+      background: none; }
+    /* line 23, ../scss/layout/_header-mobile-view.scss */
+    header .navbar-header .navbar-toggle .icon-bar {
+      background-color: #e74712; }
+  /* line 29, ../scss/layout/_header-mobile-view.scss */
+  header .nrw-eu-logo {
+    display: none; }
+  /* line 33, ../scss/layout/_header-mobile-view.scss */
+  header .navbar-collapse.in {
+    position: absolute;
+    z-index: 9999;
+    background: #ffffff;
+    width: 100%; }
+    /* line 38, ../scss/layout/_header-mobile-view.scss */
+    header .navbar-collapse.in .search-icon {
+      padding: 20px;
+      width: 100%;
+      text-align: left;
+      border-bottom: 1px solid #949d9e;
+      background-color: #eff2f7; }
+    /* line 46, ../scss/layout/_header-mobile-view.scss */
+    header .navbar-collapse.in ul.navbar-nav {
+      width: 100%;
+      float: left;
+      margin: 0; }
+      /* line 51, ../scss/layout/_header-mobile-view.scss */
+      header .navbar-collapse.in ul.navbar-nav > li {
+        padding: 20px;
+        border-bottom: 1px solid #949d9e;
+        text-align: left;
+        background-color: #eff2f7; }
+        /* line 57, ../scss/layout/_header-mobile-view.scss */
+        header .navbar-collapse.in ul.navbar-nav > li a {
+          padding: 0; }
+    /* line 63, ../scss/layout/_header-mobile-view.scss */
+    header .navbar-collapse.in .region-navigation {
+      padding-top: 0; }
+      /* line 68, ../scss/layout/_header-mobile-view.scss */
+      header .navbar-collapse.in .region-navigation .tb-megamenu .btn-navbar {
+        display: none; }
+      /* line 72, ../scss/layout/_header-mobile-view.scss */
+      header .navbar-collapse.in .region-navigation .tb-megamenu .nav-collapse {
+        height: auto !important;
+        display: block;
+        background: 0;
+        position: static;
+        margin: 0; }
+      /* line 81, ../scss/layout/_header-mobile-view.scss */
+      header .navbar-collapse.in .region-navigation .tb-megamenu ul.tb-megamenu-nav > li.dropdown.open > a {
+        border-bottom: none; }
+      /* line 86, ../scss/layout/_header-mobile-view.scss */
+      header .navbar-collapse.in .region-navigation .tb-megamenu ul.tb-megamenu-nav > li {
+        width: 100%;
+        border-bottom: 1px solid #949d9e; }
+        /* line 90, ../scss/layout/_header-mobile-view.scss */
+        header .navbar-collapse.in .region-navigation .tb-megamenu ul.tb-megamenu-nav > li > a {
+          border: 0;
+          width: 100%;
+          padding: 20px;
+          margin: 0;
+          font-weight: bold;
+          cursor: pointer;
+          display: block;
+          padding-left: 75px; }
+          /* line 102, ../scss/layout/_header-mobile-view.scss */
+          header .navbar-collapse.in .region-navigation .tb-megamenu ul.tb-megamenu-nav > li > a:before {
+            margin-top: 0;
+            top: 10px;
+            left: 20px; }
+        /* line 109, ../scss/layout/_header-mobile-view.scss */
+        header .navbar-collapse.in .region-navigation .tb-megamenu ul.tb-megamenu-nav > li .tb-megamenu-submenu {
+          display: none !important; }
+        /* line 114, ../scss/layout/_header-mobile-view.scss */
+        header .navbar-collapse.in .region-navigation .tb-megamenu ul.tb-megamenu-nav > li .mega-dropdown-inner {
+          width: auto; }
+          /* line 116, ../scss/layout/_header-mobile-view.scss */
+          header .navbar-collapse.in .region-navigation .tb-megamenu ul.tb-megamenu-nav > li .mega-dropdown-inner .tb-submenu-left ul li a {
+            border-top: 0; }
+        /* line 122, ../scss/layout/_header-mobile-view.scss */
+        header .navbar-collapse.in .region-navigation .tb-megamenu ul.tb-megamenu-nav > li .view-themenzuweisung-flyouts .view-content .views-row a {
+          border-top: 0; } }
 /* line 1, ../scss/layout/_footer.scss */
 footer {
   margin-top: 40px; }

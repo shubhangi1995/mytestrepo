@@ -1,0 +1,130 @@
+@media (max-width: $screen-xs-max) {
+    header {
+        .navbar-header {
+            .logo {
+                padding-left: 20px;
+
+                .big {
+                    display: none;
+                }
+
+                .small {
+                    display: block;
+                }
+            }
+
+            .navbar-toggle {
+                border: none;
+
+                &:hover, &:focus {
+                    background: none;
+                }
+
+                .icon-bar {
+                    background-color: $active-menu;
+                }
+            }
+        }
+
+        .nrw-eu-logo {
+            display: none;
+        }
+
+        .navbar-collapse.in {
+		    position: absolute;
+    z-index: 9999;
+    background: $color-white;
+    width: 100%;
+            .search-icon {
+                padding: 20px;
+                width: 100%;
+                text-align: left;
+				 border-bottom: 1px solid $color-light-grey;
+				 background-color:$color-light-blue;
+            }
+
+            ul.navbar-nav {
+                width: 100%;
+                float: left;
+                margin: 0;
+
+                > li {
+                    padding: 20px;
+                    border-bottom: 1px solid $color-light-grey;
+                    text-align: left;
+					background-color:$color-light-blue;
+					 
+					 a{
+					  padding:0;
+					 }
+                }
+            }
+
+            .region-navigation {
+			padding-top:0;
+			
+			.tb-megamenu {
+			
+			.btn-navbar {
+                    display: none;
+                }
+
+                .nav-collapse {
+                    height: auto !important;
+                    display: block;
+                    background: 0;
+                    position: static;
+					margin:0;
+                }
+
+                ul.tb-megamenu-nav {
+                    > li.dropdown.open > a
+						{
+						border-bottom:none;
+						}
+
+                   > li {
+                        width: 100%;                        
+                        border-bottom: 1px solid $color-light-grey;					
+						
+                        > a {
+                            border: 0;
+                            width: 100%;
+							padding: 20px;
+                            margin: 0;
+                            font-weight: bold;
+							cursor:pointer;
+							display:block;
+							padding-left:75px;
+							
+							
+
+                            &:before {
+                                margin-top: 0;
+                                top: 10px;
+								left:20px;
+                            }
+                        }
+
+                        .tb-megamenu-submenu {
+                            display: none !important;
+							    
+                              
+                        }
+						.mega-dropdown-inner{
+						  width:auto;
+						  .tb-submenu-left ul li a{
+						    border-top:0;
+						  }
+						}
+						
+						
+						.view-themenzuweisung-flyouts .view-content .views-row a{
+						  border-top:0;
+						}
+                    }
+                }
+            }}
+        }
+    }
+}
