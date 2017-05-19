@@ -55,7 +55,7 @@ function ipwa_menu_default_fe_block_boxes() {
 	<li><a href="/aktuelles?type=f_rderbekanntmachung&amp;term_node_tid_depth_2=24">&nbsp;Förderung&nbsp;</a></li>
 	<li><a href="/node/11">&nbsp;Unternehmen als Partner finden</a></li>
 	<li><a href="/node/5">&nbsp;FuE-Einrichtungen als Partner finden</a></li>
-	<li><a href="infos-fuer-unternehmen">Übersicht </a></li>
+	<li><a href="/infos-fuer-unternehmen">Übersicht </a></li>
 </ul>
 ';
 
