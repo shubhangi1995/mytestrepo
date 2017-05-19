@@ -5,7 +5,8 @@ footer{
   ul{
   margin-left:-15px;
   margin-right:-15px;
-    
+  border-bottom:1px solid $color-light-blue;
+    border-top:1px solid $color-light-blue;
   li{
     display:block;
 	padding:20px;
