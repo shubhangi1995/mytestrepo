@@ -73,3 +73,30 @@ function ipwa_base_views_pre_render(&$view) {
     }
   }
 }
+
+
+function ipwa_base_form_alter(&$form, &$form_state, $form_id)
+{
+  if ($form_id == 'views_exposed_form') {
+    $form['term_node_tid_depth']['#options'][0]->option[1] = $form['term_node_tid_depth_1']['#options'][11]->option[11] =
+    $form['term_node_tid_depth_2']['#options'][22]->option[24] = $form['term_node_tid_depth_3']['#options'][32]->option[34] = 'Alle Themen';
+
+    $filters = array('term_node_tid_depth', 'term_node_tid_depth_1', 'term_node_tid_depth_2', 'term_node_tid_depth_3');
+    foreach ($filters as $filter) {
+      foreach ($form[$filter]['#options'] as $key => $value) {
+        //print_r($value);
+        if (isset($value->option)) {
+          foreach ($value->option as $option_key => $option_value) {
+            $fir_character = substr($option_value, 0, 1);
+            if ($fir_character == '-') {
+              $new_option = substr($option_value, 1);
+              $form[$filter]['#options'][$key]->option[$option_key] = $new_option;
+            }
+          }
+        }
+
+      }
+    }
+  }
+}
+
