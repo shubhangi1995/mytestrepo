@@ -10,8 +10,9 @@
            
             background: $main-color;
             padding-top: 45px;
-@include devicebreak(x-large){
-			 position: relative;}
+      @include devicebreak(x-large){
+			 position: relative;
+			 }
 
             @include devicebreak(x-large) {
                 height: 400px;
@@ -57,8 +58,6 @@
                         color: $color-white;
 
                         @extend .common-button;
-
-                        bottom: 30px;
                         position: absolute !important;
                     }
                 }
@@ -79,6 +78,7 @@
                     float: left;
                     padding-left: 30px;
                     padding-top: 0;
+					height: auto;
                 }
 
 
@@ -106,7 +106,7 @@
                         @extend .common-button;
 
                         color: $color-white;
-                        bottom: 30px;
+                        
                         position: absolute !important;
 
                         &:before {
@@ -238,10 +238,11 @@
 
                         .content {
                             padding: 30px;
-                            height: 400px;
+                             height:auto;
 
                             @include devicebreak(medium) {
                                 padding-right: 165px;
+								 height: 400px;
                             }
 
 
