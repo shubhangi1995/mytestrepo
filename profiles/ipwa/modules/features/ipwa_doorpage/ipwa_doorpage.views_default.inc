@@ -469,7 +469,7 @@ function ipwa_doorpage_views_default_views() {
   $handler->display->display_options['footer']['area']['id'] = 'area';
   $handler->display->display_options['footer']['area']['table'] = 'views';
   $handler->display->display_options['footer']['area']['field'] = 'area';
-  $handler->display->display_options['footer']['area']['content'] = '<a href="aktuelles?type=nachricht&term_node_tid_depth=1">weitere Nachrichten </a>';
+  $handler->display->display_options['footer']['area']['content'] = '<a href="/aktuelles?type=nachricht&field_themenzuweisung_tid=!1">weitere Nachrichten </a>';
   $handler->display->display_options['footer']['area']['format'] = 'wysiwyg';
   $handler->display->display_options['footer']['area']['tokenize'] = TRUE;
 
@@ -481,7 +481,7 @@ function ipwa_doorpage_views_default_views() {
   $handler->display->display_options['footer']['area']['id'] = 'area';
   $handler->display->display_options['footer']['area']['table'] = 'views';
   $handler->display->display_options['footer']['area']['field'] = 'area';
-  $handler->display->display_options['footer']['area']['content'] = '<a href="/aktuelles?type=nachricht&term_node_tid_depth=!1">weitere Publikationen</a>';
+  $handler->display->display_options['footer']['area']['content'] = '<a href="/aktuelles?type=publikation&field_themenzuweisung_tid=!1">weitere Publikationen</a>';
   $handler->display->display_options['footer']['area']['format'] = 'wysiwyg';
   $handler->display->display_options['footer']['area']['tokenize'] = TRUE;
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
@@ -515,7 +515,7 @@ function ipwa_doorpage_views_default_views() {
   $handler->display->display_options['footer']['area']['id'] = 'area';
   $handler->display->display_options['footer']['area']['table'] = 'views';
   $handler->display->display_options['footer']['area']['field'] = 'area';
-  $handler->display->display_options['footer']['area']['content'] = '<a href="/termine?term_node_tid_depth=1">weitere Termine</a>';
+  $handler->display->display_options['footer']['area']['content'] = '<a href="/termin?field_themenzuweisung_tid=1">weitere Termine</a>';
   $handler->display->display_options['footer']['area']['format'] = 'wysiwyg';
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Content: Dieser Artikel gehört zu */
@@ -601,7 +601,7 @@ function ipwa_doorpage_views_default_views() {
   $handler->display->display_options['footer']['area']['id'] = 'area';
   $handler->display->display_options['footer']['area']['table'] = 'views';
   $handler->display->display_options['footer']['area']['field'] = 'area';
-  $handler->display->display_options['footer']['area']['content'] = '<a href="/aktuelles?type=nachricht&term_node_tid_depth_1=!1">weitere Nachrichten </a>';
+  $handler->display->display_options['footer']['area']['content'] = '<a href="/aktuelles?type=nachricht&field_themenzuweisung_tid_1=!1">weitere Nachrichten </a>';
   $handler->display->display_options['footer']['area']['format'] = 'wysiwyg';
   $handler->display->display_options['footer']['area']['tokenize'] = TRUE;
 
@@ -613,7 +613,7 @@ function ipwa_doorpage_views_default_views() {
   $handler->display->display_options['footer']['area']['id'] = 'area';
   $handler->display->display_options['footer']['area']['table'] = 'views';
   $handler->display->display_options['footer']['area']['field'] = 'area';
-  $handler->display->display_options['footer']['area']['content'] = '<a href="/aktuelles?type=publikation&term_node_tid_depth_1=!1">weitere Publikationen</a>';
+  $handler->display->display_options['footer']['area']['content'] = '<a href="/aktuelles?type=publikation&field_themenzuweisung_tid_1=!1">weitere Publikationen</a>';
   $handler->display->display_options['footer']['area']['format'] = 'wysiwyg';
   $handler->display->display_options['footer']['area']['tokenize'] = TRUE;
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
@@ -730,16 +730,16 @@ function ipwa_doorpage_views_default_views() {
     t('<a href="/aktuelles?type=publikation&field_themenzuweisung_tid=1">weitere Publikationen</a>'),
     t('All'),
     t('News P&G'),
-    t('<a href="aktuelles?type=nachricht&term_node_tid_depth=1">weitere Nachrichten </a>'),
+    t('<a href="/aktuelles?type=nachricht&field_themenzuweisung_tid=!1">weitere Nachrichten </a>'),
     t('Publikation P&G'),
-    t('<a href="/aktuelles?type=nachricht&term_node_tid_depth=!1">weitere Publikationen</a>'),
+    t('<a href="/aktuelles?type=publikation&field_themenzuweisung_tid=!1">weitere Publikationen</a>'),
     t('Termin P&G'),
     t('<h2 class="pane-title">Termine</h2>'),
-    t('<a href="/termine?term_node_tid_depth=1">weitere Termine</a>'),
+    t('<a href="/termin?field_themenzuweisung_tid=1">weitere Termine</a>'),
     t('News W&A'),
-    t('<a href="/aktuelles?type=nachricht&term_node_tid_depth_1=!1">weitere Nachrichten </a>'),
+    t('<a href="/aktuelles?type=nachricht&field_themenzuweisung_tid_1=!1">weitere Nachrichten </a>'),
     t('Publikation W&A'),
-    t('<a href="/aktuelles?type=publikation&term_node_tid_depth_1=!1">weitere Publikationen</a>'),
+    t('<a href="/aktuelles?type=publikation&field_themenzuweisung_tid_1=!1">weitere Publikationen</a>'),
     t('Termin W&A'),
     t('<a href="/termine?field_themenzuweisung_tid=11">weitere Termine</a>'),
   );
@@ -1023,6 +1023,98 @@ function ipwa_doorpage_views_default_views() {
 
   /* Display: Block */
   $handler = $view->new_display('block', 'Block', 'block');
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'none';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['defaults']['style_plugin'] = FALSE;
+  $handler->display->display_options['style_plugin'] = 'slideshow';
+  $handler->display->display_options['style_options']['slideshow_type'] = 'views_slideshow_cycle';
+  $handler->display->display_options['style_options']['slideshow_skin'] = 'default';
+  $handler->display->display_options['style_options']['skin_info'] = array(
+    'class' => 'default',
+    'name' => 'Default',
+    'module' => 'views_slideshow',
+    'path' => '',
+    'stylesheets' => array(),
+  );
+  $handler->display->display_options['style_options']['widgets']['top']['views_slideshow_pager']['weight'] = '1';
+  $handler->display->display_options['style_options']['widgets']['top']['views_slideshow_pager']['hide_on_single_slide'] = 1;
+  $handler->display->display_options['style_options']['widgets']['top']['views_slideshow_pager']['type'] = 'views_slideshow_simple_pager';
+  $handler->display->display_options['style_options']['widgets']['top']['views_slideshow_pager']['views_slideshow_pager_fields_fields'] = array(
+    'tid' => 0,
+    'name' => 0,
+    'field_kurztext' => 0,
+    'name_1' => 0,
+  );
+  $handler->display->display_options['style_options']['widgets']['top']['views_slideshow_controls']['enable'] = 1;
+  $handler->display->display_options['style_options']['widgets']['top']['views_slideshow_controls']['weight'] = '1';
+  $handler->display->display_options['style_options']['widgets']['top']['views_slideshow_controls']['hide_on_single_slide'] = 1;
+  $handler->display->display_options['style_options']['widgets']['top']['views_slideshow_controls']['type'] = 'views_slideshow_controls_text';
+  $handler->display->display_options['style_options']['widgets']['top']['views_slideshow_slide_counter']['weight'] = '1';
+  $handler->display->display_options['style_options']['widgets']['bottom']['views_slideshow_pager']['weight'] = '1';
+  $handler->display->display_options['style_options']['widgets']['bottom']['views_slideshow_pager']['type'] = 'views_slideshow_pager_fields';
+  $handler->display->display_options['style_options']['widgets']['bottom']['views_slideshow_pager']['views_slideshow_pager_fields_fields'] = array(
+    'tid' => 0,
+    'name' => 0,
+    'field_kurztext' => 0,
+    'name_1' => 0,
+  );
+  $handler->display->display_options['style_options']['widgets']['bottom']['views_slideshow_controls']['weight'] = '1';
+  $handler->display->display_options['style_options']['widgets']['bottom']['views_slideshow_controls']['type'] = 'views_slideshow_controls_text';
+  $handler->display->display_options['style_options']['widgets']['bottom']['views_slideshow_slide_counter']['weight'] = '1';
+  $handler->display->display_options['style_options']['views_slideshow_cycle']['effect'] = 'scrollLeft';
+  $handler->display->display_options['style_options']['views_slideshow_cycle']['transition_advanced'] = 1;
+  $handler->display->display_options['style_options']['views_slideshow_cycle']['timeout'] = '2000';
+  $handler->display->display_options['style_options']['views_slideshow_cycle']['speed'] = '600';
+  $handler->display->display_options['style_options']['views_slideshow_cycle']['delay'] = '0';
+  $handler->display->display_options['style_options']['views_slideshow_cycle']['pause'] = 0;
+  $handler->display->display_options['style_options']['views_slideshow_cycle']['action_advanced'] = 1;
+  $handler->display->display_options['style_options']['views_slideshow_cycle']['remember_slide_days'] = '1';
+  $handler->display->display_options['style_options']['views_slideshow_cycle']['items_per_slide'] = '4';
+  $handler->display->display_options['style_options']['views_slideshow_cycle']['wait_for_image_load_timeout'] = '3000';
+  $handler->display->display_options['style_options']['views_slideshow_cycle']['cleartype'] = 0;
+  $handler->display->display_options['style_options']['views_slideshow_cycle']['cleartypenobg'] = 0;
+  $handler->display->display_options['defaults']['style_options'] = FALSE;
+  $handler->display->display_options['defaults']['row_plugin'] = FALSE;
+  $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['defaults']['relationships'] = FALSE;
+  /* Relationship: Taxonomy term: Parent term */
+  $handler->display->display_options['relationships']['parent']['id'] = 'parent';
+  $handler->display->display_options['relationships']['parent']['table'] = 'taxonomy_term_hierarchy';
+  $handler->display->display_options['relationships']['parent']['field'] = 'parent';
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Taxonomy term: Term ID */
+  $handler->display->display_options['fields']['tid']['id'] = 'tid';
+  $handler->display->display_options['fields']['tid']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['fields']['tid']['field'] = 'tid';
+  $handler->display->display_options['fields']['tid']['label'] = '';
+  $handler->display->display_options['fields']['tid']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['tid']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['tid']['separator'] = '';
+  /* Field: Taxonomy term: Name */
+  $handler->display->display_options['fields']['name']['id'] = 'name';
+  $handler->display->display_options['fields']['name']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['fields']['name']['field'] = 'name';
+  $handler->display->display_options['fields']['name']['label'] = '';
+  $handler->display->display_options['fields']['name']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['name']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['name']['link_to_taxonomy'] = TRUE;
+  /* Field: Field: Kurztext */
+  $handler->display->display_options['fields']['field_kurztext']['id'] = 'field_kurztext';
+  $handler->display->display_options['fields']['field_kurztext']['table'] = 'field_data_field_kurztext';
+  $handler->display->display_options['fields']['field_kurztext']['field'] = 'field_kurztext';
+  $handler->display->display_options['fields']['field_kurztext']['label'] = '';
+  $handler->display->display_options['fields']['field_kurztext']['element_label_colon'] = FALSE;
+  /* Field: Taxonomy term: Name */
+  $handler->display->display_options['fields']['name_1']['id'] = 'name_1';
+  $handler->display->display_options['fields']['name_1']['table'] = 'taxonomy_term_data';
+  $handler->display->display_options['fields']['name_1']['field'] = 'name';
+  $handler->display->display_options['fields']['name_1']['label'] = '';
+  $handler->display->display_options['fields']['name_1']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['name_1']['alter']['text'] = 'Zur Themenseite';
+  $handler->display->display_options['fields']['name_1']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['name_1']['link_to_taxonomy'] = TRUE;
   $translatables['wahlen_sie_einen_themenbereich'] = array(
     t('Master'),
     t('Wählen Sie einen Themenbereich'),
@@ -1044,6 +1136,8 @@ function ipwa_doorpage_views_default_views() {
     t('<a href="/taxonomy/term/[tid]">Zur Themenseite</a>'),
     t('All'),
     t('Block'),
+    t('Parent'),
+    t('Zur Themenseite'),
   );
   $export['wahlen_sie_einen_themenbereich'] = $view;
 
