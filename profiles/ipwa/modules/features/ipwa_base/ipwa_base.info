@@ -79,6 +79,7 @@ features[field_instance][] = paragraphs_item-flie_text_mit_bild_rechts-field_bil
 features[field_instance][] = paragraphs_item-flie_text_mit_bild_rechts-field_flie_text_bereich
 features[filter][] = wysiwyg
 features[image][] = main_image_870_489
+features[image][] = paragraph_image_556_313
 features[image][] = themen_icon_36x36
 features[paragraphs][] = flie_text_bereich
 features[paragraphs][] = flie_text_mit_bild_links

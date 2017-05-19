@@ -233,8 +233,8 @@ function ipwa_base_field_default_field_instances() {
 
   // Translatables
   // Included for use with string extractors like potx.
+  t('Bild');
   t('Fließtext-Bereich');
-  t('© Bildquelle');
 
   return $field_instances;
 }

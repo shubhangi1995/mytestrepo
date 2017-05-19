@@ -25,6 +25,7 @@ features[variable][] = menu_parent_document
 features[variable][] = node_options_document
 features[variable][] = node_preview_document
 features[variable][] = node_submitted_document
+features[variable][] = pathauto_node_document_pattern
 features[variable][] = scheduler_publish_enable_document
 features[variable][] = scheduler_unpublish_enable_document
 features_exclude[dependencies][features] = features
