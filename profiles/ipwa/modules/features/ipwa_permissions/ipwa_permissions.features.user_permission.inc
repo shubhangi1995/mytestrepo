@@ -19,12 +19,57 @@ function ipwa_permissions_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'view paragraph content flie_text_bereich'.
+  $permissions['view paragraph content flie_text_bereich'] = array(
+    'name' => 'view paragraph content flie_text_bereich',
+    'roles' => array(
+      'anonymous user' => 'anonymous user',
+    ),
+    'module' => 'paragraphs_bundle_permissions',
+  );
+
+  // Exported permission: 'view paragraph content flie_text_mit_bild_links'.
+  $permissions['view paragraph content flie_text_mit_bild_links'] = array(
+    'name' => 'view paragraph content flie_text_mit_bild_links',
+    'roles' => array(
+      'anonymous user' => 'anonymous user',
+    ),
+    'module' => 'paragraphs_bundle_permissions',
+  );
+
+  // Exported permission: 'view paragraph content flie_text_mit_bild_rechts'.
+  $permissions['view paragraph content flie_text_mit_bild_rechts'] = array(
+    'name' => 'view paragraph content flie_text_mit_bild_rechts',
+    'roles' => array(
+      'anonymous user' => 'anonymous user',
+    ),
+    'module' => 'paragraphs_bundle_permissions',
+  );
+
   // Exported permission: 'view paragraph content frontpage_map_teaser_paragraph'.
   $permissions['view paragraph content frontpage_map_teaser_paragraph'] = array(
     'name' => 'view paragraph content frontpage_map_teaser_paragraph',
     'roles' => array(
       'anonymous user' => 'anonymous user',
       'authenticated user' => 'authenticated user',
+    ),
+    'module' => 'paragraphs_bundle_permissions',
+  );
+
+  // Exported permission: 'view paragraph content topic_teaser_paragraph'.
+  $permissions['view paragraph content topic_teaser_paragraph'] = array(
+    'name' => 'view paragraph content topic_teaser_paragraph',
+    'roles' => array(
+      'anonymous user' => 'anonymous user',
+    ),
+    'module' => 'paragraphs_bundle_permissions',
+  );
+
+  // Exported permission: 'view paragraph content views'.
+  $permissions['view paragraph content views'] = array(
+    'name' => 'view paragraph content views',
+    'roles' => array(
+      'anonymous user' => 'anonymous user',
     ),
     'module' => 'paragraphs_bundle_permissions',
   );

@@ -111,7 +111,8 @@ Publikation |Publikationen
 Termin|Termine
 Förderbekanntmachung|Förderbekanntmachungen
 Projekt|Projekte
-Akteur|Akteure',
+Akteur|Akteure
+Document|Dokument ',
         ),
       ),
     ),
@@ -536,7 +537,8 @@ Publikation |Publikationen
 Termin|Termine
 Förderbekanntmachung|Förderbekanntmachungen
 Projekt|Projekte
-Akteur|Akteure'),
+Akteur|Akteure
+Document|Dokument '),
     t('Items per page'),
     t('- All -'),
     t('Offset'),
