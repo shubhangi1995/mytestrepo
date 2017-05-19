@@ -105,7 +105,13 @@ function ipwa_search_views_default_views() {
           ),
         ),
         'rewrite' => array(
-          'filter_rewrite_values' => '',
+          'filter_rewrite_values' => 'Article|Artikel
+Nachricht|Nachrichten
+Publikation |Publikationen
+Termin|Termine
+Förderbekanntmachung|Förderbekanntmachungen
+Projekt|Projekte
+Akteur|Akteure',
         ),
       ),
     ),
@@ -524,6 +530,13 @@ function ipwa_search_views_default_views() {
     t('Advanced options'),
     t('Sort options'),
     t('Alles anzeigen'),
+    t('Article|Artikel
+Nachricht|Nachrichten
+Publikation |Publikationen
+Termin|Termine
+Förderbekanntmachung|Förderbekanntmachungen
+Projekt|Projekte
+Akteur|Akteure'),
     t('Items per page'),
     t('- All -'),
     t('Offset'),
