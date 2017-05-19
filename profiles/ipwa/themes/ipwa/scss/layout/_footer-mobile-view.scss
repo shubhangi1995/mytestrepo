@@ -1,8 +1,11 @@
+@media (max-width: $screen-xs-max) {
 footer{
+
 #block-menu-menu-footer-navigation{
   ul{
-    margin-left:-15px;
-	margin-right:-15px;
+  margin-left:-15px;
+  margin-right:-15px;
+    
   li{
     display:block;
 	padding:20px;
@@ -13,6 +16,7 @@ footer{
 	}
   }
 
+}
 }
 }
 }
