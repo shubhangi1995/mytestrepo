@@ -6666,10 +6666,14 @@ header .container, header .field-name-field-anzuzeigende-seitenmodule .panelizer
       header .navbar-collapse.in .region-navigation .tb-megamenu ul.tb-megamenu-nav > li.dropdown.open > a {
         border-bottom: none; }
       /* line 85, ../scss/layout/_header-mobile-view.scss */
+      header .navbar-collapse.in .region-navigation .tb-megamenu ul.tb-megamenu-nav > li.active > a {
+        border-bottom: 0;
+        padding-bottom: 20px; }
+      /* line 90, ../scss/layout/_header-mobile-view.scss */
       header .navbar-collapse.in .region-navigation .tb-megamenu ul.tb-megamenu-nav > li {
         width: 100%;
         border-bottom: 1px solid #949d9e; }
-        /* line 89, ../scss/layout/_header-mobile-view.scss */
+        /* line 94, ../scss/layout/_header-mobile-view.scss */
         header .navbar-collapse.in .region-navigation .tb-megamenu ul.tb-megamenu-nav > li > a {
           border: 0;
           width: 100%;
@@ -6679,50 +6683,69 @@ header .container, header .field-name-field-anzuzeigende-seitenmodule .panelizer
           cursor: pointer;
           display: block;
           padding-left: 75px; }
-          /* line 99, ../scss/layout/_header-mobile-view.scss */
+          /* line 104, ../scss/layout/_header-mobile-view.scss */
           header .navbar-collapse.in .region-navigation .tb-megamenu ul.tb-megamenu-nav > li > a:before {
             margin-top: 0;
             top: 10px;
             left: 20px; }
-        /* line 106, ../scss/layout/_header-mobile-view.scss */
+        /* line 112, ../scss/layout/_header-mobile-view.scss */
         header .navbar-collapse.in .region-navigation .tb-megamenu ul.tb-megamenu-nav > li .tb-megamenu-submenu {
           display: none !important;
           padding-top: 0;
           padding-bottom: 10px; }
-          /* line 111, ../scss/layout/_header-mobile-view.scss */
+          /* line 117, ../scss/layout/_header-mobile-view.scss */
           header .navbar-collapse.in .region-navigation .tb-megamenu ul.tb-megamenu-nav > li .tb-megamenu-submenu .mega-dropdown-inner {
             width: auto; }
-            /* line 115, ../scss/layout/_header-mobile-view.scss */
-            header .navbar-collapse.in .region-navigation .tb-megamenu ul.tb-megamenu-nav > li .tb-megamenu-submenu .mega-dropdown-inner .tb-submenu-left .mega-inner {
-              padding: 0;
-              border-bottom: 1px solid #18243b;
-              border-top: 1px solid #18243b; }
-            /* line 121, ../scss/layout/_header-mobile-view.scss */
-            header .navbar-collapse.in .region-navigation .tb-megamenu ul.tb-megamenu-nav > li .tb-megamenu-submenu .mega-dropdown-inner .tb-submenu-left h2.block-title {
-              padding: 20px;
-              margin-bottom: 0; }
-            /* line 126, ../scss/layout/_header-mobile-view.scss */
-            header .navbar-collapse.in .region-navigation .tb-megamenu ul.tb-megamenu-nav > li .tb-megamenu-submenu .mega-dropdown-inner .tb-submenu-left ul li {
-              padding: 20px;
-              margin-bottom: 0;
-              border-top: 1px solid #18243b;
-              background: #273753; }
-              /* line 132, ../scss/layout/_header-mobile-view.scss */
-              header .navbar-collapse.in .region-navigation .tb-megamenu ul.tb-megamenu-nav > li .tb-megamenu-submenu .mega-dropdown-inner .tb-submenu-left ul li a {
-                border-top: 0;
-                padding-left: 0; }
-                /* line 136, ../scss/layout/_header-mobile-view.scss */
-                header .navbar-collapse.in .region-navigation .tb-megamenu ul.tb-megamenu-nav > li .tb-megamenu-submenu .mega-dropdown-inner .tb-submenu-left ul li a:before {
-                  display: none; }
-          /* line 145, ../scss/layout/_header-mobile-view.scss */
+            /* line 120, ../scss/layout/_header-mobile-view.scss */
+            header .navbar-collapse.in .region-navigation .tb-megamenu ul.tb-megamenu-nav > li .tb-megamenu-submenu .mega-dropdown-inner .tb-submenu-left {
+              cursor: pointer; }
+              /* line 122, ../scss/layout/_header-mobile-view.scss */
+              header .navbar-collapse.in .region-navigation .tb-megamenu ul.tb-megamenu-nav > li .tb-megamenu-submenu .mega-dropdown-inner .tb-submenu-left .mega-inner {
+                padding: 0;
+                width: auto;
+                border-bottom: 1px solid #18243b;
+                border-top: 1px solid #18243b; }
+              /* line 129, ../scss/layout/_header-mobile-view.scss */
+              header .navbar-collapse.in .region-navigation .tb-megamenu ul.tb-megamenu-nav > li .tb-megamenu-submenu .mega-dropdown-inner .tb-submenu-left h2.block-title {
+                padding: 20px;
+                margin-bottom: 0; }
+              /* line 134, ../scss/layout/_header-mobile-view.scss */
+              header .navbar-collapse.in .region-navigation .tb-megamenu ul.tb-megamenu-nav > li .tb-megamenu-submenu .mega-dropdown-inner .tb-submenu-left ul li {
+                padding: 20px;
+                margin-bottom: 0;
+                border-top: 1px solid #18243b;
+                background: #273753; }
+                /* line 140, ../scss/layout/_header-mobile-view.scss */
+                header .navbar-collapse.in .region-navigation .tb-megamenu ul.tb-megamenu-nav > li .tb-megamenu-submenu .mega-dropdown-inner .tb-submenu-left ul li a {
+                  border-top: 0;
+                  padding-left: 0; }
+                  /* line 144, ../scss/layout/_header-mobile-view.scss */
+                  header .navbar-collapse.in .region-navigation .tb-megamenu ul.tb-megamenu-nav > li .tb-megamenu-submenu .mega-dropdown-inner .tb-submenu-left ul li a:before {
+                    display: none; }
+          /* line 153, ../scss/layout/_header-mobile-view.scss */
           header .navbar-collapse.in .region-navigation .tb-megamenu ul.tb-megamenu-nav > li .tb-megamenu-submenu .tb-submenu-right .mega-inner {
-            padding-top: 20px; }
-            /* line 149, ../scss/layout/_header-mobile-view.scss */
+            padding-top: 20px;
+            width: auto; }
+            /* line 158, ../scss/layout/_header-mobile-view.scss */
             header .navbar-collapse.in .region-navigation .tb-megamenu ul.tb-megamenu-nav > li .tb-megamenu-submenu .tb-submenu-right .mega-inner .view-themenzuweisung-flyouts .view-header {
               padding-bottom: 10px; }
-            /* line 153, ../scss/layout/_header-mobile-view.scss */
+            /* line 162, ../scss/layout/_header-mobile-view.scss */
             header .navbar-collapse.in .region-navigation .tb-megamenu ul.tb-megamenu-nav > li .tb-megamenu-submenu .tb-submenu-right .mega-inner .view-themenzuweisung-flyouts .view-content .views-row a {
               border-top: 0; } }
+/* line 3, ../scss/layout/_footer-mobile-view.scss */
+footer #block-menu-menu-footer-navigation ul {
+  margin-left: -15px;
+  margin-right: -15px; }
+  /* line 6, ../scss/layout/_footer-mobile-view.scss */
+  footer #block-menu-menu-footer-navigation ul li {
+    display: block;
+    padding: 20px;
+    width: 100%;
+    border-bottom: 1px solid #eff2f7; }
+    /* line 11, ../scss/layout/_footer-mobile-view.scss */
+    footer #block-menu-menu-footer-navigation ul li a {
+      padding: 0; }
+
 /* line 1, ../scss/layout/_footer.scss */
 footer {
   margin-top: 40px; }
