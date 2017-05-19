@@ -7,9 +7,11 @@
         .panel-2col {
             @extend .container;
 
-            position: relative;
+           
             background: $main-color;
             padding-top: 45px;
+@include devicebreak(x-large){
+			 position: relative;}
 
             @include devicebreak(x-large) {
                 height: 400px;
@@ -19,8 +21,9 @@
 
             .panel-col-first {
                 width: 100%;
-                height: 400px;
+                height: 425px;
                 border-bottom: 1px solid $color-border;
+				position:relative;
 
                 @include devicebreak(x-large) {
                     width: 60%;
@@ -67,8 +70,9 @@
 
             .panel-col-last {
                 width: 100%;
-                height: 400px;
+                height: 425px;
                 padding-top: 30px;
+				position:relative;
 
                 @include devicebreak(x-large) {
                     width: 40%;
