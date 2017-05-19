@@ -106,7 +106,7 @@
                             .tb-megamenu-submenu {
                                 display: none !important;
                                 padding-top: 0;
-								padding-bottom:20px;
+                                padding-bottom: 10px;
 
                                 .mega-dropdown-inner {
                                     width: auto;
@@ -114,23 +114,24 @@
                                     .tb-submenu-left {
                                         .mega-inner {
                                             padding: 0;
-											border-bottom:1px solid $header-mobile-border-line;
-											border-top:1px solid $header-mobile-border-line;
+                                            border-bottom: 1px solid $header-mobile-border-line;
+                                            border-top: 1px solid $header-mobile-border-line;
                                         }
-										 h2.block-title{
-										  padding:20px;
-										  margin-bottom:0;
-										 }
+
+                                        h2.block-title {
+                                            padding: 20px;
+                                            margin-bottom: 0;
+                                        }
 
                                         ul li {
                                             padding: 20px;
                                             margin-bottom: 0;
-											border-top:1px solid $header-mobile-border-line;
-											background:$main-color;
+                                            border-top: 1px solid $header-mobile-border-line;
+                                            background: $main-color;
 
                                             a {
                                                 border-top: 0;
-												padding-left:0;
+                                                padding-left: 0;
 
                                                 &:before {
                                                     display: none;
@@ -141,16 +142,21 @@
                                 }
 
                                 .tb-submenu-right {
-								      .mega-inner{
-									  padding-top:20px;
-                                    .view-themenzuweisung-flyouts {
-									.view-header{padding-bottom:10px;}
-									
-									.view-content .views-row a {
-                                        border-top: 0;
+                                    .mega-inner {
+                                        padding-top: 20px;
+
+                                        .view-themenzuweisung-flyouts {
+                                            .view-header {
+                                                padding-bottom: 10px;
+                                            }
+
+                                            .view-content .views-row a {
+                                                border-top: 0;
+                                            }
+                                        }
                                     }
-                                }}
-                            }}
+                                }
+                            }
                         }
                     }
                 }
