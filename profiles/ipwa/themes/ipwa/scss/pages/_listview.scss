@@ -410,3 +410,57 @@
         }
     }
 }
+
+//view-wahlen-sie-einen-themenbereich
+.view-wahlen-sie-einen-themenbereich{
+background:$main-color;
+
+    .view-sub-wrapper{
+	  @extend .container;
+	}
+    .view-header{
+	  color:$color-white;
+	  padding:40px 0;
+	}
+	.view-content{
+	margin-right:-15px;
+	margin-left:-15px;
+	  .views-row{
+	    @extend .col-md-6;
+	
+	   
+	     .row-container{
+		    padding:30px;
+			background:$color-white;
+			.views-field-name{
+			padding-bottom:30px;
+			a{
+			  color:$active-menu;
+			  text-decoration:none;
+			  font-weight:bold;
+			  padding-bottom:30px;
+			}
+			}
+			.views-field-nothing{
+			    a{
+				   @extend .common-button;
+				   color:$main-color;
+				
+				}
+			
+			
+			
+			}
+			.views-field-field-kurztext{
+			   padding-bottom:40px;
+			}
+		 
+		 
+		 }
+	  
+	  }
+	
+	}
+
+
+}
