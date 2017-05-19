@@ -367,17 +367,6 @@
         }
     }
 
-    .field-name-field-bild {
-        margin-bottom: 25px;
-
-        .field-item {
-            img {
-                //width:890px;
-                // height:490px;
-           
-            }
-        }
-    }
 
     .field-name-field-bildbeschreibung, .field-name-field-videounterschrift {
         float: left;
@@ -420,6 +409,18 @@
             }
         }
     }
+}
+
+.field-name-field-bild {
+	margin-bottom: 25px;
+
+	.field-item {
+		img {
+			//width:890px;
+			// height:490px;
+	   
+		}
+	}
 }
 
 // Paragraph inside body container
@@ -859,10 +860,37 @@
     .group-right-top-wrapper {
         // float: right;
     }
-	.field-name-field-event-datum, .field-name-field-zeit, .field-name-field-ort{
+	.group-middle-wrapper, .field-name-field-zeit, .field-name-field-ort{
 		border-bottom: 1px solid $single-border-color;
 		padding-bottom:15px;
 		margin-bottom:15px;
+	}
+	.group-middle-wrapper{
+		overflow:hidden;
+		.view-id-termin{
+			&.view-display-id-block_1{
+				float:right;
+				.view-content{
+					display:none; 
+				}
+				.view-sub-wrapper, .feed-icon{
+					width:auto;
+					float:right;
+					.view-header{
+						padding:0;
+						color:$main-color;
+						font-size:16px;
+						font-weight:bold; 
+						p{
+							margin:0;
+						}
+					}
+				}
+			}
+		}
+		.field-name-field-event-datum{
+			float:left;
+		}
 	}
 	.field-name-field-ort{
 		border:none; 
