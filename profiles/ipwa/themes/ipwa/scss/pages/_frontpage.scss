@@ -6,7 +6,7 @@
 		min-height:523px; 
         .panel-2col {
             @extend .container;
-            background: rgba(39, 55, 83, 0.8);
+            background: rgba(39, 55, 83, 0.9);   
             padding-top: 45px;
       @include devicebreak(x-large){
 			 position: relative;

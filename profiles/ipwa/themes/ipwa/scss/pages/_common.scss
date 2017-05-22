@@ -16,6 +16,9 @@ header.navbar-default {
 
 p {
     line-height: 30px;
+	a{
+		line-height:normal;
+	}
 }
 
 //-----------backend theme changes-----------//
@@ -98,6 +101,7 @@ p {
             font-size: 26px;
             border-bottom: 2px solid $active-menu;
             padding-bottom: 0;
+			border-radius:0;
         }
     }
 }
@@ -366,4 +370,14 @@ p {
             }
         }
     }
+}
+
+// Doorpages work
+
+.page-node-67{
+	article{
+		> .group-page-info{
+			max-width:765px;
+		}
+	}
 }
