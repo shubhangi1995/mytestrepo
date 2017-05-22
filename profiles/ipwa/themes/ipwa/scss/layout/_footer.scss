@@ -1,5 +1,13 @@
 footer {
-	margin-top:40px;
+	&.container{
+		width:100%;
+		background-color:$color-white;
+		padding:60px 0 40px; 
+	}
+	.region-footer{
+		@extend .container; 
+	}
+	// margin-top:40px;  
     #block-menu-menu-footer-navigation {
         ul li {
             display: inline-block;
