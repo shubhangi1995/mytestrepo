@@ -4,6 +4,7 @@ core = 7.x
 package = IPWA
 version = 7.x-1.0
 dependencies[] = admin_views
+dependencies[] = back_to_top
 dependencies[] = better_exposed_filters
 dependencies[] = ckeditor
 dependencies[] = ctools
