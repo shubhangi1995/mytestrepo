@@ -32,6 +32,29 @@ function ipwa_doorpage_views_api($module = NULL, $api = NULL) {
 function ipwa_doorpage_image_default_styles() {
   $styles = array();
 
+  // Exported image style: eb_background_1920_1080.
+  $styles['eb_background_1920_1080'] = array(
+    'label' => 'EB Background 1920x1080',
+    'effects' => array(
+      6 => array(
+        'name' => 'epsacrop_crop',
+        'data' => array(
+          'width' => 1920,
+          'height' => 1080,
+          'anchor' => 'center-center',
+          'disable_scale' => 0,
+          'jcrop_settings' => array(
+            'aspect_ratio' => '',
+            'bgcolor' => 'black',
+            'bgopacity' => 0.6,
+            'fallback' => 0,
+          ),
+        ),
+        'weight' => 1,
+      ),
+    ),
+  );
+
   // Exported image style: map_teaser_icon_68x68.
   $styles['map_teaser_icon_68x68'] = array(
     'label' => 'Map Teaser Icon (68x68)',

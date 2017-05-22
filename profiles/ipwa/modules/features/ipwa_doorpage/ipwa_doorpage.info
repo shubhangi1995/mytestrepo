@@ -50,6 +50,7 @@ features[field_instance][] = paragraphs_item-frontpage_map_teaser_paragraph-fiel
 features[field_instance][] = paragraphs_item-frontpage_map_teaser_paragraph-field_projekt_reference
 features[field_instance][] = paragraphs_item-frontpage_map_teaser_paragraph-field_quellenangabe
 features[field_instance][] = paragraphs_item-topic_teaser_paragraph-field_topic_teaser
+features[image][] = eb_background_1920_1080
 features[image][] = map_teaser_icon_68x68
 features[image][] = themen_icon_54x54
 features[node][] = doorpage

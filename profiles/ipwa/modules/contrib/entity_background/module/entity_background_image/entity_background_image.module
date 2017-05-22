@@ -8,7 +8,7 @@
 // Fields:
 define('EB_IMAGE_FIELD', 'field_eb_image');
 define('EB_IMAGE_STYLE_FIELD', 'field_eb_image_style');
-define('EB_IMAGE_STYLE', 'large');
+define('EB_IMAGE_STYLE', 'eb_background_1920_1080');
 
 
 /**

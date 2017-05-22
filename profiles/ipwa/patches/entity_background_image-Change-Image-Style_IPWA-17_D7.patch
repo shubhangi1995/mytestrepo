@@ -1,0 +1,16 @@
+Index: profiles/ipwa/modules/contrib/entity_background/module/entity_background_image/entity_background_image.module
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- profiles/ipwa/modules/contrib/entity_background/module/entity_background_image/entity_background_image.module	(revision 61755ea40a2ca1e52db9022d92e92d2171a49e78)
++++ profiles/ipwa/modules/contrib/entity_background/module/entity_background_image/entity_background_image.module	(revision )
+@@ -8,7 +8,7 @@
+ // Fields:
+ define('EB_IMAGE_FIELD', 'field_eb_image');
+ define('EB_IMAGE_STYLE_FIELD', 'field_eb_image_style');
+-define('EB_IMAGE_STYLE', 'large');
++define('EB_IMAGE_STYLE', 'eb_background_1920_1080');
+ 
+ 
+ /**
