@@ -365,9 +365,8 @@
         padding: 40px 0;
     }
 
-    .view-content {
-        margin-right: -15px;
-        margin-left: -15px;
+    .view-content {        
+	
         padding-bottom: 90px;
 
         .views_slideshow_controls_text {
@@ -394,9 +393,9 @@
                 }
             }
 
-            .views_slideshow_controls_text_pause {
-                display: none;
-            }
+           .views_slideshow_controls_text_pause {
+               display: none;
+           }
 
             .views_slideshow_controls_text_next {
                 a {
@@ -416,10 +415,17 @@
         }
 
         .views-row {
-            @extend .col-md-6;
-
+            width:48.7%;
             background-color: $color-white;
             padding: 30px;
+			float:left;			
+			margin-right:30px;
+			margin-bottom:30px;
+			    height: 286px;
+				
+				&:nth-child(2),&:last-child{
+				margin-right:0;
+				}
 
             .views-field-name {
                 padding-bottom: 30px;
@@ -446,6 +452,7 @@
         }
     }
 }
+
 
 // view-map-teaser //
 

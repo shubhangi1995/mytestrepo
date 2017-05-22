@@ -913,7 +913,7 @@ pre {
     clear: both; }
 
 /* line 11, ../scss/bootstrap-sass/bootstrap/mixins/_grid-framework.scss */
-.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .view-neueste-informationen .view-sub-wrapper > .view-content .views-row, .view-termin .view-sub-wrapper > .view-content .views-row, .view-aktuelles .view-sub-wrapper > .view-content .views-row, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row, .view-search-list .view-sub-wrapper > .view-content .views-row, .field-name-field-themenzuweisung .field-items .field-item, .not-front .node-doorpage .view-alle-themen-teaser .view-sub-wrapper .view-content .views-row, .view-latest-content-doorpage > .view-sub-wrapper > .view-latest-content-doorpage, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .view-neueste-informationen .view-sub-wrapper > .view-content .views-row, .view-termin .view-sub-wrapper > .view-content .views-row, .view-aktuelles .view-sub-wrapper > .view-content .views-row, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row, .view-search-list .view-sub-wrapper > .view-content .views-row, .col-md-6, .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items > .field-item, .view-latest-content-doorpage > .view-sub-wrapper .left-block .inner-wrapper, .view-latest-content-doorpage > .view-sub-wrapper .left-block > .view-latest-content-doorpage, .view-wahlen-sie-einen-themenbereich .view-content .views-row, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .view-latest-content-doorpage > .view-sub-wrapper .left-block, .view-map-teaser .view-sub-wrapper .view-content .views-row, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .view-neueste-informationen .view-sub-wrapper > .view-content .views-row, .view-termin .view-sub-wrapper > .view-content .views-row, .view-aktuelles .view-sub-wrapper > .view-content .views-row, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row, .view-search-list .view-sub-wrapper > .view-content .views-row, .field-name-field-themenzuweisung .field-items .field-item, .not-front .node-doorpage .view-alle-themen-teaser .view-sub-wrapper .view-content .views-row, .view-latest-content-doorpage > .view-sub-wrapper > .view-latest-content-doorpage, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .view-neueste-informationen .view-sub-wrapper > .view-content .views-row, .view-termin .view-sub-wrapper > .view-content .views-row, .view-aktuelles .view-sub-wrapper > .view-content .views-row, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row, .view-search-list .view-sub-wrapper > .view-content .views-row, .col-md-6, .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items > .field-item, .view-latest-content-doorpage > .view-sub-wrapper .left-block .inner-wrapper, .view-latest-content-doorpage > .view-sub-wrapper .left-block > .view-latest-content-doorpage, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .view-latest-content-doorpage > .view-sub-wrapper .left-block, .view-map-teaser .view-sub-wrapper .view-content .views-row, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
@@ -1337,7 +1337,7 @@ pre {
     margin-left: 100%; } }
 @media (min-width: 992px) {
   /* line 27, ../scss/bootstrap-sass/bootstrap/mixins/_grid-framework.scss */
-  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .view-neueste-informationen .view-sub-wrapper > .view-content .views-row, .view-termin .view-sub-wrapper > .view-content .views-row, .view-aktuelles .view-sub-wrapper > .view-content .views-row, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row, .view-search-list .view-sub-wrapper > .view-content .views-row, .field-name-field-themenzuweisung .field-items .field-item, .not-front .node-doorpage .view-alle-themen-teaser .view-sub-wrapper .view-content .views-row, .view-latest-content-doorpage > .view-sub-wrapper > .view-latest-content-doorpage, .col-md-5, .col-md-6, .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items > .field-item, .view-latest-content-doorpage > .view-sub-wrapper .left-block .inner-wrapper, .view-latest-content-doorpage > .view-sub-wrapper .left-block > .view-latest-content-doorpage, .view-wahlen-sie-einen-themenbereich .view-content .views-row, .col-md-7, .col-md-8, .view-latest-content-doorpage > .view-sub-wrapper .left-block, .view-map-teaser .view-sub-wrapper .view-content .views-row, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .view-neueste-informationen .view-sub-wrapper > .view-content .views-row, .view-termin .view-sub-wrapper > .view-content .views-row, .view-aktuelles .view-sub-wrapper > .view-content .views-row, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row, .view-search-list .view-sub-wrapper > .view-content .views-row, .field-name-field-themenzuweisung .field-items .field-item, .not-front .node-doorpage .view-alle-themen-teaser .view-sub-wrapper .view-content .views-row, .view-latest-content-doorpage > .view-sub-wrapper > .view-latest-content-doorpage, .col-md-5, .col-md-6, .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items > .field-item, .view-latest-content-doorpage > .view-sub-wrapper .left-block .inner-wrapper, .view-latest-content-doorpage > .view-sub-wrapper .left-block > .view-latest-content-doorpage, .col-md-7, .col-md-8, .view-latest-content-doorpage > .view-sub-wrapper .left-block, .view-map-teaser .view-sub-wrapper .view-content .views-row, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
     float: left; }
 
   /* line 35, ../scss/bootstrap-sass/bootstrap/mixins/_grid-framework.scss */
@@ -1361,7 +1361,7 @@ pre {
     width: 41.66666667%; }
 
   /* line 35, ../scss/bootstrap-sass/bootstrap/mixins/_grid-framework.scss */
-  .col-md-6, .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items > .field-item, .view-latest-content-doorpage > .view-sub-wrapper .left-block .inner-wrapper, .view-latest-content-doorpage > .view-sub-wrapper .left-block > .view-latest-content-doorpage, .view-wahlen-sie-einen-themenbereich .view-content .views-row {
+  .col-md-6, .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items > .field-item, .view-latest-content-doorpage > .view-sub-wrapper .left-block .inner-wrapper, .view-latest-content-doorpage > .view-sub-wrapper .left-block > .view-latest-content-doorpage {
     width: 50%; }
 
   /* line 35, ../scss/bootstrap-sass/bootstrap/mixins/_grid-framework.scss */
@@ -8880,20 +8880,18 @@ p {
     padding: 40px 0; }
   /* line 368, ../scss/pages/_listview.scss */
   .view-wahlen-sie-einen-themenbereich .view-content {
-    margin-right: -15px;
-    margin-left: -15px;
     padding-bottom: 90px; }
-    /* line 373, ../scss/pages/_listview.scss */
+    /* line 372, ../scss/pages/_listview.scss */
     .view-wahlen-sie-einen-themenbereich .view-content .views_slideshow_controls_text {
       float: right;
       display: inline-block;
       position: absolute;
       right: 8px;
       top: 60px; }
-      /* line 381, ../scss/pages/_listview.scss */
+      /* line 380, ../scss/pages/_listview.scss */
       .view-wahlen-sie-einen-themenbereich .view-content .views_slideshow_controls_text .views-slideshow-controls-text-previous a {
         font-size: 0; }
-        /* line 384, ../scss/pages/_listview.scss */
+        /* line 383, ../scss/pages/_listview.scss */
         .view-wahlen-sie-einen-themenbereich .view-content .views_slideshow_controls_text .views-slideshow-controls-text-previous a:before {
           font-family: "icomoon";
           content: "\e93e";
@@ -8903,13 +8901,13 @@ p {
           left: -20px;
           top: 6px;
           display: inline-block; }
-      /* line 397, ../scss/pages/_listview.scss */
+      /* line 396, ../scss/pages/_listview.scss */
       .view-wahlen-sie-einen-themenbereich .view-content .views_slideshow_controls_text .views_slideshow_controls_text_pause {
         display: none; }
-      /* line 402, ../scss/pages/_listview.scss */
+      /* line 401, ../scss/pages/_listview.scss */
       .view-wahlen-sie-einen-themenbereich .view-content .views_slideshow_controls_text .views_slideshow_controls_text_next a {
         font-size: 0; }
-        /* line 405, ../scss/pages/_listview.scss */
+        /* line 404, ../scss/pages/_listview.scss */
         .view-wahlen-sie-einen-themenbereich .view-content .views_slideshow_controls_text .views_slideshow_controls_text_next a:before {
           font-family: "icomoon";
           content: "\e93f";
@@ -8918,63 +8916,71 @@ p {
           position: absolute;
           top: 6px;
           display: inline-block; }
-    /* line 418, ../scss/pages/_listview.scss */
+    /* line 417, ../scss/pages/_listview.scss */
     .view-wahlen-sie-einen-themenbereich .view-content .views-row {
+      width: 48.7%;
       background-color: #ffffff;
-      padding: 30px; }
-      /* line 424, ../scss/pages/_listview.scss */
+      padding: 30px;
+      float: left;
+      margin-right: 30px;
+      margin-bottom: 30px;
+      height: 286px; }
+      /* line 426, ../scss/pages/_listview.scss */
+      .view-wahlen-sie-einen-themenbereich .view-content .views-row:nth-child(2), .view-wahlen-sie-einen-themenbereich .view-content .views-row:last-child {
+        margin-right: 0; }
+      /* line 430, ../scss/pages/_listview.scss */
       .view-wahlen-sie-einen-themenbereich .view-content .views-row .views-field-name {
         padding-bottom: 30px; }
-        /* line 427, ../scss/pages/_listview.scss */
+        /* line 433, ../scss/pages/_listview.scss */
         .view-wahlen-sie-einen-themenbereich .view-content .views-row .views-field-name a {
           color: #e74712;
           text-decoration: none;
           font-weight: bold;
           padding-bottom: 30px; }
-      /* line 436, ../scss/pages/_listview.scss */
+      /* line 442, ../scss/pages/_listview.scss */
       .view-wahlen-sie-einen-themenbereich .view-content .views-row .views-field-name-1 a {
         color: #273753; }
-      /* line 443, ../scss/pages/_listview.scss */
+      /* line 449, ../scss/pages/_listview.scss */
       .view-wahlen-sie-einen-themenbereich .view-content .views-row .views-field-field-kurztext {
         padding-bottom: 40px; }
 
-/* line 452, ../scss/pages/_listview.scss */
+/* line 459, ../scss/pages/_listview.scss */
 .view-map-teaser {
   clear: both; }
-  /* line 456, ../scss/pages/_listview.scss */
+  /* line 463, ../scss/pages/_listview.scss */
   .view-map-teaser .view-sub-wrapper .view-content {
     margin: 0; }
-    /* line 459, ../scss/pages/_listview.scss */
+    /* line 466, ../scss/pages/_listview.scss */
     .view-map-teaser .view-sub-wrapper .view-content .views-row {
       background: #273753; }
-      /* line 464, ../scss/pages/_listview.scss */
+      /* line 471, ../scss/pages/_listview.scss */
       .view-map-teaser .view-sub-wrapper .view-content .views-row .row-container {
         background: none;
         height: auto;
         margin-bottom: 0;
         padding: 45px 150px 45px 50px;
         border: none; }
-        /* line 471, ../scss/pages/_listview.scss */
+        /* line 478, ../scss/pages/_listview.scss */
         .view-map-teaser .view-sub-wrapper .view-content .views-row .row-container:hover {
           background: none;
           border: none; }
-        /* line 476, ../scss/pages/_listview.scss */
+        /* line 483, ../scss/pages/_listview.scss */
         .view-map-teaser .view-sub-wrapper .view-content .views-row .row-container .views-field-field-bild {
           padding-bottom: 20px; }
-          /* line 479, ../scss/pages/_listview.scss */
+          /* line 486, ../scss/pages/_listview.scss */
           .view-map-teaser .view-sub-wrapper .view-content .views-row .row-container .views-field-field-bild img {
             color: #e74712; }
-        /* line 484, ../scss/pages/_listview.scss */
+        /* line 491, ../scss/pages/_listview.scss */
         .view-map-teaser .view-sub-wrapper .view-content .views-row .row-container .views-field-field-paragraph-title {
           color: #ffffff;
           font-size: 38px;
           font-weight: bold;
           padding-bottom: 20px; }
-        /* line 491, ../scss/pages/_listview.scss */
+        /* line 498, ../scss/pages/_listview.scss */
         .view-map-teaser .view-sub-wrapper .view-content .views-row .row-container .views-field-field-flie-text-bereich {
           color: #ffffff;
           padding-bottom: 35px; }
-        /* line 496, ../scss/pages/_listview.scss */
+        /* line 503, ../scss/pages/_listview.scss */
         .view-map-teaser .view-sub-wrapper .view-content .views-row .row-container .views-field-field-quellenangabe a {
           color: #ffffff; }
 
