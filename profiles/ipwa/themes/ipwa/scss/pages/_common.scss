@@ -13,15 +13,16 @@ header.navbar-default {
 .container-fluid {
     padding: 0;
 }
-p{
-	line-height:30px;
+
+p {
+    line-height: 30px;
 }
 
 //-----------backend theme changes-----------//
 /* .field-name-field-weitere-details, .field-name-field-zur-website {
     float: left;
     width: 50%;
-} */  
+} */
 
 // Page title
 .page-title {
@@ -46,12 +47,28 @@ p{
 
         li.prev a {
             font-size: 0;
-            position: relative;
+            top: 7px;
+
+            &:before {
+                font-family: $icomoon;
+                content: "\e93e";
+                color: $main-color;
+                font-size: 14px;
+                display: inline-block;
+            }
         }
 
         li.next a {
             font-size: 0;
-            position: relative;
+            top: 7px;
+
+            &:before {
+                font-family: $icomoon;
+                content: "\e93f";
+                color: $main-color;
+                font-size: 14px;
+                display: inline-block;
+            }
         }
 
         > li > span {
@@ -114,6 +131,7 @@ p{
 
             a {
                 // border-color: $active-menu;
+           
             }
         }
     }
@@ -175,88 +193,81 @@ p{
     }
 }
 
-.container{
-
- @include devicebreak(x-large){
- 
-   padding:0;
- }
- 
+.container {
+    @include devicebreak(x-large) {
+        padding: 0;
+    }
 }
 
 //-----------view-content-----------//
 
-.view-neueste-informationen, .view-termin, .view-aktuelles, .view-neueste-digital-projekte, .view-alles-zum-thema {
-    .view-sub-wrapper{
-	
-	
-	> .view-content {
-	
-		margin-left: -15px;
-        margin-right: -15px;
-        
+.view-neueste-informationen, .view-termin, .view-aktuelles, .view-neueste-digital-projekte, .view-alles-zum-thema, .view-search-list {
+    .view-sub-wrapper {
+        > .view-content {
+            margin-left: -15px;
+            margin-right: -15px;
 
-        .views-row {
-            @extend .col-md-4,.col-sm-6;
+            .views-row {
+                @extend .col-md-4,.col-sm-6;
 
-            .row-container {
-                background: $color-white;
-                padding: 30px;
-                height: 400px;
-                margin-bottom: 30px;
-                position: relative;
-                border: 1px solid $color-white;
-                cursor: pointer;
-                transition: all 0.5s ease;
+                .row-container {
+                    background: $color-white;
+                    padding: 30px;
+                    height: 400px;
+                    margin-bottom: 30px;
+                    position: relative;
+                    border: 1px solid $color-white;
+                    cursor: pointer;
+                    transition: all 0.5s ease;
 
-                &.project-blue {
-                    background: $main-color;
-                }
-
-                &:hover {
-                    background: $color-light-blue;
-                    border: 1px solid $color-border;
-                }
-
-                .views-field-field-themenzuweisung {
-                    padding-bottom: 30px;
-
-                    img {
-                        display: inline-block;
-                        margin-right: 10px;
+                    &.project-blue {
+                        background: $main-color;
                     }
-                }
 
-                .views-field-field-event-datum {
-                    padding-bottom: 20px;
-                    font-weight: bold;
-                    color: $active-menu;
-                    font-size: 22px;
-                }
+                    &:hover {
+                        background: $color-light-blue;
+                        border: 1px solid $color-border;
+                    }
 
-                .views-field-title {
-                    padding-bottom: 40px;
+                    .views-field-field-themenzuweisung {
+                        padding-bottom: 30px;
 
-                    a {
-                        text-decoration: none;
+                        img {
+                            display: inline-block;
+                            margin-right: 10px;
+                        }
+                    }
+
+                    .views-field-field-event-datum {
+                        padding-bottom: 20px;
+                        font-weight: bold;
+                        color: $active-menu;
                         font-size: 22px;
-                        color: $main-color;
                     }
-                }
 
-                .views-field-field-ort,.views-field-views-conditional-1 {
-                    .field-content {
-                        position: absolute;
-                        bottom: 30px;
-                        font-size: 20px;
-                        color: $color-light-grey;
+                    .views-field-title {
+                        padding-bottom: 40px;
+
+                        a {
+                            text-decoration: none;
+                            font-size: 22px;
+                            color: $main-color;
+                        }
+                    }
+
+                    .views-field-field-ort, .views-field-views-conditional-1 {
+                        .field-content {
+                            position: absolute;
+                            bottom: 30px;
+                            font-size: 20px;
+                            color: $color-light-grey;
+                        }
                     }
                 }
             }
         }
-		
     }
-}}
+}
 
 //arrow-forward
 
@@ -331,27 +342,28 @@ p{
                         }
                     }
                 }
-}
-                .webform-submit {
-                    background: $active-menu;
-                    color: $color-white;
-                    border: 0;
-                    border-radius: 0;
-                    padding: 10px 40px;
-                    cursor: pointer;
-                    position: relative;
-                    font-size: 20px;
+            }
 
-                    &:before {
-                        font-family: $icomoon;
-                        content: "\e93f";
-                        color: $main-color;
-                        font-size: 14px;
-                        position: absolute;
-                        left: 15px;
-                        top: 14px;
-                    }
+            .webform-submit {
+                background: $active-menu;
+                color: $color-white;
+                border: 0;
+                border-radius: 0;
+                padding: 10px 40px;
+                cursor: pointer;
+                position: relative;
+                font-size: 20px;
+
+                &:before {
+                    font-family: $icomoon;
+                    content: "\e93f";
+                    color: $main-color;
+                    font-size: 14px;
+                    position: absolute;
+                    left: 15px;
+                    top: 14px;
                 }
             }
         }
     }
+}

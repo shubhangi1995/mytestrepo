@@ -108,9 +108,9 @@
     }
 }
 
-//termine and aktuelles//
+//termine and aktuelles and search//
 
-.page-termine, .page-aktuelles {
+.page-termine, .page-aktuelles, .page-search {
     background: $color-light-blue;
 
     .page-header {
@@ -124,7 +124,7 @@
     }
 }
 
-.view-aktuelles, .view-termin {
+.view-aktuelles, .view-termin, .view-search-list {
     > .view-sub-wrapper {
         @extend .container;
 
@@ -140,59 +140,49 @@
             font-size: 22px;
             font-weight: bold;
         }
-    }
-}
 
-// view-map-teaser //
+        .view-filters {
+            .views-exposed-form .views-exposed-widgets {
+                margin-bottom: 0;
 
-.view-map-teaser {
-    clear: both;
+                .views-widget {
+                    width: 100%;
 
-    .view-sub-wrapper {
-        .view-content {
-            margin: 0;
+                    .form-item {
+                        display: inline-block;
+                        padding-right: 60px;
 
-            .views-row {
-                @extend .col-md-8;
+                        label {
+                            padding-left: 0;
+                            padding-bottom: 15px;
 
-                background: $main-color;
-
-                .row-container {
-                    background: none;
-                    height: auto;
-                    margin-bottom: 0;
-                    padding: 45px 150px 45px 50px;
-                    border: none;
-
-                    &:hover {
-                        background: none;
-                        border: none;
+                            input {
+                                visibility: hidden;
+                            }
+                        }
                     }
+                }
 
-                    .views-field-field-bild {
-                        padding-bottom: 20px;
+                .views-widget-sort-by {
+                    float: right;
+                    padding: 30px 0;
 
-                        img {
-                            color: $active-menu;
+                    .bef-select-as-links .form-type-bef-link {
+                        display: inline-block;
+                        padding-left: 15px;
+
+                        a {
+                            text-decoration: none;
+                            color: $main-color;
+
+                            &.active {
+                                border-bottom: 1px solid $active-menu;
+                            }
                         }
                     }
 
-                    .views-field-field-paragraph-title {
-                        color: $color-white;
-                        font-size: 38px;
-                        font-weight: bold;
-                        padding-bottom: 20px;
-                    }
-
-                    .views-field-field-flie-text-bereich {
-                        color: $color-white;
-                        padding-bottom: 35px;
-                    }
-
-                    .views-field-field-quellenangabe a {
-                        @extend .common-button;
-
-                        color: $color-white;
+                    .select2-container {
+                        display: none;
                     }
                 }
             }
@@ -224,88 +214,43 @@
     }
 
     .view-filters {
-        .views-exposed-form .views-exposed-widgets {
-            margin-bottom: 0;
+        .categories-filter {
+            margin-top: 30px;
+            clear: both;
+            display: inline-block;
+            width: 100%;
 
-            #edit-type-wrapper {
-                width: 100%;
+            .views-exposed-widget {
+                padding: 0;
+                width: 25%;
+                float: left;
+                padding: 10px 0;
+                background: $header-dropdown-menu;
+                border-right: 1px solid $color-light-grey;
 
-                .form-item {
-                    display: inline-block;
-                    padding-right: 60px;
+                .select2-container--default .select2-selection--single {
+                    background: 0;
+                    border: 0;
+                    border-radius: 0;
 
-                    label {
-                        padding-left: 0;
-                        padding-bottom: 15px;
-
-                        input {
-                            visibility: hidden;
-                        }
+                    &:before {
+                        content: "\f107";
+                        font-family: FontAwesome;
+                        color: $color-white;
+                        position: absolute;
+                        float: right;
+                        right: 20px;
+                        top: 3px;
                     }
-                }
-            }
 
-            .categories-filter {
-                margin-top: 30px;
-                clear: both;
-                display: inline-block;
-                width: 100%;
-
-                .views-exposed-widget {
-                    padding: 0;
-                    width: 25%;
-                    float: left;
-                    padding: 10px 0;
-                    background: $header-dropdown-menu;
-                    border-right: 1px solid $color-light-grey;
-
-                    .select2-container--default .select2-selection--single {
-                        background: 0;
-                        border: 0;
-                        border-radius: 0;
-
-                        &:before {
-                            content: "\f107";
-                            font-family: FontAwesome;
-                            color: $color-white;
-                            position: absolute;
-                            float: right;
-                            right: 20px;
-                            top: 3px;
-                        }
-
-                        .select2-selection__rendered {
-                            color: $color-white;
-                            padding-left: 20px;
-                        }
-
-                        .select2-selection__arrow {
-                            display: none;
-                        }
+                    .select2-selection__rendered {
+                        color: $color-white;
+                        padding-left: 20px;
                     }
-                }
-            }
 
-            .views-widget-sort-by {
-                float: right;
-                padding: 30px 0;
-
-                .bef-select-as-links .form-type-bef-link {
-                    display: inline-block;
-                    padding-left: 15px;
-
-                    a {
-                        text-decoration: none;
-                        color: $main-color;
-
-                        &.active {
-                            border-bottom: 1px solid $active-menu;
-                        }
+                    .select2-selection__arrow {
+                        display: none;
                     }
-                }
-
-                .select2-container {
-                    display: none;
                 }
             }
         }
@@ -497,6 +442,63 @@
 
             .views-field-field-kurztext {
                 padding-bottom: 40px;
+            }
+        }
+    }
+}
+
+// view-map-teaser //
+
+.view-map-teaser {
+    clear: both;
+
+    .view-sub-wrapper {
+        .view-content {
+            margin: 0;
+
+            .views-row {
+                @extend .col-md-8;
+
+                background: $main-color;
+
+                .row-container {
+                    background: none;
+                    height: auto;
+                    margin-bottom: 0;
+                    padding: 45px 150px 45px 50px;
+                    border: none;
+
+                    &:hover {
+                        background: none;
+                        border: none;
+                    }
+
+                    .views-field-field-bild {
+                        padding-bottom: 20px;
+
+                        img {
+                            color: $active-menu;
+                        }
+                    }
+
+                    .views-field-field-paragraph-title {
+                        color: $color-white;
+                        font-size: 38px;
+                        font-weight: bold;
+                        padding-bottom: 20px;
+                    }
+
+                    .views-field-field-flie-text-bereich {
+                        color: $color-white;
+                        padding-bottom: 35px;
+                    }
+
+                    .views-field-field-quellenangabe a {
+                        @extend .common-button;
+
+                        color: $color-white;
+                    }
+                }
             }
         }
     }
