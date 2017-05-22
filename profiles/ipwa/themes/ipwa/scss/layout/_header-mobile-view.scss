@@ -1,4 +1,4 @@
-@media (max-width: $screen-xs-max) {
+@media (max-width:1024px) {
     header {
         .navbar-header {
             .logo {
@@ -15,6 +15,7 @@
 
             .navbar-toggle {
                 border: none;
+				display:block;
 
                 &:hover, &:focus {
                     background: none;

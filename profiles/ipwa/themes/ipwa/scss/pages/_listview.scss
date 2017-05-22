@@ -14,8 +14,8 @@
         @extend .container;
 
         padding: 0;
-		padding-top:85px;
-		padding-bottom: 50px;
+        padding-top: 85px;
+        padding-bottom: 50px;
 
         .field-name-field-bild {
             width: 30%;
@@ -25,7 +25,7 @@
         .themenzuweisung-right-block {
             float: left;
             width: 70%;
-			padding-top:25px;
+            padding-top: 25px;
 
             .page-header {
                 border-bottom: none;
@@ -47,18 +47,15 @@
         }
     }
 
-    .paragraphs-items-field-anzuzeigende-seitenmodule{
-	.paragraphs-item-flie-text-mit-bild-links,.paragraphs-item-flie-text-bereich,.paragraphs-item-flie-text-mit-bild-rechts{
-	  @extend .container;
-	}
-	
-	}
+    .paragraphs-items-field-anzuzeigende-seitenmodule {
+        .paragraphs-item-flie-text-mit-bild-links, .paragraphs-item-flie-text-bereich, .paragraphs-item-flie-text-mit-bild-rechts {
+            @extend .container;
+        }
+    }
 
     .view-alles-zum-thema {
         .view-sub-wrapper {
             @extend .container;
-
-           
 
             .attachment-before .view-result-count {
                 margin-top: -88px;
@@ -131,12 +128,9 @@
     > .view-sub-wrapper {
         @extend .container;
 
-        
-
         .view-header {
             color: $active-menu;
             font-size: 26px;
-            
             padding-bottom: 60px;
         }
 
@@ -412,55 +406,98 @@
 }
 
 //view-wahlen-sie-einen-themenbereich
-.view-wahlen-sie-einen-themenbereich{
-background:$main-color;
+.view-wahlen-sie-einen-themenbereich {
+    background: $main-color;
 
-    .view-sub-wrapper{
-	  @extend .container;
-	}
-    .view-header{
-	  color:$color-white;
-	  padding:40px 0;
-	}
-	.view-content{
-	margin-right:-15px;
-	margin-left:-15px;
-	  .views-row{
-	    @extend .col-md-6;
-	
-	   
-	     .row-container{
-		    padding:30px;
-			background:$color-white;
-			.views-field-name{
-			padding-bottom:30px;
-			a{
-			  color:$active-menu;
-			  text-decoration:none;
-			  font-weight:bold;
-			  padding-bottom:30px;
-			}
-			}
-			.views-field-nothing{
-			    a{
-				   @extend .common-button;
-				   color:$main-color;
-				
-				}
-			
-			
-			
-			}
-			.views-field-field-kurztext{
-			   padding-bottom:40px;
-			}
-		 
-		 
-		 }
-	  
-	  }
-	
-	}
+    .view-sub-wrapper {
+        @extend .container;
 
+        position: relative;
+    }
 
+    .view-header {
+        color: $color-white;
+        padding: 40px 0;
+    }
+
+    .view-content {
+        margin-right: -15px;
+        margin-left: -15px;
+        padding-bottom: 90px;
+
+        .views_slideshow_controls_text {
+            float: right;
+            display: inline-block;
+            position: absolute;
+            right: 8px;
+            top: 60px;
+
+            .views-slideshow-controls-text-previous {
+                a {
+                    font-size: 0;
+
+                    &:before {
+                        font-family: $icomoon;
+                        content: "\e93e";
+                        color: $color-white;
+                        font-size: 14px;
+                        position: absolute;
+                        left: -20px;
+                        top: 6px;
+                        display: inline-block;
+                    }
+                }
+            }
+
+            .views_slideshow_controls_text_pause {
+                display: none;
+            }
+
+            .views_slideshow_controls_text_next {
+                a {
+                    font-size: 0;
+
+                    &:before {
+                        font-family: $icomoon;
+                        content: "\e93f";
+                        color: $color-white;
+                        font-size: 14px;
+                        position: absolute;
+                        top: 6px;
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+
+        .views-row {
+            @extend .col-md-6;
+
+            background-color: $color-white;
+            padding: 30px;
+
+            .views-field-name {
+                padding-bottom: 30px;
+
+                a {
+                    color: $active-menu;
+                    text-decoration: none;
+                    font-weight: bold;
+                    padding-bottom: 30px;
+                }
+            }
+
+            .views-field-name-1 {
+                a {
+                    @extend .common-button;
+
+                    color: $main-color;
+                }
+            }
+
+            .views-field-field-kurztext {
+                padding-bottom: 40px;
+            }
+        }
+    }
 }

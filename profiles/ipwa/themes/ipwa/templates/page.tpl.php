@@ -83,7 +83,7 @@
           <img class="big"
                src="<?php print file_create_url(drupal_get_path('theme', 'ipwa')); ?>/images/logo.png"
                alt="<?php print t('Home'); ?>"/>
-          <img class="small"
+            <img class="small"
                src="<?php print file_create_url(drupal_get_path('theme', 'ipwa')); ?>/images/logo-small.png"
                alt="<?php print t('Home'); ?>"/>
         </a>
