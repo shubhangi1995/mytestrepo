@@ -451,6 +451,19 @@ Document|Dokument ',
     2 => '2',
     1 => 0,
   );
+  /* Filter criterion: Indexed Node: Ort */
+  $handler->display->display_options['filters']['field_ort']['id'] = 'field_ort';
+  $handler->display->display_options['filters']['field_ort']['table'] = 'search_api_index_ipwa_solr_index';
+  $handler->display->display_options['filters']['field_ort']['field'] = 'field_ort';
+  $handler->display->display_options['filters']['field_ort']['group'] = 1;
+  $handler->display->display_options['filters']['field_ort']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['field_ort']['expose']['operator_id'] = 'field_ort_op';
+  $handler->display->display_options['filters']['field_ort']['expose']['operator'] = 'field_ort_op';
+  $handler->display->display_options['filters']['field_ort']['expose']['identifier'] = 'field_ort';
+  $handler->display->display_options['filters']['field_ort']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+  );
   /* Filter criterion: Indexed Node: Content type */
   $handler->display->display_options['filters']['type_1']['id'] = 'type_1';
   $handler->display->display_options['filters']['type_1']['table'] = 'search_api_index_ipwa_solr_index';
@@ -475,19 +488,6 @@ Document|Dokument ',
     1 => 0,
   );
   $handler->display->display_options['filters']['type_1']['expose']['reduce'] = 1;
-  /* Filter criterion: Indexed Node: Ort */
-  $handler->display->display_options['filters']['field_ort']['id'] = 'field_ort';
-  $handler->display->display_options['filters']['field_ort']['table'] = 'search_api_index_ipwa_solr_index';
-  $handler->display->display_options['filters']['field_ort']['field'] = 'field_ort';
-  $handler->display->display_options['filters']['field_ort']['group'] = 1;
-  $handler->display->display_options['filters']['field_ort']['exposed'] = TRUE;
-  $handler->display->display_options['filters']['field_ort']['expose']['operator_id'] = 'field_ort_op';
-  $handler->display->display_options['filters']['field_ort']['expose']['operator'] = 'field_ort_op';
-  $handler->display->display_options['filters']['field_ort']['expose']['identifier'] = 'field_ort';
-  $handler->display->display_options['filters']['field_ort']['expose']['remember_roles'] = array(
-    2 => '2',
-    1 => 0,
-  );
   /* Filter criterion: Indexed Node: Content type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'search_api_index_ipwa_solr_index';
@@ -510,6 +510,7 @@ Document|Dokument ',
   $handler->display->display_options['filters']['status']['value'] = array(
     1 => '1',
   );
+  $handler->display->display_options['filters']['status']['group'] = 1;
   $handler->display->display_options['path'] = 'search';
   $translatables['search_list'] = array(
     t('Master'),
