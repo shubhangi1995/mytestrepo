@@ -7873,7 +7873,7 @@ p {
         font-size: 22px;
         color: #273753; }
     /* line 270, ../scss/pages/_common.scss */
-    .view-neueste-informationen .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-ort .field-content, .view-neueste-informationen .view-sub-wrapper > .view-content .views-row .row-container .views-field-views-conditional-1 .field-content, .view-termin .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-ort .field-content, .view-termin .view-sub-wrapper > .view-content .views-row .row-container .views-field-views-conditional-1 .field-content, .view-aktuelles .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-ort .field-content, .view-aktuelles .view-sub-wrapper > .view-content .views-row .row-container .views-field-views-conditional-1 .field-content, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-ort .field-content, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row .row-container .views-field-views-conditional-1 .field-content, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-ort .field-content, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row .row-container .views-field-views-conditional-1 .field-content, .view-search-list .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-ort .field-content, .view-search-list .view-sub-wrapper > .view-content .views-row .row-container .views-field-views-conditional-1 .field-content {
+    .view-neueste-informationen .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-ort .field-content, .view-neueste-informationen .view-sub-wrapper > .view-content .views-row .row-container .views-field-views-conditional-1 .field-content, .view-neueste-informationen .view-sub-wrapper > .view-content .views-row .row-container .views-field-views-conditional-2 .field-content, .view-neueste-informationen .view-sub-wrapper > .view-content .views-row .row-container .views-field-views-conditional-3 .field-content, .view-neueste-informationen .view-sub-wrapper > .view-content .views-row .row-container .views-field-views-conditional-4 .field-content, .view-neueste-informationen .view-sub-wrapper > .view-content .views-row .row-container .views-field-views-conditional-5 .field-content, .view-neueste-informationen .view-sub-wrapper > .view-content .views-row .row-container .views-field-views-conditional-6 .field-content, .view-neueste-informationen .view-sub-wrapper > .view-content .views-row .row-container .views-field-views-conditional-7 .field-content, .view-neueste-informationen .view-sub-wrapper > .view-content .views-row .row-container .views-field-views-conditional-8 .field-content, .view-neueste-informationen .view-sub-wrapper > .view-content .views-row .row-container .views-field-views-conditional-9 .field-content, .view-termin .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-ort .field-content, .view-termin .view-sub-wrapper > .view-content .views-row .row-container .views-field-views-conditional-1 .field-content, .view-termin .view-sub-wrapper > .view-content .views-row .row-container .views-field-views-conditional-2 .field-content, .view-termin .view-sub-wrapper > .view-content .views-row .row-container .views-field-views-conditional-3 .field-content, .view-termin .view-sub-wrapper > .view-content .views-row .row-container .views-field-views-conditional-4 .field-content, .view-termin .view-sub-wrapper > .view-content .views-row .row-container .views-field-views-conditional-5 .field-content, .view-termin .view-sub-wrapper > .view-content .views-row .row-container .views-field-views-conditional-6 .field-content, .view-termin .view-sub-wrapper > .view-content .views-row .row-container .views-field-views-conditional-7 .field-content, .view-termin .view-sub-wrapper > .view-content .views-row .row-container .views-field-views-conditional-8 .field-content, .view-termin .view-sub-wrapper > .view-content .views-row .row-container .views-field-views-conditional-9 .field-content, .view-aktuelles .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-ort .field-content, .view-aktuelles .view-sub-wrapper > .view-content .views-row .row-container .views-field-views-conditional-1 .field-content, .view-aktuelles .view-sub-wrapper > .view-content .views-row .row-container .views-field-views-conditional-2 .field-content, .view-aktuelles .view-sub-wrapper > .view-content .views-row .row-container .views-field-views-conditional-3 .field-content, .view-aktuelles .view-sub-wrapper > .view-content .views-row .row-container .views-field-views-conditional-4 .field-content, .view-aktuelles .view-sub-wrapper > .view-content .views-row .row-container .views-field-views-conditional-5 .field-content, .view-aktuelles .view-sub-wrapper > .view-content .views-row .row-container .views-field-views-conditional-6 .field-content, .view-aktuelles .view-sub-wrapper > .view-content .views-row .row-container .views-field-views-conditional-7 .field-content, .view-aktuelles .view-sub-wrapper > .view-content .views-row .row-container .views-field-views-conditional-8 .field-content, .view-aktuelles .view-sub-wrapper > .view-content .views-row .row-container .views-field-views-conditional-9 .field-content, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-ort .field-content, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row .row-container .views-field-views-conditional-1 .field-content, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row .row-container .views-field-views-conditional-2 .field-content, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row .row-container .views-field-views-conditional-3 .field-content, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row .row-container .views-field-views-conditional-4 .field-content, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row .row-container .views-field-views-conditional-5 .field-content, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row .row-container .views-field-views-conditional-6 .field-content, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row .row-container .views-field-views-conditional-7 .field-content, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row .row-container .views-field-views-conditional-8 .field-content, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row .row-container .views-field-views-conditional-9 .field-content, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-ort .field-content, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row .row-container .views-field-views-conditional-1 .field-content, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row .row-container .views-field-views-conditional-2 .field-content, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row .row-container .views-field-views-conditional-3 .field-content, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row .row-container .views-field-views-conditional-4 .field-content, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row .row-container .views-field-views-conditional-5 .field-content, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row .row-container .views-field-views-conditional-6 .field-content, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row .row-container .views-field-views-conditional-7 .field-content, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row .row-container .views-field-views-conditional-8 .field-content, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row .row-container .views-field-views-conditional-9 .field-content, .view-search-list .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-ort .field-content, .view-search-list .view-sub-wrapper > .view-content .views-row .row-container .views-field-views-conditional-1 .field-content, .view-search-list .view-sub-wrapper > .view-content .views-row .row-container .views-field-views-conditional-2 .field-content, .view-search-list .view-sub-wrapper > .view-content .views-row .row-container .views-field-views-conditional-3 .field-content, .view-search-list .view-sub-wrapper > .view-content .views-row .row-container .views-field-views-conditional-4 .field-content, .view-search-list .view-sub-wrapper > .view-content .views-row .row-container .views-field-views-conditional-5 .field-content, .view-search-list .view-sub-wrapper > .view-content .views-row .row-container .views-field-views-conditional-6 .field-content, .view-search-list .view-sub-wrapper > .view-content .views-row .row-container .views-field-views-conditional-7 .field-content, .view-search-list .view-sub-wrapper > .view-content .views-row .row-container .views-field-views-conditional-8 .field-content, .view-search-list .view-sub-wrapper > .view-content .views-row .row-container .views-field-views-conditional-9 .field-content {
       font-size: 20px;
       color: #949d9e;
       position: absolute;
@@ -8915,24 +8915,24 @@ p {
     float: left;
     text-decoration: none;
     color: #273753; }
-    /* line 292, ../scss/pages/_listview.scss */
+    /* line 291, ../scss/pages/_listview.scss */
     .page-termine .view-termin .view-filters .views-exposed-form .views-exposed-widgets #edit-term-node-tid-depth-wrapper .form-item .form-type-bef-link a.active {
       border-bottom: 1px Solid #e74712; }
-/* line 300, ../scss/pages/_listview.scss */
+/* line 299, ../scss/pages/_listview.scss */
 .page-termine .view-termin .view-filters .views-exposed-form .views-exposed-widgets .calendar-link {
   width: 20%;
   float: left;
   text-align: right;
   position: relative;
   margin-bottom: 30px; }
-  /* line 307, ../scss/pages/_listview.scss */
+  /* line 306, ../scss/pages/_listview.scss */
   .page-termine .view-termin .view-filters .views-exposed-form .views-exposed-widgets .calendar-link a {
     text-decoration: none;
     padding-bottom: 4px;
     border-bottom: 1px solid #949d9e;
     color: #273753;
     font-weight: bold; }
-    /* line 314, ../scss/pages/_listview.scss */
+    /* line 313, ../scss/pages/_listview.scss */
     .page-termine .view-termin .view-filters .views-exposed-form .views-exposed-widgets .calendar-link a:before {
       content: '\e949';
       font-family: "icomoon";
@@ -8942,53 +8942,58 @@ p {
       left: 40px;
       top: 9px;
       display: inline-block; }
-/* line 327, ../scss/pages/_listview.scss */
+/* line 326, ../scss/pages/_listview.scss */
 .page-termine .view-termin .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by {
   float: right;
   padding: 30px 0; }
-  /* line 331, ../scss/pages/_listview.scss */
+  /* line 330, ../scss/pages/_listview.scss */
   .page-termine .view-termin .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .bef-select-as-links .form-type-bef-link {
     display: inline-block;
     padding-left: 15px; }
-    /* line 335, ../scss/pages/_listview.scss */
+    /* line 334, ../scss/pages/_listview.scss */
     .page-termine .view-termin .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .bef-select-as-links .form-type-bef-link a {
       text-decoration: none;
       color: #273753; }
-      /* line 339, ../scss/pages/_listview.scss */
+      /* line 338, ../scss/pages/_listview.scss */
       .page-termine .view-termin .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .bef-select-as-links .form-type-bef-link a.active {
         border-bottom: 1px solid #e74712; }
-/* line 346, ../scss/pages/_listview.scss */
+/* line 345, ../scss/pages/_listview.scss */
 .page-termine .view-termin .view-filters .views-exposed-form .views-exposed-widgets .views-submit-button {
   display: none; }
-/* line 350, ../scss/pages/_listview.scss */
+/* line 349, ../scss/pages/_listview.scss */
 .page-termine .view-termin .view-filters .views-exposed-form .views-exposed-widgets .select2-container--default .select2-selection--single {
   display: none; }
 
-/* line 359, ../scss/pages/_listview.scss */
+/* line 358, ../scss/pages/_listview.scss */
 .view-search-list .view-filters {
   position: relative; }
-  /* line 362, ../scss/pages/_listview.scss */
+  /* line 361, ../scss/pages/_listview.scss */
   .view-search-list .view-filters .views-widget-filter-search_api_views_fulltext {
     width: 55%; }
-  /* line 366, ../scss/pages/_listview.scss */
+  /* line 365, ../scss/pages/_listview.scss */
   .view-search-list .view-filters .views-widget-filter-field_ort {
     width: 45%; }
-  /* line 370, ../scss/pages/_listview.scss */
+  /* line 369, ../scss/pages/_listview.scss */
   .view-search-list .view-filters .views-widget-filter-search_api_views_fulltext, .view-search-list .view-filters .views-widget-filter-field_ort {
     position: relative;
     padding: 0; }
-    /* line 374, ../scss/pages/_listview.scss */
+    /* line 373, ../scss/pages/_listview.scss */
     .view-search-list .view-filters .views-widget-filter-search_api_views_fulltext .views-widget .form-item, .view-search-list .view-filters .views-widget-filter-field_ort .views-widget .form-item {
       width: 100%;
       padding-right: 0px !important; }
-      /* line 378, ../scss/pages/_listview.scss */
+      /* line 377, ../scss/pages/_listview.scss */
       .view-search-list .view-filters .views-widget-filter-search_api_views_fulltext .views-widget .form-item .form-control, .view-search-list .view-filters .views-widget-filter-field_ort .views-widget .form-item .form-control {
         height: 70px;
         border-radius: 0;
         border: none;
         padding-left: 40px;
         font-size: 16px; }
-    /* line 387, ../scss/pages/_listview.scss */
+        /* line 384, ../scss/pages/_listview.scss */
+        .view-search-list .view-filters .views-widget-filter-search_api_views_fulltext .views-widget .form-item .form-control:focus, .view-search-list .view-filters .views-widget-filter-field_ort .views-widget .form-item .form-control:focus {
+          box-shadow: none;
+          outline: none;
+          transition: none; }
+    /* line 392, ../scss/pages/_listview.scss */
     .view-search-list .view-filters .views-widget-filter-search_api_views_fulltext:before, .view-search-list .view-filters .views-widget-filter-field_ort:before {
       font-family: "icomoon";
       content: "\e94e";
@@ -8997,23 +9002,23 @@ p {
       top: 23px;
       display: inline-block;
       position: absolute; }
-  /* line 400, ../scss/pages/_listview.scss */
+  /* line 403, ../scss/pages/_listview.scss */
   .view-search-list .view-filters .views-widget-filter-type_1 {
     margin-top: 30px; }
-    /* line 403, ../scss/pages/_listview.scss */
+    /* line 406, ../scss/pages/_listview.scss */
     .view-search-list .view-filters .views-widget-filter-type_1 .views-widget .form-item {
       margin-bottom: 15px; }
-  /* line 408, ../scss/pages/_listview.scss */
+  /* line 411, ../scss/pages/_listview.scss */
   .view-search-list .view-filters .views-submit-button {
     position: absolute;
-    top: 15px;
+    top: 10px;
     right: 10px;
     padding: 0; }
-    /* line 414, ../scss/pages/_listview.scss */
+    /* line 417, ../scss/pages/_listview.scss */
     .view-search-list .view-filters .views-submit-button .btn {
       margin-top: 0;
       border-radius: 0;
-      height: 40px;
+      height: 50px;
       color: #ffffff;
       padding: 6px 40px;
       border: none;

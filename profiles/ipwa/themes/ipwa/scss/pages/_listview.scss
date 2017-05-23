@@ -114,14 +114,14 @@
     background: $color-light-blue;
 
     .page-header {
-        @extend .container;        
-        border: none;        
+        @extend .container;
+
+        border: none;
         font-weight: normal;
-		    width: 765px;
-             margin: 0 auto;
-			 padding-top:55px;
-			 padding-bottom:40px;
-       
+        width: 765px;
+        margin: 0 auto;
+        padding-top: 55px;
+        padding-bottom: 40px;
     }
 }
 
@@ -133,9 +133,9 @@
             color: $active-menu;
             font-size: 26px;
             padding-bottom: 60px;
-			 width: 765px;
-             margin: 0 auto;
-			 font-weight:bold;
+            width: 765px;
+            margin: 0 auto;
+            font-weight: bold;
         }
 
         .attachment-before .view-result-count {
@@ -287,7 +287,6 @@
                             float: left;
                             text-decoration: none;
                             color: $main-color;
-                            
 
                             &.active {
                                 border-bottom: 1px Solid $active-menu;
@@ -358,29 +357,35 @@
 .view-search-list {
     .view-filters {
         position: relative;
-		
-		.views-widget-filter-search_api_views_fulltext{
-		  width:55%;
-		}
-		
-		.views-widget-filter-field_ort{
-		 width:45%;
-		}
 
-        .views-widget-filter-search_api_views_fulltext,.views-widget-filter-field_ort  {                    
+        .views-widget-filter-search_api_views_fulltext {
+            width: 55%;
+        }
+
+        .views-widget-filter-field_ort {
+            width: 45%;
+        }
+
+        .views-widget-filter-search_api_views_fulltext, .views-widget-filter-field_ort {
             position: relative;
-			padding:0;
+            padding: 0;
 
             .views-widget .form-item {
                 width: 100%;
                 padding-right: 0px !important;
 
                 .form-control {
-                    height:70px;
+                    height: 70px;
                     border-radius: 0;
-					border:none;
-					padding-left:40px;
-					font-size:16px;
+                    border: none;
+                    padding-left: 40px;
+                    font-size: 16px;
+					
+					&:focus{
+					 box-shadow:none;
+					     outline: none;
+						      transition:none;
+					}
                 }
             }
 
@@ -388,14 +393,12 @@
                 font-family: $icomoon;
                 content: "\e94e";
                 color: $icons-color;
-                left:8px;
+                left: 8px;
                 top: 23px;
                 display: inline-block;
                 position: absolute;
             }
         }
-
-       
 
         .views-widget-filter-type_1 {
             margin-top: 30px;
@@ -407,22 +410,19 @@
 
         .views-submit-button {
             position: absolute;
-            top: 15px;
-    right: 10px;
-    padding: 0;
+            top: 10px;
+            right: 10px;
+            padding: 0;
 
             .btn {
                 margin-top: 0;
                 border-radius: 0;
-                height: 40px;
+                height: 50px;
                 color: $color-white;
                 padding: 6px 40px;
-				border:none;
-				background:$main-color;
-				font-weight:bold;
-				
-
-                
+                border: none;
+                background: $main-color;
+                font-weight: bold;
             }
         }
     }
