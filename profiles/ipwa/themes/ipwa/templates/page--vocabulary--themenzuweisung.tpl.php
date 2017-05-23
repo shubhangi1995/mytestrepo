@@ -127,7 +127,7 @@
     <?php endif; ?>
   </div>
 </header>
-<div> <a id="top" name="top"></a></div>
+
 <div class="main-container container-fluid">
 
   <header role="banner" id="page-header">
