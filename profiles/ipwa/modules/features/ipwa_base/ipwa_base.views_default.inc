@@ -964,6 +964,7 @@ function ipwa_base_views_default_views() {
   $handler->display->display_options['filters']['title']['table'] = 'node';
   $handler->display->display_options['filters']['title']['field'] = 'title';
   $handler->display->display_options['filters']['title']['operator'] = 'contains';
+  $handler->display->display_options['filters']['title']['group'] = 1;
   $handler->display->display_options['filters']['title']['exposed'] = TRUE;
   $handler->display->display_options['filters']['title']['expose']['operator_id'] = 'title_op';
   $handler->display->display_options['filters']['title']['expose']['label'] = 'Titel';
@@ -974,6 +975,7 @@ function ipwa_base_views_default_views() {
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['group'] = 1;
   $handler->display->display_options['filters']['type']['exposed'] = TRUE;
   $handler->display->display_options['filters']['type']['expose']['operator_id'] = 'type_op';
   $handler->display->display_options['filters']['type']['expose']['label'] = 'Inhaltstyp';
@@ -986,6 +988,7 @@ function ipwa_base_views_default_views() {
   $handler->display->display_options['filters']['uid']['field'] = 'uid';
   $handler->display->display_options['filters']['uid']['relationship'] = 'uid';
   $handler->display->display_options['filters']['uid']['value'] = '';
+  $handler->display->display_options['filters']['uid']['group'] = 1;
   $handler->display->display_options['filters']['uid']['exposed'] = TRUE;
   $handler->display->display_options['filters']['uid']['expose']['operator_id'] = 'uid_op';
   $handler->display->display_options['filters']['uid']['expose']['label'] = 'Autor';
@@ -1001,6 +1004,7 @@ function ipwa_base_views_default_views() {
   $handler->display->display_options['filters']['status']['table'] = 'node';
   $handler->display->display_options['filters']['status']['field'] = 'status';
   $handler->display->display_options['filters']['status']['value'] = '0';
+  $handler->display->display_options['filters']['status']['group'] = 1;
   $handler->display->display_options['filters']['status']['exposed'] = TRUE;
   $handler->display->display_options['filters']['status']['expose']['operator_id'] = '';
   $handler->display->display_options['filters']['status']['expose']['label'] = 'Publiziert';
@@ -1011,21 +1015,22 @@ function ipwa_base_views_default_views() {
     2 => '2',
     1 => 0,
   );
-  /* Filter criterion: Taxonomy term: Vocabulary */
-  $handler->display->display_options['filters']['vid']['id'] = 'vid';
-  $handler->display->display_options['filters']['vid']['table'] = 'taxonomy_term_data';
-  $handler->display->display_options['filters']['vid']['field'] = 'vid';
-  $handler->display->display_options['filters']['vid']['relationship'] = 'term_node_tid';
-  $handler->display->display_options['filters']['vid']['exposed'] = TRUE;
-  $handler->display->display_options['filters']['vid']['expose']['operator_id'] = 'vid_op';
-  $handler->display->display_options['filters']['vid']['expose']['label'] = 'Akteurstyp';
-  $handler->display->display_options['filters']['vid']['expose']['operator'] = 'vid_op';
-  $handler->display->display_options['filters']['vid']['expose']['identifier'] = 'vid';
-  $handler->display->display_options['filters']['vid']['expose']['remember'] = TRUE;
-  $handler->display->display_options['filters']['vid']['expose']['remember_roles'] = array(
+  /* Filter criterion: Content: Has taxonomy term */
+  $handler->display->display_options['filters']['tid']['id'] = 'tid';
+  $handler->display->display_options['filters']['tid']['table'] = 'taxonomy_index';
+  $handler->display->display_options['filters']['tid']['field'] = 'tid';
+  $handler->display->display_options['filters']['tid']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['tid']['expose']['operator_id'] = 'tid_op';
+  $handler->display->display_options['filters']['tid']['expose']['label'] = 'Akteurstyp';
+  $handler->display->display_options['filters']['tid']['expose']['operator'] = 'tid_op';
+  $handler->display->display_options['filters']['tid']['expose']['identifier'] = 'tid';
+  $handler->display->display_options['filters']['tid']['expose']['remember_roles'] = array(
     2 => '2',
     1 => 0,
   );
+  $handler->display->display_options['filters']['tid']['type'] = 'select';
+  $handler->display->display_options['filters']['tid']['vocabulary'] = 'akteurstypen';
+  $handler->display->display_options['filters']['tid']['hierarchy'] = 1;
 
   /* Display: System */
   $handler = $view->new_display('system', 'System', 'system_1');
