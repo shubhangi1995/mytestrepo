@@ -80,7 +80,12 @@
     <div class="navbar-header">
       <?php if ($logo): ?>
         <a class="logo navbar-btn pull-left" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
-          <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
+          <img class="big"
+               src="<?php print file_create_url(drupal_get_path('theme', 'ipwa')); ?>/images/logo.png"
+               alt="<?php print t('Home'); ?>"/>
+          <img class="small"
+               src="<?php print file_create_url(drupal_get_path('theme', 'ipwa')); ?>/images/logo-small.png"
+               alt="<?php print t('Home'); ?>"/>
         </a>
       <?php endif; ?>
 
