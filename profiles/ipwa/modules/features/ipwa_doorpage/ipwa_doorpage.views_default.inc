@@ -408,8 +408,9 @@ function ipwa_doorpage_views_default_views() {
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['label'] = '';
-  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
-  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['max_length'] = '140';
+  $handler->display->display_options['fields']['title']['alter']['trim'] = TRUE;
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   /* Field: Content: Datum */
   $handler->display->display_options['fields']['field_datum']['id'] = 'field_datum';
   $handler->display->display_options['fields']['field_datum']['table'] = 'field_data_field_datum';
@@ -472,6 +473,45 @@ function ipwa_doorpage_views_default_views() {
   $handler->display->display_options['footer']['area']['content'] = '<a href="/aktuelles?type=nachricht&field_themenzuweisung_tid=!1">weitere Nachrichten </a>';
   $handler->display->display_options['footer']['area']['format'] = 'wysiwyg';
   $handler->display->display_options['footer']['area']['tokenize'] = TRUE;
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Dieser Artikel gehört zu */
+  $handler->display->display_options['fields']['field_themenzuweisung']['id'] = 'field_themenzuweisung';
+  $handler->display->display_options['fields']['field_themenzuweisung']['table'] = 'field_data_field_themenzuweisung';
+  $handler->display->display_options['fields']['field_themenzuweisung']['field'] = 'field_themenzuweisung';
+  $handler->display->display_options['fields']['field_themenzuweisung']['label'] = '';
+  $handler->display->display_options['fields']['field_themenzuweisung']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_themenzuweisung']['type'] = 'taxonomy_term_reference_link';
+  $handler->display->display_options['fields']['field_themenzuweisung']['delta_offset'] = '0';
+  $handler->display->display_options['fields']['field_themenzuweisung']['separator'] = '';
+  /* Field: Content: Type */
+  $handler->display->display_options['fields']['type']['id'] = 'type';
+  $handler->display->display_options['fields']['type']['table'] = 'node';
+  $handler->display->display_options['fields']['type']['field'] = 'type';
+  $handler->display->display_options['fields']['type']['label'] = '';
+  $handler->display->display_options['fields']['type']['element_label_colon'] = FALSE;
+  /* Field: Content: Titel */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['max_length'] = '140';
+  $handler->display->display_options['fields']['title']['alter']['trim'] = TRUE;
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  /* Field: Content: Datum */
+  $handler->display->display_options['fields']['field_datum']['id'] = 'field_datum';
+  $handler->display->display_options['fields']['field_datum']['table'] = 'field_data_field_datum';
+  $handler->display->display_options['fields']['field_datum']['field'] = 'field_datum';
+  $handler->display->display_options['fields']['field_datum']['label'] = '';
+  $handler->display->display_options['fields']['field_datum']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_datum']['settings'] = array(
+    'format_type' => 'short',
+    'fromto' => 'both',
+    'multiple_number' => '',
+    'multiple_from' => '',
+    'multiple_to' => '',
+    'show_remaining_days' => 0,
+    'show_repeat_rule' => 'show',
+  );
 
   /* Display: Publikation P&G */
   $handler = $view->new_display('block', 'Publikation P&G', 'block_1');
@@ -484,6 +524,45 @@ function ipwa_doorpage_views_default_views() {
   $handler->display->display_options['footer']['area']['content'] = '<a href="/aktuelles?type=publikation&field_themenzuweisung_tid=!1">weitere Publikationen</a>';
   $handler->display->display_options['footer']['area']['format'] = 'wysiwyg';
   $handler->display->display_options['footer']['area']['tokenize'] = TRUE;
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Dieser Artikel gehört zu */
+  $handler->display->display_options['fields']['field_themenzuweisung']['id'] = 'field_themenzuweisung';
+  $handler->display->display_options['fields']['field_themenzuweisung']['table'] = 'field_data_field_themenzuweisung';
+  $handler->display->display_options['fields']['field_themenzuweisung']['field'] = 'field_themenzuweisung';
+  $handler->display->display_options['fields']['field_themenzuweisung']['label'] = '';
+  $handler->display->display_options['fields']['field_themenzuweisung']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_themenzuweisung']['type'] = 'taxonomy_term_reference_link';
+  $handler->display->display_options['fields']['field_themenzuweisung']['delta_offset'] = '0';
+  $handler->display->display_options['fields']['field_themenzuweisung']['separator'] = '';
+  /* Field: Content: Type */
+  $handler->display->display_options['fields']['type']['id'] = 'type';
+  $handler->display->display_options['fields']['type']['table'] = 'node';
+  $handler->display->display_options['fields']['type']['field'] = 'type';
+  $handler->display->display_options['fields']['type']['label'] = '';
+  $handler->display->display_options['fields']['type']['element_label_colon'] = FALSE;
+  /* Field: Content: Titel */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['max_length'] = '140';
+  $handler->display->display_options['fields']['title']['alter']['trim'] = TRUE;
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  /* Field: Content: Datum */
+  $handler->display->display_options['fields']['field_datum']['id'] = 'field_datum';
+  $handler->display->display_options['fields']['field_datum']['table'] = 'field_data_field_datum';
+  $handler->display->display_options['fields']['field_datum']['field'] = 'field_datum';
+  $handler->display->display_options['fields']['field_datum']['label'] = '';
+  $handler->display->display_options['fields']['field_datum']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_datum']['settings'] = array(
+    'format_type' => 'short',
+    'fromto' => 'both',
+    'multiple_number' => '',
+    'multiple_from' => '',
+    'multiple_to' => '',
+    'show_remaining_days' => 0,
+    'show_repeat_rule' => 'show',
+  );
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
   /* Filter criterion: Content: Published */
@@ -555,8 +634,9 @@ function ipwa_doorpage_views_default_views() {
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['label'] = '';
-  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
-  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['max_length'] = '140';
+  $handler->display->display_options['fields']['title']['alter']['trim'] = TRUE;
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   /* Field: Content: Ort */
   $handler->display->display_options['fields']['field_ort']['id'] = 'field_ort';
   $handler->display->display_options['fields']['field_ort']['table'] = 'field_data_field_ort';
@@ -687,8 +767,9 @@ function ipwa_doorpage_views_default_views() {
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['label'] = '';
-  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
-  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['max_length'] = '140';
+  $handler->display->display_options['fields']['title']['alter']['trim'] = TRUE;
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   /* Field: Content: Ort */
   $handler->display->display_options['fields']['field_ort']['id'] = 'field_ort';
   $handler->display->display_options['fields']['field_ort']['table'] = 'field_data_field_ort';

@@ -94,5 +94,6 @@ features_exclude[field_instance][field_collection_item-eb_background-field_eb_pa
 features_exclude[field_instance][field_collection_item-eb_background-field_eb_parallax_speed] = field_collection_item-eb_background-field_eb_parallax_speed
 features_exclude[dependencies][views] = views
 features_exclude[dependencies][jquery_colorpicker] = jquery_colorpicker
+features_exclude[dependencies][views_slideshow] = views_slideshow
 features_exclude[field_group][group_eb_color|field_collection_item|eb_background|form] = group_eb_color|field_collection_item|eb_background|form
 features_exclude[field_group][group_eb_parallax|field_collection_item|eb_background|form] = group_eb_parallax|field_collection_item|eb_background|form
