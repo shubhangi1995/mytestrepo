@@ -157,7 +157,7 @@ p {
 //dropdown
 
 .select2-container {
-    min-width: 200px;
+    width: 290px !important;
 
     .select2-dropdown {
         border: 0;
@@ -281,7 +281,7 @@ p {
     text-decoration: none;
     margin-left: 35px;
     padding-bottom: 4px;
-    border-bottom: 1px solid $color-light-grey;
+    border-bottom: 2px solid $color-light-grey;
     position: relative;
 
     &:before {
@@ -296,7 +296,7 @@ p {
     }
 
     &:hover {
-        border-bottom: 1px solid $active-menu;
+        border-color: $active-menu;
     }
 }
 
