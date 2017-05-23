@@ -226,7 +226,13 @@ p {
 
                     &.project-blue {
                         background: $main-color;
+						.views-field-title a{
+						color:$color-white;
                     }
+					  &:hover{
+					  .views-field-title a{ color:$main-color;}
+					  }
+					}
 
                     &:hover {
                         background: $color-light-blue;

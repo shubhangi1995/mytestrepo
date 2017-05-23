@@ -1,0 +1,12 @@
+.page-sitemap{
+  background:$color-light-blue;
+  
+  .page-header{
+    @extend .container;
+  }
+  
+  #site-map{
+  @extend .container;
+
+}
+}
