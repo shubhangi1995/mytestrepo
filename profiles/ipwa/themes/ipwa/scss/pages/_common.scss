@@ -303,10 +303,11 @@ p {
 //node-type-webform
 
 .node-type-webform {
-    background: $color-light-blue;
+    
 
     .node-webform {
-        @extend .container;
+       width:765px;
+	  margin:0 auto;
 
         .field-name-field-untertitel {
             color: $active-menu;
@@ -316,27 +317,37 @@ p {
 
         .webform-client-form {
             padding-top: 40px;
+			width:65%;
 
             .webform-component-fieldset {
                 border: none;
                 border-radius: 0;
+				    box-shadow: none;
 
                 .panel-heading {
                     display: none;
                 }
 
-                .panel-body {
+                .panel-body {padding:0;
                     .form-group {
                         margin-bottom: 40px;
 
                         label {
+						  font-size:15px;
                             .form-required {
                                 color: $active-menu;
                             }
                         }
 
                         .form-control {
-                            border-radius: 0;
+                           
+							height:42px;
+							border-bottom-color: #bfcbd5;
+    border-left-color: #dfe5ea;
+    border-right-color: #dfe5ea;
+    border-top-color: #cfd8df;
+    box-shadow: 0 -1px 1px 0 #eff2f4;
+    border-radius: 3px;
                         }
 
                         p {
@@ -369,6 +380,9 @@ p {
                     top: 14px;
                 }
             }
+			#edit-submitted-kontakdaten-datenschutz{
+			  float:left;
+			}
         }
     }
 }
@@ -381,4 +395,16 @@ p {
 			max-width:765px;
 		}
 	}
+}
+
+//page-user
+.page-user {
+  .page-header{
+     @extend .container;
+	 border:0;
+  }
+  
+  .region-content{
+    @extend .container;
+  }
 }
