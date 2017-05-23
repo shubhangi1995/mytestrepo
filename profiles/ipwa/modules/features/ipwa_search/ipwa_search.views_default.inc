@@ -182,6 +182,8 @@ Document|Dokument ',
   $handler->display->display_options['fields']['field_dokument']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_dokument']['alter']['path'] = '[field_dokument]';
   $handler->display->display_options['fields']['field_dokument']['alter']['absolute'] = TRUE;
+  $handler->display->display_options['fields']['field_dokument']['alter']['max_length'] = '140';
+  $handler->display->display_options['fields']['field_dokument']['alter']['trim'] = TRUE;
   $handler->display->display_options['fields']['field_dokument']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_dokument']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_dokument']['type'] = 'file_url_plain';
@@ -207,6 +209,8 @@ Document|Dokument ',
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['title']['alter']['max_length'] = '140';
+  $handler->display->display_options['fields']['title']['alter']['trim'] = TRUE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title']['link_to_entity'] = 1;
   /* Field: Indexed Node: Titel */
