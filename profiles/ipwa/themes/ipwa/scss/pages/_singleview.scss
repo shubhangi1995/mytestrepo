@@ -40,6 +40,7 @@
 
 .field-name-field-untertitel {
     font-size: 22px;
+	font-weight:bold;
 }
 
 .field-name-field-quellenangabe {
@@ -129,8 +130,7 @@
             @extend .container;
 
             .view-content {
-                margin-left: -15px;
-                margin-right: -15px;
+                
 
                 .term-title {
                     color: $main-color;
@@ -144,10 +144,11 @@
                 }
 
                 .views-row {
-                    @extend .col-md-4;
-
-                    padding: 10px;
-
+                   display:inline-block;
+				   padding:10px;
+				   padding-left:0;
+				   
+				   .row-container{
                     .views-field-name a {
                         background: $main-color;
                         text-decoration: none;
@@ -158,7 +159,7 @@
                     }
                 }
             }
-
+}
             .view-footer {
                 padding-top: 40px;
                 clear: both;
@@ -201,8 +202,14 @@
         .view-content .views-row {
             .row-container {
                 background: $main-color;
-                border: none;
+               
                 cursor: pointer;
+				border:1px solid $main-color;
+				
+				&:hover {
+                    background: $header-dropdown-menu;
+                    border:1px solid $main-color;
+                }
 
                 .views-field-type {
                     color: $active-menu;
@@ -220,10 +227,7 @@
                     }
                 }
 
-                &:hover {
-                    background: $main-color;
-                    border: none;
-                }
+                
             }
         }
 
@@ -434,10 +438,14 @@
     }
 
     .content {
-        > * {
-            float: left;
-            width: 50%;
-        }
+        .field-name-field-bild-ref{
+		  display:inline-block;
+		  float:left;
+		}
+		.field-name-field-flie-text-bereich{
+		  display:inline-block;
+		  float:left;
+		}
     }
 }
 
@@ -638,9 +646,7 @@
         padding: 0;
 
         .left-block {
-            @extend .col-md-8;
-
-            
+            @extend .col-md-8;            
 
             .view-header {
                 padding-bottom: 30px;
@@ -656,7 +662,7 @@
                 .view-content .views-row {
                     .row-container {
                         background: $color-white;
-                        height: 350px;
+                        height: 410px;
                         padding: 30px;
                         position: relative;
 
@@ -722,7 +728,7 @@
                     .view-content .views-row {
                         .row-container {
                             background: $color-white;
-                            height: 350px;
+                            height: 410px;
                             padding: 30px;
                             position: relative;
 
@@ -783,7 +789,7 @@
                 .view-content .views-row {
                     .row-container {
                         background: $color-white;
-                        height: 350px;
+                        height: 410px;
                         padding: 30px;
                         position: relative;
 
