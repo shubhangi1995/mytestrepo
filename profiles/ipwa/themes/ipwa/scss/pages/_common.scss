@@ -216,8 +216,7 @@ p {
 
                 .row-container {
                     background: $color-white;
-                    padding: 30px;
-                    height: 400px;
+                    padding: 30px;                    
                     margin-bottom: 30px;
                     position: relative;
                     border: 1px solid $color-white;
@@ -251,6 +250,7 @@ p {
 
                     .views-field-title {
                         padding-bottom: 40px;
+						height:208px;
 
                         a {
                             text-decoration: none;
@@ -260,9 +260,7 @@ p {
                     }
 
                     .views-field-field-ort, .views-field-views-conditional-1 {
-                        .field-content {
-                            position: absolute;
-                            bottom: 30px;
+                        .field-content {                            
                             font-size: 20px;
                             color: $color-light-grey;
                         }
