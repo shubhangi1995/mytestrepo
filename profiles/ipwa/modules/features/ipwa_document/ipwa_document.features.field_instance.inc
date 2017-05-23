@@ -162,7 +162,7 @@ function ipwa_document_field_default_field_instances() {
   $field_instances['node-document-field_dokument'] = array(
     'bundle' => 'document',
     'deleted' => 0,
-    'description' => 'Nur eine Datei möglich, maximale Dateigröße: 1.96 GB Limit.
+    'description' => 'Nur eine Datei möglich, maximale Dateigröße: 8 GB Limit.
 Erlaubter Dateityp: *.pdf',
     'display' => array(
       'default' => array(
@@ -191,9 +191,16 @@ Erlaubter Dateityp: *.pdf',
     'required' => 1,
     'settings' => array(
       'description_field' => 1,
+      'epsacrop' => array(
+        'styles' => array(
+          'eb_background_1920_1080' => 0,
+          'main_image_870_489' => 0,
+          'paragraph_image_556_313' => 0,
+        ),
+      ),
       'file_directory' => '',
       'file_extensions' => 'pdf',
-      'max_filesize' => '1.96 GB',
+      'max_filesize' => '',
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -226,7 +233,7 @@ Erlaubter Dateityp: *.pdf',
   t('Datei ist nicht barrierefrei');
   t('Datum');
   t('Dokument');
-  t('Nur eine Datei möglich, maximale Dateigröße: 1.96 GB Limit.
+  t('Nur eine Datei möglich, maximale Dateigröße: 8 GB Limit.
 Erlaubter Dateityp: *.pdf');
 
   return $field_instances;

@@ -15,7 +15,7 @@ function ipwa_bild_field_default_field_instances() {
     'bundle' => 'bild',
     'deleted' => 0,
     'description' => 'Nur eine Datei möglich.
-1.96 GB Limit.
+8 GB Limit.
 Erlaubte Dateitypen: png gif jpg jpeg.',
     'display' => array(
       'default' => array(
@@ -53,12 +53,14 @@ Erlaubte Dateitypen: png gif jpg jpeg.',
       'description_field' => 0,
       'epsacrop' => array(
         'styles' => array(
+          'eb_background_1920_1080' => 0,
           'main_image_870_489' => 'main_image_870_489',
+          'paragraph_image_556_313' => 0,
         ),
       ),
       'file_directory' => '',
       'file_extensions' => 'png gif jpg jpeg',
-      'max_filesize' => '1.96 GB',
+      'max_filesize' => '',
       'user_register_form' => FALSE,
     ),
     'widget' => array(
@@ -185,7 +187,7 @@ Erlaubte Dateitypen: png gif jpg jpeg.',
   t('Bild');
   t('Bildbeschreibung');
   t('Nur eine Datei möglich.
-1.96 GB Limit.
+8 GB Limit.
 Erlaubte Dateitypen: png gif jpg jpeg.');
   t('© Bildquelle');
 

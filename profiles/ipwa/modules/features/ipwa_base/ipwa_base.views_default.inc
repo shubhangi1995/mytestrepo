@@ -267,7 +267,7 @@ function ipwa_base_views_default_views() {
   $handler->display->display_options['fields']['field_themenzuweisung']['group_column'] = 'entity_id';
   $handler->display->display_options['fields']['field_themenzuweisung']['delta_offset'] = '0';
   $handler->display->display_options['fields']['field_themenzuweisung']['separator'] = '';
-  /* Field: Content: Type */
+  /* Field: Content: Inhaltstyp */
   $handler->display->display_options['fields']['type']['id'] = 'type';
   $handler->display->display_options['fields']['type']['table'] = 'node';
   $handler->display->display_options['fields']['type']['field'] = 'type';
@@ -316,7 +316,7 @@ function ipwa_base_views_default_views() {
   $handler->display->display_options['filters']['status']['value'] = 1;
   $handler->display->display_options['filters']['status']['group'] = 1;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: Content: Type */
+  /* Filter criterion: Content: Inhaltstyp */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
@@ -462,7 +462,7 @@ function ipwa_base_views_default_views() {
   $handler->display->display_options['fields']['field_themenzuweisung']['group_column'] = 'entity_id';
   $handler->display->display_options['fields']['field_themenzuweisung']['delta_offset'] = '0';
   $handler->display->display_options['fields']['field_themenzuweisung']['separator'] = '';
-  /* Field: Content: Type */
+  /* Field: Content: Inhaltstyp */
   $handler->display->display_options['fields']['type']['id'] = 'type';
   $handler->display->display_options['fields']['type']['table'] = 'node';
   $handler->display->display_options['fields']['type']['field'] = 'type';
@@ -535,7 +535,7 @@ function ipwa_base_views_default_views() {
   $handler->display->display_options['filters']['status']['value'] = 1;
   $handler->display->display_options['filters']['status']['group'] = 1;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: Content: Type */
+  /* Filter criterion: Content: Inhaltstyp */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
@@ -553,7 +553,7 @@ function ipwa_base_views_default_views() {
     1 => 0,
   );
   $handler->display->display_options['filters']['type']['expose']['reduce'] = TRUE;
-  /* Filter criterion: Content: Type */
+  /* Filter criterion: Content: Inhaltstyp */
   $handler->display->display_options['filters']['type_1']['id'] = 'type_1';
   $handler->display->display_options['filters']['type_1']['table'] = 'node';
   $handler->display->display_options['filters']['type_1']['field'] = 'type';
@@ -734,7 +734,9 @@ function ipwa_base_views_default_views() {
   $handler->display->display_options['query']['options']['distinct'] = TRUE;
   $handler->display->display_options['query']['options']['query_comment'] = FALSE;
   $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['exposed_form']['options']['submit_button'] = 'Suchen';
   $handler->display->display_options['exposed_form']['options']['reset_button'] = TRUE;
+  $handler->display->display_options['exposed_form']['options']['reset_button_label'] = 'Zurücksetzen';
   $handler->display->display_options['pager']['type'] = 'full';
   $handler->display->display_options['pager']['options']['items_per_page'] = 50;
   $handler->display->display_options['style_plugin'] = 'table';
@@ -815,7 +817,7 @@ function ipwa_base_views_default_views() {
   $handler->display->display_options['empty']['area_text_custom']['field'] = 'area_text_custom';
   $handler->display->display_options['empty']['area_text_custom']['empty'] = TRUE;
   $handler->display->display_options['empty']['area_text_custom']['content'] = 'No content available.';
-  /* Relationship: Content: Author */
+  /* Relationship: Content: Autor */
   $handler->display->display_options['relationships']['uid']['id'] = 'uid';
   $handler->display->display_options['relationships']['uid']['table'] = 'node';
   $handler->display->display_options['relationships']['uid']['field'] = 'uid';
@@ -913,13 +915,18 @@ function ipwa_base_views_default_views() {
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
+  /* Field: Content: Nid */
+  $handler->display->display_options['fields']['nid']['id'] = 'nid';
+  $handler->display->display_options['fields']['nid']['table'] = 'node';
+  $handler->display->display_options['fields']['nid']['field'] = 'nid';
+  $handler->display->display_options['fields']['nid']['label'] = 'ID';
   /* Field: Content: Has new content */
   $handler->display->display_options['fields']['timestamp']['id'] = 'timestamp';
   $handler->display->display_options['fields']['timestamp']['table'] = 'history';
   $handler->display->display_options['fields']['timestamp']['field'] = 'timestamp';
   $handler->display->display_options['fields']['timestamp']['label'] = '';
   $handler->display->display_options['fields']['timestamp']['element_label_colon'] = FALSE;
-  /* Field: Content: Type */
+  /* Field: Content: Inhaltstyp */
   $handler->display->display_options['fields']['type']['id'] = 'type';
   $handler->display->display_options['fields']['type']['table'] = 'node';
   $handler->display->display_options['fields']['type']['field'] = 'type';
@@ -928,12 +935,13 @@ function ipwa_base_views_default_views() {
   $handler->display->display_options['fields']['name']['table'] = 'users';
   $handler->display->display_options['fields']['name']['field'] = 'name';
   $handler->display->display_options['fields']['name']['relationship'] = 'uid';
-  $handler->display->display_options['fields']['name']['label'] = 'Author';
+  $handler->display->display_options['fields']['name']['label'] = 'Autor';
   $handler->display->display_options['fields']['name']['hide_alter_empty'] = FALSE;
   /* Field: Content: Published */
   $handler->display->display_options['fields']['status']['id'] = 'status';
   $handler->display->display_options['fields']['status']['table'] = 'node';
   $handler->display->display_options['fields']['status']['field'] = 'status';
+  $handler->display->display_options['fields']['status']['label'] = 'Publiziert';
   $handler->display->display_options['fields']['status']['not'] = 0;
   /* Field: Content: Updated date */
   $handler->display->display_options['fields']['changed']['id'] = 'changed';
@@ -962,13 +970,13 @@ function ipwa_base_views_default_views() {
   $handler->display->display_options['filters']['title']['expose']['operator'] = 'title_op';
   $handler->display->display_options['filters']['title']['expose']['identifier'] = 'title';
   $handler->display->display_options['filters']['title']['expose']['remember'] = TRUE;
-  /* Filter criterion: Content: Type */
+  /* Filter criterion: Content: Inhaltstyp */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['exposed'] = TRUE;
   $handler->display->display_options['filters']['type']['expose']['operator_id'] = 'type_op';
-  $handler->display->display_options['filters']['type']['expose']['label'] = 'Type';
+  $handler->display->display_options['filters']['type']['expose']['label'] = 'Inhaltstyp';
   $handler->display->display_options['filters']['type']['expose']['operator'] = 'type_op';
   $handler->display->display_options['filters']['type']['expose']['identifier'] = 'type';
   $handler->display->display_options['filters']['type']['expose']['remember'] = TRUE;
@@ -980,21 +988,29 @@ function ipwa_base_views_default_views() {
   $handler->display->display_options['filters']['uid']['value'] = '';
   $handler->display->display_options['filters']['uid']['exposed'] = TRUE;
   $handler->display->display_options['filters']['uid']['expose']['operator_id'] = 'uid_op';
-  $handler->display->display_options['filters']['uid']['expose']['label'] = 'Author';
+  $handler->display->display_options['filters']['uid']['expose']['label'] = 'Autor';
   $handler->display->display_options['filters']['uid']['expose']['operator'] = 'uid_op';
   $handler->display->display_options['filters']['uid']['expose']['identifier'] = 'author';
   $handler->display->display_options['filters']['uid']['expose']['remember'] = TRUE;
+  $handler->display->display_options['filters']['uid']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+  );
   /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
   $handler->display->display_options['filters']['status']['field'] = 'status';
-  $handler->display->display_options['filters']['status']['value'] = 'All';
+  $handler->display->display_options['filters']['status']['value'] = '0';
   $handler->display->display_options['filters']['status']['exposed'] = TRUE;
   $handler->display->display_options['filters']['status']['expose']['operator_id'] = '';
-  $handler->display->display_options['filters']['status']['expose']['label'] = 'Published';
+  $handler->display->display_options['filters']['status']['expose']['label'] = 'Publiziert';
   $handler->display->display_options['filters']['status']['expose']['operator'] = 'status_op';
   $handler->display->display_options['filters']['status']['expose']['identifier'] = 'status';
   $handler->display->display_options['filters']['status']['expose']['remember'] = TRUE;
+  $handler->display->display_options['filters']['status']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+  );
   /* Filter criterion: Taxonomy term: Vocabulary */
   $handler->display->display_options['filters']['vid']['id'] = 'vid';
   $handler->display->display_options['filters']['vid']['table'] = 'taxonomy_term_data';
@@ -1002,10 +1018,14 @@ function ipwa_base_views_default_views() {
   $handler->display->display_options['filters']['vid']['relationship'] = 'term_node_tid';
   $handler->display->display_options['filters']['vid']['exposed'] = TRUE;
   $handler->display->display_options['filters']['vid']['expose']['operator_id'] = 'vid_op';
-  $handler->display->display_options['filters']['vid']['expose']['label'] = 'Vocabulary';
+  $handler->display->display_options['filters']['vid']['expose']['label'] = 'Akteurstyp';
   $handler->display->display_options['filters']['vid']['expose']['operator'] = 'vid_op';
   $handler->display->display_options['filters']['vid']['expose']['identifier'] = 'vid';
   $handler->display->display_options['filters']['vid']['expose']['remember'] = TRUE;
+  $handler->display->display_options['filters']['vid']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+  );
 
   /* Display: System */
   $handler = $view->new_display('system', 'System', 'system_1');
@@ -1017,8 +1037,8 @@ function ipwa_base_views_default_views() {
     t('Defaults'),
     t('Content'),
     t('more'),
-    t('Apply'),
-    t('Reset'),
+    t('Suchen'),
+    t('Zurücksetzen'),
     t('Sort by'),
     t('Asc'),
     t('Desc'),
@@ -1043,12 +1063,13 @@ function ipwa_base_views_default_views() {
     t('Demote from front page'),
     t('Unpublish'),
     t('Titel'),
-    t('Type'),
-    t('Author'),
-    t('Published'),
+    t('ID'),
+    t('Inhaltstyp'),
+    t('Autor'),
+    t('Publiziert'),
     t('Updated'),
     t('Operations'),
-    t('Vocabulary'),
+    t('Akteurstyp'),
     t('System'),
   );
   $export['clone_of_administration_nodes'] = $view;
@@ -1095,7 +1116,7 @@ function ipwa_base_views_default_views() {
   $handler->display->display_options['fields']['field_themenzuweisung']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_themenzuweisung']['delta_offset'] = '0';
   $handler->display->display_options['fields']['field_themenzuweisung']['separator'] = '';
-  /* Field: Content: Type */
+  /* Field: Content: Inhaltstyp */
   $handler->display->display_options['fields']['type']['id'] = 'type';
   $handler->display->display_options['fields']['type']['table'] = 'node';
   $handler->display->display_options['fields']['type']['field'] = 'type';
@@ -1120,7 +1141,7 @@ function ipwa_base_views_default_views() {
   $handler->display->display_options['filters']['status']['value'] = 1;
   $handler->display->display_options['filters']['status']['group'] = 1;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: Content: Type */
+  /* Filter criterion: Content: Inhaltstyp */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
@@ -1139,7 +1160,7 @@ function ipwa_base_views_default_views() {
   $handler->display->display_options['fields']['field_themenzuweisung']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_themenzuweisung']['delta_offset'] = '0';
   $handler->display->display_options['fields']['field_themenzuweisung']['separator'] = '';
-  /* Field: Content: Type */
+  /* Field: Content: Inhaltstyp */
   $handler->display->display_options['fields']['type']['id'] = 'type';
   $handler->display->display_options['fields']['type']['table'] = 'node';
   $handler->display->display_options['fields']['type']['field'] = 'type';
@@ -1247,7 +1268,7 @@ function ipwa_base_views_default_views() {
   $handler->display->display_options['fields']['field_themenzuweisung']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_themenzuweisung']['delta_offset'] = '0';
   $handler->display->display_options['fields']['field_themenzuweisung']['separator'] = '';
-  /* Field: Content: Type */
+  /* Field: Content: Inhaltstyp */
   $handler->display->display_options['fields']['type']['id'] = 'type';
   $handler->display->display_options['fields']['type']['table'] = 'node';
   $handler->display->display_options['fields']['type']['field'] = 'type';
@@ -1325,7 +1346,7 @@ function ipwa_base_views_default_views() {
   $handler->display->display_options['filters']['status']['value'] = 1;
   $handler->display->display_options['filters']['status']['group'] = 1;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: Content: Type */
+  /* Filter criterion: Content: Inhaltstyp */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
@@ -1541,7 +1562,7 @@ function ipwa_base_views_default_views() {
   $handler->display->display_options['fields']['field_dokument']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_dokument']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_dokument']['type'] = 'file_url_plain';
-  /* Field: Content: Type */
+  /* Field: Content: Inhaltstyp */
   $handler->display->display_options['fields']['type']['id'] = 'type';
   $handler->display->display_options['fields']['type']['table'] = 'node';
   $handler->display->display_options['fields']['type']['field'] = 'type';
@@ -1776,7 +1797,7 @@ function ipwa_base_views_default_views() {
   $handler->display->display_options['filters']['status']['value'] = 1;
   $handler->display->display_options['filters']['status']['group'] = 1;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: Content: Type */
+  /* Filter criterion: Content: Inhaltstyp */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
