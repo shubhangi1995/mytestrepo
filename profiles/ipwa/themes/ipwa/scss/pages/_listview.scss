@@ -114,13 +114,14 @@
     background: $color-light-blue;
 
     .page-header {
-        @extend .container;
-
-        padding-left: 250px;
-        border: none;
-        padding-bottom: 35px;
+        @extend .container;        
+        border: none;        
         font-weight: normal;
-        padding-top: 80px;
+		    width: 765px;
+             margin: 0 auto;
+			 padding-top:55px;
+			 padding-bottom:40px;
+       
     }
 }
 
@@ -132,6 +133,9 @@
             color: $active-menu;
             font-size: 26px;
             padding-bottom: 60px;
+			 width: 765px;
+             margin: 0 auto;
+			 font-weight:bold;
         }
 
         .attachment-before .view-result-count {
