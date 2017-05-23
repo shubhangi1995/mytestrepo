@@ -184,4 +184,3 @@
     <?php print render($page['footer']); ?>
   </footer>
 <?php endif; ?>
-<a class="top"href="#top">Top</a>
