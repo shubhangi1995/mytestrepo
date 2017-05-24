@@ -414,3 +414,28 @@ p {
     @extend .container;
   }
 }
+
+//backtotop
+#backtotop {
+  background: $active-menu;
+  bottom: 20px;
+  cursor: pointer;
+  height: 50px;
+  position: fixed;
+  right: 20px;
+  font-size:0;
+  width: 50px;  
+  border-radius:25px;
+  text-indent:0;
+
+&::before{
+	        font-family:$icomoon;
+            content: "\e950";
+            color:$color-white;
+            font-size: 18px;            
+            display: inline-block;
+			position:absolute;
+			 top: 14px;
+             left: 16px;
+	  
+  }}

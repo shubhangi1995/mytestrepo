@@ -7978,6 +7978,29 @@ p {
 .page-user .page-header {
   border: 0; }
 
+/* line 419, ../scss/pages/_common.scss */
+#backtotop {
+  background: #e74712;
+  bottom: 20px;
+  cursor: pointer;
+  height: 50px;
+  position: fixed;
+  right: 20px;
+  font-size: 0;
+  width: 50px;
+  border-radius: 25px;
+  text-indent: 0; }
+  /* line 431, ../scss/pages/_common.scss */
+  #backtotop::before {
+    font-family: "icomoon";
+    content: "\e950";
+    color: #ffffff;
+    font-size: 18px;
+    display: inline-block;
+    position: absolute;
+    top: 14px;
+    left: 16px; }
+
 /* line 1, ../scss/pages/_singleview.scss */
 .field-name-field-themenzuweisung {
   display: inline-block;
