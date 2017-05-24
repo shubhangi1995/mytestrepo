@@ -1,4 +1,6 @@
-@media (max-width:1024px) {
+
+
+@media (max-width:1000px) {
     header {
         .navbar-header {
             .logo {
@@ -36,6 +38,7 @@
             z-index: 9999;
             background: $color-white;
             width: 100%;
+			top:58px;
 
             .search-icon {
                 padding: 20px;

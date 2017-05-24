@@ -24,7 +24,7 @@ jQuery(document).ready(function(){
 	jQuery("input:radio").each(function(){
   if(jQuery(this).is(':checked'))
   {
-	jQuery(this).parent("label").css('border-bottom', '1px solid #e74712');
+	jQuery(this).parent("label").css('border-bottom', '2px solid #e74712');
   }
 }); 
 
@@ -70,7 +70,7 @@ jQuery('.page-aktuelles select').select2().on("select2:open", function(){
 		
 	});
 
-	if(jQuery(window).width() <= 1025){
+	if(jQuery(window).width() <= 1000){
 		jQuery(".navbar-nav").insertAfter(".region-navigation");
 
 	}
