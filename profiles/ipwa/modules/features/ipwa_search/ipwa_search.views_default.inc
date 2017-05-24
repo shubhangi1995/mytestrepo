@@ -235,6 +235,12 @@ Document|Dokumente',
   $handler->display->display_options['fields']['views_conditional_9']['then'] = '[title_1]';
   $handler->display->display_options['fields']['views_conditional_9']['or'] = '[title]';
   $handler->display->display_options['fields']['views_conditional_9']['strip_tags'] = 0;
+  /* Field: Indexed Node: Ort */
+  $handler->display->display_options['fields']['field_ort']['id'] = 'field_ort';
+  $handler->display->display_options['fields']['field_ort']['table'] = 'search_api_index_ipwa_solr_index';
+  $handler->display->display_options['fields']['field_ort']['field'] = 'field_ort';
+  $handler->display->display_options['fields']['field_ort']['label'] = '';
+  $handler->display->display_options['fields']['field_ort']['element_label_colon'] = FALSE;
   /* Field: Indexed Node: Datum */
   $handler->display->display_options['fields']['field_event_datum']['id'] = 'field_event_datum';
   $handler->display->display_options['fields']['field_event_datum']['table'] = 'search_api_index_ipwa_solr_index';
@@ -277,12 +283,6 @@ Document|Dokumente',
     'show_remaining_days' => 0,
     'show_repeat_rule' => 'show',
   );
-  /* Field: Indexed Node: Ort */
-  $handler->display->display_options['fields']['field_ort']['id'] = 'field_ort';
-  $handler->display->display_options['fields']['field_ort']['table'] = 'search_api_index_ipwa_solr_index';
-  $handler->display->display_options['fields']['field_ort']['field'] = 'field_ort';
-  $handler->display->display_options['fields']['field_ort']['label'] = '';
-  $handler->display->display_options['fields']['field_ort']['element_label_colon'] = FALSE;
   /* Field: Indexed Node: Akteurstyp */
   $handler->display->display_options['fields']['field_akteurstyp']['id'] = 'field_akteurstyp';
   $handler->display->display_options['fields']['field_akteurstyp']['table'] = 'search_api_index_ipwa_solr_index';
@@ -392,7 +392,7 @@ Document|Dokumente',
   $handler->display->display_options['fields']['views_conditional_4']['if'] = 'type';
   $handler->display->display_options['fields']['views_conditional_4']['condition'] = '1';
   $handler->display->display_options['fields']['views_conditional_4']['equalto'] = 'termin';
-  $handler->display->display_options['fields']['views_conditional_4']['then'] = '[type] [title] [field_ort] [field_event_datum]';
+  $handler->display->display_options['fields']['views_conditional_4']['then'] = '[type] [title] [field_event_datum] [field_ort]';
   $handler->display->display_options['fields']['views_conditional_4']['strip_tags'] = 0;
   /* Field: Views: Views Conditional */
   $handler->display->display_options['fields']['views_conditional_5']['id'] = 'views_conditional_5';
