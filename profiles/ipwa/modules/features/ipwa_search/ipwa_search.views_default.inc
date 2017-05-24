@@ -91,6 +91,32 @@ function ipwa_search_views_default_views() {
         ),
       ),
     ),
+    'type_1' => array(
+      'bef_format' => 'bef',
+      'more_options' => array(
+        'bef_select_all_none' => FALSE,
+        'bef_collapsible' => 0,
+        'autosubmit' => 1,
+        'is_secondary' => 0,
+        'any_label' => 'Alles anzeigen',
+        'bef_filter_description' => '',
+        'tokens' => array(
+          'available' => array(
+            0 => 'global_types',
+          ),
+        ),
+        'rewrite' => array(
+          'filter_rewrite_values' => 'Article|Artikel
+Nachricht|Nachrichten
+Publikation |Publikationen
+Termin|Termine
+Förderbekanntmachung|Förderbekanntmachungen
+Projekt|Projekte
+Akteur|Akteure
+Document|Dokument ',
+        ),
+      ),
+    ),
     'field_ort' => array(
       'bef_format' => 'default',
       'slider_options' => array(
@@ -112,32 +138,6 @@ function ipwa_search_views_default_views() {
         ),
         'rewrite' => array(
           'filter_rewrite_values' => '',
-        ),
-      ),
-    ),
-    'type_1' => array(
-      'bef_format' => 'bef',
-      'more_options' => array(
-        'bef_select_all_none' => FALSE,
-        'bef_collapsible' => 0,
-        'autosubmit' => 1,
-        'is_secondary' => 0,
-        'any_label' => 'Alles anzeigen',
-        'bef_filter_description' => '',
-        'tokens' => array(
-          'available' => array(
-            0 => 'global_types',
-          ),
-        ),
-        'rewrite' => array(
-          'filter_rewrite_values' => 'Article|Artikel
-Nachricht|Nachrichten
-Publikation|Publikationen
-Termin|Termine
-Förderbekanntmachung|Förderbekanntmachungen
-Projekt|Projekte
-Akteur|Akteure
-Document|Dokumente',
         ),
       ),
     ),
