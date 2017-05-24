@@ -72,95 +72,9 @@ function ipwa_base_views_default_views() {
           ),
         ),
         'rewrite' => array(
-          'filter_rewrite_values' => '',
-        ),
-      ),
-    ),
-    'field_themenzuweisung_tid' => array(
-      'bef_format' => 'default',
-      'more_options' => array(
-        'bef_select_all_none' => FALSE,
-        'bef_select_all_none_nested' => FALSE,
-        'bef_term_description' => 0,
-        'bef_collapsible' => 0,
-        'autosubmit' => 1,
-        'is_secondary' => 0,
-        'any_label' => 'Politik & Gesellschaft',
-        'bef_filter_description' => '',
-        'tokens' => array(
-          'available' => array(
-            0 => 'global_types',
-            1 => 'vocabulary',
-          ),
-        ),
-        'rewrite' => array(
-          'filter_rewrite_values' => '',
-        ),
-      ),
-    ),
-    'field_themenzuweisung_tid_1' => array(
-      'bef_format' => 'default',
-      'more_options' => array(
-        'bef_select_all_none' => FALSE,
-        'bef_select_all_none_nested' => FALSE,
-        'bef_term_description' => 0,
-        'bef_collapsible' => 0,
-        'autosubmit' => 1,
-        'is_secondary' => 0,
-        'any_label' => 'Wirtschaft & Arbeit',
-        'bef_filter_description' => '',
-        'tokens' => array(
-          'available' => array(
-            0 => 'global_types',
-            1 => 'vocabulary',
-          ),
-        ),
-        'rewrite' => array(
-          'filter_rewrite_values' => '',
-        ),
-      ),
-    ),
-    'field_themenzuweisung_tid_2' => array(
-      'bef_format' => 'default',
-      'more_options' => array(
-        'bef_select_all_none' => FALSE,
-        'bef_select_all_none_nested' => FALSE,
-        'bef_term_description' => 0,
-        'bef_collapsible' => 0,
-        'autosubmit' => 1,
-        'is_secondary' => 0,
-        'any_label' => 'Infos für Unternehmen',
-        'bef_filter_description' => '',
-        'tokens' => array(
-          'available' => array(
-            0 => 'global_types',
-            1 => 'vocabulary',
-          ),
-        ),
-        'rewrite' => array(
-          'filter_rewrite_values' => '',
-        ),
-      ),
-    ),
-    'field_themenzuweisung_tid_3' => array(
-      'bef_format' => 'default',
-      'more_options' => array(
-        'bef_select_all_none' => FALSE,
-        'bef_select_all_none_nested' => FALSE,
-        'bef_term_description' => 0,
-        'bef_collapsible' => 0,
-        'autosubmit' => 1,
-        'is_secondary' => 0,
-        'any_label' => 'Infos für Beschäftigte',
-        'bef_filter_description' => '',
-        'tokens' => array(
-          'available' => array(
-            0 => 'global_types',
-            1 => 'vocabulary',
-          ),
-        ),
-        'rewrite' => array(
-          'filter_rewrite_values' => '',
+          'filter_rewrite_values' => 'Förderbekanntmachung|Förderbekanntmachungen
+Nachricht|Nachrichten
+Publikation|Publikationen',
         ),
       ),
     ),
@@ -690,6 +604,9 @@ function ipwa_base_views_default_views() {
     t('Advanced options'),
     t('Sort options'),
     t('Alles anzeigen'),
+    t('Förderbekanntmachung|Förderbekanntmachungen
+Nachricht|Nachrichten
+Publikation|Publikationen'),
     t('Politik & Gesellschaft'),
     t('Wirtschaft & Arbeit'),
     t('Infos für Unternehmen'),
@@ -1074,6 +991,7 @@ function ipwa_base_views_default_views() {
     t('Publiziert'),
     t('Updated'),
     t('Operations'),
+    t('Inhaltstyp'),
     t('Akteurstyp'),
     t('System'),
   );
