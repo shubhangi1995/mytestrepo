@@ -414,7 +414,7 @@ Document|Dokument ',
   $handler->display->display_options['fields']['views_conditional_8']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['views_conditional_8']['if'] = 'views_conditional_6';
   $handler->display->display_options['fields']['views_conditional_8']['condition'] = '6';
-  $handler->display->display_options['fields']['views_conditional_8']['then'] = 'Stichtag: [views_conditional_6]';
+  $handler->display->display_options['fields']['views_conditional_8']['then'] = 'Stichtag:: [views_conditional_6]';
   $handler->display->display_options['fields']['views_conditional_8']['strip_tags'] = 0;
   /* Field: Views: Views Conditional */
   $handler->display->display_options['fields']['views_conditional_10']['id'] = 'views_conditional_10';
