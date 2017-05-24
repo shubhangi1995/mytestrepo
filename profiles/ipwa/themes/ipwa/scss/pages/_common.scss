@@ -222,8 +222,10 @@ p {
                     border: 1px solid $color-white;
                     cursor: pointer;
                     transition: all 0.5s ease;
+					height:auto;
+					@include devicebreak(x-large){
 					height:410px;
-
+}
                     &.project-blue {
                         background: $main-color;
 						.views-field-title a{
@@ -266,7 +268,7 @@ p {
                         }
                     }
 
-                    .views-field-field-ort, .views-field-views-conditional-1,.views-field-views-conditional-2,.views-field-views-conditional-3,.views-field-views-conditional-4,.views-field-views-conditional-5,.views-field-views-conditional-6,.views-field-views-conditional-7,.views-field-views-conditional-8,.views-field-views-conditional-9 {
+                    .views-field-field-ort, div[class*='views-field-views-conditional-'] {
                         .field-content {                            
                             font-size: 20px;
                             color: $color-light-grey;
