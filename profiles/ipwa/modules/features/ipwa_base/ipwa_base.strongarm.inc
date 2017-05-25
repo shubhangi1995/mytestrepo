@@ -260,7 +260,7 @@ function ipwa_base_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'path_breadcrumbs_home_link_title';
-  $strongarm->value = 'Homepage';
+  $strongarm->value = 'Home';
   $export['path_breadcrumbs_home_link_title'] = $strongarm;
 
   $strongarm = new stdClass();

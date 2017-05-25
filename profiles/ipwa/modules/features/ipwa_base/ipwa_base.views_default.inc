@@ -870,7 +870,7 @@ Publikation|Publikationen'),
   $handler->display->display_options['fields']['edit_node']['id'] = 'edit_node';
   $handler->display->display_options['fields']['edit_node']['table'] = 'views_entity_node';
   $handler->display->display_options['fields']['edit_node']['field'] = 'edit_node';
-  $handler->display->display_options['fields']['edit_node']['label'] = 'Operations';
+  $handler->display->display_options['fields']['edit_node']['label'] = 'Bearbeitung';
   /* Field: Content: Delete link */
   $handler->display->display_options['fields']['delete_node']['id'] = 'delete_node';
   $handler->display->display_options['fields']['delete_node']['table'] = 'views_entity_node';
@@ -991,7 +991,6 @@ Publikation|Publikationen'),
     t('Publiziert'),
     t('Updated'),
     t('Bearbeitung'),
-    t('Inhaltstyp'),
     t('Akteurstyp'),
     t('System'),
   );
@@ -1025,12 +1024,11 @@ Publikation|Publikationen'),
   $handler->display->display_options['header']['area']['field'] = 'area';
   $handler->display->display_options['header']['area']['content'] = '<h2 class="pane-title">Neueste Digital-Projekte in NRW</h2>';
   $handler->display->display_options['header']['area']['format'] = 'wysiwyg';
-  /* Footer: Global: Text area */
-  $handler->display->display_options['footer']['area']['id'] = 'area';
-  $handler->display->display_options['footer']['area']['table'] = 'views';
-  $handler->display->display_options['footer']['area']['field'] = 'area';
-  $handler->display->display_options['footer']['area']['content'] = '<a href ="/article">Karte öffnen</a>';
-  $handler->display->display_options['footer']['area']['format'] = 'wysiwyg';
+  /* Footer: Global: Unfiltered text */
+  $handler->display->display_options['footer']['area_text_custom']['id'] = 'area_text_custom';
+  $handler->display->display_options['footer']['area_text_custom']['table'] = 'views';
+  $handler->display->display_options['footer']['area_text_custom']['field'] = 'area_text_custom';
+  $handler->display->display_options['footer']['area_text_custom']['content'] = '<a href ="/article">Karte öffnen</a>';
   /* Field: Content: Dieser Artikel gehört zu */
   $handler->display->display_options['fields']['field_themenzuweisung']['id'] = 'field_themenzuweisung';
   $handler->display->display_options['fields']['field_themenzuweisung']['table'] = 'field_data_field_themenzuweisung';
