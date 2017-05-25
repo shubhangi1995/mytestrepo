@@ -184,6 +184,26 @@ function ipwa_base_path_breadcrumbs_settings_info() {
 
   $path_breadcrumb = new stdClass();
   $path_breadcrumb->api_version = 1;
+  $path_breadcrumb->machine_name = 'search_list_view';
+  $path_breadcrumb->name = 'Search list view';
+  $path_breadcrumb->path = 'search';
+  $path_breadcrumb->data = array(
+    'titles' => array(
+      0 => '!page_title',
+    ),
+    'paths' => array(
+      0 => '<none>',
+    ),
+    'home' => 1,
+    'translatable' => 1,
+    'arguments' => array(),
+    'access' => array(),
+  );
+  $path_breadcrumb->weight = 0;
+  $export['search_list_view'] = $path_breadcrumb;
+
+  $path_breadcrumb = new stdClass();
+  $path_breadcrumb->api_version = 1;
   $path_breadcrumb->machine_name = 'termin';
   $path_breadcrumb->name = 'Termin Single view';
   $path_breadcrumb->path = 'node/%node';
