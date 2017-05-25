@@ -75,13 +75,13 @@ jQuery('.page-aktuelles select').select2().on("select2:open", function(){
 
 	}
 
-	jQuery("ul.tb-megamenu-nav li a").click(function(){	
-			jQuery(".tb-megamenu-submenu").attr('style','display:block !important');
-			
-			jQuery(this).parent().siblings().find(".tb-megamenu-submenu").hide();
-			
-			
-	});
+	if(jQuery(window).innerWidth() < 1025){
+		 jQuery("ul.tb-megamenu-nav li a").click(function(){	
+			jQuery(this).next(".tb-megamenu-submenu").attr('style','display:block !important');
+			jQuery(this).parent().siblings().find(".tb-megamenu-submenu").attr('style','display:none !important');
+		}); 
+	};
+
 
 
 

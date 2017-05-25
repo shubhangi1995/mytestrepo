@@ -8653,29 +8653,31 @@ p {
         float: right; }
         /* line 909, ../scss/pages/_singleview.scss */
         .group-top-wrapper .group-middle-wrapper .view-id-termin.view-display-id-block_1 .view-sub-wrapper .view-header, .group-top-wrapper .group-middle-wrapper .view-id-termin.view-display-id-block_1 .feed-icon .view-header {
+          width: auto;
+          margin: 0;
           padding: 0;
           color: #273753;
           font-size: 16px;
           font-weight: bold; }
-          /* line 915, ../scss/pages/_singleview.scss */
+          /* line 917, ../scss/pages/_singleview.scss */
           .group-top-wrapper .group-middle-wrapper .view-id-termin.view-display-id-block_1 .view-sub-wrapper .view-header p, .group-top-wrapper .group-middle-wrapper .view-id-termin.view-display-id-block_1 .feed-icon .view-header p {
             margin: 0; }
-    /* line 923, ../scss/pages/_singleview.scss */
+    /* line 925, ../scss/pages/_singleview.scss */
     .group-top-wrapper .group-middle-wrapper .field-name-field-event-datum {
       float: left; }
-  /* line 928, ../scss/pages/_singleview.scss */
+  /* line 930, ../scss/pages/_singleview.scss */
   .group-top-wrapper .field-name-field-ort {
     border: none; }
-  /* line 932, ../scss/pages/_singleview.scss */
+  /* line 934, ../scss/pages/_singleview.scss */
   .group-top-wrapper .field-name-field-event-datum {
     font-size: 28px;
     color: #e74712;
     font-weight: bold; }
-    /* line 937, ../scss/pages/_singleview.scss */
+    /* line 939, ../scss/pages/_singleview.scss */
     .group-top-wrapper .field-name-field-event-datum .field-label {
       font-weight: bold; }
 
-/* line 944, ../scss/pages/_singleview.scss */
+/* line 946, ../scss/pages/_singleview.scss */
 .field-name-field-link-zur-anmeldung a, .field-name-field-zur-website a {
   position: relative;
   bottom: auto;
@@ -8684,70 +8686,70 @@ p {
   padding: 14px 40px 14px 55px;
   margin: 26px 0 0;
   float: left; }
-  /* line 955, ../scss/pages/_singleview.scss */
+  /* line 957, ../scss/pages/_singleview.scss */
   .field-name-field-link-zur-anmeldung a::before, .field-name-field-zur-website a::before {
     left: 24px;
     top: 19px; }
 
-/* line 963, ../scss/pages/_singleview.scss */
+/* line 965, ../scss/pages/_singleview.scss */
 .field-name-field-zur-website a {
   margin: 26px 0 45px; }
 
-/* line 970, ../scss/pages/_singleview.scss */
+/* line 972, ../scss/pages/_singleview.scss */
 .field-name-field-bis-auf-weiteres, .field-name-field-stichtag {
   font-size: 28px;
   color: #e74712;
   border-bottom: 1px solid #c5cbd5;
   padding-bottom: 15px;
   margin-bottom: 15px; }
-  /* line 977, ../scss/pages/_singleview.scss */
+  /* line 979, ../scss/pages/_singleview.scss */
   .field-name-field-bis-auf-weiteres .field-label, .field-name-field-stichtag .field-label {
     font-weight: bold; }
 
-/* line 982, ../scss/pages/_singleview.scss */
+/* line 984, ../scss/pages/_singleview.scss */
 .field-name-field-ausschreibende-stelle {
   margin-bottom: 45px;
   font-size: 22px; }
-  /* line 986, ../scss/pages/_singleview.scss */
+  /* line 988, ../scss/pages/_singleview.scss */
   .field-name-field-ausschreibende-stelle .external-link {
     padding-left: 5px;
     padding-right: 35px;
     font-size: 22px; }
-    /* line 991, ../scss/pages/_singleview.scss */
+    /* line 993, ../scss/pages/_singleview.scss */
     .field-name-field-ausschreibende-stelle .external-link::before {
       left: auto;
       right: 0;
       top: 3px; }
 
-/* line 1001, ../scss/pages/_singleview.scss */
+/* line 1003, ../scss/pages/_singleview.scss */
 .field-name-field-herausgeber {
   border-bottom: 1px solid #c5cbd5;
   padding-bottom: 15px;
   margin-bottom: 15px; }
 
-/* line 1007, ../scss/pages/_singleview.scss */
+/* line 1009, ../scss/pages/_singleview.scss */
 .field-name-field-herausgeber, .field-name-field-ver-ffentlichungsdatum {
   font-size: 18px; }
 
-/* line 1011, ../scss/pages/_singleview.scss */
+/* line 1013, ../scss/pages/_singleview.scss */
 .field-name-field-ver-ffentlichungsdatum {
   margin-bottom: 45px; }
 
-/* line 1017, ../scss/pages/_singleview.scss */
+/* line 1019, ../scss/pages/_singleview.scss */
 .field-name-field-ansprechpartner-kontaktdat, .field-name-field-weitere-details {
   border-bottom: 1px solid #c5cbd5;
   padding-bottom: 15px;
   margin-bottom: 15px;
   font-size: 18px; }
 
-/* line 1025, ../scss/pages/_singleview.scss */
+/* line 1027, ../scss/pages/_singleview.scss */
 .external-link {
   color: #273753;
   padding-left: 35px;
   text-decoration: none;
   font-size: 18px;
   position: relative; }
-  /* line 1032, ../scss/pages/_singleview.scss */
+  /* line 1034, ../scss/pages/_singleview.scss */
   .external-link::before {
     left: 0;
     position: absolute;
@@ -8756,7 +8758,7 @@ p {
     content: "\e948";
     color: #919BAA;
     font-size: 16px; }
-  /* line 1042, ../scss/pages/_singleview.scss */
+  /* line 1044, ../scss/pages/_singleview.scss */
   .external-link .ext {
     display: none; }
 
