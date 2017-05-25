@@ -1,0 +1,16 @@
+Index: PROJECT/fresh-start/profiles/ipwa/modules/contrib/path_breadcrumbs/path_breadcrumbs.module
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- PROJECT/fresh-start/profiles/ipwa/modules/contrib/path_breadcrumbs/path_breadcrumbs.module	(revision 056dbff9441cd372122bc61d3aa3ffe98b149d50)
++++ PROJECT/fresh-start/profiles/ipwa/modules/contrib/path_breadcrumbs/path_breadcrumbs.module	(revision 05b320be51a6b0e16afe942def197c53144a5db7)
+@@ -189,7 +189,7 @@
+   // Prepend HOME link to breadcrumbs navigation.
+   if ($path_breadcrumb->home == TRUE) {
+     $home = variable_get('path_breadcrumbs_home_link_title', 'Home');
+-    $breadcrumb[] = l($home, '<front>');
++    $breadcrumb[] = l(t($home), '<front>');
+   }
+ 
+   // Convert breadcrumb titles and paths to string.
