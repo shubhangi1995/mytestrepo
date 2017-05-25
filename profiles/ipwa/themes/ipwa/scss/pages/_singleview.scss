@@ -263,7 +263,12 @@
 }
 
 .group-page-info {
-    @extend .container;
+    // @extend .container;
+	h2{
+		font-size:26px;
+		color:$active-menu;
+		margin-bottom:60px;
+	}
 
     .field:first-child {
         .field-item {
@@ -279,7 +284,7 @@
     padding: 60px 0 45px;
     overflow: hidden;
 
-    p, h3, h4, .field-name-field-kurztext .field-item, .view-id-related_content.view-display-id-block_3 .views-row {
+    p, h3, h4, h5, h6, .field-name-field-kurztext .field-item, .view-id-related_content.view-display-id-block_3 .views-row {
         margin: 0 0 40px 0;
         line-height: 30px;
     }
@@ -288,15 +293,15 @@
         display: none;
     }
 
-    h3 {
+    h3, h4, h5, h6 {
         font-size: 20px;
         color: $active-menu;
     }
 
-    h4 {
+    /* h4 {
         font-size: 26px;
         color: $active-menu;
-    }
+    } */
 
     a {
         color: $main-color;
