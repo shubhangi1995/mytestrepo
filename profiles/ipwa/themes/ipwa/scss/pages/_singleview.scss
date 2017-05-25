@@ -442,7 +442,7 @@
     margin: 40px 0;
     overflow: hidden;
 
-    .field-name-field-bild-ref, .field-name-field-flie-text-bereich {
+    .field-name-field-bild-ref {
         margin: 0;
         padding-right: 30px;
     }
@@ -455,10 +455,20 @@
     }
 }
 
+/* .paragraphs-item-flie-text-mit-bild-links, .paragraphs-item-flie-text-mit-bild-rechts{
+	.field-name-field-flie-text-bereich{
+		padding:0;
+	}
+} */
+
 .paragraphs-item-flie-text-mit-bild-rechts {
-    .field-name-field-bild-ref {
-        padding: 0;
-    }
+	.content {
+			   .field-name-field-bild-ref {
+					padding-left: 30px;
+					padding-right:0;
+					float:right;
+				}
+	}
 }
 
 .field .field-label {
