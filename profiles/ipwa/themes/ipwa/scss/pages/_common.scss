@@ -16,9 +16,10 @@ header.navbar-default {
 
 p {
     line-height: 30px;
-	a{
-		line-height:normal;
-	}
+
+    a {
+        line-height: normal;
+    }
 }
 
 //-----------backend theme changes-----------//
@@ -101,7 +102,7 @@ p {
             font-size: 26px;
             border-bottom: 2px solid $active-menu;
             padding-bottom: 0;
-			border-radius:0;
+            border-radius: 0;
         }
     }
 }
@@ -116,9 +117,11 @@ p {
     list-style: none;
     background: none;
     border-radius: 0;
-	
-	@include devicebreak(x-large){padding:0;
-	}
+
+    @include devicebreak(x-large) {
+        padding: 0;
+    }
+
 
     .inline {
         // margin-right:10px;
@@ -219,25 +222,32 @@ p {
 
                 .row-container {
                     background: $color-white;
-                    padding: 30px;                    
+                    padding: 30px;
                     margin-bottom: 30px;
                     position: relative;
                     border: 1px solid $color-white;
                     cursor: pointer;
                     transition: all 0.5s ease;
-					height:auto;
-					@include devicebreak(x-large){
-					height:410px;
-}
+                    height: auto;
+
+                    @include devicebreak(x-medium) {
+                        height: 410px;
+                    }
+
+
                     &.project-blue {
                         background: $main-color;
-						.views-field-title a{
-						color:$color-white;
+
+                        .views-field-title a {
+                            color: $color-white;
+                        }
+
+                        &:hover {
+                            .views-field-title a {
+                                color: $main-color;
+                            }
+                        }
                     }
-					  &:hover{
-					  .views-field-title a{ color:$main-color;}
-					  }
-					}
 
                     &:hover {
                         background: $color-light-blue;
@@ -262,7 +272,6 @@ p {
 
                     .views-field-title {
                         padding-bottom: 40px;
-						
 
                         a {
                             text-decoration: none;
@@ -272,11 +281,11 @@ p {
                     }
 
                     .views-field-field-ort, div[class*='views-field-views-conditional-'] {
-                        .field-content {                            
+                        .field-content {
                             font-size: 20px;
                             color: $color-light-grey;
-							position:absolute;
-							bottom:30px;
+                            position: absolute;
+                            bottom: 30px;
                         }
                     }
                 }
@@ -314,11 +323,9 @@ p {
 //node-type-webform
 
 .node-type-webform {
-    
-
     .node-webform {
-       width:765px;
-	  margin:0 auto;
+        width: 765px;
+        margin: 0 auto;
 
         .field-name-field-untertitel {
             color: $active-menu;
@@ -328,37 +335,39 @@ p {
 
         .webform-client-form {
             padding-top: 40px;
-			width:65%;
+            width: 65%;
 
             .webform-component-fieldset {
                 border: none;
                 border-radius: 0;
-				    box-shadow: none;
+                box-shadow: none;
 
                 .panel-heading {
                     display: none;
                 }
 
-                .panel-body {padding:0;
+                .panel-body {
+                    padding: 0;
+
                     .form-group {
                         margin-bottom: 40px;
 
                         label {
-						  font-size:15px;
+                            font-size: 15px;
+
                             .form-required {
                                 color: $active-menu;
                             }
                         }
 
                         .form-control {
-                           
-							height:42px;
-							border-bottom-color: #bfcbd5;
-    border-left-color: #dfe5ea;
-    border-right-color: #dfe5ea;
-    border-top-color: #cfd8df;
-    box-shadow: 0 -1px 1px 0 #eff2f4;
-    border-radius: 3px;
+                            height: 42px;
+                            border-bottom-color: #bfcbd5;
+                            border-left-color: #dfe5ea;
+                            border-right-color: #dfe5ea;
+                            border-top-color: #cfd8df;
+                            box-shadow: 0 -1px 1px 0 #eff2f4;
+                            border-radius: 3px;
                         }
 
                         p {
@@ -391,61 +400,58 @@ p {
                     top: 14px;
                 }
             }
-			#edit-submitted-kontakdaten-datenschutz{
-			  float:left;
-			}
+
+            #edit-submitted-kontakdaten-datenschutz {
+                float: left;
+            }
         }
     }
 }
 
 // Doorpages work
 
-.page-node-67{
-	article{
-		> .group-page-info{
-			max-width:765px;
-		}
-	}
+.page-node-67 {
+    article {
+        > .group-page-info {
+            max-width: 765px;
+        }
+    }
 }
 
 //page-user
 .page-user {
-  .page-header{
-     @extend .container;
-	 border:0;
-  }
-  
-  .region-content{
-    @extend .container;
-  }
+    .page-header {
+        @extend .container;
+
+        border: 0;
+    }
+
+    .region-content {
+        @extend .container;
+    }
 }
 
 //backtotop
 #backtotop {
-  background: $active-menu;
-  bottom: 20px;
-  cursor: pointer;
-  height: 50px;
-  position: fixed;
-  right: 20px;
-  font-size:0;
-  width: 50px;  
-  border-radius:25px;
-  text-indent:0;
+    background: $active-menu;
+    bottom: 20px;
+    cursor: pointer;
+    height: 50px;
+    position: fixed;
+    right: 20px;
+    font-size: 0;
+    width: 50px;
+    border-radius: 25px;
+    text-indent: 0;
 
-&::before{
-	        font-family:$icomoon;
-            content: "\e950";
-            color:$color-white;
-            font-size: 18px;            
-            display: inline-block;
-			position:absolute;
-			 top: 14px;
-             left: 16px;
-	  
-  }}
-  
-  
-  
- 
-  
+    &::before {
+        font-family: $icomoon;
+        content: "\e950";
+        color: $color-white;
+        font-size: 16px;
+        display: inline-block;
+        position: absolute;
+        top: 16px;
+        left: 17px;
+    }
+}

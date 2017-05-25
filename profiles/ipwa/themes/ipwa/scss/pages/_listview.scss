@@ -230,8 +230,15 @@
             width: 100%;
 
             .views-exposed-widget {
+			  width:auto;
+			  margin-bottom:10px;
+			
+			   @include devicebreak(x-large){
+			   width: 25%;
+			   }
+			  
                 padding: 0;
-                width: 25%;
+                
                 float: left;
                 padding: 10px 0;
                 background: $header-dropdown-menu;
@@ -318,13 +325,13 @@
 				float:left;
 				position:relative;
 				padding-left:30px;
+				 margin-bottom: 30px;
 
                 @include devicebreak(x-large) {
                     width: 20%;
                     float: left;
                     text-align: right;
-                    position: relative;
-                    margin-bottom: 30px;
+                    
                 }
 
 
