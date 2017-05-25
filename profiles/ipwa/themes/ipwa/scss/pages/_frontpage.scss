@@ -162,9 +162,11 @@
                 color: $color-white;
                 padding-bottom: 30px;
                 padding-top: 40px;
+				 width:auto;
+				@include devicebreak(x-large){
                 width: 1170px;
             }
-
+}
             .view-footer {
                 clear: both;
                 padding-top: 10px;
