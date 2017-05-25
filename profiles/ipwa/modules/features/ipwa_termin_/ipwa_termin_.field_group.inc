@@ -119,22 +119,21 @@ function ipwa_termin__field_group_info() {
   $field_group->parent_name = 'group_left_top_wrapper';
   $field_group->data = array(
     'label' => 'Middle Wrapper',
-    'weight' => '26',
+    'weight' => '29',
     'children' => array(
       0 => 'field_event_datum',
       1 => 'group_ical',
     ),
     'format_type' => 'html-element',
     'format_settings' => array(
-      'formatter' => '',
+      'label' => 'Middle Wrapper',
       'instance_settings' => array(
-        'element' => 'div',
-        'show_label' => 0,
-        'label_element' => 'div',
-        'classes' => 'group-middle-wrapper field-group-html-element',
-        'attributes' => '',
-        'required_fields' => 1,
         'id' => '',
+        'classes' => 'group-middle-wrapper field-group-html-element',
+        'element' => 'div',
+        'show_label' => '0',
+        'label_element' => 'div',
+        'attributes' => '',
       ),
     ),
   );

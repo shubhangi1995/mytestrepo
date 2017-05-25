@@ -332,7 +332,7 @@ function ipwa_termin__field_default_field_instances() {
           'show_repeat_rule' => 'hide',
         ),
         'type' => 'date_default',
-        'weight' => 27,
+        'weight' => 29,
       ),
       'ical' => array(
         'label' => 'above',
@@ -705,7 +705,7 @@ function ipwa_termin__field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 30,
+        'weight' => 31,
       ),
       'ical' => array(
         'label' => 'hidden',
@@ -1290,7 +1290,7 @@ Schema für externe Links: http://www…',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 29,
+        'weight' => 30,
       ),
       'ical' => array(
         'label' => 'inline',
