@@ -1,0 +1,16 @@
+Index: profiles/ipwa/modules/contrib/entity/modules/callbacks.inc
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- profiles/ipwa/modules/contrib/entity/modules/callbacks.inc	(revision 174732d1683dbe39c61aafad2cf9809c0493f01b)
++++ profiles/ipwa/modules/contrib/entity/modules/callbacks.inc	(revision )
+@@ -673,7 +673,7 @@
+     if (empty($node->vid) && in_array($op, array('create', 'update'))) {
+       // This is a new node or the original node.
+       if (isset($node->type)) {
+-        $op = !empty($node->is_new) && $node->is_new ? 'create' : 'update';
++        $op = empty($node->nid) || !empty($node->is_new) ? 'create' : 'update';
+         return node_access($op, $op == 'create' ? $node->type : $node, $account);
+       }
+       else {
