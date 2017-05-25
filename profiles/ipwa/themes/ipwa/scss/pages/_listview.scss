@@ -12,20 +12,32 @@
 
     .group-page-info {
         @extend .container;
+		padding:15px;
 
+		@include devicebreak(x-large){
         padding: 0;
         padding-top: 85px;
         padding-bottom: 50px;
+		
+		}
 
         .field-name-field-bild {
+		 width:100%;
+		  float: left;
+		
+		  @include devicebreak(x-large){
             width: 30%;
-            float: left;
+           
         }
-
+}
         .themenzuweisung-right-block {
             float: left;
+			width:100%;
+			padding-top: 25px;
+			
+			@include devicebreak(x-large){
             width: 70%;
-            padding-top: 25px;
+            }
 
             .page-header {
                 border-bottom: none;

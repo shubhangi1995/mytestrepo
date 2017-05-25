@@ -8463,12 +8463,11 @@ p {
   /* line 651, ../scss/pages/_singleview.scss */
   .view-latest-content-doorpage > .view-sub-wrapper .left-block .view-header {
     padding-bottom: 30px;
-    padding-top: 60px;
     font-size: 28px; }
-  /* line 657, ../scss/pages/_singleview.scss */
+  /* line 656, ../scss/pages/_singleview.scss */
   .view-latest-content-doorpage > .view-sub-wrapper .left-block .inner-wrapper {
     padding-left: 0; }
-    /* line 663, ../scss/pages/_singleview.scss */
+    /* line 662, ../scss/pages/_singleview.scss */
     .view-latest-content-doorpage > .view-sub-wrapper .left-block .inner-wrapper .view-content .views-row .row-container {
       background: #ffffff;
       height: 410px;
@@ -8476,53 +8475,53 @@ p {
       position: relative;
       border: 1px solid #ffffff;
       cursor: pointer; }
-      /* line 671, ../scss/pages/_singleview.scss */
+      /* line 670, ../scss/pages/_singleview.scss */
       .view-latest-content-doorpage > .view-sub-wrapper .left-block .inner-wrapper .view-content .views-row .row-container:hover {
         background: #eff2f7;
         border: 1px solid #dbdfe3; }
-      /* line 676, ../scss/pages/_singleview.scss */
+      /* line 675, ../scss/pages/_singleview.scss */
       .view-latest-content-doorpage > .view-sub-wrapper .left-block .inner-wrapper .view-content .views-row .row-container .views-field-field-themenzuweisung {
         margin-bottom: 30px; }
-        /* line 679, ../scss/pages/_singleview.scss */
+        /* line 678, ../scss/pages/_singleview.scss */
         .view-latest-content-doorpage > .view-sub-wrapper .left-block .inner-wrapper .view-content .views-row .row-container .views-field-field-themenzuweisung img {
           display: inline-block;
           margin-right: 10px; }
-      /* line 685, ../scss/pages/_singleview.scss */
+      /* line 684, ../scss/pages/_singleview.scss */
       .view-latest-content-doorpage > .view-sub-wrapper .left-block .inner-wrapper .view-content .views-row .row-container .views-field-type {
         color: #e74712;
         font-weight: bold;
         padding-bottom: 15px; }
-      /* line 691, ../scss/pages/_singleview.scss */
+      /* line 690, ../scss/pages/_singleview.scss */
       .view-latest-content-doorpage > .view-sub-wrapper .left-block .inner-wrapper .view-content .views-row .row-container .views-field-title {
         padding-bottom: 70px; }
-        /* line 694, ../scss/pages/_singleview.scss */
+        /* line 693, ../scss/pages/_singleview.scss */
         .view-latest-content-doorpage > .view-sub-wrapper .left-block .inner-wrapper .view-content .views-row .row-container .views-field-title a {
           text-decoration: none;
           color: #273753; }
-      /* line 700, ../scss/pages/_singleview.scss */
+      /* line 699, ../scss/pages/_singleview.scss */
       .view-latest-content-doorpage > .view-sub-wrapper .left-block .inner-wrapper .view-content .views-row .row-container .views-field-field-datum {
         position: absolute;
         bottom: 30px; }
-        /* line 704, ../scss/pages/_singleview.scss */
+        /* line 703, ../scss/pages/_singleview.scss */
         .view-latest-content-doorpage > .view-sub-wrapper .left-block .inner-wrapper .view-content .views-row .row-container .views-field-field-datum .date-display-single {
           font-size: 17px;
           color: #949d9e; }
-  /* line 713, ../scss/pages/_singleview.scss */
+  /* line 712, ../scss/pages/_singleview.scss */
   .view-latest-content-doorpage > .view-sub-wrapper .left-block .view-footer {
     padding-top: 30px;
     padding-bottom: 60px;
     position: relative; }
-    /* line 718, ../scss/pages/_singleview.scss */
+    /* line 717, ../scss/pages/_singleview.scss */
     .view-latest-content-doorpage > .view-sub-wrapper .left-block .view-footer a {
       color: #273753; }
-  /* line 725, ../scss/pages/_singleview.scss */
+  /* line 724, ../scss/pages/_singleview.scss */
   .view-latest-content-doorpage > .view-sub-wrapper .left-block > .view-latest-content-doorpage {
     padding-top: 0;
     padding-right: 0; }
-    /* line 731, ../scss/pages/_singleview.scss */
+    /* line 730, ../scss/pages/_singleview.scss */
     .view-latest-content-doorpage > .view-sub-wrapper .left-block > .view-latest-content-doorpage .view-sub-wrapper {
       width: auto; }
-      /* line 735, ../scss/pages/_singleview.scss */
+      /* line 734, ../scss/pages/_singleview.scss */
       .view-latest-content-doorpage > .view-sub-wrapper .left-block > .view-latest-content-doorpage .view-sub-wrapper .view-content .views-row .row-container {
         background: #ffffff;
         height: 410px;
@@ -8530,49 +8529,48 @@ p {
         position: relative;
         border: 1px solid #ffffff;
         cursor: pointer; }
-        /* line 743, ../scss/pages/_singleview.scss */
+        /* line 742, ../scss/pages/_singleview.scss */
         .view-latest-content-doorpage > .view-sub-wrapper .left-block > .view-latest-content-doorpage .view-sub-wrapper .view-content .views-row .row-container:hover {
           background: #eff2f7;
           border: 1px solid #dbdfe3; }
-        /* line 748, ../scss/pages/_singleview.scss */
+        /* line 747, ../scss/pages/_singleview.scss */
         .view-latest-content-doorpage > .view-sub-wrapper .left-block > .view-latest-content-doorpage .view-sub-wrapper .view-content .views-row .row-container .views-field-field-themenzuweisung {
           margin-bottom: 30px; }
-          /* line 751, ../scss/pages/_singleview.scss */
+          /* line 750, ../scss/pages/_singleview.scss */
           .view-latest-content-doorpage > .view-sub-wrapper .left-block > .view-latest-content-doorpage .view-sub-wrapper .view-content .views-row .row-container .views-field-field-themenzuweisung img {
             display: inline-block;
             margin-right: 10px; }
-        /* line 757, ../scss/pages/_singleview.scss */
+        /* line 756, ../scss/pages/_singleview.scss */
         .view-latest-content-doorpage > .view-sub-wrapper .left-block > .view-latest-content-doorpage .view-sub-wrapper .view-content .views-row .row-container .views-field-type {
           color: #e74712;
           font-weight: bold;
           padding-bottom: 15px; }
-        /* line 763, ../scss/pages/_singleview.scss */
+        /* line 762, ../scss/pages/_singleview.scss */
         .view-latest-content-doorpage > .view-sub-wrapper .left-block > .view-latest-content-doorpage .view-sub-wrapper .view-content .views-row .row-container .views-field-title {
           padding-bottom: 70px; }
-          /* line 766, ../scss/pages/_singleview.scss */
+          /* line 765, ../scss/pages/_singleview.scss */
           .view-latest-content-doorpage > .view-sub-wrapper .left-block > .view-latest-content-doorpage .view-sub-wrapper .view-content .views-row .row-container .views-field-title a {
             text-decoration: none;
             color: #273753; }
-        /* line 772, ../scss/pages/_singleview.scss */
+        /* line 771, ../scss/pages/_singleview.scss */
         .view-latest-content-doorpage > .view-sub-wrapper .left-block > .view-latest-content-doorpage .view-sub-wrapper .view-content .views-row .row-container .views-field-field-datum {
           position: absolute;
           bottom: 30px; }
-          /* line 776, ../scss/pages/_singleview.scss */
+          /* line 775, ../scss/pages/_singleview.scss */
           .view-latest-content-doorpage > .view-sub-wrapper .left-block > .view-latest-content-doorpage .view-sub-wrapper .view-content .views-row .row-container .views-field-field-datum .date-display-single {
             font-size: 17px;
             color: #949d9e; }
-  /* line 787, ../scss/pages/_singleview.scss */
+  /* line 786, ../scss/pages/_singleview.scss */
   .view-latest-content-doorpage > .view-sub-wrapper > .view-latest-content-doorpage {
     padding-top: 0; }
-    /* line 792, ../scss/pages/_singleview.scss */
+    /* line 791, ../scss/pages/_singleview.scss */
     .view-latest-content-doorpage > .view-sub-wrapper > .view-latest-content-doorpage .view-sub-wrapper {
       width: auto; }
-      /* line 795, ../scss/pages/_singleview.scss */
+      /* line 794, ../scss/pages/_singleview.scss */
       .view-latest-content-doorpage > .view-sub-wrapper > .view-latest-content-doorpage .view-sub-wrapper .view-header {
         padding-bottom: 30px;
-        padding-top: 60px;
         font-size: 28px; }
-      /* line 802, ../scss/pages/_singleview.scss */
+      /* line 800, ../scss/pages/_singleview.scss */
       .view-latest-content-doorpage > .view-sub-wrapper > .view-latest-content-doorpage .view-sub-wrapper .view-content .views-row .row-container {
         background: #ffffff;
         height: 410px;
@@ -8580,99 +8578,99 @@ p {
         position: relative;
         border: 1px solid #ffffff;
         cursor: pointer; }
-        /* line 810, ../scss/pages/_singleview.scss */
+        /* line 808, ../scss/pages/_singleview.scss */
         .view-latest-content-doorpage > .view-sub-wrapper > .view-latest-content-doorpage .view-sub-wrapper .view-content .views-row .row-container:hover {
           background: #eff2f7;
           border: 1px solid #dbdfe3; }
-        /* line 815, ../scss/pages/_singleview.scss */
+        /* line 813, ../scss/pages/_singleview.scss */
         .view-latest-content-doorpage > .view-sub-wrapper > .view-latest-content-doorpage .view-sub-wrapper .view-content .views-row .row-container .views-field-field-themenzuweisung {
           margin-bottom: 30px; }
-          /* line 818, ../scss/pages/_singleview.scss */
+          /* line 816, ../scss/pages/_singleview.scss */
           .view-latest-content-doorpage > .view-sub-wrapper > .view-latest-content-doorpage .view-sub-wrapper .view-content .views-row .row-container .views-field-field-themenzuweisung img {
             display: inline-block;
             margin-right: 10px; }
-        /* line 824, ../scss/pages/_singleview.scss */
+        /* line 822, ../scss/pages/_singleview.scss */
         .view-latest-content-doorpage > .view-sub-wrapper > .view-latest-content-doorpage .view-sub-wrapper .view-content .views-row .row-container .views-field-type {
           color: #e74712;
           font-weight: bold;
           padding-bottom: 15px; }
-        /* line 830, ../scss/pages/_singleview.scss */
+        /* line 828, ../scss/pages/_singleview.scss */
         .view-latest-content-doorpage > .view-sub-wrapper > .view-latest-content-doorpage .view-sub-wrapper .view-content .views-row .row-container .views-field-title {
           padding-bottom: 70px; }
-          /* line 833, ../scss/pages/_singleview.scss */
+          /* line 831, ../scss/pages/_singleview.scss */
           .view-latest-content-doorpage > .view-sub-wrapper > .view-latest-content-doorpage .view-sub-wrapper .view-content .views-row .row-container .views-field-title a {
             text-decoration: none;
             color: #273753; }
-        /* line 839, ../scss/pages/_singleview.scss */
+        /* line 837, ../scss/pages/_singleview.scss */
         .view-latest-content-doorpage > .view-sub-wrapper > .view-latest-content-doorpage .view-sub-wrapper .view-content .views-row .row-container .views-field-field-ort {
           position: absolute;
           bottom: 30px; }
-          /* line 843, ../scss/pages/_singleview.scss */
+          /* line 841, ../scss/pages/_singleview.scss */
           .view-latest-content-doorpage > .view-sub-wrapper > .view-latest-content-doorpage .view-sub-wrapper .view-content .views-row .row-container .views-field-field-ort .field-content {
             font-size: 17px;
             color: #949d9e; }
-      /* line 851, ../scss/pages/_singleview.scss */
+      /* line 849, ../scss/pages/_singleview.scss */
       .view-latest-content-doorpage > .view-sub-wrapper > .view-latest-content-doorpage .view-sub-wrapper .view-footer {
         padding-top: 30px;
         padding-bottom: 60px;
         position: relative; }
-        /* line 856, ../scss/pages/_singleview.scss */
+        /* line 854, ../scss/pages/_singleview.scss */
         .view-latest-content-doorpage > .view-sub-wrapper > .view-latest-content-doorpage .view-sub-wrapper .view-footer a {
           color: #273753; }
 
-/* line 869, ../scss/pages/_singleview.scss */
+/* line 867, ../scss/pages/_singleview.scss */
 .group-top-wrapper {
   margin-bottom: 40px;
   overflow: hidden; }
-  /* line 876, ../scss/pages/_singleview.scss */
+  /* line 874, ../scss/pages/_singleview.scss */
   .group-top-wrapper .group-left-top-wrapper > * {
     margin-bottom: 10px; }
-    /* line 879, ../scss/pages/_singleview.scss */
+    /* line 877, ../scss/pages/_singleview.scss */
     .group-top-wrapper .group-left-top-wrapper > *:last-child {
       margin: 0; }
-  /* line 890, ../scss/pages/_singleview.scss */
+  /* line 888, ../scss/pages/_singleview.scss */
   .group-top-wrapper .group-middle-wrapper, .group-top-wrapper .field-name-field-zeit, .group-top-wrapper .field-name-field-ort {
     border-bottom: 1px solid #c5cbd5;
     padding-bottom: 15px;
     margin-bottom: 15px; }
-  /* line 896, ../scss/pages/_singleview.scss */
+  /* line 894, ../scss/pages/_singleview.scss */
   .group-top-wrapper .group-middle-wrapper {
     overflow: hidden; }
-    /* line 900, ../scss/pages/_singleview.scss */
+    /* line 898, ../scss/pages/_singleview.scss */
     .group-top-wrapper .group-middle-wrapper .view-id-termin.view-display-id-block_1 {
       float: right; }
-      /* line 903, ../scss/pages/_singleview.scss */
+      /* line 901, ../scss/pages/_singleview.scss */
       .group-top-wrapper .group-middle-wrapper .view-id-termin.view-display-id-block_1 .view-content {
         display: none; }
-      /* line 907, ../scss/pages/_singleview.scss */
+      /* line 905, ../scss/pages/_singleview.scss */
       .group-top-wrapper .group-middle-wrapper .view-id-termin.view-display-id-block_1 .view-sub-wrapper, .group-top-wrapper .group-middle-wrapper .view-id-termin.view-display-id-block_1 .feed-icon {
         width: auto;
         float: right; }
-        /* line 911, ../scss/pages/_singleview.scss */
+        /* line 909, ../scss/pages/_singleview.scss */
         .group-top-wrapper .group-middle-wrapper .view-id-termin.view-display-id-block_1 .view-sub-wrapper .view-header, .group-top-wrapper .group-middle-wrapper .view-id-termin.view-display-id-block_1 .feed-icon .view-header {
           padding: 0;
           color: #273753;
           font-size: 16px;
           font-weight: bold; }
-          /* line 917, ../scss/pages/_singleview.scss */
+          /* line 915, ../scss/pages/_singleview.scss */
           .group-top-wrapper .group-middle-wrapper .view-id-termin.view-display-id-block_1 .view-sub-wrapper .view-header p, .group-top-wrapper .group-middle-wrapper .view-id-termin.view-display-id-block_1 .feed-icon .view-header p {
             margin: 0; }
-    /* line 925, ../scss/pages/_singleview.scss */
+    /* line 923, ../scss/pages/_singleview.scss */
     .group-top-wrapper .group-middle-wrapper .field-name-field-event-datum {
       float: left; }
-  /* line 930, ../scss/pages/_singleview.scss */
+  /* line 928, ../scss/pages/_singleview.scss */
   .group-top-wrapper .field-name-field-ort {
     border: none; }
-  /* line 934, ../scss/pages/_singleview.scss */
+  /* line 932, ../scss/pages/_singleview.scss */
   .group-top-wrapper .field-name-field-event-datum {
     font-size: 28px;
     color: #e74712;
     font-weight: bold; }
-    /* line 939, ../scss/pages/_singleview.scss */
+    /* line 937, ../scss/pages/_singleview.scss */
     .group-top-wrapper .field-name-field-event-datum .field-label {
       font-weight: bold; }
 
-/* line 946, ../scss/pages/_singleview.scss */
+/* line 944, ../scss/pages/_singleview.scss */
 .field-name-field-link-zur-anmeldung a, .field-name-field-zur-website a {
   position: relative;
   bottom: auto;
@@ -8681,70 +8679,70 @@ p {
   padding: 14px 40px 14px 55px;
   margin: 26px 0 0;
   float: left; }
-  /* line 957, ../scss/pages/_singleview.scss */
+  /* line 955, ../scss/pages/_singleview.scss */
   .field-name-field-link-zur-anmeldung a::before, .field-name-field-zur-website a::before {
     left: 24px;
     top: 19px; }
 
-/* line 965, ../scss/pages/_singleview.scss */
+/* line 963, ../scss/pages/_singleview.scss */
 .field-name-field-zur-website a {
   margin: 26px 0 45px; }
 
-/* line 972, ../scss/pages/_singleview.scss */
+/* line 970, ../scss/pages/_singleview.scss */
 .field-name-field-bis-auf-weiteres, .field-name-field-stichtag {
   font-size: 28px;
   color: #e74712;
   border-bottom: 1px solid #c5cbd5;
   padding-bottom: 15px;
   margin-bottom: 15px; }
-  /* line 979, ../scss/pages/_singleview.scss */
+  /* line 977, ../scss/pages/_singleview.scss */
   .field-name-field-bis-auf-weiteres .field-label, .field-name-field-stichtag .field-label {
     font-weight: bold; }
 
-/* line 984, ../scss/pages/_singleview.scss */
+/* line 982, ../scss/pages/_singleview.scss */
 .field-name-field-ausschreibende-stelle {
   margin-bottom: 45px;
   font-size: 22px; }
-  /* line 988, ../scss/pages/_singleview.scss */
+  /* line 986, ../scss/pages/_singleview.scss */
   .field-name-field-ausschreibende-stelle .external-link {
     padding-left: 5px;
     padding-right: 35px;
     font-size: 22px; }
-    /* line 993, ../scss/pages/_singleview.scss */
+    /* line 991, ../scss/pages/_singleview.scss */
     .field-name-field-ausschreibende-stelle .external-link::before {
       left: auto;
       right: 0;
       top: 3px; }
 
-/* line 1003, ../scss/pages/_singleview.scss */
+/* line 1001, ../scss/pages/_singleview.scss */
 .field-name-field-herausgeber {
   border-bottom: 1px solid #c5cbd5;
   padding-bottom: 15px;
   margin-bottom: 15px; }
 
-/* line 1009, ../scss/pages/_singleview.scss */
+/* line 1007, ../scss/pages/_singleview.scss */
 .field-name-field-herausgeber, .field-name-field-ver-ffentlichungsdatum {
   font-size: 18px; }
 
-/* line 1013, ../scss/pages/_singleview.scss */
+/* line 1011, ../scss/pages/_singleview.scss */
 .field-name-field-ver-ffentlichungsdatum {
   margin-bottom: 45px; }
 
-/* line 1019, ../scss/pages/_singleview.scss */
+/* line 1017, ../scss/pages/_singleview.scss */
 .field-name-field-ansprechpartner-kontaktdat, .field-name-field-weitere-details {
   border-bottom: 1px solid #c5cbd5;
   padding-bottom: 15px;
   margin-bottom: 15px;
   font-size: 18px; }
 
-/* line 1027, ../scss/pages/_singleview.scss */
+/* line 1025, ../scss/pages/_singleview.scss */
 .external-link {
   color: #273753;
   padding-left: 35px;
   text-decoration: none;
   font-size: 18px;
   position: relative; }
-  /* line 1034, ../scss/pages/_singleview.scss */
+  /* line 1032, ../scss/pages/_singleview.scss */
   .external-link::before {
     left: 0;
     position: absolute;
@@ -8753,7 +8751,7 @@ p {
     content: "\e948";
     color: #919BAA;
     font-size: 16px; }
-  /* line 1044, ../scss/pages/_singleview.scss */
+  /* line 1042, ../scss/pages/_singleview.scss */
   .external-link .ext {
     display: none; }
 
@@ -8768,72 +8766,87 @@ p {
     margin: 0 auto; }
   /* line 13, ../scss/pages/_listview.scss */
   .page-taxonomy-term .group-page-info {
-    padding: 0;
-    padding-top: 85px;
-    padding-bottom: 50px; }
-    /* line 20, ../scss/pages/_listview.scss */
+    padding: 15px;
+    /* Over Desktop design */ }
+    @media (min-width: 1025px) {
+      /* line 13, ../scss/pages/_listview.scss */
+      .page-taxonomy-term .group-page-info {
+        padding: 0;
+        padding-top: 85px;
+        padding-bottom: 50px; } }
+    /* line 24, ../scss/pages/_listview.scss */
     .page-taxonomy-term .group-page-info .field-name-field-bild {
-      width: 30%;
-      float: left; }
-    /* line 25, ../scss/pages/_listview.scss */
+      width: 100%;
+      float: left;
+      /* Over Desktop design */ }
+      @media (min-width: 1025px) {
+        /* line 24, ../scss/pages/_listview.scss */
+        .page-taxonomy-term .group-page-info .field-name-field-bild {
+          width: 30%; } }
+    /* line 33, ../scss/pages/_listview.scss */
     .page-taxonomy-term .group-page-info .themenzuweisung-right-block {
       float: left;
-      width: 70%;
-      padding-top: 25px; }
-      /* line 30, ../scss/pages/_listview.scss */
+      width: 100%;
+      padding-top: 25px;
+      /* Over Desktop design */ }
+      @media (min-width: 1025px) {
+        /* line 33, ../scss/pages/_listview.scss */
+        .page-taxonomy-term .group-page-info .themenzuweisung-right-block {
+          width: 70%; } }
+      /* line 42, ../scss/pages/_listview.scss */
       .page-taxonomy-term .group-page-info .themenzuweisung-right-block .page-header {
         border-bottom: none;
         margin: 0;
         Font-size: 44px;
         color: #e74712;
         padding-bottom: 30px; }
-      /* line 38, ../scss/pages/_listview.scss */
+      /* line 50, ../scss/pages/_listview.scss */
       .page-taxonomy-term .group-page-info .themenzuweisung-right-block p {
         font-size: 22px; }
-      /* line 43, ../scss/pages/_listview.scss */
+      /* line 55, ../scss/pages/_listview.scss */
       .page-taxonomy-term .group-page-info .themenzuweisung-right-block .field-name-field-untertitel .field-items {
         color: #e74712; }
-  /* line 60, ../scss/pages/_listview.scss */
+  /* line 72, ../scss/pages/_listview.scss */
   .page-taxonomy-term .view-alles-zum-thema .view-sub-wrapper .attachment-before .view-result-count {
     margin-top: -88px;
     padding: 30px 0;
     font-size: 22px;
     font-weight: bold; }
-  /* line 68, ../scss/pages/_listview.scss */
+  /* line 80, ../scss/pages/_listview.scss */
   .page-taxonomy-term .view-alles-zum-thema .view-sub-wrapper .view-content .views-row .row-container .views-field-type {
     color: #e74712;
     font-weight: bold;
     padding-bottom: 20px; }
-  /* line 74, ../scss/pages/_listview.scss */
+  /* line 86, ../scss/pages/_listview.scss */
   .page-taxonomy-term .view-alles-zum-thema .view-sub-wrapper .view-content .views-row .row-container .views-field-views-conditional {
     position: absolute;
     bottom: 30px;
     font-size: 17px;
     color: #949d9e; }
-  /* line 83, ../scss/pages/_listview.scss */
+  /* line 95, ../scss/pages/_listview.scss */
   .page-taxonomy-term .view-alles-zum-thema .view-sub-wrapper .view-filters .views-submit-button {
     display: none; }
-  /* line 87, ../scss/pages/_listview.scss */
+  /* line 99, ../scss/pages/_listview.scss */
   .page-taxonomy-term .view-alles-zum-thema .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by {
     float: right;
     padding: 30px 0; }
-    /* line 91, ../scss/pages/_listview.scss */
+    /* line 103, ../scss/pages/_listview.scss */
     .page-taxonomy-term .view-alles-zum-thema .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .bef-select-as-links .form-type-bef-link {
       display: inline-block;
       font-size: 20px;
       padding-left: 15px; }
-      /* line 96, ../scss/pages/_listview.scss */
+      /* line 108, ../scss/pages/_listview.scss */
       .page-taxonomy-term .view-alles-zum-thema .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .bef-select-as-links .form-type-bef-link a {
         color: #273753;
         text-decoration: none; }
-        /* line 100, ../scss/pages/_listview.scss */
+        /* line 112, ../scss/pages/_listview.scss */
         .page-taxonomy-term .view-alles-zum-thema .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .bef-select-as-links .form-type-bef-link a.active {
           border-bottom: 1px solid #e74712; }
 
-/* line 113, ../scss/pages/_listview.scss */
+/* line 125, ../scss/pages/_listview.scss */
 .page-termine, .page-aktuelles, .page-search {
   background: #eff2f7; }
-  /* line 116, ../scss/pages/_listview.scss */
+  /* line 128, ../scss/pages/_listview.scss */
   .page-termine .page-header, .page-aktuelles .page-header, .page-search .page-header {
     border: none;
     font-weight: normal;
@@ -8842,7 +8855,7 @@ p {
     padding-top: 55px;
     padding-bottom: 40px; }
 
-/* line 132, ../scss/pages/_listview.scss */
+/* line 144, ../scss/pages/_listview.scss */
 .view-aktuelles > .view-sub-wrapper .view-header, .view-termin > .view-sub-wrapper .view-header, .view-search-list > .view-sub-wrapper .view-header {
   color: #e74712;
   font-size: 26px;
@@ -8852,71 +8865,71 @@ p {
   font-weight: bold;
   /* Over Desktop design */ }
   @media (min-width: 1025px) {
-    /* line 132, ../scss/pages/_listview.scss */
+    /* line 144, ../scss/pages/_listview.scss */
     .view-aktuelles > .view-sub-wrapper .view-header, .view-termin > .view-sub-wrapper .view-header, .view-search-list > .view-sub-wrapper .view-header {
       width: 765px; } }
-/* line 145, ../scss/pages/_listview.scss */
+/* line 157, ../scss/pages/_listview.scss */
 .view-aktuelles > .view-sub-wrapper .attachment-before .view-result-count, .view-termin > .view-sub-wrapper .attachment-before .view-result-count, .view-search-list > .view-sub-wrapper .attachment-before .view-result-count {
   margin-top: -88px;
   padding: 30px 0;
   font-size: 22px;
   font-weight: bold; }
-/* line 153, ../scss/pages/_listview.scss */
+/* line 165, ../scss/pages/_listview.scss */
 .view-aktuelles > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets, .view-termin > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets, .view-search-list > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets {
   margin-bottom: 0; }
-  /* line 156, ../scss/pages/_listview.scss */
+  /* line 168, ../scss/pages/_listview.scss */
   .view-aktuelles > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget, .view-termin > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget, .view-search-list > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget {
     width: 100%; }
-    /* line 159, ../scss/pages/_listview.scss */
+    /* line 171, ../scss/pages/_listview.scss */
     .view-aktuelles > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget .form-item, .view-termin > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget .form-item, .view-search-list > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget .form-item {
       display: inline-block;
       padding-right: 60px;
       padding-bottom: 15px; }
-      /* line 164, ../scss/pages/_listview.scss */
+      /* line 176, ../scss/pages/_listview.scss */
       .view-aktuelles > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget .form-item label, .view-termin > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget .form-item label, .view-search-list > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget .form-item label {
         padding-left: 0;
         padding-bottom: 15px; }
-        /* line 168, ../scss/pages/_listview.scss */
+        /* line 180, ../scss/pages/_listview.scss */
         .view-aktuelles > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget .form-item label input, .view-termin > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget .form-item label input, .view-search-list > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget .form-item label input {
           visibility: hidden; }
-  /* line 175, ../scss/pages/_listview.scss */
+  /* line 187, ../scss/pages/_listview.scss */
   .view-aktuelles > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by, .view-termin > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by, .view-search-list > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by {
     float: right;
     padding: 30px 0; }
-    /* line 179, ../scss/pages/_listview.scss */
+    /* line 191, ../scss/pages/_listview.scss */
     .view-aktuelles > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .bef-select-as-links .form-type-bef-link, .view-termin > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .bef-select-as-links .form-type-bef-link, .view-search-list > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .bef-select-as-links .form-type-bef-link {
       display: inline-block;
       padding-left: 15px; }
-      /* line 183, ../scss/pages/_listview.scss */
+      /* line 195, ../scss/pages/_listview.scss */
       .view-aktuelles > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .bef-select-as-links .form-type-bef-link a, .view-termin > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .bef-select-as-links .form-type-bef-link a, .view-search-list > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .bef-select-as-links .form-type-bef-link a {
         text-decoration: none;
         color: #273753; }
-        /* line 187, ../scss/pages/_listview.scss */
+        /* line 199, ../scss/pages/_listview.scss */
         .view-aktuelles > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .bef-select-as-links .form-type-bef-link a.active, .view-termin > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .bef-select-as-links .form-type-bef-link a.active, .view-search-list > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .bef-select-as-links .form-type-bef-link a.active {
           border-bottom: 2px solid #e74712; }
-    /* line 193, ../scss/pages/_listview.scss */
+    /* line 205, ../scss/pages/_listview.scss */
     .view-aktuelles > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .select2-container, .view-termin > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .select2-container, .view-search-list > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .select2-container {
       display: none; }
 
-/* line 207, ../scss/pages/_listview.scss */
+/* line 219, ../scss/pages/_listview.scss */
 .page-aktuelles .view-aktuelles .view-sub-wrapper .view-content .views-row .row-container .views-field-type {
   padding-bottom: 20px;
   font-weight: bold;
   color: #e74712;
   font-size: 22px; }
-/* line 215, ../scss/pages/_listview.scss */
+/* line 227, ../scss/pages/_listview.scss */
 .page-aktuelles .view-aktuelles .view-sub-wrapper .view-content .views-row .row-container .views-field-field-datum .field-content {
   position: absolute;
   bottom: 30px;
   font-size: 20px;
   color: #949d9e; }
-/* line 226, ../scss/pages/_listview.scss */
+/* line 238, ../scss/pages/_listview.scss */
 .page-aktuelles .view-aktuelles .view-filters .categories-filter {
   margin-top: 15px;
   clear: both;
   display: inline-block;
   width: 100%; }
-  /* line 232, ../scss/pages/_listview.scss */
+  /* line 244, ../scss/pages/_listview.scss */
   .page-aktuelles .view-aktuelles .view-filters .categories-filter .views-exposed-widget {
     width: auto;
     margin-bottom: 10px;
@@ -8927,18 +8940,18 @@ p {
     background: #3c506e;
     border-right: 1px solid #949d9e; }
     @media (min-width: 1025px) {
-      /* line 232, ../scss/pages/_listview.scss */
+      /* line 244, ../scss/pages/_listview.scss */
       .page-aktuelles .view-aktuelles .view-filters .categories-filter .views-exposed-widget {
         width: 25%; } }
-    /* line 247, ../scss/pages/_listview.scss */
+    /* line 259, ../scss/pages/_listview.scss */
     .page-aktuelles .view-aktuelles .view-filters .categories-filter .views-exposed-widget .views-widget .form-item {
       padding: 0; }
-      /* line 250, ../scss/pages/_listview.scss */
+      /* line 262, ../scss/pages/_listview.scss */
       .page-aktuelles .view-aktuelles .view-filters .categories-filter .views-exposed-widget .views-widget .form-item .select2-container--default .select2-selection--single {
         background: 0;
         border: 0;
         border-radius: 0; }
-        /* line 255, ../scss/pages/_listview.scss */
+        /* line 267, ../scss/pages/_listview.scss */
         .page-aktuelles .view-aktuelles .view-filters .categories-filter .views-exposed-widget .views-widget .form-item .select2-container--default .select2-selection--single:before {
           content: "\f107";
           font-family: FontAwesome;
@@ -8947,46 +8960,46 @@ p {
           float: right;
           right: 20px;
           top: 3px; }
-        /* line 265, ../scss/pages/_listview.scss */
+        /* line 277, ../scss/pages/_listview.scss */
         .page-aktuelles .view-aktuelles .view-filters .categories-filter .views-exposed-widget .views-widget .form-item .select2-container--default .select2-selection--single .select2-selection__rendered {
           color: #ffffff;
           padding-left: 20px; }
-        /* line 270, ../scss/pages/_listview.scss */
+        /* line 282, ../scss/pages/_listview.scss */
         .page-aktuelles .view-aktuelles .view-filters .categories-filter .views-exposed-widget .views-widget .form-item .select2-container--default .select2-selection--single .select2-selection__arrow {
           display: none; }
-/* line 279, ../scss/pages/_listview.scss */
+/* line 291, ../scss/pages/_listview.scss */
 .page-aktuelles .view-aktuelles .views-submit-button {
   display: none; }
 
-/* line 288, ../scss/pages/_listview.scss */
+/* line 300, ../scss/pages/_listview.scss */
 .page-termine .view-termin .view-filters .views-exposed-form .views-exposed-widgets #edit-term-node-tid-depth-wrapper {
   width: 80%;
   float: left;
   padding: 0; }
-  /* line 294, ../scss/pages/_listview.scss */
+  /* line 306, ../scss/pages/_listview.scss */
   .page-termine .view-termin .view-filters .views-exposed-form .views-exposed-widgets #edit-term-node-tid-depth-wrapper .form-item {
     padding-right: 0; }
-    /* line 297, ../scss/pages/_listview.scss */
+    /* line 309, ../scss/pages/_listview.scss */
     .page-termine .view-termin .view-filters .views-exposed-form .views-exposed-widgets #edit-term-node-tid-depth-wrapper .form-item .form-type-bef-link {
       padding-right: 0;
       /* Over Desktop design */ }
       @media (min-width: 1025px) {
-        /* line 297, ../scss/pages/_listview.scss */
+        /* line 309, ../scss/pages/_listview.scss */
         .page-termine .view-termin .view-filters .views-exposed-form .views-exposed-widgets #edit-term-node-tid-depth-wrapper .form-item .form-type-bef-link {
           padding-right: 60px; } }
-      /* line 305, ../scss/pages/_listview.scss */
+      /* line 317, ../scss/pages/_listview.scss */
       .page-termine .view-termin .view-filters .views-exposed-form .views-exposed-widgets #edit-term-node-tid-depth-wrapper .form-item .form-type-bef-link:first-child {
         display: none; }
-      /* line 309, ../scss/pages/_listview.scss */
+      /* line 321, ../scss/pages/_listview.scss */
       .page-termine .view-termin .view-filters .views-exposed-form .views-exposed-widgets #edit-term-node-tid-depth-wrapper .form-item .form-type-bef-link a {
         display: inline-block;
         float: left;
         text-decoration: none;
         color: #273753; }
-        /* line 315, ../scss/pages/_listview.scss */
+        /* line 327, ../scss/pages/_listview.scss */
         .page-termine .view-termin .view-filters .views-exposed-form .views-exposed-widgets #edit-term-node-tid-depth-wrapper .form-item .form-type-bef-link a.active {
           border-bottom: 2px Solid #e74712; }
-/* line 323, ../scss/pages/_listview.scss */
+/* line 335, ../scss/pages/_listview.scss */
 .page-termine .view-termin .view-filters .views-exposed-form .views-exposed-widgets .calendar-link {
   width: 100%;
   float: left;
@@ -8995,19 +9008,19 @@ p {
   margin-bottom: 30px;
   /* Over Desktop design */ }
   @media (min-width: 1025px) {
-    /* line 323, ../scss/pages/_listview.scss */
+    /* line 335, ../scss/pages/_listview.scss */
     .page-termine .view-termin .view-filters .views-exposed-form .views-exposed-widgets .calendar-link {
       width: 20%;
       float: left;
       text-align: right; } }
-  /* line 338, ../scss/pages/_listview.scss */
+  /* line 350, ../scss/pages/_listview.scss */
   .page-termine .view-termin .view-filters .views-exposed-form .views-exposed-widgets .calendar-link a {
     text-decoration: none;
     padding-bottom: 4px;
     border-bottom: 2px solid #949d9e;
     color: #273753;
     font-weight: bold; }
-    /* line 345, ../scss/pages/_listview.scss */
+    /* line 357, ../scss/pages/_listview.scss */
     .page-termine .view-termin .view-filters .views-exposed-form .views-exposed-widgets .calendar-link a:before {
       content: '\e949';
       font-family: "icomoon";
@@ -9019,34 +9032,34 @@ p {
       display: inline-block;
       /* Over Desktop design */ }
       @media (min-width: 1025px) {
-        /* line 345, ../scss/pages/_listview.scss */
+        /* line 357, ../scss/pages/_listview.scss */
         .page-termine .view-termin .view-filters .views-exposed-form .views-exposed-widgets .calendar-link a:before {
           left: 40px; } }
-/* line 361, ../scss/pages/_listview.scss */
+/* line 373, ../scss/pages/_listview.scss */
 .page-termine .view-termin .view-filters .views-exposed-form .views-exposed-widgets .views-submit-button {
   display: none; }
-/* line 365, ../scss/pages/_listview.scss */
+/* line 377, ../scss/pages/_listview.scss */
 .page-termine .view-termin .view-filters .views-exposed-form .views-exposed-widgets .select2-container--default .select2-selection--single {
   display: none; }
 
-/* line 374, ../scss/pages/_listview.scss */
+/* line 386, ../scss/pages/_listview.scss */
 .view-search-list .view-filters {
   position: relative; }
-  /* line 377, ../scss/pages/_listview.scss */
+  /* line 389, ../scss/pages/_listview.scss */
   .view-search-list .view-filters .views-widget-filter-search_api_views_fulltext {
     width: 55%; }
-  /* line 381, ../scss/pages/_listview.scss */
+  /* line 393, ../scss/pages/_listview.scss */
   .view-search-list .view-filters .views-widget-filter-field_ort {
     width: 45%; }
-  /* line 385, ../scss/pages/_listview.scss */
+  /* line 397, ../scss/pages/_listview.scss */
   .view-search-list .view-filters .views-widget-filter-search_api_views_fulltext, .view-search-list .view-filters .views-widget-filter-field_ort {
     position: relative;
     padding: 0; }
-    /* line 389, ../scss/pages/_listview.scss */
+    /* line 401, ../scss/pages/_listview.scss */
     .view-search-list .view-filters .views-widget-filter-search_api_views_fulltext .views-widget .form-item, .view-search-list .view-filters .views-widget-filter-field_ort .views-widget .form-item {
       width: 100%;
       padding-right: 0px !important; }
-      /* line 393, ../scss/pages/_listview.scss */
+      /* line 405, ../scss/pages/_listview.scss */
       .view-search-list .view-filters .views-widget-filter-search_api_views_fulltext .views-widget .form-item .form-control, .view-search-list .view-filters .views-widget-filter-field_ort .views-widget .form-item .form-control {
         height: 70px;
         border-radius: 0;
@@ -9054,12 +9067,12 @@ p {
         padding-left: 40px;
         font-size: 16px;
         box-shadow: none; }
-        /* line 401, ../scss/pages/_listview.scss */
+        /* line 413, ../scss/pages/_listview.scss */
         .view-search-list .view-filters .views-widget-filter-search_api_views_fulltext .views-widget .form-item .form-control:focus, .view-search-list .view-filters .views-widget-filter-field_ort .views-widget .form-item .form-control:focus {
           box-shadow: none;
           outline: none;
           transition: none; }
-    /* line 409, ../scss/pages/_listview.scss */
+    /* line 421, ../scss/pages/_listview.scss */
     .view-search-list .view-filters .views-widget-filter-search_api_views_fulltext:before, .view-search-list .view-filters .views-widget-filter-field_ort:before {
       font-family: "icomoon";
       content: "\e94e";
@@ -9068,19 +9081,19 @@ p {
       top: 23px;
       display: inline-block;
       position: absolute; }
-  /* line 420, ../scss/pages/_listview.scss */
+  /* line 432, ../scss/pages/_listview.scss */
   .view-search-list .view-filters .views-widget-filter-type_1 {
     margin-top: 30px; }
-    /* line 423, ../scss/pages/_listview.scss */
+    /* line 435, ../scss/pages/_listview.scss */
     .view-search-list .view-filters .views-widget-filter-type_1 .views-widget .form-item {
       margin-bottom: 15px; }
-  /* line 428, ../scss/pages/_listview.scss */
+  /* line 440, ../scss/pages/_listview.scss */
   .view-search-list .view-filters .views-submit-button {
     position: absolute;
     top: 10px;
     right: 10px;
     padding: 0; }
-    /* line 434, ../scss/pages/_listview.scss */
+    /* line 446, ../scss/pages/_listview.scss */
     .view-search-list .view-filters .views-submit-button .btn {
       margin-top: 0;
       border-radius: 0;
@@ -9090,38 +9103,38 @@ p {
       border: none;
       background: #3c506e;
       font-weight: bold; }
-/* line 449, ../scss/pages/_listview.scss */
+/* line 461, ../scss/pages/_listview.scss */
 .view-search-list .view-content .views-row .row-container > * {
   padding-bottom: 20px; }
-  /* line 452, ../scss/pages/_listview.scss */
+  /* line 464, ../scss/pages/_listview.scss */
   .view-search-list .view-content .views-row .row-container > * a {
     text-decoration: none;
     color: #273753; }
 
-/* line 462, ../scss/pages/_listview.scss */
+/* line 474, ../scss/pages/_listview.scss */
 .view-wahlen-sie-einen-themenbereich {
   background: #273753; }
-  /* line 465, ../scss/pages/_listview.scss */
+  /* line 477, ../scss/pages/_listview.scss */
   .view-wahlen-sie-einen-themenbereich .view-sub-wrapper {
     position: relative; }
-  /* line 471, ../scss/pages/_listview.scss */
+  /* line 483, ../scss/pages/_listview.scss */
   .view-wahlen-sie-einen-themenbereich .view-header {
     color: #ffffff;
     padding: 40px 0; }
-  /* line 476, ../scss/pages/_listview.scss */
+  /* line 488, ../scss/pages/_listview.scss */
   .view-wahlen-sie-einen-themenbereich .view-content {
     padding-bottom: 90px; }
-    /* line 479, ../scss/pages/_listview.scss */
+    /* line 491, ../scss/pages/_listview.scss */
     .view-wahlen-sie-einen-themenbereich .view-content .views_slideshow_controls_text {
       float: right;
       display: inline-block;
       position: absolute;
       right: 8px;
       top: 60px; }
-      /* line 487, ../scss/pages/_listview.scss */
+      /* line 499, ../scss/pages/_listview.scss */
       .view-wahlen-sie-einen-themenbereich .view-content .views_slideshow_controls_text .views-slideshow-controls-text-previous a {
         font-size: 0; }
-        /* line 490, ../scss/pages/_listview.scss */
+        /* line 502, ../scss/pages/_listview.scss */
         .view-wahlen-sie-einen-themenbereich .view-content .views_slideshow_controls_text .views-slideshow-controls-text-previous a:before {
           font-family: "icomoon";
           content: "\e93e";
@@ -9131,13 +9144,13 @@ p {
           left: -20px;
           top: 6px;
           display: inline-block; }
-      /* line 503, ../scss/pages/_listview.scss */
+      /* line 515, ../scss/pages/_listview.scss */
       .view-wahlen-sie-einen-themenbereich .view-content .views_slideshow_controls_text .views_slideshow_controls_text_pause {
         display: none; }
-      /* line 508, ../scss/pages/_listview.scss */
+      /* line 520, ../scss/pages/_listview.scss */
       .view-wahlen-sie-einen-themenbereich .view-content .views_slideshow_controls_text .views_slideshow_controls_text_next a {
         font-size: 0; }
-        /* line 511, ../scss/pages/_listview.scss */
+        /* line 523, ../scss/pages/_listview.scss */
         .view-wahlen-sie-einen-themenbereich .view-content .views_slideshow_controls_text .views_slideshow_controls_text_next a:before {
           font-family: "icomoon";
           content: "\e93f";
@@ -9146,7 +9159,7 @@ p {
           position: absolute;
           top: 6px;
           display: inline-block; }
-    /* line 524, ../scss/pages/_listview.scss */
+    /* line 536, ../scss/pages/_listview.scss */
     .view-wahlen-sie-einen-themenbereich .view-content .views-row {
       width: 48.7%;
       background-color: #ffffff;
@@ -9155,36 +9168,36 @@ p {
       margin-right: 30px;
       margin-bottom: 30px;
       height: 286px; }
-      /* line 533, ../scss/pages/_listview.scss */
+      /* line 545, ../scss/pages/_listview.scss */
       .view-wahlen-sie-einen-themenbereich .view-content .views-row:nth-child(2), .view-wahlen-sie-einen-themenbereich .view-content .views-row:last-child {
         margin-right: 0; }
-      /* line 537, ../scss/pages/_listview.scss */
+      /* line 549, ../scss/pages/_listview.scss */
       .view-wahlen-sie-einen-themenbereich .view-content .views-row .views-field-name {
         padding-bottom: 30px; }
-        /* line 540, ../scss/pages/_listview.scss */
+        /* line 552, ../scss/pages/_listview.scss */
         .view-wahlen-sie-einen-themenbereich .view-content .views-row .views-field-name a {
           color: #e74712;
           text-decoration: none;
           font-weight: bold;
           padding-bottom: 30px; }
-      /* line 549, ../scss/pages/_listview.scss */
+      /* line 561, ../scss/pages/_listview.scss */
       .view-wahlen-sie-einen-themenbereich .view-content .views-row .views-field-name-1 a {
         color: #273753; }
-      /* line 556, ../scss/pages/_listview.scss */
+      /* line 568, ../scss/pages/_listview.scss */
       .view-wahlen-sie-einen-themenbereich .view-content .views-row .views-field-field-kurztext {
         padding-bottom: 40px; }
 
-/* line 565, ../scss/pages/_listview.scss */
+/* line 577, ../scss/pages/_listview.scss */
 .view-map-teaser {
   clear: both; }
-  /* line 569, ../scss/pages/_listview.scss */
+  /* line 581, ../scss/pages/_listview.scss */
   .view-map-teaser .view-sub-wrapper .view-content {
     margin: 0; }
-    /* line 572, ../scss/pages/_listview.scss */
+    /* line 584, ../scss/pages/_listview.scss */
     .view-map-teaser .view-sub-wrapper .view-content .views-row {
       padding: 0;
       background: #273753; }
-      /* line 578, ../scss/pages/_listview.scss */
+      /* line 590, ../scss/pages/_listview.scss */
       .view-map-teaser .view-sub-wrapper .view-content .views-row .row-container {
         background: none;
         height: auto;
@@ -9193,30 +9206,30 @@ p {
         border: none;
         /* Over Desktop design */ }
         @media (min-width: 1025px) {
-          /* line 578, ../scss/pages/_listview.scss */
+          /* line 590, ../scss/pages/_listview.scss */
           .view-map-teaser .view-sub-wrapper .view-content .views-row .row-container {
             padding: 45px 150px 45px 50px; } }
-        /* line 590, ../scss/pages/_listview.scss */
+        /* line 602, ../scss/pages/_listview.scss */
         .view-map-teaser .view-sub-wrapper .view-content .views-row .row-container:hover {
           background: none;
           border: none; }
-        /* line 595, ../scss/pages/_listview.scss */
+        /* line 607, ../scss/pages/_listview.scss */
         .view-map-teaser .view-sub-wrapper .view-content .views-row .row-container .views-field-field-bild {
           padding-bottom: 20px; }
-          /* line 598, ../scss/pages/_listview.scss */
+          /* line 610, ../scss/pages/_listview.scss */
           .view-map-teaser .view-sub-wrapper .view-content .views-row .row-container .views-field-field-bild img {
             color: #e74712; }
-        /* line 603, ../scss/pages/_listview.scss */
+        /* line 615, ../scss/pages/_listview.scss */
         .view-map-teaser .view-sub-wrapper .view-content .views-row .row-container .views-field-field-paragraph-title {
           color: #ffffff;
           font-size: 38px;
           font-weight: bold;
           padding-bottom: 20px; }
-        /* line 610, ../scss/pages/_listview.scss */
+        /* line 622, ../scss/pages/_listview.scss */
         .view-map-teaser .view-sub-wrapper .view-content .views-row .row-container .views-field-field-flie-text-bereich {
           color: #ffffff;
           padding-bottom: 35px; }
-        /* line 615, ../scss/pages/_listview.scss */
+        /* line 627, ../scss/pages/_listview.scss */
         .view-map-teaser .view-sub-wrapper .view-content .views-row .row-container .views-field-field-quellenangabe a {
           color: #ffffff; }
 
