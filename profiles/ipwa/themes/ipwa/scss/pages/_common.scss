@@ -111,11 +111,14 @@ p {
 .breadcrumb {
     @extend .container;
 
-    padding: 0;
+    padding: 0 15px;
     margin-bottom: 20px;
     list-style: none;
     background: none;
     border-radius: 0;
+	
+	@include devicebreak(x-large){padding:0;
+	}
 
     .inline {
         // margin-right:10px;
@@ -441,3 +444,8 @@ p {
              left: 16px;
 	  
   }}
+  
+  
+  
+ 
+  

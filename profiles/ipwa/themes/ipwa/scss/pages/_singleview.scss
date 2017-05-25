@@ -188,8 +188,13 @@
     .view-sub-wrapper {
         @extend .container;
 
-        padding: 40px 0;
+        padding: 40px 15px;
         position: relative;
+
+        @include devicebreak(x-large) {
+            padding: 40px 0;
+        }
+
 
         .view-header {
             .pane-title {
@@ -250,7 +255,11 @@
 .group-page-info, .group-page-bottom {
     @extend .page_inner;
 
-    padding: 60px 0 45px;
+    padding: 60px 15px 45px 15px;
+
+    @include devicebreak(x-large) {
+        padding: 60px 0 45px;
+    }
 }
 
 .group-page-info {
@@ -438,8 +447,6 @@
             display: inline-block;
             float: left;
         }
-
-       
     }
 }
 

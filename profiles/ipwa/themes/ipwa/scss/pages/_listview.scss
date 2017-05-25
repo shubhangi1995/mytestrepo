@@ -133,9 +133,13 @@
             color: $active-menu;
             font-size: 26px;
             padding-bottom: 60px;
-            width: 765px;
+            width: auto;
             margin: 0 auto;
             font-weight: bold;
+
+            @include devicebreak(x-large) {
+                width: 765px;
+            }
         }
 
         .attachment-before .view-result-count {
@@ -155,6 +159,7 @@
                     .form-item {
                         display: inline-block;
                         padding-right: 60px;
+                        padding-bottom: 15px;
 
                         label {
                             padding-left: 0;
@@ -219,7 +224,7 @@
 
     .view-filters {
         .categories-filter {
-            margin-top: 30px;
+            margin-top: 15px;
             clear: both;
             display: inline-block;
             width: 100%;
@@ -232,28 +237,32 @@
                 background: $header-dropdown-menu;
                 border-right: 1px solid $color-light-grey;
 
-                .select2-container--default .select2-selection--single {
-                    background: 0;
-                    border: 0;
-                    border-radius: 0;
+                .views-widget .form-item {
+                    padding: 0;
 
-                    &:before {
-                        content: "\f107";
-                        font-family: FontAwesome;
-                        color: $color-white;
-                        position: absolute;
-                        float: right;
-                        right: 20px;
-                        top: 3px;
-                    }
+                    .select2-container--default .select2-selection--single {
+                        background: 0;
+                        border: 0;
+                        border-radius: 0;
 
-                    .select2-selection__rendered {
-                        color: $color-white;
-                        padding-left: 20px;
-                    }
+                        &:before {
+                            content: "\f107";
+                            font-family: FontAwesome;
+                            color: $color-white;
+                            position: absolute;
+                            float: right;
+                            right: 20px;
+                            top: 3px;
+                        }
 
-                    .select2-selection__arrow {
-                        display: none;
+                        .select2-selection__rendered {
+                            color: $color-white;
+                            padding-left: 20px;
+                        }
+
+                        .select2-selection__arrow {
+                            display: none;
+                        }
                     }
                 }
             }
@@ -272,12 +281,20 @@
             #edit-term-node-tid-depth-wrapper {
                 width: 80%;
                 float: left;
-                padding: 0;
-                clear: both;
-                margin-bottom: 30px;
+				padding:0;
+               
 
                 .form-item {
+                    padding-right: 0;
+
                     .form-type-bef-link {
+                        padding-right: 0;
+
+                        @include devicebreak(x-large) {
+                            padding-right: 60px;
+                        }
+
+
                         &:first-child {
                             display: none;
                         }
@@ -289,7 +306,7 @@
                             color: $main-color;
 
                             &.active {
-                                border-bottom: 1px Solid $active-menu;
+                                border-bottom: 2px Solid $active-menu;
                             }
                         }
                     }
@@ -297,16 +314,24 @@
             }
 
             .calendar-link {
-                width: 20%;
-                float: left;
-                text-align: right;
-                position: relative;
-                margin-bottom: 30px;
+                width: 100%;
+				float:left;
+				position:relative;
+				padding-left:30px;
+
+                @include devicebreak(x-large) {
+                    width: 20%;
+                    float: left;
+                    text-align: right;
+                    position: relative;
+                    margin-bottom: 30px;
+                }
+
 
                 a {
                     text-decoration: none;
                     padding-bottom: 4px;
-                    border-bottom: 1px solid $color-light-grey;
+                    border-bottom: 2px solid $color-light-grey;
                     color: $main-color;
                     font-weight: bold;
 
@@ -316,28 +341,12 @@
                         color: $active-menu;
                         font-size: 14px;
                         position: absolute;
-                        left: 40px;
+                        left: 0;
                         top: 9px;
                         display: inline-block;
-                    }
-                }
-            }
-
-            .views-widget-sort-by {
-                float: right;
-                padding: 30px 0;
-
-                .bef-select-as-links .form-type-bef-link {
-                    display: inline-block;
-                    padding-left: 15px;
-
-                    a {
-                        text-decoration: none;
-                        color: $main-color;
-
-                        &.active {
-                            border-bottom: 1px solid #e74712;
-                        }
+						@include devicebreak(x-large){
+						 left: 40px;
+						}
                     }
                 }
             }
@@ -380,13 +389,13 @@
                     border: none;
                     padding-left: 40px;
                     font-size: 16px;
-					box-shadow:none;
-					
-					&:focus{
-					 box-shadow:none;
-					     outline: none;
-						      transition:none;
-					}
+                    box-shadow: none;
+
+                    &:focus {
+                        box-shadow: none;
+                        outline: none;
+                        transition: none;
+                    }
                 }
             }
 
@@ -556,14 +565,20 @@
             .views-row {
                 @extend .col-md-8;
 
+                padding: 0;
                 background: $main-color;
 
                 .row-container {
                     background: none;
                     height: auto;
                     margin-bottom: 0;
-                    padding: 45px 150px 45px 50px;
+                    padding: 30px;
                     border: none;
+
+                    @include devicebreak(x-large) {
+                        padding: 45px 150px 45px 50px;
+                    }
+
 
                     &:hover {
                         background: none;
