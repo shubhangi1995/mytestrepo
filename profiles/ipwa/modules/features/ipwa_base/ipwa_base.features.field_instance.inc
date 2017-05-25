@@ -159,7 +159,7 @@ function ipwa_base_field_default_field_instances() {
           'view_mode' => 'paragraph',
         ),
         'type' => 'entityreference_entity_view',
-        'weight' => 1,
+        'weight' => 0,
       ),
       'paragraphs_editor_preview' => array(
         'label' => 'above',
@@ -201,7 +201,7 @@ function ipwa_base_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 0,
+        'weight' => 1,
       ),
       'paragraphs_editor_preview' => array(
         'label' => 'above',
