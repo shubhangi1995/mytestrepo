@@ -73,27 +73,27 @@ function ipwa_preprocess_node(&$variables)
     if(!empty($view)) {
       $related_ical .= views_embed_view("termin", "block_1", $variables['nid']);
       $variables['content']['group_page_info']['group_top_wrapper']['group_left_top_wrapper']['group_middle_wrapper']['ical']['#markup'] = $related_ical;
-      $variables['content']['group_page_info']['group_top_wrapper']['group_left_top_wrapper']['group_middle_wrapper']['ical']['#weight'] = isset($variables['elements']['#fieldgroups']['group_ical']) ? $variables['elements']['#fieldgroups']['ical']->weight : -1;
+      $variables['content']['group_page_info']['group_top_wrapper']['group_left_top_wrapper']['group_middle_wrapper']['ical']['#weight'] = isset($variables['elements']['#fieldgroups']['group_ical']) ? $variables['elements']['#fieldgroups']['group_ical']->weight : -1;
 
     }
   }
   if ($variables['type'] == 'termin') {
     // Display of Ort field
-    if (isset($variables['content']['field_ort']) && !empty($variables['content']['field_ort'])) {
-      $variables['content']['rel_ort'] = '';
-      $variables['content']['rel_ort']['#markup'] = $variables['content']['field_ort'][0]['#markup'];
-      $variables['content']['rel_ort']['#weight'] = isset($variables['elements']['#fieldgroups']['group_related_ort']) ? $variables['elements']['#fieldgroups']['group_related_ort']->weight : -1;
+    if (isset($variables['content']['group_page_info']['group_top_wrapper']['group_left_top_wrapper']['field_ort']) && !empty($variables['content']['group_page_info']['group_top_wrapper']['group_left_top_wrapper']['field_ort'])) {
+      $variables['content']['group_page_info']['rel_ort'] = '';
+      $variables['content']['group_page_info']['rel_ort']['#markup'] = $variables['content']['group_page_info']['group_top_wrapper']['group_left_top_wrapper']['field_ort'][0]['#markup'];
+      $variables['content']['group_page_info']['rel_ort']['#weight'] = isset($variables['elements']['#fieldgroups']['group_related_ort']) ? $variables['elements']['#fieldgroups']['group_related_ort']->weight : -1;
 
       // show field 'Ort' appended with value of  field 'Zusätzliche Informationen zum Ort' if provided
       if (!empty($variables['field_zus_tzliche_informationen'])) {
-        $variables['content']['field_ort'][0]['#markup'] = $variables['content']['field_ort'][0]['#markup'] . ' ' . $variables['field_zus_tzliche_informationen']['und'][0]['value'];
+        $variables['content']['group_page_info']['group_top_wrapper']['group_left_top_wrapper']['field_ort'][0]['#markup'] = $variables['content']['group_page_info']['group_top_wrapper']['group_left_top_wrapper']['field_ort'][0]['#markup'] . ' ' . $variables['field_zus_tzliche_informationen']['und'][0]['value'];
       }
     }
 
-    // replace of 'to' with'-' for field 'datum' in CT termin
-    if(!empty($variables['content']['field_event_datum'])){
-      if (strpos($variables['content']['field_event_datum'][0]['#markup'], 'to') !== false) {
-        $variables['content']['field_event_datum'][0]['#markup'] = str_replace('to','-',$variables['content']['field_event_datum'][0]['#markup']);
+    // replace of 'to' with'-' for field 'datum' in CT terminprint_r
+    if(!empty($variables['content']['group_page_info']['group_top_wrapper']['group_left_top_wrapper']['group_middle_wrapper']['field_event_datum'])){
+      if (strpos($variables['content']['group_page_info']['group_top_wrapper']['group_left_top_wrapper']['group_middle_wrapper']['field_event_datum'][0]['#markup'], 'to') !== false) {
+        $variables['content']['group_page_info']['group_top_wrapper']['group_left_top_wrapper']['group_middle_wrapper']['field_event_datum'][0]['#markup'] = str_replace('to','-',$variables['content']['group_page_info']['group_top_wrapper']['group_left_top_wrapper']['group_middle_wrapper']['field_event_datum'][0]['#markup']);
       }
     }
   }
