@@ -6624,29 +6624,29 @@ header .navbar-collapse {
   .navbar-header .logo .small {
     display: none; } }
 @media (max-width: 1024px) {
-  /* line 6, ../scss/layout/_header-mobile-view.scss */
+  /* line 4, ../scss/layout/_header-mobile-view.scss */
   header .navbar-header .logo {
     padding-left: 20px; }
-    /* line 9, ../scss/layout/_header-mobile-view.scss */
+    /* line 7, ../scss/layout/_header-mobile-view.scss */
     header .navbar-header .logo .big {
       display: none; }
-    /* line 13, ../scss/layout/_header-mobile-view.scss */
+    /* line 11, ../scss/layout/_header-mobile-view.scss */
     header .navbar-header .logo .small {
       display: block; }
-  /* line 18, ../scss/layout/_header-mobile-view.scss */
+  /* line 16, ../scss/layout/_header-mobile-view.scss */
   header .navbar-header .navbar-toggle {
     border: none;
     display: block; }
-    /* line 22, ../scss/layout/_header-mobile-view.scss */
+    /* line 20, ../scss/layout/_header-mobile-view.scss */
     header .navbar-header .navbar-toggle:hover, header .navbar-header .navbar-toggle:focus {
       background: none; }
-    /* line 26, ../scss/layout/_header-mobile-view.scss */
+    /* line 24, ../scss/layout/_header-mobile-view.scss */
     header .navbar-header .navbar-toggle .icon-bar {
       background-color: #e74712; }
-  /* line 32, ../scss/layout/_header-mobile-view.scss */
+  /* line 30, ../scss/layout/_header-mobile-view.scss */
   header .nrw-eu-logo {
     display: none; }
-  /* line 36, ../scss/layout/_header-mobile-view.scss */
+  /* line 34, ../scss/layout/_header-mobile-view.scss */
   header .navbar-collapse {
     position: absolute;
     z-index: 9999;
@@ -6654,31 +6654,31 @@ header .navbar-collapse {
     width: 100%;
     top: 58px;
     margin: 0; }
-    /* line 44, ../scss/layout/_header-mobile-view.scss */
+    /* line 42, ../scss/layout/_header-mobile-view.scss */
     header .navbar-collapse .search-icon {
       padding: 20px;
       width: 100%;
       text-align: left;
       border-bottom: 1px solid #949d9e;
       background-color: #eff2f7; }
-    /* line 52, ../scss/layout/_header-mobile-view.scss */
+    /* line 50, ../scss/layout/_header-mobile-view.scss */
     header .navbar-collapse ul.navbar-nav {
       width: 100%;
       float: left;
       margin: 0; }
-      /* line 57, ../scss/layout/_header-mobile-view.scss */
+      /* line 55, ../scss/layout/_header-mobile-view.scss */
       header .navbar-collapse ul.navbar-nav > li {
         padding: 20px;
         border-bottom: 1px solid #949d9e;
         text-align: left;
         background-color: #eff2f7; }
-        /* line 63, ../scss/layout/_header-mobile-view.scss */
+        /* line 61, ../scss/layout/_header-mobile-view.scss */
         header .navbar-collapse ul.navbar-nav > li a {
           padding: 0; }
-    /* line 69, ../scss/layout/_header-mobile-view.scss */
+    /* line 67, ../scss/layout/_header-mobile-view.scss */
     header .navbar-collapse .region-navigation {
       padding-top: 0; }
-      /* line 72, ../scss/layout/_header-mobile-view.scss */
+      /* line 70, ../scss/layout/_header-mobile-view.scss */
       header .navbar-collapse .region-navigation .block-ipwa-search {
         display: none; }
       /* line 75, ../scss/layout/_header-mobile-view.scss */
@@ -6717,58 +6717,66 @@ header .navbar-collapse {
             margin-top: 0;
             top: 10px;
             left: 20px; }
-        /* line 119, ../scss/layout/_header-mobile-view.scss */
+        /* line 118, ../scss/layout/_header-mobile-view.scss */
         header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav > li .tb-megamenu-submenu {
           display: none;
           padding-top: 0;
           padding-bottom: 10px;
           position: relative; }
-          /* line 125, ../scss/layout/_header-mobile-view.scss */
+          /* line 124, ../scss/layout/_header-mobile-view.scss */
           header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav > li .tb-megamenu-submenu .mega-dropdown-inner {
             width: auto; }
-            /* line 128, ../scss/layout/_header-mobile-view.scss */
+            /* line 127, ../scss/layout/_header-mobile-view.scss */
             header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav > li .tb-megamenu-submenu .mega-dropdown-inner .tb-submenu-left {
               cursor: pointer;
               width: 100%; }
-              /* line 133, ../scss/layout/_header-mobile-view.scss */
+              /* line 131, ../scss/layout/_header-mobile-view.scss */
               header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav > li .tb-megamenu-submenu .mega-dropdown-inner .tb-submenu-left .mega-inner {
                 padding: 0;
                 width: auto;
                 border-bottom: 1px solid #18243b;
                 border-top: 1px solid #18243b; }
-                /* line 139, ../scss/layout/_header-mobile-view.scss */
+                /* line 137, ../scss/layout/_header-mobile-view.scss */
                 header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav > li .tb-megamenu-submenu .mega-dropdown-inner .tb-submenu-left .mega-inner .tb-block {
                   margin-bottom: 0; }
-              /* line 144, ../scss/layout/_header-mobile-view.scss */
+              /* line 142, ../scss/layout/_header-mobile-view.scss */
               header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav > li .tb-megamenu-submenu .mega-dropdown-inner .tb-submenu-left h2.block-title {
                 padding: 20px;
                 margin-bottom: 0; }
-              /* line 149, ../scss/layout/_header-mobile-view.scss */
+              /* line 147, ../scss/layout/_header-mobile-view.scss */
               header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav > li .tb-megamenu-submenu .mega-dropdown-inner .tb-submenu-left ul li {
                 padding: 20px;
                 margin-bottom: 0;
                 border-top: 1px solid #18243b;
                 background: #273753; }
-                /* line 155, ../scss/layout/_header-mobile-view.scss */
+                /* line 153, ../scss/layout/_header-mobile-view.scss */
                 header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav > li .tb-megamenu-submenu .mega-dropdown-inner .tb-submenu-left ul li a {
                   border-top: 0;
                   padding-left: 0; }
-                  /* line 159, ../scss/layout/_header-mobile-view.scss */
+                  /* line 157, ../scss/layout/_header-mobile-view.scss */
                   header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav > li .tb-megamenu-submenu .mega-dropdown-inner .tb-submenu-left ul li a:before {
                     display: none; }
-          /* line 167, ../scss/layout/_header-mobile-view.scss */
+          /* line 165, ../scss/layout/_header-mobile-view.scss */
           header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav > li .tb-megamenu-submenu .tb-submenu-right {
             width: 100%; }
-            /* line 169, ../scss/layout/_header-mobile-view.scss */
+            /* line 168, ../scss/layout/_header-mobile-view.scss */
             header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav > li .tb-megamenu-submenu .tb-submenu-right .mega-inner {
               padding-top: 20px;
               width: auto; }
-              /* line 174, ../scss/layout/_header-mobile-view.scss */
+              /* line 173, ../scss/layout/_header-mobile-view.scss */
               header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav > li .tb-megamenu-submenu .tb-submenu-right .mega-inner .view-themenzuweisung-flyouts .view-header {
                 padding-bottom: 10px; }
-              /* line 178, ../scss/layout/_header-mobile-view.scss */
+              /* line 177, ../scss/layout/_header-mobile-view.scss */
               header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav > li .tb-megamenu-submenu .tb-submenu-right .mega-inner .view-themenzuweisung-flyouts .view-content .views-row a {
                 border-top: 0; } }
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* line 201, ../scss/layout/_header-mobile-view.scss */
+  .view-neueste-informationen .view-sub-wrapper > .view-content .views-row, .view-termin .view-sub-wrapper > .view-content .views-row, .view-aktuelles .view-sub-wrapper > .view-content .views-row, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row, .view-search-list .view-sub-wrapper > .view-content .views-row {
+    width: 50%; }
+
+  /* line 204, ../scss/layout/_header-mobile-view.scss */
+  .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items > .field-item {
+    width: 100%; } }
 @media (max-width: 767px) {
   /* line 5, ../scss/layout/_footer-mobile-view.scss */
   footer #block-menu-menu-footer-navigation ul {
@@ -7869,8 +7877,8 @@ p {
     cursor: pointer;
     transition: all 0.5s ease;
     height: auto;
-    /* Tablet design */ }
-    @media (min-width: 767px) {
+    /* Over Desktop design */ }
+    @media (min-width: 1025px) {
       /* line 231, ../scss/pages/_common.scss */
       .view-neueste-informationen .view-sub-wrapper > .view-content .views-row .row-container, .view-termin .view-sub-wrapper > .view-content .views-row .row-container, .view-aktuelles .view-sub-wrapper > .view-content .views-row .row-container, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row .row-container, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row .row-container, .view-search-list .view-sub-wrapper > .view-content .views-row .row-container {
         height: 410px; } }

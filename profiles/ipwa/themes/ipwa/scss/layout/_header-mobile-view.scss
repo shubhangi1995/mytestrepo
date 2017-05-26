@@ -1,6 +1,4 @@
-
-
-@media (max-width:1024px) {
+@media (max-width: 1024px) {
     header {
         .navbar-header {
             .logo {
@@ -17,7 +15,7 @@
 
             .navbar-toggle {
                 border: none;
-				display:block;
+                display: block;
 
                 &:hover, &:focus {
                     background: none;
@@ -38,8 +36,8 @@
             z-index: 9999;
             background: $color-white;
             width: 100%;
-			top:58px;
-			margin:0;
+            top: 58px;
+            margin: 0;
 
             .search-icon {
                 padding: 20px;
@@ -68,8 +66,10 @@
 
             .region-navigation {
                 padding-top: 0;
-				
-				.block-ipwa-search {display:none;}
+
+                .block-ipwa-search {
+                    display: none;
+                }
 
                 .tb-megamenu {
                     .btn-navbar {
@@ -88,11 +88,11 @@
                         > li.dropdown.open > a {
                             border-bottom: none;
                         }
-						
-					>	li.active > a{
-							  border-bottom:0;
-							  padding-bottom:20px;
-							}
+
+                        > li.active > a {
+                            border-bottom: 0;
+                            padding-bottom: 20px;
+                        }
 
                         > li {
                             width: 100%;
@@ -114,31 +114,29 @@
                                     left: 20px;
                                 }
                             }
-							
 
                             .tb-megamenu-submenu {
-                                display: none ;
+                                display: none;
                                 padding-top: 0;
                                 padding-bottom: 10px;
-								position:relative;
+                                position: relative;
 
                                 .mega-dropdown-inner {
                                     width: auto;
 
                                     .tb-submenu-left {
-									cursor:pointer;
-									width:100%;
-									
-									
+                                        cursor: pointer;
+                                        width: 100%;
+
                                         .mega-inner {
                                             padding: 0;
-											width:auto;
+                                            width: auto;
                                             border-bottom: 1px solid $header-mobile-border-line;
                                             border-top: 1px solid $header-mobile-border-line;
-											
-										.tb-block {
-    margin-bottom: 0;
-}
+
+                                            .tb-block {
+                                                margin-bottom: 0;
+                                            }
                                         }
 
                                         h2.block-title {
@@ -165,10 +163,11 @@
                                 }
 
                                 .tb-submenu-right {
-								width:100%;
+                                    width: 100%;
+
                                     .mega-inner {
                                         padding-top: 20px;
-										width:auto;
+                                        width: auto;
 
                                         .view-themenzuweisung-flyouts {
                                             .view-header {
@@ -177,7 +176,6 @@
 
                                             .view-content .views-row a {
                                                 border-top: 0;
-												  
                                             }
                                         }
                                     }
@@ -189,4 +187,23 @@
             }
         }
     }
+	
+	
+	
+	
 }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+.view-neueste-informationen, .view-termin, .view-aktuelles, .view-neueste-digital-projekte, .view-alles-zum-thema, .view-search-list {
+    .view-sub-wrapper {
+        > .view-content {            
+
+            .views-row {
+                width:50%;
+ }}}}
+ .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items > .field-item{
+   width:100%;
+ }
+ 
+ 
+ }
