@@ -78,8 +78,8 @@ jQuery('.page-aktuelles select').select2().on("select2:open", function(){
 		jQuery(".navbar-nav").insertAfter(".region-navigation");
 		
 		 jQuery("ul.tb-megamenu-nav li a").click(function(){	
-			jQuery(this).next(".tb-megamenu-submenu").attr('style','display:block !important');
-			jQuery(this).parent().siblings().find(".tb-megamenu-submenu").attr('style','display:none !important');
+			jQuery(this).next(".tb-megamenu-submenu").attr('style','display:block');
+			jQuery(this).parent().siblings().find(".tb-megamenu-submenu").attr('style','display:none');
 		}); 
 	};
 
