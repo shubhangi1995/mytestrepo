@@ -101,8 +101,9 @@ function ipwa_publikation_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'node_options_publikation';
   $strongarm->value = array(
-    0 => 'promote',
-    1 => 'revision',
+    0 => 'status',
+    1 => 'promote',
+    2 => 'revision',
   );
   $export['node_options_publikation'] = $strongarm;
 
