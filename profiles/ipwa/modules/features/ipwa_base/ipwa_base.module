@@ -21,6 +21,7 @@ function ipwa_base_views_pre_render(&$view) {
 
   if (($view->name == 'aktuelles' && $view->current_display == 'page') ||
     ($view->name == 'neueste_informationen' && $view->current_display == 'block') ||
+    ($view->name == 'event_on_calendar' && $view->current_display == 'block') ||
     ($view->name == 'termin' && ($view->current_display == 'block_2' || $view->current_display == 'page')) ||
     ($view->name == "neueste_digital_projekte") ||
     ($view->name == "alles_zum_thema") || ($view->name == "latest_content_doorpage")) {
@@ -72,6 +73,37 @@ function ipwa_base_views_pre_render(&$view) {
       }
     }
   }
+
+  //To remove duplicate result from calendar event block view
+  if ($view->name == 'event_on_calendar' && $view->current_display == 'block') {
+    $temp_array = array();
+    $i = 0;
+    $key_array = array();
+    foreach($view->result as $val) {
+      if (!in_array($val->nid, $key_array)) {
+        $key_array[$i] = $val->nid;
+        $temp_array[$i] = $val;
+      }
+      $i++;
+    }
+    $view->result = $temp_array;
+    return $view->result = $temp_array;
+  }
+
+  //To identify calendar event is single or recurring
+  if ($view->name == 'event_calendar' && $view->current_display == 'page_1') {
+    foreach ($view->result as $key => $result) {
+      if (!empty($result->field_field_event_datum)) {
+        $occurence = count($result->field_field_event_datum);
+        if (($occurence > 1) || (($result->field_field_event_datum[0]['raw']['value'] != $result->field_field_event_datum[0]['raw']['value2']))) {
+          $result->field_field_event_datum[0]['rendered']['#markup'] = '<div class="date-display-recurring">Recurring</div>';
+        }else{
+          $result->field_field_event_datum[0]['rendered']['#markup'] = '<div class="date-display-single ">Single</div>';
+        }
+      }
+    }
+  }
+
 }
 
 

@@ -246,6 +246,26 @@ function ipwa_base_path_breadcrumbs_settings_info() {
 
   $path_breadcrumb = new stdClass();
   $path_breadcrumb->api_version = 1;
+  $path_breadcrumb->machine_name = 'termine_calendar_view';
+  $path_breadcrumb->name = 'Termine Calendar View';
+  $path_breadcrumb->path = 'calendar';
+  $path_breadcrumb->data = array(
+    'titles' => array(
+      0 => '!page_title',
+    ),
+    'paths' => array(
+      0 => '<none>',
+    ),
+    'home' => 1,
+    'translatable' => 0,
+    'arguments' => array(),
+    'access' => array(),
+  );
+  $path_breadcrumb->weight = -98;
+  $export['termine_calendar_view'] = $path_breadcrumb;
+
+  $path_breadcrumb = new stdClass();
+  $path_breadcrumb->api_version = 1;
   $path_breadcrumb->machine_name = 'termine_list_view';
   $path_breadcrumb->name = 'Termine list view';
   $path_breadcrumb->path = 'termine';

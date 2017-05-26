@@ -84,7 +84,19 @@ jQuery('.tb-megamenu-submenu.dropdown-menu').attr('style','display:none !importa
 		}); 
 	};
 
-
+    jQuery(function() {
+        var pop_up_id;
+        jQuery('div.pop-up').hide();
+        jQuery('a.trigger').hover(function() {
+            pop_up_id = this.id;
+            pop_up_id = pop_up_id.substring(8);
+            jQuery('div#pop-up-' + pop_up_id).show();
+        }, function() {
+            pop_up_id = this.id;
+            pop_up_id = pop_up_id.substring(8);
+            jQuery('div#pop-up-' + pop_up_id).hide();
+        });
+    });
 
 
 	

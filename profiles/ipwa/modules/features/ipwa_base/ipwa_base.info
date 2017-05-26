@@ -93,6 +93,7 @@ features[path_breadcrumbs][] = nachricht
 features[path_breadcrumbs][] = publikation
 features[path_breadcrumbs][] = search_list_view
 features[path_breadcrumbs][] = termin
+features[path_breadcrumbs][] = termine_calendar_view
 features[path_breadcrumbs][] = termine_list_view
 features[path_breadcrumbs][] = themenzuweisung_main_category
 features[path_breadcrumbs][] = themenzuweisung_terms
