@@ -861,29 +861,29 @@ pre {
   overflow-y: scroll; }
 
 /* line 10, ../scss/bootstrap-sass/bootstrap/_grid.scss */
-.container, footer .region-footer, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col, .view-neueste-informationen .view-sub-wrapper, .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser, .breadcrumb, .page-user .page-header, .page-user .region-content, .not-front .node-doorpage .view-alle-themen-teaser .view-sub-wrapper, .view-neueste-digital-projekte .view-sub-wrapper, .view-latest-content-doorpage > .view-sub-wrapper, .page-taxonomy-term .view-title, .page-taxonomy-term .group-page-info, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .paragraphs-item-flie-text-mit-bild-links, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .paragraphs-item-flie-text-bereich, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .paragraphs-item-flie-text-mit-bild-rechts, .page-taxonomy-term .view-alles-zum-thema .view-sub-wrapper, .page-termine .page-header, .page-aktuelles .page-header, .page-search .page-header, .view-aktuelles > .view-sub-wrapper, .view-termin > .view-sub-wrapper, .view-search-list > .view-sub-wrapper, .view-wahlen-sie-einen-themenbereich .view-sub-wrapper, .page-sitemap .page-header, .page-sitemap #site-map {
+.container, footer .region-footer, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col, .view-neueste-informationen .view-sub-wrapper, .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser, .breadcrumb, .page-user .page-header, .page-user .region-content, .not-front .node-doorpage .view-alle-themen-teaser .view-sub-wrapper, .view-neueste-digital-projekte .view-sub-wrapper, .view-latest-content-doorpage > .view-sub-wrapper, .page-taxonomy-term .view-title, .page-taxonomy-term .group-page-info, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .paragraphs-item-flie-text-mit-bild-links, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .paragraphs-item-flie-text-bereich, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .paragraphs-item-flie-text-mit-bild-rechts, .page-taxonomy-term .view-alles-zum-thema .view-sub-wrapper, .page-termine .page-header, .page-aktuelles .page-header, .page-search .page-header, .page-calendar .page-header, .view-aktuelles > .view-sub-wrapper, .view-termin > .view-sub-wrapper, .view-search-list > .view-sub-wrapper, .view-event-calendar > .view-sub-wrapper, .view-wahlen-sie-einen-themenbereich .view-sub-wrapper, .page-sitemap .page-header, .page-sitemap #site-map {
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px; }
   /* line 14, ../scss/bootstrap-sass/bootstrap/mixins/_clearfix.scss */
-  .container:before, footer .region-footer:before, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col:before, .view-neueste-informationen .view-sub-wrapper:before, .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser:before, .breadcrumb:before, .page-user .page-header:before, .page-user .region-content:before, .not-front .node-doorpage .view-alle-themen-teaser .view-sub-wrapper:before, .view-neueste-digital-projekte .view-sub-wrapper:before, .view-latest-content-doorpage > .view-sub-wrapper:before, .page-taxonomy-term .view-title:before, .page-taxonomy-term .group-page-info:before, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .paragraphs-item-flie-text-mit-bild-links:before, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .paragraphs-item-flie-text-bereich:before, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .paragraphs-item-flie-text-mit-bild-rechts:before, .page-taxonomy-term .view-alles-zum-thema .view-sub-wrapper:before, .page-termine .page-header:before, .page-aktuelles .page-header:before, .page-search .page-header:before, .view-aktuelles > .view-sub-wrapper:before, .view-termin > .view-sub-wrapper:before, .view-search-list > .view-sub-wrapper:before, .view-wahlen-sie-einen-themenbereich .view-sub-wrapper:before, .page-sitemap .page-header:before, .page-sitemap #site-map:before, .container:after, footer .region-footer:after, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col:after, .view-neueste-informationen .view-sub-wrapper:after, .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser:after, .breadcrumb:after, .page-user .page-header:after, .page-user .region-content:after, .not-front .node-doorpage .view-alle-themen-teaser .view-sub-wrapper:after, .view-neueste-digital-projekte .view-sub-wrapper:after, .view-latest-content-doorpage > .view-sub-wrapper:after, .page-taxonomy-term .view-title:after, .page-taxonomy-term .group-page-info:after, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .paragraphs-item-flie-text-mit-bild-links:after, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .paragraphs-item-flie-text-bereich:after, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .paragraphs-item-flie-text-mit-bild-rechts:after, .page-taxonomy-term .view-alles-zum-thema .view-sub-wrapper:after, .page-termine .page-header:after, .page-aktuelles .page-header:after, .page-search .page-header:after, .view-aktuelles > .view-sub-wrapper:after, .view-termin > .view-sub-wrapper:after, .view-search-list > .view-sub-wrapper:after, .view-wahlen-sie-einen-themenbereich .view-sub-wrapper:after, .page-sitemap .page-header:after, .page-sitemap #site-map:after {
+  .container:before, footer .region-footer:before, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col:before, .view-neueste-informationen .view-sub-wrapper:before, .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser:before, .breadcrumb:before, .page-user .page-header:before, .page-user .region-content:before, .not-front .node-doorpage .view-alle-themen-teaser .view-sub-wrapper:before, .view-neueste-digital-projekte .view-sub-wrapper:before, .view-latest-content-doorpage > .view-sub-wrapper:before, .page-taxonomy-term .view-title:before, .page-taxonomy-term .group-page-info:before, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .paragraphs-item-flie-text-mit-bild-links:before, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .paragraphs-item-flie-text-bereich:before, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .paragraphs-item-flie-text-mit-bild-rechts:before, .page-taxonomy-term .view-alles-zum-thema .view-sub-wrapper:before, .page-termine .page-header:before, .page-aktuelles .page-header:before, .page-search .page-header:before, .page-calendar .page-header:before, .view-aktuelles > .view-sub-wrapper:before, .view-termin > .view-sub-wrapper:before, .view-search-list > .view-sub-wrapper:before, .view-event-calendar > .view-sub-wrapper:before, .view-wahlen-sie-einen-themenbereich .view-sub-wrapper:before, .page-sitemap .page-header:before, .page-sitemap #site-map:before, .container:after, footer .region-footer:after, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col:after, .view-neueste-informationen .view-sub-wrapper:after, .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser:after, .breadcrumb:after, .page-user .page-header:after, .page-user .region-content:after, .not-front .node-doorpage .view-alle-themen-teaser .view-sub-wrapper:after, .view-neueste-digital-projekte .view-sub-wrapper:after, .view-latest-content-doorpage > .view-sub-wrapper:after, .page-taxonomy-term .view-title:after, .page-taxonomy-term .group-page-info:after, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .paragraphs-item-flie-text-mit-bild-links:after, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .paragraphs-item-flie-text-bereich:after, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .paragraphs-item-flie-text-mit-bild-rechts:after, .page-taxonomy-term .view-alles-zum-thema .view-sub-wrapper:after, .page-termine .page-header:after, .page-aktuelles .page-header:after, .page-search .page-header:after, .page-calendar .page-header:after, .view-aktuelles > .view-sub-wrapper:after, .view-termin > .view-sub-wrapper:after, .view-search-list > .view-sub-wrapper:after, .view-event-calendar > .view-sub-wrapper:after, .view-wahlen-sie-einen-themenbereich .view-sub-wrapper:after, .page-sitemap .page-header:after, .page-sitemap #site-map:after {
     content: " ";
     display: table; }
   /* line 19, ../scss/bootstrap-sass/bootstrap/mixins/_clearfix.scss */
-  .container:after, footer .region-footer:after, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col:after, .view-neueste-informationen .view-sub-wrapper:after, .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser:after, .breadcrumb:after, .page-user .page-header:after, .page-user .region-content:after, .not-front .node-doorpage .view-alle-themen-teaser .view-sub-wrapper:after, .view-neueste-digital-projekte .view-sub-wrapper:after, .view-latest-content-doorpage > .view-sub-wrapper:after, .page-taxonomy-term .view-title:after, .page-taxonomy-term .group-page-info:after, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .paragraphs-item-flie-text-mit-bild-links:after, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .paragraphs-item-flie-text-bereich:after, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .paragraphs-item-flie-text-mit-bild-rechts:after, .page-taxonomy-term .view-alles-zum-thema .view-sub-wrapper:after, .page-termine .page-header:after, .page-aktuelles .page-header:after, .page-search .page-header:after, .view-aktuelles > .view-sub-wrapper:after, .view-termin > .view-sub-wrapper:after, .view-search-list > .view-sub-wrapper:after, .view-wahlen-sie-einen-themenbereich .view-sub-wrapper:after, .page-sitemap .page-header:after, .page-sitemap #site-map:after {
+  .container:after, footer .region-footer:after, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col:after, .view-neueste-informationen .view-sub-wrapper:after, .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser:after, .breadcrumb:after, .page-user .page-header:after, .page-user .region-content:after, .not-front .node-doorpage .view-alle-themen-teaser .view-sub-wrapper:after, .view-neueste-digital-projekte .view-sub-wrapper:after, .view-latest-content-doorpage > .view-sub-wrapper:after, .page-taxonomy-term .view-title:after, .page-taxonomy-term .group-page-info:after, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .paragraphs-item-flie-text-mit-bild-links:after, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .paragraphs-item-flie-text-bereich:after, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .paragraphs-item-flie-text-mit-bild-rechts:after, .page-taxonomy-term .view-alles-zum-thema .view-sub-wrapper:after, .page-termine .page-header:after, .page-aktuelles .page-header:after, .page-search .page-header:after, .page-calendar .page-header:after, .view-aktuelles > .view-sub-wrapper:after, .view-termin > .view-sub-wrapper:after, .view-search-list > .view-sub-wrapper:after, .view-event-calendar > .view-sub-wrapper:after, .view-wahlen-sie-einen-themenbereich .view-sub-wrapper:after, .page-sitemap .page-header:after, .page-sitemap #site-map:after {
     clear: both; }
   @media (min-width: 768px) {
     /* line 10, ../scss/bootstrap-sass/bootstrap/_grid.scss */
-    .container, footer .region-footer, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col, .view-neueste-informationen .view-sub-wrapper, .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser, .breadcrumb, .page-user .page-header, .page-user .region-content, .not-front .node-doorpage .view-alle-themen-teaser .view-sub-wrapper, .view-neueste-digital-projekte .view-sub-wrapper, .view-latest-content-doorpage > .view-sub-wrapper, .page-taxonomy-term .view-title, .page-taxonomy-term .group-page-info, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .paragraphs-item-flie-text-mit-bild-links, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .paragraphs-item-flie-text-bereich, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .paragraphs-item-flie-text-mit-bild-rechts, .page-taxonomy-term .view-alles-zum-thema .view-sub-wrapper, .page-termine .page-header, .page-aktuelles .page-header, .page-search .page-header, .view-aktuelles > .view-sub-wrapper, .view-termin > .view-sub-wrapper, .view-search-list > .view-sub-wrapper, .view-wahlen-sie-einen-themenbereich .view-sub-wrapper, .page-sitemap .page-header, .page-sitemap #site-map {
+    .container, footer .region-footer, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col, .view-neueste-informationen .view-sub-wrapper, .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser, .breadcrumb, .page-user .page-header, .page-user .region-content, .not-front .node-doorpage .view-alle-themen-teaser .view-sub-wrapper, .view-neueste-digital-projekte .view-sub-wrapper, .view-latest-content-doorpage > .view-sub-wrapper, .page-taxonomy-term .view-title, .page-taxonomy-term .group-page-info, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .paragraphs-item-flie-text-mit-bild-links, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .paragraphs-item-flie-text-bereich, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .paragraphs-item-flie-text-mit-bild-rechts, .page-taxonomy-term .view-alles-zum-thema .view-sub-wrapper, .page-termine .page-header, .page-aktuelles .page-header, .page-search .page-header, .page-calendar .page-header, .view-aktuelles > .view-sub-wrapper, .view-termin > .view-sub-wrapper, .view-search-list > .view-sub-wrapper, .view-event-calendar > .view-sub-wrapper, .view-wahlen-sie-einen-themenbereich .view-sub-wrapper, .page-sitemap .page-header, .page-sitemap #site-map {
       width: 750px; } }
   @media (min-width: 992px) {
     /* line 10, ../scss/bootstrap-sass/bootstrap/_grid.scss */
-    .container, footer .region-footer, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col, .view-neueste-informationen .view-sub-wrapper, .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser, .breadcrumb, .page-user .page-header, .page-user .region-content, .not-front .node-doorpage .view-alle-themen-teaser .view-sub-wrapper, .view-neueste-digital-projekte .view-sub-wrapper, .view-latest-content-doorpage > .view-sub-wrapper, .page-taxonomy-term .view-title, .page-taxonomy-term .group-page-info, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .paragraphs-item-flie-text-mit-bild-links, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .paragraphs-item-flie-text-bereich, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .paragraphs-item-flie-text-mit-bild-rechts, .page-taxonomy-term .view-alles-zum-thema .view-sub-wrapper, .page-termine .page-header, .page-aktuelles .page-header, .page-search .page-header, .view-aktuelles > .view-sub-wrapper, .view-termin > .view-sub-wrapper, .view-search-list > .view-sub-wrapper, .view-wahlen-sie-einen-themenbereich .view-sub-wrapper, .page-sitemap .page-header, .page-sitemap #site-map {
+    .container, footer .region-footer, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col, .view-neueste-informationen .view-sub-wrapper, .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser, .breadcrumb, .page-user .page-header, .page-user .region-content, .not-front .node-doorpage .view-alle-themen-teaser .view-sub-wrapper, .view-neueste-digital-projekte .view-sub-wrapper, .view-latest-content-doorpage > .view-sub-wrapper, .page-taxonomy-term .view-title, .page-taxonomy-term .group-page-info, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .paragraphs-item-flie-text-mit-bild-links, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .paragraphs-item-flie-text-bereich, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .paragraphs-item-flie-text-mit-bild-rechts, .page-taxonomy-term .view-alles-zum-thema .view-sub-wrapper, .page-termine .page-header, .page-aktuelles .page-header, .page-search .page-header, .page-calendar .page-header, .view-aktuelles > .view-sub-wrapper, .view-termin > .view-sub-wrapper, .view-search-list > .view-sub-wrapper, .view-event-calendar > .view-sub-wrapper, .view-wahlen-sie-einen-themenbereich .view-sub-wrapper, .page-sitemap .page-header, .page-sitemap #site-map {
       width: 970px; } }
   @media (min-width: 1200px) {
     /* line 10, ../scss/bootstrap-sass/bootstrap/_grid.scss */
-    .container, footer .region-footer, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col, .view-neueste-informationen .view-sub-wrapper, .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser, .breadcrumb, .page-user .page-header, .page-user .region-content, .not-front .node-doorpage .view-alle-themen-teaser .view-sub-wrapper, .view-neueste-digital-projekte .view-sub-wrapper, .view-latest-content-doorpage > .view-sub-wrapper, .page-taxonomy-term .view-title, .page-taxonomy-term .group-page-info, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .paragraphs-item-flie-text-mit-bild-links, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .paragraphs-item-flie-text-bereich, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .paragraphs-item-flie-text-mit-bild-rechts, .page-taxonomy-term .view-alles-zum-thema .view-sub-wrapper, .page-termine .page-header, .page-aktuelles .page-header, .page-search .page-header, .view-aktuelles > .view-sub-wrapper, .view-termin > .view-sub-wrapper, .view-search-list > .view-sub-wrapper, .view-wahlen-sie-einen-themenbereich .view-sub-wrapper, .page-sitemap .page-header, .page-sitemap #site-map {
+    .container, footer .region-footer, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col, .view-neueste-informationen .view-sub-wrapper, .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser, .breadcrumb, .page-user .page-header, .page-user .region-content, .not-front .node-doorpage .view-alle-themen-teaser .view-sub-wrapper, .view-neueste-digital-projekte .view-sub-wrapper, .view-latest-content-doorpage > .view-sub-wrapper, .page-taxonomy-term .view-title, .page-taxonomy-term .group-page-info, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .paragraphs-item-flie-text-mit-bild-links, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .paragraphs-item-flie-text-bereich, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .paragraphs-item-flie-text-mit-bild-rechts, .page-taxonomy-term .view-alles-zum-thema .view-sub-wrapper, .page-termine .page-header, .page-aktuelles .page-header, .page-search .page-header, .page-calendar .page-header, .view-aktuelles > .view-sub-wrapper, .view-termin > .view-sub-wrapper, .view-search-list > .view-sub-wrapper, .view-event-calendar > .view-sub-wrapper, .view-wahlen-sie-einen-themenbereich .view-sub-wrapper, .page-sitemap .page-header, .page-sitemap #site-map {
       width: 1170px; } }
 
 /* line 30, ../scss/bootstrap-sass/bootstrap/_grid.scss */
@@ -3644,7 +3644,7 @@ tbody.collapse.in {
       max-height: 200px; } }
 
 /* line 108, ../scss/bootstrap-sass/bootstrap/_navbar.scss */
-.container > .navbar-header, footer .region-footer > .navbar-header, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col > .navbar-header, .view-neueste-informationen .view-sub-wrapper > .navbar-header, .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .navbar-header, .breadcrumb > .navbar-header, .page-user .page-header > .navbar-header, .page-user .region-content > .navbar-header, .not-front .node-doorpage .view-alle-themen-teaser .view-sub-wrapper > .navbar-header, .view-neueste-digital-projekte .view-sub-wrapper > .navbar-header, .view-latest-content-doorpage > .view-sub-wrapper > .navbar-header, .page-taxonomy-term .view-title > .navbar-header, .page-taxonomy-term .group-page-info > .navbar-header, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .paragraphs-item-flie-text-mit-bild-links > .navbar-header, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .paragraphs-item-flie-text-bereich > .navbar-header, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .paragraphs-item-flie-text-mit-bild-rechts > .navbar-header, .page-taxonomy-term .view-alles-zum-thema .view-sub-wrapper > .navbar-header, .page-termine .page-header > .navbar-header, .page-aktuelles .page-header > .navbar-header, .page-search .page-header > .navbar-header, .view-aktuelles > .view-sub-wrapper > .navbar-header, .view-termin > .view-sub-wrapper > .navbar-header, .view-search-list > .view-sub-wrapper > .navbar-header, .view-wahlen-sie-einen-themenbereich .view-sub-wrapper > .navbar-header, .page-sitemap .page-header > .navbar-header, .page-sitemap #site-map > .navbar-header,
+.container > .navbar-header, footer .region-footer > .navbar-header, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col > .navbar-header, .view-neueste-informationen .view-sub-wrapper > .navbar-header, .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .navbar-header, .breadcrumb > .navbar-header, .page-user .page-header > .navbar-header, .page-user .region-content > .navbar-header, .not-front .node-doorpage .view-alle-themen-teaser .view-sub-wrapper > .navbar-header, .view-neueste-digital-projekte .view-sub-wrapper > .navbar-header, .view-latest-content-doorpage > .view-sub-wrapper > .navbar-header, .page-taxonomy-term .view-title > .navbar-header, .page-taxonomy-term .group-page-info > .navbar-header, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .paragraphs-item-flie-text-mit-bild-links > .navbar-header, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .paragraphs-item-flie-text-bereich > .navbar-header, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .paragraphs-item-flie-text-mit-bild-rechts > .navbar-header, .page-taxonomy-term .view-alles-zum-thema .view-sub-wrapper > .navbar-header, .page-termine .page-header > .navbar-header, .page-aktuelles .page-header > .navbar-header, .page-search .page-header > .navbar-header, .page-calendar .page-header > .navbar-header, .view-aktuelles > .view-sub-wrapper > .navbar-header, .view-termin > .view-sub-wrapper > .navbar-header, .view-search-list > .view-sub-wrapper > .navbar-header, .view-event-calendar > .view-sub-wrapper > .navbar-header, .view-wahlen-sie-einen-themenbereich .view-sub-wrapper > .navbar-header, .page-sitemap .page-header > .navbar-header, .page-sitemap #site-map > .navbar-header,
 .container > .navbar-collapse,
 footer .region-footer > .navbar-collapse,
 .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col > .navbar-collapse,
@@ -3665,9 +3665,11 @@ footer .region-footer > .navbar-collapse,
 .page-termine .page-header > .navbar-collapse,
 .page-aktuelles .page-header > .navbar-collapse,
 .page-search .page-header > .navbar-collapse,
+.page-calendar .page-header > .navbar-collapse,
 .view-aktuelles > .view-sub-wrapper > .navbar-collapse,
 .view-termin > .view-sub-wrapper > .navbar-collapse,
 .view-search-list > .view-sub-wrapper > .navbar-collapse,
+.view-event-calendar > .view-sub-wrapper > .navbar-collapse,
 .view-wahlen-sie-einen-themenbereich .view-sub-wrapper > .navbar-collapse,
 .page-sitemap .page-header > .navbar-collapse,
 .page-sitemap #site-map > .navbar-collapse,
@@ -3677,7 +3679,7 @@ footer .region-footer > .navbar-collapse,
   margin-left: -15px; }
   @media (min-width: 1025px) {
     /* line 108, ../scss/bootstrap-sass/bootstrap/_navbar.scss */
-    .container > .navbar-header, footer .region-footer > .navbar-header, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col > .navbar-header, .view-neueste-informationen .view-sub-wrapper > .navbar-header, .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .navbar-header, .breadcrumb > .navbar-header, .page-user .page-header > .navbar-header, .page-user .region-content > .navbar-header, .not-front .node-doorpage .view-alle-themen-teaser .view-sub-wrapper > .navbar-header, .view-neueste-digital-projekte .view-sub-wrapper > .navbar-header, .view-latest-content-doorpage > .view-sub-wrapper > .navbar-header, .page-taxonomy-term .view-title > .navbar-header, .page-taxonomy-term .group-page-info > .navbar-header, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .paragraphs-item-flie-text-mit-bild-links > .navbar-header, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .paragraphs-item-flie-text-bereich > .navbar-header, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .paragraphs-item-flie-text-mit-bild-rechts > .navbar-header, .page-taxonomy-term .view-alles-zum-thema .view-sub-wrapper > .navbar-header, .page-termine .page-header > .navbar-header, .page-aktuelles .page-header > .navbar-header, .page-search .page-header > .navbar-header, .view-aktuelles > .view-sub-wrapper > .navbar-header, .view-termin > .view-sub-wrapper > .navbar-header, .view-search-list > .view-sub-wrapper > .navbar-header, .view-wahlen-sie-einen-themenbereich .view-sub-wrapper > .navbar-header, .page-sitemap .page-header > .navbar-header, .page-sitemap #site-map > .navbar-header,
+    .container > .navbar-header, footer .region-footer > .navbar-header, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col > .navbar-header, .view-neueste-informationen .view-sub-wrapper > .navbar-header, .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .navbar-header, .breadcrumb > .navbar-header, .page-user .page-header > .navbar-header, .page-user .region-content > .navbar-header, .not-front .node-doorpage .view-alle-themen-teaser .view-sub-wrapper > .navbar-header, .view-neueste-digital-projekte .view-sub-wrapper > .navbar-header, .view-latest-content-doorpage > .view-sub-wrapper > .navbar-header, .page-taxonomy-term .view-title > .navbar-header, .page-taxonomy-term .group-page-info > .navbar-header, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .paragraphs-item-flie-text-mit-bild-links > .navbar-header, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .paragraphs-item-flie-text-bereich > .navbar-header, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .paragraphs-item-flie-text-mit-bild-rechts > .navbar-header, .page-taxonomy-term .view-alles-zum-thema .view-sub-wrapper > .navbar-header, .page-termine .page-header > .navbar-header, .page-aktuelles .page-header > .navbar-header, .page-search .page-header > .navbar-header, .page-calendar .page-header > .navbar-header, .view-aktuelles > .view-sub-wrapper > .navbar-header, .view-termin > .view-sub-wrapper > .navbar-header, .view-search-list > .view-sub-wrapper > .navbar-header, .view-event-calendar > .view-sub-wrapper > .navbar-header, .view-wahlen-sie-einen-themenbereich .view-sub-wrapper > .navbar-header, .page-sitemap .page-header > .navbar-header, .page-sitemap #site-map > .navbar-header,
     .container > .navbar-collapse,
     footer .region-footer > .navbar-collapse,
     .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col > .navbar-collapse,
@@ -3698,9 +3700,11 @@ footer .region-footer > .navbar-collapse,
     .page-termine .page-header > .navbar-collapse,
     .page-aktuelles .page-header > .navbar-collapse,
     .page-search .page-header > .navbar-collapse,
+    .page-calendar .page-header > .navbar-collapse,
     .view-aktuelles > .view-sub-wrapper > .navbar-collapse,
     .view-termin > .view-sub-wrapper > .navbar-collapse,
     .view-search-list > .view-sub-wrapper > .navbar-collapse,
+    .view-event-calendar > .view-sub-wrapper > .navbar-collapse,
     .view-wahlen-sie-einen-themenbereich .view-sub-wrapper > .navbar-collapse,
     .page-sitemap .page-header > .navbar-collapse,
     .page-sitemap #site-map > .navbar-collapse,
@@ -3757,7 +3761,7 @@ footer .region-footer > .navbar-collapse,
     display: block; }
   @media (min-width: 1025px) {
     /* line 180, ../scss/bootstrap-sass/bootstrap/_navbar.scss */
-    .navbar > .container .navbar-brand, footer .navbar > .region-footer .navbar-brand, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .navbar > .panel-2col .navbar-brand, .view-neueste-informationen .navbar > .view-sub-wrapper .navbar-brand, .paragraphs-item-topic-teaser-paragraph .field-collection-container .navbar > .field-name-field-topic-teaser .navbar-brand, .navbar > .breadcrumb .navbar-brand, .page-user .navbar > .page-header .navbar-brand, .page-user .navbar > .region-content .navbar-brand, .not-front .node-doorpage .view-alle-themen-teaser .navbar > .view-sub-wrapper .navbar-brand, .view-neueste-digital-projekte .navbar > .view-sub-wrapper .navbar-brand, .view-latest-content-doorpage.navbar > .view-sub-wrapper .navbar-brand, .page-taxonomy-term .navbar > .view-title .navbar-brand, .page-taxonomy-term .navbar > .group-page-info .navbar-brand, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .navbar > .paragraphs-item-flie-text-mit-bild-links .navbar-brand, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .navbar > .paragraphs-item-flie-text-bereich .navbar-brand, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .navbar > .paragraphs-item-flie-text-mit-bild-rechts .navbar-brand, .page-taxonomy-term .view-alles-zum-thema .navbar > .view-sub-wrapper .navbar-brand, .page-termine .navbar > .page-header .navbar-brand, .page-aktuelles .navbar > .page-header .navbar-brand, .page-search .navbar > .page-header .navbar-brand, .view-aktuelles.navbar > .view-sub-wrapper .navbar-brand, .view-termin.navbar > .view-sub-wrapper .navbar-brand, .view-search-list.navbar > .view-sub-wrapper .navbar-brand, .view-wahlen-sie-einen-themenbereich .navbar > .view-sub-wrapper .navbar-brand, .page-sitemap .navbar > .page-header .navbar-brand, .page-sitemap .navbar > #site-map .navbar-brand, .navbar > .container-fluid .navbar-brand {
+    .navbar > .container .navbar-brand, footer .navbar > .region-footer .navbar-brand, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .navbar > .panel-2col .navbar-brand, .view-neueste-informationen .navbar > .view-sub-wrapper .navbar-brand, .paragraphs-item-topic-teaser-paragraph .field-collection-container .navbar > .field-name-field-topic-teaser .navbar-brand, .navbar > .breadcrumb .navbar-brand, .page-user .navbar > .page-header .navbar-brand, .page-user .navbar > .region-content .navbar-brand, .not-front .node-doorpage .view-alle-themen-teaser .navbar > .view-sub-wrapper .navbar-brand, .view-neueste-digital-projekte .navbar > .view-sub-wrapper .navbar-brand, .view-latest-content-doorpage.navbar > .view-sub-wrapper .navbar-brand, .page-taxonomy-term .navbar > .view-title .navbar-brand, .page-taxonomy-term .navbar > .group-page-info .navbar-brand, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .navbar > .paragraphs-item-flie-text-mit-bild-links .navbar-brand, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .navbar > .paragraphs-item-flie-text-bereich .navbar-brand, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .navbar > .paragraphs-item-flie-text-mit-bild-rechts .navbar-brand, .page-taxonomy-term .view-alles-zum-thema .navbar > .view-sub-wrapper .navbar-brand, .page-termine .navbar > .page-header .navbar-brand, .page-aktuelles .navbar > .page-header .navbar-brand, .page-search .navbar > .page-header .navbar-brand, .page-calendar .navbar > .page-header .navbar-brand, .view-aktuelles.navbar > .view-sub-wrapper .navbar-brand, .view-termin.navbar > .view-sub-wrapper .navbar-brand, .view-search-list.navbar > .view-sub-wrapper .navbar-brand, .view-event-calendar.navbar > .view-sub-wrapper .navbar-brand, .view-wahlen-sie-einen-themenbereich .navbar > .view-sub-wrapper .navbar-brand, .page-sitemap .navbar > .page-header .navbar-brand, .page-sitemap .navbar > #site-map .navbar-brand, .navbar > .container-fluid .navbar-brand {
       margin-left: -15px; } }
 
 /* line 193, ../scss/bootstrap-sass/bootstrap/_navbar.scss */
@@ -4415,12 +4419,12 @@ a.badge:hover, a.badge:focus {
   .jumbotron > hr {
     border-top-color: #d5d5d5; }
   /* line 28, ../scss/bootstrap-sass/bootstrap/_jumbotron.scss */
-  .container .jumbotron, footer .region-footer .jumbotron, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col .jumbotron, .view-neueste-informationen .view-sub-wrapper .jumbotron, .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser .jumbotron, .breadcrumb .jumbotron, .page-user .page-header .jumbotron, .page-user .region-content .jumbotron, .not-front .node-doorpage .view-alle-themen-teaser .view-sub-wrapper .jumbotron, .view-neueste-digital-projekte .view-sub-wrapper .jumbotron, .view-latest-content-doorpage > .view-sub-wrapper .jumbotron, .page-taxonomy-term .view-title .jumbotron, .page-taxonomy-term .group-page-info .jumbotron, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .paragraphs-item-flie-text-mit-bild-links .jumbotron, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .paragraphs-item-flie-text-bereich .jumbotron, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .paragraphs-item-flie-text-mit-bild-rechts .jumbotron, .page-taxonomy-term .view-alles-zum-thema .view-sub-wrapper .jumbotron, .page-termine .page-header .jumbotron, .page-aktuelles .page-header .jumbotron, .page-search .page-header .jumbotron, .view-aktuelles > .view-sub-wrapper .jumbotron, .view-termin > .view-sub-wrapper .jumbotron, .view-search-list > .view-sub-wrapper .jumbotron, .view-wahlen-sie-einen-themenbereich .view-sub-wrapper .jumbotron, .page-sitemap .page-header .jumbotron, .page-sitemap #site-map .jumbotron, .container-fluid .jumbotron {
+  .container .jumbotron, footer .region-footer .jumbotron, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col .jumbotron, .view-neueste-informationen .view-sub-wrapper .jumbotron, .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser .jumbotron, .breadcrumb .jumbotron, .page-user .page-header .jumbotron, .page-user .region-content .jumbotron, .not-front .node-doorpage .view-alle-themen-teaser .view-sub-wrapper .jumbotron, .view-neueste-digital-projekte .view-sub-wrapper .jumbotron, .view-latest-content-doorpage > .view-sub-wrapper .jumbotron, .page-taxonomy-term .view-title .jumbotron, .page-taxonomy-term .group-page-info .jumbotron, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .paragraphs-item-flie-text-mit-bild-links .jumbotron, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .paragraphs-item-flie-text-bereich .jumbotron, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .paragraphs-item-flie-text-mit-bild-rechts .jumbotron, .page-taxonomy-term .view-alles-zum-thema .view-sub-wrapper .jumbotron, .page-termine .page-header .jumbotron, .page-aktuelles .page-header .jumbotron, .page-search .page-header .jumbotron, .page-calendar .page-header .jumbotron, .view-aktuelles > .view-sub-wrapper .jumbotron, .view-termin > .view-sub-wrapper .jumbotron, .view-search-list > .view-sub-wrapper .jumbotron, .view-event-calendar > .view-sub-wrapper .jumbotron, .view-wahlen-sie-einen-themenbereich .view-sub-wrapper .jumbotron, .page-sitemap .page-header .jumbotron, .page-sitemap #site-map .jumbotron, .container-fluid .jumbotron {
     border-radius: 6px;
     padding-left: 15px;
     padding-right: 15px; }
   /* line 35, ../scss/bootstrap-sass/bootstrap/_jumbotron.scss */
-  .jumbotron .container, .jumbotron footer .region-footer, footer .jumbotron .region-footer, .jumbotron .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .jumbotron .panel-2col, .jumbotron .view-neueste-informationen .view-sub-wrapper, .view-neueste-informationen .jumbotron .view-sub-wrapper, .jumbotron .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser, .paragraphs-item-topic-teaser-paragraph .field-collection-container .jumbotron .field-name-field-topic-teaser, .jumbotron .breadcrumb, .jumbotron .page-user .page-header, .page-user .jumbotron .page-header, .jumbotron .page-user .region-content, .page-user .jumbotron .region-content, .jumbotron .not-front .node-doorpage .view-alle-themen-teaser .view-sub-wrapper, .not-front .node-doorpage .view-alle-themen-teaser .jumbotron .view-sub-wrapper, .jumbotron .view-neueste-digital-projekte .view-sub-wrapper, .view-neueste-digital-projekte .jumbotron .view-sub-wrapper, .jumbotron .view-latest-content-doorpage > .view-sub-wrapper, .jumbotron .page-taxonomy-term .view-title, .page-taxonomy-term .jumbotron .view-title, .jumbotron .page-taxonomy-term .group-page-info, .page-taxonomy-term .jumbotron .group-page-info, .jumbotron .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .paragraphs-item-flie-text-mit-bild-links, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .jumbotron .paragraphs-item-flie-text-mit-bild-links, .jumbotron .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .paragraphs-item-flie-text-bereich, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .jumbotron .paragraphs-item-flie-text-bereich, .jumbotron .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .paragraphs-item-flie-text-mit-bild-rechts, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .jumbotron .paragraphs-item-flie-text-mit-bild-rechts, .jumbotron .page-taxonomy-term .view-alles-zum-thema .view-sub-wrapper, .page-taxonomy-term .view-alles-zum-thema .jumbotron .view-sub-wrapper, .jumbotron .page-termine .page-header, .page-termine .jumbotron .page-header, .jumbotron .page-aktuelles .page-header, .page-aktuelles .jumbotron .page-header, .jumbotron .page-search .page-header, .page-search .jumbotron .page-header, .jumbotron .view-aktuelles > .view-sub-wrapper, .jumbotron .view-termin > .view-sub-wrapper, .jumbotron .view-search-list > .view-sub-wrapper, .jumbotron .view-wahlen-sie-einen-themenbereich .view-sub-wrapper, .view-wahlen-sie-einen-themenbereich .jumbotron .view-sub-wrapper, .jumbotron .page-sitemap .page-header, .page-sitemap .jumbotron .page-header, .jumbotron .page-sitemap #site-map, .page-sitemap .jumbotron #site-map {
+  .jumbotron .container, .jumbotron footer .region-footer, footer .jumbotron .region-footer, .jumbotron .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .jumbotron .panel-2col, .jumbotron .view-neueste-informationen .view-sub-wrapper, .view-neueste-informationen .jumbotron .view-sub-wrapper, .jumbotron .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser, .paragraphs-item-topic-teaser-paragraph .field-collection-container .jumbotron .field-name-field-topic-teaser, .jumbotron .breadcrumb, .jumbotron .page-user .page-header, .page-user .jumbotron .page-header, .jumbotron .page-user .region-content, .page-user .jumbotron .region-content, .jumbotron .not-front .node-doorpage .view-alle-themen-teaser .view-sub-wrapper, .not-front .node-doorpage .view-alle-themen-teaser .jumbotron .view-sub-wrapper, .jumbotron .view-neueste-digital-projekte .view-sub-wrapper, .view-neueste-digital-projekte .jumbotron .view-sub-wrapper, .jumbotron .view-latest-content-doorpage > .view-sub-wrapper, .jumbotron .page-taxonomy-term .view-title, .page-taxonomy-term .jumbotron .view-title, .jumbotron .page-taxonomy-term .group-page-info, .page-taxonomy-term .jumbotron .group-page-info, .jumbotron .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .paragraphs-item-flie-text-mit-bild-links, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .jumbotron .paragraphs-item-flie-text-mit-bild-links, .jumbotron .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .paragraphs-item-flie-text-bereich, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .jumbotron .paragraphs-item-flie-text-bereich, .jumbotron .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .paragraphs-item-flie-text-mit-bild-rechts, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .jumbotron .paragraphs-item-flie-text-mit-bild-rechts, .jumbotron .page-taxonomy-term .view-alles-zum-thema .view-sub-wrapper, .page-taxonomy-term .view-alles-zum-thema .jumbotron .view-sub-wrapper, .jumbotron .page-termine .page-header, .page-termine .jumbotron .page-header, .jumbotron .page-aktuelles .page-header, .page-aktuelles .jumbotron .page-header, .jumbotron .page-search .page-header, .page-search .jumbotron .page-header, .jumbotron .page-calendar .page-header, .page-calendar .jumbotron .page-header, .jumbotron .view-aktuelles > .view-sub-wrapper, .jumbotron .view-termin > .view-sub-wrapper, .jumbotron .view-search-list > .view-sub-wrapper, .jumbotron .view-event-calendar > .view-sub-wrapper, .jumbotron .view-wahlen-sie-einen-themenbereich .view-sub-wrapper, .view-wahlen-sie-einen-themenbereich .jumbotron .view-sub-wrapper, .jumbotron .page-sitemap .page-header, .page-sitemap .jumbotron .page-header, .jumbotron .page-sitemap #site-map, .page-sitemap .jumbotron #site-map {
     max-width: 100%; }
   @media screen and (min-width: 768px) {
     /* line 6, ../scss/bootstrap-sass/bootstrap/_jumbotron.scss */
@@ -4428,7 +4432,7 @@ a.badge:hover, a.badge:focus {
       padding-top: 48px;
       padding-bottom: 48px; }
       /* line 43, ../scss/bootstrap-sass/bootstrap/_jumbotron.scss */
-      .container .jumbotron, footer .region-footer .jumbotron, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col .jumbotron, .view-neueste-informationen .view-sub-wrapper .jumbotron, .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser .jumbotron, .breadcrumb .jumbotron, .page-user .page-header .jumbotron, .page-user .region-content .jumbotron, .not-front .node-doorpage .view-alle-themen-teaser .view-sub-wrapper .jumbotron, .view-neueste-digital-projekte .view-sub-wrapper .jumbotron, .view-latest-content-doorpage > .view-sub-wrapper .jumbotron, .page-taxonomy-term .view-title .jumbotron, .page-taxonomy-term .group-page-info .jumbotron, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .paragraphs-item-flie-text-mit-bild-links .jumbotron, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .paragraphs-item-flie-text-bereich .jumbotron, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .paragraphs-item-flie-text-mit-bild-rechts .jumbotron, .page-taxonomy-term .view-alles-zum-thema .view-sub-wrapper .jumbotron, .page-termine .page-header .jumbotron, .page-aktuelles .page-header .jumbotron, .page-search .page-header .jumbotron, .view-aktuelles > .view-sub-wrapper .jumbotron, .view-termin > .view-sub-wrapper .jumbotron, .view-search-list > .view-sub-wrapper .jumbotron, .view-wahlen-sie-einen-themenbereich .view-sub-wrapper .jumbotron, .page-sitemap .page-header .jumbotron, .page-sitemap #site-map .jumbotron, .container-fluid .jumbotron {
+      .container .jumbotron, footer .region-footer .jumbotron, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col .jumbotron, .view-neueste-informationen .view-sub-wrapper .jumbotron, .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser .jumbotron, .breadcrumb .jumbotron, .page-user .page-header .jumbotron, .page-user .region-content .jumbotron, .not-front .node-doorpage .view-alle-themen-teaser .view-sub-wrapper .jumbotron, .view-neueste-digital-projekte .view-sub-wrapper .jumbotron, .view-latest-content-doorpage > .view-sub-wrapper .jumbotron, .page-taxonomy-term .view-title .jumbotron, .page-taxonomy-term .group-page-info .jumbotron, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .paragraphs-item-flie-text-mit-bild-links .jumbotron, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .paragraphs-item-flie-text-bereich .jumbotron, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .paragraphs-item-flie-text-mit-bild-rechts .jumbotron, .page-taxonomy-term .view-alles-zum-thema .view-sub-wrapper .jumbotron, .page-termine .page-header .jumbotron, .page-aktuelles .page-header .jumbotron, .page-search .page-header .jumbotron, .page-calendar .page-header .jumbotron, .view-aktuelles > .view-sub-wrapper .jumbotron, .view-termin > .view-sub-wrapper .jumbotron, .view-search-list > .view-sub-wrapper .jumbotron, .view-event-calendar > .view-sub-wrapper .jumbotron, .view-wahlen-sie-einen-themenbereich .view-sub-wrapper .jumbotron, .page-sitemap .page-header .jumbotron, .page-sitemap #site-map .jumbotron, .container-fluid .jumbotron {
         padding-left: 60px;
         padding-right: 60px; }
       /* line 49, ../scss/bootstrap-sass/bootstrap/_jumbotron.scss */
@@ -6782,7 +6786,7 @@ header .navbar-collapse {
       footer #block-menu-menu-footer-navigation ul li a {
         padding: 0; } }
 /* line 2, ../scss/layout/_footer.scss */
-footer.container, footer footer.region-footer, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode footer.panel-2col, .view-neueste-informationen footer.view-sub-wrapper, .paragraphs-item-topic-teaser-paragraph .field-collection-container footer.field-name-field-topic-teaser, footer.breadcrumb, .page-user footer.page-header, .page-user footer.region-content, .not-front .node-doorpage .view-alle-themen-teaser footer.view-sub-wrapper, .view-neueste-digital-projekte footer.view-sub-wrapper, .view-latest-content-doorpage > footer.view-sub-wrapper, .page-taxonomy-term footer.view-title, .page-taxonomy-term footer.group-page-info, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule footer.paragraphs-item-flie-text-mit-bild-links, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule footer.paragraphs-item-flie-text-bereich, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule footer.paragraphs-item-flie-text-mit-bild-rechts, .page-taxonomy-term .view-alles-zum-thema footer.view-sub-wrapper, .page-termine footer.page-header, .page-aktuelles footer.page-header, .page-search footer.page-header, .view-aktuelles > footer.view-sub-wrapper, .view-termin > footer.view-sub-wrapper, .view-search-list > footer.view-sub-wrapper, .view-wahlen-sie-einen-themenbereich footer.view-sub-wrapper, .page-sitemap footer.page-header, .page-sitemap footer#site-map {
+footer.container, footer footer.region-footer, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode footer.panel-2col, .view-neueste-informationen footer.view-sub-wrapper, .paragraphs-item-topic-teaser-paragraph .field-collection-container footer.field-name-field-topic-teaser, footer.breadcrumb, .page-user footer.page-header, .page-user footer.region-content, .not-front .node-doorpage .view-alle-themen-teaser footer.view-sub-wrapper, .view-neueste-digital-projekte footer.view-sub-wrapper, .view-latest-content-doorpage > footer.view-sub-wrapper, .page-taxonomy-term footer.view-title, .page-taxonomy-term footer.group-page-info, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule footer.paragraphs-item-flie-text-mit-bild-links, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule footer.paragraphs-item-flie-text-bereich, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule footer.paragraphs-item-flie-text-mit-bild-rechts, .page-taxonomy-term .view-alles-zum-thema footer.view-sub-wrapper, .page-termine footer.page-header, .page-aktuelles footer.page-header, .page-search footer.page-header, .page-calendar footer.page-header, .view-aktuelles > footer.view-sub-wrapper, .view-termin > footer.view-sub-wrapper, .view-search-list > footer.view-sub-wrapper, .view-event-calendar > footer.view-sub-wrapper, .view-wahlen-sie-einen-themenbereich footer.view-sub-wrapper, .page-sitemap footer.page-header, .page-sitemap footer#site-map {
   width: 100%;
   background-color: #ffffff;
   padding: 60px 0 40px; }
@@ -7815,46 +7819,47 @@ p {
       color: #ffffff; }
       /* line 177, ../scss/pages/_common.scss */
       .select2-container .select2-dropdown .select2-results .simplebar-track .simplebar-scrollbar {
-        background: #273753; }
-      /* line 181, ../scss/pages/_common.scss */
+        background: #273753;
+        right: 6px; }
+      /* line 182, ../scss/pages/_common.scss */
       .select2-container .select2-dropdown .select2-results ul.select2-results__options {
         height: auto;
         overflow: hidden;
         max-height: none; }
-        /* line 186, ../scss/pages/_common.scss */
+        /* line 187, ../scss/pages/_common.scss */
         .select2-container .select2-dropdown .select2-results ul.select2-results__options .select2-results__option {
           padding-left: 20px !important; }
-    /* line 192, ../scss/pages/_common.scss */
+    /* line 193, ../scss/pages/_common.scss */
     .select2-container .select2-dropdown .select2-search--dropdown {
       display: none; }
-  /* line 197, ../scss/pages/_common.scss */
+  /* line 198, ../scss/pages/_common.scss */
   .select2-container .select2-results__option[aria-selected=true] {
     background: 0; }
-  /* line 201, ../scss/pages/_common.scss */
+  /* line 202, ../scss/pages/_common.scss */
   .select2-container .select2-results__option--highlighted[aria-selected] {
     background: #273753; }
 
-/* line 206, ../scss/pages/_common.scss */
-.container, footer .region-footer, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col, .view-neueste-informationen .view-sub-wrapper, .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser, .breadcrumb, .page-user .page-header, .page-user .region-content, .not-front .node-doorpage .view-alle-themen-teaser .view-sub-wrapper, .view-neueste-digital-projekte .view-sub-wrapper, .view-latest-content-doorpage > .view-sub-wrapper, .page-taxonomy-term .view-title, .page-taxonomy-term .group-page-info, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .paragraphs-item-flie-text-mit-bild-links, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .paragraphs-item-flie-text-bereich, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .paragraphs-item-flie-text-mit-bild-rechts, .page-taxonomy-term .view-alles-zum-thema .view-sub-wrapper, .page-termine .page-header, .page-aktuelles .page-header, .page-search .page-header, .view-aktuelles > .view-sub-wrapper, .view-termin > .view-sub-wrapper, .view-search-list > .view-sub-wrapper, .view-wahlen-sie-einen-themenbereich .view-sub-wrapper, .page-sitemap .page-header, .page-sitemap #site-map {
+/* line 207, ../scss/pages/_common.scss */
+.container, footer .region-footer, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col, .view-neueste-informationen .view-sub-wrapper, .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser, .breadcrumb, .page-user .page-header, .page-user .region-content, .not-front .node-doorpage .view-alle-themen-teaser .view-sub-wrapper, .view-neueste-digital-projekte .view-sub-wrapper, .view-latest-content-doorpage > .view-sub-wrapper, .page-taxonomy-term .view-title, .page-taxonomy-term .group-page-info, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .paragraphs-item-flie-text-mit-bild-links, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .paragraphs-item-flie-text-bereich, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .paragraphs-item-flie-text-mit-bild-rechts, .page-taxonomy-term .view-alles-zum-thema .view-sub-wrapper, .page-termine .page-header, .page-aktuelles .page-header, .page-search .page-header, .page-calendar .page-header, .view-aktuelles > .view-sub-wrapper, .view-termin > .view-sub-wrapper, .view-search-list > .view-sub-wrapper, .view-event-calendar > .view-sub-wrapper, .view-wahlen-sie-einen-themenbereich .view-sub-wrapper, .page-sitemap .page-header, .page-sitemap #site-map {
   /* Over Desktop design */ }
   @media (min-width: 1025px) {
-    /* line 206, ../scss/pages/_common.scss */
-    .container, footer .region-footer, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col, .view-neueste-informationen .view-sub-wrapper, .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser, .breadcrumb, .page-user .page-header, .page-user .region-content, .not-front .node-doorpage .view-alle-themen-teaser .view-sub-wrapper, .view-neueste-digital-projekte .view-sub-wrapper, .view-latest-content-doorpage > .view-sub-wrapper, .page-taxonomy-term .view-title, .page-taxonomy-term .group-page-info, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .paragraphs-item-flie-text-mit-bild-links, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .paragraphs-item-flie-text-bereich, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .paragraphs-item-flie-text-mit-bild-rechts, .page-taxonomy-term .view-alles-zum-thema .view-sub-wrapper, .page-termine .page-header, .page-aktuelles .page-header, .page-search .page-header, .view-aktuelles > .view-sub-wrapper, .view-termin > .view-sub-wrapper, .view-search-list > .view-sub-wrapper, .view-wahlen-sie-einen-themenbereich .view-sub-wrapper, .page-sitemap .page-header, .page-sitemap #site-map {
+    /* line 207, ../scss/pages/_common.scss */
+    .container, footer .region-footer, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col, .view-neueste-informationen .view-sub-wrapper, .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser, .breadcrumb, .page-user .page-header, .page-user .region-content, .not-front .node-doorpage .view-alle-themen-teaser .view-sub-wrapper, .view-neueste-digital-projekte .view-sub-wrapper, .view-latest-content-doorpage > .view-sub-wrapper, .page-taxonomy-term .view-title, .page-taxonomy-term .group-page-info, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .paragraphs-item-flie-text-mit-bild-links, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .paragraphs-item-flie-text-bereich, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .paragraphs-item-flie-text-mit-bild-rechts, .page-taxonomy-term .view-alles-zum-thema .view-sub-wrapper, .page-termine .page-header, .page-aktuelles .page-header, .page-search .page-header, .page-calendar .page-header, .view-aktuelles > .view-sub-wrapper, .view-termin > .view-sub-wrapper, .view-search-list > .view-sub-wrapper, .view-event-calendar > .view-sub-wrapper, .view-wahlen-sie-einen-themenbereich .view-sub-wrapper, .page-sitemap .page-header, .page-sitemap #site-map {
       padding: 0; } }
 
-/* line 212, ../scss/pages/_common.scss */
+/* line 213, ../scss/pages/_common.scss */
 .row {
   margin: 0; }
 
-/* line 215, ../scss/pages/_common.scss */
+/* line 216, ../scss/pages/_common.scss */
 .col-sm-12 {
   padding: 0; }
 
-/* line 223, ../scss/pages/_common.scss */
+/* line 224, ../scss/pages/_common.scss */
 .view-neueste-informationen .view-sub-wrapper > .view-content, .view-termin .view-sub-wrapper > .view-content, .view-aktuelles .view-sub-wrapper > .view-content, .view-neueste-digital-projekte .view-sub-wrapper > .view-content, .view-alles-zum-thema .view-sub-wrapper > .view-content, .view-search-list .view-sub-wrapper > .view-content {
   margin-left: -15px;
   margin-right: -15px; }
-  /* line 230, ../scss/pages/_common.scss */
+  /* line 231, ../scss/pages/_common.scss */
   .view-neueste-informationen .view-sub-wrapper > .view-content .views-row .row-container, .view-termin .view-sub-wrapper > .view-content .views-row .row-container, .view-aktuelles .view-sub-wrapper > .view-content .views-row .row-container, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row .row-container, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row .row-container, .view-search-list .view-sub-wrapper > .view-content .views-row .row-container {
     background: #ffffff;
     padding: 30px;
@@ -7866,51 +7871,51 @@ p {
     height: auto;
     /* Tablet design */ }
     @media (min-width: 767px) {
-      /* line 230, ../scss/pages/_common.scss */
+      /* line 231, ../scss/pages/_common.scss */
       .view-neueste-informationen .view-sub-wrapper > .view-content .views-row .row-container, .view-termin .view-sub-wrapper > .view-content .views-row .row-container, .view-aktuelles .view-sub-wrapper > .view-content .views-row .row-container, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row .row-container, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row .row-container, .view-search-list .view-sub-wrapper > .view-content .views-row .row-container {
         height: 410px; } }
-    /* line 245, ../scss/pages/_common.scss */
+    /* line 246, ../scss/pages/_common.scss */
     .view-neueste-informationen .view-sub-wrapper > .view-content .views-row .row-container.project-blue, .view-termin .view-sub-wrapper > .view-content .views-row .row-container.project-blue, .view-aktuelles .view-sub-wrapper > .view-content .views-row .row-container.project-blue, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row .row-container.project-blue, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row .row-container.project-blue, .view-search-list .view-sub-wrapper > .view-content .views-row .row-container.project-blue {
       background: #273753; }
-      /* line 248, ../scss/pages/_common.scss */
+      /* line 249, ../scss/pages/_common.scss */
       .view-neueste-informationen .view-sub-wrapper > .view-content .views-row .row-container.project-blue .views-field-title a, .view-termin .view-sub-wrapper > .view-content .views-row .row-container.project-blue .views-field-title a, .view-aktuelles .view-sub-wrapper > .view-content .views-row .row-container.project-blue .views-field-title a, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row .row-container.project-blue .views-field-title a, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row .row-container.project-blue .views-field-title a, .view-search-list .view-sub-wrapper > .view-content .views-row .row-container.project-blue .views-field-title a {
         color: #ffffff; }
-      /* line 253, ../scss/pages/_common.scss */
+      /* line 254, ../scss/pages/_common.scss */
       .view-neueste-informationen .view-sub-wrapper > .view-content .views-row .row-container.project-blue:hover .views-field-title a, .view-termin .view-sub-wrapper > .view-content .views-row .row-container.project-blue:hover .views-field-title a, .view-aktuelles .view-sub-wrapper > .view-content .views-row .row-container.project-blue:hover .views-field-title a, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row .row-container.project-blue:hover .views-field-title a, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row .row-container.project-blue:hover .views-field-title a, .view-search-list .view-sub-wrapper > .view-content .views-row .row-container.project-blue:hover .views-field-title a {
         color: #273753; }
-    /* line 259, ../scss/pages/_common.scss */
+    /* line 260, ../scss/pages/_common.scss */
     .view-neueste-informationen .view-sub-wrapper > .view-content .views-row .row-container:hover, .view-termin .view-sub-wrapper > .view-content .views-row .row-container:hover, .view-aktuelles .view-sub-wrapper > .view-content .views-row .row-container:hover, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row .row-container:hover, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row .row-container:hover, .view-search-list .view-sub-wrapper > .view-content .views-row .row-container:hover {
       background: #eff2f7;
       border: 1px solid #dbdfe3; }
-    /* line 264, ../scss/pages/_common.scss */
+    /* line 265, ../scss/pages/_common.scss */
     .view-neueste-informationen .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-themenzuweisung, .view-termin .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-themenzuweisung, .view-aktuelles .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-themenzuweisung, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-themenzuweisung, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-themenzuweisung, .view-search-list .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-themenzuweisung {
       padding-bottom: 30px; }
-      /* line 267, ../scss/pages/_common.scss */
+      /* line 268, ../scss/pages/_common.scss */
       .view-neueste-informationen .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-themenzuweisung img, .view-termin .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-themenzuweisung img, .view-aktuelles .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-themenzuweisung img, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-themenzuweisung img, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-themenzuweisung img, .view-search-list .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-themenzuweisung img {
         display: inline-block;
         margin-right: 10px; }
-    /* line 273, ../scss/pages/_common.scss */
+    /* line 274, ../scss/pages/_common.scss */
     .view-neueste-informationen .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-event-datum, .view-termin .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-event-datum, .view-aktuelles .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-event-datum, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-event-datum, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-event-datum, .view-search-list .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-event-datum {
       padding-bottom: 20px;
       font-weight: bold;
       color: #e74712;
       font-size: 22px; }
-    /* line 280, ../scss/pages/_common.scss */
+    /* line 281, ../scss/pages/_common.scss */
     .view-neueste-informationen .view-sub-wrapper > .view-content .views-row .row-container .views-field-title, .view-termin .view-sub-wrapper > .view-content .views-row .row-container .views-field-title, .view-aktuelles .view-sub-wrapper > .view-content .views-row .row-container .views-field-title, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row .row-container .views-field-title, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row .row-container .views-field-title, .view-search-list .view-sub-wrapper > .view-content .views-row .row-container .views-field-title {
       padding-bottom: 40px; }
-      /* line 283, ../scss/pages/_common.scss */
+      /* line 284, ../scss/pages/_common.scss */
       .view-neueste-informationen .view-sub-wrapper > .view-content .views-row .row-container .views-field-title a, .view-termin .view-sub-wrapper > .view-content .views-row .row-container .views-field-title a, .view-aktuelles .view-sub-wrapper > .view-content .views-row .row-container .views-field-title a, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row .row-container .views-field-title a, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row .row-container .views-field-title a, .view-search-list .view-sub-wrapper > .view-content .views-row .row-container .views-field-title a {
         text-decoration: none;
         font-size: 22px;
         color: #273753; }
-    /* line 291, ../scss/pages/_common.scss */
+    /* line 292, ../scss/pages/_common.scss */
     .view-neueste-informationen .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-ort .field-content, .view-neueste-informationen .view-sub-wrapper > .view-content .views-row .row-container div[class*='views-field-views-conditional-'] .field-content, .view-termin .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-ort .field-content, .view-termin .view-sub-wrapper > .view-content .views-row .row-container div[class*='views-field-views-conditional-'] .field-content, .view-aktuelles .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-ort .field-content, .view-aktuelles .view-sub-wrapper > .view-content .views-row .row-container div[class*='views-field-views-conditional-'] .field-content, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-ort .field-content, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row .row-container div[class*='views-field-views-conditional-'] .field-content, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-ort .field-content, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row .row-container div[class*='views-field-views-conditional-'] .field-content, .view-search-list .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-ort .field-content, .view-search-list .view-sub-wrapper > .view-content .views-row .row-container div[class*='views-field-views-conditional-'] .field-content {
       font-size: 20px;
       color: #949d9e;
       position: absolute;
       bottom: 30px; }
 
-/* line 306, ../scss/pages/_common.scss */
+/* line 307, ../scss/pages/_common.scss */
 .common-button, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col .panel-col-first .inside .pane-paragraphs-item-field-quellenangabe a, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col .panel-col-last .view-right-front-map-teaser .views-row .views-field-view-node a, .front .view-termin .view-sub-wrapper .view-footer .link-outer-block .link-inner-block-1 a, .view-neueste-informationen .view-sub-wrapper .view-footer .link-outer-block .link-inner-block-1 a, .view-neueste-informationen .view-sub-wrapper .view-footer .link-outer-block .link-inner-block-2 a, .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items > .field-item .field-collection-view .content .field-name-field-quellenangabe a, .not-front .node-doorpage .view-alle-themen-teaser .view-sub-wrapper .view-footer a, .view-neueste-digital-projekte .view-sub-wrapper .view-footer a, .view-latest-content-doorpage > .view-sub-wrapper .left-block .view-footer a, .view-latest-content-doorpage > .view-sub-wrapper > .view-latest-content-doorpage .view-sub-wrapper .view-footer a, .field-name-field-link-zur-anmeldung a, .field-name-field-zur-website a, .view-wahlen-sie-einen-themenbereich .view-content .views-row .views-field-name-1 a, .view-map-teaser .view-sub-wrapper .view-content .views-row .row-container .views-field-field-quellenangabe a {
   font-size: 20px;
   text-decoration: none;
@@ -7918,7 +7923,7 @@ p {
   padding-bottom: 4px;
   border-bottom: 2px solid #949d9e;
   position: relative; }
-  /* line 314, ../scss/pages/_common.scss */
+  /* line 315, ../scss/pages/_common.scss */
   .common-button:before, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col .panel-col-first .inside .pane-paragraphs-item-field-quellenangabe a:before, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col .panel-col-last .view-right-front-map-teaser .views-row .views-field-view-node a:before, .front .view-termin .view-sub-wrapper .view-footer .link-outer-block .link-inner-block-1 a:before, .view-neueste-informationen .view-sub-wrapper .view-footer .link-outer-block .link-inner-block-1 a:before, .view-neueste-informationen .view-sub-wrapper .view-footer .link-outer-block .link-inner-block-2 a:before, .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items > .field-item .field-collection-view .content .field-name-field-quellenangabe a:before, .not-front .node-doorpage .view-alle-themen-teaser .view-sub-wrapper .view-footer a:before, .view-neueste-digital-projekte .view-sub-wrapper .view-footer a:before, .view-latest-content-doorpage > .view-sub-wrapper .left-block .view-footer a:before, .view-latest-content-doorpage > .view-sub-wrapper > .view-latest-content-doorpage .view-sub-wrapper .view-footer a:before, .field-name-field-link-zur-anmeldung a:before, .field-name-field-zur-website a:before, .view-wahlen-sie-einen-themenbereich .view-content .views-row .views-field-name-1 a:before, .view-map-teaser .view-sub-wrapper .view-content .views-row .row-container .views-field-field-quellenangabe a:before {
     font-family: "icomoon";
     content: "\e93f";
@@ -7928,44 +7933,44 @@ p {
     left: -30px;
     top: 6px;
     display: inline-block; }
-  /* line 325, ../scss/pages/_common.scss */
+  /* line 326, ../scss/pages/_common.scss */
   .common-button:hover, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col .panel-col-first .inside .pane-paragraphs-item-field-quellenangabe a:hover, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col .panel-col-last .view-right-front-map-teaser .views-row .views-field-view-node a:hover, .front .view-termin .view-sub-wrapper .view-footer .link-outer-block .link-inner-block-1 a:hover, .view-neueste-informationen .view-sub-wrapper .view-footer .link-outer-block .link-inner-block-1 a:hover, .view-neueste-informationen .view-sub-wrapper .view-footer .link-outer-block .link-inner-block-2 a:hover, .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items > .field-item .field-collection-view .content .field-name-field-quellenangabe a:hover, .not-front .node-doorpage .view-alle-themen-teaser .view-sub-wrapper .view-footer a:hover, .view-neueste-digital-projekte .view-sub-wrapper .view-footer a:hover, .view-latest-content-doorpage > .view-sub-wrapper .left-block .view-footer a:hover, .view-latest-content-doorpage > .view-sub-wrapper > .view-latest-content-doorpage .view-sub-wrapper .view-footer a:hover, .field-name-field-link-zur-anmeldung a:hover, .field-name-field-zur-website a:hover, .view-wahlen-sie-einen-themenbereich .view-content .views-row .views-field-name-1 a:hover, .view-map-teaser .view-sub-wrapper .view-content .views-row .row-container .views-field-field-quellenangabe a:hover {
     border-color: #e74712; }
 
-/* line 333, ../scss/pages/_common.scss */
+/* line 334, ../scss/pages/_common.scss */
 .node-type-webform .node-webform {
   width: 765px;
   margin: 0 auto; }
-  /* line 337, ../scss/pages/_common.scss */
+  /* line 338, ../scss/pages/_common.scss */
   .node-type-webform .node-webform .field-name-field-untertitel {
     color: #e74712;
     font-size: 26px;
     padding: 30px 0; }
-  /* line 343, ../scss/pages/_common.scss */
+  /* line 344, ../scss/pages/_common.scss */
   .node-type-webform .node-webform .webform-client-form {
     padding-top: 40px;
     width: 65%; }
-    /* line 347, ../scss/pages/_common.scss */
+    /* line 348, ../scss/pages/_common.scss */
     .node-type-webform .node-webform .webform-client-form .webform-component-fieldset {
       border: none;
       border-radius: 0;
       box-shadow: none; }
-      /* line 352, ../scss/pages/_common.scss */
+      /* line 353, ../scss/pages/_common.scss */
       .node-type-webform .node-webform .webform-client-form .webform-component-fieldset .panel-heading {
         display: none; }
-      /* line 356, ../scss/pages/_common.scss */
+      /* line 357, ../scss/pages/_common.scss */
       .node-type-webform .node-webform .webform-client-form .webform-component-fieldset .panel-body {
         padding: 0; }
-        /* line 359, ../scss/pages/_common.scss */
+        /* line 360, ../scss/pages/_common.scss */
         .node-type-webform .node-webform .webform-client-form .webform-component-fieldset .panel-body .form-group {
           margin-bottom: 40px; }
-          /* line 362, ../scss/pages/_common.scss */
+          /* line 363, ../scss/pages/_common.scss */
           .node-type-webform .node-webform .webform-client-form .webform-component-fieldset .panel-body .form-group label {
             font-size: 15px; }
-            /* line 365, ../scss/pages/_common.scss */
+            /* line 366, ../scss/pages/_common.scss */
             .node-type-webform .node-webform .webform-client-form .webform-component-fieldset .panel-body .form-group label .form-required {
               color: #e74712; }
-          /* line 370, ../scss/pages/_common.scss */
+          /* line 371, ../scss/pages/_common.scss */
           .node-type-webform .node-webform .webform-client-form .webform-component-fieldset .panel-body .form-group .form-control {
             height: 42px;
             border-bottom-color: #bfcbd5;
@@ -7974,11 +7979,11 @@ p {
             border-top-color: #cfd8df;
             box-shadow: 0 -1px 1px 0 #eff2f4;
             border-radius: 3px; }
-          /* line 381, ../scss/pages/_common.scss */
+          /* line 382, ../scss/pages/_common.scss */
           .node-type-webform .node-webform .webform-client-form .webform-component-fieldset .panel-body .form-group p a {
             text-decoration: none;
             color: #e74712; }
-    /* line 390, ../scss/pages/_common.scss */
+    /* line 391, ../scss/pages/_common.scss */
     .node-type-webform .node-webform .webform-client-form .webform-submit {
       background: #e74712;
       color: #ffffff;
@@ -7988,7 +7993,7 @@ p {
       cursor: pointer;
       position: relative;
       font-size: 20px; }
-      /* line 400, ../scss/pages/_common.scss */
+      /* line 401, ../scss/pages/_common.scss */
       .node-type-webform .node-webform .webform-client-form .webform-submit:before {
         font-family: "icomoon";
         content: "\e93f";
@@ -7997,19 +8002,19 @@ p {
         position: absolute;
         left: 15px;
         top: 14px; }
-    /* line 411, ../scss/pages/_common.scss */
+    /* line 412, ../scss/pages/_common.scss */
     .node-type-webform .node-webform .webform-client-form #edit-submitted-kontakdaten-datenschutz {
       float: left; }
 
-/* line 422, ../scss/pages/_common.scss */
+/* line 423, ../scss/pages/_common.scss */
 .page-node-67 article > .group-page-info {
   max-width: 765px; }
 
-/* line 430, ../scss/pages/_common.scss */
+/* line 431, ../scss/pages/_common.scss */
 .page-user .page-header {
   border: 0; }
 
-/* line 442, ../scss/pages/_common.scss */
+/* line 443, ../scss/pages/_common.scss */
 #backtotop {
   background: #e74712;
   bottom: 20px;
@@ -8021,7 +8026,7 @@ p {
   width: 50px;
   border-radius: 25px;
   text-indent: 0; }
-  /* line 454, ../scss/pages/_common.scss */
+  /* line 455, ../scss/pages/_common.scss */
   #backtotop::before {
     font-family: "icomoon";
     content: "\e950";
@@ -8874,10 +8879,10 @@ p {
           border-bottom: 2px solid #e74712; }
 
 /* line 125, ../scss/pages/_listview.scss */
-.page-termine, .page-aktuelles, .page-search {
+.page-termine, .page-aktuelles, .page-search, .page-calendar {
   background: #eff2f7; }
   /* line 128, ../scss/pages/_listview.scss */
-  .page-termine .page-header, .page-aktuelles .page-header, .page-search .page-header {
+  .page-termine .page-header, .page-aktuelles .page-header, .page-search .page-header, .page-calendar .page-header {
     border: none;
     font-weight: normal;
     width: 765px;
@@ -8886,7 +8891,7 @@ p {
     padding-bottom: 40px; }
 
 /* line 144, ../scss/pages/_listview.scss */
-.view-aktuelles > .view-sub-wrapper .view-header, .view-termin > .view-sub-wrapper .view-header, .view-search-list > .view-sub-wrapper .view-header {
+.view-aktuelles > .view-sub-wrapper .view-header, .view-termin > .view-sub-wrapper .view-header, .view-search-list > .view-sub-wrapper .view-header, .view-event-calendar > .view-sub-wrapper .view-header {
   color: #e74712;
   font-size: 26px;
   padding-bottom: 60px;
@@ -8896,49 +8901,49 @@ p {
   /* Over Desktop design */ }
   @media (min-width: 1025px) {
     /* line 144, ../scss/pages/_listview.scss */
-    .view-aktuelles > .view-sub-wrapper .view-header, .view-termin > .view-sub-wrapper .view-header, .view-search-list > .view-sub-wrapper .view-header {
+    .view-aktuelles > .view-sub-wrapper .view-header, .view-termin > .view-sub-wrapper .view-header, .view-search-list > .view-sub-wrapper .view-header, .view-event-calendar > .view-sub-wrapper .view-header {
       width: 765px; } }
 /* line 157, ../scss/pages/_listview.scss */
-.view-aktuelles > .view-sub-wrapper .attachment-before .view-result-count, .view-termin > .view-sub-wrapper .attachment-before .view-result-count, .view-search-list > .view-sub-wrapper .attachment-before .view-result-count {
+.view-aktuelles > .view-sub-wrapper .attachment-before .view-result-count, .view-termin > .view-sub-wrapper .attachment-before .view-result-count, .view-search-list > .view-sub-wrapper .attachment-before .view-result-count, .view-event-calendar > .view-sub-wrapper .attachment-before .view-result-count {
   margin-top: -88px;
   padding: 30px 0;
   font-size: 22px;
   font-weight: bold; }
 /* line 165, ../scss/pages/_listview.scss */
-.view-aktuelles > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets, .view-termin > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets, .view-search-list > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets {
+.view-aktuelles > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets, .view-termin > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets, .view-search-list > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets, .view-event-calendar > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets {
   margin-bottom: 0; }
   /* line 168, ../scss/pages/_listview.scss */
-  .view-aktuelles > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget, .view-termin > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget, .view-search-list > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget {
+  .view-aktuelles > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget, .view-termin > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget, .view-search-list > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget, .view-event-calendar > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget {
     width: 100%; }
     /* line 171, ../scss/pages/_listview.scss */
-    .view-aktuelles > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget .form-item, .view-termin > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget .form-item, .view-search-list > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget .form-item {
+    .view-aktuelles > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget .form-item, .view-termin > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget .form-item, .view-search-list > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget .form-item, .view-event-calendar > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget .form-item {
       display: inline-block;
       padding-right: 60px;
       padding-bottom: 15px; }
       /* line 176, ../scss/pages/_listview.scss */
-      .view-aktuelles > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget .form-item label, .view-termin > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget .form-item label, .view-search-list > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget .form-item label {
+      .view-aktuelles > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget .form-item label, .view-termin > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget .form-item label, .view-search-list > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget .form-item label, .view-event-calendar > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget .form-item label {
         padding-left: 0;
         padding-bottom: 15px; }
         /* line 180, ../scss/pages/_listview.scss */
-        .view-aktuelles > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget .form-item label input, .view-termin > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget .form-item label input, .view-search-list > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget .form-item label input {
+        .view-aktuelles > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget .form-item label input, .view-termin > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget .form-item label input, .view-search-list > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget .form-item label input, .view-event-calendar > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget .form-item label input {
           visibility: hidden; }
   /* line 187, ../scss/pages/_listview.scss */
-  .view-aktuelles > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by, .view-termin > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by, .view-search-list > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by {
+  .view-aktuelles > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by, .view-termin > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by, .view-search-list > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by, .view-event-calendar > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by {
     float: right;
     padding: 30px 0; }
     /* line 191, ../scss/pages/_listview.scss */
-    .view-aktuelles > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .bef-select-as-links .form-type-bef-link, .view-termin > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .bef-select-as-links .form-type-bef-link, .view-search-list > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .bef-select-as-links .form-type-bef-link {
+    .view-aktuelles > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .bef-select-as-links .form-type-bef-link, .view-termin > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .bef-select-as-links .form-type-bef-link, .view-search-list > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .bef-select-as-links .form-type-bef-link, .view-event-calendar > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .bef-select-as-links .form-type-bef-link {
       display: inline-block;
       padding-left: 15px; }
       /* line 195, ../scss/pages/_listview.scss */
-      .view-aktuelles > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .bef-select-as-links .form-type-bef-link a, .view-termin > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .bef-select-as-links .form-type-bef-link a, .view-search-list > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .bef-select-as-links .form-type-bef-link a {
+      .view-aktuelles > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .bef-select-as-links .form-type-bef-link a, .view-termin > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .bef-select-as-links .form-type-bef-link a, .view-search-list > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .bef-select-as-links .form-type-bef-link a, .view-event-calendar > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .bef-select-as-links .form-type-bef-link a {
         text-decoration: none;
         color: #273753; }
         /* line 199, ../scss/pages/_listview.scss */
-        .view-aktuelles > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .bef-select-as-links .form-type-bef-link a.active, .view-termin > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .bef-select-as-links .form-type-bef-link a.active, .view-search-list > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .bef-select-as-links .form-type-bef-link a.active {
+        .view-aktuelles > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .bef-select-as-links .form-type-bef-link a.active, .view-termin > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .bef-select-as-links .form-type-bef-link a.active, .view-search-list > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .bef-select-as-links .form-type-bef-link a.active, .view-event-calendar > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .bef-select-as-links .form-type-bef-link a.active {
           border-bottom: 2px solid #e74712; }
     /* line 205, ../scss/pages/_listview.scss */
-    .view-aktuelles > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .select2-container, .view-termin > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .select2-container, .view-search-list > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .select2-container {
+    .view-aktuelles > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .select2-container, .view-termin > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .select2-container, .view-search-list > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .select2-container, .view-event-calendar > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .select2-container {
       display: none; }
 
 /* line 219, ../scss/pages/_listview.scss */
@@ -8967,7 +8972,7 @@ p {
     padding: 0;
     float: left;
     padding: 10px 0;
-    background: #3c506e;
+    background: #273753;
     border-right: 1px solid #949d9e; }
     @media (min-width: 1025px) {
       /* line 244, ../scss/pages/_listview.scss */
