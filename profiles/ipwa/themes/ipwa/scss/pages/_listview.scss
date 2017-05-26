@@ -452,6 +452,18 @@
                 border: none;
                 background: $header-dropdown-menu;
                 font-weight: bold;
+				
+				&::before{
+				 font-family: $icomoon;
+                content: "\e90e";
+                color: $color-white;
+                left: 10px;
+                top: 20px;
+				font-size:12px;
+                display: inline-block;
+                position: absolute;
+				
+				}
             }
         }
     }
@@ -516,15 +528,15 @@
 			 a {
                     font-size: 0;
 
-                    &:before {
+                    &::before {
                         font-family: $icomoon;
                         content: "\e908";
                         color: $color-white;
-                        font-size: 14px;
+                        font-size: 18px;
                         position: absolute;
-                        top: 6px;
+                        top: 4px;
                         display: inline-block;
-						left:-24px;
+						left:-25px;
                     }
                 }
 			
@@ -533,15 +545,15 @@
 			 a {
                     font-size: 0;
 
-                    &:before {
+                    &::before {
                         font-family: $icomoon;
                         content: "\e90a";
                         color: $color-white;
-                        font-size: 14px;
+                        font-size: 18px;
                         position: absolute;
-                        top: 6px;
+                        top: 4px;
                         display: inline-block;
-						left:-24px;
+						left:-25px;
                     }
                 }
 				}
