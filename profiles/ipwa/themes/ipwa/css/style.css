@@ -6715,48 +6715,56 @@ header .navbar-collapse {
             left: 20px; }
         /* line 119, ../scss/layout/_header-mobile-view.scss */
         header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav > li .tb-megamenu-submenu {
-          display: none !important;
+          display: none;
           padding-top: 0;
-          padding-bottom: 10px; }
-          /* line 124, ../scss/layout/_header-mobile-view.scss */
+          padding-bottom: 10px;
+          position: relative; }
+          /* line 125, ../scss/layout/_header-mobile-view.scss */
           header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav > li .tb-megamenu-submenu .mega-dropdown-inner {
             width: auto; }
-            /* line 127, ../scss/layout/_header-mobile-view.scss */
+            /* line 128, ../scss/layout/_header-mobile-view.scss */
             header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav > li .tb-megamenu-submenu .mega-dropdown-inner .tb-submenu-left {
-              cursor: pointer; }
-              /* line 129, ../scss/layout/_header-mobile-view.scss */
+              cursor: pointer;
+              width: 100%; }
+              /* line 133, ../scss/layout/_header-mobile-view.scss */
               header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav > li .tb-megamenu-submenu .mega-dropdown-inner .tb-submenu-left .mega-inner {
                 padding: 0;
                 width: auto;
                 border-bottom: 1px solid #18243b;
                 border-top: 1px solid #18243b; }
-              /* line 136, ../scss/layout/_header-mobile-view.scss */
+                /* line 139, ../scss/layout/_header-mobile-view.scss */
+                header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav > li .tb-megamenu-submenu .mega-dropdown-inner .tb-submenu-left .mega-inner .tb-block {
+                  margin-bottom: 0; }
+              /* line 144, ../scss/layout/_header-mobile-view.scss */
               header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav > li .tb-megamenu-submenu .mega-dropdown-inner .tb-submenu-left h2.block-title {
                 padding: 20px;
                 margin-bottom: 0; }
-              /* line 141, ../scss/layout/_header-mobile-view.scss */
+              /* line 149, ../scss/layout/_header-mobile-view.scss */
               header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav > li .tb-megamenu-submenu .mega-dropdown-inner .tb-submenu-left ul li {
                 padding: 20px;
                 margin-bottom: 0;
                 border-top: 1px solid #18243b;
                 background: #273753; }
-                /* line 147, ../scss/layout/_header-mobile-view.scss */
+                /* line 155, ../scss/layout/_header-mobile-view.scss */
                 header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav > li .tb-megamenu-submenu .mega-dropdown-inner .tb-submenu-left ul li a {
                   border-top: 0;
                   padding-left: 0; }
-                  /* line 151, ../scss/layout/_header-mobile-view.scss */
+                  /* line 159, ../scss/layout/_header-mobile-view.scss */
                   header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav > li .tb-megamenu-submenu .mega-dropdown-inner .tb-submenu-left ul li a:before {
                     display: none; }
-          /* line 160, ../scss/layout/_header-mobile-view.scss */
-          header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav > li .tb-megamenu-submenu .tb-submenu-right .mega-inner {
-            padding-top: 20px;
-            width: auto; }
-            /* line 165, ../scss/layout/_header-mobile-view.scss */
-            header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav > li .tb-megamenu-submenu .tb-submenu-right .mega-inner .view-themenzuweisung-flyouts .view-header {
-              padding-bottom: 10px; }
+          /* line 167, ../scss/layout/_header-mobile-view.scss */
+          header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav > li .tb-megamenu-submenu .tb-submenu-right {
+            width: 100%; }
             /* line 169, ../scss/layout/_header-mobile-view.scss */
-            header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav > li .tb-megamenu-submenu .tb-submenu-right .mega-inner .view-themenzuweisung-flyouts .view-content .views-row a {
-              border-top: 0; } }
+            header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav > li .tb-megamenu-submenu .tb-submenu-right .mega-inner {
+              padding-top: 20px;
+              width: auto; }
+              /* line 174, ../scss/layout/_header-mobile-view.scss */
+              header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav > li .tb-megamenu-submenu .tb-submenu-right .mega-inner .view-themenzuweisung-flyouts .view-header {
+                padding-bottom: 10px; }
+              /* line 178, ../scss/layout/_header-mobile-view.scss */
+              header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav > li .tb-megamenu-submenu .tb-submenu-right .mega-inner .view-themenzuweisung-flyouts .view-content .views-row a {
+                border-top: 0; } }
 @media (max-width: 767px) {
   /* line 5, ../scss/layout/_footer-mobile-view.scss */
   footer #block-menu-menu-footer-navigation ul {
