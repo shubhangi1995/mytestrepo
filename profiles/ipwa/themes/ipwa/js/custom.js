@@ -63,19 +63,20 @@ jQuery('.page-aktuelles select').select2().on("select2:open", function(){
 	}
 
 
+	
+
+
 	// header-mobile-menu
-	jQuery(".navbar-toggle").click(function(){
-		jQuery(".navbar-collapse").toggleClass("in");
-		jQuery(this).find("in").css("display","block");
-		
-	});
-
-	if(jQuery(window).width() <= 1000){
-		jQuery(".navbar-nav").insertAfter(".region-navigation");
-
-	}
-
+	
 	if(jQuery(window).innerWidth() < 1025){
+	
+	jQuery(".navbar-toggle").click(function(){
+		jQuery(".navbar-collapse").toggle();	
+			});
+		
+		
+		jQuery(".navbar-nav").insertAfter(".region-navigation");
+		
 		 jQuery("ul.tb-megamenu-nav li a").click(function(){	
 			jQuery(this).next(".tb-megamenu-submenu").attr('style','display:block !important');
 			jQuery(this).parent().siblings().find(".tb-megamenu-submenu").attr('style','display:none !important');

@@ -1,6 +1,6 @@
 
 
-@media (max-width:1000px) {
+@media (max-width:1024px) {
     header {
         .navbar-header {
             .logo {
@@ -33,7 +33,7 @@
             display: none;
         }
 
-        .navbar-collapse.in {
+        .navbar-collapse {
             position: absolute;
             z-index: 9999;
             background: $color-white;
