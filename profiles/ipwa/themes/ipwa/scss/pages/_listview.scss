@@ -294,7 +294,7 @@
 }
 
 //only-termine//
-.page-termine .view-termin {
+.page-termine .view-termin  {
     .view-filters {
         .views-exposed-form .views-exposed-widgets {
             #edit-term-node-tid-depth-wrapper {
@@ -505,16 +505,46 @@
                         color: $color-white;
                         font-size: 14px;
                         position: absolute;
-                        left: -20px;
+                        left: -55px;
                         top: 6px;
                         display: inline-block;
                     }
                 }
             }
 
-            .views_slideshow_controls_text_pause {
-                display: none;
-            }
+            .views-slideshow-controls-text-status-pause {
+			 a {
+                    font-size: 0;
+
+                    &:before {
+                        font-family: $icomoon;
+                        content: "\e908";
+                        color: $color-white;
+                        font-size: 14px;
+                        position: absolute;
+                        top: 6px;
+                        display: inline-block;
+						left:-24px;
+                    }
+                }
+			
+			}
+			.views-slideshow-controls-text-status-play{
+			 a {
+                    font-size: 0;
+
+                    &:before {
+                        font-family: $icomoon;
+                        content: "\e90a";
+                        color: $color-white;
+                        font-size: 14px;
+                        position: absolute;
+                        top: 6px;
+                        display: inline-block;
+						left:-24px;
+                    }
+                }
+				}
 
             .views_slideshow_controls_text_next {
                 a {
