@@ -26,6 +26,54 @@
 
 $icomoon : 'icomoon';
 
+.icon-add-to-calender:before { 
+  content: "\e900";
+}
+.icon-arrow-left:before {
+  content: "\e901";
+}
+.icon-arrow-right:before {
+  content: "\e902";
+}
+.icon-close:before {
+  content: "\e903";
+}
+.icon-download:before {
+  content: "\e904";
+}
+.icon-employee:before {
+  content: "\e905";
+}
+.icon-extern-link:before {
+  content: "\e906";
+}
+.icon-information:before {
+  content: "\e907";
+}
+.icon-pause:before {
+  content: "\e908";
+}
+.icon-pin:before {
+  content: "\e909";
+}
+.icon-play:before {
+  content: "\e90a";
+}
+.icon-publication:before {
+  content: "\e90b";
+}
+.icon-repeating-date:before {
+  content: "\e90c";
+}
+.icon-search:before {
+  content: "\e90d";
+}
+.icon-search-arrow:before {
+  content: "\e90e";
+}
+.icon-user:before {
+  content: "\e90f";
+}
 .icon-arrow-left3:before {
   content: "\e93e";
 }
@@ -71,7 +119,7 @@ $icomoon : 'icomoon';
 .icon-print:before {
   content: "\e94c";
 }
-.icon-repeating-date:before {
+.icon-repeating-date2:before {
   content: "\e94d";
 }
 .icon-search2:before {
@@ -86,4 +134,3 @@ $icomoon : 'icomoon';
 .icon-youtube-play:before {
   content: "\e951";
 }
-

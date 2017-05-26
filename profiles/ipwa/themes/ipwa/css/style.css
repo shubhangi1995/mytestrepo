@@ -6213,82 +6213,146 @@ button.close {
   -moz-osx-font-smoothing: grayscale; }
 
 /* line 29, ../scss/base/_icomoon.scss */
+.icon-add-to-calender:before {
+  content: "\e900"; }
+
+/* line 32, ../scss/base/_icomoon.scss */
+.icon-arrow-left:before {
+  content: "\e901"; }
+
+/* line 35, ../scss/base/_icomoon.scss */
+.icon-arrow-right:before {
+  content: "\e902"; }
+
+/* line 38, ../scss/base/_icomoon.scss */
+.icon-close:before {
+  content: "\e903"; }
+
+/* line 41, ../scss/base/_icomoon.scss */
+.icon-download:before {
+  content: "\e904"; }
+
+/* line 44, ../scss/base/_icomoon.scss */
+.icon-employee:before {
+  content: "\e905"; }
+
+/* line 47, ../scss/base/_icomoon.scss */
+.icon-extern-link:before {
+  content: "\e906"; }
+
+/* line 50, ../scss/base/_icomoon.scss */
+.icon-information:before {
+  content: "\e907"; }
+
+/* line 53, ../scss/base/_icomoon.scss */
+.icon-pause:before {
+  content: "\e908"; }
+
+/* line 56, ../scss/base/_icomoon.scss */
+.icon-pin:before {
+  content: "\e909"; }
+
+/* line 59, ../scss/base/_icomoon.scss */
+.icon-play:before {
+  content: "\e90a"; }
+
+/* line 62, ../scss/base/_icomoon.scss */
+.icon-publication:before {
+  content: "\e90b"; }
+
+/* line 65, ../scss/base/_icomoon.scss */
+.icon-repeating-date:before {
+  content: "\e90c"; }
+
+/* line 68, ../scss/base/_icomoon.scss */
+.icon-search:before {
+  content: "\e90d"; }
+
+/* line 71, ../scss/base/_icomoon.scss */
+.icon-search-arrow:before {
+  content: "\e90e"; }
+
+/* line 74, ../scss/base/_icomoon.scss */
+.icon-user:before {
+  content: "\e90f"; }
+
+/* line 77, ../scss/base/_icomoon.scss */
 .icon-arrow-left3:before {
   content: "\e93e"; }
 
-/* line 32, ../scss/base/_icomoon.scss */
+/* line 80, ../scss/base/_icomoon.scss */
 .icon-arrow-right3:before {
   content: "\e93f"; }
 
-/* line 35, ../scss/base/_icomoon.scss */
+/* line 83, ../scss/base/_icomoon.scss */
 .icon-breadcrumb-arrow:before {
   content: "\e940"; }
 
-/* line 38, ../scss/base/_icomoon.scss */
+/* line 86, ../scss/base/_icomoon.scss */
 .icon-calendar:before {
   content: "\e941"; }
 
-/* line 41, ../scss/base/_icomoon.scss */
+/* line 89, ../scss/base/_icomoon.scss */
 .icon-check:before {
   content: "\e942"; }
 
-/* line 44, ../scss/base/_icomoon.scss */
+/* line 92, ../scss/base/_icomoon.scss */
 .icon-companies:before {
   content: "\e943"; }
 
-/* line 47, ../scss/base/_icomoon.scss */
+/* line 95, ../scss/base/_icomoon.scss */
 .icon-download2:before {
   content: "\e944"; }
 
-/* line 50, ../scss/base/_icomoon.scss */
+/* line 98, ../scss/base/_icomoon.scss */
 .icon-dropdown-arrow-down:before {
   content: "\e945"; }
 
-/* line 53, ../scss/base/_icomoon.scss */
+/* line 101, ../scss/base/_icomoon.scss */
 .icon-dropdown-arrow-up:before {
   content: "\e946"; }
 
-/* line 56, ../scss/base/_icomoon.scss */
+/* line 104, ../scss/base/_icomoon.scss */
 .icon-economy-work:before {
   content: "\e947"; }
 
-/* line 59, ../scss/base/_icomoon.scss */
+/* line 107, ../scss/base/_icomoon.scss */
 .icon-extern-link2:before {
   content: "\e948"; }
 
-/* line 62, ../scss/base/_icomoon.scss */
+/* line 110, ../scss/base/_icomoon.scss */
 .icon-list:before {
   content: "\e949"; }
 
-/* line 65, ../scss/base/_icomoon.scss */
+/* line 113, ../scss/base/_icomoon.scss */
 .icon-pin2:before {
   content: "\e94a"; }
 
-/* line 68, ../scss/base/_icomoon.scss */
+/* line 116, ../scss/base/_icomoon.scss */
 .icon-politic-society:before {
   content: "\e94b"; }
 
-/* line 71, ../scss/base/_icomoon.scss */
+/* line 119, ../scss/base/_icomoon.scss */
 .icon-print:before {
   content: "\e94c"; }
 
-/* line 74, ../scss/base/_icomoon.scss */
-.icon-repeating-date:before {
+/* line 122, ../scss/base/_icomoon.scss */
+.icon-repeating-date2:before {
   content: "\e94d"; }
 
-/* line 77, ../scss/base/_icomoon.scss */
+/* line 125, ../scss/base/_icomoon.scss */
 .icon-search2:before {
   content: "\e94e"; }
 
-/* line 80, ../scss/base/_icomoon.scss */
+/* line 128, ../scss/base/_icomoon.scss */
 .icon-share:before {
   content: "\e94f"; }
 
-/* line 83, ../scss/base/_icomoon.scss */
+/* line 131, ../scss/base/_icomoon.scss */
 .icon-top:before {
   content: "\e950"; }
 
-/* line 86, ../scss/base/_icomoon.scss */
+/* line 134, ../scss/base/_icomoon.scss */
 .icon-youtube-play:before {
   content: "\e951"; }
 
