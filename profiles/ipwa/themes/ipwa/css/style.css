@@ -7842,11 +7842,19 @@ p {
     .container, footer .region-footer, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col, .view-neueste-informationen .view-sub-wrapper, .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser, .breadcrumb, .page-user .page-header, .page-user .region-content, .not-front .node-doorpage .view-alle-themen-teaser .view-sub-wrapper, .view-neueste-digital-projekte .view-sub-wrapper, .view-latest-content-doorpage > .view-sub-wrapper, .page-taxonomy-term .view-title, .page-taxonomy-term .group-page-info, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .paragraphs-item-flie-text-mit-bild-links, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .paragraphs-item-flie-text-bereich, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .paragraphs-item-flie-text-mit-bild-rechts, .page-taxonomy-term .view-alles-zum-thema .view-sub-wrapper, .page-termine .page-header, .page-aktuelles .page-header, .page-search .page-header, .view-aktuelles > .view-sub-wrapper, .view-termin > .view-sub-wrapper, .view-search-list > .view-sub-wrapper, .view-wahlen-sie-einen-themenbereich .view-sub-wrapper, .page-sitemap .page-header, .page-sitemap #site-map {
       padding: 0; } }
 
-/* line 216, ../scss/pages/_common.scss */
+/* line 212, ../scss/pages/_common.scss */
+.row {
+  margin: 0; }
+
+/* line 215, ../scss/pages/_common.scss */
+.col-sm-12 {
+  padding: 0; }
+
+/* line 223, ../scss/pages/_common.scss */
 .view-neueste-informationen .view-sub-wrapper > .view-content, .view-termin .view-sub-wrapper > .view-content, .view-aktuelles .view-sub-wrapper > .view-content, .view-neueste-digital-projekte .view-sub-wrapper > .view-content, .view-alles-zum-thema .view-sub-wrapper > .view-content, .view-search-list .view-sub-wrapper > .view-content {
   margin-left: -15px;
   margin-right: -15px; }
-  /* line 223, ../scss/pages/_common.scss */
+  /* line 230, ../scss/pages/_common.scss */
   .view-neueste-informationen .view-sub-wrapper > .view-content .views-row .row-container, .view-termin .view-sub-wrapper > .view-content .views-row .row-container, .view-aktuelles .view-sub-wrapper > .view-content .views-row .row-container, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row .row-container, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row .row-container, .view-search-list .view-sub-wrapper > .view-content .views-row .row-container {
     background: #ffffff;
     padding: 30px;
@@ -7858,51 +7866,51 @@ p {
     height: auto;
     /* Tablet design */ }
     @media (min-width: 767px) {
-      /* line 223, ../scss/pages/_common.scss */
+      /* line 230, ../scss/pages/_common.scss */
       .view-neueste-informationen .view-sub-wrapper > .view-content .views-row .row-container, .view-termin .view-sub-wrapper > .view-content .views-row .row-container, .view-aktuelles .view-sub-wrapper > .view-content .views-row .row-container, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row .row-container, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row .row-container, .view-search-list .view-sub-wrapper > .view-content .views-row .row-container {
         height: 410px; } }
-    /* line 238, ../scss/pages/_common.scss */
+    /* line 245, ../scss/pages/_common.scss */
     .view-neueste-informationen .view-sub-wrapper > .view-content .views-row .row-container.project-blue, .view-termin .view-sub-wrapper > .view-content .views-row .row-container.project-blue, .view-aktuelles .view-sub-wrapper > .view-content .views-row .row-container.project-blue, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row .row-container.project-blue, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row .row-container.project-blue, .view-search-list .view-sub-wrapper > .view-content .views-row .row-container.project-blue {
       background: #273753; }
-      /* line 241, ../scss/pages/_common.scss */
+      /* line 248, ../scss/pages/_common.scss */
       .view-neueste-informationen .view-sub-wrapper > .view-content .views-row .row-container.project-blue .views-field-title a, .view-termin .view-sub-wrapper > .view-content .views-row .row-container.project-blue .views-field-title a, .view-aktuelles .view-sub-wrapper > .view-content .views-row .row-container.project-blue .views-field-title a, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row .row-container.project-blue .views-field-title a, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row .row-container.project-blue .views-field-title a, .view-search-list .view-sub-wrapper > .view-content .views-row .row-container.project-blue .views-field-title a {
         color: #ffffff; }
-      /* line 246, ../scss/pages/_common.scss */
+      /* line 253, ../scss/pages/_common.scss */
       .view-neueste-informationen .view-sub-wrapper > .view-content .views-row .row-container.project-blue:hover .views-field-title a, .view-termin .view-sub-wrapper > .view-content .views-row .row-container.project-blue:hover .views-field-title a, .view-aktuelles .view-sub-wrapper > .view-content .views-row .row-container.project-blue:hover .views-field-title a, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row .row-container.project-blue:hover .views-field-title a, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row .row-container.project-blue:hover .views-field-title a, .view-search-list .view-sub-wrapper > .view-content .views-row .row-container.project-blue:hover .views-field-title a {
         color: #273753; }
-    /* line 252, ../scss/pages/_common.scss */
+    /* line 259, ../scss/pages/_common.scss */
     .view-neueste-informationen .view-sub-wrapper > .view-content .views-row .row-container:hover, .view-termin .view-sub-wrapper > .view-content .views-row .row-container:hover, .view-aktuelles .view-sub-wrapper > .view-content .views-row .row-container:hover, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row .row-container:hover, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row .row-container:hover, .view-search-list .view-sub-wrapper > .view-content .views-row .row-container:hover {
       background: #eff2f7;
       border: 1px solid #dbdfe3; }
-    /* line 257, ../scss/pages/_common.scss */
+    /* line 264, ../scss/pages/_common.scss */
     .view-neueste-informationen .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-themenzuweisung, .view-termin .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-themenzuweisung, .view-aktuelles .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-themenzuweisung, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-themenzuweisung, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-themenzuweisung, .view-search-list .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-themenzuweisung {
       padding-bottom: 30px; }
-      /* line 260, ../scss/pages/_common.scss */
+      /* line 267, ../scss/pages/_common.scss */
       .view-neueste-informationen .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-themenzuweisung img, .view-termin .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-themenzuweisung img, .view-aktuelles .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-themenzuweisung img, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-themenzuweisung img, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-themenzuweisung img, .view-search-list .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-themenzuweisung img {
         display: inline-block;
         margin-right: 10px; }
-    /* line 266, ../scss/pages/_common.scss */
+    /* line 273, ../scss/pages/_common.scss */
     .view-neueste-informationen .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-event-datum, .view-termin .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-event-datum, .view-aktuelles .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-event-datum, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-event-datum, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-event-datum, .view-search-list .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-event-datum {
       padding-bottom: 20px;
       font-weight: bold;
       color: #e74712;
       font-size: 22px; }
-    /* line 273, ../scss/pages/_common.scss */
+    /* line 280, ../scss/pages/_common.scss */
     .view-neueste-informationen .view-sub-wrapper > .view-content .views-row .row-container .views-field-title, .view-termin .view-sub-wrapper > .view-content .views-row .row-container .views-field-title, .view-aktuelles .view-sub-wrapper > .view-content .views-row .row-container .views-field-title, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row .row-container .views-field-title, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row .row-container .views-field-title, .view-search-list .view-sub-wrapper > .view-content .views-row .row-container .views-field-title {
       padding-bottom: 40px; }
-      /* line 276, ../scss/pages/_common.scss */
+      /* line 283, ../scss/pages/_common.scss */
       .view-neueste-informationen .view-sub-wrapper > .view-content .views-row .row-container .views-field-title a, .view-termin .view-sub-wrapper > .view-content .views-row .row-container .views-field-title a, .view-aktuelles .view-sub-wrapper > .view-content .views-row .row-container .views-field-title a, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row .row-container .views-field-title a, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row .row-container .views-field-title a, .view-search-list .view-sub-wrapper > .view-content .views-row .row-container .views-field-title a {
         text-decoration: none;
         font-size: 22px;
         color: #273753; }
-    /* line 284, ../scss/pages/_common.scss */
+    /* line 291, ../scss/pages/_common.scss */
     .view-neueste-informationen .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-ort .field-content, .view-neueste-informationen .view-sub-wrapper > .view-content .views-row .row-container div[class*='views-field-views-conditional-'] .field-content, .view-termin .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-ort .field-content, .view-termin .view-sub-wrapper > .view-content .views-row .row-container div[class*='views-field-views-conditional-'] .field-content, .view-aktuelles .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-ort .field-content, .view-aktuelles .view-sub-wrapper > .view-content .views-row .row-container div[class*='views-field-views-conditional-'] .field-content, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-ort .field-content, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row .row-container div[class*='views-field-views-conditional-'] .field-content, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-ort .field-content, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row .row-container div[class*='views-field-views-conditional-'] .field-content, .view-search-list .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-ort .field-content, .view-search-list .view-sub-wrapper > .view-content .views-row .row-container div[class*='views-field-views-conditional-'] .field-content {
       font-size: 20px;
       color: #949d9e;
       position: absolute;
       bottom: 30px; }
 
-/* line 299, ../scss/pages/_common.scss */
+/* line 306, ../scss/pages/_common.scss */
 .common-button, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col .panel-col-first .inside .pane-paragraphs-item-field-quellenangabe a, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col .panel-col-last .view-right-front-map-teaser .views-row .views-field-view-node a, .front .view-termin .view-sub-wrapper .view-footer .link-outer-block .link-inner-block-1 a, .view-neueste-informationen .view-sub-wrapper .view-footer .link-outer-block .link-inner-block-1 a, .view-neueste-informationen .view-sub-wrapper .view-footer .link-outer-block .link-inner-block-2 a, .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items > .field-item .field-collection-view .content .field-name-field-quellenangabe a, .not-front .node-doorpage .view-alle-themen-teaser .view-sub-wrapper .view-footer a, .view-neueste-digital-projekte .view-sub-wrapper .view-footer a, .view-latest-content-doorpage > .view-sub-wrapper .left-block .view-footer a, .view-latest-content-doorpage > .view-sub-wrapper > .view-latest-content-doorpage .view-sub-wrapper .view-footer a, .field-name-field-link-zur-anmeldung a, .field-name-field-zur-website a, .view-wahlen-sie-einen-themenbereich .view-content .views-row .views-field-name-1 a, .view-map-teaser .view-sub-wrapper .view-content .views-row .row-container .views-field-field-quellenangabe a {
   font-size: 20px;
   text-decoration: none;
@@ -7910,7 +7918,7 @@ p {
   padding-bottom: 4px;
   border-bottom: 2px solid #949d9e;
   position: relative; }
-  /* line 307, ../scss/pages/_common.scss */
+  /* line 314, ../scss/pages/_common.scss */
   .common-button:before, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col .panel-col-first .inside .pane-paragraphs-item-field-quellenangabe a:before, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col .panel-col-last .view-right-front-map-teaser .views-row .views-field-view-node a:before, .front .view-termin .view-sub-wrapper .view-footer .link-outer-block .link-inner-block-1 a:before, .view-neueste-informationen .view-sub-wrapper .view-footer .link-outer-block .link-inner-block-1 a:before, .view-neueste-informationen .view-sub-wrapper .view-footer .link-outer-block .link-inner-block-2 a:before, .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items > .field-item .field-collection-view .content .field-name-field-quellenangabe a:before, .not-front .node-doorpage .view-alle-themen-teaser .view-sub-wrapper .view-footer a:before, .view-neueste-digital-projekte .view-sub-wrapper .view-footer a:before, .view-latest-content-doorpage > .view-sub-wrapper .left-block .view-footer a:before, .view-latest-content-doorpage > .view-sub-wrapper > .view-latest-content-doorpage .view-sub-wrapper .view-footer a:before, .field-name-field-link-zur-anmeldung a:before, .field-name-field-zur-website a:before, .view-wahlen-sie-einen-themenbereich .view-content .views-row .views-field-name-1 a:before, .view-map-teaser .view-sub-wrapper .view-content .views-row .row-container .views-field-field-quellenangabe a:before {
     font-family: "icomoon";
     content: "\e93f";
@@ -7920,44 +7928,44 @@ p {
     left: -30px;
     top: 6px;
     display: inline-block; }
-  /* line 318, ../scss/pages/_common.scss */
+  /* line 325, ../scss/pages/_common.scss */
   .common-button:hover, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col .panel-col-first .inside .pane-paragraphs-item-field-quellenangabe a:hover, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col .panel-col-last .view-right-front-map-teaser .views-row .views-field-view-node a:hover, .front .view-termin .view-sub-wrapper .view-footer .link-outer-block .link-inner-block-1 a:hover, .view-neueste-informationen .view-sub-wrapper .view-footer .link-outer-block .link-inner-block-1 a:hover, .view-neueste-informationen .view-sub-wrapper .view-footer .link-outer-block .link-inner-block-2 a:hover, .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items > .field-item .field-collection-view .content .field-name-field-quellenangabe a:hover, .not-front .node-doorpage .view-alle-themen-teaser .view-sub-wrapper .view-footer a:hover, .view-neueste-digital-projekte .view-sub-wrapper .view-footer a:hover, .view-latest-content-doorpage > .view-sub-wrapper .left-block .view-footer a:hover, .view-latest-content-doorpage > .view-sub-wrapper > .view-latest-content-doorpage .view-sub-wrapper .view-footer a:hover, .field-name-field-link-zur-anmeldung a:hover, .field-name-field-zur-website a:hover, .view-wahlen-sie-einen-themenbereich .view-content .views-row .views-field-name-1 a:hover, .view-map-teaser .view-sub-wrapper .view-content .views-row .row-container .views-field-field-quellenangabe a:hover {
     border-color: #e74712; }
 
-/* line 326, ../scss/pages/_common.scss */
+/* line 333, ../scss/pages/_common.scss */
 .node-type-webform .node-webform {
   width: 765px;
   margin: 0 auto; }
-  /* line 330, ../scss/pages/_common.scss */
+  /* line 337, ../scss/pages/_common.scss */
   .node-type-webform .node-webform .field-name-field-untertitel {
     color: #e74712;
     font-size: 26px;
     padding: 30px 0; }
-  /* line 336, ../scss/pages/_common.scss */
+  /* line 343, ../scss/pages/_common.scss */
   .node-type-webform .node-webform .webform-client-form {
     padding-top: 40px;
     width: 65%; }
-    /* line 340, ../scss/pages/_common.scss */
+    /* line 347, ../scss/pages/_common.scss */
     .node-type-webform .node-webform .webform-client-form .webform-component-fieldset {
       border: none;
       border-radius: 0;
       box-shadow: none; }
-      /* line 345, ../scss/pages/_common.scss */
+      /* line 352, ../scss/pages/_common.scss */
       .node-type-webform .node-webform .webform-client-form .webform-component-fieldset .panel-heading {
         display: none; }
-      /* line 349, ../scss/pages/_common.scss */
+      /* line 356, ../scss/pages/_common.scss */
       .node-type-webform .node-webform .webform-client-form .webform-component-fieldset .panel-body {
         padding: 0; }
-        /* line 352, ../scss/pages/_common.scss */
+        /* line 359, ../scss/pages/_common.scss */
         .node-type-webform .node-webform .webform-client-form .webform-component-fieldset .panel-body .form-group {
           margin-bottom: 40px; }
-          /* line 355, ../scss/pages/_common.scss */
+          /* line 362, ../scss/pages/_common.scss */
           .node-type-webform .node-webform .webform-client-form .webform-component-fieldset .panel-body .form-group label {
             font-size: 15px; }
-            /* line 358, ../scss/pages/_common.scss */
+            /* line 365, ../scss/pages/_common.scss */
             .node-type-webform .node-webform .webform-client-form .webform-component-fieldset .panel-body .form-group label .form-required {
               color: #e74712; }
-          /* line 363, ../scss/pages/_common.scss */
+          /* line 370, ../scss/pages/_common.scss */
           .node-type-webform .node-webform .webform-client-form .webform-component-fieldset .panel-body .form-group .form-control {
             height: 42px;
             border-bottom-color: #bfcbd5;
@@ -7966,11 +7974,11 @@ p {
             border-top-color: #cfd8df;
             box-shadow: 0 -1px 1px 0 #eff2f4;
             border-radius: 3px; }
-          /* line 374, ../scss/pages/_common.scss */
+          /* line 381, ../scss/pages/_common.scss */
           .node-type-webform .node-webform .webform-client-form .webform-component-fieldset .panel-body .form-group p a {
             text-decoration: none;
             color: #e74712; }
-    /* line 383, ../scss/pages/_common.scss */
+    /* line 390, ../scss/pages/_common.scss */
     .node-type-webform .node-webform .webform-client-form .webform-submit {
       background: #e74712;
       color: #ffffff;
@@ -7980,7 +7988,7 @@ p {
       cursor: pointer;
       position: relative;
       font-size: 20px; }
-      /* line 393, ../scss/pages/_common.scss */
+      /* line 400, ../scss/pages/_common.scss */
       .node-type-webform .node-webform .webform-client-form .webform-submit:before {
         font-family: "icomoon";
         content: "\e93f";
@@ -7989,19 +7997,19 @@ p {
         position: absolute;
         left: 15px;
         top: 14px; }
-    /* line 404, ../scss/pages/_common.scss */
+    /* line 411, ../scss/pages/_common.scss */
     .node-type-webform .node-webform .webform-client-form #edit-submitted-kontakdaten-datenschutz {
       float: left; }
 
-/* line 415, ../scss/pages/_common.scss */
+/* line 422, ../scss/pages/_common.scss */
 .page-node-67 article > .group-page-info {
   max-width: 765px; }
 
-/* line 423, ../scss/pages/_common.scss */
+/* line 430, ../scss/pages/_common.scss */
 .page-user .page-header {
   border: 0; }
 
-/* line 435, ../scss/pages/_common.scss */
+/* line 442, ../scss/pages/_common.scss */
 #backtotop {
   background: #e74712;
   bottom: 20px;
@@ -8013,7 +8021,7 @@ p {
   width: 50px;
   border-radius: 25px;
   text-indent: 0; }
-  /* line 447, ../scss/pages/_common.scss */
+  /* line 454, ../scss/pages/_common.scss */
   #backtotop::before {
     font-family: "icomoon";
     content: "\e950";
