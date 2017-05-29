@@ -127,7 +127,6 @@
 
     .page-header {
         @extend .container;
-
         border: none;
         font-weight: normal;
         width:100%;
@@ -173,7 +172,7 @@
 
                     .form-item {
                         display: inline-block;     
-padding-right:60%;						
+                           padding-right:60px;						
                         padding-bottom: 15px;
 
                         label {
@@ -297,7 +296,7 @@ padding-right:60%;
 }
 
 //only-termine//
-.page-termine .view-termin  {
+.view-termin, .view-event-calendar  {
     .view-filters {
         .views-exposed-form .views-exposed-widgets {
             #edit-term-node-tid-depth-wrapper {
@@ -308,8 +307,7 @@ padding-right:60%;
 				 width:80%;
 				}
 
-                .form-item {
-                   
+                .form-item {                  
 
                     .form-type-bef-link {
                        padding-right:60px;
@@ -337,44 +335,6 @@ padding-right:60%;
                 }
             }
 
-            .calendar-link {
-                width: 100%;
-				float:left;
-				position:relative;
-				padding-left:30px;
-				 margin-bottom: 30px;
-
-                @include devicebreak(x-large) {
-                    width: 20%;
-                    float: left;
-                    text-align: right;
-                    
-                }
-
-
-                a {
-                    text-decoration: none;
-                    padding-bottom: 4px;
-                    border-bottom: 2px solid $color-light-grey;
-                    color: $main-color;
-                    font-weight: bold;
-
-                    &:before {
-                        content: '\e949';
-                        font-family: $icomoon;
-                        color: $active-menu;
-                        font-size: 14px;
-                        position: absolute;
-                        left: 0;
-                        top: 9px;
-                        display: inline-block;
-						@include devicebreak(x-large){
-						 left: 40px;
-						}
-                    }
-                }
-            }
-
             .views-submit-button {
                 display: none;
             }
@@ -385,6 +345,48 @@ padding-right:60%;
         }
     }
 }
+
+// Calendar icon
+
+.calendar-link {
+	width: 100%;
+	float:left;
+	position:relative;
+	padding-left:30px;
+	 margin-bottom: 30px;
+
+	@include devicebreak(x-large) {
+		width: 20%;
+		float: left;
+		text-align: right;
+		
+	}
+
+
+	a {
+		text-decoration: none;
+		padding-bottom: 4px;
+		border-bottom: 2px solid $color-light-grey;
+		color: $main-color;
+		font-weight: bold;
+
+		&:before {
+			content: '\e949';
+			font-family: $icomoon;
+			color: $active-menu;
+			font-size: 14px;
+			position: absolute;
+			left: 0;
+			top: 9px;
+			display: inline-block;
+			@include devicebreak(x-large){
+			 left: 40px;
+			}
+		}
+	}
+}
+
+
 
 //only search-page//
 .view-search-list {
