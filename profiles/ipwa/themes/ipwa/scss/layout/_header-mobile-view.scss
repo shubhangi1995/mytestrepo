@@ -20,10 +20,13 @@
                 &:hover, &:focus {
                     background: none;
                 }
+				&.active{
+				 .icon-bar{
+				 background:$active-menu;
+				 }
+				}
 
-                .icon-bar {
-                    background-color: $active-menu;
-                }
+                
             }
         }
 

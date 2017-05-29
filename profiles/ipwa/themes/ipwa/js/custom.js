@@ -71,6 +71,7 @@ jQuery('.page-aktuelles select').select2().on("select2:open", function(){
 	if(jQuery(window).innerWidth() < 1025){
 	
 	jQuery(".navbar-toggle").click(function(){
+		jQuery(this).toggleClass("active");
 		jQuery(".navbar-collapse").toggle();	
 			});
 		

@@ -130,10 +130,13 @@
 
         border: none;
         font-weight: normal;
-        width: 765px;
+        width:100%;
         margin: 0 auto;
         padding-top: 55px;
         padding-bottom: 40px;
+		@include devicebreak(x-large) {
+                width: 765px;
+            }
     }
 }
 
@@ -169,7 +172,8 @@
                     width: 100%;
 
                     .form-item {
-                        display: inline-block;                        
+                        display: inline-block;     
+padding-right:60%;						
                         padding-bottom: 15px;
 
                         label {
@@ -297,10 +301,12 @@
     .view-filters {
         .views-exposed-form .views-exposed-widgets {
             #edit-term-node-tid-depth-wrapper {
-                width: 80%;
+                width: 100%;
                 float: left;
 				padding:0;
-               
+                @include devicebreak(x-large) {
+				 width:80%;
+				}
 
                 .form-item {
                    
