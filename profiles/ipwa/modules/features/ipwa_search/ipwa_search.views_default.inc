@@ -47,7 +47,7 @@ function ipwa_search_views_default_views() {
   $handler->display->display_options['exposed_form']['type'] = 'better_exposed_filters';
   $handler->display->display_options['exposed_form']['options']['submit_button'] = 'Suchen';
   $handler->display->display_options['exposed_form']['options']['reset_button_label'] = 'Zurücksetzen';
-  $handler->display->display_options['exposed_form']['options']['exposed_sorts_label'] = '- keine -';
+  $handler->display->display_options['exposed_form']['options']['exposed_sorts_label'] = '<keine>';
   $handler->display->display_options['exposed_form']['options']['expose_sort_order'] = FALSE;
   $handler->display->display_options['exposed_form']['options']['bef'] = array(
     'general' => array(
@@ -547,7 +547,7 @@ Document|Dokumente',
     t('Search'),
     t('Suche'),
     t('Suchen'),
-    t('- keine -'),
+    t('<keine>'),
     t('Select any filter and click on Apply to see results'),
     t('Erweiterte Optionen'),
     t('Sort options'),
