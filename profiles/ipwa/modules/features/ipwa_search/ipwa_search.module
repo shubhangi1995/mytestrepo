@@ -64,7 +64,7 @@ function ipwa_search_block_form($form, &$form_state) {
     '#type' => 'submit',
     '#value' => t('Search'),
   );
-  $form['#action'] = $base_url. '/search';
+  $form['#action'] = $base_url. '/suche';
   $form['#submit'][] = 'ipwa_search_custom_form_submit';
   return $form;
 }
