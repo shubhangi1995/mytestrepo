@@ -169,8 +169,7 @@
                     width: 100%;
 
                     .form-item {
-                        display: inline-block;
-                        padding-right: 60px;
+                        display: inline-block;                        
                         padding-bottom: 15px;
 
                         label {
@@ -304,10 +303,10 @@
                
 
                 .form-item {
-                    padding-right: 0;
+                   
 
                     .form-type-bef-link {
-                        padding-right: 0;
+                       padding-right:60px;
 
                         @include devicebreak(x-large) {
                             padding-right: 60px;
