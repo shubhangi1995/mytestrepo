@@ -531,7 +531,7 @@ Document|Dokumente',
     1 => '1',
   );
   $handler->display->display_options['filters']['status']['group'] = 1;
-  $handler->display->display_options['path'] = 'search';
+  $handler->display->display_options['path'] = 'suche';
   $translatables['search_list'] = array(
     t('Master'),
     t('Solr Test'),

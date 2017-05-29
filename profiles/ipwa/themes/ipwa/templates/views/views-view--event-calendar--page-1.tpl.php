@@ -36,7 +36,6 @@
 
 <?php if ($exposed): ?>
   <div class="view-filters">
-    <?php //print_r($exposed);exit; ?>
     <?php print $exposed; ?>
   </div>
 <?php endif; ?>
