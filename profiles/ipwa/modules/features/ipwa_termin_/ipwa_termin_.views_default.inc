@@ -198,7 +198,7 @@ function ipwa_termin__views_default_views() {
   $handler->display->display_options['defaults']['exposed_form'] = FALSE;
   $handler->display->display_options['exposed_form']['type'] = 'better_exposed_filters';
   $handler->display->display_options['exposed_form']['options']['reset_button_label'] = 'Zurücksetzen';
-  $handler->display->display_options['exposed_form']['options']['exposed_sorts_label'] = '- keine -';
+  $handler->display->display_options['exposed_form']['options']['exposed_sorts_label'] = '<keine>';
   $handler->display->display_options['exposed_form']['options']['expose_sort_order'] = FALSE;
   $handler->display->display_options['exposed_form']['options']['bef'] = array(
     'general' => array(
@@ -273,9 +273,8 @@ function ipwa_termin__views_default_views() {
   $handler->display->display_options['header']['area']['table'] = 'views';
   $handler->display->display_options['header']['area']['field'] = 'area';
   $handler->display->display_options['header']['area']['content'] = '[subheadline]
-<div class="calendar-link">
-<a href="/termine">zur Listensicht</a>
-</div>';
+
+<a href="/termine">zur Listensicht</a>';
   $handler->display->display_options['header']['area']['format'] = 'wysiwyg';
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Feld: Inhalt: Nid */
@@ -649,10 +648,10 @@ function ipwa_termin__views_default_views() {
     t('Datum -  start date (field_event_datum)'),
     t('Month'),
     t('Termine'),
+    t('<keine>'),
     t('[subheadline]
-<div class="calendar-link">
-<a href="/termine">zur Listensicht</a>
-</div>'),
+
+<a href="/termine">zur Listensicht</a>'),
     t('<a href="#" id="trigger-[nid]" class="trigger">Icon-[field_event_datum]</a>'),
     t('neueste zuerst'),
     t('Alle'),
