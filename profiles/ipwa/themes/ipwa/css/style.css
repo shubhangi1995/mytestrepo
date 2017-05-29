@@ -8060,7 +8060,118 @@ p {
 .page-user .page-header {
   border: 0; }
 
-/* line 443, ../scss/pages/_common.scss */
+/* line 445, ../scss/pages/_common.scss */
+.page-calendar .view-content {
+  margin: 40px 0; }
+  /* line 448, ../scss/pages/_common.scss */
+  .page-calendar .view-content .calendar-calendar .inner {
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    height: 80px !important;
+    min-height: 80px; }
+    /* line 454, ../scss/pages/_common.scss */
+    .page-calendar .view-content .calendar-calendar .inner .item {
+      float: right;
+      line-height: 26px;
+      margin-top: 30px; }
+      /* line 458, ../scss/pages/_common.scss */
+      .page-calendar .view-content .calendar-calendar .inner .item .calendar {
+        background: none; }
+        /* line 461, ../scss/pages/_common.scss */
+        .page-calendar .view-content .calendar-calendar .inner .item .calendar span a {
+          font-size: 0;
+          text-decoration: none;
+          position: relative;
+          z-index: 99; }
+          /* line 466, ../scss/pages/_common.scss */
+          .page-calendar .view-content .calendar-calendar .inner .item .calendar span a div {
+            display: none; }
+          /* line 469, ../scss/pages/_common.scss */
+          .page-calendar .view-content .calendar-calendar .inner .item .calendar span a.single {
+            border: 2px solid #e74712 !important;
+            border-radius: 50%;
+            display: inline-block;
+            height: 25px;
+            width: 25px; }
+          /* line 477, ../scss/pages/_common.scss */
+          .page-calendar .view-content .calendar-calendar .inner .item .calendar span a.recurring::before {
+            color: #e74712;
+            content: "\e94d";
+            font-family: "icomoon";
+            font-size: 25px;
+            font-weight: normal; }
+  /* line 490, ../scss/pages/_common.scss */
+  .page-calendar .view-content .calendar-calendar table {
+    border-collapse: inherit; }
+    /* line 493, ../scss/pages/_common.scss */
+    .page-calendar .view-content .calendar-calendar table thead tr {
+      background: none; }
+      /* line 495, ../scss/pages/_common.scss */
+      .page-calendar .view-content .calendar-calendar table thead tr th {
+        background: none;
+        border-bottom: 2px solid #e74712;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        font-weight: normal;
+        text-align: right;
+        padding-bottom: 25px; }
+    /* line 510, ../scss/pages/_common.scss */
+    .page-calendar .view-content .calendar-calendar table tbody tr td {
+      border: 5px solid #eff2f7; }
+      /* line 512, ../scss/pages/_common.scss */
+      .page-calendar .view-content .calendar-calendar table tbody tr td:first-child {
+        border-left-width: 0; }
+      /* line 515, ../scss/pages/_common.scss */
+      .page-calendar .view-content .calendar-calendar table tbody tr td:last-child {
+        border-right-width: 0; }
+    /* line 520, ../scss/pages/_common.scss */
+    .page-calendar .view-content .calendar-calendar table tbody tr:first-child td {
+      border-top-width: 20px; }
+    /* line 528, ../scss/pages/_common.scss */
+    .page-calendar .view-content .calendar-calendar table tr td.today {
+      border-color: #e74712 !important; }
+    /* line 531, ../scss/pages/_common.scss */
+    .page-calendar .view-content .calendar-calendar table tr td.greyHover {
+      background: #eff2f7;
+      position: relative; }
+      /* line 535, ../scss/pages/_common.scss */
+      .page-calendar .view-content .calendar-calendar table tr td.greyHover::after {
+        border: 1px solid #dbdfe3;
+        bottom: -1px;
+        content: "";
+        left: -1px;
+        position: absolute;
+        right: -1px;
+        top: -1px; }
+    /* line 545, ../scss/pages/_common.scss */
+    .page-calendar .view-content .calendar-calendar table tr td.redHover {
+      background: #fdede7;
+      position: relative; }
+      /* line 548, ../scss/pages/_common.scss */
+      .page-calendar .view-content .calendar-calendar table tr td.redHover::after {
+        border: 1px solid #e74712;
+        bottom: -1px;
+        content: "";
+        left: -1px;
+        position: absolute;
+        right: -1px;
+        top: -1px; }
+    /* line 562, ../scss/pages/_common.scss */
+    .page-calendar .view-content .calendar-calendar table tr.date-box td.greyHover::after {
+      border-bottom: none; }
+    /* line 567, ../scss/pages/_common.scss */
+    .page-calendar .view-content .calendar-calendar table tr.date-box td.redHover::after {
+      border-bottom: none; }
+    /* line 576, ../scss/pages/_common.scss */
+    .page-calendar .view-content .calendar-calendar table tr.single-day td.greyHover::after {
+      border-top: none; }
+    /* line 581, ../scss/pages/_common.scss */
+    .page-calendar .view-content .calendar-calendar table tr.single-day td.redHover::after {
+      border-top: none; }
+
+/* line 597, ../scss/pages/_common.scss */
 #backtotop {
   background: #e74712;
   bottom: 20px;
@@ -8072,7 +8183,7 @@ p {
   width: 50px;
   border-radius: 25px;
   text-indent: 0; }
-  /* line 455, ../scss/pages/_common.scss */
+  /* line 609, ../scss/pages/_common.scss */
   #backtotop::before {
     font-family: "icomoon";
     content: "\e950";

@@ -87,7 +87,7 @@ jQuery('.tb-megamenu-submenu.dropdown-menu').attr('style','display:none !importa
 
     jQuery(function() {
         var pop_up_id;
-        jQuery('div.pop-up').hide();
+        //jQuery('div.pop-up').hide();
         jQuery('a.trigger').hover(function() {
             pop_up_id = this.id;
             pop_up_id = pop_up_id.substring(8);
@@ -98,6 +98,59 @@ jQuery('.tb-megamenu-submenu.dropdown-menu').attr('style','display:none !importa
             jQuery('div#pop-up-' + pop_up_id).hide();
         });
     });
+	
+	// Calendar view work
+	
+	jQuery(".date-display-recurring").parent().addClass("recurring");
+	jQuery(".date-display-single").parent().addClass("single");
+	
+	// Mouse over functionality
+	
+	jQuery(".date-box td").on("mouseover", function(){
+		var positionTD = jQuery(this).index();
+		jQuery(this).addClass("greyHover");
+		jQuery(this).parent().next(".single-day").find("td:eq(" +positionTD+ ")").addClass("greyHover")
+	}).on("mouseout", function(){
+		jQuery("table tr td").removeClass("greyHover");
+	});
+	
+	jQuery(".date-box td").on("click", function(){
+		var positionTD = jQuery(this).index();
+		jQuery(this).addClass("redHover");
+		jQuery(this).siblings().removeClass("redHover");
+		jQuery(this).parent().siblings().find("td").removeClass("redHover");
+		jQuery(this).parent().next(".single-day").find("td:eq(" +positionTD+ ")").addClass("redHover")
+	});/*.on("mouseout", function(){
+		if(!jQuery(this).parent().siblings().find("td:eq(" +positionTD+ ")").is(".redHover")){
+			jQuery("table tr td").removeClass("redHover");
+		}
+	}); */
+	
+	jQuery(".single-day td").on("mouseover", function(){
+		var positionTD = jQuery(this).index();
+		jQuery(this).addClass("greyHover");
+		jQuery(this).parent().prev(".date-box").find("td:eq(" +positionTD+ ")").addClass("greyHover")
+	}).on("mouseout", function(){
+		jQuery("table tr td").removeClass("greyHover");
+	});
+	
+	jQuery(".single-day td").on("click", function(){
+		var positionTD = jQuery(this).index();
+		jQuery(this).addClass("redHover");
+		jQuery(this).siblings().removeClass("redHover");
+		jQuery(this).parent().siblings().find("td").removeClass("redHover");
+		jQuery(this).parent().prev(".date-box").find("td:eq(" +positionTD+ ")").addClass("redHover")
+	});/*.on("mouseout", function(){
+		if(!jQuery(this).parent().siblings().find("td:eq(" +positionTD+ ")").is(".redHover")){
+			jQuery("table tr td").removeClass("redHover");
+		}
+	}); */
+	
+	/* jQuery(window).click(function(event){
+		if(!jQuery(event.target).is(".redHover")){
+			jQuery("table tr td").removeClass("redHover");
+		}
+	}); */
 
 
 	
