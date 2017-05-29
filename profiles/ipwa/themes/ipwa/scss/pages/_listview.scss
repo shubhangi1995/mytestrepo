@@ -308,9 +308,9 @@
 				}
 
                 .form-item {                  
-
+                 
                     .form-type-bef-link {
-                       padding-right:60px;
+                      padding-right:0;
 
                         @include devicebreak(x-large) {
                             padding-right: 60px;

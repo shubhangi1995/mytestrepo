@@ -9099,7 +9099,7 @@ p {
       width: 80%; } }
   /* line 312, ../scss/pages/_listview.scss */
   .view-termin .view-filters .views-exposed-form .views-exposed-widgets #edit-term-node-tid-depth-wrapper .form-item .form-type-bef-link, .view-event-calendar .view-filters .views-exposed-form .views-exposed-widgets #edit-term-node-tid-depth-wrapper .form-item .form-type-bef-link {
-    padding-right: 60px;
+    padding-right: 0;
     /* Over Desktop design */ }
     @media (min-width: 1025px) {
       /* line 312, ../scss/pages/_listview.scss */
