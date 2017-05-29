@@ -485,6 +485,17 @@
                     color: $main-color;
                 }
             }
+			div[class*='views-field-views-conditional-']{
+			    .search-condition.field-content {
+				
+				
+				bottom:60px;
+				a{
+				color: $color-light-grey;
+				}
+				
+			}
+			}
         }
     }
 }
