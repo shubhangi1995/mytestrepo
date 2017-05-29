@@ -273,8 +273,9 @@ function ipwa_termin__views_default_views() {
   $handler->display->display_options['header']['area']['table'] = 'views';
   $handler->display->display_options['header']['area']['field'] = 'area';
   $handler->display->display_options['header']['area']['content'] = '[subheadline]
-
-<a href="/termine">zur Listensicht</a>';
+<div class="calendar-link">
+<a href="/termine">zur Listensicht</a>
+</div>';
   $handler->display->display_options['header']['area']['format'] = 'wysiwyg';
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Feld: Inhalt: Nid */
@@ -649,8 +650,9 @@ function ipwa_termin__views_default_views() {
     t('Month'),
     t('Termine'),
     t('[subheadline]
-
-<a href="/termine">zur Listensicht</a>'),
+<div class="calendar-link">
+<a href="/termine">zur Listensicht</a>
+</div>'),
     t('<a href="#" id="trigger-[nid]" class="trigger">Icon-[field_event_datum]</a>'),
     t('neueste zuerst'),
     t('Alle'),
