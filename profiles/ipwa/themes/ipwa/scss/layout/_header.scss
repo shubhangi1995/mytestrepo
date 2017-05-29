@@ -191,12 +191,15 @@ header {
                     ul.tb-megamenu-nav li {
                         width: 20%;
                         position: static;
+						
 
                         > a {
                             color: $main-color;
                             border-right: none;
                             font-size: 20px;
                             padding: 0;
+							margin:0;
+							cursor:pointer;
                             margin-bottom: 20px;
                             margin-left: 55px;
                             position: relative;
@@ -208,47 +211,47 @@ header {
                                 display: none;
                             }
 
-                            &:before {
-                                content: "";
-                                width: 45px;
-                                height: 45px;
+                            &:before {                                
                                 display: inline-block;
                                 float: left;
-                                margin-top: 5px;
-                                padding-left: 0;
+                                margin-top: 5px;                                
                                 margin-right: 10px;
                                 left: -55px;
                                 position: absolute;
+								font-weight:normal;
+								font-family:$icomoon;
+								color:$color-light-grey;
+								font-size:40px;
                             }
                         }
 
                         &.menu-politik > a {
                             &:before {
-                                background: url("../images/politik.png") no-repeat;
+                                content:"\e94b";
                             }
                         }
 
                         &.menu-wirtschaft > a {
                             &:before {
-                                background: url("../images/wirtschft.png") no-repeat;
+                                content:"\e947";
                             }
                         }
 
                         &.menu-unternehmen > a {
                             &:before {
-                                background: url("../images/infos.png") no-repeat;
+                               content:"\e943";
                             }
                         }
 
                         &.menu-beschaftigte > a {
                             &:before {
-                                background: url("../images/Bescha.png") no-repeat;
+                               content:"\e943";
                             }
                         }
 
                         &.menu-schaufenster > a {
                             &:before {
-                                background: url("../images/Digitales.png") no-repeat;
+                                content:"\e943";
                             }
                         }
 
@@ -262,63 +265,12 @@ header {
                                 border: none;
                                 color: $active-menu;
                             }
+							
+							&::before{
+							 color:$active-menu;
+							}
 
-                            &:before {
-                                content: "";
-                                width: 45px;
-                                height: 45px;
-                                display: inline-block;
-                                float: left;
-                                margin-top: 5px;
-                            }
-                        }
-
-                        &.open.menu-politik > a {
-                            &:before {
-                                background: url("../images/politik-active.png") no-repeat;
-                            }
-                        }
-
-                        &.open.menu-wirtschaft > a {
-                            &:before {
-                                background: url("../images/wirtschft-active.png") no-repeat;
-                            }
-                        }
-
-                        &.open.menu-unternehmen > a {
-                            &:before {
-                                background: url("../images/infos-active.png") no-repeat;
-                            }
-                        }
-
-                        &.open.menu-beschaftigte > a {
-                            &:before {
-                                background: url("../images/Bescha-active.png") no-repeat;
-                            }
-                        }
-
-                        &.open.menu-schaufenster > a {
-                            &:before {
-                                background: url("../images/Digitales-active.png") no-repeat;
-                            }
-                        }
-
-                        &.active > a {
-                            background: none;
-                            color: $active-menu;
-                            padding-bottom: 0;
-                            border-bottom: 2px solid $active-menu;
-
-                            &:before {
-                                background: url("../images/Digitales-active.png") no-repeat;
-                                content: "";
-                                width: 45px;
-                                height: 45px;
-                                display: inline-block;
-                                float: left;
-                                margin-top: 5px;
-                            }
-                        }
+                           }                        
 
                         &.dropdown.open > a {
                             border-bottom: 2px solid $active-menu;
@@ -412,6 +364,10 @@ header {
                         }
                     }
                 }
+				.tb-megamenu .nav > .active > a, .tb-megamenu .nav > .active > a:hover, .tb-megamenu .nav > .active > a:focus{
+				background:none;
+				
+				}
             }
         }
     
