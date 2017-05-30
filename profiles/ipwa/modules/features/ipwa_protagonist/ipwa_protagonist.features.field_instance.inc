@@ -349,8 +349,11 @@ Zeile 6 (bspw. E-Mail-Adresse)',
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 3,
       ),
       'paragraph' => array(
@@ -397,7 +400,6 @@ Zeile 6 (bspw. E-Mail-Adresse)',
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
-          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -451,7 +453,6 @@ Zeile 6 (bspw. E-Mail-Adresse)',
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
-          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -552,7 +553,6 @@ Zeile 6 (bspw. E-Mail-Adresse)',
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
-          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -606,7 +606,6 @@ Zeile 6 (bspw. E-Mail-Adresse)',
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
-          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -812,8 +811,11 @@ Zeile 6 (bspw. E-Mail-Adresse)',
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 4,
       ),
       'paragraph' => array(
