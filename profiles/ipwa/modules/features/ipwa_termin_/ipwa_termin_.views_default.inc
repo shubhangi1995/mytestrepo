@@ -1100,7 +1100,7 @@ function ipwa_termin__views_default_views() {
         'bef_collapsible' => 0,
         'autosubmit' => 0,
         'is_secondary' => 0,
-        'any_label' => '',
+        'any_label' => 'Alles anzeigen',
         'bef_filter_description' => '',
         'tokens' => array(
           'available' => array(
@@ -1446,6 +1446,7 @@ function ipwa_termin__views_default_views() {
     t('Datum'),
     t('Alle'),
     t('<keine>'),
+    t('Alles anzeigen'),
     t('neueste zuerst'),
     t('A-Z'),
     t('Feed'),
