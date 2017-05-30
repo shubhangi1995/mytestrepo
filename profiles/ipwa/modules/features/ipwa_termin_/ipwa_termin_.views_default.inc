@@ -236,7 +236,7 @@ function ipwa_termin__views_default_views() {
         'bef_collapsible' => 0,
         'autosubmit' => 0,
         'is_secondary' => 0,
-        'any_label' => '',
+        'any_label' => 'Alles anzeigen',
         'bef_filter_description' => '',
         'tokens' => array(
           'available' => array(
@@ -261,10 +261,11 @@ function ipwa_termin__views_default_views() {
   $handler->display->display_options['style_options']['with_weekno'] = '0';
   $handler->display->display_options['style_options']['multiday_theme'] = '0';
   $handler->display->display_options['style_options']['theme_style'] = '1';
-  $handler->display->display_options['style_options']['max_items'] = '0';
+  $handler->display->display_options['style_options']['max_items'] = '3';
   $handler->display->display_options['defaults']['style_options'] = FALSE;
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
   $handler->display->display_options['row_plugin'] = 'calendar_entity';
+  $handler->display->display_options['row_options']['hide_empty'] = TRUE;
   $handler->display->display_options['row_options']['colors']['legend'] = 'type';
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['header'] = FALSE;
@@ -1446,6 +1447,7 @@ function ipwa_termin__views_default_views() {
     t('Datum'),
     t('Alle'),
     t('<keine>'),
+    t('Alles anzeigen'),
     t('neueste zuerst'),
     t('A-Z'),
     t('Feed'),
