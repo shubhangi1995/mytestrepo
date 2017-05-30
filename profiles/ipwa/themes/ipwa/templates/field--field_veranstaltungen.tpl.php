@@ -52,10 +52,10 @@ HTML comment.
 -->
 <div class="<?php print $classes; ?>"<?php print $attributes; ?>>
 
-  <?php if(!empty('field_veranstaltungen')):?>
+  <?php if(!empty('field_veranstaltungen') && isset($items)):?>
     <?php  $view = views_get_view_result("related_content", "block_1", $variables["nid"]);?>
     <?php $related_event = '';?>
-    <?php if (!empty($view)) :?>
+    <?php if (!empty($view) && isset($view)) :?>
       <?php if (!$label_hidden ): ?>
         <div class="field-label"<?php print $title_attributes; ?>><?php print_r('Kommende Veranstaltungen')?>&nbsp;</div>
       <?php endif; ?>

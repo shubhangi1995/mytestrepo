@@ -332,8 +332,13 @@ padding:0;
 
 .node-type-webform {
     .node-webform {
-        width: 765px;
-        margin: 0 auto;
+		width:100%;
+		 padding:15px;
+		
+		@include devicebreak(medium) {
+			width: 765px;
+			margin: 0 auto;
+        } 
 
         .field-name-field-untertitel {
             color: $active-menu;
@@ -341,7 +346,7 @@ padding:0;
             padding: 30px 0;
         }
 
-        .webform-client-form {
+        .webform-client-form { 
             padding-top: 40px;
             width: 65%;
 
@@ -442,6 +447,9 @@ padding:0;
 // Calendar view  
 
 .page-calendar{
+	.region-content{
+		@extend .container; 
+	}
 	.view-content{ 
 		margin:40px 0;
 		.calendar-calendar{
@@ -457,7 +465,9 @@ padding:0;
 					margin-top:30px;
 					.calendar{
 						background:none; 
+						overflow:visible;
 						span{
+							position:relative;
 							a{
 								font-size:0; 
 								text-decoration:none;
@@ -480,6 +490,118 @@ padding:0;
 										font-family: $icomoon; 
 										font-size: 25px;
 										font-weight: normal;
+									}
+								}
+								& + .views-row {
+									@extend .col-md-4,.col-sm-6;
+									position:absolute;
+									display:none;
+									width:350px;     
+									z-index:999;
+									left:-39px;
+									top:30px;
+									 > .row-container {
+										background: $color-light-blue;
+										padding: 30px;
+										margin-bottom: 30px;
+										position: relative;
+										border: 1px solid $color-border;
+										cursor: pointer;
+										transition: all 0.5s ease;
+										height: auto;
+
+										@include devicebreak(x-medium) {
+											height: 410px;
+										}
+
+
+										&.project-blue {
+											background: $main-color;
+
+											.views-field-title a {
+												color: $color-white;
+											}
+
+											&:hover {
+												.views-field-title a {
+													color: $main-color;
+												}
+											}
+										}
+
+										&:hover {
+											// background: $color-light-blue;
+										}
+
+										.views-field-field-themenzuweisung {
+											padding-bottom: 30px;
+
+											img {
+												display: inline-block;
+												margin-right: 10px;
+											}
+										}
+
+										.views-field-field-event-datum {
+											padding-bottom: 20px;
+											font-weight: bold;
+											color: $active-menu;
+											font-size: 22px;
+										}
+
+										.views-field-title {
+											padding-bottom: 20px;
+
+											a {
+												text-decoration: none;
+												font-size: 22px;
+												color: $main-color;
+											}
+										}
+
+										.views-field-field-ort, div[class*='views-field-views-conditional-'] {
+											.field-content {
+												font-size: 20px;
+												color: $color-light-grey;
+												// position: absolute;
+												// bottom: 30px;
+											}
+										}
+										.pop-up{
+											display:block !important;
+										}
+									}
+									&::before, &::after{
+										border-color: transparent transparent $color-light-blue;
+										border-style: solid;
+										border-width: 12px;
+										content: "";
+										height: 0;
+										position: absolute;
+										top: -23px;
+										left:42px;
+										width: 0;
+										z-index: 9;
+									}
+									&::after{
+										border-bottom-color:$color-border;
+										top: -24px;
+										z-index: 8;
+									}
+									&.rightBorder{ 
+										left: auto;
+										right: -31px;
+										&::before, &::after{
+											left:auto;
+											right:35px;
+										}
+									}
+								}
+							}
+							&:hover{
+								a{
+									& + .views-row {
+										display:block;
 									}
 								}
 							}
@@ -587,6 +709,9 @@ padding:0;
 				}
 			}
 		}
+	}
+	.view-event-on-calendar{
+		display:none;
 	}
 }
 
