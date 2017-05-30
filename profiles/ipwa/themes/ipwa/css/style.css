@@ -8157,10 +8157,6 @@ p {
                 transition: all 0.5s ease;
                 height: auto;
                 /* Tablet design */ }
-                @media (min-width: 767px) {
-                  /* line 503, ../scss/pages/_common.scss */
-                  .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row > .row-container {
-                    height: 410px; } }
                 /* line 518, ../scss/pages/_common.scss */
                 .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row > .row-container.project-blue {
                   background: #273753; }
