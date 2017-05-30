@@ -269,9 +269,12 @@ function ipwa_termin__field_default_field_instances() {
     'description' => 'Sie können hier Inhalte vom Typ \'Dokument\' oder \'Publikation\' hinzufügen.',
     'display' => array(
       'default' => array(
-        'label' => 'hidden',
-        'settings' => array(),
-        'type' => 'hidden',
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 10,
       ),
       'ical' => array(
@@ -402,11 +405,10 @@ function ipwa_termin__field_default_field_instances() {
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
-          'bypass_access' => FALSE,
           'link' => 0,
         ),
         'type' => 'entityreference_label',
-        'weight' => 8,
+        'weight' => 17,
       ),
       'ical' => array(
         'label' => 'above',
@@ -462,11 +464,10 @@ function ipwa_termin__field_default_field_instances() {
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
-          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 6,
+        'weight' => 15,
       ),
       'ical' => array(
         'label' => 'above',
@@ -644,11 +645,10 @@ function ipwa_termin__field_default_field_instances() {
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
-          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 5,
+        'weight' => 14,
       ),
       'ical' => array(
         'label' => 'above',
@@ -757,11 +757,10 @@ function ipwa_termin__field_default_field_instances() {
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
-          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 7,
+        'weight' => 16,
       ),
       'ical' => array(
         'label' => 'above',
@@ -987,9 +986,12 @@ function ipwa_termin__field_default_field_instances() {
     'description' => 'Sie können hier Inhalte vom Typ \'Termin\' hinzufügen.',
     'display' => array(
       'default' => array(
-        'label' => 'hidden',
-        'settings' => array(),
-        'type' => 'hidden',
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 12,
       ),
       'ical' => array(
@@ -1150,7 +1152,7 @@ Schema für externe Links: http://www…',
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 9,
+        'weight' => 18,
       ),
       'ical' => array(
         'label' => 'above',

@@ -282,8 +282,11 @@ function ipwa_nachricht_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
         'weight' => 11,
       ),
       'paragraph' => array(
@@ -336,11 +339,10 @@ function ipwa_nachricht_field_default_field_instances() {
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
-          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 8,
+        'weight' => 18,
       ),
       'paragraph' => array(
         'label' => 'above',
@@ -396,11 +398,10 @@ function ipwa_nachricht_field_default_field_instances() {
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
-          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 6,
+        'weight' => 16,
       ),
       'paragraph' => array(
         'label' => 'above',
@@ -509,11 +510,10 @@ function ipwa_nachricht_field_default_field_instances() {
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
-          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 5,
+        'weight' => 15,
       ),
       'paragraph' => array(
         'label' => 'above',
@@ -569,11 +569,10 @@ function ipwa_nachricht_field_default_field_instances() {
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
-          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 7,
+        'weight' => 17,
       ),
       'paragraph' => array(
         'label' => 'above',
@@ -799,10 +798,13 @@ function ipwa_nachricht_field_default_field_instances() {
     'description' => 'Sie können hier Inhalte vom Typ \'Termin\' hinzufügen.',
     'display' => array(
       'default' => array(
-        'label' => 'hidden',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 10,
+        'label' => 'above',
+        'module' => 'entityreference',
+        'settings' => array(
+          'link' => FALSE,
+        ),
+        'type' => 'entityreference_label',
+        'weight' => 13,
       ),
       'paragraph' => array(
         'label' => 'above',
@@ -962,7 +964,7 @@ Schema für externe Links: http://www…',
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 9,
+        'weight' => 19,
       ),
       'paragraph' => array(
         'label' => 'above',

@@ -19,45 +19,6 @@ function ipwa_preprocess_node(&$variables)
     // Don't show title
     $variables['title'] = '';
   }
-  // Display view 'Kommende Veranstaltungen' instaed of field 'Veranstaltungen'
-  if (!empty($variables['field_veranstaltungen'])) {
-    $views = views_get_view_result("related_content", "block_1", $variables['nid']);
-    $related_event_view = '';
-    if (!empty($views)) {
-      $related_event_view = '<h2 class="view-title">' . t('Kommende Veranstaltungen') . '</h2>';
-      //for embedding view Kommende Veranstaltungen
-      $related_event_view .= views_embed_view("related_content", "block_1", $variables['nid']);
-      $variables['content']['group_page_bottom']['related_event']['#markup'] = $related_event_view;
-      $variables['content']['group_page_bottom']['related_event']['#weight'] = isset($variables['elements']['#fieldgroups']['group_related_event']) ? $variables['elements']['#fieldgroups']['group_related_event']->weight : -1;
-    }
-  }
-
-  // display view 'Dokumente und Publikation' instead of field 'Dokumente und Publikationen'
-  if (!empty($variables['field_dokumente_und_publikatione'])) {
-    $view = views_get_view_result("related_content", "block_2", $variables['nid']);
-    $related_doc_view = '';
-    if (!empty($view)) {
-      $related_doc_view = '<h2 class="view-title">' . t('Dokumente und Publikationen') . '</h2>';
-      //for embedding view Dokumente und Publikation
-      $related_doc_view .= views_embed_view("related_content", "block_2", $variables['nid']);
-      $variables['content']['group_page_bottom']['related_doc']['#markup'] = $related_doc_view;
-      $variables['content']['group_page_bottom']['related_doc']['#weight'] = isset($variables['elements']['#fieldgroups']['group_related_doc']) ? $variables['elements']['#fieldgroups']['group_related_doc']->weight : -1;
-    }
-  }
-
-  // display view 'Publikationen' instead of field 'Publikation'
-  if (!empty($variables['field_publikation'])) {
-    $view = views_get_view_result("related_content", "block_3", $variables['nid']);
-    $related_pub_view = '';
-    if (!empty($view)) {
-      $related_pub_view = '<h3 class="view-title">' . t('Publikation') . '</h3>';
-      //for embedding view publikation
-      $related_pub_view .= views_embed_view("related_content", "block_3", $variables['nid']);
-      $variables['content']['group_body_container']['group_body_sub_wrapper']['rel_pub']['#markup'] = $related_pub_view;
-      $variables['content']['group_body_container']['group_body_sub_wrapper']['rel_pub']['#weight'] = isset($variables['elements']['#fieldgroups']['group_rel_pub']) ? $variables['elements']['#fieldgroups']['group_rel_pub']->weight : -1;
-    }
-  }
-
   // Change position of title field
   // (mostly will be displayed under date field)
   if (isset($variables['title']) && $variables['title']) {
@@ -65,6 +26,7 @@ function ipwa_preprocess_node(&$variables)
         '#markup' => '<h1 class="page-title">' . $variables['title'] . '</h1>',
         '#weight' => isset($variables['elements']['#fieldgroups']['group_title']) ? $variables['elements']['#fieldgroups']['group_title']->weight : -1);
   }
+
 
   //change the position if ical view
   if($variables['type'] == 'termin') {
