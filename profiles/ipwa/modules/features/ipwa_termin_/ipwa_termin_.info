@@ -8,6 +8,7 @@ dependencies[] = date_ical
 features[ctools][] = field_group:field_group:1
 features[ctools][] = strongarm:strongarm:1
 features[ctools][] = views:views_default:3.0
+features[fe_block_settings][] = views-event_on_calendar-block
 features[features_api][] = api:2
 features[field_base][] = field_body
 features[field_base][] = field_link_zur_anmeldung

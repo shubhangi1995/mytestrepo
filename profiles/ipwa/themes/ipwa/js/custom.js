@@ -87,7 +87,7 @@ jQuery('.tb-megamenu-submenu.dropdown-menu').attr('style','display:none !importa
 
     jQuery(function() {
         var pop_up_id;
-        //jQuery('div.pop-up').hide();
+        jQuery('div.pop-up').hide();
         jQuery('a.trigger').hover(function() {
             pop_up_id = this.id;
             pop_up_id = pop_up_id.substring(8);
