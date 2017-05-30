@@ -817,13 +817,21 @@ function ipwa_termin__views_default_views() {
   $handler->display->display_options['fields']['nothing']['table'] = 'views';
   $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
   $handler->display->display_options['fields']['nothing']['label'] = '';
-  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div id="trigger-[nid]">
-    <div id="pop-up-[nid]" class="pop-up">
-		<span>[field_themenzuweisung]</span>
-		<span>[field_event_datum]</span>
-		<span>[title]</span>
-		<span>[field_ort]</span>
-    </div>
+  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class="row-container" id="trigger-[nid]">
+	<div id="pop-up-[nid]" class="pop-up">
+	  <div class="views-field views-field-field-themenzuweisung">        
+		<div class="field-content">[field_themenzuweisung]</div>  
+	  </div>  
+	  <div class="views-field views-field-field-event-datum">        
+		  <div class="field-content">[field_event_datum]</div>
+	  </div>  
+	  <div class="views-field views-field-title">
+		<span class="field-content">[title]</span>  
+	  </div>  
+	  <div class="views-field views-field-field-ort">
+		<div class="field-content">[field_ort]</div>
+	  </div>
+	</div>  
 </div>';
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
   $handler->display->display_options['defaults']['sorts'] = FALSE;
@@ -874,13 +882,21 @@ function ipwa_termin__views_default_views() {
     t('Desc'),
     t('Select any filter and click on Apply to see results'),
     t('Erweiterte Optionen'),
-    t('<div id="trigger-[nid]">
-    <div id="pop-up-[nid]" class="pop-up">
-		<span>[field_themenzuweisung]</span>
-		<span>[field_event_datum]</span>
-		<span>[title]</span>
-		<span>[field_ort]</span>
-    </div>
+    t('<div class="row-container" id="trigger-[nid]">
+	<div id="pop-up-[nid]" class="pop-up">
+	  <div class="views-field views-field-field-themenzuweisung">        
+		<div class="field-content">[field_themenzuweisung]</div>  
+	  </div>  
+	  <div class="views-field views-field-field-event-datum">        
+		  <div class="field-content">[field_event_datum]</div>
+	  </div>  
+	  <div class="views-field views-field-title">
+		<span class="field-content">[title]</span>  
+	  </div>  
+	  <div class="views-field views-field-field-ort">
+		<div class="field-content">[field_ort]</div>
+	  </div>
+	</div>  
 </div>'),
   );
   $export['event_on_calendar'] = $view;

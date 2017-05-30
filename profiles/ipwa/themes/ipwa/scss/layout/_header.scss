@@ -366,7 +366,16 @@ header {
                 }
 				.tb-megamenu .nav > .active > a, .tb-megamenu .nav > .active > a:hover, .tb-megamenu .nav > .active > a:focus{
 				background:none;
+				color:$main-color;
+				border-bottom:none;
 				
+				}
+				.tb-megamenu .nav li.dropdown.active > .dropdown-toggle, 
+				.tb-megamenu .nav li.dropdown.open.active > .dropdown-toggle, 
+				{
+				  background:none;
+				  
+				 
 				}
             }
         }
