@@ -33,10 +33,11 @@
   <?php print $title; ?>
 <?php endif; ?>
 <?php print render($title_suffix); ?>
+    <div class="view-sub-wrapper">
 <?php if ($header): ?>
-    <div class="view-header">
-      <?php print $header; ?>
-    </div>
+  <div class="view-header">
+    <?php print $header; ?>
+  </div>
 <?php endif; ?>
 
 <?php if ($exposed): ?>
@@ -80,7 +81,7 @@
     <?php print $footer; ?>
   </div>
 <?php endif; ?>
-
+    </div>
 <?php if ($feed_icon): ?>
   <div class="feed-icon">
     <?php print $feed_icon; ?>
