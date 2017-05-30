@@ -55,10 +55,10 @@ HTML comment.
    <div class="field-label view-title"><h3><?php print $title_attributes; ?><?php print $label ?>&nbsp</h3></div>
   <?php endif; ?>
 
-  <?php if(!empty("field_publikation")):?>
+  <?php if(!empty("field_publikation") && isset($items)):?>
     <?php  $view = views_get_view_result("related_content", "block_3", $variables["nid"]);?>
     <?php $related_publikation = '';?>
-    <?php if (!empty($view)) :?>
+    <?php if (!empty($view) && isset($view)) :?>
       <?php $related_publikation .= views_embed_view("related_content", "block_3", $variables["nid"]);?>
       <?php print_r($related_publikation);?>
     <?php endif;?>
