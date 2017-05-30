@@ -114,6 +114,18 @@ jQuery('.tb-megamenu-submenu.dropdown-menu').attr('style','display:none !importa
 		jQuery("table tr td").removeClass("greyHover");
 	});
 	
+	
+	jQuery(".single-day td").on("mouseover", function(){
+		var positionTD = jQuery(this).index();
+		jQuery(this).addClass("greyHover");
+		jQuery(this).parent().prev(".date-box").find("td:eq(" +positionTD+ ")").addClass("greyHover")
+	}).on("mouseout", function(){
+		jQuery("table tr td").removeClass("greyHover");
+	});
+	
+	
+	// Click functionality
+	
 	jQuery(".date-box td").on("click", function(){
 		var positionTD = jQuery(this).index();
 		jQuery(this).addClass("redHover");
@@ -125,14 +137,6 @@ jQuery('.tb-megamenu-submenu.dropdown-menu').attr('style','display:none !importa
 			jQuery("table tr td").removeClass("redHover");
 		}
 	}); */
-	
-	jQuery(".single-day td").on("mouseover", function(){
-		var positionTD = jQuery(this).index();
-		jQuery(this).addClass("greyHover");
-		jQuery(this).parent().prev(".date-box").find("td:eq(" +positionTD+ ")").addClass("greyHover")
-	}).on("mouseout", function(){
-		jQuery("table tr td").removeClass("greyHover");
-	});
 	
 	jQuery(".single-day td").on("click", function(){
 		var positionTD = jQuery(this).index();
@@ -152,6 +156,35 @@ jQuery('.tb-megamenu-submenu.dropdown-menu').attr('style','display:none !importa
 		}
 	}); */
 
+	
+	// Calendar tool-tip
+	
+	jQuery(".single-day td .trigger").mouseover(function(){
+		var toolId = jQuery(this).attr("id"), toolTipBox;
+		jQuery(".view-event-on-calendar .view-content .views-row").each(function(index, element){
+			var tipId = jQuery(element).find(".field-content .row-container").attr("id");
+			if(toolId == tipId){
+				//jQuery(this).parent().append(jQuery(element));
+				toolTipBox = jQuery(element).clone();
+			}
+		});
+		if(!jQuery(this).next().is(".views-row")){
+			jQuery(this).parent().append(toolTipBox);
+		}
+		
+		// Sensible mouseover tool tip
+		if(jQuery(this).parents("td").is(":last-child, :nth-last-child(2)")){
+			jQuery(this).next(".views-row").addClass("rightBorder");
+		}
+		
+	});
+	
+	// Click on trigger
+	
+	jQuery(".single-day td .trigger").click(function(event){
+		event.preventDefault();
+	});
+	
 
 	
 });
