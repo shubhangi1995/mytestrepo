@@ -43,4 +43,7 @@ footer {
         font-size: 18px;
         color: $main-color;
     }
+	.nav .open > a, .nav .open > a:hover, .nav .open > a:focus{
+	background:none;
+	}
 }

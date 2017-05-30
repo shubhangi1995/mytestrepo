@@ -670,8 +670,11 @@
 
             .inner-wrapper {
                 @extend .col-md-6;
-
                 padding-left: 0;
+				
+				 @include devicebreak(small) {
+                        padding-right:0;
+                    }
 
                 .view-content .views-row {
                     .row-container {
@@ -741,6 +744,10 @@
 
                 padding-top: 0;
                 padding-right: 0;
+				
+				 @include devicebreak(small) {
+                        padding-left:0;
+                    }
 
                 .view-sub-wrapper {
                     width: auto;
