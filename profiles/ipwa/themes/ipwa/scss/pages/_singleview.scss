@@ -264,11 +264,11 @@
 
 .group-page-info {
     // @extend .container;
-	h2{
-		font-size:26px;
-		color:$active-menu;
-		margin-bottom:60px;
-	}
+    h2 {
+        font-size: 26px;
+        color: $active-menu;
+        margin-bottom: 60px;
+    }
 
     .field:first-child {
         .field-item {
@@ -456,19 +456,19 @@
 }
 
 /* .paragraphs-item-flie-text-mit-bild-links, .paragraphs-item-flie-text-mit-bild-rechts{
-	.field-name-field-flie-text-bereich{
-		padding:0;
-	}
+  .field-name-field-flie-text-bereich{
+    padding:0;
+  }
 } */
 
 .paragraphs-item-flie-text-mit-bild-rechts {
-	.content {
-			   .field-name-field-bild-ref {
-					padding-left: 30px;
-					padding-right:0;
-					float:right;
-				}
-	}
+    .content {
+        .field-name-field-bild-ref {
+            padding-left: 30px;
+            padding-right: 0;
+            float: right;
+        }
+    }
 }
 
 .field .field-label {
@@ -661,18 +661,31 @@
         padding: 0;
 
         .left-block {
-            @extend .col-md-8;
+            @include devicebreak(large) {
+                width: 66.66%;
+                float: left;
+                padding-right:0;
+				padding-top:0;
+            }
+
+
+            width: 100%;
+            padding: 15px;
 
             .view-header {
-                padding-bottom: 30px;                
+                padding-bottom: 30px;
                 font-size: 28px;
             }
 
             .inner-wrapper {
-                @extend .col-md-6;
-                padding-left: 0;
-				
-				
+                @include devicebreak(large) {
+                    width: 50%;
+                    float: left;
+                    padding-right: 20px;
+                }
+
+
+                width: 100%;
 
                 .view-content .views-row {
                     .row-container {
@@ -738,12 +751,14 @@
             }
 
             > .view-latest-content-doorpage {
-                @extend .col-md-6;
+                @include devicebreak(large) {
+                    width: 50%;
+                    float: left;
+                    padding: 0 10px;
+                }
 
-                padding-top: 0;
-                padding-right: 0;
-				
-				
+
+                width: 100%;
 
                 .view-sub-wrapper {
                     width: auto;
@@ -801,16 +816,24 @@
             }
         }
 
-        > .view-latest-content-doorpage {
-            @extend .col-md-4;
+        > .view-latest-content-doorpage {            
 
-            padding-top: 0;
+            @include devicebreak(large) {
+                width: 33.33%;
+                float: left;
+                padding-left: 20px;
+                padding-top: 0;
+            }
+
+
+            width: 100%;
+            padding: 15px;
 
             .view-sub-wrapper {
                 width: auto;
 
                 .view-header {
-                    padding-bottom: 30px;                    
+                    padding-bottom: 30px;
                     font-size: 28px;
                 }
 
@@ -925,8 +948,8 @@
                     float: right;
 
                     .view-header {
-						width:auto;
-						margin:0;
+                        width: auto;
+                        margin: 0;
                         padding: 0;
                         color: $main-color;
                         font-size: 16px;
