@@ -606,6 +606,7 @@
             margin-bottom: 30px;
              height:auto;
 			 width:90%;
+			 position:relative;
 			 
 			
 			 @include devicebreak(large) {
@@ -617,9 +618,7 @@
                     }
 			
 
-            &:nth-child(2), &:last-child {
-               
-				
+            &:nth-child(2), &:last-child {               				
 				@include devicebreak(large) {
                           margin-right: 0;
                     }
@@ -639,8 +638,8 @@
             .views-field-name-1 {
                 a {
                     @extend .common-button;
-
                     color: $main-color;
+					position:absolute;bottom:30px;
                 }
             }
 
