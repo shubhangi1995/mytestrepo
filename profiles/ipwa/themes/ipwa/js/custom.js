@@ -185,6 +185,14 @@ jQuery('.tb-megamenu-submenu.dropdown-menu').attr('style','display:none !importa
 		event.preventDefault();
 	});
 	
+	// Structural changes
+	
+	jQuery(".page-calendar .calendar-link").insertAfter(jQuery("#edit-term-node-tid-depth-wrapper"));
+	var monthText = jQuery(".page-calendar .date-views-pager h3").text();
+	jQuery(".page-calendar .date-views-pager .pagination .prev").after("<li class='monthText'>" +monthText+ "</li>");
+	jQuery(".page-calendar .date-views-pager").insertAfter(jQuery(".page-calendar .view-filters .calendar-link"));
+	jQuery(".date-views-pager, .views-widget-sort-by").wrapAll("<div>");
+	
 
 	
 });
