@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the IPWA Newsletter feature.
+ */
+
+include_once 'ipwa_newsletter.features.inc';
