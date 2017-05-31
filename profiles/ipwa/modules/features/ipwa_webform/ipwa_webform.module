@@ -8,3 +8,7 @@ include_once 'ipwa_webform.features.inc';
 function ipwa_form_webform_node_form_alter( &$form, &$form_state,$form_id ){
   honeypot_add_form_protection($form, $form_state, array('honeypot', 'time_restriction'));
 }
+
+function ipwa_webform_form_alter(&$form, &$form_state, $form_id) {
+  $form['#node']->content['field_pflichtfeldhinweis']['0']['#markup'] ='<h3>'.'Die mit * markierten Felder des E-Mail-Formulars sind Pflichtfelder.'.'</h3>';
+}
