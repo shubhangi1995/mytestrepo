@@ -9366,7 +9366,6 @@ input[type=text]::-ms-clear {
 .calendar-link {
   width: 100%;
   float: left;
-  position: relative;
   padding-left: 30px;
   margin-bottom: 30px;
   /* Over Desktop design */ }
@@ -9382,22 +9381,19 @@ input[type=text]::-ms-clear {
     padding-bottom: 4px;
     border-bottom: 2px solid #949d9e;
     color: #273753;
-    font-weight: bold; }
-    /* line 371, ../scss/pages/_listview.scss */
+    font-weight: bold;
+    position: relative;
+    margin-left: 30px; }
+    /* line 373, ../scss/pages/_listview.scss */
     .calendar-link a:before {
       content: '\e949';
       font-family: "icomoon";
       color: #e74712;
       font-size: 14px;
       position: absolute;
-      left: 0;
+      left: -25px;
       top: 9px;
-      display: inline-block;
-      /* Over Desktop design */ }
-      @media (min-width: 1025px) {
-        /* line 371, ../scss/pages/_listview.scss */
-        .calendar-link a:before {
-          left: 40px; } }
+      display: inline-block; }
 
 /* line 391, ../scss/pages/_listview.scss */
 .view-search-list .view-filters {
