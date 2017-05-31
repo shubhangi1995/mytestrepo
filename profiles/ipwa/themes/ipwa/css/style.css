@@ -6560,78 +6560,78 @@ header .navbar-collapse {
         /* line 251, ../scss/layout/_header.scss */
         header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li.menu-schaufenster > a:before {
           content: "\e943"; }
-        /* line 256, ../scss/layout/_header.scss */
-        header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li.open > a {
+        /* line 257, ../scss/layout/_header.scss */
+        header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li.active > a:hover, header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li.active > a:focus {
           background: none;
-          border: none;
-          color: #e74712; }
-          /* line 261, ../scss/layout/_header.scss */
-          header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li.open > a:hover, header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li.open > a:focus {
-            background: none;
-            border: none;
-            color: #e74712; }
-          /* line 267, ../scss/layout/_header.scss */
-          header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li.open > a::before {
-            color: #e74712; }
-        /* line 272, ../scss/layout/_header.scss */
-        header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li.dropdown.open > a {
+          color: #273753;
           border-bottom: 2px solid #e74712; }
-        /* line 276, ../scss/layout/_header.scss */
+          /* line 262, ../scss/layout/_header.scss */
+          header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li.active > a:hover:before, header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li.active > a:focus:before {
+            color: #e74712; }
+        /* line 266, ../scss/layout/_header.scss */
+        header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li.open > a, header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li.active > .dropdown-toggle, header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li.open.active > .dropdown-toggle {
+          background: none;
+          color: #e74712;
+          border-bottom: 2px solid #e74712; }
+          /* line 272, ../scss/layout/_header.scss */
+          header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li.open > a:before, header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li.active > .dropdown-toggle:before, header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li.open.active > .dropdown-toggle:before {
+            color: #e74712; }
+        /* line 278, ../scss/layout/_header.scss */
         header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu {
           background-color: #3c506e;
           border: none;
           width: 100%;
           padding-top: 40px;
           padding-bottom: 40px; }
-          /* line 283, ../scss/layout/_header.scss */
+          /* line 285, ../scss/layout/_header.scss */
           header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu a {
             color: #ffffff;
             text-decoration: none;
             font-weight: normal; }
-          /* line 289, ../scss/layout/_header.scss */
+          /* line 291, ../scss/layout/_header.scss */
           header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .block-title {
             color: #ffffff; }
-          /* line 294, ../scss/layout/_header.scss */
+          /* line 296, ../scss/layout/_header.scss */
           header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-header {
             color: #ffffff;
             font-size: 18px; }
-          /* line 299, ../scss/layout/_header.scss */
+          /* line 301, ../scss/layout/_header.scss */
           header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-content .views-row {
             display: inline-block;
             padding: 5px; }
-            /* line 303, ../scss/layout/_header.scss */
+            /* line 305, ../scss/layout/_header.scss */
             header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-content .views-row a {
               background: #273753;
               font-size: 16px;
               padding: 10px; }
-              /* line 308, ../scss/layout/_header.scss */
+              /* line 310, ../scss/layout/_header.scss */
               header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-content .views-row a:hover {
                 background: #e74712; }
-        /* line 316, ../scss/layout/_header.scss */
+        /* line 318, ../scss/layout/_header.scss */
         header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .mega-dropdown-inner {
           width: 1170px;
           margin: 0 auto; }
-          /* line 320, ../scss/layout/_header.scss */
+          /* line 322, ../scss/layout/_header.scss */
           header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .mega-dropdown-inner .tb-submenu-left {
             width: 30%;
             float: left; }
-            /* line 324, ../scss/layout/_header.scss */
+            /* line 326, ../scss/layout/_header.scss */
             header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .mega-dropdown-inner .tb-submenu-left .block-title {
               font-size: 18px;
               font-weight: normal;
               text-transform: capitalize; }
-            /* line 331, ../scss/layout/_header.scss */
+            /* line 333, ../scss/layout/_header.scss */
             header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .mega-dropdown-inner .tb-submenu-left ul li {
               width: 100%;
               margin-bottom: 10px; }
-              /* line 335, ../scss/layout/_header.scss */
+              /* line 337, ../scss/layout/_header.scss */
               header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .mega-dropdown-inner .tb-submenu-left ul li a {
                 font-size: 16px;
                 position: relative;
                 padding-left: 25px;
                 margin: 0;
                 font-weight: normal; }
-                /* line 342, ../scss/layout/_header.scss */
+                /* line 344, ../scss/layout/_header.scss */
                 header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .mega-dropdown-inner .tb-submenu-left ul li a:before {
                   font-family: "icomoon";
                   content: "\e93f";
@@ -6640,34 +6640,25 @@ header .navbar-collapse {
                   position: absolute;
                   left: 0;
                   display: inline-block; }
-          /* line 356, ../scss/layout/_header.scss */
+          /* line 358, ../scss/layout/_header.scss */
           header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .mega-dropdown-inner .tb-submenu-right {
             width: 70%;
             float: left;
             margin: 0; }
-    /* line 365, ../scss/layout/_header.scss */
-    header .navbar-collapse .region-navigation .tb-megamenu .nav > .active > a, header .navbar-collapse .region-navigation .tb-megamenu .nav > .active > a:hover, header .navbar-collapse .region-navigation .tb-megamenu .nav > .active > a:focus {
-      background: none;
-      color: #273753;
-      border-bottom: none; }
-    /* line 371, ../scss/layout/_header.scss */
-    header .navbar-collapse .region-navigation .tb-megamenu .nav li.dropdown.active > .dropdown-toggle,
-    header .navbar-collapse .region-navigation .tb-megamenu .nav li.dropdown.open.active > .dropdown-toggle {
-      background: none; }
 
 @-moz-document url-prefix() {
-  /* line 383, ../scss/layout/_header.scss */
+  /* line 376, ../scss/layout/_header.scss */
   header .navbar-collapse .region-navigation .block-ipwa-search {
     top: 64px; } }
-/* line 389, ../scss/layout/_header.scss */
+/* line 382, ../scss/layout/_header.scss */
 .front header.navbar-default {
   margin-bottom: 0; }
 
 @media (min-width: 768px) {
-  /* line 400, ../scss/layout/_header.scss */
+  /* line 393, ../scss/layout/_header.scss */
   .navbar-header .logo .big {
     display: block; }
-  /* line 404, ../scss/layout/_header.scss */
+  /* line 397, ../scss/layout/_header.scss */
   .navbar-header .logo .small {
     display: none; } }
 @media (max-width: 1024px) {
@@ -8085,64 +8076,64 @@ p {
     .node-type-webform .node-webform .webform-client-form #edit-submitted-kontakdaten-datenschutz, .node-type-webform .node-webform .webform-client-form #edit-submitted-kontakt-datenschutz {
       float: left; }
 
-/* line 424, ../scss/pages/_common.scss */
+/* line 427, ../scss/pages/_common.scss */
 input[type=text]::-ms-clear {
   display: none; }
 
-/* line 432, ../scss/pages/_common.scss */
+/* line 435, ../scss/pages/_common.scss */
 .page-node-67 article > .group-page-info {
   max-width: 765px; }
 
-/* line 440, ../scss/pages/_common.scss */
+/* line 443, ../scss/pages/_common.scss */
 .page-user .page-header {
   border: 0; }
 
-/* line 457, ../scss/pages/_common.scss */
+/* line 460, ../scss/pages/_common.scss */
 .page-calendar .view-content {
   margin: 40px 0; }
-  /* line 460, ../scss/pages/_common.scss */
+  /* line 463, ../scss/pages/_common.scss */
   .page-calendar .view-content .calendar-calendar .inner {
     display: inline-block;
     width: 100%;
     padding: 10px;
     height: 80px !important;
     min-height: 80px; }
-    /* line 466, ../scss/pages/_common.scss */
+    /* line 469, ../scss/pages/_common.scss */
     .page-calendar .view-content .calendar-calendar .inner .item {
       float: right;
       line-height: 26px;
       margin-top: 30px; }
-      /* line 470, ../scss/pages/_common.scss */
+      /* line 473, ../scss/pages/_common.scss */
       .page-calendar .view-content .calendar-calendar .inner .item .calendar {
         background: none;
         overflow: visible; }
-        /* line 473, ../scss/pages/_common.scss */
+        /* line 476, ../scss/pages/_common.scss */
         .page-calendar .view-content .calendar-calendar .inner .item .calendar span {
           position: relative; }
-          /* line 475, ../scss/pages/_common.scss */
+          /* line 478, ../scss/pages/_common.scss */
           .page-calendar .view-content .calendar-calendar .inner .item .calendar span a {
             font-size: 0;
             text-decoration: none;
             position: relative;
             z-index: 99; }
-            /* line 480, ../scss/pages/_common.scss */
+            /* line 483, ../scss/pages/_common.scss */
             .page-calendar .view-content .calendar-calendar .inner .item .calendar span a div {
               display: none; }
-            /* line 483, ../scss/pages/_common.scss */
+            /* line 486, ../scss/pages/_common.scss */
             .page-calendar .view-content .calendar-calendar .inner .item .calendar span a.single {
               border: 2px solid #e74712 !important;
               border-radius: 50%;
               display: inline-block;
               height: 25px;
               width: 25px; }
-            /* line 491, ../scss/pages/_common.scss */
+            /* line 494, ../scss/pages/_common.scss */
             .page-calendar .view-content .calendar-calendar .inner .item .calendar span a.recurring::before {
               color: #e74712;
               content: "\e94d";
               font-family: "icomoon";
               font-size: 25px;
               font-weight: normal; }
-            /* line 499, ../scss/pages/_common.scss */
+            /* line 502, ../scss/pages/_common.scss */
             .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row {
               position: absolute;
               display: none;
@@ -8150,7 +8141,7 @@ input[type=text]::-ms-clear {
               z-index: 999;
               left: -39px;
               top: 30px; }
-              /* line 507, ../scss/pages/_common.scss */
+              /* line 510, ../scss/pages/_common.scss */
               .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row > .row-container {
                 background: #eff2f7;
                 padding: 30px;
@@ -8161,44 +8152,44 @@ input[type=text]::-ms-clear {
                 transition: all 0.5s ease;
                 height: auto;
                 /* Tablet design */ }
-                /* line 522, ../scss/pages/_common.scss */
+                /* line 525, ../scss/pages/_common.scss */
                 .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row > .row-container.project-blue {
                   background: #273753; }
-                  /* line 525, ../scss/pages/_common.scss */
+                  /* line 528, ../scss/pages/_common.scss */
                   .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row > .row-container.project-blue .views-field-title a {
                     color: #ffffff; }
-                  /* line 530, ../scss/pages/_common.scss */
+                  /* line 533, ../scss/pages/_common.scss */
                   .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row > .row-container.project-blue:hover .views-field-title a {
                     color: #273753; }
-                /* line 540, ../scss/pages/_common.scss */
+                /* line 543, ../scss/pages/_common.scss */
                 .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row > .row-container .views-field-field-themenzuweisung {
                   padding-bottom: 30px; }
-                  /* line 543, ../scss/pages/_common.scss */
+                  /* line 546, ../scss/pages/_common.scss */
                   .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row > .row-container .views-field-field-themenzuweisung img {
                     display: inline-block;
                     margin-right: 10px; }
-                /* line 549, ../scss/pages/_common.scss */
+                /* line 552, ../scss/pages/_common.scss */
                 .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row > .row-container .views-field-field-event-datum {
                   padding-bottom: 20px;
                   font-weight: bold;
                   color: #e74712;
                   font-size: 22px; }
-                /* line 556, ../scss/pages/_common.scss */
+                /* line 559, ../scss/pages/_common.scss */
                 .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row > .row-container .views-field-title {
                   padding-bottom: 20px; }
-                  /* line 559, ../scss/pages/_common.scss */
+                  /* line 562, ../scss/pages/_common.scss */
                   .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row > .row-container .views-field-title a {
                     text-decoration: none;
                     font-size: 22px;
                     color: #273753; }
-                /* line 567, ../scss/pages/_common.scss */
+                /* line 570, ../scss/pages/_common.scss */
                 .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row > .row-container .views-field-field-ort .field-content, .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row > .row-container div[class*='views-field-views-conditional-'] .field-content {
                   font-size: 20px;
                   color: #949d9e; }
-                /* line 574, ../scss/pages/_common.scss */
+                /* line 577, ../scss/pages/_common.scss */
                 .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row > .row-container .pop-up {
                   display: block !important; }
-              /* line 578, ../scss/pages/_common.scss */
+              /* line 581, ../scss/pages/_common.scss */
               .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row::before, .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row::after {
                 border-color: transparent transparent #eff2f7;
                 border-style: solid;
@@ -8210,29 +8201,29 @@ input[type=text]::-ms-clear {
                 left: 42px;
                 width: 0;
                 z-index: 9; }
-              /* line 590, ../scss/pages/_common.scss */
+              /* line 593, ../scss/pages/_common.scss */
               .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row::after {
                 border-bottom-color: #dbdfe3;
                 top: -24px;
                 z-index: 8; }
-              /* line 595, ../scss/pages/_common.scss */
+              /* line 598, ../scss/pages/_common.scss */
               .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row.rightBorder {
                 left: auto;
                 right: -31px; }
-                /* line 598, ../scss/pages/_common.scss */
+                /* line 601, ../scss/pages/_common.scss */
                 .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row.rightBorder::before, .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row.rightBorder::after {
                   left: auto;
                   right: 35px; }
-          /* line 607, ../scss/pages/_common.scss */
+          /* line 610, ../scss/pages/_common.scss */
           .page-calendar .view-content .calendar-calendar .inner .item .calendar span:hover a + .views-row {
             display: block; }
-  /* line 616, ../scss/pages/_common.scss */
+  /* line 619, ../scss/pages/_common.scss */
   .page-calendar .view-content .calendar-calendar table {
     border-collapse: inherit; }
-    /* line 619, ../scss/pages/_common.scss */
+    /* line 622, ../scss/pages/_common.scss */
     .page-calendar .view-content .calendar-calendar table thead tr {
       background: none; }
-      /* line 621, ../scss/pages/_common.scss */
+      /* line 624, ../scss/pages/_common.scss */
       .page-calendar .view-content .calendar-calendar table thead tr th {
         background: none;
         border-bottom: 2px solid #e74712;
@@ -8242,26 +8233,26 @@ input[type=text]::-ms-clear {
         font-weight: normal;
         text-align: right;
         padding-bottom: 25px; }
-    /* line 636, ../scss/pages/_common.scss */
+    /* line 639, ../scss/pages/_common.scss */
     .page-calendar .view-content .calendar-calendar table tbody tr td {
       border: 5px solid #eff2f7; }
-      /* line 638, ../scss/pages/_common.scss */
+      /* line 641, ../scss/pages/_common.scss */
       .page-calendar .view-content .calendar-calendar table tbody tr td:first-child {
         border-left-width: 0; }
-      /* line 641, ../scss/pages/_common.scss */
+      /* line 644, ../scss/pages/_common.scss */
       .page-calendar .view-content .calendar-calendar table tbody tr td:last-child {
         border-right-width: 0; }
-    /* line 646, ../scss/pages/_common.scss */
+    /* line 649, ../scss/pages/_common.scss */
     .page-calendar .view-content .calendar-calendar table tbody tr:first-child td {
       border-top-width: 20px; }
-    /* line 654, ../scss/pages/_common.scss */
+    /* line 657, ../scss/pages/_common.scss */
     .page-calendar .view-content .calendar-calendar table tr td.today {
       border-color: #e74712 !important; }
-    /* line 657, ../scss/pages/_common.scss */
+    /* line 660, ../scss/pages/_common.scss */
     .page-calendar .view-content .calendar-calendar table tr td.greyHover {
       background: #eff2f7;
       position: relative; }
-      /* line 661, ../scss/pages/_common.scss */
+      /* line 664, ../scss/pages/_common.scss */
       .page-calendar .view-content .calendar-calendar table tr td.greyHover::after {
         border: 1px solid #dbdfe3;
         bottom: -1px;
@@ -8270,11 +8261,11 @@ input[type=text]::-ms-clear {
         position: absolute;
         right: -1px;
         top: -1px; }
-    /* line 671, ../scss/pages/_common.scss */
+    /* line 674, ../scss/pages/_common.scss */
     .page-calendar .view-content .calendar-calendar table tr td.redHover {
       background: #fdede7;
       position: relative; }
-      /* line 674, ../scss/pages/_common.scss */
+      /* line 677, ../scss/pages/_common.scss */
       .page-calendar .view-content .calendar-calendar table tr td.redHover::after {
         border: 1px solid #e74712;
         bottom: -1px;
@@ -8283,23 +8274,23 @@ input[type=text]::-ms-clear {
         position: absolute;
         right: -1px;
         top: -1px; }
-    /* line 688, ../scss/pages/_common.scss */
+    /* line 691, ../scss/pages/_common.scss */
     .page-calendar .view-content .calendar-calendar table tr.date-box td.greyHover::after {
       border-bottom: none; }
-    /* line 693, ../scss/pages/_common.scss */
+    /* line 696, ../scss/pages/_common.scss */
     .page-calendar .view-content .calendar-calendar table tr.date-box td.redHover::after {
       border-bottom: none; }
-    /* line 702, ../scss/pages/_common.scss */
+    /* line 705, ../scss/pages/_common.scss */
     .page-calendar .view-content .calendar-calendar table tr.single-day td.greyHover::after {
       border-top: none; }
-    /* line 707, ../scss/pages/_common.scss */
+    /* line 710, ../scss/pages/_common.scss */
     .page-calendar .view-content .calendar-calendar table tr.single-day td.redHover::after {
       border-top: none; }
-/* line 717, ../scss/pages/_common.scss */
+/* line 720, ../scss/pages/_common.scss */
 .page-calendar .view-event-on-calendar {
   display: none; }
 
-/* line 726, ../scss/pages/_common.scss */
+/* line 729, ../scss/pages/_common.scss */
 #backtotop {
   background: #e74712;
   bottom: 20px;
@@ -8311,7 +8302,7 @@ input[type=text]::-ms-clear {
   width: 50px;
   border-radius: 25px;
   text-indent: 0; }
-  /* line 738, ../scss/pages/_common.scss */
+  /* line 741, ../scss/pages/_common.scss */
   #backtotop::before {
     font-family: "icomoon";
     content: "\e950";

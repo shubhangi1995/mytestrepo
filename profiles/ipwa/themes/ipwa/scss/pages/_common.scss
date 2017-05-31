@@ -421,6 +421,9 @@ padding:0;
     }
 }
 
+
+//IE10 cross button remove
+
 input[type=text]::-ms-clear {
     display: none;
 }

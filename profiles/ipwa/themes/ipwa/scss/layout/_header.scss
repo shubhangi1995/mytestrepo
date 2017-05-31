@@ -253,25 +253,27 @@ header {
                         }
                     }
 
-                    &.open > a {
-                        background: none;
-                        border: none;
-                        color: $active-menu;
-
-                        &:hover, &:focus {
-                            background: none;
-                            border: none;
-                            color: $active-menu;
-                        }
-
-                        &::before {
-                            color: $active-menu;
-                        }
-                    }
-
-                    &.dropdown.open > a {
-                        border-bottom: 2px solid $active-menu;
-                    }
+                  
+			    &.active > a:hover, 
+				&.active > a:focus {
+                background: none;
+                color: $main-color;
+                border-bottom:2px solid $active-menu;
+				&:before{
+				  color:$active-menu;
+				}
+            }
+             &.open  > a,
+            &.active > .dropdown-toggle,
+           &.open.active > .dropdown-toggle {
+                background: none;
+				color:$active-menu;
+				border-bottom:2px solid $active-menu;
+				&:before{
+				  color:$active-menu;
+				}
+				
+            }
 
                     .dropdown-menu {
                         background-color: $header-dropdown-menu;
@@ -362,16 +364,7 @@ header {
                 }
             }
 
-            .tb-megamenu .nav > .active > a, .tb-megamenu .nav > .active > a:hover, .tb-megamenu .nav > .active > a:focus {
-                background: none;
-                color: $main-color;
-                border-bottom: none;
-            }
-
-            .tb-megamenu .nav li.dropdown.active > .dropdown-toggle,
-            .tb-megamenu .nav li.dropdown.open.active > .dropdown-toggle {
-                background: none;
-            }
+            
         }
 
         
