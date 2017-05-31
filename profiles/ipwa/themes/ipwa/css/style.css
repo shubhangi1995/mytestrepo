@@ -8082,7 +8082,7 @@ p {
         left: 15px;
         top: 14px; }
     /* line 417, ../scss/pages/_common.scss */
-    .node-type-webform .node-webform .webform-client-form #edit-submitted-kontakdaten-datenschutz {
+    .node-type-webform .node-webform .webform-client-form #edit-submitted-kontakdaten-datenschutz, .node-type-webform .node-webform .webform-client-form #edit-submitted-kontakt-datenschutz {
       float: left; }
 
 /* line 428, ../scss/pages/_common.scss */
