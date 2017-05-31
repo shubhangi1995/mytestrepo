@@ -257,7 +257,7 @@ header {
 			    &.active > a:hover, 
 				&.active > a:focus {
                 background: none;
-                color: $main-color;
+                color: $active-menu;
                 border-bottom:2px solid $active-menu;
 				&:before{
 				  color:$active-menu;
@@ -265,6 +265,7 @@ header {
             }
              &.open  > a,
             &.active > .dropdown-toggle,
+			&.active > a,
            &.open.active > .dropdown-toggle {
                 background: none;
 				color:$active-menu;
