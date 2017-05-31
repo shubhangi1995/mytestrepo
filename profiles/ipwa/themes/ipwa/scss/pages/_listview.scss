@@ -606,19 +606,21 @@
             margin-bottom: 30px;
              height:auto;
 			 width:90%;
+			 
 			
-			 @include devicebreak(x-large) {
-                          width: 48.7%;
+			 @include devicebreak(large) {
+                          width: 47%;
 						   height: 286px;
 						   margin-right: 30px;
 						   float:left;
+						   margin-left:10px;
                     }
 			
 
             &:nth-child(2), &:last-child {
                
 				
-				@include devicebreak(x-large) {
+				@include devicebreak(large) {
                           margin-right: 0;
                     }
             }
