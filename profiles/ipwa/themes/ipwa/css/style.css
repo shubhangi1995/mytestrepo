@@ -913,7 +913,7 @@ pre {
     clear: both; }
 
 /* line 11, ../scss/bootstrap-sass/bootstrap/mixins/_grid-framework.scss */
-.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .view-neueste-informationen .view-sub-wrapper > .view-content .views-row, .view-termin .view-sub-wrapper > .view-content .views-row, .view-aktuelles .view-sub-wrapper > .view-content .views-row, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row, .view-search-list .view-sub-wrapper > .view-content .views-row, .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row, .field-name-field-themenzuweisung .field-items .field-item, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .view-neueste-informationen .view-sub-wrapper > .view-content .views-row, .view-termin .view-sub-wrapper > .view-content .views-row, .view-aktuelles .view-sub-wrapper > .view-content .views-row, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row, .view-search-list .view-sub-wrapper > .view-content .views-row, .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row, .col-md-6, .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items > .field-item, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .view-map-teaser .view-sub-wrapper .view-content .views-row, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .view-neueste-informationen .view-sub-wrapper > .view-content .views-row, .view-termin .view-sub-wrapper > .view-content .views-row, .view-aktuelles .view-sub-wrapper > .view-content .views-row, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row, .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row, .field-name-field-themenzuweisung .field-items .field-item, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .view-neueste-informationen .view-sub-wrapper > .view-content .views-row, .view-termin .view-sub-wrapper > .view-content .views-row, .view-aktuelles .view-sub-wrapper > .view-content .views-row, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row, .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row, .col-md-6, .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items > .field-item, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .view-map-teaser .view-sub-wrapper .view-content .views-row, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
@@ -1129,7 +1129,7 @@ pre {
 
 @media (min-width: 768px) {
   /* line 27, ../scss/bootstrap-sass/bootstrap/mixins/_grid-framework.scss */
-  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .view-neueste-informationen .view-sub-wrapper > .view-content .views-row, .view-termin .view-sub-wrapper > .view-content .views-row, .view-aktuelles .view-sub-wrapper > .view-content .views-row, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row, .view-search-list .view-sub-wrapper > .view-content .views-row, .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .view-neueste-informationen .view-sub-wrapper > .view-content .views-row, .view-termin .view-sub-wrapper > .view-content .views-row, .view-aktuelles .view-sub-wrapper > .view-content .views-row, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row, .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
     float: left; }
 
   /* line 35, ../scss/bootstrap-sass/bootstrap/mixins/_grid-framework.scss */
@@ -1153,7 +1153,7 @@ pre {
     width: 41.66666667%; }
 
   /* line 35, ../scss/bootstrap-sass/bootstrap/mixins/_grid-framework.scss */
-  .col-sm-6, .view-neueste-informationen .view-sub-wrapper > .view-content .views-row, .view-termin .view-sub-wrapper > .view-content .views-row, .view-aktuelles .view-sub-wrapper > .view-content .views-row, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row, .view-search-list .view-sub-wrapper > .view-content .views-row, .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row {
+  .col-sm-6, .view-neueste-informationen .view-sub-wrapper > .view-content .views-row, .view-termin .view-sub-wrapper > .view-content .views-row, .view-aktuelles .view-sub-wrapper > .view-content .views-row, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row, .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row {
     width: 50%; }
 
   /* line 35, ../scss/bootstrap-sass/bootstrap/mixins/_grid-framework.scss */
@@ -1337,7 +1337,7 @@ pre {
     margin-left: 100%; } }
 @media (min-width: 992px) {
   /* line 27, ../scss/bootstrap-sass/bootstrap/mixins/_grid-framework.scss */
-  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .view-neueste-informationen .view-sub-wrapper > .view-content .views-row, .view-termin .view-sub-wrapper > .view-content .views-row, .view-aktuelles .view-sub-wrapper > .view-content .views-row, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row, .view-search-list .view-sub-wrapper > .view-content .views-row, .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row, .field-name-field-themenzuweisung .field-items .field-item, .col-md-5, .col-md-6, .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items > .field-item, .col-md-7, .col-md-8, .view-map-teaser .view-sub-wrapper .view-content .views-row, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .view-neueste-informationen .view-sub-wrapper > .view-content .views-row, .view-termin .view-sub-wrapper > .view-content .views-row, .view-aktuelles .view-sub-wrapper > .view-content .views-row, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row, .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row, .field-name-field-themenzuweisung .field-items .field-item, .col-md-5, .col-md-6, .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items > .field-item, .col-md-7, .col-md-8, .view-map-teaser .view-sub-wrapper .view-content .views-row, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
     float: left; }
 
   /* line 35, ../scss/bootstrap-sass/bootstrap/mixins/_grid-framework.scss */
@@ -1353,7 +1353,7 @@ pre {
     width: 25%; }
 
   /* line 35, ../scss/bootstrap-sass/bootstrap/mixins/_grid-framework.scss */
-  .col-md-4, .view-neueste-informationen .view-sub-wrapper > .view-content .views-row, .view-termin .view-sub-wrapper > .view-content .views-row, .view-aktuelles .view-sub-wrapper > .view-content .views-row, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row, .view-search-list .view-sub-wrapper > .view-content .views-row, .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row, .field-name-field-themenzuweisung .field-items .field-item {
+  .col-md-4, .view-neueste-informationen .view-sub-wrapper > .view-content .views-row, .view-termin .view-sub-wrapper > .view-content .views-row, .view-aktuelles .view-sub-wrapper > .view-content .views-row, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row, .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row, .field-name-field-themenzuweisung .field-items .field-item {
     width: 33.33333333%; }
 
   /* line 35, ../scss/bootstrap-sass/bootstrap/mixins/_grid-framework.scss */
@@ -6563,7 +6563,7 @@ header .navbar-collapse {
           content: "\e905"; }
         /* line 251, ../scss/layout/_header.scss */
         header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li.menu-schaufenster > a:before {
-          content: "\e943"; }
+          content: "\e910"; }
         /* line 256, ../scss/layout/_header.scss */
         header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li.active > a:hover, header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li.active > a:focus {
           background: none;
@@ -7924,11 +7924,11 @@ p {
   padding: 0; }
 
 /* line 224, ../scss/pages/_common.scss */
-.view-neueste-informationen .view-sub-wrapper > .view-content, .view-termin .view-sub-wrapper > .view-content, .view-aktuelles .view-sub-wrapper > .view-content, .view-neueste-digital-projekte .view-sub-wrapper > .view-content, .view-alles-zum-thema .view-sub-wrapper > .view-content, .view-search-list .view-sub-wrapper > .view-content {
+.view-neueste-informationen .view-sub-wrapper > .view-content, .view-termin .view-sub-wrapper > .view-content, .view-aktuelles .view-sub-wrapper > .view-content, .view-neueste-digital-projekte .view-sub-wrapper > .view-content, .view-alles-zum-thema .view-sub-wrapper > .view-content {
   margin-left: -15px;
   margin-right: -15px; }
   /* line 231, ../scss/pages/_common.scss */
-  .view-neueste-informationen .view-sub-wrapper > .view-content .views-row .row-container, .view-termin .view-sub-wrapper > .view-content .views-row .row-container, .view-aktuelles .view-sub-wrapper > .view-content .views-row .row-container, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row .row-container, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row .row-container, .view-search-list .view-sub-wrapper > .view-content .views-row .row-container {
+  .view-neueste-informationen .view-sub-wrapper > .view-content .views-row .row-container, .view-termin .view-sub-wrapper > .view-content .views-row .row-container, .view-aktuelles .view-sub-wrapper > .view-content .views-row .row-container, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row .row-container, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row .row-container {
     background: #ffffff;
     padding: 30px;
     margin-bottom: 30px;
@@ -7940,44 +7940,44 @@ p {
     /* Tablet design */ }
     @media (min-width: 767px) {
       /* line 231, ../scss/pages/_common.scss */
-      .view-neueste-informationen .view-sub-wrapper > .view-content .views-row .row-container, .view-termin .view-sub-wrapper > .view-content .views-row .row-container, .view-aktuelles .view-sub-wrapper > .view-content .views-row .row-container, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row .row-container, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row .row-container, .view-search-list .view-sub-wrapper > .view-content .views-row .row-container {
+      .view-neueste-informationen .view-sub-wrapper > .view-content .views-row .row-container, .view-termin .view-sub-wrapper > .view-content .views-row .row-container, .view-aktuelles .view-sub-wrapper > .view-content .views-row .row-container, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row .row-container, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row .row-container {
         height: 410px; } }
     /* line 246, ../scss/pages/_common.scss */
-    .view-neueste-informationen .view-sub-wrapper > .view-content .views-row .row-container.project-blue, .view-termin .view-sub-wrapper > .view-content .views-row .row-container.project-blue, .view-aktuelles .view-sub-wrapper > .view-content .views-row .row-container.project-blue, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row .row-container.project-blue, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row .row-container.project-blue, .view-search-list .view-sub-wrapper > .view-content .views-row .row-container.project-blue {
+    .view-neueste-informationen .view-sub-wrapper > .view-content .views-row .row-container.project-blue, .view-termin .view-sub-wrapper > .view-content .views-row .row-container.project-blue, .view-aktuelles .view-sub-wrapper > .view-content .views-row .row-container.project-blue, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row .row-container.project-blue, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row .row-container.project-blue {
       background: #273753; }
       /* line 249, ../scss/pages/_common.scss */
-      .view-neueste-informationen .view-sub-wrapper > .view-content .views-row .row-container.project-blue .views-field-title a, .view-termin .view-sub-wrapper > .view-content .views-row .row-container.project-blue .views-field-title a, .view-aktuelles .view-sub-wrapper > .view-content .views-row .row-container.project-blue .views-field-title a, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row .row-container.project-blue .views-field-title a, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row .row-container.project-blue .views-field-title a, .view-search-list .view-sub-wrapper > .view-content .views-row .row-container.project-blue .views-field-title a {
+      .view-neueste-informationen .view-sub-wrapper > .view-content .views-row .row-container.project-blue .views-field-title a, .view-termin .view-sub-wrapper > .view-content .views-row .row-container.project-blue .views-field-title a, .view-aktuelles .view-sub-wrapper > .view-content .views-row .row-container.project-blue .views-field-title a, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row .row-container.project-blue .views-field-title a, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row .row-container.project-blue .views-field-title a {
         color: #ffffff; }
       /* line 254, ../scss/pages/_common.scss */
-      .view-neueste-informationen .view-sub-wrapper > .view-content .views-row .row-container.project-blue:hover .views-field-title a, .view-termin .view-sub-wrapper > .view-content .views-row .row-container.project-blue:hover .views-field-title a, .view-aktuelles .view-sub-wrapper > .view-content .views-row .row-container.project-blue:hover .views-field-title a, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row .row-container.project-blue:hover .views-field-title a, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row .row-container.project-blue:hover .views-field-title a, .view-search-list .view-sub-wrapper > .view-content .views-row .row-container.project-blue:hover .views-field-title a {
+      .view-neueste-informationen .view-sub-wrapper > .view-content .views-row .row-container.project-blue:hover .views-field-title a, .view-termin .view-sub-wrapper > .view-content .views-row .row-container.project-blue:hover .views-field-title a, .view-aktuelles .view-sub-wrapper > .view-content .views-row .row-container.project-blue:hover .views-field-title a, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row .row-container.project-blue:hover .views-field-title a, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row .row-container.project-blue:hover .views-field-title a {
         color: #273753; }
     /* line 260, ../scss/pages/_common.scss */
-    .view-neueste-informationen .view-sub-wrapper > .view-content .views-row .row-container:hover, .view-termin .view-sub-wrapper > .view-content .views-row .row-container:hover, .view-aktuelles .view-sub-wrapper > .view-content .views-row .row-container:hover, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row .row-container:hover, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row .row-container:hover, .view-search-list .view-sub-wrapper > .view-content .views-row .row-container:hover {
+    .view-neueste-informationen .view-sub-wrapper > .view-content .views-row .row-container:hover, .view-termin .view-sub-wrapper > .view-content .views-row .row-container:hover, .view-aktuelles .view-sub-wrapper > .view-content .views-row .row-container:hover, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row .row-container:hover, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row .row-container:hover {
       background: #eff2f7;
       border: 1px solid #dbdfe3; }
     /* line 265, ../scss/pages/_common.scss */
-    .view-neueste-informationen .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-themenzuweisung, .view-termin .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-themenzuweisung, .view-aktuelles .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-themenzuweisung, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-themenzuweisung, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-themenzuweisung, .view-search-list .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-themenzuweisung {
+    .view-neueste-informationen .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-themenzuweisung, .view-termin .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-themenzuweisung, .view-aktuelles .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-themenzuweisung, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-themenzuweisung, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-themenzuweisung {
       padding-bottom: 30px; }
       /* line 268, ../scss/pages/_common.scss */
-      .view-neueste-informationen .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-themenzuweisung img, .view-termin .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-themenzuweisung img, .view-aktuelles .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-themenzuweisung img, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-themenzuweisung img, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-themenzuweisung img, .view-search-list .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-themenzuweisung img {
+      .view-neueste-informationen .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-themenzuweisung img, .view-termin .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-themenzuweisung img, .view-aktuelles .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-themenzuweisung img, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-themenzuweisung img, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-themenzuweisung img {
         display: inline-block;
         margin-right: 10px; }
     /* line 274, ../scss/pages/_common.scss */
-    .view-neueste-informationen .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-event-datum, .view-termin .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-event-datum, .view-aktuelles .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-event-datum, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-event-datum, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-event-datum, .view-search-list .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-event-datum {
+    .view-neueste-informationen .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-event-datum, .view-termin .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-event-datum, .view-aktuelles .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-event-datum, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-event-datum, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-event-datum {
       padding-bottom: 20px;
       font-weight: bold;
       color: #e74712;
       font-size: 22px; }
     /* line 281, ../scss/pages/_common.scss */
-    .view-neueste-informationen .view-sub-wrapper > .view-content .views-row .row-container .views-field-title, .view-termin .view-sub-wrapper > .view-content .views-row .row-container .views-field-title, .view-aktuelles .view-sub-wrapper > .view-content .views-row .row-container .views-field-title, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row .row-container .views-field-title, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row .row-container .views-field-title, .view-search-list .view-sub-wrapper > .view-content .views-row .row-container .views-field-title {
+    .view-neueste-informationen .view-sub-wrapper > .view-content .views-row .row-container .views-field-title, .view-termin .view-sub-wrapper > .view-content .views-row .row-container .views-field-title, .view-aktuelles .view-sub-wrapper > .view-content .views-row .row-container .views-field-title, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row .row-container .views-field-title, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row .row-container .views-field-title {
       padding-bottom: 40px; }
       /* line 284, ../scss/pages/_common.scss */
-      .view-neueste-informationen .view-sub-wrapper > .view-content .views-row .row-container .views-field-title a, .view-termin .view-sub-wrapper > .view-content .views-row .row-container .views-field-title a, .view-aktuelles .view-sub-wrapper > .view-content .views-row .row-container .views-field-title a, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row .row-container .views-field-title a, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row .row-container .views-field-title a, .view-search-list .view-sub-wrapper > .view-content .views-row .row-container .views-field-title a {
+      .view-neueste-informationen .view-sub-wrapper > .view-content .views-row .row-container .views-field-title a, .view-termin .view-sub-wrapper > .view-content .views-row .row-container .views-field-title a, .view-aktuelles .view-sub-wrapper > .view-content .views-row .row-container .views-field-title a, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row .row-container .views-field-title a, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row .row-container .views-field-title a {
         text-decoration: none;
         font-size: 22px;
         color: #273753; }
     /* line 292, ../scss/pages/_common.scss */
-    .view-neueste-informationen .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-ort .field-content, .view-neueste-informationen .view-sub-wrapper > .view-content .views-row .row-container div[class*='views-field-views-conditional-'] .field-content, .view-termin .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-ort .field-content, .view-termin .view-sub-wrapper > .view-content .views-row .row-container div[class*='views-field-views-conditional-'] .field-content, .view-aktuelles .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-ort .field-content, .view-aktuelles .view-sub-wrapper > .view-content .views-row .row-container div[class*='views-field-views-conditional-'] .field-content, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-ort .field-content, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row .row-container div[class*='views-field-views-conditional-'] .field-content, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-ort .field-content, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row .row-container div[class*='views-field-views-conditional-'] .field-content, .view-search-list .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-ort .field-content, .view-search-list .view-sub-wrapper > .view-content .views-row .row-container div[class*='views-field-views-conditional-'] .field-content {
+    .view-neueste-informationen .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-ort .field-content, .view-neueste-informationen .view-sub-wrapper > .view-content .views-row .row-container div[class*='views-field-views-conditional-'] .field-content, .view-termin .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-ort .field-content, .view-termin .view-sub-wrapper > .view-content .views-row .row-container div[class*='views-field-views-conditional-'] .field-content, .view-aktuelles .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-ort .field-content, .view-aktuelles .view-sub-wrapper > .view-content .views-row .row-container div[class*='views-field-views-conditional-'] .field-content, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-ort .field-content, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row .row-container div[class*='views-field-views-conditional-'] .field-content, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-ort .field-content, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row .row-container div[class*='views-field-views-conditional-'] .field-content {
       font-size: 20px;
       color: #949d9e;
       position: absolute;
@@ -9193,79 +9193,79 @@ input[type=text]::-ms-clear {
         padding: 0;
         padding-top: 85px;
         padding-bottom: 50px; } }
-    /* line 24, ../scss/pages/_listview.scss */
+    /* line 25, ../scss/pages/_listview.scss */
     .page-taxonomy-term .group-page-info .field-name-field-bild {
       width: 100%;
       float: left;
       /* Over Desktop design */ }
       @media (min-width: 1025px) {
-        /* line 24, ../scss/pages/_listview.scss */
+        /* line 25, ../scss/pages/_listview.scss */
         .page-taxonomy-term .group-page-info .field-name-field-bild {
           width: 30%; } }
-    /* line 33, ../scss/pages/_listview.scss */
+    /* line 34, ../scss/pages/_listview.scss */
     .page-taxonomy-term .group-page-info .themenzuweisung-right-block {
       float: left;
       width: 100%;
       padding-top: 25px;
       /* Over Desktop design */ }
       @media (min-width: 1025px) {
-        /* line 33, ../scss/pages/_listview.scss */
+        /* line 34, ../scss/pages/_listview.scss */
         .page-taxonomy-term .group-page-info .themenzuweisung-right-block {
           width: 70%; } }
-      /* line 42, ../scss/pages/_listview.scss */
+      /* line 44, ../scss/pages/_listview.scss */
       .page-taxonomy-term .group-page-info .themenzuweisung-right-block .page-header {
         border-bottom: none;
         margin: 0;
         Font-size: 44px;
         color: #e74712;
         padding-bottom: 30px; }
-      /* line 50, ../scss/pages/_listview.scss */
+      /* line 52, ../scss/pages/_listview.scss */
       .page-taxonomy-term .group-page-info .themenzuweisung-right-block p {
         font-size: 22px; }
-      /* line 55, ../scss/pages/_listview.scss */
+      /* line 57, ../scss/pages/_listview.scss */
       .page-taxonomy-term .group-page-info .themenzuweisung-right-block .field-name-field-untertitel .field-items {
         color: #e74712; }
-  /* line 72, ../scss/pages/_listview.scss */
+  /* line 74, ../scss/pages/_listview.scss */
   .page-taxonomy-term .view-alles-zum-thema .view-sub-wrapper .attachment-before .view-result-count {
     margin-top: -88px;
     padding: 30px 0;
     font-size: 22px;
     font-weight: bold; }
-  /* line 80, ../scss/pages/_listview.scss */
+  /* line 82, ../scss/pages/_listview.scss */
   .page-taxonomy-term .view-alles-zum-thema .view-sub-wrapper .view-content .views-row .row-container .views-field-type {
     color: #e74712;
     font-weight: bold;
     padding-bottom: 20px; }
-  /* line 86, ../scss/pages/_listview.scss */
+  /* line 88, ../scss/pages/_listview.scss */
   .page-taxonomy-term .view-alles-zum-thema .view-sub-wrapper .view-content .views-row .row-container .views-field-views-conditional {
     position: absolute;
     bottom: 30px;
     font-size: 17px;
     color: #949d9e; }
-  /* line 95, ../scss/pages/_listview.scss */
+  /* line 97, ../scss/pages/_listview.scss */
   .page-taxonomy-term .view-alles-zum-thema .view-sub-wrapper .view-filters .views-submit-button {
     display: none; }
-  /* line 99, ../scss/pages/_listview.scss */
+  /* line 101, ../scss/pages/_listview.scss */
   .page-taxonomy-term .view-alles-zum-thema .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by {
     float: right;
     padding: 30px 0; }
-    /* line 103, ../scss/pages/_listview.scss */
+    /* line 105, ../scss/pages/_listview.scss */
     .page-taxonomy-term .view-alles-zum-thema .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .bef-select-as-links .form-type-bef-link {
       display: inline-block;
       font-size: 20px;
       padding-left: 15px; }
-      /* line 108, ../scss/pages/_listview.scss */
+      /* line 110, ../scss/pages/_listview.scss */
       .page-taxonomy-term .view-alles-zum-thema .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .bef-select-as-links .form-type-bef-link a {
         color: #273753;
         text-decoration: none; }
-        /* line 112, ../scss/pages/_listview.scss */
+        /* line 114, ../scss/pages/_listview.scss */
         .page-taxonomy-term .view-alles-zum-thema .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .bef-select-as-links .form-type-bef-link a.active {
           border-bottom: 2px solid #e74712; }
 
-/* line 125, ../scss/pages/_listview.scss */
+/* line 127, ../scss/pages/_listview.scss */
 .page-termine, .page-aktuelles, .page-suche, .page-calendar {
   background: #eff2f7; }
-  /* line 128, ../scss/pages/_listview.scss */
+  /* line 130, ../scss/pages/_listview.scss */
   .page-termine .page-header, .page-aktuelles .page-header, .page-suche .page-header, .page-calendar .page-header {
     border: none;
     font-weight: normal;
@@ -9275,11 +9275,11 @@ input[type=text]::-ms-clear {
     padding-bottom: 40px;
     /* Over Desktop design */ }
     @media (min-width: 1025px) {
-      /* line 128, ../scss/pages/_listview.scss */
+      /* line 130, ../scss/pages/_listview.scss */
       .page-termine .page-header, .page-aktuelles .page-header, .page-suche .page-header, .page-calendar .page-header {
         width: 765px; } }
 
-/* line 146, ../scss/pages/_listview.scss */
+/* line 150, ../scss/pages/_listview.scss */
 .view-aktuelles > .view-sub-wrapper .view-header, .view-termin > .view-sub-wrapper .view-header, .view-search-list > .view-sub-wrapper .view-header, .view-event-calendar > .view-sub-wrapper .view-header {
   color: #e74712;
   font-size: 26px;
@@ -9289,71 +9289,71 @@ input[type=text]::-ms-clear {
   font-weight: bold;
   /* Over Desktop design */ }
   @media (min-width: 1025px) {
-    /* line 146, ../scss/pages/_listview.scss */
+    /* line 150, ../scss/pages/_listview.scss */
     .view-aktuelles > .view-sub-wrapper .view-header, .view-termin > .view-sub-wrapper .view-header, .view-search-list > .view-sub-wrapper .view-header, .view-event-calendar > .view-sub-wrapper .view-header {
       width: 765px; } }
-/* line 159, ../scss/pages/_listview.scss */
+/* line 163, ../scss/pages/_listview.scss */
 .view-aktuelles > .view-sub-wrapper .attachment-before .view-result-count, .view-termin > .view-sub-wrapper .attachment-before .view-result-count, .view-search-list > .view-sub-wrapper .attachment-before .view-result-count, .view-event-calendar > .view-sub-wrapper .attachment-before .view-result-count {
   margin-top: -88px;
   padding: 30px 0;
   font-size: 22px;
   font-weight: bold; }
-/* line 167, ../scss/pages/_listview.scss */
+/* line 171, ../scss/pages/_listview.scss */
 .view-aktuelles > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets, .view-termin > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets, .view-search-list > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets, .view-event-calendar > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets {
   margin-bottom: 0; }
-  /* line 170, ../scss/pages/_listview.scss */
+  /* line 174, ../scss/pages/_listview.scss */
   .view-aktuelles > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget, .view-termin > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget, .view-search-list > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget, .view-event-calendar > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget {
     width: 100%; }
-    /* line 173, ../scss/pages/_listview.scss */
+    /* line 177, ../scss/pages/_listview.scss */
     .view-aktuelles > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget .form-item, .view-termin > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget .form-item, .view-search-list > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget .form-item, .view-event-calendar > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget .form-item {
       display: inline-block;
       padding-right: 60px;
       padding-bottom: 15px; }
-      /* line 178, ../scss/pages/_listview.scss */
+      /* line 182, ../scss/pages/_listview.scss */
       .view-aktuelles > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget .form-item label, .view-termin > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget .form-item label, .view-search-list > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget .form-item label, .view-event-calendar > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget .form-item label {
         padding-left: 0;
         padding-bottom: 15px; }
-        /* line 182, ../scss/pages/_listview.scss */
+        /* line 186, ../scss/pages/_listview.scss */
         .view-aktuelles > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget .form-item label input, .view-termin > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget .form-item label input, .view-search-list > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget .form-item label input, .view-event-calendar > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget .form-item label input {
           visibility: hidden; }
-  /* line 189, ../scss/pages/_listview.scss */
+  /* line 193, ../scss/pages/_listview.scss */
   .view-aktuelles > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by, .view-termin > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by, .view-search-list > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by, .view-event-calendar > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by {
     float: right;
     padding: 30px 0; }
-    /* line 193, ../scss/pages/_listview.scss */
+    /* line 197, ../scss/pages/_listview.scss */
     .view-aktuelles > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .bef-select-as-links .form-type-bef-link, .view-termin > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .bef-select-as-links .form-type-bef-link, .view-search-list > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .bef-select-as-links .form-type-bef-link, .view-event-calendar > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .bef-select-as-links .form-type-bef-link {
       display: inline-block;
       padding-left: 15px; }
-      /* line 197, ../scss/pages/_listview.scss */
+      /* line 201, ../scss/pages/_listview.scss */
       .view-aktuelles > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .bef-select-as-links .form-type-bef-link a, .view-termin > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .bef-select-as-links .form-type-bef-link a, .view-search-list > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .bef-select-as-links .form-type-bef-link a, .view-event-calendar > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .bef-select-as-links .form-type-bef-link a {
         text-decoration: none;
         color: #273753; }
-        /* line 201, ../scss/pages/_listview.scss */
+        /* line 205, ../scss/pages/_listview.scss */
         .view-aktuelles > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .bef-select-as-links .form-type-bef-link a.active, .view-termin > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .bef-select-as-links .form-type-bef-link a.active, .view-search-list > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .bef-select-as-links .form-type-bef-link a.active, .view-event-calendar > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .bef-select-as-links .form-type-bef-link a.active {
           border-bottom: 2px solid #e74712; }
-    /* line 207, ../scss/pages/_listview.scss */
+    /* line 211, ../scss/pages/_listview.scss */
     .view-aktuelles > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .select2-container, .view-termin > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .select2-container, .view-search-list > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .select2-container, .view-event-calendar > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .select2-container {
       display: none; }
 
-/* line 221, ../scss/pages/_listview.scss */
+/* line 225, ../scss/pages/_listview.scss */
 .page-aktuelles .view-aktuelles .view-sub-wrapper .view-content .views-row .row-container .views-field-type {
   padding-bottom: 20px;
   font-weight: bold;
   color: #e74712;
   font-size: 22px; }
-/* line 229, ../scss/pages/_listview.scss */
+/* line 233, ../scss/pages/_listview.scss */
 .page-aktuelles .view-aktuelles .view-sub-wrapper .view-content .views-row .row-container .views-field-field-datum .field-content {
   position: absolute;
   bottom: 30px;
   font-size: 20px;
   color: #949d9e; }
-/* line 240, ../scss/pages/_listview.scss */
+/* line 244, ../scss/pages/_listview.scss */
 .page-aktuelles .view-aktuelles .view-filters .categories-filter {
   margin-top: 15px;
   clear: both;
   display: inline-block;
   width: 100%; }
-  /* line 246, ../scss/pages/_listview.scss */
+  /* line 250, ../scss/pages/_listview.scss */
   .page-aktuelles .view-aktuelles .view-filters .categories-filter .views-exposed-widget {
     width: auto;
     margin-bottom: 10px;
@@ -9364,18 +9364,18 @@ input[type=text]::-ms-clear {
     background: #273753;
     border-right: 1px solid #949d9e; }
     @media (min-width: 1025px) {
-      /* line 246, ../scss/pages/_listview.scss */
+      /* line 250, ../scss/pages/_listview.scss */
       .page-aktuelles .view-aktuelles .view-filters .categories-filter .views-exposed-widget {
         width: 25%; } }
-    /* line 261, ../scss/pages/_listview.scss */
+    /* line 265, ../scss/pages/_listview.scss */
     .page-aktuelles .view-aktuelles .view-filters .categories-filter .views-exposed-widget .views-widget .form-item {
       padding: 0; }
-      /* line 264, ../scss/pages/_listview.scss */
+      /* line 268, ../scss/pages/_listview.scss */
       .page-aktuelles .view-aktuelles .view-filters .categories-filter .views-exposed-widget .views-widget .form-item .select2-container--default .select2-selection--single {
         background: 0;
         border: 0;
         border-radius: 0; }
-        /* line 269, ../scss/pages/_listview.scss */
+        /* line 273, ../scss/pages/_listview.scss */
         .page-aktuelles .view-aktuelles .view-filters .categories-filter .views-exposed-widget .views-widget .form-item .select2-container--default .select2-selection--single:before {
           content: "\f107";
           font-family: FontAwesome;
@@ -9384,60 +9384,59 @@ input[type=text]::-ms-clear {
           float: right;
           right: 20px;
           top: 3px; }
-        /* line 279, ../scss/pages/_listview.scss */
+        /* line 283, ../scss/pages/_listview.scss */
         .page-aktuelles .view-aktuelles .view-filters .categories-filter .views-exposed-widget .views-widget .form-item .select2-container--default .select2-selection--single .select2-selection__rendered {
           color: #ffffff;
           padding-left: 20px; }
-        /* line 284, ../scss/pages/_listview.scss */
+        /* line 288, ../scss/pages/_listview.scss */
         .page-aktuelles .view-aktuelles .view-filters .categories-filter .views-exposed-widget .views-widget .form-item .select2-container--default .select2-selection--single .select2-selection__arrow {
           display: none; }
-/* line 293, ../scss/pages/_listview.scss */
+/* line 297, ../scss/pages/_listview.scss */
 .page-aktuelles .view-aktuelles .views-submit-button {
   display: none; }
 
-/* line 302, ../scss/pages/_listview.scss */
+/* line 306, ../scss/pages/_listview.scss */
 .view-termin .view-filters .views-exposed-form .views-exposed-widgets #edit-term-node-tid-depth-wrapper, .view-event-calendar .view-filters .views-exposed-form .views-exposed-widgets #edit-term-node-tid-depth-wrapper {
   width: 100%;
   float: left;
   padding: 0;
   /* Over Desktop design */ }
   @media (min-width: 1025px) {
-    /* line 302, ../scss/pages/_listview.scss */
+    /* line 306, ../scss/pages/_listview.scss */
     .view-termin .view-filters .views-exposed-form .views-exposed-widgets #edit-term-node-tid-depth-wrapper, .view-event-calendar .view-filters .views-exposed-form .views-exposed-widgets #edit-term-node-tid-depth-wrapper {
       width: 80%; } }
-  /* line 312, ../scss/pages/_listview.scss */
+  /* line 317, ../scss/pages/_listview.scss */
   .view-termin .view-filters .views-exposed-form .views-exposed-widgets #edit-term-node-tid-depth-wrapper .form-item .form-type-bef-link, .view-event-calendar .view-filters .views-exposed-form .views-exposed-widgets #edit-term-node-tid-depth-wrapper .form-item .form-type-bef-link {
     padding-right: 0;
     /* Over Desktop design */ }
     @media (min-width: 1025px) {
-      /* line 312, ../scss/pages/_listview.scss */
+      /* line 317, ../scss/pages/_listview.scss */
       .view-termin .view-filters .views-exposed-form .views-exposed-widgets #edit-term-node-tid-depth-wrapper .form-item .form-type-bef-link, .view-event-calendar .view-filters .views-exposed-form .views-exposed-widgets #edit-term-node-tid-depth-wrapper .form-item .form-type-bef-link {
         padding-right: 60px; } }
-    /* line 322, ../scss/pages/_listview.scss */
+    /* line 325, ../scss/pages/_listview.scss */
     .view-termin .view-filters .views-exposed-form .views-exposed-widgets #edit-term-node-tid-depth-wrapper .form-item .form-type-bef-link a, .view-event-calendar .view-filters .views-exposed-form .views-exposed-widgets #edit-term-node-tid-depth-wrapper .form-item .form-type-bef-link a {
       display: inline-block;
       float: left;
       text-decoration: none;
       color: #273753; }
-      /* line 328, ../scss/pages/_listview.scss */
+      /* line 331, ../scss/pages/_listview.scss */
       .view-termin .view-filters .views-exposed-form .views-exposed-widgets #edit-term-node-tid-depth-wrapper .form-item .form-type-bef-link a.active, .view-event-calendar .view-filters .views-exposed-form .views-exposed-widgets #edit-term-node-tid-depth-wrapper .form-item .form-type-bef-link a.active {
         border-bottom: 2px Solid #e74712; }
-/* line 336, ../scss/pages/_listview.scss */
+/* line 339, ../scss/pages/_listview.scss */
 .view-termin .view-filters .views-exposed-form .views-exposed-widgets .views-submit-button, .view-event-calendar .view-filters .views-exposed-form .views-exposed-widgets .views-submit-button {
   display: none; }
-/* line 340, ../scss/pages/_listview.scss */
+/* line 343, ../scss/pages/_listview.scss */
 .view-termin .view-filters .views-exposed-form .views-exposed-widgets .select2-container--default .select2-selection--single, .view-event-calendar .view-filters .views-exposed-form .views-exposed-widgets .select2-container--default .select2-selection--single {
   display: none; }
 
-/* line 349, ../scss/pages/_listview.scss */
+/* line 352, ../scss/pages/_listview.scss */
 .calendar-link {
   width: 100%;
   float: left;
-  padding-left: 30px;
   margin-bottom: 30px;
   /* Over Desktop design */ }
   @media (min-width: 1025px) {
-    /* line 349, ../scss/pages/_listview.scss */
+    /* line 352, ../scss/pages/_listview.scss */
     .calendar-link {
       width: 20%;
       float: left;
@@ -9462,24 +9461,24 @@ input[type=text]::-ms-clear {
       top: 9px;
       display: inline-block; }
 
-/* line 391, ../scss/pages/_listview.scss */
+/* line 388, ../scss/pages/_listview.scss */
 .view-search-list .view-filters {
   position: relative; }
-  /* line 394, ../scss/pages/_listview.scss */
+  /* line 391, ../scss/pages/_listview.scss */
   .view-search-list .view-filters .views-widget-filter-search_api_views_fulltext {
     width: 55%; }
-  /* line 398, ../scss/pages/_listview.scss */
+  /* line 395, ../scss/pages/_listview.scss */
   .view-search-list .view-filters .views-widget-filter-field_ort {
     width: 45%; }
-  /* line 402, ../scss/pages/_listview.scss */
+  /* line 399, ../scss/pages/_listview.scss */
   .view-search-list .view-filters .views-widget-filter-search_api_views_fulltext, .view-search-list .view-filters .views-widget-filter-field_ort {
     position: relative;
     padding: 0; }
-    /* line 406, ../scss/pages/_listview.scss */
+    /* line 403, ../scss/pages/_listview.scss */
     .view-search-list .view-filters .views-widget-filter-search_api_views_fulltext .views-widget .form-item, .view-search-list .view-filters .views-widget-filter-field_ort .views-widget .form-item {
       width: 100%;
       padding-right: 0px !important; }
-      /* line 410, ../scss/pages/_listview.scss */
+      /* line 407, ../scss/pages/_listview.scss */
       .view-search-list .view-filters .views-widget-filter-search_api_views_fulltext .views-widget .form-item .form-control, .view-search-list .view-filters .views-widget-filter-field_ort .views-widget .form-item .form-control {
         height: 70px;
         border-radius: 0;
@@ -9487,12 +9486,12 @@ input[type=text]::-ms-clear {
         padding-left: 40px;
         font-size: 16px;
         box-shadow: none; }
-        /* line 418, ../scss/pages/_listview.scss */
+        /* line 415, ../scss/pages/_listview.scss */
         .view-search-list .view-filters .views-widget-filter-search_api_views_fulltext .views-widget .form-item .form-control:focus, .view-search-list .view-filters .views-widget-filter-field_ort .views-widget .form-item .form-control:focus {
           box-shadow: none;
           outline: none;
           transition: none; }
-    /* line 426, ../scss/pages/_listview.scss */
+    /* line 423, ../scss/pages/_listview.scss */
     .view-search-list .view-filters .views-widget-filter-search_api_views_fulltext:before, .view-search-list .view-filters .views-widget-filter-field_ort:before {
       font-family: "icomoon";
       content: "\e94e";
@@ -9501,19 +9500,19 @@ input[type=text]::-ms-clear {
       top: 23px;
       display: inline-block;
       position: absolute; }
-  /* line 437, ../scss/pages/_listview.scss */
+  /* line 434, ../scss/pages/_listview.scss */
   .view-search-list .view-filters .views-widget-filter-type_1 {
     margin-top: 30px; }
-    /* line 440, ../scss/pages/_listview.scss */
+    /* line 437, ../scss/pages/_listview.scss */
     .view-search-list .view-filters .views-widget-filter-type_1 .views-widget .form-item {
       margin-bottom: 15px; }
-  /* line 445, ../scss/pages/_listview.scss */
+  /* line 442, ../scss/pages/_listview.scss */
   .view-search-list .view-filters .views-submit-button {
     position: absolute;
     top: 10px;
     right: 10px;
     padding: 0; }
-    /* line 451, ../scss/pages/_listview.scss */
+    /* line 448, ../scss/pages/_listview.scss */
     .view-search-list .view-filters .views-submit-button .btn {
       margin-top: 0;
       border-radius: 0;
@@ -9523,7 +9522,7 @@ input[type=text]::-ms-clear {
       border: none;
       background: #3c506e;
       font-weight: bold; }
-      /* line 461, ../scss/pages/_listview.scss */
+      /* line 458, ../scss/pages/_listview.scss */
       .view-search-list .view-filters .views-submit-button .btn::before {
         font-family: "icomoon";
         content: "\e90e";
@@ -9533,39 +9532,46 @@ input[type=text]::-ms-clear {
         font-size: 12px;
         display: inline-block;
         position: absolute; }
-/* line 478, ../scss/pages/_listview.scss */
-.view-search-list .view-content .views-row .row-container > * {
-  padding-bottom: 20px; }
-  /* line 481, ../scss/pages/_listview.scss */
-  .view-search-list .view-content .views-row .row-container > * a {
-    text-decoration: none;
-    color: #273753; }
-/* line 487, ../scss/pages/_listview.scss */
-.view-search-list .view-content .views-row .row-container div[class*='views-field-views-conditional-'] .search-condition.field-content {
-  bottom: 60px; }
-  /* line 491, ../scss/pages/_listview.scss */
-  .view-search-list .view-content .views-row .row-container div[class*='views-field-views-conditional-'] .search-condition.field-content a {
-    color: #949d9e; }
+/* line 473, ../scss/pages/_listview.scss */
+.view-search-list .view-content .views-row {
+  border-top: 1px solid #949d9e;
+  border-bottom: 1px solid #949d9e;
+  padding: 30px;
+  margin-bottom: 30px;
+  cursor: pointer; }
+  /* line 480, ../scss/pages/_listview.scss */
+  .view-search-list .view-content .views-row .row-container > * {
+    padding-bottom: 20px; }
+    /* line 483, ../scss/pages/_listview.scss */
+    .view-search-list .view-content .views-row .row-container > * a {
+      text-decoration: none;
+      color: #273753; }
+  /* line 490, ../scss/pages/_listview.scss */
+  .view-search-list .view-content .views-row div[class*='views-field-views-conditional-'] .search-condition.field-content {
+    bottom: 60px; }
+    /* line 493, ../scss/pages/_listview.scss */
+    .view-search-list .view-content .views-row div[class*='views-field-views-conditional-'] .search-condition.field-content a {
+      color: #949d9e; }
 
-/* line 502, ../scss/pages/_listview.scss */
+/* line 503, ../scss/pages/_listview.scss */
 .view-wahlen-sie-einen-themenbereich {
   background: #273753; }
-  /* line 505, ../scss/pages/_listview.scss */
+  /* line 506, ../scss/pages/_listview.scss */
   .view-wahlen-sie-einen-themenbereich .view-sub-wrapper {
     position: relative; }
-  /* line 511, ../scss/pages/_listview.scss */
+  /* line 512, ../scss/pages/_listview.scss */
   .view-wahlen-sie-einen-themenbereich .view-header {
     color: #ffffff;
     padding: 40px 0;
     /* Mobile design */ }
     @media (min-width: 320px) {
-      /* line 511, ../scss/pages/_listview.scss */
+      /* line 512, ../scss/pages/_listview.scss */
       .view-wahlen-sie-einen-themenbereich .view-header {
         padding-right: 50px; } }
-  /* line 519, ../scss/pages/_listview.scss */
+  /* line 521, ../scss/pages/_listview.scss */
   .view-wahlen-sie-einen-themenbereich .view-content {
     padding-bottom: 90px; }
-    /* line 522, ../scss/pages/_listview.scss */
+    /* line 524, ../scss/pages/_listview.scss */
     .view-wahlen-sie-einen-themenbereich .view-content .views_slideshow_controls_text {
       float: right;
       display: inline-block;
@@ -9574,13 +9580,13 @@ input[type=text]::-ms-clear {
       top: 60px;
       /* Mobile design */ }
       @media (min-width: 320px) {
-        /* line 522, ../scss/pages/_listview.scss */
+        /* line 524, ../scss/pages/_listview.scss */
         .view-wahlen-sie-einen-themenbereich .view-content .views_slideshow_controls_text {
           right: 25px; } }
-      /* line 534, ../scss/pages/_listview.scss */
+      /* line 537, ../scss/pages/_listview.scss */
       .view-wahlen-sie-einen-themenbereich .view-content .views_slideshow_controls_text .views-slideshow-controls-text-previous a {
         font-size: 0; }
-        /* line 537, ../scss/pages/_listview.scss */
+        /* line 540, ../scss/pages/_listview.scss */
         .view-wahlen-sie-einen-themenbereich .view-content .views_slideshow_controls_text .views-slideshow-controls-text-previous a:before {
           font-family: "icomoon";
           content: "\e93e";
@@ -9590,10 +9596,10 @@ input[type=text]::-ms-clear {
           left: -55px;
           top: 6px;
           display: inline-block; }
-      /* line 551, ../scss/pages/_listview.scss */
+      /* line 554, ../scss/pages/_listview.scss */
       .view-wahlen-sie-einen-themenbereich .view-content .views_slideshow_controls_text .views-slideshow-controls-text-status-pause a {
         font-size: 0; }
-        /* line 554, ../scss/pages/_listview.scss */
+        /* line 557, ../scss/pages/_listview.scss */
         .view-wahlen-sie-einen-themenbereich .view-content .views_slideshow_controls_text .views-slideshow-controls-text-status-pause a::before {
           font-family: "icomoon";
           content: "\e908";
@@ -9603,10 +9609,10 @@ input[type=text]::-ms-clear {
           top: 4px;
           display: inline-block;
           left: -25px; }
-      /* line 568, ../scss/pages/_listview.scss */
+      /* line 571, ../scss/pages/_listview.scss */
       .view-wahlen-sie-einen-themenbereich .view-content .views_slideshow_controls_text .views-slideshow-controls-text-status-play a {
         font-size: 0; }
-        /* line 571, ../scss/pages/_listview.scss */
+        /* line 574, ../scss/pages/_listview.scss */
         .view-wahlen-sie-einen-themenbereich .view-content .views_slideshow_controls_text .views-slideshow-controls-text-status-play a::before {
           font-family: "icomoon";
           content: "\e90a";
@@ -9616,10 +9622,10 @@ input[type=text]::-ms-clear {
           top: 4px;
           display: inline-block;
           left: -25px; }
-      /* line 585, ../scss/pages/_listview.scss */
+      /* line 588, ../scss/pages/_listview.scss */
       .view-wahlen-sie-einen-themenbereich .view-content .views_slideshow_controls_text .views_slideshow_controls_text_next a {
         font-size: 0; }
-        /* line 588, ../scss/pages/_listview.scss */
+        /* line 591, ../scss/pages/_listview.scss */
         .view-wahlen-sie-einen-themenbereich .view-content .views_slideshow_controls_text .views_slideshow_controls_text_next a:before {
           font-family: "icomoon";
           content: "\e93f";
@@ -9628,7 +9634,7 @@ input[type=text]::-ms-clear {
           position: absolute;
           top: 6px;
           display: inline-block; }
-    /* line 601, ../scss/pages/_listview.scss */
+    /* line 604, ../scss/pages/_listview.scss */
     .view-wahlen-sie-einen-themenbereich .view-content .views-row {
       background-color: #ffffff;
       padding: 30px;
@@ -9639,49 +9645,49 @@ input[type=text]::-ms-clear {
       position: relative;
       /* Desktop design */ }
       @media (min-width: 960px) {
-        /* line 601, ../scss/pages/_listview.scss */
+        /* line 604, ../scss/pages/_listview.scss */
         .view-wahlen-sie-einen-themenbereich .view-content .views-row {
           width: 47%;
           height: 286px;
           margin-right: 30px;
           float: left;
           margin-left: 10px; } }
-      /* line 621, ../scss/pages/_listview.scss */
+      /* line 622, ../scss/pages/_listview.scss */
       .view-wahlen-sie-einen-themenbereich .view-content .views-row:nth-child(2), .view-wahlen-sie-einen-themenbereich .view-content .views-row:last-child {
         /* Desktop design */ }
         @media (min-width: 960px) {
-          /* line 621, ../scss/pages/_listview.scss */
+          /* line 622, ../scss/pages/_listview.scss */
           .view-wahlen-sie-einen-themenbereich .view-content .views-row:nth-child(2), .view-wahlen-sie-einen-themenbereich .view-content .views-row:last-child {
             margin-right: 0; } }
-      /* line 627, ../scss/pages/_listview.scss */
+      /* line 628, ../scss/pages/_listview.scss */
       .view-wahlen-sie-einen-themenbereich .view-content .views-row .views-field-name {
         padding-bottom: 30px; }
-        /* line 630, ../scss/pages/_listview.scss */
+        /* line 631, ../scss/pages/_listview.scss */
         .view-wahlen-sie-einen-themenbereich .view-content .views-row .views-field-name a {
           color: #e74712;
           text-decoration: none;
           font-weight: bold;
           padding-bottom: 30px; }
-      /* line 639, ../scss/pages/_listview.scss */
+      /* line 640, ../scss/pages/_listview.scss */
       .view-wahlen-sie-einen-themenbereich .view-content .views-row .views-field-name-1 a {
         color: #273753;
         position: absolute;
         bottom: 30px; }
-      /* line 646, ../scss/pages/_listview.scss */
+      /* line 649, ../scss/pages/_listview.scss */
       .view-wahlen-sie-einen-themenbereich .view-content .views-row .views-field-field-kurztext {
         padding-bottom: 40px; }
 
-/* line 655, ../scss/pages/_listview.scss */
+/* line 658, ../scss/pages/_listview.scss */
 .view-map-teaser {
   clear: both; }
-  /* line 659, ../scss/pages/_listview.scss */
+  /* line 662, ../scss/pages/_listview.scss */
   .view-map-teaser .view-sub-wrapper .view-content {
     margin: 0; }
-    /* line 662, ../scss/pages/_listview.scss */
+    /* line 665, ../scss/pages/_listview.scss */
     .view-map-teaser .view-sub-wrapper .view-content .views-row {
       padding: 0;
       background: #273753; }
-      /* line 668, ../scss/pages/_listview.scss */
+      /* line 671, ../scss/pages/_listview.scss */
       .view-map-teaser .view-sub-wrapper .view-content .views-row .row-container {
         background: none;
         height: auto;
@@ -9690,30 +9696,30 @@ input[type=text]::-ms-clear {
         border: none;
         /* Over Desktop design */ }
         @media (min-width: 1025px) {
-          /* line 668, ../scss/pages/_listview.scss */
+          /* line 671, ../scss/pages/_listview.scss */
           .view-map-teaser .view-sub-wrapper .view-content .views-row .row-container {
             padding: 45px 150px 45px 50px; } }
-        /* line 680, ../scss/pages/_listview.scss */
+        /* line 683, ../scss/pages/_listview.scss */
         .view-map-teaser .view-sub-wrapper .view-content .views-row .row-container:hover {
           background: none;
           border: none; }
-        /* line 685, ../scss/pages/_listview.scss */
+        /* line 688, ../scss/pages/_listview.scss */
         .view-map-teaser .view-sub-wrapper .view-content .views-row .row-container .views-field-field-bild {
           padding-bottom: 20px; }
-          /* line 688, ../scss/pages/_listview.scss */
+          /* line 691, ../scss/pages/_listview.scss */
           .view-map-teaser .view-sub-wrapper .view-content .views-row .row-container .views-field-field-bild img {
             color: #e74712; }
-        /* line 693, ../scss/pages/_listview.scss */
+        /* line 696, ../scss/pages/_listview.scss */
         .view-map-teaser .view-sub-wrapper .view-content .views-row .row-container .views-field-field-paragraph-title {
           color: #ffffff;
           font-size: 38px;
           font-weight: bold;
           padding-bottom: 20px; }
-        /* line 700, ../scss/pages/_listview.scss */
+        /* line 703, ../scss/pages/_listview.scss */
         .view-map-teaser .view-sub-wrapper .view-content .views-row .row-container .views-field-field-flie-text-bereich {
           color: #ffffff;
           padding-bottom: 35px; }
-        /* line 705, ../scss/pages/_listview.scss */
+        /* line 708, ../scss/pages/_listview.scss */
         .view-map-teaser .view-sub-wrapper .view-content .views-row .row-container .views-field-field-quellenangabe a {
           color: #ffffff; }
 
