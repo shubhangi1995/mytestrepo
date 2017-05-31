@@ -26,6 +26,9 @@
 
 $icomoon : 'icomoon';
 
+.icon-map:before {
+  content: "\e910";
+}
 .icon-add-to-calender:before { 
   content: "\e900";
 }
