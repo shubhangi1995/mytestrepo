@@ -228,7 +228,7 @@ function ipwa_termin__views_default_views() {
       ),
     ),
     'term_node_tid_depth' => array(
-      'bef_format' => 'bef',
+      'bef_format' => 'bef_links',
       'more_options' => array(
         'bef_select_all_none' => FALSE,
         'bef_select_all_none_nested' => FALSE,
@@ -1094,7 +1094,7 @@ function ipwa_termin__views_default_views() {
       ),
     ),
     'term_node_tid_depth' => array(
-      'bef_format' => 'bef',
+      'bef_format' => 'bef_links',
       'more_options' => array(
         'bef_select_all_none' => FALSE,
         'bef_select_all_none_nested' => FALSE,
