@@ -6556,11 +6556,11 @@ header .navbar-collapse {
           content: "\e943"; }
         /* line 245, ../scss/layout/_header.scss */
         header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li.menu-beschaftigte > a:before {
-          content: "\e943"; }
+          content: "\e905"; }
         /* line 251, ../scss/layout/_header.scss */
         header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li.menu-schaufenster > a:before {
           content: "\e943"; }
-        /* line 257, ../scss/layout/_header.scss */
+        /* line 256, ../scss/layout/_header.scss */
         header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li.active > a:hover, header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li.active > a:focus {
           background: none;
           color: #e74712;
@@ -6568,70 +6568,70 @@ header .navbar-collapse {
           /* line 262, ../scss/layout/_header.scss */
           header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li.active > a:hover:before, header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li.active > a:focus:before {
             color: #e74712; }
-        /* line 266, ../scss/layout/_header.scss */
+        /* line 267, ../scss/layout/_header.scss */
         header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li.open > a, header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li.active > .dropdown-toggle, header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li.active > a, header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li.open.active > .dropdown-toggle {
           background: none;
           color: #e74712;
           border-bottom: 2px solid #e74712; }
-          /* line 273, ../scss/layout/_header.scss */
+          /* line 275, ../scss/layout/_header.scss */
           header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li.open > a:before, header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li.active > .dropdown-toggle:before, header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li.active > a:before, header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li.open.active > .dropdown-toggle:before {
             color: #e74712; }
-        /* line 279, ../scss/layout/_header.scss */
+        /* line 280, ../scss/layout/_header.scss */
         header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu {
           background-color: #3c506e;
           border: none;
           width: 100%;
           padding-top: 40px;
           padding-bottom: 40px; }
-          /* line 286, ../scss/layout/_header.scss */
+          /* line 287, ../scss/layout/_header.scss */
           header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu a {
             color: #ffffff;
             text-decoration: none;
             font-weight: normal; }
-          /* line 292, ../scss/layout/_header.scss */
+          /* line 293, ../scss/layout/_header.scss */
           header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .block-title {
             color: #ffffff; }
-          /* line 297, ../scss/layout/_header.scss */
+          /* line 298, ../scss/layout/_header.scss */
           header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-header {
             color: #ffffff;
             font-size: 18px; }
-          /* line 302, ../scss/layout/_header.scss */
+          /* line 303, ../scss/layout/_header.scss */
           header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-content .views-row {
             display: inline-block;
             padding: 5px; }
-            /* line 306, ../scss/layout/_header.scss */
+            /* line 307, ../scss/layout/_header.scss */
             header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-content .views-row a {
               background: #273753;
               font-size: 16px;
               padding: 10px; }
-              /* line 311, ../scss/layout/_header.scss */
+              /* line 312, ../scss/layout/_header.scss */
               header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-content .views-row a:hover {
                 background: #e74712; }
-        /* line 319, ../scss/layout/_header.scss */
+        /* line 320, ../scss/layout/_header.scss */
         header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .mega-dropdown-inner {
           width: 1170px;
           margin: 0 auto; }
-          /* line 323, ../scss/layout/_header.scss */
+          /* line 324, ../scss/layout/_header.scss */
           header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .mega-dropdown-inner .tb-submenu-left {
             width: 30%;
             float: left; }
-            /* line 327, ../scss/layout/_header.scss */
+            /* line 328, ../scss/layout/_header.scss */
             header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .mega-dropdown-inner .tb-submenu-left .block-title {
               font-size: 18px;
               font-weight: normal;
               text-transform: capitalize; }
-            /* line 334, ../scss/layout/_header.scss */
+            /* line 335, ../scss/layout/_header.scss */
             header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .mega-dropdown-inner .tb-submenu-left ul li {
               width: 100%;
               margin-bottom: 10px; }
-              /* line 338, ../scss/layout/_header.scss */
+              /* line 339, ../scss/layout/_header.scss */
               header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .mega-dropdown-inner .tb-submenu-left ul li a {
                 font-size: 16px;
                 position: relative;
                 padding-left: 25px;
                 margin: 0;
                 font-weight: normal; }
-                /* line 345, ../scss/layout/_header.scss */
+                /* line 346, ../scss/layout/_header.scss */
                 header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .mega-dropdown-inner .tb-submenu-left ul li a:before {
                   font-family: "icomoon";
                   content: "\e93f";
@@ -6640,25 +6640,25 @@ header .navbar-collapse {
                   position: absolute;
                   left: 0;
                   display: inline-block; }
-          /* line 359, ../scss/layout/_header.scss */
+          /* line 360, ../scss/layout/_header.scss */
           header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .mega-dropdown-inner .tb-submenu-right {
             width: 70%;
             float: left;
             margin: 0; }
 
 @-moz-document url-prefix() {
-  /* line 377, ../scss/layout/_header.scss */
+  /* line 373, ../scss/layout/_header.scss */
   header .navbar-collapse .region-navigation .block-ipwa-search {
     top: 64px; } }
-/* line 383, ../scss/layout/_header.scss */
+/* line 380, ../scss/layout/_header.scss */
 .front header.navbar-default {
   margin-bottom: 0; }
 
 @media (min-width: 768px) {
-  /* line 394, ../scss/layout/_header.scss */
+  /* line 391, ../scss/layout/_header.scss */
   .navbar-header .logo .big {
     display: block; }
-  /* line 398, ../scss/layout/_header.scss */
+  /* line 395, ../scss/layout/_header.scss */
   .navbar-header .logo .small {
     display: none; } }
 @media (max-width: 1024px) {

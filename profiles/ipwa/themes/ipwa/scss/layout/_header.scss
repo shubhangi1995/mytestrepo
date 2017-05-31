@@ -243,7 +243,7 @@ header {
 
                     &.menu-beschaftigte > a {
                         &:before {
-                            content: "\e943";
+                            content: "\e905";
                         }
                     }
 
@@ -253,28 +253,29 @@ header {
                         }
                     }
 
-                  
-			    &.active > a:hover, 
-				&.active > a:focus {
-                background: none;
-                color: $active-menu;
-                border-bottom:2px solid $active-menu;
-				&:before{
-				  color:$active-menu;
-				}
-            }
-             &.open  > a,
-            &.active > .dropdown-toggle,
-			&.active > a,
-           &.open.active > .dropdown-toggle {
-                background: none;
-				color:$active-menu;
-				border-bottom:2px solid $active-menu;
-				&:before{
-				  color:$active-menu;
-				}
-				
-            }
+                    &.active > a:hover,
+                    &.active > a:focus {
+                        background: none;
+                        color: $active-menu;
+                        border-bottom: 2px solid $active-menu;
+
+                        &:before {
+                            color: $active-menu;
+                        }
+                    }
+
+                    &.open > a,
+                    &.active > .dropdown-toggle,
+                    &.active > a,
+                    &.open.active > .dropdown-toggle {
+                        background: none;
+                        color: $active-menu;
+                        border-bottom: 2px solid $active-menu;
+
+                        &:before {
+                            color: $active-menu;
+                        }
+                    }
 
                     .dropdown-menu {
                         background-color: $header-dropdown-menu;
@@ -364,20 +365,16 @@ header {
                     }
                 }
             }
-
-            
-        }
-
-        
         }
     }
-
+}
 
 @-moz-document url-prefix() {
-            header .navbar-collapse .region-navigation .block-ipwa-search {
-                top: 64px;
-            }
+    header .navbar-collapse .region-navigation .block-ipwa-search {
+        top: 64px;
+    }
 }
+
 .front {
     header {
         &.navbar-default {
