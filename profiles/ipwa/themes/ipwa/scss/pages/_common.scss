@@ -31,7 +31,10 @@ p {
 // Page title
 .page-title {
     margin: 25px 0 30px;
-    font-size: 44px;
+	font-size:35px;
+	@include devicebreak(medium){
+		font-size: 44px;
+	}
 }
 
 //pagination
@@ -339,8 +342,7 @@ padding:0;
     .node-webform {
 		width:100%;
 		 padding:15px;
-		
-		@include devicebreak(medium) {
+		@include devicebreak(large) {
 			width: 765px;
 			margin: 0 auto;
         } 
@@ -824,19 +826,28 @@ input[type=text]::-ms-clear {
 .page-calendar, .page-termine{
 	.page-header{
 		position:relative;
-		padding-left:80px;
 		&::before{
 			content:"\e941";
 			font-family:$icomoon;
 			color:$calendar-color;
 			font-size: 120px;
-			left: -100px;
-			top:40px;
-			position: absolute;
+			margin-bottom:30px;
 		}
+			@include devicebreak (x-large){
+				padding-left:80px;
+				&::before{
+					left: -100px;
+					top:40px;
+					position: absolute;
+					margin-bottom:0;					
+				}
+			}
 	}
 	.view-header{
-			padding-left:80px;
+		@include devicebreak (x-large){
+			padding-left:80px; 
+		}
+
 	}
 }
 
