@@ -8653,7 +8653,7 @@ input[type=text]::-ms-clear {
   @media (min-width: 1025px) {
     /* line 258, ../scss/pages/_singleview.scss */
     .group-page-info, .group-page-bottom {
-      padding: 0; } }
+      padding: 60px 0; } }
 
 /* line 270, ../scss/pages/_singleview.scss */
 .group-page-info h2 {
