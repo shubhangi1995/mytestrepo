@@ -223,9 +223,8 @@ h1{
 .row{
 margin:0;
 }
-.col-sm-12{
-padding:0;
-}
+
+
 
 //-----------view-content-----------//
 
@@ -349,7 +348,7 @@ padding:0;
     .node-webform {
 		width:100%;
 		 padding:15px;
-		@include devicebreak(large) {
+		@include devicebreak(medium) {
 			width: 765px;
 			margin: 0 auto;
         } 
@@ -449,7 +448,30 @@ padding:0;
                 float: left;
             }
         }
-    }
+		
+input[type="radio"]{
+margin:2px 0 0;
+left:0;
+
+@include devicebreak(medium){
+margin:4px 0 0;
+}
+
+}
+
+
+ input[type="checkbox"]{
+ margin:8px 0 0;
+ left:0;
+ @include devicebreak (medium){
+ margin:4px 0 0;
+ }
+ 
+ }
+ 
+ } 
+
+    
 }
 
 
