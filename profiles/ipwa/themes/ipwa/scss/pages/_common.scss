@@ -238,9 +238,14 @@ padding:0;
                     transition: all 0.5s ease;
                     height: auto;
 
-                    @include devicebreak(x-medium) {
-                        height: 410px;
+                    @include devicebreak(medium) {
+                        height: 440px;
                     }
+					
+					 @include devicebreak(x-large) {
+					   height:410px;
+					 
+					 }
 
 
                     &.project-blue {

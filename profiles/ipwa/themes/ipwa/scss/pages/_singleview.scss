@@ -664,8 +664,8 @@
             @include devicebreak(large) {
                 width: 66.66%;
                 float: left;
-                padding-right:0;
-				padding-top:0;
+                padding-right: 0;
+                padding-top: 0;
             }
 
 
@@ -678,14 +678,21 @@
             }
 
             .inner-wrapper {
+                width: 100%;
+
+                @include devicebreak(medium) {
+                    width: 50%;
+                    float: left;
+                    padding-right: 15px;
+                }
+
+
                 @include devicebreak(large) {
                     width: 50%;
                     float: left;
                     padding-right: 20px;
                 }
 
-
-                width: 100%;
 
                 .view-content .views-row {
                     .row-container {
@@ -751,14 +758,21 @@
             }
 
             > .view-latest-content-doorpage {
+                width: 100%;
+
+                @include devicebreak(medium) {
+                    width: 50%;
+                    float: left;
+                    padding-left: 15px;
+                }
+
+
                 @include devicebreak(large) {
                     width: 50%;
                     float: left;
                     padding: 0 10px;
                 }
 
-
-                width: 100%;
 
                 .view-sub-wrapper {
                     width: auto;
@@ -816,7 +830,15 @@
             }
         }
 
-        > .view-latest-content-doorpage {            
+        > .view-latest-content-doorpage {
+            width: 100%;
+            padding: 15px;
+
+            @include devicebreak(medium) {
+                width: 50%;
+                float: left;
+            }
+
 
             @include devicebreak(large) {
                 width: 33.33%;
@@ -825,9 +847,6 @@
                 padding-top: 0;
             }
 
-
-            width: 100%;
-            padding: 15px;
 
             .view-sub-wrapper {
                 width: auto;
