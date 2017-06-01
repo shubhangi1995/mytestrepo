@@ -93,7 +93,7 @@ function ipwa_termin__node_view($node, $view_mode, $langcode) {
     $enddate = date("d.m.Y", strtotime($node->content['field_event_datum']['#items'][$occurence-1]['value2']));
     if ($occurence > 1) {
       // Repeat rule
-      $output =' ';
+      $output ='';
       $output = '<div class="date-repeat-rule">' . $output . '</div>';
       $output .= '<div class="date-display-range"><span class="date-display-start">' . $startDate . '</span> to <span class="date-display-end">' . $enddate . '</span></div>';
       $node->content['field_event_datum'][0]['#markup'] = '<div class="field-event-datum recurring">' . $output . '</div>';
