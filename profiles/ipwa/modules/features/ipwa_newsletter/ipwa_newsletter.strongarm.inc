@@ -105,6 +105,13 @@ function ipwa_newsletter_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
+  $strongarm->name = 'mimemail_format';
+  $strongarm->value = 'wysiwyg';
+  $export['mimemail_format'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
   $strongarm->name = 'node_options_simplenews';
   $strongarm->value = array(
     0 => 'status',
@@ -124,6 +131,13 @@ function ipwa_newsletter_strongarm() {
   $strongarm->name = 'node_submitted_simplenews';
   $strongarm->value = 0;
   $export['node_submitted_simplenews'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'simplenews_format';
+  $strongarm->value = 'html';
+  $export['simplenews_format'] = $strongarm;
 
   return $export;
 }
