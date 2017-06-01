@@ -27,56 +27,98 @@
  * @see template_preprocess_simplenews_newsletter_body()
  */
 ?>
+<?php
+/**
+ * Following code is for print the Date and Issue No. of Newsletter
+ */
+?>
 <?php global $base_url; ?>
 <?php if(isset($build)) : ?>
-  <?php  print $build['field_datum'][0]['#markup']; ?>
-  <?php  print $build['field_issue_no'][0]['#markup']; ?>
-  <?php  $build['field_datum'][0]['#markup'] = ''; ?>
-  <?php  $build['field_issue_no'][0]['#markup'] = ''; ?>
+  <?php if(isset($build['field_datum'])) : ?>
+  <?php print $build['field_datum'][0]['#markup']; ?>
+  <?php $build['field_datum'][0]['#markup'] = ''; ?>
+  <?php endif; ?>
+  <?php if(isset($build['field_issue_no'])) : ?>
+  <h3><?php print $build['field_issue_no'][0]['#markup']; ?></h3>
+  <?php $build['field_issue_no'][0]['#markup'] = ''; ?>
+  <?php endif; ?>
 <?php endif; ?>
+<?php
+/**
+ * Following code is for print the Title of Newsletter
+ */
+?>
 <?php if(isset($title)) :
   //print_r(drupal_lookup_path("alias", "node/".$build['body']['#object']->nid));
   //print_r(drupal_get_path_alias('node/'.$build['body']['#object']->nid));
   ?>
     <h1><a href="<?php print $base_url.'/node/'.$build['body']['#object']->nid; ?>"><?php  print $title; ?></a></h1>
 <?php endif; ?>
+<?php
+/**
+ * Following code is for print the body of Newsletter
+ */
+?>
+<?php if(isset($build)) : ?>
+  <?php if(!empty($build['body'][0])) : ?>
+    <?php  print $build['body'][0]['#markup']; ?>
+    <?php  endif; ?>
+<?php endif; ?>
 
+<?php
+/**
+ * Following code is for print the Node referred in Newsletter
+ */
+?>
 <?php if(isset($build)) : ?>
   <?php if(!empty($build['#node']->field_newsletter_group)) : ?>
-    <?php $field_data = entity_load('field_collection_item', array($build['#node']->field_newsletter_group['und'][0]['value'])); ?>
+    <?php foreach($build['#node']->field_newsletter_group['und'] as $items): ?>
+    <?php $field_data = entity_load('field_collection_item', array($items['value'])); ?>
     <?php if(!empty($field_data)) : ?>
-      <?php foreach($field_data[13]->field_group_heading['und'] as $group_title): ?>
 
-        <?php foreach ($field_data[13]->field_newsletter_content_types['und'] as $node_data): ?>
+        <?php //Following code is for print Title of Group. ?>
+      <?php foreach($field_data[$items['value']]->field_group_heading['und'] as $group_title): ?>
+          <?php print $group_title['value']; ?>
+        <?php foreach ($field_data[$items['value']]->field_newsletter_content_types['und'] as $node_data): ?>
           <?php $node = node_load($node_data['entity']->nid); ?>
+          <?php if($node_data['entity']->type == 'termin') : ?>
+
+              <?php //print location of Termin. ?>
+            <?php if(isset($node->field_ort['und'][0])) : ?>
+              <?php print $node->field_ort['und'][0]['value']; ?>
+            <?php endif; ?>
+
+              <?php //print Title of Termin. ?>
+            <a href="<?php print $base_url.'/node/'.$node_data['entity']->nid; ?>"><?php print $node_data['entity']->title; ?></a>
+
+              <?php //print Date of Termin. ?>
+              <?php if (!empty($node_data['entity']->field_event_datum)) : ?>
+              <?php foreach($node_data['entity']->field_event_datum as $event_date): ?>
+                <?php $occurence = count($event_date); ?>
+                <?php $startDate = date("d.m.Y", strtotime($event_date[0]['value'])); ?>
+                <?php $enddate = date("d.m.Y", strtotime($event_date[$occurence - 1]['value2'])); ?>
+                <?php if(($occurence > 1) || (($event_date[0]['value'] != $event_date[0]['value2']))) : ?>
+                  <?php $output = ''; ?>
+                  <?php $output = '<div class="date-repeat-rule">' . $output . '</div>'; ?>
+                  <?php $output .= '<div class="date-display-range"><span class="date-display-start">' . $startDate . '</span> - <span class="date-display-end">' . $enddate . '</span></div>'; ?>
+                  <?php print $output; ?>
+                <?php else: ?>
+                  <?php print $startDate; ?>
+                <?php endif; ?>
+              <?php endforeach; ?>
+              <?php endif; ?>
+            <?php  else: ?>
+              <?php //print Title of Other content excluded from Termin. ?>
               <a href="<?php print $base_url.'/node/'.$node_data['entity']->nid; ?>"><?php print $node_data['entity']->title; ?></a>
-          <?php  if($node_data['entity']->type == 'termin'): ?>
-            <?php  if (!empty($node_data['entity']->field_event_datum)) : ?>
-              <?php  foreach($node_data['entity']->field_event_datum as $event_date): ?>
-                <?php  $occurence = count($event_date); ?>
-                <?php  $startDate = date("d.m.Y", strtotime($event_date[0]['value'])); ?>
-                <?php  $enddate = date("d.m.Y", strtotime($event_date[$occurence - 1]['value2'])); ?>
-                <?php  if (($occurence > 1) || (($event_date[0]['value'] != $event_date[0]['value2']))) { ?>
-                <?php  $output = ''; ?>
-                <?php  $output = '<div class="date-repeat-rule">' . $output . '</div>'; ?>
-                <?php  $output .= '<div class="date-display-range"><span class="date-display-start">' . $startDate . '</span> - <span class="date-display-end">' . $enddate . '</span></div>'; ?>
-                <?php  print $output; ?>
-                <?php  }else{ ?>
-              <?php  print $startDate; ?>
-              <?php  } ?>
-              <?php  endforeach; ?>
-           <?php   endif; ?>
-            <?php  endif; ?>
-        <?php if(isset($node->field_ort['und'][0])) : ?>
-          <?php print $node->field_ort['und'][0]['value']; ?>
-          <?php   endif; ?>
-        <?php if(isset($node->body['und'][0])) : ?>
-         <h2><?php print $node->body['und'][0]['value']; ?></h2>
-          <?php   endif; ?>
+
+              <?php //print body of Other content excluded from Termin. ?>
+              <?php if(isset($node->body['und'][0])) : ?>
+                <h2><?php print $node->body['und'][0]['value']; ?></h2>
+              <?php endif; ?>
+            <?php endif; ?>
         <?php endforeach; ?>
-
-     <?php endforeach; ?>
-      <?php  endif; ?>
-
+      <?php endforeach; ?>
     <?php  endif; ?>
+    <?php endforeach; ?>
+  <?php  endif; ?>
 <?php endif; ?>
