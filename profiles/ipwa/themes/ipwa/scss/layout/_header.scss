@@ -10,10 +10,6 @@ header {
         padding: 10px 0 0;
         margin-bottom: 30px;
     }
-     .container{
-@include devicebreak(x-medium){
-width:100%;
-}
     .navbar-header {
         .navbar-brand {
             display: none;
@@ -371,7 +367,7 @@ width:100%;
             }
         }
     }
-}}
+}
 
 @-moz-document url-prefix() {
     header .navbar-collapse .region-navigation .block-ipwa-search {

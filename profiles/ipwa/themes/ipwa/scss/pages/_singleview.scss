@@ -13,8 +13,11 @@
 
     .field-items .field-item {
         @extend .col-md-4;
-
-        padding-right: 45px;
+		margin-bottom:15px;
+		@include devicebreak(x-large){
+			padding-right: 45px;
+			margin-bottom:0;
+		}
 
         &:last-child {
             padding-right: 0;
@@ -255,10 +258,10 @@
 .group-page-info, .group-page-bottom {
     @extend .page_inner;
 
-    padding: 60px 15px 45px 15px;
+     padding: 45px 20px 20px;
 
     @include devicebreak(x-large) {
-        padding: 60px 0 45px;
+         padding: 0;
     }
 }
 
@@ -281,7 +284,11 @@
 
 .group-body-container {
     background-color: $color-white;
-    padding: 60px 0 45px;
+    padding: 60px 20px 45px;
+	@include devicebreak(x-large) {
+         padding-left: 0;
+		 padding-right:0;
+    }
     overflow: hidden;
 
     p, h3, h4, h5, h6, .field-name-field-kurztext .field-item, .view-id-related_content.view-display-id-block_3 .views-row {
@@ -376,7 +383,7 @@
         margin-bottom: 25px;
 
         iframe {
-            //width:870px;
+            width:100%;  
             //height:490px;
        
         }
@@ -472,14 +479,17 @@
 
     .field-name-field-bild-ref {
         margin: 0;
-        padding-right: 30px;
+		@include devicebreak(large) {
+			padding-right: 30px;
+		}
     }
 
     .content {
         .field-name-field-bild-ref {
             display: inline-block;
             float: left;
-			@include devicebreak(x-large) {
+			width:100%;
+			@include devicebreak(large) {
 				width:67%;	
 			}
         }
@@ -495,7 +505,9 @@
 .paragraphs-item-flie-text-mit-bild-rechts {
     .content {
         .field-name-field-bild-ref {
-            padding-left: 30px;
+			@include devicebreak(large) { 
+				padding-left: 30px;
+			}
             padding-right: 0;
             float: right;
         }
@@ -590,7 +602,8 @@
                         a {
                             padding-left: 35px;
                             position: relative;
-
+							display:inline-block;
+							width:100%;
                             &::before {
                                 font-family: $icomoon;
                                 content: "\e944";
@@ -1010,6 +1023,21 @@
                         }
                     }
                 }
+				.feed-icon {
+					.ical-icon{
+						text-decoration:none; 
+						&::before{
+							content:"\e900";
+							font-family:$icomoon;
+							color:$active-menu;
+							margin:3px 10px 0 0;
+							display:inline-block;  
+						}
+						img{
+							display:none;
+						}
+					}
+				}
             }
         }
 
@@ -1095,14 +1123,31 @@
     border-bottom: 1px solid $single-border-color;
     padding-bottom: 15px;
     margin-bottom: 15px;
+	.field-label{
+		&::before{
+			content:"\e90f";
+		}
+	}
 }
 
 .field-name-field-herausgeber, .field-name-field-ver-ffentlichungsdatum {
     font-size: 18px;
+	.field-label{
+		&::before{
+			font-family:$icomoon;
+			color:$calendar-color;
+			margin-right:10px; 
+		}
+	}
 }
 
 .field-name-field-ver-ffentlichungsdatum {
     margin-bottom: 45px;
+	.field-label{
+		&::before{
+			content:"\e90b"; 
+		}
+	}
 }
 
 // protagonist view
@@ -1112,6 +1157,16 @@
     padding-bottom: 15px;
     margin-bottom: 15px;
     font-size: 18px;
+}
+
+.field-name-field-weitere-details{
+	&::before{
+		content:"\e907";
+		font-family:$icomoon;
+		margin: 2px 10px 0 0;
+		float:left;
+		color:$calendar-color; 
+	}
 }
 
 //.field-name-field-quellenangabe{

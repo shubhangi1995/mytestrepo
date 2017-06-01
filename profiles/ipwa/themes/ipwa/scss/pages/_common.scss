@@ -6,6 +6,17 @@ body {
     line-height: normal;
 }
 
+.container{
+	width:100%;
+    @include devicebreak(x-large){
+		width:1170px; 
+	}
+}
+
+.col-sm-12{
+	padding:0;
+}
+
 header.navbar-default {
     background: $color-white;
 }
@@ -38,8 +49,8 @@ h1{
 // Page title
 .page-title {
     margin: 25px 0 30px;
-	font-size:35px;
-	@include devicebreak(medium){
+	font-size:30px; 
+	@include devicebreak(x-medium){
 		font-size: 44px;
 	}
 }
