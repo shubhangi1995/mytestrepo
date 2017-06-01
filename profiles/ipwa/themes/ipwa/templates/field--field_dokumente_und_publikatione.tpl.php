@@ -54,11 +54,11 @@ HTML comment.
   <?php if (!$label_hidden): ?>
     <div class="field-label"<?php print $title_attributes; ?>><?php print $label ?>&nbsp;</div>
   <?php endif; ?>
-  <?php if(!empty("field_dokumente_und_publikatione") && isset($items)):?>
-  <?php  $view = views_get_view_result("related_content", "block_2", $variables["nid"]);?>
+  <?php if(!empty($items) && isset($items)):?>
+  <?php  $view = views_get_view_result("related_content", "block_2", $element['#object']->nid);?>
     <?php $related_doc_view = '';?>
     <?php if (!empty($view) && isset($view)) :?>
-        <?php $related_doc_view .= views_embed_view("related_content", "block_2", $variables["nid"]);?>
+        <?php $related_doc_view .= views_embed_view("related_content", "block_2", $element['#object']->nid);?>
         <?php print_r($related_doc_view);?>
         <?php endif;?>
   <?php endif;?>

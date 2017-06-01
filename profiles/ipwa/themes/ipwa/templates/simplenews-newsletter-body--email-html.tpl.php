@@ -40,9 +40,6 @@
   ?>
     <h1><a href="<?php print $base_url.'/node/'.$build['body']['#object']->nid; ?>"><?php  print $title; ?></a></h1>
 <?php endif; ?>
-<?php if(isset($build)) : ?>
-  <?php  print render($build); ?>
-<?php endif; ?>
 
 <?php if(isset($build)) : ?>
   <?php if(!empty($build['#node']->field_newsletter_group)) : ?>
