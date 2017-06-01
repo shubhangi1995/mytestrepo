@@ -347,8 +347,10 @@ padding:0;
         }
 		
 		.field-name-field-pflichtfeldhinweis{
-		  font-size:18px;
-		  font-weight:bold;
+		  h3{
+		    font-size:20px;
+			color:$active-menu;
+		  }
 		}
 
         .webform-client-form { 
