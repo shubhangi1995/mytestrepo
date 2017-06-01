@@ -429,7 +429,7 @@
                 font-family: $icomoon;
                 content: "\e94e";
                 color: $icons-color;
-                left: 8px;
+                left: 10px;
                 top: 23px;
                 display: inline-block;
                 position: absolute;
@@ -481,11 +481,14 @@
 
     .view-content {
         .views-row {
-            border-top: 1px solid $color-light-grey;
-            border-bottom: 1px solid $color-light-grey;
+            border-top: 1px solid $color-light-grey;           
             padding: 30px;
             margin-bottom: 30px;
             cursor: pointer;
+			
+			&.views-row-last{
+			  border-bottom:1px solid $color-light-grey;
+			}
 
             .row-container > * {
                 padding-bottom: 20px;
@@ -494,8 +497,15 @@
                     text-decoration: none;
                     color: $main-color;
                 }
+				
+				
             }
 
+			.views-field-type{
+				 font-weight:bold;
+				 font-size:22px;
+				}
+			
             div[class*='views-field-views-conditional-'] {
                 .search-condition.field-content {
                     bottom: 60px;
@@ -503,8 +513,8 @@
                     a {
                         color: $color-light-grey;
                     }
-                }
-            }
+                }}
+            
         }
     }
 }
