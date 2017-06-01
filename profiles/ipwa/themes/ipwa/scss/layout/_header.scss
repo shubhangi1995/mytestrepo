@@ -326,9 +326,10 @@ header {
                             float: left;
 
                             .block-title {
-                                font-size: 18px;
+                                font-size: 18px !important;
                                 font-weight: normal;
                                 text-transform: capitalize;
+								color:$color-white !important; 
                             }
 
                             ul {

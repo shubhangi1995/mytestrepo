@@ -265,7 +265,7 @@
 .group-page-info {
     // @extend .container;
     h2 {
-        font-size: 26px;
+        font-size: 30px !important;
         color: $active-menu;
         margin-bottom: 60px;
     }
@@ -344,7 +344,7 @@
                 font-weight: bold;
                 left: -25px;
                 position: absolute;
-                top: -1px;
+                top: 0px;
             }
         }
     }
@@ -423,6 +423,34 @@
             }
         }
     }
+	
+	h2, h3, h4, h5, h6{
+	color:$active-menu !important;
+	}
+	h2{
+		font-size:22px !important;
+			@include devicebreak(x-large) { 
+			font-size:30px !important;
+		}
+	}
+	h3{
+		font-size:20px !important;
+		@include devicebreak(x-large) {
+			font-size:28px !important;
+		}
+	}
+	h4{
+		font-size:18px !important;
+			@include devicebreak(x-large) {
+			font-size:22px !important;
+		}
+	}
+	h5, h6{
+		font-size:18px !important;
+			@include devicebreak(x-large) {
+			font-size:20px !important;
+		}
+	}
 }
 
 .field-name-field-bild {
@@ -451,6 +479,9 @@
         .field-name-field-bild-ref {
             display: inline-block;
             float: left;
+			@include devicebreak(x-large) {
+				width:67%;	
+			}
         }
     }
 }
