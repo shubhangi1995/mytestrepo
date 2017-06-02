@@ -6,13 +6,13 @@ body {
     line-height: normal;
 }
 
-.container{
-	width:100%;
-    @include devicebreak(x-large){
-		width:1170px; 
-	}
-}
+.container {
+    width: 100%;
 
+    @include devicebreak(x-large) {
+        width: 1170px;
+    }
+}
 
 header.navbar-default {
     background: $color-white;
@@ -30,11 +30,12 @@ p {
     }
 }
 
-h1{
-	font-size:28px;
-	@include devicebreak(x-large) {
-		font-size:44px;
-	}
+h1 {
+    font-size: 28px;
+
+    @include devicebreak(x-large) {
+        font-size: 44px;
+    }
 }
 
 //-----------backend theme changes-----------//
@@ -46,10 +47,11 @@ h1{
 // Page title
 .page-title {
     margin: 25px 0 30px;
-	font-size:30px; 
-	@include devicebreak(x-medium){
-		font-size: 44px;
-	}
+    font-size: 30px;
+
+    @include devicebreak(x-medium) {
+        font-size: 44px;
+    }
 }
 
 //pagination
@@ -194,7 +196,7 @@ h1{
 
             .simplebar-track .simplebar-scrollbar {
                 background: $main-color;
-				right:6px;
+                right: 6px;
             }
 
             ul.select2-results__options {
@@ -228,11 +230,9 @@ h1{
     }
 }
 
-.row{
-margin:0;
+.row {
+    margin: 0;
 }
-
-
 
 //-----------view-content-----------//
 
@@ -258,11 +258,11 @@ margin:0;
                     @include devicebreak(medium) {
                         height: 440px;
                     }
-					
-					 @include devicebreak(x-large) {
-					   height:410px;
-					 
-					 }
+
+
+                    @include devicebreak(x-large) {
+                        height: 410px;
+                    }
 
 
                     &.project-blue {
@@ -354,33 +354,37 @@ margin:0;
 
 .node-type-webform {
     .node-webform {
-		width:100%;
-		 padding:15px;
-		@include devicebreak(medium) {
-			width: 765px;
-			margin: 0 auto;
-        } 
+        width: 100%;
+        padding: 15px;
+
+        @include devicebreak(medium) {
+            width: 765px;
+            margin: 0 auto;
+        }
+
 
         .field-name-field-untertitel {
             color: $active-menu;
             font-size: 26px;
             padding: 30px 0;
         }
-		
-		.field-name-field-pflichtfeldhinweis{
-		  h3{
-		    font-size:20px;
-			color:$active-menu;
-		  }
-		}
 
-        .webform-client-form { 
+        .field-name-field-pflichtfeldhinweis {
+            h3 {
+                font-size: 20px;
+                color: $active-menu;
+            }
+        }
+
+        .webform-client-form {
             padding-top: 40px;
-            width:100%;
-			@include devicebreak(medium) {
-			width: 65%;}
+            width: 100%;
 
-			
+            @include devicebreak(medium) {
+                width: 65%;
+            }
+
+
             .webform-component-fieldset {
                 border: none;
                 border-radius: 0;
@@ -394,10 +398,11 @@ margin:0;
                     padding: 0;
 
                     .form-group {
-                        margin-bottom: 40px; 
-						&:nth-last-child(2){
-						margin-bottom:20px;
-						}
+                        margin-bottom: 40px;
+
+                        &:nth-last-child(2) {
+                            margin-bottom: 20px;
+                        }
 
                         label {
                             font-size: 15px;
@@ -415,9 +420,6 @@ margin:0;
                             border-top-color: #cfd8df;
                             box-shadow: 0 -1px 1px 0 #eff2f4;
                             border-radius: 3px;
-							
-							
-							
                         }
 
                         p {
@@ -426,10 +428,10 @@ margin:0;
                                 color: $active-menu;
                             }
                         }
-						
-						&:nth-last-child(3) .form-control{
-						   height:auto;
-						}
+
+                        &:nth-last-child(3) .form-control {
+                            height: auto;
+                        }
                     }
                 }
             }
@@ -455,36 +457,30 @@ margin:0;
                 }
             }
 
-            #edit-submitted-kontakdaten-datenschutz,#edit-submitted-kontakt-datenschutz {
+            #edit-submitted-kontakdaten-datenschutz, #edit-submitted-kontakt-datenschutz {
                 float: left;
             }
         }
-		
-input[type="radio"]{
-margin:2px 0 0;
-left:0;
 
-@include devicebreak(medium){
-margin:4px 0 0;
+        input[type="radio"] {
+            margin: 2px 0 0;
+            left: 0;
+
+            @include devicebreak(medium) {
+                margin: 3px 0 0;
+            }
+        }
+
+        input[type="checkbox"] {
+            margin: 8px 0 0;
+            left: 0;
+
+            @include devicebreak(medium) {
+                margin: 4px 0 0;
+            }
+        }
+    }
 }
-
-}
-
-
- input[type="checkbox"]{
- margin:8px 0 0;
- left:0;
- @include devicebreak (medium){
- margin:4px 0 0;
- }
- 
- }
- 
- } 
-
-    
-}
-
 
 //IE10 cross button remove
 
@@ -515,386 +511,439 @@ input[type=text]::-ms-clear {
     }
 }
 
-// Calendar view  
+// Calendar view
 
-.page-calendar{
-	.region-content{
-		@extend .container; 
-	}
-	.view-content{ 
-		margin:40px 0;
-		.calendar-calendar{
-			.inner{
-				display:table-cell;
-				vertical-align:bottom;
-				width:inherit;
-				padding:10px; 
-				height:155px !important;   
-				min-height:155px;
-				.item{
-					float:right;
-					line-height:26px; 
-					// margin-top:30px;
-					.calendar{
-						background:none; 
-						overflow:visible;
-						span{
-							position:relative;
-							a{
-								font-size:0; 
-								text-decoration:none;
-								position:relative;
-								z-index:99; 
-								div{
-									display:none;
-								}
-								&.single{
-									border: 2px solid $active-menu !important;
-									border-radius: 50%;
-									display: inline-block;
-									height: 25px;
-									width: 25px;
-									margin:0 4px;
-									& + .views-row{
-										top:40px;
-									}
-								}
-								&.recurring{
-									&::before{
-										color: $active-menu;
-										content: "\e94d";
-										font-family: $icomoon; 
-										font-size: 25px;
-										font-weight: normal;
-									}
-								}
-								& + .views-row {
-									@extend .col-md-4,.col-sm-6;
-									position:absolute;
-									display:none;
-									width:370px;      
-									z-index:999;
-									left:-39px;
-									top:30px;
-									 > .row-container {
-										background: $color-light-blue;
-										padding: 30px;
-										margin-bottom: 30px;
-										position: relative;
-										border: 1px solid $color-border;
-										cursor: pointer;
-										transition: all 0.5s ease;
-										height: auto;
+.page-calendar {
+    .region-content {
+        @extend .container;
+    }
 
-										@include devicebreak(x-medium) {
-											//  height: 410px;
-										}
+    .view-content {
+        margin: 40px 0;
+
+        .calendar-calendar {
+            .inner {
+                display: table-cell;
+                vertical-align: bottom;
+                width: inherit;
+                padding: 10px;
+                height: 155px !important;
+                min-height: 155px;
+
+                .item {
+                    float: right;
+                    line-height: 26px;
+
+                    // margin-top:30px;
+                    .calendar {
+                        background: none;
+                        overflow: visible;
+
+                        span {
+                            position: relative;
+
+                            a {
+                                font-size: 0;
+                                text-decoration: none;
+                                position: relative;
+                                z-index: 99;
+
+                                div {
+                                    display: none;
+                                }
+
+                                &.single {
+                                    border: 2px solid $active-menu !important;
+                                    border-radius: 50%;
+                                    display: inline-block;
+                                    height: 25px;
+                                    width: 25px;
+                                    margin: 0 4px;
+
+                                    & + .views-row {
+                                        top: 40px;
+                                    }
+                                }
+
+                                &.recurring {
+                                    &::before {
+                                        color: $active-menu;
+                                        content: "\e94d";
+                                        font-family: $icomoon;
+                                        font-size: 25px;
+                                        font-weight: normal;
+                                    }
+                                }
+
+                                & + .views-row {
+                                    @extend .col-md-4,.col-sm-6;
+
+                                    position: absolute;
+                                    display: none;
+                                    width: 370px;
+                                    z-index: 999;
+                                    left: -39px;
+                                    top: 30px;
+
+                                    > .row-container {
+                                        background: $color-light-blue;
+                                        padding: 30px;
+                                        margin-bottom: 30px;
+                                        position: relative;
+                                        border: 1px solid $color-border;
+                                        cursor: pointer;
+                                        transition: all 0.5s ease;
+                                        height: auto;
+
+                                        @include devicebreak(x-medium) {
+                                            //  height: 410px;
+                                        }
 
 
-										&.project-blue {
-											background: $main-color;
+                                        &.project-blue {
+                                            background: $main-color;
 
-											.views-field-title a {
-												color: $color-white;
-											}
+                                            .views-field-title a {
+                                                color: $color-white;
+                                            }
 
-											&:hover {
-												.views-field-title a {
-													color: $main-color;
-												}
-											}
-										}
+                                            &:hover {
+                                                .views-field-title a {
+                                                    color: $main-color;
+                                                }
+                                            }
+                                        }
 
-										&:hover {
-											// background: $color-light-blue;
-										}
+                                        &:hover {
+                                            // background: $color-light-blue;
+                                       
+                                        }
 
-										.views-field-field-themenzuweisung {
-											padding-bottom: 30px;
+                                        .views-field-field-themenzuweisung {
+                                            padding-bottom: 30px;
 
-											img {
-												display: inline-block;
-												margin-right: 10px;
-											}
-										}
+                                            img {
+                                                display: inline-block;
+                                                margin-right: 10px;
+                                            }
+                                        }
 
-										.views-field-field-event-datum {
-											padding-bottom: 20px;
-											font-weight: bold;
-											color: $active-menu;
-											font-size: 22px;
-										}
+                                        .views-field-field-event-datum {
+                                            padding-bottom: 20px;
+                                            font-weight: bold;
+                                            color: $active-menu;
+                                            font-size: 22px;
+                                        }
 
-										.views-field-title {
-											padding-bottom: 20px;
+                                        .views-field-title {
+                                            padding-bottom: 20px;
 
-											a {
-												text-decoration: none;
-												font-size: 22px;
-												color: $main-color;
-											}
-										}
+                                            a {
+                                                text-decoration: none;
+                                                font-size: 22px;
+                                                color: $main-color;
+                                            }
+                                        }
 
-										.views-field-field-ort, div[class*='views-field-views-conditional-'] {
-											.field-content {
-												font-size: 20px;
-												color: $color-light-grey;
-												// position: absolute;
-												// bottom: 30px;
-											}
-										}
-										.pop-up{
-											display:block !important;
-										}
-									}
-									&::before, &::after{
-										border-color: transparent transparent $color-light-blue;
-										border-style: solid;
-										border-width: 12px;
-										content: "";
-										height: 0;
-										position: absolute;
-										top: -23px;
-										left:42px;
-										width: 0;
-										z-index: 9;
-									}
-									&::after{
-										border-bottom-color:$color-border;
-										top: -24px;
-										z-index: 8;
-									}
-									&.rightBorder{ 
-										left: auto;
-										right: -31px;
-										&::before, &::after{
-											left:auto;
-											right:35px;
-										}
-									}
-								}
-							}
-							&:hover{
-								a{
-									& + .views-row {
-										display:block;
-									}
-								}
-							}
-						}
-					}
-				}
-			}
-			table{
-				border-collapse:inherit;
-				thead{
-					position:relative;
-					&::before{
-						background: $active-menu;
-						bottom: 12px;
-						content: "";
-						min-height: 2px;
-						position: absolute;
-						width: 100%;
-					}
-					tr{
-						background:none;
-						th{
-							background:none;
-							border:none;
-							font-weight:normal;
-							text-align:right;
-							padding-bottom:25px;
-							// margin-bottom:15px;
-						}
-					}
-				}
-				tbody{
-					tr{
-						td{
-							border:5px solid $color-light-blue;
-							&:first-child{
-								border-left-width:0;
-							}
-							&:last-child{
-								border-right-width:0;  
-							}
-						}
-						&:first-child{
-							td{
-								//  border-top-width:20px;
-							}
-						}
-					}
-				}
-				tr{
-					td{
-						&.today{
-							border-color:$active-menu !important;
-						}
-						&.greyHover{
-							background :$color-light-blue;
-							// border:1px solid $color-border !important;
-							position:relative;
-							&::after{
-								border: 1px solid $color-border;
-								bottom: -1px;
-								content: "";
-								left: -1px;
-								position: absolute;
-								right: -1px;
-								top: -1px;
-							}
-						}
-						&.redHover{
-							background :#fdede7;
-							position:relative;
-							&::after{
-								border: 1px solid $active-menu;
-								bottom: -1px;
-								content: "";
-								left: -1px;
-								position: absolute;
-								right: -1px;
-								top: -1px;
-							}
-						}
-					}
-					&.date-box{
-						td{
-							&.greyHover{
-								&::after{
-									border-bottom:none;
-								}
-							}
-							&.redHover{
-								&::after{
-									border-bottom:none;
-								}								
-							}
-						}
-					}
-					&.single-day{
-						td{	
-							&.greyHover{
-								&::after{
-									border-top:none;
-								}
-							}
-							&.redHover{
-								&::after{
-									border-top:none;
-								}								
-							}							
-						}
-						 .no-entry .inner{   
-							min-height:155px;
-							height:155px !important;
-						}
-					}
-				}
-			}
-			.date-box{
-				.inner{
-					min-height:inherit;
-					height:auto !important;
-					display:inline-block;
-				}
-			}
-		}
-	}
-	.view-event-on-calendar{
-		display:none;
-	}
-	.date-views-pager{
-		float:left;
-		width:60%;
-		.pagination{
-			.monthText{
-				text-transform:capitalize;
-				font-size:22px;
-				font-weight:bold;
-			}
-			li{
-				float:left;
-				margin-right:50px;
-				&:last-child{
-					margin-right:0;
-				}
-				a{
-					font-size:0;
-					padding:3px 12px;
-					color:$main-color;
-					background:none;
-					border:none;
-					// font-weight:bold;
-					&::before{
-						font-family:$icomoon;
-						font-size:18px;
-					}
-				}
-				&.prev{
-					a{
-						&::before{
-							content:"\e901";
-						}
-					}
-				}
-				&.next{
-					a{
-						&::before{
-							content:"\e902";
-						}
-					}
-				}				
-			}
-		}
-		h3{
-			display:none;
-		}
-	}
-	/* .view-map-teaser{
-		margin-bottom:30px;
-		overflow:hidden;
-	} */
+                                        .views-field-field-ort, div[class*='views-field-views-conditional-'] {
+                                            .field-content {
+                                                font-size: 20px;
+                                                color: $color-light-grey;
+
+                                                // position: absolute;
+                                                // bottom: 30px;
+                                           
+                                            }
+                                        }
+
+                                        .pop-up {
+                                            display: block !important;
+                                        }
+                                    }
+
+                                    &::before, &::after {
+                                        border-color: transparent transparent $color-light-blue;
+                                        border-style: solid;
+                                        border-width: 12px;
+                                        content: "";
+                                        height: 0;
+                                        position: absolute;
+                                        top: -23px;
+                                        left: 42px;
+                                        width: 0;
+                                        z-index: 9;
+                                    }
+
+                                    &::after {
+                                        border-bottom-color: $color-border;
+                                        top: -24px;
+                                        z-index: 8;
+                                    }
+
+                                    &.rightBorder {
+                                        left: auto;
+                                        right: -31px;
+
+                                        &::before, &::after {
+                                            left: auto;
+                                            right: 35px;
+                                        }
+                                    }
+                                }
+                            }
+
+                            &:hover {
+                                a {
+                                    & + .views-row {
+                                        display: block;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            table {
+                border-collapse: inherit;
+
+                thead {
+                    position: relative;
+
+                    &::before {
+                        background: $active-menu;
+                        bottom: 12px;
+                        content: "";
+                        min-height: 2px;
+                        position: absolute;
+                        width: 100%;
+                    }
+
+                    tr {
+                        background: none;
+
+                        th {
+                            background: none;
+                            border: none;
+                            font-weight: normal;
+                            text-align: right;
+                            padding-bottom: 25px;
+
+                            // margin-bottom:15px;
+                       
+                        }
+                    }
+                }
+
+                tbody {
+                    tr {
+                        td {
+                            border: 5px solid $color-light-blue;
+
+                            &:first-child {
+                                border-left-width: 0;
+                            }
+
+                            &:last-child {
+                                border-right-width: 0;
+                            }
+                        }
+
+                        &:first-child {
+                            td {
+                                //  border-top-width:20px;
+                           
+                            }
+                        }
+                    }
+                }
+
+                tr {
+                    td {
+                        &.today {
+                            border-color: $active-menu !important;
+                        }
+
+                        &.greyHover {
+                            background: $color-light-blue;
+
+                            // border:1px solid $color-border !important;
+                            position: relative;
+
+                            &::after {
+                                border: 1px solid $color-border;
+                                bottom: -1px;
+                                content: "";
+                                left: -1px;
+                                position: absolute;
+                                right: -1px;
+                                top: -1px;
+                            }
+                        }
+
+                        &.redHover {
+                            background: #fdede7;
+                            position: relative;
+
+                            &::after {
+                                border: 1px solid $active-menu;
+                                bottom: -1px;
+                                content: "";
+                                left: -1px;
+                                position: absolute;
+                                right: -1px;
+                                top: -1px;
+                            }
+                        }
+                    }
+
+                    &.date-box {
+                        td {
+                            &.greyHover {
+                                &::after {
+                                    border-bottom: none;
+                                }
+                            }
+
+                            &.redHover {
+                                &::after {
+                                    border-bottom: none;
+                                }
+                            }
+                        }
+                    }
+
+                    &.single-day {
+                        td {
+                            &.greyHover {
+                                &::after {
+                                    border-top: none;
+                                }
+                            }
+
+                            &.redHover {
+                                &::after {
+                                    border-top: none;
+                                }
+                            }
+                        }
+
+                        .no-entry .inner {
+                            min-height: 155px;
+                            height: 155px !important;
+                        }
+                    }
+                }
+            }
+
+            .date-box {
+                .inner {
+                    min-height: inherit;
+                    height: auto !important;
+                    display: inline-block;
+                }
+            }
+        }
+    }
+
+    .view-event-on-calendar {
+        display: none;
+    }
+
+    .date-views-pager {
+        float: left;
+        width: 60%;
+
+        .pagination {
+            .monthText {
+                text-transform: capitalize;
+                font-size: 22px;
+                font-weight: bold;
+            }
+
+            li {
+                float: left;
+                margin-right: 50px;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+
+                a {
+                    font-size: 0;
+                    padding: 3px 12px;
+                    color: $main-color;
+                    background: none;
+                    border: none;
+
+                    // font-weight:bold;
+                    &::before {
+                        font-family: $icomoon;
+                        font-size: 18px;
+                    }
+                }
+
+                &.prev {
+                    a {
+                        &::before {
+                            content: "\e901";
+                        }
+                    }
+                }
+
+                &.next {
+                    a {
+                        &::before {
+                            content: "\e902";
+                        }
+                    }
+                }
+            }
+        }
+
+        h3 {
+            display: none;
+        }
+    }
+
+    /* .view-map-teaser{
+      margin-bottom:30px;
+      overflow:hidden;
+    } */
 }
-
-
 
 // Termine icon on header
 
-.page-calendar, .page-termine{
-	.page-header{
-		position:relative;
-		&::before{
-			content:"\e941";
-			font-family:$icomoon;
-			color:$calendar-color;
-			font-size: 120px;
-			margin-bottom:30px;
-		}
-			@include devicebreak (x-large){
-				padding-left:80px;
-				&::before{
-					left: -100px;
-					top:40px;
-					position: absolute;
-					margin-bottom:0;					
-				}
-			}
-	}
-	.view-header{
-		@include devicebreak (x-large){
-			padding-left:80px; 
-		}
+.page-calendar, .page-termine {
+    .page-header {
+        position: relative;
 
-	}
+        &::before {
+            content: "\e941";
+            font-family: $icomoon;
+            color: $calendar-color;
+            font-size: 120px;
+            margin-bottom: 30px;
+        }
+
+        @include devicebreak(x-large) {
+            padding-left: 80px;
+
+            &::before {
+                left: -100px;
+                top: 40px;
+                position: absolute;
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .view-header {
+        @include devicebreak(x-large) {
+            padding-left: 80px;
+        }
+    }
 }
-
-
-
-
-
 
 //backtotop
 #backtotop {
