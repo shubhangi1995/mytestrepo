@@ -5,3 +5,48 @@
  */
 
 include_once 'ipwa_newsletter.features.inc';
+/**
+ * Implements hook_block_info().
+ */
+function ipwa_newsletter_block_info() {
+  $blocks['newsletter_subscription_block'] = array(
+    'info' => t('Newsletter Subscription Block'),
+  );
+  return $blocks;
+}
+
+/**
+ * Implements hook_block_view().
+ */
+function ipwa_newsletter_block_view($delta = '') {
+  $block = '';
+  switch ($delta) {
+    case 'newsletter_subscription_block':
+      $block['subject'] = t('Newsletter-Abonnement');
+      $content = drupal_get_form('ipwa_newsletter_block_form');
+      $block['content'] = drupal_render($content);
+      break;
+  }
+  return $block;
+}
+
+/**
+ * Implements hook_block_form().
+ */
+function ipwa_newsletter_block_form($form, &$form_state) {
+  global $base_url;
+  $form['newsletter'] = array(
+    '#title' => 'Lorem ipsum ist ein ipsum ist ein ipsum ist ein.',
+    '#type' => 'textfield',
+    '#required' => False,
+    //'#default_value' => $default_value,
+    '#attributes' => array('placeholder'=> 'E-Mail-Address eintragen'),
+  );
+  $form['submit'] = array(
+    '#type' => 'submit',
+    '#value' => t('weiter zu Schritt 2'),
+  );
+  $form['#action'] = $base_url. '/';
+  //$form['#submit'][] = 'ipwa_newsletter_custom_form_submit';
+  return $form;
+}
