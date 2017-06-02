@@ -256,6 +256,12 @@
 	.col-sm-12{
 		padding:0;  
 	}
+	.field-name-field-untertitel{
+		.field-item{
+			font-size:26px;
+			color:$active-menu; 
+		}
+	}
 }
 
 .group-page-info, .group-page-bottom {
@@ -1004,7 +1010,7 @@
         .view-id-termin {
             &.view-display-id-block_1 {
                 float: right;
-
+				margin-top:5px;
                 .view-content {
                     display: none;
                 }
