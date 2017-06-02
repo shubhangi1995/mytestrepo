@@ -6380,36 +6380,39 @@ header .navbar-header .navbar-brand {
 header .nrw-eu-logo a {
   margin-top: 8px;
   margin-bottom: 8px;
-  float: left;
-  padding-left: 25px; }
-/* line 28, ../scss/layout/_header.scss */
+  float: left; }
+  /* line 24, ../scss/layout/_header.scss */
+  header .nrw-eu-logo a img {
+    width: 290px;
+    height: 50px; }
+/* line 31, ../scss/layout/_header.scss */
 header .navbar-collapse {
   padding: 0;
   text-align: right; }
-  /* line 32, ../scss/layout/_header.scss */
+  /* line 35, ../scss/layout/_header.scss */
   header .navbar-collapse ul.navbar-nav {
     display: inline-block;
     float: none; }
-    /* line 38, ../scss/layout/_header.scss */
+    /* line 41, ../scss/layout/_header.scss */
     header .navbar-collapse ul.navbar-nav li.active a, header .navbar-collapse ul.navbar-nav li.active a:hover, header .navbar-collapse ul.navbar-nav li.active a:focus, header .navbar-collapse ul.navbar-nav li.active a:active {
       background: none;
       color: #e74712; }
-    /* line 45, ../scss/layout/_header.scss */
+    /* line 48, ../scss/layout/_header.scss */
     header .navbar-collapse ul.navbar-nav li.open > a {
       background: none;
       color: #e74712; }
-      /* line 49, ../scss/layout/_header.scss */
+      /* line 52, ../scss/layout/_header.scss */
       header .navbar-collapse ul.navbar-nav li.open > a:hover, header .navbar-collapse ul.navbar-nav li.open > a:focus {
         background: none; }
-    /* line 55, ../scss/layout/_header.scss */
+    /* line 58, ../scss/layout/_header.scss */
     header .navbar-collapse ul.navbar-nav li a {
       color: #273753;
       font-size: 18px; }
-      /* line 59, ../scss/layout/_header.scss */
+      /* line 62, ../scss/layout/_header.scss */
       header .navbar-collapse ul.navbar-nav li a:hover, header .navbar-collapse ul.navbar-nav li a:focus {
         background: none;
         border: none; }
-  /* line 67, ../scss/layout/_header.scss */
+  /* line 70, ../scss/layout/_header.scss */
   header .navbar-collapse .search-icon {
     display: inline-block;
     position: relative;
@@ -6417,7 +6420,7 @@ header .navbar-collapse {
     padding: 15px;
     cursor: pointer;
     font-size: 18px; }
-    /* line 75, ../scss/layout/_header.scss */
+    /* line 78, ../scss/layout/_header.scss */
     header .navbar-collapse .search-icon:before {
       font-family: "icomoon";
       content: "\e94e";
@@ -6425,20 +6428,20 @@ header .navbar-collapse {
       font-size: 15px;
       margin-right: 10px;
       display: inline-block; }
-    /* line 84, ../scss/layout/_header.scss */
+    /* line 87, ../scss/layout/_header.scss */
     header .navbar-collapse .search-icon.active {
       background: #6d7c98;
       color: #ffffff; }
-      /* line 88, ../scss/layout/_header.scss */
+      /* line 91, ../scss/layout/_header.scss */
       header .navbar-collapse .search-icon.active:before {
         color: #ffffff; }
-  /* line 94, ../scss/layout/_header.scss */
+  /* line 97, ../scss/layout/_header.scss */
   header .navbar-collapse .region-navigation {
     text-align: left;
     width: 100%;
     clear: both;
     padding-top: 40px; }
-    /* line 100, ../scss/layout/_header.scss */
+    /* line 103, ../scss/layout/_header.scss */
     header .navbar-collapse .region-navigation .block-ipwa-search {
       position: absolute;
       padding: 43px 0;
@@ -6452,30 +6455,30 @@ header .navbar-collapse {
       -moz-transition: opacity 0.3s 0s, visibility 0s 0.3s;
       transition: opacity 0.3s 0s, visibility 0s 0.3s;
       z-index: 999; }
-      /* line 114, ../scss/layout/_header.scss */
+      /* line 117, ../scss/layout/_header.scss */
       header .navbar-collapse .region-navigation .block-ipwa-search.is-visible {
         opacity: 1;
         visibility: visible;
         -webkit-transition: opacity 0.3s 0s, visibility 0s 0s;
         -moz-transition: opacity 0.3s 0s, visibility 0s 0s;
         transition: opacity 0.3s 0s, visibility 0s 0s; }
-      /* line 122, ../scss/layout/_header.scss */
+      /* line 125, ../scss/layout/_header.scss */
       header .navbar-collapse .region-navigation .block-ipwa-search #ipwa-search-block-form {
         position: relative;
         margin: 0 auto;
         width: 700px; }
-        /* line 127, ../scss/layout/_header.scss */
+        /* line 130, ../scss/layout/_header.scss */
         header .navbar-collapse .region-navigation .block-ipwa-search #ipwa-search-block-form .cross-link {
           position: absolute;
           cursor: pointer;
           right: 3px;
           top: -25px; }
-          /* line 133, ../scss/layout/_header.scss */
+          /* line 136, ../scss/layout/_header.scss */
           header .navbar-collapse .region-navigation .block-ipwa-search #ipwa-search-block-form .cross-link a {
             text-decoration: none;
             color: #ffffff;
             font-size: 10px; }
-            /* line 138, ../scss/layout/_header.scss */
+            /* line 141, ../scss/layout/_header.scss */
             header .navbar-collapse .region-navigation .block-ipwa-search #ipwa-search-block-form .cross-link a:after {
               font-family: "icomoon";
               content: "\e903";
@@ -6484,19 +6487,19 @@ header .navbar-collapse {
               margin-left: 7px;
               display: inline-block;
               color: #ffffff; }
-        /* line 150, ../scss/layout/_header.scss */
+        /* line 153, ../scss/layout/_header.scss */
         header .navbar-collapse .region-navigation .block-ipwa-search #ipwa-search-block-form .control-label {
           display: none; }
-        /* line 154, ../scss/layout/_header.scss */
+        /* line 157, ../scss/layout/_header.scss */
         header .navbar-collapse .region-navigation .block-ipwa-search #ipwa-search-block-form .form-group {
           margin-bottom: 0; }
-          /* line 157, ../scss/layout/_header.scss */
+          /* line 160, ../scss/layout/_header.scss */
           header .navbar-collapse .region-navigation .block-ipwa-search #ipwa-search-block-form .form-group .form-control {
             height: 40px;
             width: 700px;
             border-radius: 0;
             font-weight: bold; }
-        /* line 165, ../scss/layout/_header.scss */
+        /* line 168, ../scss/layout/_header.scss */
         header .navbar-collapse .region-navigation .block-ipwa-search #ipwa-search-block-form .btn-primary {
           position: absolute;
           top: 4px;
@@ -6504,7 +6507,7 @@ header .navbar-collapse {
           font-size: 0;
           background: none;
           border: none; }
-          /* line 173, ../scss/layout/_header.scss */
+          /* line 176, ../scss/layout/_header.scss */
           header .navbar-collapse .region-navigation .block-ipwa-search #ipwa-search-block-form .btn-primary:before {
             font-family: "icomoon";
             content: "\e94e";
@@ -6512,15 +6515,15 @@ header .navbar-collapse {
             font-size: 16px;
             margin-left: 7px;
             display: inline-block; }
-    /* line 185, ../scss/layout/_header.scss */
+    /* line 188, ../scss/layout/_header.scss */
     header .navbar-collapse .region-navigation .tb-megamenu {
       background: none;
       position: static; }
-      /* line 189, ../scss/layout/_header.scss */
+      /* line 192, ../scss/layout/_header.scss */
       header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li {
         width: 20%;
         position: static; }
-        /* line 193, ../scss/layout/_header.scss */
+        /* line 196, ../scss/layout/_header.scss */
         header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li > a {
           color: #273753;
           border-right: none;
@@ -6534,10 +6537,10 @@ header .navbar-collapse {
           width: 60%;
           font-weight: bold;
           border-bottom: 2px solid transparent; }
-          /* line 207, ../scss/layout/_header.scss */
+          /* line 210, ../scss/layout/_header.scss */
           header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li > a .caret {
             display: none; }
-          /* line 211, ../scss/layout/_header.scss */
+          /* line 214, ../scss/layout/_header.scss */
           header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li > a:before {
             display: inline-block;
             float: left;
@@ -6549,94 +6552,94 @@ header .navbar-collapse {
             font-family: "icomoon";
             color: #949d9e;
             font-size: 40px; }
-        /* line 226, ../scss/layout/_header.scss */
+        /* line 229, ../scss/layout/_header.scss */
         header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li.menu-politik > a:before {
           content: "\e94b"; }
-        /* line 232, ../scss/layout/_header.scss */
+        /* line 235, ../scss/layout/_header.scss */
         header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li.menu-wirtschaft > a:before {
           content: "\e947"; }
-        /* line 238, ../scss/layout/_header.scss */
+        /* line 241, ../scss/layout/_header.scss */
         header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li.menu-unternehmen > a:before {
           content: "\e943"; }
-        /* line 244, ../scss/layout/_header.scss */
+        /* line 247, ../scss/layout/_header.scss */
         header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li.menu-beschaftigte > a:before {
           content: "\e905"; }
-        /* line 250, ../scss/layout/_header.scss */
+        /* line 253, ../scss/layout/_header.scss */
         header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li.menu-schaufenster > a:before {
           content: "\e910"; }
-        /* line 255, ../scss/layout/_header.scss */
+        /* line 258, ../scss/layout/_header.scss */
         header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li.active > a:hover, header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li.active > a:focus {
           background: none;
           color: #e74712;
           border-bottom: 2px solid #e74712; }
-          /* line 261, ../scss/layout/_header.scss */
+          /* line 264, ../scss/layout/_header.scss */
           header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li.active > a:hover:before, header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li.active > a:focus:before {
             color: #e74712; }
-        /* line 266, ../scss/layout/_header.scss */
+        /* line 269, ../scss/layout/_header.scss */
         header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li.open > a, header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li.active > .dropdown-toggle, header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li.active > a, header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li.open.active > .dropdown-toggle {
           background: none;
           color: #e74712;
           border-bottom: 2px solid #e74712; }
-          /* line 274, ../scss/layout/_header.scss */
+          /* line 277, ../scss/layout/_header.scss */
           header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li.open > a:before, header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li.active > .dropdown-toggle:before, header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li.active > a:before, header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li.open.active > .dropdown-toggle:before {
             color: #e74712; }
-        /* line 279, ../scss/layout/_header.scss */
+        /* line 282, ../scss/layout/_header.scss */
         header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu {
           background-color: #3c506e;
           border: none;
           width: 100%;
           padding-top: 40px;
           padding-bottom: 40px; }
-          /* line 286, ../scss/layout/_header.scss */
+          /* line 289, ../scss/layout/_header.scss */
           header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu a {
             color: #ffffff;
             text-decoration: none;
             font-weight: normal; }
-          /* line 292, ../scss/layout/_header.scss */
+          /* line 295, ../scss/layout/_header.scss */
           header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .block-title {
             color: #ffffff; }
-          /* line 297, ../scss/layout/_header.scss */
+          /* line 300, ../scss/layout/_header.scss */
           header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-header {
             color: #ffffff;
             font-size: 18px; }
-          /* line 302, ../scss/layout/_header.scss */
+          /* line 305, ../scss/layout/_header.scss */
           header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-content .views-row {
             display: inline-block;
             padding: 5px; }
-            /* line 306, ../scss/layout/_header.scss */
+            /* line 309, ../scss/layout/_header.scss */
             header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-content .views-row a {
               background: #273753;
               font-size: 16px;
               padding: 10px; }
-              /* line 311, ../scss/layout/_header.scss */
+              /* line 314, ../scss/layout/_header.scss */
               header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .dropdown-menu .view-themenzuweisung-flyouts .view-content .views-row a:hover {
                 background: #e74712; }
-        /* line 319, ../scss/layout/_header.scss */
+        /* line 322, ../scss/layout/_header.scss */
         header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .mega-dropdown-inner {
           width: 1170px;
           margin: 0 auto; }
-          /* line 323, ../scss/layout/_header.scss */
+          /* line 326, ../scss/layout/_header.scss */
           header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .mega-dropdown-inner .tb-submenu-left {
             width: 30%;
             float: left; }
-            /* line 327, ../scss/layout/_header.scss */
+            /* line 330, ../scss/layout/_header.scss */
             header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .mega-dropdown-inner .tb-submenu-left .block-title {
               font-size: 18px !important;
               font-weight: normal;
               text-transform: capitalize;
               color: #ffffff !important; }
-            /* line 335, ../scss/layout/_header.scss */
+            /* line 338, ../scss/layout/_header.scss */
             header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .mega-dropdown-inner .tb-submenu-left ul li {
               width: 100%;
               margin-bottom: 10px; }
-              /* line 339, ../scss/layout/_header.scss */
+              /* line 342, ../scss/layout/_header.scss */
               header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .mega-dropdown-inner .tb-submenu-left ul li a {
                 font-size: 16px;
                 position: relative;
                 padding-left: 25px;
                 margin: 0;
                 font-weight: normal; }
-                /* line 346, ../scss/layout/_header.scss */
+                /* line 349, ../scss/layout/_header.scss */
                 header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .mega-dropdown-inner .tb-submenu-left ul li a:before {
                   font-family: "icomoon";
                   content: "\e93f";
@@ -6645,25 +6648,25 @@ header .navbar-collapse {
                   position: absolute;
                   left: 0;
                   display: inline-block; }
-          /* line 360, ../scss/layout/_header.scss */
+          /* line 363, ../scss/layout/_header.scss */
           header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li .mega-dropdown-inner .tb-submenu-right {
             width: 70%;
             float: left;
             margin: 0; }
 
 @-moz-document url-prefix() {
-  /* line 373, ../scss/layout/_header.scss */
+  /* line 376, ../scss/layout/_header.scss */
   header .navbar-collapse .region-navigation .block-ipwa-search {
     top: 64px; } }
-/* line 380, ../scss/layout/_header.scss */
+/* line 383, ../scss/layout/_header.scss */
 .front header.navbar-default {
   margin-bottom: 0; }
 
 @media (min-width: 768px) {
-  /* line 391, ../scss/layout/_header.scss */
+  /* line 394, ../scss/layout/_header.scss */
   .navbar-header .logo .big {
     display: block; }
-  /* line 395, ../scss/layout/_header.scss */
+  /* line 398, ../scss/layout/_header.scss */
   .navbar-header .logo .small {
     display: none; } }
 @media (max-width: 1024px) {
