@@ -391,14 +391,14 @@
         .views-widget-filter-search_api_views_fulltext {
 		 width:100%;
 		@include devicebreak(large) {
-            width: 55%;
+            width: 50%;
         }
 }
         .views-widget-filter-field_ort {
 		  width:100%;
 		  @include devicebreak(large) {
 		
-            width: 45%;
+            width: 50%;
         }
 }
         .views-widget-filter-search_api_views_fulltext, .views-widget-filter-field_ort {
@@ -413,7 +413,7 @@
                     height: 70px;
                     border-radius: 0;
                     border: none;
-                    padding-left: 40px;
+                    padding-left: 50px;
                     font-size: 16px;
                     box-shadow: none;
 
@@ -429,7 +429,7 @@
                 font-family: $icomoon;
                 content: "\e94e";
                 color: $icons-color;
-                left: 10px;
+                left:15px;
                 top: 23px;
                 display: inline-block;
                 position: absolute;
@@ -491,7 +491,7 @@
 			}
 
             .row-container > * {
-                padding-bottom: 20px;
+                padding-bottom:15px;
 
                 a {
                     text-decoration: none;

@@ -9657,7 +9657,7 @@ input[type=text]::-ms-clear {
     @media (min-width: 960px) {
       /* line 391, ../scss/pages/_listview.scss */
       .view-search-list .view-filters .views-widget-filter-search_api_views_fulltext {
-        width: 55%; } }
+        width: 50%; } }
   /* line 397, ../scss/pages/_listview.scss */
   .view-search-list .view-filters .views-widget-filter-field_ort {
     width: 100%;
@@ -9665,7 +9665,7 @@ input[type=text]::-ms-clear {
     @media (min-width: 960px) {
       /* line 397, ../scss/pages/_listview.scss */
       .view-search-list .view-filters .views-widget-filter-field_ort {
-        width: 45%; } }
+        width: 50%; } }
   /* line 404, ../scss/pages/_listview.scss */
   .view-search-list .view-filters .views-widget-filter-search_api_views_fulltext, .view-search-list .view-filters .views-widget-filter-field_ort {
     position: relative;
@@ -9679,7 +9679,7 @@ input[type=text]::-ms-clear {
         height: 70px;
         border-radius: 0;
         border: none;
-        padding-left: 40px;
+        padding-left: 50px;
         font-size: 16px;
         box-shadow: none; }
         /* line 420, ../scss/pages/_listview.scss */
@@ -9692,7 +9692,7 @@ input[type=text]::-ms-clear {
       font-family: "icomoon";
       content: "\e94e";
       color: #919BAA;
-      left: 10px;
+      left: 15px;
       top: 23px;
       display: inline-block;
       position: absolute; }
@@ -9745,7 +9745,7 @@ input[type=text]::-ms-clear {
     border-bottom: 1px solid #949d9e; }
   /* line 493, ../scss/pages/_listview.scss */
   .view-search-list .view-content .views-row .row-container > * {
-    padding-bottom: 20px; }
+    padding-bottom: 15px; }
     /* line 496, ../scss/pages/_listview.scss */
     .view-search-list .view-content .views-row .row-container > * a {
       text-decoration: none;
