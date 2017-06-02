@@ -7930,15 +7930,11 @@ h1 {
     .container, footer .region-footer, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col, .view-neueste-informationen .view-sub-wrapper, .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser, .breadcrumb, .page-user .page-header, .page-user .region-content, .page-calendar .region-content, .not-front .node-doorpage .view-alle-themen-teaser .view-sub-wrapper, .view-neueste-digital-projekte .view-sub-wrapper, .view-latest-content-doorpage > .view-sub-wrapper, .page-taxonomy-term .view-title, .page-taxonomy-term .group-page-info, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .paragraphs-item-flie-text-mit-bild-links, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .paragraphs-item-flie-text-bereich, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .paragraphs-item-flie-text-mit-bild-rechts, .page-taxonomy-term .view-alles-zum-thema .view-sub-wrapper, .page-termine .page-header, .page-aktuelles .page-header, .page-suche .page-header, .page-calendar .page-header, .view-aktuelles > .view-sub-wrapper, .view-termin > .view-sub-wrapper, .view-search-list > .view-sub-wrapper, .view-event-calendar > .view-sub-wrapper, .view-wahlen-sie-einen-themenbereich .view-sub-wrapper, .page-sitemap .page-header, .page-sitemap #site-map {
       padding: 0; } }
 
-/* line 233, ../scss/pages/_common.scss */
-.row {
-  margin: 0; }
-
-/* line 241, ../scss/pages/_common.scss */
+/* line 239, ../scss/pages/_common.scss */
 .view-neueste-informationen .view-sub-wrapper > .view-content, .view-termin .view-sub-wrapper > .view-content, .view-aktuelles .view-sub-wrapper > .view-content, .view-neueste-digital-projekte .view-sub-wrapper > .view-content, .view-alles-zum-thema .view-sub-wrapper > .view-content {
   margin-left: -15px;
   margin-right: -15px; }
-  /* line 248, ../scss/pages/_common.scss */
+  /* line 246, ../scss/pages/_common.scss */
   .view-neueste-informationen .view-sub-wrapper > .view-content .views-row .row-container, .view-termin .view-sub-wrapper > .view-content .views-row .row-container, .view-aktuelles .view-sub-wrapper > .view-content .views-row .row-container, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row .row-container, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row .row-container {
     background: #ffffff;
     padding: 30px;
@@ -7951,55 +7947,55 @@ h1 {
     /* Tablet design */
     /* Over Desktop design */ }
     @media (min-width: 520px) {
-      /* line 248, ../scss/pages/_common.scss */
+      /* line 246, ../scss/pages/_common.scss */
       .view-neueste-informationen .view-sub-wrapper > .view-content .views-row .row-container, .view-termin .view-sub-wrapper > .view-content .views-row .row-container, .view-aktuelles .view-sub-wrapper > .view-content .views-row .row-container, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row .row-container, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row .row-container {
         height: 440px; } }
     @media (min-width: 1025px) {
-      /* line 248, ../scss/pages/_common.scss */
+      /* line 246, ../scss/pages/_common.scss */
       .view-neueste-informationen .view-sub-wrapper > .view-content .views-row .row-container, .view-termin .view-sub-wrapper > .view-content .views-row .row-container, .view-aktuelles .view-sub-wrapper > .view-content .views-row .row-container, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row .row-container, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row .row-container {
         height: 410px; } }
-    /* line 268, ../scss/pages/_common.scss */
+    /* line 266, ../scss/pages/_common.scss */
     .view-neueste-informationen .view-sub-wrapper > .view-content .views-row .row-container.project-blue, .view-termin .view-sub-wrapper > .view-content .views-row .row-container.project-blue, .view-aktuelles .view-sub-wrapper > .view-content .views-row .row-container.project-blue, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row .row-container.project-blue, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row .row-container.project-blue {
       background: #273753; }
-      /* line 271, ../scss/pages/_common.scss */
+      /* line 269, ../scss/pages/_common.scss */
       .view-neueste-informationen .view-sub-wrapper > .view-content .views-row .row-container.project-blue .views-field-title a, .view-termin .view-sub-wrapper > .view-content .views-row .row-container.project-blue .views-field-title a, .view-aktuelles .view-sub-wrapper > .view-content .views-row .row-container.project-blue .views-field-title a, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row .row-container.project-blue .views-field-title a, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row .row-container.project-blue .views-field-title a {
         color: #ffffff; }
-      /* line 276, ../scss/pages/_common.scss */
+      /* line 274, ../scss/pages/_common.scss */
       .view-neueste-informationen .view-sub-wrapper > .view-content .views-row .row-container.project-blue:hover .views-field-title a, .view-termin .view-sub-wrapper > .view-content .views-row .row-container.project-blue:hover .views-field-title a, .view-aktuelles .view-sub-wrapper > .view-content .views-row .row-container.project-blue:hover .views-field-title a, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row .row-container.project-blue:hover .views-field-title a, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row .row-container.project-blue:hover .views-field-title a {
         color: #273753; }
-    /* line 282, ../scss/pages/_common.scss */
+    /* line 280, ../scss/pages/_common.scss */
     .view-neueste-informationen .view-sub-wrapper > .view-content .views-row .row-container:hover, .view-termin .view-sub-wrapper > .view-content .views-row .row-container:hover, .view-aktuelles .view-sub-wrapper > .view-content .views-row .row-container:hover, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row .row-container:hover, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row .row-container:hover {
       background: #eff2f7;
       border: 1px solid #dbdfe3; }
-    /* line 287, ../scss/pages/_common.scss */
+    /* line 285, ../scss/pages/_common.scss */
     .view-neueste-informationen .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-themenzuweisung, .view-termin .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-themenzuweisung, .view-aktuelles .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-themenzuweisung, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-themenzuweisung, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-themenzuweisung {
       padding-bottom: 30px; }
-      /* line 290, ../scss/pages/_common.scss */
+      /* line 288, ../scss/pages/_common.scss */
       .view-neueste-informationen .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-themenzuweisung img, .view-termin .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-themenzuweisung img, .view-aktuelles .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-themenzuweisung img, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-themenzuweisung img, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-themenzuweisung img {
         display: inline-block;
         margin-right: 10px; }
-    /* line 296, ../scss/pages/_common.scss */
+    /* line 294, ../scss/pages/_common.scss */
     .view-neueste-informationen .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-event-datum, .view-termin .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-event-datum, .view-aktuelles .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-event-datum, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-event-datum, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-event-datum {
       padding-bottom: 20px;
       font-weight: bold;
       color: #e74712;
       font-size: 22px; }
-    /* line 303, ../scss/pages/_common.scss */
+    /* line 301, ../scss/pages/_common.scss */
     .view-neueste-informationen .view-sub-wrapper > .view-content .views-row .row-container .views-field-title, .view-termin .view-sub-wrapper > .view-content .views-row .row-container .views-field-title, .view-aktuelles .view-sub-wrapper > .view-content .views-row .row-container .views-field-title, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row .row-container .views-field-title, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row .row-container .views-field-title {
       padding-bottom: 40px; }
-      /* line 306, ../scss/pages/_common.scss */
+      /* line 304, ../scss/pages/_common.scss */
       .view-neueste-informationen .view-sub-wrapper > .view-content .views-row .row-container .views-field-title a, .view-termin .view-sub-wrapper > .view-content .views-row .row-container .views-field-title a, .view-aktuelles .view-sub-wrapper > .view-content .views-row .row-container .views-field-title a, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row .row-container .views-field-title a, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row .row-container .views-field-title a {
         text-decoration: none;
         font-size: 22px;
         color: #273753; }
-    /* line 314, ../scss/pages/_common.scss */
+    /* line 312, ../scss/pages/_common.scss */
     .view-neueste-informationen .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-ort .field-content, .view-neueste-informationen .view-sub-wrapper > .view-content .views-row .row-container div[class*='views-field-views-conditional-'] .field-content, .view-termin .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-ort .field-content, .view-termin .view-sub-wrapper > .view-content .views-row .row-container div[class*='views-field-views-conditional-'] .field-content, .view-aktuelles .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-ort .field-content, .view-aktuelles .view-sub-wrapper > .view-content .views-row .row-container div[class*='views-field-views-conditional-'] .field-content, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-ort .field-content, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row .row-container div[class*='views-field-views-conditional-'] .field-content, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row .row-container .views-field-field-ort .field-content, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row .row-container div[class*='views-field-views-conditional-'] .field-content {
       font-size: 20px;
       color: #949d9e;
       position: absolute;
       bottom: 30px; }
 
-/* line 329, ../scss/pages/_common.scss */
+/* line 327, ../scss/pages/_common.scss */
 .common-button, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col .panel-col-first .inside .pane-paragraphs-item-field-quellenangabe a, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col .panel-col-last .view-right-front-map-teaser .views-row .views-field-view-node a, .front .view-termin .view-sub-wrapper .view-footer .link-outer-block .link-inner-block-1 a, .view-neueste-informationen .view-sub-wrapper .view-footer .link-outer-block .link-inner-block-1 a, .view-neueste-informationen .view-sub-wrapper .view-footer .link-outer-block .link-inner-block-2 a, .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items > .field-item .field-collection-view .content .field-name-field-quellenangabe a, .not-front .node-doorpage .view-alle-themen-teaser .view-sub-wrapper .view-footer a, .view-neueste-digital-projekte .view-sub-wrapper .view-footer a, .view-latest-content-doorpage > .view-sub-wrapper .left-block .view-footer a, .view-latest-content-doorpage > .view-sub-wrapper > .view-latest-content-doorpage .view-sub-wrapper .view-footer a, .field-name-field-link-zur-anmeldung a, .field-name-field-zur-website a, .view-wahlen-sie-einen-themenbereich .view-content .views-row .views-field-name-1 a, .view-map-teaser .view-sub-wrapper .view-content .views-row .row-container .views-field-field-quellenangabe a {
   font-size: 20px;
   text-decoration: none;
@@ -8007,7 +8003,7 @@ h1 {
   padding-bottom: 4px;
   border-bottom: 2px solid #949d9e;
   position: relative; }
-  /* line 337, ../scss/pages/_common.scss */
+  /* line 335, ../scss/pages/_common.scss */
   .common-button:before, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col .panel-col-first .inside .pane-paragraphs-item-field-quellenangabe a:before, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col .panel-col-last .view-right-front-map-teaser .views-row .views-field-view-node a:before, .front .view-termin .view-sub-wrapper .view-footer .link-outer-block .link-inner-block-1 a:before, .view-neueste-informationen .view-sub-wrapper .view-footer .link-outer-block .link-inner-block-1 a:before, .view-neueste-informationen .view-sub-wrapper .view-footer .link-outer-block .link-inner-block-2 a:before, .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items > .field-item .field-collection-view .content .field-name-field-quellenangabe a:before, .not-front .node-doorpage .view-alle-themen-teaser .view-sub-wrapper .view-footer a:before, .view-neueste-digital-projekte .view-sub-wrapper .view-footer a:before, .view-latest-content-doorpage > .view-sub-wrapper .left-block .view-footer a:before, .view-latest-content-doorpage > .view-sub-wrapper > .view-latest-content-doorpage .view-sub-wrapper .view-footer a:before, .field-name-field-link-zur-anmeldung a:before, .field-name-field-zur-website a:before, .view-wahlen-sie-einen-themenbereich .view-content .views-row .views-field-name-1 a:before, .view-map-teaser .view-sub-wrapper .view-content .views-row .row-container .views-field-field-quellenangabe a:before {
     font-family: "icomoon";
     content: "\e93f";
@@ -8017,62 +8013,62 @@ h1 {
     left: -30px;
     top: 6px;
     display: inline-block; }
-  /* line 348, ../scss/pages/_common.scss */
+  /* line 346, ../scss/pages/_common.scss */
   .common-button:hover, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col .panel-col-first .inside .pane-paragraphs-item-field-quellenangabe a:hover, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col .panel-col-last .view-right-front-map-teaser .views-row .views-field-view-node a:hover, .front .view-termin .view-sub-wrapper .view-footer .link-outer-block .link-inner-block-1 a:hover, .view-neueste-informationen .view-sub-wrapper .view-footer .link-outer-block .link-inner-block-1 a:hover, .view-neueste-informationen .view-sub-wrapper .view-footer .link-outer-block .link-inner-block-2 a:hover, .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items > .field-item .field-collection-view .content .field-name-field-quellenangabe a:hover, .not-front .node-doorpage .view-alle-themen-teaser .view-sub-wrapper .view-footer a:hover, .view-neueste-digital-projekte .view-sub-wrapper .view-footer a:hover, .view-latest-content-doorpage > .view-sub-wrapper .left-block .view-footer a:hover, .view-latest-content-doorpage > .view-sub-wrapper > .view-latest-content-doorpage .view-sub-wrapper .view-footer a:hover, .field-name-field-link-zur-anmeldung a:hover, .field-name-field-zur-website a:hover, .view-wahlen-sie-einen-themenbereich .view-content .views-row .views-field-name-1 a:hover, .view-map-teaser .view-sub-wrapper .view-content .views-row .row-container .views-field-field-quellenangabe a:hover {
     border-color: #e74712; }
 
-/* line 356, ../scss/pages/_common.scss */
+/* line 354, ../scss/pages/_common.scss */
 .node-type-webform .node-webform {
   width: 100%;
   padding: 15px;
   /* Tablet design */ }
   @media (min-width: 520px) {
-    /* line 356, ../scss/pages/_common.scss */
+    /* line 354, ../scss/pages/_common.scss */
     .node-type-webform .node-webform {
       width: 765px;
       margin: 0 auto; } }
-  /* line 366, ../scss/pages/_common.scss */
+  /* line 364, ../scss/pages/_common.scss */
   .node-type-webform .node-webform .field-name-field-untertitel {
     color: #e74712;
     font-size: 26px;
     padding: 30px 0; }
-  /* line 373, ../scss/pages/_common.scss */
+  /* line 371, ../scss/pages/_common.scss */
   .node-type-webform .node-webform .field-name-field-pflichtfeldhinweis h3 {
     font-size: 20px;
     color: #e74712; }
-  /* line 379, ../scss/pages/_common.scss */
+  /* line 377, ../scss/pages/_common.scss */
   .node-type-webform .node-webform .webform-client-form {
     padding-top: 40px;
     width: 100%;
     /* Tablet design */ }
     @media (min-width: 520px) {
-      /* line 379, ../scss/pages/_common.scss */
+      /* line 377, ../scss/pages/_common.scss */
       .node-type-webform .node-webform .webform-client-form {
         width: 65%; } }
-    /* line 388, ../scss/pages/_common.scss */
+    /* line 386, ../scss/pages/_common.scss */
     .node-type-webform .node-webform .webform-client-form .webform-component-fieldset {
       border: none;
       border-radius: 0;
       box-shadow: none; }
-      /* line 393, ../scss/pages/_common.scss */
+      /* line 391, ../scss/pages/_common.scss */
       .node-type-webform .node-webform .webform-client-form .webform-component-fieldset .panel-heading {
         display: none; }
-      /* line 397, ../scss/pages/_common.scss */
+      /* line 395, ../scss/pages/_common.scss */
       .node-type-webform .node-webform .webform-client-form .webform-component-fieldset .panel-body {
         padding: 0; }
-        /* line 400, ../scss/pages/_common.scss */
+        /* line 398, ../scss/pages/_common.scss */
         .node-type-webform .node-webform .webform-client-form .webform-component-fieldset .panel-body .form-group {
           margin-bottom: 40px; }
-          /* line 403, ../scss/pages/_common.scss */
+          /* line 401, ../scss/pages/_common.scss */
           .node-type-webform .node-webform .webform-client-form .webform-component-fieldset .panel-body .form-group:nth-last-child(2) {
             margin-bottom: 20px; }
-          /* line 407, ../scss/pages/_common.scss */
+          /* line 405, ../scss/pages/_common.scss */
           .node-type-webform .node-webform .webform-client-form .webform-component-fieldset .panel-body .form-group label {
             font-size: 15px; }
-            /* line 410, ../scss/pages/_common.scss */
+            /* line 408, ../scss/pages/_common.scss */
             .node-type-webform .node-webform .webform-client-form .webform-component-fieldset .panel-body .form-group label .form-required {
               color: #e74712; }
-          /* line 415, ../scss/pages/_common.scss */
+          /* line 413, ../scss/pages/_common.scss */
           .node-type-webform .node-webform .webform-client-form .webform-component-fieldset .panel-body .form-group .form-control {
             height: 42px;
             border-bottom-color: #bfcbd5;
@@ -8081,14 +8077,14 @@ h1 {
             border-top-color: #cfd8df;
             box-shadow: 0 -1px 1px 0 #eff2f4;
             border-radius: 3px; }
-          /* line 426, ../scss/pages/_common.scss */
+          /* line 424, ../scss/pages/_common.scss */
           .node-type-webform .node-webform .webform-client-form .webform-component-fieldset .panel-body .form-group p a {
             text-decoration: none;
             color: #e74712; }
-          /* line 432, ../scss/pages/_common.scss */
+          /* line 430, ../scss/pages/_common.scss */
           .node-type-webform .node-webform .webform-client-form .webform-component-fieldset .panel-body .form-group:nth-last-child(3) .form-control {
             height: auto; }
-    /* line 439, ../scss/pages/_common.scss */
+    /* line 437, ../scss/pages/_common.scss */
     .node-type-webform .node-webform .webform-client-form .webform-submit {
       background: #e74712;
       color: #ffffff;
@@ -8098,7 +8094,7 @@ h1 {
       cursor: pointer;
       position: relative;
       font-size: 20px; }
-      /* line 449, ../scss/pages/_common.scss */
+      /* line 447, ../scss/pages/_common.scss */
       .node-type-webform .node-webform .webform-client-form .webform-submit:before {
         font-family: "icomoon";
         content: "\e93f";
@@ -8107,50 +8103,50 @@ h1 {
         position: absolute;
         left: 15px;
         top: 14px; }
-    /* line 460, ../scss/pages/_common.scss */
+    /* line 458, ../scss/pages/_common.scss */
     .node-type-webform .node-webform .webform-client-form #edit-submitted-kontakdaten-datenschutz, .node-type-webform .node-webform .webform-client-form #edit-submitted-kontakt-datenschutz {
       float: left; }
-  /* line 465, ../scss/pages/_common.scss */
+  /* line 463, ../scss/pages/_common.scss */
   .node-type-webform .node-webform input[type="radio"] {
     margin: 2px 0 0;
     left: 0;
     /* Tablet design */ }
     @media (min-width: 520px) {
-      /* line 465, ../scss/pages/_common.scss */
+      /* line 463, ../scss/pages/_common.scss */
       .node-type-webform .node-webform input[type="radio"] {
         margin: 3px 0 0; } }
-  /* line 474, ../scss/pages/_common.scss */
+  /* line 472, ../scss/pages/_common.scss */
   .node-type-webform .node-webform input[type="checkbox"] {
     margin: 8px 0 0;
     left: 0;
     /* Tablet design */ }
     @media (min-width: 520px) {
-      /* line 474, ../scss/pages/_common.scss */
+      /* line 472, ../scss/pages/_common.scss */
       .node-type-webform .node-webform input[type="checkbox"] {
         margin: 4px 0 0; } }
 
-/* line 487, ../scss/pages/_common.scss */
+/* line 485, ../scss/pages/_common.scss */
 input[type=text]::-ms-clear {
   display: none; }
 
-/* line 495, ../scss/pages/_common.scss */
+/* line 493, ../scss/pages/_common.scss */
 .page-node-67 article > .group-page-info {
   max-width: 765px; }
 
-/* line 503, ../scss/pages/_common.scss */
+/* line 501, ../scss/pages/_common.scss */
 .page-user .page-header {
   border: 0; }
 
-/* line 516, ../scss/pages/_common.scss */
+/* line 514, ../scss/pages/_common.scss */
 .page-calendar {
   /* .view-map-teaser{
     margin-bottom:30px;
     overflow:hidden;
   } */ }
-  /* line 521, ../scss/pages/_common.scss */
+  /* line 519, ../scss/pages/_common.scss */
   .page-calendar .view-content {
     margin: 40px 0; }
-    /* line 525, ../scss/pages/_common.scss */
+    /* line 523, ../scss/pages/_common.scss */
     .page-calendar .view-content .calendar-calendar .inner {
       display: table-cell;
       vertical-align: bottom;
@@ -8158,27 +8154,27 @@ input[type=text]::-ms-clear {
       padding: 10px;
       height: 155px !important;
       min-height: 155px; }
-      /* line 533, ../scss/pages/_common.scss */
+      /* line 531, ../scss/pages/_common.scss */
       .page-calendar .view-content .calendar-calendar .inner .item {
         float: right;
         line-height: 26px; }
-        /* line 538, ../scss/pages/_common.scss */
+        /* line 536, ../scss/pages/_common.scss */
         .page-calendar .view-content .calendar-calendar .inner .item .calendar {
           background: none;
           overflow: visible; }
-          /* line 542, ../scss/pages/_common.scss */
+          /* line 540, ../scss/pages/_common.scss */
           .page-calendar .view-content .calendar-calendar .inner .item .calendar span {
             position: relative; }
-            /* line 545, ../scss/pages/_common.scss */
+            /* line 543, ../scss/pages/_common.scss */
             .page-calendar .view-content .calendar-calendar .inner .item .calendar span a {
               font-size: 0;
               text-decoration: none;
               position: relative;
               z-index: 99; }
-              /* line 551, ../scss/pages/_common.scss */
+              /* line 549, ../scss/pages/_common.scss */
               .page-calendar .view-content .calendar-calendar .inner .item .calendar span a div {
                 display: none; }
-              /* line 555, ../scss/pages/_common.scss */
+              /* line 553, ../scss/pages/_common.scss */
               .page-calendar .view-content .calendar-calendar .inner .item .calendar span a.single {
                 border: 2px solid #e74712 !important;
                 border-radius: 50%;
@@ -8186,17 +8182,17 @@ input[type=text]::-ms-clear {
                 height: 25px;
                 width: 25px;
                 margin: 0 4px; }
-                /* line 563, ../scss/pages/_common.scss */
+                /* line 561, ../scss/pages/_common.scss */
                 .page-calendar .view-content .calendar-calendar .inner .item .calendar span a.single + .views-row {
                   top: 40px; }
-              /* line 569, ../scss/pages/_common.scss */
+              /* line 567, ../scss/pages/_common.scss */
               .page-calendar .view-content .calendar-calendar .inner .item .calendar span a.recurring::before {
                 color: #e74712;
                 content: "\e94d";
                 font-family: "icomoon";
                 font-size: 25px;
                 font-weight: normal; }
-              /* line 578, ../scss/pages/_common.scss */
+              /* line 576, ../scss/pages/_common.scss */
               .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row {
                 position: absolute;
                 display: none;
@@ -8204,7 +8200,7 @@ input[type=text]::-ms-clear {
                 z-index: 999;
                 left: -39px;
                 top: 30px; }
-                /* line 588, ../scss/pages/_common.scss */
+                /* line 586, ../scss/pages/_common.scss */
                 .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row > .row-container {
                   background: #eff2f7;
                   padding: 30px;
@@ -8215,44 +8211,44 @@ input[type=text]::-ms-clear {
                   transition: all 0.5s ease;
                   height: auto;
                   /* Tablet design */ }
-                  /* line 603, ../scss/pages/_common.scss */
+                  /* line 601, ../scss/pages/_common.scss */
                   .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row > .row-container.project-blue {
                     background: #273753; }
-                    /* line 606, ../scss/pages/_common.scss */
+                    /* line 604, ../scss/pages/_common.scss */
                     .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row > .row-container.project-blue .views-field-title a {
                       color: #ffffff; }
-                    /* line 611, ../scss/pages/_common.scss */
+                    /* line 609, ../scss/pages/_common.scss */
                     .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row > .row-container.project-blue:hover .views-field-title a {
                       color: #273753; }
-                  /* line 622, ../scss/pages/_common.scss */
+                  /* line 620, ../scss/pages/_common.scss */
                   .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row > .row-container .views-field-field-themenzuweisung {
                     padding-bottom: 30px; }
-                    /* line 625, ../scss/pages/_common.scss */
+                    /* line 623, ../scss/pages/_common.scss */
                     .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row > .row-container .views-field-field-themenzuweisung img {
                       display: inline-block;
                       margin-right: 10px; }
-                  /* line 631, ../scss/pages/_common.scss */
+                  /* line 629, ../scss/pages/_common.scss */
                   .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row > .row-container .views-field-field-event-datum {
                     padding-bottom: 20px;
                     font-weight: bold;
                     color: #e74712;
                     font-size: 22px; }
-                  /* line 638, ../scss/pages/_common.scss */
+                  /* line 636, ../scss/pages/_common.scss */
                   .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row > .row-container .views-field-title {
                     padding-bottom: 20px; }
-                    /* line 641, ../scss/pages/_common.scss */
+                    /* line 639, ../scss/pages/_common.scss */
                     .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row > .row-container .views-field-title a {
                       text-decoration: none;
                       font-size: 22px;
                       color: #273753; }
-                  /* line 649, ../scss/pages/_common.scss */
+                  /* line 647, ../scss/pages/_common.scss */
                   .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row > .row-container .views-field-field-ort .field-content, .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row > .row-container div[class*='views-field-views-conditional-'] .field-content {
                     font-size: 20px;
                     color: #949d9e; }
-                  /* line 659, ../scss/pages/_common.scss */
+                  /* line 657, ../scss/pages/_common.scss */
                   .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row > .row-container .pop-up {
                     display: block !important; }
-                /* line 664, ../scss/pages/_common.scss */
+                /* line 662, ../scss/pages/_common.scss */
                 .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row::before, .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row::after {
                   border-color: transparent transparent #eff2f7;
                   border-style: solid;
@@ -8264,29 +8260,29 @@ input[type=text]::-ms-clear {
                   left: 42px;
                   width: 0;
                   z-index: 9; }
-                /* line 677, ../scss/pages/_common.scss */
+                /* line 675, ../scss/pages/_common.scss */
                 .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row::after {
                   border-bottom-color: #dbdfe3;
                   top: -24px;
                   z-index: 8; }
-                /* line 683, ../scss/pages/_common.scss */
+                /* line 681, ../scss/pages/_common.scss */
                 .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row.rightBorder {
                   left: auto;
                   right: -31px; }
-                  /* line 687, ../scss/pages/_common.scss */
+                  /* line 685, ../scss/pages/_common.scss */
                   .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row.rightBorder::before, .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row.rightBorder::after {
                     left: auto;
                     right: 35px; }
-            /* line 697, ../scss/pages/_common.scss */
+            /* line 695, ../scss/pages/_common.scss */
             .page-calendar .view-content .calendar-calendar .inner .item .calendar span:hover a + .views-row {
               display: block; }
-    /* line 707, ../scss/pages/_common.scss */
+    /* line 705, ../scss/pages/_common.scss */
     .page-calendar .view-content .calendar-calendar table {
       border-collapse: inherit; }
-      /* line 710, ../scss/pages/_common.scss */
+      /* line 708, ../scss/pages/_common.scss */
       .page-calendar .view-content .calendar-calendar table thead {
         position: relative; }
-        /* line 713, ../scss/pages/_common.scss */
+        /* line 711, ../scss/pages/_common.scss */
         .page-calendar .view-content .calendar-calendar table thead::before {
           background: #e74712;
           bottom: 12px;
@@ -8294,33 +8290,33 @@ input[type=text]::-ms-clear {
           min-height: 2px;
           position: absolute;
           width: 100%; }
-        /* line 722, ../scss/pages/_common.scss */
+        /* line 720, ../scss/pages/_common.scss */
         .page-calendar .view-content .calendar-calendar table thead tr {
           background: none; }
-          /* line 725, ../scss/pages/_common.scss */
+          /* line 723, ../scss/pages/_common.scss */
           .page-calendar .view-content .calendar-calendar table thead tr th {
             background: none;
             border: none;
             font-weight: normal;
             text-align: right;
             padding-bottom: 25px; }
-      /* line 740, ../scss/pages/_common.scss */
+      /* line 738, ../scss/pages/_common.scss */
       .page-calendar .view-content .calendar-calendar table tbody tr td {
         border: 5px solid #eff2f7; }
-        /* line 743, ../scss/pages/_common.scss */
+        /* line 741, ../scss/pages/_common.scss */
         .page-calendar .view-content .calendar-calendar table tbody tr td:first-child {
           border-left-width: 0; }
-        /* line 747, ../scss/pages/_common.scss */
+        /* line 745, ../scss/pages/_common.scss */
         .page-calendar .view-content .calendar-calendar table tbody tr td:last-child {
           border-right-width: 0; }
-      /* line 763, ../scss/pages/_common.scss */
+      /* line 761, ../scss/pages/_common.scss */
       .page-calendar .view-content .calendar-calendar table tr td.today {
         border-color: #e74712 !important; }
-      /* line 767, ../scss/pages/_common.scss */
+      /* line 765, ../scss/pages/_common.scss */
       .page-calendar .view-content .calendar-calendar table tr td.greyHover {
         background: #eff2f7;
         position: relative; }
-        /* line 773, ../scss/pages/_common.scss */
+        /* line 771, ../scss/pages/_common.scss */
         .page-calendar .view-content .calendar-calendar table tr td.greyHover::after {
           border: 1px solid #dbdfe3;
           bottom: -1px;
@@ -8329,11 +8325,11 @@ input[type=text]::-ms-clear {
           position: absolute;
           right: -1px;
           top: -1px; }
-      /* line 784, ../scss/pages/_common.scss */
+      /* line 782, ../scss/pages/_common.scss */
       .page-calendar .view-content .calendar-calendar table tr td.redHover {
         background: #fdede7;
         position: relative; }
-        /* line 788, ../scss/pages/_common.scss */
+        /* line 786, ../scss/pages/_common.scss */
         .page-calendar .view-content .calendar-calendar table tr td.redHover::after {
           border: 1px solid #e74712;
           bottom: -1px;
@@ -8342,72 +8338,72 @@ input[type=text]::-ms-clear {
           position: absolute;
           right: -1px;
           top: -1px; }
-      /* line 803, ../scss/pages/_common.scss */
+      /* line 801, ../scss/pages/_common.scss */
       .page-calendar .view-content .calendar-calendar table tr.date-box td.greyHover::after {
         border-bottom: none; }
-      /* line 809, ../scss/pages/_common.scss */
+      /* line 807, ../scss/pages/_common.scss */
       .page-calendar .view-content .calendar-calendar table tr.date-box td.redHover::after {
         border-bottom: none; }
-      /* line 819, ../scss/pages/_common.scss */
+      /* line 817, ../scss/pages/_common.scss */
       .page-calendar .view-content .calendar-calendar table tr.single-day td.greyHover::after {
         border-top: none; }
-      /* line 825, ../scss/pages/_common.scss */
+      /* line 823, ../scss/pages/_common.scss */
       .page-calendar .view-content .calendar-calendar table tr.single-day td.redHover::after {
         border-top: none; }
-      /* line 831, ../scss/pages/_common.scss */
+      /* line 829, ../scss/pages/_common.scss */
       .page-calendar .view-content .calendar-calendar table tr.single-day .no-entry .inner {
         min-height: 155px;
         height: 155px !important; }
-    /* line 840, ../scss/pages/_common.scss */
+    /* line 838, ../scss/pages/_common.scss */
     .page-calendar .view-content .calendar-calendar .date-box .inner {
       min-height: inherit;
       height: auto !important;
       display: inline-block; }
-  /* line 849, ../scss/pages/_common.scss */
+  /* line 847, ../scss/pages/_common.scss */
   .page-calendar .view-event-on-calendar {
     display: none; }
-  /* line 853, ../scss/pages/_common.scss */
+  /* line 851, ../scss/pages/_common.scss */
   .page-calendar .date-views-pager {
     float: left;
     width: 60%; }
-    /* line 858, ../scss/pages/_common.scss */
+    /* line 856, ../scss/pages/_common.scss */
     .page-calendar .date-views-pager .pagination .monthText {
       text-transform: capitalize;
       font-size: 22px;
       font-weight: bold; }
-    /* line 864, ../scss/pages/_common.scss */
+    /* line 862, ../scss/pages/_common.scss */
     .page-calendar .date-views-pager .pagination li {
       float: left;
       margin-right: 50px; }
-      /* line 868, ../scss/pages/_common.scss */
+      /* line 866, ../scss/pages/_common.scss */
       .page-calendar .date-views-pager .pagination li:last-child {
         margin-right: 0; }
-      /* line 872, ../scss/pages/_common.scss */
+      /* line 870, ../scss/pages/_common.scss */
       .page-calendar .date-views-pager .pagination li a {
         font-size: 0;
         padding: 3px 12px;
         color: #273753;
         background: none;
         border: none; }
-        /* line 880, ../scss/pages/_common.scss */
+        /* line 878, ../scss/pages/_common.scss */
         .page-calendar .date-views-pager .pagination li a::before {
           font-family: "icomoon";
           font-size: 18px; }
-      /* line 888, ../scss/pages/_common.scss */
+      /* line 886, ../scss/pages/_common.scss */
       .page-calendar .date-views-pager .pagination li.prev a::before {
         content: "\e901"; }
-      /* line 896, ../scss/pages/_common.scss */
+      /* line 894, ../scss/pages/_common.scss */
       .page-calendar .date-views-pager .pagination li.next a::before {
         content: "\e902"; }
-    /* line 904, ../scss/pages/_common.scss */
+    /* line 902, ../scss/pages/_common.scss */
     .page-calendar .date-views-pager h3 {
       display: none; }
 
-/* line 918, ../scss/pages/_common.scss */
+/* line 916, ../scss/pages/_common.scss */
 .page-calendar .page-header, .page-termine .page-header {
   position: relative;
   /* Over Desktop design */ }
-  /* line 921, ../scss/pages/_common.scss */
+  /* line 919, ../scss/pages/_common.scss */
   .page-calendar .page-header::before, .page-termine .page-header::before {
     content: "\e941";
     font-family: "icomoon";
@@ -8415,24 +8411,24 @@ input[type=text]::-ms-clear {
     font-size: 120px;
     margin-bottom: 30px; }
   @media (min-width: 1025px) {
-    /* line 918, ../scss/pages/_common.scss */
+    /* line 916, ../scss/pages/_common.scss */
     .page-calendar .page-header, .page-termine .page-header {
       padding-left: 80px; }
-      /* line 932, ../scss/pages/_common.scss */
+      /* line 930, ../scss/pages/_common.scss */
       .page-calendar .page-header::before, .page-termine .page-header::before {
         left: -100px;
         top: 40px;
         position: absolute;
         margin-bottom: 0; } }
-/* line 941, ../scss/pages/_common.scss */
+/* line 939, ../scss/pages/_common.scss */
 .page-calendar .view-header, .page-termine .view-header {
   /* Over Desktop design */ }
   @media (min-width: 1025px) {
-    /* line 941, ../scss/pages/_common.scss */
+    /* line 939, ../scss/pages/_common.scss */
     .page-calendar .view-header, .page-termine .view-header {
       padding-left: 80px; } }
 
-/* line 949, ../scss/pages/_common.scss */
+/* line 947, ../scss/pages/_common.scss */
 #backtotop {
   background: #e74712;
   bottom: 20px;
@@ -8444,7 +8440,7 @@ input[type=text]::-ms-clear {
   width: 50px;
   border-radius: 25px;
   text-indent: 0; }
-  /* line 961, ../scss/pages/_common.scss */
+  /* line 959, ../scss/pages/_common.scss */
   #backtotop::before {
     font-family: "icomoon";
     content: "\e950";
