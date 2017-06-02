@@ -1,12 +1,37 @@
-.page-sitemap{
-  background:$color-light-blue;
-  
-  .page-header{
-    @extend .container;
-  }
-  
-  #site-map{
-  @extend .container;
+.page-sitemap {
+    background: $color-light-blue;
 
-}
+    .page-header {
+        @extend .container;
+    }
+
+    #site-map {
+        @extend .container;
+
+        .site-map-box-menu {
+            ul {padding-left:0;
+			li {
+                list-style-type: none;
+
+                a {
+                    text-decoration: none;
+                    color: $main-color;
+                    position: relative;
+                    padding-left: 35px;
+					padding-bottom:20px;
+					display:inline-block;
+
+                    &:before {
+                        font-family: "icomoon";
+                        content: "\e93f";
+                        color: $download-icon-color;
+                        font-size: 17px;
+                        left: 0;
+                        position: absolute;
+                        top: 6px;
+                    }
+                }
+            }
+        }}
+    }
 }
