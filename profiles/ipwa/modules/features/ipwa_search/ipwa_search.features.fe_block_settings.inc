@@ -35,6 +35,12 @@ function ipwa_search_default_fe_block_settings() {
         'theme' => 'ipwa',
         'weight' => 0,
       ),
+      'stark' => array(
+        'region' => 'sidebar_first',
+        'status' => 1,
+        'theme' => 'stark',
+        'weight' => 0,
+      ),
     ),
     'title' => '',
     'visibility' => 0,

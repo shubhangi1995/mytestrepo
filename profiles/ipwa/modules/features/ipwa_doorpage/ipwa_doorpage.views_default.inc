@@ -403,7 +403,7 @@ function ipwa_doorpage_views_default_views() {
   $handler->display->display_options['fields']['type']['field'] = 'type';
   $handler->display->display_options['fields']['type']['label'] = '';
   $handler->display->display_options['fields']['type']['element_label_colon'] = FALSE;
-  /* Field: Content: Titel */
+  /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
@@ -487,7 +487,7 @@ function ipwa_doorpage_views_default_views() {
   $handler->display->display_options['fields']['type']['field'] = 'type';
   $handler->display->display_options['fields']['type']['label'] = '';
   $handler->display->display_options['fields']['type']['element_label_colon'] = FALSE;
-  /* Field: Content: Titel */
+  /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
@@ -536,7 +536,7 @@ function ipwa_doorpage_views_default_views() {
   $handler->display->display_options['fields']['type']['field'] = 'type';
   $handler->display->display_options['fields']['type']['label'] = '';
   $handler->display->display_options['fields']['type']['element_label_colon'] = FALSE;
-  /* Field: Content: Titel */
+  /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
@@ -624,7 +624,7 @@ function ipwa_doorpage_views_default_views() {
   );
   $handler->display->display_options['fields']['field_event_datum']['delta_offset'] = '0';
   $handler->display->display_options['fields']['field_event_datum']['separator'] = '';
-  /* Field: Content: Titel */
+  /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
@@ -752,7 +752,7 @@ function ipwa_doorpage_views_default_views() {
   );
   $handler->display->display_options['fields']['field_event_datum']['delta_offset'] = '0';
   $handler->display->display_options['fields']['field_event_datum']['separator'] = '';
-  /* Field: Content: Titel */
+  /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
@@ -939,7 +939,7 @@ function ipwa_doorpage_views_default_views() {
   $handler->display->display_options['fields']['type']['relationship'] = 'field_projekt_reference_target_id';
   $handler->display->display_options['fields']['type']['label'] = '';
   $handler->display->display_options['fields']['type']['element_label_colon'] = FALSE;
-  /* Field: Content: Titel */
+  /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
@@ -981,7 +981,7 @@ function ipwa_doorpage_views_default_views() {
   $handler->display->display_options['fields']['type']['relationship'] = 'field_projekt_reference_target_id';
   $handler->display->display_options['fields']['type']['label'] = '';
   $handler->display->display_options['fields']['type']['element_label_colon'] = FALSE;
-  /* Field: Content: Titel */
+  /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
@@ -1103,7 +1103,7 @@ function ipwa_doorpage_views_default_views() {
   $handler->display->display_options['style_options']['slideshow_skin'] = 'default';
   $handler->display->display_options['style_options']['skin_info'] = array(
     'class' => 'default',
-    'name' => 'Standard',
+    'name' => 'Default',
     'module' => 'views_slideshow',
     'path' => '',
     'stylesheets' => array(),
@@ -1133,7 +1133,7 @@ function ipwa_doorpage_views_default_views() {
   $handler->display->display_options['style_options']['widgets']['bottom']['views_slideshow_controls']['weight'] = '1';
   $handler->display->display_options['style_options']['widgets']['bottom']['views_slideshow_controls']['type'] = 'views_slideshow_controls_text';
   $handler->display->display_options['style_options']['widgets']['bottom']['views_slideshow_slide_counter']['weight'] = '1';
-  $handler->display->display_options['style_options']['views_slideshow_cycle']['effect'] = 'scrollHorz';
+  $handler->display->display_options['style_options']['views_slideshow_cycle']['effect'] = 'scrollLeft';
   $handler->display->display_options['style_options']['views_slideshow_cycle']['transition_advanced'] = 1;
   $handler->display->display_options['style_options']['views_slideshow_cycle']['timeout'] = '2000';
   $handler->display->display_options['style_options']['views_slideshow_cycle']['speed'] = '600';

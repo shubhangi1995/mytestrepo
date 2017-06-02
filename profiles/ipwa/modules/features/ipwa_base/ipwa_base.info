@@ -19,6 +19,7 @@ dependencies[] = filter
 dependencies[] = image
 dependencies[] = link
 dependencies[] = linkchecker
+dependencies[] = locale
 dependencies[] = number
 dependencies[] = paragraphs
 dependencies[] = path_breadcrumbs

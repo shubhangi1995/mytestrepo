@@ -34,7 +34,7 @@ function ipwa_search_views_default_views() {
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['row_options']['hide_empty'] = TRUE;
-  /* Feld: Indexed Beitrag: Node ID */
+  /* Field: Indexed Node: Node ID */
   $handler->display->display_options['fields']['nid']['id'] = 'nid';
   $handler->display->display_options['fields']['nid']['table'] = 'search_api_index_ipwa_solr_index';
   $handler->display->display_options['fields']['nid']['field'] = 'nid';
@@ -155,13 +155,13 @@ Document|Dokumente',
   $handler->display->display_options['pager']['options']['tags']['next'] = ' ›';
   $handler->display->display_options['pager']['options']['tags']['last'] = 'letzte Seite »';
   $handler->display->display_options['defaults']['header'] = FALSE;
-  /* Kopfbereich: Suche: Spellcheck */
+  /* Header: Search: Spellcheck */
   $handler->display->display_options['header']['search_api_spellcheck']['id'] = 'search_api_spellcheck';
   $handler->display->display_options['header']['search_api_spellcheck']['table'] = 'search_api_index_ipwa_solr_index';
   $handler->display->display_options['header']['search_api_spellcheck']['field'] = 'search_api_spellcheck';
   $handler->display->display_options['defaults']['footer'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Feld: Indexed Beitrag: Inhaltstyp */
+  /* Field: Indexed Node: Content type */
   $handler->display->display_options['fields']['type']['id'] = 'type';
   $handler->display->display_options['fields']['type']['table'] = 'search_api_index_ipwa_solr_index';
   $handler->display->display_options['fields']['type']['field'] = 'type';
@@ -169,7 +169,7 @@ Document|Dokumente',
   $handler->display->display_options['fields']['type']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['type']['link_to_entity'] = 0;
   $handler->display->display_options['fields']['type']['format_name'] = 1;
-  /* Feld: Indexed Beitrag: Inhaltstyp */
+  /* Field: Indexed Node: Content type */
   $handler->display->display_options['fields']['type_1']['id'] = 'type_1';
   $handler->display->display_options['fields']['type_1']['table'] = 'search_api_index_ipwa_solr_index';
   $handler->display->display_options['fields']['type_1']['field'] = 'type';
@@ -178,7 +178,7 @@ Document|Dokumente',
   $handler->display->display_options['fields']['type_1']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['type_1']['link_to_entity'] = 0;
   $handler->display->display_options['fields']['type_1']['format_name'] = 0;
-  /* Feld: Indexed Beitrag: Dokument */
+  /* Field: Indexed Node: Dokument */
   $handler->display->display_options['fields']['field_dokument']['id'] = 'field_dokument';
   $handler->display->display_options['fields']['field_dokument']['table'] = 'search_api_index_ipwa_solr_index';
   $handler->display->display_options['fields']['field_dokument']['field'] = 'field_dokument';
@@ -191,7 +191,7 @@ Document|Dokumente',
   $handler->display->display_options['fields']['field_dokument']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_dokument']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_dokument']['type'] = 'file_url_plain';
-  /* Feld: Indexed Beitrag: Datum */
+  /* Field: Indexed Node: Datum */
   $handler->display->display_options['fields']['field_datum']['id'] = 'field_datum';
   $handler->display->display_options['fields']['field_datum']['table'] = 'search_api_index_ipwa_solr_index';
   $handler->display->display_options['fields']['field_datum']['field'] = 'field_datum';
@@ -207,7 +207,7 @@ Document|Dokumente',
     'show_remaining_days' => 0,
     'show_repeat_rule' => 'show',
   );
-  /* Feld: Indexed Beitrag: Titel */
+  /* Field: Indexed Node: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'search_api_index_ipwa_solr_index';
   $handler->display->display_options['fields']['title']['field'] = 'title';
@@ -219,7 +219,7 @@ Document|Dokumente',
   $handler->display->display_options['fields']['title']['alter']['trim'] = TRUE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title']['link_to_entity'] = 0;
-  /* Feld: Indexed Beitrag: Titel */
+  /* Field: Indexed Node: Title */
   $handler->display->display_options['fields']['title_1']['id'] = 'title_1';
   $handler->display->display_options['fields']['title_1']['table'] = 'search_api_index_ipwa_solr_index';
   $handler->display->display_options['fields']['title_1']['field'] = 'title';
@@ -229,7 +229,7 @@ Document|Dokumente',
   $handler->display->display_options['fields']['title_1']['alter']['path'] = '[field_dokument]';
   $handler->display->display_options['fields']['title_1']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title_1']['link_to_entity'] = 0;
-  /* Feld: Views: Views Conditional */
+  /* Field: Views: Views Conditional */
   $handler->display->display_options['fields']['views_conditional_9']['id'] = 'views_conditional_9';
   $handler->display->display_options['fields']['views_conditional_9']['table'] = 'views_conditional';
   $handler->display->display_options['fields']['views_conditional_9']['field'] = 'views_conditional';
@@ -242,13 +242,13 @@ Document|Dokumente',
   $handler->display->display_options['fields']['views_conditional_9']['then'] = '[title_1]';
   $handler->display->display_options['fields']['views_conditional_9']['or'] = '[title]';
   $handler->display->display_options['fields']['views_conditional_9']['strip_tags'] = 0;
-  /* Feld: Indexed Beitrag: Ort */
+  /* Field: Indexed Node: Ort */
   $handler->display->display_options['fields']['field_ort']['id'] = 'field_ort';
   $handler->display->display_options['fields']['field_ort']['table'] = 'search_api_index_ipwa_solr_index';
   $handler->display->display_options['fields']['field_ort']['field'] = 'field_ort';
   $handler->display->display_options['fields']['field_ort']['label'] = '';
   $handler->display->display_options['fields']['field_ort']['element_label_colon'] = FALSE;
-  /* Feld: Indexed Beitrag: Datum */
+  /* Field: Indexed Node: Datum */
   $handler->display->display_options['fields']['field_event_datum']['id'] = 'field_event_datum';
   $handler->display->display_options['fields']['field_event_datum']['table'] = 'search_api_index_ipwa_solr_index';
   $handler->display->display_options['fields']['field_event_datum']['field'] = 'field_event_datum';
@@ -266,14 +266,14 @@ Document|Dokumente',
   $handler->display->display_options['fields']['field_event_datum']['delta_offset'] = '0';
   $handler->display->display_options['fields']['field_event_datum']['delta_first_last'] = TRUE;
   $handler->display->display_options['fields']['field_event_datum']['separator'] = '';
-  /* Feld: Indexed Beitrag: Bis auf Weiteres */
+  /* Field: Indexed Node: Bis auf Weiteres */
   $handler->display->display_options['fields']['field_bis_auf_weiteres']['id'] = 'field_bis_auf_weiteres';
   $handler->display->display_options['fields']['field_bis_auf_weiteres']['table'] = 'search_api_index_ipwa_solr_index';
   $handler->display->display_options['fields']['field_bis_auf_weiteres']['field'] = 'field_bis_auf_weiteres';
   $handler->display->display_options['fields']['field_bis_auf_weiteres']['label'] = '';
   $handler->display->display_options['fields']['field_bis_auf_weiteres']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_bis_auf_weiteres']['element_label_colon'] = FALSE;
-  /* Feld: Indexed Beitrag: Datum */
+  /* Field: Indexed Node: Datum */
   $handler->display->display_options['fields']['field_datum_1']['id'] = 'field_datum_1';
   $handler->display->display_options['fields']['field_datum_1']['table'] = 'search_api_index_ipwa_solr_index';
   $handler->display->display_options['fields']['field_datum_1']['field'] = 'field_datum';
@@ -290,7 +290,7 @@ Document|Dokumente',
     'show_remaining_days' => 0,
     'show_repeat_rule' => 'show',
   );
-  /* Feld: Indexed Beitrag: Akteurstyp */
+  /* Field: Indexed Node: Akteurstyp */
   $handler->display->display_options['fields']['field_akteurstyp']['id'] = 'field_akteurstyp';
   $handler->display->display_options['fields']['field_akteurstyp']['table'] = 'search_api_index_ipwa_solr_index';
   $handler->display->display_options['fields']['field_akteurstyp']['field'] = 'field_akteurstyp';
@@ -299,7 +299,7 @@ Document|Dokumente',
   $handler->display->display_options['fields']['field_akteurstyp']['link_to_entity'] = 1;
   $handler->display->display_options['fields']['field_akteurstyp']['view_mode'] = 'full';
   $handler->display->display_options['fields']['field_akteurstyp']['bypass_access'] = 0;
-  /* Feld: Indexed Beitrag: Herausgeber */
+  /* Field: Indexed Node: Herausgeber */
   $handler->display->display_options['fields']['field_herausgeber']['id'] = 'field_herausgeber';
   $handler->display->display_options['fields']['field_herausgeber']['table'] = 'search_api_index_ipwa_solr_index';
   $handler->display->display_options['fields']['field_herausgeber']['field'] = 'field_herausgeber';
@@ -307,7 +307,7 @@ Document|Dokumente',
   $handler->display->display_options['fields']['field_herausgeber']['alter']['alter_text'] = TRUE;
   $handler->display->display_options['fields']['field_herausgeber']['alter']['text'] = 'Herausgeber: [field_herausgeber]';
   $handler->display->display_options['fields']['field_herausgeber']['element_label_colon'] = FALSE;
-  /* Feld: Indexed Beitrag: Veröffentlichungsdatum */
+  /* Field: Indexed Node: Veröffentlichungsdatum */
   $handler->display->display_options['fields']['field_ver_ffentlichungsdatum']['id'] = 'field_ver_ffentlichungsdatum';
   $handler->display->display_options['fields']['field_ver_ffentlichungsdatum']['table'] = 'search_api_index_ipwa_solr_index';
   $handler->display->display_options['fields']['field_ver_ffentlichungsdatum']['field'] = 'field_ver_ffentlichungsdatum';
@@ -322,7 +322,7 @@ Document|Dokumente',
     'show_remaining_days' => 0,
     'show_repeat_rule' => 'show',
   );
-  /* Feld: Views: Views Conditional */
+  /* Field: Views: Views Conditional */
   $handler->display->display_options['fields']['views_conditional_6']['id'] = 'views_conditional_6';
   $handler->display->display_options['fields']['views_conditional_6']['table'] = 'views_conditional';
   $handler->display->display_options['fields']['views_conditional_6']['field'] = 'views_conditional';
@@ -336,7 +336,7 @@ Document|Dokumente',
   $handler->display->display_options['fields']['views_conditional_6']['then'] = 'Bis auf Weiteres';
   $handler->display->display_options['fields']['views_conditional_6']['or'] = '[field_datum_1]';
   $handler->display->display_options['fields']['views_conditional_6']['strip_tags'] = 0;
-  /* Feld: Views: Views Conditional */
+  /* Field: Views: Views Conditional */
   $handler->display->display_options['fields']['views_conditional_7']['id'] = 'views_conditional_7';
   $handler->display->display_options['fields']['views_conditional_7']['table'] = 'views_conditional';
   $handler->display->display_options['fields']['views_conditional_7']['field'] = 'views_conditional';
@@ -348,7 +348,7 @@ Document|Dokumente',
   $handler->display->display_options['fields']['views_conditional_7']['equalto'] = 'nachricht';
   $handler->display->display_options['fields']['views_conditional_7']['then'] = '[field_datum]';
   $handler->display->display_options['fields']['views_conditional_7']['strip_tags'] = 0;
-  /* Feld: Views: Views Conditional */
+  /* Field: Views: Views Conditional */
   $handler->display->display_options['fields']['views_conditional']['id'] = 'views_conditional';
   $handler->display->display_options['fields']['views_conditional']['table'] = 'views_conditional';
   $handler->display->display_options['fields']['views_conditional']['field'] = 'views_conditional';
@@ -360,7 +360,7 @@ Document|Dokumente',
   $handler->display->display_options['fields']['views_conditional']['equalto'] = 'nachricht';
   $handler->display->display_options['fields']['views_conditional']['then'] = '[type] [title] [views_conditional_7]';
   $handler->display->display_options['fields']['views_conditional']['strip_tags'] = 0;
-  /* Feld: Views: Views Conditional */
+  /* Field: Views: Views Conditional */
   $handler->display->display_options['fields']['views_conditional_1']['id'] = 'views_conditional_1';
   $handler->display->display_options['fields']['views_conditional_1']['table'] = 'views_conditional';
   $handler->display->display_options['fields']['views_conditional_1']['field'] = 'views_conditional';
@@ -372,7 +372,7 @@ Document|Dokumente',
   $handler->display->display_options['fields']['views_conditional_1']['equalto'] = 'projekt';
   $handler->display->display_options['fields']['views_conditional_1']['then'] = '[type] [title] [field_ort]';
   $handler->display->display_options['fields']['views_conditional_1']['strip_tags'] = 0;
-  /* Feld: Views: Views Conditional */
+  /* Field: Views: Views Conditional */
   $handler->display->display_options['fields']['views_conditional_2']['id'] = 'views_conditional_2';
   $handler->display->display_options['fields']['views_conditional_2']['table'] = 'views_conditional';
   $handler->display->display_options['fields']['views_conditional_2']['field'] = 'views_conditional';
@@ -384,7 +384,7 @@ Document|Dokumente',
   $handler->display->display_options['fields']['views_conditional_2']['equalto'] = 'f_rderbekanntmachung';
   $handler->display->display_options['fields']['views_conditional_2']['then'] = '[type] [title] [views_conditional_6]';
   $handler->display->display_options['fields']['views_conditional_2']['strip_tags'] = 0;
-  /* Feld: Views: Views Conditional */
+  /* Field: Views: Views Conditional */
   $handler->display->display_options['fields']['views_conditional_3']['id'] = 'views_conditional_3';
   $handler->display->display_options['fields']['views_conditional_3']['table'] = 'views_conditional';
   $handler->display->display_options['fields']['views_conditional_3']['field'] = 'views_conditional';
@@ -396,7 +396,7 @@ Document|Dokumente',
   $handler->display->display_options['fields']['views_conditional_3']['equalto'] = 'publikation';
   $handler->display->display_options['fields']['views_conditional_3']['then'] = '[type] [title] [field_herausgeber] [field_ver_ffentlichungsdatum]';
   $handler->display->display_options['fields']['views_conditional_3']['strip_tags'] = 0;
-  /* Feld: Views: Views Conditional */
+  /* Field: Views: Views Conditional */
   $handler->display->display_options['fields']['views_conditional_4']['id'] = 'views_conditional_4';
   $handler->display->display_options['fields']['views_conditional_4']['table'] = 'views_conditional';
   $handler->display->display_options['fields']['views_conditional_4']['field'] = 'views_conditional';
@@ -408,7 +408,7 @@ Document|Dokumente',
   $handler->display->display_options['fields']['views_conditional_4']['equalto'] = 'termin';
   $handler->display->display_options['fields']['views_conditional_4']['then'] = '[type] [title] [field_event_datum] [field_ort]';
   $handler->display->display_options['fields']['views_conditional_4']['strip_tags'] = 0;
-  /* Feld: Views: Views Conditional */
+  /* Field: Views: Views Conditional */
   $handler->display->display_options['fields']['views_conditional_5']['id'] = 'views_conditional_5';
   $handler->display->display_options['fields']['views_conditional_5']['table'] = 'views_conditional';
   $handler->display->display_options['fields']['views_conditional_5']['field'] = 'views_conditional';
@@ -420,7 +420,7 @@ Document|Dokumente',
   $handler->display->display_options['fields']['views_conditional_5']['equalto'] = 'protagonist';
   $handler->display->display_options['fields']['views_conditional_5']['then'] = '[type] [title] [field_akteurstyp]';
   $handler->display->display_options['fields']['views_conditional_5']['strip_tags'] = 0;
-  /* Feld: Views: Views Conditional */
+  /* Field: Views: Views Conditional */
   $handler->display->display_options['fields']['views_conditional_8']['id'] = 'views_conditional_8';
   $handler->display->display_options['fields']['views_conditional_8']['table'] = 'views_conditional';
   $handler->display->display_options['fields']['views_conditional_8']['field'] = 'views_conditional';
@@ -432,7 +432,7 @@ Document|Dokumente',
   $handler->display->display_options['fields']['views_conditional_8']['condition'] = '6';
   $handler->display->display_options['fields']['views_conditional_8']['then'] = 'Stichtag: [views_conditional_6]';
   $handler->display->display_options['fields']['views_conditional_8']['strip_tags'] = 0;
-  /* Feld: Views: Views Conditional */
+  /* Field: Views: Views Conditional */
   $handler->display->display_options['fields']['views_conditional_10']['id'] = 'views_conditional_10';
   $handler->display->display_options['fields']['views_conditional_10']['table'] = 'views_conditional';
   $handler->display->display_options['fields']['views_conditional_10']['field'] = 'views_conditional';
@@ -445,13 +445,13 @@ Document|Dokumente',
   $handler->display->display_options['fields']['views_conditional_10']['then'] = '[views_conditional_8]';
   $handler->display->display_options['fields']['views_conditional_10']['strip_tags'] = 0;
   $handler->display->display_options['defaults']['sorts'] = FALSE;
-  /* Sort criterion: Indexed Beitrag: Datum */
+  /* Sort criterion: Indexed Node: Datum */
   $handler->display->display_options['sorts']['field_datum']['id'] = 'field_datum';
   $handler->display->display_options['sorts']['field_datum']['table'] = 'search_api_index_ipwa_solr_index';
   $handler->display->display_options['sorts']['field_datum']['field'] = 'field_datum';
   $handler->display->display_options['sorts']['field_datum']['exposed'] = TRUE;
   $handler->display->display_options['sorts']['field_datum']['expose']['label'] = 'Neueste zuerst';
-  /* Sort criterion: Indexed Beitrag: Titel */
+  /* Sort criterion: Indexed Node: Title */
   $handler->display->display_options['sorts']['title']['id'] = 'title';
   $handler->display->display_options['sorts']['title']['table'] = 'search_api_index_ipwa_solr_index';
   $handler->display->display_options['sorts']['title']['field'] = 'title';
@@ -459,7 +459,7 @@ Document|Dokumente',
   $handler->display->display_options['sorts']['title']['expose']['label'] = 'A-Z';
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Filter criterion: Suche: Fulltext search */
+  /* Filter criterion: Search: Fulltext search */
   $handler->display->display_options['filters']['search_api_views_fulltext']['id'] = 'search_api_views_fulltext';
   $handler->display->display_options['filters']['search_api_views_fulltext']['table'] = 'search_api_index_ipwa_solr_index';
   $handler->display->display_options['filters']['search_api_views_fulltext']['field'] = 'search_api_views_fulltext';
@@ -473,7 +473,7 @@ Document|Dokumente',
     2 => '2',
     1 => 0,
   );
-  /* Filter criterion: Indexed Beitrag: Ort */
+  /* Filter criterion: Indexed Node: Ort */
   $handler->display->display_options['filters']['field_ort']['id'] = 'field_ort';
   $handler->display->display_options['filters']['field_ort']['table'] = 'search_api_index_ipwa_solr_index';
   $handler->display->display_options['filters']['field_ort']['field'] = 'field_ort';
@@ -486,7 +486,7 @@ Document|Dokumente',
     2 => '2',
     1 => 0,
   );
-  /* Filter criterion: Indexed Beitrag: Inhaltstyp */
+  /* Filter criterion: Indexed Node: Content type */
   $handler->display->display_options['filters']['type_1']['id'] = 'type_1';
   $handler->display->display_options['filters']['type_1']['table'] = 'search_api_index_ipwa_solr_index';
   $handler->display->display_options['filters']['type_1']['field'] = 'type';
@@ -510,7 +510,7 @@ Document|Dokumente',
     1 => 0,
   );
   $handler->display->display_options['filters']['type_1']['expose']['reduce'] = 1;
-  /* Filter criterion: Indexed Beitrag: Inhaltstyp */
+  /* Filter criterion: Indexed Node: Content type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'search_api_index_ipwa_solr_index';
   $handler->display->display_options['filters']['type']['field'] = 'type';
@@ -525,7 +525,7 @@ Document|Dokumente',
     'termin' => 'termin',
   );
   $handler->display->display_options['filters']['type']['group'] = 1;
-  /* Filter criterion: Indexed Beitrag: Status */
+  /* Filter criterion: Indexed Node: Status */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'search_api_index_ipwa_solr_index';
   $handler->display->display_options['filters']['status']['field'] = 'status';
