@@ -81,7 +81,7 @@
       <?php if ($logo): ?>
         <a class="logo navbar-btn pull-left" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
           <img class="big"
-               src="<?php print file_create_url(drupal_get_path('theme', 'ipwa')); ?>/images/logo.png"
+               src="<?php print file_create_url(drupal_get_path('theme', 'ipwa')); ?>/images/NRW_4.0_Logo.svg"
                alt="<?php print t('Home'); ?>"/>
             <img class="small"
                src="<?php print file_create_url(drupal_get_path('theme', 'ipwa')); ?>/images/logo-small.png"
@@ -105,7 +105,7 @@
 
     <div class="nrw-eu-logo">
       <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
-        <img src="<?php echo $base_url . '/' . drupal_get_path('theme', 'ipwa'); ?>/nrw_eu_logo.png">
+        <img src="<?php echo $base_url . '/' . drupal_get_path('theme', 'ipwa'); ?>/images/Eu_Logo_Header.svg">
       </a>
     </div>
 
