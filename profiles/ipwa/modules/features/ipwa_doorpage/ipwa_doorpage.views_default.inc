@@ -1103,7 +1103,7 @@ function ipwa_doorpage_views_default_views() {
   $handler->display->display_options['style_options']['slideshow_skin'] = 'default';
   $handler->display->display_options['style_options']['skin_info'] = array(
     'class' => 'default',
-    'name' => 'Default',
+    'name' => 'Standard',
     'module' => 'views_slideshow',
     'path' => '',
     'stylesheets' => array(),
@@ -1133,7 +1133,7 @@ function ipwa_doorpage_views_default_views() {
   $handler->display->display_options['style_options']['widgets']['bottom']['views_slideshow_controls']['weight'] = '1';
   $handler->display->display_options['style_options']['widgets']['bottom']['views_slideshow_controls']['type'] = 'views_slideshow_controls_text';
   $handler->display->display_options['style_options']['widgets']['bottom']['views_slideshow_slide_counter']['weight'] = '1';
-  $handler->display->display_options['style_options']['views_slideshow_cycle']['effect'] = 'scrollLeft';
+  $handler->display->display_options['style_options']['views_slideshow_cycle']['effect'] = 'scrollHorz';
   $handler->display->display_options['style_options']['views_slideshow_cycle']['transition_advanced'] = 1;
   $handler->display->display_options['style_options']['views_slideshow_cycle']['timeout'] = '2000';
   $handler->display->display_options['style_options']['views_slideshow_cycle']['speed'] = '600';
