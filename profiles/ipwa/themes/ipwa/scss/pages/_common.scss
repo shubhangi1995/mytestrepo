@@ -376,8 +376,11 @@ margin:0;
 
         .webform-client-form { 
             padding-top: 40px;
-            width: 65%;
+            width:100%;
+			@include devicebreak(medium) {
+			width: 65%;}
 
+			
             .webform-component-fieldset {
                 border: none;
                 border-radius: 0;
