@@ -389,18 +389,21 @@
         position: relative;
 
         .views-widget-filter-search_api_views_fulltext {
-		 width:100%;
-		@include devicebreak(large) {
-            width: 50%;
+            width: 100%;
+
+            @include devicebreak(large) {
+                width: 50%;
+            }
         }
-}
+
         .views-widget-filter-field_ort {
-		  width:100%;
-		  @include devicebreak(large) {
-		
-            width: 50%;
+            width: 100%;
+
+            @include devicebreak(large) {
+                width: 50%;
+            }
         }
-}
+
         .views-widget-filter-search_api_views_fulltext, .views-widget-filter-field_ort {
             position: relative;
             padding: 0;
@@ -429,7 +432,7 @@
                 font-family: $icomoon;
                 content: "\e94e";
                 color: $icons-color;
-                left:15px;
+                left: 15px;
                 top: 23px;
                 display: inline-block;
                 position: absolute;
@@ -446,14 +449,15 @@
 
         .views-submit-button {
             position: absolute;
-            top:170px;
-			right:0;
+            top: 170px;
+            right: 0;
             padding: 0;
-			
-			@include devicebreak(large) {
-			  top: 10px;
-            right: 10px;
-			}
+
+            @include devicebreak(large) {
+                top: 10px;
+                right: 10px;
+            }
+
 
             .btn {
                 margin-top: 0;
@@ -481,40 +485,42 @@
 
     .view-content {
         .views-row {
-            border-top: 1px solid $color-light-grey;           
+            border-top: 1px solid $color-light-grey;
             padding: 30px;
             margin-bottom: 30px;
             cursor: pointer;
-			
-			&.views-row-last{
-			  border-bottom:1px solid $color-light-grey;
-			}
+
+            &.views-row-last {
+                border-bottom: 1px solid $color-light-grey;
+            }
 
             .row-container > * {
-                padding-bottom:15px;
+                padding-bottom: 15px;
 
                 a {
                     text-decoration: none;
                     color: $main-color;
                 }
-				
-				
             }
 
-			.views-field-type{
-				 font-weight:bold;
-				 font-size:22px;
-				}
-			
+            .views-field-type {
+                font-weight: bold;
+                font-size: 22px;
+            }
+
+            .views-field-field-event-datum {
+                color: $active-menu;
+            }
+
             div[class*='views-field-views-conditional-'] {
                 .search-condition.field-content {
-                    bottom: 60px;
+                    color: $color-light-grey;
 
                     a {
                         color: $color-light-grey;
                     }
-                }}
-            
+                }
+            }
         }
     }
 }
@@ -677,8 +683,9 @@
 
 .view-map-teaser {
     clear: both;
-	margin-bottom:30px;
-	overflow:hidden; 
+    margin-bottom: 30px;
+    overflow: hidden;
+
     .view-sub-wrapper {
         .view-content {
             margin: 0;
