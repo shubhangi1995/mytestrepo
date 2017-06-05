@@ -47,7 +47,7 @@
 
 <div class="<?php print $classes; ?>"<?php print $attributes; ?>>
   <?php if (!$label_hidden): ?>
-      <?php $fields =array("field_copyright" ,"field_videoquelle", "field_bis_auf_weiteres","field_event_datum","field_zeit","field_ort"); ?>
+      <?php $fields =array("field_copyright" ,"field_videoquelle" ,"field_ausschreibende_stelle","field_event_datum","field_zeit","field_ort"); ?>
       <?php if (in_array($variables['element']['#field_name'], $fields)): ?>
     <div class="field-label"<?php print $title_attributes; ?>><?php print $label ?>:&nbsp;</div>
       <?php else: ?>
