@@ -131,3 +131,44 @@ function ipwa_base_form_alter(&$form, &$form_state, $form_id) {
   }
 }
 
+/**
+ * Implements hook_block_info(). footer blocks genrated in code
+ */
+function ipwa_base_block_info() {
+  $blocks = array();
+  $blocks['footer_block_icons'] = array(
+      'info' => t('footer icon links'),
+  );
+  return $blocks;
+}
+/**
+ * Implements hook_block_view().
+ */
+function ipwa_base_block_view($delta = '') {
+  $block = array();
+  switch ($delta) {
+    case 'footer_block_icons':
+      $block['subject'] = '';
+      $block['content'] = show_footer_block_icons();
+      break;
+
+  }
+  return $block;
+}
+function show_footer_block_icons() {
+
+  $output_icons='<div id=footer-icons-images>
+                   <div>
+                     <img src="https://www.w3schools.com/html/pic_mountain.jpg" alt="Mountain View" style="width:304px;height:228px;">
+                   </div>
+                   <div>
+                     <img src="https://www.w3schools.com/html/pic_mountain.jpg" alt="Mountain View" style="width:304px;height:228px;">
+                   </div>
+                   <div>
+                     <img src="https://www.w3schools.com/html/pic_mountain.jpg" alt="Mountain View" style="width:304px;height:228px;">
+                   </div>
+                 </div>';
+
+  return $output_icons;
+
+}
