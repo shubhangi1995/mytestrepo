@@ -19,6 +19,16 @@ function ipwa_permissions_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'access site map'.
+  $permissions['access site map'] = array(
+    'name' => 'access site map',
+    'roles' => array(
+      'anonymous user' => 'anonymous user',
+      'authenticated user' => 'authenticated user',
+    ),
+    'module' => 'site_map',
+  );
+
   // Exported permission: 'view paragraph content flie_text_bereich'.
   $permissions['view paragraph content flie_text_bereich'] = array(
     'name' => 'view paragraph content flie_text_bereich',
