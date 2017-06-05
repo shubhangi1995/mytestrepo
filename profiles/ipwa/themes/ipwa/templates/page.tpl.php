@@ -181,6 +181,10 @@
 
 <?php if (!empty($page['footer'])): ?>
   <footer class="footer <?php print $container_class; ?>">
+    <?php ?>
     <?php print render($page['footer']); ?>
+    <div class="print_icon">
+    <button id = 'page_print'>Print this page</button>
+     </div>
   </footer>
 <?php endif; ?>

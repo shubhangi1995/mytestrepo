@@ -12,6 +12,34 @@ function ipwa_menu_default_fe_block_settings() {
 
   $export['version'] = '2.0';
 
+  $export['addthis-addthis_block'] = array(
+    'cache' => -1,
+    'custom' => 0,
+    'delta' => 'addthis_block',
+    'i18n_block_language' => array(),
+    'i18n_mode' => 0,
+    'module' => 'addthis',
+    'node_types' => array(),
+    'pages' => '',
+    'roles' => array(),
+    'themes' => array(
+      'bartik' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'bartik',
+        'weight' => 0,
+      ),
+      'ipwa' => array(
+        'region' => 'footer',
+        'status' => 1,
+        'theme' => 'ipwa',
+        'weight' => -32,
+      ),
+    ),
+    'title' => '',
+    'visibility' => 0,
+  );
+
   $export['block-footer_copyright'] = array(
     'cache' => -1,
     'custom' => 0,
@@ -33,16 +61,38 @@ function ipwa_menu_default_fe_block_settings() {
         'region' => 'footer',
         'status' => 1,
         'theme' => 'ipwa',
-        'weight' => -22,
-      ),
-      'stark' => array(
-        'region' => 'footer',
-        'status' => 1,
-        'theme' => 'stark',
-        'weight' => -22,
+        'weight' => -34,
       ),
     ),
     'title' => '<none>',
+    'visibility' => 0,
+  );
+
+  $export['block-footer_icon'] = array(
+    'cache' => -1,
+    'custom' => 0,
+    'i18n_block_language' => array(),
+    'i18n_mode' => 0,
+    'machine_name' => 'footer_icon',
+    'module' => 'block',
+    'node_types' => array(),
+    'pages' => '',
+    'roles' => array(),
+    'themes' => array(
+      'bartik' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'bartik',
+        'weight' => 0,
+      ),
+      'ipwa' => array(
+        'region' => 'navigation',
+        'status' => 1,
+        'theme' => 'ipwa',
+        'weight' => 0,
+      ),
+    ),
+    'title' => 'Gefördert durch',
     'visibility' => 0,
   );
 
@@ -67,12 +117,6 @@ function ipwa_menu_default_fe_block_settings() {
         'region' => '',
         'status' => 0,
         'theme' => 'ipwa',
-        'weight' => 0,
-      ),
-      'stark' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'stark',
         'weight' => 0,
       ),
     ),
@@ -103,12 +147,6 @@ function ipwa_menu_default_fe_block_settings() {
         'theme' => 'ipwa',
         'weight' => 0,
       ),
-      'stark' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'stark',
-        'weight' => 0,
-      ),
     ),
     'title' => 'Immer gut informiert',
     'visibility' => 0,
@@ -135,12 +173,6 @@ function ipwa_menu_default_fe_block_settings() {
         'region' => '',
         'status' => 0,
         'theme' => 'ipwa',
-        'weight' => 0,
-      ),
-      'stark' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'stark',
         'weight' => 0,
       ),
     ),
@@ -171,12 +203,6 @@ function ipwa_menu_default_fe_block_settings() {
         'theme' => 'ipwa',
         'weight' => 0,
       ),
-      'stark' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'stark',
-        'weight' => 0,
-      ),
     ),
     'title' => 'Immer gut informiert',
     'visibility' => 0,
@@ -203,13 +229,7 @@ function ipwa_menu_default_fe_block_settings() {
         'region' => 'footer',
         'status' => 1,
         'theme' => 'ipwa',
-        'weight' => -21,
-      ),
-      'stark' => array(
-        'region' => 'footer',
-        'status' => 1,
-        'theme' => 'stark',
-        'weight' => -21,
+        'weight' => -33,
       ),
     ),
     'title' => '<none>',

@@ -84,6 +84,11 @@ function ipwa_preprocess_field(&$variables) {
     }
   }
 
+
+  if ($variables['element']['#field_name'] == 'field_datum') {
+    print_r($variables['items']);
+  }
+
   // show parent term icon (if child term) before term names in field 'Dieser Artikel gehört zu'
   if ($variables['element']['#field_name'] == 'field_themenzuweisung') {
     if (!empty($variables['items'])) {
