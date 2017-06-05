@@ -17,6 +17,7 @@ features[variable][] = honeypot_log
 features[variable][] = honeypot_protect_all_forms
 features[variable][] = honeypot_time_limit
 features[variable][] = pathauto_node_webform_pattern
+features[variable][] = webform_node_webform
 features_exclude[dependencies][ctools] = ctools
 features_exclude[dependencies][features] = features
 features_exclude[dependencies][ipwa_base] = ipwa_base
