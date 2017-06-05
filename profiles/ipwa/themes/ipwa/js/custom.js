@@ -1,3 +1,6 @@
+
+
+
 jQuery(document).ready(function(){
 
     //Detection for external links
@@ -194,5 +197,9 @@ jQuery('.tb-megamenu-submenu.dropdown-menu').attr('style','display:none !importa
 	jQuery(".date-views-pager, .views-widget-sort-by").wrapAll("<div>");
 	
 
+	 jQuery(".page-taxonomy-term .view-alles-zum-thema .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .bef-select-as-links .form-type-bef-link:first-child a").addClass("active");
+	
 	
 });
+
+

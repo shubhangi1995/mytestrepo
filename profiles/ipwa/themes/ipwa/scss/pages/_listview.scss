@@ -105,12 +105,15 @@
                         a {
                             color: $main-color;
                             text-decoration: none;
-
-                            &.active {
+							&.active {
+							border-bottom: 2px solid $active-menu;
+							}
+                          }
+                            &.active a {
                                 border-bottom: 2px solid $active-menu;
                             }
                         }
-                    }
+                    
                 }
             }
         }
