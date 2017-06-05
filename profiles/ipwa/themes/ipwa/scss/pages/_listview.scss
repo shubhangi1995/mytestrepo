@@ -514,8 +514,20 @@
                     a {
                         color: $color-light-grey;
                     }
+					
                 }
+				.date-display-single{
+					 color: $active-menu;
+					}
+				  .search-condition.field-content.single{
+				   color: $active-menu;
+				  }	
             }
+			.views-field-field-ver-ffentlichungsdatum{
+			   .date-display-single{
+					 color: $active-menu;
+					}
+			}
         }
     }
 }
