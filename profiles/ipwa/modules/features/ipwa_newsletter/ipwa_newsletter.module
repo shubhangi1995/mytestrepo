@@ -5,6 +5,7 @@
  */
 
 include_once 'ipwa_newsletter.features.inc';
+
 /**
  * Implements hook_block_info().
  */
@@ -39,7 +40,6 @@ function ipwa_newsletter_block_form($form, &$form_state) {
     '#title' => 'Lorem ipsum ist ein ipsum ist ein ipsum ist ein.',
     '#type' => 'textfield',
     '#required' => False,
-    //'#default_value' => $default_value,
     '#attributes' => array('placeholder'=> 'E-Mail-Address eintragen'),
   );
   $form['submit'] = array(
@@ -47,6 +47,39 @@ function ipwa_newsletter_block_form($form, &$form_state) {
     '#value' => t('weiter zu Schritt 2'),
   );
   $form['#action'] = $base_url. '/';
-  //$form['#submit'][] = 'ipwa_newsletter_custom_form_submit';
+  $form['#submit'][] = 'ipwa_newsletter_custom_form_submit';
   return $form;
 }
+
+/**
+ * Implements hook_form_submit().
+ */
+function ipwa_newsletter_custom_form_submit($form, &$form_state){
+  global $base_url;
+  $form_state['redirect'] = $base_url . '/content/newsletter-registrierung?subscription-e-mail='.$form_state['values']['newsletter'];
+}
+
+/**
+ * Implements hook_form_FORM_alter().
+ */
+function ipwa_newsletter_form_alter(&$form, &$form_state, $form_id) {
+  if($form_id == 'webform_client_form_123'){
+    global $base_url;
+    $form['submitted']['datenschutzhinweise']['#options'][0] = '<div class="privacy-policy-title">Iche habe die <a href="'.$base_url.'/" target="_blank">Datenschutzhinweise</a> gelesen und stimme ihnen zu.*';
+    if(isset($_REQUEST['subscription-e-mail'])){
+      $form['submitted']['ihre_e_mail_address']['#default_value'] = $_REQUEST['subscription-e-mail'];
+    }
+    $form['#submit'][] = 'ipwa_newsletter_webform_client_form_submit';
+  }
+}
+
+/**
+ * Implements hook_form_submit().
+ */
+function ipwa_newsletter_webform_client_form_submit($form, &$form_state){
+  if(isset($form['submitted']['ihre_e_mail_address']['#value'])){
+    $mail = $form['submitted']['ihre_e_mail_address']['#value'];
+    simplenews_subscribe_user($mail, 48, $confirm = FALSE, $source = 'action', NULL);
+  }
+}
+
