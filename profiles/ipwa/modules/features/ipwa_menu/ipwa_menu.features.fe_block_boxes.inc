@@ -20,19 +20,6 @@ function ipwa_menu_default_fe_block_boxes() {
   $export['footer_copyright'] = $fe_block_boxes;
 
   $fe_block_boxes = new stdClass();
-  $fe_block_boxes->info = 'Gefördert durch';
-  $fe_block_boxes->format = 'wysiwyg';
-  $fe_block_boxes->machine_name = 'footer_icon';
-  $fe_block_boxes->body = '<div>
-<div><img src="K:\\MWEIMH_NRW\\02_Internet_Portal_Wirtschaft_und_Arbeit_4.0\\04_Visual_Design\\01_Logos \\FRE_Foerderhinweis_deutsch_farbig.jpg" alt="Smiley face" height="42" width="42"></div>
-<div><img src="K:\\MWEIMH_NRW\\02_Internet_Portal_Wirtschaft_und_Arbeit_4.0\\04_Visual_Design\\01_Logos \\Ziel2NRW_RGB_1809_jpg.jpg" alt="Smiley face" height="42" width="42"></div>
-<div><img src="K:\\MWEIMH_NRW\\02_Internet_Portal_Wirtschaft_und_Arbeit_4.0\\04_Visual_Design\\01_Logos \\NRW_MWEIMH_RGB.jpg" alt="smiley" height="42" width="42"></div>
-</div>
-';
-
-  $export['footer_icon'] = $fe_block_boxes;
-
-  $fe_block_boxes = new stdClass();
   $fe_block_boxes->info = 'Infos für Beschäftigte';
   $fe_block_boxes->format = 'wysiwyg';
   $fe_block_boxes->machine_name = 'infos_fur_beschaftigte';
