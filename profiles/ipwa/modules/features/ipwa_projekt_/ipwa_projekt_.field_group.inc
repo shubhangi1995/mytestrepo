@@ -96,8 +96,6 @@ function ipwa_projekt__field_group_info() {
       4 => 'field_projekte_zum_thema',
       5 => 'field_veranstaltungen',
       6 => 'field_weiterf_hrende_links',
-      7 => 'group_related_doc',
-      8 => 'group_related_event',
     ),
     'format_type' => 'html-element',
     'format_settings' => array(

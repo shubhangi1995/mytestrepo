@@ -423,6 +423,84 @@ function ipwa_projekt__field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-projekt-field_latitude'.
+  $field_instances['node-projekt-field_latitude'] = array(
+    'bundle' => 'projekt',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 3,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_latitude',
+    'label' => 'Latitude',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 32,
+    ),
+  );
+
+  // Exported field_instance: 'node-projekt-field_longitude'.
+  $field_instances['node-projekt-field_longitude'] = array(
+    'bundle' => 'projekt',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 4,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_longitude',
+    'label' => 'Longitude',
+    'required' => 1,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 34,
+    ),
+  );
+
   // Exported field_instance: 'node-projekt-field_meldungen_zum_thema'.
   $field_instances['node-projekt-field_meldungen_zum_thema'] = array(
     'bundle' => 'projekt',
@@ -945,6 +1023,8 @@ Schema für externe Links: http://www…',
   t('Initiatoren zum Thema');
   t('Kommende Veranstaltungen');
   t('Kurztext');
+  t('Latitude');
+  t('Longitude');
   t('Meldungen zum Thema');
   t('Projekte zum Thema');
   t('Quelle');
