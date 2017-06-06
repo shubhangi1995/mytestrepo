@@ -497,7 +497,7 @@
             float: left;
 			width:100%;
 			@include devicebreak(large) {
-				width:67%;	
+				width:50%;	
 			}
         }
     }
@@ -1159,6 +1159,12 @@
 			content:"\e90b"; 
 		}
 	}
+}
+
+// Unpublished node view
+
+.node-unpublished{
+	background:none;
 }
 
 // protagonist view

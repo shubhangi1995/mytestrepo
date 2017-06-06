@@ -8845,7 +8845,7 @@ input[type=text]::-ms-clear {
     @media (min-width: 960px) {
       /* line 495, ../scss/pages/_singleview.scss */
       .paragraphs-item-flie-text-mit-bild-links .content .field-name-field-bild-ref, .paragraphs-item-flie-text-mit-bild-rechts .content .field-name-field-bild-ref {
-        width: 67%; } }
+        width: 50%; } }
 
 /* .paragraphs-item-flie-text-mit-bild-links, .paragraphs-item-flie-text-mit-bild-rechts{
   .field-name-field-flie-text-bereich{
@@ -9341,13 +9341,17 @@ input[type=text]::-ms-clear {
     content: "\e90b"; }
 
 /* line 1166, ../scss/pages/_singleview.scss */
+.node-unpublished {
+  background: none; }
+
+/* line 1172, ../scss/pages/_singleview.scss */
 .field-name-field-ansprechpartner-kontaktdat, .field-name-field-weitere-details {
   border-bottom: 1px solid #c5cbd5;
   padding-bottom: 15px;
   margin-bottom: 15px;
   font-size: 18px; }
 
-/* line 1174, ../scss/pages/_singleview.scss */
+/* line 1180, ../scss/pages/_singleview.scss */
 .field-name-field-weitere-details::before {
   content: "\e907";
   font-family: "icomoon";
@@ -9355,14 +9359,14 @@ input[type=text]::-ms-clear {
   float: left;
   color: #a0a9b7; }
 
-/* line 1184, ../scss/pages/_singleview.scss */
+/* line 1190, ../scss/pages/_singleview.scss */
 .external-link {
   color: #273753;
   padding-left: 35px;
   text-decoration: none;
   font-size: 18px;
   position: relative; }
-  /* line 1191, ../scss/pages/_singleview.scss */
+  /* line 1197, ../scss/pages/_singleview.scss */
   .external-link::before {
     left: 0;
     position: absolute;
@@ -9371,7 +9375,7 @@ input[type=text]::-ms-clear {
     content: "\e948";
     color: #919BAA;
     font-size: 16px; }
-  /* line 1201, ../scss/pages/_singleview.scss */
+  /* line 1207, ../scss/pages/_singleview.scss */
   .external-link .ext {
     display: none; }
 
