@@ -55,7 +55,7 @@ function ipwa_preprocess_node(&$variables)
     // replace of 'to' with'-' for field 'datum' in CT terminprint_r
     if(!empty($variables['content']['group_page_info']['group_top_wrapper']['group_left_top_wrapper']['group_middle_wrapper']['field_event_datum'])){
       if (strpos($variables['content']['group_page_info']['group_top_wrapper']['group_left_top_wrapper']['group_middle_wrapper']['field_event_datum'][0]['#markup'], 'to') !== false) {
-        $variables['content']['group_page_info']['group_top_wrapper']['group_left_top_wrapper']['group_middle_wrapper']['field_event_datum'][0]['#markup'] = str_replace('to','-',$variables['content']['group_page_info']['group_top_wrapper']['group_left_top_wrapper']['group_middle_wrapper']['field_event_datum'][0]['#markup']);
+        $variables['content']['group_page_info']['group_top_wrapper']['group_left_top_wrapper']['group_middle_wrapper']['field_event_datum'][0]['#markup'] = str_replace('to','_-',$variables['content']['group_page_info']['group_top_wrapper']['group_left_top_wrapper']['group_middle_wrapper']['field_event_datum'][0]['#markup']);
       }
     }
   }
@@ -84,16 +84,10 @@ function ipwa_preprocess_field(&$variables) {
     }
   }
 
-
-  if ($variables['element']['#field_name'] == 'field_datum') {
-    print_r($variables['items']);
-  }
-
   // show parent term icon (if child term) before term names in field 'Dieser Artikel gehört zu'
   if ($variables['element']['#field_name'] == 'field_themenzuweisung') {
     if (!empty($variables['items'])) {
       foreach ($variables['items'] as $key => $item) {
-        // print_r($item);
         // alter field value to link to respective node.
         $tid = $variables['element']['#items'][$key]['tid'];
         $parent = taxonomy_get_parents($tid);
