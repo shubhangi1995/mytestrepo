@@ -43,64 +43,136 @@
 </head>
 
 <body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0">
-    <table align="center" border="0" cellpadding="0" cellspacing="0" height="100%" width="550" id="bodyTable" style="font-family:Arial,Helvetica, sans-serif;margin:20px; font-size:16px;color:#000;">
-	<tbody>
-		<tr>
-			<td>
-			<div style = "float:left;font-weight:bold;">Datum : 29/03/1990</div>
-			<div style = "float:right;font-weight:bold;">Articles</div>
-			</td>
-		</tr>
-		<tr>
-		<td>
-			<h1 style="font-size:30px;margin:30px 0 20px;">Page Header</h1>
-			<p style="margin:5px 0;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis eleifend nulla, ac ultricies urna lacinia quis. Phasellus varius sapien ut mauris imperdiet, placerat varius felis vehicula. Pellentesque libero neque, imperdiet ut massa in, auctor dignissim dui. Morbi ullamcorper mi quis sem sollicitudin, congue iaculis risus rhoncus. Aliquam auctor vitae nibh ut vehicula. Nunc in sagittis enim, ut faucibus erat. Nunc placerat ornare aliquam. Proin volutpat nisl in ligula interdum, sit amet elementum nisi tempor. Praesent varius, arcu varius aliquam pretium, magna odio auctor dolor, non dignissim nisi mi vel diam. Sed at leo consequat, iaculis mauris vel, rutrum metus. Vestibulum eget aliquam purus.</p>
-			<h2 style="font-size:22px;margin:15px 0">Sub heading</h2>
-			<p style="margin:5px 0;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis eleifend nulla, ac ultricies urna lacinia quis. Phasellus varius sapien ut mauris imperdiet, placerat varius felis vehicula. Pellentesque libero neque, imperdiet ut massa in, auctor dignissim dui. Morbi ullamcorper mi quis sem sollicitudin, congue iaculis risus rhoncus. Aliquam auctor vitae nibh ut vehicula. Nunc in sagittis enim, ut faucibus erat. Nunc placerat ornare aliquam. Proin volutpat nisl in ligula interdum, sit amet elementum nisi tempor</p>
-		</td>
-		</tr>
-		<tr>
-			<td>
-				<h2 style="font-size:25px;background:#eee;padding:20px;margin-bottom:20px;">Aktualles</h2>
-				<div style="background:#eee;padding:30px 20px ;">
-					<div><a href="#" style="color:#000;margin:20px 0;font-weight:bold;text-decoration:none;font-size:24px;">Some Title</a></div>
-					<p style="margin:5px 0;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis eleifend nulla, ac ultricies urna lacinia quis. Phasellus varius sapien ut mauris imperdiet, placerat varius felis vehicula. Pellentesque libero neque, imperdiet ut massa in, auctor dignissim dui. Morbi ullamcorper mi quis sem sollicitudin, congue iaculis risus rhoncus. Aliquam auctor vitae nibh ut vehicula. Nunc in sagittis enim, ut faucibus erat. Nunc placerat ornare aliquam. Proin volutpat nisl in ligula interdum, sit amet elementum nisi tempor</p>
-					<div><a href="#" style="color:#000;font-weight:bold;text-decoration:none;font-size:24px;">Some Title</a></div>
-					<p style="margin:5px 0;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis eleifend nulla, ac ultricies urna lacinia quis. Phasellus varius sapien ut mauris imperdiet, placerat varius felis vehicula. Pellentesque libero neque, imperdiet ut massa in, auctor dignissim dui. Morbi ullamcorper mi quis sem sollicitudin, congue iaculis risus rhoncus. Aliquam auctor vitae nibh ut vehicula. Nunc in sagittis enim, ut faucibus erat. Nunc placerat ornare aliquam. Proin volutpat nisl in ligula interdum, sit amet elementum nisi tempor</p>
-					<div style="margin:10px 0;"><a href="#" style="color:#000;font-weight:bold;text-decoration:none;font-size:24px;">Some Title</a></div>
-					<div style="margin:10px 0;">
-					<div style="float:left;margin-right:10px;"><a href="#" style="color:#000;font-weight:bold;text-decoration:none;font-size:24px;">Some Title</a></div>
-					<div style="margin-top:5px;display:inline-block;"><a href="#"> > more</a></div>
-					</div>
-					<div style="margin:10px 0;"><a href="#" style="color:#000;font-weight:bold;text-decoration:none;font-size:24px;">Some Title</a></div>
-					<div style="margin:10px 0;">
-					<div style="float:left;margin-right:10px;"><a href="#" style="color:#000;font-weight:bold;text-decoration:none;font-size:24px;">Some Title</a></div>
-					<div style="margin-top:5px;display:inline-block;"><a href="#"> > more</a></div>
-					</div>
-				</div>
-				<h2 style="font-size:25px;background:#eee;padding:20px;margin-bottom:20px;">Digital Project</h2>
-				<div style="background:#eee;padding:30px 20px ;">
-				<div><a href="#" style="color:#000;margin:20px 0;font-weight:bold;text-decoration:none;font-size:24px;">Some Title</a></div>
-				<p style="margin:5px 0;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis eleifend nulla, ac ultricies urna lacinia quis. Phasellus varius sapien ut mauris imperdiet, placerat varius felis vehicula. Pellentesque libero neque, imperdiet ut massa in, auctor dignissim dui. Morbi ullamcorper mi quis sem sollicitudin, congue iaculis risus rhoncus. Aliquam auctor vitae nibh ut vehicula. Nunc in sagittis enim, ut faucibus erat. Nunc placerat ornare aliquam. Proin volutpat nisl in ligula interdum, sit amet elementum nisi tempor <a href="#"> > more</a></p>
-				</div>
-				<h2 style="font-size:25px;background:#eee;padding:20px;margin-bottom:20px;">Termine</h2>
-				<div style="background:#eee;padding:30px 20px ;">
-				<div style="margin-bottom:50px;">
-				<div style="margin:20px 0;">Ort text Location</div>
-				<div><a href="#" style="color:#000;margin:20px 0;font-weight:bold;text-decoration:none;font-size:24px;">Some Title</a></div>
-				<div style="margin:10px 0;">Datum : 29/03/1990</div>
-				<div><a href="#"> > more</a></div>
-				</div>
-				<div style="margin-bottom:50px;">
-				<div style="margin:20px 0;">Ort text Location</div>
-				<div><a href="#" style="color:#000;margin:20px 0;font-weight:bold;text-decoration:none;font-size:24px;">Some Title</a></div>
-				<div style="margin:10px 0;">Datum : 29/03/1990</div>
-				<div><a href="#"> > more</a></div>
-				</div>
-				</div>
-			</td>
-		</tr>
-		</tbody>
-    </table>
+<table align="center" border="0" cellpadding="0" cellspacing="0" height="100%" width="550" id="bodyTable" style="font-family:Arial,Helvetica, sans-serif;margin:20px; font-size:16px;color:#000;">
+    <tbody>
+    <tr>
+        <td>
+          <?php
+          /**
+           * Following code is for print the Date and Issue No. of Newsletter
+           */
+          ?>
+          <?php global $base_url; ?>
+          <?php if(isset($build)) : ?>
+            <?php if(isset($build['field_datum'])) : ?>
+            <div style = "float:left;font-weight:bold;"><?php print $build['field_datum'][0]['#markup']; ?></div>
+              <?php $build['field_datum'][0]['#markup'] = ''; ?>
+            <?php endif; ?>
+            <?php if(isset($build['field_issue_no'])) : ?>
+            <div style = "float:right;font-weight:bold;"><?php print $build['field_issue_no'][0]['#markup']; ?></div>
+              <?php $build['field_issue_no'][0]['#markup'] = ''; ?>
+            <?php endif; ?>
+          <?php endif; ?>
+        </td>
+    </tr>
+    <tr>
+        <td>
+          <?php
+            /**
+            * Following code is for print the Title of Newsletter
+            */
+            ?>
+          <?php if(isset($title)) :
+            //print_r(drupal_lookup_path("alias", "node/".$build['body']['#object']->nid));
+            //print_r(drupal_get_path_alias('node/'.$build['body']['#object']->nid));
+            ?>
+              <h1 style="font-size:30px;margin:30px 0 20px;"><a href="<?php print $base_url.'/node/'.$build['body']['#object']->nid; ?>"><?php  print $title; ?></a></h1>
+          <?php endif; ?>
+          <?php
+          /**
+           * Following code is for print the body of Newsletter
+           */
+          ?>
+          <?php if(isset($build)) : ?>
+            <?php if(!empty($build['body'][0])) : ?>
+                  <p style="margin:5px 0;"><?php  print $build['body'][0]['#markup']; ?></p>
+            <?php  endif; ?>
+          <?php endif; ?>
+            <!--<h2 style="font-size:22px;margin:15px 0">Sub heading</h2>
+            <p style="margin:5px 0;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis eleifend nulla, ac ultricies urna lacinia quis. Phasellus varius sapien ut mauris imperdiet, placerat varius felis vehicula. Pellentesque libero neque, imperdiet ut massa in, auctor dignissim dui. Morbi ullamcorper mi quis sem sollicitudin, congue iaculis risus rhoncus. Aliquam auctor vitae nibh ut vehicula. Nunc in sagittis enim, ut faucibus erat. Nunc placerat ornare aliquam. Proin volutpat nisl in ligula interdum, sit amet elementum nisi tempor</p>-->
+        </td>
+    </tr>
+    <tr>
+        <td>
+
+          <?php
+          /**
+           * Following code is for print the Node referred in Newsletter
+           */
+          ?>
+          <?php if(isset($build)) : ?>
+            <?php if(!empty($build['#node']->field_newsletter_group)) : ?>
+              <?php foreach($build['#node']->field_newsletter_group['und'] as $items): ?>
+                <?php $field_data = entity_load('field_collection_item', array($items['value'])); ?>
+                <?php if(!empty($field_data)) : ?>
+
+                  <?php //Following code is for print Title of Group. ?>
+                  <?php foreach($field_data[$items['value']]->field_group_heading['und'] as $group_title): ?>
+                    <h2 style="font-size:25px;background:#eee;padding:20px;margin-bottom:20px;"><?php print $group_title['value']; ?></h2>
+                    <?php foreach ($field_data[$items['value']]->field_newsletter_content_types['und'] as $node_data): ?>
+                      <?php $node = node_load($node_data['entity']->nid); ?>
+                      <?php if($node_data['entity']->type == 'termin') : ?>
+                        <div style="background:#eee;padding:30px 20px ;">
+                        <div style="margin-bottom:50px;">
+
+                        <?php //print location of Termin. ?>
+                        <?php if(isset($node->field_ort['und'][0])) : ?>
+                          <div style="margin:20px 0;"><?php print $node->field_ort['und'][0]['value']; ?></div>
+                        <?php endif; ?>
+
+                        <?php //print Title of Termin. ?>
+                          <div><a href="<?php print $base_url.'/node/'.$node_data['entity']->nid; ?>" style="color:#000;margin:20px 0;font-weight:bold;text-decoration:none;font-size:24px;">
+                              <?php print $node_data['entity']->title; ?></a>
+                          </div>
+
+                        <?php //print Date of Termin. ?>
+                        <?php if (!empty($node_data['entity']->field_event_datum)) : ?>
+                          <?php foreach($node_data['entity']->field_event_datum as $event_date): ?>
+                            <?php $occurence = count($event_date); ?>
+                            <?php $startDate = date("d.m.Y", strtotime($event_date[0]['value'])); ?>
+                            <?php $enddate = date("d.m.Y", strtotime($event_date[$occurence - 1]['value2'])); ?>
+                            <?php if(($occurence > 1) || (($event_date[0]['value'] != $event_date[0]['value2']))) : ?>
+                              <?php $output = ''; ?>
+                              <?php $output = '<div class="date-repeat-rule">' . $output . '</div>'; ?>
+                              <?php $output .= '<div class="date-display-range"><span class="date-display-start">' . $startDate . '</span> - <span class="date-display-end">' . $enddate . '</span></div>'; ?>
+                                <div style="margin:10px 0;"><?php print $output; ?></div>
+                            <?php else: ?>
+                                <div style="margin:10px 0;"><?php print $startDate; ?></div>
+                            <?php endif; ?>
+                          <?php endforeach; ?>
+                             </div>
+                            </div>
+                        <?php endif; ?>
+                      <?php  else: ?>
+                          <div style="background:#eee;padding:30px 20px ;">
+                        <div style="margin-bottom:50px;">
+
+                        <?php //print Title of Other content excluded from Termin. ?>
+                          <div><a href="<?php print $base_url.'/node/'.$node_data['entity']->nid; ?>" style="color:#000;margin:20px 0;font-weight:bold;text-decoration:none;font-size:24px;">
+                            <?php print $node_data['entity']->title; ?></a>
+                          </div>
+
+                        <?php //print body of Other content excluded from Termin. ?>
+                        <?php if(isset($node->body['und'][0])) : ?>
+                          <?php if(isset($node->body['und'][0])) : ?>
+                          <?php $title = $base_url.'/node/'.$node_data['entity']->nid; ?>
+                            <?php $body = (strlen($node->body['und'][0]['value']) > 200) ? substr($node->body['und'][0]['value'],0,200).
+                              '...<div style="margin:10px 0;"><div style="margin-top:5px;display:inline-block;"><a href="'.$title.'"> > mehr</a></div></div>' : $node->body['und'][0]['value']; ?>
+                            <p style="margin:5px 0;"><?php print $body; ?></p>
+                          <?php endif; ?>
+                        <?php endif; ?>
+                            </div>
+                          </div>
+                      <?php endif; ?>
+                    <?php endforeach; ?>
+                  <?php endforeach; ?>
+                <?php  endif; ?>
+              <?php endforeach; ?>
+            <?php  endif; ?>
+          <?php endif; ?>
+        </td>
+    </tr>
+    </tbody>
+</table>
 </body>
 </html>
