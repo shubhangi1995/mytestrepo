@@ -64,7 +64,8 @@
         clear: both;
     }
 	a{
-		color:$main-color;
+		color:$main-color; 
+		text-decoration:none;
 	}
 }
 
@@ -1244,7 +1245,7 @@
 //.field-name-field-quellenangabe{
 .external-link {
     color: $main-color;
-    padding-left: 35px;
+    padding-left: 34px;
     text-decoration: none;
     font-size: 18px;
     position: relative;
