@@ -77,11 +77,11 @@
             * Following code is for print the Title of Newsletter
             */
             ?>
-          <?php if(isset($title)) :
-            //print_r(drupal_lookup_path("alias", "node/".$build['body']['#object']->nid));
-            //print_r(drupal_get_path_alias('node/'.$build['body']['#object']->nid));
-            ?>
-              <h1 style="font-size:30px;margin:30px 0 20px;"><a href="<?php print $base_url.'/node/'.$build['body']['#object']->nid; ?>"><?php  print $title; ?></a></h1>
+          <?php if(isset($title)) : ?>
+            <?php // look up the alias from the url_alias table ?>
+            <?php $source = 'node/' .$build['body']['#object']->nid; ?>
+            <?php $alias = db_query("SELECT alias FROM {url_alias} WHERE source = '$source'")->fetchField(); ?>
+              <h1 style="font-size:30px;margin:30px 0 20px;"><a href="<?php print $base_url.'/'.$alias; ?>"><?php  print $title; ?></a></h1>
           <?php endif; ?>
           <?php
           /**
@@ -116,6 +116,9 @@
                     <h2 style="font-size:25px;background:#eee;padding:20px;margin-bottom:20px;"><?php print $group_title['value']; ?></h2>
                     <div style="background:#eee;padding:30px 20px ;">
 					<?php foreach ($field_data[$items['value']]->field_newsletter_content_types['und'] as $node_data): ?>
+                      <?php // look up the alias from the url_alias table ?>
+                      <?php $source = 'node/' .$node_data['entity']->nid; ?>
+                      <?php $alias = db_query("SELECT alias FROM {url_alias} WHERE source = '$source'")->fetchField(); ?>
                       <?php $node = node_load($node_data['entity']->nid); ?>
                       <?php if($node_data['entity']->type == 'termin') : ?>
                         
@@ -127,7 +130,7 @@
                         <?php endif; ?>
 
                         <?php //print Title of Termin. ?>
-                          <div><a href="<?php print $base_url.'/node/'.$node_data['entity']->nid; ?>" style="color:#000;font-weight:bold;text-decoration:none;font-size:24px;">
+                          <div><a href="<?php print $base_url.'/'.$alias; ?>" style="color:#000;font-weight:bold;text-decoration:none;font-size:24px;">
                               <?php print $node_data['entity']->title; ?></a>
                           </div>
 
@@ -153,16 +156,16 @@
                         <div>
 
                         <?php //print Title of Other content excluded from Termin. ?>
-                          <div><a href="<?php print $base_url.'/node/'.$node_data['entity']->nid; ?>" style="color:#000;font-weight:bold;text-decoration:none;font-size:24px;">
+                          <div><a href="<?php print $base_url.'/'.$alias; ?>" style="color:#000;font-weight:bold;text-decoration:none;font-size:24px;">
                             <?php print $node_data['entity']->title; ?></a>
                           </div>
 
                         <?php //print body of Other content excluded from Termin. ?>
                         <?php if(isset($node->body['und'][0])) : ?>
                           <?php if(isset($node->body['und'][0])) : ?>
-                          <?php $title = $base_url.'/node/'.$node_data['entity']->nid; ?>
+                          <?php $title_link = $base_url.'/'.$alias; ?>
                             <?php $body = (strlen($node->body['und'][0]['value']) > 200) ? substr($node->body['und'][0]['value'],0,200).
-                              '...<div style="margin:10px 0;"><div style="margin-top:5px;display:inline-block;"><a href="'.$title.'"> > mehr</a></div></div>' : $node->body['und'][0]['value']; ?>
+                              '...<div style="margin:10px 0;"><div style="margin-top:5px;display:inline-block;"><a href="'.$title_link.'"> > mehr</a></div></div>' : $node->body['und'][0]['value']; ?>
                             <p style="margin:5px 0;"><?php print $body; ?></p>
                           <?php endif; ?>
                         <?php endif; ?>
