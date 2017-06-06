@@ -44,11 +44,21 @@
 		body{
 			display:block;
 		}
+		#center {
+			width:auto;
+		}
+		* {
+			margin:0;
+			padding:0;
+		}
+		table tr td td {
+			padding:30px 20px ;
+		}
 	</style>
 </head>
 
-<body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0">
-<table align="center" border="0" cellpadding="0" cellspacing="0" height="100%" width="750" id="bodyTable" style="font-family:Arial,Helvetica, sans-serif;margin:0 auto; font-size:16px;color:#000;">
+<body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0" style="margin:0;padding:0; width:640px;">
+<table align="center" border="0" cellpadding="0" cellspacing="0" height="100%" width="620" id="bodyTable" style="font-family:Arial,Helvetica, sans-serif;margin:0 auto; font-size:16px;color:#000; width:640px;">
     <tbody>
     <tr>
         <td>
@@ -113,8 +123,11 @@
 
                   <?php //Following code is for print Title of Group. ?>
                   <?php foreach($field_data[$items['value']]->field_group_heading['und'] as $group_title): ?>
-                    <h2 style="font-size:25px;background:#eee;padding:20px;margin-bottom:20px;text-align:center;"><?php print $group_title['value']; ?></h2>
-                    <div style="background:#eee;padding:30px 20px ;">
+                    <h2 style="font-size:25px;background:#eee;padding:20px 0;text-align:center;border-bottom:20px solid #fff;border-top:20px solid #fff; "><?php print $group_title['value']; ?></h2>
+					<table style="font-family:Arial,Helvetica, sans-serif;margin:0 auto; font-size:16px;color:#000;">
+					<tr>
+					<td style="padding:10px 20px; background:#eee;">
+					<div style="background:#eee; padding:30px 20px;">
 					<?php foreach ($field_data[$items['value']]->field_newsletter_content_types['und'] as $node_data): ?>
                       <?php // look up the alias from the url_alias table ?>
                       <?php $source = 'node/' .$node_data['entity']->nid; ?>
@@ -173,6 +186,10 @@
                       <?php endif; ?>
                     <?php endforeach; ?>
 					</div>
+					</td>
+					</tr>
+					</table>
+                    
                   <?php endforeach; ?>
                 <?php  endif; ?>
               <?php endforeach; ?>
