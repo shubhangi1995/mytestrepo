@@ -113,7 +113,7 @@
 
                   <?php //Following code is for print Title of Group. ?>
                   <?php foreach($field_data[$items['value']]->field_group_heading['und'] as $group_title): ?>
-                    <h2 style="font-size:25px;background:#eee;padding:20px;margin-bottom:20px;"><?php print $group_title['value']; ?></h2>
+                    <h2 style="font-size:25px;background:#eee;padding:20px;margin-bottom:20px;text-align:center;"><?php print $group_title['value']; ?></h2>
                     <div style="background:#eee;padding:30px 20px ;">
 					<?php foreach ($field_data[$items['value']]->field_newsletter_content_types['und'] as $node_data): ?>
                       <?php // look up the alias from the url_alias table ?>
