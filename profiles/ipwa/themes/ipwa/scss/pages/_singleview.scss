@@ -30,10 +30,12 @@
             border-bottom: 1px solid $single-border-color;
             padding-bottom: 5px;
             color: $main-color;
+			display:inline-block;
+			width:80%;
         }
 
         img {
-            display: inline-block;
+            float:left;
             width: 33px;
             height: 33px;
             margin-right: 10px;
@@ -61,6 +63,9 @@
         width: 100%;
         clear: both;
     }
+	a{
+		color:$main-color;
+	}
 }
 
 .paragraphs-items {
@@ -263,12 +268,11 @@
 }
 
 .group-page-info, .group-page-bottom {
-    @extend .page_inner;
-
      padding: 45px 20px 20px;
-
     @include devicebreak(x-large) {
          padding: 60px 0;
+		 max-width:875px;
+		 margin:0 auto;
     }
 }
 
@@ -615,6 +619,10 @@
                             position: relative;
 							display:inline-block;
 							width:100%;
+							font-size:18px;
+							@include devicebreak(medium){
+								font-size:20px;
+							}
                             &::before {
                                 font-family: $icomoon;
                                 content: "\e944";
@@ -646,7 +654,10 @@
                     position: relative;
                     display: inline-block;
                     padding-left: 35px;
-
+					font-size:18px;
+					@include devicebreak(medium){
+						font-size:20px;
+					}
                     &::before {
                         font-family: $icomoon;
                         content: "\e93f";
@@ -681,7 +692,10 @@
                     }  */
 
                     .field-content {
-                        font-size: 22px;
+                        font-size: 18px;
+						@include devicebreak(medium){
+							font-size:22px;
+						}
                     }
 
                     .field-event-datum {
@@ -1011,8 +1025,14 @@
 
         .view-id-termin {
             &.view-display-id-block_1 {
-                float: right;
-				margin-top:5px;
+				margin:10px 0;
+				clear:both;
+				float:left;
+				@include devicebreak(x-medium) {
+					clear:none;
+					float: right;
+					margin:5px 0 0; 
+				}
                 .view-content {
                     display: none;
                 }
@@ -1053,7 +1073,12 @@
         }
 
         .field-name-field-event-datum {
-            float: left;
+			clear:both;
+			float:left; 
+			@include devicebreak(x-medium) {
+				 clear:none;
+			     float: left;	
+			}
         }
     }
 
@@ -1165,6 +1190,36 @@
 
 .node-unpublished{
 	background:none;
+}
+
+// single view publication button
+
+.view-id-related_content{
+	&.view-display-id-block_3{
+		.views-row{
+			.field-content{
+				a{
+					@extend .common-button;
+					background:$active-menu;
+					border:none;
+					padding:10px 20px;
+					color:$color-white;
+					margin-top:20px;
+					font-size:16px;
+					@include devicebreak(medium){
+						font-size:20px;
+					}
+					&::before{
+						color: $color-white;
+						float: right;
+						margin-left: 10px;
+						position: static;
+					}
+					
+				}
+			}
+		}
+	}
 }
 
 // protagonist view
