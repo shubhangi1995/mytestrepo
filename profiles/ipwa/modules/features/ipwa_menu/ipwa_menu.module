@@ -3,3 +3,44 @@
  * @file
  * Drupal needs this blank file.
  */
+/**
+ * Implements hook_block_info(). footer blocks genrated in code
+ */
+function ipwa_base_block_info() {
+    $blocks = array();
+    $blocks['footer_block_icons'] = array(
+        'info' => t('footer icon links'),
+    );
+    return $blocks;
+}
+/**
+ * Implements hook_block_view().
+ */
+function ipwa_base_block_view($delta = '') {
+    $block = array();
+    switch ($delta) {
+        case 'footer_block_icons':
+            $block['subject'] = 'Gefördert durch';
+            $block['content'] = show_footer_block_icons();
+            break;
+            $block['#action'] = $base_url;
+    }
+    return $block;
+}
+function show_footer_block_icons() {
+    global $base_path;
+    $output_icons='<div id=footer-icons-images>
+                   <div>
+                     <img src="'.$base_path.'profiles/ipwa/themes/ipwa/images/EFRE_Foerderhinweis_deutsch_farbig.jpg" alt="EFRE Foerderhinweis deutsch farbig" height="100" width="350">
+                   </div>
+                   <div>
+                     <img src="'.$base_path.'profiles/ipwa/themes/ipwa/images/Ziel2NRW_RGB_1809_jpg.jpg" alt="Ziel2NRW_RGB_1809" height="100" width="350">
+                   </div>
+                   <div>
+                     <img src="'.$base_path.'profiles/ipwa/themes/ipwa/images/NRW_MWEIMH_RGB.jpg" alt="NRW_MWEIMH_RGB" height="100" width="350">
+                   </div>
+                 </div>';
+
+    return $output_icons;
+
+}
