@@ -109,19 +109,20 @@
                   <?php //Following code is for print Title of Group. ?>
                   <?php foreach($field_data[$items['value']]->field_group_heading['und'] as $group_title): ?>
                     <h2 style="font-size:25px;background:#eee;padding:20px;margin-bottom:20px;"><?php print $group_title['value']; ?></h2>
-                    <?php foreach ($field_data[$items['value']]->field_newsletter_content_types['und'] as $node_data): ?>
+                    <div style="background:#eee;padding:30px 20px ;">
+					<?php foreach ($field_data[$items['value']]->field_newsletter_content_types['und'] as $node_data): ?>
                       <?php $node = node_load($node_data['entity']->nid); ?>
                       <?php if($node_data['entity']->type == 'termin') : ?>
-                        <div style="background:#eee;padding:30px 20px ;">
-                        <div style="margin-bottom:50px;">
+                        
+                        <div>
 
                         <?php //print location of Termin. ?>
                         <?php if(isset($node->field_ort['und'][0])) : ?>
-                          <div style="margin:20px 0;"><?php print $node->field_ort['und'][0]['value']; ?></div>
+                          <div><?php print $node->field_ort['und'][0]['value']; ?></div>
                         <?php endif; ?>
 
                         <?php //print Title of Termin. ?>
-                          <div><a href="<?php print $base_url.'/node/'.$node_data['entity']->nid; ?>" style="color:#000;margin:20px 0;font-weight:bold;text-decoration:none;font-size:24px;">
+                          <div><a href="<?php print $base_url.'/node/'.$node_data['entity']->nid; ?>" style="color:#000;font-weight:bold;text-decoration:none;font-size:24px;">
                               <?php print $node_data['entity']->title; ?></a>
                           </div>
 
@@ -141,14 +142,13 @@
                             <?php endif; ?>
                           <?php endforeach; ?>
                              </div>
-                            </div>
+                            
                         <?php endif; ?>
                       <?php  else: ?>
-                          <div style="background:#eee;padding:30px 20px ;">
-                        <div style="margin-bottom:50px;">
+                        <div>
 
                         <?php //print Title of Other content excluded from Termin. ?>
-                          <div><a href="<?php print $base_url.'/node/'.$node_data['entity']->nid; ?>" style="color:#000;margin:20px 0;font-weight:bold;text-decoration:none;font-size:24px;">
+                          <div><a href="<?php print $base_url.'/node/'.$node_data['entity']->nid; ?>" style="color:#000;font-weight:bold;text-decoration:none;font-size:24px;">
                             <?php print $node_data['entity']->title; ?></a>
                           </div>
 
@@ -161,10 +161,10 @@
                             <p style="margin:5px 0;"><?php print $body; ?></p>
                           <?php endif; ?>
                         <?php endif; ?>
-                            </div>
                           </div>
                       <?php endif; ?>
                     <?php endforeach; ?>
+					</div>
                   <?php endforeach; ?>
                 <?php  endif; ?>
               <?php endforeach; ?>
