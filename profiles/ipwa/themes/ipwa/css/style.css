@@ -7703,35 +7703,40 @@ footer .nav .open > a, footer .nav .open > a:hover, footer .nav .open > a:focus 
         .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items > .field-item .field-collection-view .content {
           padding: 30px;
           height: auto;
-          /* Tablet design */ }
+          /* Tablet design */
+          /* Over Desktop design */ }
           @media (min-width: 520px) {
             /* line 274, ../scss/pages/_frontpage.scss */
             .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items > .field-item .field-collection-view .content {
-              padding-right: 165px;
+              padding-right: 50px;
               height: 400px; } }
-          /* line 284, ../scss/pages/_frontpage.scss */
+          @media (min-width: 1025px) {
+            /* line 274, ../scss/pages/_frontpage.scss */
+            .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items > .field-item .field-collection-view .content {
+              padding-right: 165px; } }
+          /* line 288, ../scss/pages/_frontpage.scss */
           .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items > .field-item .field-collection-view .content .field-type-file {
             padding-bottom: 30px;
             margin-bottom: 0; }
-          /* line 289, ../scss/pages/_frontpage.scss */
+          /* line 293, ../scss/pages/_frontpage.scss */
           .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items > .field-item .field-collection-view .content .field-name-field-paragraph-title {
             font-size: 26px;
             color: #e74712;
             padding-bottom: 25px;
             font-weight: bold; }
-          /* line 297, ../scss/pages/_frontpage.scss */
+          /* line 301, ../scss/pages/_frontpage.scss */
           .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items > .field-item .field-collection-view .content .field-name-field-quellenangabe a {
             border-color: #949d9e !important;
             color: #273753;
             position: absolute !important;
             bottom: 30px; }
-            /* line 305, ../scss/pages/_frontpage.scss */
+            /* line 309, ../scss/pages/_frontpage.scss */
             .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items > .field-item .field-collection-view .content .field-name-field-quellenangabe a:hover {
               border-color: #e74712 !important; }
-          /* line 311, ../scss/pages/_frontpage.scss */
+          /* line 315, ../scss/pages/_frontpage.scss */
           .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items > .field-item .field-collection-view .content .field-name-field-flie-text-bereich {
             padding-bottom: 50px; }
-            /* line 314, ../scss/pages/_frontpage.scss */
+            /* line 318, ../scss/pages/_frontpage.scss */
             .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items > .field-item .field-collection-view .content .field-name-field-flie-text-bereich .field-item p {
               font-size: 20px;
               color: #273753; }

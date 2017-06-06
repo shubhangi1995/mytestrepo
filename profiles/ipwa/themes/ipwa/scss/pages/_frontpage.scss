@@ -276,9 +276,13 @@
                             height: auto;
 
                             @include devicebreak(medium) {
-                                padding-right: 165px;
+                                padding-right:50px;
                                 height: 400px;
                             }
+							
+							@include devicebreak(x-large){
+							padding-right: 165px;
+							}
 
 
                             .field-type-file {
