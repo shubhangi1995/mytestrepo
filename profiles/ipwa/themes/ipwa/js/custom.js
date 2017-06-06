@@ -37,6 +37,14 @@ jQuery('.page-aktuelles select').select2().on("select2:open", function(){
  jQuery('.page-aktuelles .select2-results').addClass("simplebar");
  jQuery('.page-aktuelles .select2-results').simplebar();
 });
+
+
+jQuery(".select2").on("click", function(){
+	jQuery(this).parent().append(jQuery(".select2-dropdown").parent());
+	jQuery(this).next().attr("style","top:0px !important;left:0 !important;");
+	
+	
+});
 	
 //search
 	

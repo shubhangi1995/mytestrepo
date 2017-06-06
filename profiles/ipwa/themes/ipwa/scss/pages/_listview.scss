@@ -248,9 +248,11 @@
             .views-exposed-widget {
                 width: auto;
                 margin-bottom: 10px;
+				height:50px;
 
                 @include devicebreak(x-large) {
                     width: 25%;
+					
                 }
 
 
@@ -262,6 +264,7 @@
 
                 .views-widget .form-item {
                     padding: 0;
+					position:relative;
 
                     .select2-container--default .select2-selection--single {
                         background: 0;
@@ -287,8 +290,11 @@
                             display: none;
                         }
                     }
-                }
-            }
+                
+			
+				
+				
+            }}
         }
     }
 
