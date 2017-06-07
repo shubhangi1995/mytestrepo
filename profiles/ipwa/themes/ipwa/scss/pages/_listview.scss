@@ -242,14 +242,14 @@
         .categories-filter {
             
             clear: both;
-            display: inline-block;
+            
             width: 100%;
 			height:49px;
 			margin-top: 15px;
 
             .views-exposed-widget {
                 width: auto;
-        @include devicebreak(x-large) {
+                 @include devicebreak(x-large) {
                     width: 25%;
 					height:49px;
                 }
@@ -259,6 +259,7 @@
 
                 float: left;
                 padding: 10px 0;
+				margin-bottom:10px;
                 background: $main-color;
                 border-right: 1px solid $color-light-grey;
 

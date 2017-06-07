@@ -9634,7 +9634,6 @@ input[type=text]::-ms-clear {
 /* line 242, ../scss/pages/_listview.scss */
 .page-aktuelles .view-aktuelles .view-filters .categories-filter {
   clear: both;
-  display: inline-block;
   width: 100%;
   height: 49px;
   margin-top: 15px; }
@@ -9644,6 +9643,7 @@ input[type=text]::-ms-clear {
     /* Over Desktop design */
     float: left;
     padding: 10px 0;
+    margin-bottom: 10px;
     background: #273753;
     border-right: 1px solid #949d9e; }
     @media (min-width: 1025px) {
@@ -9654,16 +9654,16 @@ input[type=text]::-ms-clear {
     /* line 256, ../scss/pages/_listview.scss */
     .page-aktuelles .view-aktuelles .view-filters .categories-filter .views-exposed-widget.selColor {
       background: #3c506e; }
-    /* line 265, ../scss/pages/_listview.scss */
+    /* line 266, ../scss/pages/_listview.scss */
     .page-aktuelles .view-aktuelles .view-filters .categories-filter .views-exposed-widget .views-widget .form-item {
       padding: 0;
       position: relative; }
-      /* line 269, ../scss/pages/_listview.scss */
+      /* line 270, ../scss/pages/_listview.scss */
       .page-aktuelles .view-aktuelles .view-filters .categories-filter .views-exposed-widget .views-widget .form-item .select2-container--default .select2-selection--single {
         background: 0;
         border: 0;
         border-radius: 0; }
-        /* line 274, ../scss/pages/_listview.scss */
+        /* line 275, ../scss/pages/_listview.scss */
         .page-aktuelles .view-aktuelles .view-filters .categories-filter .views-exposed-widget .views-widget .form-item .select2-container--default .select2-selection--single:before {
           content: "\f107";
           font-family: FontAwesome;
@@ -9672,69 +9672,69 @@ input[type=text]::-ms-clear {
           float: right;
           right: 20px;
           top: 3px; }
-        /* line 284, ../scss/pages/_listview.scss */
+        /* line 285, ../scss/pages/_listview.scss */
         .page-aktuelles .view-aktuelles .view-filters .categories-filter .views-exposed-widget .views-widget .form-item .select2-container--default .select2-selection--single .select2-selection__rendered {
           color: #ffffff;
           padding-left: 20px; }
-        /* line 289, ../scss/pages/_listview.scss */
+        /* line 290, ../scss/pages/_listview.scss */
         .page-aktuelles .view-aktuelles .view-filters .categories-filter .views-exposed-widget .views-widget .form-item .select2-container--default .select2-selection--single .select2-selection__arrow {
           display: none; }
-      /* line 294, ../scss/pages/_listview.scss */
+      /* line 295, ../scss/pages/_listview.scss */
       .page-aktuelles .view-aktuelles .view-filters .categories-filter .views-exposed-widget .views-widget .form-item .select2-container + .select2-container {
         top: 38px !important;
         left: 0px !important;
         position: absolute; }
-/* line 305, ../scss/pages/_listview.scss */
+/* line 306, ../scss/pages/_listview.scss */
 .page-aktuelles .view-aktuelles .views-submit-button {
   display: none; }
 
-/* line 314, ../scss/pages/_listview.scss */
+/* line 315, ../scss/pages/_listview.scss */
 .view-termin .view-filters .views-exposed-form .views-exposed-widgets #edit-term-node-tid-depth-wrapper, .view-event-calendar .view-filters .views-exposed-form .views-exposed-widgets #edit-term-node-tid-depth-wrapper {
   width: 100%;
   float: left;
   padding: 0;
   /* Over Desktop design */ }
   @media (min-width: 1025px) {
-    /* line 314, ../scss/pages/_listview.scss */
+    /* line 315, ../scss/pages/_listview.scss */
     .view-termin .view-filters .views-exposed-form .views-exposed-widgets #edit-term-node-tid-depth-wrapper, .view-event-calendar .view-filters .views-exposed-form .views-exposed-widgets #edit-term-node-tid-depth-wrapper {
       width: 80%; } }
-  /* line 325, ../scss/pages/_listview.scss */
+  /* line 326, ../scss/pages/_listview.scss */
   .view-termin .view-filters .views-exposed-form .views-exposed-widgets #edit-term-node-tid-depth-wrapper .form-item .form-type-bef-link, .view-event-calendar .view-filters .views-exposed-form .views-exposed-widgets #edit-term-node-tid-depth-wrapper .form-item .form-type-bef-link {
     padding-right: 0;
     /* Over Desktop design */ }
     @media (min-width: 1025px) {
-      /* line 325, ../scss/pages/_listview.scss */
+      /* line 326, ../scss/pages/_listview.scss */
       .view-termin .view-filters .views-exposed-form .views-exposed-widgets #edit-term-node-tid-depth-wrapper .form-item .form-type-bef-link, .view-event-calendar .view-filters .views-exposed-form .views-exposed-widgets #edit-term-node-tid-depth-wrapper .form-item .form-type-bef-link {
         padding-right: 60px; } }
-    /* line 333, ../scss/pages/_listview.scss */
+    /* line 334, ../scss/pages/_listview.scss */
     .view-termin .view-filters .views-exposed-form .views-exposed-widgets #edit-term-node-tid-depth-wrapper .form-item .form-type-bef-link a, .view-event-calendar .view-filters .views-exposed-form .views-exposed-widgets #edit-term-node-tid-depth-wrapper .form-item .form-type-bef-link a {
       display: inline-block;
       float: left;
       text-decoration: none;
       color: #273753; }
-      /* line 339, ../scss/pages/_listview.scss */
+      /* line 340, ../scss/pages/_listview.scss */
       .view-termin .view-filters .views-exposed-form .views-exposed-widgets #edit-term-node-tid-depth-wrapper .form-item .form-type-bef-link a.active, .view-event-calendar .view-filters .views-exposed-form .views-exposed-widgets #edit-term-node-tid-depth-wrapper .form-item .form-type-bef-link a.active {
         border-bottom: 2px Solid #e74712; }
-/* line 347, ../scss/pages/_listview.scss */
+/* line 348, ../scss/pages/_listview.scss */
 .view-termin .view-filters .views-exposed-form .views-exposed-widgets .views-submit-button, .view-event-calendar .view-filters .views-exposed-form .views-exposed-widgets .views-submit-button {
   display: none; }
-/* line 351, ../scss/pages/_listview.scss */
+/* line 352, ../scss/pages/_listview.scss */
 .view-termin .view-filters .views-exposed-form .views-exposed-widgets .select2-container--default .select2-selection--single, .view-event-calendar .view-filters .views-exposed-form .views-exposed-widgets .select2-container--default .select2-selection--single {
   display: none; }
 
-/* line 360, ../scss/pages/_listview.scss */
+/* line 361, ../scss/pages/_listview.scss */
 .calendar-link {
   width: 100%;
   float: left;
   margin-bottom: 30px;
   /* Over Desktop design */ }
   @media (min-width: 1025px) {
-    /* line 360, ../scss/pages/_listview.scss */
+    /* line 361, ../scss/pages/_listview.scss */
     .calendar-link {
       width: 20%;
       float: left;
       text-align: right; } }
-  /* line 372, ../scss/pages/_listview.scss */
+  /* line 373, ../scss/pages/_listview.scss */
   .calendar-link a {
     text-decoration: none;
     padding-bottom: 4px;
@@ -9743,7 +9743,7 @@ input[type=text]::-ms-clear {
     font-weight: bold;
     position: relative;
     margin-left: 30px; }
-    /* line 381, ../scss/pages/_listview.scss */
+    /* line 382, ../scss/pages/_listview.scss */
     .calendar-link a:before {
       content: '\e949';
       font-family: "icomoon";
@@ -9754,34 +9754,34 @@ input[type=text]::-ms-clear {
       top: 9px;
       display: inline-block; }
 
-/* line 396, ../scss/pages/_listview.scss */
+/* line 397, ../scss/pages/_listview.scss */
 .view-search-list .view-filters {
   position: relative; }
-  /* line 399, ../scss/pages/_listview.scss */
+  /* line 400, ../scss/pages/_listview.scss */
   .view-search-list .view-filters .views-widget-filter-search_api_views_fulltext {
     width: 100%;
     /* Desktop design */ }
     @media (min-width: 960px) {
-      /* line 399, ../scss/pages/_listview.scss */
+      /* line 400, ../scss/pages/_listview.scss */
       .view-search-list .view-filters .views-widget-filter-search_api_views_fulltext {
         width: 50%; } }
-  /* line 407, ../scss/pages/_listview.scss */
+  /* line 408, ../scss/pages/_listview.scss */
   .view-search-list .view-filters .views-widget-filter-field_ort {
     width: 100%;
     /* Desktop design */ }
     @media (min-width: 960px) {
-      /* line 407, ../scss/pages/_listview.scss */
+      /* line 408, ../scss/pages/_listview.scss */
       .view-search-list .view-filters .views-widget-filter-field_ort {
         width: 50%; } }
-  /* line 415, ../scss/pages/_listview.scss */
+  /* line 416, ../scss/pages/_listview.scss */
   .view-search-list .view-filters .views-widget-filter-search_api_views_fulltext, .view-search-list .view-filters .views-widget-filter-field_ort {
     position: relative;
     padding: 0; }
-    /* line 419, ../scss/pages/_listview.scss */
+    /* line 420, ../scss/pages/_listview.scss */
     .view-search-list .view-filters .views-widget-filter-search_api_views_fulltext .views-widget .form-item, .view-search-list .view-filters .views-widget-filter-field_ort .views-widget .form-item {
       width: 100%;
       padding-right: 0px !important; }
-      /* line 423, ../scss/pages/_listview.scss */
+      /* line 424, ../scss/pages/_listview.scss */
       .view-search-list .view-filters .views-widget-filter-search_api_views_fulltext .views-widget .form-item .form-control, .view-search-list .view-filters .views-widget-filter-field_ort .views-widget .form-item .form-control {
         height: 70px;
         border-radius: 0;
@@ -9789,12 +9789,12 @@ input[type=text]::-ms-clear {
         padding-left: 50px;
         font-size: 16px;
         box-shadow: none; }
-        /* line 431, ../scss/pages/_listview.scss */
+        /* line 432, ../scss/pages/_listview.scss */
         .view-search-list .view-filters .views-widget-filter-search_api_views_fulltext .views-widget .form-item .form-control:focus, .view-search-list .view-filters .views-widget-filter-field_ort .views-widget .form-item .form-control:focus {
           box-shadow: none;
           outline: none;
           transition: none; }
-    /* line 439, ../scss/pages/_listview.scss */
+    /* line 440, ../scss/pages/_listview.scss */
     .view-search-list .view-filters .views-widget-filter-search_api_views_fulltext:before, .view-search-list .view-filters .views-widget-filter-field_ort:before {
       font-family: "icomoon";
       content: "\e94e";
@@ -9803,13 +9803,13 @@ input[type=text]::-ms-clear {
       top: 23px;
       display: inline-block;
       position: absolute; }
-  /* line 450, ../scss/pages/_listview.scss */
+  /* line 451, ../scss/pages/_listview.scss */
   .view-search-list .view-filters .views-widget-filter-type_1 {
     margin-top: 30px; }
-    /* line 453, ../scss/pages/_listview.scss */
+    /* line 454, ../scss/pages/_listview.scss */
     .view-search-list .view-filters .views-widget-filter-type_1 .views-widget .form-item {
       margin-bottom: 15px; }
-  /* line 458, ../scss/pages/_listview.scss */
+  /* line 459, ../scss/pages/_listview.scss */
   .view-search-list .view-filters .views-submit-button {
     position: absolute;
     top: 170px;
@@ -9817,11 +9817,11 @@ input[type=text]::-ms-clear {
     padding: 0;
     /* Desktop design */ }
     @media (min-width: 960px) {
-      /* line 458, ../scss/pages/_listview.scss */
+      /* line 459, ../scss/pages/_listview.scss */
       .view-search-list .view-filters .views-submit-button {
         top: 10px;
         right: 10px; } }
-    /* line 470, ../scss/pages/_listview.scss */
+    /* line 471, ../scss/pages/_listview.scss */
     .view-search-list .view-filters .views-submit-button .btn {
       margin-top: 0;
       border-radius: 0;
@@ -9831,7 +9831,7 @@ input[type=text]::-ms-clear {
       border: none;
       background: #3c506e;
       font-weight: bold; }
-      /* line 480, ../scss/pages/_listview.scss */
+      /* line 481, ../scss/pages/_listview.scss */
       .view-search-list .view-filters .views-submit-button .btn::before {
         font-family: "icomoon";
         content: "\e90e";
@@ -9841,64 +9841,64 @@ input[type=text]::-ms-clear {
         font-size: 12px;
         display: inline-block;
         position: absolute; }
-/* line 495, ../scss/pages/_listview.scss */
+/* line 496, ../scss/pages/_listview.scss */
 .view-search-list .view-content .views-row {
   border-top: 1px solid #949d9e;
   padding: 30px;
   margin-bottom: 30px;
   cursor: pointer; }
-  /* line 501, ../scss/pages/_listview.scss */
+  /* line 502, ../scss/pages/_listview.scss */
   .view-search-list .view-content .views-row.views-row-last {
     border-bottom: 1px solid #949d9e; }
-  /* line 505, ../scss/pages/_listview.scss */
+  /* line 506, ../scss/pages/_listview.scss */
   .view-search-list .view-content .views-row .row-container > * {
     padding-bottom: 15px; }
-    /* line 508, ../scss/pages/_listview.scss */
+    /* line 509, ../scss/pages/_listview.scss */
     .view-search-list .view-content .views-row .row-container > * a {
       text-decoration: none;
       color: #273753; }
-  /* line 514, ../scss/pages/_listview.scss */
+  /* line 515, ../scss/pages/_listview.scss */
   .view-search-list .view-content .views-row .views-field-type {
     font-weight: bold;
     font-size: 22px; }
-  /* line 519, ../scss/pages/_listview.scss */
+  /* line 520, ../scss/pages/_listview.scss */
   .view-search-list .view-content .views-row .views-field-field-event-datum {
     color: #e74712; }
-  /* line 524, ../scss/pages/_listview.scss */
+  /* line 525, ../scss/pages/_listview.scss */
   .view-search-list .view-content .views-row div[class*='views-field-views-conditional-'] .search-condition.field-content {
     color: #949d9e; }
-    /* line 527, ../scss/pages/_listview.scss */
+    /* line 528, ../scss/pages/_listview.scss */
     .view-search-list .view-content .views-row div[class*='views-field-views-conditional-'] .search-condition.field-content a {
       color: #949d9e; }
-  /* line 532, ../scss/pages/_listview.scss */
+  /* line 533, ../scss/pages/_listview.scss */
   .view-search-list .view-content .views-row div[class*='views-field-views-conditional-'] .date-display-single {
     color: #e74712; }
-  /* line 535, ../scss/pages/_listview.scss */
+  /* line 536, ../scss/pages/_listview.scss */
   .view-search-list .view-content .views-row div[class*='views-field-views-conditional-'] .search-condition.field-content.single {
     color: #e74712; }
-  /* line 540, ../scss/pages/_listview.scss */
+  /* line 541, ../scss/pages/_listview.scss */
   .view-search-list .view-content .views-row .views-field-field-ver-ffentlichungsdatum .date-display-single {
     color: #e74712; }
 
-/* line 549, ../scss/pages/_listview.scss */
+/* line 550, ../scss/pages/_listview.scss */
 .view-wahlen-sie-einen-themenbereich {
   background: #273753; }
-  /* line 552, ../scss/pages/_listview.scss */
+  /* line 553, ../scss/pages/_listview.scss */
   .view-wahlen-sie-einen-themenbereich .view-sub-wrapper {
     position: relative; }
-  /* line 558, ../scss/pages/_listview.scss */
+  /* line 559, ../scss/pages/_listview.scss */
   .view-wahlen-sie-einen-themenbereich .view-header {
     color: #ffffff;
     padding: 40px 0;
     /* Mobile design */ }
     @media (min-width: 320px) {
-      /* line 558, ../scss/pages/_listview.scss */
+      /* line 559, ../scss/pages/_listview.scss */
       .view-wahlen-sie-einen-themenbereich .view-header {
         padding-right: 50px; } }
-  /* line 567, ../scss/pages/_listview.scss */
+  /* line 568, ../scss/pages/_listview.scss */
   .view-wahlen-sie-einen-themenbereich .view-content {
     padding-bottom: 90px; }
-    /* line 570, ../scss/pages/_listview.scss */
+    /* line 571, ../scss/pages/_listview.scss */
     .view-wahlen-sie-einen-themenbereich .view-content .views_slideshow_controls_text {
       float: right;
       display: inline-block;
@@ -9907,13 +9907,13 @@ input[type=text]::-ms-clear {
       top: 60px;
       /* Mobile design */ }
       @media (min-width: 320px) {
-        /* line 570, ../scss/pages/_listview.scss */
+        /* line 571, ../scss/pages/_listview.scss */
         .view-wahlen-sie-einen-themenbereich .view-content .views_slideshow_controls_text {
           right: 25px; } }
-      /* line 583, ../scss/pages/_listview.scss */
+      /* line 584, ../scss/pages/_listview.scss */
       .view-wahlen-sie-einen-themenbereich .view-content .views_slideshow_controls_text .views-slideshow-controls-text-previous a {
         font-size: 0; }
-        /* line 586, ../scss/pages/_listview.scss */
+        /* line 587, ../scss/pages/_listview.scss */
         .view-wahlen-sie-einen-themenbereich .view-content .views_slideshow_controls_text .views-slideshow-controls-text-previous a:before {
           font-family: "icomoon";
           content: "\e93e";
@@ -9923,10 +9923,10 @@ input[type=text]::-ms-clear {
           left: -55px;
           top: 6px;
           display: inline-block; }
-      /* line 600, ../scss/pages/_listview.scss */
+      /* line 601, ../scss/pages/_listview.scss */
       .view-wahlen-sie-einen-themenbereich .view-content .views_slideshow_controls_text .views-slideshow-controls-text-status-pause a {
         font-size: 0; }
-        /* line 603, ../scss/pages/_listview.scss */
+        /* line 604, ../scss/pages/_listview.scss */
         .view-wahlen-sie-einen-themenbereich .view-content .views_slideshow_controls_text .views-slideshow-controls-text-status-pause a::before {
           font-family: "icomoon";
           content: "\e908";
@@ -9936,10 +9936,10 @@ input[type=text]::-ms-clear {
           top: 4px;
           display: inline-block;
           left: -25px; }
-      /* line 617, ../scss/pages/_listview.scss */
+      /* line 618, ../scss/pages/_listview.scss */
       .view-wahlen-sie-einen-themenbereich .view-content .views_slideshow_controls_text .views-slideshow-controls-text-status-play a {
         font-size: 0; }
-        /* line 620, ../scss/pages/_listview.scss */
+        /* line 621, ../scss/pages/_listview.scss */
         .view-wahlen-sie-einen-themenbereich .view-content .views_slideshow_controls_text .views-slideshow-controls-text-status-play a::before {
           font-family: "icomoon";
           content: "\e90a";
@@ -9949,10 +9949,10 @@ input[type=text]::-ms-clear {
           top: 4px;
           display: inline-block;
           left: -25px; }
-      /* line 634, ../scss/pages/_listview.scss */
+      /* line 635, ../scss/pages/_listview.scss */
       .view-wahlen-sie-einen-themenbereich .view-content .views_slideshow_controls_text .views_slideshow_controls_text_next a {
         font-size: 0; }
-        /* line 637, ../scss/pages/_listview.scss */
+        /* line 638, ../scss/pages/_listview.scss */
         .view-wahlen-sie-einen-themenbereich .view-content .views_slideshow_controls_text .views_slideshow_controls_text_next a:before {
           font-family: "icomoon";
           content: "\e93f";
@@ -9961,7 +9961,7 @@ input[type=text]::-ms-clear {
           position: absolute;
           top: 6px;
           display: inline-block; }
-    /* line 650, ../scss/pages/_listview.scss */
+    /* line 651, ../scss/pages/_listview.scss */
     .view-wahlen-sie-einen-themenbereich .view-content .views-row {
       background-color: #ffffff;
       padding: 30px;
@@ -9972,48 +9972,48 @@ input[type=text]::-ms-clear {
       position: relative;
       /* Desktop design */ }
       @media (min-width: 960px) {
-        /* line 650, ../scss/pages/_listview.scss */
+        /* line 651, ../scss/pages/_listview.scss */
         .view-wahlen-sie-einen-themenbereich .view-content .views-row {
           width: 47%;
           height: 286px;
           margin-right: 30px;
           float: left;
           margin-left: 10px; } }
-      /* line 668, ../scss/pages/_listview.scss */
+      /* line 669, ../scss/pages/_listview.scss */
       .view-wahlen-sie-einen-themenbereich .view-content .views-row:nth-child(2), .view-wahlen-sie-einen-themenbereich .view-content .views-row:last-child {
         /* Desktop design */ }
         @media (min-width: 960px) {
-          /* line 668, ../scss/pages/_listview.scss */
+          /* line 669, ../scss/pages/_listview.scss */
           .view-wahlen-sie-einen-themenbereich .view-content .views-row:nth-child(2), .view-wahlen-sie-einen-themenbereich .view-content .views-row:last-child {
             margin-right: 0; } }
-      /* line 674, ../scss/pages/_listview.scss */
+      /* line 675, ../scss/pages/_listview.scss */
       .view-wahlen-sie-einen-themenbereich .view-content .views-row .views-field-name {
         padding-bottom: 30px; }
-        /* line 677, ../scss/pages/_listview.scss */
+        /* line 678, ../scss/pages/_listview.scss */
         .view-wahlen-sie-einen-themenbereich .view-content .views-row .views-field-name a {
           color: #e74712;
           text-decoration: none;
           font-weight: bold;
           padding-bottom: 30px; }
-      /* line 686, ../scss/pages/_listview.scss */
+      /* line 687, ../scss/pages/_listview.scss */
       .view-wahlen-sie-einen-themenbereich .view-content .views-row .views-field-name-1 a {
         color: #273753;
         position: absolute;
         bottom: 30px; }
-      /* line 695, ../scss/pages/_listview.scss */
+      /* line 696, ../scss/pages/_listview.scss */
       .view-wahlen-sie-einen-themenbereich .view-content .views-row .views-field-field-kurztext {
         padding-bottom: 40px; }
 
-/* line 704, ../scss/pages/_listview.scss */
+/* line 705, ../scss/pages/_listview.scss */
 .view-map-teaser {
   clear: both;
   margin-bottom: 30px;
   overflow: hidden; }
-  /* line 712, ../scss/pages/_listview.scss */
+  /* line 713, ../scss/pages/_listview.scss */
   .view-map-teaser .view-sub-wrapper .view-content .views-row {
     padding: 0;
     background: #273753; }
-    /* line 718, ../scss/pages/_listview.scss */
+    /* line 719, ../scss/pages/_listview.scss */
     .view-map-teaser .view-sub-wrapper .view-content .views-row .row-container {
       background: none;
       height: auto;
@@ -10022,30 +10022,30 @@ input[type=text]::-ms-clear {
       border: none;
       /* Over Desktop design */ }
       @media (min-width: 1025px) {
-        /* line 718, ../scss/pages/_listview.scss */
+        /* line 719, ../scss/pages/_listview.scss */
         .view-map-teaser .view-sub-wrapper .view-content .views-row .row-container {
           padding: 45px 150px 45px 50px; } }
-      /* line 730, ../scss/pages/_listview.scss */
+      /* line 731, ../scss/pages/_listview.scss */
       .view-map-teaser .view-sub-wrapper .view-content .views-row .row-container:hover {
         background: none;
         border: none; }
-      /* line 735, ../scss/pages/_listview.scss */
+      /* line 736, ../scss/pages/_listview.scss */
       .view-map-teaser .view-sub-wrapper .view-content .views-row .row-container .views-field-field-bild {
         padding-bottom: 20px; }
-        /* line 738, ../scss/pages/_listview.scss */
+        /* line 739, ../scss/pages/_listview.scss */
         .view-map-teaser .view-sub-wrapper .view-content .views-row .row-container .views-field-field-bild img {
           color: #e74712; }
-      /* line 743, ../scss/pages/_listview.scss */
+      /* line 744, ../scss/pages/_listview.scss */
       .view-map-teaser .view-sub-wrapper .view-content .views-row .row-container .views-field-field-paragraph-title {
         color: #ffffff;
         font-size: 38px;
         font-weight: bold;
         padding-bottom: 20px; }
-      /* line 750, ../scss/pages/_listview.scss */
+      /* line 751, ../scss/pages/_listview.scss */
       .view-map-teaser .view-sub-wrapper .view-content .views-row .row-container .views-field-field-flie-text-bereich {
         color: #ffffff;
         padding-bottom: 35px; }
-      /* line 755, ../scss/pages/_listview.scss */
+      /* line 756, ../scss/pages/_listview.scss */
       .view-map-teaser .view-sub-wrapper .view-content .views-row .row-container .views-field-field-quellenangabe a {
         color: #ffffff; }
 
