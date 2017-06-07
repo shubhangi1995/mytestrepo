@@ -253,6 +253,9 @@
                     width: 25%;
 					height:49px;
                 }
+				&.selColor{
+					background:$header-dropdown-menu;
+				}
 
                 float: left;
                 padding: 10px 0;
