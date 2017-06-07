@@ -772,6 +772,7 @@
                         position: relative;
                         border: 1px solid $color-white;
                         cursor: pointer;
+						 transition: all 0.5s ease;
 
                         &:hover {
                             background: $color-light-blue;
@@ -855,6 +856,7 @@
                             position: relative;
                             border: 1px solid $color-white;
                             cursor: pointer;
+							 transition: all 0.5s ease;
 
                             &:hover {
                                 background: $color-light-blue;
@@ -934,6 +936,7 @@
                         position: relative;
                         border: 1px solid $color-white;
                         cursor: pointer;
+						 transition: all 0.5s ease;
 
                         &:hover {
                             background: $color-light-blue;
