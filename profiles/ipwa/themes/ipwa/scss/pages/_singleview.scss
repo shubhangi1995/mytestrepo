@@ -1250,10 +1250,10 @@
     font-size: 18px;
     position: relative;
 
-    &::before {
+    &::before { 
         left: 0;
         position: absolute;
-        top: 3px;
+        top: 2px;
         font-family: $icomoon;
         content: "\e948";
         color: $icons-color;
