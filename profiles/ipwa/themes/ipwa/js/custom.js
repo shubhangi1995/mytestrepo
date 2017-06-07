@@ -40,10 +40,10 @@ jQuery('.page-aktuelles select').select2().on("select2:open", function(){
 
 
 jQuery(".select2").on("click", function(){
-	jQuery(this).parent().append(jQuery(".select2-dropdown").parent());
-	jQuery(this).next().attr("style","top:-5px !important;left:0 !important;");
-	
-	
+	if(!jQuery(this).next().is(".select2-container")){
+		jQuery(this).parent().append(jQuery(".select2-dropdown").parent());
+		jQuery(this).next().attr("style","top:29px !important;left:0 !important;");		
+	}	
 });
 	
 //search
