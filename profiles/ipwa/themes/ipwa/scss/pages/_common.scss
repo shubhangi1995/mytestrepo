@@ -195,6 +195,7 @@ h1 {
     .select2-dropdown {
         border: 0;        
         background: $header-dropdown-menu;
+		border-radius:0;
 
         .select2-results {
             height: 200px;

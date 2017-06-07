@@ -41,7 +41,7 @@ jQuery('.page-aktuelles select').select2().on("select2:open", function(){
 
 jQuery(".select2").on("click", function(){
 	jQuery(this).parent().append(jQuery(".select2-dropdown").parent());
-	jQuery(this).next().attr("style","top:0px !important;left:0 !important;");
+	jQuery(this).next().attr("style","top:-5px !important;left:0 !important;");
 	
 	
 });

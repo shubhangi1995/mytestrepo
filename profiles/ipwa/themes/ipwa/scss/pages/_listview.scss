@@ -240,23 +240,20 @@
 
     .view-filters {
         .categories-filter {
-            margin-top: 15px;
+            
             clear: both;
             display: inline-block;
             width: 100%;
+			height:49px;
+			margin-top: 15px;
 
             .views-exposed-widget {
                 width: auto;
-                margin-bottom: 10px;
-				height:50px;
-
-                @include devicebreak(x-large) {
+        @include devicebreak(x-large) {
                     width: 25%;
-					
+					height:49px;
                 }
 
-
-                padding: 0;
                 float: left;
                 padding: 10px 0;
                 background: $main-color;
@@ -291,7 +288,10 @@
                         }
                     }
                 
-			
+			.select2-container + .select2-container{
+			   top:-5px !important;
+			   left:0px !important;
+			}
 				
 				
             }}
