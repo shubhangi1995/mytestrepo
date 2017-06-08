@@ -621,7 +621,7 @@
 							display:inline-block;
 							width:100%;
 							font-size:18px;
-							@include devicebreak(medium){
+							@include devicebreak(x-medium){
 								font-size:20px;
 							}
                             &::before {
@@ -656,7 +656,7 @@
                     display: inline-block;
                     padding-left: 35px;
 					font-size:18px;
-					@include devicebreak(medium){
+					@include devicebreak(x-medium){
 						font-size:20px;
 					}
                     &::before {
@@ -694,7 +694,7 @@
 
                     .field-content {
                         font-size: 18px;
-						@include devicebreak(medium){
+						@include devicebreak(x-medium){   
 							font-size:22px;
 						}
                     }

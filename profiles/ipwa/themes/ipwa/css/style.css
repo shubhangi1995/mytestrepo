@@ -8982,7 +8982,7 @@ input[type=text]::-ms-clear {
   width: 100%;
   font-size: 18px;
   /* Tablet design */ }
-  @media (min-width: 520px) {
+  @media (min-width: 767px) {
     /* line 618, ../scss/pages/_singleview.scss */
     .view-id-related_content.view-display-id-block_2 .views-row .row-container .views-field .field-content a {
       font-size: 20px; } }
@@ -9006,7 +9006,7 @@ input[type=text]::-ms-clear {
   padding-left: 35px;
   font-size: 18px;
   /* Tablet design */ }
-  @media (min-width: 520px) {
+  @media (min-width: 767px) {
     /* line 654, ../scss/pages/_singleview.scss */
     .field-name-field-meldungen-zum-thema .field-items .field-item a:not(.external-link), .field-name-field-initiatoren-zum-thema .field-items .field-item a:not(.external-link), .field-name-field-projekte-zum-thema .field-items .field-item a:not(.external-link), .field-name-field-f-rderbekanntmachungen .field-items .field-item a:not(.external-link), .field-name-field-weiterf-hrende-links .field-items .field-item a:not(.external-link) {
       font-size: 20px; } }
@@ -9035,7 +9035,7 @@ input[type=text]::-ms-clear {
   .view-id-related_content.view-display-id-block_1 .views-row .row-container .views-field .field-content {
     font-size: 18px;
     /* Tablet design */ }
-    @media (min-width: 520px) {
+    @media (min-width: 767px) {
       /* line 695, ../scss/pages/_singleview.scss */
       .view-id-related_content.view-display-id-block_1 .views-row .row-container .views-field .field-content {
         font-size: 22px; } }
