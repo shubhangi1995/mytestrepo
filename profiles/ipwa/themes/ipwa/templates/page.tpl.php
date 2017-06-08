@@ -84,7 +84,7 @@
                src="<?php print file_create_url(drupal_get_path('theme', 'ipwa')); ?>/images/NRW_4.0_Logo.svg"
                alt="<?php print t('Home'); ?>"/>
             <img class="small"
-               src="<?php print file_create_url(drupal_get_path('theme', 'ipwa')); ?>/images/logo-small.png"
+               src="<?php print file_create_url(drupal_get_path('theme', 'ipwa')); ?>/images/NRW_4.0_Logo_Responsive.svg"
                alt="<?php print t('Home'); ?>"/>
         </a>
       <?php endif; ?>
