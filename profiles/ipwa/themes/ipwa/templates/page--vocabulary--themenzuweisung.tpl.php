@@ -216,7 +216,7 @@
         <?php  $view = views_get_view_result("alles_zum_thema", "block",arg(2)); ?>
         <?php $term_view = ''; ?>
         <?php if (!empty($view)): ?>
-          <?php $term_view = '<h2 class="view-title">' . t('Alles Zum Thema') . '</h2>'; ?>
+          <?php $term_view = '<h2 class="view-title">' . t('Alles zum Thema') . '</h2>'; ?>
           <?php //for embedding view 'Alles zum thema'
           $term_view .= views_embed_view("alles_zum_thema", "block", arg(2)); ?>
           <?php print $term_view; ?>

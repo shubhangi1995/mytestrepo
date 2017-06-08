@@ -115,7 +115,6 @@ function ipwa_base_form_alter(&$form, &$form_state, $form_id) {
     $filters = array('term_node_tid_depth', 'term_node_tid_depth_1', 'term_node_tid_depth_2', 'term_node_tid_depth_3');
     foreach ($filters as $filter) {
       foreach ($form[$filter]['#options'] as $key => $value) {
-        //print_r($value);
         if (isset($value->option)) {
           foreach ($value->option as $option_key => $option_value) {
             $fir_character = substr($option_value, 0, 1);

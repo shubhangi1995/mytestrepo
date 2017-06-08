@@ -1684,7 +1684,7 @@ Publikation|Publikationen'),
     t('PDF'),
     t('publikation'),
     t('Content entity referenced from field_publikation'),
-    t('Publikation downloaden'),
+      t(' downloaden'),
   );
   $export['related_content'] = $view;
 
