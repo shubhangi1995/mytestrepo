@@ -2,7 +2,8 @@
     background: $color-light-blue;
 
     .view-title {
-        @extend .container;       
+        @extend .container;   
+          font-size:28px;		
     }
 
     .group-page-info {
