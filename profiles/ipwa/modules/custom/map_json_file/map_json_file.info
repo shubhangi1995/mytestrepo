@@ -1,0 +1,3 @@
+name = Map JSON File
+description = This module is basically create a new file and paste all the Map related JSON data into that file
+core = 7.x

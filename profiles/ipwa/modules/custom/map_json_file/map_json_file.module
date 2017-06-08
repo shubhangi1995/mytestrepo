@@ -1,0 +1,50 @@
+<?php
+
+/**
+ * Implements hook_permission().
+ */
+function map_json_file_permission() {
+  return array(
+    'map json data' => array(
+      'title' => t('Map JSON Data'),
+      'description' => t('Allow user to generate Map Json data and copy into the file.'),
+    ),
+  );
+}
+
+/*
+ * Implementation of hook_menu()
+ */
+function map_json_file_menu(){
+  $items['admin/map/json_data'] = array(
+    'title' => 'Map JSON Data',
+    'description' => 'This page provides the Map JSON data in a file.',
+    'page callback' => '_map_json_file_and_data',
+    'access arguments' => array('map json data'),
+  );
+  return $items;
+}
+
+/**
+ * Callback function for hook_menu().
+ * This function is basically for fetching JSON data from '/map-all'
+ * URL and create a new file into the Files folder and copy all
+ * the content of '/map-all' URL.
+ */
+function _map_json_file_and_data() {
+  global $base_url;
+  $file = $base_url . '/map-all';
+  $content = _curl_callback_function($file);
+  $file = file_save_data($content, 'public://map-static.json', $replace = FILE_EXISTS_REPLACE) or die('Something went wrong. Please try again');
+  print 'JSON data of Map copied to sites/default/files/map-static.json file';
+}
+
+function _curl_callback_function($url) {
+  $ch = curl_init();
+  curl_setopt($ch, CURLOPT_URL, $url);
+  curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+  curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 0);
+  $data = curl_exec($ch);
+  curl_close($ch);
+  return $data;
+}
