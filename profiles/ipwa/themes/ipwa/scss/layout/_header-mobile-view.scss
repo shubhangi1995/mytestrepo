@@ -3,6 +3,7 @@
         .navbar-header {
             .logo {
                 padding-left: 20px;
+                padding-right: 20px;
 
                 .big {
                     display: none;
@@ -27,10 +28,6 @@
                     }
                 }
             }
-        }
-
-        .nrw-eu-logo {
-            display: none;
         }
 
         .navbar-collapse {
@@ -68,22 +65,24 @@
 
             .region-navigation {
                 padding-top: 0;
-				
-				.block-ipwa-search #ipwa-search-block-form {
-				  width:100%;
-				  padding:0 15px;
-				    .cross-link{
-					 right:20px;
-					}
-				  
-				   .form-group .form-control {
-				     width:100%;
-				   }
-				   .btn-primary::before{
-				    position:absolute;
-					right:23px;
-				   }
-				}
+
+                .block-ipwa-search #ipwa-search-block-form {
+                    width: 100%;
+                    padding: 0 15px;
+
+                    .cross-link {
+                        right: 20px;
+                    }
+
+                    .form-group .form-control {
+                        width: 100%;
+                    }
+
+                    .btn-primary::before {
+                        position: absolute;
+                        right: 23px;
+                    }
+                }
 
                 .tb-megamenu {
                     .btn-navbar {
@@ -203,3 +202,22 @@
     }
 }
 
+@media (max-width: 480px) {
+    header .navbar-header {
+        .logo {
+            padding: 0 10px;
+
+            .small {
+                width: 100px;
+            }
+        }
+
+        a img {
+            width: 125px;
+        }
+
+        .navbar-toggle {
+            margin-top: 0;
+        }
+    }
+}

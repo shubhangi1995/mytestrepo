@@ -6672,27 +6672,25 @@ header .navbar-collapse {
 @media (max-width: 1024px) {
   /* line 4, ../scss/layout/_header-mobile-view.scss */
   header .navbar-header .logo {
-    padding-left: 20px; }
-    /* line 7, ../scss/layout/_header-mobile-view.scss */
+    padding-left: 20px;
+    padding-right: 20px; }
+    /* line 8, ../scss/layout/_header-mobile-view.scss */
     header .navbar-header .logo .big {
       display: none; }
-    /* line 11, ../scss/layout/_header-mobile-view.scss */
+    /* line 12, ../scss/layout/_header-mobile-view.scss */
     header .navbar-header .logo .small {
       display: block; }
-  /* line 16, ../scss/layout/_header-mobile-view.scss */
+  /* line 17, ../scss/layout/_header-mobile-view.scss */
   header .navbar-header .navbar-toggle {
     border: none;
     display: block; }
-    /* line 20, ../scss/layout/_header-mobile-view.scss */
+    /* line 21, ../scss/layout/_header-mobile-view.scss */
     header .navbar-header .navbar-toggle:hover, header .navbar-header .navbar-toggle:focus {
       background: none; }
-    /* line 25, ../scss/layout/_header-mobile-view.scss */
+    /* line 26, ../scss/layout/_header-mobile-view.scss */
     header .navbar-header .navbar-toggle.active .icon-bar {
       background: #e74712; }
-  /* line 32, ../scss/layout/_header-mobile-view.scss */
-  header .nrw-eu-logo {
-    display: none; }
-  /* line 36, ../scss/layout/_header-mobile-view.scss */
+  /* line 33, ../scss/layout/_header-mobile-view.scss */
   header .navbar-collapse {
     position: absolute;
     z-index: 9999;
@@ -6700,66 +6698,66 @@ header .navbar-collapse {
     width: 100%;
     top: 58px;
     margin: 0; }
-    /* line 44, ../scss/layout/_header-mobile-view.scss */
+    /* line 41, ../scss/layout/_header-mobile-view.scss */
     header .navbar-collapse .search-icon {
       padding: 20px;
       width: 100%;
       text-align: left;
       border-bottom: 1px solid #949d9e;
       background-color: #eff2f7; }
-    /* line 52, ../scss/layout/_header-mobile-view.scss */
+    /* line 49, ../scss/layout/_header-mobile-view.scss */
     header .navbar-collapse ul.navbar-nav {
       width: 100%;
       float: left;
       margin: 0; }
-      /* line 57, ../scss/layout/_header-mobile-view.scss */
+      /* line 54, ../scss/layout/_header-mobile-view.scss */
       header .navbar-collapse ul.navbar-nav > li {
         padding: 20px;
         border-bottom: 1px solid #949d9e;
         text-align: left;
         background-color: #eff2f7; }
-        /* line 63, ../scss/layout/_header-mobile-view.scss */
+        /* line 60, ../scss/layout/_header-mobile-view.scss */
         header .navbar-collapse ul.navbar-nav > li a {
           padding: 0; }
-    /* line 69, ../scss/layout/_header-mobile-view.scss */
+    /* line 66, ../scss/layout/_header-mobile-view.scss */
     header .navbar-collapse .region-navigation {
       padding-top: 0; }
-      /* line 72, ../scss/layout/_header-mobile-view.scss */
+      /* line 69, ../scss/layout/_header-mobile-view.scss */
       header .navbar-collapse .region-navigation .block-ipwa-search #ipwa-search-block-form {
         width: 100%;
         padding: 0 15px; }
-        /* line 75, ../scss/layout/_header-mobile-view.scss */
+        /* line 73, ../scss/layout/_header-mobile-view.scss */
         header .navbar-collapse .region-navigation .block-ipwa-search #ipwa-search-block-form .cross-link {
           right: 20px; }
-        /* line 79, ../scss/layout/_header-mobile-view.scss */
+        /* line 77, ../scss/layout/_header-mobile-view.scss */
         header .navbar-collapse .region-navigation .block-ipwa-search #ipwa-search-block-form .form-group .form-control {
           width: 100%; }
-        /* line 82, ../scss/layout/_header-mobile-view.scss */
+        /* line 81, ../scss/layout/_header-mobile-view.scss */
         header .navbar-collapse .region-navigation .block-ipwa-search #ipwa-search-block-form .btn-primary::before {
           position: absolute;
           right: 23px; }
-      /* line 89, ../scss/layout/_header-mobile-view.scss */
+      /* line 88, ../scss/layout/_header-mobile-view.scss */
       header .navbar-collapse .region-navigation .tb-megamenu .btn-navbar {
         display: none; }
-      /* line 93, ../scss/layout/_header-mobile-view.scss */
+      /* line 92, ../scss/layout/_header-mobile-view.scss */
       header .navbar-collapse .region-navigation .tb-megamenu .nav-collapse {
         height: auto !important;
         display: block;
         background: 0;
         position: static;
         margin: 0; }
-      /* line 102, ../scss/layout/_header-mobile-view.scss */
+      /* line 101, ../scss/layout/_header-mobile-view.scss */
       header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav > li.dropdown.open > a {
         border-bottom: none; }
-      /* line 106, ../scss/layout/_header-mobile-view.scss */
+      /* line 105, ../scss/layout/_header-mobile-view.scss */
       header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav > li.active > a {
         border-bottom: 0;
         padding-bottom: 20px; }
-      /* line 111, ../scss/layout/_header-mobile-view.scss */
+      /* line 110, ../scss/layout/_header-mobile-view.scss */
       header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav > li {
         width: 100%;
         border-bottom: 1px solid #949d9e; }
-        /* line 115, ../scss/layout/_header-mobile-view.scss */
+        /* line 114, ../scss/layout/_header-mobile-view.scss */
         header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav > li > a {
           border: 0;
           width: 100%;
@@ -6769,63 +6767,76 @@ header .navbar-collapse {
           cursor: pointer;
           display: block;
           padding-left: 75px; }
-          /* line 125, ../scss/layout/_header-mobile-view.scss */
+          /* line 124, ../scss/layout/_header-mobile-view.scss */
           header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav > li > a:before {
             margin-top: 0;
             top: 10px;
             left: 20px; }
-        /* line 132, ../scss/layout/_header-mobile-view.scss */
+        /* line 131, ../scss/layout/_header-mobile-view.scss */
         header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav > li .tb-megamenu-submenu {
           display: none;
           padding-top: 0;
           padding-bottom: 10px;
           position: relative; }
-          /* line 138, ../scss/layout/_header-mobile-view.scss */
+          /* line 137, ../scss/layout/_header-mobile-view.scss */
           header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav > li .tb-megamenu-submenu .mega-dropdown-inner {
             width: auto; }
-            /* line 141, ../scss/layout/_header-mobile-view.scss */
+            /* line 140, ../scss/layout/_header-mobile-view.scss */
             header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav > li .tb-megamenu-submenu .mega-dropdown-inner .tb-submenu-left {
               cursor: pointer;
               width: 100%; }
-              /* line 145, ../scss/layout/_header-mobile-view.scss */
+              /* line 144, ../scss/layout/_header-mobile-view.scss */
               header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav > li .tb-megamenu-submenu .mega-dropdown-inner .tb-submenu-left .mega-inner {
                 padding: 0;
                 width: auto;
                 border-bottom: 1px solid #18243b;
                 border-top: 1px solid #18243b; }
-                /* line 151, ../scss/layout/_header-mobile-view.scss */
+                /* line 150, ../scss/layout/_header-mobile-view.scss */
                 header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav > li .tb-megamenu-submenu .mega-dropdown-inner .tb-submenu-left .mega-inner .tb-block {
                   margin-bottom: 0; }
-              /* line 156, ../scss/layout/_header-mobile-view.scss */
+              /* line 155, ../scss/layout/_header-mobile-view.scss */
               header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav > li .tb-megamenu-submenu .mega-dropdown-inner .tb-submenu-left h2.block-title {
                 padding: 20px;
                 margin-bottom: 0; }
-              /* line 161, ../scss/layout/_header-mobile-view.scss */
+              /* line 160, ../scss/layout/_header-mobile-view.scss */
               header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav > li .tb-megamenu-submenu .mega-dropdown-inner .tb-submenu-left ul li {
                 padding: 20px;
                 margin-bottom: 0;
                 border-top: 1px solid #18243b;
                 background: #273753; }
-                /* line 167, ../scss/layout/_header-mobile-view.scss */
+                /* line 166, ../scss/layout/_header-mobile-view.scss */
                 header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav > li .tb-megamenu-submenu .mega-dropdown-inner .tb-submenu-left ul li a {
                   border-top: 0;
                   padding-left: 0; }
-                  /* line 171, ../scss/layout/_header-mobile-view.scss */
+                  /* line 170, ../scss/layout/_header-mobile-view.scss */
                   header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav > li .tb-megamenu-submenu .mega-dropdown-inner .tb-submenu-left ul li a:before {
                     display: none; }
-          /* line 179, ../scss/layout/_header-mobile-view.scss */
+          /* line 178, ../scss/layout/_header-mobile-view.scss */
           header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav > li .tb-megamenu-submenu .tb-submenu-right {
             width: 100%; }
-            /* line 182, ../scss/layout/_header-mobile-view.scss */
+            /* line 181, ../scss/layout/_header-mobile-view.scss */
             header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav > li .tb-megamenu-submenu .tb-submenu-right .mega-inner {
               padding-top: 20px;
               width: auto; }
-              /* line 187, ../scss/layout/_header-mobile-view.scss */
+              /* line 186, ../scss/layout/_header-mobile-view.scss */
               header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav > li .tb-megamenu-submenu .tb-submenu-right .mega-inner .view-themenzuweisung-flyouts .view-header {
                 padding-bottom: 10px; }
-              /* line 191, ../scss/layout/_header-mobile-view.scss */
+              /* line 190, ../scss/layout/_header-mobile-view.scss */
               header .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav > li .tb-megamenu-submenu .tb-submenu-right .mega-inner .view-themenzuweisung-flyouts .view-content .views-row a {
                 border-top: 0; } }
+@media (max-width: 480px) {
+  /* line 207, ../scss/layout/_header-mobile-view.scss */
+  header .navbar-header .logo {
+    padding: 0 10px; }
+    /* line 210, ../scss/layout/_header-mobile-view.scss */
+    header .navbar-header .logo .small {
+      width: 100px; }
+  /* line 215, ../scss/layout/_header-mobile-view.scss */
+  header .navbar-header a img {
+    width: 125px; }
+  /* line 219, ../scss/layout/_header-mobile-view.scss */
+  header .navbar-header .navbar-toggle {
+    margin-top: 0; } }
 @media (max-width: 767px) {
   /* line 5, ../scss/layout/_footer-mobile-view.scss */
   footer #block-menu-menu-footer-navigation ul {
