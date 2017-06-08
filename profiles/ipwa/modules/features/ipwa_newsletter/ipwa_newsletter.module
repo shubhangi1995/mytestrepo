@@ -71,6 +71,9 @@ function ipwa_newsletter_form_alter(&$form, &$form_state, $form_id) {
     }
     $form['#submit'][] = 'ipwa_newsletter_webform_client_form_submit';
   }
+  if($form_id == 'simplenews_node_form'){
+    $form['field_simplenews_term']['#access'] = 0;
+  }
 }
 
 /**
@@ -82,4 +85,3 @@ function ipwa_newsletter_webform_client_form_submit($form, &$form_state){
     simplenews_subscribe_user($mail, 48, $confirm = FALSE, $source = 'action', NULL);
   }
 }
-
