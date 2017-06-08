@@ -226,7 +226,7 @@
 				<span style="font-weight:bold;">Folden sie uns auf :</span> <span><a href="#"><img src = "<?php print file_create_url(drupal_get_path('theme', 'ipwa')); ?>/images/fb.png" alt="FB" style="margin-right:5px;"/></a></span><span style="color:#eee;font-size:8px;">12</span><span><a href="#"><img src = "<?php print file_create_url(drupal_get_path('theme', 'ipwa')); ?>/images/twitter.png" alt="Twitter" style="margin-right:5px;"/></a></span> <span style="color:#eee;font-size:8px;">12</span><span><a href="#"><img src = "<?php print file_create_url(drupal_get_path('theme', 'ipwa')); ?>/images/linkedin.png" alt="LinkedIn" style="margin-right:5px;"/></a></span>
 				</td>
 				<td align="right">
-				<a href="#">Impressum</a><span style="color:#eee;font-size:8px;">12</span><a href="#">Contact</a>
+				<a href="#">Impressum</a><span style="color:#eee;font-size:8px;">12</span><a href="<?php print $base_url.'/de/content/kontaktformular'; ?>">Contact</a>
 				</td>
 				</tr>
 				<tr style="padding:10px 20px;">
