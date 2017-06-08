@@ -249,7 +249,7 @@
 
             .views-exposed-widget {
                 width: auto;
-                 @include devicebreak(x-large) {
+                 @include devicebreak(large) {
                     width: 25%;
 					height:49px;
                 }
@@ -285,6 +285,16 @@
                         .select2-selection__rendered {
                             color: $color-white;
                             padding-left: 20px;
+							width:260px;
+							
+							@include devicebreak(large){
+							  width:240px;
+							}
+							
+							@include devicebreak(x-large){
+							  width:260px;
+							}
+							
                         }
 
                         .select2-selection__arrow {
