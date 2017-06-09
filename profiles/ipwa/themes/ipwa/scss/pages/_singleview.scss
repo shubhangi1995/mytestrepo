@@ -199,10 +199,16 @@
 
         padding: 40px 15px;
         position: relative;
+		
+		@include devicebreak(x-medium){
+		  padding-right:30px;
+		  padding-left:30px;
+		}
 
         @include devicebreak(x-large) {
             padding: 40px 0;
         }
+		
 
 
         .view-header {
@@ -270,6 +276,12 @@
 
 .group-page-info, .group-page-bottom {
      padding: 45px 20px 20px;
+	 
+	 @include devicebreak(x-medium){
+		  padding-right:30px;
+		  padding-left:30px;
+		}
+	 
     @include devicebreak(x-large) {
          padding: 60px 0;
 		 max-width:875px;
@@ -621,7 +633,7 @@
 							display:inline-block;
 							width:100%;
 							font-size:18px;
-							@include devicebreak(medium){
+							@include devicebreak(x-medium){
 								font-size:20px;
 							}
                             &::before {
@@ -656,7 +668,7 @@
                     display: inline-block;
                     padding-left: 35px;
 					font-size:18px;
-					@include devicebreak(medium){
+					@include devicebreak(x-medium){
 						font-size:20px;
 					}
                     &::before {
@@ -694,7 +706,7 @@
 
                     .field-content {
                         font-size: 18px;
-						@include devicebreak(medium){
+						@include devicebreak(x-medium){   
 							font-size:22px;
 						}
                     }

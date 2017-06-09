@@ -238,6 +238,14 @@ h1 {
 }
 
 .container {
+
+@include devicebreak(x-medium){
+	padding-left:30px;
+	padding-right:30px;
+	
+	}
+	
+	
     @include devicebreak(x-large) {
         padding: 0;
     }

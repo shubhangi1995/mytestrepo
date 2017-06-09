@@ -217,6 +217,12 @@ jQuery('.tb-megamenu-submenu.dropdown-menu').attr('style','display:none !importa
 		window.print();
 	});
 	
+if(jQuery(window).innerWidth() <= 1024){
+	jQuery(".nrw-eu-logo a").insertAfter(jQuery(".navbar-header .navbar-btn"));
+	
+}
+	
+	
 });
 
 
