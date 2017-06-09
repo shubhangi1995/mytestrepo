@@ -186,7 +186,7 @@ function ipwa_projekt__field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 10,
+        'weight' => 6,
       ),
       'paragraph' => array(
         'label' => 'above',

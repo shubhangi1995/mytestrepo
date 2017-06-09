@@ -38,6 +38,7 @@ dependencies[] = transliteration
 dependencies[] = variable
 dependencies[] = views
 dependencies[] = views_conditional
+dependencies[] = views_geojson
 dependencies[] = youtube
 features[ckeditor_profile][] = Full
 features[ctools][] = field_group:field_group:1
