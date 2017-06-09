@@ -186,7 +186,7 @@ function ipwa_projekt__field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 10,
+        'weight' => 6,
       ),
       'paragraph' => array(
         'label' => 'above',
@@ -547,6 +547,45 @@ function ipwa_projekt__field_default_field_instances() {
       ),
       'type' => 'entityreference_autocomplete',
       'weight' => 14,
+    ),
+  );
+
+  // Exported field_instance: 'node-projekt-field_plz'.
+  $field_instances['node-projekt-field_plz'] = array(
+    'bundle' => 'projekt',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 5,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_plz',
+    'label' => 'PLZ',
+    'required' => 1,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 36,
     ),
   );
 
@@ -1026,6 +1065,7 @@ Schema für externe Links: http://www…',
   t('Latitude');
   t('Longitude');
   t('Meldungen zum Thema');
+  t('PLZ');
   t('Projekte zum Thema');
   t('Quelle');
   t('Schema für Links: http://example.com');

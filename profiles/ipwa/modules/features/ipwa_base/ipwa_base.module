@@ -129,5 +129,15 @@ function ipwa_base_form_alter(&$form, &$form_state, $form_id) {
     }
   }
 }
+function ipwa_base_form_views_exposed_form_alter(&$form, &$form_state, $form_id)
+{
+  if ($form['#id'] == 'views-exposed-form-projekt-map-project-map') {
+    $view = views_get_current_view();
+    if (isset($view->exposed_input['type'])) {
+      $form['#info']['filter-field_akteurstyp']['label'] = ' ';
+      $form['field_akteurstyp']['#access'] = FALSE;
 
+    }
+  }
+}
 
