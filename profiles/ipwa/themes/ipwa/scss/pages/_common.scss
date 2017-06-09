@@ -240,7 +240,8 @@ h1 {
 .container {
 
 @include devicebreak(x-medium){
-	padding:0 30px;
+	padding-left:30px;
+	padding-right:30px;
 	
 	}
 	
