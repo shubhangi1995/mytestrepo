@@ -58,11 +58,23 @@ function ipwa_projekt__strongarm() {
       'paragraph' => array(
         'custom_settings' => TRUE,
       ),
+      'email_plain' => array(
+        'custom_settings' => FALSE,
+      ),
+      'email_html' => array(
+        'custom_settings' => FALSE,
+      ),
+      'email_textalt' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(
         'title' => array(
           'weight' => '0',
+        ),
+        'path' => array(
+          'weight' => '30',
         ),
       ),
       'display' => array(),
