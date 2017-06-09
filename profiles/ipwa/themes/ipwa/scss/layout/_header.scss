@@ -17,6 +17,10 @@ padding-right:0;
 }
 	
     .navbar-header {
+	@include devicebreak(x-medium){
+padding-left:15px;
+padding-right:15px;
+}
         .navbar-brand {
             display: none;
         }
