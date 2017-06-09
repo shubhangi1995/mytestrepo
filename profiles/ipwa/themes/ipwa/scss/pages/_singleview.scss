@@ -199,10 +199,16 @@
 
         padding: 40px 15px;
         position: relative;
+		
+		@include devicebreak(x-medium){
+		  padding-right:30px;
+		  padding-left:30px;
+		}
 
         @include devicebreak(x-large) {
             padding: 40px 0;
         }
+		
 
 
         .view-header {
@@ -270,6 +276,12 @@
 
 .group-page-info, .group-page-bottom {
      padding: 45px 20px 20px;
+	 
+	 @include devicebreak(x-medium){
+		  padding-right:30px;
+		  padding-left:30px;
+		}
+	 
     @include devicebreak(x-large) {
          padding: 60px 0;
 		 max-width:875px;
