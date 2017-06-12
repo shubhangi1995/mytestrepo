@@ -135,6 +135,10 @@ function ipwa_preprocess_views_view_unformatted(&$vars) {
   if (function_exists($function_name)) {
     $function_name($vars);
   }
+  $view = $vars['view'];
+  foreach($view->result as $id => $value) {
+    $vars['node_nid'][$id] = $value->nid;
+  }
 }
 
 function ipwa_preprocess_views_view_unformatted__alles_zum_thema(&$vars){

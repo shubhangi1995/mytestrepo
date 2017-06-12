@@ -205,6 +205,12 @@ function ipwa_menu_default_fe_block_settings() {
         'theme' => 'ipwa',
         'weight' => 0,
       ),
+      'stark' => array(
+        'region' => '',
+        'status' => 0,
+        'theme' => 'stark',
+        'weight' => 0,
+      ),
     ),
     'title' => 'Immer gut informiert',
     'visibility' => 0,

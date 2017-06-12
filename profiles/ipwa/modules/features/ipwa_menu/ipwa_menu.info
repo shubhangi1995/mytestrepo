@@ -2,6 +2,7 @@ name = IPWA_Menu
 description = Feature for menu
 core = 7.x
 package = IPWA
+dependencies[] = addthis
 dependencies[] = fe_block
 dependencies[] = features
 dependencies[] = menu

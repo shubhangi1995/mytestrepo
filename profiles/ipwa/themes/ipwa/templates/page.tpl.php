@@ -181,10 +181,12 @@
 
 <?php if (!empty($page['footer'])): ?>
   <footer class="footer <?php print $container_class; ?>">
-    <?php ?>
     <?php print render($page['footer']); ?>
-    <div class="print_icon">
-    <button id = 'page_print'>Print this page</button>
-     </div>
   </footer>
+<?php endif; ?>
+
+<?php if (!empty($page['lower_footer'])): ?>
+  <lower_footer class="lower_footer <?php print $container_class; ?>">
+    <?php print render($page['lower_footer']); ?>
+  </lower_footer>
 <?php endif; ?>
