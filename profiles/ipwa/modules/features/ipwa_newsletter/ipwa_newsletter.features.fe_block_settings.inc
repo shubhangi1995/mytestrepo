@@ -30,10 +30,10 @@ function ipwa_newsletter_default_fe_block_settings() {
         'weight' => 0,
       ),
       'ipwa' => array(
-        'region' => 'content',
+        'region' => 'footer',
         'status' => 1,
         'theme' => 'ipwa',
-        'weight' => 0,
+        'weight' => -36,
       ),
       'stark' => array(
         'region' => '',
