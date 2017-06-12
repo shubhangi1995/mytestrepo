@@ -30,10 +30,10 @@ function ipwa_menu_default_fe_block_settings() {
         'weight' => 0,
       ),
       'ipwa' => array(
-        'region' => 'footer',
+        'region' => 'lower_footer',
         'status' => 1,
         'theme' => 'ipwa',
-        'weight' => -32,
+        'weight' => -35,
       ),
       'stark' => array(
         'region' => '',
@@ -67,7 +67,7 @@ function ipwa_menu_default_fe_block_settings() {
         'region' => 'footer',
         'status' => 1,
         'theme' => 'ipwa',
-        'weight' => -34,
+        'weight' => -36,
       ),
       'stark' => array(
         'region' => 'footer',
@@ -77,40 +77,6 @@ function ipwa_menu_default_fe_block_settings() {
       ),
     ),
     'title' => '<none>',
-    'visibility' => 0,
-  );
-
-  $export['block-footer_icon'] = array(
-    'cache' => -1,
-    'custom' => 0,
-    'i18n_block_language' => array(),
-    'i18n_mode' => 0,
-    'machine_name' => 'footer_icon',
-    'module' => 'block',
-    'node_types' => array(),
-    'pages' => '',
-    'roles' => array(),
-    'themes' => array(
-      'bartik' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'bartik',
-        'weight' => 0,
-      ),
-      'ipwa' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'ipwa',
-        'weight' => 0,
-      ),
-      'stark' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'stark',
-        'weight' => 0,
-      ),
-    ),
-    'title' => 'Gefördert durch',
     'visibility' => 0,
   );
 
@@ -265,7 +231,7 @@ function ipwa_menu_default_fe_block_settings() {
         'region' => 'footer',
         'status' => 1,
         'theme' => 'ipwa',
-        'weight' => -33,
+        'weight' => -35,
       ),
       'stark' => array(
         'region' => 'footer',

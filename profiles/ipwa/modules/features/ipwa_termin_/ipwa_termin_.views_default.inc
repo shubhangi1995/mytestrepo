@@ -438,7 +438,7 @@ function ipwa_termin__views_default_views() {
   $handler->display->display_options['row_plugin'] = 'calendar_entity';
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['arguments'] = FALSE;
-  /* Contextual filter: Date: Date (node) */
+  /* Contextual filter: Datum: Date (node) */
   $handler->display->display_options['arguments']['date_argument']['id'] = 'date_argument';
   $handler->display->display_options['arguments']['date_argument']['table'] = 'node';
   $handler->display->display_options['arguments']['date_argument']['field'] = 'date_argument';
@@ -478,7 +478,7 @@ function ipwa_termin__views_default_views() {
   $handler->display->display_options['row_plugin'] = 'calendar_entity';
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['arguments'] = FALSE;
-  /* Contextual filter: Date: Date (node) */
+  /* Contextual filter: Datum: Date (node) */
   $handler->display->display_options['arguments']['date_argument']['id'] = 'date_argument';
   $handler->display->display_options['arguments']['date_argument']['table'] = 'node';
   $handler->display->display_options['arguments']['date_argument']['field'] = 'date_argument';
@@ -517,7 +517,7 @@ function ipwa_termin__views_default_views() {
   $handler->display->display_options['row_plugin'] = 'calendar_entity';
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Title */
+  /* Feld: Inhalt: Titel */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
@@ -526,7 +526,7 @@ function ipwa_termin__views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title']['hide_alter_empty'] = FALSE;
-  /* Field: Content: Datum */
+  /* Feld: Inhalt: Datum */
   $handler->display->display_options['fields']['field_event_datum']['id'] = 'field_event_datum';
   $handler->display->display_options['fields']['field_event_datum']['table'] = 'field_data_field_event_datum';
   $handler->display->display_options['fields']['field_event_datum']['field'] = 'field_event_datum';
@@ -544,7 +544,7 @@ function ipwa_termin__views_default_views() {
   $handler->display->display_options['fields']['field_event_datum']['group_rows'] = FALSE;
   $handler->display->display_options['fields']['field_event_datum']['delta_offset'] = '0';
   $handler->display->display_options['defaults']['arguments'] = FALSE;
-  /* Contextual filter: Date: Date (node) */
+  /* Contextual filter: Datum: Date (node) */
   $handler->display->display_options['arguments']['date_argument']['id'] = 'date_argument';
   $handler->display->display_options['arguments']['date_argument']['table'] = 'node';
   $handler->display->display_options['arguments']['date_argument']['field'] = 'date_argument';
@@ -584,7 +584,7 @@ function ipwa_termin__views_default_views() {
   $handler->display->display_options['row_plugin'] = 'calendar_entity';
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['arguments'] = FALSE;
-  /* Contextual filter: Date: Date (node) */
+  /* Contextual filter: Datum: Date (node) */
   $handler->display->display_options['arguments']['date_argument']['id'] = 'date_argument';
   $handler->display->display_options['arguments']['date_argument']['table'] = 'node';
   $handler->display->display_options['arguments']['date_argument']['field'] = 'date_argument';
@@ -615,14 +615,14 @@ function ipwa_termin__views_default_views() {
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Filter criterion: Content: Published */
+  /* Filter criterion: Inhalt: Veröffentlicht */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
   $handler->display->display_options['filters']['status']['field'] = 'status';
   $handler->display->display_options['filters']['status']['value'] = 1;
   $handler->display->display_options['filters']['status']['group'] = 0;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: Date: Date (node) */
+  /* Filter criterion: Datum: Date (node) */
   $handler->display->display_options['filters']['date_filter']['id'] = 'date_filter';
   $handler->display->display_options['filters']['date_filter']['table'] = 'node';
   $handler->display->display_options['filters']['date_filter']['field'] = 'date_filter';
@@ -691,26 +691,26 @@ function ipwa_termin__views_default_views() {
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['row_options']['hide_empty'] = TRUE;
-  /* Field: Content: Title */
+  /* Feld: Inhalt: Titel */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  /* Sort criterion: Content: Post date */
+  /* Sort criterion: Inhalt: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
   $handler->display->display_options['sorts']['created']['field'] = 'created';
   $handler->display->display_options['sorts']['created']['order'] = 'DESC';
-  /* Filter criterion: Content: Published */
+  /* Filter criterion: Inhalt: Veröffentlicht */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
   $handler->display->display_options['filters']['status']['field'] = 'status';
   $handler->display->display_options['filters']['status']['value'] = 1;
   $handler->display->display_options['filters']['status']['group'] = 1;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: Content: Type */
+  /* Filter criterion: Inhalt: Typ */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
@@ -765,14 +765,14 @@ function ipwa_termin__views_default_views() {
     ),
   );
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Nid */
+  /* Feld: Inhalt: Nid */
   $handler->display->display_options['fields']['nid']['id'] = 'nid';
   $handler->display->display_options['fields']['nid']['table'] = 'node';
   $handler->display->display_options['fields']['nid']['field'] = 'nid';
   $handler->display->display_options['fields']['nid']['label'] = '';
   $handler->display->display_options['fields']['nid']['exclude'] = TRUE;
   $handler->display->display_options['fields']['nid']['element_label_colon'] = FALSE;
-  /* Field: Content: Title */
+  /* Feld: Inhalt: Titel */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
@@ -781,7 +781,7 @@ function ipwa_termin__views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['max_length'] = '140';
   $handler->display->display_options['fields']['title']['alter']['trim'] = TRUE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
-  /* Field: Content: Dieser Artikel gehört zu */
+  /* Feld: Inhalt: Dieser Artikel gehört zu */
   $handler->display->display_options['fields']['field_themenzuweisung']['id'] = 'field_themenzuweisung';
   $handler->display->display_options['fields']['field_themenzuweisung']['table'] = 'field_data_field_themenzuweisung';
   $handler->display->display_options['fields']['field_themenzuweisung']['field'] = 'field_themenzuweisung';
@@ -790,7 +790,7 @@ function ipwa_termin__views_default_views() {
   $handler->display->display_options['fields']['field_themenzuweisung']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_themenzuweisung']['delta_offset'] = '0';
   $handler->display->display_options['fields']['field_themenzuweisung']['separator'] = '';
-  /* Field: Content: Datum */
+  /* Feld: Inhalt: Datum */
   $handler->display->display_options['fields']['field_event_datum']['id'] = 'field_event_datum';
   $handler->display->display_options['fields']['field_event_datum']['table'] = 'field_data_field_event_datum';
   $handler->display->display_options['fields']['field_event_datum']['field'] = 'field_event_datum';
@@ -809,14 +809,14 @@ function ipwa_termin__views_default_views() {
   );
   $handler->display->display_options['fields']['field_event_datum']['delta_offset'] = '0';
   $handler->display->display_options['fields']['field_event_datum']['separator'] = '';
-  /* Field: Content: Ort */
+  /* Feld: Inhalt: Ort */
   $handler->display->display_options['fields']['field_ort']['id'] = 'field_ort';
   $handler->display->display_options['fields']['field_ort']['table'] = 'field_data_field_ort';
   $handler->display->display_options['fields']['field_ort']['field'] = 'field_ort';
   $handler->display->display_options['fields']['field_ort']['label'] = '';
   $handler->display->display_options['fields']['field_ort']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_ort']['element_label_colon'] = FALSE;
-  /* Field: Global: Custom text */
+  /* Feld: Global: Custom text */
   $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
   $handler->display->display_options['fields']['nothing']['table'] = 'views';
   $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
@@ -839,12 +839,12 @@ function ipwa_termin__views_default_views() {
 </div>';
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
   $handler->display->display_options['defaults']['sorts'] = FALSE;
-  /* Sort criterion: Content: Post date */
+  /* Sort criterion: Inhalt: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
   $handler->display->display_options['sorts']['created']['field'] = 'created';
   $handler->display->display_options['sorts']['created']['order'] = 'DESC';
-  /* Sort criterion: Content: Datum -  start date (field_event_datum) */
+  /* Sort criterion: Inhalt: Datum -  start date (field_event_datum) */
   $handler->display->display_options['sorts']['field_event_datum_value']['id'] = 'field_event_datum_value';
   $handler->display->display_options['sorts']['field_event_datum_value']['table'] = 'field_data_field_event_datum';
   $handler->display->display_options['sorts']['field_event_datum_value']['field'] = 'field_event_datum_value';
@@ -852,14 +852,14 @@ function ipwa_termin__views_default_views() {
   $handler->display->display_options['defaults']['arguments'] = FALSE;
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Filter criterion: Content: Published */
+  /* Filter criterion: Inhalt: Veröffentlicht */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
   $handler->display->display_options['filters']['status']['field'] = 'status';
   $handler->display->display_options['filters']['status']['value'] = 1;
   $handler->display->display_options['filters']['status']['group'] = 1;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: Content: Type */
+  /* Filter criterion: Inhalt: Typ */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
@@ -869,7 +869,7 @@ function ipwa_termin__views_default_views() {
     'value' => '',
     'termin' => 'termin',
   );
-  /* Filter criterion: Content: Datum - end date (field_event_datum:value2) */
+  /* Filter criterion: Inhalt: Datum - end date (field_event_datum:value2) */
   $handler->display->display_options['filters']['field_event_datum_value2']['id'] = 'field_event_datum_value2';
   $handler->display->display_options['filters']['field_event_datum_value2']['table'] = 'field_data_field_event_datum';
   $handler->display->display_options['filters']['field_event_datum_value2']['field'] = 'field_event_datum_value2';
@@ -991,26 +991,26 @@ function ipwa_termin__views_default_views() {
   $handler->display->display_options['style_plugin'] = 'grid';
   $handler->display->display_options['style_options']['columns'] = '3';
   $handler->display->display_options['row_plugin'] = 'fields';
-  /* Header: Global: Text area */
+  /* Kopfbereich: Global: Text area */
   $handler->display->display_options['header']['area']['id'] = 'area';
   $handler->display->display_options['header']['area']['table'] = 'views';
   $handler->display->display_options['header']['area']['field'] = 'area';
-  $handler->display->display_options['header']['area']['content'] = '[headline] 
+  $handler->display->display_options['header']['area']['content'] = '<h2>[headline]</h2>
 ';
   $handler->display->display_options['header']['area']['format'] = 'wysiwyg';
-  /* Field: Content: Title */
+  /* Feld: Inhalt: Titel */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  /* Field: Content: Dieser Artikel gehört zu */
+  /* Feld: Inhalt: Dieser Artikel gehört zu */
   $handler->display->display_options['fields']['field_themenzuweisung']['id'] = 'field_themenzuweisung';
   $handler->display->display_options['fields']['field_themenzuweisung']['table'] = 'field_data_field_themenzuweisung';
   $handler->display->display_options['fields']['field_themenzuweisung']['field'] = 'field_themenzuweisung';
   $handler->display->display_options['fields']['field_themenzuweisung']['delta_offset'] = '0';
-  /* Field: Content: Datum */
+  /* Feld: Inhalt: Datum */
   $handler->display->display_options['fields']['field_event_datum']['id'] = 'field_event_datum';
   $handler->display->display_options['fields']['field_event_datum']['table'] = 'field_data_field_event_datum';
   $handler->display->display_options['fields']['field_event_datum']['field'] = 'field_event_datum';
@@ -1022,12 +1022,12 @@ function ipwa_termin__views_default_views() {
     'multiple_to' => '',
     'show_remaining_days' => 0,
   );
-  /* Sort criterion: Content: Post date */
+  /* Sort criterion: Inhalt: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
   $handler->display->display_options['sorts']['created']['field'] = 'created';
   $handler->display->display_options['sorts']['created']['order'] = 'DESC';
-  /* Contextual filter: Content: Nid */
+  /* Contextual filter: Inhalt: Nid */
   $handler->display->display_options['arguments']['nid']['id'] = 'nid';
   $handler->display->display_options['arguments']['nid']['table'] = 'node';
   $handler->display->display_options['arguments']['nid']['field'] = 'nid';
@@ -1038,14 +1038,14 @@ function ipwa_termin__views_default_views() {
   $handler->display->display_options['arguments']['nid']['summary']['number_of_records'] = '0';
   $handler->display->display_options['arguments']['nid']['summary']['format'] = 'default_summary';
   $handler->display->display_options['arguments']['nid']['summary_options']['items_per_page'] = '25';
-  /* Filter criterion: Content: Published */
+  /* Filter criterion: Inhalt: Veröffentlicht */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
   $handler->display->display_options['filters']['status']['field'] = 'status';
   $handler->display->display_options['filters']['status']['value'] = 1;
   $handler->display->display_options['filters']['status']['group'] = 1;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: Content: Type */
+  /* Filter criterion: Inhalt: Typ */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
@@ -1100,7 +1100,7 @@ function ipwa_termin__views_default_views() {
         'bef_select_all_none_nested' => FALSE,
         'bef_term_description' => 0,
         'bef_collapsible' => 0,
-        'autosubmit' => 1,
+        'autosubmit' => 0,
         'is_secondary' => 0,
         'any_label' => 'Alles anzeigen',
         'bef_filter_description' => '',
@@ -1123,7 +1123,7 @@ function ipwa_termin__views_default_views() {
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Dieser Artikel gehört zu */
+  /* Feld: Inhalt: Dieser Artikel gehört zu */
   $handler->display->display_options['fields']['field_themenzuweisung']['id'] = 'field_themenzuweisung';
   $handler->display->display_options['fields']['field_themenzuweisung']['table'] = 'field_data_field_themenzuweisung';
   $handler->display->display_options['fields']['field_themenzuweisung']['field'] = 'field_themenzuweisung';
@@ -1132,7 +1132,7 @@ function ipwa_termin__views_default_views() {
   $handler->display->display_options['fields']['field_themenzuweisung']['group_column'] = 'entity_id';
   $handler->display->display_options['fields']['field_themenzuweisung']['delta_offset'] = '0';
   $handler->display->display_options['fields']['field_themenzuweisung']['separator'] = '';
-  /* Field: Content: Datum */
+  /* Feld: Inhalt: Datum */
   $handler->display->display_options['fields']['field_event_datum']['id'] = 'field_event_datum';
   $handler->display->display_options['fields']['field_event_datum']['table'] = 'field_data_field_event_datum';
   $handler->display->display_options['fields']['field_event_datum']['field'] = 'field_event_datum';
@@ -1150,7 +1150,7 @@ function ipwa_termin__views_default_views() {
   $handler->display->display_options['fields']['field_event_datum']['group_column'] = 'entity_id';
   $handler->display->display_options['fields']['field_event_datum']['delta_offset'] = '0';
   $handler->display->display_options['fields']['field_event_datum']['separator'] = '';
-  /* Field: Content: Title */
+  /* Feld: Inhalt: Titel */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
@@ -1159,7 +1159,7 @@ function ipwa_termin__views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['max_length'] = '140';
   $handler->display->display_options['fields']['title']['alter']['trim'] = TRUE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
-  /* Field: Content: Ort */
+  /* Feld: Inhalt: Ort */
   $handler->display->display_options['fields']['field_ort']['id'] = 'field_ort';
   $handler->display->display_options['fields']['field_ort']['table'] = 'field_data_field_ort';
   $handler->display->display_options['fields']['field_ort']['field'] = 'field_ort';
@@ -1167,14 +1167,14 @@ function ipwa_termin__views_default_views() {
   $handler->display->display_options['fields']['field_ort']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_ort']['group_column'] = 'entity_id';
   $handler->display->display_options['defaults']['sorts'] = FALSE;
-  /* Sort criterion: Content: Datum -  start date (field_event_datum) */
+  /* Sort criterion: Inhalt: Datum -  start date (field_event_datum) */
   $handler->display->display_options['sorts']['field_event_datum_value']['id'] = 'field_event_datum_value';
   $handler->display->display_options['sorts']['field_event_datum_value']['table'] = 'field_data_field_event_datum';
   $handler->display->display_options['sorts']['field_event_datum_value']['field'] = 'field_event_datum_value';
   $handler->display->display_options['sorts']['field_event_datum_value']['order'] = 'DESC';
   $handler->display->display_options['sorts']['field_event_datum_value']['exposed'] = TRUE;
   $handler->display->display_options['sorts']['field_event_datum_value']['expose']['label'] = 'neueste zuerst';
-  /* Sort criterion: Content: Title */
+  /* Sort criterion: Inhalt: Titel */
   $handler->display->display_options['sorts']['title']['id'] = 'title';
   $handler->display->display_options['sorts']['title']['table'] = 'node';
   $handler->display->display_options['sorts']['title']['field'] = 'title';
@@ -1183,14 +1183,14 @@ function ipwa_termin__views_default_views() {
   $handler->display->display_options['defaults']['arguments'] = FALSE;
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Filter criterion: Content: Published */
+  /* Filter criterion: Inhalt: Veröffentlicht */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
   $handler->display->display_options['filters']['status']['field'] = 'status';
   $handler->display->display_options['filters']['status']['value'] = '1';
   $handler->display->display_options['filters']['status']['group'] = 1;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: Content: Type */
+  /* Filter criterion: Inhalt: Typ */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
@@ -1198,13 +1198,13 @@ function ipwa_termin__views_default_views() {
     'termin' => 'termin',
   );
   $handler->display->display_options['filters']['type']['group'] = 1;
-  /* Filter criterion: Content: Datum - end date (field_event_datum:value2) */
+  /* Filter criterion: Inhalt: Datum - end date (field_event_datum:value2) */
   $handler->display->display_options['filters']['field_event_datum_value2']['id'] = 'field_event_datum_value2';
   $handler->display->display_options['filters']['field_event_datum_value2']['table'] = 'field_data_field_event_datum';
   $handler->display->display_options['filters']['field_event_datum_value2']['field'] = 'field_event_datum_value2';
   $handler->display->display_options['filters']['field_event_datum_value2']['operator'] = '>=';
   $handler->display->display_options['filters']['field_event_datum_value2']['default_date'] = 'now';
-  /* Filter criterion: Content: Has taxonomy terms (with depth) */
+  /* Filter criterion: Inhalt: Has taxonomy terms (with depth) */
   $handler->display->display_options['filters']['term_node_tid_depth']['id'] = 'term_node_tid_depth';
   $handler->display->display_options['filters']['term_node_tid_depth']['table'] = 'node';
   $handler->display->display_options['filters']['term_node_tid_depth']['field'] = 'term_node_tid_depth';
@@ -1242,14 +1242,14 @@ function ipwa_termin__views_default_views() {
     'skip_blank_dates' => 0,
   );
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Title */
+  /* Feld: Inhalt: Titel */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  /* Field: Content: Datum */
+  /* Feld: Inhalt: Datum */
   $handler->display->display_options['fields']['field_event_datum']['id'] = 'field_event_datum';
   $handler->display->display_options['fields']['field_event_datum']['table'] = 'field_data_field_event_datum';
   $handler->display->display_options['fields']['field_event_datum']['field'] = 'field_event_datum';
@@ -1264,7 +1264,7 @@ function ipwa_termin__views_default_views() {
     'multiple_to' => '',
     'show_remaining_days' => 0,
   );
-  /* Field: Content: Ort */
+  /* Feld: Inhalt: Ort */
   $handler->display->display_options['fields']['field_ort']['id'] = 'field_ort';
   $handler->display->display_options['fields']['field_ort']['table'] = 'field_data_field_ort';
   $handler->display->display_options['fields']['field_ort']['field'] = 'field_ort';
@@ -1286,7 +1286,7 @@ function ipwa_termin__views_default_views() {
   $handler->display->display_options['row_options']['default_field_elements'] = FALSE;
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['header'] = FALSE;
-  /* Header: Global: Text area */
+  /* Kopfbereich: Global: Text area */
   $handler->display->display_options['header']['area']['id'] = 'area';
   $handler->display->display_options['header']['area']['table'] = 'views';
   $handler->display->display_options['header']['area']['field'] = 'area';
@@ -1294,14 +1294,14 @@ function ipwa_termin__views_default_views() {
 ';
   $handler->display->display_options['header']['area']['format'] = 'wysiwyg';
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Global: Custom text */
+  /* Feld: Global: Custom text */
   $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
   $handler->display->display_options['fields']['nothing']['table'] = 'views';
   $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
   $handler->display->display_options['fields']['nothing']['label'] = '';
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
   $handler->display->display_options['defaults']['arguments'] = FALSE;
-  /* Contextual filter: Content: Nid */
+  /* Contextual filter: Inhalt: Nid */
   $handler->display->display_options['arguments']['nid']['id'] = 'nid';
   $handler->display->display_options['arguments']['nid']['table'] = 'node';
   $handler->display->display_options['arguments']['nid']['field'] = 'nid';
@@ -1335,14 +1335,14 @@ function ipwa_termin__views_default_views() {
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['header'] = FALSE;
-  /* Header: Global: Text area */
+  /* Kopfbereich: Global: Text area */
   $handler->display->display_options['header']['area']['id'] = 'area';
   $handler->display->display_options['header']['area']['table'] = 'views';
   $handler->display->display_options['header']['area']['field'] = 'area';
   $handler->display->display_options['header']['area']['content'] = '<h2 class="pane-title">Aktuelle Veranstaltungen</h2>';
   $handler->display->display_options['header']['area']['format'] = 'wysiwyg';
   $handler->display->display_options['defaults']['footer'] = FALSE;
-  /* Footer: Global: Text area */
+  /* Fußbereich: Global: Text area */
   $handler->display->display_options['footer']['area']['id'] = 'area';
   $handler->display->display_options['footer']['area']['table'] = 'views';
   $handler->display->display_options['footer']['area']['field'] = 'area';
@@ -1353,7 +1353,7 @@ function ipwa_termin__views_default_views() {
 </div>';
   $handler->display->display_options['footer']['area']['format'] = 'wysiwyg';
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Dieser Artikel gehört zu */
+  /* Feld: Inhalt: Dieser Artikel gehört zu */
   $handler->display->display_options['fields']['field_themenzuweisung']['id'] = 'field_themenzuweisung';
   $handler->display->display_options['fields']['field_themenzuweisung']['table'] = 'field_data_field_themenzuweisung';
   $handler->display->display_options['fields']['field_themenzuweisung']['field'] = 'field_themenzuweisung';
@@ -1362,7 +1362,7 @@ function ipwa_termin__views_default_views() {
   $handler->display->display_options['fields']['field_themenzuweisung']['group_column'] = 'entity_id';
   $handler->display->display_options['fields']['field_themenzuweisung']['delta_offset'] = '0';
   $handler->display->display_options['fields']['field_themenzuweisung']['separator'] = '';
-  /* Field: Content: Datum */
+  /* Feld: Inhalt: Datum */
   $handler->display->display_options['fields']['field_event_datum']['id'] = 'field_event_datum';
   $handler->display->display_options['fields']['field_event_datum']['table'] = 'field_data_field_event_datum';
   $handler->display->display_options['fields']['field_event_datum']['field'] = 'field_event_datum';
@@ -1380,7 +1380,7 @@ function ipwa_termin__views_default_views() {
   $handler->display->display_options['fields']['field_event_datum']['group_column'] = 'entity_id';
   $handler->display->display_options['fields']['field_event_datum']['delta_offset'] = '0';
   $handler->display->display_options['fields']['field_event_datum']['separator'] = '';
-  /* Field: Content: Title */
+  /* Feld: Inhalt: Titel */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
@@ -1388,35 +1388,35 @@ function ipwa_termin__views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['max_length'] = '140';
   $handler->display->display_options['fields']['title']['alter']['trim'] = TRUE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
-  /* Field: Content: Ort */
+  /* Feld: Inhalt: Ort */
   $handler->display->display_options['fields']['field_ort']['id'] = 'field_ort';
   $handler->display->display_options['fields']['field_ort']['table'] = 'field_data_field_ort';
   $handler->display->display_options['fields']['field_ort']['field'] = 'field_ort';
   $handler->display->display_options['fields']['field_ort']['label'] = '';
   $handler->display->display_options['fields']['field_ort']['element_label_colon'] = FALSE;
   $handler->display->display_options['defaults']['sorts'] = FALSE;
-  /* Sort criterion: Content: Datum - end date (field_event_datum:value2) */
+  /* Sort criterion: Inhalt: Datum - end date (field_event_datum:value2) */
   $handler->display->display_options['sorts']['field_event_datum_value2']['id'] = 'field_event_datum_value2';
   $handler->display->display_options['sorts']['field_event_datum_value2']['table'] = 'field_data_field_event_datum';
   $handler->display->display_options['sorts']['field_event_datum_value2']['field'] = 'field_event_datum_value2';
   $handler->display->display_options['defaults']['arguments'] = FALSE;
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Filter criterion: Content: Published */
+  /* Filter criterion: Inhalt: Veröffentlicht */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
   $handler->display->display_options['filters']['status']['field'] = 'status';
   $handler->display->display_options['filters']['status']['value'] = 1;
   $handler->display->display_options['filters']['status']['group'] = 1;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: Content: Type */
+  /* Filter criterion: Inhalt: Typ */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
     'termin' => 'termin',
   );
-  /* Filter criterion: Content: Datum - end date (field_event_datum:value2) */
+  /* Filter criterion: Inhalt: Datum - end date (field_event_datum:value2) */
   $handler->display->display_options['filters']['field_event_datum_value2']['id'] = 'field_event_datum_value2';
   $handler->display->display_options['filters']['field_event_datum_value2']['table'] = 'field_data_field_event_datum';
   $handler->display->display_options['filters']['field_event_datum_value2']['field'] = 'field_event_datum_value2';
@@ -1442,7 +1442,7 @@ function ipwa_termin__views_default_views() {
     t('‹ vorherige Seite'),
     t('nächste Seite ›'),
     t('letzte Seite »'),
-    t('[headline] 
+    t('<h2>[headline]</h2>
 '),
     t('Dieser Artikel gehört zu'),
     t('Datum'),
