@@ -1,14 +1,78 @@
 footer {
-	&.container{
-		width:100%;
-		background-color:$color-white;
-		padding:60px 0 40px;
-		//  margin-top:30px;
-	}
-	.region-footer{
-		@extend .container; 
-	}
-	// margin-top:40px;  
+    &.container {
+        width: 100%;
+        background-color: $color-white;
+
+        //  margin-top:30px;
+   
+    }
+
+    .region-footer {
+        @extend .container;
+
+        //block-ipwa-newsletter//
+        .block-ipwa-newsletter {
+            @extend .container;
+
+            background: $main-color;
+            padding: 45px !important;
+            position: relative;
+
+            .block-title {
+                color: $active-menu;
+            }
+
+            .form-item-newsletter {
+                .control-label {
+                    color: $color-white;
+                    padding-bottom: 30px;
+                }
+
+                .form-control {
+                    border-radius: 0;
+                    width: 45%;
+					height:40px;
+                }
+            }
+
+            .btn-default {
+                border-radius: 0;
+                background: $active-menu;
+                color: $color-white;
+                border: none;
+                left: 500px;
+                position: absolute;
+                bottom: 60px;
+                padding:10px 30px;
+				
+				&:before{
+				 @extend .common-button;
+				 color:$main-color !important;
+				 border-bottom:0 !important;
+				 top:10px !important;
+				}
+            }
+        }
+
+        .block-ipwa-base {padding-top:30px;
+		   
+		   h2{
+		     font-size:20px;
+			 color:$main-color;
+		   }
+		
+            #footer-icons-images {
+                padding: 40px 0;
+
+                div {
+                    display: inline-block;
+                    padding-right: 30px;
+                }
+            }
+        }
+    }
+
+    // margin-top:40px;
     #block-menu-menu-footer-navigation {
         ul li {
             display: inline-block;
@@ -43,7 +107,8 @@ footer {
         font-size: 18px;
         color: $main-color;
     }
-	.nav .open > a, .nav .open > a:hover, .nav .open > a:focus{
-	background:none;
-	}
+
+    .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+        background: none;
+    }
 }
