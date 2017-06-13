@@ -12,122 +12,143 @@ footer {
 
         //block-ipwa-newsletter//
         .block-ipwa-newsletter {
-            
-
             background: $main-color;
-            padding:30px ;
+            padding: 30px;
             position: relative;
-			
-			@include devicebreak(x-large){
-					 padding: 45px !important;
-					}
+
+            @include devicebreak(x-large) {
+                padding: 45px !important;
+            }
+
 
             .block-title {
                 color: $active-menu;
-				margin-top:0;
+                margin-top: 0;
             }
 
             .form-item-newsletter {
                 .control-label {
                     color: $color-white;
                     padding-bottom: 30px;
+                    clear: both;
+                    width: 100%;
                 }
 
                 .form-control {
                     border-radius: 0;
-                    width:75%;
-					height:40px;
-					
-					@include devicebreak(x-medium){
-					 width: 70%;
-					}
-					@include devicebreak(large){
-					 width: 53%;
-					}
-					@include devicebreak(x-large){
-					  width: 45%;
-					}
+                    width: 75%;
+                    height: 40px;
+                    display: inline-block;
+
+                    @include devicebreak(medium) {
+                        width: 50%;
+                    }
                 }
             }
 
             .btn-default {
-                border-radius: 0;
+                font-size: 0;
                 background: $active-menu;
-                color: $color-white;
+                position: absolute;
                 border: none;
-                left:250px;
-                position: absolute;                
-                padding:20px;
-				font-size:0;
-				bottom:45px;
-				
-				@include devicebreak(x-medium){
-					 left: 478px;
-					 bottom:45px;
-					 font-size:14px;
-					 
-					}					
-					
-					@include devicebreak(x-large){
-					  left: 500px;
-					  bottom: 60px;
-					  font-size:14px;
-					}
-				
-				&:before{
-				 @extend .common-button;
-				 color:$main-color !important;
-				 border-bottom:0 !important;
-				 top:10px !important;
-				 left:-23px !important;
-				}
+                padding: 20px;
+                border-radius: 0;
+
+                @include devicebreak(medium) {
+                    color: $color-white;
+                    padding: 10px 30px;
+                    display: inline-block;
+                    font-size: 14px;
+                }
+
+
+                &:before {
+                    @extend .common-button;
+
+                    color: $main-color !important;
+                    border-bottom: 0 !important;
+                    top: 10px !important;
+                    left: -23px !important;
+
+                    @include devicebreak(medium) {
+                        left: -30px;
+                    }
+                }
             }
         }
 
-        .block-ipwa-base {padding-top:30px;
-		   
-		   h2{
-		     font-size:20px;
-			 color:$main-color;
-		   }
-		
+        .block-ipwa-base {
+            padding-top: 30px;
+
+            h2 {
+                font-size: 20px;
+                color: $main-color;
+            }
+
             #footer-icons-images {
                 padding: 40px 0;
 
                 div {
                     display: inline-block;
                     padding-right: 30px;
-					padding-bottom:30px;
+                    padding-bottom: 30px;
                 }
             }
         }
     }
 
+    .footer_blocks {
+        @extend .container;
+
+        padding: 0;
+    }
+
     // margin-top:40px;
     #block-menu-menu-footer-navigation {
-        ul li {
-            display: inline-block;
+        ul {
+            margin-left: -15px;
+            margin-right: -15px;
 
-            a {
-                color: $main-color;
-                padding-left: 0;
-                font-size: 18px;
-
-                &:hover, &:focus {
-                    background: none;
-                    outline: none;
-                    outline-offset: none;
-                }
+            @include devicebreak(medium) {
+                margin: 0;
             }
 
-            .open {
+
+            li {
+                display: block;
+                padding: 20px;
+                width: 100%;
+                border-bottom: 1px solid $color-light-blue;
+
+                @include devicebreak(medium) {
+                    display: inline-block;
+                    border-bottom: 0;
+                    width: auto;
+                    padding-left: 0;
+                }
+
+
                 a {
-                    background: none;
-                    border: none;
+                    color: $main-color;
+                    padding: 0;
+                    font-size: 18px;
 
                     &:hover, &:focus {
                         background: none;
+                        outline: none;
+                        outline-offset: none;
+                    }
+                }
+
+                .open {
+                    a {
+                        background: none;
                         border: none;
+
+                        &:hover, &:focus {
+                            background: none;
+                            border: none;
+                        }
                     }
                 }
             }

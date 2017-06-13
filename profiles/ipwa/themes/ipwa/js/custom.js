@@ -222,6 +222,8 @@ if(jQuery(window).innerWidth() <= 1024){
 	
 }
 	
+	jQuery(".block-ipwa-newsletter .form-submit").insertAfter(".block-ipwa-newsletter .form-item-newsletter .form-control");
+	
 	
 });
 
