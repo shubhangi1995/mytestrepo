@@ -76,6 +76,8 @@ function mailsystem_theme_theme_registry_alter(&$theme_registry) {
           }
         }
       }
+      // Clear theme registry cache.
+      cache_clear_all('theme_registry', 'cache', TRUE);
     }
   }
   $recursion_prevention = FALSE;

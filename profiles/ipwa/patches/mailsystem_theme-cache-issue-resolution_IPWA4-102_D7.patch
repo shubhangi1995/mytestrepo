@@ -1,0 +1,16 @@
+Index: profiles/ipwa/modules/contrib/mailsystem/mailsystem.theme.inc
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- profiles/ipwa/modules/contrib/mailsystem/mailsystem.theme.inc	(revision f2715022b3d1cb2f9034f736fad0ee4add6560ab)
++++ profiles/ipwa/modules/contrib/mailsystem/mailsystem.theme.inc	(revision )
+@@ -76,6 +76,9 @@
+           }
+         }
+       }
++      // Clear theme registry cache.
++      cache_clear_all('theme_registry', 'cache', TRUE);
+     }
+   }
+   $recursion_prevention = FALSE;
