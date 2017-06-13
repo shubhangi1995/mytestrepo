@@ -36,7 +36,7 @@
   <?php print $title; ?>
 <?php endif; ?>
 <?php print render($title_suffix); ?>
-
+<?php if(!($feed_icon)):?>
   <div class="view-sub-wrapper">
     <?php if ($header): ?>
       <div class="view-header">
@@ -86,7 +86,7 @@
       </div>
     <?php endif; ?>
   </div>
-
+<?php endif; ?>
 <?php if ($feed_icon): ?>
   <div class="feed-icon">
     <?php print $feed_icon; ?>
