@@ -33,7 +33,7 @@ function ipwa_newsletter_default_fe_block_settings() {
         'region' => 'footer',
         'status' => 1,
         'theme' => 'ipwa',
-        'weight' => -36,
+        'weight' => -37,
       ),
       'stark' => array(
         'region' => '',

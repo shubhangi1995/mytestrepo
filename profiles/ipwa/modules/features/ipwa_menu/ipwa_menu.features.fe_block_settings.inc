@@ -67,7 +67,7 @@ function ipwa_menu_default_fe_block_settings() {
         'region' => 'footer',
         'status' => 1,
         'theme' => 'ipwa',
-        'weight' => -36,
+        'weight' => -35,
       ),
       'stark' => array(
         'region' => 'footer',
@@ -237,7 +237,7 @@ function ipwa_menu_default_fe_block_settings() {
         'region' => 'footer',
         'status' => 1,
         'theme' => 'ipwa',
-        'weight' => -35,
+        'weight' => -34,
       ),
       'stark' => array(
         'region' => 'footer',

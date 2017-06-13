@@ -33,7 +33,7 @@ function ipwa_base_default_fe_block_settings() {
         'region' => 'footer',
         'status' => 1,
         'theme' => 'ipwa',
-        'weight' => -37,
+        'weight' => -36,
       ),
       'stark' => array(
         'region' => '',
