@@ -12,14 +12,19 @@ footer {
 
         //block-ipwa-newsletter//
         .block-ipwa-newsletter {
-            @extend .container;
+            
 
             background: $main-color;
-            padding: 45px !important;
+            padding:30px ;
             position: relative;
+			
+			@include devicebreak(x-large){
+					 padding: 45px !important;
+					}
 
             .block-title {
                 color: $active-menu;
+				margin-top:0;
             }
 
             .form-item-newsletter {
@@ -30,8 +35,18 @@ footer {
 
                 .form-control {
                     border-radius: 0;
-                    width: 45%;
+                    width:75%;
 					height:40px;
+					
+					@include devicebreak(x-medium){
+					 width: 70%;
+					}
+					@include devicebreak(large){
+					 width: 53%;
+					}
+					@include devicebreak(x-large){
+					  width: 45%;
+					}
                 }
             }
 
@@ -40,16 +55,31 @@ footer {
                 background: $active-menu;
                 color: $color-white;
                 border: none;
-                left: 500px;
-                position: absolute;
-                bottom: 60px;
-                padding:10px 30px;
+                left:250px;
+                position: absolute;                
+                padding:20px;
+				font-size:0;
+				bottom:45px;
+				
+				@include devicebreak(x-medium){
+					 left: 478px;
+					 bottom:45px;
+					 font-size:14px;
+					 
+					}					
+					
+					@include devicebreak(x-large){
+					  left: 500px;
+					  bottom: 60px;
+					  font-size:14px;
+					}
 				
 				&:before{
 				 @extend .common-button;
 				 color:$main-color !important;
 				 border-bottom:0 !important;
 				 top:10px !important;
+				 left:-23px !important;
 				}
             }
         }
@@ -67,6 +97,7 @@ footer {
                 div {
                     display: inline-block;
                     padding-right: 30px;
+					padding-bottom:30px;
                 }
             }
         }

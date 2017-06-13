@@ -1,23 +1,32 @@
-@media (max-width: $screen-xs-max) {
-footer{
+@media (max-width: 1024px) {
+    footer {
+        .region-footer {
+            padding-left: 0 !important;
+            padding-right: 0 !important;
 
-#block-menu-menu-footer-navigation{
-  ul{
-  margin-left:-15px;
-  margin-right:-15px;
-  border-bottom:1px solid $color-light-blue;
-    border-top:1px solid $color-light-blue;
-  li{
-    display:block;
-	padding:20px;
-	width:100%;
-	border-bottom:1px solid $color-light-blue;
-	a{
-	 padding:0;
-	}
-  }
+			.block-ipwa-newsletter .form-item-newsletter .form-control{
+			 width:53%;
+			}
+			
+            #block-menu-menu-footer-navigation {
+                ul {
+                    margin-left: -15px;
+                    margin-right: -15px;
+                    border-bottom: 1px solid $color-light-blue;
+                    border-top: 1px solid $color-light-blue;
 
-}
-}
-}
+                    li {
+                        display: block;
+                        padding: 20px;
+                        width: 100%;
+                        border-bottom: 1px solid $color-light-blue;
+
+                        a {
+                            padding: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
