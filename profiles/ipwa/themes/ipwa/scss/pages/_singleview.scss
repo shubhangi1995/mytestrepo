@@ -743,16 +743,30 @@
         padding: 0;
 
         .left-block {
-            @include devicebreak(large) {
+		     width: 100%;
+            padding: 15px;
+		
+		   @include devicebreak(medium){
+		    padding:30px;
+		   }
+	               
+            @include devicebreak(large){
+			width: 66.66%;
+                float: left;
+			    padding-left:30px;
+				padding-right:0;
+			}				   
+		
+              @include devicebreak(x-large) {
                 width: 66.66%;
                 float: left;
-                padding-right: 0;
-                padding-top: 0;
+                padding-right:0;
+                padding-top:0;
+				padding-left:0;
             }
 
 
-            width: 100%;
-            padding: 15px;
+           
 
             .view-header {
                 padding-bottom: 30px;
@@ -768,8 +782,10 @@
                     padding-right: 15px;
                 }
 
-
-                @include devicebreak(large) {
+                
+				
+				
+                @include devicebreak(x-large) {
                     width: 50%;
                     float: left;
                     padding-right: 20px;
@@ -921,14 +937,23 @@
             @include devicebreak(medium) {
                 width: 50%;
                 float: left;
+				padding:30px;
             }
+              
+			@include devicebreak(large){
+			width: 33.33%;
+            float: left;
+			padding-right:30px;
+			padding-left:20px;
+			
+			}  
 
-
-            @include devicebreak(large) {
+            @include devicebreak(x-large) {
                 width: 33.33%;
                 float: left;
                 padding-left: 20px;
                 padding-top: 0;
+				padding-right:0;
             }
 
 
