@@ -160,7 +160,6 @@ function ipwa_termin__field_group_info() {
       5 => 'field_veranstaltungen',
       6 => 'field_weiterf_hrende_links',
       7 => 'group_related_doc',
-      8 => 'group_related_event',
     ),
     'format_type' => 'html-element',
     'format_settings' => array(
@@ -193,9 +192,8 @@ function ipwa_termin__field_group_info() {
       0 => 'field_quellenangabe',
       1 => 'field_themenzuweisung',
       2 => 'field_untertitel',
-      3 => 'group_related_ort',
-      4 => 'group_title',
-      5 => 'group_top_wrapper',
+      3 => 'group_title',
+      4 => 'group_top_wrapper',
     ),
     'format_type' => 'html-element',
     'format_settings' => array(

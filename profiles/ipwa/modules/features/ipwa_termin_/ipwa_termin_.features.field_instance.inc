@@ -327,6 +327,44 @@ function ipwa_termin__field_default_field_instances() {
         'label' => 'inline',
         'module' => 'date',
         'settings' => array(
+          'addtocalendar_settings' => array(
+            'atc_date_end' => array(
+              'field' => 'field_event_datum',
+              'tokenized' => '',
+            ),
+            'atc_description' => array(
+              'field' => 'body',
+              'tokenized' => '',
+            ),
+            'atc_location' => array(
+              'field' => 'field_ort',
+              'tokenized' => '',
+            ),
+            'atc_organizer' => array(
+              'field' => 'token',
+              'tokenized' => '',
+            ),
+            'atc_organizer_email' => array(
+              'field' => 'token',
+              'tokenized' => '',
+            ),
+            'atc_privacy' => 'public',
+            'atc_title' => array(
+              'field' => 'title',
+              'tokenized' => '',
+            ),
+            'data_calendars' => array(
+              'Google Calendar' => 'Google Calendar',
+              'Outlook' => 'Outlook',
+              'Outlook Online' => 'Outlook Online',
+              'Yahoo! Calendar' => 'Yahoo! Calendar',
+              'iCalendar' => 'iCalendar',
+            ),
+            'data_secure' => 'auto',
+            'display_text' => 'Add to Calender',
+            'style' => 'glow_orange',
+          ),
+          'addtocalendar_show' => 1,
           'format_type' => 'short',
           'fromto' => 'both',
           'multiple_from' => '',
@@ -342,6 +380,8 @@ function ipwa_termin__field_default_field_instances() {
         'label' => 'above',
         'module' => 'date',
         'settings' => array(
+          'addtocalendar_settings' => '',
+          'addtocalendar_show' => '',
           'format_type' => 'short',
           'fromto' => 'both',
           'multiple_from' => '',
