@@ -955,7 +955,7 @@ input[type=text]::-ms-clear {
         }
 
         @include devicebreak(x-large) {
-            padding-left: 80px;
+            padding-left: 85px;
 
             &::before {
                 left: -100px;
@@ -971,6 +971,12 @@ input[type=text]::-ms-clear {
             padding-left: 80px;
         }
     }
+}
+
+.page-node-67{
+	.page-title{
+		padding-bottom: 30px; 
+	}
 }
 
 //backtotop

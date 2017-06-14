@@ -46,7 +46,7 @@
                 border-bottom: none;
                 margin: 0;
                 Font-size: 44px;
-                color: $active-menu;
+                // color: $active-menu;
                 padding-bottom: 30px;
             }
 
@@ -124,6 +124,18 @@
             }
         }
     }
+	.field-name-field-kurztext{
+		font-size:22px;
+	}
+	.group-page-info{
+			.field-name-field-bild{
+				img{
+					@include devicebreak(x-large) {
+						margin:0 auto;            
+					}
+				}
+			}
+	}
 }
 
 //termine and aktuelles and search//
@@ -139,7 +151,7 @@
         width: 100%;
         margin: 0 auto;
         padding-top: 55px;
-        padding-bottom: 40px;
+       // padding-bottom: 40px;
 
         @include devicebreak(x-large) {
             width: 765px;
