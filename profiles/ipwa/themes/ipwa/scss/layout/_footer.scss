@@ -118,8 +118,8 @@ footer {
                         border-bottom: 0;
                         width: auto;
                         padding-left: 0;
+						padding-bottom:0;
                     }
-
 
                     a {
                         color: $main-color;
@@ -150,6 +150,7 @@ footer {
     }
 
     .footer_blocks {
+	   text-align:right;
         @extend .container;
 
         padding: 0;
