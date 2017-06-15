@@ -1250,6 +1250,8 @@ function ipwa_termin__views_default_views() {
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
   /* Feld: Inhalt: Datum */
   $handler->display->display_options['fields']['field_event_datum']['id'] = 'field_event_datum';
   $handler->display->display_options['fields']['field_event_datum']['table'] = 'field_data_field_event_datum';
@@ -1444,7 +1446,7 @@ function ipwa_termin__views_default_views() {
     t('‹ vorherige Seite'),
     t('nächste Seite ›'),
     t('letzte Seite »'),
-    t('<h2>[headline]</h2>
+    t('[headline] 
 '),
     t('Dieser Artikel gehört zu'),
     t('Datum'),
