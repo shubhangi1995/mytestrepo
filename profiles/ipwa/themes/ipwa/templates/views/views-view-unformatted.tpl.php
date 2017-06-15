@@ -23,11 +23,11 @@ global $base_url;
 <?php foreach ($rows as $id => $row): ?>
 <?php $path = drupal_get_path_alias("node/" . $node_nid[$id]); ?>
 <div<?php if ($classes_array[$id]) { print ' class="' . $classes_array[$id] .'"';  } ?>>
+  <a target="_blank" href="<?php print $base_url . '/' . $path; ?>" >
   <div class="row-container">
-    <a target="_blank" href="<?php print $base_url . '/' . $path; ?>" >
     <?php print $row; ?>
-    </a>
   </div>
+  </a>
 </div>
 <?php endforeach; ?>
 <?php else:?>
