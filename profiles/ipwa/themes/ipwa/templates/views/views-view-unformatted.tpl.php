@@ -13,14 +13,29 @@
  *
  * @ingroup views_templates
  */
+global $base_url;
 ?>
 <?php if (!empty($title)): ?>
   <h3><?php print $title; ?></h3>
 <?php endif; ?>
+<?php $views1=array("themenzuweisung_flyouts","right_front_map_teaser"); ?>
+<?php if (!(in_array($view->name,$views1))): ?>
 <?php foreach ($rows as $id => $row): ?>
-  <div<?php if ($classes_array[$id]) { print ' class="' . $classes_array[$id] .'"';  } ?>>
-    <div class="row-container">
-      <?php print $row; ?>
-    </div>
+<?php $path = drupal_get_path_alias("node/" . $node_nid[$id]); ?>
+<div<?php if ($classes_array[$id]) { print ' class="' . $classes_array[$id] .'"';  } ?>>
+  <div class="row-container">
+    <a target="_blank" href="<?php print $base_url . '/' . $path; ?>" >
+    <?php print $row; ?>
+    </a>
   </div>
+</div>
 <?php endforeach; ?>
+<?php else:?>
+<?php foreach ($rows as $id => $row): ?>
+<div<?php if ($classes_array[$id]) { print ' class="' . $classes_array[$id] .'"';  } ?>>
+  <div class="row-container">
+    <?php print $row; ?>
+  </div>
+</div>
+<?php endforeach;?>
+<?php endif; ?>

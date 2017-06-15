@@ -1159,6 +1159,7 @@ function ipwa_termin__views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['max_length'] = '140';
   $handler->display->display_options['fields']['title']['alter']['trim'] = TRUE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
   /* Feld: Inhalt: Ort */
   $handler->display->display_options['fields']['field_ort']['id'] = 'field_ort';
   $handler->display->display_options['fields']['field_ort']['table'] = 'field_data_field_ort';
@@ -1388,6 +1389,7 @@ function ipwa_termin__views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['max_length'] = '140';
   $handler->display->display_options['fields']['title']['alter']['trim'] = TRUE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
   /* Feld: Inhalt: Ort */
   $handler->display->display_options['fields']['field_ort']['id'] = 'field_ort';
   $handler->display->display_options['fields']['field_ort']['table'] = 'field_data_field_ort';

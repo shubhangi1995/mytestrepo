@@ -188,10 +188,8 @@ function show_footer_block_icons() {
 
 }
 function show_footer_print() {
-  $output_icons ='<div id="footer_blocks">
-    <div>
+  $output_icons ='<div id="footer_print_icon">
     <button id ="page_print">Print this page</button>
-     </div>
      </div>';
   return $output_icons;
 }

@@ -139,13 +139,8 @@ function ipwa_preprocess_views_view_unformatted(&$vars) {
   foreach($view->result as $id => $value) {
     $vars['node_nid'][$id] = $value->nid;
   }
-}
-
-function ipwa_preprocess_views_view_unformatted__alles_zum_thema(&$vars){
-  $view = $vars['view'];
-  foreach($view->result as $id => $value) {
-    $vars['node_type'][$id] = $value->node_type;
-  }
+  $vars['name'] = $view->name;
+  $vars['display_id'] = $view->current_display;
 }
 
 /**

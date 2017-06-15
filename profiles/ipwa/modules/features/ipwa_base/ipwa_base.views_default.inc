@@ -403,6 +403,7 @@ Publikation|Publikationen',
   $handler->display->display_options['fields']['title']['alter']['max_length'] = '140';
   $handler->display->display_options['fields']['title']['alter']['trim'] = TRUE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
   /* Feld: Inhalt: Datum */
   $handler->display->display_options['fields']['field_datum']['id'] = 'field_datum';
   $handler->display->display_options['fields']['field_datum']['table'] = 'field_data_field_datum';
@@ -1114,6 +1115,7 @@ Publikation|Publikationen'),
   $handler->display->display_options['fields']['title']['alter']['max_length'] = '140';
   $handler->display->display_options['fields']['title']['alter']['trim'] = TRUE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
   $translatables['neueste_digital_projekte'] = array(
     t('Master'),
     t('more'),
