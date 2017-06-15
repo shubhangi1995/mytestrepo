@@ -270,7 +270,10 @@ padding:0;
             .views-row {
                 @extend .col-md-4,.col-sm-6;
 
-                .row-container {
+                > a {
+				  text-decoration:none;
+				  
+				.row-container {
                     background: $color-white;
                     padding: 30px;
                     margin-bottom: 30px;
@@ -329,8 +332,7 @@ padding:0;
                     .views-field-title {
                         padding-bottom: 40px;
 
-                        a {
-                            text-decoration: none;
+                        .field-content{                            
                             font-size: 22px;
                             color: $main-color;
                         }
@@ -348,7 +350,7 @@ padding:0;
                     }
                 }
             }
-        }
+        }}
     }
 }
 
