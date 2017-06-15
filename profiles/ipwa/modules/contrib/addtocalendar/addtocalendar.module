@@ -57,7 +57,7 @@ function addtocalendar_field_formatter_settings_form_alter(&$settings_form, $con
       '#type' => 'select',
       '#title' => t('Select Style'),
       '#options' => array(
-        0 => t('No Styling'),
+        //0 => t('No Styling'),
         'blue' => t('Blue'),
         'glow_orange' => t('Glow Orange'),
       ),

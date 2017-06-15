@@ -9483,7 +9483,9 @@ input[type=text]::-ms-clear {
     margin-bottom: 15px; }
   /* line 1068, ../scss/pages/_singleview.scss */
   .group-top-wrapper .group-middle-wrapper {
-    overflow: hidden; }
+    height: 200px;
+    overflow: hidden;
+  }
     /* line 1072, ../scss/pages/_singleview.scss */
     .group-top-wrapper .group-middle-wrapper .view-id-termin.view-display-id-block_1 {
       margin: 10px 0;
