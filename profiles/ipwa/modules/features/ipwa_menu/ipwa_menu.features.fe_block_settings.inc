@@ -30,8 +30,8 @@ function ipwa_menu_default_fe_block_settings() {
         'weight' => 0,
       ),
       'ipwa' => array(
-        'region' => 'lower_footer',
-        'status' => 1,
+        'region' => '',
+        'status' => 0,
         'theme' => 'ipwa',
         'weight' => -35,
       ),
