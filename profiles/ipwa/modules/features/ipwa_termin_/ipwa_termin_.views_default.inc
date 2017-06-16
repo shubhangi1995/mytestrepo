@@ -228,7 +228,7 @@ function ipwa_termin__views_default_views() {
       ),
     ),
     'term_node_tid_depth' => array(
-      'bef_format' => 'bef',
+      'bef_format' => 'bef_links',
       'more_options' => array(
         'bef_select_all_none' => FALSE,
         'bef_select_all_none_nested' => FALSE,
@@ -1094,7 +1094,7 @@ function ipwa_termin__views_default_views() {
       ),
     ),
     'term_node_tid_depth' => array(
-      'bef_format' => 'bef',
+      'bef_format' => 'bef_links',
       'more_options' => array(
         'bef_select_all_none' => FALSE,
         'bef_select_all_none_nested' => FALSE,
@@ -1230,6 +1230,7 @@ function ipwa_termin__views_default_views() {
 
   /* Display: Feed */
   $handler = $view->new_display('feed', 'Feed', 'feed_1');
+  $handler->display->display_options['enabled'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'none';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['style_plugin'] = 'date_ical';
@@ -1250,8 +1251,6 @@ function ipwa_termin__views_default_views() {
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
   /* Feld: Inhalt: Datum */
   $handler->display->display_options['fields']['field_event_datum']['id'] = 'field_event_datum';
   $handler->display->display_options['fields']['field_event_datum']['table'] = 'field_data_field_event_datum';
@@ -1281,6 +1280,7 @@ function ipwa_termin__views_default_views() {
   /* Display: Calendar Block */
   $handler = $view->new_display('block', 'Calendar Block', 'block_1');
   $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['enabled'] = FALSE;
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['defaults']['style_options'] = FALSE;
@@ -1446,7 +1446,7 @@ function ipwa_termin__views_default_views() {
     t('‹ vorherige Seite'),
     t('nächste Seite ›'),
     t('letzte Seite »'),
-    t('[headline] 
+    t('<h2>[headline]</h2>
 '),
     t('Dieser Artikel gehört zu'),
     t('Datum'),
