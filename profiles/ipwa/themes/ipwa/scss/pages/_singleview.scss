@@ -750,7 +750,7 @@
 		     width: 100%;
             padding: 15px;
 		
-		   @include devicebreak(medium){
+		   @include devicebreak(x-medium){
 		    padding:30px;
 		   }
 	               
@@ -780,7 +780,7 @@
             .inner-wrapper {
                 width: 100%;
 
-                @include devicebreak(medium) {
+                @include devicebreak(x-medium) {
                     width: 50%;
                     float: left;
                     padding-right: 15px;
@@ -864,7 +864,7 @@
             > .view-latest-content-doorpage {
                 width: 100%;
 
-                @include devicebreak(medium) {
+                @include devicebreak(x-medium) {
                     width: 50%;
                     float: left;
                     padding-left: 15px;
@@ -938,8 +938,10 @@
         > .view-latest-content-doorpage {
             width: 100%;
             padding: 15px;
+			
+			
 
-            @include devicebreak(medium) {
+            @include devicebreak(x-medium) {
                 width: 50%;
                 float: left;
 				padding:30px;
