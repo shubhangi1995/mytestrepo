@@ -18,7 +18,7 @@ global $base_url;
 <?php if (!empty($title)): ?>
   <h3><?php print $title; ?></h3>
 <?php endif; ?>
-<?php $views1=array("themenzuweisung_flyouts","right_front_map_teaser","related_content","map-teaser","map_teaser"); ?>
+<?php $views1=array("themenzuweisung_flyouts","right_front_map_teaser","related_content","map-teaser","map_teaser","alle_themen_teaser","search_list"); ?>
 <?php if (!(in_array($view->name,$views1))): ?>
 <?php foreach ($rows as $id => $row): ?>
 <?php $path = drupal_get_path_alias("node/" . $node_nid[$id]); ?>
