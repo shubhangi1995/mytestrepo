@@ -611,6 +611,7 @@ function ipwa_doorpage_views_default_views() {
   $handler->display->display_options['fields']['type']['table'] = 'node';
   $handler->display->display_options['fields']['type']['field'] = 'type';
   $handler->display->display_options['fields']['type']['label'] = '';
+  $handler->display->display_options['fields']['type']['exclude'] = TRUE;
   $handler->display->display_options['fields']['type']['element_label_colon'] = FALSE;
   /* Feld: Inhalt: Datum */
   $handler->display->display_options['fields']['field_event_datum']['id'] = 'field_event_datum';
@@ -626,6 +627,43 @@ function ipwa_doorpage_views_default_views() {
     'multiple_to' => '',
     'show_remaining_days' => 0,
     'show_repeat_rule' => 'hide',
+    'addtocalendar_show' => 0,
+    'addtocalendar_settings' => array(
+      'style' => 'blue',
+      'atc_title' => array(
+        'field' => 'token',
+        'tokenized' => '',
+      ),
+      'atc_description' => array(
+        'field' => 'token',
+        'tokenized' => '',
+      ),
+      'atc_location' => array(
+        'field' => 'token',
+        'tokenized' => '',
+      ),
+      'atc_organizer' => array(
+        'field' => 'token',
+        'tokenized' => '',
+      ),
+      'atc_organizer_email' => array(
+        'field' => 'token',
+        'tokenized' => '',
+      ),
+      'atc_date_end' => array(
+        'field' => 'token',
+        'tokenized' => '',
+      ),
+      'atc_privacy' => 'public',
+      'data_secure' => 'auto',
+      'data_calendars' => array(
+        'iCalendar' => 0,
+        'Google Calendar' => 0,
+        'Outlook' => 0,
+        'Outlook Online' => 0,
+        'Yahoo! Calendar' => 0,
+      ),
+    ),
   );
   $handler->display->display_options['fields']['field_event_datum']['delta_offset'] = '0';
   $handler->display->display_options['fields']['field_event_datum']['separator'] = '';
@@ -740,6 +778,7 @@ function ipwa_doorpage_views_default_views() {
   $handler->display->display_options['fields']['type']['table'] = 'node';
   $handler->display->display_options['fields']['type']['field'] = 'type';
   $handler->display->display_options['fields']['type']['label'] = '';
+  $handler->display->display_options['fields']['type']['exclude'] = TRUE;
   $handler->display->display_options['fields']['type']['element_label_colon'] = FALSE;
   /* Feld: Inhalt: Datum */
   $handler->display->display_options['fields']['field_event_datum']['id'] = 'field_event_datum';
@@ -755,6 +794,43 @@ function ipwa_doorpage_views_default_views() {
     'multiple_to' => '',
     'show_remaining_days' => 0,
     'show_repeat_rule' => 'hide',
+    'addtocalendar_show' => 0,
+    'addtocalendar_settings' => array(
+      'style' => 'blue',
+      'atc_title' => array(
+        'field' => 'token',
+        'tokenized' => '',
+      ),
+      'atc_description' => array(
+        'field' => 'token',
+        'tokenized' => '',
+      ),
+      'atc_location' => array(
+        'field' => 'token',
+        'tokenized' => '',
+      ),
+      'atc_organizer' => array(
+        'field' => 'token',
+        'tokenized' => '',
+      ),
+      'atc_organizer_email' => array(
+        'field' => 'token',
+        'tokenized' => '',
+      ),
+      'atc_date_end' => array(
+        'field' => 'token',
+        'tokenized' => '',
+      ),
+      'atc_privacy' => 'public',
+      'data_secure' => 'auto',
+      'data_calendars' => array(
+        'iCalendar' => 0,
+        'Google Calendar' => 0,
+        'Outlook' => 0,
+        'Outlook Online' => 0,
+        'Yahoo! Calendar' => 0,
+      ),
+    ),
   );
   $handler->display->display_options['fields']['field_event_datum']['delta_offset'] = '0';
   $handler->display->display_options['fields']['field_event_datum']['separator'] = '';
