@@ -57,10 +57,16 @@ function addtocalendar_field_formatter_settings_form_alter(&$settings_form, $con
       '#type' => 'select',
       '#title' => t('Select Style'),
       '#options' => array(
+        0 => t('No Styling'),
         'blue' => t('Blue'),
         'glow_orange' => t('Glow Orange'),
       ),
       '#default_value' => !empty($settings['addtocalendar_settings']['style']) ? $settings['addtocalendar_settings']['style'] : 'blue',
+    );
+    $settings_form['addtocalendar_settings']['display_text'] = array(
+      '#type' => 'textfield',
+      '#title' => t('Display Text'),
+      '#default_value' => !empty($settings['addtocalendar_settings']['display_text']) ? $settings['addtocalendar_settings']['display_text'] : t('Add to Calender'),
     );
     $info = array(
       'atc_title' => t('Title'),
@@ -76,9 +82,9 @@ function addtocalendar_field_formatter_settings_form_alter(&$settings_form, $con
     }
 
     $field_options = array_merge(
-      ['token' => t('Use Token/Static Content')],
-      ['title' => t('Title')],
-      $field_options
+    ['token' => t('Use Token/Static Content')],
+    ['title' => t('Title')],
+    $field_options
     );
     $info = array(
       'atc_title' => t('Title'),
@@ -183,18 +189,8 @@ function addtocalendar_preprocess_field(&$variables) {
       $build['addtocalendar'] = [];
       $settings = $variables['addtocalendar_settings'];
       if ($formatter_settings['addtocalendar_show']) {
-
         $timeZone = date_default_timezone_get();
-        if (!empty($variables['element']['#object']->field_event_datum)) {
-          $occurence = count($variables['element']['#object']->field_event_datum['und']);
-          if ($occurence > 1) {
-            $date = format_date(strtotime($variables['element']['#object']->field_event_datum['und'][0]['value']), 'custom', 'm/d/Y g:ia');
-            $enddate = format_date(strtotime($variables['element']['#object']->field_event_datum['und'][$occurence - 1]['value2']), 'custom', 'm/d/Y g:ia');
-          }else{
-            $date = format_date(strtotime($variables['element']['#object']->field_event_datum['und'][0]['value']), 'custom', 'm/d/Y g:ia');
-            $enddate = format_date(strtotime($variables['element']['#object']->field_event_datum['und'][0]['value2']), 'custom', 'm/d/Y g:ia');
-          }
-        }
+        $date = format_date(strtotime($variables['element']['#object']->field_date['und'][0]['value']), 'custom', 'm/d/Y g:ia');
         $build['addtocalendar']['atc_date_start'] = array(
           '#type' => 'html_tag',
           '#tag' => 'var',
@@ -240,7 +236,7 @@ function addtocalendar_preprocess_field(&$variables) {
           );
 
         }
-        $build['addtocalendar']['atc_date_end']['#value'] = $enddate;
+        $build['addtocalendar']['atc_date_end']['#value'] = format_date(strtotime($build['addtocalendar']['atc_date_end']['#value']), 'custom', 'm/d/Y g:ia');
 
         $build['addtocalendar']['atc_timezone'] = array(
           '#type' => 'html_tag',
@@ -284,24 +280,22 @@ function addtocalendar_preprocess_field(&$variables) {
         }
 
         $build['addtocalendar']['#attributes']['data-secure'] = $settings['data_secure'];
-        //Adding JS file
-        drupal_add_js(drupal_get_path('theme', 'ipwa') . '/js/addtocal.min.js', array(
-          'type' => 'file',
-          'group' => JS_THEME,
-        ));
         // Styling.
         switch ($settings['style']) {
           case 'blue':
             $style['class'] = 'atc-style-blue';
+            drupal_add_js('//addtocalendar.com/atc/1.5/atc.min.js', 'external');
             drupal_add_css('//addtocalendar.com/atc/1.5/atc-style-blue.css', 'external');
             break;
 
           case 'glow_orange':
             $style['class'] = 'atc-style-glow-orange';
+            drupal_add_js('//addtocalendar.com/atc/1.5/atc.min.js', 'external');
             drupal_add_css('//addtocalendar.com/atc/1.5/atc-style-glow-orange.css', 'external');
             break;
 
           default:
+            drupal_add_js('//addtocalendar.com/atc/1.5/atc.min.js', 'external');
             drupal_add_css('//addtocalendar.com/atc/1.5/atc-base.css', 'external');
             break;
 
