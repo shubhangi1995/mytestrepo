@@ -158,18 +158,18 @@
                     display: inline-block;
                     padding: 10px;
                     padding-left: 0;
-
+         a{   text-decoration:none;
                     .row-container {
-                        .views-field-name a {
+                        .views-field-name  {
                             background: $main-color;
                             text-decoration: none;
                             padding: 10px;
                             font-size: 18px;
                             color: $color-white;
-                            float: left;     
+                            float: left;       
                         }
                     }
-                }
+                }}
             }
 
             .view-footer {
@@ -750,7 +750,7 @@
 		     width: 100%;
             padding: 15px;
 		
-		   @include devicebreak(medium){
+		   @include devicebreak(x-medium){
 		    padding:30px;
 		   }
 	               
@@ -780,7 +780,7 @@
             .inner-wrapper {
                 width: 100%;
 
-                @include devicebreak(medium) {
+                @include devicebreak(x-medium) {
                     width: 50%;
                     float: left;
                     padding-right: 15px;
@@ -796,7 +796,8 @@
                 }
 
 
-                .view-content .views-row {
+                .view-content .views-row a{
+				       text-decoration:none;
                     .row-container {
                         background: $color-white;
                         height: 410px;
@@ -829,8 +830,8 @@
                         .views-field-title {
                             padding-bottom: 70px;
 
-                            a {
-                                text-decoration: none;
+                           .field-content{
+                               
                                 color: $main-color;
                             }
                         }
@@ -863,7 +864,7 @@
             > .view-latest-content-doorpage {
                 width: 100%;
 
-                @include devicebreak(medium) {
+                @include devicebreak(x-medium) {
                     width: 50%;
                     float: left;
                     padding-left: 15px;
@@ -880,7 +881,7 @@
                 .view-sub-wrapper {
                     width: auto;
 
-                    .view-content .views-row {
+                    .view-content .views-row a{ text-decoration:none;
                         .row-container {
                             background: $color-white;
                             height: 410px;
@@ -913,8 +914,8 @@
                             .views-field-title {
                                 padding-bottom: 70px;
 
-                                a {
-                                    text-decoration: none;
+                                .field-content {
+                                   
                                     color: $main-color;
                                 }
                             }
@@ -937,8 +938,10 @@
         > .view-latest-content-doorpage {
             width: 100%;
             padding: 15px;
+			
+			
 
-            @include devicebreak(medium) {
+            @include devicebreak(x-medium) {
                 width: 50%;
                 float: left;
 				padding:30px;
@@ -969,7 +972,7 @@
                     font-size: 28px;
                 }
 
-                .view-content .views-row {
+                .view-content .views-row a{text-decoration:none;
                     .row-container {
                         background: $color-white;
                         height: 410px;
@@ -1002,8 +1005,8 @@
                         .views-field-title {
                             padding-bottom: 70px;
 
-                            a {
-                                text-decoration: none;
+                            .field-content {
+                               
                                 color: $main-color;
                             }
                         }

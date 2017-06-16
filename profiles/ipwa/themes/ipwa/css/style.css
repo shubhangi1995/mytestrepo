@@ -8791,14 +8791,17 @@ input[type=text]::-ms-clear {
     display: inline-block;
     padding: 10px;
     padding-left: 0; }
-    /* line 163, ../scss/pages/_singleview.scss */
-    .not-front .node-doorpage .view-alle-themen-teaser .view-sub-wrapper .view-content .views-row .row-container .views-field-name a {
-      background: #273753;
-      text-decoration: none;
-      padding: 10px;
-      font-size: 18px;
-      color: #ffffff;
-      float: left; }
+    /* line 161, ../scss/pages/_singleview.scss */
+    .not-front .node-doorpage .view-alle-themen-teaser .view-sub-wrapper .view-content .views-row a {
+      text-decoration: none; }
+      /* line 163, ../scss/pages/_singleview.scss */
+      .not-front .node-doorpage .view-alle-themen-teaser .view-sub-wrapper .view-content .views-row a .row-container .views-field-name {
+        background: #273753;
+        text-decoration: none;
+        padding: 10px;
+        font-size: 18px;
+        color: #ffffff;
+        float: left; }
   /* line 175, ../scss/pages/_singleview.scss */
   .not-front .node-doorpage .view-alle-themen-teaser .view-sub-wrapper .view-footer {
     padding-top: 40px;
@@ -9236,7 +9239,7 @@ input[type=text]::-ms-clear {
     /* Tablet design */
     /* Desktop design */
     /* Over Desktop design */ }
-    @media (min-width: 520px) {
+    @media (min-width: 767px) {
       /* line 749, ../scss/pages/_singleview.scss */
       .view-latest-content-doorpage > .view-sub-wrapper .left-block {
         padding: 30px; } }
@@ -9264,7 +9267,7 @@ input[type=text]::-ms-clear {
       width: 100%;
       /* Tablet design */
       /* Over Desktop design */ }
-      @media (min-width: 520px) {
+      @media (min-width: 767px) {
         /* line 780, ../scss/pages/_singleview.scss */
         .view-latest-content-doorpage > .view-sub-wrapper .left-block .inner-wrapper {
           width: 50%;
@@ -9276,76 +9279,11 @@ input[type=text]::-ms-clear {
           width: 50%;
           float: left;
           padding-right: 20px; } }
-      /* line 800, ../scss/pages/_singleview.scss */
-      .view-latest-content-doorpage > .view-sub-wrapper .left-block .inner-wrapper .view-content .views-row .row-container {
-        background: #ffffff;
-        height: 410px;
-        padding: 30px;
-        position: relative;
-        border: 1px solid #ffffff;
-        cursor: pointer;
-        transition: all 0.5s ease; }
-        /* line 809, ../scss/pages/_singleview.scss */
-        .view-latest-content-doorpage > .view-sub-wrapper .left-block .inner-wrapper .view-content .views-row .row-container:hover {
-          background: #eff2f7;
-          border: 1px solid #dbdfe3; }
-        /* line 814, ../scss/pages/_singleview.scss */
-        .view-latest-content-doorpage > .view-sub-wrapper .left-block .inner-wrapper .view-content .views-row .row-container .views-field-field-themenzuweisung {
-          margin-bottom: 30px; }
-          /* line 817, ../scss/pages/_singleview.scss */
-          .view-latest-content-doorpage > .view-sub-wrapper .left-block .inner-wrapper .view-content .views-row .row-container .views-field-field-themenzuweisung img {
-            display: inline-block;
-            margin-right: 10px; }
-        /* line 823, ../scss/pages/_singleview.scss */
-        .view-latest-content-doorpage > .view-sub-wrapper .left-block .inner-wrapper .view-content .views-row .row-container .views-field-type {
-          color: #e74712;
-          font-weight: bold;
-          padding-bottom: 15px; }
-        /* line 829, ../scss/pages/_singleview.scss */
-        .view-latest-content-doorpage > .view-sub-wrapper .left-block .inner-wrapper .view-content .views-row .row-container .views-field-title {
-          padding-bottom: 70px; }
-          /* line 832, ../scss/pages/_singleview.scss */
-          .view-latest-content-doorpage > .view-sub-wrapper .left-block .inner-wrapper .view-content .views-row .row-container .views-field-title a {
-            text-decoration: none;
-            color: #273753; }
-        /* line 838, ../scss/pages/_singleview.scss */
-        .view-latest-content-doorpage > .view-sub-wrapper .left-block .inner-wrapper .view-content .views-row .row-container .views-field-field-datum {
-          position: absolute;
-          bottom: 30px; }
-          /* line 842, ../scss/pages/_singleview.scss */
-          .view-latest-content-doorpage > .view-sub-wrapper .left-block .inner-wrapper .view-content .views-row .row-container .views-field-field-datum .date-display-single {
-            font-size: 17px;
-            color: #949d9e; }
-    /* line 851, ../scss/pages/_singleview.scss */
-    .view-latest-content-doorpage > .view-sub-wrapper .left-block .view-footer {
-      padding-top: 30px;
-      padding-bottom: 60px;
-      position: relative; }
-      /* line 856, ../scss/pages/_singleview.scss */
-      .view-latest-content-doorpage > .view-sub-wrapper .left-block .view-footer a {
-        color: #273753; }
-    /* line 863, ../scss/pages/_singleview.scss */
-    .view-latest-content-doorpage > .view-sub-wrapper .left-block > .view-latest-content-doorpage {
-      width: 100%;
-      /* Tablet design */
-      /* Desktop design */ }
-      @media (min-width: 520px) {
-        /* line 863, ../scss/pages/_singleview.scss */
-        .view-latest-content-doorpage > .view-sub-wrapper .left-block > .view-latest-content-doorpage {
-          width: 50%;
-          float: left;
-          padding-left: 15px; } }
-      @media (min-width: 960px) {
-        /* line 863, ../scss/pages/_singleview.scss */
-        .view-latest-content-doorpage > .view-sub-wrapper .left-block > .view-latest-content-doorpage {
-          width: 50%;
-          float: left;
-          padding: 0 10px; } }
-      /* line 880, ../scss/pages/_singleview.scss */
-      .view-latest-content-doorpage > .view-sub-wrapper .left-block > .view-latest-content-doorpage .view-sub-wrapper {
-        width: auto; }
-        /* line 884, ../scss/pages/_singleview.scss */
-        .view-latest-content-doorpage > .view-sub-wrapper .left-block > .view-latest-content-doorpage .view-sub-wrapper .view-content .views-row .row-container {
+      /* line 799, ../scss/pages/_singleview.scss */
+      .view-latest-content-doorpage > .view-sub-wrapper .left-block .inner-wrapper .view-content .views-row a {
+        text-decoration: none; }
+        /* line 801, ../scss/pages/_singleview.scss */
+        .view-latest-content-doorpage > .view-sub-wrapper .left-block .inner-wrapper .view-content .views-row a .row-container {
           background: #ffffff;
           height: 410px;
           padding: 30px;
@@ -9353,159 +9291,230 @@ input[type=text]::-ms-clear {
           border: 1px solid #ffffff;
           cursor: pointer;
           transition: all 0.5s ease; }
-          /* line 893, ../scss/pages/_singleview.scss */
-          .view-latest-content-doorpage > .view-sub-wrapper .left-block > .view-latest-content-doorpage .view-sub-wrapper .view-content .views-row .row-container:hover {
+          /* line 810, ../scss/pages/_singleview.scss */
+          .view-latest-content-doorpage > .view-sub-wrapper .left-block .inner-wrapper .view-content .views-row a .row-container:hover {
             background: #eff2f7;
             border: 1px solid #dbdfe3; }
-          /* line 898, ../scss/pages/_singleview.scss */
-          .view-latest-content-doorpage > .view-sub-wrapper .left-block > .view-latest-content-doorpage .view-sub-wrapper .view-content .views-row .row-container .views-field-field-themenzuweisung {
+          /* line 815, ../scss/pages/_singleview.scss */
+          .view-latest-content-doorpage > .view-sub-wrapper .left-block .inner-wrapper .view-content .views-row a .row-container .views-field-field-themenzuweisung {
             margin-bottom: 30px; }
-            /* line 901, ../scss/pages/_singleview.scss */
-            .view-latest-content-doorpage > .view-sub-wrapper .left-block > .view-latest-content-doorpage .view-sub-wrapper .view-content .views-row .row-container .views-field-field-themenzuweisung img {
+            /* line 818, ../scss/pages/_singleview.scss */
+            .view-latest-content-doorpage > .view-sub-wrapper .left-block .inner-wrapper .view-content .views-row a .row-container .views-field-field-themenzuweisung img {
               display: inline-block;
               margin-right: 10px; }
-          /* line 907, ../scss/pages/_singleview.scss */
-          .view-latest-content-doorpage > .view-sub-wrapper .left-block > .view-latest-content-doorpage .view-sub-wrapper .view-content .views-row .row-container .views-field-type {
+          /* line 824, ../scss/pages/_singleview.scss */
+          .view-latest-content-doorpage > .view-sub-wrapper .left-block .inner-wrapper .view-content .views-row a .row-container .views-field-type {
             color: #e74712;
             font-weight: bold;
             padding-bottom: 15px; }
-          /* line 913, ../scss/pages/_singleview.scss */
-          .view-latest-content-doorpage > .view-sub-wrapper .left-block > .view-latest-content-doorpage .view-sub-wrapper .view-content .views-row .row-container .views-field-title {
+          /* line 830, ../scss/pages/_singleview.scss */
+          .view-latest-content-doorpage > .view-sub-wrapper .left-block .inner-wrapper .view-content .views-row a .row-container .views-field-title {
             padding-bottom: 70px; }
-            /* line 916, ../scss/pages/_singleview.scss */
-            .view-latest-content-doorpage > .view-sub-wrapper .left-block > .view-latest-content-doorpage .view-sub-wrapper .view-content .views-row .row-container .views-field-title a {
-              text-decoration: none;
+            /* line 833, ../scss/pages/_singleview.scss */
+            .view-latest-content-doorpage > .view-sub-wrapper .left-block .inner-wrapper .view-content .views-row a .row-container .views-field-title .field-content {
               color: #273753; }
-          /* line 922, ../scss/pages/_singleview.scss */
-          .view-latest-content-doorpage > .view-sub-wrapper .left-block > .view-latest-content-doorpage .view-sub-wrapper .view-content .views-row .row-container .views-field-field-datum {
+          /* line 839, ../scss/pages/_singleview.scss */
+          .view-latest-content-doorpage > .view-sub-wrapper .left-block .inner-wrapper .view-content .views-row a .row-container .views-field-field-datum {
             position: absolute;
             bottom: 30px; }
-            /* line 926, ../scss/pages/_singleview.scss */
-            .view-latest-content-doorpage > .view-sub-wrapper .left-block > .view-latest-content-doorpage .view-sub-wrapper .view-content .views-row .row-container .views-field-field-datum .date-display-single {
+            /* line 843, ../scss/pages/_singleview.scss */
+            .view-latest-content-doorpage > .view-sub-wrapper .left-block .inner-wrapper .view-content .views-row a .row-container .views-field-field-datum .date-display-single {
               font-size: 17px;
               color: #949d9e; }
-  /* line 937, ../scss/pages/_singleview.scss */
+    /* line 852, ../scss/pages/_singleview.scss */
+    .view-latest-content-doorpage > .view-sub-wrapper .left-block .view-footer {
+      padding-top: 30px;
+      padding-bottom: 60px;
+      position: relative; }
+      /* line 857, ../scss/pages/_singleview.scss */
+      .view-latest-content-doorpage > .view-sub-wrapper .left-block .view-footer a {
+        color: #273753; }
+    /* line 864, ../scss/pages/_singleview.scss */
+    .view-latest-content-doorpage > .view-sub-wrapper .left-block > .view-latest-content-doorpage {
+      width: 100%;
+      /* Tablet design */
+      /* Desktop design */ }
+      @media (min-width: 767px) {
+        /* line 864, ../scss/pages/_singleview.scss */
+        .view-latest-content-doorpage > .view-sub-wrapper .left-block > .view-latest-content-doorpage {
+          width: 50%;
+          float: left;
+          padding-left: 15px; } }
+      @media (min-width: 960px) {
+        /* line 864, ../scss/pages/_singleview.scss */
+        .view-latest-content-doorpage > .view-sub-wrapper .left-block > .view-latest-content-doorpage {
+          width: 50%;
+          float: left;
+          padding: 0 10px; } }
+      /* line 881, ../scss/pages/_singleview.scss */
+      .view-latest-content-doorpage > .view-sub-wrapper .left-block > .view-latest-content-doorpage .view-sub-wrapper {
+        width: auto; }
+        /* line 884, ../scss/pages/_singleview.scss */
+        .view-latest-content-doorpage > .view-sub-wrapper .left-block > .view-latest-content-doorpage .view-sub-wrapper .view-content .views-row a {
+          text-decoration: none; }
+          /* line 885, ../scss/pages/_singleview.scss */
+          .view-latest-content-doorpage > .view-sub-wrapper .left-block > .view-latest-content-doorpage .view-sub-wrapper .view-content .views-row a .row-container {
+            background: #ffffff;
+            height: 410px;
+            padding: 30px;
+            position: relative;
+            border: 1px solid #ffffff;
+            cursor: pointer;
+            transition: all 0.5s ease; }
+            /* line 894, ../scss/pages/_singleview.scss */
+            .view-latest-content-doorpage > .view-sub-wrapper .left-block > .view-latest-content-doorpage .view-sub-wrapper .view-content .views-row a .row-container:hover {
+              background: #eff2f7;
+              border: 1px solid #dbdfe3; }
+            /* line 899, ../scss/pages/_singleview.scss */
+            .view-latest-content-doorpage > .view-sub-wrapper .left-block > .view-latest-content-doorpage .view-sub-wrapper .view-content .views-row a .row-container .views-field-field-themenzuweisung {
+              margin-bottom: 30px; }
+              /* line 902, ../scss/pages/_singleview.scss */
+              .view-latest-content-doorpage > .view-sub-wrapper .left-block > .view-latest-content-doorpage .view-sub-wrapper .view-content .views-row a .row-container .views-field-field-themenzuweisung img {
+                display: inline-block;
+                margin-right: 10px; }
+            /* line 908, ../scss/pages/_singleview.scss */
+            .view-latest-content-doorpage > .view-sub-wrapper .left-block > .view-latest-content-doorpage .view-sub-wrapper .view-content .views-row a .row-container .views-field-type {
+              color: #e74712;
+              font-weight: bold;
+              padding-bottom: 15px; }
+            /* line 914, ../scss/pages/_singleview.scss */
+            .view-latest-content-doorpage > .view-sub-wrapper .left-block > .view-latest-content-doorpage .view-sub-wrapper .view-content .views-row a .row-container .views-field-title {
+              padding-bottom: 70px; }
+              /* line 917, ../scss/pages/_singleview.scss */
+              .view-latest-content-doorpage > .view-sub-wrapper .left-block > .view-latest-content-doorpage .view-sub-wrapper .view-content .views-row a .row-container .views-field-title .field-content {
+                color: #273753; }
+            /* line 923, ../scss/pages/_singleview.scss */
+            .view-latest-content-doorpage > .view-sub-wrapper .left-block > .view-latest-content-doorpage .view-sub-wrapper .view-content .views-row a .row-container .views-field-field-datum {
+              position: absolute;
+              bottom: 30px; }
+              /* line 927, ../scss/pages/_singleview.scss */
+              .view-latest-content-doorpage > .view-sub-wrapper .left-block > .view-latest-content-doorpage .view-sub-wrapper .view-content .views-row a .row-container .views-field-field-datum .date-display-single {
+                font-size: 17px;
+                color: #949d9e; }
+  /* line 938, ../scss/pages/_singleview.scss */
   .view-latest-content-doorpage > .view-sub-wrapper > .view-latest-content-doorpage {
     width: 100%;
     padding: 15px;
     /* Tablet design */
     /* Desktop design */
     /* Over Desktop design */ }
-    @media (min-width: 520px) {
-      /* line 937, ../scss/pages/_singleview.scss */
+    @media (min-width: 767px) {
+      /* line 938, ../scss/pages/_singleview.scss */
       .view-latest-content-doorpage > .view-sub-wrapper > .view-latest-content-doorpage {
         width: 50%;
         float: left;
         padding: 30px; } }
     @media (min-width: 960px) {
-      /* line 937, ../scss/pages/_singleview.scss */
+      /* line 938, ../scss/pages/_singleview.scss */
       .view-latest-content-doorpage > .view-sub-wrapper > .view-latest-content-doorpage {
         width: 33.33%;
         float: left;
         padding-right: 30px;
         padding-left: 20px; } }
     @media (min-width: 1025px) {
-      /* line 937, ../scss/pages/_singleview.scss */
+      /* line 938, ../scss/pages/_singleview.scss */
       .view-latest-content-doorpage > .view-sub-wrapper > .view-latest-content-doorpage {
         width: 33.33%;
         float: left;
         padding-left: 20px;
         padding-top: 0;
         padding-right: 0; } }
-    /* line 964, ../scss/pages/_singleview.scss */
+    /* line 967, ../scss/pages/_singleview.scss */
     .view-latest-content-doorpage > .view-sub-wrapper > .view-latest-content-doorpage .view-sub-wrapper {
       width: auto; }
-      /* line 967, ../scss/pages/_singleview.scss */
+      /* line 970, ../scss/pages/_singleview.scss */
       .view-latest-content-doorpage > .view-sub-wrapper > .view-latest-content-doorpage .view-sub-wrapper .view-header {
         padding-bottom: 30px;
         font-size: 28px; }
-      /* line 973, ../scss/pages/_singleview.scss */
-      .view-latest-content-doorpage > .view-sub-wrapper > .view-latest-content-doorpage .view-sub-wrapper .view-content .views-row .row-container {
-        background: #ffffff;
-        height: 410px;
-        padding: 30px;
-        position: relative;
-        border: 1px solid #ffffff;
-        cursor: pointer;
-        transition: all 0.5s ease; }
-        /* line 982, ../scss/pages/_singleview.scss */
-        .view-latest-content-doorpage > .view-sub-wrapper > .view-latest-content-doorpage .view-sub-wrapper .view-content .views-row .row-container:hover {
-          background: #eff2f7;
-          border: 1px solid #dbdfe3; }
-        /* line 987, ../scss/pages/_singleview.scss */
-        .view-latest-content-doorpage > .view-sub-wrapper > .view-latest-content-doorpage .view-sub-wrapper .view-content .views-row .row-container .views-field-field-themenzuweisung {
-          margin-bottom: 30px; }
+      /* line 975, ../scss/pages/_singleview.scss */
+      .view-latest-content-doorpage > .view-sub-wrapper > .view-latest-content-doorpage .view-sub-wrapper .view-content .views-row a {
+        text-decoration: none; }
+        /* line 976, ../scss/pages/_singleview.scss */
+        .view-latest-content-doorpage > .view-sub-wrapper > .view-latest-content-doorpage .view-sub-wrapper .view-content .views-row a .row-container {
+          background: #ffffff;
+          height: 410px;
+          padding: 30px;
+          position: relative;
+          border: 1px solid #ffffff;
+          cursor: pointer;
+          transition: all 0.5s ease; }
+          /* line 985, ../scss/pages/_singleview.scss */
+          .view-latest-content-doorpage > .view-sub-wrapper > .view-latest-content-doorpage .view-sub-wrapper .view-content .views-row a .row-container:hover {
+            background: #eff2f7;
+            border: 1px solid #dbdfe3; }
           /* line 990, ../scss/pages/_singleview.scss */
-          .view-latest-content-doorpage > .view-sub-wrapper > .view-latest-content-doorpage .view-sub-wrapper .view-content .views-row .row-container .views-field-field-themenzuweisung img {
-            display: inline-block;
-            margin-right: 10px; }
-        /* line 996, ../scss/pages/_singleview.scss */
-        .view-latest-content-doorpage > .view-sub-wrapper > .view-latest-content-doorpage .view-sub-wrapper .view-content .views-row .row-container .views-field-type {
-          color: #e74712;
-          font-weight: bold;
-          padding-bottom: 15px; }
-        /* line 1002, ../scss/pages/_singleview.scss */
-        .view-latest-content-doorpage > .view-sub-wrapper > .view-latest-content-doorpage .view-sub-wrapper .view-content .views-row .row-container .views-field-title {
-          padding-bottom: 70px; }
+          .view-latest-content-doorpage > .view-sub-wrapper > .view-latest-content-doorpage .view-sub-wrapper .view-content .views-row a .row-container .views-field-field-themenzuweisung {
+            margin-bottom: 30px; }
+            /* line 993, ../scss/pages/_singleview.scss */
+            .view-latest-content-doorpage > .view-sub-wrapper > .view-latest-content-doorpage .view-sub-wrapper .view-content .views-row a .row-container .views-field-field-themenzuweisung img {
+              display: inline-block;
+              margin-right: 10px; }
+          /* line 999, ../scss/pages/_singleview.scss */
+          .view-latest-content-doorpage > .view-sub-wrapper > .view-latest-content-doorpage .view-sub-wrapper .view-content .views-row a .row-container .views-field-type {
+            color: #e74712;
+            font-weight: bold;
+            padding-bottom: 15px; }
           /* line 1005, ../scss/pages/_singleview.scss */
-          .view-latest-content-doorpage > .view-sub-wrapper > .view-latest-content-doorpage .view-sub-wrapper .view-content .views-row .row-container .views-field-title a {
-            text-decoration: none;
-            color: #273753; }
-        /* line 1011, ../scss/pages/_singleview.scss */
-        .view-latest-content-doorpage > .view-sub-wrapper > .view-latest-content-doorpage .view-sub-wrapper .view-content .views-row .row-container .views-field-field-ort {
-          position: absolute;
-          bottom: 30px; }
-          /* line 1015, ../scss/pages/_singleview.scss */
-          .view-latest-content-doorpage > .view-sub-wrapper > .view-latest-content-doorpage .view-sub-wrapper .view-content .views-row .row-container .views-field-field-ort .field-content {
-            font-size: 17px;
-            color: #949d9e; }
-      /* line 1023, ../scss/pages/_singleview.scss */
+          .view-latest-content-doorpage > .view-sub-wrapper > .view-latest-content-doorpage .view-sub-wrapper .view-content .views-row a .row-container .views-field-title {
+            padding-bottom: 70px; }
+            /* line 1008, ../scss/pages/_singleview.scss */
+            .view-latest-content-doorpage > .view-sub-wrapper > .view-latest-content-doorpage .view-sub-wrapper .view-content .views-row a .row-container .views-field-title .field-content {
+              color: #273753; }
+          /* line 1014, ../scss/pages/_singleview.scss */
+          .view-latest-content-doorpage > .view-sub-wrapper > .view-latest-content-doorpage .view-sub-wrapper .view-content .views-row a .row-container .views-field-field-ort {
+            position: absolute;
+            bottom: 30px; }
+            /* line 1018, ../scss/pages/_singleview.scss */
+            .view-latest-content-doorpage > .view-sub-wrapper > .view-latest-content-doorpage .view-sub-wrapper .view-content .views-row a .row-container .views-field-field-ort .field-content {
+              font-size: 17px;
+              color: #949d9e; }
+      /* line 1026, ../scss/pages/_singleview.scss */
       .view-latest-content-doorpage > .view-sub-wrapper > .view-latest-content-doorpage .view-sub-wrapper .view-footer {
         padding-top: 30px;
         padding-bottom: 60px;
         position: relative; }
-        /* line 1028, ../scss/pages/_singleview.scss */
+        /* line 1031, ../scss/pages/_singleview.scss */
         .view-latest-content-doorpage > .view-sub-wrapper > .view-latest-content-doorpage .view-sub-wrapper .view-footer a {
           color: #273753; }
 
-/* line 1041, ../scss/pages/_singleview.scss */
+/* line 1044, ../scss/pages/_singleview.scss */
 .group-top-wrapper {
   margin-bottom: 40px;
   overflow: hidden; }
-  /* line 1048, ../scss/pages/_singleview.scss */
+  /* line 1051, ../scss/pages/_singleview.scss */
   .group-top-wrapper .group-left-top-wrapper > * {
     margin-bottom: 10px; }
-    /* line 1051, ../scss/pages/_singleview.scss */
+    /* line 1054, ../scss/pages/_singleview.scss */
     .group-top-wrapper .group-left-top-wrapper > *:last-child {
       margin: 0; }
-  /* line 1062, ../scss/pages/_singleview.scss */
+  /* line 1065, ../scss/pages/_singleview.scss */
   .group-top-wrapper .group-middle-wrapper, .group-top-wrapper .field-name-field-zeit, .group-top-wrapper .field-name-field-ort {
     border-bottom: 1px solid #c5cbd5;
     padding-bottom: 15px;
     margin-bottom: 15px; }
-  /* line 1068, ../scss/pages/_singleview.scss */
+  /* line 1071, ../scss/pages/_singleview.scss */
   .group-top-wrapper .group-middle-wrapper {
     overflow: hidden; }
-    /* line 1072, ../scss/pages/_singleview.scss */
+    /* line 1075, ../scss/pages/_singleview.scss */
     .group-top-wrapper .group-middle-wrapper .view-id-termin.view-display-id-block_1 {
       margin: 10px 0;
       clear: both;
       float: left;
       /* Tablet design */ }
       @media (min-width: 767px) {
-        /* line 1072, ../scss/pages/_singleview.scss */
+        /* line 1075, ../scss/pages/_singleview.scss */
         .group-top-wrapper .group-middle-wrapper .view-id-termin.view-display-id-block_1 {
           clear: none;
           float: right;
           margin: 5px 0 0; } }
-      /* line 1081, ../scss/pages/_singleview.scss */
+      /* line 1084, ../scss/pages/_singleview.scss */
       .group-top-wrapper .group-middle-wrapper .view-id-termin.view-display-id-block_1 .view-content {
         display: none; }
-      /* line 1085, ../scss/pages/_singleview.scss */
+      /* line 1088, ../scss/pages/_singleview.scss */
       .group-top-wrapper .group-middle-wrapper .view-id-termin.view-display-id-block_1 .view-sub-wrapper, .group-top-wrapper .group-middle-wrapper .view-id-termin.view-display-id-block_1 .feed-icon {
         width: auto;
         float: right; }
-        /* line 1089, ../scss/pages/_singleview.scss */
+        /* line 1092, ../scss/pages/_singleview.scss */
         .group-top-wrapper .group-middle-wrapper .view-id-termin.view-display-id-block_1 .view-sub-wrapper .view-header, .group-top-wrapper .group-middle-wrapper .view-id-termin.view-display-id-block_1 .feed-icon .view-header {
           width: auto;
           margin: 0;
@@ -9513,45 +9522,45 @@ input[type=text]::-ms-clear {
           color: #273753;
           font-size: 16px;
           font-weight: bold; }
-          /* line 1097, ../scss/pages/_singleview.scss */
+          /* line 1100, ../scss/pages/_singleview.scss */
           .group-top-wrapper .group-middle-wrapper .view-id-termin.view-display-id-block_1 .view-sub-wrapper .view-header p, .group-top-wrapper .group-middle-wrapper .view-id-termin.view-display-id-block_1 .feed-icon .view-header p {
             margin: 0; }
-      /* line 1103, ../scss/pages/_singleview.scss */
+      /* line 1106, ../scss/pages/_singleview.scss */
       .group-top-wrapper .group-middle-wrapper .view-id-termin.view-display-id-block_1 .feed-icon .ical-icon {
         text-decoration: none; }
-        /* line 1105, ../scss/pages/_singleview.scss */
+        /* line 1108, ../scss/pages/_singleview.scss */
         .group-top-wrapper .group-middle-wrapper .view-id-termin.view-display-id-block_1 .feed-icon .ical-icon::before {
           content: "\e900";
           font-family: "icomoon";
           color: #e74712;
           margin: 3px 10px 0 0;
           display: inline-block; }
-        /* line 1112, ../scss/pages/_singleview.scss */
+        /* line 1115, ../scss/pages/_singleview.scss */
         .group-top-wrapper .group-middle-wrapper .view-id-termin.view-display-id-block_1 .feed-icon .ical-icon img {
           display: none; }
-    /* line 1120, ../scss/pages/_singleview.scss */
+    /* line 1123, ../scss/pages/_singleview.scss */
     .group-top-wrapper .group-middle-wrapper .field-name-field-event-datum {
       clear: both;
       float: left;
       /* Tablet design */ }
       @media (min-width: 767px) {
-        /* line 1120, ../scss/pages/_singleview.scss */
+        /* line 1123, ../scss/pages/_singleview.scss */
         .group-top-wrapper .group-middle-wrapper .field-name-field-event-datum {
           clear: none;
           float: left; } }
-  /* line 1130, ../scss/pages/_singleview.scss */
+  /* line 1133, ../scss/pages/_singleview.scss */
   .group-top-wrapper .field-name-field-ort {
     border: none; }
-  /* line 1134, ../scss/pages/_singleview.scss */
+  /* line 1137, ../scss/pages/_singleview.scss */
   .group-top-wrapper .field-name-field-event-datum {
     font-size: 28px;
     color: #e74712;
     font-weight: bold; }
-    /* line 1139, ../scss/pages/_singleview.scss */
+    /* line 1142, ../scss/pages/_singleview.scss */
     .group-top-wrapper .field-name-field-event-datum .field-label {
       font-weight: bold; }
 
-/* line 1146, ../scss/pages/_singleview.scss */
+/* line 1149, ../scss/pages/_singleview.scss */
 .field-name-field-link-zur-anmeldung a, .field-name-field-zur-website a {
   position: relative;
   bottom: auto;
@@ -9560,71 +9569,71 @@ input[type=text]::-ms-clear {
   padding: 14px 40px 14px 55px;
   margin: 26px 0 0;
   float: left; }
-  /* line 1157, ../scss/pages/_singleview.scss */
+  /* line 1160, ../scss/pages/_singleview.scss */
   .field-name-field-link-zur-anmeldung a::before, .field-name-field-zur-website a::before {
     left: 24px;
     top: 19px; }
 
-/* line 1165, ../scss/pages/_singleview.scss */
+/* line 1168, ../scss/pages/_singleview.scss */
 .field-name-field-zur-website a {
   margin: 26px 0 45px; }
 
-/* line 1172, ../scss/pages/_singleview.scss */
+/* line 1175, ../scss/pages/_singleview.scss */
 .field-name-field-bis-auf-weiteres, .field-name-field-stichtag {
   font-size: 28px;
   color: #e74712;
   border-bottom: 1px solid #c5cbd5;
   padding-bottom: 15px;
   margin-bottom: 15px; }
-  /* line 1179, ../scss/pages/_singleview.scss */
+  /* line 1182, ../scss/pages/_singleview.scss */
   .field-name-field-bis-auf-weiteres .field-label, .field-name-field-stichtag .field-label {
     font-weight: bold; }
 
-/* line 1184, ../scss/pages/_singleview.scss */
+/* line 1187, ../scss/pages/_singleview.scss */
 .field-name-field-ausschreibende-stelle {
   margin-bottom: 45px;
   font-size: 22px; }
-  /* line 1188, ../scss/pages/_singleview.scss */
+  /* line 1191, ../scss/pages/_singleview.scss */
   .field-name-field-ausschreibende-stelle .external-link {
     padding-left: 5px;
     padding-right: 35px;
     font-size: 22px; }
-    /* line 1193, ../scss/pages/_singleview.scss */
+    /* line 1196, ../scss/pages/_singleview.scss */
     .field-name-field-ausschreibende-stelle .external-link::before {
       left: auto;
       right: 0;
       top: 5px; }
 
-/* line 1203, ../scss/pages/_singleview.scss */
+/* line 1206, ../scss/pages/_singleview.scss */
 .field-name-field-herausgeber {
   border-bottom: 1px solid #c5cbd5;
   padding-bottom: 15px;
   margin-bottom: 15px; }
-  /* line 1208, ../scss/pages/_singleview.scss */
+  /* line 1211, ../scss/pages/_singleview.scss */
   .field-name-field-herausgeber .field-label::before {
     content: "\e90f"; }
 
-/* line 1214, ../scss/pages/_singleview.scss */
+/* line 1217, ../scss/pages/_singleview.scss */
 .field-name-field-herausgeber, .field-name-field-ver-ffentlichungsdatum {
   font-size: 18px; }
-  /* line 1217, ../scss/pages/_singleview.scss */
+  /* line 1220, ../scss/pages/_singleview.scss */
   .field-name-field-herausgeber .field-label::before, .field-name-field-ver-ffentlichungsdatum .field-label::before {
     font-family: "icomoon";
     color: #a0a9b7;
     margin-right: 10px; }
 
-/* line 1225, ../scss/pages/_singleview.scss */
+/* line 1228, ../scss/pages/_singleview.scss */
 .field-name-field-ver-ffentlichungsdatum {
   margin-bottom: 45px; }
-  /* line 1228, ../scss/pages/_singleview.scss */
+  /* line 1231, ../scss/pages/_singleview.scss */
   .field-name-field-ver-ffentlichungsdatum .field-label::before {
     content: "\e90b"; }
 
-/* line 1236, ../scss/pages/_singleview.scss */
+/* line 1239, ../scss/pages/_singleview.scss */
 .node-unpublished {
   background: none; }
 
-/* line 1246, ../scss/pages/_singleview.scss */
+/* line 1249, ../scss/pages/_singleview.scss */
 .view-id-related_content.view-display-id-block_3 .views-row .field-content a {
   background: #e74712;
   border: none;
@@ -9634,24 +9643,24 @@ input[type=text]::-ms-clear {
   font-size: 16px;
   /* Tablet design */ }
   @media (min-width: 520px) {
-    /* line 1246, ../scss/pages/_singleview.scss */
+    /* line 1249, ../scss/pages/_singleview.scss */
     .view-id-related_content.view-display-id-block_3 .views-row .field-content a {
       font-size: 20px; } }
-  /* line 1257, ../scss/pages/_singleview.scss */
+  /* line 1260, ../scss/pages/_singleview.scss */
   .view-id-related_content.view-display-id-block_3 .views-row .field-content a::before {
     color: #ffffff;
     float: right;
     margin-left: 10px;
     position: static; }
 
-/* line 1272, ../scss/pages/_singleview.scss */
+/* line 1275, ../scss/pages/_singleview.scss */
 .field-name-field-ansprechpartner-kontaktdat, .field-name-field-weitere-details {
   border-bottom: 1px solid #c5cbd5;
   padding-bottom: 15px;
   margin-bottom: 15px;
   font-size: 18px; }
 
-/* line 1280, ../scss/pages/_singleview.scss */
+/* line 1283, ../scss/pages/_singleview.scss */
 .field-name-field-weitere-details::before {
   content: "\e907";
   font-family: "icomoon";
@@ -9659,14 +9668,14 @@ input[type=text]::-ms-clear {
   float: left;
   color: #a0a9b7; }
 
-/* line 1290, ../scss/pages/_singleview.scss */
+/* line 1293, ../scss/pages/_singleview.scss */
 .external-link {
   color: #273753;
   padding-left: 34px;
   text-decoration: none;
   font-size: 18px;
   position: relative; }
-  /* line 1297, ../scss/pages/_singleview.scss */
+  /* line 1300, ../scss/pages/_singleview.scss */
   .external-link::before {
     left: 0;
     position: absolute;
@@ -9675,7 +9684,7 @@ input[type=text]::-ms-clear {
     content: "\e948";
     color: #919BAA;
     font-size: 16px; }
-  /* line 1307, ../scss/pages/_singleview.scss */
+  /* line 1310, ../scss/pages/_singleview.scss */
   .external-link .ext {
     display: none; }
 
