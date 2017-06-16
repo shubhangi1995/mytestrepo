@@ -690,6 +690,16 @@
     }
 }
 
+.field-name-field-weiterf-hrende-links{
+	.field-item{
+		a{
+			font-size:18px !important;
+		}
+	}
+}
+
+
+
 // view with date field
 
 .view-id-related_content {
@@ -1296,7 +1306,7 @@
     text-decoration: none;
     font-size: 18px;
     position: relative;
-
+	display:inline-block;
     &::before { 
         left: 0;
         position: absolute;
