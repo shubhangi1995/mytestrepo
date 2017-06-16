@@ -18,12 +18,12 @@ global $base_url;
 <?php if (!empty($title)): ?>
   <h3><?php print $title; ?></h3>
 <?php endif; ?>
-<?php $views1=array("themenzuweisung_flyouts","right_front_map_teaser"); ?>
+<?php $views1=array("themenzuweisung_flyouts","right_front_map_teaser","related_content"); ?>
 <?php if (!(in_array($view->name,$views1))): ?>
 <?php foreach ($rows as $id => $row): ?>
 <?php $path = drupal_get_path_alias("node/" . $node_nid[$id]); ?>
 <div<?php if ($classes_array[$id]) { print ' class="' . $classes_array[$id] .'"';  } ?>>
-  <a target="_blank" href="<?php print $base_url . '/' . $path; ?>" >
+  <a href="<?php print $base_url . '/' . $path; ?>" >
   <div class="row-container">
     <?php print $row; ?>
   </div>
