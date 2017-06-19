@@ -9498,27 +9498,28 @@ input[type=text]::-ms-clear {
     margin-bottom: 15px; }
   /* line 1081, ../scss/pages/_singleview.scss */
   .group-top-wrapper .group-middle-wrapper {
-    overflow: hidden; }
-    /* line 1085, ../scss/pages/_singleview.scss */
+    display: inline-block;
+    width: 100%; }
+    /* line 1087, ../scss/pages/_singleview.scss */
     .group-top-wrapper .group-middle-wrapper .view-id-termin.view-display-id-block_1 {
       margin: 10px 0;
       clear: both;
       float: left;
       /* Tablet design */ }
       @media (min-width: 767px) {
-        /* line 1085, ../scss/pages/_singleview.scss */
+        /* line 1087, ../scss/pages/_singleview.scss */
         .group-top-wrapper .group-middle-wrapper .view-id-termin.view-display-id-block_1 {
           clear: none;
           float: right;
           margin: 5px 0 0; } }
-      /* line 1094, ../scss/pages/_singleview.scss */
+      /* line 1096, ../scss/pages/_singleview.scss */
       .group-top-wrapper .group-middle-wrapper .view-id-termin.view-display-id-block_1 .view-content {
         display: none; }
-      /* line 1098, ../scss/pages/_singleview.scss */
+      /* line 1100, ../scss/pages/_singleview.scss */
       .group-top-wrapper .group-middle-wrapper .view-id-termin.view-display-id-block_1 .view-sub-wrapper, .group-top-wrapper .group-middle-wrapper .view-id-termin.view-display-id-block_1 .feed-icon {
         width: auto;
         float: right; }
-        /* line 1102, ../scss/pages/_singleview.scss */
+        /* line 1104, ../scss/pages/_singleview.scss */
         .group-top-wrapper .group-middle-wrapper .view-id-termin.view-display-id-block_1 .view-sub-wrapper .view-header, .group-top-wrapper .group-middle-wrapper .view-id-termin.view-display-id-block_1 .feed-icon .view-header {
           width: auto;
           margin: 0;
@@ -9526,45 +9527,82 @@ input[type=text]::-ms-clear {
           color: #273753;
           font-size: 16px;
           font-weight: bold; }
-          /* line 1110, ../scss/pages/_singleview.scss */
+          /* line 1112, ../scss/pages/_singleview.scss */
           .group-top-wrapper .group-middle-wrapper .view-id-termin.view-display-id-block_1 .view-sub-wrapper .view-header p, .group-top-wrapper .group-middle-wrapper .view-id-termin.view-display-id-block_1 .feed-icon .view-header p {
             margin: 0; }
-      /* line 1116, ../scss/pages/_singleview.scss */
+      /* line 1118, ../scss/pages/_singleview.scss */
       .group-top-wrapper .group-middle-wrapper .view-id-termin.view-display-id-block_1 .feed-icon .ical-icon {
         text-decoration: none; }
-        /* line 1118, ../scss/pages/_singleview.scss */
+        /* line 1120, ../scss/pages/_singleview.scss */
         .group-top-wrapper .group-middle-wrapper .view-id-termin.view-display-id-block_1 .feed-icon .ical-icon::before {
           content: "\e900";
           font-family: "icomoon";
           color: #e74712;
           margin: 3px 10px 0 0;
           display: inline-block; }
-        /* line 1125, ../scss/pages/_singleview.scss */
+        /* line 1127, ../scss/pages/_singleview.scss */
         .group-top-wrapper .group-middle-wrapper .view-id-termin.view-display-id-block_1 .feed-icon .ical-icon img {
           display: none; }
-    /* line 1133, ../scss/pages/_singleview.scss */
+    /* line 1135, ../scss/pages/_singleview.scss */
     .group-top-wrapper .group-middle-wrapper .field-name-field-event-datum {
       clear: both;
       float: left;
       /* Tablet design */ }
       @media (min-width: 767px) {
-        /* line 1133, ../scss/pages/_singleview.scss */
+        /* line 1135, ../scss/pages/_singleview.scss */
         .group-top-wrapper .group-middle-wrapper .field-name-field-event-datum {
           clear: none;
           float: left; } }
-  /* line 1143, ../scss/pages/_singleview.scss */
+    /* line 1143, ../scss/pages/_singleview.scss */
+    .group-top-wrapper .group-middle-wrapper .addtocalendar {
+      float: left;
+      clear: both;
+      margin: 15px 0;
+      /* Tablet design */ }
+      @media (min-width: 767px) {
+        /* line 1143, ../scss/pages/_singleview.scss */
+        .group-top-wrapper .group-middle-wrapper .addtocalendar {
+          clear: none;
+          float: right;
+          margin: 0; } }
+      /* line 1152, ../scss/pages/_singleview.scss */
+      .group-top-wrapper .group-middle-wrapper .addtocalendar > a {
+        background: none;
+        box-shadow: none;
+        color: #273753;
+        font-weight: bold;
+        padding: 0;
+        margin-top: 8px;
+        position: relative;
+        top: 0px !important; }
+        /* line 1161, ../scss/pages/_singleview.scss */
+        .group-top-wrapper .group-middle-wrapper .addtocalendar > a::before {
+          content: "\e900";
+          font-family: "icomoon";
+          color: #e74712;
+          font-size: 17px;
+          margin-right: 10px;
+          margin-top: 1px;
+          float: left; }
+        /* line 1170, ../scss/pages/_singleview.scss */
+        .group-top-wrapper .group-middle-wrapper .addtocalendar > a + .atcb-list {
+          width: 190px; }
+          /* line 1174, ../scss/pages/_singleview.scss */
+          .group-top-wrapper .group-middle-wrapper .addtocalendar > a + .atcb-list li a:hover {
+            background: #e74712; }
+  /* line 1184, ../scss/pages/_singleview.scss */
   .group-top-wrapper .field-name-field-ort {
     border: none; }
-  /* line 1147, ../scss/pages/_singleview.scss */
+  /* line 1188, ../scss/pages/_singleview.scss */
   .group-top-wrapper .field-name-field-event-datum {
     font-size: 28px;
     color: #e74712;
     font-weight: bold; }
-    /* line 1152, ../scss/pages/_singleview.scss */
+    /* line 1193, ../scss/pages/_singleview.scss */
     .group-top-wrapper .field-name-field-event-datum .field-label {
       font-weight: bold; }
 
-/* line 1159, ../scss/pages/_singleview.scss */
+/* line 1200, ../scss/pages/_singleview.scss */
 .field-name-field-link-zur-anmeldung a, .field-name-field-zur-website a {
   position: relative;
   bottom: auto;
@@ -9573,71 +9611,71 @@ input[type=text]::-ms-clear {
   padding: 14px 40px 14px 55px;
   margin: 26px 0 0;
   float: left; }
-  /* line 1170, ../scss/pages/_singleview.scss */
+  /* line 1211, ../scss/pages/_singleview.scss */
   .field-name-field-link-zur-anmeldung a::before, .field-name-field-zur-website a::before {
     left: 24px;
     top: 19px; }
 
-/* line 1178, ../scss/pages/_singleview.scss */
+/* line 1219, ../scss/pages/_singleview.scss */
 .field-name-field-zur-website a {
   margin: 26px 0 45px; }
 
-/* line 1185, ../scss/pages/_singleview.scss */
+/* line 1226, ../scss/pages/_singleview.scss */
 .field-name-field-bis-auf-weiteres, .field-name-field-stichtag {
   font-size: 28px;
   color: #e74712;
   border-bottom: 1px solid #c5cbd5;
   padding-bottom: 15px;
   margin-bottom: 15px; }
-  /* line 1192, ../scss/pages/_singleview.scss */
+  /* line 1233, ../scss/pages/_singleview.scss */
   .field-name-field-bis-auf-weiteres .field-label, .field-name-field-stichtag .field-label {
     font-weight: bold; }
 
-/* line 1197, ../scss/pages/_singleview.scss */
+/* line 1238, ../scss/pages/_singleview.scss */
 .field-name-field-ausschreibende-stelle {
   margin-bottom: 45px;
   font-size: 22px; }
-  /* line 1201, ../scss/pages/_singleview.scss */
+  /* line 1242, ../scss/pages/_singleview.scss */
   .field-name-field-ausschreibende-stelle .external-link {
     padding-left: 5px;
     padding-right: 35px;
     font-size: 22px; }
-    /* line 1206, ../scss/pages/_singleview.scss */
+    /* line 1247, ../scss/pages/_singleview.scss */
     .field-name-field-ausschreibende-stelle .external-link::before {
       left: auto;
       right: 0;
       top: 5px; }
 
-/* line 1216, ../scss/pages/_singleview.scss */
+/* line 1257, ../scss/pages/_singleview.scss */
 .field-name-field-herausgeber {
   border-bottom: 1px solid #c5cbd5;
   padding-bottom: 15px;
   margin-bottom: 15px; }
-  /* line 1221, ../scss/pages/_singleview.scss */
+  /* line 1262, ../scss/pages/_singleview.scss */
   .field-name-field-herausgeber .field-label::before {
     content: "\e90f"; }
 
-/* line 1227, ../scss/pages/_singleview.scss */
+/* line 1268, ../scss/pages/_singleview.scss */
 .field-name-field-herausgeber, .field-name-field-ver-ffentlichungsdatum {
   font-size: 18px; }
-  /* line 1230, ../scss/pages/_singleview.scss */
+  /* line 1271, ../scss/pages/_singleview.scss */
   .field-name-field-herausgeber .field-label::before, .field-name-field-ver-ffentlichungsdatum .field-label::before {
     font-family: "icomoon";
     color: #a0a9b7;
     margin-right: 10px; }
 
-/* line 1238, ../scss/pages/_singleview.scss */
+/* line 1279, ../scss/pages/_singleview.scss */
 .field-name-field-ver-ffentlichungsdatum {
   margin-bottom: 45px; }
-  /* line 1241, ../scss/pages/_singleview.scss */
+  /* line 1282, ../scss/pages/_singleview.scss */
   .field-name-field-ver-ffentlichungsdatum .field-label::before {
     content: "\e90b"; }
 
-/* line 1249, ../scss/pages/_singleview.scss */
+/* line 1290, ../scss/pages/_singleview.scss */
 .node-unpublished {
   background: none; }
 
-/* line 1259, ../scss/pages/_singleview.scss */
+/* line 1300, ../scss/pages/_singleview.scss */
 .view-id-related_content.view-display-id-block_3 .views-row .field-content a {
   background: #e74712;
   border: none;
@@ -9647,24 +9685,24 @@ input[type=text]::-ms-clear {
   font-size: 16px;
   /* Tablet design */ }
   @media (min-width: 520px) {
-    /* line 1259, ../scss/pages/_singleview.scss */
+    /* line 1300, ../scss/pages/_singleview.scss */
     .view-id-related_content.view-display-id-block_3 .views-row .field-content a {
       font-size: 20px; } }
-  /* line 1270, ../scss/pages/_singleview.scss */
+  /* line 1311, ../scss/pages/_singleview.scss */
   .view-id-related_content.view-display-id-block_3 .views-row .field-content a::before {
     color: #ffffff;
     float: right;
     margin-left: 10px;
     position: static; }
 
-/* line 1285, ../scss/pages/_singleview.scss */
+/* line 1326, ../scss/pages/_singleview.scss */
 .field-name-field-ansprechpartner-kontaktdat, .field-name-field-weitere-details {
   border-bottom: 1px solid #c5cbd5;
   padding-bottom: 15px;
   margin-bottom: 15px;
   font-size: 18px; }
 
-/* line 1293, ../scss/pages/_singleview.scss */
+/* line 1334, ../scss/pages/_singleview.scss */
 .field-name-field-weitere-details::before {
   content: "\e907";
   font-family: "icomoon";
@@ -9672,7 +9710,7 @@ input[type=text]::-ms-clear {
   float: left;
   color: #a0a9b7; }
 
-/* line 1303, ../scss/pages/_singleview.scss */
+/* line 1344, ../scss/pages/_singleview.scss */
 .external-link {
   color: #273753;
   padding-left: 34px;
@@ -9680,7 +9718,7 @@ input[type=text]::-ms-clear {
   font-size: 18px;
   position: relative;
   display: inline-block; }
-  /* line 1310, ../scss/pages/_singleview.scss */
+  /* line 1351, ../scss/pages/_singleview.scss */
   .external-link::before {
     left: 0;
     position: absolute;
@@ -9689,7 +9727,7 @@ input[type=text]::-ms-clear {
     content: "\e948";
     color: #919BAA;
     font-size: 16px; }
-  /* line 1320, ../scss/pages/_singleview.scss */
+  /* line 1361, ../scss/pages/_singleview.scss */
   .external-link .ext {
     display: none; }
 

@@ -1079,7 +1079,9 @@
     }
 
     .group-middle-wrapper {
-        overflow: hidden;
+        // overflow: hidden;
+		display:inline-block;
+		width:100%; 
 
         .view-id-termin {
             &.view-display-id-block_1 {
@@ -1138,6 +1140,45 @@
 			     float: left;	
 			}
         }
+		.addtocalendar{
+			float:left;
+			clear:both;
+			margin:15px 0;
+			@include devicebreak(x-medium) { 
+				 clear:none;
+			     float: right;
+				 margin:0;
+			}
+			>  a{
+				background:none;
+				box-shadow:none;
+				color:$main-color;
+				font-weight:bold; 
+				padding:0;
+				margin-top:8px;
+				position: relative;
+				top: 0px!important;
+				&::before{
+					content: "\e900"; 
+					font-family:$icomoon;
+					color:$active-menu; 
+					font-size: 17px;
+					margin-right: 10px;
+					margin-top:1px;
+					float:left;
+				}
+				& + .atcb-list{
+					width:190px;
+					li{
+						a{
+							&:hover{
+								background:$active-menu;
+							}
+						}
+					}
+				}
+			}
+		}
     }
 
     .field-name-field-ort {

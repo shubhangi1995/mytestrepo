@@ -224,6 +224,9 @@ if(jQuery(window).innerWidth() <= 1024){
 	
 	jQuery(".block-ipwa-newsletter .form-submit").insertAfter(".block-ipwa-newsletter .form-item-newsletter .form-control");
 	
+	// Add to calendar link
+	
+	jQuery(".addtocalendar").appendTo(jQuery(".group-left-top-wrapper .group-middle-wrapper"));
 	
 });
 
