@@ -2053,6 +2053,8 @@ Publikation|Publikationen'),
   /* Display: Feed 2 */
   $handler = $view->new_display('feed', 'Feed 2', 'feed_2');
   $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['style_plugin'] = 'views_geojson_feed';
   $handler->display->display_options['style_options']['data_source']['value'] = 'latlon';
   $handler->display->display_options['style_options']['data_source']['latitude'] = 'field_latitude';
