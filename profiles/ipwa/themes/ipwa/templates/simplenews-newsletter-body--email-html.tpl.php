@@ -51,16 +51,24 @@
 			margin:0;
 			padding:0;
 		}
+		p span{
+			font-size:20px !important;
+			background-color:transparent !important;
+		}
+		p span span{
+			font-size:20px !important;
+			background-color:transparent !important;
+		}
 	</style>
 </head>
 
 <body style="width:640px;">
-<table align="center" border="0" cellpadding="0" cellspacing="0" width="620" id="bodyTable" style="font-family:Arial,Helvetica, sans-serif; font-size:16px; color:#000; width:640px;">
+<table align="center" border="0" cellpadding="0" cellspacing="0" width="620" id="bodyTable" style="font-family:Arial,Helvetica, sans-serif; font-size:16px; color:#273753; width:640px;">
   
 	<tr>
-	<td width="620" align="center" style="width:620px;">
+	<td width="620" align="center" style="width:620px;" style="color:#273753">
 		<table width="620" align="center">
-			<tr style="padding:10px 20px; background:#eee;">
+			<tr style="padding:10px 20px; background:#eff2f7;">
 				<td align="left" style="padding:20px 10px;">
 						<img src="<?php print file_create_url(drupal_get_path('theme', 'ipwa')); ?>/images/logo.png" alt="Logo1" style="height:90px;"/>
 				</td>
@@ -72,10 +80,10 @@
 	</td>
 	</tr>
     <tr>
-	<td  style="width:620px;">
-	<table style="font-family:Arial,Helvetica, sans-serif; font-size:16px; color:#000; width:640px;">
+	<td  style="width:620px;" style="color:#273753">
+	<table style="font-family:Arial,Helvetica, sans-serif; font-size:16px; color:#273753; width:640px;">
 	<tr>
-	 <td align="left" style = "font-weight:bold;">
+	 <td align="left" style = "font-weight:bold;color:#273753">
           <?php
           /**
            * Following code is for print the Date and Issue No. of Newsletter
@@ -88,7 +96,7 @@
               <?php $build['field_datum'][0]['#markup'] = ''; ?>
             <?php endif; ?>
 			</td>
-			<td align="right" style = "font-weight:bold;">
+			<td align="right" style = "font-weight:bold;color:#273753">
             <?php if(isset($build['field_issue_no'])) : ?>
             <?php print $build['field_issue_no'][0]['#markup']; ?>
               <?php $build['field_issue_no'][0]['#markup'] = ''; ?>
@@ -102,7 +110,7 @@
        
     </tr>
     <tr>
-        <td  style="width:620px;">
+        <td  style="width:620px;color:#273753">
           <?php
             /**
             * Following code is for print the Title of Newsletter
@@ -129,7 +137,7 @@
         </td>
     </tr>
     <tr>
-        <td  style="width:620px;">
+        <td  style="width:620px;color:#273753">
 
           <?php
           /**
@@ -144,11 +152,11 @@
 
                   <?php //Following code is for print Title of Group. ?>
                   <?php foreach($field_data[$items['value']]->field_group_heading['und'] as $group_title): ?>
-                    <h2 style="font-size:25px;background:#eee;padding:20px 0;text-align:center;border-bottom:20px solid #fff;border-top:20px solid #fff; "><?php print $group_title['value']; ?></h2>
-					<table style="font-family:Arial,Helvetica, sans-serif;margin:0 auto; font-size:16px;color:#000;width:640px; width = "620">
+                    <h2 style="font-size:25px;background:#eff2f7;padding:20px 0;text-align:center;border-bottom:20px solid #fff;border-top:20px solid #fff; color:#273753s"><?php print $group_title['value']; ?></h2>
+					<table style="font-family:Arial,Helvetica, sans-serif;margin:0 auto; font-size:16px;color:#273753;width:640px; width = "620">
 					<tr>
-					<td style="padding:10px 20px; background:#eee;">
-					<div style="background:#eee; padding:30px 20px;">
+					<td style="padding:10px 20px; background:#eff2f7;color:#273753">
+					<div style="background:#eff2f7; padding:30px 20px; color:#273753">
 					<?php foreach ($field_data[$items['value']]->field_newsletter_content_types['und'] as $node_data): ?>
                       <?php // look up the alias from the url_alias table ?>
                       <?php $source = 'node/' .$node_data['entity']->nid; ?>
@@ -164,7 +172,7 @@
                         <?php endif; ?>
 
                         <?php //print Title of Termin. ?>
-                          <div><a href="<?php print $base_url.'/'.$alias; ?>" style="color:#000;font-weight:bold;text-decoration:none;font-size:24px;">
+                          <div><a href="<?php print $base_url.'/'.$alias; ?>" style="color:#273753;font-weight:bold;text-decoration:none;font-size:18px;">
                               <?php print $node_data['entity']->title; ?></a>
                           </div>
 
@@ -180,7 +188,7 @@
                               <?php $output .= '<div class="date-display-range"><span class="date-display-start">' . $startDate . '</span> - <span class="date-display-end">' . $enddate . '</span></div>'; ?>
                                 <div style="margin:10px 0;"><?php print $output; ?></div>
                             <?php else: ?>
-                                <div style="margin:10px 0;"><?php print $startDate; ?></div>
+                                <div style="margin:10px 0;color:#e74712;font-weight:bold;"><?php print $startDate; ?></div>
                             <?php endif; ?>
                           <?php endforeach; ?>
                              </div>
@@ -190,7 +198,7 @@
                         <div>
 
                         <?php //print Title of Other content excluded from Termin. ?>
-                          <div><a href="<?php print $base_url.'/'.$alias; ?>" style="color:#000;font-weight:bold;text-decoration:none;font-size:24px;">
+                          <div><a href="<?php print $base_url.'/'.$alias; ?>" style="color:#273753;font-weight:bold;text-decoration:none;font-size:18px;color:#273753">
                             <?php print $node_data['entity']->title; ?></a>
                           </div>
 
@@ -199,8 +207,8 @@
                           <?php if(isset($node->body['und'][0])) : ?>
                           <?php $title_link = $base_url.'/'.$alias; ?>
                             <?php $body = (strlen($node->body['und'][0]['value']) > 200) ? substr($node->body['und'][0]['value'],0,200).
-                              '...<div style="margin:10px 0;"><div style="margin-top:5px;display:inline-block;"><a href="'.$title_link.'"> > mehr</a></div></div>' : $node->body['und'][0]['value']; ?>
-                            <p style="margin:5px 0;"><?php print $body; ?></p>
+                              '...<div style="margin:10px 0;"><div style="margin-top:5px;display:inline-block;color:#273753"><a href="'.$title_link.'"> > mehr</a></div></div>' : $node->body['und'][0]['value']; ?>
+                            <p style="margin:5px 0; font-size:20px !important;background:none !important;color:#273753"><?php print $body; ?></p>
                           <?php endif; ?>
                         <?php endif; ?>
                           </div>
@@ -220,25 +228,25 @@
     </tr>
    <tr>
 		<td>
-			<table style="font-family:Arial,Helvetica, sans-serif; font-size:16px; color:#000; width:640px;">
-				<tr style="padding:10px 20px; background:#eee;">
-				<td align="left">
-				<span style="font-weight:bold;">Folden sie uns auf :</span> <span><a href="#"><img src = "<?php print file_create_url(drupal_get_path('theme', 'ipwa')); ?>/images/fb.png" alt="FB" style="margin-right:5px;"/></a></span><span style="color:#eee;font-size:8px;">12</span><span><a href="#"><img src = "<?php print file_create_url(drupal_get_path('theme', 'ipwa')); ?>/images/twitter.png" alt="Twitter" style="margin-right:5px;"/></a></span> <span style="color:#eee;font-size:8px;">12</span><span><a href="#"><img src = "<?php print file_create_url(drupal_get_path('theme', 'ipwa')); ?>/images/linkedin.png" alt="LinkedIn" style="margin-right:5px;"/></a></span>
+			<table style="font-family:Arial,Helvetica, sans-serif; font-size:16px; color:#273753; width:640px;">
+				<tr style="padding:10px 20px; background:#eff2f7;">
+				<td align="left" style="color:#273753;">
+				<span style="font-weight:bold;color:#273753">Folden sie uns auf :</span> <span><a href="#"><img src = "<?php print file_create_url(drupal_get_path('theme', 'ipwa')); ?>/images/fb.png" alt="FB" style="margin-right:5px;"/></a></span><span style="color:#eff2f7;font-size:8px;">12</span><span><a href="#"><img src = "<?php print file_create_url(drupal_get_path('theme', 'ipwa')); ?>/images/twitter.png" alt="Twitter" style="margin-right:5px;"/></a></span> <span style="color:#eff2f7;font-size:8px;">12</span><span><a href="#"><img src = "<?php print file_create_url(drupal_get_path('theme', 'ipwa')); ?>/images/linkedin.png" alt="LinkedIn" style="margin-right:5px;"/></a></span>
 				</td>
-				<td align="right">
-				<a href="#">Impressum</a><span style="color:#eee;font-size:8px;">12</span><a href="<?php print $base_url.'/de/content/kontaktformular'; ?>">Contact</a>
+				<td align="right" style="color:#273753;">
+				<a href="#">Impressum</a><span style="color:#eff2f7;font-size:8px;">12</span><a href="<?php print $base_url.'/de/content/kontaktformular'; ?>">Contact</a>
 				</td>
 				</tr>
 				<tr style="padding:10px 20px;">
-					<td align="left">
-					<span><img src="<?php print file_create_url(drupal_get_path('theme', 'ipwa')); ?>/images/EU_Logo.png" alt = "footer_logo1" /></span> <span style="color:#eee;font-size:8px;">12</span> <span><img src="<?php print file_create_url(drupal_get_path('theme', 'ipwa')); ?>/images/EFRE.NRW.png" alt = "footer_logo2" /></span> <span style="color:#eee;font-size:8px;">12</span> <span><img src="<?php print file_create_url(drupal_get_path('theme', 'ipwa')); ?>/images/MWEI.png" alt = "footer_logo3" /></span>
+					<td align="left" style="color:#273753;">
+					<span><img src="<?php print file_create_url(drupal_get_path('theme', 'ipwa')); ?>/images/EU_Logo.png" alt = "footer_logo1" /></span> <span style="color:#eff2f7;font-size:8px;">12</span> <span><img src="<?php print file_create_url(drupal_get_path('theme', 'ipwa')); ?>/images/EFRE.NRW.png" alt = "footer_logo2" /></span> <span style="color:#eff2f7;font-size:8px;">12</span> <span><img src="<?php print file_create_url(drupal_get_path('theme', 'ipwa')); ?>/images/MWEI.png" alt = "footer_logo3" /></span>
 					</td>
 				</tr>
-				<tr style="padding:10px 20px; background:#eee;">
-				<td>
-					<div style="margin-bottom:25px;">Verantwrotlich im Sinne von $55 Abs. 2RStV ..... , Redaktion : .... , E-Mail Adresse : ....</div>
-					<div style="margin-bottom:25px;">Sie Konnen diesen Newsletter <a href= "#">hier abbestellen.</a></div>
-					<div>© 2017  Ministerium für Wirtschaft, Energie, Industrie, Mittelstand und  Handwerk des Lands Nordrhein-Westfalen</div>
+				<tr style="padding:10px 20px; background:#eff2f7;">
+				<td style="color:#273753;">
+					<div style="margin-bottom:25px;color:#273753;">Verantwrotlich im Sinne von $55 Abs. 2RStV ..... , Redaktion : .... , E-Mail Adresse : ....</div>
+					<div style="margin-bottom:25px;color:#273753;">Sie Konnen diesen Newsletter <a href= "#">hier abbestellen.</a></div>
+					<div style="color:#273753;">© 2017  Ministerium für Wirtschaft, Energie, Industrie, Mittelstand und  Handwerk des Lands Nordrhein-Westfalen</div>
 				</td>
 				</tr>
 			</table>
