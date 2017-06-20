@@ -46,39 +46,5 @@ function ipwa_newsletter_default_fe_block_settings() {
     'visibility' => 1,
   );
 
-  $export['simplenews-48'] = array(
-    'cache' => -1,
-    'custom' => 0,
-    'delta' => 48,
-    'i18n_block_language' => array(),
-    'i18n_mode' => 0,
-    'module' => 'simplenews',
-    'node_types' => array(),
-    'pages' => '',
-    'roles' => array(),
-    'themes' => array(
-      'bartik' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'bartik',
-        'weight' => 0,
-      ),
-      'ipwa' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'ipwa',
-        'weight' => 0,
-      ),
-      'stark' => array(
-        'region' => '',
-        'status' => 0,
-        'theme' => 'stark',
-        'weight' => 0,
-      ),
-    ),
-    'title' => '',
-    'visibility' => 0,
-  );
-
   return $export;
 }

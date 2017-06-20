@@ -117,10 +117,7 @@
             */
             ?>
           <?php if(isset($title)) : ?>
-            <?php // look up the alias from the url_alias table ?>
-            <?php $source = 'node/' .$build['body']['#object']->nid; ?>
-            <?php $alias = db_query("SELECT alias FROM {url_alias} WHERE source = '$source'")->fetchField(); ?>
-              <h1 style="font-size:30px;margin:30px 0 20px;"><a href="<?php print $base_url.'/'.$alias; ?>"><?php  print $title; ?></a></h1>
+            <h1 style="font-size:30px;margin:30px 0 20px;"><?php  print $title; ?></h1>
           <?php endif; ?>
           <?php
           /**
@@ -132,8 +129,6 @@
                   <p style="margin:5px 0;"><?php  print $build['body'][0]['#markup']; ?></p>
             <?php  endif; ?>
           <?php endif; ?>
-            <!--<h2 style="font-size:22px;margin:15px 0">Sub heading</h2>
-            <p style="margin:5px 0;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis eleifend nulla, ac ultricies urna lacinia quis. Phasellus varius sapien ut mauris imperdiet, placerat varius felis vehicula. Pellentesque libero neque, imperdiet ut massa in, auctor dignissim dui. Morbi ullamcorper mi quis sem sollicitudin, congue iaculis risus rhoncus. Aliquam auctor vitae nibh ut vehicula. Nunc in sagittis enim, ut faucibus erat. Nunc placerat ornare aliquam. Proin volutpat nisl in ligula interdum, sit amet elementum nisi tempor</p>-->
         </td>
     </tr>
     <tr>
@@ -207,7 +202,7 @@
                           <?php if(isset($node->body['und'][0])) : ?>
                           <?php $title_link = $base_url.'/'.$alias; ?>
                             <?php $body = (strlen($node->body['und'][0]['value']) > 200) ? substr($node->body['und'][0]['value'],0,200).
-                              '...<div style="margin:10px 0;"><div style="margin-top:5px;display:inline-block;color:#273753"><a href="'.$title_link.'"> > mehr</a></div></div>' : $node->body['und'][0]['value']; ?>
+                              ' ...<a href="'.$title_link.'"> > mehr</a>' : $node->body['und'][0]['value']; ?>
                             <p style="margin:5px 0; font-size:20px !important;background:none !important;color:#273753"><?php print $body; ?></p>
                           <?php endif; ?>
                         <?php endif; ?>
@@ -229,23 +224,32 @@
    <tr>
 		<td>
 			<table style="font-family:Arial,Helvetica, sans-serif; font-size:16px; color:#273753; width:640px;">
-				<tr style="padding:10px 20px; background:#eff2f7;">
-				<td align="left" style="color:#273753;">
-				<span style="font-weight:bold;color:#273753">Folden sie uns auf :</span> <span><a href="#"><img src = "<?php print file_create_url(drupal_get_path('theme', 'ipwa')); ?>/images/fb.png" alt="FB" style="margin-right:5px;"/></a></span><span style="color:#eff2f7;font-size:8px;">12</span><span><a href="#"><img src = "<?php print file_create_url(drupal_get_path('theme', 'ipwa')); ?>/images/twitter.png" alt="Twitter" style="margin-right:5px;"/></a></span> <span style="color:#eff2f7;font-size:8px;">12</span><span><a href="#"><img src = "<?php print file_create_url(drupal_get_path('theme', 'ipwa')); ?>/images/linkedin.png" alt="LinkedIn" style="margin-right:5px;"/></a></span>
-				</td>
-				<td align="right" style="color:#273753;">
-				<a href="#">Impressum</a><span style="color:#eff2f7;font-size:8px;">12</span><a href="<?php print $base_url.'/de/content/kontaktformular'; ?>">Contact</a>
-				</td>
-				</tr>
-				<tr style="padding:10px 20px;">
-					<td align="left" style="color:#273753;">
-					<span><img src="<?php print file_create_url(drupal_get_path('theme', 'ipwa')); ?>/images/EU_Logo.png" alt = "footer_logo1" /></span> <span style="color:#eff2f7;font-size:8px;">12</span> <span><img src="<?php print file_create_url(drupal_get_path('theme', 'ipwa')); ?>/images/EFRE.NRW.png" alt = "footer_logo2" /></span> <span style="color:#eff2f7;font-size:8px;">12</span> <span><img src="<?php print file_create_url(drupal_get_path('theme', 'ipwa')); ?>/images/MWEI.png" alt = "footer_logo3" /></span>
-					</td>
-				</tr>
+                <tr style="padding:10px 20px; background:#eff2f7;">
+                    <td align="left" style="color:#273753;">
+                        <span style="font-weight:bold;color:#273753">Folden sie uns auf :</span>
+                        <span><a href="#"><img src = "<?php print file_create_url(drupal_get_path('theme', 'ipwa')); ?>/images/fb.png" alt="FB" style="margin-right:5px;"/></a></span>
+                        <span style="color:#eff2f7;font-size:8px;">12</span>
+                        <span><a href="#"><img src = "<?php print file_create_url(drupal_get_path('theme', 'ipwa')); ?>/images/twitter.png" alt="Twitter" style="margin-right:5px;"/></a></span>
+                        <span style="color:#eff2f7;font-size:8px;">12</span>
+                        <span><a href="#"><img src = "<?php print file_create_url(drupal_get_path('theme', 'ipwa')); ?>/images/linkedin.png" alt="LinkedIn" style="margin-right:5px;"/></a></span>
+                    </td>
+                    <td align="right" style="color:#273753;">
+                        <a href="#">Impressum</a><span style="color:#eff2f7;font-size:8px;">12</span><a href="<?php print $base_url.'/de/content/kontaktformular'; ?>">Contact</a>
+                    </td>
+                </tr>
+                <tr style="padding:10px 20px;">
+                    <td align="left" style="color:#273753;">
+                        <span><img src="<?php print file_create_url(drupal_get_path('theme', 'ipwa')); ?>/images/EU_Logo.png" alt = "footer_logo1" /></span>
+                        <span style="color:#eff2f7;font-size:8px;">12</span>
+                        <span><img src="<?php print file_create_url(drupal_get_path('theme', 'ipwa')); ?>/images/EFRE.NRW.png" alt = "footer_logo2" /></span>
+                        <span style="color:#eff2f7;font-size:8px;">12</span>
+                        <span><img src="<?php print file_create_url(drupal_get_path('theme', 'ipwa')); ?>/images/MWEI.png" alt = "footer_logo3" /></span>
+                    </td>
+                </tr>
 				<tr style="padding:10px 20px; background:#eff2f7;">
 				<td style="color:#273753;">
 					<div style="margin-bottom:25px;color:#273753;">Verantwrotlich im Sinne von $55 Abs. 2RStV ..... , Redaktion : .... , E-Mail Adresse : ....</div>
-					<div style="margin-bottom:25px;color:#273753;">Sie Konnen diesen Newsletter <a href= "#">hier abbestellen.</a></div>
+					<div style="margin-bottom:25px;color:#273753;">Sie können diesen Newsletter <a href= "<?php print token_replace('[simplenews-subscriber:unsubscribe-url]', array('sanitize' => FALSE)); ?>">hier abbestellen.</a></div>
 					<div style="color:#273753;">© 2017  Ministerium für Wirtschaft, Energie, Industrie, Mittelstand und  Handwerk des Lands Nordrhein-Westfalen</div>
 				</td>
 				</tr>

@@ -29,6 +29,13 @@ function ipwa_permissions_user_default_permissions() {
     'module' => 'site_map',
   );
 
+  // Exported permission: 'subscribe to newsletters'.
+  $permissions['subscribe to newsletters'] = array(
+    'name' => 'subscribe to newsletters',
+    'roles' => array(),
+    'module' => 'simplenews',
+  );
+
   // Exported permission: 'view paragraph content flie_text_bereich'.
   $permissions['view paragraph content flie_text_bereich'] = array(
     'name' => 'view paragraph content flie_text_bereich',
