@@ -202,7 +202,7 @@
                           <?php if(isset($node->body['und'][0])) : ?>
                           <?php $title_link = $base_url.'/'.$alias; ?>
                             <?php $body = (strlen($node->body['und'][0]['value']) > 200) ? substr($node->body['und'][0]['value'],0,200).
-                              ' ...<a href="'.$title_link.'"> > mehr</a>' : $node->body['und'][0]['value']; ?>
+                              ' <b>...</b> <a href="'.$title_link.'"> > mehr</a>' : $node->body['und'][0]['value']; ?>
                             <p style="margin:5px 0; font-size:20px !important;background:none !important;color:#273753"><?php print $body; ?></p>
                           <?php endif; ?>
                         <?php endif; ?>
