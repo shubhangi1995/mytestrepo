@@ -42,9 +42,12 @@
             z-index: 9999;
             background: $color-white;
             width: 100%;
+			top:50px;
+			
+		@include devicebreak(medium)	 {
             top: 58px;
             margin: 0;
-
+}
             .search-icon {
                 padding: 20px;
                 width: 100%;
