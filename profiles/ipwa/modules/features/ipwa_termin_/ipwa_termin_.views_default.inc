@@ -273,7 +273,7 @@ function ipwa_termin__views_default_views() {
   $handler->display->display_options['header']['area']['id'] = 'area';
   $handler->display->display_options['header']['area']['table'] = 'views';
   $handler->display->display_options['header']['area']['field'] = 'area';
-  $handler->display->display_options['header']['area']['content'] = '[subheadline]
+  $handler->display->display_options['header']['area']['content'] = '<h2>[subheadline]</h2>
 <div class="calendar-link">
 <a href="/termine">zur Listensicht</a>
 </div>';
@@ -652,7 +652,7 @@ function ipwa_termin__views_default_views() {
     t('Termine'),
     t('<keine>'),
     t('Alles anzeigen'),
-    t('[subheadline]
+    t('<h2>[subheadline]</h2>
 <div class="calendar-link">
 <a href="/termine">zur Listensicht</a>
 </div>'),
