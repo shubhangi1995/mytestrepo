@@ -219,7 +219,7 @@ function ipwa_base_path_breadcrumbs_settings_info() {
   $path_breadcrumb->api_version = 1;
   $path_breadcrumb->machine_name = 'search_list_view';
   $path_breadcrumb->name = 'Search list view';
-  $path_breadcrumb->path = 'search';
+  $path_breadcrumb->path = 'suche';
   $path_breadcrumb->data = array(
     'titles' => array(
       0 => '!page_title',
