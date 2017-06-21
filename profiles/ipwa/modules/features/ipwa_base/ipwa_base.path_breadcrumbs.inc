@@ -140,30 +140,6 @@ function ipwa_base_path_breadcrumbs_settings_info() {
 
   $path_breadcrumb = new stdClass();
   $path_breadcrumb->api_version = 1;
-  $path_breadcrumb->machine_name = 'newsletter_registrierung';
-  $path_breadcrumb->name = 'Newsletter-Registrierung';
-  $path_breadcrumb->path = 'node/%node';
-  $path_breadcrumb->data = array(
-    'titles' => array(
-      0 => '!page_title',
-    ),
-    'paths' => array(
-      0 => '<none>',
-    ),
-    'home' => 1,
-    'translatable' => 0,
-    'arguments' => array(
-      'node' => array(
-        'position' => 1,
-      ),
-    ),
-    'access' => array(),
-  );
-  $path_breadcrumb->weight = 0;
-  $export['newsletter_registrierung'] = $path_breadcrumb;
-
-  $path_breadcrumb = new stdClass();
-  $path_breadcrumb->api_version = 1;
   $path_breadcrumb->machine_name = 'publikation';
   $path_breadcrumb->name = 'Publikation Single view';
   $path_breadcrumb->path = 'node/%node';
