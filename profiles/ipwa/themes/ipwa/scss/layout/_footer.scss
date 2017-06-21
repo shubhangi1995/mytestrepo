@@ -69,7 +69,7 @@ footer {
                     border-bottom: 0 !important;
                     top: 10px !important;
                     left: -23px !important;
-					margin-left:30px !important;
+                    margin-left: 30px !important;
 
                     @include devicebreak(medium) {
                         left: -30px;
@@ -118,8 +118,9 @@ footer {
                         border-bottom: 0;
                         width: auto;
                         padding-left: 0;
-						padding-bottom:0;
+                        padding-bottom: 0;
                     }
+
 
                     a {
                         color: $main-color;
@@ -150,13 +151,31 @@ footer {
     }
 
     .footer_blocks {
-	   text-align:right;
+        text-align: right;
+
         @extend .container;
 
         padding: 0;
 
         .block-views {
             display: inline-block;
+
+            .feed-icon {
+                img {
+                    display: none;
+                }
+
+                a {
+                    &:before {
+                        font-family: $icomoon;
+                        content: "\e911";
+                        color: $color-light-black;
+                        font-size: 20px;
+                        display: inline-block;
+                        padding: 10px;
+                    }
+                }
+            }
         }
 
         .block-ipwa-base {
@@ -166,7 +185,7 @@ footer {
                 font-size: 0;
                 background: none;
                 border: none;
-				padding:0;
+                padding: 0;
 
                 &:before {
                     font-family: $icomoon;
