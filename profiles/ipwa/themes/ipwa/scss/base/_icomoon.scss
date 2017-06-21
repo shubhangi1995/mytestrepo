@@ -1,10 +1,10 @@
-@font-face {
+@font-face {  
   font-family: 'icomoon';
-  src:  url('../icomoon/icomoon.eot?m10wrr');
-  src:  url('../icomoon/icomoon.eot?m10wrr#iefix') format('embedded-opentype'),
-    url('../icomoon/icomoon.ttf?m10wrr') format('truetype'),
-    url('../icomoon/icomoon.woff?m10wrr') format('woff'),
-    url('../icomoon/icomoon.svg?m10wrr#icomoon') format('svg');
+  src:  url('../icomoon/icomoon.eot?up8ngi');
+  src:  url('../icomoon/icomoon.eot?up8ngi#iefix') format('embedded-opentype'),
+    url('../icomoon/icomoon.ttf?up8ngi') format('truetype'),
+    url('../icomoon/icomoon.woff?up8ngi') format('woff'),
+    url('../icomoon/icomoon.svg?up8ngi#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -26,6 +26,9 @@
 
 $icomoon : 'icomoon';
 
+.icon-RSS:before {
+  content: "\e911";
+}
 .icon-map:before {
   content: "\e910";
 }
