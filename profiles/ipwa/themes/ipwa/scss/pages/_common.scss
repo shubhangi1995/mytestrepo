@@ -970,7 +970,7 @@ input[type=text]::-ms-clear {
 
     .view-header {
         @include devicebreak(x-large) {
-            padding-left: 80px;
+            padding-left: 90px; 
         }
     }
 }
@@ -978,6 +978,52 @@ input[type=text]::-ms-clear {
 .page-node-67{
 	.page-title{
 		padding-bottom: 30px; 
+	}
+}
+
+// Newsletter pages
+
+.page-newsletter-confirm{
+	.col-sm-12{
+		.page-header, .page-header + .region-content{
+			@extend .container;
+		}
+		.page-header{
+			padding-bottom:10px;
+		}
+		#edit-submit{
+			@extend .common-button; 
+			border:none; 
+			margin-left:20px; 
+			&::before{
+				top:10px;
+				left:-12px;
+			}
+			&:hover{
+				background:none;
+			}
+		}
+		#edit-cancel{
+			font-size:17px;
+			color:$active-menu;
+			position:relative; 
+			top:3px;
+		}
+		p{
+			font-size:18px;
+		}
+	}
+}
+.page-node-done{
+	.page-header, .page-header + .region-content{
+		@extend .container;
+	}
+	.page-header{
+		padding-bottom:10px; 
+	}
+	.links a{
+		font-size:17px;
+		color:$active-menu;  
 	}
 }
 
