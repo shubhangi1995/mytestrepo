@@ -1637,7 +1637,7 @@ Publikation|Publikationen'),
     1 => 0,
   );
   $handler->display->display_options['filters']['field_akteurstyp']['expose']['reduce'] = 0;
-  /* Filter criterion: Indexed Beitrag: Dieser Artikel gehört zu */
+  /* Filter criterion: Broken/missing handler */
   $handler->display->display_options['filters']['field_themenzuweisung']['id'] = 'field_themenzuweisung';
   $handler->display->display_options['filters']['field_themenzuweisung']['table'] = 'search_api_index_ipwa_solr_index';
   $handler->display->display_options['filters']['field_themenzuweisung']['field'] = 'field_themenzuweisung';
@@ -1692,7 +1692,6 @@ Publikation|Publikationen'),
     2 => '2',
     1 => 0,
   );
-  $handler->display->display_options['filters']['field_themenzuweisung']['expose']['reduce'] = 0;
 
   /* Display: Project map */
   $handler = $view->new_display('page', 'Project map', 'project_map');
@@ -1749,7 +1748,7 @@ Publikation|Publikationen'),
     1 => 0,
   );
   $handler->display->display_options['filters']['field_akteurstyp']['expose']['reduce'] = 0;
-  /* Filter criterion: Indexed Beitrag: Dieser Artikel gehört zu */
+  /* Filter criterion: Broken/missing handler */
   $handler->display->display_options['filters']['field_themenzuweisung']['id'] = 'field_themenzuweisung';
   $handler->display->display_options['filters']['field_themenzuweisung']['table'] = 'search_api_index_ipwa_solr_index';
   $handler->display->display_options['filters']['field_themenzuweisung']['field'] = 'field_themenzuweisung';
@@ -1766,8 +1765,7 @@ Publikation|Publikationen'),
     2 => '2',
     1 => 0,
   );
-  $handler->display->display_options['filters']['field_themenzuweisung']['expose']['reduce'] = 0;
-  /* Filter criterion: Indexed Beitrag: PLZ */
+  /* Filter criterion: Broken/missing handler */
   $handler->display->display_options['filters']['field_plz']['id'] = 'field_plz';
   $handler->display->display_options['filters']['field_plz']['table'] = 'search_api_index_ipwa_solr_index';
   $handler->display->display_options['filters']['field_plz']['field'] = 'field_plz';
@@ -1781,7 +1779,7 @@ Publikation|Publikationen'),
     2 => '2',
     1 => 0,
   );
-  /* Filter criterion: Indexed Beitrag: Dieser Artikel gehört zu */
+  /* Filter criterion: Broken/missing handler */
   $handler->display->display_options['filters']['field_themenzuweisung_1']['id'] = 'field_themenzuweisung_1';
   $handler->display->display_options['filters']['field_themenzuweisung_1']['table'] = 'search_api_index_ipwa_solr_index';
   $handler->display->display_options['filters']['field_themenzuweisung_1']['field'] = 'field_themenzuweisung';
@@ -1837,7 +1835,6 @@ Publikation|Publikationen'),
     2 => '2',
     1 => 0,
   );
-  $handler->display->display_options['filters']['field_themenzuweisung_1']['expose']['reduce'] = 0;
   $handler->display->display_options['path'] = 'projekt-map';
 
   /* Display: Project list */
@@ -1890,7 +1887,7 @@ Publikation|Publikationen'),
     1 => 0,
   );
   $handler->display->display_options['filters']['field_akteurstyp']['expose']['reduce'] = 0;
-  /* Filter criterion: Indexed Beitrag: Dieser Artikel gehört zu */
+  /* Filter criterion: Broken/missing handler */
   $handler->display->display_options['filters']['field_themenzuweisung']['id'] = 'field_themenzuweisung';
   $handler->display->display_options['filters']['field_themenzuweisung']['table'] = 'search_api_index_ipwa_solr_index';
   $handler->display->display_options['filters']['field_themenzuweisung']['field'] = 'field_themenzuweisung';
@@ -1946,8 +1943,7 @@ Publikation|Publikationen'),
     2 => '2',
     1 => 0,
   );
-  $handler->display->display_options['filters']['field_themenzuweisung']['expose']['reduce'] = 0;
-  /* Filter criterion: Indexed Beitrag: PLZ */
+  /* Filter criterion: Broken/missing handler */
   $handler->display->display_options['filters']['field_plz']['id'] = 'field_plz';
   $handler->display->display_options['filters']['field_plz']['table'] = 'search_api_index_ipwa_solr_index';
   $handler->display->display_options['filters']['field_plz']['field'] = 'field_plz';
@@ -1961,7 +1957,7 @@ Publikation|Publikationen'),
     2 => '2',
     1 => 0,
   );
-  /* Filter criterion: Indexed Beitrag: Dieser Artikel gehört zu */
+  /* Filter criterion: Broken/missing handler */
   $handler->display->display_options['filters']['field_themenzuweisung_1']['id'] = 'field_themenzuweisung_1';
   $handler->display->display_options['filters']['field_themenzuweisung_1']['table'] = 'search_api_index_ipwa_solr_index';
   $handler->display->display_options['filters']['field_themenzuweisung_1']['field'] = 'field_themenzuweisung';
@@ -2016,7 +2012,6 @@ Publikation|Publikationen'),
     2 => '2',
     1 => 0,
   );
-  $handler->display->display_options['filters']['field_themenzuweisung_1']['expose']['reduce'] = 0;
   $handler->display->display_options['path'] = 'projekt-list';
 
   /* Display: Feed */

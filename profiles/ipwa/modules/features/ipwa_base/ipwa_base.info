@@ -101,6 +101,7 @@ features[path_breadcrumbs][] = aktuelles_list_view
 features[path_breadcrumbs][] = alle_themen_list_view
 features[path_breadcrumbs][] = forderbekanntmachung
 features[path_breadcrumbs][] = nachricht
+features[path_breadcrumbs][] = newsletter_registrierung
 features[path_breadcrumbs][] = publikation
 features[path_breadcrumbs][] = search_list_view
 features[path_breadcrumbs][] = termin
