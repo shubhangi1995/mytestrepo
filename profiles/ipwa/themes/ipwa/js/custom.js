@@ -220,6 +220,14 @@ jQuery('.tb-megamenu-submenu.dropdown-menu').attr('style','display:none !importa
 if(jQuery(window).innerWidth() <= 1024){
 	jQuery(".nrw-eu-logo a").insertAfter(jQuery(".navbar-header .navbar-btn"));
 	
+	
+	jQuery("header .container .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li > a").click(function(){
+		 jQuery('html, body').animate({
+            scrollTop: jQuery(this).offset().top
+          },600); 
+		
+	});
+	
 }
 	
 	jQuery(".block-ipwa-newsletter .form-submit").insertAfter(".block-ipwa-newsletter .form-item-newsletter .form-control");
@@ -227,6 +235,9 @@ if(jQuery(window).innerWidth() <= 1024){
 	// Add to calendar link
 	
 	jQuery(".addtocalendar").appendTo(jQuery(".group-left-top-wrapper .group-middle-wrapper"));
+	
+	
+	
 	
 });
 
