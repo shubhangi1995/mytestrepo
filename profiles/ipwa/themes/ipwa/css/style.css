@@ -8791,17 +8791,14 @@ input[type=text]::-ms-clear {
     display: inline-block;
     padding: 10px;
     padding-left: 0; }
-    /* line 161, ../scss/pages/_singleview.scss */
-    .not-front .node-doorpage .view-alle-themen-teaser .view-sub-wrapper .view-content .views-row a {
-      text-decoration: none; }
-      /* line 163, ../scss/pages/_singleview.scss */
-      .not-front .node-doorpage .view-alle-themen-teaser .view-sub-wrapper .view-content .views-row a .row-container .views-field-name {
-        background: #273753;
-        text-decoration: none;
-        padding: 10px;
-        font-size: 18px;
-        color: #ffffff;
-        float: left; }
+    /* line 163, ../scss/pages/_singleview.scss */
+    .not-front .node-doorpage .view-alle-themen-teaser .view-sub-wrapper .view-content .views-row .row-container .views-field-name a {
+      background: #273753;
+      text-decoration: none;
+      padding: 10px;
+      font-size: 18px;
+      color: #ffffff;
+      float: left; }
   /* line 175, ../scss/pages/_singleview.scss */
   .not-front .node-doorpage .view-alle-themen-teaser .view-sub-wrapper .view-footer {
     padding-top: 40px;

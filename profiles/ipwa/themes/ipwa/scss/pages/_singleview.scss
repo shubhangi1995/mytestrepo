@@ -158,9 +158,9 @@
                     display: inline-block;
                     padding: 10px;
                     padding-left: 0;
-         a{   text-decoration:none;
+         
                     .row-container {
-                        .views-field-name  {
+                        .views-field-name  a{
                             background: $main-color;
                             text-decoration: none;
                             padding: 10px;
@@ -168,7 +168,7 @@
                             color: $color-white;
                             float: left;       
                         }
-                    }
+                    
                 }}
             }
 
