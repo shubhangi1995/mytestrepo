@@ -140,15 +140,13 @@
 
 //termine and aktuelles and search//
 
-.page-termine, .page-aktuelles, .page-suche, .page-calendar {
+.page-termine, .page-aktuelles, .page-calendar {
     background: $color-light-blue;
 
     .page-header {
         @extend .container;
-
         border: none;
-        font-weight: normal;
-        width: 100%;
+        font-weight: normal;        
         margin: 0 auto;
         padding-top: 55px;
        // padding-bottom: 40px;
@@ -421,6 +419,23 @@
 }
 
 //only search-page//
+.page-suche {
+ background: $color-light-blue;
+
+       
+ .page-header{
+ @extend .container;
+        border: none;
+        font-weight: normal;        
+        margin: 0 auto;
+        padding-top: 55px;
+ 
+ padding-bottom:40px;
+ 
+ }
+
+}
+
 .view-search-list {
     .view-filters {
         position: relative;
@@ -551,7 +566,7 @@
 
             div[class*='views-field-views-conditional-'] {
                 .search-condition.field-content {
-                    color: $color-light-grey;
+                     color: $active-menu;
 
                     a {
                         color: $color-light-grey;
