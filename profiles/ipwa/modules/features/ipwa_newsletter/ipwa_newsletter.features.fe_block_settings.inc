@@ -20,7 +20,14 @@ function ipwa_newsletter_default_fe_block_settings() {
     'i18n_mode' => 0,
     'module' => 'ipwa_newsletter',
     'node_types' => array(),
-    'pages' => '<front>',
+    'pages' => '<front>
+termine
+politik-gesellschaft
+wirtschaft-arbeit
+infos-fuer-unternehmen
+aktuelles
+infos-fuer-beschaeftigte
+calendar',
     'roles' => array(),
     'themes' => array(
       'bartik' => array(
