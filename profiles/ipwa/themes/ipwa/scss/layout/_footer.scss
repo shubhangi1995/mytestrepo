@@ -98,6 +98,8 @@ footer {
         }
 
         #block-menu-menu-footer-navigation {
+		    width:75%;
+			float:left;
             ul {
                 margin-left: -15px;
                 margin-right: -15px;
@@ -148,14 +150,13 @@ footer {
                 }
             }
         }
-    }
+    
 
     .footer_blocks {
-        text-align: right;
-
-        @extend .container;
-
-        padding: 0;
+        width:25%;
+		float:left;
+		text-align: right;
+    padding-top: 10px;
 
         .block-views {
             display: inline-block;
@@ -180,6 +181,7 @@ footer {
 
         .block-ipwa-base {
             display: inline-block;
+			padding-top:0;
 
             #page_print {
                 font-size: 0;
@@ -219,7 +221,7 @@ footer {
             }
         }
     }
-
+}
     // margin-top:40px;
 
     .footer-copyright {
