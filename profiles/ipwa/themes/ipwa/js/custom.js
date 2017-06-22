@@ -240,6 +240,8 @@ if(jQuery(window).innerWidth() <= 1024){
 	
 	jQuery(".footer .footer_blocks").insertAfter(".footer .region-footer .block-menu");
 	
+	//termine view
+	jQuery(".view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by").appendTo(".attachment-before");
 });
 
 
