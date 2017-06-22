@@ -183,70 +183,67 @@
         }
 
         .attachment-before {
-		
-		.view-result-count {
-            width:50%;
-			float:left;
-            padding: 30px 0;
-            font-size: 22px;
-            font-weight: bold;
-			}
-			
-		.views-widget-sort-by {
-                   padding: 30px 0;
-					width:50%;
-					float:left;
-					text-align:right;
+            .view-result-count {
+                padding: 30px 0;
+                font-size: 22px;
+                font-weight: bold;
+				margin-top:-88px;
+            }
+}
+            .view-filters {
+                .views-exposed-form .views-exposed-widgets {
+                    margin-bottom: 0;
 
-					.form-group{margin-bottom:0;
-                    .bef-select-as-links .form-type-bef-link {
-                        display: inline-block;
-                        padding-left: 15px;
+                    .views-widget {
+                        width: 100%;
 
-                        a {
-                            text-decoration: none;
-                            color: $main-color;
-
-                            &.active {
-                                border-bottom: 2px solid $active-menu;
-                            }
-                        }
-                    }
-
-                    .select2-container {
-                        display: none;
-                    }
-                }
-        }}
-
-        .view-filters {
-            .views-exposed-form .views-exposed-widgets {
-                margin-bottom: 0;
-
-                .views-widget {
-                    width: 100%;
-
-                    .form-item {
-                        display: inline-block;
-                        padding-right: 60px;
-                        padding-bottom: 15px;
-
-                        label {
-                            padding-left: 0;
+                        .form-item {
+                            display: inline-block;
+                            padding-right: 60px;
                             padding-bottom: 15px;
 
-                            input {
-                                visibility: hidden;
+                            label {
+                                padding-left: 0;
+                                padding-bottom: 15px;
+
+                                input {
+                                    visibility: hidden;
+                                }
+                            }
+                        }
+                    }
+
+                    .views-widget-sort-by {
+                        padding: 30px 0;
+						float:right;
+
+                        .form-group {
+                            margin-bottom: 0;
+
+                            .bef-select-as-links .form-type-bef-link {
+                                display: inline-block;
+                                padding-left: 15px;
+
+                                a {
+                                    text-decoration: none;
+                                    color: $main-color;
+
+                                    &.active {
+                                        border-bottom: 2px solid $active-menu;
+                                    }
+                                }
+                            }
+
+                            .select2-container {
+                                display: none;
                             }
                         }
                     }
                 }
-
-                
             }
         }
     }
-}
+
 
 //only-aktuelles//
 
@@ -379,7 +376,7 @@
                             float: left;
                             text-decoration: none;
                             color: $main-color;
-							padding-bottom:15px;
+                            padding-bottom: 15px;
 
                             &.active {
                                 border-bottom: 2px Solid $active-menu;
@@ -395,6 +392,45 @@
 
             .select2-container--default .select2-selection--single {
                 display: none;
+            }
+        }
+    }
+
+    .attachment-before {
+        .view-result-count {
+            width: 50%;
+            float: left;
+            padding: 30px 0;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .views-widget-sort-by {
+            padding: 30px 0;
+            width: 50%;
+            float: left;
+            text-align: right;
+
+            .form-group {
+                margin-bottom: 0;
+
+                .bef-select-as-links .form-type-bef-link {
+                    display: inline-block;
+                    padding-left: 15px;
+
+                    a {
+                        text-decoration: none;
+                        color: $main-color;
+
+                        &.active {
+                            border-bottom: 2px solid $active-menu;
+                        }
+                    }
+                }
+
+                .select2-container {
+                    display: none;
+                }
             }
         }
     }
@@ -561,24 +597,24 @@
             }
 
             .row-container {
-			
-			> * {
-                padding-bottom: 15px;
+                > * {
+                    padding-bottom: 15px;
 
-                a {
-                    text-decoration: none;
-                    color: $main-color;
+                    a {
+                        text-decoration: none;
+                        color: $main-color;
+                    }
+
+                    &.views-field:last-child {
+                        padding-bottom: 0;
+                    }
                 }
-				
-			 &.views-field:last-child{
-			  padding-bottom:0;
-			 }
             }
-}
+
             .views-field-type {
-                color: $color-light-grey;   
-                 padding-bottom:5px;
-font-size:18px;				 
+                color: $color-light-grey;
+                padding-bottom: 5px;
+                font-size: 18px;
             }
 
             .views-field-field-event-datum {
@@ -588,8 +624,7 @@ font-size:18px;
             div[class*='views-field-views-conditional-'] {
                 .search-condition.field-content {
                     color: $active-menu;
-
-                                    }
+                }
 
                 .date-display-single {
                     color: $active-menu;
