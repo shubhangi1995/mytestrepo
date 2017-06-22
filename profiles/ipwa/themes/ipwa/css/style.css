@@ -6958,34 +6958,35 @@ footer .region-footer .block-ipwa-base {
   /* line 85, ../scss/layout/_footer.scss */
   footer .region-footer .block-ipwa-base h3 {
     font-size: 20px;
-    color: #273753; }
-  /* line 90, ../scss/layout/_footer.scss */
+    color: #273753;
+    font-weight: normal; }
+  /* line 91, ../scss/layout/_footer.scss */
   footer .region-footer .block-ipwa-base #footer-icons-images {
     padding: 40px 0; }
-    /* line 93, ../scss/layout/_footer.scss */
+    /* line 94, ../scss/layout/_footer.scss */
     footer .region-footer .block-ipwa-base #footer-icons-images div {
       display: inline-block;
       padding-right: 30px;
       padding-bottom: 30px; }
-/* line 101, ../scss/layout/_footer.scss */
+/* line 102, ../scss/layout/_footer.scss */
 footer .region-footer #block-menu-menu-footer-navigation {
   width: 100%;
   /* Tablet design */ }
   @media (min-width: 767px) {
-    /* line 101, ../scss/layout/_footer.scss */
+    /* line 102, ../scss/layout/_footer.scss */
     footer .region-footer #block-menu-menu-footer-navigation {
       width: 75%;
       float: left; } }
-  /* line 110, ../scss/layout/_footer.scss */
+  /* line 111, ../scss/layout/_footer.scss */
   footer .region-footer #block-menu-menu-footer-navigation ul {
     margin-left: -15px;
     margin-right: -15px;
     /* Tablet design */ }
     @media (min-width: 520px) {
-      /* line 110, ../scss/layout/_footer.scss */
+      /* line 111, ../scss/layout/_footer.scss */
       footer .region-footer #block-menu-menu-footer-navigation ul {
         margin: 0; } }
-    /* line 119, ../scss/layout/_footer.scss */
+    /* line 120, ../scss/layout/_footer.scss */
     footer .region-footer #block-menu-menu-footer-navigation ul li {
       display: block;
       padding: 20px;
@@ -6993,49 +6994,49 @@ footer .region-footer #block-menu-menu-footer-navigation {
       border-bottom: 1px solid #eff2f7;
       /* Tablet design */ }
       @media (min-width: 520px) {
-        /* line 119, ../scss/layout/_footer.scss */
+        /* line 120, ../scss/layout/_footer.scss */
         footer .region-footer #block-menu-menu-footer-navigation ul li {
           display: inline-block;
           border-bottom: 0;
           width: auto;
           padding-left: 0;
           padding-bottom: 0; } }
-      /* line 134, ../scss/layout/_footer.scss */
+      /* line 135, ../scss/layout/_footer.scss */
       footer .region-footer #block-menu-menu-footer-navigation ul li a {
         color: #273753;
         padding: 0;
         font-size: 18px; }
-        /* line 139, ../scss/layout/_footer.scss */
+        /* line 140, ../scss/layout/_footer.scss */
         footer .region-footer #block-menu-menu-footer-navigation ul li a:hover, footer .region-footer #block-menu-menu-footer-navigation ul li a:focus {
           background: none;
           outline: none;
           outline-offset: none; }
-      /* line 147, ../scss/layout/_footer.scss */
+      /* line 148, ../scss/layout/_footer.scss */
       footer .region-footer #block-menu-menu-footer-navigation ul li .open a {
         background: none;
         border: none; }
-        /* line 151, ../scss/layout/_footer.scss */
+        /* line 152, ../scss/layout/_footer.scss */
         footer .region-footer #block-menu-menu-footer-navigation ul li .open a:hover, footer .region-footer #block-menu-menu-footer-navigation ul li .open a:focus {
           background: none;
           border: none; }
-/* line 162, ../scss/layout/_footer.scss */
+/* line 163, ../scss/layout/_footer.scss */
 footer .region-footer .footer_blocks {
   width: 100%;
   text-align: right;
   /* Tablet design */ }
   @media (min-width: 767px) {
-    /* line 162, ../scss/layout/_footer.scss */
+    /* line 163, ../scss/layout/_footer.scss */
     footer .region-footer .footer_blocks {
       width: 25%;
       float: left;
       padding-top: 10px; } }
-  /* line 171, ../scss/layout/_footer.scss */
+  /* line 172, ../scss/layout/_footer.scss */
   footer .region-footer .footer_blocks .block-views {
     display: inline-block; }
-    /* line 175, ../scss/layout/_footer.scss */
+    /* line 176, ../scss/layout/_footer.scss */
     footer .region-footer .footer_blocks .block-views .feed-icon img {
       display: none; }
-    /* line 180, ../scss/layout/_footer.scss */
+    /* line 181, ../scss/layout/_footer.scss */
     footer .region-footer .footer_blocks .block-views .feed-icon a:before {
       font-family: "icomoon";
       content: "\e911";
@@ -7043,17 +7044,17 @@ footer .region-footer .footer_blocks {
       font-size: 20px;
       display: inline-block;
       padding: 10px; }
-  /* line 192, ../scss/layout/_footer.scss */
+  /* line 193, ../scss/layout/_footer.scss */
   footer .region-footer .footer_blocks .block-ipwa-base {
     display: inline-block;
     padding-top: 0; }
-    /* line 196, ../scss/layout/_footer.scss */
+    /* line 197, ../scss/layout/_footer.scss */
     footer .region-footer .footer_blocks .block-ipwa-base #page_print {
       font-size: 0;
       background: none;
       border: none;
       padding: 0; }
-      /* line 202, ../scss/layout/_footer.scss */
+      /* line 203, ../scss/layout/_footer.scss */
       footer .region-footer .footer_blocks .block-ipwa-base #page_print:before {
         font-family: "icomoon";
         content: "\e94c";
@@ -7061,13 +7062,13 @@ footer .region-footer .footer_blocks {
         font-size: 20px;
         display: inline-block;
         padding: 10px; }
-  /* line 213, ../scss/layout/_footer.scss */
+  /* line 214, ../scss/layout/_footer.scss */
   footer .region-footer .footer_blocks .block-addthis {
     display: inline-block; }
-    /* line 216, ../scss/layout/_footer.scss */
+    /* line 217, ../scss/layout/_footer.scss */
     footer .region-footer .footer_blocks .block-addthis .addthis_button {
       font-size: 0; }
-      /* line 219, ../scss/layout/_footer.scss */
+      /* line 220, ../scss/layout/_footer.scss */
       footer .region-footer .footer_blocks .block-addthis .addthis_button:before {
         font-family: "icomoon";
         content: "\e94f";
@@ -7075,14 +7076,14 @@ footer .region-footer .footer_blocks {
         font-size: 20px;
         display: inline-block;
         padding: 10px; }
-      /* line 228, ../scss/layout/_footer.scss */
+      /* line 229, ../scss/layout/_footer.scss */
       footer .region-footer .footer_blocks .block-addthis .addthis_button img {
         display: none; }
-/* line 237, ../scss/layout/_footer.scss */
+/* line 238, ../scss/layout/_footer.scss */
 footer .footer-copyright {
   font-size: 18px;
   color: #273753; }
-/* line 242, ../scss/layout/_footer.scss */
+/* line 243, ../scss/layout/_footer.scss */
 footer .nav .open > a, footer .nav .open > a:hover, footer .nav .open > a:focus {
   background: none; }
 
