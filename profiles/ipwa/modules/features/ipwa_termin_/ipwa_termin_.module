@@ -39,6 +39,18 @@ function ipwa_termin__views_pre_render(&$view) {
       $view->attachment_before .= '</div>';
     }
   }
+
+  //Unset multiple same termin from single date of calendar view
+  if ($view->name == "event_calendar" && $view->current_display == 'page_1') {
+    if (isset($view->result)) {
+      $newArr = array();
+      foreach ($view->result as $val) {
+        $newArr[$val->nid] = $val;
+      }
+      $view->result = array_values($newArr);
+    }
+  }
+
   //For Related content: Kommende Veranstaltungen view
   if ($view->name == 'related_content' ||
     ($view->name == 'latest_content_doorpage' && ($view->current_display == 'block_2' || $view->current_display == 'block_6'))) {
