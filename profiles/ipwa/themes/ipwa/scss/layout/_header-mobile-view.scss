@@ -219,18 +219,18 @@
     }}
 }
 
-@media (max-width: 480px) {
+@media (max-width: 520px) {
     header .navbar-header {
         .logo {
             padding: 0 10px;
 
             .small {
-                width: 100px;
+                width:100px;
             }
         }
 
         a img {
-            width: 125px;
+            width:125px;
         }
 
         .navbar-toggle {
