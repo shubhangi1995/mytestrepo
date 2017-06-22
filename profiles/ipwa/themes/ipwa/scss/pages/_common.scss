@@ -6,6 +6,10 @@ body {
     line-height: normal;
 }
 
+a:focus{
+	outline-offset:0;  
+}
+
 .container {
     width: 100%;
 
@@ -272,6 +276,9 @@ padding:0;
 
                 > a {
 				  text-decoration:none;
+				  &:focus{
+					outline: 1px dotted $active-menu;
+				  }
 				  
 				.row-container {
                     background: $color-white;
