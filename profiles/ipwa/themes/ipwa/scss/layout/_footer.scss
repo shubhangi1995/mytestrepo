@@ -36,7 +36,7 @@ footer {
 
                 .form-control {
                     border-radius: 0;
-                    width: 75%;
+                    width: 83%;
                     height: 40px;
                     display: inline-block;
 
@@ -53,6 +53,7 @@ footer {
                 border: none;
                 padding: 20px;
                 border-radius: 0;
+				padding-right:18px;
 
                 @include devicebreak(medium) {
                     color: $color-white;

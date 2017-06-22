@@ -6915,7 +6915,7 @@ footer .region-footer .block-ipwa-newsletter {
   /* line 37, ../scss/layout/_footer.scss */
   footer .region-footer .block-ipwa-newsletter .form-item-newsletter .form-control {
     border-radius: 0;
-    width: 75%;
+    width: 83%;
     height: 40px;
     display: inline-block;
     /* Tablet design */ }
@@ -6931,6 +6931,7 @@ footer .region-footer .block-ipwa-newsletter {
     border: none;
     padding: 20px;
     border-radius: 0;
+    padding-right: 18px;
     /* Tablet design */ }
     @media (min-width: 520px) {
       /* line 49, ../scss/layout/_footer.scss */
@@ -6939,7 +6940,7 @@ footer .region-footer .block-ipwa-newsletter {
         padding: 10px 30px;
         display: inline-block;
         font-size: 14px; } }
-    /* line 65, ../scss/layout/_footer.scss */
+    /* line 66, ../scss/layout/_footer.scss */
     footer .region-footer .block-ipwa-newsletter .btn-default:before {
       color: #273753 !important;
       border-bottom: 0 !important;
@@ -6948,43 +6949,43 @@ footer .region-footer .block-ipwa-newsletter {
       margin-left: 30px !important;
       /* Tablet design */ }
       @media (min-width: 520px) {
-        /* line 65, ../scss/layout/_footer.scss */
+        /* line 66, ../scss/layout/_footer.scss */
         footer .region-footer .block-ipwa-newsletter .btn-default:before {
           left: -30px; } }
-/* line 81, ../scss/layout/_footer.scss */
+/* line 82, ../scss/layout/_footer.scss */
 footer .region-footer .block-ipwa-base {
   padding-top: 30px; }
-  /* line 84, ../scss/layout/_footer.scss */
+  /* line 85, ../scss/layout/_footer.scss */
   footer .region-footer .block-ipwa-base h3 {
     font-size: 20px;
     color: #273753; }
-  /* line 89, ../scss/layout/_footer.scss */
+  /* line 90, ../scss/layout/_footer.scss */
   footer .region-footer .block-ipwa-base #footer-icons-images {
     padding: 40px 0; }
-    /* line 92, ../scss/layout/_footer.scss */
+    /* line 93, ../scss/layout/_footer.scss */
     footer .region-footer .block-ipwa-base #footer-icons-images div {
       display: inline-block;
       padding-right: 30px;
       padding-bottom: 30px; }
-/* line 100, ../scss/layout/_footer.scss */
+/* line 101, ../scss/layout/_footer.scss */
 footer .region-footer #block-menu-menu-footer-navigation {
   width: 100%;
   /* Tablet design */ }
   @media (min-width: 767px) {
-    /* line 100, ../scss/layout/_footer.scss */
+    /* line 101, ../scss/layout/_footer.scss */
     footer .region-footer #block-menu-menu-footer-navigation {
       width: 75%;
       float: left; } }
-  /* line 109, ../scss/layout/_footer.scss */
+  /* line 110, ../scss/layout/_footer.scss */
   footer .region-footer #block-menu-menu-footer-navigation ul {
     margin-left: -15px;
     margin-right: -15px;
     /* Tablet design */ }
     @media (min-width: 520px) {
-      /* line 109, ../scss/layout/_footer.scss */
+      /* line 110, ../scss/layout/_footer.scss */
       footer .region-footer #block-menu-menu-footer-navigation ul {
         margin: 0; } }
-    /* line 118, ../scss/layout/_footer.scss */
+    /* line 119, ../scss/layout/_footer.scss */
     footer .region-footer #block-menu-menu-footer-navigation ul li {
       display: block;
       padding: 20px;
@@ -6992,49 +6993,49 @@ footer .region-footer #block-menu-menu-footer-navigation {
       border-bottom: 1px solid #eff2f7;
       /* Tablet design */ }
       @media (min-width: 520px) {
-        /* line 118, ../scss/layout/_footer.scss */
+        /* line 119, ../scss/layout/_footer.scss */
         footer .region-footer #block-menu-menu-footer-navigation ul li {
           display: inline-block;
           border-bottom: 0;
           width: auto;
           padding-left: 0;
           padding-bottom: 0; } }
-      /* line 133, ../scss/layout/_footer.scss */
+      /* line 134, ../scss/layout/_footer.scss */
       footer .region-footer #block-menu-menu-footer-navigation ul li a {
         color: #273753;
         padding: 0;
         font-size: 18px; }
-        /* line 138, ../scss/layout/_footer.scss */
+        /* line 139, ../scss/layout/_footer.scss */
         footer .region-footer #block-menu-menu-footer-navigation ul li a:hover, footer .region-footer #block-menu-menu-footer-navigation ul li a:focus {
           background: none;
           outline: none;
           outline-offset: none; }
-      /* line 146, ../scss/layout/_footer.scss */
+      /* line 147, ../scss/layout/_footer.scss */
       footer .region-footer #block-menu-menu-footer-navigation ul li .open a {
         background: none;
         border: none; }
-        /* line 150, ../scss/layout/_footer.scss */
+        /* line 151, ../scss/layout/_footer.scss */
         footer .region-footer #block-menu-menu-footer-navigation ul li .open a:hover, footer .region-footer #block-menu-menu-footer-navigation ul li .open a:focus {
           background: none;
           border: none; }
-/* line 161, ../scss/layout/_footer.scss */
+/* line 162, ../scss/layout/_footer.scss */
 footer .region-footer .footer_blocks {
   width: 100%;
   text-align: right;
   /* Tablet design */ }
   @media (min-width: 767px) {
-    /* line 161, ../scss/layout/_footer.scss */
+    /* line 162, ../scss/layout/_footer.scss */
     footer .region-footer .footer_blocks {
       width: 25%;
       float: left;
       padding-top: 10px; } }
-  /* line 170, ../scss/layout/_footer.scss */
+  /* line 171, ../scss/layout/_footer.scss */
   footer .region-footer .footer_blocks .block-views {
     display: inline-block; }
-    /* line 174, ../scss/layout/_footer.scss */
+    /* line 175, ../scss/layout/_footer.scss */
     footer .region-footer .footer_blocks .block-views .feed-icon img {
       display: none; }
-    /* line 179, ../scss/layout/_footer.scss */
+    /* line 180, ../scss/layout/_footer.scss */
     footer .region-footer .footer_blocks .block-views .feed-icon a:before {
       font-family: "icomoon";
       content: "\e911";
@@ -7042,17 +7043,17 @@ footer .region-footer .footer_blocks {
       font-size: 20px;
       display: inline-block;
       padding: 10px; }
-  /* line 191, ../scss/layout/_footer.scss */
+  /* line 192, ../scss/layout/_footer.scss */
   footer .region-footer .footer_blocks .block-ipwa-base {
     display: inline-block;
     padding-top: 0; }
-    /* line 195, ../scss/layout/_footer.scss */
+    /* line 196, ../scss/layout/_footer.scss */
     footer .region-footer .footer_blocks .block-ipwa-base #page_print {
       font-size: 0;
       background: none;
       border: none;
       padding: 0; }
-      /* line 201, ../scss/layout/_footer.scss */
+      /* line 202, ../scss/layout/_footer.scss */
       footer .region-footer .footer_blocks .block-ipwa-base #page_print:before {
         font-family: "icomoon";
         content: "\e94c";
@@ -7060,13 +7061,13 @@ footer .region-footer .footer_blocks {
         font-size: 20px;
         display: inline-block;
         padding: 10px; }
-  /* line 212, ../scss/layout/_footer.scss */
+  /* line 213, ../scss/layout/_footer.scss */
   footer .region-footer .footer_blocks .block-addthis {
     display: inline-block; }
-    /* line 215, ../scss/layout/_footer.scss */
+    /* line 216, ../scss/layout/_footer.scss */
     footer .region-footer .footer_blocks .block-addthis .addthis_button {
       font-size: 0; }
-      /* line 218, ../scss/layout/_footer.scss */
+      /* line 219, ../scss/layout/_footer.scss */
       footer .region-footer .footer_blocks .block-addthis .addthis_button:before {
         font-family: "icomoon";
         content: "\e94f";
@@ -7074,14 +7075,14 @@ footer .region-footer .footer_blocks {
         font-size: 20px;
         display: inline-block;
         padding: 10px; }
-      /* line 227, ../scss/layout/_footer.scss */
+      /* line 228, ../scss/layout/_footer.scss */
       footer .region-footer .footer_blocks .block-addthis .addthis_button img {
         display: none; }
-/* line 236, ../scss/layout/_footer.scss */
+/* line 237, ../scss/layout/_footer.scss */
 footer .footer-copyright {
   font-size: 18px;
   color: #273753; }
-/* line 241, ../scss/layout/_footer.scss */
+/* line 242, ../scss/layout/_footer.scss */
 footer .nav .open > a, footer .nav .open > a:hover, footer .nav .open > a:focus {
   background: none; }
 
