@@ -6968,18 +6968,23 @@ footer .region-footer .block-ipwa-base {
       padding-bottom: 30px; }
 /* line 100, ../scss/layout/_footer.scss */
 footer .region-footer #block-menu-menu-footer-navigation {
-  width: 75%;
-  float: left; }
-  /* line 103, ../scss/layout/_footer.scss */
+  width: 100%;
+  /* Tablet design */ }
+  @media (min-width: 767px) {
+    /* line 100, ../scss/layout/_footer.scss */
+    footer .region-footer #block-menu-menu-footer-navigation {
+      width: 75%;
+      float: left; } }
+  /* line 109, ../scss/layout/_footer.scss */
   footer .region-footer #block-menu-menu-footer-navigation ul {
     margin-left: -15px;
     margin-right: -15px;
     /* Tablet design */ }
     @media (min-width: 520px) {
-      /* line 103, ../scss/layout/_footer.scss */
+      /* line 109, ../scss/layout/_footer.scss */
       footer .region-footer #block-menu-menu-footer-navigation ul {
         margin: 0; } }
-    /* line 112, ../scss/layout/_footer.scss */
+    /* line 118, ../scss/layout/_footer.scss */
     footer .region-footer #block-menu-menu-footer-navigation ul li {
       display: block;
       padding: 20px;
@@ -6987,44 +6992,49 @@ footer .region-footer #block-menu-menu-footer-navigation {
       border-bottom: 1px solid #eff2f7;
       /* Tablet design */ }
       @media (min-width: 520px) {
-        /* line 112, ../scss/layout/_footer.scss */
+        /* line 118, ../scss/layout/_footer.scss */
         footer .region-footer #block-menu-menu-footer-navigation ul li {
           display: inline-block;
           border-bottom: 0;
           width: auto;
           padding-left: 0;
           padding-bottom: 0; } }
-      /* line 127, ../scss/layout/_footer.scss */
+      /* line 133, ../scss/layout/_footer.scss */
       footer .region-footer #block-menu-menu-footer-navigation ul li a {
         color: #273753;
         padding: 0;
         font-size: 18px; }
-        /* line 132, ../scss/layout/_footer.scss */
+        /* line 138, ../scss/layout/_footer.scss */
         footer .region-footer #block-menu-menu-footer-navigation ul li a:hover, footer .region-footer #block-menu-menu-footer-navigation ul li a:focus {
           background: none;
           outline: none;
           outline-offset: none; }
-      /* line 140, ../scss/layout/_footer.scss */
+      /* line 146, ../scss/layout/_footer.scss */
       footer .region-footer #block-menu-menu-footer-navigation ul li .open a {
         background: none;
         border: none; }
-        /* line 144, ../scss/layout/_footer.scss */
+        /* line 150, ../scss/layout/_footer.scss */
         footer .region-footer #block-menu-menu-footer-navigation ul li .open a:hover, footer .region-footer #block-menu-menu-footer-navigation ul li .open a:focus {
           background: none;
           border: none; }
-/* line 155, ../scss/layout/_footer.scss */
+/* line 161, ../scss/layout/_footer.scss */
 footer .region-footer .footer_blocks {
-  width: 25%;
-  float: left;
+  width: 100%;
   text-align: right;
-  padding-top: 10px; }
-  /* line 161, ../scss/layout/_footer.scss */
+  /* Tablet design */ }
+  @media (min-width: 767px) {
+    /* line 161, ../scss/layout/_footer.scss */
+    footer .region-footer .footer_blocks {
+      width: 25%;
+      float: left;
+      padding-top: 10px; } }
+  /* line 170, ../scss/layout/_footer.scss */
   footer .region-footer .footer_blocks .block-views {
     display: inline-block; }
-    /* line 165, ../scss/layout/_footer.scss */
+    /* line 174, ../scss/layout/_footer.scss */
     footer .region-footer .footer_blocks .block-views .feed-icon img {
       display: none; }
-    /* line 170, ../scss/layout/_footer.scss */
+    /* line 179, ../scss/layout/_footer.scss */
     footer .region-footer .footer_blocks .block-views .feed-icon a:before {
       font-family: "icomoon";
       content: "\e911";
@@ -7032,17 +7042,17 @@ footer .region-footer .footer_blocks {
       font-size: 20px;
       display: inline-block;
       padding: 10px; }
-  /* line 182, ../scss/layout/_footer.scss */
+  /* line 191, ../scss/layout/_footer.scss */
   footer .region-footer .footer_blocks .block-ipwa-base {
     display: inline-block;
     padding-top: 0; }
-    /* line 186, ../scss/layout/_footer.scss */
+    /* line 195, ../scss/layout/_footer.scss */
     footer .region-footer .footer_blocks .block-ipwa-base #page_print {
       font-size: 0;
       background: none;
       border: none;
       padding: 0; }
-      /* line 192, ../scss/layout/_footer.scss */
+      /* line 201, ../scss/layout/_footer.scss */
       footer .region-footer .footer_blocks .block-ipwa-base #page_print:before {
         font-family: "icomoon";
         content: "\e94c";
@@ -7050,13 +7060,13 @@ footer .region-footer .footer_blocks {
         font-size: 20px;
         display: inline-block;
         padding: 10px; }
-  /* line 203, ../scss/layout/_footer.scss */
+  /* line 212, ../scss/layout/_footer.scss */
   footer .region-footer .footer_blocks .block-addthis {
     display: inline-block; }
-    /* line 206, ../scss/layout/_footer.scss */
+    /* line 215, ../scss/layout/_footer.scss */
     footer .region-footer .footer_blocks .block-addthis .addthis_button {
       font-size: 0; }
-      /* line 209, ../scss/layout/_footer.scss */
+      /* line 218, ../scss/layout/_footer.scss */
       footer .region-footer .footer_blocks .block-addthis .addthis_button:before {
         font-family: "icomoon";
         content: "\e94f";
@@ -7064,14 +7074,14 @@ footer .region-footer .footer_blocks {
         font-size: 20px;
         display: inline-block;
         padding: 10px; }
-      /* line 218, ../scss/layout/_footer.scss */
+      /* line 227, ../scss/layout/_footer.scss */
       footer .region-footer .footer_blocks .block-addthis .addthis_button img {
         display: none; }
-/* line 227, ../scss/layout/_footer.scss */
+/* line 236, ../scss/layout/_footer.scss */
 footer .footer-copyright {
   font-size: 18px;
   color: #273753; }
-/* line 232, ../scss/layout/_footer.scss */
+/* line 241, ../scss/layout/_footer.scss */
 footer .nav .open > a, footer .nav .open > a:hover, footer .nav .open > a:focus {
   background: none; }
 

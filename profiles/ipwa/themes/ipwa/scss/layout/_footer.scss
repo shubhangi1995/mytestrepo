@@ -98,8 +98,14 @@ footer {
         }
 
         #block-menu-menu-footer-navigation {
+		     width:100%;
+			 
+			  @include devicebreak(x-medium){
+		
 		    width:75%;
 			float:left;
+			
+			}
             ul {
                 margin-left: -15px;
                 margin-right: -15px;
@@ -153,11 +159,14 @@ footer {
     
 
     .footer_blocks {
-        width:25%;
-		float:left;
-		text-align: right;
+	  width:100%;
+	 text-align: right;
+	  
+	  @include devicebreak(x-medium){
+	        width:25%;
+		float:left;		
     padding-top: 10px;
-
+}
         .block-views {
             display: inline-block;
 
