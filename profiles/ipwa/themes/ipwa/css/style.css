@@ -10265,38 +10265,35 @@ input[type=text]::-ms-clear {
   /* line 579, ../scss/pages/_listview.scss */
   .view-search-list .view-content .views-row div[class*='views-field-views-conditional-'] .search-condition.field-content {
     color: #e74712; }
-    /* line 582, ../scss/pages/_listview.scss */
-    .view-search-list .view-content .views-row div[class*='views-field-views-conditional-'] .search-condition.field-content a {
-      font-weight: bold; }
-  /* line 587, ../scss/pages/_listview.scss */
+  /* line 584, ../scss/pages/_listview.scss */
   .view-search-list .view-content .views-row div[class*='views-field-views-conditional-'] .date-display-single {
     color: #e74712; }
-  /* line 591, ../scss/pages/_listview.scss */
+  /* line 588, ../scss/pages/_listview.scss */
   .view-search-list .view-content .views-row div[class*='views-field-views-conditional-'] .search-condition.field-content.single {
     color: #e74712; }
-  /* line 597, ../scss/pages/_listview.scss */
+  /* line 594, ../scss/pages/_listview.scss */
   .view-search-list .view-content .views-row .views-field-field-ver-ffentlichungsdatum .date-display-single {
     color: #e74712; }
 
-/* line 606, ../scss/pages/_listview.scss */
+/* line 603, ../scss/pages/_listview.scss */
 .view-wahlen-sie-einen-themenbereich {
   background: #273753; }
-  /* line 609, ../scss/pages/_listview.scss */
+  /* line 606, ../scss/pages/_listview.scss */
   .view-wahlen-sie-einen-themenbereich .view-sub-wrapper {
     position: relative; }
-  /* line 615, ../scss/pages/_listview.scss */
+  /* line 612, ../scss/pages/_listview.scss */
   .view-wahlen-sie-einen-themenbereich .view-header {
     color: #ffffff;
     padding: 40px 0;
     /* Mobile design */ }
     @media (min-width: 320px) {
-      /* line 615, ../scss/pages/_listview.scss */
+      /* line 612, ../scss/pages/_listview.scss */
       .view-wahlen-sie-einen-themenbereich .view-header {
         padding-right: 50px; } }
-  /* line 624, ../scss/pages/_listview.scss */
+  /* line 621, ../scss/pages/_listview.scss */
   .view-wahlen-sie-einen-themenbereich .view-content {
     padding-bottom: 90px; }
-    /* line 627, ../scss/pages/_listview.scss */
+    /* line 624, ../scss/pages/_listview.scss */
     .view-wahlen-sie-einen-themenbereich .view-content .views_slideshow_controls_text {
       float: right;
       display: inline-block;
@@ -10305,13 +10302,13 @@ input[type=text]::-ms-clear {
       top: 60px;
       /* Mobile design */ }
       @media (min-width: 320px) {
-        /* line 627, ../scss/pages/_listview.scss */
+        /* line 624, ../scss/pages/_listview.scss */
         .view-wahlen-sie-einen-themenbereich .view-content .views_slideshow_controls_text {
           right: 25px; } }
-      /* line 640, ../scss/pages/_listview.scss */
+      /* line 637, ../scss/pages/_listview.scss */
       .view-wahlen-sie-einen-themenbereich .view-content .views_slideshow_controls_text .views-slideshow-controls-text-previous a {
         font-size: 0; }
-        /* line 643, ../scss/pages/_listview.scss */
+        /* line 640, ../scss/pages/_listview.scss */
         .view-wahlen-sie-einen-themenbereich .view-content .views_slideshow_controls_text .views-slideshow-controls-text-previous a:before {
           font-family: "icomoon";
           content: "\e93e";
@@ -10321,10 +10318,10 @@ input[type=text]::-ms-clear {
           left: -55px;
           top: 6px;
           display: inline-block; }
-      /* line 657, ../scss/pages/_listview.scss */
+      /* line 654, ../scss/pages/_listview.scss */
       .view-wahlen-sie-einen-themenbereich .view-content .views_slideshow_controls_text .views-slideshow-controls-text-status-pause a {
         font-size: 0; }
-        /* line 660, ../scss/pages/_listview.scss */
+        /* line 657, ../scss/pages/_listview.scss */
         .view-wahlen-sie-einen-themenbereich .view-content .views_slideshow_controls_text .views-slideshow-controls-text-status-pause a::before {
           font-family: "icomoon";
           content: "\e908";
@@ -10334,10 +10331,10 @@ input[type=text]::-ms-clear {
           top: 4px;
           display: inline-block;
           left: -25px; }
-      /* line 674, ../scss/pages/_listview.scss */
+      /* line 671, ../scss/pages/_listview.scss */
       .view-wahlen-sie-einen-themenbereich .view-content .views_slideshow_controls_text .views-slideshow-controls-text-status-play a {
         font-size: 0; }
-        /* line 677, ../scss/pages/_listview.scss */
+        /* line 674, ../scss/pages/_listview.scss */
         .view-wahlen-sie-einen-themenbereich .view-content .views_slideshow_controls_text .views-slideshow-controls-text-status-play a::before {
           font-family: "icomoon";
           content: "\e90a";
@@ -10347,10 +10344,10 @@ input[type=text]::-ms-clear {
           top: 4px;
           display: inline-block;
           left: -25px; }
-      /* line 691, ../scss/pages/_listview.scss */
+      /* line 688, ../scss/pages/_listview.scss */
       .view-wahlen-sie-einen-themenbereich .view-content .views_slideshow_controls_text .views_slideshow_controls_text_next a {
         font-size: 0; }
-        /* line 694, ../scss/pages/_listview.scss */
+        /* line 691, ../scss/pages/_listview.scss */
         .view-wahlen-sie-einen-themenbereich .view-content .views_slideshow_controls_text .views_slideshow_controls_text_next a:before {
           font-family: "icomoon";
           content: "\e93f";
@@ -10359,7 +10356,7 @@ input[type=text]::-ms-clear {
           position: absolute;
           top: 6px;
           display: inline-block; }
-    /* line 707, ../scss/pages/_listview.scss */
+    /* line 704, ../scss/pages/_listview.scss */
     .view-wahlen-sie-einen-themenbereich .view-content .views-row {
       background-color: #ffffff;
       padding: 30px;
@@ -10370,48 +10367,48 @@ input[type=text]::-ms-clear {
       position: relative;
       /* Desktop design */ }
       @media (min-width: 960px) {
-        /* line 707, ../scss/pages/_listview.scss */
+        /* line 704, ../scss/pages/_listview.scss */
         .view-wahlen-sie-einen-themenbereich .view-content .views-row {
           width: 47%;
           height: 286px;
           margin-right: 30px;
           float: left;
           margin-left: 10px; } }
-      /* line 725, ../scss/pages/_listview.scss */
+      /* line 722, ../scss/pages/_listview.scss */
       .view-wahlen-sie-einen-themenbereich .view-content .views-row:nth-child(2), .view-wahlen-sie-einen-themenbereich .view-content .views-row:last-child {
         /* Desktop design */ }
         @media (min-width: 960px) {
-          /* line 725, ../scss/pages/_listview.scss */
+          /* line 722, ../scss/pages/_listview.scss */
           .view-wahlen-sie-einen-themenbereich .view-content .views-row:nth-child(2), .view-wahlen-sie-einen-themenbereich .view-content .views-row:last-child {
             margin-right: 0; } }
-      /* line 731, ../scss/pages/_listview.scss */
+      /* line 728, ../scss/pages/_listview.scss */
       .view-wahlen-sie-einen-themenbereich .view-content .views-row .views-field-name {
         padding-bottom: 30px; }
-        /* line 734, ../scss/pages/_listview.scss */
+        /* line 731, ../scss/pages/_listview.scss */
         .view-wahlen-sie-einen-themenbereich .view-content .views-row .views-field-name a {
           color: #e74712;
           text-decoration: none;
           font-weight: bold;
           padding-bottom: 30px; }
-      /* line 743, ../scss/pages/_listview.scss */
+      /* line 740, ../scss/pages/_listview.scss */
       .view-wahlen-sie-einen-themenbereich .view-content .views-row .views-field-name-1 a {
         color: #273753;
         position: absolute;
         bottom: 30px; }
-      /* line 752, ../scss/pages/_listview.scss */
+      /* line 749, ../scss/pages/_listview.scss */
       .view-wahlen-sie-einen-themenbereich .view-content .views-row .views-field-field-kurztext {
         padding-bottom: 40px; }
 
-/* line 761, ../scss/pages/_listview.scss */
+/* line 758, ../scss/pages/_listview.scss */
 .view-map-teaser {
   clear: both;
   margin-bottom: 30px;
   overflow: hidden; }
-  /* line 768, ../scss/pages/_listview.scss */
+  /* line 765, ../scss/pages/_listview.scss */
   .view-map-teaser .view-sub-wrapper .view-content .views-row {
     padding: 0;
     background: #273753; }
-    /* line 774, ../scss/pages/_listview.scss */
+    /* line 771, ../scss/pages/_listview.scss */
     .view-map-teaser .view-sub-wrapper .view-content .views-row .row-container {
       background: none;
       height: auto;
@@ -10420,30 +10417,30 @@ input[type=text]::-ms-clear {
       border: none;
       /* Over Desktop design */ }
       @media (min-width: 1025px) {
-        /* line 774, ../scss/pages/_listview.scss */
+        /* line 771, ../scss/pages/_listview.scss */
         .view-map-teaser .view-sub-wrapper .view-content .views-row .row-container {
           padding: 45px 150px 45px 50px; } }
-      /* line 786, ../scss/pages/_listview.scss */
+      /* line 783, ../scss/pages/_listview.scss */
       .view-map-teaser .view-sub-wrapper .view-content .views-row .row-container:hover {
         background: none;
         border: none; }
-      /* line 791, ../scss/pages/_listview.scss */
+      /* line 788, ../scss/pages/_listview.scss */
       .view-map-teaser .view-sub-wrapper .view-content .views-row .row-container .views-field-field-bild {
         padding-bottom: 20px; }
-        /* line 794, ../scss/pages/_listview.scss */
+        /* line 791, ../scss/pages/_listview.scss */
         .view-map-teaser .view-sub-wrapper .view-content .views-row .row-container .views-field-field-bild img {
           color: #e74712; }
-      /* line 799, ../scss/pages/_listview.scss */
+      /* line 796, ../scss/pages/_listview.scss */
       .view-map-teaser .view-sub-wrapper .view-content .views-row .row-container .views-field-field-paragraph-title {
         color: #ffffff;
         font-size: 38px;
         font-weight: bold;
         padding-bottom: 20px; }
-      /* line 806, ../scss/pages/_listview.scss */
+      /* line 803, ../scss/pages/_listview.scss */
       .view-map-teaser .view-sub-wrapper .view-content .views-row .row-container .views-field-field-flie-text-bereich {
         color: #ffffff;
         padding-bottom: 35px; }
-      /* line 811, ../scss/pages/_listview.scss */
+      /* line 808, ../scss/pages/_listview.scss */
       .view-map-teaser .view-sub-wrapper .view-content .views-row .row-container .views-field-field-quellenangabe a {
         color: #ffffff; }
 
