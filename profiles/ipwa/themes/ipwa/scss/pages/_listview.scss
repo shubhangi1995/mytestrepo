@@ -206,7 +206,7 @@
                                 padding-left: 0;
                                 padding-bottom: 15px;
 							&:focus{
-								outline:2px dotted $active-menu !important; 
+								outline:1px dotted $main-color !important; 
 							}
                                 input {
                                     visibility: hidden;
@@ -682,7 +682,7 @@
             }
 
 
-            .views-slideshow-controls-text-previous {
+            /* .views-slideshow-controls-text-previous {
                 a {
                     font-size: 0;
 
@@ -697,54 +697,42 @@
                         display: inline-block;
                     }
                 }
-            }
+            } */
 
-            .views-slideshow-controls-text-status-pause {
+            .views-slideshow-controls-text-previous, .views-slideshow-controls-text-status-pause, .views-slideshow-controls-text-status-play, .views_slideshow_controls_text_next { 
                 a {
                     font-size: 0;
-
                     &::before {
                         font-family: $icomoon;
                         content: "\e908";
                         color: $color-white;
                         font-size: 18px;
-                        position: absolute;
-                        top: 4px;
                         display: inline-block;
-                        left: -25px;
+						margin-right:5px;
                     }
                 }
             }
 
             .views-slideshow-controls-text-status-play {
                 a {
-                    font-size: 0;
-
                     &::before {
-                        font-family: $icomoon;
                         content: "\e90a";
-                        color: $color-white;
-                        font-size: 18px;
-                        position: absolute;
-                        top: 4px;
-                        display: inline-block;
-                        left: -25px;
                     }
                 }
             }
 
             .views_slideshow_controls_text_next {
                 a {
-                    font-size: 0;
-
                     &:before {
-                        font-family: $icomoon;
-                        content: "\e93f";
-                        color: $color-white;
-                        font-size: 14px;
-                        position: absolute;
-                        top: 6px;
-                        display: inline-block;
+                        content: "\e93f"; 
+						margin-right:0; 
+                    }
+                }
+            }
+			.views-slideshow-controls-text-previous {
+                a {
+                    &:before {
+                        content: "\e93e";  
                     }
                 }
             }

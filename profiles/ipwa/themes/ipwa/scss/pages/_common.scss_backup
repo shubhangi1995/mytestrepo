@@ -282,7 +282,7 @@ padding:0;
                 > a {
 				  text-decoration:none;
 				  &:focus{
-					outline: 1px dotted $main-color !important; 
+					outline: 1px dotted $active-menu !important; 
 				  }
 				  
 				.row-container {
@@ -309,14 +309,13 @@ padding:0;
 
                     &.project-blue {
                         background: $main-color;
-						border:1px solid $main-color;
 
-                        .views-field-title .field-content{
+                        .views-field-title a {
                             color: $color-white;
                         }
 
                         &:hover {
-                            .views-field-title .field-content{
+                            .views-field-title a {
                                 color: $main-color;
                             }
                         }
@@ -638,7 +637,6 @@ input[type=text]::-ms-clear {
                                         cursor: pointer;
                                         transition: all 0.5s ease;
                                         height: auto;
-
                                         @include devicebreak(x-medium) {
                                             //  height: 410px;
                                         }

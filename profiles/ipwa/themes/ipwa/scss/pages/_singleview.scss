@@ -168,7 +168,7 @@
                             color: $color-white;
                             float: left;    
 							&:focus{
-								outline:2px dotted $active-menu !important; 
+								outline:1px dotted $main-color !important; 
 							}							
                         }
                     
@@ -811,6 +811,9 @@
 
                 .view-content .views-row a{
 				       text-decoration:none;
+					&:focus{
+						outline: 1px dotted $main-color !important;
+					}
                     .row-container {
                         background: $color-white;
                         height: 410px;
@@ -819,6 +822,8 @@
                         border: 1px solid $color-white;
                         cursor: pointer;
 						 transition: all 0.5s ease;
+						 display:inline-block;
+						 width:100%;
 
                         &:hover {
                             background: $color-light-blue;
@@ -895,6 +900,9 @@
                     width: auto;
 
                     .view-content .views-row a{ text-decoration:none; 
+						&:focus{
+							outline: 1px dotted $main-color !important;
+						  }
                         .row-container {
                             background: $color-white;
                             height: 410px;
@@ -903,6 +911,7 @@
                             border: 1px solid $color-white;
                             cursor: pointer;
 							 transition: all 0.5s ease;
+							 display:inline-block;
 
                             &:hover {
                                 background: $color-light-blue;
@@ -986,6 +995,9 @@
                 }
 
                 .view-content .views-row a{text-decoration:none; 
+						&:focus{
+							outline: 1px dotted $main-color!important;
+						}
                     .row-container {
                         background: $color-white;
                         height: 410px;
@@ -994,6 +1006,8 @@
                         border: 1px solid $color-white;
                         cursor: pointer;
 						 transition: all 0.5s ease;
+						 display:inline-block;
+						 width:100%;
 
                         &:hover {
                             background: $color-light-blue;
