@@ -9556,7 +9556,7 @@ input[type=text]::-ms-clear {
               display: inline-block;
               margin-right: 10px; }
           /* line 1012, ../scss/pages/_singleview.scss */
-          .view-latest-content-doorpage > .view-sub-wrapper > .view-latest-content-doorpage .view-sub-wrapper .view-content .views-row a .row-container .views-field-type {
+          .view-latest-content-doorpage > .view-sub-wrapper > .view-latest-content-doorpage .view-sub-wrapper .view-content .views-row a .row-container .views-field-field-event-datum {
             color: #e74712;
             font-weight: bold;
             padding-bottom: 15px; }
