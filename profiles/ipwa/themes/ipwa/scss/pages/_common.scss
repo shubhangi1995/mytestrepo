@@ -310,12 +310,12 @@ padding:0;
                     &.project-blue {
                         background: $main-color;
 
-                        .views-field-title a {
+                        .views-field-title .field-content{
                             color: $color-white;
                         }
 
                         &:hover {
-                            .views-field-title a {
+                            .views-field-title .field-content{
                                 color: $main-color;
                             }
                         }
