@@ -350,6 +350,7 @@
 
 //only-termine//
 .view-termin, .view-event-calendar {
+.view-sub-wrapper{
     .view-filters {
         .views-exposed-form .views-exposed-widgets {
             #edit-term-node-tid-depth-wrapper {
@@ -403,6 +404,7 @@
             padding: 30px 0;
             font-size: 22px;
             font-weight: bold;
+			margin-top:0;
         }
 
         .views-widget-sort-by {
@@ -434,7 +436,7 @@
             }
         }
     }
-}
+}}
 
 // Calendar icon
 
