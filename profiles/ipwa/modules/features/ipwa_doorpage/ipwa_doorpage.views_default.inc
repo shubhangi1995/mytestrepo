@@ -1272,6 +1272,8 @@ function ipwa_doorpage_views_default_views() {
   $handler->display->display_options['fields']['field_kurztext']['table'] = 'field_data_field_kurztext';
   $handler->display->display_options['fields']['field_kurztext']['field'] = 'field_kurztext';
   $handler->display->display_options['fields']['field_kurztext']['label'] = '';
+  $handler->display->display_options['fields']['field_kurztext']['alter']['max_length'] = '140';
+  $handler->display->display_options['fields']['field_kurztext']['alter']['trim'] = TRUE;
   $handler->display->display_options['fields']['field_kurztext']['element_label_colon'] = FALSE;
   /* Feld: Taxonomie-Begriff: Name */
   $handler->display->display_options['fields']['name_1']['id'] = 'name_1';
