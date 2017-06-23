@@ -205,7 +205,9 @@
                             label {
                                 padding-left: 0;
                                 padding-bottom: 15px;
-
+							&:focus{
+								outline:2px dotted $active-menu !important; 
+							}
                                 input {
                                     visibility: hidden;
                                 }

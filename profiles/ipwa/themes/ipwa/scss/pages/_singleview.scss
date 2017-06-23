@@ -166,7 +166,10 @@
                             padding: 10px;
                             font-size: 18px;
                             color: $color-white;
-                            float: left;       
+                            float: left;    
+							&:focus{
+								outline:2px dotted $active-menu !important; 
+							}							
                         }
                     
                 }}

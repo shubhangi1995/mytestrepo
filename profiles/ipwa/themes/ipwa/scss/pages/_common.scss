@@ -6,8 +6,12 @@ body {
     line-height: normal;
 }
 
-a:focus{
-	outline-offset:0;  
+a:focus, button:focus, input:focus{
+	outline-offset:0 !important;
+	outline:thin dotted !important; 
+}
+.focused{
+	outline:1px dotted;
 }
 
 .container {
@@ -278,7 +282,7 @@ padding:0;
                 > a {
 				  text-decoration:none;
 				  &:focus{
-					outline: 1px dotted $active-menu;
+					outline: 1px dotted $active-menu !important;
 				  }
 				  
 				.row-container {
@@ -291,7 +295,8 @@ padding:0;
                     transition: all 0.5s ease;
                     height: auto;
 					word-wrap:break-word;
-
+					display:inline-block;
+					width:100%;
                     @include devicebreak(medium) {
                         height: 465px;
                     }

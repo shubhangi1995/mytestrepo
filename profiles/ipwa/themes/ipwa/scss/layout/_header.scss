@@ -233,6 +233,16 @@ padding-right:15px;
                             color: $color-light-grey;
                             font-size: 40px;
                         }
+						
+						// For tab access
+						
+						&.dropdown-toggle{
+							&:focus{
+								& + .tb-megamenu-submenu{
+									display:block;
+								}
+							}
+						}
                     }
 
                     &.menu-politik > a {

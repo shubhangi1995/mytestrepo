@@ -242,6 +242,23 @@ if(jQuery(window).innerWidth() <= 1024){
 	
 	//termine view
 	jQuery(".view-termin .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by").appendTo(".view-termin .attachment-before");
+	
+	
+	// Share link tab indexing
+	
+	jQuery("#block-addthis-addthis-block a").attr("href", "");
+	
+	// Tab accessibility
+	
+	jQuery(".tb-megamenu .nav > li > a").on('focus', function(){
+		jQuery(this).mouseover();
+		jQuery(this).parent().siblings().find("a").mouseout();
+	});
+	
+	jQuery(".page-aktuelles .view-aktuelles .view-filters .categories-filter .views-exposed-widget .views-widget .form-item .select2-container--default .select2-selection--single").on('focus', function(){
+		jQuery(this).parents(".views-exposed-widget").addClass("focused");
+		jQuery(this).parents(".views-exposed-widget").sibings().removeClass("focused");
+	});
 });
 
 
