@@ -172,6 +172,20 @@ jQuery('.tb-megamenu-submenu.dropdown-menu').attr('style','display:none !importa
 			jQuery("table tr td").removeClass("redHover");
 		}
 	}); */
+	
+	
+	// Calendar view
+	
+	 jQuery(".page-calendar .view-content .calendar-calendar .inner .item .calendar span a").on("focus", function(){
+		jQuery(this).mouseover();
+		// jQuery(this).hover();
+		jQuery(this).next(".views-row").attr("style", "display:block !important;");
+		jQuery(this).parents("td, tr").siblings().find(".trigger").mouseout();
+		jQuery(this).parents("td, tr").siblings().find(".trigger").next(".views-row").removeAttr("style");
+	}); 
+	
+
+
 
 	
 	// Calendar tool-tip
@@ -193,7 +207,7 @@ jQuery('.tb-megamenu-submenu.dropdown-menu').attr('style','display:none !importa
 		if(jQuery(this).parents("td").is(":last-child, :nth-last-child(2)")){
 			jQuery(this).next(".views-row").addClass("rightBorder");
 		}
-		
+		// jQuery(this).next().show();
 	});
 	
 	// Click on trigger
@@ -287,14 +301,15 @@ jQuery('.tb-megamenu-submenu.dropdown-menu').attr('style','display:none !importa
 	// Outline for blue boxes
 	
 	jQuery(".project-blue, .front .view-termin .view-sub-wrapper .row-container").parent().on("focus", function(){
-		jQuery(this).children(".row-container").addClass("special-focus");
-		jQuery(this).parent(".views-row").siblings().find(".row-container").removeClass("special-focus");
+		jQuery(this).attr("style", "outline:2px dotted #e74712 !important;")
+		// jQuery(this).parent(".views-row").siblings().find("a").attr("style", "outline:0;")
 	});
 	
 	jQuery(".project-blue, .front .view-termin .view-sub-wrapper .row-container").parent().on("blur", function(){
-		if(jQuery(this).parent(".views-row").is(":last-child")){
-			jQuery(this).children(".row-container").removeClass("special-focus");
-		}
+		jQuery(this).attr("style", "outline:0;")
+		/* if(jQuery(this).parent(".views-row").is(":last-child")){
+			jQuery(this).attr("style", "outline:0;");
+		} */
 	});
 	
 });

@@ -13,9 +13,9 @@ a:focus, button:focus, input:focus{
 .focused{
 	outline:1px dotted;
 }
-.special-focus{
+/* .special-focus{
 	outline:2px dotted $active-menu;       
-}
+} */
 
 .container {
     width: 100%;
@@ -737,12 +737,17 @@ input[type=text]::-ms-clear {
                                         }
                                     }
                                 }
+								 /*&:focus {
+									& + .views-row{
+										display:block;  
+									}
+								 } */
                             }
 
-                            &:hover {
+                            &:hover{
                                 a {
                                     & + .views-row {
-                                        display: block;
+                                        display: block; 
                                     }
                                 }
                             }
