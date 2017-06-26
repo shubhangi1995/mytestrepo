@@ -796,7 +796,7 @@
                 @include devicebreak(x-medium) {
                     width: 50%;
                     float: left;
-                    padding-right: 15px;
+                    padding-right:20px;
                 }
 
                 
@@ -808,8 +808,36 @@
                     padding-right: 20px;
                 }
 
+      }
+                
 
-                .view-content .views-row a{
+            > .view-latest-content-doorpage {
+                width: 100%;
+
+                @include devicebreak(x-medium) {
+                    width: 50%;
+                    float: left;
+                    padding-left: 15px;
+                }
+
+
+                @include devicebreak(large) {
+                    width: 50%;
+                    float: left;
+                    padding: 0 10px;
+                }
+
+
+                .view-sub-wrapper {
+                    width: auto;
+
+                    
+                }
+            }
+			
+			.inner-wrapper , > .view-latest-content-doorpage  {
+			
+			.view-content .views-row a{
 				       text-decoration:none;
 					&:focus{
 						outline: 1px dotted $main-color !important;
@@ -876,83 +904,6 @@
                     @extend .common-button;
 
                     color: $main-color;
-                }
-            }
-
-            > .view-latest-content-doorpage {
-                width: 100%;
-
-                @include devicebreak(x-medium) {
-                    width: 50%;
-                    float: left;
-                    padding-left: 15px;
-                }
-
-
-                @include devicebreak(large) {
-                    width: 50%;
-                    float: left;
-                    padding: 0 10px;
-                }
-
-
-                .view-sub-wrapper {
-                    width: auto;
-
-                    .view-content .views-row a{ text-decoration:none; 
-						&:focus{
-							outline: 1px dotted $main-color !important;
-						  }
-                        .row-container {
-                            background: $color-white;
-                            height: 410px;
-                            padding: 30px;
-                            position: relative;
-                            border: 1px solid $color-white;
-                            cursor: pointer;
-							 transition: all 0.5s ease;
-							 display:inline-block;
-
-                            &:hover {
-                                background: $color-light-blue;
-                                border: 1px solid $color-border;
-                            }
-
-                            .views-field-field-themenzuweisung {
-                                margin-bottom: 30px;
-
-                                img {
-                                    display: inline-block;
-                                    margin-right: 10px;
-                                }
-                            }
-
-                            .views-field-type {
-                                color: $active-menu;
-                                font-weight: bold;
-                                padding-bottom: 15px;
-                            }
-
-                            .views-field-title {
-                                padding-bottom: 70px;
-
-                                .field-content {
-                                   
-                                    color: $main-color;
-                                }
-                            }
-
-                            .views-field-field-datum {
-                                position: absolute;
-                                bottom: 30px;
-
-                                .date-display-single {
-                                    font-size: 17px;
-                                    color: $color-light-grey;
-                                }
-                            }
-                        }
-                    }
                 }
             }
         }
