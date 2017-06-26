@@ -13,6 +13,9 @@ a:focus, button:focus, input:focus{
 .focused{
 	outline:1px dotted;
 }
+.special-focus{
+	outline:2px dotted $active-menu;       
+}
 
 .container {
     width: 100%;

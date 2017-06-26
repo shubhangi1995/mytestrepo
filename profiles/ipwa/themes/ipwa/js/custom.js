@@ -287,13 +287,13 @@ jQuery('.tb-megamenu-submenu.dropdown-menu').attr('style','display:none !importa
 	// Outline for blue boxes
 	
 	jQuery(".project-blue, .view-termin .view-sub-wrapper .row-container").parent().on("focus", function(){
-		jQuery(this).css("outline", "2px dotted #e74712");
-		jQuery(this).parent().siblings().find("a").css("outline", "0");
+		jQuery(this).children(".row-container").addClass("special-focus");
+		jQuery(this).parent(".views-row").siblings().find(".row-container").removeClass("special-focus");
 	});
 	
 	jQuery(".project-blue, .view-termin .view-sub-wrapper .row-container").parent().on("blur", function(){
 		if(jQuery(this).parent(".views-row").is(":last-child")){
-			jQuery(this).parent(".views-row").css("outline", "0");
+			jQuery(this).children(".row-container").removeClass("special-focus");
 		}
 	});
 	

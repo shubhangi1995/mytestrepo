@@ -702,6 +702,9 @@
             .views-slideshow-controls-text-previous, .views-slideshow-controls-text-status-pause, .views-slideshow-controls-text-status-play, .views_slideshow_controls_text_next { 
                 a {
                     font-size: 0;
+					&:focus{
+						outline:1px dotted $color-white !important;
+					}
                     &::before {
                         font-family: $icomoon;
                         content: "\e908";
