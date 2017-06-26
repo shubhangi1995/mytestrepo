@@ -300,10 +300,13 @@ padding:0;
 					word-wrap:break-word;
 					display:inline-block;
 					width:100%;
-                    @include devicebreak(medium) {
+                     @include devicebreak(medium) {
                         height: 465px;
                     }
 
+					@include devicebreak(medium) {
+					  height:480px;
+					}
 
                     @include devicebreak(x-large) {
                         height: 410px;
