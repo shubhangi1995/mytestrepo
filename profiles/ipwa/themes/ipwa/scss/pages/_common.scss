@@ -24,7 +24,10 @@ a:focus, button:focus, input:focus{
         width: 1170px;
     }
 }
-
+.tabs--primary{
+	@extend .container;
+	margin-bottom:20px;
+}
 header.navbar-default {
     background: $color-white;
 }
@@ -993,11 +996,16 @@ input[type=text]::-ms-clear {
         }
     }
 
-    .view-header {
-        @include devicebreak(x-large) {
-            padding-left: 90px; 
-        }
-    }
+	.main-container{
+		  .view-header {
+				@include devicebreak(x-large) {
+					padding-left: 90px; 
+				}
+			}
+	}
+	#block-ipwa-newsletter-newsletter-subscription-block{
+		margin-top:25px; 
+	} 
 }
 
 .page-node-67{
