@@ -2,17 +2,30 @@
 
 .field-name-field-anzuzeigende-seitenmodule {
     .panelizer-view-mode {
+	
+	
+	
+	@include devicebreak(medium){
+	  padding:50px;
+	
+	}
+	
+	@include devicebreak(x-large){
         padding: 120px 0 70px;
         min-height: 523px;
+				}
 
         .panel-2col {
             @extend .container;
 
-            background: rgba(39, 55, 83, 0.9);
+            background: rgba(39, 55, 83, 1);
             padding-top: 45px;
+			
+			
 
-            @include devicebreak(x-large) {
+            @include devicebreak(medium) {
                 position: relative;
+				 background: rgba(39, 55, 83, 0.9);
             }
 
 
