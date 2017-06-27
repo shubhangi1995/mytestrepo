@@ -934,6 +934,7 @@
             padding: 15px;
 
             @include devicebreak(x-medium) {
+			   clear:both;
                 width: 50%;
                 float: left;
                 padding: 30px;
