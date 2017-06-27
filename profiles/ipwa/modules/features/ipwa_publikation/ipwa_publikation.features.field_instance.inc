@@ -398,7 +398,7 @@ function ipwa_publikation_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 5,
+        'weight' => 4,
       ),
       'paragraph' => array(
         'label' => 'above',
@@ -811,7 +811,7 @@ function ipwa_publikation_field_default_field_instances() {
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_plain',
-        'weight' => 4,
+        'weight' => 6,
       ),
       'paragraph' => array(
         'label' => 'above',
@@ -835,7 +835,7 @@ function ipwa_publikation_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_themenzuweisung',
-    'label' => 'Diese Publikation gehört zu',
+    'label' => 'Dieser Publikation gehört zu',
     'required' => 1,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -921,7 +921,7 @@ function ipwa_publikation_field_default_field_instances() {
           'show_repeat_rule' => 'show',
         ),
         'type' => 'date_default',
-        'weight' => 6,
+        'weight' => 5,
       ),
       'paragraph' => array(
         'label' => 'above',
@@ -1287,7 +1287,7 @@ Schema für externe Links: http://www…',
   t('Anzuzeigende Seitenmodule (Paragraphen)');
   t('Bild');
   t('Datum');
-  t('Diese Publikation gehört zu');
+  t('Dieser Publikation gehört zu');
   t('Dieses Datum entspricht dem Veröffentlichungsdatum der Publikation');
   t('Dieses Datum erscheint im Frontend.');
   t('Dokumente und Publikationen');
