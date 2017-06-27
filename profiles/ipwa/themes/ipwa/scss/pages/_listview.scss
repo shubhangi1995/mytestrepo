@@ -367,14 +367,11 @@
                     }
 
 
-                    .form-item {
+                    .form-item { 
+					
+					padding-right:0;
                         .form-type-bef-link {
-                            padding-right: 0;
-
-                            @include devicebreak(x-large) {
-                                padding-right: 60px;
-                            }
-
+                         
 
                             a {
                                 display: inline-block;
@@ -382,6 +379,7 @@
                                 text-decoration: none;
                                 color: $main-color;
                                 padding-bottom: 15px;
+								margin-right:60px;
 
                                 &.active {
                                     border-bottom: 2px Solid $active-menu;
