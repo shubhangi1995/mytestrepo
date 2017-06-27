@@ -13,6 +13,9 @@ a:focus, button:focus, input:focus{
 .focused{
 	outline:1px dotted;
 }
+/* .special-focus{
+	outline:2px dotted $active-menu;       
+} */
 
 .container {
     width: 100%;
@@ -21,7 +24,10 @@ a:focus, button:focus, input:focus{
         width: 1170px;
     }
 }
-
+.tabs--primary{
+	@extend .container;
+	margin-bottom:20px;
+}
 header.navbar-default {
     background: $color-white;
 }
@@ -282,7 +288,7 @@ padding:0;
                 > a {
 				  text-decoration:none;
 				  &:focus{
-					outline: 1px dotted $active-menu !important;
+					outline: 1px dotted $main-color !important; 
 				  }
 				  
 				.row-container {
@@ -297,10 +303,13 @@ padding:0;
 					word-wrap:break-word;
 					display:inline-block;
 					width:100%;
-                    @include devicebreak(medium) {
+                     @include devicebreak(medium) {
                         height: 465px;
                     }
 
+					@include devicebreak(medium) {
+					  height:480px;
+					}
 
                     @include devicebreak(x-large) {
                         height: 410px;
@@ -734,12 +743,17 @@ input[type=text]::-ms-clear {
                                         }
                                     }
                                 }
+								 /*&:focus {
+									& + .views-row{
+										display:block;  
+									}
+								 } */
                             }
 
-                            &:hover {
+                            &:hover{
                                 a {
                                     & + .views-row {
-                                        display: block;
+                                        display: block; 
                                     }
                                 }
                             }
@@ -982,11 +996,16 @@ input[type=text]::-ms-clear {
         }
     }
 
-    .view-header {
-        @include devicebreak(x-large) {
-            padding-left: 90px; 
-        }
-    }
+	.main-container{
+		  .view-header {
+				@include devicebreak(x-large) {
+					padding-left: 90px; 
+				}
+			}
+	}
+	#block-ipwa-newsletter-newsletter-subscription-block{
+		margin-top:25px; 
+	} 
 }
 
 .page-node-67{

@@ -13,11 +13,14 @@
 
     .field-items .field-item {
         @extend .col-md-4;
-		margin-bottom:15px;
-		@include devicebreak(x-large){
-			padding-right: 45px;
-			margin-bottom:0;
-		}
+
+        margin-bottom: 15px;
+
+        @include devicebreak(x-large) {
+            padding-right: 45px;
+            margin-bottom: 0;
+        }
+
 
         &:last-child {
             padding-right: 0;
@@ -30,12 +33,12 @@
             border-bottom: 1px solid $single-border-color;
             padding-bottom: 5px;
             color: $main-color;
-			display:inline-block;
-			width:80%;
+            display: inline-block;
+            width: 80%;
         }
 
         img {
-            float:left;
+            float: left;
             width: 33px;
             height: 33px;
             margin-right: 10px;
@@ -47,9 +50,10 @@
     font-size: 22px;
     font-weight: bold;
     padding-bottom: 30px;
-	h2{
-		margin:0 !important; 
-	}
+
+    h2 {
+        margin: 0 !important;
+    }
 }
 
 .field-name-field-quellenangabe {
@@ -66,10 +70,11 @@
         width: 100%;
         clear: both;
     }
-	a{
-		color:$main-color; 
-		text-decoration:none;
-	}
+
+    a {
+        color: $main-color;
+        text-decoration: none;
+    }
 }
 
 .paragraphs-items {
@@ -126,10 +131,12 @@
     .field-name-field-untertitel .field-item {
         color: $active-menu;
         font-size: 26px;
+
         // padding: 30px 0;
+   
     }
 
-    .field-name-field-kurztext .field-item , .field-type-text-with-summary{
+    .field-name-field-kurztext .field-item, .field-type-text-with-summary {
         font-size: 22px;
         padding-bottom: 30px;
     }
@@ -158,21 +165,22 @@
                     display: inline-block;
                     padding: 10px;
                     padding-left: 0;
-         
+
                     .row-container {
-                        .views-field-name  a{
+                        .views-field-name a {
                             background: $main-color;
                             text-decoration: none;
                             padding: 10px;
                             font-size: 18px;
                             color: $color-white;
-                            float: left;    
-							&:focus{
-								outline:2px dotted $active-menu !important; 
-							}							
+                            float: left;
+
+                            &:focus {
+                                outline: 1px dotted $main-color !important;
+                            }
                         }
-                    
-                }}
+                    }
+                }
             }
 
             .view-footer {
@@ -205,16 +213,16 @@
 
         padding: 40px 15px;
         position: relative;
-		
-		@include devicebreak(x-medium){
-		  padding-right:30px;
-		  padding-left:30px;
-		}
+
+        @include devicebreak(x-medium) {
+            padding-right: 30px;
+            padding-left: 30px;
+        }
+
 
         @include devicebreak(x-large) {
             padding: 40px 0;
         }
-		
 
 
         .view-header {
@@ -271,30 +279,30 @@
 
 .node-type-article, .node-type-protagonist, .node-type-nachricht, .node-type-termin, .node-type-projekt, .node-type-publikation, .node-type-f-rderbekanntmachung, .node-type-doorpage {
     background-color: $color-light-blue;
-	
-	.field-name-field-untertitel{
-		.field-item{
-			font-size:26px;
-			color:$active-menu; 
-		}
-	}
-	
-	.group-page-info, .group-page-bottom {
-		 padding: 45px 20px 20px;
-		 
-		 @include devicebreak(x-medium){
-			  padding-right:30px;
-			  padding-left:30px;
-			}
-		 
-		@include devicebreak(x-large) {
-			 padding: 60px 0;
-			 max-width:875px;
-			 margin:0 auto;
-		}
-	}
-}
 
+    .field-name-field-untertitel {
+        .field-item {
+            font-size: 26px;
+            color: $active-menu;
+        }
+    }
+
+    .group-page-info, .group-page-bottom {
+        padding: 45px 20px 20px;
+
+        @include devicebreak(x-medium) {
+            padding-right: 30px;
+            padding-left: 30px;
+        }
+
+
+        @include devicebreak(x-large) {
+            padding: 60px 0;
+            max-width: 875px;
+            margin: 0 auto;
+        }
+    }
+}
 
 .group-page-info {
     // @extend .container;
@@ -316,10 +324,13 @@
 .group-body-container {
     background-color: $color-white;
     padding: 60px 20px 45px;
-	@include devicebreak(x-large) {
-         padding-left: 0;
-		 padding-right:0;
+
+    @include devicebreak(x-large) {
+        padding-left: 0;
+        padding-right: 0;
     }
+
+
     overflow: hidden;
 
     p, h3, h4, h5, h6, .field-name-field-kurztext .field-item, .view-id-related_content.view-display-id-block_3 .views-row {
@@ -414,7 +425,8 @@
         margin-bottom: 25px;
 
         iframe {
-            width:100%;  
+            width: 100%;
+
             //height:490px;
        
         }
@@ -461,34 +473,42 @@
             }
         }
     }
-	
-	h2, h3, h4, h5, h6{
-	color:$active-menu !important;
-	}
-	h2{
-		font-size:22px !important;
-			@include devicebreak(x-large) { 
-			font-size:30px !important;
-		}
-	}
-	h3{
-		font-size:20px !important;
-		@include devicebreak(x-large) {
-			font-size:28px !important;
-		}
-	}
-	h4{
-		font-size:18px !important;
-			@include devicebreak(x-large) {
-			font-size:22px !important;
-		}
-	}
-	h5, h6{
-		font-size:18px !important;
-			@include devicebreak(x-large) {
-			font-size:20px !important;
-		}
-	}
+
+    h2, h3, h4, h5, h6 {
+        color: $active-menu !important;
+    }
+
+    h2 {
+        font-size: 22px !important;
+
+        @include devicebreak(x-large) {
+            font-size: 30px !important;
+        }
+    }
+
+    h3 {
+        font-size: 20px !important;
+
+        @include devicebreak(x-large) {
+            font-size: 28px !important;
+        }
+    }
+
+    h4 {
+        font-size: 18px !important;
+
+        @include devicebreak(x-large) {
+            font-size: 22px !important;
+        }
+    }
+
+    h5, h6 {
+        font-size: 18px !important;
+
+        @include devicebreak(x-large) {
+            font-size: 20px !important;
+        }
+    }
 }
 
 .field-name-field-bild {
@@ -510,19 +530,21 @@
 
     .field-name-field-bild-ref {
         margin: 0;
-		@include devicebreak(large) {
-			padding-right: 30px;
-		}
+
+        @include devicebreak(large) {
+            padding-right: 30px;
+        }
     }
 
     .content {
         .field-name-field-bild-ref {
             display: inline-block;
             float: left;
-			width:100%;
-			@include devicebreak(large) {
-				width:50%;	
-			}
+            width: 100%;
+
+            @include devicebreak(large) {
+                width: 50%;
+            }
         }
     }
 }
@@ -536,9 +558,11 @@
 .paragraphs-item-flie-text-mit-bild-rechts {
     .content {
         .field-name-field-bild-ref {
-			@include devicebreak(large) { 
-				padding-left: 30px;
-			}
+            @include devicebreak(large) {
+                padding-left: 30px;
+            }
+
+
             padding-right: 0;
             float: right;
         }
@@ -573,11 +597,14 @@
     }
 
     .view-title, .field-label {
-		font-size:20px;
-		word-wrap:break-word; 
-		@include devicebreak(x-medium) { 
-			font-size: 24px;
-		}
+        font-size: 20px;
+        word-wrap: break-word;
+
+        @include devicebreak(x-medium) {
+            font-size: 24px;
+        }
+
+
         font-weight: bold;
         margin-bottom: 30px;
     }
@@ -637,12 +664,15 @@
                         a {
                             padding-left: 35px;
                             position: relative;
-							display:inline-block;
-							width:100%;
-							font-size:18px;
-							@include devicebreak(x-medium){
-								font-size:20px;
-							}
+                            display: inline-block;
+                            width: 100%;
+                            font-size: 18px;
+
+                            @include devicebreak(x-medium) {
+                                font-size: 20px;
+                            }
+
+
                             &::before {
                                 font-family: $icomoon;
                                 content: "\e944";
@@ -674,10 +704,13 @@
                     position: relative;
                     display: inline-block;
                     padding-left: 35px;
-					font-size:18px;
-					@include devicebreak(x-medium){
-						font-size:20px;
-					}
+                    font-size: 18px;
+
+                    @include devicebreak(x-medium) {
+                        font-size: 20px;
+                    }
+
+
                     &::before {
                         font-family: $icomoon;
                         content: "\e93f";
@@ -693,15 +726,13 @@
     }
 }
 
-.field-name-field-weiterf-hrende-links{
-	.field-item{
-		a{
-			font-size:18px !important;
-		}
-	}
+.field-name-field-weiterf-hrende-links {
+    .field-item {
+        a {
+            font-size: 18px !important;
+        }
+    }
 }
-
-
 
 // view with date field
 
@@ -723,9 +754,10 @@
 
                     .field-content {
                         font-size: 18px;
-						@include devicebreak(x-medium){   
-							font-size:22px;
-						}
+
+                        @include devicebreak(x-medium) {
+                            font-size: 22px;
+                        }
                     }
 
                     .field-event-datum {
@@ -760,30 +792,30 @@
         padding: 0;
 
         .left-block {
-		     width: 100%;
+            width: 100%;
             padding: 15px;
-		
-		   @include devicebreak(x-medium){
-		    padding:30px;
-		   }
-	               
-            @include devicebreak(large){
-			width: 66.66%;
-                float: left;
-			    padding-left:30px;
-				padding-right:0;
-			}				   
-		
-              @include devicebreak(x-large) {
-                width: 66.66%;
-                float: left;
-                padding-right:0;
-                padding-top:0;
-				padding-left:0;
+
+            @include devicebreak(x-medium) {
+                padding: 30px;
             }
 
 
-           
+            @include devicebreak(large) {
+                width: 66.66%;
+                float: left;
+                padding-left: 30px;
+                padding-right: 0;
+            }
+
+
+            @include devicebreak(x-large) {
+                width: 66.66%;
+                float: left;
+                padding-right: 0;
+                padding-top: 0;
+                padding-left: 0;
+            }
+
 
             .view-header {
                 padding-bottom: 30px;
@@ -796,21 +828,47 @@
                 @include devicebreak(x-medium) {
                     width: 50%;
                     float: left;
-                    padding-right: 15px;
+                    padding-right: 20px;
                 }
 
-                
-				
-				
+
                 @include devicebreak(x-large) {
                     width: 50%;
                     float: left;
                     padding-right: 20px;
                 }
+            }
+
+            > .view-latest-content-doorpage {
+                width: 100%;
+
+                @include devicebreak(x-medium) {
+                    width: 50%;
+                    float: left;
+                    padding-left: 15px;
+                }
 
 
-                .view-content .views-row a{
-				       text-decoration:none;
+                @include devicebreak(large) {
+                    width: 50%;
+                    float: left;
+                    padding: 0 10px;
+                }
+
+
+                .view-sub-wrapper {
+                    width: auto;
+                }
+            }
+
+            .inner-wrapper, > .view-latest-content-doorpage {
+                .view-content .views-row a {
+                    text-decoration: none;
+
+                    &:focus {
+                        outline: 1px dotted $main-color !important;
+                    }
+
                     .row-container {
                         background: $color-white;
                         height: 410px;
@@ -818,7 +876,9 @@
                         position: relative;
                         border: 1px solid $color-white;
                         cursor: pointer;
-						 transition: all 0.5s ease;
+                        transition: all 0.5s ease;
+                        display: inline-block;
+                        width: 100%;
 
                         &:hover {
                             background: $color-light-blue;
@@ -843,8 +903,7 @@
                         .views-field-title {
                             padding-bottom: 70px;
 
-                           .field-content{
-                               
+                            .field-content {
                                 color: $main-color;
                             }
                         }
@@ -873,107 +932,33 @@
                     color: $main-color;
                 }
             }
-
-            > .view-latest-content-doorpage {
-                width: 100%;
-
-                @include devicebreak(x-medium) {
-                    width: 50%;
-                    float: left;
-                    padding-left: 15px;
-                }
-
-
-                @include devicebreak(large) {
-                    width: 50%;
-                    float: left;
-                    padding: 0 10px;
-                }
-
-
-                .view-sub-wrapper {
-                    width: auto;
-
-                    .view-content .views-row a{ text-decoration:none; 
-                        .row-container {
-                            background: $color-white;
-                            height: 410px;
-                            padding: 30px;
-                            position: relative;
-                            border: 1px solid $color-white;
-                            cursor: pointer;
-							 transition: all 0.5s ease;
-
-                            &:hover {
-                                background: $color-light-blue;
-                                border: 1px solid $color-border;
-                            }
-
-                            .views-field-field-themenzuweisung {
-                                margin-bottom: 30px;
-
-                                img {
-                                    display: inline-block;
-                                    margin-right: 10px;
-                                }
-                            }
-
-                            .views-field-type {
-                                color: $active-menu;
-                                font-weight: bold;
-                                padding-bottom: 15px;
-                            }
-
-                            .views-field-title {
-                                padding-bottom: 70px;
-
-                                .field-content {
-                                   
-                                    color: $main-color;
-                                }
-                            }
-
-                            .views-field-field-datum {
-                                position: absolute;
-                                bottom: 30px;
-
-                                .date-display-single {
-                                    font-size: 17px;
-                                    color: $color-light-grey;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
         }
 
         > .view-latest-content-doorpage {
             width: 100%;
             padding: 15px;
-			
-			
 
             @include devicebreak(x-medium) {
                 width: 50%;
                 float: left;
-				padding:30px;
+                padding: 30px;
             }
-              
-			@include devicebreak(large){
-			width: 33.33%;
-            float: left;
-			padding-right:30px;
-			padding-left:20px;
-			
-			}  
+
+
+            @include devicebreak(large) {
+                width: 33.33%;
+                float: left;
+                padding-right: 30px;
+                padding-left: 20px;
+            }
+
 
             @include devicebreak(x-large) {
                 width: 33.33%;
                 float: left;
                 padding-left: 20px;
                 padding-top: 0;
-				padding-right:0;
+                padding-right: 0;
             }
 
 
@@ -985,7 +970,13 @@
                     font-size: 28px;
                 }
 
-                .view-content .views-row a{text-decoration:none; 
+                .view-content .views-row a {
+                    text-decoration: none;
+
+                    &:focus {
+                        outline: 1px dotted $main-color !important;
+                    }
+
                     .row-container {
                         background: $color-white;
                         height: 410px;
@@ -993,7 +984,9 @@
                         position: relative;
                         border: 1px solid $color-white;
                         cursor: pointer;
-						 transition: all 0.5s ease;
+                        transition: all 0.5s ease;
+                        display: inline-block;
+                        width: 100%;
 
                         &:hover {
                             background: $color-light-blue;
@@ -1019,7 +1012,6 @@
                             padding-bottom: 70px;
 
                             .field-content {
-                               
                                 color: $main-color;
                             }
                         }
@@ -1083,19 +1075,22 @@
 
     .group-middle-wrapper {
         // overflow: hidden;
-		display:inline-block;
-		width:100%; 
+        display: inline-block;
+        width: 100%;
 
         .view-id-termin {
             &.view-display-id-block_1 {
-				margin:10px 0;
-				clear:both;
-				float:left;
-				@include devicebreak(x-medium) {
-					clear:none;
-					float: right;
-					margin:5px 0 0; 
-				}
+                margin: 10px 0;
+                clear: both;
+                float: left;
+
+                @include devicebreak(x-medium) {
+                    clear: none;
+                    float: right;
+                    margin: 5px 0 0;
+                }
+
+
                 .view-content {
                     display: none;
                 }
@@ -1117,71 +1112,82 @@
                         }
                     }
                 }
-				.feed-icon {
-					.ical-icon{
-						text-decoration:none; 
-						&::before{
-							content:"\e900";
-							font-family:$icomoon;
-							color:$active-menu;
-							margin:3px 10px 0 0;
-							display:inline-block;  
-						}
-						img{
-							display:none;
-						}
-					}
-				}
+
+                .feed-icon {
+                    .ical-icon {
+                        text-decoration: none;
+
+                        &::before {
+                            content: "\e900";
+                            font-family: $icomoon;
+                            color: $active-menu;
+                            margin: 3px 10px 0 0;
+                            display: inline-block;
+                        }
+
+                        img {
+                            display: none;
+                        }
+                    }
+                }
             }
         }
 
         .field-name-field-event-datum {
-			clear:both;
-			float:left; 
-			@include devicebreak(x-medium) {
-				 clear:none;
-			     float: left;	
-			}
+            clear: both;
+            float: left;
+
+            @include devicebreak(x-medium) {
+                clear: none;
+                float: left;
+            }
         }
-		.addtocalendar{
-			float:left;
-			clear:both;
-			margin:15px 0;
-			@include devicebreak(x-medium) { 
-				 clear:none;
-			     float: right;
-				 margin:0;
-			}
-			>  a{
-				background:none;
-				box-shadow:none;
-				color:$main-color;
-				font-weight:bold; 
-				padding:0;
-				margin-top:8px;
-				position: relative;
-				top: 0px!important;
-				&::before{
-					content: "\e900"; 
-					font-family:$icomoon;
-					color:$active-menu; 
-					font-size: 17px;
-					margin-right: 10px;
-					margin-top:1px;
-					float:left;
-				}
-				& + .atcb-list{
-					width:190px;
-					li{
-						a{
-							&:hover{
-								background:$active-menu;
-							}
-						}
-					}
-				}
-			}
-		}
+
+        .addtocalendar {
+            float: left;
+            clear: both;
+            margin: 15px 0;
+
+            @include devicebreak(x-medium) {
+                clear: none;
+                float: right;
+                margin: 0;
+            }
+
+
+            > a {
+                background: none;
+                box-shadow: none;
+                color: $main-color;
+                font-weight: bold;
+                padding: 0;
+                margin-top: 8px;
+                position: relative;
+                top: 0px !important;
+
+                &::before {
+                    content: "\e900";
+                    font-family: $icomoon;
+                    color: $active-menu;
+                    font-size: 17px;
+                    margin-right: 10px;
+                    margin-top: 1px;
+                    float: left;
+                }
+
+                & + .atcb-list {
+                    width: 190px;
+
+                    li {
+                        a {
+                            &:hover {
+                                background: $active-menu;
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 
     .field-name-field-ort {
@@ -1261,67 +1267,73 @@
     border-bottom: 1px solid $single-border-color;
     padding-bottom: 15px;
     margin-bottom: 15px;
-	.field-label{
-		&::before{
-			content:"\e90f";
-		}
-	}
+
+    .field-label {
+        &::before {
+            content: "\e90f";
+        }
+    }
 }
 
 .field-name-field-herausgeber, .field-name-field-ver-ffentlichungsdatum {
     font-size: 18px;
-	.field-label{
-		&::before{
-			font-family:$icomoon;
-			color:$calendar-color;
-			margin-right:10px; 
-		}
-	}
+
+    .field-label {
+        &::before {
+            font-family: $icomoon;
+            color: $calendar-color;
+            margin-right: 10px;
+        }
+    }
 }
 
 .field-name-field-ver-ffentlichungsdatum {
     margin-bottom: 45px;
-	.field-label{
-		&::before{
-			content:"\e90b";  
-		}
-	}
+
+    .field-label {
+        &::before {
+            content: "\e90b";
+        }
+    }
 }
 
 // Unpublished node view
 
-.node-unpublished{
-	background:none;
+.node-unpublished {
+    background: none;
 }
 
 // single view publication button
 
-.view-id-related_content{
-	&.view-display-id-block_3{
-		.views-row{
-			.field-content{
-				a{
-					@extend .common-button;
-					background:$active-menu;
-					border:none;
-					padding:10px 20px;
-					color:$color-white;
-					margin-top:20px;
-					font-size:16px;
-					@include devicebreak(medium){
-						font-size:20px;
-					}
-					&::before{
-						color: $color-white;
-						float: right;
-						margin-left: 10px;
-						position: static;
-					}
-					
-				}
-			}
-		}
-	}
+.view-id-related_content {
+    &.view-display-id-block_3 {
+        .views-row {
+            .field-content {
+                a {
+                    @extend .common-button;
+
+                    background: $active-menu;
+                    border: none;
+                    padding: 10px 20px;
+                    color: $color-white;
+                    margin-top: 20px;
+                    font-size: 16px;
+
+                    @include devicebreak(medium) {
+                        font-size: 20px;
+                    }
+
+
+                    &::before {
+                        color: $color-white;
+                        float: right;
+                        margin-left: 10px;
+                        position: static;
+                    }
+                }
+            }
+        }
+    }
 }
 
 // protagonist view
@@ -1333,14 +1345,14 @@
     font-size: 18px;
 }
 
-.field-name-field-weitere-details{
-	&::before{
-		content:"\e907";
-		font-family:$icomoon;
-		margin: 2px 10px 0 0;
-		float:left;
-		color:$calendar-color; 
-	}
+.field-name-field-weitere-details {
+    &::before {
+        content: "\e907";
+        font-family: $icomoon;
+        margin: 2px 10px 0 0;
+        float: left;
+        color: $calendar-color;
+    }
 }
 
 //.field-name-field-quellenangabe{
@@ -1350,8 +1362,9 @@
     text-decoration: none;
     font-size: 18px;
     position: relative;
-	display:inline-block;
-    &::before { 
+    display: inline-block;
+
+    &::before {
         left: 0;
         position: absolute;
         top: 2px;

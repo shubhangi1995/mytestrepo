@@ -187,65 +187,67 @@
                 padding: 30px 0;
                 font-size: 22px;
                 font-weight: bold;
-				margin-top:-88px;
+                margin-top: -88px;
             }
-}
-            .view-filters {
-                .views-exposed-form .views-exposed-widgets {
-                    margin-bottom: 0;
+        }
 
-                    .views-widget {
-                        width: 100%;
+        .view-filters {
+            .views-exposed-form .views-exposed-widgets {
+                margin-bottom: 0;
 
-                        .form-item {
-                            display: inline-block;
-                            padding-right: 60px;
+                .views-widget {
+                    width: 100%;
+
+                    .form-item {
+                        display: inline-block;
+                        padding-right: 60px;
+                        padding-bottom: 15px;
+
+                        label {
+                            padding-left: 0;
                             padding-bottom: 15px;
 
-                            label {
-                                padding-left: 0;
-                                padding-bottom: 15px;
-							&:focus{
-								outline:2px dotted $active-menu !important; 
-							}
-                                input {
-                                    visibility: hidden;
-                                }
+                            &:focus {
+                                outline: 1px dotted $main-color !important;
+                            }
+
+                            input {
+                                visibility: hidden;
                             }
                         }
                     }
+                }
 
-                    .views-widget-sort-by {
-                        padding: 30px 0;
-						float:right;
+                .views-widget-sort-by {
+                    padding: 30px 0;
+                    float: right;
 
-                        .form-group {
-                            margin-bottom: 0;
+                    .form-group {
+                        margin-bottom: 0;
 
-                            .bef-select-as-links .form-type-bef-link {
-                                display: inline-block;
-                                padding-left: 15px;
+                        .bef-select-as-links .form-type-bef-link {
+                            display: inline-block;
+                            padding-left: 15px;
 
-                                a {
-                                    text-decoration: none;
-                                    color: $main-color;
+                            a {
+                                text-decoration: none;
+                                color: $main-color;
 
-                                    &.active {
-                                        border-bottom: 2px solid $active-menu;
-                                    }
+                                &.active {
+                                    border-bottom: 2px solid $active-menu;
                                 }
                             }
+                        }
 
-                            .select2-container {
-                                display: none;
-                            }
+                        .select2-container {
+                            display: none;
                         }
                     }
                 }
             }
         }
     }
-
+}
 
 //only-aktuelles//
 
@@ -311,7 +313,7 @@
                             color: $color-white;
                             position: absolute;
                             float: right;
-                            right: 20px;
+                            right: 25px;
                             top: 3px;
                         }
 
@@ -352,93 +354,94 @@
 
 //only-termine//
 .view-termin, .view-event-calendar {
-.view-sub-wrapper{
-    .view-filters {
-        .views-exposed-form .views-exposed-widgets {
-            #edit-term-node-tid-depth-wrapper {
-                width: 100%;
-                float: left;
-                padding: 0;
+    .view-sub-wrapper {
+        .view-filters {
+            .views-exposed-form .views-exposed-widgets {
+                #edit-term-node-tid-depth-wrapper {
+                    width: 100%;
+                    float: left;
+                    padding: 0;
 
-                @include devicebreak(x-large) {
-                    width: 80%;
-                }
-
-
-                .form-item {
-                    .form-type-bef-link {
-                        padding-right: 0;
-
-                        @include devicebreak(x-large) {
-                            padding-right: 60px;
-                        }
+                    @include devicebreak(x-large) {
+                        width: 80%;
+                    }
 
 
-                        a {
-                            display: inline-block;
-                            float: left;
-                            text-decoration: none;
-                            color: $main-color;
-                            padding-bottom: 15px;
+                    .form-item {
+                        .form-type-bef-link {
+                            padding-right: 0;
 
-                            &.active {
-                                border-bottom: 2px Solid $active-menu;
+                            @include devicebreak(x-large) {
+                                padding-right: 60px;
+                            }
+
+
+                            a {
+                                display: inline-block;
+                                float: left;
+                                text-decoration: none;
+                                color: $main-color;
+                                padding-bottom: 15px;
+
+                                &.active {
+                                    border-bottom: 2px Solid $active-menu;
+                                }
                             }
                         }
                     }
                 }
-            }
 
-            .views-submit-button {
-                display: none;
-            }
-
-            .select2-container--default .select2-selection--single {
-                display: none;
-            }
-        }
-    }
-
-    .attachment-before {
-        .view-result-count {
-            width: 50%;
-            float: left;
-            padding: 30px 0;
-            font-size: 22px;
-            font-weight: bold;
-			margin-top:0;
-        }
-
-        .views-widget-sort-by {
-            padding: 30px 0;
-            width: 50%;
-            float: left;
-            text-align: right;
-
-            .form-group {
-                margin-bottom: 0;
-
-                .bef-select-as-links .form-type-bef-link {
-                    display: inline-block;
-                    padding-left: 15px;
-
-                    a {
-                        text-decoration: none;
-                        color: $main-color;
-
-                        &.active {
-                            border-bottom: 2px solid $active-menu;
-                        }
-                    }
+                .views-submit-button {
+                    display: none;
                 }
 
-                .select2-container {
+                .select2-container--default .select2-selection--single {
                     display: none;
                 }
             }
         }
+
+        .attachment-before {
+            .view-result-count {
+                width: 50%;
+                float: left;
+                padding: 30px 0;
+                font-size: 22px;
+                font-weight: bold;
+                margin-top: 0;
+            }
+
+            .views-widget-sort-by {
+                padding: 30px 0;
+                width: 50%;
+                float: left;
+                text-align: right;
+
+                .form-group {
+                    margin-bottom: 0;
+
+                    .bef-select-as-links .form-type-bef-link {
+                        display: inline-block;
+                        padding-left: 15px;
+
+                        a {
+                            text-decoration: none;
+                            color: $main-color;
+
+                            &.active {
+                                border-bottom: 2px solid $active-menu;
+                            }
+                        }
+                    }
+
+                    .select2-container {
+                        display: none;
+                    }
+                }
+            }
+        }
     }
-}}
+}
 
 // Calendar icon
 
@@ -682,7 +685,7 @@
             }
 
 
-            .views-slideshow-controls-text-previous {
+            /* .views-slideshow-controls-text-previous {
                 a {
                     font-size: 0;
 
@@ -697,54 +700,48 @@
                         display: inline-block;
                     }
                 }
-            }
+            } */
 
-            .views-slideshow-controls-text-status-pause {
+            .views-slideshow-controls-text-previous, .views-slideshow-controls-text-status-pause, .views-slideshow-controls-text-status-play, .views_slideshow_controls_text_next {
                 a {
                     font-size: 0;
+
+                    &:focus {
+                        outline: 1px dotted $color-white !important;
+                    }
 
                     &::before {
                         font-family: $icomoon;
                         content: "\e908";
                         color: $color-white;
                         font-size: 18px;
-                        position: absolute;
-                        top: 4px;
                         display: inline-block;
-                        left: -25px;
+                        margin-right: 5px;
                     }
                 }
             }
 
             .views-slideshow-controls-text-status-play {
                 a {
-                    font-size: 0;
-
                     &::before {
-                        font-family: $icomoon;
                         content: "\e90a";
-                        color: $color-white;
-                        font-size: 18px;
-                        position: absolute;
-                        top: 4px;
-                        display: inline-block;
-                        left: -25px;
                     }
                 }
             }
 
             .views_slideshow_controls_text_next {
                 a {
-                    font-size: 0;
-
                     &:before {
-                        font-family: $icomoon;
                         content: "\e93f";
-                        color: $color-white;
-                        font-size: 14px;
-                        position: absolute;
-                        top: 6px;
-                        display: inline-block;
+                        margin-right: 0;
+                    }
+                }
+            }
+
+            .views-slideshow-controls-text-previous {
+                a {
+                    &:before {
+                        content: "\e93e";
                     }
                 }
             }
@@ -865,7 +862,6 @@
     }
 }
 
-
-.page-taxonomy-term-1 > .footer.container{
-padding-top:30px;
+.page-taxonomy-term-1 > .footer.container {
+    padding-top: 30px;
 }

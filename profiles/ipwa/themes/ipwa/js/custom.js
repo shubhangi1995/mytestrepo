@@ -172,6 +172,20 @@ jQuery('.tb-megamenu-submenu.dropdown-menu').attr('style','display:none !importa
 			jQuery("table tr td").removeClass("redHover");
 		}
 	}); */
+	
+	
+	// Calendar view
+	
+	 jQuery(".page-calendar .view-content .calendar-calendar .inner .item .calendar span a").on("focus", function(){
+		jQuery(this).mouseover();
+		// jQuery(this).hover();
+		jQuery(this).next(".views-row").attr("style", "display:block !important;");
+		jQuery(this).parents("td, tr").siblings().find(".trigger").mouseout();
+		jQuery(this).parents("td, tr").siblings().find(".trigger").next(".views-row").removeAttr("style");
+	}); 
+	
+
+
 
 	
 	// Calendar tool-tip
@@ -193,7 +207,7 @@ jQuery('.tb-megamenu-submenu.dropdown-menu').attr('style','display:none !importa
 		if(jQuery(this).parents("td").is(":last-child, :nth-last-child(2)")){
 			jQuery(this).next(".views-row").addClass("rightBorder");
 		}
-		
+		// jQuery(this).next().show();
 	});
 	
 	// Click on trigger
@@ -217,18 +231,18 @@ jQuery('.tb-megamenu-submenu.dropdown-menu').attr('style','display:none !importa
 		window.print();
 	});
 	
-if(jQuery(window).innerWidth() <= 1024){
-	jQuery(".nrw-eu-logo a").insertAfter(jQuery(".navbar-header .navbar-btn"));
+	if(jQuery(window).innerWidth() <= 1024){
+		jQuery(".nrw-eu-logo a").insertAfter(jQuery(".navbar-header .navbar-btn"));
 	
 	
-	jQuery("header .container .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li > a").click(function(){
-		 jQuery('html, body').animate({
-            scrollTop: jQuery(this).offset().top
-          },600); 
+		jQuery("header .container .navbar-collapse .region-navigation .tb-megamenu ul.tb-megamenu-nav li > a").click(function(){
+			 jQuery('html, body').animate({
+				scrollTop: jQuery(this).offset().top
+			  },600); 
+			
+		});
 		
-	});
-	
-}
+	}
 	
 	jQuery(".block-ipwa-newsletter .form-submit").insertAfter(".block-ipwa-newsletter .form-item-newsletter .form-control");
 	
@@ -248,6 +262,22 @@ if(jQuery(window).innerWidth() <= 1024){
 	
 	jQuery("#block-addthis-addthis-block a").attr("href", "");
 	
+	// Label tabs
+	
+	jQuery(".form-type-radio label, .search-icon").attr("tabindex", "0");
+	
+	// On enter key press
+	jQuery(".form-type-radio label, .search-icon").keypress(function (e) {
+		 var key = e.which;
+		 if(key == 13)  // the enter key code
+		  {
+			jQuery(this).click();
+			// Search input
+			jQuery("#edit-search-text").focus();
+			return false;  
+		  }
+	});
+	
 	// Tab accessibility
 	
 	jQuery(".tb-megamenu .nav > li > a").on('focus', function(){
@@ -255,10 +285,33 @@ if(jQuery(window).innerWidth() <= 1024){
 		jQuery(this).parent().siblings().find("a").mouseout();
 	});
 	
-	jQuery(".page-aktuelles .view-aktuelles .view-filters .categories-filter .views-exposed-widget .views-widget .form-item .select2-container--default .select2-selection--single").on('focus', function(){
+	// Tabbed drop downs list view
+	
+	jQuery(".select2-selection--single").on('focus', function(){
 		jQuery(this).parents(".views-exposed-widget").addClass("focused");
-		jQuery(this).parents(".views-exposed-widget").sibings().removeClass("focused");
+		jQuery(this).parents(".views-exposed-widget").siblings().removeClass("focused");
 	});
+	
+	jQuery(".select2-selection--single").on('blur', function(){
+		if(jQuery(this).parents(".views-exposed-widget").is(":last-child")){
+			jQuery(this).parents(".views-exposed-widget").removeClass("focused");
+		}
+	});
+	
+	// Outline for blue boxes
+	
+	jQuery(".project-blue, .front .view-termin .view-sub-wrapper .row-container").parent().on("focus", function(){
+		jQuery(this).attr("style", "outline:2px dotted #e74712 !important;")
+		// jQuery(this).parent(".views-row").siblings().find("a").attr("style", "outline:0;")
+	});
+	
+	jQuery(".project-blue, .front .view-termin .view-sub-wrapper .row-container").parent().on("blur", function(){
+		jQuery(this).attr("style", "outline:0;")
+		/* if(jQuery(this).parent(".views-row").is(":last-child")){
+			jQuery(this).attr("style", "outline:0;");
+		} */
+	});
+	
 });
 
 
