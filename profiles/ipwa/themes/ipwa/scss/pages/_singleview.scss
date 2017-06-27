@@ -797,16 +797,7 @@
 
             @include devicebreak(x-medium) {
                 padding: 30px;
-            }
-
-
-            @include devicebreak(large) {
-                width: 66.66%;
-                float: left;
-                padding-left: 30px;
-                padding-right: 0;
-            }
-
+            }          
 
             @include devicebreak(x-large) {
                 width: 66.66%;
@@ -852,7 +843,7 @@
                 @include devicebreak(large) {
                     width: 50%;
                     float: left;
-                    padding: 0 10px;
+                    
                 }
 
 
@@ -946,10 +937,10 @@
 
 
             @include devicebreak(large) {
-                width: 33.33%;
+                width: 50%;
                 float: left;
                 padding-right: 30px;
-                padding-left: 20px;
+                padding-left: 30px;
             }
 
 
