@@ -845,6 +845,9 @@
                     float: left;
                     
                 }
+				@include devicebreak(x-large){
+				    padding:0 10px;
+				}
 
 
                 .view-sub-wrapper {
