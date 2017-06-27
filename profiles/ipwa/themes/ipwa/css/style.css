@@ -8466,270 +8466,324 @@ input[type=text]::-ms-clear {
   /* line 574, ../scss/pages/_common.scss */
   .page-calendar .view-content {
     margin: 40px 0; }
-    /* line 578, ../scss/pages/_common.scss */
-    .page-calendar .view-content .calendar-calendar .inner {
-      display: table-cell;
-      vertical-align: bottom;
-      width: inherit;
-      padding: 10px;
-      height: 155px !important;
-      min-height: 155px; }
-      /* line 586, ../scss/pages/_common.scss */
-      .page-calendar .view-content .calendar-calendar .inner .item {
-        float: right;
-        line-height: 26px; }
-        /* line 591, ../scss/pages/_common.scss */
-        .page-calendar .view-content .calendar-calendar .inner .item .calendar {
-          background: none;
-          overflow: visible; }
-          /* line 595, ../scss/pages/_common.scss */
-          .page-calendar .view-content .calendar-calendar .inner .item .calendar span {
-            position: relative; }
-            /* line 598, ../scss/pages/_common.scss */
-            .page-calendar .view-content .calendar-calendar .inner .item .calendar span a {
-              font-size: 0;
-              text-decoration: none;
-              position: relative;
-              z-index: 99;
-             /*&:focus {
-            	& + .views-row{
-            		display:block;  
-            	}
-             } */ }
-              /* line 604, ../scss/pages/_common.scss */
-              .page-calendar .view-content .calendar-calendar .inner .item .calendar span a div {
-                display: none; }
+    /* line 577, ../scss/pages/_common.scss */
+    .page-calendar .view-content .calendar-calendar {
+      overflow: scroll;
+      /* Tablet design */ }
+      @media (min-width: 767px) {
+        /* line 577, ../scss/pages/_common.scss */
+        .page-calendar .view-content .calendar-calendar {
+          overflow: inherit; } }
+      /* line 582, ../scss/pages/_common.scss */
+      .page-calendar .view-content .calendar-calendar .month-view {
+        width: 900px;
+        /* Tablet design */ }
+        @media (min-width: 767px) {
+          /* line 582, ../scss/pages/_common.scss */
+          .page-calendar .view-content .calendar-calendar .month-view {
+            width: auto; } }
+      /* line 588, ../scss/pages/_common.scss */
+      .page-calendar .view-content .calendar-calendar .inner {
+        display: table-cell;
+        vertical-align: bottom;
+        width: inherit;
+        padding: 10px;
+        height: 155px !important;
+        min-height: 155px; }
+        /* line 596, ../scss/pages/_common.scss */
+        .page-calendar .view-content .calendar-calendar .inner .item {
+          float: right;
+          line-height: 26px; }
+          /* line 601, ../scss/pages/_common.scss */
+          .page-calendar .view-content .calendar-calendar .inner .item .calendar {
+            background: none;
+            overflow: visible; }
+            /* line 605, ../scss/pages/_common.scss */
+            .page-calendar .view-content .calendar-calendar .inner .item .calendar span {
+              position: relative; }
               /* line 608, ../scss/pages/_common.scss */
-              .page-calendar .view-content .calendar-calendar .inner .item .calendar span a.single {
-                border: 2px solid #e74712 !important;
-                border-radius: 50%;
-                display: inline-block;
-                height: 25px;
-                width: 25px;
-                margin: 0 4px; }
-                /* line 616, ../scss/pages/_common.scss */
-                .page-calendar .view-content .calendar-calendar .inner .item .calendar span a.single + .views-row {
-                  top: 40px; }
-              /* line 622, ../scss/pages/_common.scss */
-              .page-calendar .view-content .calendar-calendar .inner .item .calendar span a.recurring::before {
-                color: #e74712;
-                content: "\e94d";
-                font-family: "icomoon";
-                font-size: 25px;
-                font-weight: normal; }
-              /* line 631, ../scss/pages/_common.scss */
-              .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row {
-                position: absolute;
-                display: none;
-                width: 370px;
-                z-index: 999;
-                left: -39px;
-                top: 30px; }
+              .page-calendar .view-content .calendar-calendar .inner .item .calendar span a {
+                font-size: 0;
+                text-decoration: none;
+                position: relative;
+                z-index: 99;
+               /*&:focus {
+              	& + .views-row{
+              		display:block;  
+              	}
+               } */ }
+                /* line 614, ../scss/pages/_common.scss */
+                .page-calendar .view-content .calendar-calendar .inner .item .calendar span a div {
+                  display: none; }
+                /* line 618, ../scss/pages/_common.scss */
+                .page-calendar .view-content .calendar-calendar .inner .item .calendar span a.single {
+                  border: 2px solid #e74712 !important;
+                  border-radius: 50%;
+                  display: inline-block;
+                  height: 25px;
+                  width: 25px;
+                  margin: 0 4px; }
+                  /* line 626, ../scss/pages/_common.scss */
+                  .page-calendar .view-content .calendar-calendar .inner .item .calendar span a.single + .views-row {
+                    top: 40px; }
+                /* line 632, ../scss/pages/_common.scss */
+                .page-calendar .view-content .calendar-calendar .inner .item .calendar span a.recurring::before {
+                  color: #e74712;
+                  content: "\e94d";
+                  font-family: "icomoon";
+                  font-size: 25px;
+                  font-weight: normal; }
                 /* line 641, ../scss/pages/_common.scss */
-                .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row > .row-container {
-                  background: #eff2f7;
-                  padding: 30px;
-                  margin-bottom: 30px;
-                  position: relative;
-                  border: 1px solid #dbdfe3;
-                  cursor: pointer;
-                  transition: all 0.5s ease;
-                  height: auto;
-                  /* Tablet design */ }
-                  /* line 656, ../scss/pages/_common.scss */
-                  .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row > .row-container.project-blue {
-                    background: #273753; }
-                    /* line 659, ../scss/pages/_common.scss */
-                    .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row > .row-container.project-blue .views-field-title a {
-                      color: #ffffff; }
-                    /* line 664, ../scss/pages/_common.scss */
-                    .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row > .row-container.project-blue:hover .views-field-title a {
-                      color: #273753; }
-                  /* line 675, ../scss/pages/_common.scss */
-                  .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row > .row-container .views-field-field-themenzuweisung {
-                    padding-bottom: 30px; }
-                    /* line 678, ../scss/pages/_common.scss */
-                    .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row > .row-container .views-field-field-themenzuweisung img {
-                      display: inline-block;
-                      margin-right: 10px; }
-                  /* line 684, ../scss/pages/_common.scss */
-                  .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row > .row-container .views-field-field-event-datum {
-                    padding-bottom: 20px;
-                    font-weight: bold;
-                    color: #e74712;
-                    font-size: 22px; }
-                  /* line 691, ../scss/pages/_common.scss */
-                  .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row > .row-container .views-field-title {
-                    padding-bottom: 20px; }
-                    /* line 694, ../scss/pages/_common.scss */
-                    .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row > .row-container .views-field-title a {
-                      text-decoration: none;
-                      font-size: 22px;
-                      color: #273753; }
-                  /* line 702, ../scss/pages/_common.scss */
-                  .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row > .row-container .views-field-field-ort .field-content, .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row > .row-container div[class*='views-field-views-conditional-'] .field-content {
-                    font-size: 20px;
-                    color: #949d9e; }
-                  /* line 712, ../scss/pages/_common.scss */
-                  .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row > .row-container .pop-up {
-                    display: block !important; }
-                /* line 717, ../scss/pages/_common.scss */
-                .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row::before, .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row::after {
-                  border-color: transparent transparent #eff2f7;
-                  border-style: solid;
-                  border-width: 12px;
-                  content: "";
-                  height: 0;
+                .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row {
                   position: absolute;
-                  top: -23px;
-                  left: 42px;
-                  width: 0;
-                  z-index: 9; }
-                /* line 730, ../scss/pages/_common.scss */
-                .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row::after {
-                  border-bottom-color: #dbdfe3;
-                  top: -24px;
-                  z-index: 8; }
-                /* line 736, ../scss/pages/_common.scss */
-                .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row.rightBorder {
-                  left: auto;
-                  right: -31px; }
-                  /* line 740, ../scss/pages/_common.scss */
-                  .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row.rightBorder::before, .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row.rightBorder::after {
+                  display: none;
+                  width: 250px;
+                  /* Tablet design */
+                  z-index: 999;
+                  left: -39px;
+                  top: 30px; }
+                  @media (min-width: 767px) {
+                    /* line 641, ../scss/pages/_common.scss */
+                    .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row {
+                      width: 370px; } }
+                  /* line 654, ../scss/pages/_common.scss */
+                  .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row > .row-container {
+                    background: #eff2f7;
+                    padding: 30px;
+                    margin-bottom: 30px;
+                    position: relative;
+                    border: 1px solid #dbdfe3;
+                    cursor: pointer;
+                    transition: all 0.5s ease;
+                    height: auto;
+                    /* Tablet design */ }
+                    /* line 669, ../scss/pages/_common.scss */
+                    .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row > .row-container.project-blue {
+                      background: #273753; }
+                      /* line 672, ../scss/pages/_common.scss */
+                      .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row > .row-container.project-blue .views-field-title a {
+                        color: #ffffff; }
+                      /* line 677, ../scss/pages/_common.scss */
+                      .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row > .row-container.project-blue:hover .views-field-title a {
+                        color: #273753; }
+                    /* line 688, ../scss/pages/_common.scss */
+                    .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row > .row-container .views-field-field-themenzuweisung {
+                      padding-bottom: 30px; }
+                      /* line 691, ../scss/pages/_common.scss */
+                      .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row > .row-container .views-field-field-themenzuweisung img {
+                        display: inline-block;
+                        margin-right: 10px; }
+                    /* line 697, ../scss/pages/_common.scss */
+                    .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row > .row-container .views-field-field-event-datum {
+                      padding-bottom: 20px;
+                      font-weight: bold;
+                      color: #e74712;
+                      font-size: 22px; }
+                    /* line 704, ../scss/pages/_common.scss */
+                    .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row > .row-container .views-field-title {
+                      padding-bottom: 20px; }
+                      /* line 707, ../scss/pages/_common.scss */
+                      .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row > .row-container .views-field-title a {
+                        text-decoration: none;
+                        font-size: 22px;
+                        color: #273753; }
+                    /* line 715, ../scss/pages/_common.scss */
+                    .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row > .row-container .views-field-field-ort .field-content, .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row > .row-container div[class*='views-field-views-conditional-'] .field-content {
+                      font-size: 20px;
+                      color: #949d9e; }
+                    /* line 725, ../scss/pages/_common.scss */
+                    .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row > .row-container .pop-up {
+                      display: block !important; }
+                  /* line 730, ../scss/pages/_common.scss */
+                  .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row::before, .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row::after {
+                    border-color: transparent transparent #eff2f7;
+                    border-style: solid;
+                    border-width: 12px;
+                    content: "";
+                    height: 0;
+                    position: absolute;
+                    top: -23px;
+                    left: 42px;
+                    width: 0;
+                    z-index: 9; }
+                  /* line 743, ../scss/pages/_common.scss */
+                  .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row::after {
+                    border-bottom-color: #dbdfe3;
+                    top: -24px;
+                    z-index: 8; }
+                  /* line 749, ../scss/pages/_common.scss */
+                  .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row.rightBorder {
                     left: auto;
-                    right: 35px; }
-            /* line 755, ../scss/pages/_common.scss */
-            .page-calendar .view-content .calendar-calendar .inner .item .calendar span:hover a + .views-row {
-              display: block; }
-    /* line 765, ../scss/pages/_common.scss */
-    .page-calendar .view-content .calendar-calendar table {
-      border-collapse: inherit; }
-      /* line 769, ../scss/pages/_common.scss */
-      .page-calendar .view-content .calendar-calendar table thead th {
-        position: relative; }
-        /* line 771, ../scss/pages/_common.scss */
-        .page-calendar .view-content .calendar-calendar table thead th::before {
-          background: #e74712;
-          bottom: 12px;
-          content: "";
-          min-height: 2px;
-          position: absolute;
-          left: 0;
-          right: 0; }
-      /* line 782, ../scss/pages/_common.scss */
-      .page-calendar .view-content .calendar-calendar table thead tr {
-        background: none; }
-        /* line 785, ../scss/pages/_common.scss */
-        .page-calendar .view-content .calendar-calendar table thead tr th {
-          background: none;
-          border: none;
-          font-weight: normal;
-          text-align: right;
-          padding-bottom: 25px; }
-      /* line 800, ../scss/pages/_common.scss */
-      .page-calendar .view-content .calendar-calendar table tbody tr td {
-        border: 5px solid #eff2f7; }
-        /* line 803, ../scss/pages/_common.scss */
-        .page-calendar .view-content .calendar-calendar table tbody tr td:first-child {
-          border-left-width: 0; }
-        /* line 807, ../scss/pages/_common.scss */
-        .page-calendar .view-content .calendar-calendar table tbody tr td:last-child {
-          border-right-width: 0; }
-      /* line 823, ../scss/pages/_common.scss */
-      .page-calendar .view-content .calendar-calendar table tr td.today {
-        border-color: #e74712 !important; }
-      /* line 827, ../scss/pages/_common.scss */
-      .page-calendar .view-content .calendar-calendar table tr td.greyHover {
-        background: #eff2f7;
-        position: relative; }
-        /* line 833, ../scss/pages/_common.scss */
-        .page-calendar .view-content .calendar-calendar table tr td.greyHover::after {
-          border: 1px solid #dbdfe3;
-          bottom: -1px;
-          content: "";
-          left: -1px;
-          position: absolute;
-          right: -1px;
-          top: -1px; }
-      /* line 844, ../scss/pages/_common.scss */
-      .page-calendar .view-content .calendar-calendar table tr td.redHover {
-        background: #fdede7;
-        position: relative; }
-        /* line 848, ../scss/pages/_common.scss */
-        .page-calendar .view-content .calendar-calendar table tr td.redHover::after {
-          border: 1px solid #e74712;
-          bottom: -1px;
-          content: "";
-          left: -1px;
-          position: absolute;
-          right: -1px;
-          top: -1px; }
-      /* line 863, ../scss/pages/_common.scss */
-      .page-calendar .view-content .calendar-calendar table tr.date-box td.greyHover::after {
-        border-bottom: none; }
-      /* line 869, ../scss/pages/_common.scss */
-      .page-calendar .view-content .calendar-calendar table tr.date-box td.redHover::after {
-        border-bottom: none; }
-      /* line 879, ../scss/pages/_common.scss */
-      .page-calendar .view-content .calendar-calendar table tr.single-day td.greyHover::after {
-        border-top: none; }
-      /* line 885, ../scss/pages/_common.scss */
-      .page-calendar .view-content .calendar-calendar table tr.single-day td.redHover::after {
-        border-top: none; }
-      /* line 891, ../scss/pages/_common.scss */
-      .page-calendar .view-content .calendar-calendar table tr.single-day .no-entry .inner {
-        min-height: 155px;
-        height: 155px !important; }
-    /* line 900, ../scss/pages/_common.scss */
-    .page-calendar .view-content .calendar-calendar .date-box .inner {
-      min-height: inherit;
-      height: auto !important;
-      display: inline-block; }
-  /* line 909, ../scss/pages/_common.scss */
+                    right: -31px; }
+                    /* line 753, ../scss/pages/_common.scss */
+                    .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row.rightBorder::before, .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row.rightBorder::after {
+                      left: auto;
+                      right: 35px; }
+              /* line 768, ../scss/pages/_common.scss */
+              .page-calendar .view-content .calendar-calendar .inner .item .calendar span:hover a + .views-row {
+                display: block; }
+      /* line 778, ../scss/pages/_common.scss */
+      .page-calendar .view-content .calendar-calendar table {
+        border-collapse: inherit; }
+        /* line 782, ../scss/pages/_common.scss */
+        .page-calendar .view-content .calendar-calendar table thead th {
+          position: relative; }
+          /* line 784, ../scss/pages/_common.scss */
+          .page-calendar .view-content .calendar-calendar table thead th::before {
+            background: #e74712;
+            bottom: 12px;
+            content: "";
+            min-height: 2px;
+            position: absolute;
+            left: 0;
+            right: 0; }
+        /* line 795, ../scss/pages/_common.scss */
+        .page-calendar .view-content .calendar-calendar table thead tr {
+          background: none; }
+          /* line 798, ../scss/pages/_common.scss */
+          .page-calendar .view-content .calendar-calendar table thead tr th {
+            background: none;
+            border: none;
+            font-weight: normal;
+            text-align: right;
+            padding-bottom: 25px; }
+        /* line 813, ../scss/pages/_common.scss */
+        .page-calendar .view-content .calendar-calendar table tbody tr td {
+          border: 5px solid #eff2f7; }
+          /* line 816, ../scss/pages/_common.scss */
+          .page-calendar .view-content .calendar-calendar table tbody tr td:first-child {
+            border-left-width: 0; }
+          /* line 820, ../scss/pages/_common.scss */
+          .page-calendar .view-content .calendar-calendar table tbody tr td:last-child {
+            border-right-width: 0; }
+        /* line 836, ../scss/pages/_common.scss */
+        .page-calendar .view-content .calendar-calendar table tr td.today {
+          border-color: #e74712 !important; }
+        /* line 840, ../scss/pages/_common.scss */
+        .page-calendar .view-content .calendar-calendar table tr td.greyHover {
+          background: #eff2f7;
+          position: relative; }
+          /* line 846, ../scss/pages/_common.scss */
+          .page-calendar .view-content .calendar-calendar table tr td.greyHover::after {
+            border: 1px solid #dbdfe3;
+            bottom: -1px;
+            content: "";
+            left: -1px;
+            position: absolute;
+            right: -1px;
+            top: -1px; }
+        /* line 857, ../scss/pages/_common.scss */
+        .page-calendar .view-content .calendar-calendar table tr td.redHover {
+          background: #fdede7;
+          position: relative; }
+          /* line 861, ../scss/pages/_common.scss */
+          .page-calendar .view-content .calendar-calendar table tr td.redHover::after {
+            border: 1px solid #e74712;
+            bottom: -1px;
+            content: "";
+            left: -1px;
+            position: absolute;
+            right: -1px;
+            top: -1px; }
+        /* line 876, ../scss/pages/_common.scss */
+        .page-calendar .view-content .calendar-calendar table tr.date-box td.greyHover::after {
+          border-bottom: none; }
+        /* line 882, ../scss/pages/_common.scss */
+        .page-calendar .view-content .calendar-calendar table tr.date-box td.redHover::after {
+          border-bottom: none; }
+        /* line 892, ../scss/pages/_common.scss */
+        .page-calendar .view-content .calendar-calendar table tr.single-day td.greyHover::after {
+          border-top: none; }
+        /* line 898, ../scss/pages/_common.scss */
+        .page-calendar .view-content .calendar-calendar table tr.single-day td.redHover::after {
+          border-top: none; }
+        /* line 904, ../scss/pages/_common.scss */
+        .page-calendar .view-content .calendar-calendar table tr.single-day .no-entry .inner {
+          min-height: 155px;
+          height: 155px !important; }
+      /* line 913, ../scss/pages/_common.scss */
+      .page-calendar .view-content .calendar-calendar .date-box .inner {
+        min-height: inherit;
+        height: auto !important;
+        display: inline-block; }
+  /* line 922, ../scss/pages/_common.scss */
   .page-calendar .view-event-on-calendar {
     display: none; }
-  /* line 913, ../scss/pages/_common.scss */
+  /* line 926, ../scss/pages/_common.scss */
   .page-calendar .date-views-pager {
     float: left;
-    width: 60%; }
-    /* line 918, ../scss/pages/_common.scss */
+    width: 100%;
+    /* Over Desktop design */ }
+    @media (min-width: 1025px) {
+      /* line 926, ../scss/pages/_common.scss */
+      .page-calendar .date-views-pager {
+        width: 60%; } }
+    /* line 932, ../scss/pages/_common.scss */
+    .page-calendar .date-views-pager .pull-right {
+      float: none !important;
+      margin: 0 auto;
+      display: table;
+      /* Over Desktop design */ }
+      @media (min-width: 1025px) {
+        /* line 932, ../scss/pages/_common.scss */
+        .page-calendar .date-views-pager .pull-right {
+          float: right !important;
+          display: inline-block;
+          margin: 20px 0; } }
+    /* line 944, ../scss/pages/_common.scss */
     .page-calendar .date-views-pager .pagination .monthText {
       text-transform: capitalize;
       font-size: 22px;
       font-weight: bold; }
-    /* line 924, ../scss/pages/_common.scss */
+    /* line 950, ../scss/pages/_common.scss */
     .page-calendar .date-views-pager .pagination li {
       float: left;
-      margin-right: 50px; }
-      /* line 928, ../scss/pages/_common.scss */
+      margin-right: 20px;
+      /* Over Desktop design */ }
+      @media (min-width: 1025px) {
+        /* line 950, ../scss/pages/_common.scss */
+        .page-calendar .date-views-pager .pagination li {
+          margin-right: 50px; } }
+      /* line 956, ../scss/pages/_common.scss */
       .page-calendar .date-views-pager .pagination li:last-child {
         margin-right: 0; }
-      /* line 932, ../scss/pages/_common.scss */
+      /* line 960, ../scss/pages/_common.scss */
       .page-calendar .date-views-pager .pagination li a {
         font-size: 0;
         padding: 3px 12px;
         color: #273753;
         background: none;
         border: none; }
-        /* line 940, ../scss/pages/_common.scss */
+        /* line 968, ../scss/pages/_common.scss */
         .page-calendar .date-views-pager .pagination li a::before {
           font-family: "icomoon";
           font-size: 18px; }
-      /* line 948, ../scss/pages/_common.scss */
+      /* line 976, ../scss/pages/_common.scss */
       .page-calendar .date-views-pager .pagination li.prev a::before {
         content: "\e901"; }
-      /* line 956, ../scss/pages/_common.scss */
+      /* line 984, ../scss/pages/_common.scss */
       .page-calendar .date-views-pager .pagination li.next a::before {
         content: "\e902"; }
-    /* line 964, ../scss/pages/_common.scss */
+    /* line 992, ../scss/pages/_common.scss */
     .page-calendar .date-views-pager h3 {
       display: none; }
 
-/* line 978, ../scss/pages/_common.scss */
+/* line 1005, ../scss/pages/_common.scss */
+.page-calendar .page-header {
+  padding-left: 30px; }
+/* line 1009, ../scss/pages/_common.scss */
+.page-calendar .view-event-calendar > .view-sub-wrapper {
+  padding: 0; }
+
+/* line 1015, ../scss/pages/_common.scss */
+.page-termine .view-header {
+  padding-left: 0; }
+
+/* line 1020, ../scss/pages/_common.scss */
 .page-calendar .page-header, .page-termine .page-header {
   position: relative;
   /* Over Desktop design */ }
-  /* line 981, ../scss/pages/_common.scss */
+  /* line 1022, ../scss/pages/_common.scss */
   .page-calendar .page-header::before, .page-termine .page-header::before {
     content: "\e941";
     font-family: "icomoon";
@@ -8737,63 +8791,63 @@ input[type=text]::-ms-clear {
     font-size: 120px;
     margin-bottom: 30px; }
   @media (min-width: 1025px) {
-    /* line 978, ../scss/pages/_common.scss */
+    /* line 1020, ../scss/pages/_common.scss */
     .page-calendar .page-header, .page-termine .page-header {
       padding-left: 85px; }
-      /* line 992, ../scss/pages/_common.scss */
+      /* line 1033, ../scss/pages/_common.scss */
       .page-calendar .page-header::before, .page-termine .page-header::before {
         left: -100px;
         top: 40px;
         position: absolute;
         margin-bottom: 0; } }
-/* line 1002, ../scss/pages/_common.scss */
+/* line 1043, ../scss/pages/_common.scss */
 .page-calendar .main-container .view-header, .page-termine .main-container .view-header {
   /* Over Desktop design */ }
   @media (min-width: 1025px) {
-    /* line 1002, ../scss/pages/_common.scss */
+    /* line 1043, ../scss/pages/_common.scss */
     .page-calendar .main-container .view-header, .page-termine .main-container .view-header {
       padding-left: 90px; } }
-/* line 1008, ../scss/pages/_common.scss */
+/* line 1049, ../scss/pages/_common.scss */
 .page-calendar #block-ipwa-newsletter-newsletter-subscription-block, .page-termine #block-ipwa-newsletter-newsletter-subscription-block {
   margin-top: 25px; }
 
-/* line 1014, ../scss/pages/_common.scss */
+/* line 1054, ../scss/pages/_common.scss */
 .page-node-67 .page-title {
   padding-bottom: 30px; }
 
-/* line 1026, ../scss/pages/_common.scss */
+/* line 1066, ../scss/pages/_common.scss */
 .page-newsletter-confirm .col-sm-12 .page-header {
   padding-bottom: 10px; }
-/* line 1029, ../scss/pages/_common.scss */
+/* line 1069, ../scss/pages/_common.scss */
 .page-newsletter-confirm .col-sm-12 #edit-submit {
   border: none;
   margin-left: 20px; }
-  /* line 1033, ../scss/pages/_common.scss */
+  /* line 1073, ../scss/pages/_common.scss */
   .page-newsletter-confirm .col-sm-12 #edit-submit::before {
     top: 10px;
     left: -12px; }
-  /* line 1037, ../scss/pages/_common.scss */
+  /* line 1077, ../scss/pages/_common.scss */
   .page-newsletter-confirm .col-sm-12 #edit-submit:hover {
     background: none; }
-/* line 1041, ../scss/pages/_common.scss */
+/* line 1081, ../scss/pages/_common.scss */
 .page-newsletter-confirm .col-sm-12 #edit-cancel {
   font-size: 17px;
   color: #e74712;
   position: relative;
   top: 3px; }
-/* line 1047, ../scss/pages/_common.scss */
+/* line 1087, ../scss/pages/_common.scss */
 .page-newsletter-confirm .col-sm-12 p {
   font-size: 18px; }
 
-/* line 1056, ../scss/pages/_common.scss */
+/* line 1096, ../scss/pages/_common.scss */
 .page-node-done .page-header {
   padding-bottom: 10px; }
-/* line 1059, ../scss/pages/_common.scss */
+/* line 1099, ../scss/pages/_common.scss */
 .page-node-done .links a {
   font-size: 17px;
   color: #e74712; }
 
-/* line 1066, ../scss/pages/_common.scss */
+/* line 1106, ../scss/pages/_common.scss */
 #backtotop {
   background: #e74712;
   bottom: 20px;
@@ -8805,7 +8859,7 @@ input[type=text]::-ms-clear {
   width: 50px;
   border-radius: 25px;
   text-indent: 0; }
-  /* line 1078, ../scss/pages/_common.scss */
+  /* line 1118, ../scss/pages/_common.scss */
   #backtotop::before {
     font-family: "icomoon";
     content: "\e950";
