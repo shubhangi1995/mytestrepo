@@ -29,12 +29,14 @@
                     border: none;
                     display: block;
                     position: absolute;
-                    top: 25px;
+                    top: 20px;
                     right: 30px;
                     margin: 0;
                     padding: 0;
 					
-					
+					@include devicebreak(medium){
+					 top:25px
+					}
 
                     &:hover, &:focus {
                         background: none;
@@ -249,9 +251,6 @@
             width: 125px;
         }
 
-        .navbar-toggle {
-            margin-top: 0;
-			top:20px;
-        }
+        
     }
 }
