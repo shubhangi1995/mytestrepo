@@ -77,6 +77,7 @@ features_exclude[field_base][field_kurztext] = field_kurztext
 features_exclude[field_base][field_quellenangabe] = field_quellenangabe
 features_exclude[field_base][body] = body
 features_exclude[field_base][field_themenzuweisung] = field_themenzuweisung
+features_exclude[field_base][field_aaa] = field_aaa
 features_exclude[field_instance][node-article-field_flie_text] = node-article-field_flie_text
 features_exclude[field_instance][node-article-field_anzuzeigende_seitenmodule_] = node-article-field_anzuzeigende_seitenmodule_
 features_exclude[field_instance][node-article-field_aaa] = node-article-field_aaa
