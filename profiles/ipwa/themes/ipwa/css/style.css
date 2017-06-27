@@ -7920,58 +7920,61 @@ footer .nav .open > a, footer .nav .open > a:hover, footer .nav .open > a:focus 
     margin-bottom: 0; }
     /* line 271, ../scss/pages/_frontpage.scss */
     .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items {
-      padding: 60px 0;
+      padding: 40px 0;
       float: left;
       margin-left: -15px;
       margin-right: -15px; }
-      /* line 280, ../scss/pages/_frontpage.scss */
-      .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items > .field-item .field-collection-view {
-        margin: 0;
-        padding: 0;
-        border: 0;
-        background: #eff2f7;
-        position: relative; }
-        /* line 287, ../scss/pages/_frontpage.scss */
-        .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items > .field-item .field-collection-view .content {
-          padding: 30px;
-          height: auto;
-          /* Tablet design */
-          /* Over Desktop design */ }
-          @media (min-width: 520px) {
-            /* line 287, ../scss/pages/_frontpage.scss */
-            .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items > .field-item .field-collection-view .content {
-              padding-right: 50px;
-              height: 400px; } }
-          @media (min-width: 1025px) {
-            /* line 287, ../scss/pages/_frontpage.scss */
-            .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items > .field-item .field-collection-view .content {
-              padding-right: 165px; } }
-          /* line 301, ../scss/pages/_frontpage.scss */
-          .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items > .field-item .field-collection-view .content .field-type-file {
-            padding-bottom: 30px;
-            margin-bottom: 0; }
-          /* line 306, ../scss/pages/_frontpage.scss */
-          .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items > .field-item .field-collection-view .content .field-name-field-paragraph-title {
-            font-size: 26px;
-            color: #e74712;
-            padding-bottom: 25px;
-            font-weight: bold; }
-          /* line 314, ../scss/pages/_frontpage.scss */
-          .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items > .field-item .field-collection-view .content .field-name-field-quellenangabe a {
-            border-color: #949d9e !important;
-            color: #273753;
-            position: absolute !important;
-            bottom: 30px; }
-            /* line 322, ../scss/pages/_frontpage.scss */
-            .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items > .field-item .field-collection-view .content .field-name-field-quellenangabe a:hover {
-              border-color: #e74712 !important; }
-          /* line 328, ../scss/pages/_frontpage.scss */
-          .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items > .field-item .field-collection-view .content .field-name-field-flie-text-bereich {
-            padding-bottom: 50px; }
-            /* line 331, ../scss/pages/_frontpage.scss */
-            .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items > .field-item .field-collection-view .content .field-name-field-flie-text-bereich .field-item p {
-              font-size: 20px;
-              color: #273753; }
+      /* line 277, ../scss/pages/_frontpage.scss */
+      .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items > .field-item {
+        margin-bottom: 30px; }
+        /* line 282, ../scss/pages/_frontpage.scss */
+        .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items > .field-item .field-collection-view {
+          margin: 0;
+          padding: 0;
+          border: 0;
+          background: #eff2f7;
+          position: relative; }
+          /* line 289, ../scss/pages/_frontpage.scss */
+          .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items > .field-item .field-collection-view .content {
+            padding: 30px;
+            height: auto;
+            /* Tablet design */
+            /* Over Desktop design */ }
+            @media (min-width: 520px) {
+              /* line 289, ../scss/pages/_frontpage.scss */
+              .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items > .field-item .field-collection-view .content {
+                padding-right: 50px;
+                height: 400px; } }
+            @media (min-width: 1025px) {
+              /* line 289, ../scss/pages/_frontpage.scss */
+              .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items > .field-item .field-collection-view .content {
+                padding-right: 165px; } }
+            /* line 303, ../scss/pages/_frontpage.scss */
+            .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items > .field-item .field-collection-view .content .field-type-file {
+              padding-bottom: 30px;
+              margin-bottom: 0; }
+            /* line 308, ../scss/pages/_frontpage.scss */
+            .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items > .field-item .field-collection-view .content .field-name-field-paragraph-title {
+              font-size: 26px;
+              color: #e74712;
+              padding-bottom: 25px;
+              font-weight: bold; }
+            /* line 316, ../scss/pages/_frontpage.scss */
+            .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items > .field-item .field-collection-view .content .field-name-field-quellenangabe a {
+              border-color: #949d9e !important;
+              color: #273753;
+              position: absolute !important;
+              bottom: 30px; }
+              /* line 324, ../scss/pages/_frontpage.scss */
+              .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items > .field-item .field-collection-view .content .field-name-field-quellenangabe a:hover {
+                border-color: #e74712 !important; }
+            /* line 330, ../scss/pages/_frontpage.scss */
+            .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items > .field-item .field-collection-view .content .field-name-field-flie-text-bereich {
+              padding-bottom: 50px; }
+              /* line 333, ../scss/pages/_frontpage.scss */
+              .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items > .field-item .field-collection-view .content .field-name-field-flie-text-bereich .field-item p {
+                font-size: 20px;
+                color: #273753; }
 
 /* line 1, ../scss/pages/_common.scss */
 body {
