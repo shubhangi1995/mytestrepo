@@ -6890,7 +6890,7 @@ header .container, header footer .region-footer, footer header .region-footer, h
       width: 100px; }
   /* line 235, ../scss/layout/_header-mobile-view.scss */
   header .navbar-header a img {
-    width: 125px; }
+    display: none; }
   /* line 239, ../scss/layout/_header-mobile-view.scss */
   header .navbar-header .navbar-toggle {
     margin-top: 0; } }
