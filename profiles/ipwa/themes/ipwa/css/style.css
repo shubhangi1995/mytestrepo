@@ -6389,12 +6389,8 @@ header.navbar-default {
   margin-bottom: 30px; }
 /* line 13, ../scss/layout/_header.scss */
 header .container, header footer .region-footer, footer header .region-footer, header .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode header .panel-2col, header .view-neueste-informationen .view-sub-wrapper, .view-neueste-informationen header .view-sub-wrapper, header .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser, .paragraphs-item-topic-teaser-paragraph .field-collection-container header .field-name-field-topic-teaser, header .tabs--primary, header .breadcrumb, header .page-user .page-header, .page-user header .page-header, header .page-user .region-content, .page-user header .region-content, header .page-calendar .region-content, .page-calendar header .region-content, header .page-newsletter-confirm .col-sm-12 .page-header, .page-newsletter-confirm .col-sm-12 header .page-header, header .page-newsletter-confirm .col-sm-12 .page-header + .region-content, .page-newsletter-confirm .col-sm-12 header .page-header + .region-content, header .page-node-done .page-header, .page-node-done header .page-header, header .page-node-done .page-header + .region-content, .page-node-done header .page-header + .region-content, header .not-front .node-doorpage .view-alle-themen-teaser .view-sub-wrapper, .not-front .node-doorpage .view-alle-themen-teaser header .view-sub-wrapper, header .view-neueste-digital-projekte .view-sub-wrapper, .view-neueste-digital-projekte header .view-sub-wrapper, header .view-latest-content-doorpage > .view-sub-wrapper, header .page-taxonomy-term .view-title, .page-taxonomy-term header .view-title, header .page-taxonomy-term .group-page-info, .page-taxonomy-term header .group-page-info, header .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .paragraphs-item-flie-text-mit-bild-links, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule header .paragraphs-item-flie-text-mit-bild-links, header .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .paragraphs-item-flie-text-bereich, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule header .paragraphs-item-flie-text-bereich, header .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .paragraphs-item-flie-text-mit-bild-rechts, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule header .paragraphs-item-flie-text-mit-bild-rechts, header .page-taxonomy-term .view-alles-zum-thema .view-sub-wrapper, .page-taxonomy-term .view-alles-zum-thema header .view-sub-wrapper, header .page-termine .page-header, .page-termine header .page-header, header .page-aktuelles .page-header, .page-aktuelles header .page-header, header .page-calendar .page-header, .page-calendar header .page-header, header .view-aktuelles > .view-sub-wrapper, header .view-termin > .view-sub-wrapper, header .view-search-list > .view-sub-wrapper, header .view-event-calendar > .view-sub-wrapper, header .page-suche .page-header, .page-suche header .page-header, header .view-wahlen-sie-einen-themenbereich .view-sub-wrapper, .view-wahlen-sie-einen-themenbereich header .view-sub-wrapper, header .page-sitemap .page-header, .page-sitemap header .page-header, header .page-sitemap #site-map, .page-sitemap header #site-map {
-  /* Tablet design */ }
-  @media (min-width: 767px) {
-    /* line 13, ../scss/layout/_header.scss */
-    header .container, header footer .region-footer, footer header .region-footer, header .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode header .panel-2col, header .view-neueste-informationen .view-sub-wrapper, .view-neueste-informationen header .view-sub-wrapper, header .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser, .paragraphs-item-topic-teaser-paragraph .field-collection-container header .field-name-field-topic-teaser, header .tabs--primary, header .breadcrumb, header .page-user .page-header, .page-user header .page-header, header .page-user .region-content, .page-user header .region-content, header .page-calendar .region-content, .page-calendar header .region-content, header .page-newsletter-confirm .col-sm-12 .page-header, .page-newsletter-confirm .col-sm-12 header .page-header, header .page-newsletter-confirm .col-sm-12 .page-header + .region-content, .page-newsletter-confirm .col-sm-12 header .page-header + .region-content, header .page-node-done .page-header, .page-node-done header .page-header, header .page-node-done .page-header + .region-content, .page-node-done header .page-header + .region-content, header .not-front .node-doorpage .view-alle-themen-teaser .view-sub-wrapper, .not-front .node-doorpage .view-alle-themen-teaser header .view-sub-wrapper, header .view-neueste-digital-projekte .view-sub-wrapper, .view-neueste-digital-projekte header .view-sub-wrapper, header .view-latest-content-doorpage > .view-sub-wrapper, header .page-taxonomy-term .view-title, .page-taxonomy-term header .view-title, header .page-taxonomy-term .group-page-info, .page-taxonomy-term header .group-page-info, header .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .paragraphs-item-flie-text-mit-bild-links, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule header .paragraphs-item-flie-text-mit-bild-links, header .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .paragraphs-item-flie-text-bereich, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule header .paragraphs-item-flie-text-bereich, header .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .paragraphs-item-flie-text-mit-bild-rechts, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule header .paragraphs-item-flie-text-mit-bild-rechts, header .page-taxonomy-term .view-alles-zum-thema .view-sub-wrapper, .page-taxonomy-term .view-alles-zum-thema header .view-sub-wrapper, header .page-termine .page-header, .page-termine header .page-header, header .page-aktuelles .page-header, .page-aktuelles header .page-header, header .page-calendar .page-header, .page-calendar header .page-header, header .view-aktuelles > .view-sub-wrapper, header .view-termin > .view-sub-wrapper, header .view-search-list > .view-sub-wrapper, header .view-event-calendar > .view-sub-wrapper, header .page-suche .page-header, .page-suche header .page-header, header .view-wahlen-sie-einen-themenbereich .view-sub-wrapper, .view-wahlen-sie-einen-themenbereich header .view-sub-wrapper, header .page-sitemap .page-header, .page-sitemap header .page-header, header .page-sitemap #site-map, .page-sitemap header #site-map {
-      padding-left: 0;
-      padding-right: 0; } }
+  padding-left: 0;
+  padding-right: 0; }
   /* line 19, ../scss/layout/_header.scss */
   header .container .navbar-header, header footer .region-footer .navbar-header, footer header .region-footer .navbar-header, header .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col .navbar-header, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode header .panel-2col .navbar-header, header .view-neueste-informationen .view-sub-wrapper .navbar-header, .view-neueste-informationen header .view-sub-wrapper .navbar-header, header .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser .navbar-header, .paragraphs-item-topic-teaser-paragraph .field-collection-container header .field-name-field-topic-teaser .navbar-header, header .tabs--primary .navbar-header, header .breadcrumb .navbar-header, header .page-user .page-header .navbar-header, .page-user header .page-header .navbar-header, header .page-user .region-content .navbar-header, .page-user header .region-content .navbar-header, header .page-calendar .region-content .navbar-header, .page-calendar header .region-content .navbar-header, header .page-newsletter-confirm .col-sm-12 .page-header .navbar-header, .page-newsletter-confirm .col-sm-12 header .page-header .navbar-header, header .page-newsletter-confirm .col-sm-12 .page-header + .region-content .navbar-header, .page-newsletter-confirm .col-sm-12 header .page-header + .region-content .navbar-header, header .page-node-done .page-header .navbar-header, .page-node-done header .page-header .navbar-header, header .page-node-done .page-header + .region-content .navbar-header, .page-node-done header .page-header + .region-content .navbar-header, header .not-front .node-doorpage .view-alle-themen-teaser .view-sub-wrapper .navbar-header, .not-front .node-doorpage .view-alle-themen-teaser header .view-sub-wrapper .navbar-header, header .view-neueste-digital-projekte .view-sub-wrapper .navbar-header, .view-neueste-digital-projekte header .view-sub-wrapper .navbar-header, header .view-latest-content-doorpage > .view-sub-wrapper .navbar-header, header .page-taxonomy-term .view-title .navbar-header, .page-taxonomy-term header .view-title .navbar-header, header .page-taxonomy-term .group-page-info .navbar-header, .page-taxonomy-term header .group-page-info .navbar-header, header .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .paragraphs-item-flie-text-mit-bild-links .navbar-header, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule header .paragraphs-item-flie-text-mit-bild-links .navbar-header, header .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .paragraphs-item-flie-text-bereich .navbar-header, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule header .paragraphs-item-flie-text-bereich .navbar-header, header .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .paragraphs-item-flie-text-mit-bild-rechts .navbar-header, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule header .paragraphs-item-flie-text-mit-bild-rechts .navbar-header, header .page-taxonomy-term .view-alles-zum-thema .view-sub-wrapper .navbar-header, .page-taxonomy-term .view-alles-zum-thema header .view-sub-wrapper .navbar-header, header .page-termine .page-header .navbar-header, .page-termine header .page-header .navbar-header, header .page-aktuelles .page-header .navbar-header, .page-aktuelles header .page-header .navbar-header, header .page-calendar .page-header .navbar-header, .page-calendar header .page-header .navbar-header, header .view-aktuelles > .view-sub-wrapper .navbar-header, header .view-termin > .view-sub-wrapper .navbar-header, header .view-search-list > .view-sub-wrapper .navbar-header, header .view-event-calendar > .view-sub-wrapper .navbar-header, header .page-suche .page-header .navbar-header, .page-suche header .page-header .navbar-header, header .view-wahlen-sie-einen-themenbereich .view-sub-wrapper .navbar-header, .view-wahlen-sie-einen-themenbereich header .view-sub-wrapper .navbar-header, header .page-sitemap .page-header .navbar-header, .page-sitemap header .page-header .navbar-header, header .page-sitemap #site-map .navbar-header, .page-sitemap header #site-map .navbar-header {
     /* Tablet design */ }
@@ -6689,20 +6685,24 @@ header .container, header footer .region-footer, footer header .region-footer, h
               width: 70%;
               float: left;
               margin: 0; }
+  /* line 396, ../scss/layout/_header.scss */
+  header .container .navbar-header, header footer .region-footer .navbar-header, footer header .region-footer .navbar-header, header .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col .navbar-header, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode header .panel-2col .navbar-header, header .view-neueste-informationen .view-sub-wrapper .navbar-header, .view-neueste-informationen header .view-sub-wrapper .navbar-header, header .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser .navbar-header, .paragraphs-item-topic-teaser-paragraph .field-collection-container header .field-name-field-topic-teaser .navbar-header, header .tabs--primary .navbar-header, header .breadcrumb .navbar-header, header .page-user .page-header .navbar-header, .page-user header .page-header .navbar-header, header .page-user .region-content .navbar-header, .page-user header .region-content .navbar-header, header .page-calendar .region-content .navbar-header, .page-calendar header .region-content .navbar-header, header .page-newsletter-confirm .col-sm-12 .page-header .navbar-header, .page-newsletter-confirm .col-sm-12 header .page-header .navbar-header, header .page-newsletter-confirm .col-sm-12 .page-header + .region-content .navbar-header, .page-newsletter-confirm .col-sm-12 header .page-header + .region-content .navbar-header, header .page-node-done .page-header .navbar-header, .page-node-done header .page-header .navbar-header, header .page-node-done .page-header + .region-content .navbar-header, .page-node-done header .page-header + .region-content .navbar-header, header .not-front .node-doorpage .view-alle-themen-teaser .view-sub-wrapper .navbar-header, .not-front .node-doorpage .view-alle-themen-teaser header .view-sub-wrapper .navbar-header, header .view-neueste-digital-projekte .view-sub-wrapper .navbar-header, .view-neueste-digital-projekte header .view-sub-wrapper .navbar-header, header .view-latest-content-doorpage > .view-sub-wrapper .navbar-header, header .page-taxonomy-term .view-title .navbar-header, .page-taxonomy-term header .view-title .navbar-header, header .page-taxonomy-term .group-page-info .navbar-header, .page-taxonomy-term header .group-page-info .navbar-header, header .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .paragraphs-item-flie-text-mit-bild-links .navbar-header, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule header .paragraphs-item-flie-text-mit-bild-links .navbar-header, header .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .paragraphs-item-flie-text-bereich .navbar-header, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule header .paragraphs-item-flie-text-bereich .navbar-header, header .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .paragraphs-item-flie-text-mit-bild-rechts .navbar-header, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule header .paragraphs-item-flie-text-mit-bild-rechts .navbar-header, header .page-taxonomy-term .view-alles-zum-thema .view-sub-wrapper .navbar-header, .page-taxonomy-term .view-alles-zum-thema header .view-sub-wrapper .navbar-header, header .page-termine .page-header .navbar-header, .page-termine header .page-header .navbar-header, header .page-aktuelles .page-header .navbar-header, .page-aktuelles header .page-header .navbar-header, header .page-calendar .page-header .navbar-header, .page-calendar header .page-header .navbar-header, header .view-aktuelles > .view-sub-wrapper .navbar-header, header .view-termin > .view-sub-wrapper .navbar-header, header .view-search-list > .view-sub-wrapper .navbar-header, header .view-event-calendar > .view-sub-wrapper .navbar-header, header .page-suche .page-header .navbar-header, .page-suche header .page-header .navbar-header, header .view-wahlen-sie-einen-themenbereich .view-sub-wrapper .navbar-header, .view-wahlen-sie-einen-themenbereich header .view-sub-wrapper .navbar-header, header .page-sitemap .page-header .navbar-header, .page-sitemap header .page-header .navbar-header, header .page-sitemap #site-map .navbar-header, .page-sitemap header #site-map .navbar-header, header .container .navbar-collapse, header footer .region-footer .navbar-collapse, footer header .region-footer .navbar-collapse, header .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col .navbar-collapse, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode header .panel-2col .navbar-collapse, header .view-neueste-informationen .view-sub-wrapper .navbar-collapse, .view-neueste-informationen header .view-sub-wrapper .navbar-collapse, header .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser .navbar-collapse, .paragraphs-item-topic-teaser-paragraph .field-collection-container header .field-name-field-topic-teaser .navbar-collapse, header .tabs--primary .navbar-collapse, header .breadcrumb .navbar-collapse, header .page-user .page-header .navbar-collapse, .page-user header .page-header .navbar-collapse, header .page-user .region-content .navbar-collapse, .page-user header .region-content .navbar-collapse, header .page-calendar .region-content .navbar-collapse, .page-calendar header .region-content .navbar-collapse, header .page-newsletter-confirm .col-sm-12 .page-header .navbar-collapse, .page-newsletter-confirm .col-sm-12 header .page-header .navbar-collapse, header .page-newsletter-confirm .col-sm-12 .page-header + .region-content .navbar-collapse, .page-newsletter-confirm .col-sm-12 header .page-header + .region-content .navbar-collapse, header .page-node-done .page-header .navbar-collapse, .page-node-done header .page-header .navbar-collapse, header .page-node-done .page-header + .region-content .navbar-collapse, .page-node-done header .page-header + .region-content .navbar-collapse, header .not-front .node-doorpage .view-alle-themen-teaser .view-sub-wrapper .navbar-collapse, .not-front .node-doorpage .view-alle-themen-teaser header .view-sub-wrapper .navbar-collapse, header .view-neueste-digital-projekte .view-sub-wrapper .navbar-collapse, .view-neueste-digital-projekte header .view-sub-wrapper .navbar-collapse, header .view-latest-content-doorpage > .view-sub-wrapper .navbar-collapse, header .page-taxonomy-term .view-title .navbar-collapse, .page-taxonomy-term header .view-title .navbar-collapse, header .page-taxonomy-term .group-page-info .navbar-collapse, .page-taxonomy-term header .group-page-info .navbar-collapse, header .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .paragraphs-item-flie-text-mit-bild-links .navbar-collapse, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule header .paragraphs-item-flie-text-mit-bild-links .navbar-collapse, header .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .paragraphs-item-flie-text-bereich .navbar-collapse, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule header .paragraphs-item-flie-text-bereich .navbar-collapse, header .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .paragraphs-item-flie-text-mit-bild-rechts .navbar-collapse, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule header .paragraphs-item-flie-text-mit-bild-rechts .navbar-collapse, header .page-taxonomy-term .view-alles-zum-thema .view-sub-wrapper .navbar-collapse, .page-taxonomy-term .view-alles-zum-thema header .view-sub-wrapper .navbar-collapse, header .page-termine .page-header .navbar-collapse, .page-termine header .page-header .navbar-collapse, header .page-aktuelles .page-header .navbar-collapse, .page-aktuelles header .page-header .navbar-collapse, header .page-calendar .page-header .navbar-collapse, .page-calendar header .page-header .navbar-collapse, header .view-aktuelles > .view-sub-wrapper .navbar-collapse, header .view-termin > .view-sub-wrapper .navbar-collapse, header .view-search-list > .view-sub-wrapper .navbar-collapse, header .view-event-calendar > .view-sub-wrapper .navbar-collapse, header .page-suche .page-header .navbar-collapse, .page-suche header .page-header .navbar-collapse, header .view-wahlen-sie-einen-themenbereich .view-sub-wrapper .navbar-collapse, .view-wahlen-sie-einen-themenbereich header .view-sub-wrapper .navbar-collapse, header .page-sitemap .page-header .navbar-collapse, .page-sitemap header .page-header .navbar-collapse, header .page-sitemap #site-map .navbar-collapse, .page-sitemap header #site-map .navbar-collapse {
+    margin-right: 0;
+    margin-left: 0; }
 
 @-moz-document url-prefix() {
-  /* line 399, ../scss/layout/_header.scss */
+  /* line 403, ../scss/layout/_header.scss */
   header .navbar-collapse .region-navigation .block-ipwa-search {
     top: 64px; } }
-/* line 406, ../scss/layout/_header.scss */
+/* line 410, ../scss/layout/_header.scss */
 .front header.navbar-default {
   margin-bottom: 0; }
 
 @media (min-width: 768px) {
-  /* line 417, ../scss/layout/_header.scss */
+  /* line 421, ../scss/layout/_header.scss */
   .navbar-header .logo .big {
     display: block; }
-  /* line 421, ../scss/layout/_header.scss */
+  /* line 425, ../scss/layout/_header.scss */
   .navbar-header .logo .small {
     display: none; } }
 @media (max-width: 1024px) {
@@ -8592,44 +8592,45 @@ input[type=text]::-ms-clear {
     /* line 765, ../scss/pages/_common.scss */
     .page-calendar .view-content .calendar-calendar table {
       border-collapse: inherit; }
-      /* line 768, ../scss/pages/_common.scss */
-      .page-calendar .view-content .calendar-calendar table thead {
+      /* line 769, ../scss/pages/_common.scss */
+      .page-calendar .view-content .calendar-calendar table thead th {
         position: relative; }
         /* line 771, ../scss/pages/_common.scss */
-        .page-calendar .view-content .calendar-calendar table thead::before {
+        .page-calendar .view-content .calendar-calendar table thead th::before {
           background: #e74712;
           bottom: 12px;
           content: "";
           min-height: 2px;
           position: absolute;
-          width: 100%; }
-        /* line 780, ../scss/pages/_common.scss */
-        .page-calendar .view-content .calendar-calendar table thead tr {
-          background: none; }
-          /* line 783, ../scss/pages/_common.scss */
-          .page-calendar .view-content .calendar-calendar table thead tr th {
-            background: none;
-            border: none;
-            font-weight: normal;
-            text-align: right;
-            padding-bottom: 25px; }
-      /* line 798, ../scss/pages/_common.scss */
+          left: 0;
+          right: 0; }
+      /* line 782, ../scss/pages/_common.scss */
+      .page-calendar .view-content .calendar-calendar table thead tr {
+        background: none; }
+        /* line 785, ../scss/pages/_common.scss */
+        .page-calendar .view-content .calendar-calendar table thead tr th {
+          background: none;
+          border: none;
+          font-weight: normal;
+          text-align: right;
+          padding-bottom: 25px; }
+      /* line 800, ../scss/pages/_common.scss */
       .page-calendar .view-content .calendar-calendar table tbody tr td {
         border: 5px solid #eff2f7; }
-        /* line 801, ../scss/pages/_common.scss */
+        /* line 803, ../scss/pages/_common.scss */
         .page-calendar .view-content .calendar-calendar table tbody tr td:first-child {
           border-left-width: 0; }
-        /* line 805, ../scss/pages/_common.scss */
+        /* line 807, ../scss/pages/_common.scss */
         .page-calendar .view-content .calendar-calendar table tbody tr td:last-child {
           border-right-width: 0; }
-      /* line 821, ../scss/pages/_common.scss */
+      /* line 823, ../scss/pages/_common.scss */
       .page-calendar .view-content .calendar-calendar table tr td.today {
         border-color: #e74712 !important; }
-      /* line 825, ../scss/pages/_common.scss */
+      /* line 827, ../scss/pages/_common.scss */
       .page-calendar .view-content .calendar-calendar table tr td.greyHover {
         background: #eff2f7;
         position: relative; }
-        /* line 831, ../scss/pages/_common.scss */
+        /* line 833, ../scss/pages/_common.scss */
         .page-calendar .view-content .calendar-calendar table tr td.greyHover::after {
           border: 1px solid #dbdfe3;
           bottom: -1px;
@@ -8638,11 +8639,11 @@ input[type=text]::-ms-clear {
           position: absolute;
           right: -1px;
           top: -1px; }
-      /* line 842, ../scss/pages/_common.scss */
+      /* line 844, ../scss/pages/_common.scss */
       .page-calendar .view-content .calendar-calendar table tr td.redHover {
         background: #fdede7;
         position: relative; }
-        /* line 846, ../scss/pages/_common.scss */
+        /* line 848, ../scss/pages/_common.scss */
         .page-calendar .view-content .calendar-calendar table tr td.redHover::after {
           border: 1px solid #e74712;
           bottom: -1px;
@@ -8651,72 +8652,72 @@ input[type=text]::-ms-clear {
           position: absolute;
           right: -1px;
           top: -1px; }
-      /* line 861, ../scss/pages/_common.scss */
+      /* line 863, ../scss/pages/_common.scss */
       .page-calendar .view-content .calendar-calendar table tr.date-box td.greyHover::after {
         border-bottom: none; }
-      /* line 867, ../scss/pages/_common.scss */
+      /* line 869, ../scss/pages/_common.scss */
       .page-calendar .view-content .calendar-calendar table tr.date-box td.redHover::after {
         border-bottom: none; }
-      /* line 877, ../scss/pages/_common.scss */
+      /* line 879, ../scss/pages/_common.scss */
       .page-calendar .view-content .calendar-calendar table tr.single-day td.greyHover::after {
         border-top: none; }
-      /* line 883, ../scss/pages/_common.scss */
+      /* line 885, ../scss/pages/_common.scss */
       .page-calendar .view-content .calendar-calendar table tr.single-day td.redHover::after {
         border-top: none; }
-      /* line 889, ../scss/pages/_common.scss */
+      /* line 891, ../scss/pages/_common.scss */
       .page-calendar .view-content .calendar-calendar table tr.single-day .no-entry .inner {
         min-height: 155px;
         height: 155px !important; }
-    /* line 898, ../scss/pages/_common.scss */
+    /* line 900, ../scss/pages/_common.scss */
     .page-calendar .view-content .calendar-calendar .date-box .inner {
       min-height: inherit;
       height: auto !important;
       display: inline-block; }
-  /* line 907, ../scss/pages/_common.scss */
+  /* line 909, ../scss/pages/_common.scss */
   .page-calendar .view-event-on-calendar {
     display: none; }
-  /* line 911, ../scss/pages/_common.scss */
+  /* line 913, ../scss/pages/_common.scss */
   .page-calendar .date-views-pager {
     float: left;
     width: 60%; }
-    /* line 916, ../scss/pages/_common.scss */
+    /* line 918, ../scss/pages/_common.scss */
     .page-calendar .date-views-pager .pagination .monthText {
       text-transform: capitalize;
       font-size: 22px;
       font-weight: bold; }
-    /* line 922, ../scss/pages/_common.scss */
+    /* line 924, ../scss/pages/_common.scss */
     .page-calendar .date-views-pager .pagination li {
       float: left;
       margin-right: 50px; }
-      /* line 926, ../scss/pages/_common.scss */
+      /* line 928, ../scss/pages/_common.scss */
       .page-calendar .date-views-pager .pagination li:last-child {
         margin-right: 0; }
-      /* line 930, ../scss/pages/_common.scss */
+      /* line 932, ../scss/pages/_common.scss */
       .page-calendar .date-views-pager .pagination li a {
         font-size: 0;
         padding: 3px 12px;
         color: #273753;
         background: none;
         border: none; }
-        /* line 938, ../scss/pages/_common.scss */
+        /* line 940, ../scss/pages/_common.scss */
         .page-calendar .date-views-pager .pagination li a::before {
           font-family: "icomoon";
           font-size: 18px; }
-      /* line 946, ../scss/pages/_common.scss */
+      /* line 948, ../scss/pages/_common.scss */
       .page-calendar .date-views-pager .pagination li.prev a::before {
         content: "\e901"; }
-      /* line 954, ../scss/pages/_common.scss */
+      /* line 956, ../scss/pages/_common.scss */
       .page-calendar .date-views-pager .pagination li.next a::before {
         content: "\e902"; }
-    /* line 962, ../scss/pages/_common.scss */
+    /* line 964, ../scss/pages/_common.scss */
     .page-calendar .date-views-pager h3 {
       display: none; }
 
-/* line 976, ../scss/pages/_common.scss */
+/* line 978, ../scss/pages/_common.scss */
 .page-calendar .page-header, .page-termine .page-header {
   position: relative;
   /* Over Desktop design */ }
-  /* line 979, ../scss/pages/_common.scss */
+  /* line 981, ../scss/pages/_common.scss */
   .page-calendar .page-header::before, .page-termine .page-header::before {
     content: "\e941";
     font-family: "icomoon";
@@ -8724,63 +8725,63 @@ input[type=text]::-ms-clear {
     font-size: 120px;
     margin-bottom: 30px; }
   @media (min-width: 1025px) {
-    /* line 976, ../scss/pages/_common.scss */
+    /* line 978, ../scss/pages/_common.scss */
     .page-calendar .page-header, .page-termine .page-header {
       padding-left: 85px; }
-      /* line 990, ../scss/pages/_common.scss */
+      /* line 992, ../scss/pages/_common.scss */
       .page-calendar .page-header::before, .page-termine .page-header::before {
         left: -100px;
         top: 40px;
         position: absolute;
         margin-bottom: 0; } }
-/* line 1000, ../scss/pages/_common.scss */
+/* line 1002, ../scss/pages/_common.scss */
 .page-calendar .main-container .view-header, .page-termine .main-container .view-header {
   /* Over Desktop design */ }
   @media (min-width: 1025px) {
-    /* line 1000, ../scss/pages/_common.scss */
+    /* line 1002, ../scss/pages/_common.scss */
     .page-calendar .main-container .view-header, .page-termine .main-container .view-header {
       padding-left: 90px; } }
-/* line 1006, ../scss/pages/_common.scss */
+/* line 1008, ../scss/pages/_common.scss */
 .page-calendar #block-ipwa-newsletter-newsletter-subscription-block, .page-termine #block-ipwa-newsletter-newsletter-subscription-block {
   margin-top: 25px; }
 
-/* line 1012, ../scss/pages/_common.scss */
+/* line 1014, ../scss/pages/_common.scss */
 .page-node-67 .page-title {
   padding-bottom: 30px; }
 
-/* line 1024, ../scss/pages/_common.scss */
+/* line 1026, ../scss/pages/_common.scss */
 .page-newsletter-confirm .col-sm-12 .page-header {
   padding-bottom: 10px; }
-/* line 1027, ../scss/pages/_common.scss */
+/* line 1029, ../scss/pages/_common.scss */
 .page-newsletter-confirm .col-sm-12 #edit-submit {
   border: none;
   margin-left: 20px; }
-  /* line 1031, ../scss/pages/_common.scss */
+  /* line 1033, ../scss/pages/_common.scss */
   .page-newsletter-confirm .col-sm-12 #edit-submit::before {
     top: 10px;
     left: -12px; }
-  /* line 1035, ../scss/pages/_common.scss */
+  /* line 1037, ../scss/pages/_common.scss */
   .page-newsletter-confirm .col-sm-12 #edit-submit:hover {
     background: none; }
-/* line 1039, ../scss/pages/_common.scss */
+/* line 1041, ../scss/pages/_common.scss */
 .page-newsletter-confirm .col-sm-12 #edit-cancel {
   font-size: 17px;
   color: #e74712;
   position: relative;
   top: 3px; }
-/* line 1045, ../scss/pages/_common.scss */
+/* line 1047, ../scss/pages/_common.scss */
 .page-newsletter-confirm .col-sm-12 p {
   font-size: 18px; }
 
-/* line 1054, ../scss/pages/_common.scss */
+/* line 1056, ../scss/pages/_common.scss */
 .page-node-done .page-header {
   padding-bottom: 10px; }
-/* line 1057, ../scss/pages/_common.scss */
+/* line 1059, ../scss/pages/_common.scss */
 .page-node-done .links a {
   font-size: 17px;
   color: #e74712; }
 
-/* line 1064, ../scss/pages/_common.scss */
+/* line 1066, ../scss/pages/_common.scss */
 #backtotop {
   background: #e74712;
   bottom: 20px;
@@ -8792,7 +8793,7 @@ input[type=text]::-ms-clear {
   width: 50px;
   border-radius: 25px;
   text-indent: 0; }
-  /* line 1076, ../scss/pages/_common.scss */
+  /* line 1078, ../scss/pages/_common.scss */
   #backtotop::before {
     font-family: "icomoon";
     content: "\e950";

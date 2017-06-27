@@ -11,10 +11,10 @@ header {
         margin-bottom: 30px;
     }
 .container{
-@include devicebreak(x-medium){
+//@include devicebreak(x-medium){
 padding-left:0;
 padding-right:0;
-}
+//}
 	
     .navbar-header {
 	@include devicebreak(x-medium){
@@ -393,6 +393,10 @@ padding-right:15px;
             }
         }
     }
+	.navbar-header, .navbar-collapse{
+		margin-right:0;
+		margin-left:0;
+	}
 }}
 
 @-moz-document url-prefix() {

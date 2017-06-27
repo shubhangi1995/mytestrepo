@@ -765,18 +765,20 @@ input[type=text]::-ms-clear {
             table {
                 border-collapse: inherit;
 
-                thead {
-                    position: relative;
-
-                    &::before {
-                        background: $active-menu;
-                        bottom: 12px;
-                        content: "";
-                        min-height: 2px;
-                        position: absolute;
-                        width: 100%;
-                    }
-
+                thead {  
+					th{
+						position: relative;
+						&::before {
+							background: $active-menu;
+							bottom: 12px;
+							content: "";
+							min-height: 2px;
+							position: absolute;
+							//width: 100%;
+							left:0;
+							right:0;
+						}						
+					}
                     tr {
                         background: none;
 
