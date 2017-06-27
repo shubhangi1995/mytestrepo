@@ -835,7 +835,7 @@ function ipwa_publikation_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_themenzuweisung',
-    'label' => 'Dieser Artikel gehört zu',
+    'label' => 'Diese Publikation gehört zu',
     'required' => 1,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -1287,7 +1287,7 @@ Schema für externe Links: http://www…',
   t('Anzuzeigende Seitenmodule (Paragraphen)');
   t('Bild');
   t('Datum');
-  t('Dieser Artikel gehört zu');
+  t('Diese Publikation gehört zu');
   t('Dieses Datum entspricht dem Veröffentlichungsdatum der Publikation');
   t('Dieses Datum erscheint im Frontend.');
   t('Dokumente und Publikationen');

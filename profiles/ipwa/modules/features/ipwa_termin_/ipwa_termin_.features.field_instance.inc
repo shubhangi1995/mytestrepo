@@ -956,7 +956,7 @@ function ipwa_termin__field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_themenzuweisung',
-    'label' => 'Dieser Artikel gehört zu',
+    'label' => 'Dieser Termin gehört zu',
     'required' => 1,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -1435,7 +1435,7 @@ Schema für externe Links: http://www…',
   t('Anzuzeigende Seitenmodule (Paragraphen)');
   t('Bild');
   t('Datum');
-  t('Dieser Artikel gehört zu');
+  t('Dieser Termin gehört zu');
   t('Dokumente und Publikationen');
   t('Drücken Sie die "Strg"-Taste um mehrere Themen auszuwählen. Maximale Anzahl zuzuordnender Themen: 3. Wählen Sie eine der vier Oberkategorien aus, sind deren zugeordnete Unterkategorien nicht auswählbar.');
   t('Fließtext');

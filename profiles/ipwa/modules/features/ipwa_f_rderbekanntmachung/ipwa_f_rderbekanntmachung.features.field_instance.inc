@@ -855,7 +855,7 @@ Quelle',
     ),
     'entity_type' => 'node',
     'field_name' => 'field_themenzuweisung',
-    'label' => 'Dieser Artikel gehört zu',
+    'label' => 'Dieser Förderbekanntmachung gehört zu',
     'required' => 1,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -1232,7 +1232,7 @@ Schema für externe Links: http://www…',
   t('Ausschreibende Stelle');
   t('Bild');
   t('Bis auf Weiteres');
-  t('Dieser Artikel gehört zu');
+  t('Dieser Förderbekanntmachung gehört zu');
   t('Dieses Datum erscheint im Frontend.');
   t('Dokumente und Publikationen');
   t('Drücken Sie die "Strg"-Taste um mehrere Themen auszuwählen. Maximale Anzahl zuzuordnender Themen: 3. Wählen Sie eine der vier Oberkategorien aus, sind deren zugeordnete Unterkategorien nicht auswählbar.

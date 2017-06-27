@@ -859,7 +859,7 @@ Zeile 6 (bspw. E-Mail-Adresse)',
     ),
     'entity_type' => 'node',
     'field_name' => 'field_themenzuweisung',
-    'label' => 'Dieser Artikel gehört zu',
+    'label' => 'Dieser Akteur gehört zu',
     'required' => 1,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -1318,7 +1318,7 @@ Zeile 4 (bspw. PLZ, Ort)
 Zeile 5 (bspw. Vorwahl / Telefonnummer)
 Zeile 6 (bspw. E-Mail-Adresse)');
   t('Datum');
-  t('Dieser Artikel gehört zu');
+  t('Dieser Akteur gehört zu');
   t('Dokumente und Publikationen');
   t('Fließtext');
   t('Förderbekanntmachungen');
