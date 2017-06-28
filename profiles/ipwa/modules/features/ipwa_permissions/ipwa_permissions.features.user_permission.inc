@@ -32,7 +32,10 @@ function ipwa_permissions_user_default_permissions() {
   // Exported permission: 'subscribe to newsletters'.
   $permissions['subscribe to newsletters'] = array(
     'name' => 'subscribe to newsletters',
-    'roles' => array(),
+    'roles' => array(
+      'anonymous user' => 'anonymous user',
+      'authenticated user' => 'authenticated user',
+    ),
     'module' => 'simplenews',
   );
 
