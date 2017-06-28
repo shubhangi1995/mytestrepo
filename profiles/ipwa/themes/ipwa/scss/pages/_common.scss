@@ -289,6 +289,10 @@ padding:0;
 				  text-decoration:none;
 				  &:focus{
 					outline: 1px dotted $main-color !important; 
+					color:$main-color;
+				  }
+				  &:hover{
+				  color:$main-color;
 				  }
 				  
 				.row-container {
