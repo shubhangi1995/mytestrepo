@@ -10413,7 +10413,7 @@ input[type=text]::-ms-clear {
     @media (min-width: 320px) {
       /* line 662, ../scss/pages/_listview.scss */
       .view-wahlen-sie-einen-themenbereich .view-header {
-        padding-right: 50px; } }
+        padding-right: 90px; } }
   /* line 671, ../scss/pages/_listview.scss */
   .view-wahlen-sie-einen-themenbereich .view-content {
     padding-bottom: 90px; }
