@@ -723,7 +723,7 @@ function ipwa_nachricht_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_themenzuweisung',
-    'label' => 'Dieser Nachricht gehört zu',
+    'label' => 'Diese Nachricht gehört zu',
     'required' => 1,
     'settings' => array(
       'user_register_form' => FALSE,
@@ -1097,7 +1097,7 @@ Schema für externe Links: http://www…',
   t('Anzuzeigende Seitenmodule (Paragraphen)');
   t('Bild');
   t('Datum');
-  t('Dieser Nachricht gehört zu');
+  t('Diese Nachricht gehört zu');
   t('Dieses Datum erscheint im Frontend');
   t('Dieses Datum erscheint im Frontend.');
   t('Dokumente und Publikationen');
