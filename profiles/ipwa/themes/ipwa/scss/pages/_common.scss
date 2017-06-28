@@ -287,12 +287,9 @@ padding:0;
 
                 > a {
 				  text-decoration:none;
+				  color:inherit !important;
 				  &:focus{
 					outline: 1px dotted $main-color !important; 
-					color:$main-color;
-				  }
-				  &:hover{
-				  color:$main-color;
 				  }
 				  
 				.row-container {
