@@ -339,19 +339,6 @@ function ipwa_termin__views_default_views() {
   $handler->display->display_options['fields']['nothing']['alter']['text'] = '<a href="#" id="trigger-[nid]" class="trigger">Icon-[field_event_datum]</a>';
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
   $handler->display->display_options['defaults']['sorts'] = FALSE;
-  /* Sort criterion: Inhalt: Datum -  start date (field_event_datum) */
-  $handler->display->display_options['sorts']['field_event_datum_value']['id'] = 'field_event_datum_value';
-  $handler->display->display_options['sorts']['field_event_datum_value']['table'] = 'field_data_field_event_datum';
-  $handler->display->display_options['sorts']['field_event_datum_value']['field'] = 'field_event_datum_value';
-  $handler->display->display_options['sorts']['field_event_datum_value']['order'] = 'DESC';
-  $handler->display->display_options['sorts']['field_event_datum_value']['exposed'] = TRUE;
-  $handler->display->display_options['sorts']['field_event_datum_value']['expose']['label'] = 'neueste zuerst';
-  /* Sort criterion: Inhalt: Titel */
-  $handler->display->display_options['sorts']['title']['id'] = 'title';
-  $handler->display->display_options['sorts']['title']['table'] = 'node';
-  $handler->display->display_options['sorts']['title']['field'] = 'title';
-  $handler->display->display_options['sorts']['title']['exposed'] = TRUE;
-  $handler->display->display_options['sorts']['title']['expose']['label'] = 'A-Z';
   $handler->display->display_options['defaults']['arguments'] = FALSE;
   /* Contextual filter: Datum: Date (node) */
   $handler->display->display_options['arguments']['date_argument']['id'] = 'date_argument';
@@ -657,7 +644,6 @@ function ipwa_termin__views_default_views() {
 <a href="/termine">zur Listensicht</a>
 </div>'),
     t('<a href="#" id="trigger-[nid]" class="trigger">Icon-[field_event_datum]</a>'),
-    t('neueste zuerst'),
     t('Alle'),
     t('Week'),
     t('Day'),
