@@ -40,7 +40,7 @@ function ipwa_newsletter_block_form($form, &$form_state) {
     '#title' => 'Lorem ipsum ist ein ipsum ist ein ipsum ist ein.',
     '#type' => 'textfield',
     '#required' => False,
-    '#attributes' => array('placeholder'=> 'E-Mail-Address eintragen'),
+    '#attributes' => array('placeholder'=> 'E-Mail Adresse eintragen'),
   );
   $form['submit'] = array(
     '#type' => 'submit',

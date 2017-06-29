@@ -859,6 +859,7 @@
             .inner-wrapper, > .view-latest-content-doorpage {
                 .view-content .views-row a {
                     text-decoration: none;
+					color:inherit !important;
 
                     &:focus {
                         outline: 1px dotted $main-color !important;
@@ -934,7 +935,7 @@
             padding: 15px;
 
             @include devicebreak(x-medium) {
-			   clear:both;
+			   
                 width: 50%;
                 float: left;
                 padding: 30px;
@@ -968,6 +969,7 @@
 
                 .view-content .views-row a {
                     text-decoration: none;
+					color:inherit !important;
 
                     &:focus {
                         outline: 1px dotted $main-color !important;
