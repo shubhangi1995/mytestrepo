@@ -147,7 +147,7 @@
 
                   <?php //Following code is for print Title of Group. ?>
                   <?php foreach($field_data[$items['value']]->field_group_heading['und'] as $group_title): ?>
-                    <h2 style="font-size:25px;background:#eff2f7;padding:20px 0;text-align:center;border-bottom:20px solid #fff;border-top:20px solid #fff; color:#273753s"><?php print $group_title['value']; ?></h2>
+                    <h2 style="font-size:25px;background:#eff2f7;padding:20px 0;text-align:center;border-bottom:20px solid #fff;border-top:20px solid #fff; color:#273753s"><a href="<?php print $group_title['url']; ?>" ><?php print $group_title['title']; ?></a></h2>
 					<table style="font-family:Arial,Helvetica, sans-serif;margin:0 auto; font-size:16px;color:#273753;width:640px; width = "620">
 					<tr>
 					<td style="padding:10px 20px; background:#eff2f7;color:#273753">
@@ -199,12 +199,14 @@
 
                         <?php //print body of Other content excluded from Termin. ?>
                         <?php if(isset($node->body['und'][0])) : ?>
-                          <?php if(isset($node->body['und'][0])) : ?>
                           <?php $title_link = $base_url.'/'.$alias; ?>
-                            <?php $body = (strlen($node->body['und'][0]['value']) > 200) ? substr($node->body['und'][0]['value'],0,200).
-                              ' <b>...</b> <a href="'.$title_link.'"> > mehr</a>' : $node->body['und'][0]['value']; ?>
+                            <?php $body = (strlen(strip_tags($node->body['und'][0]['value'])) > 200) ? substr(strip_tags($node->body['und'][0]['value']),0,200).
+                              ' <b>...</b> <a href="'.$title_link.'"> > mehr</a>' : strip_tags($node->body['und'][0]['value']); ?>
                             <p style="margin:5px 0; font-size:20px !important;background:none !important;color:#273753"><?php print $body; ?></p>
-                          <?php endif; ?>
+                        <?php else: ?>
+                          <?php $title_link = $base_url.'/'.$alias; ?>
+                          <?php $body = '<a href="'.$title_link.'"> > mehr</a>'; ?>
+                            <p style="margin:5px 0; font-size:20px !important;background:none !important;color:#273753"><?php print $body; ?></p>
                         <?php endif; ?>
                           </div>
                       <?php endif; ?>
