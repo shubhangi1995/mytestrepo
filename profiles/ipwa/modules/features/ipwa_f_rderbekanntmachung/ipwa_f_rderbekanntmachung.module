@@ -12,20 +12,23 @@ include_once 'ipwa_f_rderbekanntmachung.features.inc';
  * @params $node
  *
  */
-function ipwa_f_rderbekanntmachung_node_view($node, $view_mode, $langcode) {
-  // for CT Förderbekanntmachung
+function ipwa_f_rderbekanntmachung_node_view($node, $view_mode, $langcode)
+{//for CT Förderbekanntmachung
   if ($node->type == 'f_rderbekanntmachung' && !empty($node->content['field_bis_auf_weiteres'])) {
-    if ($node->content['field_bis_auf_weiteres']['#items'][0]['value'] == 1) {
-      $node->content['field_bis_auf_weiteres']['#title'] = 'Stichtag:';
-      $node->content['field_bis_auf_weiteres'][0]['#markup'] = 'Bis auf Weiteres';
-    }else{
-      if (!empty($node->content['field_datum'])) {
-        $node->content['field_bis_auf_weiteres']['#title'] = 'Stichtag:';
+    //embbedding date in stichtag field if date not empty
+    $node->content['field_bis_auf_weiteres'][0]['#markup']= !empty($node->content['field_datum'])? $node->content['field_datum'][0]['#markup'] : ' ';
+    //replacing datum with text if checkbox marked
+    if($node->content['field_bis_auf_weiteres']['#items'][0]['value'] == 1) {
+      if(!empty($node->content['field_datum'])) {
         $node->content['field_bis_auf_weiteres'][0]['#markup'] = $node->content['field_datum'][0]['#markup'];
-      }else{
-        $node->content['field_bis_auf_weiteres']['#access'] = 0;
+        $node->content['field_datum'][0]['#markup'] = 'bis auf wietres' ;
+      }
+      //adjusting datum and stichtag when datum is empty
+      if (empty($node->content['field_datum'])) {
+        $node->content['field_datum'][0]['#markup']= 'Stichtag:bis auf wietres' ;
+        $node->content['field_datum']['#weight'] = 11;
+        $node->content['field_bis_auf_weiteres'][0]['#markup'] = ' ';
       }
     }
-    $node->content['field_datum']['#access'] = 0;
   }
 }

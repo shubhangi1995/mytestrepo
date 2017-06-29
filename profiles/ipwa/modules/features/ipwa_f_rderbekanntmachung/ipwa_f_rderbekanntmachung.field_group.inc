@@ -96,8 +96,6 @@ function ipwa_f_rderbekanntmachung_field_group_info() {
       4 => 'field_projekte_zum_thema',
       5 => 'field_veranstaltungen',
       6 => 'field_weiterf_hrende_links',
-      7 => 'group_related_doc',
-      8 => 'group_related_event',
     ),
     'format_type' => 'html-element',
     'format_settings' => array(
@@ -161,7 +159,7 @@ function ipwa_f_rderbekanntmachung_field_group_info() {
   $field_group->parent_name = 'group_page_info';
   $field_group->data = array(
     'label' => 'title',
-    'weight' => '2',
+    'weight' => '11',
     'children' => array(),
     'format_type' => 'html-element',
     'format_settings' => array(
