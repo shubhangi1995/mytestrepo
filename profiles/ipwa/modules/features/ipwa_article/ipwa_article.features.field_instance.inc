@@ -238,7 +238,7 @@ function ipwa_article_field_default_field_instances() {
         'no_fieldset' => 0,
         'repeat_collapsed' => 0,
         'text_parts' => array(),
-        'year_range' => '-3:+3',
+        'year_range' => '-7:2030',
       ),
       'type' => 'date_popup',
       'weight' => 2,

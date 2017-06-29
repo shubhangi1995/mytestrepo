@@ -203,6 +203,8 @@ function ipwa_publikation_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'date',
         'settings' => array(
+          'addtocalendar_settings' => '',
+          'addtocalendar_show' => '',
           'format_type' => 'short',
           'fromto' => 'both',
           'multiple_from' => '',
@@ -224,6 +226,8 @@ function ipwa_publikation_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'date',
         'settings' => array(
+          'addtocalendar_settings' => '',
+          'addtocalendar_show' => '',
           'format_type' => 'short',
           'fromto' => 'both',
           'multiple_from' => '',
@@ -264,7 +268,7 @@ function ipwa_publikation_field_default_field_instances() {
         'no_fieldset' => 0,
         'repeat_collapsed' => 0,
         'text_parts' => array(),
-        'year_range' => '-3:+3',
+        'year_range' => '-7:2030',
       ),
       'type' => 'date_popup',
       'weight' => 2,
@@ -912,6 +916,8 @@ function ipwa_publikation_field_default_field_instances() {
         'label' => 'inline',
         'module' => 'date',
         'settings' => array(
+          'addtocalendar_settings' => '',
+          'addtocalendar_show' => '',
           'format_type' => 'short',
           'fromto' => 'both',
           'multiple_from' => '',
@@ -933,6 +939,8 @@ function ipwa_publikation_field_default_field_instances() {
         'label' => 'inline',
         'module' => 'date',
         'settings' => array(
+          'addtocalendar_settings' => '',
+          'addtocalendar_show' => '',
           'format_type' => 'short',
           'fromto' => 'both',
           'multiple_from' => '',
