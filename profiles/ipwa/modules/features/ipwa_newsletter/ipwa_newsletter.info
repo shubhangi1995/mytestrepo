@@ -8,6 +8,7 @@ dependencies[] = devel
 dependencies[] = fe_block
 dependencies[] = field_collection
 dependencies[] = ipwa_base
+dependencies[] = link
 dependencies[] = mailsystem
 dependencies[] = mimemail
 dependencies[] = node
