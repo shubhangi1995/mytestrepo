@@ -11,7 +11,6 @@ dependencies[] = ipwa_base
 dependencies[] = link
 dependencies[] = mailsystem
 dependencies[] = mimemail
-dependencies[] = node
 dependencies[] = simplenews
 dependencies[] = text
 features[ctools][] = strongarm:strongarm:1

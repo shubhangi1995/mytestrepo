@@ -23,7 +23,7 @@ function ipwa_newsletter_field_default_field_instances() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 3,
+        'weight' => 2,
       ),
     ),
     'entity_type' => 'field_collection_item',
@@ -74,7 +74,6 @@ function ipwa_newsletter_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
-          'bypass_access' => 0,
           'link' => 1,
         ),
         'type' => 'entityreference_label',
