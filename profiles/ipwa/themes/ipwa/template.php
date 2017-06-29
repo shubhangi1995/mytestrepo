@@ -59,6 +59,13 @@ function ipwa_preprocess_node(&$variables)
       }
     }
   }
+/** for puuting content of field 'descrition to field 'copyright' and to hide field 'descrition' */
+  if ($variables['type'] == 'bild') {
+    if((isset($variables['content']['field_bildbeschreibung']) && !(empty($variables['content']['field_bildbeschreibung']))) || (!empty($variables['content']['field_copyright']))) {
+      $variables['content']['field_copyright'][0]['#markup'] = $variables['content']['field_bildbeschreibung'][0]['#markup'] . ' <span class ="copyright">' . $variables['content']['field_copyright']['#title'] . ':  ' . $variables['content']['field_copyright'][0]['#markup'] . '</span>';
+      hide($variables['content']['field_bildbeschreibung']);
+    }
+  }
 }
 /**
  * Implements ipwa_preprocess_field().
