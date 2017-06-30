@@ -19,7 +19,7 @@ function ipwa_f_rderbekanntmachung_node_view($node, $view_mode, $langcode) {
       if (empty($node->content['field_stichtag'])) {
         $node->content['field_stichtag']['#title'] = "Stichtag";
         $node->content['field_stichtag'][0]['#markup'] = '<div class="field field-name-field-stichtag field-type-datetime field-label-inline clearfix"><div class="field-label">Stichtag:</div>&nbspBis auf Weiteres</div>';
-        $node->content['field_stichtag']['#weight'] = 16;
+        $node->content['field_stichtag']['#weight'] = 17;
       } else {
         if (!empty($node->content['field_stichtag'])) {
           $node->content['field_stichtag'][0]['#markup'] = 'Bis auf Weiteres';

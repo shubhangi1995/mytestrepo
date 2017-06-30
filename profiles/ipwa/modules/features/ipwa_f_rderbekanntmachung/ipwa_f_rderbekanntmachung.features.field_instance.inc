@@ -147,7 +147,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 18,
+        'weight' => 19,
       ),
       'paragraph' => array(
         'label' => 'above',
@@ -283,7 +283,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 17,
+        'weight' => 18,
       ),
       'paragraph' => array(
         'label' => 'above',
@@ -801,7 +801,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 20,
+        'weight' => 21,
       ),
       'paragraph' => array(
         'label' => 'above',
@@ -915,7 +915,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
           'show_repeat_rule' => 'show',
         ),
         'type' => 'date_default',
-        'weight' => 16,
+        'weight' => 17,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -966,7 +966,7 @@ Quelle',
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_plain',
-        'weight' => 19,
+        'weight' => 20,
       ),
       'paragraph' => array(
         'label' => 'above',
@@ -1016,7 +1016,7 @@ Quelle',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 21,
+        'weight' => 16,
       ),
       'paragraph' => array(
         'label' => 'above',
@@ -1174,7 +1174,7 @@ Quelle',
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'inline',
+        'label' => 'hidden',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
