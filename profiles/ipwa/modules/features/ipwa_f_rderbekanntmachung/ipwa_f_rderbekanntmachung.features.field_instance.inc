@@ -130,7 +130,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
       'module' => 'paragraphs',
       'settings' => array(),
       'type' => 'paragraphs_embed',
-      'weight' => 12,
+      'weight' => 11,
     ),
   );
 
@@ -147,7 +147,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 15,
+        'weight' => 18,
       ),
       'paragraph' => array(
         'label' => 'above',
@@ -216,9 +216,11 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'entityreference',
         'settings' => array(
-          'link' => FALSE,
+          'links' => TRUE,
+          'use_content_language' => TRUE,
+          'view_mode' => 'default',
         ),
-        'type' => 'entityreference_label',
+        'type' => 'entityreference_entity_view',
         'weight' => 21,
       ),
       'paragraph' => array(
@@ -277,11 +279,11 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'hidden',
+        'label' => 'inline',
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 10,
+        'weight' => 17,
       ),
       'paragraph' => array(
         'label' => 'above',
@@ -328,7 +330,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
     'description' => 'Dieses Datum erscheint im Frontend.',
     'display' => array(
       'default' => array(
-        'label' => 'inline',
+        'label' => 'hidden',
         'module' => 'date',
         'settings' => array(
           'addtocalendar_settings' => array(
@@ -367,7 +369,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
             'data_secure' => 'auto',
             'style' => 'glow_orange',
           ),
-          'addtocalendar_show' => 1,
+          'addtocalendar_show' => 0,
           'format_type' => 'short',
           'fromto' => 'both',
           'multiple_from' => '',
@@ -377,7 +379,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
           'show_repeat_rule' => 'show',
         ),
         'type' => 'date_default',
-        'weight' => 12,
+        'weight' => 14,
       ),
       'paragraph' => array(
         'label' => 'above',
@@ -389,6 +391,8 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
         'label' => 'hidden',
         'module' => 'date',
         'settings' => array(
+          'addtocalendar_settings' => '',
+          'addtocalendar_show' => '',
           'format_type' => 'short',
           'fromto' => 'both',
           'multiple_from' => '',
@@ -409,7 +413,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_datum',
-    'label' => 'Stichtag',
+    'label' => 'Date',
     'required' => 0,
     'settings' => array(
       'default_value' => 'now',
@@ -429,7 +433,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
         'no_fieldset' => 0,
         'repeat_collapsed' => 0,
         'text_parts' => array(),
-        'year_range' => '-3:+3',
+        'year_range' => '-7:2030',
       ),
       'type' => 'date_popup',
       'weight' => 2,
@@ -488,7 +492,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 16,
+      'weight' => 15,
     ),
   );
 
@@ -548,7 +552,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 21,
+      'weight' => 20,
     ),
   );
 
@@ -608,7 +612,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 19,
+      'weight' => 18,
     ),
   );
 
@@ -721,7 +725,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 18,
+      'weight' => 17,
     ),
   );
 
@@ -781,7 +785,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 20,
+      'weight' => 19,
     ),
   );
 
@@ -797,7 +801,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 16,
+        'weight' => 20,
       ),
       'paragraph' => array(
         'label' => 'above',
@@ -855,6 +859,100 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-f_rderbekanntmachung-field_stichtag'.
+  $field_instances['node-f_rderbekanntmachung-field_stichtag'] = array(
+    'bundle' => 'f_rderbekanntmachung',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'inline',
+        'module' => 'date',
+        'settings' => array(
+          'addtocalendar_settings' => array(
+            'atc_date_end' => array(
+              'field' => 'token',
+              'tokenized' => '',
+            ),
+            'atc_description' => array(
+              'field' => 'token',
+              'tokenized' => '',
+            ),
+            'atc_location' => array(
+              'field' => 'token',
+              'tokenized' => '',
+            ),
+            'atc_organizer' => array(
+              'field' => 'token',
+              'tokenized' => '',
+            ),
+            'atc_organizer_email' => array(
+              'field' => 'token',
+              'tokenized' => '',
+            ),
+            'atc_privacy' => 'public',
+            'atc_title' => array(
+              'field' => 'token',
+              'tokenized' => '',
+            ),
+            'data_calendars' => array(
+              'Google Calendar' => 0,
+              'Outlook' => 0,
+              'Outlook Online' => 0,
+              'Yahoo! Calendar' => 0,
+              'iCalendar' => 0,
+            ),
+            'data_secure' => 'auto',
+            'style' => 'glow_orange',
+          ),
+          'addtocalendar_show' => 0,
+          'format_type' => 'short',
+          'fromto' => 'both',
+          'multiple_from' => '',
+          'multiple_number' => '',
+          'multiple_to' => '',
+          'show_remaining_days' => 0,
+          'show_repeat_rule' => 'show',
+        ),
+        'type' => 'date_default',
+        'weight' => 16,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_stichtag',
+    'label' => 'Stichtag',
+    'required' => 0,
+    'settings' => array(
+      'default_value' => 'now',
+      'default_value2' => 'same',
+      'default_value_code' => '',
+      'default_value_code2' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'date',
+      'settings' => array(
+        'increment' => 15,
+        'input_format' => 'd.m.Y',
+        'input_format_custom' => '',
+        'label_position' => 'above',
+        'no_fieldset' => 0,
+        'repeat_collapsed' => 0,
+        'text_parts' => array(),
+        'year_range' => '-7:2030',
+      ),
+      'type' => 'date_popup',
+      'weight' => 5,
+    ),
+  );
+
   // Exported field_instance: 'node-f_rderbekanntmachung-field_themenzuweisung'.
   $field_instances['node-f_rderbekanntmachung-field_themenzuweisung'] = array(
     'bundle' => 'f_rderbekanntmachung',
@@ -868,7 +966,7 @@ Quelle',
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_plain',
-        'weight' => 14,
+        'weight' => 19,
       ),
       'paragraph' => array(
         'label' => 'above',
@@ -918,7 +1016,7 @@ Quelle',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 13,
+        'weight' => 21,
       ),
       'paragraph' => array(
         'label' => 'above',
@@ -1010,7 +1108,7 @@ Quelle',
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 17,
+      'weight' => 16,
     ),
   );
 
@@ -1063,7 +1161,7 @@ Quelle',
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 15,
+      'weight' => 14,
     ),
   );
 
@@ -1117,7 +1215,7 @@ Quelle',
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 14,
+      'weight' => 13,
     ),
   );
 
@@ -1189,7 +1287,7 @@ Schema für externe Links: http://www…',
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 22,
+      'weight' => 21,
     ),
   );
 
@@ -1259,7 +1357,7 @@ Schema für externe Links: http://www…',
       'module' => 'youtube',
       'settings' => array(),
       'type' => 'youtube',
-      'weight' => 13,
+      'weight' => 12,
     ),
   );
 
@@ -1269,6 +1367,7 @@ Schema für externe Links: http://www…',
   t('Ausschreibende Stelle');
   t('Bild');
   t('Bis auf Weiteres');
+  t('Date');
   t('Diese Förderbekanntmachung gehört zu');
   t('Dieses Datum erscheint im Frontend.');
   t('Dokumente und Publikationen');
