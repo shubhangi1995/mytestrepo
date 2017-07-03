@@ -183,9 +183,55 @@ function ipwa_projekt__field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
+        'label' => 'hidden',
+        'module' => 'date',
+        'settings' => array(
+          'addtocalendar_settings' => array(
+            'atc_date_end' => array(
+              'field' => 'token',
+              'tokenized' => '',
+            ),
+            'atc_description' => array(
+              'field' => 'token',
+              'tokenized' => '',
+            ),
+            'atc_location' => array(
+              'field' => 'token',
+              'tokenized' => '',
+            ),
+            'atc_organizer' => array(
+              'field' => 'token',
+              'tokenized' => '',
+            ),
+            'atc_organizer_email' => array(
+              'field' => 'token',
+              'tokenized' => '',
+            ),
+            'atc_privacy' => 'public',
+            'atc_title' => array(
+              'field' => 'token',
+              'tokenized' => '',
+            ),
+            'data_calendars' => array(
+              'Google Calendar' => 0,
+              'Outlook' => 0,
+              'Outlook Online' => 0,
+              'Yahoo! Calendar' => 0,
+              'iCalendar' => 0,
+            ),
+            'data_secure' => 'auto',
+            'style' => 'blue',
+          ),
+          'addtocalendar_show' => 0,
+          'format_type' => 'short',
+          'fromto' => 'both',
+          'multiple_from' => '',
+          'multiple_number' => '',
+          'multiple_to' => '',
+          'show_remaining_days' => 0,
+          'show_repeat_rule' => 'show',
+        ),
+        'type' => 'date_default',
         'weight' => 6,
       ),
       'paragraph' => array(
@@ -446,7 +492,7 @@ function ipwa_projekt__field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_latitude',
     'label' => 'Latitude',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'text_processing' => 0,
       'user_register_form' => FALSE,
@@ -650,7 +696,7 @@ function ipwa_projekt__field_default_field_instances() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 4,
+        'weight' => 10,
       ),
       'paragraph' => array(
         'label' => 'above',
@@ -713,7 +759,7 @@ function ipwa_projekt__field_default_field_instances() {
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_plain',
-        'weight' => 3,
+        'weight' => 9,
       ),
       'paragraph' => array(
         'label' => 'above',
@@ -756,7 +802,7 @@ function ipwa_projekt__field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 2,
+        'weight' => 8,
       ),
       'paragraph' => array(
         'label' => 'above',
