@@ -335,7 +335,7 @@ function ipwa_termin__field_group_info() {
   $field_group->parent_name = 'group_page_info';
   $field_group->data = array(
     'label' => 'top wrapper',
-    'weight' => '5',
+    'weight' => '4',
     'children' => array(
       0 => 'group_left_top_wrapper',
       1 => 'group_right_top_wrapper',

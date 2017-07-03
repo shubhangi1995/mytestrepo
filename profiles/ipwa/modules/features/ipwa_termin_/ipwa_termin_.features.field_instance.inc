@@ -272,7 +272,6 @@ function ipwa_termin__field_default_field_instances() {
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
-          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -324,7 +323,7 @@ function ipwa_termin__field_default_field_instances() {
     'description' => 'Tragen Sie hier den Veranstaltungstag ein.',
     'display' => array(
       'default' => array(
-        'label' => 'inline',
+        'label' => 'hidden',
         'module' => 'date',
         'settings' => array(
           'addtocalendar_settings' => array(
@@ -446,7 +445,6 @@ function ipwa_termin__field_default_field_instances() {
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
-          'bypass_access' => FALSE,
           'link' => 0,
         ),
         'type' => 'entityreference_label',
@@ -506,7 +504,6 @@ function ipwa_termin__field_default_field_instances() {
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
-          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -688,7 +685,6 @@ function ipwa_termin__field_default_field_instances() {
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
-          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -745,7 +741,7 @@ function ipwa_termin__field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'inline',
+        'label' => 'hidden',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
@@ -801,7 +797,6 @@ function ipwa_termin__field_default_field_instances() {
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
-          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -862,7 +857,7 @@ function ipwa_termin__field_default_field_instances() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 10,
+        'weight' => 6,
       ),
       'ical' => array(
         'label' => 'inline',
@@ -932,7 +927,7 @@ function ipwa_termin__field_default_field_instances() {
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_plain',
-        'weight' => 4,
+        'weight' => 5,
       ),
       'ical' => array(
         'label' => 'above',
@@ -1034,7 +1029,6 @@ function ipwa_termin__field_default_field_instances() {
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
-          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -1334,7 +1328,7 @@ Schema für externe Links: http://www…',
     'description' => 'Geben Sie die Uhrzeit nach folgendem Schema ein: 12:00 Uhr oder auch 12:00 Uhr - 15:45 Uhr.',
     'display' => array(
       'default' => array(
-        'label' => 'inline',
+        'label' => 'hidden',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
