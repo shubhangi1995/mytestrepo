@@ -8874,14 +8874,40 @@ input[type=text]::-ms-clear {
 
 /* line 1134, ../scss/pages/_common.scss */
 .not-logged-in .page-header {
-  width: 1170px;
-  margin: 0 auto;
+  width: auto;
   border: none;
-  padding: 30px 0; }
-/* line 1140, ../scss/pages/_common.scss */
+  padding-left: 15px;
+  padding-right: 15px;
+  /* Tablet design */
+  /* Over Desktop design */ }
+  @media (min-width: 767px) {
+    /* line 1134, ../scss/pages/_common.scss */
+    .not-logged-in .page-header {
+      padding-left: 30px;
+      padding-right: 30px; } }
+  @media (min-width: 1025px) {
+    /* line 1134, ../scss/pages/_common.scss */
+    .not-logged-in .page-header {
+      width: 1170px;
+      margin: 0 auto;
+      padding: 30px 0; } }
+/* line 1152, ../scss/pages/_common.scss */
 .not-logged-in .region-content {
-  width: 1170px;
-  margin: 0 auto; }
+  padding-left: 15px;
+  padding-right: 15px;
+  /* Tablet design */
+  /* Over Desktop design */ }
+  @media (min-width: 767px) {
+    /* line 1152, ../scss/pages/_common.scss */
+    .not-logged-in .region-content {
+      padding-left: 30px;
+      padding-right: 30px; } }
+  @media (min-width: 1025px) {
+    /* line 1152, ../scss/pages/_common.scss */
+    .not-logged-in .region-content {
+      width: 1170px;
+      margin: 0 auto;
+      padding: 0; } }
 
 /* line 1, ../scss/pages/_singleview.scss */
 .field-name-field-themenzuweisung {

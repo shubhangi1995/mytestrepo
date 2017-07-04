@@ -1132,15 +1132,38 @@ input[type=text]::-ms-clear {
 .not-logged-in{
 
 .page-header{
- width:1170px;
- margin:0 auto;
+ width:auto; 
  border:none;
- padding:30px 0;
-}
-.region-content{
+ padding-left:15px;
+ padding-right:15px;
+ 
+ @include devicebreak(x-medium){
+ padding-left: 30px;
+ padding-right: 30px;
+
+ }
+ 
+ @include devicebreak(x-large){
   width:1170px;
   margin:0 auto;
+  padding:30px 0;
+ }
 }
+.region-content{
+padding-left:15px;
+padding-right:15px;
+
+@include devicebreak(x-medium){
+ padding-left: 30px;
+ padding-right: 30px;
+
+ }
+
+@include devicebreak(x-large){
+  width:1170px;
+  margin:0 auto;
+  padding:0;
+}}
 
 
 }
