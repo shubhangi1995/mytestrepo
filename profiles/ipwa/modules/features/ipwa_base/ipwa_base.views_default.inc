@@ -2599,8 +2599,8 @@ Publikation|Publikationen'),
   $handler->display->display_options['header']['area']['id'] = 'area';
   $handler->display->display_options['header']['area']['table'] = 'views';
   $handler->display->display_options['header']['area']['field'] = 'area';
-  $handler->display->display_options['header']['area']['label'] = 'Themen in fokus';
-  $handler->display->display_options['header']['area']['content'] = 'Themen in Fokus';
+  $handler->display->display_options['header']['area']['label'] = 'Themen im fokus';
+  $handler->display->display_options['header']['area']['content'] = 'Themen im Fokus';
   $handler->display->display_options['header']['area']['format'] = 'wysiwyg';
   /* Feld: Taxonomie-Begriff: Name */
   $handler->display->display_options['fields']['name']['id'] = 'name';
@@ -2699,8 +2699,8 @@ Publikation|Publikationen'),
     t('Sort by'),
     t('Asc'),
     t('Desc'),
-    t('Themen in fokus'),
-    t('Themen in Fokus'),
+    t('Themen im fokus'),
+    t('Themen im Fokus'),
     t('Politik & Gesellschaft right view'),
     t('Wirtschaft & Arbeit right view'),
     t('Infos für Unternehmen right view'),
