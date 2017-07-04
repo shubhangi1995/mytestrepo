@@ -8343,8 +8343,8 @@ h1 {
 .node-type-webform .node-webform {
   width: 100%;
   padding: 15px;
-  /* Tablet design */ }
-  @media (min-width: 520px) {
+  /* Desktop design */ }
+  @media (min-width: 960px) {
     /* line 410, ../scss/pages/_common.scss */
     .node-type-webform .node-webform {
       width: 765px;

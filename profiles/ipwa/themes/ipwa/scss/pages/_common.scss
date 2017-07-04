@@ -411,7 +411,7 @@ padding:0;
         width: 100%;
         padding: 15px;
 
-        @include devicebreak(medium) {
+        @include devicebreak(large) {
             width: 765px;
             margin: 0 auto;
         }
