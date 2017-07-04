@@ -8872,6 +8872,17 @@ input[type=text]::-ms-clear {
     top: 16px;
     left: 17px; }
 
+/* line 1134, ../scss/pages/_common.scss */
+.not-logged-in .page-header {
+  width: 1170px;
+  margin: 0 auto;
+  border: none;
+  padding: 30px 0; }
+/* line 1140, ../scss/pages/_common.scss */
+.not-logged-in .region-content {
+  width: 1170px;
+  margin: 0 auto; }
+
 /* line 1, ../scss/pages/_singleview.scss */
 .field-name-field-themenzuweisung {
   display: inline-block;
