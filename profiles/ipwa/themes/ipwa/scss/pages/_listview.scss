@@ -769,6 +769,10 @@
             height: auto;
             width: 90%;
             position: relative;
+			
+			@include devicebreak(medium) {
+			 height:330px;
+			}
 
             @include devicebreak(large) {
                 width: 47%;
