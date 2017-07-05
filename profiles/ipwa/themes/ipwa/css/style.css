@@ -8872,43 +8872,6 @@ input[type=text]::-ms-clear {
     top: 16px;
     left: 17px; }
 
-/* line 1134, ../scss/pages/_common.scss */
-.not-logged-in .page-header {
-  width: auto;
-  border: none;
-  padding-left: 15px;
-  padding-right: 15px;
-  /* Tablet design */
-  /* Over Desktop design */ }
-  @media (min-width: 767px) {
-    /* line 1134, ../scss/pages/_common.scss */
-    .not-logged-in .page-header {
-      padding-left: 30px;
-      padding-right: 30px; } }
-  @media (min-width: 1025px) {
-    /* line 1134, ../scss/pages/_common.scss */
-    .not-logged-in .page-header {
-      width: 1170px;
-      margin: 0 auto;
-      padding: 30px 0; } }
-/* line 1152, ../scss/pages/_common.scss */
-.not-logged-in .region-content {
-  padding-left: 15px;
-  padding-right: 15px;
-  /* Tablet design */
-  /* Over Desktop design */ }
-  @media (min-width: 767px) {
-    /* line 1152, ../scss/pages/_common.scss */
-    .not-logged-in .region-content {
-      padding-left: 30px;
-      padding-right: 30px; } }
-  @media (min-width: 1025px) {
-    /* line 1152, ../scss/pages/_common.scss */
-    .not-logged-in .region-content {
-      width: 1170px;
-      margin: 0 auto;
-      padding: 0; } }
-
 /* line 1, ../scss/pages/_singleview.scss */
 .field-name-field-themenzuweisung {
   display: inline-block;
@@ -10537,7 +10500,12 @@ input[type=text]::-ms-clear {
       height: auto;
       width: 90%;
       position: relative;
+      /* Tablet design */
       /* Desktop design */ }
+      @media (min-width: 520px) {
+        /* line 764, ../scss/pages/_listview.scss */
+        .view-wahlen-sie-einen-themenbereich .view-content .views-row {
+          height: 330px; } }
       @media (min-width: 960px) {
         /* line 764, ../scss/pages/_listview.scss */
         .view-wahlen-sie-einen-themenbereich .view-content .views-row {
@@ -10546,41 +10514,41 @@ input[type=text]::-ms-clear {
           margin-right: 30px;
           float: left;
           margin-left: 10px; } }
-      /* line 782, ../scss/pages/_listview.scss */
+      /* line 786, ../scss/pages/_listview.scss */
       .view-wahlen-sie-einen-themenbereich .view-content .views-row:nth-child(2), .view-wahlen-sie-einen-themenbereich .view-content .views-row:last-child {
         /* Desktop design */ }
         @media (min-width: 960px) {
-          /* line 782, ../scss/pages/_listview.scss */
+          /* line 786, ../scss/pages/_listview.scss */
           .view-wahlen-sie-einen-themenbereich .view-content .views-row:nth-child(2), .view-wahlen-sie-einen-themenbereich .view-content .views-row:last-child {
             margin-right: 0; } }
-      /* line 788, ../scss/pages/_listview.scss */
+      /* line 792, ../scss/pages/_listview.scss */
       .view-wahlen-sie-einen-themenbereich .view-content .views-row .views-field-name {
         padding-bottom: 30px; }
-        /* line 791, ../scss/pages/_listview.scss */
+        /* line 795, ../scss/pages/_listview.scss */
         .view-wahlen-sie-einen-themenbereich .view-content .views-row .views-field-name a {
           color: #e74712;
           text-decoration: none;
           font-weight: bold;
           padding-bottom: 30px; }
-      /* line 800, ../scss/pages/_listview.scss */
+      /* line 804, ../scss/pages/_listview.scss */
       .view-wahlen-sie-einen-themenbereich .view-content .views-row .views-field-name-1 a {
         color: #273753;
         position: absolute;
         bottom: 30px; }
-      /* line 809, ../scss/pages/_listview.scss */
+      /* line 813, ../scss/pages/_listview.scss */
       .view-wahlen-sie-einen-themenbereich .view-content .views-row .views-field-field-kurztext {
         padding-bottom: 40px; }
 
-/* line 818, ../scss/pages/_listview.scss */
+/* line 822, ../scss/pages/_listview.scss */
 .view-map-teaser {
   clear: both;
   margin-bottom: 30px;
   overflow: hidden; }
-  /* line 825, ../scss/pages/_listview.scss */
+  /* line 829, ../scss/pages/_listview.scss */
   .view-map-teaser .view-sub-wrapper .view-content .views-row {
     padding: 0;
     background: #273753; }
-    /* line 831, ../scss/pages/_listview.scss */
+    /* line 835, ../scss/pages/_listview.scss */
     .view-map-teaser .view-sub-wrapper .view-content .views-row .row-container {
       background: none;
       height: auto;
@@ -10589,34 +10557,34 @@ input[type=text]::-ms-clear {
       border: none;
       /* Over Desktop design */ }
       @media (min-width: 1025px) {
-        /* line 831, ../scss/pages/_listview.scss */
+        /* line 835, ../scss/pages/_listview.scss */
         .view-map-teaser .view-sub-wrapper .view-content .views-row .row-container {
           padding: 45px 150px 45px 50px; } }
-      /* line 843, ../scss/pages/_listview.scss */
+      /* line 847, ../scss/pages/_listview.scss */
       .view-map-teaser .view-sub-wrapper .view-content .views-row .row-container:hover {
         background: none;
         border: none; }
-      /* line 848, ../scss/pages/_listview.scss */
+      /* line 852, ../scss/pages/_listview.scss */
       .view-map-teaser .view-sub-wrapper .view-content .views-row .row-container .views-field-field-bild {
         padding-bottom: 20px; }
-        /* line 851, ../scss/pages/_listview.scss */
+        /* line 855, ../scss/pages/_listview.scss */
         .view-map-teaser .view-sub-wrapper .view-content .views-row .row-container .views-field-field-bild img {
           color: #e74712; }
-      /* line 856, ../scss/pages/_listview.scss */
+      /* line 860, ../scss/pages/_listview.scss */
       .view-map-teaser .view-sub-wrapper .view-content .views-row .row-container .views-field-field-paragraph-title {
         color: #ffffff;
         font-size: 38px;
         font-weight: bold;
         padding-bottom: 20px; }
-      /* line 863, ../scss/pages/_listview.scss */
+      /* line 867, ../scss/pages/_listview.scss */
       .view-map-teaser .view-sub-wrapper .view-content .views-row .row-container .views-field-field-flie-text-bereich {
         color: #ffffff;
         padding-bottom: 35px; }
-      /* line 868, ../scss/pages/_listview.scss */
+      /* line 872, ../scss/pages/_listview.scss */
       .view-map-teaser .view-sub-wrapper .view-content .views-row .row-container .views-field-field-quellenangabe a {
         color: #ffffff; }
 
-/* line 879, ../scss/pages/_listview.scss */
+/* line 883, ../scss/pages/_listview.scss */
 .page-taxonomy-term-1 > .footer.container, footer .page-taxonomy-term-1 > .footer.region-footer, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .page-taxonomy-term-1 > .footer.panel-2col, .view-neueste-informationen .page-taxonomy-term-1 > .footer.view-sub-wrapper, .paragraphs-item-topic-teaser-paragraph .field-collection-container .page-taxonomy-term-1 > .footer.field-name-field-topic-teaser, .page-taxonomy-term-1 > .footer.tabs--primary, .page-taxonomy-term-1 > .footer.breadcrumb, .page-user .page-taxonomy-term-1 > .footer.page-header, .page-user .page-taxonomy-term-1 > .footer.region-content, .page-calendar .page-taxonomy-term-1 > .footer.region-content, .page-newsletter-confirm .col-sm-12 .page-taxonomy-term-1 > .footer.page-header, .page-newsletter-confirm .col-sm-12 .page-taxonomy-term-1 > .page-header + .footer.region-content, .page-node-done .page-taxonomy-term-1 > .footer.page-header, .page-node-done .page-taxonomy-term-1 > .page-header + .footer.region-content, .not-front .node-doorpage .view-alle-themen-teaser .page-taxonomy-term-1 > .footer.view-sub-wrapper, .view-neueste-digital-projekte .page-taxonomy-term-1 > .footer.view-sub-wrapper, .view-latest-content-doorpage.page-taxonomy-term-1 > .footer.view-sub-wrapper, .page-taxonomy-term .page-taxonomy-term-1 > .footer.view-title, .page-taxonomy-term .page-taxonomy-term-1 > .footer.group-page-info, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .page-taxonomy-term-1 > .footer.paragraphs-item-flie-text-mit-bild-links, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .page-taxonomy-term-1 > .footer.paragraphs-item-flie-text-bereich, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .page-taxonomy-term-1 > .footer.paragraphs-item-flie-text-mit-bild-rechts, .page-taxonomy-term .view-alles-zum-thema .page-taxonomy-term-1 > .footer.view-sub-wrapper, .page-termine .page-taxonomy-term-1 > .footer.page-header, .page-aktuelles .page-taxonomy-term-1 > .footer.page-header, .page-calendar .page-taxonomy-term-1 > .footer.page-header, .view-aktuelles.page-taxonomy-term-1 > .footer.view-sub-wrapper, .view-termin.page-taxonomy-term-1 > .footer.view-sub-wrapper, .view-search-list.page-taxonomy-term-1 > .footer.view-sub-wrapper, .view-event-calendar.page-taxonomy-term-1 > .footer.view-sub-wrapper, .page-suche .page-taxonomy-term-1 > .footer.page-header, .view-wahlen-sie-einen-themenbereich .page-taxonomy-term-1 > .footer.view-sub-wrapper, .page-sitemap .page-taxonomy-term-1 > .footer.page-header, .page-sitemap .page-taxonomy-term-1 > .footer#site-map {
   padding-top: 30px; }
 
