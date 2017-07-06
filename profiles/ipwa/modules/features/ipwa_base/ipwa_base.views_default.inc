@@ -185,7 +185,7 @@ Publikation|Publikationen',
   $handler->display->display_options['header']['area']['field'] = 'area';
   $handler->display->display_options['header']['area']['content'] = '<h2>[headline] this needs to be carified, about its content</h2>';
   $handler->display->display_options['header']['area']['format'] = 'wysiwyg';
-  /* Feld: Inhalt: Dieser Artikel gehört zu */
+  /* Feld: Inhalt: Dieser Akteur gehört zu */
   $handler->display->display_options['fields']['field_themenzuweisung']['id'] = 'field_themenzuweisung';
   $handler->display->display_options['fields']['field_themenzuweisung']['table'] = 'field_data_field_themenzuweisung';
   $handler->display->display_options['fields']['field_themenzuweisung']['field'] = 'field_themenzuweisung';
@@ -380,7 +380,7 @@ Publikation|Publikationen',
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Feld: Inhalt: Dieser Artikel gehört zu */
+  /* Feld: Inhalt: Dieser Akteur gehört zu */
   $handler->display->display_options['fields']['field_themenzuweisung']['id'] = 'field_themenzuweisung';
   $handler->display->display_options['fields']['field_themenzuweisung']['table'] = 'field_data_field_themenzuweisung';
   $handler->display->display_options['fields']['field_themenzuweisung']['field'] = 'field_themenzuweisung';
@@ -1049,7 +1049,7 @@ Publikation|Publikationen'),
   $handler->display->display_options['footer']['area_text_custom']['table'] = 'views';
   $handler->display->display_options['footer']['area_text_custom']['field'] = 'area_text_custom';
   $handler->display->display_options['footer']['area_text_custom']['content'] = '<a href ="/article">Karte öffnen</a>';
-  /* Feld: Inhalt: Dieser Artikel gehört zu */
+  /* Feld: Inhalt: Dieser Akteur gehört zu */
   $handler->display->display_options['fields']['field_themenzuweisung']['id'] = 'field_themenzuweisung';
   $handler->display->display_options['fields']['field_themenzuweisung']['table'] = 'field_data_field_themenzuweisung';
   $handler->display->display_options['fields']['field_themenzuweisung']['field'] = 'field_themenzuweisung';
@@ -1093,7 +1093,7 @@ Publikation|Publikationen'),
   /* Display: Block */
   $handler = $view->new_display('block', 'Block', 'block');
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Feld: Inhalt: Dieser Artikel gehört zu */
+  /* Feld: Inhalt: Dieser Akteur gehört zu */
   $handler->display->display_options['fields']['field_themenzuweisung']['id'] = 'field_themenzuweisung';
   $handler->display->display_options['fields']['field_themenzuweisung']['table'] = 'field_data_field_themenzuweisung';
   $handler->display->display_options['fields']['field_themenzuweisung']['field'] = 'field_themenzuweisung';
@@ -1203,7 +1203,7 @@ Publikation|Publikationen'),
 </div>';
   $handler->display->display_options['footer']['area']['format'] = 'wysiwyg';
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Feld: Inhalt: Dieser Artikel gehört zu */
+  /* Feld: Inhalt: Dieser Akteur gehört zu */
   $handler->display->display_options['fields']['field_themenzuweisung']['id'] = 'field_themenzuweisung';
   $handler->display->display_options['fields']['field_themenzuweisung']['table'] = 'field_data_field_themenzuweisung';
   $handler->display->display_options['fields']['field_themenzuweisung']['field'] = 'field_themenzuweisung';

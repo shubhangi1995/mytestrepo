@@ -27,7 +27,8 @@ wirtschaft-arbeit
 infos-fuer-unternehmen
 aktuelles
 infos-fuer-beschaeftigte
-calendar',
+calendar
+alle-themen',
     'roles' => array(),
     'themes' => array(
       'bartik' => array(
