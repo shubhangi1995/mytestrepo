@@ -8817,39 +8817,43 @@ input[type=text]::-ms-clear {
 .page-node-67 .page-title {
   padding-bottom: 30px; }
 
-/* line 1067, ../scss/pages/_common.scss */
+/* line 1060, ../scss/pages/_common.scss */
+.page-aktuelles #block-ipwa-newsletter-newsletter-subscription-block {
+  margin-top: 25px; }
+
+/* line 1071, ../scss/pages/_common.scss */
 .page-newsletter-confirm .col-sm-12 .page-header {
   padding-bottom: 10px; }
-/* line 1070, ../scss/pages/_common.scss */
+/* line 1074, ../scss/pages/_common.scss */
 .page-newsletter-confirm .col-sm-12 #edit-submit {
   border: none;
   margin-left: 20px; }
-  /* line 1074, ../scss/pages/_common.scss */
+  /* line 1078, ../scss/pages/_common.scss */
   .page-newsletter-confirm .col-sm-12 #edit-submit::before {
     top: 10px;
     left: -12px; }
-  /* line 1078, ../scss/pages/_common.scss */
+  /* line 1082, ../scss/pages/_common.scss */
   .page-newsletter-confirm .col-sm-12 #edit-submit:hover {
     background: none; }
-/* line 1082, ../scss/pages/_common.scss */
+/* line 1086, ../scss/pages/_common.scss */
 .page-newsletter-confirm .col-sm-12 #edit-cancel {
   font-size: 17px;
   color: #e74712;
   position: relative;
   top: 3px; }
-/* line 1088, ../scss/pages/_common.scss */
+/* line 1092, ../scss/pages/_common.scss */
 .page-newsletter-confirm .col-sm-12 p {
   font-size: 18px; }
 
-/* line 1097, ../scss/pages/_common.scss */
+/* line 1101, ../scss/pages/_common.scss */
 .page-node-done .page-header {
   padding-bottom: 10px; }
-/* line 1100, ../scss/pages/_common.scss */
+/* line 1104, ../scss/pages/_common.scss */
 .page-node-done .links a {
   font-size: 17px;
   color: #e74712; }
 
-/* line 1107, ../scss/pages/_common.scss */
+/* line 1111, ../scss/pages/_common.scss */
 #backtotop {
   background: #e74712;
   bottom: 20px;
@@ -8861,7 +8865,7 @@ input[type=text]::-ms-clear {
   width: 50px;
   border-radius: 25px;
   text-indent: 0; }
-  /* line 1119, ../scss/pages/_common.scss */
+  /* line 1123, ../scss/pages/_common.scss */
   #backtotop::before {
     font-family: "icomoon";
     content: "\e950";
