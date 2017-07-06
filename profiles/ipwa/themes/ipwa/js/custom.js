@@ -3,6 +3,13 @@
 
 jQuery(document).ready(function(){
 
+//orientation changes for slider
+
+window.addEventListener('orientationchange', function () {
+    window.location.reload();
+  });
+  
+
     //Detection for external links
     hostname = new RegExp(location.host);
     // Act on each link
