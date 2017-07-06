@@ -8818,7 +8818,7 @@ input[type=text]::-ms-clear {
   padding-bottom: 30px; }
 
 /* line 1060, ../scss/pages/_common.scss */
-.page-aktuelles #block-ipwa-newsletter-newsletter-subscription-block {
+.page-aktuelles #block-ipwa-newsletter-newsletter-subscription-block, .node-type-doorpage #block-ipwa-newsletter-newsletter-subscription-block {
   margin-top: 25px; }
 
 /* line 1071, ../scss/pages/_common.scss */
