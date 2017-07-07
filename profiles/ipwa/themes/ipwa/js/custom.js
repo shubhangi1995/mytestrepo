@@ -6,7 +6,7 @@ jQuery(document).ready(function(){
 //orientation changes for slider
 
 window.addEventListener('orientationchange', function () {
-    window.location.reload();
+   window.location.reload();
   });
   
 

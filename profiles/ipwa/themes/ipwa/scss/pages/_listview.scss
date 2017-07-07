@@ -318,6 +318,7 @@
                 .views-widget .form-item {
                     padding: 0;
                     position: relative;
+					display:block;
 
                     .select2-container--default .select2-selection--single {
                         background: 0;
@@ -327,16 +328,7 @@
                         .select2-selection__rendered {
                             color: $color-white;
                             padding-left: 20px;
-                            width: 260px;
-
-                            @include devicebreak(large) {
-                                width: 240px;
-                            }
-
-
-                            @include devicebreak(x-large) {
-                                width: 260px;
-                            }
+                            
                         }
 
                         .select2-selection__arrow {

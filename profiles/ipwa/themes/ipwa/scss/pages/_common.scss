@@ -204,14 +204,7 @@ h1 {
 //dropdown
 
 .select2-container {
-    width: 290px !important;
-	@include devicebreak(large){
-	   width:260px !important;
-	   	}
-	@include devicebreak(x-large){
-	  width:290px !important;
-	}	
-		
+    		width:100% !important;
     .select2-dropdown {
         border: 0;        
         background: $header-dropdown-menu;
