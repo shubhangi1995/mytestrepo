@@ -8166,36 +8166,39 @@ h1 {
       .breadcrumb span {
         margin-bottom: 0; } }
 
-/* line 208, ../scss/pages/_common.scss */
-.select2-container .select2-dropdown {
-  border: 0;
-  background: #3c506e;
-  border-radius: 0; }
-  /* line 213, ../scss/pages/_common.scss */
-  .select2-container .select2-dropdown .select2-results {
-    height: 200px;
-    color: #ffffff; }
-    /* line 217, ../scss/pages/_common.scss */
-    .select2-container .select2-dropdown .select2-results .simplebar-track .simplebar-scrollbar {
-      background: #273753;
-      right: 6px; }
-    /* line 222, ../scss/pages/_common.scss */
-    .select2-container .select2-dropdown .select2-results ul.select2-results__options {
-      height: auto;
-      overflow: hidden;
-      max-height: none; }
-      /* line 227, ../scss/pages/_common.scss */
-      .select2-container .select2-dropdown .select2-results ul.select2-results__options .select2-results__option {
-        padding-left: 20px !important; }
-  /* line 233, ../scss/pages/_common.scss */
-  .select2-container .select2-dropdown .select2-search--dropdown {
-    display: none; }
-/* line 238, ../scss/pages/_common.scss */
-.select2-container .select2-results__option[aria-selected=true] {
-  background: 0; }
-/* line 242, ../scss/pages/_common.scss */
-.select2-container .select2-results__option--highlighted[aria-selected] {
-  background: #273753; }
+/* line 206, ../scss/pages/_common.scss */
+.select2-container {
+  width: 100% !important; }
+  /* line 208, ../scss/pages/_common.scss */
+  .select2-container .select2-dropdown {
+    border: 0;
+    background: #3c506e;
+    border-radius: 0; }
+    /* line 213, ../scss/pages/_common.scss */
+    .select2-container .select2-dropdown .select2-results {
+      height: 200px;
+      color: #ffffff; }
+      /* line 217, ../scss/pages/_common.scss */
+      .select2-container .select2-dropdown .select2-results .simplebar-track .simplebar-scrollbar {
+        background: #273753;
+        right: 6px; }
+      /* line 222, ../scss/pages/_common.scss */
+      .select2-container .select2-dropdown .select2-results ul.select2-results__options {
+        height: auto;
+        overflow: hidden;
+        max-height: none; }
+        /* line 227, ../scss/pages/_common.scss */
+        .select2-container .select2-dropdown .select2-results ul.select2-results__options .select2-results__option {
+          padding-left: 20px !important; }
+    /* line 233, ../scss/pages/_common.scss */
+    .select2-container .select2-dropdown .select2-search--dropdown {
+      display: none; }
+  /* line 238, ../scss/pages/_common.scss */
+  .select2-container .select2-results__option[aria-selected=true] {
+    background: 0; }
+  /* line 242, ../scss/pages/_common.scss */
+  .select2-container .select2-results__option--highlighted[aria-selected] {
+    background: #273753; }
 
 /* line 247, ../scss/pages/_common.scss */
 .container, footer .region-footer, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col, .view-neueste-informationen .view-sub-wrapper, .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser, .tabs--primary, .breadcrumb, .page-user .page-header, .page-user .region-content, .page-calendar .region-content, .page-newsletter-confirm .col-sm-12 .page-header, .page-newsletter-confirm .col-sm-12 .page-header + .region-content, .page-node-done .page-header, .page-node-done .page-header + .region-content, .not-front .node-doorpage .view-alle-themen-teaser .view-sub-wrapper, .view-neueste-digital-projekte .view-sub-wrapper, .view-latest-content-doorpage > .view-sub-wrapper, .page-taxonomy-term .view-title, .page-taxonomy-term .group-page-info, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .paragraphs-item-flie-text-mit-bild-links, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .paragraphs-item-flie-text-bereich, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .paragraphs-item-flie-text-mit-bild-rechts, .page-taxonomy-term .view-alles-zum-thema .view-sub-wrapper, .page-termine .page-header, .page-aktuelles .page-header, .page-calendar .page-header, .view-aktuelles > .view-sub-wrapper, .view-termin > .view-sub-wrapper, .view-search-list > .view-sub-wrapper, .view-event-calendar > .view-sub-wrapper, .page-suche .page-header, .view-wahlen-sie-einen-themenbereich .view-sub-wrapper, .page-sitemap .page-header, .page-sitemap #site-map {
