@@ -102,6 +102,10 @@
 <?php if(isset($id)): ?>
   <?php print views_embed_view('map_teaser', 'block', $id);  ?>
 <?php endif; ?>
+ <div class ="Schaufenster_Digitales_NRW_map">
+  <?php global $base_path;?>
+   <img src="/profiles/ipwa/themes/ipwa/images/Karte_Karte.png" alt="Schaufenster_Digitales_NRW_map">
+ </div>
 </div>
 <?php if ($feed_icon): ?>
   <div class="feed-icon">
