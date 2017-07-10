@@ -841,9 +841,7 @@
                     padding: 30px;
                     border: none;
 
-					@include devicebreak(large){
-					padding:45px 50px;
-					}
+					
 					
                     @include devicebreak(x-large) {
                         padding: 45px 150px 45px 50px;
