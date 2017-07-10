@@ -10550,45 +10550,50 @@ input[type=text]::-ms-clear {
         margin-bottom: 0;
         padding: 30px;
         border: none;
-        /* Desktop design */ }
+        /* Desktop design */
+        /* Over Desktop design */ }
         @media (min-width: 960px) {
           /* line 837, ../scss/pages/_listview.scss */
           .view-map-teaser .view-sub-wrapper .view-content .views-row .row-container {
+            padding: 45px 50px; } }
+        @media (min-width: 1025px) {
+          /* line 837, ../scss/pages/_listview.scss */
+          .view-map-teaser .view-sub-wrapper .view-content .views-row .row-container {
             padding: 45px 150px 45px 50px; } }
-        /* line 849, ../scss/pages/_listview.scss */
+        /* line 853, ../scss/pages/_listview.scss */
         .view-map-teaser .view-sub-wrapper .view-content .views-row .row-container:hover {
           background: none;
           border: none; }
-        /* line 854, ../scss/pages/_listview.scss */
+        /* line 858, ../scss/pages/_listview.scss */
         .view-map-teaser .view-sub-wrapper .view-content .views-row .row-container .views-field-field-bild {
           padding-bottom: 20px; }
-          /* line 857, ../scss/pages/_listview.scss */
+          /* line 861, ../scss/pages/_listview.scss */
           .view-map-teaser .view-sub-wrapper .view-content .views-row .row-container .views-field-field-bild img {
             color: #e74712; }
-        /* line 862, ../scss/pages/_listview.scss */
+        /* line 866, ../scss/pages/_listview.scss */
         .view-map-teaser .view-sub-wrapper .view-content .views-row .row-container .views-field-field-paragraph-title {
           color: #ffffff;
           font-size: 36px;
           font-weight: bold;
           padding-bottom: 20px; }
-        /* line 869, ../scss/pages/_listview.scss */
+        /* line 873, ../scss/pages/_listview.scss */
         .view-map-teaser .view-sub-wrapper .view-content .views-row .row-container .views-field-field-flie-text-bereich {
           color: #ffffff;
           padding-bottom: 30px; }
-        /* line 874, ../scss/pages/_listview.scss */
+        /* line 878, ../scss/pages/_listview.scss */
         .view-map-teaser .view-sub-wrapper .view-content .views-row .row-container .views-field-field-quellenangabe a {
           color: #ffffff; }
-  /* line 883, ../scss/pages/_listview.scss */
+  /* line 887, ../scss/pages/_listview.scss */
   .view-map-teaser .view-sub-wrapper .view-footer {
     width: 100%;
     float: left;
     /* Desktop design */ }
     @media (min-width: 960px) {
-      /* line 883, ../scss/pages/_listview.scss */
+      /* line 887, ../scss/pages/_listview.scss */
       .view-map-teaser .view-sub-wrapper .view-footer {
         width: 35%; } }
 
-/* line 894, ../scss/pages/_listview.scss */
+/* line 898, ../scss/pages/_listview.scss */
 .page-taxonomy-term-1 > .footer.container, footer .page-taxonomy-term-1 > .footer.region-footer, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .page-taxonomy-term-1 > .footer.panel-2col, .view-neueste-informationen .page-taxonomy-term-1 > .footer.view-sub-wrapper, .paragraphs-item-topic-teaser-paragraph .field-collection-container .page-taxonomy-term-1 > .footer.field-name-field-topic-teaser, .page-taxonomy-term-1 > .footer.tabs--primary, .page-taxonomy-term-1 > .footer.breadcrumb, .page-user .page-taxonomy-term-1 > .footer.page-header, .page-user .page-taxonomy-term-1 > .footer.region-content, .page-calendar .page-taxonomy-term-1 > .footer.region-content, .page-newsletter-confirm .col-sm-12 .page-taxonomy-term-1 > .footer.page-header, .page-newsletter-confirm .col-sm-12 .page-taxonomy-term-1 > .page-header + .footer.region-content, .page-node-done .page-taxonomy-term-1 > .footer.page-header, .page-node-done .page-taxonomy-term-1 > .page-header + .footer.region-content, .not-front .node-doorpage .view-alle-themen-teaser .page-taxonomy-term-1 > .footer.view-sub-wrapper, .view-neueste-digital-projekte .page-taxonomy-term-1 > .footer.view-sub-wrapper, .view-latest-content-doorpage.page-taxonomy-term-1 > .footer.view-sub-wrapper, .page-taxonomy-term .page-taxonomy-term-1 > .footer.view-title, .page-taxonomy-term .page-taxonomy-term-1 > .footer.group-page-info, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .page-taxonomy-term-1 > .footer.paragraphs-item-flie-text-mit-bild-links, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .page-taxonomy-term-1 > .footer.paragraphs-item-flie-text-bereich, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .page-taxonomy-term-1 > .footer.paragraphs-item-flie-text-mit-bild-rechts, .page-taxonomy-term .view-alles-zum-thema .page-taxonomy-term-1 > .footer.view-sub-wrapper, .page-termine .page-taxonomy-term-1 > .footer.page-header, .page-aktuelles .page-taxonomy-term-1 > .footer.page-header, .page-calendar .page-taxonomy-term-1 > .footer.page-header, .view-aktuelles.page-taxonomy-term-1 > .footer.view-sub-wrapper, .view-termin.page-taxonomy-term-1 > .footer.view-sub-wrapper, .view-search-list.page-taxonomy-term-1 > .footer.view-sub-wrapper, .view-event-calendar.page-taxonomy-term-1 > .footer.view-sub-wrapper, .page-suche .page-taxonomy-term-1 > .footer.page-header, .view-wahlen-sie-einen-themenbereich .page-taxonomy-term-1 > .footer.view-sub-wrapper, .page-sitemap .page-taxonomy-term-1 > .footer.page-header, .page-sitemap .page-taxonomy-term-1 > .footer#site-map {
   padding-top: 30px; }
 
