@@ -10533,8 +10533,8 @@ input[type=text]::-ms-clear {
     width: 100%;
     float: left;
     margin: 0;
-    /* Desktop design */ }
-    @media (min-width: 960px) {
+    /* Over Desktop design */ }
+    @media (min-width: 1025px) {
       /* line 820, ../scss/pages/_listview.scss */
       .view-map-teaser .view-sub-wrapper .view-content {
         width: 65%; } }
