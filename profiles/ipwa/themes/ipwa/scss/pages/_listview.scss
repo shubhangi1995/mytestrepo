@@ -818,9 +818,16 @@
 
     .view-sub-wrapper {
         .view-content {
-            width: 65%;
-            float: left;
+		  width:100%;
+		  float: left;
             margin: 0;
+		
+		
+		 @include devicebreak(large){
+            width: 65%;
+			
+			}
+            
 
             .views-row {
                 width: 100%;
@@ -834,7 +841,7 @@
                     padding: 30px;
                     border: none;
 
-                    @include devicebreak(x-large) {
+                    @include devicebreak(large) {
                         padding: 45px 150px 45px 50px;
                     }
 
@@ -874,9 +881,13 @@
         }
 
         .view-footer {
+		   width:100%;
+		    float: left;
+		   @include devicebreak(large){
+		
             width: 35%;
-            float: left;
-        }
+           
+        }}
     }
 }
 
