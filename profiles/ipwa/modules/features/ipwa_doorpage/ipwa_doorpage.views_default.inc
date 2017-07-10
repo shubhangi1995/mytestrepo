@@ -960,6 +960,7 @@ function ipwa_doorpage_views_default_views() {
   $handler->display->display_options['fields']['field_flie_text_bereich']['table'] = 'field_data_field_flie_text_bereich';
   $handler->display->display_options['fields']['field_flie_text_bereich']['field'] = 'field_flie_text_bereich';
   $handler->display->display_options['fields']['field_flie_text_bereich']['label'] = '';
+  $handler->display->display_options['fields']['field_flie_text_bereich']['alter']['strip_tags'] = TRUE;
   $handler->display->display_options['fields']['field_flie_text_bereich']['alter']['trim'] = TRUE;
   $handler->display->display_options['fields']['field_flie_text_bereich']['element_label_colon'] = FALSE;
   /* Feld: Feld: Quelle */
