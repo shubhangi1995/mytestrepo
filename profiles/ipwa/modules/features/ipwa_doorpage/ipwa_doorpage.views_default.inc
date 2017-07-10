@@ -928,6 +928,13 @@ function ipwa_doorpage_views_default_views() {
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'fields';
+  /* Fußbereich: Global: Unfiltered text */
+  $handler->display->display_options['footer']['area_text_custom']['id'] = 'area_text_custom';
+  $handler->display->display_options['footer']['area_text_custom']['table'] = 'views';
+  $handler->display->display_options['footer']['area_text_custom']['field'] = 'area_text_custom';
+  $handler->display->display_options['footer']['area_text_custom']['content'] = '<div class ="map_teaser_image">
+<img src="/profiles/ipwa/themes/ipwa/images/Karte_Karte.png" alt="Schaufenster_Digitales_NRW_map">
+</div>';
   /* Feld: Feld: Icon */
   $handler->display->display_options['fields']['field_bild']['id'] = 'field_bild';
   $handler->display->display_options['fields']['field_bild']['table'] = 'field_data_field_bild';
@@ -991,6 +998,9 @@ function ipwa_doorpage_views_default_views() {
     t('Sort by'),
     t('Asc'),
     t('Desc'),
+    t('<div class ="map_teaser_image">
+<img src="/profiles/ipwa/themes/ipwa/images/Karte_Karte.png" alt="Schaufenster_Digitales_NRW_map">
+</div>'),
     t('Alle'),
     t('Block'),
   );
