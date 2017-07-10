@@ -812,15 +812,19 @@
 // view-map-teaser //
 
 .view-map-teaser {
+  
     clear: both;
     margin-bottom: 30px;
     overflow: hidden;
 
     .view-sub-wrapper {
         .view-content {
-            .views-row {
-                @extend .col-md-8;
-
+		    width:60%;
+			float:left;
+			margin:0;
+		
+            .views-row {                
+                width:100%;
                 padding: 0;
                 background: $main-color;
 
@@ -869,9 +873,16 @@
                 }
             }
         }
+		
+		.view-footer{
+		   width:40%;
+		   float:left;
+		}
     }
 }
 
 .page-taxonomy-term-1 > .footer.container {
     padding-top: 30px;
 }
+
+
