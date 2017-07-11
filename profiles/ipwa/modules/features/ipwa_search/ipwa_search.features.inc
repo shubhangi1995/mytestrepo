@@ -46,6 +46,8 @@ function ipwa_search_default_search_api_index() {
         "field_datum" : { "type" : "date" },
         "field_f_rderbekanntmachungen" : { "type" : "list\\u003Cinteger\\u003E", "entity_type" : "node" },
         "field_ort" : { "type" : "string" },
+        "field_plz" : { "type" : "text" },
+        "field_themenzuweisung" : { "type" : "list\\u003Cinteger\\u003E", "entity_type" : "taxonomy_term" },
         "field_ver_ffentlichungsdatum" : { "type" : "date" },
         "nid" : { "type" : "integer" },
         "search_api_aggregation_1" : { "type" : "text", "boost" : "5.0" },
