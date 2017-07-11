@@ -319,6 +319,24 @@ jQuery('.tb-megamenu-submenu.dropdown-menu').attr('style','display:none !importa
 		} */
 	});
 	
+	// Newsletter validations
+	
+	jQuery("#ipwa-newsletter-block-form #edit-submit--2").click(function(){
+		var newsEmail = /^[A-Z0-9._%+-]+@([A-Z0-9-]+\.)+[A-Z]{2,4}$/i, newsValue = jQuery("#edit-newsletter").val();
+		jQuery(this).parent().find(".error").remove();
+		if(newsValue == ""){
+			jQuery(this).parent().append("<div class='error'>Newsletter field should be filled</div>");
+			return false;
+		}
+		else if(!newsEmail.test(newsValue)){
+			jQuery(this).parent().append("<div class='error'>Newsletter field should be a valid email address</div>");
+			return false;
+		}
+		else{
+			return true;
+		}
+	});
+	
 });
 
 
