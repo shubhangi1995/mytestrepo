@@ -1,0 +1,170 @@
+/**
+ * Project: Map Ipwa Copyright: ]init[ AG , Germany 2017
+ * @author Paolo Favero
+ */
+
+.footer_map {
+  .map-popup {
+    background-color: $map-bg-popup;
+    color: #fff;
+    border: 0;
+    position: absolute;
+    top: 40px;
+    left: $map-width-btn-close;
+    z-index: 101;
+    width: 370px;
+  }
+
+  .map-btn-close {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    text-align: center;
+    vertical-align: middle;
+    color: $white;
+  }
+
+  .map-btn-close {
+    font-size: 26px;
+    padding-top: 6px;
+
+    span::after {
+      content: '\00d7';
+    }
+  }
+
+  .map-popup-content {
+    padding: 4px 30px 30px;
+    border: 1px solid $light-gray;
+  }
+
+
+  /* conten of the popup *******************************************************/
+  .arrow-nav {
+    font-size: 30px;
+    // position: absolute;
+    // top: 10px;
+    // right: 15px;
+    text-align: right;
+    width: 100%;
+  }
+
+  .btn-go-backward,
+  .btn-go-forward {
+    background-color: transparent;
+    margin-left: 15px;
+    border: 0;
+
+    &.disabled {
+        color: #ccc;
+    }
+  }
+
+  .field-topic {
+    margin: -5px 0 45px;
+
+    a {
+      color: $map-thematic-color;
+      font-weight: bold;
+      border-radius: 4px;
+      background-color: $light-gray;
+      padding: 6px;
+    }
+  }
+
+  .field-label {
+    font-size: 16px;
+    color: $map-thematic-color;
+
+    span {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      margin-right: 12px;
+      font-family: 'icomoon';
+      color: $map-thematic-color;
+      font-size: 20px;
+      text-align: center;
+    }
+
+    .icon-runtime {
+      font-weight: normal;
+    }
+  }
+
+  .with-margin,
+  .field-items,
+  .btn {
+    margin-left: 32px;
+  }
+
+  .field-items {
+    color: $dark-gray;
+    margin-bottom: 30px;
+
+    a {
+      color: $dark-gray;
+    }
+
+    p {
+      font-size: 1em;
+    }
+
+    a::after {
+      font-family: 'icomoon';
+      color: $map-thematic-color;
+      content: $map-info-icon;
+      margin-left: 10px;
+      text-decoration: none;
+    }
+  }
+
+  .btn {
+    border: 1px solid $map-thematic-color;
+
+    a {
+      font-weight: bold;
+    }
+  }
+
+  .map-popup-content {
+    .btn {
+      width: 454px;
+      margin-left: 0;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+  }
+
+
+
+}
+
+/* only for detail ***********************************************************************/
+.map-detail-container {
+  .map-btn-link {
+    position: absolute;
+    bottom: 30px;
+
+    .btn {
+      background-color: $map-thematic-color;
+      color: $white;
+      margin-left: 0;
+    }
+  }
+}
+
+.map-data {
+  .field-title-detail {
+    padding: 6px 0;
+
+    a {
+      color: $map-thematic-color;
+    }
+  }
+
+  .field-items-detail {
+    padding: 6px 0;
+  }
+}

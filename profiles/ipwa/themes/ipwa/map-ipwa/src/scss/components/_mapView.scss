@@ -1,0 +1,84 @@
+/**
+ * Project: Map Ipwa Copyright: ]init[ AG , Germany 2017
+ * @author Paolo Favero
+ */
+
+.footer_map {
+  width: 100%;
+  //height: 895px;
+  height: 700px;
+  position: relative;
+
+  .map-warning {
+    .modal-footer {
+      text-align: center;
+    }
+
+    .map-warning-content {
+      font-size: 16px;
+    }
+
+    .btn-default {
+      border: 2px solid $map-bd-button;
+      font-size: 16px;
+    }
+  }
+}
+
+.map-detail-container {
+  width: 100%;
+  height: 350px;
+  position: relative;
+
+  // workaround to fix problem detail for mobile devices
+  .normal-touch-action {
+    touch-action: initial !important;
+  }
+}
+
+.footer_map,
+.map-detail-container {
+
+  .ol-control {
+    top: auto;
+    left: auto;
+    bottom: 55px;
+    right: 45px;
+    padding: 0;
+    background-color: transparent;
+    display: block;
+
+    @media only all and (max-width: 1024px) {
+      bottom: 10px;
+      right: 10px;
+    }
+
+    button {
+      display: block;
+      width: 48px;
+      height: 48px;
+      line-height: 1em;
+      padding: 0;
+      border: 1px solid $map-bd-button;
+      background-color: $map-bg-button;
+      color: $map-thematic-color;
+      border-radius: 0;
+      font-size: 2em;
+      margin-top: 2px;
+    }
+
+    button:hover {
+      cursor: pointer;
+    }
+  }
+
+  .attribution {
+    position: absolute;
+    bottom: 2px;
+    left: 5px;
+
+    a {
+      font-size: 14px;
+    }
+  }
+}
