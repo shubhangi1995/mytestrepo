@@ -1,0 +1,257 @@
+@charset "UTF-8";
+/**
+ * Project: Map Rnki Copyright: ]init[ AG , Germany 2017
+ * @author Paolo Favero
+ */
+/* DEFAULT SETTINGS GO HERE FOR THIS APPLICATION map-rnki
+* ========================================================================== */
+/**
+ * Project: Map Ipwa Copyright: ]init[ AG , Germany 2017
+ * @author Paolo Favero
+ */
+/* line 6, ../../src/scss/components/_mapView.scss */
+.footer_map {
+  width: 100%;
+  height: 700px;
+  position: relative;
+}
+/* line 13, ../../src/scss/components/_mapView.scss */
+.footer_map .map-warning .modal-footer {
+  text-align: center;
+}
+/* line 17, ../../src/scss/components/_mapView.scss */
+.footer_map .map-warning .map-warning-content {
+  font-size: 16px;
+}
+/* line 21, ../../src/scss/components/_mapView.scss */
+.footer_map .map-warning .btn-default {
+  border: 2px solid #ebebeb;
+  font-size: 16px;
+}
+
+/* line 28, ../../src/scss/components/_mapView.scss */
+.map-detail-container {
+  width: 100%;
+  height: 350px;
+  position: relative;
+}
+/* line 34, ../../src/scss/components/_mapView.scss */
+.map-detail-container .normal-touch-action {
+  touch-action: initial !important;
+}
+
+/* line 42, ../../src/scss/components/_mapView.scss */
+.footer_map .ol-control,
+.map-detail-container .ol-control {
+  top: auto;
+  left: auto;
+  bottom: 55px;
+  right: 45px;
+  padding: 0;
+  background-color: transparent;
+  display: block;
+}
+@media only all and (max-width: 1024px) {
+  /* line 42, ../../src/scss/components/_mapView.scss */
+  .footer_map .ol-control,
+  .map-detail-container .ol-control {
+    bottom: 10px;
+    right: 10px;
+  }
+}
+/* line 56, ../../src/scss/components/_mapView.scss */
+.footer_map .ol-control button,
+.map-detail-container .ol-control button {
+  display: block;
+  width: 48px;
+  height: 48px;
+  line-height: 1em;
+  padding: 0;
+  border: 1px solid #ebebeb;
+  background-color: #fff;
+  color: #005ea8;
+  border-radius: 0;
+  font-size: 2em;
+  margin-top: 2px;
+}
+/* line 70, ../../src/scss/components/_mapView.scss */
+.footer_map .ol-control button:hover,
+.map-detail-container .ol-control button:hover {
+  cursor: pointer;
+}
+/* line 75, ../../src/scss/components/_mapView.scss */
+.footer_map .attribution,
+.map-detail-container .attribution {
+  position: absolute;
+  bottom: 2px;
+  left: 5px;
+}
+/* line 80, ../../src/scss/components/_mapView.scss */
+.footer_map .attribution a,
+.map-detail-container .attribution a {
+  font-size: 14px;
+}
+
+/**
+ * Project: Map Ipwa Copyright: ]init[ AG , Germany 2017
+ * @author Paolo Favero
+ */
+/* line 6, ../../src/scss/components/_popup.scss */
+.footer_map {
+  /* conten of the popup *******************************************************/
+}
+/* line 7, ../../src/scss/components/_popup.scss */
+.footer_map .map-popup {
+  background-color: #273753;
+  color: #fff;
+  border: 0;
+  position: absolute;
+  top: 40px;
+  left: 50px;
+  z-index: 101;
+  width: 370px;
+}
+/* line 18, ../../src/scss/components/_popup.scss */
+.footer_map .map-btn-close {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  text-align: center;
+  vertical-align: middle;
+  color: #fff;
+}
+/* line 27, ../../src/scss/components/_popup.scss */
+.footer_map .map-btn-close {
+  font-size: 26px;
+  padding-top: 6px;
+}
+/* line 31, ../../src/scss/components/_popup.scss */
+.footer_map .map-btn-close span::after {
+  content: '\00d7';
+}
+/* line 36, ../../src/scss/components/_popup.scss */
+.footer_map .map-popup-content {
+  padding: 4px 30px 30px;
+  border: 1px solid #e4e3e3;
+}
+/* line 43, ../../src/scss/components/_popup.scss */
+.footer_map .arrow-nav {
+  font-size: 30px;
+  text-align: right;
+  width: 100%;
+}
+/* line 52, ../../src/scss/components/_popup.scss */
+.footer_map .btn-go-backward,
+.footer_map .btn-go-forward {
+  background-color: transparent;
+  margin-left: 15px;
+  border: 0;
+}
+/* line 58, ../../src/scss/components/_popup.scss */
+.footer_map .btn-go-backward.disabled,
+.footer_map .btn-go-forward.disabled {
+  color: #ccc;
+}
+/* line 63, ../../src/scss/components/_popup.scss */
+.footer_map .field-topic {
+  margin: -5px 0 45px;
+}
+/* line 66, ../../src/scss/components/_popup.scss */
+.footer_map .field-topic a {
+  color: #005ea8;
+  font-weight: bold;
+  border-radius: 4px;
+  background-color: #e4e3e3;
+  padding: 6px;
+}
+/* line 75, ../../src/scss/components/_popup.scss */
+.footer_map .field-label {
+  font-size: 16px;
+  color: #005ea8;
+}
+/* line 79, ../../src/scss/components/_popup.scss */
+.footer_map .field-label span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 12px;
+  font-family: 'icomoon';
+  color: #005ea8;
+  font-size: 20px;
+  text-align: center;
+}
+/* line 90, ../../src/scss/components/_popup.scss */
+.footer_map .field-label .icon-runtime {
+  font-weight: normal;
+}
+/* line 95, ../../src/scss/components/_popup.scss */
+.footer_map .with-margin,
+.footer_map .field-items,
+.footer_map .btn {
+  margin-left: 32px;
+}
+/* line 101, ../../src/scss/components/_popup.scss */
+.footer_map .field-items {
+  color: #333;
+  margin-bottom: 30px;
+}
+/* line 105, ../../src/scss/components/_popup.scss */
+.footer_map .field-items a {
+  color: #333;
+}
+/* line 109, ../../src/scss/components/_popup.scss */
+.footer_map .field-items p {
+  font-size: 1em;
+}
+/* line 113, ../../src/scss/components/_popup.scss */
+.footer_map .field-items a::after {
+  font-family: 'icomoon';
+  color: #005ea8;
+  content: "";
+  margin-left: 10px;
+  text-decoration: none;
+}
+/* line 122, ../../src/scss/components/_popup.scss */
+.footer_map .btn {
+  border: 1px solid #005ea8;
+}
+/* line 125, ../../src/scss/components/_popup.scss */
+.footer_map .btn a {
+  font-weight: bold;
+}
+/* line 131, ../../src/scss/components/_popup.scss */
+.footer_map .map-popup-content .btn {
+  width: 454px;
+  margin-left: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/* only for detail ***********************************************************************/
+/* line 146, ../../src/scss/components/_popup.scss */
+.map-detail-container .map-btn-link {
+  position: absolute;
+  bottom: 30px;
+}
+/* line 150, ../../src/scss/components/_popup.scss */
+.map-detail-container .map-btn-link .btn {
+  background-color: #005ea8;
+  color: #fff;
+  margin-left: 0;
+}
+
+/* line 159, ../../src/scss/components/_popup.scss */
+.map-data .field-title-detail {
+  padding: 6px 0;
+}
+/* line 162, ../../src/scss/components/_popup.scss */
+.map-data .field-title-detail a {
+  color: #005ea8;
+}
+/* line 167, ../../src/scss/components/_popup.scss */
+.map-data .field-items-detail {
+  padding: 6px 0;
+}
+
+/*# sourceMappingURL=main.css.map */

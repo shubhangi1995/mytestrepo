@@ -78,5 +78,25 @@
       </div>
     <?php endif; ?>
   </div>
-  <div id="footer_map">footer</div>
+  <div id="footer_map" class="footer_map">
+	<div class="map-popup" role="dialog">
+		<div class="map-btn-close"><span></span></div>
+		<div class="map-popup-content"></div>
+	</div>
+  </div>
+  <script id="template-popup" type="text/x-handlebars-template">
+	<h2>{{{name}}}</h2>
+    <div class="arrow-nav">
+		<button class="btn-go-backward">&#10094;</button>
+		<button class="btn-go-forward">&#10095;</button>
+	</div>
+    <div class="field-topic">xxxxxx</div>
+	<dl>
+    {{#if supportProgram}}
+      <dt class="" ><span class=""></span>Förderprogramm</dt>
+      <dd class="" >{{{supportProgram}}}</dd>
+    {{/if}}
+
+	</dl>
+</script>
 </div>
