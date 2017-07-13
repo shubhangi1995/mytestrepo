@@ -11,7 +11,6 @@ IPWA_MAP.Map = {};
 
 // document ready
 jQuery(function () {
-  console.log('start!');
   IPWA_MAP.Map.mapView.init();
 
   // the filter will be called from html in views-view--json-map.tpl.php
@@ -70,7 +69,7 @@ IPWA_MAP.filter = {
     // for (var i = 0; i < _f2.length; i++) {
     //   _filter.push(_f2[i]);
     // }
-    console.log('_filter:', _filter);
+    // console.log('_filter:', _filter);
 
     // build the string for the ajax request
     var _str = '';
@@ -83,21 +82,21 @@ IPWA_MAP.filter = {
           if (_options.val() !== 'All') {
             // var _str2 = '';
             var _param = _options[0].name;
-            _options.each(function(index, opt) {
+            // eslint-disable-next-line
+            _options.each(function (index, opt) {
               _str += _param + '=' + jQuery(opt).val() + '&';
             });
           }
         } else if (_text) {
           _text = _text.trim();
           if (_text !== '' && _text !== 'All') {
-            _text = _text.replace(/ /g, '+')
+            _text = _text.replace(/ /g, '+');
             _str += _item.attr('name') + '=' + _text+ '&';
           }
         }
       }
     }
     _str = _str.substring(0, _str.length - 1);
-
     console.log('_str:     ', _str);
     return _str;
   }

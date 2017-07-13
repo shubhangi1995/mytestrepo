@@ -60,54 +60,50 @@ IPWA_MAP.Map.popup = {
 
   displayPopup: function (features, pixel) {
     if (!_.isEmpty(features)) {
-      // console.log(features[0], features[0].get('nid'));
-      var _id = features[0].get('nid');
-
+      var _id = features[0].get('Node ID');
+      console.log('in displayPopup, features', features, _id);
       var _this = this;
+      jQuery.ajax({
+        url: 'project-single-view-json/' + _id,
+        type: 'GET',
+        dataType: 'json',
+        success: function (data) {
+          console.log('data', data);
 
-      // console.log('data', data);
-      // console.log('data.features', data.features);
-      _this.setDataInPopup({}, 0, features);
-      _this.closePopup();
+          // console.log('data.features', data.features);
+          // if (data && data.features && data.features.length > 0) {
+          //   _this.setDataInPopup(data, 0, features);
+          //   _this.closePopup();
 
-      var _coordinates = features[0].getGeometry().getFirstCoordinate();
+          //   var _coordinates = features[0].getGeometry().getFirstCoordinate();
 
-      _this.$popup.show();
-      var _popupLeft = jQuery('.page-header').offset().left + 50;
-      _this.$popup.css('left', _popupLeft);
-      features[0].set('type', 'selected');
-      _this.selFeature = features[0];
+          //   _this.$popup.show();
+          //   var _popupLeft = jQuery('.page-header').offset().left + 50;
+          //   _this.$popup.css('left', _popupLeft);
+          //   features[0].set('type', 'selected');
+          //   _this.selFeature = features[0];
 
-      _this.centerSelPoi(_coordinates, _popupLeft);
-      // jQuery.ajax({
-      //   url: 'project-single-view-json/' + _id,
-      //   // url: 'profiles/rnki/themes/rnki/map-rnki/dist/xxx.json',
-      //   type: 'GET',
-      //   // data: 'params='+JSON.stringify(params),
-      //   dataType: 'json',
-      //   success: function (data) {
-      //     // console.log('data', data);
-      //     // console.log('data.features', data.features);
-      //     if (data && data.features && data.features.length > 0) {
-      //       _this.setDataInPopup(data, 0, features);
-      //       _this.closePopup();
+          //   _this.centerSelPoi(_coordinates, _popupLeft);
+          // }
+        },
+        error: function (e) {
+          // called when there is an error
+          console.log('Error: ', e);
 
-      //       var _coordinates = features[0].getGeometry().getFirstCoordinate();
+          _this.setDataInPopup({}, 0, features);
+          _this.closePopup();
 
-      //       _this.$popup.show();
-      //       var _popupLeft = jQuery('.page-header').offset().left + 50;
-      //       _this.$popup.css('left', _popupLeft);
-      //       features[0].set('type', 'selected');
-      //       _this.selFeature = features[0];
+          var _coordinates = features[0].getGeometry().getFirstCoordinate();
 
-      //       _this.centerSelPoi(_coordinates, _popupLeft);
-      //     }
-      //   },
-      //   error: function (e) {
-      //     // called when there is an error
-      //     console.error(e);
-      //   }
-      // });
+          _this.$popup.show();
+          var _popupLeft = jQuery('.page-header').offset().left + 50;
+          _this.$popup.css('left', _popupLeft);
+          features[0].set('type', 'selected');
+          _this.selFeature = features[0];
+
+          _this.centerSelPoi(_coordinates, _popupLeft);
+        }
+      });
     } else {
       this.closePopup();
     }
@@ -115,10 +111,10 @@ IPWA_MAP.Map.popup = {
 
   getDataForPaging: function (index, olFeatures) {
     var _id = olFeatures[index].get('nid');
+    console.log('getDataForPaging ====>>>', index, _id);
     var _this = this;
     jQuery.ajax({
       url: 'project-single-view-json/' + _id,
-      // url: 'profiles/rnki/themes/rnki/map-rnki/dist/xxx.json',
       type: 'GET',
       dataType: 'json',
       success: function (data) {
@@ -136,8 +132,9 @@ IPWA_MAP.Map.popup = {
     // console.log(_properties['Förderprogramm'], _properties['Förderschwerpunkt'], _properties['Förderbereich']);
 
     var _olPopupHtml = this.olPopupTemplate({
-      name: 'value 1', // _properties.Titel,
-      supportProgram: 'value 2!!!'
+      contentType: 'contentType',
+      desc: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam ',
+      date: 'Dorstfeld'
     });
     this.$popupContent.html(_olPopupHtml);
     this.addPagingToPopup(olFeatures, index);
@@ -153,15 +150,19 @@ IPWA_MAP.Map.popup = {
     } else {
       if (index === 0) {
         this.btnGoBackward.addClass('disabled');
+        this.btnGoBackward.on('click', function (evt) { evt.preventDefault(); });
       } else {
-        this.btnGoBackward.on('click', function () {
+        this.btnGoBackward.on('click', function (evt) {
+          evt.preventDefault();
           _this.getDataForPaging(index - 1, olFeatures);
         });
       }
       if (index === olFeatures.length - 1) {
         this.btnGoForward.addClass('disabled');
+        this.btnGoBackward.on('click', function (evt) { evt.preventDefault(); });
       } else {
-        this.btnGoForward.on('click', function () {
+        this.btnGoForward.on('click', function (evt) {
+          evt.preventDefault();
           _this.getDataForPaging(index + 1, olFeatures);
         });
       }
@@ -182,14 +183,14 @@ IPWA_MAP.Map.popup = {
   },
 
   zoomOrShowPopup: function (features, pixel) {
-    var hasMany = null;
+    var _hasMany = null;
 
     // Check if Marker is clustered
-    hasMany = features.length > 1;
+    _hasMany = features.length > 1;
 
     this.closePopup();
 
-    if (hasMany) {
+    if (_hasMany) {
       if (this.parentMap.getView().getZoom() === this.maxZoom) {
         // show the detail with more elements
         this.currentClusterFs = features;

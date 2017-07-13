@@ -16,7 +16,7 @@
 module.exports = function (grunt) {
   grunt.registerTask('syncAssets', [
     /* validation*/
-    // 'eslint:engagementMap' done in editor
+    'eslint',
     'scsslint',
 
     'compass:dev',

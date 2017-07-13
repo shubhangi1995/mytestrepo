@@ -12,9 +12,6 @@ IPWA_MAP.Map.mapView = {
   map: null,
   saveMapBtn: null,
   isMobile: false,
-  isMapView: false,
-  isDetailView: false,
-  isSpecialDetailView: false,
   conf: {
     projection: 'EPSG:25832',
     minZoom: 2,
@@ -27,8 +24,8 @@ IPWA_MAP.Map.mapView = {
       maxLat: 55
     },
     initialExtent: {
-      center: { lon: 10.4, lat: 51 },
-      zoom: 2
+      center: { lon: 7.45, lat: 51.43 },
+      zoom: 4
     },
     detailInitialExtent: {
       zoom: 8
@@ -49,49 +46,37 @@ IPWA_MAP.Map.mapView = {
     // determines max zoom level
     projection.setExtent(this.conf.extent);
 
-    // if (jQuery('#map-detail-container').length === 1) {
-    //   this.isDetailView = true;
-    //   if (jQuery('.special-map-detail').length === 1) {
-    //     this.isSpecialDetailView = true;
-    //   }
-    // }
-    if (jQuery('#footer_map').length === 1) {
-      this.isMapView = true;
-    }
+    this.map = new ol.Map({
+      target: 'footer_map',
+      controls: [],
+      interactions: [],
+      view: new ol.View({
+        projection: projection,
+        center: ol.proj.fromLonLat([this.conf.initialExtent.center.lon, this.conf.initialExtent.center.lat],
+          this.conf.projection),
+        zoom: this.conf.initialExtent.zoom,
+        minZoom: this.conf.minZoom,
+        maxZoom: this.conf.maxZoom,
+        extent: ol.extent.applyTransform(restrictedExtent,
+          ol.proj.getTransform('EPSG:4326', this.conf.projection))
+      })
+    });
 
-    if (this.isMapView || this.isDetailView) {
-      this.map = new ol.Map({
-        target: 'footer_map',
-        controls: [],
-        interactions: [],
-        view: new ol.View({
-          projection: projection,
-          center: ol.proj.fromLonLat([this.conf.initialExtent.center.lon, this.conf.initialExtent.center.lat],
-            this.conf.projection),
-          zoom: this.conf.initialExtent.zoom,
-          minZoom: this.conf.minZoom,
-          maxZoom: this.conf.maxZoom,
-          extent: ol.extent.applyTransform(restrictedExtent,
-            ol.proj.getTransform('EPSG:4326', this.conf.projection))
-        })
-      });
+    this.addAttribution();
+    this.addInteractions();
+    this.addControls();
 
-      this.addAttribution();
-      this.addInteractions();
-      this.addControls();
+    IPWA_MAP.Map.countryLayer.init(this.map);
+    IPWA_MAP.Map.webatlasLayer.init(this.map, this.conf.projection);
 
-      IPWA_MAP.Map.countryLayer.init(this.map);
-      IPWA_MAP.Map.webatlasLayer.init(this.map, this.conf.projection);
+    IPWA_MAP.Map.poiLayer.init(this.map, this.conf.projection, this.conf.detailInitialExtent.zoom);
+    IPWA_MAP.Map.poiStyle.init();
+    IPWA_MAP.Map.poiLayer.setStyle(function (cluster, resolution) {
+      return IPWA_MAP.Map.poiStyle.styleFunction(cluster, resolution);
+    });
 
-      IPWA_MAP.Map.poiLayer.init(this.isDetailView, this.map, this.conf.projection, this.conf.detailInitialExtent.zoom);
-      IPWA_MAP.Map.poiStyle.init(this.isDetailView);
-      IPWA_MAP.Map.poiLayer.setStyle(function (cluster, resolution) {
-        return IPWA_MAP.Map.poiStyle.styleFunction(cluster, resolution);
-      });
-
-      var markerLabel= '';
-      //IPWA_MAP.Map.popup.init(this.map, markerLabel, this.conf.maxZoom);
-    }
+    var markerLabel = '';
+    IPWA_MAP.Map.popup.init(this.map, markerLabel, this.conf.maxZoom);
   },
 
   /**
@@ -103,24 +88,14 @@ IPWA_MAP.Map.mapView = {
   * </ul>
   */
   addInteractions: function () {
-    if (this.isMapView) {
-      this.map.addInteraction(new ol.interaction.DragRotate());
-      this.map.addInteraction(new ol.interaction.DoubleClickZoom());
-      this.map.addInteraction(new ol.interaction.DragPan());
-      this.map.addInteraction(new ol.interaction.KeyboardPan());
-      this.map.addInteraction(new ol.interaction.PinchZoom());
-      this.map.addInteraction(new ol.interaction.KeyboardZoom());
-      this.map.addInteraction(new ol.interaction.MouseWheelZoom());
-      this.map.addInteraction(new ol.interaction.DragZoom());
-    } else {
-      if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-        jQuery('#map-detail-container .ol-viewport').addClass('normal-touch-action');
-      } else {
-        this.map.addInteraction(new ol.interaction.DragPan());
-        this.map.addInteraction(new ol.interaction.KeyboardPan());
-        this.map.addInteraction(new ol.interaction.KeyboardZoom());
-      }
-    }
+    this.map.addInteraction(new ol.interaction.DragRotate());
+    this.map.addInteraction(new ol.interaction.DoubleClickZoom());
+    this.map.addInteraction(new ol.interaction.DragPan());
+    this.map.addInteraction(new ol.interaction.KeyboardPan());
+    this.map.addInteraction(new ol.interaction.PinchZoom());
+    this.map.addInteraction(new ol.interaction.KeyboardZoom());
+    this.map.addInteraction(new ol.interaction.MouseWheelZoom());
+    this.map.addInteraction(new ol.interaction.DragZoom());
   },
 
   /**
@@ -132,7 +107,6 @@ IPWA_MAP.Map.mapView = {
   * </ul>
   */
   addControls: function () {
-
     this.map.addControl(new ol.control.Zoom({
       zoomInTipLabel: 'Hineinzoomen',
       zoomOutTipLabel: 'Herauszoomen'
@@ -161,3 +135,4 @@ IPWA_MAP.Map.mapView = {
     return false;
   }
 };
+

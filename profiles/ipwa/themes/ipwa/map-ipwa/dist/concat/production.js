@@ -11,7 +11,6 @@ IPWA_MAP.Map = {};
 
 // document ready
 jQuery(function () {
-  console.log('start!');
   IPWA_MAP.Map.mapView.init();
 
   // the filter will be called from html in views-view--json-map.tpl.php
@@ -70,7 +69,7 @@ IPWA_MAP.filter = {
     // for (var i = 0; i < _f2.length; i++) {
     //   _filter.push(_f2[i]);
     // }
-    console.log('_filter:', _filter);
+    // console.log('_filter:', _filter);
 
     // build the string for the ajax request
     var _str = '';
@@ -83,21 +82,21 @@ IPWA_MAP.filter = {
           if (_options.val() !== 'All') {
             // var _str2 = '';
             var _param = _options[0].name;
-            _options.each(function(index, opt) {
+            // eslint-disable-next-line
+            _options.each(function (index, opt) {
               _str += _param + '=' + jQuery(opt).val() + '&';
             });
           }
         } else if (_text) {
           _text = _text.trim();
           if (_text !== '' && _text !== 'All') {
-            _text = _text.replace(/ /g, '+')
+            _text = _text.replace(/ /g, '+');
             _str += _item.attr('name') + '=' + _text+ '&';
           }
         }
       }
     }
     _str = _str.substring(0, _str.length - 1);
-
     console.log('_str:     ', _str);
     return _str;
   }
@@ -164,9 +163,6 @@ IPWA_MAP.Map.mapView = {
   map: null,
   saveMapBtn: null,
   isMobile: false,
-  isMapView: false,
-  isDetailView: false,
-  isSpecialDetailView: false,
   conf: {
     projection: 'EPSG:25832',
     minZoom: 2,
@@ -179,8 +175,8 @@ IPWA_MAP.Map.mapView = {
       maxLat: 55
     },
     initialExtent: {
-      center: { lon: 10.4, lat: 51 },
-      zoom: 2
+      center: { lon: 7.45, lat: 51.43 },
+      zoom: 4
     },
     detailInitialExtent: {
       zoom: 8
@@ -201,49 +197,37 @@ IPWA_MAP.Map.mapView = {
     // determines max zoom level
     projection.setExtent(this.conf.extent);
 
-    // if (jQuery('#map-detail-container').length === 1) {
-    //   this.isDetailView = true;
-    //   if (jQuery('.special-map-detail').length === 1) {
-    //     this.isSpecialDetailView = true;
-    //   }
-    // }
-    if (jQuery('#footer_map').length === 1) {
-      this.isMapView = true;
-    }
+    this.map = new ol.Map({
+      target: 'footer_map',
+      controls: [],
+      interactions: [],
+      view: new ol.View({
+        projection: projection,
+        center: ol.proj.fromLonLat([this.conf.initialExtent.center.lon, this.conf.initialExtent.center.lat],
+          this.conf.projection),
+        zoom: this.conf.initialExtent.zoom,
+        minZoom: this.conf.minZoom,
+        maxZoom: this.conf.maxZoom,
+        extent: ol.extent.applyTransform(restrictedExtent,
+          ol.proj.getTransform('EPSG:4326', this.conf.projection))
+      })
+    });
 
-    if (this.isMapView || this.isDetailView) {
-      this.map = new ol.Map({
-        target: 'footer_map',
-        controls: [],
-        interactions: [],
-        view: new ol.View({
-          projection: projection,
-          center: ol.proj.fromLonLat([this.conf.initialExtent.center.lon, this.conf.initialExtent.center.lat],
-            this.conf.projection),
-          zoom: this.conf.initialExtent.zoom,
-          minZoom: this.conf.minZoom,
-          maxZoom: this.conf.maxZoom,
-          extent: ol.extent.applyTransform(restrictedExtent,
-            ol.proj.getTransform('EPSG:4326', this.conf.projection))
-        })
-      });
+    this.addAttribution();
+    this.addInteractions();
+    this.addControls();
 
-      this.addAttribution();
-      this.addInteractions();
-      this.addControls();
+    IPWA_MAP.Map.countryLayer.init(this.map);
+    IPWA_MAP.Map.webatlasLayer.init(this.map, this.conf.projection);
 
-      IPWA_MAP.Map.countryLayer.init(this.map);
-      IPWA_MAP.Map.webatlasLayer.init(this.map, this.conf.projection);
+    IPWA_MAP.Map.poiLayer.init(this.map, this.conf.projection, this.conf.detailInitialExtent.zoom);
+    IPWA_MAP.Map.poiStyle.init();
+    IPWA_MAP.Map.poiLayer.setStyle(function (cluster, resolution) {
+      return IPWA_MAP.Map.poiStyle.styleFunction(cluster, resolution);
+    });
 
-      IPWA_MAP.Map.poiLayer.init(this.isDetailView, this.map, this.conf.projection, this.conf.detailInitialExtent.zoom);
-      IPWA_MAP.Map.poiStyle.init(this.isDetailView);
-      IPWA_MAP.Map.poiLayer.setStyle(function (cluster, resolution) {
-        return IPWA_MAP.Map.poiStyle.styleFunction(cluster, resolution);
-      });
-
-      var markerLabel= '';
-      //IPWA_MAP.Map.popup.init(this.map, markerLabel, this.conf.maxZoom);
-    }
+    var markerLabel = '';
+    IPWA_MAP.Map.popup.init(this.map, markerLabel, this.conf.maxZoom);
   },
 
   /**
@@ -255,24 +239,14 @@ IPWA_MAP.Map.mapView = {
   * </ul>
   */
   addInteractions: function () {
-    if (this.isMapView) {
-      this.map.addInteraction(new ol.interaction.DragRotate());
-      this.map.addInteraction(new ol.interaction.DoubleClickZoom());
-      this.map.addInteraction(new ol.interaction.DragPan());
-      this.map.addInteraction(new ol.interaction.KeyboardPan());
-      this.map.addInteraction(new ol.interaction.PinchZoom());
-      this.map.addInteraction(new ol.interaction.KeyboardZoom());
-      this.map.addInteraction(new ol.interaction.MouseWheelZoom());
-      this.map.addInteraction(new ol.interaction.DragZoom());
-    } else {
-      if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-        jQuery('#map-detail-container .ol-viewport').addClass('normal-touch-action');
-      } else {
-        this.map.addInteraction(new ol.interaction.DragPan());
-        this.map.addInteraction(new ol.interaction.KeyboardPan());
-        this.map.addInteraction(new ol.interaction.KeyboardZoom());
-      }
-    }
+    this.map.addInteraction(new ol.interaction.DragRotate());
+    this.map.addInteraction(new ol.interaction.DoubleClickZoom());
+    this.map.addInteraction(new ol.interaction.DragPan());
+    this.map.addInteraction(new ol.interaction.KeyboardPan());
+    this.map.addInteraction(new ol.interaction.PinchZoom());
+    this.map.addInteraction(new ol.interaction.KeyboardZoom());
+    this.map.addInteraction(new ol.interaction.MouseWheelZoom());
+    this.map.addInteraction(new ol.interaction.DragZoom());
   },
 
   /**
@@ -284,7 +258,6 @@ IPWA_MAP.Map.mapView = {
   * </ul>
   */
   addControls: function () {
-
     this.map.addControl(new ol.control.Zoom({
       zoomInTipLabel: 'Hineinzoomen',
       zoomOutTipLabel: 'Herauszoomen'
@@ -314,6 +287,7 @@ IPWA_MAP.Map.mapView = {
   }
 };
 
+
 /**
 * Initialization of the layer for POIs
 * Project: Map Ipwa Copyright: ]init[ AG , Germany 2017
@@ -323,10 +297,7 @@ IPWA_MAP.Map.mapView = {
 'use strict';
 
 IPWA_MAP.Map.poiLayer = {
-
-  WARNING_COUNT: 1997,
-
-  init: function (isDetailMap, map, projection, zoom) {
+  init: function (map, projection, zoom) {
     this.parentMap = map;
     this.projection = projection;
 
@@ -349,33 +320,6 @@ IPWA_MAP.Map.poiLayer = {
     this.mapWarning = jQuery('#map-warning');
     this.mapWarningContent = this.mapWarning.find('.map-warning-content');
     this.totalResult = jQuery('#map-total-result');
-
-    if (isDetailMap) {
-      this.showPoiDetail(zoom);
-    }
-  },
-
-  showPoiDetail: function (zoom) {
-    var _title = jQuery('.field-title-detail').html();
-    var _latitude = Number(jQuery('.field-name-field-latitude').text());
-    var _longitude = Number(jQuery('.field-name-field-longitude').text());
-    var _street = jQuery('.field-name-field-street').text();
-    var _streetNumber = jQuery('.field-name-field-streetnumber').text();
-    var _city = jQuery('.field-name-field-project-localitiy').text(); // TODO: spelling error
-    var _zip = jQuery('.field-name-field-project-zip').text();
-
-    var _coord = ol.proj.transform([_longitude, _latitude], 'EPSG:4326', this.projection);
-    var _g = new ol.geom.Point(_coord);
-    var _f = new ol.Feature({
-      popupTitle: _title,
-      street: _street,
-      streetNumber: _streetNumber,
-      city: _city,
-      zip: _zip,
-      geometry: _g
-    });
-    this.geoJsonSource.addFeature(_f);
-    this.parentMap.getView().setZoom(zoom);
   },
 
   updateData: function (str, btn) {
@@ -383,16 +327,15 @@ IPWA_MAP.Map.poiLayer = {
     console.log('---> send ajax request for map data:', (str?'?'+str:'no filter'));
     _this.geoJsonSource.clear();
     var _url = '../sites/default/files/map-static.json';
-    // var _url = 'profiles/ipwa/themes/ipwa/map-ipwa/dist/data.json';
-    /* if (str) {
+    if (str) {
       _url = 'map-filter?' + str;
-    }*/
+    }
     jQuery.ajax({
       url: _url,
       type: 'GET',
-      // data: 'params='+JSON.stringify(params),
       dataType: 'json',
       success: function (data) {
+        console.log(data);
         if (data) {
           // btn.button('reset');
           _this.geoJsonSource.addFeatures((new ol.format.GeoJSON()).readFeatures(
@@ -415,7 +358,7 @@ IPWA_MAP.Map.poiLayer = {
       error: function (e) {
         // called when there is an error
         // btn.button('reset');
-        // console.log(e.message);
+        console.error(e);
       }
     });
   },
@@ -472,50 +415,49 @@ IPWA_MAP.Map.poiStyle = {
   styleCacheCluster: {},
   styleCacheFeature: {},
   topicImgMapping: null,
-  isDetailMap: false,
-  CLUSTER_COLOR: 'rgba(0, 69, 120, 1)',  // #004578 blue for circle
+  CLUSTER_COLOR: '#273753',  // blue for circle
   CLUSTER_EXT_COLOR: 'rgba(0, 69, 120, 0.5)',
+  CLUSTER_SEL_COLOR: '#e74712',  // orange for circle
+  CLUSTER_EXT_SEL_COLOR: 'rgba(231, 71, 18, 0.5)',
   CLUSTER_BORDER_WIDTH: 14,
   URL_ICON: '/profiles/ipwa/themes/ipwa/map-ipwa/dist/img/',
-  URL_DETAIL_ICON: '/profiles/ipwa/themes/ipwa/map-ipwa/dist/img/',
   imgSrc: '',
 
-  init: function (isDetailMap) {},
+  init: function () {},
 
   styleFunction: function (cluster, resolution) {
-    var size = cluster.get('features').length;
-    var style = null;
-
-    if (size > 1) {
-      style = this.styleCacheCluster[size];
-      if (!style) {
-        style = this.getClusterStyle(size);
-        this.styleCacheCluster[size] = style;
+    var _size = cluster.get('features').length;
+    var _style = null;
+    var _f = cluster.get('features')[0];
+    if (_size > 1) {
+      _style = this.styleCacheCluster[_size + '-' +_f.get('type')];
+      if (!_style) {
+        _style = this.getClusterStyle(_size, _f.get('type'));
+        this.styleCacheCluster[_size + '-' +_f.get('type')] = _style;
       }
     } else {
       var _type = 'notSelected';
-      var _f = cluster.get('features')[0];
       if (_f.get('type') === 'selected') {
         _type = 'selected';
-        style = this.styleCacheFeature[_type];
-        if (!style) {
-          style = this.getSelSingleStyle(_type);
-          this.styleCacheFeature[_type] = style;
+        _style = this.styleCacheFeature[_type];
+        if (!_style) {
+          _style = this.getSelSingleStyle(_type);
+          this.styleCacheFeature[_type] = _style;
         }
       } else {
-        style = this.styleCacheFeature[_type];
-        if (!style) {
-          style = this.getSingleStyle(_type);
-          this.styleCacheFeature[_type] = style;
+        _style = this.styleCacheFeature[_type];
+        if (!_style) {
+          _style = this.getSingleStyle(_type);
+          this.styleCacheFeature[_type] = _style;
         }
       }
     }
-    return style;
+    return _style;
   },
 
   getSingleStyle: function () {
     var _image = null;
-    var _icon = this.URL_ICON+'poi.png';
+    var _icon = this.URL_ICON+'pin.png';
     _image = new ol.style.Icon({
       anchor: [0.5, 1],
       opacity: 1,
@@ -528,7 +470,7 @@ IPWA_MAP.Map.poiStyle = {
   },
   getSelSingleStyle: function () {
     var _image = null;
-    var _icon = this.isDetailMap?this.URL_ICON+'poi.png':this.URL_ICON+'selPoi.png';
+    var _icon = this.URL_ICON+'sel-pin.png';
     _image = new ol.style.Icon({
       anchor: [0.5, 1],
       opacity: 1,
@@ -539,7 +481,7 @@ IPWA_MAP.Map.poiStyle = {
     })];
     return _style;
   },
-  getClusterStyle: function (size) {
+  getClusterStyle: function (size, type) {
     var style = [];
     var fontDim = 14 + (Math.sqrt(size) * 0.65);
     var radius = 12 + (Math.sqrt(size) * 1.3);
@@ -547,15 +489,15 @@ IPWA_MAP.Map.poiStyle = {
       image: new ol.style.Circle({
         radius: radius,
         stroke: new ol.style.Stroke({
-          color: this.CLUSTER_EXT_COLOR,
+          color: type!=='selected'?this.CLUSTER_EXT_COLOR:this.CLUSTER_EXT_SEL_COLOR,
           width: this.CLUSTER_BORDER_WIDTH
         }),
         fill: new ol.style.Fill({
-          color: this.CLUSTER_COLOR
+          color: type!=='selected'?this.CLUSTER_COLOR:this.CLUSTER_SEL_COLOR
         })
       }),
       text: new ol.style.Text({
-        font: 'normal ' + fontDim + 'px AleoBold, Arial, helvetica, sans-serif',
+        font: 'normal ' + fontDim + 'px BentonSans-Regular, Arial, helvetica, sans-serif',
         text: String(size),
         offsetY: 0,
         fill: new ol.style.Fill({
@@ -629,54 +571,50 @@ IPWA_MAP.Map.popup = {
 
   displayPopup: function (features, pixel) {
     if (!_.isEmpty(features)) {
-      // console.log(features[0], features[0].get('nid'));
-      var _id = features[0].get('nid');
-
+      var _id = features[0].get('Node ID');
+      console.log('in displayPopup, features', features, _id);
       var _this = this;
+      jQuery.ajax({
+        url: 'project-single-view-json/' + _id,
+        type: 'GET',
+        dataType: 'json',
+        success: function (data) {
+          console.log('data', data);
 
-      // console.log('data', data);
-      // console.log('data.features', data.features);
-      _this.setDataInPopup({}, 0, features);
-      _this.closePopup();
+          // console.log('data.features', data.features);
+          // if (data && data.features && data.features.length > 0) {
+          //   _this.setDataInPopup(data, 0, features);
+          //   _this.closePopup();
 
-      var _coordinates = features[0].getGeometry().getFirstCoordinate();
+          //   var _coordinates = features[0].getGeometry().getFirstCoordinate();
 
-      _this.$popup.show();
-      var _popupLeft = jQuery('.page-header').offset().left + 50;
-      _this.$popup.css('left', _popupLeft);
-      features[0].set('type', 'selected');
-      _this.selFeature = features[0];
+          //   _this.$popup.show();
+          //   var _popupLeft = jQuery('.page-header').offset().left + 50;
+          //   _this.$popup.css('left', _popupLeft);
+          //   features[0].set('type', 'selected');
+          //   _this.selFeature = features[0];
 
-      _this.centerSelPoi(_coordinates, _popupLeft);
-      // jQuery.ajax({
-      //   url: 'project-single-view-json/' + _id,
-      //   // url: 'profiles/rnki/themes/rnki/map-rnki/dist/xxx.json',
-      //   type: 'GET',
-      //   // data: 'params='+JSON.stringify(params),
-      //   dataType: 'json',
-      //   success: function (data) {
-      //     // console.log('data', data);
-      //     // console.log('data.features', data.features);
-      //     if (data && data.features && data.features.length > 0) {
-      //       _this.setDataInPopup(data, 0, features);
-      //       _this.closePopup();
+          //   _this.centerSelPoi(_coordinates, _popupLeft);
+          // }
+        },
+        error: function (e) {
+          // called when there is an error
+          console.log('Error: ', e);
 
-      //       var _coordinates = features[0].getGeometry().getFirstCoordinate();
+          _this.setDataInPopup({}, 0, features);
+          _this.closePopup();
 
-      //       _this.$popup.show();
-      //       var _popupLeft = jQuery('.page-header').offset().left + 50;
-      //       _this.$popup.css('left', _popupLeft);
-      //       features[0].set('type', 'selected');
-      //       _this.selFeature = features[0];
+          var _coordinates = features[0].getGeometry().getFirstCoordinate();
 
-      //       _this.centerSelPoi(_coordinates, _popupLeft);
-      //     }
-      //   },
-      //   error: function (e) {
-      //     // called when there is an error
-      //     console.error(e);
-      //   }
-      // });
+          _this.$popup.show();
+          var _popupLeft = jQuery('.page-header').offset().left + 50;
+          _this.$popup.css('left', _popupLeft);
+          features[0].set('type', 'selected');
+          _this.selFeature = features[0];
+
+          _this.centerSelPoi(_coordinates, _popupLeft);
+        }
+      });
     } else {
       this.closePopup();
     }
@@ -684,10 +622,10 @@ IPWA_MAP.Map.popup = {
 
   getDataForPaging: function (index, olFeatures) {
     var _id = olFeatures[index].get('nid');
+    console.log('getDataForPaging ====>>>', index, _id);
     var _this = this;
     jQuery.ajax({
       url: 'project-single-view-json/' + _id,
-      // url: 'profiles/rnki/themes/rnki/map-rnki/dist/xxx.json',
       type: 'GET',
       dataType: 'json',
       success: function (data) {
@@ -705,8 +643,9 @@ IPWA_MAP.Map.popup = {
     // console.log(_properties['Förderprogramm'], _properties['Förderschwerpunkt'], _properties['Förderbereich']);
 
     var _olPopupHtml = this.olPopupTemplate({
-      name: 'value 1', // _properties.Titel,
-      supportProgram: 'value 2!!!'
+      contentType: 'contentType',
+      desc: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam ',
+      date: 'Dorstfeld'
     });
     this.$popupContent.html(_olPopupHtml);
     this.addPagingToPopup(olFeatures, index);
@@ -722,15 +661,19 @@ IPWA_MAP.Map.popup = {
     } else {
       if (index === 0) {
         this.btnGoBackward.addClass('disabled');
+        this.btnGoBackward.on('click', function (evt) { evt.preventDefault(); });
       } else {
-        this.btnGoBackward.on('click', function () {
+        this.btnGoBackward.on('click', function (evt) {
+          evt.preventDefault();
           _this.getDataForPaging(index - 1, olFeatures);
         });
       }
       if (index === olFeatures.length - 1) {
         this.btnGoForward.addClass('disabled');
+        this.btnGoBackward.on('click', function (evt) { evt.preventDefault(); });
       } else {
-        this.btnGoForward.on('click', function () {
+        this.btnGoForward.on('click', function (evt) {
+          evt.preventDefault();
           _this.getDataForPaging(index + 1, olFeatures);
         });
       }
@@ -751,14 +694,14 @@ IPWA_MAP.Map.popup = {
   },
 
   zoomOrShowPopup: function (features, pixel) {
-    var hasMany = null;
+    var _hasMany = null;
 
     // Check if Marker is clustered
-    hasMany = features.length > 1;
+    _hasMany = features.length > 1;
 
     this.closePopup();
 
-    if (hasMany) {
+    if (_hasMany) {
       if (this.parentMap.getView().getZoom() === this.maxZoom) {
         // show the detail with more elements
         this.currentClusterFs = features;
