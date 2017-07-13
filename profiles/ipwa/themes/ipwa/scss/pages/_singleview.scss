@@ -35,6 +35,10 @@
             color: $main-color;
             display: inline-block;
             width: 80%;
+			
+			&:hover{
+			  border-bottom:1px solid $active-menu;
+			}
         }
 
         img {
