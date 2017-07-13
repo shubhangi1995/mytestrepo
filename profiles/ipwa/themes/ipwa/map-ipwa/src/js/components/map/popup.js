@@ -8,7 +8,7 @@
 
 IPWA_MAP.Map.popup = {
   parentMap: null, // ol3 map ol.Map
-  mapWidth: null, // ol3 map ol.Map
+  mapWidth: null,
   popup: null, // popup container
   olPopupTemplate: null,
   maxZoom: null,
@@ -61,47 +61,31 @@ IPWA_MAP.Map.popup = {
   displayPopup: function (features, pixel) {
     if (!_.isEmpty(features)) {
       var _id = features[0].get('Node ID');
-      console.log('in displayPopup, features', features, _id);
       var _this = this;
       jQuery.ajax({
         url: 'project-single-view-json/' + _id,
         type: 'GET',
         dataType: 'json',
         success: function (data) {
-          console.log('data', data);
-
           // console.log('data.features', data.features);
-          // if (data && data.features && data.features.length > 0) {
-          //   _this.setDataInPopup(data, 0, features);
-          //   _this.closePopup();
+          if (data && data.features && data.features.length > 0) {
+            _this.setDataInPopup(data, 0, features);
+            _this.closePopup();
 
-          //   var _coordinates = features[0].getGeometry().getFirstCoordinate();
+            var _coordinates = features[0].getGeometry().getFirstCoordinate();
 
-          //   _this.$popup.show();
-          //   var _popupLeft = jQuery('.page-header').offset().left + 50;
-          //   _this.$popup.css('left', _popupLeft);
-          //   features[0].set('type', 'selected');
-          //   _this.selFeature = features[0];
+            _this.$popup.show();
+            var _popupLeft = 120;
+            _this.$popup.css('left', _popupLeft);
+            features[0].set('type', 'selected');
+            _this.selFeature = features[0];
 
-          //   _this.centerSelPoi(_coordinates, _popupLeft);
-          // }
+            _this.centerSelPoi(_coordinates, _popupLeft);
+          }
         },
         error: function (e) {
           // called when there is an error
           console.log('Error: ', e);
-
-          _this.setDataInPopup({}, 0, features);
-          _this.closePopup();
-
-          var _coordinates = features[0].getGeometry().getFirstCoordinate();
-
-          _this.$popup.show();
-          var _popupLeft = jQuery('.page-header').offset().left + 50;
-          _this.$popup.css('left', _popupLeft);
-          features[0].set('type', 'selected');
-          _this.selFeature = features[0];
-
-          _this.centerSelPoi(_coordinates, _popupLeft);
         }
       });
     } else {
@@ -110,31 +94,34 @@ IPWA_MAP.Map.popup = {
   },
 
   getDataForPaging: function (index, olFeatures) {
-    var _id = olFeatures[index].get('nid');
-    console.log('getDataForPaging ====>>>', index, _id);
+    var _id = olFeatures[index].get('Node ID');
     var _this = this;
     jQuery.ajax({
       url: 'project-single-view-json/' + _id,
       type: 'GET',
       dataType: 'json',
       success: function (data) {
-        if (data && data.features && data.features.length > 0) {
-          _this.setDataInPopup(data, index, olFeatures);
-        }
+        _this.setDataInPopup(data, index, olFeatures);
+      },
+      error: function (e) {
+        // called when there is an error
+        console.log('Error: ', e);
       }
     });
   },
 
   setDataInPopup: function (data, index, olFeatures) {
-    // var _properties = data.features[0].properties;
-    // console.log('test =====>>>>  v6', _properties, _properties['Förderprogramm']);
-    // console.log(jQuery(_properties['Förderprogramm']).children().last());
-    // console.log(_properties['Förderprogramm'], _properties['Förderschwerpunkt'], _properties['Förderbereich']);
+    var _properties;
+
+    if (data && data.features && data.features.length > 0) {
+      _properties = data.features[index].properties;
+    }
 
     var _olPopupHtml = this.olPopupTemplate({
-      contentType: 'contentType',
-      desc: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam ',
-      date: 'Dorstfeld'
+      contentType: _properties?_properties.type:'',
+      title: _properties?_properties.title:'',
+      topics: _properties?_properties.field_themenzuweisung:'',
+      date: _properties?_properties.views_conditional:''
     });
     this.$popupContent.html(_olPopupHtml);
     this.addPagingToPopup(olFeatures, index);
@@ -173,8 +160,7 @@ IPWA_MAP.Map.popup = {
     var _this = this;
     setTimeout(function () {
       var _centerPx = _this.parentMap.getPixelFromCoordinate(coordinates);
-      var _center = _this.parentMap.getCoordinateFromPixel([_centerPx[0] - (((_this.$popup.width() -50) + popupLeft)/2),
-        _centerPx[1]]);
+      var _center = _this.parentMap.getCoordinateFromPixel([_centerPx[0] + 50, _centerPx[1] + 100]);
       var _pan = ol.animation.pan({ duration: 1000, source: _this.parentMap.getView().getCenter() });
       var _zoom = ol.animation.zoom({ duration: 1000, resolution: _this.parentMap.getView().getResolution() });
       _this.parentMap.beforeRender(_pan, _zoom);

@@ -58,7 +58,7 @@
   background-color: #273753;
   color: #fff;
   border-radius: 0;
-  font-size: 2em;
+  font-size: 1.3em;
   margin-top: 2px;
 }
 /* line 57, ../../src/scss/components/_mapView.scss */
@@ -87,12 +87,12 @@
 }
 /* line 7, ../../src/scss/components/_popup.scss */
 .footer_map .map-popup {
+  display: none;
   background-color: #273753;
-  color: #fff;
+  color: #dbdde0;
   border: 0;
   position: absolute;
-  top: 40px;
-  left: 50px;
+  top: 160px;
   z-index: 101;
   width: 370px;
   font-size: 17px;
@@ -104,7 +104,7 @@
   right: 10px;
   text-align: center;
   vertical-align: middle;
-  color: #fff;
+  color: #dbdde0;
 }
 /* line 28, ../../src/scss/components/_popup.scss */
 .footer_map .map-btn-close {
@@ -118,56 +118,56 @@
 /* line 37, ../../src/scss/components/_popup.scss */
 .footer_map .map-popup-content {
   padding: 30px;
-  border: 1px solid #e4e3e3;
+  border: none;
 }
 /* line 42, ../../src/scss/components/_popup.scss */
 .footer_map h2 {
   color: #e74712;
   font-size: 18px;
 }
-/* line 49, ../../src/scss/components/_popup.scss */
+/* line 48, ../../src/scss/components/_popup.scss */
 .footer_map .arrow-nav {
-  font-size: 20px;
+  font-size: 17px;
   position: absolute;
   top: 10px;
-  left: 10px;
+  right: 43px;
   text-align: right;
 }
-/* line 57, ../../src/scss/components/_popup.scss */
+/* line 56, ../../src/scss/components/_popup.scss */
 .footer_map .btn-go-backward,
 .footer_map .btn-go-forward {
   background-color: transparent;
-  margin-left: 15px;
+  margin-left: 10px;
   border: 0;
 }
-/* line 63, ../../src/scss/components/_popup.scss */
+/* line 62, ../../src/scss/components/_popup.scss */
 .footer_map .btn-go-backward.disabled,
 .footer_map .btn-go-forward.disabled {
-  color: #ccc;
+  color: #777673;
 }
-/* line 73, ../../src/scss/components/_popup.scss */
+/* line 72, ../../src/scss/components/_popup.scss */
 .footer_map .menu-politik::before {
   content: "\e94b";
 }
-/* line 76, ../../src/scss/components/_popup.scss */
+/* line 75, ../../src/scss/components/_popup.scss */
 .footer_map .menu-wirtschaft::before {
   content: "\e947";
 }
-/* line 79, ../../src/scss/components/_popup.scss */
+/* line 78, ../../src/scss/components/_popup.scss */
 .footer_map .menu-unternehmen::before {
   content: "\e943";
 }
-/* line 82, ../../src/scss/components/_popup.scss */
+/* line 81, ../../src/scss/components/_popup.scss */
 .footer_map .menu-beschaftigte::before {
   content: "\e905";
 }
-/* line 85, ../../src/scss/components/_popup.scss */
+/* line 84, ../../src/scss/components/_popup.scss */
 .footer_map .menu-schaufenster::before {
   content: "\e910";
 }
-/* line 89, ../../src/scss/components/_popup.scss */
+/* line 88, ../../src/scss/components/_popup.scss */
 .footer_map .txtf-desc {
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 
 /*# sourceMappingURL=main.css.map */

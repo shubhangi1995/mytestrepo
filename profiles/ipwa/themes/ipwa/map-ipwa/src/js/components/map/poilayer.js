@@ -45,7 +45,7 @@ IPWA_MAP.Map.poiLayer = {
       type: 'GET',
       dataType: 'json',
       success: function (data) {
-        console.log(data);
+        // console.log(data);
         if (data) {
           // btn.button('reset');
           _this.geoJsonSource.addFeatures((new ol.format.GeoJSON()).readFeatures(
