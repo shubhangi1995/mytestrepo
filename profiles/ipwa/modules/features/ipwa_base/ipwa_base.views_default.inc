@@ -194,13 +194,13 @@ Publikation|Publikationen',
   $handler->display->display_options['fields']['field_themenzuweisung']['group_column'] = 'entity_id';
   $handler->display->display_options['fields']['field_themenzuweisung']['delta_offset'] = '0';
   $handler->display->display_options['fields']['field_themenzuweisung']['separator'] = '';
-  /* Feld: Inhalt: Typ */
+  /* Field: Content: Type */
   $handler->display->display_options['fields']['type']['id'] = 'type';
   $handler->display->display_options['fields']['type']['table'] = 'node';
   $handler->display->display_options['fields']['type']['field'] = 'type';
   $handler->display->display_options['fields']['type']['label'] = '';
   $handler->display->display_options['fields']['type']['element_label_colon'] = FALSE;
-  /* Feld: Inhalt: Titel */
+  /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
@@ -208,7 +208,7 @@ Publikation|Publikationen',
   $handler->display->display_options['fields']['title']['alter']['max_length'] = '150';
   $handler->display->display_options['fields']['title']['alter']['trim'] = TRUE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
-  /* Feld: Inhalt: Datum */
+  /* Field: Content: Datum */
   $handler->display->display_options['fields']['field_datum']['id'] = 'field_datum';
   $handler->display->display_options['fields']['field_datum']['table'] = 'field_data_field_datum';
   $handler->display->display_options['fields']['field_datum']['field'] = 'field_datum';
@@ -223,27 +223,27 @@ Publikation|Publikationen',
     'show_remaining_days' => 0,
   );
   $handler->display->display_options['fields']['field_datum']['group_column'] = 'entity_id';
-  /* Sort criterion: Inhalt: Datum (field_datum) */
+  /* Sort criterion: Content: Datum (field_datum) */
   $handler->display->display_options['sorts']['field_datum_value']['id'] = 'field_datum_value';
   $handler->display->display_options['sorts']['field_datum_value']['table'] = 'field_data_field_datum';
   $handler->display->display_options['sorts']['field_datum_value']['field'] = 'field_datum_value';
   $handler->display->display_options['sorts']['field_datum_value']['order'] = 'DESC';
   $handler->display->display_options['sorts']['field_datum_value']['exposed'] = TRUE;
   $handler->display->display_options['sorts']['field_datum_value']['expose']['label'] = 'neueste zuerst';
-  /* Sort criterion: Inhalt: Titel */
+  /* Sort criterion: Content: Title */
   $handler->display->display_options['sorts']['title']['id'] = 'title';
   $handler->display->display_options['sorts']['title']['table'] = 'node';
   $handler->display->display_options['sorts']['title']['field'] = 'title';
   $handler->display->display_options['sorts']['title']['exposed'] = TRUE;
   $handler->display->display_options['sorts']['title']['expose']['label'] = 'A-Z';
-  /* Filter criterion: Inhalt: Veröffentlicht */
+  /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
   $handler->display->display_options['filters']['status']['field'] = 'status';
   $handler->display->display_options['filters']['status']['value'] = 1;
   $handler->display->display_options['filters']['status']['group'] = 1;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: Inhalt: Typ */
+  /* Filter criterion: Content: Type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
@@ -261,7 +261,7 @@ Publikation|Publikationen',
     1 => 0,
   );
   $handler->display->display_options['filters']['type']['expose']['reduce'] = TRUE;
-  /* Filter criterion: Inhalt: Has taxonomy terms (with depth) */
+  /* Filter criterion: Content: Has taxonomy terms (with depth) */
   $handler->display->display_options['filters']['term_node_tid_depth']['id'] = 'term_node_tid_depth';
   $handler->display->display_options['filters']['term_node_tid_depth']['table'] = 'node';
   $handler->display->display_options['filters']['term_node_tid_depth']['field'] = 'term_node_tid_depth';
@@ -291,7 +291,7 @@ Publikation|Publikationen',
   $handler->display->display_options['filters']['term_node_tid_depth']['vocabulary'] = 'themenzuweisung';
   $handler->display->display_options['filters']['term_node_tid_depth']['hierarchy'] = 1;
   $handler->display->display_options['filters']['term_node_tid_depth']['depth'] = '10';
-  /* Filter criterion: Inhalt: Has taxonomy terms (with depth) */
+  /* Filter criterion: Content: Has taxonomy terms (with depth) */
   $handler->display->display_options['filters']['term_node_tid_depth_1']['id'] = 'term_node_tid_depth_1';
   $handler->display->display_options['filters']['term_node_tid_depth_1']['table'] = 'node';
   $handler->display->display_options['filters']['term_node_tid_depth_1']['field'] = 'term_node_tid_depth';
@@ -321,7 +321,7 @@ Publikation|Publikationen',
   $handler->display->display_options['filters']['term_node_tid_depth_1']['vocabulary'] = 'themenzuweisung';
   $handler->display->display_options['filters']['term_node_tid_depth_1']['hierarchy'] = 1;
   $handler->display->display_options['filters']['term_node_tid_depth_1']['depth'] = '10';
-  /* Filter criterion: Inhalt: Has taxonomy terms (with depth) */
+  /* Filter criterion: Content: Has taxonomy terms (with depth) */
   $handler->display->display_options['filters']['term_node_tid_depth_2']['id'] = 'term_node_tid_depth_2';
   $handler->display->display_options['filters']['term_node_tid_depth_2']['table'] = 'node';
   $handler->display->display_options['filters']['term_node_tid_depth_2']['field'] = 'term_node_tid_depth';
@@ -349,7 +349,7 @@ Publikation|Publikationen',
   $handler->display->display_options['filters']['term_node_tid_depth_2']['vocabulary'] = 'themenzuweisung';
   $handler->display->display_options['filters']['term_node_tid_depth_2']['hierarchy'] = 1;
   $handler->display->display_options['filters']['term_node_tid_depth_2']['depth'] = '10';
-  /* Filter criterion: Inhalt: Has taxonomy terms (with depth) */
+  /* Filter criterion: Content: Has taxonomy terms (with depth) */
   $handler->display->display_options['filters']['term_node_tid_depth_3']['id'] = 'term_node_tid_depth_3';
   $handler->display->display_options['filters']['term_node_tid_depth_3']['table'] = 'node';
   $handler->display->display_options['filters']['term_node_tid_depth_3']['field'] = 'term_node_tid_depth';
@@ -380,7 +380,7 @@ Publikation|Publikationen',
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Feld: Inhalt: Dieser Akteur gehört zu */
+  /* Field: Content: Diese Publikation gehört zu */
   $handler->display->display_options['fields']['field_themenzuweisung']['id'] = 'field_themenzuweisung';
   $handler->display->display_options['fields']['field_themenzuweisung']['table'] = 'field_data_field_themenzuweisung';
   $handler->display->display_options['fields']['field_themenzuweisung']['field'] = 'field_themenzuweisung';
@@ -389,13 +389,13 @@ Publikation|Publikationen',
   $handler->display->display_options['fields']['field_themenzuweisung']['group_column'] = 'entity_id';
   $handler->display->display_options['fields']['field_themenzuweisung']['delta_offset'] = '0';
   $handler->display->display_options['fields']['field_themenzuweisung']['separator'] = '';
-  /* Feld: Inhalt: Typ */
+  /* Field: Content: Type */
   $handler->display->display_options['fields']['type']['id'] = 'type';
   $handler->display->display_options['fields']['type']['table'] = 'node';
   $handler->display->display_options['fields']['type']['field'] = 'type';
   $handler->display->display_options['fields']['type']['label'] = '';
   $handler->display->display_options['fields']['type']['element_label_colon'] = FALSE;
-  /* Feld: Inhalt: Titel */
+  /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
@@ -404,7 +404,7 @@ Publikation|Publikationen',
   $handler->display->display_options['fields']['title']['alter']['trim'] = TRUE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
-  /* Feld: Inhalt: Datum */
+  /* Field: Content: Datum */
   $handler->display->display_options['fields']['field_datum']['id'] = 'field_datum';
   $handler->display->display_options['fields']['field_datum']['table'] = 'field_data_field_datum';
   $handler->display->display_options['fields']['field_datum']['field'] = 'field_datum';
@@ -422,14 +422,14 @@ Publikation|Publikationen',
     'show_repeat_rule' => 'show',
   );
   $handler->display->display_options['fields']['field_datum']['group_column'] = 'entity_id';
-  /* Feld: Inhalt: Bis auf Weiteres */
+  /* Field: Content: Bis auf Weiteres */
   $handler->display->display_options['fields']['field_bis_auf_weiteres']['id'] = 'field_bis_auf_weiteres';
   $handler->display->display_options['fields']['field_bis_auf_weiteres']['table'] = 'field_data_field_bis_auf_weiteres';
   $handler->display->display_options['fields']['field_bis_auf_weiteres']['field'] = 'field_bis_auf_weiteres';
   $handler->display->display_options['fields']['field_bis_auf_weiteres']['label'] = '';
   $handler->display->display_options['fields']['field_bis_auf_weiteres']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_bis_auf_weiteres']['element_label_colon'] = FALSE;
-  /* Feld: Views: Views Conditional */
+  /* Field: Views: Views Conditional */
   $handler->display->display_options['fields']['views_conditional']['id'] = 'views_conditional';
   $handler->display->display_options['fields']['views_conditional']['table'] = 'views_conditional';
   $handler->display->display_options['fields']['views_conditional']['field'] = 'views_conditional';
@@ -442,7 +442,7 @@ Publikation|Publikationen',
   $handler->display->display_options['fields']['views_conditional']['then'] = 'Stichtag: Bis auf Weiteres';
   $handler->display->display_options['fields']['views_conditional']['or'] = 'Stichtag: [field_datum]';
   $handler->display->display_options['fields']['views_conditional']['strip_tags'] = 0;
-  /* Feld: Views: Views Conditional */
+  /* Field: Views: Views Conditional */
   $handler->display->display_options['fields']['views_conditional_1']['id'] = 'views_conditional_1';
   $handler->display->display_options['fields']['views_conditional_1']['table'] = 'views_conditional';
   $handler->display->display_options['fields']['views_conditional_1']['field'] = 'views_conditional';
@@ -456,14 +456,14 @@ Publikation|Publikationen',
   $handler->display->display_options['fields']['views_conditional_1']['strip_tags'] = 0;
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Filter criterion: Inhalt: Veröffentlicht */
+  /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
   $handler->display->display_options['filters']['status']['field'] = 'status';
   $handler->display->display_options['filters']['status']['value'] = 1;
   $handler->display->display_options['filters']['status']['group'] = 1;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: Inhalt: Typ */
+  /* Filter criterion: Content: Type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
@@ -481,7 +481,7 @@ Publikation|Publikationen',
     1 => 0,
   );
   $handler->display->display_options['filters']['type']['expose']['reduce'] = TRUE;
-  /* Filter criterion: Inhalt: Typ */
+  /* Filter criterion: Content: Type */
   $handler->display->display_options['filters']['type_1']['id'] = 'type_1';
   $handler->display->display_options['filters']['type_1']['table'] = 'node';
   $handler->display->display_options['filters']['type_1']['field'] = 'type';
@@ -490,7 +490,7 @@ Publikation|Publikationen',
     'nachricht' => 'nachricht',
     'publikation' => 'publikation',
   );
-  /* Filter criterion: Inhalt: Has taxonomy terms (with depth) */
+  /* Filter criterion: Content: Has taxonomy terms (with depth) */
   $handler->display->display_options['filters']['term_node_tid_depth']['id'] = 'term_node_tid_depth';
   $handler->display->display_options['filters']['term_node_tid_depth']['table'] = 'node';
   $handler->display->display_options['filters']['term_node_tid_depth']['field'] = 'term_node_tid_depth';
@@ -519,7 +519,7 @@ Publikation|Publikationen',
   $handler->display->display_options['filters']['term_node_tid_depth']['vocabulary'] = 'themenzuweisung';
   $handler->display->display_options['filters']['term_node_tid_depth']['hierarchy'] = 1;
   $handler->display->display_options['filters']['term_node_tid_depth']['depth'] = '10';
-  /* Filter criterion: Inhalt: Has taxonomy terms (with depth) */
+  /* Filter criterion: Content: Has taxonomy terms (with depth) */
   $handler->display->display_options['filters']['term_node_tid_depth_1']['id'] = 'term_node_tid_depth_1';
   $handler->display->display_options['filters']['term_node_tid_depth_1']['table'] = 'node';
   $handler->display->display_options['filters']['term_node_tid_depth_1']['field'] = 'term_node_tid_depth';
@@ -549,7 +549,7 @@ Publikation|Publikationen',
   $handler->display->display_options['filters']['term_node_tid_depth_1']['vocabulary'] = 'themenzuweisung';
   $handler->display->display_options['filters']['term_node_tid_depth_1']['hierarchy'] = 1;
   $handler->display->display_options['filters']['term_node_tid_depth_1']['depth'] = '10';
-  /* Filter criterion: Inhalt: Has taxonomy terms (with depth) */
+  /* Filter criterion: Content: Has taxonomy terms (with depth) */
   $handler->display->display_options['filters']['term_node_tid_depth_2']['id'] = 'term_node_tid_depth_2';
   $handler->display->display_options['filters']['term_node_tid_depth_2']['table'] = 'node';
   $handler->display->display_options['filters']['term_node_tid_depth_2']['field'] = 'term_node_tid_depth';
@@ -577,7 +577,7 @@ Publikation|Publikationen',
   $handler->display->display_options['filters']['term_node_tid_depth_2']['vocabulary'] = 'themenzuweisung';
   $handler->display->display_options['filters']['term_node_tid_depth_2']['hierarchy'] = 1;
   $handler->display->display_options['filters']['term_node_tid_depth_2']['depth'] = '10';
-  /* Filter criterion: Inhalt: Has taxonomy terms (with depth) */
+  /* Filter criterion: Content: Has taxonomy terms (with depth) */
   $handler->display->display_options['filters']['term_node_tid_depth_3']['id'] = 'term_node_tid_depth_3';
   $handler->display->display_options['filters']['term_node_tid_depth_3']['table'] = 'node';
   $handler->display->display_options['filters']['term_node_tid_depth_3']['field'] = 'term_node_tid_depth';
@@ -752,11 +752,11 @@ Publikation|Publikationen'),
   $handler->display->display_options['empty']['area_text_custom']['field'] = 'area_text_custom';
   $handler->display->display_options['empty']['area_text_custom']['empty'] = TRUE;
   $handler->display->display_options['empty']['area_text_custom']['content'] = 'Kein Inhalt verfügbar.';
-  /* Relationship: Inhalt: Autor */
+  /* Relationship: Content: Author */
   $handler->display->display_options['relationships']['uid']['id'] = 'uid';
   $handler->display->display_options['relationships']['uid']['table'] = 'node';
   $handler->display->display_options['relationships']['uid']['field'] = 'uid';
-  /* Relationship: Inhalt: Taxonomy terms on node */
+  /* Relationship: Content: Taxonomy terms on node */
   $handler->display->display_options['relationships']['term_node_tid']['id'] = 'term_node_tid';
   $handler->display->display_options['relationships']['term_node_tid']['table'] = 'node';
   $handler->display->display_options['relationships']['term_node_tid']['field'] = 'term_node_tid';
@@ -764,7 +764,7 @@ Publikation|Publikationen'),
     'forums' => 0,
     'tags' => 0,
   );
-  /* Feld: Bulk operations: Inhalt */
+  /* Field: Bulk operations: Content */
   $handler->display->display_options['fields']['views_bulk_operations']['id'] = 'views_bulk_operations';
   $handler->display->display_options['fields']['views_bulk_operations']['table'] = 'views_entity_node';
   $handler->display->display_options['fields']['views_bulk_operations']['field'] = 'views_bulk_operations';
@@ -846,55 +846,55 @@ Publikation|Publikationen'),
       'postpone_processing' => 0,
     ),
   );
-  /* Feld: Inhalt: Titel */
+  /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
-  /* Feld: Inhalt: Nid */
+  /* Field: Content: Nid */
   $handler->display->display_options['fields']['nid']['id'] = 'nid';
   $handler->display->display_options['fields']['nid']['table'] = 'node';
   $handler->display->display_options['fields']['nid']['field'] = 'nid';
   $handler->display->display_options['fields']['nid']['label'] = 'ID';
-  /* Feld: Inhalt: Has new content */
+  /* Field: Content: Has new content */
   $handler->display->display_options['fields']['timestamp']['id'] = 'timestamp';
   $handler->display->display_options['fields']['timestamp']['table'] = 'history';
   $handler->display->display_options['fields']['timestamp']['field'] = 'timestamp';
   $handler->display->display_options['fields']['timestamp']['label'] = '';
   $handler->display->display_options['fields']['timestamp']['element_label_colon'] = FALSE;
-  /* Feld: Inhalt: Typ */
+  /* Field: Content: Type */
   $handler->display->display_options['fields']['type']['id'] = 'type';
   $handler->display->display_options['fields']['type']['table'] = 'node';
   $handler->display->display_options['fields']['type']['field'] = 'type';
-  /* Feld: Benutzer: Name */
+  /* Field: User: Name */
   $handler->display->display_options['fields']['name']['id'] = 'name';
   $handler->display->display_options['fields']['name']['table'] = 'users';
   $handler->display->display_options['fields']['name']['field'] = 'name';
   $handler->display->display_options['fields']['name']['relationship'] = 'uid';
   $handler->display->display_options['fields']['name']['label'] = 'Autor';
   $handler->display->display_options['fields']['name']['hide_alter_empty'] = FALSE;
-  /* Feld: Inhalt: Veröffentlicht */
+  /* Field: Content: Published */
   $handler->display->display_options['fields']['status']['id'] = 'status';
   $handler->display->display_options['fields']['status']['table'] = 'node';
   $handler->display->display_options['fields']['status']['field'] = 'status';
   $handler->display->display_options['fields']['status']['label'] = 'Publiziert';
   $handler->display->display_options['fields']['status']['not'] = 0;
-  /* Feld: Inhalt: Updated date */
+  /* Field: Content: Updated date */
   $handler->display->display_options['fields']['changed']['id'] = 'changed';
   $handler->display->display_options['fields']['changed']['table'] = 'node';
   $handler->display->display_options['fields']['changed']['field'] = 'changed';
   $handler->display->display_options['fields']['changed']['label'] = 'Aktualisiert';
   $handler->display->display_options['fields']['changed']['date_format'] = 'short';
-  /* Feld: Inhalt: Edit link */
+  /* Field: Content: Edit link */
   $handler->display->display_options['fields']['edit_node']['id'] = 'edit_node';
   $handler->display->display_options['fields']['edit_node']['table'] = 'views_entity_node';
   $handler->display->display_options['fields']['edit_node']['field'] = 'edit_node';
   $handler->display->display_options['fields']['edit_node']['label'] = 'Bearbeitung';
-  /* Feld: Inhalt: Delete link */
+  /* Field: Content: Delete link */
   $handler->display->display_options['fields']['delete_node']['id'] = 'delete_node';
   $handler->display->display_options['fields']['delete_node']['table'] = 'views_entity_node';
   $handler->display->display_options['fields']['delete_node']['field'] = 'delete_node';
   $handler->display->display_options['fields']['delete_node']['label'] = '';
-  /* Filter criterion: Inhalt: Titel */
+  /* Filter criterion: Content: Title */
   $handler->display->display_options['filters']['title']['id'] = 'title';
   $handler->display->display_options['filters']['title']['table'] = 'node';
   $handler->display->display_options['filters']['title']['field'] = 'title';
@@ -906,7 +906,7 @@ Publikation|Publikationen'),
   $handler->display->display_options['filters']['title']['expose']['operator'] = 'title_op';
   $handler->display->display_options['filters']['title']['expose']['identifier'] = 'title';
   $handler->display->display_options['filters']['title']['expose']['remember'] = TRUE;
-  /* Filter criterion: Inhalt: Typ */
+  /* Filter criterion: Content: Type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
@@ -917,7 +917,7 @@ Publikation|Publikationen'),
   $handler->display->display_options['filters']['type']['expose']['operator'] = 'type_op';
   $handler->display->display_options['filters']['type']['expose']['identifier'] = 'type';
   $handler->display->display_options['filters']['type']['expose']['remember'] = TRUE;
-  /* Filter criterion: Benutzer: Name */
+  /* Filter criterion: User: Name */
   $handler->display->display_options['filters']['uid']['id'] = 'uid';
   $handler->display->display_options['filters']['uid']['table'] = 'users';
   $handler->display->display_options['filters']['uid']['field'] = 'uid';
@@ -934,7 +934,7 @@ Publikation|Publikationen'),
     2 => '2',
     1 => 0,
   );
-  /* Filter criterion: Inhalt: Veröffentlicht */
+  /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
   $handler->display->display_options['filters']['status']['field'] = 'status';
@@ -950,7 +950,7 @@ Publikation|Publikationen'),
     2 => '2',
     1 => 0,
   );
-  /* Filter criterion: Inhalt: Has taxonomy term */
+  /* Filter criterion: Content: Has taxonomy term */
   $handler->display->display_options['filters']['tid']['id'] = 'tid';
   $handler->display->display_options['filters']['tid']['table'] = 'taxonomy_index';
   $handler->display->display_options['filters']['tid']['field'] = 'tid';
@@ -1038,18 +1038,18 @@ Publikation|Publikationen'),
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['row_options']['hide_empty'] = TRUE;
-  /* Kopfbereich: Global: Text area */
+  /* Header: Global: Text area */
   $handler->display->display_options['header']['area']['id'] = 'area';
   $handler->display->display_options['header']['area']['table'] = 'views';
   $handler->display->display_options['header']['area']['field'] = 'area';
   $handler->display->display_options['header']['area']['content'] = '<h2 class="pane-title">Neueste Digital-Projekte in NRW</h2>';
   $handler->display->display_options['header']['area']['format'] = 'wysiwyg';
-  /* Fußbereich: Global: Unfiltered text */
+  /* Footer: Global: Unfiltered text */
   $handler->display->display_options['footer']['area_text_custom']['id'] = 'area_text_custom';
   $handler->display->display_options['footer']['area_text_custom']['table'] = 'views';
   $handler->display->display_options['footer']['area_text_custom']['field'] = 'area_text_custom';
   $handler->display->display_options['footer']['area_text_custom']['content'] = '<a href ="/article">Karte öffnen</a>';
-  /* Feld: Inhalt: Dieser Akteur gehört zu */
+  /* Field: Content: Diese Publikation gehört zu */
   $handler->display->display_options['fields']['field_themenzuweisung']['id'] = 'field_themenzuweisung';
   $handler->display->display_options['fields']['field_themenzuweisung']['table'] = 'field_data_field_themenzuweisung';
   $handler->display->display_options['fields']['field_themenzuweisung']['field'] = 'field_themenzuweisung';
@@ -1057,32 +1057,32 @@ Publikation|Publikationen'),
   $handler->display->display_options['fields']['field_themenzuweisung']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_themenzuweisung']['delta_offset'] = '0';
   $handler->display->display_options['fields']['field_themenzuweisung']['separator'] = '';
-  /* Feld: Inhalt: Typ */
+  /* Field: Content: Type */
   $handler->display->display_options['fields']['type']['id'] = 'type';
   $handler->display->display_options['fields']['type']['table'] = 'node';
   $handler->display->display_options['fields']['type']['field'] = 'type';
   $handler->display->display_options['fields']['type']['label'] = '';
   $handler->display->display_options['fields']['type']['element_label_colon'] = FALSE;
-  /* Feld: Inhalt: Titel */
+  /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  /* Sort criterion: Inhalt: Datum (field_datum) */
+  /* Sort criterion: Content: Datum (field_datum) */
   $handler->display->display_options['sorts']['field_datum_value']['id'] = 'field_datum_value';
   $handler->display->display_options['sorts']['field_datum_value']['table'] = 'field_data_field_datum';
   $handler->display->display_options['sorts']['field_datum_value']['field'] = 'field_datum_value';
   $handler->display->display_options['sorts']['field_datum_value']['order'] = 'DESC';
-  /* Filter criterion: Inhalt: Veröffentlicht */
+  /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
   $handler->display->display_options['filters']['status']['field'] = 'status';
   $handler->display->display_options['filters']['status']['value'] = 1;
   $handler->display->display_options['filters']['status']['group'] = 1;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: Inhalt: Typ */
+  /* Filter criterion: Content: Type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
@@ -1093,7 +1093,7 @@ Publikation|Publikationen'),
   /* Display: Block */
   $handler = $view->new_display('block', 'Block', 'block');
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Feld: Inhalt: Dieser Akteur gehört zu */
+  /* Field: Content: Diese Publikation gehört zu */
   $handler->display->display_options['fields']['field_themenzuweisung']['id'] = 'field_themenzuweisung';
   $handler->display->display_options['fields']['field_themenzuweisung']['table'] = 'field_data_field_themenzuweisung';
   $handler->display->display_options['fields']['field_themenzuweisung']['field'] = 'field_themenzuweisung';
@@ -1101,13 +1101,13 @@ Publikation|Publikationen'),
   $handler->display->display_options['fields']['field_themenzuweisung']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_themenzuweisung']['delta_offset'] = '0';
   $handler->display->display_options['fields']['field_themenzuweisung']['separator'] = '';
-  /* Feld: Inhalt: Typ */
+  /* Field: Content: Type */
   $handler->display->display_options['fields']['type']['id'] = 'type';
   $handler->display->display_options['fields']['type']['table'] = 'node';
   $handler->display->display_options['fields']['type']['field'] = 'type';
   $handler->display->display_options['fields']['type']['label'] = '';
   $handler->display->display_options['fields']['type']['element_label_colon'] = FALSE;
-  /* Feld: Inhalt: Titel */
+  /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
@@ -1153,25 +1153,25 @@ Publikation|Publikationen'),
   $handler->display->display_options['pager']['options']['items_per_page'] = '3';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'fields';
-  /* Kopfbereich: Global: Text area */
+  /* Header: Global: Text area */
   $handler->display->display_options['header']['area']['id'] = 'area';
   $handler->display->display_options['header']['area']['table'] = 'views';
   $handler->display->display_options['header']['area']['field'] = 'area';
   $handler->display->display_options['header']['area']['content'] = '<h2 class="pane-title">Neueste Informationen</h2>';
   $handler->display->display_options['header']['area']['format'] = 'wysiwyg';
-  /* Feld: Inhalt: Titel */
+  /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  /* Sort criterion: Inhalt: Post date */
+  /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
   $handler->display->display_options['sorts']['created']['field'] = 'created';
   $handler->display->display_options['sorts']['created']['order'] = 'DESC';
-  /* Filter criterion: Inhalt: Veröffentlicht */
+  /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
   $handler->display->display_options['filters']['status']['field'] = 'status';
@@ -1189,7 +1189,7 @@ Publikation|Publikationen'),
   $handler->display->display_options['row_options']['hide_empty'] = TRUE;
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['footer'] = FALSE;
-  /* Fußbereich: Global: Text area */
+  /* Footer: Global: Text area */
   $handler->display->display_options['footer']['area']['id'] = 'area';
   $handler->display->display_options['footer']['area']['table'] = 'views';
   $handler->display->display_options['footer']['area']['field'] = 'area';
@@ -1203,7 +1203,7 @@ Publikation|Publikationen'),
 </div>';
   $handler->display->display_options['footer']['area']['format'] = 'wysiwyg';
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Feld: Inhalt: Dieser Akteur gehört zu */
+  /* Field: Content: Diese Publikation gehört zu */
   $handler->display->display_options['fields']['field_themenzuweisung']['id'] = 'field_themenzuweisung';
   $handler->display->display_options['fields']['field_themenzuweisung']['table'] = 'field_data_field_themenzuweisung';
   $handler->display->display_options['fields']['field_themenzuweisung']['field'] = 'field_themenzuweisung';
@@ -1211,13 +1211,13 @@ Publikation|Publikationen'),
   $handler->display->display_options['fields']['field_themenzuweisung']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_themenzuweisung']['delta_offset'] = '0';
   $handler->display->display_options['fields']['field_themenzuweisung']['separator'] = '';
-  /* Feld: Inhalt: Typ */
+  /* Field: Content: Type */
   $handler->display->display_options['fields']['type']['id'] = 'type';
   $handler->display->display_options['fields']['type']['table'] = 'node';
   $handler->display->display_options['fields']['type']['field'] = 'type';
   $handler->display->display_options['fields']['type']['label'] = '';
   $handler->display->display_options['fields']['type']['element_label_colon'] = FALSE;
-  /* Feld: Inhalt: Titel */
+  /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
@@ -1226,7 +1226,7 @@ Publikation|Publikationen'),
   $handler->display->display_options['fields']['title']['alter']['trim'] = TRUE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
-  /* Feld: Inhalt: Datum */
+  /* Field: Content: Datum */
   $handler->display->display_options['fields']['field_datum']['id'] = 'field_datum';
   $handler->display->display_options['fields']['field_datum']['table'] = 'field_data_field_datum';
   $handler->display->display_options['fields']['field_datum']['field'] = 'field_datum';
@@ -1243,14 +1243,14 @@ Publikation|Publikationen'),
     'show_remaining_days' => 0,
     'show_repeat_rule' => 'show',
   );
-  /* Feld: Inhalt: Bis auf Weiteres */
+  /* Field: Content: Bis auf Weiteres */
   $handler->display->display_options['fields']['field_bis_auf_weiteres']['id'] = 'field_bis_auf_weiteres';
   $handler->display->display_options['fields']['field_bis_auf_weiteres']['table'] = 'field_data_field_bis_auf_weiteres';
   $handler->display->display_options['fields']['field_bis_auf_weiteres']['field'] = 'field_bis_auf_weiteres';
   $handler->display->display_options['fields']['field_bis_auf_weiteres']['label'] = '';
   $handler->display->display_options['fields']['field_bis_auf_weiteres']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_bis_auf_weiteres']['element_label_colon'] = FALSE;
-  /* Feld: Views: Views Conditional */
+  /* Field: Views: Views Conditional */
   $handler->display->display_options['fields']['views_conditional']['id'] = 'views_conditional';
   $handler->display->display_options['fields']['views_conditional']['table'] = 'views_conditional';
   $handler->display->display_options['fields']['views_conditional']['field'] = 'views_conditional';
@@ -1263,7 +1263,7 @@ Publikation|Publikationen'),
   $handler->display->display_options['fields']['views_conditional']['then'] = 'Stichtag: Bis auf Weiteres';
   $handler->display->display_options['fields']['views_conditional']['or'] = 'Stichtag: [field_datum]';
   $handler->display->display_options['fields']['views_conditional']['strip_tags'] = 0;
-  /* Feld: Views: Views Conditional */
+  /* Field: Views: Views Conditional */
   $handler->display->display_options['fields']['views_conditional_1']['id'] = 'views_conditional_1';
   $handler->display->display_options['fields']['views_conditional_1']['table'] = 'views_conditional';
   $handler->display->display_options['fields']['views_conditional_1']['field'] = 'views_conditional';
@@ -1276,21 +1276,21 @@ Publikation|Publikationen'),
   $handler->display->display_options['fields']['views_conditional_1']['or'] = '[field_datum]';
   $handler->display->display_options['fields']['views_conditional_1']['strip_tags'] = 0;
   $handler->display->display_options['defaults']['sorts'] = FALSE;
-  /* Sort criterion: Inhalt: Datum (field_datum) */
+  /* Sort criterion: Content: Datum (field_datum) */
   $handler->display->display_options['sorts']['field_datum_value']['id'] = 'field_datum_value';
   $handler->display->display_options['sorts']['field_datum_value']['table'] = 'field_data_field_datum';
   $handler->display->display_options['sorts']['field_datum_value']['field'] = 'field_datum_value';
   $handler->display->display_options['sorts']['field_datum_value']['order'] = 'DESC';
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Filter criterion: Inhalt: Veröffentlicht */
+  /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
   $handler->display->display_options['filters']['status']['field'] = 'status';
   $handler->display->display_options['filters']['status']['value'] = 1;
   $handler->display->display_options['filters']['status']['group'] = 1;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: Inhalt: Typ */
+  /* Filter criterion: Content: Type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
@@ -1347,22 +1347,22 @@ Publikation|Publikationen'),
   $handler->display->display_options['pager']['options']['tags']['last'] = 'letzte Seite »';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'fields';
-  /* Feld: Indexed Beitrag: Node ID */
+  /* Field: Indexed Node: Node ID */
   $handler->display->display_options['fields']['nid']['id'] = 'nid';
   $handler->display->display_options['fields']['nid']['table'] = 'search_api_index_ipwa_solr_index';
   $handler->display->display_options['fields']['nid']['field'] = 'nid';
-  /* Feld: Indexed Beitrag: Titel */
+  /* Field: Indexed Node: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'search_api_index_ipwa_solr_index';
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['link_to_entity'] = 0;
-  /* Feld: Indexed Beitrag: Inhaltstyp */
+  /* Field: Indexed Node: Content type */
   $handler->display->display_options['fields']['type']['id'] = 'type';
   $handler->display->display_options['fields']['type']['table'] = 'search_api_index_ipwa_solr_index';
   $handler->display->display_options['fields']['type']['field'] = 'type';
   $handler->display->display_options['fields']['type']['link_to_entity'] = 0;
   $handler->display->display_options['fields']['type']['format_name'] = 1;
-  /* Feld: Indexed Beitrag: Datum */
+  /* Field: Indexed Node: Datum */
   $handler->display->display_options['fields']['field_datum']['id'] = 'field_datum';
   $handler->display->display_options['fields']['field_datum']['table'] = 'search_api_index_ipwa_solr_index';
   $handler->display->display_options['fields']['field_datum']['field'] = 'field_datum';
@@ -1375,26 +1375,26 @@ Publikation|Publikationen'),
     'show_remaining_days' => 0,
     'show_repeat_rule' => 'show',
   );
-  /* Feld: Indexed Beitrag: Latitude */
-  $handler->display->display_options['fields']['field_latitude']['id'] = 'field_latitude';
-  $handler->display->display_options['fields']['field_latitude']['table'] = 'search_api_index_ipwa_solr_index';
-  $handler->display->display_options['fields']['field_latitude']['field'] = 'field_latitude';
-  $handler->display->display_options['fields']['field_latitude']['label'] = '';
-  $handler->display->display_options['fields']['field_latitude']['element_label_colon'] = FALSE;
-  /* Feld: Indexed Beitrag: Longitude */
+  /* Field: Indexed Node: Longitude */
   $handler->display->display_options['fields']['field_longitude']['id'] = 'field_longitude';
   $handler->display->display_options['fields']['field_longitude']['table'] = 'search_api_index_ipwa_solr_index';
   $handler->display->display_options['fields']['field_longitude']['field'] = 'field_longitude';
   $handler->display->display_options['fields']['field_longitude']['label'] = '';
   $handler->display->display_options['fields']['field_longitude']['element_label_colon'] = FALSE;
-  /* Contextual filter: Indexed Beitrag: Node ID */
+  /* Field: Indexed Node: Latitude */
+  $handler->display->display_options['fields']['field_latitude']['id'] = 'field_latitude';
+  $handler->display->display_options['fields']['field_latitude']['table'] = 'search_api_index_ipwa_solr_index';
+  $handler->display->display_options['fields']['field_latitude']['field'] = 'field_latitude';
+  $handler->display->display_options['fields']['field_latitude']['label'] = '';
+  $handler->display->display_options['fields']['field_latitude']['element_label_colon'] = FALSE;
+  /* Contextual filter: Indexed Node: Node ID */
   $handler->display->display_options['arguments']['nid']['id'] = 'nid';
   $handler->display->display_options['arguments']['nid']['table'] = 'search_api_index_ipwa_solr_index';
   $handler->display->display_options['arguments']['nid']['field'] = 'nid';
   $handler->display->display_options['arguments']['nid']['exception']['title'] = 'Alle';
   $handler->display->display_options['arguments']['nid']['default_argument_type'] = 'fixed';
   $handler->display->display_options['arguments']['nid']['summary']['format'] = 'default_summary';
-  /* Filter criterion: Indexed Beitrag: Inhaltstyp */
+  /* Filter criterion: Indexed Node: Content type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'search_api_index_ipwa_solr_index';
   $handler->display->display_options['filters']['type']['field'] = 'type';
@@ -1402,7 +1402,7 @@ Publikation|Publikationen'),
     'protagonist' => 'protagonist',
     'projekt' => 'projekt',
   );
-  /* Filter criterion: Indexed Beitrag: Status */
+  /* Filter criterion: Indexed Node: Status */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'search_api_index_ipwa_solr_index';
   $handler->display->display_options['filters']['status']['field'] = 'status';
@@ -1413,7 +1413,7 @@ Publikation|Publikationen'),
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
   $handler->display->display_options['defaults']['arguments'] = FALSE;
-  /* Contextual filter: Indexed Beitrag: Node ID */
+  /* Contextual filter: Indexed Node: Node ID */
   $handler->display->display_options['arguments']['nid']['id'] = 'nid';
   $handler->display->display_options['arguments']['nid']['table'] = 'search_api_index_ipwa_solr_index';
   $handler->display->display_options['arguments']['nid']['field'] = 'nid';
@@ -1423,6 +1423,20 @@ Publikation|Publikationen'),
   $handler->display->display_options['arguments']['nid']['summary']['format'] = 'default_summary';
   $handler->display->display_options['arguments']['nid']['break_phrase'] = 0;
   $handler->display->display_options['arguments']['nid']['not'] = 0;
+  $handler->display->display_options['path'] = 'project-single-view56';
+
+  /* Display: Feed */
+  $handler = $view->new_display('feed', 'Feed', 'feed_1');
+  $handler->display->display_options['pager']['type'] = 'none';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['style_plugin'] = 'views_geojson_feed';
+  $handler->display->display_options['style_options']['data_source']['value'] = 'latlon';
+  $handler->display->display_options['style_options']['data_source']['latitude'] = 'field_latitude';
+  $handler->display->display_options['style_options']['data_source']['longitude'] = 'field_longitude';
+  $handler->display->display_options['style_options']['data_source']['wkt'] = 'nid';
+  $handler->display->display_options['style_options']['data_source']['name_field'] = '';
+  $handler->display->display_options['style_options']['data_source']['description_field'] = '';
+  $handler->display->display_options['style_options']['jsonp_prefix'] = '';
   $handler->display->display_options['path'] = 'project-single-view-json';
   $translatables['project_single_view'] = array(
     t('Master'),
@@ -1443,11 +1457,12 @@ Publikation|Publikationen'),
     t('Node ID'),
     t('.'),
     t(','),
-    t('Titel'),
-    t('Inhaltstyp'),
+    t('Title'),
+    t('Content type'),
     t('Datum'),
     t('Alle'),
     t('Page'),
+    t('Feed'),
   );
   $export['project_single_view'] = $view;
 
@@ -1555,36 +1570,36 @@ Publikation|Publikationen'),
   $handler->display->display_options['pager']['options']['tags']['last'] = 'letzte Seite »';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'fields';
-  /* Kopfbereich: Global: Result summary */
+  /* Header: Global: Result summary */
   $handler->display->display_options['header']['result']['id'] = 'result';
   $handler->display->display_options['header']['result']['table'] = 'views';
   $handler->display->display_options['header']['result']['field'] = 'result';
   $handler->display->display_options['header']['result']['content'] = ' @total';
-  /* Kopfbereich: Global: Unfiltered text */
+  /* Header: Global: Unfiltered text */
   $handler->display->display_options['header']['area_text_custom']['id'] = 'area_text_custom';
   $handler->display->display_options['header']['area_text_custom']['table'] = 'views';
   $handler->display->display_options['header']['area_text_custom']['field'] = 'area_text_custom';
   $handler->display->display_options['header']['area_text_custom']['content'] = '<a href="/projekt-list">List</a>';
-  /* Feld: Indexed Beitrag: Node ID */
+  /* Field: Indexed Node: Node ID */
   $handler->display->display_options['fields']['nid']['id'] = 'nid';
   $handler->display->display_options['fields']['nid']['table'] = 'search_api_index_ipwa_solr_index';
   $handler->display->display_options['fields']['nid']['field'] = 'nid';
-  /* Feld: Indexed Beitrag: Titel */
+  /* Field: Indexed Node: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'search_api_index_ipwa_solr_index';
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title']['link_to_entity'] = 1;
-  /* Feld: Indexed Beitrag: Latitude */
-  $handler->display->display_options['fields']['field_latitude']['id'] = 'field_latitude';
-  $handler->display->display_options['fields']['field_latitude']['table'] = 'search_api_index_ipwa_solr_index';
-  $handler->display->display_options['fields']['field_latitude']['field'] = 'field_latitude';
-  /* Feld: Indexed Beitrag: Longitude */
+  /* Field: Indexed Node: Longitude */
   $handler->display->display_options['fields']['field_longitude']['id'] = 'field_longitude';
   $handler->display->display_options['fields']['field_longitude']['table'] = 'search_api_index_ipwa_solr_index';
   $handler->display->display_options['fields']['field_longitude']['field'] = 'field_longitude';
-  /* Feld: Indexed Beitrag: Dieser Artikel gehört zu */
+  /* Field: Indexed Node: Latitude */
+  $handler->display->display_options['fields']['field_latitude']['id'] = 'field_latitude';
+  $handler->display->display_options['fields']['field_latitude']['table'] = 'search_api_index_ipwa_solr_index';
+  $handler->display->display_options['fields']['field_latitude']['field'] = 'field_latitude';
+  /* Field: Indexed Node: Dieser Akteur gehört zu */
   $handler->display->display_options['fields']['field_themenzuweisung']['id'] = 'field_themenzuweisung';
   $handler->display->display_options['fields']['field_themenzuweisung']['table'] = 'search_api_index_ipwa_solr_index';
   $handler->display->display_options['fields']['field_themenzuweisung']['field'] = 'field_themenzuweisung';
@@ -1593,18 +1608,18 @@ Publikation|Publikationen'),
   $handler->display->display_options['fields']['field_themenzuweisung']['link_to_entity'] = 1;
   $handler->display->display_options['fields']['field_themenzuweisung']['view_mode'] = 'full';
   $handler->display->display_options['fields']['field_themenzuweisung']['bypass_access'] = 0;
-  /* Feld: Indexed Beitrag: PLZ */
+  /* Field: Indexed Node: PLZ */
   $handler->display->display_options['fields']['field_plz']['id'] = 'field_plz';
   $handler->display->display_options['fields']['field_plz']['table'] = 'search_api_index_ipwa_solr_index';
   $handler->display->display_options['fields']['field_plz']['field'] = 'field_plz';
-  /* Feld: Indexed Beitrag: Akteurstyp */
+  /* Field: Indexed Node: Akteurstyp */
   $handler->display->display_options['fields']['field_akteurstyp']['id'] = 'field_akteurstyp';
   $handler->display->display_options['fields']['field_akteurstyp']['table'] = 'search_api_index_ipwa_solr_index';
   $handler->display->display_options['fields']['field_akteurstyp']['field'] = 'field_akteurstyp';
   $handler->display->display_options['fields']['field_akteurstyp']['link_to_entity'] = 1;
   $handler->display->display_options['fields']['field_akteurstyp']['view_mode'] = 'full';
   $handler->display->display_options['fields']['field_akteurstyp']['bypass_access'] = 0;
-  /* Filter criterion: Indexed Beitrag: Inhaltstyp */
+  /* Filter criterion: Indexed Node: Content type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'search_api_index_ipwa_solr_index';
   $handler->display->display_options['filters']['type']['field'] = 'type';
@@ -1622,7 +1637,7 @@ Publikation|Publikationen'),
     1 => 0,
   );
   $handler->display->display_options['filters']['type']['expose']['reduce'] = 0;
-  /* Filter criterion: Indexed Beitrag: Akteurstyp */
+  /* Filter criterion: Indexed Node: Akteurstyp */
   $handler->display->display_options['filters']['field_akteurstyp']['id'] = 'field_akteurstyp';
   $handler->display->display_options['filters']['field_akteurstyp']['table'] = 'search_api_index_ipwa_solr_index';
   $handler->display->display_options['filters']['field_akteurstyp']['field'] = 'field_akteurstyp';
@@ -1637,7 +1652,7 @@ Publikation|Publikationen'),
     1 => 0,
   );
   $handler->display->display_options['filters']['field_akteurstyp']['expose']['reduce'] = 0;
-  /* Filter criterion: Indexed Beitrag: Dieser Artikel gehört zu */
+  /* Filter criterion: Indexed Node: Dieser Akteur gehört zu */
   $handler->display->display_options['filters']['field_themenzuweisung']['id'] = 'field_themenzuweisung';
   $handler->display->display_options['filters']['field_themenzuweisung']['table'] = 'search_api_index_ipwa_solr_index';
   $handler->display->display_options['filters']['field_themenzuweisung']['field'] = 'field_themenzuweisung';
@@ -1697,12 +1712,12 @@ Publikation|Publikationen'),
   /* Display: Project map */
   $handler = $view->new_display('page', 'Project map', 'project_map');
   $handler->display->display_options['defaults']['header'] = FALSE;
-  /* Kopfbereich: Global: Result summary */
+  /* Header: Global: Result summary */
   $handler->display->display_options['header']['result']['id'] = 'result';
   $handler->display->display_options['header']['result']['table'] = 'views';
   $handler->display->display_options['header']['result']['field'] = 'result';
   $handler->display->display_options['header']['result']['content'] = ' @total';
-  /* Kopfbereich: Global: Unfiltered text */
+  /* Header: Global: Unfiltered text */
   $handler->display->display_options['header']['area_text_custom']['id'] = 'area_text_custom';
   $handler->display->display_options['header']['area_text_custom']['table'] = 'views';
   $handler->display->display_options['header']['area_text_custom']['field'] = 'area_text_custom';
@@ -1714,7 +1729,7 @@ Publikation|Publikationen'),
     2 => 'AND',
   );
   $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Filter criterion: Indexed Beitrag: Inhaltstyp */
+  /* Filter criterion: Indexed Node: Content type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'search_api_index_ipwa_solr_index';
   $handler->display->display_options['filters']['type']['field'] = 'type';
@@ -1733,7 +1748,7 @@ Publikation|Publikationen'),
     1 => 0,
   );
   $handler->display->display_options['filters']['type']['expose']['reduce'] = 1;
-  /* Filter criterion: Indexed Beitrag: Akteurstyp */
+  /* Filter criterion: Indexed Node: Akteurstyp */
   $handler->display->display_options['filters']['field_akteurstyp']['id'] = 'field_akteurstyp';
   $handler->display->display_options['filters']['field_akteurstyp']['table'] = 'search_api_index_ipwa_solr_index';
   $handler->display->display_options['filters']['field_akteurstyp']['field'] = 'field_akteurstyp';
@@ -1749,7 +1764,7 @@ Publikation|Publikationen'),
     1 => 0,
   );
   $handler->display->display_options['filters']['field_akteurstyp']['expose']['reduce'] = 0;
-  /* Filter criterion: Indexed Beitrag: Dieser Artikel gehört zu */
+  /* Filter criterion: Indexed Node: Dieser Akteur gehört zu */
   $handler->display->display_options['filters']['field_themenzuweisung']['id'] = 'field_themenzuweisung';
   $handler->display->display_options['filters']['field_themenzuweisung']['table'] = 'search_api_index_ipwa_solr_index';
   $handler->display->display_options['filters']['field_themenzuweisung']['field'] = 'field_themenzuweisung';
@@ -1767,7 +1782,7 @@ Publikation|Publikationen'),
     1 => 0,
   );
   $handler->display->display_options['filters']['field_themenzuweisung']['expose']['reduce'] = 0;
-  /* Filter criterion: Indexed Beitrag: PLZ */
+  /* Filter criterion: Indexed Node: PLZ */
   $handler->display->display_options['filters']['field_plz']['id'] = 'field_plz';
   $handler->display->display_options['filters']['field_plz']['table'] = 'search_api_index_ipwa_solr_index';
   $handler->display->display_options['filters']['field_plz']['field'] = 'field_plz';
@@ -1781,7 +1796,7 @@ Publikation|Publikationen'),
     2 => '2',
     1 => 0,
   );
-  /* Filter criterion: Indexed Beitrag: Dieser Artikel gehört zu */
+  /* Filter criterion: Indexed Node: Dieser Akteur gehört zu */
   $handler->display->display_options['filters']['field_themenzuweisung_1']['id'] = 'field_themenzuweisung_1';
   $handler->display->display_options['filters']['field_themenzuweisung_1']['table'] = 'search_api_index_ipwa_solr_index';
   $handler->display->display_options['filters']['field_themenzuweisung_1']['field'] = 'field_themenzuweisung';
@@ -1843,19 +1858,19 @@ Publikation|Publikationen'),
   /* Display: Project list */
   $handler = $view->new_display('page', 'Project list', 'page_1');
   $handler->display->display_options['defaults']['header'] = FALSE;
-  /* Kopfbereich: Global: Result summary */
+  /* Header: Global: Result summary */
   $handler->display->display_options['header']['result']['id'] = 'result';
   $handler->display->display_options['header']['result']['table'] = 'views';
   $handler->display->display_options['header']['result']['field'] = 'result';
   $handler->display->display_options['header']['result']['content'] = ' @total';
-  /* Kopfbereich: Global: Unfiltered text */
+  /* Header: Global: Unfiltered text */
   $handler->display->display_options['header']['area_text_custom']['id'] = 'area_text_custom';
   $handler->display->display_options['header']['area_text_custom']['table'] = 'views';
   $handler->display->display_options['header']['area_text_custom']['field'] = 'area_text_custom';
   $handler->display->display_options['header']['area_text_custom']['content'] = '<a href="/projekt-map">Map</a>';
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Filter criterion: Indexed Beitrag: Inhaltstyp */
+  /* Filter criterion: Indexed Node: Content type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'search_api_index_ipwa_solr_index';
   $handler->display->display_options['filters']['type']['field'] = 'type';
@@ -1874,7 +1889,7 @@ Publikation|Publikationen'),
     1 => 0,
   );
   $handler->display->display_options['filters']['type']['expose']['reduce'] = 0;
-  /* Filter criterion: Indexed Beitrag: Akteurstyp */
+  /* Filter criterion: Indexed Node: Akteurstyp */
   $handler->display->display_options['filters']['field_akteurstyp']['id'] = 'field_akteurstyp';
   $handler->display->display_options['filters']['field_akteurstyp']['table'] = 'search_api_index_ipwa_solr_index';
   $handler->display->display_options['filters']['field_akteurstyp']['field'] = 'field_akteurstyp';
@@ -1890,7 +1905,7 @@ Publikation|Publikationen'),
     1 => 0,
   );
   $handler->display->display_options['filters']['field_akteurstyp']['expose']['reduce'] = 0;
-  /* Filter criterion: Indexed Beitrag: Dieser Artikel gehört zu */
+  /* Filter criterion: Indexed Node: Dieser Akteur gehört zu */
   $handler->display->display_options['filters']['field_themenzuweisung']['id'] = 'field_themenzuweisung';
   $handler->display->display_options['filters']['field_themenzuweisung']['table'] = 'search_api_index_ipwa_solr_index';
   $handler->display->display_options['filters']['field_themenzuweisung']['field'] = 'field_themenzuweisung';
@@ -1947,7 +1962,7 @@ Publikation|Publikationen'),
     1 => 0,
   );
   $handler->display->display_options['filters']['field_themenzuweisung']['expose']['reduce'] = 0;
-  /* Filter criterion: Indexed Beitrag: PLZ */
+  /* Filter criterion: Indexed Node: PLZ */
   $handler->display->display_options['filters']['field_plz']['id'] = 'field_plz';
   $handler->display->display_options['filters']['field_plz']['table'] = 'search_api_index_ipwa_solr_index';
   $handler->display->display_options['filters']['field_plz']['field'] = 'field_plz';
@@ -1961,7 +1976,7 @@ Publikation|Publikationen'),
     2 => '2',
     1 => 0,
   );
-  /* Filter criterion: Indexed Beitrag: Dieser Artikel gehört zu */
+  /* Filter criterion: Indexed Node: Dieser Akteur gehört zu */
   $handler->display->display_options['filters']['field_themenzuweisung_1']['id'] = 'field_themenzuweisung_1';
   $handler->display->display_options['filters']['field_themenzuweisung_1']['table'] = 'search_api_index_ipwa_solr_index';
   $handler->display->display_options['filters']['field_themenzuweisung_1']['field'] = 'field_themenzuweisung';
@@ -2036,18 +2051,18 @@ Publikation|Publikationen'),
   $handler->display->display_options['style_options']['jsonp_prefix'] = '';
   $handler->display->display_options['style_options']['content_type'] = 'text/json';
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Feld: Indexed Beitrag: Node ID */
+  /* Field: Indexed Node: Node ID */
   $handler->display->display_options['fields']['nid']['id'] = 'nid';
   $handler->display->display_options['fields']['nid']['table'] = 'search_api_index_ipwa_solr_index';
   $handler->display->display_options['fields']['nid']['field'] = 'nid';
-  /* Feld: Indexed Beitrag: Latitude */
-  $handler->display->display_options['fields']['field_latitude']['id'] = 'field_latitude';
-  $handler->display->display_options['fields']['field_latitude']['table'] = 'search_api_index_ipwa_solr_index';
-  $handler->display->display_options['fields']['field_latitude']['field'] = 'field_latitude';
-  /* Feld: Indexed Beitrag: Longitude */
+  /* Field: Indexed Node: Longitude */
   $handler->display->display_options['fields']['field_longitude']['id'] = 'field_longitude';
   $handler->display->display_options['fields']['field_longitude']['table'] = 'search_api_index_ipwa_solr_index';
   $handler->display->display_options['fields']['field_longitude']['field'] = 'field_longitude';
+  /* Field: Indexed Node: Latitude */
+  $handler->display->display_options['fields']['field_latitude']['id'] = 'field_latitude';
+  $handler->display->display_options['fields']['field_latitude']['table'] = 'search_api_index_ipwa_solr_index';
+  $handler->display->display_options['fields']['field_latitude']['field'] = 'field_latitude';
   $handler->display->display_options['path'] = 'map-all';
 
   /* Display: Feed 2 */
@@ -2087,13 +2102,14 @@ Publikation|Publikationen'),
     t('Node ID'),
     t('.'),
     t(','),
-    t('Latitude'),
     t('Longitude'),
-    t('Dieser Artikel gehört zu'),
+    t('Latitude'),
+    t('Dieser Akteur gehört zu'),
     t('PLZ'),
     t('Akteurstyp'),
     t('Inhaltstyp'),
     t('Akteur'),
+    t('Dieser Artikel gehört zu'),
     t('Project map'),
     t('Alle Themen'),
     t('Project list'),
@@ -2132,7 +2148,7 @@ Publikation|Publikationen'),
   $handler->display->display_options['pager']['options']['tags']['last'] = 'letzte Seite »';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'fields';
-  /* Relationship: File Usage: Datei */
+  /* Relationship: File Usage: File */
   $handler->display->display_options['relationships']['node_to_file']['id'] = 'node_to_file';
   $handler->display->display_options['relationships']['node_to_file']['table'] = 'file_usage';
   $handler->display->display_options['relationships']['node_to_file']['field'] = 'node_to_file';
@@ -2144,7 +2160,7 @@ Publikation|Publikationen'),
   $handler->display->display_options['relationships']['reverse_field_publication_node']['id'] = 'reverse_field_publication_node';
   $handler->display->display_options['relationships']['reverse_field_publication_node']['table'] = 'node';
   $handler->display->display_options['relationships']['reverse_field_publication_node']['field'] = 'reverse_field_publication_node';
-  /* Feld: Inhalt: Titel */
+  /* Field: Content: Title */
   $handler->display->display_options['fields']['title_1']['id'] = 'title_1';
   $handler->display->display_options['fields']['title_1']['table'] = 'node';
   $handler->display->display_options['fields']['title_1']['field'] = 'title';
@@ -2152,7 +2168,7 @@ Publikation|Publikationen'),
   $handler->display->display_options['fields']['title_1']['label'] = '';
   $handler->display->display_options['fields']['title_1']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title_1']['link_to_node'] = FALSE;
-  /* Feld: Inhalt: Dokument */
+  /* Field: Content: Dokument */
   $handler->display->display_options['fields']['field_dokument']['id'] = 'field_dokument';
   $handler->display->display_options['fields']['field_dokument']['table'] = 'field_data_field_dokument';
   $handler->display->display_options['fields']['field_dokument']['field'] = 'field_dokument';
@@ -2162,7 +2178,7 @@ Publikation|Publikationen'),
   $handler->display->display_options['fields']['field_dokument']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_dokument']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_dokument']['type'] = 'file_url_plain';
-  /* Feld: Inhalt: Titel */
+  /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
@@ -2172,7 +2188,7 @@ Publikation|Publikationen'),
   $handler->display->display_options['fields']['title']['alter']['target'] = '_blank';
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
-  /* Contextual filter: Inhalt: Nid */
+  /* Contextual filter: Content: Nid */
   $handler->display->display_options['arguments']['nid']['id'] = 'nid';
   $handler->display->display_options['arguments']['nid']['table'] = 'node';
   $handler->display->display_options['arguments']['nid']['field'] = 'nid';
@@ -2182,7 +2198,7 @@ Publikation|Publikationen'),
   $handler->display->display_options['arguments']['nid']['summary']['number_of_records'] = '0';
   $handler->display->display_options['arguments']['nid']['summary']['format'] = 'default_summary';
   $handler->display->display_options['arguments']['nid']['summary_options']['items_per_page'] = '25';
-  /* Filter criterion: Inhalt: Veröffentlicht */
+  /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
   $handler->display->display_options['filters']['status']['field'] = 'status';
@@ -2198,7 +2214,7 @@ Publikation|Publikationen'),
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['query']['options']['distinct'] = TRUE;
   $handler->display->display_options['defaults']['relationships'] = FALSE;
-  /* Relationship: File Usage: Datei */
+  /* Relationship: File Usage: File */
   $handler->display->display_options['relationships']['node_to_file']['id'] = 'node_to_file';
   $handler->display->display_options['relationships']['node_to_file']['table'] = 'file_usage';
   $handler->display->display_options['relationships']['node_to_file']['field'] = 'node_to_file';
@@ -2208,7 +2224,7 @@ Publikation|Publikationen'),
   $handler->display->display_options['relationships']['field_veranstaltungen_target_id']['field'] = 'field_veranstaltungen_target_id';
   $handler->display->display_options['relationships']['field_veranstaltungen_target_id']['required'] = TRUE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Feld: Inhalt: Datum */
+  /* Field: Content: Datum */
   $handler->display->display_options['fields']['field_event_datum']['id'] = 'field_event_datum';
   $handler->display->display_options['fields']['field_event_datum']['table'] = 'field_data_field_event_datum';
   $handler->display->display_options['fields']['field_event_datum']['field'] = 'field_event_datum';
@@ -2227,7 +2243,7 @@ Publikation|Publikationen'),
   );
   $handler->display->display_options['fields']['field_event_datum']['delta_offset'] = '0';
   $handler->display->display_options['fields']['field_event_datum']['separator'] = '';
-  /* Feld: Inhalt: Pfad */
+  /* Field: Content: Path */
   $handler->display->display_options['fields']['path']['id'] = 'path';
   $handler->display->display_options['fields']['path']['table'] = 'node';
   $handler->display->display_options['fields']['path']['field'] = 'path';
@@ -2235,7 +2251,7 @@ Publikation|Publikationen'),
   $handler->display->display_options['fields']['path']['label'] = '';
   $handler->display->display_options['fields']['path']['exclude'] = TRUE;
   $handler->display->display_options['fields']['path']['element_label_colon'] = FALSE;
-  /* Feld: Inhalt: Titel */
+  /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
@@ -2245,7 +2261,7 @@ Publikation|Publikationen'),
   $handler->display->display_options['fields']['title']['alter']['text'] = '[field_event_datum]<a href="[path]">[title]</a>';
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
-  /* Feld: Inhalt: Ort */
+  /* Field: Content: Ort */
   $handler->display->display_options['fields']['field_ort']['id'] = 'field_ort';
   $handler->display->display_options['fields']['field_ort']['table'] = 'field_data_field_ort';
   $handler->display->display_options['fields']['field_ort']['field'] = 'field_ort';
@@ -2254,7 +2270,7 @@ Publikation|Publikationen'),
   $handler->display->display_options['fields']['field_ort']['element_label_colon'] = FALSE;
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Filter criterion: Inhalt: Veröffentlicht */
+  /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
   $handler->display->display_options['filters']['status']['field'] = 'status';
@@ -2262,7 +2278,7 @@ Publikation|Publikationen'),
   $handler->display->display_options['filters']['status']['value'] = '1';
   $handler->display->display_options['filters']['status']['group'] = 1;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: Inhalt: Datum - end date (field_event_datum:value2) */
+  /* Filter criterion: Content: Datum - end date (field_event_datum:value2) */
   $handler->display->display_options['filters']['field_event_datum_value2']['id'] = 'field_event_datum_value2';
   $handler->display->display_options['filters']['field_event_datum_value2']['table'] = 'field_data_field_event_datum';
   $handler->display->display_options['filters']['field_event_datum_value2']['field'] = 'field_event_datum_value2';
@@ -2279,13 +2295,13 @@ Publikation|Publikationen'),
   $handler->display->display_options['relationships']['field_dokumente_und_publikatione_target_id']['table'] = 'field_data_field_dokumente_und_publikatione';
   $handler->display->display_options['relationships']['field_dokumente_und_publikatione_target_id']['field'] = 'field_dokumente_und_publikatione_target_id';
   $handler->display->display_options['relationships']['field_dokumente_und_publikatione_target_id']['required'] = TRUE;
-  /* Relationship: File Usage: Datei */
+  /* Relationship: File Usage: File */
   $handler->display->display_options['relationships']['node_to_file']['id'] = 'node_to_file';
   $handler->display->display_options['relationships']['node_to_file']['table'] = 'file_usage';
   $handler->display->display_options['relationships']['node_to_file']['field'] = 'node_to_file';
   $handler->display->display_options['relationships']['node_to_file']['relationship'] = 'field_dokumente_und_publikatione_target_id';
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Feld: Inhalt: Dokument */
+  /* Field: Content: Dokument */
   $handler->display->display_options['fields']['field_dokument']['id'] = 'field_dokument';
   $handler->display->display_options['fields']['field_dokument']['table'] = 'field_data_field_dokument';
   $handler->display->display_options['fields']['field_dokument']['field'] = 'field_dokument';
@@ -2295,7 +2311,7 @@ Publikation|Publikationen'),
   $handler->display->display_options['fields']['field_dokument']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_dokument']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_dokument']['type'] = 'file_url_plain';
-  /* Feld: Inhalt: Typ */
+  /* Field: Content: Type */
   $handler->display->display_options['fields']['type']['id'] = 'type';
   $handler->display->display_options['fields']['type']['table'] = 'node';
   $handler->display->display_options['fields']['type']['field'] = 'type';
@@ -2304,7 +2320,7 @@ Publikation|Publikationen'),
   $handler->display->display_options['fields']['type']['exclude'] = TRUE;
   $handler->display->display_options['fields']['type']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['type']['machine_name'] = TRUE;
-  /* Feld: Inhalt: Titel */
+  /* Field: Content: Title */
   $handler->display->display_options['fields']['title_1']['id'] = 'title_1';
   $handler->display->display_options['fields']['title_1']['table'] = 'node';
   $handler->display->display_options['fields']['title_1']['field'] = 'title';
@@ -2316,7 +2332,7 @@ Publikation|Publikationen'),
   $handler->display->display_options['fields']['title_1']['alter']['target'] = '_blank';
   $handler->display->display_options['fields']['title_1']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title_1']['link_to_node'] = FALSE;
-  /* Feld: Inhalt: Titel */
+  /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
@@ -2325,7 +2341,7 @@ Publikation|Publikationen'),
   $handler->display->display_options['fields']['title']['exclude'] = TRUE;
   $handler->display->display_options['fields']['title']['alter']['make_link'] = TRUE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
-  /* Feld: Views: Views Conditional */
+  /* Field: Views: Views Conditional */
   $handler->display->display_options['fields']['views_conditional']['id'] = 'views_conditional';
   $handler->display->display_options['fields']['views_conditional']['table'] = 'views_conditional';
   $handler->display->display_options['fields']['views_conditional']['field'] = 'views_conditional';
@@ -2337,7 +2353,7 @@ Publikation|Publikationen'),
   $handler->display->display_options['fields']['views_conditional']['then'] = '[title]';
   $handler->display->display_options['fields']['views_conditional']['or'] = '[title_1]';
   $handler->display->display_options['fields']['views_conditional']['strip_tags'] = 0;
-  /* Feld: Datei: Größe */
+  /* Field: File: Size */
   $handler->display->display_options['fields']['filesize']['id'] = 'filesize';
   $handler->display->display_options['fields']['filesize']['table'] = 'file_managed';
   $handler->display->display_options['fields']['filesize']['field'] = 'filesize';
@@ -2345,7 +2361,7 @@ Publikation|Publikationen'),
   $handler->display->display_options['fields']['filesize']['label'] = '';
   $handler->display->display_options['fields']['filesize']['exclude'] = TRUE;
   $handler->display->display_options['fields']['filesize']['element_label_colon'] = FALSE;
-  /* Feld: Datei: Extension */
+  /* Field: File: Extension */
   $handler->display->display_options['fields']['extension']['id'] = 'extension';
   $handler->display->display_options['fields']['extension']['table'] = 'file_managed';
   $handler->display->display_options['fields']['extension']['field'] = 'extension';
@@ -2355,7 +2371,7 @@ Publikation|Publikationen'),
   $handler->display->display_options['fields']['extension']['alter']['alter_text'] = TRUE;
   $handler->display->display_options['fields']['extension']['alter']['text'] = 'PDF';
   $handler->display->display_options['fields']['extension']['element_label_colon'] = FALSE;
-  /* Feld: Inhalt: Datei ist nicht barrierefrei */
+  /* Field: Content: Datei ist nicht barrierefrei */
   $handler->display->display_options['fields']['field_datei_ist_nicht_barrierefr']['id'] = 'field_datei_ist_nicht_barrierefr';
   $handler->display->display_options['fields']['field_datei_ist_nicht_barrierefr']['table'] = 'field_data_field_datei_ist_nicht_barrierefr';
   $handler->display->display_options['fields']['field_datei_ist_nicht_barrierefr']['field'] = 'field_datei_ist_nicht_barrierefr';
@@ -2366,7 +2382,7 @@ Publikation|Publikationen'),
   $handler->display->display_options['fields']['field_datei_ist_nicht_barrierefr']['hide_empty'] = TRUE;
   $handler->display->display_options['fields']['field_datei_ist_nicht_barrierefr']['empty_zero'] = TRUE;
   $handler->display->display_options['fields']['field_datei_ist_nicht_barrierefr']['hide_alter_empty'] = FALSE;
-  /* Feld: Views: Views Conditional */
+  /* Field: Views: Views Conditional */
   $handler->display->display_options['fields']['views_conditional_2']['id'] = 'views_conditional_2';
   $handler->display->display_options['fields']['views_conditional_2']['table'] = 'views_conditional';
   $handler->display->display_options['fields']['views_conditional_2']['field'] = 'views_conditional';
@@ -2380,7 +2396,7 @@ Publikation|Publikationen'),
   $handler->display->display_options['fields']['views_conditional_2']['strip_tags'] = 0;
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Filter criterion: Inhalt: Veröffentlicht */
+  /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
   $handler->display->display_options['filters']['status']['field'] = 'status';
@@ -2393,7 +2409,7 @@ Publikation|Publikationen'),
   /* Display: publikation */
   $handler = $view->new_display('block', 'publikation', 'block_3');
   $handler->display->display_options['defaults']['relationships'] = FALSE;
-  /* Relationship: File Usage: Datei */
+  /* Relationship: File Usage: File */
   $handler->display->display_options['relationships']['node_to_file']['id'] = 'node_to_file';
   $handler->display->display_options['relationships']['node_to_file']['table'] = 'file_usage';
   $handler->display->display_options['relationships']['node_to_file']['field'] = 'node_to_file';
@@ -2403,7 +2419,7 @@ Publikation|Publikationen'),
   $handler->display->display_options['relationships']['field_publikation_target_id']['field'] = 'field_publikation_target_id';
   $handler->display->display_options['relationships']['field_publikation_target_id']['required'] = TRUE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Feld: Inhalt: Titel */
+  /* Field: Content: Title */
   $handler->display->display_options['fields']['title_1']['id'] = 'title_1';
   $handler->display->display_options['fields']['title_1']['table'] = 'node';
   $handler->display->display_options['fields']['title_1']['field'] = 'title';
@@ -2411,7 +2427,7 @@ Publikation|Publikationen'),
   $handler->display->display_options['fields']['title_1']['label'] = '';
   $handler->display->display_options['fields']['title_1']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title_1']['link_to_node'] = FALSE;
-  /* Feld: Inhalt: Dokument */
+  /* Field: Content: Dokument */
   $handler->display->display_options['fields']['field_dokument']['id'] = 'field_dokument';
   $handler->display->display_options['fields']['field_dokument']['table'] = 'field_data_field_dokument';
   $handler->display->display_options['fields']['field_dokument']['field'] = 'field_dokument';
@@ -2421,7 +2437,7 @@ Publikation|Publikationen'),
   $handler->display->display_options['fields']['field_dokument']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_dokument']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_dokument']['type'] = 'file_url_plain';
-  /* Feld: Global: Custom text */
+  /* Field: Global: Custom text */
   $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
   $handler->display->display_options['fields']['nothing']['table'] = 'views';
   $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
@@ -2433,7 +2449,7 @@ Publikation|Publikationen'),
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Filter criterion: Inhalt: Veröffentlicht */
+  /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
   $handler->display->display_options['filters']['status']['field'] = 'status';
@@ -2458,17 +2474,17 @@ Publikation|Publikationen'),
     t('‹ vorherige Seite'),
     t('nächste Seite ›'),
     t('letzte Seite »'),
-    t('Datei'),
-    t('Inhalt entity referenced from field_dokumente_und_publikatione'),
+    t('File'),
+    t('Content entity referenced from field_dokumente_und_publikatione'),
     t('reverse_field_publication_node'),
     t('Alle'),
     t('Kommende Veranstaltungen'),
-    t('Inhalt entity referenced from field_veranstaltungen'),
+    t('Content entity referenced from field_veranstaltungen'),
     t('[field_event_datum]<a href="[path]">[title]</a>'),
     t('Dokumente und Publikationen'),
     t('PDF'),
     t('publikation'),
-    t('Inhalt entity referenced from field_publikation'),
+    t('Content entity referenced from field_publikation'),
     t('Downloaden'),
   );
   $export['related_content'] = $view;
@@ -2496,19 +2512,19 @@ Publikation|Publikationen'),
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'fields';
-  /* Feld: Inhalt: Titel */
+  /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  /* Sort criterion: Inhalt: Post date */
+  /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
   $handler->display->display_options['sorts']['created']['field'] = 'created';
   $handler->display->display_options['sorts']['created']['order'] = 'DESC';
-  /* Filter criterion: Inhalt: Veröffentlicht */
+  /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
   $handler->display->display_options['filters']['status']['field'] = 'status';
@@ -2526,14 +2542,14 @@ Publikation|Publikationen'),
   $handler->display->display_options['row_plugin'] = 'node_rss';
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Filter criterion: Inhalt: Veröffentlicht */
+  /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
   $handler->display->display_options['filters']['status']['field'] = 'status';
   $handler->display->display_options['filters']['status']['value'] = 1;
   $handler->display->display_options['filters']['status']['group'] = 1;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: Inhalt: Typ */
+  /* Filter criterion: Content: Type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'node';
   $handler->display->display_options['filters']['type']['field'] = 'type';
@@ -2553,7 +2569,7 @@ Publikation|Publikationen'),
   $handler = $view->new_display('block', 'RSS Block', 'block_1');
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Feld: Global: Custom text */
+  /* Field: Global: Custom text */
   $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
   $handler->display->display_options['fields']['nothing']['table'] = 'views';
   $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
@@ -2595,14 +2611,14 @@ Publikation|Publikationen'),
   $handler->display->display_options['pager']['type'] = 'none';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'fields';
-  /* Kopfbereich: Global: Text area */
+  /* Header: Global: Text area */
   $handler->display->display_options['header']['area']['id'] = 'area';
   $handler->display->display_options['header']['area']['table'] = 'views';
   $handler->display->display_options['header']['area']['field'] = 'area';
   $handler->display->display_options['header']['area']['label'] = 'Themen im fokus';
   $handler->display->display_options['header']['area']['content'] = 'Themen im Fokus';
   $handler->display->display_options['header']['area']['format'] = 'wysiwyg';
-  /* Feld: Taxonomie-Begriff: Name */
+  /* Field: Taxonomy term: Name */
   $handler->display->display_options['fields']['name']['id'] = 'name';
   $handler->display->display_options['fields']['name']['table'] = 'taxonomy_term_data';
   $handler->display->display_options['fields']['name']['field'] = 'name';
@@ -2610,18 +2626,18 @@ Publikation|Publikationen'),
   $handler->display->display_options['fields']['name']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['name']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['name']['link_to_taxonomy'] = TRUE;
-  /* Sort criterion: Taxonomie-Begriff: Gewichtung */
+  /* Sort criterion: Taxonomy term: Weight */
   $handler->display->display_options['sorts']['weight']['id'] = 'weight';
   $handler->display->display_options['sorts']['weight']['table'] = 'taxonomy_term_data';
   $handler->display->display_options['sorts']['weight']['field'] = 'weight';
-  /* Filter criterion: Taxonomie-Vokabular: Systemname */
+  /* Filter criterion: Taxonomy vocabulary: Machine name */
   $handler->display->display_options['filters']['machine_name']['id'] = 'machine_name';
   $handler->display->display_options['filters']['machine_name']['table'] = 'taxonomy_vocabulary';
   $handler->display->display_options['filters']['machine_name']['field'] = 'machine_name';
   $handler->display->display_options['filters']['machine_name']['value'] = array(
     'themenzuweisung' => 'themenzuweisung',
   );
-  /* Filter criterion: Taxonomie-Begriff: Übergeordneter Begriff */
+  /* Filter criterion: Taxonomy term: Parent term */
   $handler->display->display_options['filters']['parent']['id'] = 'parent';
   $handler->display->display_options['filters']['parent']['table'] = 'taxonomy_term_hierarchy';
   $handler->display->display_options['filters']['parent']['field'] = 'parent';
@@ -2630,20 +2646,20 @@ Publikation|Publikationen'),
   /* Display: Politik & Gesellschaft right view */
   $handler = $view->new_display('block', 'Politik & Gesellschaft right view', 'block');
   $handler->display->display_options['defaults']['sorts'] = FALSE;
-  /* Sort criterion: Taxonomie-Begriff: Gewichtung */
+  /* Sort criterion: Taxonomy term: Weight */
   $handler->display->display_options['sorts']['weight']['id'] = 'weight';
   $handler->display->display_options['sorts']['weight']['table'] = 'taxonomy_term_data';
   $handler->display->display_options['sorts']['weight']['field'] = 'weight';
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Filter criterion: Taxonomie-Vokabular: Systemname */
+  /* Filter criterion: Taxonomy vocabulary: Machine name */
   $handler->display->display_options['filters']['machine_name']['id'] = 'machine_name';
   $handler->display->display_options['filters']['machine_name']['table'] = 'taxonomy_vocabulary';
   $handler->display->display_options['filters']['machine_name']['field'] = 'machine_name';
   $handler->display->display_options['filters']['machine_name']['value'] = array(
     'themenzuweisung' => 'themenzuweisung',
   );
-  /* Filter criterion: Taxonomie-Begriff: Übergeordneter Begriff */
+  /* Filter criterion: Taxonomy term: Parent term */
   $handler->display->display_options['filters']['parent']['id'] = 'parent';
   $handler->display->display_options['filters']['parent']['table'] = 'taxonomy_term_hierarchy';
   $handler->display->display_options['filters']['parent']['field'] = 'parent';
@@ -2653,14 +2669,14 @@ Publikation|Publikationen'),
   $handler = $view->new_display('block', 'Wirtschaft & Arbeit right view', 'block_1');
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Filter criterion: Taxonomie-Vokabular: Systemname */
+  /* Filter criterion: Taxonomy vocabulary: Machine name */
   $handler->display->display_options['filters']['machine_name']['id'] = 'machine_name';
   $handler->display->display_options['filters']['machine_name']['table'] = 'taxonomy_vocabulary';
   $handler->display->display_options['filters']['machine_name']['field'] = 'machine_name';
   $handler->display->display_options['filters']['machine_name']['value'] = array(
     'themenzuweisung' => 'themenzuweisung',
   );
-  /* Filter criterion: Taxonomie-Begriff: Übergeordneter Begriff */
+  /* Filter criterion: Taxonomy term: Parent term */
   $handler->display->display_options['filters']['parent']['id'] = 'parent';
   $handler->display->display_options['filters']['parent']['table'] = 'taxonomy_term_hierarchy';
   $handler->display->display_options['filters']['parent']['field'] = 'parent';
@@ -2670,14 +2686,14 @@ Publikation|Publikationen'),
   $handler = $view->new_display('block', 'Infos für Unternehmen right view', 'block_2');
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Filter criterion: Taxonomie-Vokabular: Systemname */
+  /* Filter criterion: Taxonomy vocabulary: Machine name */
   $handler->display->display_options['filters']['machine_name']['id'] = 'machine_name';
   $handler->display->display_options['filters']['machine_name']['table'] = 'taxonomy_vocabulary';
   $handler->display->display_options['filters']['machine_name']['field'] = 'machine_name';
   $handler->display->display_options['filters']['machine_name']['value'] = array(
     'themenzuweisung' => 'themenzuweisung',
   );
-  /* Filter criterion: Taxonomie-Begriff: Übergeordneter Begriff */
+  /* Filter criterion: Taxonomy term: Parent term */
   $handler->display->display_options['filters']['parent']['id'] = 'parent';
   $handler->display->display_options['filters']['parent']['table'] = 'taxonomy_term_hierarchy';
   $handler->display->display_options['filters']['parent']['field'] = 'parent';
@@ -2687,14 +2703,14 @@ Publikation|Publikationen'),
   $handler = $view->new_display('block', 'Infos für Beschäftigte', 'block_3');
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Filter criterion: Taxonomie-Vokabular: Systemname */
+  /* Filter criterion: Taxonomy vocabulary: Machine name */
   $handler->display->display_options['filters']['machine_name']['id'] = 'machine_name';
   $handler->display->display_options['filters']['machine_name']['table'] = 'taxonomy_vocabulary';
   $handler->display->display_options['filters']['machine_name']['field'] = 'machine_name';
   $handler->display->display_options['filters']['machine_name']['value'] = array(
     'themenzuweisung' => 'themenzuweisung',
   );
-  /* Filter criterion: Taxonomie-Begriff: Übergeordneter Begriff */
+  /* Filter criterion: Taxonomy term: Parent term */
   $handler->display->display_options['filters']['parent']['id'] = 'parent';
   $handler->display->display_options['filters']['parent']['table'] = 'taxonomy_term_hierarchy';
   $handler->display->display_options['filters']['parent']['field'] = 'parent';
