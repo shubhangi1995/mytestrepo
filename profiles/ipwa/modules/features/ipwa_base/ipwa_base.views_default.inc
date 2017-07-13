@@ -1351,21 +1351,37 @@ Publikation|Publikationen'),
   $handler->display->display_options['fields']['nid']['id'] = 'nid';
   $handler->display->display_options['fields']['nid']['table'] = 'search_api_index_ipwa_solr_index';
   $handler->display->display_options['fields']['nid']['field'] = 'nid';
-  /* Field: Indexed Node: Title */
-  $handler->display->display_options['fields']['title']['id'] = 'title';
-  $handler->display->display_options['fields']['title']['table'] = 'search_api_index_ipwa_solr_index';
-  $handler->display->display_options['fields']['title']['field'] = 'title';
-  $handler->display->display_options['fields']['title']['link_to_entity'] = 0;
+  /* Field: Indexed Node: Dieser Akteur gehört zu */
+  $handler->display->display_options['fields']['field_themenzuweisung']['id'] = 'field_themenzuweisung';
+  $handler->display->display_options['fields']['field_themenzuweisung']['table'] = 'search_api_index_ipwa_solr_index';
+  $handler->display->display_options['fields']['field_themenzuweisung']['field'] = 'field_themenzuweisung';
+  $handler->display->display_options['fields']['field_themenzuweisung']['label'] = '';
+  $handler->display->display_options['fields']['field_themenzuweisung']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_themenzuweisung']['link_to_entity'] = 1;
+  $handler->display->display_options['fields']['field_themenzuweisung']['view_mode'] = 'full';
+  $handler->display->display_options['fields']['field_themenzuweisung']['bypass_access'] = 0;
   /* Field: Indexed Node: Content type */
   $handler->display->display_options['fields']['type']['id'] = 'type';
   $handler->display->display_options['fields']['type']['table'] = 'search_api_index_ipwa_solr_index';
   $handler->display->display_options['fields']['type']['field'] = 'type';
+  $handler->display->display_options['fields']['type']['label'] = '';
+  $handler->display->display_options['fields']['type']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['type']['link_to_entity'] = 0;
   $handler->display->display_options['fields']['type']['format_name'] = 1;
+  /* Field: Indexed Node: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'search_api_index_ipwa_solr_index';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['title']['link_to_entity'] = 0;
   /* Field: Indexed Node: Datum */
   $handler->display->display_options['fields']['field_datum']['id'] = 'field_datum';
   $handler->display->display_options['fields']['field_datum']['table'] = 'search_api_index_ipwa_solr_index';
   $handler->display->display_options['fields']['field_datum']['field'] = 'field_datum';
+  $handler->display->display_options['fields']['field_datum']['label'] = '';
+  $handler->display->display_options['fields']['field_datum']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_datum']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_datum']['settings'] = array(
     'format_type' => 'short',
     'fromto' => 'both',
@@ -1374,7 +1390,51 @@ Publikation|Publikationen'),
     'multiple_to' => '',
     'show_remaining_days' => 0,
     'show_repeat_rule' => 'show',
+    'addtocalendar_show' => 0,
+    'addtocalendar_settings' => array(
+      'style' => 'blue',
+      'atc_title' => array(
+        'field' => 'token',
+        'tokenized' => '',
+      ),
+      'atc_description' => array(
+        'field' => 'token',
+        'tokenized' => '',
+      ),
+      'atc_location' => array(
+        'field' => 'token',
+        'tokenized' => '',
+      ),
+      'atc_organizer' => array(
+        'field' => 'token',
+        'tokenized' => '',
+      ),
+      'atc_organizer_email' => array(
+        'field' => 'token',
+        'tokenized' => '',
+      ),
+      'atc_date_end' => array(
+        'field' => 'token',
+        'tokenized' => '',
+      ),
+      'atc_privacy' => 'public',
+      'data_secure' => 'auto',
+      'data_calendars' => array(
+        'iCalendar' => 0,
+        'Google Calendar' => 0,
+        'Outlook' => 0,
+        'Outlook Online' => 0,
+        'Yahoo! Calendar' => 0,
+      ),
+    ),
   );
+  /* Field: Indexed Node: Ort */
+  $handler->display->display_options['fields']['field_ort']['id'] = 'field_ort';
+  $handler->display->display_options['fields']['field_ort']['table'] = 'search_api_index_ipwa_solr_index';
+  $handler->display->display_options['fields']['field_ort']['field'] = 'field_ort';
+  $handler->display->display_options['fields']['field_ort']['label'] = '';
+  $handler->display->display_options['fields']['field_ort']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_ort']['element_label_colon'] = FALSE;
   /* Field: Indexed Node: Longitude */
   $handler->display->display_options['fields']['field_longitude']['id'] = 'field_longitude';
   $handler->display->display_options['fields']['field_longitude']['table'] = 'search_api_index_ipwa_solr_index';
@@ -1387,6 +1447,18 @@ Publikation|Publikationen'),
   $handler->display->display_options['fields']['field_latitude']['field'] = 'field_latitude';
   $handler->display->display_options['fields']['field_latitude']['label'] = '';
   $handler->display->display_options['fields']['field_latitude']['element_label_colon'] = FALSE;
+  /* Field: Views: Views Conditional */
+  $handler->display->display_options['fields']['views_conditional']['id'] = 'views_conditional';
+  $handler->display->display_options['fields']['views_conditional']['table'] = 'views_conditional';
+  $handler->display->display_options['fields']['views_conditional']['field'] = 'views_conditional';
+  $handler->display->display_options['fields']['views_conditional']['label'] = '';
+  $handler->display->display_options['fields']['views_conditional']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['views_conditional']['if'] = 'type';
+  $handler->display->display_options['fields']['views_conditional']['condition'] = '1';
+  $handler->display->display_options['fields']['views_conditional']['equalto'] = 'Projekt';
+  $handler->display->display_options['fields']['views_conditional']['then'] = '[field_ort]';
+  $handler->display->display_options['fields']['views_conditional']['or'] = '[field_datum]';
+  $handler->display->display_options['fields']['views_conditional']['strip_tags'] = 0;
   /* Contextual filter: Indexed Node: Node ID */
   $handler->display->display_options['arguments']['nid']['id'] = 'nid';
   $handler->display->display_options['arguments']['nid']['table'] = 'search_api_index_ipwa_solr_index';
@@ -1584,21 +1656,6 @@ Publikation|Publikationen'),
   $handler->display->display_options['fields']['nid']['id'] = 'nid';
   $handler->display->display_options['fields']['nid']['table'] = 'search_api_index_ipwa_solr_index';
   $handler->display->display_options['fields']['nid']['field'] = 'nid';
-  /* Field: Indexed Node: Title */
-  $handler->display->display_options['fields']['title']['id'] = 'title';
-  $handler->display->display_options['fields']['title']['table'] = 'search_api_index_ipwa_solr_index';
-  $handler->display->display_options['fields']['title']['field'] = 'title';
-  $handler->display->display_options['fields']['title']['label'] = '';
-  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['title']['link_to_entity'] = 1;
-  /* Field: Indexed Node: Longitude */
-  $handler->display->display_options['fields']['field_longitude']['id'] = 'field_longitude';
-  $handler->display->display_options['fields']['field_longitude']['table'] = 'search_api_index_ipwa_solr_index';
-  $handler->display->display_options['fields']['field_longitude']['field'] = 'field_longitude';
-  /* Field: Indexed Node: Latitude */
-  $handler->display->display_options['fields']['field_latitude']['id'] = 'field_latitude';
-  $handler->display->display_options['fields']['field_latitude']['table'] = 'search_api_index_ipwa_solr_index';
-  $handler->display->display_options['fields']['field_latitude']['field'] = 'field_latitude';
   /* Field: Indexed Node: Dieser Akteur gehört zu */
   $handler->display->display_options['fields']['field_themenzuweisung']['id'] = 'field_themenzuweisung';
   $handler->display->display_options['fields']['field_themenzuweisung']['table'] = 'search_api_index_ipwa_solr_index';
@@ -1608,17 +1665,101 @@ Publikation|Publikationen'),
   $handler->display->display_options['fields']['field_themenzuweisung']['link_to_entity'] = 1;
   $handler->display->display_options['fields']['field_themenzuweisung']['view_mode'] = 'full';
   $handler->display->display_options['fields']['field_themenzuweisung']['bypass_access'] = 0;
+  /* Field: Indexed Node: Content type */
+  $handler->display->display_options['fields']['type']['id'] = 'type';
+  $handler->display->display_options['fields']['type']['table'] = 'search_api_index_ipwa_solr_index';
+  $handler->display->display_options['fields']['type']['field'] = 'type';
+  $handler->display->display_options['fields']['type']['label'] = '';
+  $handler->display->display_options['fields']['type']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['type']['link_to_entity'] = 0;
+  $handler->display->display_options['fields']['type']['format_name'] = 1;
+  /* Field: Indexed Node: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'search_api_index_ipwa_solr_index';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['title']['link_to_entity'] = 1;
+  /* Field: Indexed Node: Datum */
+  $handler->display->display_options['fields']['field_datum']['id'] = 'field_datum';
+  $handler->display->display_options['fields']['field_datum']['table'] = 'search_api_index_ipwa_solr_index';
+  $handler->display->display_options['fields']['field_datum']['field'] = 'field_datum';
+  $handler->display->display_options['fields']['field_datum']['label'] = '';
+  $handler->display->display_options['fields']['field_datum']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_datum']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_datum']['settings'] = array(
+    'format_type' => 'short',
+    'fromto' => 'both',
+    'multiple_number' => '',
+    'multiple_from' => '',
+    'multiple_to' => '',
+    'show_remaining_days' => 0,
+    'show_repeat_rule' => 'show',
+    'addtocalendar_show' => 0,
+    'addtocalendar_settings' => array(
+      'style' => 'blue',
+      'atc_title' => array(
+        'field' => 'token',
+        'tokenized' => '',
+      ),
+      'atc_description' => array(
+        'field' => 'token',
+        'tokenized' => '',
+      ),
+      'atc_location' => array(
+        'field' => 'token',
+        'tokenized' => '',
+      ),
+      'atc_organizer' => array(
+        'field' => 'token',
+        'tokenized' => '',
+      ),
+      'atc_organizer_email' => array(
+        'field' => 'token',
+        'tokenized' => '',
+      ),
+      'atc_date_end' => array(
+        'field' => 'token',
+        'tokenized' => '',
+      ),
+      'atc_privacy' => 'public',
+      'data_secure' => 'auto',
+      'data_calendars' => array(
+        'iCalendar' => 0,
+        'Google Calendar' => 0,
+        'Outlook' => 0,
+        'Outlook Online' => 0,
+        'Yahoo! Calendar' => 0,
+      ),
+    ),
+  );
+  /* Field: Views: Views Conditional */
+  $handler->display->display_options['fields']['views_conditional']['id'] = 'views_conditional';
+  $handler->display->display_options['fields']['views_conditional']['table'] = 'views_conditional';
+  $handler->display->display_options['fields']['views_conditional']['field'] = 'views_conditional';
+  $handler->display->display_options['fields']['views_conditional']['label'] = '';
+  $handler->display->display_options['fields']['views_conditional']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['views_conditional']['if'] = 'type';
+  $handler->display->display_options['fields']['views_conditional']['condition'] = '1';
+  $handler->display->display_options['fields']['views_conditional']['equalto'] = 'Akteur';
+  $handler->display->display_options['fields']['views_conditional']['then'] = '[field_datum]';
+  $handler->display->display_options['fields']['views_conditional']['strip_tags'] = 0;
+  /* Field: Indexed Node: Longitude */
+  $handler->display->display_options['fields']['field_longitude']['id'] = 'field_longitude';
+  $handler->display->display_options['fields']['field_longitude']['table'] = 'search_api_index_ipwa_solr_index';
+  $handler->display->display_options['fields']['field_longitude']['field'] = 'field_longitude';
+  $handler->display->display_options['fields']['field_longitude']['label'] = '';
+  $handler->display->display_options['fields']['field_longitude']['element_label_colon'] = FALSE;
+  /* Field: Indexed Node: Latitude */
+  $handler->display->display_options['fields']['field_latitude']['id'] = 'field_latitude';
+  $handler->display->display_options['fields']['field_latitude']['table'] = 'search_api_index_ipwa_solr_index';
+  $handler->display->display_options['fields']['field_latitude']['field'] = 'field_latitude';
+  $handler->display->display_options['fields']['field_latitude']['label'] = '';
+  $handler->display->display_options['fields']['field_latitude']['element_label_colon'] = FALSE;
   /* Field: Indexed Node: PLZ */
   $handler->display->display_options['fields']['field_plz']['id'] = 'field_plz';
   $handler->display->display_options['fields']['field_plz']['table'] = 'search_api_index_ipwa_solr_index';
   $handler->display->display_options['fields']['field_plz']['field'] = 'field_plz';
-  /* Field: Indexed Node: Akteurstyp */
-  $handler->display->display_options['fields']['field_akteurstyp']['id'] = 'field_akteurstyp';
-  $handler->display->display_options['fields']['field_akteurstyp']['table'] = 'search_api_index_ipwa_solr_index';
-  $handler->display->display_options['fields']['field_akteurstyp']['field'] = 'field_akteurstyp';
-  $handler->display->display_options['fields']['field_akteurstyp']['link_to_entity'] = 1;
-  $handler->display->display_options['fields']['field_akteurstyp']['view_mode'] = 'full';
-  $handler->display->display_options['fields']['field_akteurstyp']['bypass_access'] = 0;
   /* Filter criterion: Indexed Node: Content type */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'search_api_index_ipwa_solr_index';
@@ -2078,6 +2219,23 @@ Publikation|Publikationen'),
   $handler->display->display_options['style_options']['data_source']['name_field'] = '';
   $handler->display->display_options['style_options']['data_source']['description_field'] = '';
   $handler->display->display_options['style_options']['jsonp_prefix'] = '';
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Indexed Node: Node ID */
+  $handler->display->display_options['fields']['nid']['id'] = 'nid';
+  $handler->display->display_options['fields']['nid']['table'] = 'search_api_index_ipwa_solr_index';
+  $handler->display->display_options['fields']['nid']['field'] = 'nid';
+  /* Field: Indexed Node: Longitude */
+  $handler->display->display_options['fields']['field_longitude']['id'] = 'field_longitude';
+  $handler->display->display_options['fields']['field_longitude']['table'] = 'search_api_index_ipwa_solr_index';
+  $handler->display->display_options['fields']['field_longitude']['field'] = 'field_longitude';
+  $handler->display->display_options['fields']['field_longitude']['label'] = '';
+  $handler->display->display_options['fields']['field_longitude']['element_label_colon'] = FALSE;
+  /* Field: Indexed Node: Latitude */
+  $handler->display->display_options['fields']['field_latitude']['id'] = 'field_latitude';
+  $handler->display->display_options['fields']['field_latitude']['table'] = 'search_api_index_ipwa_solr_index';
+  $handler->display->display_options['fields']['field_latitude']['field'] = 'field_latitude';
+  $handler->display->display_options['fields']['field_latitude']['label'] = '';
+  $handler->display->display_options['fields']['field_latitude']['element_label_colon'] = FALSE;
   $handler->display->display_options['path'] = 'map-filter';
   $translatables['projekt_map'] = array(
     t('Master'),
@@ -2102,19 +2260,19 @@ Publikation|Publikationen'),
     t('Node ID'),
     t('.'),
     t(','),
-    t('Longitude'),
-    t('Latitude'),
     t('Dieser Akteur gehört zu'),
     t('PLZ'),
-    t('Akteurstyp'),
     t('Inhaltstyp'),
     t('Akteur'),
     t('Dieser Artikel gehört zu'),
     t('Project map'),
+    t('Akteurstyp'),
     t('Alle Themen'),
     t('Project list'),
     t('<a href="/projekt-map">Map</a>'),
     t('Feed'),
+    t('Longitude'),
+    t('Latitude'),
     t('Feed 2'),
   );
   $export['projekt_map'] = $view;
