@@ -161,10 +161,10 @@ IPWA_MAP.Map.popup = {
     setTimeout(function () {
       var _centerPx = _this.parentMap.getPixelFromCoordinate(coordinates);
       var _center = _this.parentMap.getCoordinateFromPixel([_centerPx[0] + 50, _centerPx[1] + 100]);
-      var _pan = ol.animation.pan({ duration: 1000, source: _this.parentMap.getView().getCenter() });
-      var _zoom = ol.animation.zoom({ duration: 1000, resolution: _this.parentMap.getView().getResolution() });
-      _this.parentMap.beforeRender(_pan, _zoom);
-      _this.parentMap.getView().setCenter(_center);
+      var _view = _this.parentMap.getView();
+      _view.animate(
+        { zoom: _view.getZoom(), center: _center }
+      );
     }, 800);
   },
 
@@ -209,12 +209,9 @@ IPWA_MAP.Map.popup = {
   * @param {ol.extend} extent
   */
   zoomToExtend: function (extent) {
-    var size = this.parentMap.getSize();
     var view = this.parentMap.getView();
-    var pan = ol.animation.pan({ duration: 1000, source: this.parentMap.getView().getCenter() });
-    var zoom = ol.animation.zoom({ duration: 1000, resolution: this.parentMap.getView().getResolution() });
-    this.parentMap.beforeRender(pan, zoom);
-    view.fit(extent, size, { padding: [10, 20, 10, 20] });
+    var zoom = this.parentMap.getView().getZoom();
+    view.fit(extent, { padding: [10, 20, 10, 20], duration: 1000, maxZoom: zoom + 3 });
   },
 
   getFeatureId: function (features) {

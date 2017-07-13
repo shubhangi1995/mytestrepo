@@ -46,14 +46,16 @@ IPWA_MAP.Map.mapView = {
     // determines max zoom level
     projection.setExtent(this.conf.extent);
 
+    var _center = ol.proj.fromLonLat([this.conf.initialExtent.center.lon, this.conf.initialExtent.center.lat],
+      this.conf.projection);
+
     this.map = new ol.Map({
       target: 'footer_map',
       controls: [],
       interactions: [],
       view: new ol.View({
         projection: projection,
-        center: ol.proj.fromLonLat([this.conf.initialExtent.center.lon, this.conf.initialExtent.center.lat],
-          this.conf.projection),
+        center: _center,
         zoom: this.conf.initialExtent.zoom,
         minZoom: this.conf.minZoom,
         maxZoom: this.conf.maxZoom,
@@ -69,7 +71,8 @@ IPWA_MAP.Map.mapView = {
     IPWA_MAP.Map.countryLayer.init(this.map);
     IPWA_MAP.Map.webatlasLayer.init(this.map, this.conf.projection);
 
-    IPWA_MAP.Map.poiLayer.init(this.map, this.conf.projection, this.conf.detailInitialExtent.zoom);
+    IPWA_MAP.Map.poiLayer.init(this.map, this.conf.projection, this.conf.detailInitialExtent.zoom,
+      _center);
     IPWA_MAP.Map.poiStyle.init();
     IPWA_MAP.Map.poiLayer.setStyle(function (cluster, resolution) {
       return IPWA_MAP.Map.poiStyle.styleFunction(cluster, resolution);

@@ -7,9 +7,11 @@
 'use strict';
 
 IPWA_MAP.Map.poiLayer = {
-  init: function (map, projection, zoom) {
+  init: function (map, projection, zoom, initialCenter) {
     this.parentMap = map;
     this.projection = projection;
+    this.zoom = zoom;
+    this.initialCenter = initialCenter;
 
     this.poiLayer = new ol.layer.Vector();
     this.parentMap.addLayer(this.poiLayer);
@@ -45,9 +47,7 @@ IPWA_MAP.Map.poiLayer = {
       type: 'GET',
       dataType: 'json',
       success: function (data) {
-        // console.log(data);
         if (data) {
-          // btn.button('reset');
           _this.geoJsonSource.addFeatures((new ol.format.GeoJSON()).readFeatures(
             data,
             {
@@ -56,13 +56,9 @@ IPWA_MAP.Map.poiLayer = {
             }
           ));
 
-          // var _count = _this.geoJsonSource.getFeatures().length;
-          // _this.totalResult.text(_count);
-          /* if (str && str !== '' && _count >= _this.WARNING_COUNT) {
-            // _this.mapWarning.modal();
-          } else {
-            // _this.mapWarning.modal('hide');
-          }*/
+          if (str) {
+            _this.parentMap.getView().animate({ zoom: 4, center: _this.initialCenter });
+          }
         }
       },
       error: function (e) {
@@ -73,27 +69,14 @@ IPWA_MAP.Map.poiLayer = {
     });
   },
 
-  zoomToExtend: function () {
-    var src = this.geoJsonSource;
-    var extent = src.getExtent();
-    var size = this.parentMap.getSize();
-    var view = this.parentMap.getView();
-
-    view.fit(extent, size, { padding: [10, 20, 10, 20] });
-  },
-
-  zoomToFeature: function (id) {
-    var f = this.getFeatureByAttr('id', id);
-    var geom = f.getGeometry();
-    var size = this.parentMap.getSize();
-    var view = this.parentMap.getView();
-
-    var pan = ol.animation.pan({ duration: 1000, source: this.parentMap.getView().getCenter() });
-    var zoom = ol.animation.zoom({ duration: 1000, resolution: this.parentMap.getView().getResolution() });
-    this.parentMap.beforeRender(pan, zoom);
-
-    view.fit(geom, size, { maxZoom: 8 });
-  },
+  // zoomToExtend: function () {
+  //   var src = this.geoJsonSource;
+  //   var extent = src.getExtent();
+  //   var view = this.parentMap.getView();
+  //   view.fit(extent, {
+  //     duration: 1000
+  //   });
+  // },
 
   getFeatureByAttr: function (attr, val) {
     var src = this.geoJsonSource;

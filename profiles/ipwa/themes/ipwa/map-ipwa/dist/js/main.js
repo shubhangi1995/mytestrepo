@@ -37,22 +37,8 @@ IPWA_MAP.filter = {
         IPWA_MAP.Map.poiLayer.updateData(_str, _btn);
       });
 
-    //   _textField.keypress(function (event) {
-    //     if (event.keyCode === 13) {
-    //       event.preventDefault();
-    //       event.stopPropagation();
-    //       _btn.button('loading');
-    //       _str = _this.buildStrParameters();
-    //       // console.log(_str);
-    //       IPWA_MAP.Map.poiLayer.updateData(_str, _btn);
-    //       return false; // this will stop the default event triggering
-    //     }
-    //     return false;
-    //   });
-
-    //   // Initialization
+      // Initialization
       _str = IPWA_MAP.filter.buildStrParameters();
-      console.log(_str);
       IPWA_MAP.Map.poiLayer.updateData(_str, _btn);
     }
   },
@@ -65,11 +51,6 @@ IPWA_MAP.filter = {
       _form.find('#edit-field-plz'), // plz
       _form.find('#edit-field-themenzuweisung-1') // Alle Themen
     ];
-    // var _f2 = _form.find('.sol-selection');
-    // for (var i = 0; i < _f2.length; i++) {
-    //   _filter.push(_f2[i]);
-    // }
-    // console.log('_filter:', _filter);
 
     // build the string for the ajax request
     var _str = '';

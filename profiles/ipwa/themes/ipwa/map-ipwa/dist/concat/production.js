@@ -37,22 +37,8 @@ IPWA_MAP.filter = {
         IPWA_MAP.Map.poiLayer.updateData(_str, _btn);
       });
 
-    //   _textField.keypress(function (event) {
-    //     if (event.keyCode === 13) {
-    //       event.preventDefault();
-    //       event.stopPropagation();
-    //       _btn.button('loading');
-    //       _str = _this.buildStrParameters();
-    //       // console.log(_str);
-    //       IPWA_MAP.Map.poiLayer.updateData(_str, _btn);
-    //       return false; // this will stop the default event triggering
-    //     }
-    //     return false;
-    //   });
-
-    //   // Initialization
+      // Initialization
       _str = IPWA_MAP.filter.buildStrParameters();
-      console.log(_str);
       IPWA_MAP.Map.poiLayer.updateData(_str, _btn);
     }
   },
@@ -65,11 +51,6 @@ IPWA_MAP.filter = {
       _form.find('#edit-field-plz'), // plz
       _form.find('#edit-field-themenzuweisung-1') // Alle Themen
     ];
-    // var _f2 = _form.find('.sol-selection');
-    // for (var i = 0; i < _f2.length; i++) {
-    //   _filter.push(_f2[i]);
-    // }
-    // console.log('_filter:', _filter);
 
     // build the string for the ajax request
     var _str = '';
@@ -197,14 +178,16 @@ IPWA_MAP.Map.mapView = {
     // determines max zoom level
     projection.setExtent(this.conf.extent);
 
+    var _center = ol.proj.fromLonLat([this.conf.initialExtent.center.lon, this.conf.initialExtent.center.lat],
+      this.conf.projection);
+
     this.map = new ol.Map({
       target: 'footer_map',
       controls: [],
       interactions: [],
       view: new ol.View({
         projection: projection,
-        center: ol.proj.fromLonLat([this.conf.initialExtent.center.lon, this.conf.initialExtent.center.lat],
-          this.conf.projection),
+        center: _center,
         zoom: this.conf.initialExtent.zoom,
         minZoom: this.conf.minZoom,
         maxZoom: this.conf.maxZoom,
@@ -220,7 +203,8 @@ IPWA_MAP.Map.mapView = {
     IPWA_MAP.Map.countryLayer.init(this.map);
     IPWA_MAP.Map.webatlasLayer.init(this.map, this.conf.projection);
 
-    IPWA_MAP.Map.poiLayer.init(this.map, this.conf.projection, this.conf.detailInitialExtent.zoom);
+    IPWA_MAP.Map.poiLayer.init(this.map, this.conf.projection, this.conf.detailInitialExtent.zoom,
+      _center);
     IPWA_MAP.Map.poiStyle.init();
     IPWA_MAP.Map.poiLayer.setStyle(function (cluster, resolution) {
       return IPWA_MAP.Map.poiStyle.styleFunction(cluster, resolution);
@@ -297,9 +281,11 @@ IPWA_MAP.Map.mapView = {
 'use strict';
 
 IPWA_MAP.Map.poiLayer = {
-  init: function (map, projection, zoom) {
+  init: function (map, projection, zoom, initialCenter) {
     this.parentMap = map;
     this.projection = projection;
+    this.zoom = zoom;
+    this.initialCenter = initialCenter;
 
     this.poiLayer = new ol.layer.Vector();
     this.parentMap.addLayer(this.poiLayer);
@@ -335,9 +321,7 @@ IPWA_MAP.Map.poiLayer = {
       type: 'GET',
       dataType: 'json',
       success: function (data) {
-        // console.log(data);
         if (data) {
-          // btn.button('reset');
           _this.geoJsonSource.addFeatures((new ol.format.GeoJSON()).readFeatures(
             data,
             {
@@ -346,13 +330,9 @@ IPWA_MAP.Map.poiLayer = {
             }
           ));
 
-          // var _count = _this.geoJsonSource.getFeatures().length;
-          // _this.totalResult.text(_count);
-          /* if (str && str !== '' && _count >= _this.WARNING_COUNT) {
-            // _this.mapWarning.modal();
-          } else {
-            // _this.mapWarning.modal('hide');
-          }*/
+          if (str) {
+            _this.parentMap.getView().animate({ zoom: 4, center: _this.initialCenter });
+          }
         }
       },
       error: function (e) {
@@ -363,27 +343,14 @@ IPWA_MAP.Map.poiLayer = {
     });
   },
 
-  zoomToExtend: function () {
-    var src = this.geoJsonSource;
-    var extent = src.getExtent();
-    var size = this.parentMap.getSize();
-    var view = this.parentMap.getView();
-
-    view.fit(extent, size, { padding: [10, 20, 10, 20] });
-  },
-
-  zoomToFeature: function (id) {
-    var f = this.getFeatureByAttr('id', id);
-    var geom = f.getGeometry();
-    var size = this.parentMap.getSize();
-    var view = this.parentMap.getView();
-
-    var pan = ol.animation.pan({ duration: 1000, source: this.parentMap.getView().getCenter() });
-    var zoom = ol.animation.zoom({ duration: 1000, resolution: this.parentMap.getView().getResolution() });
-    this.parentMap.beforeRender(pan, zoom);
-
-    view.fit(geom, size, { maxZoom: 8 });
-  },
+  // zoomToExtend: function () {
+  //   var src = this.geoJsonSource;
+  //   var extent = src.getExtent();
+  //   var view = this.parentMap.getView();
+  //   view.fit(extent, {
+  //     duration: 1000
+  //   });
+  // },
 
   getFeatureByAttr: function (attr, val) {
     var src = this.geoJsonSource;
@@ -672,10 +639,10 @@ IPWA_MAP.Map.popup = {
     setTimeout(function () {
       var _centerPx = _this.parentMap.getPixelFromCoordinate(coordinates);
       var _center = _this.parentMap.getCoordinateFromPixel([_centerPx[0] + 50, _centerPx[1] + 100]);
-      var _pan = ol.animation.pan({ duration: 1000, source: _this.parentMap.getView().getCenter() });
-      var _zoom = ol.animation.zoom({ duration: 1000, resolution: _this.parentMap.getView().getResolution() });
-      _this.parentMap.beforeRender(_pan, _zoom);
-      _this.parentMap.getView().setCenter(_center);
+      var _view = _this.parentMap.getView();
+      _view.animate(
+        { zoom: _view.getZoom(), center: _center }
+      );
     }, 800);
   },
 
@@ -720,12 +687,9 @@ IPWA_MAP.Map.popup = {
   * @param {ol.extend} extent
   */
   zoomToExtend: function (extent) {
-    var size = this.parentMap.getSize();
     var view = this.parentMap.getView();
-    var pan = ol.animation.pan({ duration: 1000, source: this.parentMap.getView().getCenter() });
-    var zoom = ol.animation.zoom({ duration: 1000, resolution: this.parentMap.getView().getResolution() });
-    this.parentMap.beforeRender(pan, zoom);
-    view.fit(extent, size, { padding: [10, 20, 10, 20] });
+    var zoom = this.parentMap.getView().getZoom();
+    view.fit(extent, { padding: [10, 20, 10, 20], duration: 1000, maxZoom: zoom + 3 });
   },
 
   getFeatureId: function (features) {
