@@ -41,12 +41,6 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title><?=$title;?></title>
 	<style>
-		body{
-			display:block;
-		}
-		#center {
-			width:auto;
-		}
 		* {
 			margin:0;
 			padding:0;
@@ -59,29 +53,49 @@
 			font-size:20px !important;
 			background-color:transparent !important;
 		}
+		table tr td table{
+			font-family:Arial,Helvetica, sans-serif; font-size:16px; color:#273753;
+		}
+		table tr td table th{
+			background:#eff2f7;
+		}
+		table tr td table th, table tr td table td{
+			padding:10px;
+		}
+		a{
+			color:#273753 !important;
+			text-decoration:none !important;
+		}
+		.more_link{
+			color:#e74712 !important;
+		}
+		br{
+			display:none;
+		}
 	</style>
 </head>
+<center>
+<body>
 
-<body style="width:640px;">
-<table align="center" border="0" cellpadding="0" cellspacing="0" width="620" id="bodyTable" style="font-family:Arial,Helvetica, sans-serif; font-size:16px; color:#273753; width:640px;">
+<table  width="720" align="center" border="0" cellpadding="0" cellspacing="0" id="bodyTable" style="font-family:Arial,Helvetica, sans-serif; font-size:16px; color:#273753; width:720px;">
   
-	<tr>
-	<td width="620" align="center" style="width:620px;" style="color:#273753">
-		<table width="620" align="center">
-			<tr style="padding:10px 20px; background:#eff2f7;">
+	<tr style="margin-bottom:15px;">
+	<td width="720" align="center"  style="color:#273753;">
+		<table width="720" align="center">
+			<tr style="padding:10px 0; background:#eff2f7;">
 				<td align="left" style="padding:20px 10px;">
-						<img src="<?php print file_create_url(drupal_get_path('theme', 'ipwa')); ?>/images/logo.png" alt="Logo1" style="height:90px;"/>
+						<img src="<?php print file_create_url(drupal_get_path('theme', 'ipwa')); ?>/images/NRW_4_d.png" alt="Logo1" style="width:200px;height:90px;"/>
 				</td>
 				<td align="right" style="padding:20px 10px;">
-						<img src="<?php print file_create_url(drupal_get_path('theme', 'ipwa')); ?>/images/EU_Logo.png" alt="Logo2" style = "height:90px;"/>
+						<img src="<?php print file_create_url(drupal_get_path('theme', 'ipwa')); ?>/images/EU-Logo.png" alt="Logo2" style = "width:180px;height:90px;"/>
 				</td>
 			</tr>
 		</table>
 	</td>
 	</tr>
     <tr>
-	<td  style="width:620px;" style="color:#273753">
-	<table style="font-family:Arial,Helvetica, sans-serif; font-size:16px; color:#273753; width:640px;">
+	<td  style="width:720px;" style="color:#273753">
+	<table style="font-family:Arial,Helvetica, sans-serif; font-size:16px; color:#273753; width:720px;">
 	<tr>
 	 <td align="left" style = "font-weight:bold;color:#273753">
           <?php
@@ -110,7 +124,7 @@
        
     </tr>
     <tr>
-        <td  style="width:620px;color:#273753">
+        <td  style="width:720px;color:#273753">
           <?php
             /**
             * Following code is for print the Title of Newsletter
@@ -132,7 +146,7 @@
         </td>
     </tr>
     <tr>
-        <td  style="width:620px;color:#273753">
+        <td  style="width:720px;color:#273753">
 
           <?php
           /**
@@ -148,10 +162,10 @@
                   <?php //Following code is for print Title of Group. ?>
                   <?php foreach($field_data[$items['value']]->field_group_heading['und'] as $group_title): ?>
                     <h2 style="font-size:25px;background:#eff2f7;padding:20px 0;text-align:center;border-bottom:20px solid #fff;border-top:20px solid #fff; color:#273753s"><a href="<?php print $group_title['url']; ?>" ><?php print $group_title['title']; ?></a></h2>
-					<table style="font-family:Arial,Helvetica, sans-serif;margin:0 auto; font-size:16px;color:#273753;width:640px; width = "620">
+					<table style="font-family:Arial,Helvetica, sans-serif;margin:0 auto; font-size:16px;color:#273753;width:720px; width = "720">
 					<tr>
-					<td style="padding:10px 20px; background:#eff2f7;color:#273753">
-					<div style="background:#eff2f7; padding:30px 20px; color:#273753">
+					<td style="padding:20px 20px; background:#eff2f7;color:#273753">
+					<span style="background:#eff2f7; padding:30px 20px; color:#273753">
 					<?php foreach ($field_data[$items['value']]->field_newsletter_content_types['und'] as $node_data): ?>
                       <?php // look up the alias from the url_alias table ?>
                       <?php $source = 'node/' .$node_data['entity']->nid; ?>
@@ -159,17 +173,17 @@
                       <?php $node = node_load($node_data['entity']->nid); ?>
                       <?php if($node_data['entity']->type == 'termin') : ?>
                         
-                        <div>
+                        <div style="margin-bottom:45px;">
 
                         <?php //print location of Termin. ?>
                         <?php if(isset($node->field_ort['und'][0])) : ?>
-                          <div><?php print $node->field_ort['und'][0]['value']; ?></div>
+                          <span><?php print $node->field_ort['und'][0]['value']; ?></span>
                         <?php endif; ?>
 
                         <?php //print Title of Termin. ?>
-                          <div><a href="<?php print $base_url.'/'.$alias; ?>" style="color:#273753;font-weight:bold;text-decoration:none;font-size:18px;">
+                          <span><a href="<?php print $base_url.'/'.$alias; ?>" style="color:#273753;font-weight:bold;text-decoration:none;font-size:18px;">
                               <?php print $node_data['entity']->title; ?></a>
-                          </div>
+                          </span>
 
                         <?php //print Date of Termin. ?>
                         <?php if (!empty($node_data['entity']->field_event_datum)) : ?>
@@ -179,39 +193,39 @@
                             <?php $enddate = date("d.m.Y", strtotime($event_date[$occurence - 1]['value2'])); ?>
                             <?php if(($occurence > 1) || (($event_date[0]['value'] != $event_date[0]['value2']))) : ?>
                               <?php $output = ''; ?>
-                              <?php $output = '<div class="date-repeat-rule">' . $output . '</div>'; ?>
-                              <?php $output .= '<div class="date-display-range"><span class="date-display-start">' . $startDate . '</span> - <span class="date-display-end">' . $enddate . '</span></div>'; ?>
-                                <div style="margin:10px 0;"><?php print $output; ?></div>
+                              <?php $output = '<span class="date-repeat-rule">' . $output . '</span>'; ?>
+                              <?php $output .= '<span class="date-display-range"><span class="date-display-start">' . $startDate . '</span> - <span class="date-display-end">' . $enddate . '</span></span>'; ?>
+                                <span style="margin:10px 0 0;"><?php print $output; ?></span>
                             <?php else: ?>
-                                <div style="margin:10px 0;color:#e74712;font-weight:bold;"><?php print $startDate; ?></div>
+                                <span style="margin:10px 0 0;color:#e74712;font-weight:bold;"><?php print $startDate; ?></span>
                             <?php endif; ?>
                           <?php endforeach; ?>
                              </div>
                             
                         <?php endif; ?>
                       <?php  else: ?>
-                        <div>
+                        <span>
 
                         <?php //print Title of Other content excluded from Termin. ?>
-                          <div><a href="<?php print $base_url.'/'.$alias; ?>" style="color:#273753;font-weight:bold;text-decoration:none;font-size:18px;color:#273753">
+                          <span><a href="<?php print $base_url.'/'.$alias; ?>" style="color:#273753;font-weight:bold;text-decoration:none;font-size:18px;color:#273753">
                             <?php print $node_data['entity']->title; ?></a>
-                          </div>
+                          </span>
 
                         <?php //print body of Other content excluded from Termin. ?>
                         <?php if(isset($node->body['und'][0])) : ?>
                           <?php $title_link = $base_url.'/'.$alias; ?>
                             <?php $body = (strlen(strip_tags($node->body['und'][0]['value'])) > 200) ? substr(strip_tags($node->body['und'][0]['value']),0,200).
-                              ' <b>...</b> <a href="'.$title_link.'"> > mehr</a>' : strip_tags($node->body['und'][0]['value']); ?>
+                              ' <b>...</b> <a href="'.$title_link.'" class="more_link"> > mehr</a>' : strip_tags($node->body['und'][0]['value']); ?>
                             <p style="margin:5px 0; font-size:20px !important;background:none !important;color:#273753"><?php print $body; ?></p>
                         <?php else: ?>
                           <?php $title_link = $base_url.'/'.$alias; ?>
-                          <?php $body = '<a href="'.$title_link.'"> > mehr</a>'; ?>
+                          <?php $body = '<a href="'.$title_link.'" class="more_link"> > mehr</a>'; ?>
                             <p style="margin:5px 0; font-size:20px !important;background:none !important;color:#273753"><?php print $body; ?></p>
                         <?php endif; ?>
-                          </div>
+                          </span>
                       <?php endif; ?>
                     <?php endforeach; ?>
-					</div>
+					</span>
 					</td>
 					</tr>
 					</table>
@@ -225,30 +239,30 @@
     </tr>
    <tr>
 		<td>
-			<table style="font-family:Arial,Helvetica, sans-serif; font-size:16px; color:#273753; width:640px;">
-                <tr style="padding:10px 20px; background:#eff2f7;">
-                    <td align="left" style="color:#273753;">
+			<table style="font-family:Arial,Helvetica, sans-serif; font-size:16px; color:#273753; width:720px;">
+                <tr style="padding:20px 20px; background:#eff2f7;">
+                    <!--td align="left" style="color:#273753;">
                         <span style="font-weight:bold;color:#273753">Folden sie uns auf :</span>
                         <span><a href="#"><img src = "<?php print file_create_url(drupal_get_path('theme', 'ipwa')); ?>/images/fb.png" alt="FB" style="margin-right:5px;"/></a></span>
                         <span style="color:#eff2f7;font-size:8px;">12</span>
                         <span><a href="#"><img src = "<?php print file_create_url(drupal_get_path('theme', 'ipwa')); ?>/images/twitter.png" alt="Twitter" style="margin-right:5px;"/></a></span>
                         <span style="color:#eff2f7;font-size:8px;">12</span>
                         <span><a href="#"><img src = "<?php print file_create_url(drupal_get_path('theme', 'ipwa')); ?>/images/linkedin.png" alt="LinkedIn" style="margin-right:5px;"/></a></span>
-                    </td>
+                    </td-->
                     <td align="right" style="color:#273753;">
                         <a href="#">Impressum</a><span style="color:#eff2f7;font-size:8px;">12</span><a href="<?php print $base_url.'/de/content/kontaktformular'; ?>">Contact</a>
                     </td>
                 </tr>
-                <tr style="padding:10px 20px;">
+                <tr style="padding:20px 20px;">
                     <td align="left" style="color:#273753;">
-                        <span><img src="<?php print file_create_url(drupal_get_path('theme', 'ipwa')); ?>/images/EU_Logo.png" alt = "footer_logo1" /></span>
+                        <img src="<?php print file_create_url(drupal_get_path('theme', 'ipwa')); ?>/images/EU_Logo.png" alt = "footer_logo1" width="190"/>
                         <span style="color:#eff2f7;font-size:8px;">12</span>
-                        <span><img src="<?php print file_create_url(drupal_get_path('theme', 'ipwa')); ?>/images/EFRE.NRW.png" alt = "footer_logo2" /></span>
+                        <img src="<?php print file_create_url(drupal_get_path('theme', 'ipwa')); ?>/images/EFRE.NRW.png" alt = "footer_logo2" width="190"/>
                         <span style="color:#eff2f7;font-size:8px;">12</span>
-                        <span><img src="<?php print file_create_url(drupal_get_path('theme', 'ipwa')); ?>/images/MWEI.png" alt = "footer_logo3" /></span>
+                        <img src="<?php print file_create_url(drupal_get_path('theme', 'ipwa')); ?>/images/MWEI.png" alt = "footer_logo3" width="190"/>
                     </td>
                 </tr>
-				<tr style="padding:10px 20px; background:#eff2f7;">
+				<tr style="padding:20px 20px; background:#eff2f7;">
 				<td style="color:#273753;">
 					<div style="margin-bottom:25px;color:#273753;">Verantwrotlich im Sinne von $55 Abs. 2RStV ..... , Redaktion : .... , E-Mail Adresse : ....</div>
 					<div style="margin-bottom:25px;color:#273753;">Sie können diesen Newsletter <a href= "<?php print token_replace('[simplenews-subscriber:unsubscribe-url]', array('sanitize' => FALSE)); ?>">hier abbestellen.</a></div>
@@ -260,4 +274,5 @@
    </tr>
 </table>
 </body>
+</center>
 </html>
