@@ -7039,33 +7039,36 @@ footer .region-footer #block-menu-menu-footer-navigation {
           background: none;
           outline: none;
           outline-offset: none; }
-      /* line 153, ../scss/layout/_footer.scss */
+        /* line 152, ../scss/layout/_footer.scss */
+        footer .region-footer #block-menu-menu-footer-navigation ul li a:hover {
+          color: #e74712; }
+      /* line 158, ../scss/layout/_footer.scss */
       footer .region-footer #block-menu-menu-footer-navigation ul li .open a {
         background: none;
         border: none; }
-        /* line 157, ../scss/layout/_footer.scss */
+        /* line 162, ../scss/layout/_footer.scss */
         footer .region-footer #block-menu-menu-footer-navigation ul li .open a:hover, footer .region-footer #block-menu-menu-footer-navigation ul li .open a:focus {
           background: none;
           border: none; }
-/* line 168, ../scss/layout/_footer.scss */
+/* line 173, ../scss/layout/_footer.scss */
 footer .region-footer .footer_blocks {
   width: 100%;
   text-align: left;
   /* Tablet design */ }
   @media (min-width: 767px) {
-    /* line 168, ../scss/layout/_footer.scss */
+    /* line 173, ../scss/layout/_footer.scss */
     footer .region-footer .footer_blocks {
       width: 25%;
       float: left;
       padding-top: 10px;
       text-align: right; } }
-  /* line 180, ../scss/layout/_footer.scss */
+  /* line 185, ../scss/layout/_footer.scss */
   footer .region-footer .footer_blocks .block-views {
     display: inline-block; }
-    /* line 184, ../scss/layout/_footer.scss */
+    /* line 189, ../scss/layout/_footer.scss */
     footer .region-footer .footer_blocks .block-views .feed-icon img {
       display: none; }
-    /* line 189, ../scss/layout/_footer.scss */
+    /* line 194, ../scss/layout/_footer.scss */
     footer .region-footer .footer_blocks .block-views .feed-icon a:before {
       font-family: "icomoon";
       content: "\e911";
@@ -7073,17 +7076,17 @@ footer .region-footer .footer_blocks {
       font-size: 20px;
       display: inline-block;
       padding: 10px; }
-  /* line 201, ../scss/layout/_footer.scss */
+  /* line 206, ../scss/layout/_footer.scss */
   footer .region-footer .footer_blocks .block-ipwa-base {
     display: inline-block;
     padding-top: 0; }
-    /* line 205, ../scss/layout/_footer.scss */
+    /* line 210, ../scss/layout/_footer.scss */
     footer .region-footer .footer_blocks .block-ipwa-base #page_print {
       font-size: 0;
       background: none;
       border: none;
       padding: 0; }
-      /* line 211, ../scss/layout/_footer.scss */
+      /* line 216, ../scss/layout/_footer.scss */
       footer .region-footer .footer_blocks .block-ipwa-base #page_print:before {
         font-family: "icomoon";
         content: "\e94c";
@@ -7091,13 +7094,13 @@ footer .region-footer .footer_blocks {
         font-size: 20px;
         display: inline-block;
         padding: 10px; }
-  /* line 222, ../scss/layout/_footer.scss */
+  /* line 227, ../scss/layout/_footer.scss */
   footer .region-footer .footer_blocks .block-addthis {
     display: inline-block; }
-    /* line 225, ../scss/layout/_footer.scss */
+    /* line 230, ../scss/layout/_footer.scss */
     footer .region-footer .footer_blocks .block-addthis .addthis_button {
       font-size: 0; }
-      /* line 228, ../scss/layout/_footer.scss */
+      /* line 233, ../scss/layout/_footer.scss */
       footer .region-footer .footer_blocks .block-addthis .addthis_button:before {
         font-family: "icomoon";
         content: "\e94f";
@@ -7105,14 +7108,14 @@ footer .region-footer .footer_blocks {
         font-size: 20px;
         display: inline-block;
         padding: 10px; }
-      /* line 237, ../scss/layout/_footer.scss */
+      /* line 242, ../scss/layout/_footer.scss */
       footer .region-footer .footer_blocks .block-addthis .addthis_button img {
         display: none; }
-/* line 246, ../scss/layout/_footer.scss */
+/* line 251, ../scss/layout/_footer.scss */
 footer .footer-copyright {
   font-size: 18px;
   color: #273753; }
-/* line 251, ../scss/layout/_footer.scss */
+/* line 256, ../scss/layout/_footer.scss */
 footer .nav .open > a, footer .nav .open > a:hover, footer .nav .open > a:focus {
   background: none; }
 

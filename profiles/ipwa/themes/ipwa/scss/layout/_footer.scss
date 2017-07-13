@@ -146,7 +146,12 @@ footer {
                             background: none;
                             outline: none;
                             outline-offset: none;
+							
                         }
+						
+						&:hover{
+						 color:$active-menu;
+						}
                     }
 
                     .open {
