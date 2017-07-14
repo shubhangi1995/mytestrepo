@@ -20,6 +20,7 @@ features[fe_block_settings][] = block-infos_fur_unternehmen_left_menu
 features[fe_block_settings][] = block-politik_gesellschaft_left_block
 features[fe_block_settings][] = block-wirtschaft_arbeit_left_block
 features[fe_block_settings][] = menu-menu-footer-navigation
+features[fe_block_settings][] = tb_megamenu-menu-footer-navigation
 features[features_api][] = api:2
 features[menu_custom][] = main-menu
 features[menu_custom][] = menu-footer-navigation
