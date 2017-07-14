@@ -217,7 +217,7 @@ function ipwa_protagonist_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Weitere Details',
-    'weight' => '7',
+    'weight' => '8',
     'children' => array(
       0 => 'field_weitere_details',
       1 => 'field_zur_website',

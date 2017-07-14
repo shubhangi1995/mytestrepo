@@ -74,7 +74,7 @@ function ipwa_protagonist_strongarm() {
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '22',
+          'weight' => '23',
         ),
       ),
       'display' => array(),

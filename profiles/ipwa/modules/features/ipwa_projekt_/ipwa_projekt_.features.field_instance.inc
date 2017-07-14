@@ -57,7 +57,7 @@ function ipwa_projekt__field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 7,
+      'weight' => 8,
     ),
   );
 
@@ -121,7 +121,7 @@ function ipwa_projekt__field_default_field_instances() {
       'module' => 'paragraphs',
       'settings' => array(),
       'type' => 'paragraphs_embed',
-      'weight' => 8,
+      'weight' => 9,
     ),
   );
 
@@ -172,7 +172,7 @@ function ipwa_projekt__field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 6,
+      'weight' => 7,
     ),
   );
 
@@ -272,7 +272,7 @@ function ipwa_projekt__field_default_field_instances() {
         'year_range' => '-7:2030',
       ),
       'type' => 'date_popup',
-      'weight' => 3,
+      'weight' => 4,
     ),
   );
 
@@ -321,7 +321,7 @@ function ipwa_projekt__field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 12,
+      'weight' => 13,
     ),
   );
 
@@ -370,7 +370,7 @@ function ipwa_projekt__field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 17,
+      'weight' => 18,
     ),
   );
 
@@ -419,7 +419,7 @@ function ipwa_projekt__field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 15,
+      'weight' => 16,
     ),
   );
 
@@ -465,7 +465,7 @@ function ipwa_projekt__field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 2,
+      'weight' => 3,
     ),
   );
 
@@ -480,7 +480,7 @@ function ipwa_projekt__field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 4,
+        'weight' => 5,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -592,7 +592,46 @@ function ipwa_projekt__field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 14,
+      'weight' => 15,
+    ),
+  );
+
+  // Exported field_instance: 'node-projekt-field_ort'.
+  $field_instances['node-projekt-field_ort'] = array(
+    'bundle' => 'projekt',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 4,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_ort',
+    'label' => 'Ort',
+    'required' => 1,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 2,
     ),
   );
 
@@ -607,7 +646,7 @@ function ipwa_projekt__field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 5,
+        'weight' => 6,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -680,7 +719,7 @@ function ipwa_projekt__field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 16,
+      'weight' => 17,
     ),
   );
 
@@ -743,7 +782,7 @@ function ipwa_projekt__field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 5,
+      'weight' => 6,
     ),
   );
 
@@ -786,7 +825,7 @@ function ipwa_projekt__field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 4,
+      'weight' => 5,
     ),
   );
 
@@ -881,7 +920,7 @@ function ipwa_projekt__field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 13,
+      'weight' => 14,
     ),
   );
 
@@ -927,7 +966,7 @@ function ipwa_projekt__field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 11,
+      'weight' => 12,
     ),
   );
 
@@ -973,7 +1012,7 @@ function ipwa_projekt__field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 10,
+      'weight' => 11,
     ),
   );
 
@@ -1037,7 +1076,7 @@ Schema für externe Links: http://www…',
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 18,
+      'weight' => 19,
     ),
   );
 
@@ -1090,7 +1129,7 @@ Schema für externe Links: http://www…',
       'module' => 'youtube',
       'settings' => array(),
       'type' => 'youtube',
-      'weight' => 9,
+      'weight' => 10,
     ),
   );
 
@@ -1111,6 +1150,7 @@ Schema für externe Links: http://www…',
   t('Latitude');
   t('Longitude');
   t('Meldungen zum Thema');
+  t('Ort');
   t('PLZ');
   t('Projekte zum Thema');
   t('Quelle');
