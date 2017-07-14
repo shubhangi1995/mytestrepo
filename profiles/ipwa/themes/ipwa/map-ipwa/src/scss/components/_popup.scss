@@ -5,14 +5,15 @@
 
 .footer_map {
   .map-popup {
-    background-color: $map-bg-popup;
-    color: #fff;
+    display: none;
+    background-color: $dark-blue;
+    color: $light-gray;
     border: 0;
     position: absolute;
-    top: 40px;
-    left: $map-width-btn-close;
+    top: 160px;
     z-index: 101;
     width: 370px;
+    font-size: 17px;
   }
 
   .map-btn-close {
@@ -21,7 +22,7 @@
     right: 10px;
     text-align: center;
     vertical-align: middle;
-    color: $white;
+    color: $light-gray;
   }
 
   .map-btn-close {
@@ -34,137 +35,57 @@
   }
 
   .map-popup-content {
-    padding: 4px 30px 30px;
-    border: 1px solid $light-gray;
+    padding: 30px;
+    border: none;
   }
 
+  h2 {
+    color: $orange;
+    font-size: 18px;
+  }
 
-  /* conten of the popup *******************************************************/
+  /* content of the popup *******************************************************/
   .arrow-nav {
-    font-size: 30px;
-    // position: absolute;
-    // top: 10px;
-    // right: 15px;
+    font-size: 17px;
+    position: absolute;
+    top: 10px;
+    right: 43px;
     text-align: right;
-    width: 100%;
   }
 
   .btn-go-backward,
   .btn-go-forward {
     background-color: transparent;
-    margin-left: 15px;
+    margin-left: 10px;
     border: 0;
 
     &.disabled {
-        color: #ccc;
+        color: #777673;
     }
   }
 
-  .field-topic {
-    margin: -5px 0 45px;
+  /* content type *****************************************************************/
+  .div-topic > div {
 
-    a {
-      color: $map-thematic-color;
-      font-weight: bold;
-      border-radius: 4px;
-      background-color: $light-gray;
-      padding: 6px;
-    }
+  }
+  
+  .menu-politik::before {
+    content: "\e94b";
+  }
+  .menu-wirtschaft::before {
+    content: "\e947";
+  }
+  .menu-unternehmen::before {
+    content: "\e943";
+  }
+  .menu-beschaftigte::before {
+    content: "\e905";
+  }
+  .menu-schaufenster::before {
+    content: "\e910";
   }
 
-  .field-label {
-    font-size: 16px;
-    color: $map-thematic-color;
-
-    span {
-      display: inline-block;
-      width: 20px;
-      height: 20px;
-      margin-right: 12px;
-      font-family: 'icomoon';
-      color: $map-thematic-color;
-      font-size: 20px;
-      text-align: center;
-    }
-
-    .icon-runtime {
-      font-weight: normal;
-    }
-  }
-
-  .with-margin,
-  .field-items,
-  .btn {
-    margin-left: 32px;
-  }
-
-  .field-items {
-    color: $dark-gray;
-    margin-bottom: 30px;
-
-    a {
-      color: $dark-gray;
-    }
-
-    p {
-      font-size: 1em;
-    }
-
-    a::after {
-      font-family: 'icomoon';
-      color: $map-thematic-color;
-      content: $map-info-icon;
-      margin-left: 10px;
-      text-decoration: none;
-    }
-  }
-
-  .btn {
-    border: 1px solid $map-thematic-color;
-
-    a {
-      font-weight: bold;
-    }
-  }
-
-  .map-popup-content {
-    .btn {
-      width: 454px;
-      margin-left: 0;
-      overflow: hidden;
-      white-space: nowrap;
-      text-overflow: ellipsis;
-    }
-  }
-
-
-
-}
-
-/* only for detail ***********************************************************************/
-.map-detail-container {
-  .map-btn-link {
-    position: absolute;
-    bottom: 30px;
-
-    .btn {
-      background-color: $map-thematic-color;
-      color: $white;
-      margin-left: 0;
-    }
-  }
-}
-
-.map-data {
-  .field-title-detail {
-    padding: 6px 0;
-
-    a {
-      color: $map-thematic-color;
-    }
-  }
-
-  .field-items-detail {
-    padding: 6px 0;
+  .txtf-desc {
+    margin-bottom: 50px;
   }
 }

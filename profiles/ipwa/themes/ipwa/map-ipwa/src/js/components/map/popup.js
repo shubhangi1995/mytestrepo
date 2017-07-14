@@ -8,7 +8,7 @@
 
 IPWA_MAP.Map.popup = {
   parentMap: null, // ol3 map ol.Map
-  mapWidth: null, // ol3 map ol.Map
+  mapWidth: null,
   popup: null, // popup container
   olPopupTemplate: null,
   maxZoom: null,
@@ -60,84 +60,68 @@ IPWA_MAP.Map.popup = {
 
   displayPopup: function (features, pixel) {
     if (!_.isEmpty(features)) {
-      // console.log(features[0], features[0].get('nid'));
-      var _id = features[0].get('nid');
-
+      var _id = features[0].get('Node ID');
       var _this = this;
+      jQuery.ajax({
+        url: 'project-single-view-json/' + _id,
+        type: 'GET',
+        dataType: 'json',
+        success: function (data) {
+          // console.log('data.features', data.features);
+          if (data && data.features && data.features.length > 0) {
+            _this.setDataInPopup(data, 0, features);
+            _this.closePopup();
 
-      // console.log('data', data);
-      // console.log('data.features', data.features);
-      _this.setDataInPopup({}, 0, features);
-      _this.closePopup();
+            var _coordinates = features[0].getGeometry().getFirstCoordinate();
 
-      var _coordinates = features[0].getGeometry().getFirstCoordinate();
+            _this.$popup.show();
+            var _popupLeft = 120;
+            _this.$popup.css('left', _popupLeft);
+            features[0].set('type', 'selected');
+            _this.selFeature = features[0];
 
-      _this.$popup.show();
-      var _popupLeft = jQuery('.page-header').offset().left + 50;
-      _this.$popup.css('left', _popupLeft);
-      features[0].set('type', 'selected');
-      _this.selFeature = features[0];
-
-      _this.centerSelPoi(_coordinates, _popupLeft);
-      // jQuery.ajax({
-      //   url: 'project-single-view-json/' + _id,
-      //   // url: 'profiles/rnki/themes/rnki/map-rnki/dist/xxx.json',
-      //   type: 'GET',
-      //   // data: 'params='+JSON.stringify(params),
-      //   dataType: 'json',
-      //   success: function (data) {
-      //     // console.log('data', data);
-      //     // console.log('data.features', data.features);
-      //     if (data && data.features && data.features.length > 0) {
-      //       _this.setDataInPopup(data, 0, features);
-      //       _this.closePopup();
-
-      //       var _coordinates = features[0].getGeometry().getFirstCoordinate();
-
-      //       _this.$popup.show();
-      //       var _popupLeft = jQuery('.page-header').offset().left + 50;
-      //       _this.$popup.css('left', _popupLeft);
-      //       features[0].set('type', 'selected');
-      //       _this.selFeature = features[0];
-
-      //       _this.centerSelPoi(_coordinates, _popupLeft);
-      //     }
-      //   },
-      //   error: function (e) {
-      //     // called when there is an error
-      //     console.error(e);
-      //   }
-      // });
+            _this.centerSelPoi(_coordinates, _popupLeft);
+          }
+        },
+        error: function (e) {
+          // called when there is an error
+          console.log('Error: ', e);
+        }
+      });
     } else {
       this.closePopup();
     }
   },
 
   getDataForPaging: function (index, olFeatures) {
-    var _id = olFeatures[index].get('nid');
+    var _id = olFeatures[index].get('Node ID');
     var _this = this;
     jQuery.ajax({
       url: 'project-single-view-json/' + _id,
-      // url: 'profiles/rnki/themes/rnki/map-rnki/dist/xxx.json',
       type: 'GET',
       dataType: 'json',
       success: function (data) {
-        if (data && data.features && data.features.length > 0) {
-          _this.setDataInPopup(data, index, olFeatures);
-        }
+        _this.setDataInPopup(data, index, olFeatures);
+      },
+      error: function (e) {
+        // called when there is an error
+        console.log('Error: ', e);
       }
     });
   },
 
   setDataInPopup: function (data, index, olFeatures) {
-    // var _properties = data.features[0].properties;
-    // console.log('test =====>>>>  v6', _properties, _properties['Förderprogramm']);
-    // console.log(jQuery(_properties['Förderprogramm']).children().last());
-    // console.log(_properties['Förderprogramm'], _properties['Förderschwerpunkt'], _properties['Förderbereich']);
+    var _properties;
+
+    if (data && data.features && data.features.length > 0 && data.features[index]) {
+      _properties = data.features[index].properties;
+    }
 
     var _olPopupHtml = this.olPopupTemplate({
-      name: 'value 1', // _properties.Titel,
-      supportProgram: 'value 2!!!'
+      contentType: _properties?_properties.type:'',
+      title: _properties?_properties.title:'',
+      topics: _properties?_properties.field_themenzuweisung:'',
+      date: _properties?_properties.views_conditional:''
     });
     this.$popupContent.html(_olPopupHtml);
     this.addPagingToPopup(olFeatures, index);
@@ -153,15 +137,19 @@ IPWA_MAP.Map.popup = {
     } else {
       if (index === 0) {
         this.btnGoBackward.addClass('disabled');
+        this.btnGoBackward.on('click', function (evt) { evt.preventDefault(); });
       } else {
-        this.btnGoBackward.on('click', function () {
+        this.btnGoBackward.on('click', function (evt) {
+          evt.preventDefault();
           _this.getDataForPaging(index - 1, olFeatures);
         });
       }
       if (index === olFeatures.length - 1) {
         this.btnGoForward.addClass('disabled');
+        this.btnGoBackward.on('click', function (evt) { evt.preventDefault(); });
       } else {
-        this.btnGoForward.on('click', function () {
+        this.btnGoForward.on('click', function (evt) {
+          evt.preventDefault();
           _this.getDataForPaging(index + 1, olFeatures);
         });
       }
@@ -172,24 +160,23 @@ IPWA_MAP.Map.popup = {
     var _this = this;
     setTimeout(function () {
       var _centerPx = _this.parentMap.getPixelFromCoordinate(coordinates);
-      var _center = _this.parentMap.getCoordinateFromPixel([_centerPx[0] - (((_this.$popup.width() -50) + popupLeft)/2),
-        _centerPx[1]]);
-      var _pan = ol.animation.pan({ duration: 1000, source: _this.parentMap.getView().getCenter() });
-      var _zoom = ol.animation.zoom({ duration: 1000, resolution: _this.parentMap.getView().getResolution() });
-      _this.parentMap.beforeRender(_pan, _zoom);
-      _this.parentMap.getView().setCenter(_center);
+      var _center = _this.parentMap.getCoordinateFromPixel([_centerPx[0] + 50, _centerPx[1] + 100]);
+      var _view = _this.parentMap.getView();
+      _view.animate(
+        { zoom: _view.getZoom(), center: _center }
+      );
     }, 800);
   },
 
   zoomOrShowPopup: function (features, pixel) {
-    var hasMany = null;
+    var _hasMany = null;
 
     // Check if Marker is clustered
-    hasMany = features.length > 1;
+    _hasMany = features.length > 1;
 
     this.closePopup();
 
-    if (hasMany) {
+    if (_hasMany) {
       if (this.parentMap.getView().getZoom() === this.maxZoom) {
         // show the detail with more elements
         this.currentClusterFs = features;
@@ -222,12 +209,9 @@ IPWA_MAP.Map.popup = {
   * @param {ol.extend} extent
   */
   zoomToExtend: function (extent) {
-    var size = this.parentMap.getSize();
     var view = this.parentMap.getView();
-    var pan = ol.animation.pan({ duration: 1000, source: this.parentMap.getView().getCenter() });
-    var zoom = ol.animation.zoom({ duration: 1000, resolution: this.parentMap.getView().getResolution() });
-    this.parentMap.beforeRender(pan, zoom);
-    view.fit(extent, size, { padding: [10, 20, 10, 20] });
+    var zoom = this.parentMap.getView().getZoom();
+    view.fit(extent, { padding: [10, 20, 10, 20], duration: 1000, maxZoom: zoom + 3 });
   },
 
   getFeatureId: function (features) {

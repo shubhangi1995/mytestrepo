@@ -85,18 +85,15 @@
 	</div>
   </div>
   <script id="template-popup" type="text/x-handlebars-template">
-	<h2>{{{name}}}</h2>
-    <div class="arrow-nav">
-		<button class="btn-go-backward">&#10094;</button>
-		<button class="btn-go-forward">&#10095;</button>
+	<div class="div-topic">
+		{{{topics}}}
 	</div>
-    <div class="field-topic">xxxxxx</div>
-	<dl>
-    {{#if supportProgram}}
-      <dt class="" ><span class=""></span>Förderprogramm</dt>
-      <dd class="" >{{{supportProgram}}}</dd>
-    {{/if}}
-
-	</dl>
+	<div class="arrow-nav">
+		<button class="btn-go-backward" >&#10094;</button>
+		<button class="btn-go-forward" >&#10095;</button>
+	</div>
+    <h2>{{{contentType}}}</h2>
+	<div class="txtf-desc">{{{title}}}</div>
+	<div >{{{date}}}</div>
 </script>
 </div>
