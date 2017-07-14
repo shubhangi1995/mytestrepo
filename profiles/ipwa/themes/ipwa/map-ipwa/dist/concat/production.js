@@ -451,7 +451,7 @@ IPWA_MAP.Map.poiStyle = {
   getClusterStyle: function (size, type) {
     var style = [];
     var fontDim = 14 + (Math.sqrt(size) * 0.65);
-    var radius = 12 + (Math.sqrt(size) * 1.3);
+    var radius = 18 + (Math.sqrt(size) * 1.3);
     style = [new ol.style.Style({
       image: new ol.style.Circle({
         radius: radius,
@@ -466,7 +466,7 @@ IPWA_MAP.Map.poiStyle = {
       text: new ol.style.Text({
         font: 'normal ' + fontDim + 'px BentonSans-Regular, Arial, helvetica, sans-serif',
         text: String(size),
-        offsetY: 0,
+        offsetY: 1,
         fill: new ol.style.Fill({
           color: '#fff'
         })
