@@ -146,7 +146,7 @@ IPWA_MAP.Map.popup = {
       }
       if (index === olFeatures.length - 1) {
         this.btnGoForward.addClass('disabled');
-        this.btnGoBackward.on('click', function (evt) { evt.preventDefault(); });
+        this.btnGoForward.on('click', function (evt) { evt.preventDefault(); });
       } else {
         this.btnGoForward.on('click', function (evt) {
           evt.preventDefault();
