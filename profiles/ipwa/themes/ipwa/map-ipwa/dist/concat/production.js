@@ -591,7 +591,7 @@ IPWA_MAP.Map.popup = {
   setDataInPopup: function (data, index, olFeatures) {
     var _properties;
 
-    if (data && data.features && data.features.length > 0) {
+    if (data && data.features && data.features.length > 0 && data.features[index]) {
       _properties = data.features[index].properties;
     }
 
