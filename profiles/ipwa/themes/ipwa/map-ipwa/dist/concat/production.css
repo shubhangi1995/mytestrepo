@@ -83,7 +83,6 @@
 /* line 6, ../../src/scss/components/_popup.scss */
 .footer_map {
   /* content of the popup *******************************************************/
-  /* content type *****************************************************************/
 }
 /* line 7, ../../src/scss/components/_popup.scss */
 .footer_map .map-popup {
@@ -145,27 +144,11 @@
 .footer_map .btn-go-forward.disabled {
   color: #777673;
 }
-/* line 72, ../../src/scss/components/_popup.scss */
-.footer_map .menu-politik::before {
-  content: "\e94b";
+/* line 67, ../../src/scss/components/_popup.scss */
+.footer_map .div-topic > img {
+  width: 40px;
 }
-/* line 75, ../../src/scss/components/_popup.scss */
-.footer_map .menu-wirtschaft::before {
-  content: "\e947";
-}
-/* line 78, ../../src/scss/components/_popup.scss */
-.footer_map .menu-unternehmen::before {
-  content: "\e943";
-}
-/* line 81, ../../src/scss/components/_popup.scss */
-.footer_map .menu-beschaftigte::before {
-  content: "\e905";
-}
-/* line 84, ../../src/scss/components/_popup.scss */
-.footer_map .menu-schaufenster::before {
-  content: "\e910";
-}
-/* line 88, ../../src/scss/components/_popup.scss */
+/* line 71, ../../src/scss/components/_popup.scss */
 .footer_map .txtf-desc {
   margin-bottom: 50px;
 }
