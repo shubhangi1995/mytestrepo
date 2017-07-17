@@ -1340,7 +1340,10 @@ Publikation|Publikationen'),
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['exposed_form']['options']['reset_button_label'] = 'Zurücksetzen';
   $handler->display->display_options['pager']['type'] = 'full';
-  $handler->display->display_options['pager']['options']['items_per_page'] = '10';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '0';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['pager']['options']['id'] = '0';
+  $handler->display->display_options['pager']['options']['quantity'] = '';
   $handler->display->display_options['pager']['options']['tags']['first'] = '« erste Seite';
   $handler->display->display_options['pager']['options']['tags']['previous'] = '‹ vorherige Seite';
   $handler->display->display_options['pager']['options']['tags']['next'] = 'nächste Seite ›';
@@ -1357,7 +1360,7 @@ Publikation|Publikationen'),
   $handler->display->display_options['fields']['field_themenzuweisung']['field'] = 'field_themenzuweisung';
   $handler->display->display_options['fields']['field_themenzuweisung']['label'] = '';
   $handler->display->display_options['fields']['field_themenzuweisung']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_themenzuweisung']['link_to_entity'] = 1;
+  $handler->display->display_options['fields']['field_themenzuweisung']['link_to_entity'] = 0;
   $handler->display->display_options['fields']['field_themenzuweisung']['view_mode'] = 'full';
   $handler->display->display_options['fields']['field_themenzuweisung']['bypass_access'] = 0;
   /* Feld: Indexed Beitrag: Inhaltstyp */
