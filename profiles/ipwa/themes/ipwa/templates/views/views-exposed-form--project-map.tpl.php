@@ -86,7 +86,9 @@
   </div>
   <script id="template-popup" type="text/x-handlebars-template">
 	<div class="div-topic">
-		{{{topics}}}
+		{{#topics}}
+			<img src="{{this}}" alt="{{this}}" />
+		{{/topics}}
 	</div>
 	<div class="arrow-nav">
 		<button class="btn-go-backward" >&#10094;</button>
