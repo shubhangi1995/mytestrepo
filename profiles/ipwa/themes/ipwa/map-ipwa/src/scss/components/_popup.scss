@@ -64,27 +64,10 @@
     }
   }
 
-  /* content type *****************************************************************/
-  .div-topic > div {
-
+  .div-topic > img {
+    width: 40px;
   }
   
-  .menu-politik::before {
-    content: "\e94b";
-  }
-  .menu-wirtschaft::before {
-    content: "\e947";
-  }
-  .menu-unternehmen::before {
-    content: "\e943";
-  }
-  .menu-beschaftigte::before {
-    content: "\e905";
-  }
-  .menu-schaufenster::before {
-    content: "\e910";
-  }
-
   .txtf-desc {
     margin-bottom: 50px;
   }

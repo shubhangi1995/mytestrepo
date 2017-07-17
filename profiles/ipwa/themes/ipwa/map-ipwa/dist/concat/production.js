@@ -595,10 +595,15 @@ IPWA_MAP.Map.popup = {
       _properties = data.features[index].properties;
     }
 
+    var _topics = [];
+    if (_properties && _properties.field_themenzuweisung !== '') {
+      _topics = _properties.field_themenzuweisung.split(',');
+    }
+
     var _olPopupHtml = this.olPopupTemplate({
       contentType: _properties?_properties.type:'',
       title: _properties?_properties.title:'',
-      topics: _properties?_properties.field_themenzuweisung:'',
+      topics: _topics,
       date: _properties?_properties.views_conditional:''
     });
     this.$popupContent.html(_olPopupHtml);
