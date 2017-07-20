@@ -167,6 +167,12 @@
       <?php if (!empty($action_links)): ?>
         <ul class="action-links"><?php print render($action_links); ?></ul>
       <?php endif; ?>
+      <?php if(($variables['node']->type != 'doorpage') && empty($page['content']['system_main']['term_heading'])):?>
+      <?php $block1 = block_load("ipwa_base","footer_print");?>
+      <?php  print render(_block_get_renderable_array( _block_render_blocks(array($block1))));?>
+      <?php $block = block_load("addthis","addthis_block");?>
+      <?php  print render(_block_get_renderable_array( _block_render_blocks(array($block))));?>
+      <?php endif;?>
       <?php print render($page['content']); ?>
     </section>
 
@@ -185,10 +191,6 @@
     <div class="footer_blocks">
     <?php $block1 = block_load("views","rss-block_1");?>
     <?php  print render(_block_get_renderable_array( _block_render_blocks(array($block1))));?>
-    <?php $block1 = block_load("ipwa_base","footer_print");?>
-    <?php  print render(_block_get_renderable_array( _block_render_blocks(array($block1))));?>
-    <?php $block = block_load("addthis","addthis_block");?>
-    <?php  print render(_block_get_renderable_array( _block_render_blocks(array($block))));?>
     </div>
   </footer>
 <?php endif; ?>
