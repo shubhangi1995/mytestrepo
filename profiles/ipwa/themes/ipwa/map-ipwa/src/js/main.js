@@ -11,10 +11,12 @@ IPWA_MAP.Map = {};
 
 // document ready
 jQuery(function () {
-  IPWA_MAP.Map.mapView.init();
+  if (jQuery('#footer_map').length > 0) {
+    IPWA_MAP.Map.mapView.init();
 
-  // the filter will be called from html in views-view--json-map.tpl.php
-  IPWA_MAP.filter.connectFilterToMap();
+    // the filter will be called from html in views-view--json-map.tpl.php
+    IPWA_MAP.filter.connectFilterToMap();
+  }
 });
 
 
