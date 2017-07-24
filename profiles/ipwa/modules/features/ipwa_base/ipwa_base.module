@@ -212,7 +212,7 @@ function show_footer_block_icons() {
   global $base_path;
   $output_icons='<div id=footer-icons-images>
                    <div>
-                     <img src="'.$base_path.'profiles/ipwa/themes/ipwa/images/EU Logo.png" alt="EFRE Foerderhinweis deutsch farbig">
+                     <img src="'.$base_path.'profiles/ipwa/themes/ipwa/images/EU_Logo.png" alt="EFRE_Foerderhinweis_deutsch_farbig">
                    </div>
                    <div>
                      <img src="'.$base_path.'profiles/ipwa/themes/ipwa/images/EFRE.NRW.png" alt="Ziel2NRW_RGB_1809">
