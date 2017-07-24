@@ -14,6 +14,10 @@ function ipwa_permissions_user_default_permissions() {
   $permissions['access content'] = array(
     'name' => 'access content',
     'roles' => array(
+      'Chefredakteur' => 'Chefredakteur',
+      'External editor' => 'External editor',
+      'Redakteur (ext.)' => 'Redakteur (ext.)',
+      'Redakteur (int.)' => 'Redakteur (int.)',
       'anonymous user' => 'anonymous user',
     ),
     'module' => 'node',
@@ -23,6 +27,7 @@ function ipwa_permissions_user_default_permissions() {
   $permissions['access site map'] = array(
     'name' => 'access site map',
     'roles' => array(
+      'Chefredakteur' => 'Chefredakteur',
       'anonymous user' => 'anonymous user',
       'authenticated user' => 'authenticated user',
     ),
