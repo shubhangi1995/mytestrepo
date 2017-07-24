@@ -1627,6 +1627,12 @@ Publikation|Publikationen'),
   $handler->display->display_options['fields']['views_conditional']['then'] = '[field_ort]';
   $handler->display->display_options['fields']['views_conditional']['or'] = '[field_datum]';
   $handler->display->display_options['fields']['views_conditional']['strip_tags'] = 0;
+  /* Feld: Indexed Beitrag: PLZ */
+  $handler->display->display_options['fields']['field_plz']['id'] = 'field_plz';
+  $handler->display->display_options['fields']['field_plz']['table'] = 'search_api_index_ipwa_solr_index';
+  $handler->display->display_options['fields']['field_plz']['field'] = 'field_plz';
+  $handler->display->display_options['fields']['field_plz']['label'] = '';
+  $handler->display->display_options['fields']['field_plz']['element_label_colon'] = FALSE;
   $handler->display->display_options['path'] = 'project-single-view-json';
   $translatables['project_single_view'] = array(
     t('Master'),
@@ -1644,7 +1650,6 @@ Publikation|Publikationen'),
     t('‹ vorherige Seite'),
     t('nächste Seite ›'),
     t('letzte Seite »'),
-    t('@total'),
     t('Node ID'),
     t('.'),
     t(','),
@@ -1983,6 +1988,43 @@ Publikation|Publikationen'),
     1 => 0,
   );
   $handler->display->display_options['filters']['field_themenzuweisung']['expose']['reduce'] = 0;
+  /* Filter criterion: Indexed Beitrag: PLZ */
+  $handler->display->display_options['filters']['field_plz']['id'] = 'field_plz';
+  $handler->display->display_options['filters']['field_plz']['table'] = 'search_api_index_ipwa_solr_index';
+  $handler->display->display_options['filters']['field_plz']['field'] = 'field_plz';
+  $handler->display->display_options['filters']['field_plz']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['field_plz']['expose']['operator_id'] = 'field_plz_op';
+  $handler->display->display_options['filters']['field_plz']['expose']['label'] = 'PLZ';
+  $handler->display->display_options['filters']['field_plz']['expose']['operator'] = 'field_plz_op';
+  $handler->display->display_options['filters']['field_plz']['expose']['identifier'] = 'field_plz';
+  $handler->display->display_options['filters']['field_plz']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+    3 => 0,
+  );
+  /* Filter criterion: Indexed Beitrag: Dieser Artikel gehört zu */
+  $handler->display->display_options['filters']['field_themenzuweisung_1']['id'] = 'field_themenzuweisung_1';
+  $handler->display->display_options['filters']['field_themenzuweisung_1']['table'] = 'search_api_index_ipwa_solr_index';
+  $handler->display->display_options['filters']['field_themenzuweisung_1']['field'] = 'field_themenzuweisung';
+  $handler->display->display_options['filters']['field_themenzuweisung_1']['value'] = array();
+  $handler->display->display_options['filters']['field_themenzuweisung_1']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['field_themenzuweisung_1']['expose']['operator_id'] = 'field_themenzuweisung_1_op';
+  $handler->display->display_options['filters']['field_themenzuweisung_1']['expose']['label'] = 'Alle themen';
+  $handler->display->display_options['filters']['field_themenzuweisung_1']['expose']['operator'] = 'field_themenzuweisung_1_op';
+  $handler->display->display_options['filters']['field_themenzuweisung_1']['expose']['identifier'] = 'field_themenzuweisung_1';
+  $handler->display->display_options['filters']['field_themenzuweisung_1']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+    3 => 0,
+  );
+  $handler->display->display_options['filters']['field_themenzuweisung_1']['expose']['reduce'] = 0;
+  /* Filter criterion: Indexed Beitrag: Status */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'search_api_index_ipwa_solr_index';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = array(
+    1 => '1',
+  );
 
   /* Display: Project map */
   $handler = $view->new_display('page', 'Project map', 'project_map');
@@ -2054,7 +2096,46 @@ Publikation|Publikationen'),
   $handler->display->display_options['filters']['field_themenzuweisung']['table'] = 'search_api_index_ipwa_solr_index';
   $handler->display->display_options['filters']['field_themenzuweisung']['field'] = 'field_themenzuweisung';
   $handler->display->display_options['filters']['field_themenzuweisung']['value'] = array(
+    11 => '11',
+    20 => '20',
+    17 => '17',
+    19 => '19',
+    15 => '15',
+    12 => '12',
+    23 => '23',
+    22 => '22',
+    21 => '21',
+    14 => '14',
+    16 => '16',
     1 => '1',
+    47 => '47',
+    2 => '2',
+    8 => '8',
+    5 => '5',
+    4 => '4',
+    6 => '6',
+    10 => '10',
+    7 => '7',
+    9 => '9',
+    3 => '3',
+    34 => '34',
+    38 => '38',
+    41 => '41',
+    42 => '42',
+    40 => '40',
+    35 => '35',
+    36 => '36',
+    39 => '39',
+    24 => '24',
+    33 => '33',
+    30 => '30',
+    31 => '31',
+    26 => '26',
+    29 => '29',
+    25 => '25',
+    28 => '28',
+    32 => '32',
+    27 => '27',
   );
   $handler->display->display_options['filters']['field_themenzuweisung']['group'] = 1;
   $handler->display->display_options['filters']['field_themenzuweisung']['exposed'] = TRUE;
@@ -2065,8 +2146,9 @@ Publikation|Publikationen'),
   $handler->display->display_options['filters']['field_themenzuweisung']['expose']['remember_roles'] = array(
     2 => '2',
     1 => 0,
+    3 => 0,
   );
-  $handler->display->display_options['filters']['field_themenzuweisung']['expose']['reduce'] = 1;
+  $handler->display->display_options['filters']['field_themenzuweisung']['expose']['reduce'] = 0;
   /* Filter criterion: Indexed Beitrag: PLZ */
   $handler->display->display_options['filters']['field_plz']['id'] = 'field_plz';
   $handler->display->display_options['filters']['field_plz']['table'] = 'search_api_index_ipwa_solr_index';
@@ -2146,6 +2228,13 @@ Publikation|Publikationen'),
     'protagonist' => 'protagonist',
     'projekt' => 'projekt',
   );
+  /* Filter criterion: Indexed Beitrag: Status */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'search_api_index_ipwa_solr_index';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = array(
+    1 => '1',
+  );
   $handler->display->display_options['path'] = 'projekt-map';
 
   /* Display: Project list */
@@ -2161,180 +2250,6 @@ Publikation|Publikationen'),
   $handler->display->display_options['header']['area_text_custom']['table'] = 'views';
   $handler->display->display_options['header']['area_text_custom']['field'] = 'area_text_custom';
   $handler->display->display_options['header']['area_text_custom']['content'] = '<a href="/projekt-map">Map</a>';
-  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
-  $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Filter criterion: Indexed Beitrag: Inhaltstyp */
-  $handler->display->display_options['filters']['type_1']['id'] = 'type_1';
-  $handler->display->display_options['filters']['type_1']['table'] = 'search_api_index_ipwa_solr_index';
-  $handler->display->display_options['filters']['type_1']['field'] = 'type';
-  $handler->display->display_options['filters']['type_1']['value'] = array(
-    'protagonist' => 'protagonist',
-    'projekt' => 'projekt',
-  );
-  $handler->display->display_options['filters']['type_1']['group'] = 1;
-  /* Filter criterion: Indexed Beitrag: Inhaltstyp */
-  $handler->display->display_options['filters']['type']['id'] = 'type';
-  $handler->display->display_options['filters']['type']['table'] = 'search_api_index_ipwa_solr_index';
-  $handler->display->display_options['filters']['type']['field'] = 'type';
-  $handler->display->display_options['filters']['type']['value'] = array(
-    'protagonist' => 'protagonist',
-    'projekt' => 'projekt',
-  );
-  $handler->display->display_options['filters']['type']['group'] = 1;
-  $handler->display->display_options['filters']['type']['exposed'] = TRUE;
-  $handler->display->display_options['filters']['type']['expose']['operator_id'] = 'type_op';
-  $handler->display->display_options['filters']['type']['expose']['label'] = 'Inhaltstyp';
-  $handler->display->display_options['filters']['type']['expose']['operator'] = 'type_op';
-  $handler->display->display_options['filters']['type']['expose']['identifier'] = 'type';
-  $handler->display->display_options['filters']['type']['expose']['remember_roles'] = array(
-    2 => '2',
-    1 => 0,
-  );
-  $handler->display->display_options['filters']['type']['expose']['reduce'] = 1;
-  /* Filter criterion: Indexed Beitrag: Akteurstyp */
-  $handler->display->display_options['filters']['field_akteurstyp']['id'] = 'field_akteurstyp';
-  $handler->display->display_options['filters']['field_akteurstyp']['table'] = 'search_api_index_ipwa_solr_index';
-  $handler->display->display_options['filters']['field_akteurstyp']['field'] = 'field_akteurstyp';
-  $handler->display->display_options['filters']['field_akteurstyp']['value'] = array();
-  $handler->display->display_options['filters']['field_akteurstyp']['group'] = 1;
-  $handler->display->display_options['filters']['field_akteurstyp']['exposed'] = TRUE;
-  $handler->display->display_options['filters']['field_akteurstyp']['expose']['operator_id'] = 'field_akteurstyp_op';
-  $handler->display->display_options['filters']['field_akteurstyp']['expose']['label'] = 'Akteur';
-  $handler->display->display_options['filters']['field_akteurstyp']['expose']['operator'] = 'field_akteurstyp_op';
-  $handler->display->display_options['filters']['field_akteurstyp']['expose']['identifier'] = 'field_akteurstyp';
-  $handler->display->display_options['filters']['field_akteurstyp']['expose']['remember_roles'] = array(
-    2 => '2',
-    1 => 0,
-  );
-  $handler->display->display_options['filters']['field_akteurstyp']['expose']['reduce'] = 0;
-  /* Filter criterion: Indexed Beitrag: Dieser Artikel gehört zu */
-  $handler->display->display_options['filters']['field_themenzuweisung']['id'] = 'field_themenzuweisung';
-  $handler->display->display_options['filters']['field_themenzuweisung']['table'] = 'search_api_index_ipwa_solr_index';
-  $handler->display->display_options['filters']['field_themenzuweisung']['field'] = 'field_themenzuweisung';
-  $handler->display->display_options['filters']['field_themenzuweisung']['value'] = array(
-    1 => '1',
-    2 => '2',
-    47 => '47',
-    3 => '3',
-    4 => '4',
-    5 => '5',
-    6 => '6',
-    7 => '7',
-    8 => '8',
-    9 => '9',
-    10 => '10',
-    11 => '11',
-    12 => '12',
-    14 => '14',
-    15 => '15',
-    16 => '16',
-    17 => '17',
-    19 => '19',
-    20 => '20',
-    21 => '21',
-    22 => '22',
-    23 => '23',
-    24 => '24',
-    25 => '25',
-    26 => '26',
-    27 => '27',
-    28 => '28',
-    29 => '29',
-    30 => '30',
-    31 => '31',
-    32 => '32',
-    33 => '33',
-    34 => '34',
-    35 => '35',
-    36 => '36',
-    38 => '38',
-    39 => '39',
-    40 => '40',
-    41 => '41',
-    42 => '42',
-  );
-  $handler->display->display_options['filters']['field_themenzuweisung']['group'] = 1;
-  $handler->display->display_options['filters']['field_themenzuweisung']['exposed'] = TRUE;
-  $handler->display->display_options['filters']['field_themenzuweisung']['expose']['operator_id'] = 'field_themenzuweisung_op';
-  $handler->display->display_options['filters']['field_themenzuweisung']['expose']['label'] = 'Dieser Artikel gehört zu';
-  $handler->display->display_options['filters']['field_themenzuweisung']['expose']['operator'] = 'field_themenzuweisung_op';
-  $handler->display->display_options['filters']['field_themenzuweisung']['expose']['identifier'] = 'field_themenzuweisung';
-  $handler->display->display_options['filters']['field_themenzuweisung']['expose']['remember_roles'] = array(
-    2 => '2',
-    1 => 0,
-  );
-  $handler->display->display_options['filters']['field_themenzuweisung']['expose']['reduce'] = 0;
-  /* Filter criterion: Indexed Beitrag: PLZ */
-  $handler->display->display_options['filters']['field_plz']['id'] = 'field_plz';
-  $handler->display->display_options['filters']['field_plz']['table'] = 'search_api_index_ipwa_solr_index';
-  $handler->display->display_options['filters']['field_plz']['field'] = 'field_plz';
-  $handler->display->display_options['filters']['field_plz']['group'] = 1;
-  $handler->display->display_options['filters']['field_plz']['exposed'] = TRUE;
-  $handler->display->display_options['filters']['field_plz']['expose']['operator_id'] = 'field_plz_op';
-  $handler->display->display_options['filters']['field_plz']['expose']['label'] = 'PLZ';
-  $handler->display->display_options['filters']['field_plz']['expose']['operator'] = 'field_plz_op';
-  $handler->display->display_options['filters']['field_plz']['expose']['identifier'] = 'field_plz';
-  $handler->display->display_options['filters']['field_plz']['expose']['remember_roles'] = array(
-    2 => '2',
-    1 => 0,
-  );
-  /* Filter criterion: Indexed Beitrag: Dieser Artikel gehört zu */
-  $handler->display->display_options['filters']['field_themenzuweisung_1']['id'] = 'field_themenzuweisung_1';
-  $handler->display->display_options['filters']['field_themenzuweisung_1']['table'] = 'search_api_index_ipwa_solr_index';
-  $handler->display->display_options['filters']['field_themenzuweisung_1']['field'] = 'field_themenzuweisung';
-  $handler->display->display_options['filters']['field_themenzuweisung_1']['value'] = array(
-    1 => '1',
-    2 => '2',
-    47 => '47',
-    3 => '3',
-    4 => '4',
-    5 => '5',
-    6 => '6',
-    7 => '7',
-    8 => '8',
-    9 => '9',
-    10 => '10',
-    11 => '11',
-    12 => '12',
-    14 => '14',
-    15 => '15',
-    16 => '16',
-    17 => '17',
-    19 => '19',
-    20 => '20',
-    21 => '21',
-    22 => '22',
-    23 => '23',
-    24 => '24',
-    25 => '25',
-    26 => '26',
-    27 => '27',
-    28 => '28',
-    29 => '29',
-    30 => '30',
-    31 => '31',
-    32 => '32',
-    33 => '33',
-    34 => '34',
-    35 => '35',
-    36 => '36',
-    38 => '38',
-    39 => '39',
-    40 => '40',
-    41 => '41',
-    42 => '42',
-  );
-  $handler->display->display_options['filters']['field_themenzuweisung_1']['group'] = 1;
-  $handler->display->display_options['filters']['field_themenzuweisung_1']['exposed'] = TRUE;
-  $handler->display->display_options['filters']['field_themenzuweisung_1']['expose']['operator_id'] = 'field_themenzuweisung_1_op';
-  $handler->display->display_options['filters']['field_themenzuweisung_1']['expose']['label'] = 'Alle Themen';
-  $handler->display->display_options['filters']['field_themenzuweisung_1']['expose']['operator'] = 'field_themenzuweisung_1_op';
-  $handler->display->display_options['filters']['field_themenzuweisung_1']['expose']['identifier'] = 'field_themenzuweisung_1';
-  $handler->display->display_options['filters']['field_themenzuweisung_1']['expose']['remember_roles'] = array(
-    2 => '2',
-    1 => 0,
-  );
-  $handler->display->display_options['filters']['field_themenzuweisung_1']['expose']['reduce'] = 0;
   $handler->display->display_options['path'] = 'projekt-list';
 
   /* Display: Feed */
@@ -2366,6 +2281,12 @@ Publikation|Publikationen'),
   $handler->display->display_options['fields']['field_latitude']['id'] = 'field_latitude';
   $handler->display->display_options['fields']['field_latitude']['table'] = 'search_api_index_ipwa_solr_index';
   $handler->display->display_options['fields']['field_latitude']['field'] = 'field_latitude';
+  /* Feld: Indexed Beitrag: PLZ */
+  $handler->display->display_options['fields']['field_plz']['id'] = 'field_plz';
+  $handler->display->display_options['fields']['field_plz']['table'] = 'search_api_index_ipwa_solr_index';
+  $handler->display->display_options['fields']['field_plz']['field'] = 'field_plz';
+  $handler->display->display_options['fields']['field_plz']['label'] = '';
+  $handler->display->display_options['fields']['field_plz']['element_label_colon'] = FALSE;
   $handler->display->display_options['path'] = 'map-all';
 
   /* Display: Feed 2 */
@@ -2398,6 +2319,12 @@ Publikation|Publikationen'),
   $handler->display->display_options['fields']['field_latitude']['field'] = 'field_latitude';
   $handler->display->display_options['fields']['field_latitude']['label'] = '';
   $handler->display->display_options['fields']['field_latitude']['element_label_colon'] = FALSE;
+  /* Feld: Indexed Beitrag: PLZ */
+  $handler->display->display_options['fields']['field_plz']['id'] = 'field_plz';
+  $handler->display->display_options['fields']['field_plz']['table'] = 'search_api_index_ipwa_solr_index';
+  $handler->display->display_options['fields']['field_plz']['field'] = 'field_plz';
+  $handler->display->display_options['fields']['field_plz']['label'] = '';
+  $handler->display->display_options['fields']['field_plz']['element_label_colon'] = FALSE;
   $handler->display->display_options['path'] = 'map-filter';
   $translatables['projekt_map'] = array(
     t('Master'),
@@ -2424,10 +2351,11 @@ Publikation|Publikationen'),
     t('Inhaltstyp'),
     t('Akteur'),
     t('Dieser Artikel gehört zu'),
+    t('PLZ'),
+    t('Alle themen'),
     t('Project map'),
     t(' @total '),
     t('Akteurstyp'),
-    t('PLZ'),
     t('Alle Themen'),
     t('Project list'),
     t('<a href="/projekt-map">Map</a>'),
