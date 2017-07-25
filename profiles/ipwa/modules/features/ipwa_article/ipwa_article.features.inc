@@ -22,7 +22,7 @@ function ipwa_article_ctools_plugin_api($module = NULL, $api = NULL) {
 function ipwa_article_node_info() {
   $items = array(
     'article' => array(
-      'name' => t('Article'),
+      'name' => t('Artikel'),
       'base' => 'node_content',
       'description' => '',
       'has_title' => '1',

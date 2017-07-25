@@ -44,21 +44,7 @@
  * @ingroup themeable
  */
 ?>
-<!--
-THIS FILE IS NOT USED AND IS HERE AS A STARTING POINT FOR CUSTOMIZATION ONLY.
-See http://api.drupal.org/api/function/theme_field/7 for details.
-After copying this file to your theme's folder and customizing it, remove this
-HTML comment.
--->
 <div class="<?php print $classes; ?>"<?php print $attributes; ?>>
-  <?php if(($variables['element']['#bundle'] != "doorpage") && ($variables['element']['#entity_type'] == 'node')):?>
-  <?php  $block1 = block_load("ipwa_base","footer_print");?>
-  <?php $block = block_load("addthis","addthis_block");?>
-  <div class="main_content_blocks">
-  <?php print render(_block_get_renderable_array( _block_render_blocks(array($block1))));?>
-  <?php print render(_block_get_renderable_array( _block_render_blocks(array($block))));?>
-  </div>
-  <?php endif;?>
   <?php if (!$label_hidden): ?>
     <div class="field-label"<?php print $title_attributes; ?>><?php print $label ?>:&nbsp;</div>
   <?php endif; ?>

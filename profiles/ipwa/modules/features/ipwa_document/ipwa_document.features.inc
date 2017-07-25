@@ -22,7 +22,7 @@ function ipwa_document_ctools_plugin_api($module = NULL, $api = NULL) {
 function ipwa_document_node_info() {
   $items = array(
     'document' => array(
-      'name' => t('Document'),
+      'name' => t('Dokument'),
       'base' => 'node_content',
       'description' => '',
       'has_title' => '1',
