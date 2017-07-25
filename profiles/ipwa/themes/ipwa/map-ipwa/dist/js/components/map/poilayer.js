@@ -31,12 +31,12 @@ IPWA_MAP.Map.poiLayer = {
 
     this.mapWarning = jQuery('#map-warning');
     this.mapWarningContent = this.mapWarning.find('.map-warning-content');
-    this.totalResult = jQuery('#map-total-result');
+    this.totalResult = jQuery('.view-sub-wrapper> .view-header');
   },
 
   updateData: function (str, btn) {
     var _this = this;
-    console.log('---> send ajax request for map data:', (str?'?'+str:'no filter'));
+    // console.log('---> send ajax request for map data:', (str?'?'+str:'no filter'));
     _this.geoJsonSource.clear();
     var _url = '../sites/default/files/map-static.json';
     if (str) {
@@ -55,6 +55,9 @@ IPWA_MAP.Map.poiLayer = {
               featureProjection: _this.projection
             }
           ));
+
+          var _count = _this.geoJsonSource.getFeatures().length;
+          _this.totalResult.text(_count);
 
           if (str) {
             _this.parentMap.getView().animate({ zoom: 4, center: _this.initialCenter });
