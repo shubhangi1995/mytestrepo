@@ -51,7 +51,7 @@ After copying this file to your theme's folder and customizing it, remove this
 HTML comment.
 -->
 <div class="<?php print $classes; ?>"<?php print $attributes; ?>>
-  <?php if($variables['element']['#bundle'] != "doorpage"):?>
+  <?php if(($variables['element']['#bundle'] != "doorpage") && ($variables['element']['#entity_type'] == 'node')):?>
   <?php  $block1 = block_load("ipwa_base","footer_print");?>
   <?php $block = block_load("addthis","addthis_block");?>
   <div class="main_content_blocks">
