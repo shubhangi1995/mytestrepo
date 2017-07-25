@@ -8875,27 +8875,27 @@ input[type=text]::-ms-clear {
     left: 17px; }
 
 /* line 1175, ../scss/pages/_common.scss */
-.group-page-info .field-name-field-untertitel {
+.group-page-info {
   position: relative; }
   /* line 1177, ../scss/pages/_common.scss */
-  .group-page-info .field-name-field-untertitel .main_content_blocks {
+  .group-page-info .main_content_blocks {
     /* Over Desktop design */ }
     @media (min-width: 1025px) {
       /* line 1177, ../scss/pages/_common.scss */
-      .group-page-info .field-name-field-untertitel .main_content_blocks {
+      .group-page-info .main_content_blocks {
         position: absolute;
         left: -65px;
-        top: 0px; } }
+        top: 115px; } }
     /* line 1186, ../scss/pages/_common.scss */
-    .group-page-info .field-name-field-untertitel .main_content_blocks section {
+    .group-page-info .main_content_blocks section {
       display: inline-block;
       /* Over Desktop design */ }
       @media (min-width: 1025px) {
         /* line 1186, ../scss/pages/_common.scss */
-        .group-page-info .field-name-field-untertitel .main_content_blocks section {
+        .group-page-info .main_content_blocks section {
           display: block; } }
-    /* line 1196, ../scss/pages/_common.scss */
-    .group-page-info .field-name-field-untertitel .main_content_blocks #footer_print_icon:before {
+    /* line 1195, ../scss/pages/_common.scss */
+    .group-page-info .main_content_blocks #footer_print_icon:before {
       font-family: "icomoon";
       content: "\e94c";
       color: #45494c;
@@ -8903,11 +8903,11 @@ input[type=text]::-ms-clear {
       display: inline-block;
       padding: 10px;
       padding-left: 0; }
-    /* line 1206, ../scss/pages/_common.scss */
-    .group-page-info .field-name-field-untertitel .main_content_blocks #footer_print_icon #page_print {
+    /* line 1205, ../scss/pages/_common.scss */
+    .group-page-info .main_content_blocks #footer_print_icon #page_print {
       display: none; }
-    /* line 1212, ../scss/pages/_common.scss */
-    .group-page-info .field-name-field-untertitel .main_content_blocks .block-addthis a:before {
+    /* line 1211, ../scss/pages/_common.scss */
+    .group-page-info .main_content_blocks .block-addthis a:before {
       font-family: "icomoon";
       content: "\e94f";
       color: #45494c;
@@ -8915,8 +8915,8 @@ input[type=text]::-ms-clear {
       display: inline-block;
       padding: 10px;
       padding-left: 0; }
-    /* line 1222, ../scss/pages/_common.scss */
-    .group-page-info .field-name-field-untertitel .main_content_blocks .block-addthis a img {
+    /* line 1221, ../scss/pages/_common.scss */
+    .group-page-info .main_content_blocks .block-addthis a img {
       display: none; }
 
 /* line 1, ../scss/pages/_singleview.scss */

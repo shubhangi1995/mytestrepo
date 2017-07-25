@@ -1172,7 +1172,7 @@ input[type=text]::-ms-clear {
     }
 }
 
-.group-page-info .field-name-field-untertitel{
+.group-page-info {
 position:relative;
 .main_content_blocks {
    
@@ -1180,7 +1180,7 @@ position:relative;
 @include devicebreak(x-large){
       position:absolute;
 	  left:-65px;
-	  top:0px;
+	  top:115px;
 }
 
    section{
@@ -1191,7 +1191,6 @@ position:relative;
 	   display:block;
 	 }
    }
-
     #footer_print_icon {
         &:before {
             font-family: $icomoon;
