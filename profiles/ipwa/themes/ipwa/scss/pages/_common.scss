@@ -1179,7 +1179,7 @@ position:relative;
 
 @include devicebreak(x-large){
       position:absolute;
-	  left:-75px;
+	  left:-65px;
 	  top:0px;
 }
 
@@ -1200,6 +1200,7 @@ position:relative;
             font-size: 20px;
             display: inline-block;
             padding: 10px;
+			padding-left:0;
         }
 
         #page_print {
@@ -1215,6 +1216,7 @@ position:relative;
                 font-size: 20px;
                 display: inline-block;
                 padding: 10px;
+				padding-left:0;
             }
 
             img {

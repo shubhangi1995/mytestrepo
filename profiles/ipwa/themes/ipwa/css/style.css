@@ -8884,7 +8884,7 @@ input[type=text]::-ms-clear {
       /* line 1177, ../scss/pages/_common.scss */
       .group-page-info .field-name-field-untertitel .main_content_blocks {
         position: absolute;
-        left: -75px;
+        left: -65px;
         top: 0px; } }
     /* line 1186, ../scss/pages/_common.scss */
     .group-page-info .field-name-field-untertitel .main_content_blocks section {
@@ -8901,19 +8901,21 @@ input[type=text]::-ms-clear {
       color: #45494c;
       font-size: 20px;
       display: inline-block;
-      padding: 10px; }
-    /* line 1205, ../scss/pages/_common.scss */
+      padding: 10px;
+      padding-left: 0; }
+    /* line 1206, ../scss/pages/_common.scss */
     .group-page-info .field-name-field-untertitel .main_content_blocks #footer_print_icon #page_print {
       display: none; }
-    /* line 1211, ../scss/pages/_common.scss */
+    /* line 1212, ../scss/pages/_common.scss */
     .group-page-info .field-name-field-untertitel .main_content_blocks .block-addthis a:before {
       font-family: "icomoon";
       content: "\e94f";
       color: #45494c;
       font-size: 20px;
       display: inline-block;
-      padding: 10px; }
-    /* line 1220, ../scss/pages/_common.scss */
+      padding: 10px;
+      padding-left: 0; }
+    /* line 1222, ../scss/pages/_common.scss */
     .group-page-info .field-name-field-untertitel .main_content_blocks .block-addthis a img {
       display: none; }
 
