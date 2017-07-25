@@ -51,12 +51,20 @@ After copying this file to your theme's folder and customizing it, remove this
 HTML comment.
 -->
 <div class="<?php print $classes; ?>"<?php print $attributes; ?>>
+  <?php if($variables['element']['#bundle'] != "doorpage"):?>
+  <?php  $block1 = block_load("ipwa_base","footer_print");?>
+  <?php $block = block_load("addthis","addthis_block");?>
+  <div class="main_content_blocks">
+  <?php print render(_block_get_renderable_array( _block_render_blocks(array($block1))));?>
+  <?php print render(_block_get_renderable_array( _block_render_blocks(array($block))));?>
+  </div>
+  <?php endif;?>
   <?php if (!$label_hidden): ?>
     <div class="field-label"<?php print $title_attributes; ?>><?php print $label ?>:&nbsp;</div>
   <?php endif; ?>
   <div class="field-items"<?php print $content_attributes; ?>>
     <?php foreach ($items as $delta => $item): ?>
-      <div class="field-item <?php print $delta % 2 ? 'odd' : 'even'; ?>"<?php print $item_attributes[$delta]; ?>><?php print_r('<h2>'.render($item).'</h2>'); ?></div>
+    <div class="field-item <?php print $delta % 2 ? 'odd' : 'even'; ?>"<?php print $item_attributes[$delta]; ?>><?php print_r('<h2>'.render($item).'</h2>'); ?></div>
     <?php endforeach; ?>
   </div>
 </div>
