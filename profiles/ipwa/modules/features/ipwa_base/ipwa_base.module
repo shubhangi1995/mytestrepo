@@ -234,11 +234,9 @@ function show_footer_print() {
 
 function ipwa_base_field_group_pre_render_alter(&$element, $group, &$form){
   if($element['body']['#bundle'] !="doorpage") {
-  if($group->group_name == "group_page_info"){
-    $block1 = block_load("ipwa_base","footer_print");
-    $block = block_load("addthis","addthis_block");
-  $element['#prefix']='<div class="group-page-info field-group-html-element"><div class="main_content_blocks">'. render(_block_get_renderable_array( _block_render_blocks(array($block1)))).render(_block_get_renderable_array( _block_render_blocks(array($block)))).'</div>';
-
-    }
+   if($group->group_name == "group_page_info"){
+    $element['#prefix']='<div class="group-page-info field-group-html-element"><div class="main_content_blocks">'. render(_block_get_renderable_array( _block_render_blocks(array(block_load("ipwa_base","footer_print")))))
+    .render(_block_get_renderable_array( _block_render_blocks(array(block_load("addthis","addthis_block"))))).'</div>';
+   }
   }
 }
