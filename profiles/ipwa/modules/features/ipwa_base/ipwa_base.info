@@ -100,6 +100,7 @@ features[paragraphs][] = flie_text_mit_bild_rechts
 features[path_breadcrumbs][] = aktuelles_list_view
 features[path_breadcrumbs][] = alle_themen_list_view
 features[path_breadcrumbs][] = forderbekanntmachung
+features[path_breadcrumbs][] = map_breadcrumb
 features[path_breadcrumbs][] = nachricht
 features[path_breadcrumbs][] = newsletter
 features[path_breadcrumbs][] = publikation

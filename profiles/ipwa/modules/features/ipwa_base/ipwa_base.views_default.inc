@@ -1799,7 +1799,9 @@ Publikation|Publikationen'),
   $handler->display->display_options['header']['result']['table'] = 'views';
   $handler->display->display_options['header']['result']['field'] = 'result';
   $handler->display->display_options['header']['result']['empty'] = TRUE;
-  $handler->display->display_options['header']['result']['content'] = ' @total';
+  $handler->display->display_options['header']['result']['content'] = '<div class="map_node_count">
+ @total
+</div>';
   /* Feld: Indexed Beitrag: Node ID */
   $handler->display->display_options['fields']['nid']['id'] = 'nid';
   $handler->display->display_options['fields']['nid']['table'] = 'search_api_index_ipwa_solr_index';
@@ -2312,7 +2314,9 @@ Publikation|Publikationen'),
     t('nächste Seite ›'),
     t('letzte Seite »'),
     t('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae ligula vel urna malesuada interdum. Duis eu nunc id ipsum consectetur mattis ut ut nisl. Curabitur laoreet, eros fermentum cursus tincidunt, nisl sem fermentum dolor, non pellentesque tortor libero et tellus. Nunc ut tellus pulvinar, hendrerit nunc eu, ornare diam. Nullam pulvinar viverra tellus, sit amet congue dolor. Phasellus imperdiet dolor eget mi dictum dignissim. Vestibulum cursus feugiat felis id vulputate. Nullam non commodo risus. Phasellus sagittis eget velit quis vulputate. Vivamus blandit tortor sed nisl accumsan rutrum. Donec finibus vitae mi vel dignissim. Nunc iaculis venenatis ligula quis malesuada. Donec non venenatis odio. Etiam rhoncus diam a mauris feugiat consequat. Curabitur tellus metus, vulputate et eros ut, sagittis elementum arcu.'),
-    t(' @total'),
+    t('<div class="map_node_count">
+ @total
+</div>'),
     t('.'),
     t(','),
     t('Inhaltstyp'),
@@ -2321,6 +2325,7 @@ Publikation|Publikationen'),
     t('Alle themen'),
     t('Project map'),
     t('Project list'),
+    t(' @total'),
     t('Feed'),
     t('Node ID'),
     t('Longitude'),
