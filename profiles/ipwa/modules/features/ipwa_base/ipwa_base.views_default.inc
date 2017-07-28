@@ -1672,7 +1672,6 @@ Publikation|Publikationen'),
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['title'] = 'projekt_list';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'none';
   $handler->display->display_options['cache']['type'] = 'none';
@@ -1680,8 +1679,9 @@ Publikation|Publikationen'),
   $handler->display->display_options['query']['options']['search_api_bypass_access'] = 0;
   $handler->display->display_options['query']['options']['entity_access'] = 0;
   $handler->display->display_options['exposed_form']['type'] = 'better_exposed_filters';
+  $handler->display->display_options['exposed_form']['options']['submit_button'] = 'Suchen';
   $handler->display->display_options['exposed_form']['options']['reset_button'] = TRUE;
-  $handler->display->display_options['exposed_form']['options']['reset_button_label'] = 'Zurücksetzen';
+  $handler->display->display_options['exposed_form']['options']['reset_button_label'] = 'alle Filtern Zurücksetzen';
   $handler->display->display_options['exposed_form']['options']['bef'] = array(
     'general' => array(
       'input_required' => 0,
@@ -1702,7 +1702,7 @@ Publikation|Publikationen'),
         'bef_collapsible' => 0,
         'autosubmit' => 0,
         'is_secondary' => 0,
-        'any_label' => '',
+        'any_label' => 'Alle',
         'bef_filter_description' => '',
         'tokens' => array(
           'available' => array(
@@ -1721,6 +1721,30 @@ Publikation|Publikationen'),
         'bef_collapsible' => 0,
         'autosubmit' => 0,
         'is_secondary' => 0,
+        'any_label' => 'Akteur',
+        'bef_filter_description' => '',
+        'tokens' => array(
+          'available' => array(
+            0 => 'global_types',
+          ),
+        ),
+        'rewrite' => array(
+          'filter_rewrite_values' => '',
+        ),
+      ),
+    ),
+    'field_plz' => array(
+      'bef_format' => 'default',
+      'slider_options' => array(
+        'bef_slider_min' => '0',
+        'bef_slider_max' => '99999',
+        'bef_slider_step' => '1',
+        'bef_slider_animate' => '',
+        'bef_slider_orientation' => 'horizontal',
+      ),
+      'more_options' => array(
+        'autosubmit' => 0,
+        'is_secondary' => 0,
         'any_label' => '',
         'bef_filter_description' => '',
         'tokens' => array(
@@ -1733,14 +1757,14 @@ Publikation|Publikationen'),
         ),
       ),
     ),
-    'field_themenzuweisung' => array(
+    'field_themenzuweisung_1' => array(
       'bef_format' => 'default',
       'more_options' => array(
         'bef_select_all_none' => FALSE,
         'bef_collapsible' => 0,
         'autosubmit' => 0,
         'is_secondary' => 0,
-        'any_label' => '',
+        'any_label' => 'Themen',
         'bef_filter_description' => '',
         'tokens' => array(
           'available' => array(
@@ -1764,16 +1788,18 @@ Publikation|Publikationen'),
   $handler->display->display_options['pager']['options']['tags']['last'] = 'letzte Seite »';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'fields';
-  /* Kopfbereich: Global: Result summary */
-  $handler->display->display_options['header']['result']['id'] = 'result';
-  $handler->display->display_options['header']['result']['table'] = 'views';
-  $handler->display->display_options['header']['result']['field'] = 'result';
-  $handler->display->display_options['header']['result']['content'] = ' @total';
   /* Kopfbereich: Global: Unfiltered text */
   $handler->display->display_options['header']['area_text_custom']['id'] = 'area_text_custom';
   $handler->display->display_options['header']['area_text_custom']['table'] = 'views';
   $handler->display->display_options['header']['area_text_custom']['field'] = 'area_text_custom';
-  $handler->display->display_options['header']['area_text_custom']['content'] = '<a href="/projekt-list">List</a>';
+  $handler->display->display_options['header']['area_text_custom']['empty'] = TRUE;
+  $handler->display->display_options['header']['area_text_custom']['content'] = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae ligula vel urna malesuada interdum. Duis eu nunc id ipsum consectetur mattis ut ut nisl. Curabitur laoreet, eros fermentum cursus tincidunt, nisl sem fermentum dolor, non pellentesque tortor libero et tellus. Nunc ut tellus pulvinar, hendrerit nunc eu, ornare diam. Nullam pulvinar viverra tellus, sit amet congue dolor. Phasellus imperdiet dolor eget mi dictum dignissim. Vestibulum cursus feugiat felis id vulputate. Nullam non commodo risus. Phasellus sagittis eget velit quis vulputate. Vivamus blandit tortor sed nisl accumsan rutrum. Donec finibus vitae mi vel dignissim. Nunc iaculis venenatis ligula quis malesuada. Donec non venenatis odio. Etiam rhoncus diam a mauris feugiat consequat. Curabitur tellus metus, vulputate et eros ut, sagittis elementum arcu.';
+  /* Kopfbereich: Global: Result summary */
+  $handler->display->display_options['header']['result']['id'] = 'result';
+  $handler->display->display_options['header']['result']['table'] = 'views';
+  $handler->display->display_options['header']['result']['field'] = 'result';
+  $handler->display->display_options['header']['result']['empty'] = TRUE;
+  $handler->display->display_options['header']['result']['content'] = ' @total';
   /* Feld: Indexed Beitrag: Node ID */
   $handler->display->display_options['fields']['nid']['id'] = 'nid';
   $handler->display->display_options['fields']['nid']['table'] = 'search_api_index_ipwa_solr_index';
@@ -2038,17 +2064,6 @@ Publikation|Publikationen'),
   $handler->display->display_options['pager']['options']['tags']['previous'] = '‹ vorherige Seite';
   $handler->display->display_options['pager']['options']['tags']['next'] = 'nächste Seite ›';
   $handler->display->display_options['pager']['options']['tags']['last'] = 'letzte Seite »';
-  $handler->display->display_options['defaults']['header'] = FALSE;
-  /* Kopfbereich: Global: Result summary */
-  $handler->display->display_options['header']['result']['id'] = 'result';
-  $handler->display->display_options['header']['result']['table'] = 'views';
-  $handler->display->display_options['header']['result']['field'] = 'result';
-  $handler->display->display_options['header']['result']['content'] = ' @total ';
-  /* Kopfbereich: Global: Unfiltered text */
-  $handler->display->display_options['header']['area_text_custom']['id'] = 'area_text_custom';
-  $handler->display->display_options['header']['area_text_custom']['table'] = 'views';
-  $handler->display->display_options['header']['area_text_custom']['field'] = 'area_text_custom';
-  $handler->display->display_options['header']['area_text_custom']['content'] = '<a href="/projekt-list">List</a>';
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['filter_groups']['operator'] = 'OR';
   $handler->display->display_options['filter_groups']['groups'] = array(
@@ -2067,12 +2082,14 @@ Publikation|Publikationen'),
   $handler->display->display_options['filters']['type']['group'] = 1;
   $handler->display->display_options['filters']['type']['exposed'] = TRUE;
   $handler->display->display_options['filters']['type']['expose']['operator_id'] = 'type_op';
-  $handler->display->display_options['filters']['type']['expose']['label'] = 'Inhaltstyp';
   $handler->display->display_options['filters']['type']['expose']['operator'] = 'type_op';
   $handler->display->display_options['filters']['type']['expose']['identifier'] = 'type';
   $handler->display->display_options['filters']['type']['expose']['remember_roles'] = array(
     2 => '2',
     1 => 0,
+    3 => 0,
+    4 => 0,
+    5 => 0,
   );
   $handler->display->display_options['filters']['type']['expose']['reduce'] = 1;
   /* Filter criterion: Indexed Beitrag: Akteurstyp */
@@ -2083,72 +2100,16 @@ Publikation|Publikationen'),
   $handler->display->display_options['filters']['field_akteurstyp']['group'] = 1;
   $handler->display->display_options['filters']['field_akteurstyp']['exposed'] = TRUE;
   $handler->display->display_options['filters']['field_akteurstyp']['expose']['operator_id'] = 'field_akteurstyp_op';
-  $handler->display->display_options['filters']['field_akteurstyp']['expose']['label'] = 'Akteurstyp';
   $handler->display->display_options['filters']['field_akteurstyp']['expose']['operator'] = 'field_akteurstyp_op';
   $handler->display->display_options['filters']['field_akteurstyp']['expose']['identifier'] = 'field_akteurstyp';
   $handler->display->display_options['filters']['field_akteurstyp']['expose']['remember_roles'] = array(
     2 => '2',
     1 => 0,
+    3 => 0,
+    4 => 0,
+    5 => 0,
   );
   $handler->display->display_options['filters']['field_akteurstyp']['expose']['reduce'] = 0;
-  /* Filter criterion: Indexed Beitrag: Dieser Artikel gehört zu */
-  $handler->display->display_options['filters']['field_themenzuweisung']['id'] = 'field_themenzuweisung';
-  $handler->display->display_options['filters']['field_themenzuweisung']['table'] = 'search_api_index_ipwa_solr_index';
-  $handler->display->display_options['filters']['field_themenzuweisung']['field'] = 'field_themenzuweisung';
-  $handler->display->display_options['filters']['field_themenzuweisung']['value'] = array(
-    11 => '11',
-    20 => '20',
-    17 => '17',
-    19 => '19',
-    15 => '15',
-    12 => '12',
-    23 => '23',
-    22 => '22',
-    21 => '21',
-    14 => '14',
-    16 => '16',
-    1 => '1',
-    47 => '47',
-    2 => '2',
-    8 => '8',
-    5 => '5',
-    4 => '4',
-    6 => '6',
-    10 => '10',
-    7 => '7',
-    9 => '9',
-    3 => '3',
-    34 => '34',
-    38 => '38',
-    41 => '41',
-    42 => '42',
-    40 => '40',
-    35 => '35',
-    36 => '36',
-    39 => '39',
-    24 => '24',
-    33 => '33',
-    30 => '30',
-    31 => '31',
-    26 => '26',
-    29 => '29',
-    25 => '25',
-    28 => '28',
-    32 => '32',
-    27 => '27',
-  );
-  $handler->display->display_options['filters']['field_themenzuweisung']['group'] = 1;
-  $handler->display->display_options['filters']['field_themenzuweisung']['exposed'] = TRUE;
-  $handler->display->display_options['filters']['field_themenzuweisung']['expose']['operator_id'] = 'field_themenzuweisung_op';
-  $handler->display->display_options['filters']['field_themenzuweisung']['expose']['label'] = 'Dieser Artikel gehört zu';
-  $handler->display->display_options['filters']['field_themenzuweisung']['expose']['operator'] = 'field_themenzuweisung_op';
-  $handler->display->display_options['filters']['field_themenzuweisung']['expose']['identifier'] = 'field_themenzuweisung';
-  $handler->display->display_options['filters']['field_themenzuweisung']['expose']['remember_roles'] = array(
-    2 => '2',
-    1 => 0,
-    3 => 0,
-  );
-  $handler->display->display_options['filters']['field_themenzuweisung']['expose']['reduce'] = 0;
   /* Filter criterion: Indexed Beitrag: PLZ */
   $handler->display->display_options['filters']['field_plz']['id'] = 'field_plz';
   $handler->display->display_options['filters']['field_plz']['table'] = 'search_api_index_ipwa_solr_index';
@@ -2156,68 +2117,72 @@ Publikation|Publikationen'),
   $handler->display->display_options['filters']['field_plz']['group'] = 1;
   $handler->display->display_options['filters']['field_plz']['exposed'] = TRUE;
   $handler->display->display_options['filters']['field_plz']['expose']['operator_id'] = 'field_plz_op';
-  $handler->display->display_options['filters']['field_plz']['expose']['label'] = 'PLZ';
   $handler->display->display_options['filters']['field_plz']['expose']['operator'] = 'field_plz_op';
   $handler->display->display_options['filters']['field_plz']['expose']['identifier'] = 'field_plz';
   $handler->display->display_options['filters']['field_plz']['expose']['remember_roles'] = array(
     2 => '2',
     1 => 0,
+    3 => 0,
+    4 => 0,
+    5 => 0,
   );
   /* Filter criterion: Indexed Beitrag: Dieser Artikel gehört zu */
   $handler->display->display_options['filters']['field_themenzuweisung_1']['id'] = 'field_themenzuweisung_1';
   $handler->display->display_options['filters']['field_themenzuweisung_1']['table'] = 'search_api_index_ipwa_solr_index';
   $handler->display->display_options['filters']['field_themenzuweisung_1']['field'] = 'field_themenzuweisung';
   $handler->display->display_options['filters']['field_themenzuweisung_1']['value'] = array(
-    1 => '1',
-    2 => '2',
-    47 => '47',
-    3 => '3',
-    4 => '4',
-    5 => '5',
-    6 => '6',
-    7 => '7',
-    8 => '8',
-    9 => '9',
-    10 => '10',
     11 => '11',
-    12 => '12',
-    14 => '14',
-    15 => '15',
-    16 => '16',
+    20 => '20',
     17 => '17',
     19 => '19',
-    20 => '20',
-    21 => '21',
-    22 => '22',
+    15 => '15',
+    12 => '12',
     23 => '23',
-    24 => '24',
-    25 => '25',
-    26 => '26',
-    27 => '27',
-    28 => '28',
-    29 => '29',
-    30 => '30',
-    31 => '31',
-    32 => '32',
-    33 => '33',
+    22 => '22',
+    21 => '21',
+    14 => '14',
+    16 => '16',
+    1 => '1',
+    47 => '47',
+    2 => '2',
+    8 => '8',
+    5 => '5',
+    4 => '4',
+    6 => '6',
+    10 => '10',
+    7 => '7',
+    9 => '9',
+    3 => '3',
     34 => '34',
-    35 => '35',
-    36 => '36',
     38 => '38',
-    39 => '39',
-    40 => '40',
     41 => '41',
     42 => '42',
+    40 => '40',
+    35 => '35',
+    36 => '36',
+    39 => '39',
+    24 => '24',
+    33 => '33',
+    30 => '30',
+    31 => '31',
+    26 => '26',
+    29 => '29',
+    25 => '25',
+    28 => '28',
+    32 => '32',
+    27 => '27',
   );
   $handler->display->display_options['filters']['field_themenzuweisung_1']['group'] = 2;
   $handler->display->display_options['filters']['field_themenzuweisung_1']['exposed'] = TRUE;
   $handler->display->display_options['filters']['field_themenzuweisung_1']['expose']['operator_id'] = 'field_themenzuweisung_1_op';
-  $handler->display->display_options['filters']['field_themenzuweisung_1']['expose']['label'] = 'Alle Themen';
   $handler->display->display_options['filters']['field_themenzuweisung_1']['expose']['operator'] = 'field_themenzuweisung_1_op';
   $handler->display->display_options['filters']['field_themenzuweisung_1']['expose']['identifier'] = 'field_themenzuweisung_1';
   $handler->display->display_options['filters']['field_themenzuweisung_1']['expose']['remember_roles'] = array(
     2 => '2',
     1 => 0,
+    3 => 0,
+    4 => 0,
+    5 => 0,
   );
   $handler->display->display_options['filters']['field_themenzuweisung_1']['expose']['reduce'] = 0;
   /* Filter criterion: Indexed Beitrag: Inhaltstyp */
@@ -2249,7 +2214,7 @@ Publikation|Publikationen'),
   $handler->display->display_options['header']['area_text_custom']['id'] = 'area_text_custom';
   $handler->display->display_options['header']['area_text_custom']['table'] = 'views';
   $handler->display->display_options['header']['area_text_custom']['field'] = 'area_text_custom';
-  $handler->display->display_options['header']['area_text_custom']['content'] = '<a href="/projekt-map">Map</a>';
+  $handler->display->display_options['header']['area_text_custom']['content'] = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae ligula vel urna malesuada interdum. Duis eu nunc id ipsum consectetur mattis ut ut nisl. Curabitur laoreet, eros fermentum cursus tincidunt, nisl sem fermentum dolor, non pellentesque tortor libero et tellus. Nunc ut tellus pulvinar, hendrerit nunc eu, ornare diam. Nullam pulvinar viverra tellus, sit amet congue dolor. Phasellus imperdiet dolor eget mi dictum dignissim. Vestibulum cursus feugiat felis id vulputate. Nullam non commodo risus. Phasellus sagittis eget velit quis vulputate. Vivamus blandit tortor sed nisl accumsan rutrum. Donec finibus vitae mi vel dignissim. Nunc iaculis venenatis ligula quis malesuada. Donec non venenatis odio. Etiam rhoncus diam a mauris feugiat consequat. Curabitur tellus metus, vulputate et eros ut, sagittis elementum arcu.';
   $handler->display->display_options['path'] = 'projekt-list';
 
   /* Display: Feed */
@@ -2328,15 +2293,17 @@ Publikation|Publikationen'),
   $handler->display->display_options['path'] = 'map-filter';
   $translatables['projekt_map'] = array(
     t('Master'),
-    t('projekt_list'),
     t('more'),
-    t('Apply'),
-    t('Zurücksetzen'),
+    t('Suchen'),
+    t('alle Filtern Zurücksetzen'),
     t('Sort by'),
     t('Asc'),
     t('Desc'),
     t('Select any filter and click on Apply to see results'),
     t('Erweiterte Optionen'),
+    t('Alle'),
+    t('Akteur'),
+    t('Themen'),
     t('Items per page'),
     t('- All -'),
     t('Offset'),
@@ -2344,21 +2311,16 @@ Publikation|Publikationen'),
     t('‹ vorherige Seite'),
     t('nächste Seite ›'),
     t('letzte Seite »'),
+    t('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae ligula vel urna malesuada interdum. Duis eu nunc id ipsum consectetur mattis ut ut nisl. Curabitur laoreet, eros fermentum cursus tincidunt, nisl sem fermentum dolor, non pellentesque tortor libero et tellus. Nunc ut tellus pulvinar, hendrerit nunc eu, ornare diam. Nullam pulvinar viverra tellus, sit amet congue dolor. Phasellus imperdiet dolor eget mi dictum dignissim. Vestibulum cursus feugiat felis id vulputate. Nullam non commodo risus. Phasellus sagittis eget velit quis vulputate. Vivamus blandit tortor sed nisl accumsan rutrum. Donec finibus vitae mi vel dignissim. Nunc iaculis venenatis ligula quis malesuada. Donec non venenatis odio. Etiam rhoncus diam a mauris feugiat consequat. Curabitur tellus metus, vulputate et eros ut, sagittis elementum arcu.'),
     t(' @total'),
-    t('<a href="/projekt-list">List</a>'),
     t('.'),
     t(','),
     t('Inhaltstyp'),
-    t('Akteur'),
     t('Dieser Artikel gehört zu'),
     t('PLZ'),
     t('Alle themen'),
     t('Project map'),
-    t(' @total '),
-    t('Akteurstyp'),
-    t('Alle Themen'),
     t('Project list'),
-    t('<a href="/projekt-map">Map</a>'),
     t('Feed'),
     t('Node ID'),
     t('Longitude'),

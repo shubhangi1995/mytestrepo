@@ -147,6 +147,11 @@ function ipwa_preprocess_views_view_unformatted(&$vars) {
   $vars['node_type'][$id] = $value->node_type;
   }
 }
+
+function ipwa_preprocess_views_exposed_form(&$vars)
+{
+
+}
 /**
  * Implements theme_preprocess_views_view().
  *
@@ -178,5 +183,14 @@ function ipwa_preprocess_views_view(&$vars) {
     }
 
   }
+}
+
+function ipwa_base_preprocess_views_exposed_form(&$vars){
+  if($vars['form']['#id'] == 'views-exposed-form-projekt-map-project-map') {
+    $views_rows = views_get_view_result('projekt_map', 'project_map');
+    $count_rows = count($views_rows);
+    $vars['count'] = $count_rows;
+  }
+
 }
 

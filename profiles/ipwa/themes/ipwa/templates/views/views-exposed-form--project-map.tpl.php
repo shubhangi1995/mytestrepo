@@ -28,7 +28,6 @@
 <?php endif; ?>
 <div class="views-exposed-form">
   <div class="views-exposed-widgets clearfix">
-    <div id="map_list_link"><a href="/projekt-list">List</a></div>
     <?php foreach ($widgets as $id => $widget): ?>
       <div id="<?php print $widget->id; ?>-wrapper" class="views-exposed-widget views-widget-<?php print $id; ?>">
         <?php if (!empty($widget->label)): ?>
@@ -78,6 +77,7 @@
       </div>
     <?php endif; ?>
   </div>
+  <div id="map_list_link"><a href="/projekt-list">zur Listensicht</a></div>
   <div id="footer_map" class="footer_map">
 	<div class="map-popup" role="dialog">
 		<div class="map-btn-close"><span></span></div>
