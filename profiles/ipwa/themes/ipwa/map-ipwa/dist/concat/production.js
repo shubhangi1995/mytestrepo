@@ -760,7 +760,7 @@ IPWA_MAP.Map.webatlasLayer = {
   // info obtained from the capabilities file
   // @link http://sg.geodatenzentrum.de/wmts_webatlasde_grau/1.0.0/WMTSCapabilities.xml
   wmtsWebatlasConf: {
-    urls: ['https://sg.geodatenzentrum.de/wmts_webatlasde_grau__63b89fd6-964c-87e3-8900-3e6b1caab5c3?'],
+    urls: ['https://sg.geodatenzentrum.de/wmts_webatlasde_grau__100bb4b7-d715-8456-a79c-3aed1caab5c3?'],
     layer: 'webatlasde_grau',
     matrixSet: 'DE_EPSG_25832_ADV',
     format: 'image/png',
