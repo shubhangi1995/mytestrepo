@@ -307,7 +307,7 @@ IPWA_MAP.Map.poiLayer = {
 
     this.mapWarning = jQuery('#map-warning');
     this.mapWarningContent = this.mapWarning.find('.map-warning-content');
-    this.totalResult = jQuery('.view-sub-wrapper> .view-header');
+    this.totalResult = jQuery('.map_node_count');
   },
 
   updateData: function (str, btn) {
