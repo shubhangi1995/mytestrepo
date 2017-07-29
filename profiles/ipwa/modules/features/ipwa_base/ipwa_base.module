@@ -167,11 +167,9 @@ function ipwa_base_form_alter(&$form, &$form_state, $form_id) {
     }
   }
 
-  if($form['#id']== "views-exposed-form-projekt-map-project-map")
-  {
-    $form['field_plz']['#default_value'] ="PLZ/Ort";
-
-  }
+if ($form['#id'] == "views-exposed-form-projekt-map-project-map") {
+  $form['field_plz']['#attributes']['placeholder']="PLZ/Ort";
+}
 }
 
 
