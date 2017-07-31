@@ -1194,7 +1194,14 @@ position:relative;
 	 }
    }
     #footer_print_icon {
-        &:before {
+        
+
+        #page_print {
+            font-size:0;
+			border:0;
+			background:0;
+			padding-left:0;
+			&:before {
             font-family: $icomoon;
             content: "\e94c";
             color: $color-light-black;
@@ -1202,10 +1209,8 @@ position:relative;
             display: inline-block;
             padding: 10px;
 			padding-left:0;
+			cursor:pointer;
         }
-
-        #page_print {
-            display: none;
         }
     }
     .block-addthis {
