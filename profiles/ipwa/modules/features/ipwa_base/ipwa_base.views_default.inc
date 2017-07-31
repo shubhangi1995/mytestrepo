@@ -1048,8 +1048,8 @@ Publikation|Publikationen'),
   $handler->display->display_options['footer']['area_text_custom']['id'] = 'area_text_custom';
   $handler->display->display_options['footer']['area_text_custom']['table'] = 'views';
   $handler->display->display_options['footer']['area_text_custom']['field'] = 'area_text_custom';
-  $handler->display->display_options['footer']['area_text_custom']['content'] = '<a href ="/projekt-map">Karte öffnen</a>';
-  /* Feld: Inhalt: Dieses Projekt gehört zu  */
+  $handler->display->display_options['footer']['area_text_custom']['content'] = '<a href ="/schaufenster-digitales-nrw">Karte öffnen</a>';
+  /* Feld: Inhalt: Dieser Akteur gehört zu */
   $handler->display->display_options['fields']['field_themenzuweisung']['id'] = 'field_themenzuweisung';
   $handler->display->display_options['fields']['field_themenzuweisung']['table'] = 'field_data_field_themenzuweisung';
   $handler->display->display_options['fields']['field_themenzuweisung']['field'] = 'field_themenzuweisung';
