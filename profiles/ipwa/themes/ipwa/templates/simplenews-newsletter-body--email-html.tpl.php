@@ -45,12 +45,17 @@
 			margin:0;
 			padding:0;
 		}
+		p{
+			font-size:15px !important;
+			line-height:25px;
+		}
 		p span{
-			font-size:20px !important;
+			font-size:17px !important;
 			background-color:transparent !important;
+			line-height:22px;
 		}
 		p span span{
-			font-size:20px !important;
+			font-size:17px !important;
 			background-color:transparent !important;
 		}
 		table tr td table{
@@ -131,7 +136,7 @@
             */
             ?>
           <?php if(isset($title)) : ?>
-            <h1 style="font-size:30px;margin:30px 0 20px;"><?php  print $title; ?></h1>
+            <h1 style="font-size:27px;margin:30px 0 20px;"><?php  print $title; ?></h1>
           <?php endif; ?>
           <?php
           /**
@@ -161,7 +166,7 @@
 
                   <?php //Following code is for print Title of Group. ?>
                   <?php foreach($field_data[$items['value']]->field_group_heading['und'] as $group_title): ?>
-                    <h2 style="font-size:25px;background:#eff2f7;padding:20px 0;text-align:center;border-bottom:20px solid #fff;border-top:20px solid #fff; color:#273753s"><a href="<?php print $group_title['url']; ?>" ><?php print $group_title['title']; ?></a></h2>
+                    <h2 style="font-size:22px;background:#eff2f7;padding:20px 0;text-align:center;border-bottom:20px solid #fff;border-top:20px solid #fff; color:#273753s"><a href="<?php print $group_title['url']; ?>" ><?php print $group_title['title']; ?></a></h2>
 					<table style="font-family:Arial,Helvetica, sans-serif;margin:0 auto; font-size:16px;color:#273753;width:720px; width = "720">
 					<tr>
 					<td style="padding:20px 20px; background:#eff2f7;color:#273753">
@@ -181,7 +186,7 @@
                         <?php endif; ?>
 
                         <?php //print Title of Termin. ?>
-                          <span><a href="<?php print $base_url.'/'.$alias; ?>" style="color:#273753;font-weight:bold;text-decoration:none;font-size:18px;">
+                          <span><a href="<?php print $base_url.'/'.$alias; ?>" style="color:#273753;font-weight:bold;text-decoration:none;">
                               <?php print $node_data['entity']->title; ?></a>
                           </span>
 
@@ -207,7 +212,7 @@
                         <span>
 
                         <?php //print Title of Other content excluded from Termin. ?>
-                          <span><a href="<?php print $base_url.'/'.$alias; ?>" style="color:#273753;font-weight:bold;text-decoration:none;font-size:18px;color:#273753">
+                          <span><a href="<?php print $base_url.'/'.$alias; ?>" style="color:#273753;font-weight:bold;text-decoration:none;font-size:16px;color:#273753">
                             <?php print $node_data['entity']->title; ?></a>
                           </span>
 
@@ -216,11 +221,11 @@
                           <?php $title_link = $base_url.'/'.$alias; ?>
                             <?php $body = (strlen(strip_tags($node->body['und'][0]['value'])) > 200) ? substr(strip_tags($node->body['und'][0]['value']),0,200).
                               ' <b>...</b> <a href="'.$title_link.'" class="more_link"> > mehr</a>' : strip_tags($node->body['und'][0]['value']); ?>
-                            <p style="margin:5px 0; font-size:20px !important;background:none !important;color:#273753"><?php print $body; ?></p>
+                            <p style="margin:5px 0; background:none !important;color:#273753"><?php print $body; ?></p>
                         <?php else: ?>
                           <?php $title_link = $base_url.'/'.$alias; ?>
                           <?php $body = '<a href="'.$title_link.'" class="more_link"> > mehr</a>'; ?>
-                            <p style="margin:5px 0; font-size:20px !important;background:none !important;color:#273753"><?php print $body; ?></p>
+                            <p style="margin:5px 0;background:none !important;color:#273753"><?php print $body; ?></p>
                         <?php endif; ?>
                           </span>
                       <?php endif; ?>
@@ -262,13 +267,13 @@
                         <img src="<?php print file_create_url(drupal_get_path('theme', 'ipwa')); ?>/images/MWEI.png" alt = "footer_logo3" width="190"/>
                     </td>
                 </tr>
-				<tr style="padding:20px 20px; background:#eff2f7;">
-				<td style="color:#273753;">
-					<div style="margin-bottom:25px;color:#273753;">Redaktionell verantwortlich im Sinne § 5 TMG bzw. § 55 RStV: Dr. Thomas König
+				<tr style="background:#eff2f7;">
+				<td style="color:#273753;padding:20px;font-size:12px !important;">
+					<div style="margin-bottom:25px;color:#273753;font-size:12px !important;line-height:22px;">Redaktionell verantwortlich im Sinne § 5 TMG bzw. § 55 RStV: Dr. Thomas König
             Redaktion: Dr. Jan Christopher Brandt, VDI Technologiezentrum GmbH, VDI-Platz 1, 40468 Düsseldorf, E-Mail: nrw40-redaktion@vdi.de
           </div>
-					<div style="margin-bottom:25px;color:#273753;">Sie können diesen Newsletter <a href= "<?php print token_replace('[simplenews-subscriber:unsubscribe-url]', array('sanitize' => FALSE)); ?>">hier abbestellen.</a></div>
-					<div style="color:#273753;">© 2017  Ministerium für Wirtschaft, Energie, Industrie, Mittelstand und  Handwerk des Lands Nordrhein-Westfalen</div>
+					<div style="margin-bottom:25px;color:#273753;font-size:12px !important;line-height:22px;">Sie können diesen Newsletter <a href= "<?php print token_replace('[simplenews-subscriber:unsubscribe-url]', array('sanitize' => FALSE)); ?>">hier abbestellen.</a></div>
+					<div style="color:#273753;font-size:12px !important;line-height:22px;">© 2017  Ministerium für Wirtschaft, Energie, Industrie, Mittelstand und  Handwerk des Lands Nordrhein-Westfalen</div>
 				</td>
 				</tr>
 			</table>
