@@ -56,7 +56,8 @@ function ipwa_doorpage_field_group_info() {
       0 => 'body',
       1 => 'field_kurztext',
       2 => 'field_untertitel',
-      3 => 'group_title',
+      3 => 'field_image',
+      4 => 'group_title',
     ),
     'format_type' => 'html-element',
     'format_settings' => array(

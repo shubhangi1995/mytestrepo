@@ -42,7 +42,6 @@ features[field_instance][] = field_collection_item-field_topic_teaser-field_para
 features[field_instance][] = field_collection_item-field_topic_teaser-field_quellenangabe
 features[field_instance][] = node-doorpage-body
 features[field_instance][] = node-doorpage-field_anzuzeigende_seitenmodule
-features[field_instance][] = node-doorpage-field_image
 features[field_instance][] = node-doorpage-field_kurztext
 features[field_instance][] = node-doorpage-field_untertitel
 features[field_instance][] = paragraphs_item-frontpage_map_teaser_paragraph-eb_background
@@ -94,6 +93,7 @@ features_exclude[field_instance][field_collection_item-field_map_teaser-field_qu
 features_exclude[field_instance][field_collection_item-eb_background-field_eb_color] = field_collection_item-eb_background-field_eb_color
 features_exclude[field_instance][field_collection_item-eb_background-field_eb_parallax_image] = field_collection_item-eb_background-field_eb_parallax_image
 features_exclude[field_instance][field_collection_item-eb_background-field_eb_parallax_speed] = field_collection_item-eb_background-field_eb_parallax_speed
+features_exclude[field_instance][node-doorpage-field_image] = node-doorpage-field_image
 features_exclude[dependencies][views] = views
 features_exclude[dependencies][jquery_colorpicker] = jquery_colorpicker
 features_exclude[dependencies][views_slideshow] = views_slideshow
