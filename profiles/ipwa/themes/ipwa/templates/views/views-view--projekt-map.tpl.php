@@ -41,7 +41,7 @@
     <div class="map-header">
       <div class="map-logo">
         <?php  global $base_path;?>
-        <img src=  <?php print_r(file_create_url("/profiles/ipwa/themes/ipwa/images/Digitales.png"));?> alt="EFRE_Foerderhinweis_deutsch_farbig">
+        <img src=  <?php print_r(file_create_url("profiles/ipwa/themes/ipwa/images/Schaufenster_126.png"));?> alt="map_icon">
       </div>
       <?php if ($header): ?>
       <?php if($view)?>
@@ -90,7 +90,7 @@
     <?php print $attachment_after; ?>
   </div>
 <?php endif; ?>
-
+<?php print views_embed_view('neueste_informationen', 'block', $id);  ?>
 <?php if ($more): ?>
   <?php print $more; ?>
 <?php endif; ?>
