@@ -193,13 +193,13 @@ jQuery('.tb-megamenu-submenu.dropdown-menu').attr('style','display:none !importa
 	
 	// Calendar view
 	
-	 jQuery(".page-calendar .view-content .calendar-calendar .inner .item .calendar span a").on("focus", function(){
+	/* jQuery(".page-calendar .view-content .calendar-calendar .inner .item .calendar span a").on("focus", function(){
 		jQuery(this).mouseover();
 		// jQuery(this).hover();
 		jQuery(this).next(".views-row").attr("style", "display:block !important;");
 		jQuery(this).parents("td, tr").siblings().find(".trigger").mouseout();
 		jQuery(this).parents("td, tr").siblings().find(".trigger").next(".views-row").removeAttr("style");
-	}); 
+	}); */
 	
 
 
@@ -346,6 +346,19 @@ jQuery('.tb-megamenu-submenu.dropdown-menu').attr('style','display:none !importa
 			return true;
 		}
 	});
+	
+	// Calendar tool tip appearacnce work for responsive
+	if(jQuery(window).innerWidth() <= 768){
+		jQuery(".trigger").click(function(){
+				jQuery('.calendar-calendar').animate({
+					scrollLeft: 0
+				}, 0);
+				jQuery('.calendar-calendar').animate({
+					scrollTop: jQuery(this).offset().top,
+					scrollLeft: jQuery(this).offset().left
+				}, 500);				
+		});
+	}
 	
 });
 
