@@ -8900,19 +8900,23 @@ input[type=text]::-ms-clear {
         /* line 1188, ../scss/pages/_common.scss */
         .group-page-info .main_content_blocks section {
           display: block; } }
-    /* line 1197, ../scss/pages/_common.scss */
-    .group-page-info .main_content_blocks #footer_print_icon:before {
-      font-family: "icomoon";
-      content: "\e94c";
-      color: #45494c;
-      font-size: 20px;
-      display: inline-block;
-      padding: 10px;
-      padding-left: 0; }
-    /* line 1207, ../scss/pages/_common.scss */
+    /* line 1199, ../scss/pages/_common.scss */
     .group-page-info .main_content_blocks #footer_print_icon #page_print {
-      display: none; }
-    /* line 1213, ../scss/pages/_common.scss */
+      font-size: 0;
+      border: 0;
+      background: 0;
+      padding-left: 0; }
+      /* line 1204, ../scss/pages/_common.scss */
+      .group-page-info .main_content_blocks #footer_print_icon #page_print:before {
+        font-family: "icomoon";
+        content: "\e94c";
+        color: #45494c;
+        font-size: 20px;
+        display: inline-block;
+        padding: 10px;
+        padding-left: 0;
+        cursor: pointer; }
+    /* line 1218, ../scss/pages/_common.scss */
     .group-page-info .main_content_blocks .block-addthis a:before {
       font-family: "icomoon";
       content: "\e94f";
@@ -8921,7 +8925,7 @@ input[type=text]::-ms-clear {
       display: inline-block;
       padding: 10px;
       padding-left: 0; }
-    /* line 1223, ../scss/pages/_common.scss */
+    /* line 1228, ../scss/pages/_common.scss */
     .group-page-info .main_content_blocks .block-addthis a img {
       display: none; }
 
