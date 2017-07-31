@@ -226,7 +226,7 @@ function show_footer_print() {
 }
 
 function ipwa_base_field_group_pre_render_alter(&$element, $group, &$form){
-  if(($element['body']['#bundle'] !="doorpage")&&($element['body']['#bundle'] !="webform")) {
+  if(($group->bundle!="doorpage")&&($group->bundle!="webform")) {
     if($group->group_name == "group_page_info"){
       $block1 = block_load("ipwa_base","footer_print");
       $block = block_load("addthis","addthis_block");

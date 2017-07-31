@@ -56,7 +56,7 @@ function ipwa_doorpage_field_group_info() {
       0 => 'body',
       1 => 'field_kurztext',
       2 => 'field_untertitel',
-      3 => 'field_image',
+      3 => 'field_projekt_map',
       4 => 'group_title',
     ),
     'format_type' => 'html-element',
@@ -85,7 +85,7 @@ function ipwa_doorpage_field_group_info() {
   $field_group->parent_name = 'group_page_info';
   $field_group->data = array(
     'label' => 'title',
-    'weight' => '1',
+    'weight' => '6',
     'children' => array(),
     'format_type' => 'html-element',
     'format_settings' => array(
