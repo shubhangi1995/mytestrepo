@@ -355,7 +355,7 @@ jQuery('.tb-megamenu-submenu.dropdown-menu').attr('style','display:none !importa
 				}, 0);
 				jQuery('.calendar-calendar').animate({
 					scrollTop: jQuery(this).offset().top,
-					scrollLeft: jQuery(this).offset().left
+					scrollLeft: jQuery(this).offset().left - 150
 				}, 500);				
 		});
 	}
