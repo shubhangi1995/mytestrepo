@@ -30,6 +30,11 @@ window.addEventListener('orientationchange', function () {
         minimumResultsForSearch: Infinity
 	}); 
 	
+	jQuery("#views-exposed-form-projekt-map-project-map select").select2({
+		
+		minimumResultsForSearch: Infinity
+	});
+	
 	
 	jQuery("input:radio").each(function(){
   if(jQuery(this).is(':checked'))
@@ -43,6 +48,11 @@ window.addEventListener('orientationchange', function () {
 jQuery('.page-aktuelles select').select2().on("select2:open", function(){
  jQuery('.page-aktuelles .select2-results').addClass("simplebar");
  jQuery('.page-aktuelles .select2-results').simplebar();
+});
+
+jQuery('.page-projekt-map select').select2().on("select2:open", function(){
+ jQuery('.page-projekt-map .select2-results').addClass("simplebar");
+ jQuery('.page-projekt-map .select2-results').simplebar();
 });
 
 
