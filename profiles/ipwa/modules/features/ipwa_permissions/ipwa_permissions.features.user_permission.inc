@@ -15,7 +15,6 @@ function ipwa_permissions_user_default_permissions() {
     'name' => 'access content',
     'roles' => array(
       'Chefredakteur' => 'Chefredakteur',
-      'External editor' => 'External editor',
       'Redakteur (ext.)' => 'Redakteur (ext.)',
       'Redakteur (int.)' => 'Redakteur (int.)',
       'anonymous user' => 'anonymous user',
