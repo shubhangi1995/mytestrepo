@@ -1125,7 +1125,7 @@ Publikation|Publikationen'),
     t('Asc'),
     t('Desc'),
     t('<h2 class="pane-title">Neueste Digital-Projekte in NRW</h2>'),
-    t('<a href ="/projekt-map">Karte öffnen</a>'),
+    t('<a href ="/schaufenster-digitales-nrw">Karte öffnen</a>'),
     t('Block'),
   );
   $export['neueste_digital_projekte'] = $view;
@@ -1932,7 +1932,6 @@ Publikation|Publikationen'),
   $handler->display->display_options['filters']['type']['group'] = 1;
   $handler->display->display_options['filters']['type']['exposed'] = TRUE;
   $handler->display->display_options['filters']['type']['expose']['operator_id'] = 'type_op';
-  $handler->display->display_options['filters']['type']['expose']['label'] = 'Inhaltstyp';
   $handler->display->display_options['filters']['type']['expose']['operator'] = 'type_op';
   $handler->display->display_options['filters']['type']['expose']['identifier'] = 'type';
   $handler->display->display_options['filters']['type']['expose']['remember_roles'] = array(
@@ -1948,7 +1947,6 @@ Publikation|Publikationen'),
   $handler->display->display_options['filters']['field_akteurstyp']['group'] = 1;
   $handler->display->display_options['filters']['field_akteurstyp']['exposed'] = TRUE;
   $handler->display->display_options['filters']['field_akteurstyp']['expose']['operator_id'] = 'field_akteurstyp_op';
-  $handler->display->display_options['filters']['field_akteurstyp']['expose']['label'] = 'Akteur';
   $handler->display->display_options['filters']['field_akteurstyp']['expose']['operator'] = 'field_akteurstyp_op';
   $handler->display->display_options['filters']['field_akteurstyp']['expose']['identifier'] = 'field_akteurstyp';
   $handler->display->display_options['filters']['field_akteurstyp']['expose']['remember_roles'] = array(
@@ -1957,63 +1955,6 @@ Publikation|Publikationen'),
   );
   $handler->display->display_options['filters']['field_akteurstyp']['expose']['reduce'] = 0;
   /* Filter criterion: Indexed Beitrag: Dieser Artikel gehört zu */
-  $handler->display->display_options['filters']['field_themenzuweisung']['id'] = 'field_themenzuweisung';
-  $handler->display->display_options['filters']['field_themenzuweisung']['table'] = 'search_api_index_ipwa_solr_index';
-  $handler->display->display_options['filters']['field_themenzuweisung']['field'] = 'field_themenzuweisung';
-  $handler->display->display_options['filters']['field_themenzuweisung']['value'] = array(
-    1 => '1',
-    2 => '2',
-    47 => '47',
-    3 => '3',
-    4 => '4',
-    5 => '5',
-    6 => '6',
-    7 => '7',
-    8 => '8',
-    9 => '9',
-    10 => '10',
-    11 => '11',
-    12 => '12',
-    14 => '14',
-    15 => '15',
-    16 => '16',
-    17 => '17',
-    19 => '19',
-    20 => '20',
-    21 => '21',
-    22 => '22',
-    23 => '23',
-    24 => '24',
-    25 => '25',
-    26 => '26',
-    27 => '27',
-    28 => '28',
-    29 => '29',
-    30 => '30',
-    31 => '31',
-    32 => '32',
-    33 => '33',
-    34 => '34',
-    35 => '35',
-    36 => '36',
-    38 => '38',
-    39 => '39',
-    40 => '40',
-    41 => '41',
-    42 => '42',
-  );
-  $handler->display->display_options['filters']['field_themenzuweisung']['group'] = 1;
-  $handler->display->display_options['filters']['field_themenzuweisung']['exposed'] = TRUE;
-  $handler->display->display_options['filters']['field_themenzuweisung']['expose']['operator_id'] = 'field_themenzuweisung_op';
-  $handler->display->display_options['filters']['field_themenzuweisung']['expose']['label'] = 'Dieser Artikel gehört zu';
-  $handler->display->display_options['filters']['field_themenzuweisung']['expose']['operator'] = 'field_themenzuweisung_op';
-  $handler->display->display_options['filters']['field_themenzuweisung']['expose']['identifier'] = 'field_themenzuweisung';
-  $handler->display->display_options['filters']['field_themenzuweisung']['expose']['remember_roles'] = array(
-    2 => '2',
-    1 => 0,
-  );
-  $handler->display->display_options['filters']['field_themenzuweisung']['expose']['reduce'] = 0;
-  /* Filter criterion: Indexed Beitrag: Dieser Artikel gehört zu */
   $handler->display->display_options['filters']['field_themenzuweisung_1']['id'] = 'field_themenzuweisung_1';
   $handler->display->display_options['filters']['field_themenzuweisung_1']['table'] = 'search_api_index_ipwa_solr_index';
   $handler->display->display_options['filters']['field_themenzuweisung_1']['field'] = 'field_themenzuweisung';
@@ -2021,13 +1962,14 @@ Publikation|Publikationen'),
   $handler->display->display_options['filters']['field_themenzuweisung_1']['group'] = 1;
   $handler->display->display_options['filters']['field_themenzuweisung_1']['exposed'] = TRUE;
   $handler->display->display_options['filters']['field_themenzuweisung_1']['expose']['operator_id'] = 'field_themenzuweisung_1_op';
-  $handler->display->display_options['filters']['field_themenzuweisung_1']['expose']['label'] = 'Alle themen';
   $handler->display->display_options['filters']['field_themenzuweisung_1']['expose']['operator'] = 'field_themenzuweisung_1_op';
   $handler->display->display_options['filters']['field_themenzuweisung_1']['expose']['identifier'] = 'field_themenzuweisung_1';
   $handler->display->display_options['filters']['field_themenzuweisung_1']['expose']['remember_roles'] = array(
     2 => '2',
     1 => 0,
     3 => 0,
+    4 => 0,
+    5 => 0,
   );
   $handler->display->display_options['filters']['field_themenzuweisung_1']['expose']['reduce'] = 0;
   /* Filter criterion: Indexed Beitrag: PLZ */
@@ -2037,13 +1979,14 @@ Publikation|Publikationen'),
   $handler->display->display_options['filters']['field_plz']['group'] = 1;
   $handler->display->display_options['filters']['field_plz']['exposed'] = TRUE;
   $handler->display->display_options['filters']['field_plz']['expose']['operator_id'] = 'field_plz_op';
-  $handler->display->display_options['filters']['field_plz']['expose']['label'] = 'PLZ';
   $handler->display->display_options['filters']['field_plz']['expose']['operator'] = 'field_plz_op';
   $handler->display->display_options['filters']['field_plz']['expose']['identifier'] = 'field_plz';
   $handler->display->display_options['filters']['field_plz']['expose']['remember_roles'] = array(
     2 => '2',
     1 => 0,
     3 => 0,
+    4 => 0,
+    5 => 0,
   );
   /* Filter criterion: Indexed Beitrag: Status */
   $handler->display->display_options['filters']['status']['id'] = 'status';
@@ -2310,10 +2253,6 @@ Publikation|Publikationen'),
 </div>'),
     t('.'),
     t(','),
-    t('Inhaltstyp'),
-    t('Dieser Artikel gehört zu'),
-    t('Alle themen'),
-    t('PLZ'),
     t('Project map'),
     t('Project list'),
     t(' @total'),
