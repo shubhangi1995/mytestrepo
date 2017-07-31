@@ -1788,12 +1788,6 @@ Publikation|Publikationen'),
   $handler->display->display_options['pager']['options']['tags']['last'] = 'letzte Seite »';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'fields';
-  /* Kopfbereich: Global: Unfiltered text */
-  $handler->display->display_options['header']['area_text_custom']['id'] = 'area_text_custom';
-  $handler->display->display_options['header']['area_text_custom']['table'] = 'views';
-  $handler->display->display_options['header']['area_text_custom']['field'] = 'area_text_custom';
-  $handler->display->display_options['header']['area_text_custom']['empty'] = TRUE;
-  $handler->display->display_options['header']['area_text_custom']['content'] = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae ligula vel urna malesuada interdum. Duis eu nunc id ipsum consectetur mattis ut ut nisl. Curabitur laoreet, eros fermentum cursus tincidunt, nisl sem fermentum dolor, non pellentesque tortor libero et tellus. Nunc ut tellus pulvinar, hendrerit nunc eu, ornare diam. Nullam pulvinar viverra tellus, sit amet congue dolor. Phasellus imperdiet dolor eget mi dictum dignissim. Vestibulum cursus feugiat felis id vulputate. Nullam non commodo risus. Phasellus sagittis eget velit quis vulputate. Vivamus blandit tortor sed nisl accumsan rutrum. Donec finibus vitae mi vel dignissim. Nunc iaculis venenatis ligula quis malesuada. Donec non venenatis odio. Etiam rhoncus diam a mauris feugiat consequat. Curabitur tellus metus, vulputate et eros ut, sagittis elementum arcu.';
   /* Kopfbereich: Global: Result summary */
   $handler->display->display_options['header']['result']['id'] = 'result';
   $handler->display->display_options['header']['result']['table'] = 'views';
@@ -2215,11 +2209,6 @@ Publikation|Publikationen'),
   $handler->display->display_options['header']['result']['table'] = 'views';
   $handler->display->display_options['header']['result']['field'] = 'result';
   $handler->display->display_options['header']['result']['content'] = ' @total';
-  /* Kopfbereich: Global: Unfiltered text */
-  $handler->display->display_options['header']['area_text_custom']['id'] = 'area_text_custom';
-  $handler->display->display_options['header']['area_text_custom']['table'] = 'views';
-  $handler->display->display_options['header']['area_text_custom']['field'] = 'area_text_custom';
-  $handler->display->display_options['header']['area_text_custom']['content'] = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae ligula vel urna malesuada interdum. Duis eu nunc id ipsum consectetur mattis ut ut nisl. Curabitur laoreet, eros fermentum cursus tincidunt, nisl sem fermentum dolor, non pellentesque tortor libero et tellus. Nunc ut tellus pulvinar, hendrerit nunc eu, ornare diam. Nullam pulvinar viverra tellus, sit amet congue dolor. Phasellus imperdiet dolor eget mi dictum dignissim. Vestibulum cursus feugiat felis id vulputate. Nullam non commodo risus. Phasellus sagittis eget velit quis vulputate. Vivamus blandit tortor sed nisl accumsan rutrum. Donec finibus vitae mi vel dignissim. Nunc iaculis venenatis ligula quis malesuada. Donec non venenatis odio. Etiam rhoncus diam a mauris feugiat consequat. Curabitur tellus metus, vulputate et eros ut, sagittis elementum arcu.';
   $handler->display->display_options['path'] = 'projekt-list';
 
   /* Display: Feed */
@@ -2316,7 +2305,6 @@ Publikation|Publikationen'),
     t('‹ vorherige Seite'),
     t('nächste Seite ›'),
     t('letzte Seite »'),
-    t('Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae ligula vel urna malesuada interdum. Duis eu nunc id ipsum consectetur mattis ut ut nisl. Curabitur laoreet, eros fermentum cursus tincidunt, nisl sem fermentum dolor, non pellentesque tortor libero et tellus. Nunc ut tellus pulvinar, hendrerit nunc eu, ornare diam. Nullam pulvinar viverra tellus, sit amet congue dolor. Phasellus imperdiet dolor eget mi dictum dignissim. Vestibulum cursus feugiat felis id vulputate. Nullam non commodo risus. Phasellus sagittis eget velit quis vulputate. Vivamus blandit tortor sed nisl accumsan rutrum. Donec finibus vitae mi vel dignissim. Nunc iaculis venenatis ligula quis malesuada. Donec non venenatis odio. Etiam rhoncus diam a mauris feugiat consequat. Curabitur tellus metus, vulputate et eros ut, sagittis elementum arcu.'),
     t('<div class="map_node_count">
  @total
 </div>'),

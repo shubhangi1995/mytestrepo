@@ -39,16 +39,9 @@
   <?php if(!($feed_icon)):?>
   <div class="view-sub-wrapper">
     <div class="map-header">
-      <div class="map-logo">
-        <?php  global $base_path;?>
-        <img src=  <?php print_r(file_create_url("profiles/ipwa/themes/ipwa/images/Schaufenster_126.png"));?> alt="map_icon">
-      </div>
       <?php if ($header): ?>
       <?php if($view)?>
       <div class="view-header">
-        <div class="map-title">
-          <h1 class="page-header">Schaufenster Digitales NRW</h1>
-        </div>
         <div class ="map-sub-title">
           <?php print $header; ?>
         </div>
@@ -90,7 +83,6 @@
     <?php print $attachment_after; ?>
   </div>
 <?php endif; ?>
-<?php print views_embed_view('neueste_informationen', 'block', $id);  ?>
 <?php if ($more): ?>
   <?php print $more; ?>
 <?php endif; ?>

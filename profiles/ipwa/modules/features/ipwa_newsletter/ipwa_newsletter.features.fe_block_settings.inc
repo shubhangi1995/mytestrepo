@@ -28,7 +28,8 @@ infos-fuer-unternehmen
 aktuelles
 infos-fuer-beschaeftigte
 calendar
-alle-themen',
+alle-themen
+schaufenster-digitales-nrw',
     'roles' => array(),
     'themes' => array(
       'bartik' => array(
