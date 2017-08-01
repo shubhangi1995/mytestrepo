@@ -2183,7 +2183,14 @@ Publikation|Publikationen'),
   $handler->display->display_options['header']['result']['id'] = 'result';
   $handler->display->display_options['header']['result']['table'] = 'views';
   $handler->display->display_options['header']['result']['field'] = 'result';
-  $handler->display->display_options['header']['result']['content'] = ' @total';
+  $handler->display->display_options['header']['result']['content'] = '<div class="map_node_count">
+ @total
+</div>';
+  /* Kopfbereich: Global: Unfiltered text */
+  $handler->display->display_options['header']['area_text_custom']['id'] = 'area_text_custom';
+  $handler->display->display_options['header']['area_text_custom']['table'] = 'views';
+  $handler->display->display_options['header']['area_text_custom']['field'] = 'area_text_custom';
+  $handler->display->display_options['header']['area_text_custom']['content'] = '<a href="/schaufenster-digitales-nrw">zur Map</a>';
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Feld: Indexed Beitrag: Node ID */
   $handler->display->display_options['fields']['nid']['id'] = 'nid';
@@ -2193,6 +2200,15 @@ Publikation|Publikationen'),
   $handler->display->display_options['fields']['nid']['exclude'] = TRUE;
   $handler->display->display_options['fields']['nid']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['nid']['link_to_entity'] = 0;
+  /* Feld: Indexed Beitrag: Dieser Artikel gehört zu */
+  $handler->display->display_options['fields']['field_themenzuweisung']['id'] = 'field_themenzuweisung';
+  $handler->display->display_options['fields']['field_themenzuweisung']['table'] = 'search_api_index_ipwa_solr_index';
+  $handler->display->display_options['fields']['field_themenzuweisung']['field'] = 'field_themenzuweisung';
+  $handler->display->display_options['fields']['field_themenzuweisung']['label'] = '';
+  $handler->display->display_options['fields']['field_themenzuweisung']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_themenzuweisung']['link_to_entity'] = 1;
+  $handler->display->display_options['fields']['field_themenzuweisung']['view_mode'] = 'full';
+  $handler->display->display_options['fields']['field_themenzuweisung']['bypass_access'] = 0;
   /* Feld: Indexed Beitrag: Inhaltstyp */
   $handler->display->display_options['fields']['type']['id'] = 'type';
   $handler->display->display_options['fields']['type']['table'] = 'search_api_index_ipwa_solr_index';
@@ -2443,7 +2459,10 @@ Publikation|Publikationen'),
     t(','),
     t('Project map'),
     t('Project list'),
-    t(' @total'),
+    t('<div class="map_node_count">
+ @total
+</div>'),
+    t('<a href="/schaufenster-digitales-nrw">zur Map</a>'),
     t('A-Z'),
     t('neueste zuerst'),
     t('Feed'),
