@@ -10695,43 +10695,66 @@ input[type=text]::-ms-clear {
           top: 6px; }
 
 /* line 2, ../scss/pages/_map.scss */
+.page-projekt-map .node-doorpage .group-page-info {
+  width: 1170px !important;
+  max-width: 1170px;
+  overflow: hidden;
+  max-width: auto; }
+  /* line 8, ../scss/pages/_map.scss */
+  .page-projekt-map .node-doorpage .group-page-info .field-name-field-projekt-map {
+    width: 30%;
+    float: left; }
+    /* line 11, ../scss/pages/_map.scss */
+    .page-projekt-map .node-doorpage .group-page-info .field-name-field-projekt-map img {
+      margin: 0 auto;
+      text-align: center; }
+  /* line 17, ../scss/pages/_map.scss */
+  .page-projekt-map .node-doorpage .group-page-info .project-map-wrapper {
+    width: 70%;
+    float: left; }
+/* line 23, ../scss/pages/_map.scss */
 .page-projekt-map .view-neueste-informationen {
   background: #3c506e; }
-  /* line 6, ../scss/pages/_map.scss */
+  /* line 27, ../scss/pages/_map.scss */
   .page-projekt-map .view-neueste-informationen .view-sub-wrapper > .view-content .views-row > a .row-container {
     background: #273753;
     border: 1px solid #273753; }
-    /* line 10, ../scss/pages/_map.scss */
+    /* line 31, ../scss/pages/_map.scss */
     .page-projekt-map .view-neueste-informationen .view-sub-wrapper > .view-content .views-row > a .row-container:hover {
       background: #eff2f7 !important;
       border: 1px solid #eff2f7 !important; }
-      /* line 14, ../scss/pages/_map.scss */
+      /* line 35, ../scss/pages/_map.scss */
       .page-projekt-map .view-neueste-informationen .view-sub-wrapper > .view-content .views-row > a .row-container:hover .views-field-title .field-content {
         color: #273753; }
-    /* line 19, ../scss/pages/_map.scss */
+    /* line 40, ../scss/pages/_map.scss */
     .page-projekt-map .view-neueste-informationen .view-sub-wrapper > .view-content .views-row > a .row-container .views-field-title .field-content {
       color: #ffffff; }
-  /* line 24, ../scss/pages/_map.scss */
+  /* line 45, ../scss/pages/_map.scss */
   .page-projekt-map .view-neueste-informationen .view-sub-wrapper .view-header .pane-title {
     color: #ffffff; }
-  /* line 28, ../scss/pages/_map.scss */
+  /* line 49, ../scss/pages/_map.scss */
   .page-projekt-map .view-neueste-informationen .view-sub-wrapper .view-footer a {
     color: #ffffff !important; }
-/* line 34, ../scss/pages/_map.scss */
-.page-projekt-map .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items {
+/* line 55, ../scss/pages/_map.scss */
+.page-projekt-map .map-wrap {
   padding-top: 30px;
-  padding-bottom: 0; }
-  /* line 38, ../scss/pages/_map.scss */
-  .page-projekt-map .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items .field-item {
-    margin: 0; }
-/* line 44, ../scss/pages/_map.scss */
+  padding-bottom: 30px;
+  background: #ffffff; }
+  /* line 60, ../scss/pages/_map.scss */
+  .page-projekt-map .map-wrap .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items {
+    padding-top: 30px;
+    padding-bottom: 0; }
+    /* line 64, ../scss/pages/_map.scss */
+    .page-projekt-map .map-wrap .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items .field-item {
+      margin: 0; }
+/* line 70, ../scss/pages/_map.scss */
 .page-projekt-map .view-filters {
   padding-top: 70px; }
-  /* line 48, ../scss/pages/_map.scss */
+  /* line 74, ../scss/pages/_map.scss */
   .page-projekt-map .view-filters .views-exposed-form .views-exposed-widgets {
     position: relative;
     padding-bottom: 40px; }
-    /* line 54, ../scss/pages/_map.scss */
+    /* line 80, ../scss/pages/_map.scss */
     .page-projekt-map .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget {
       position: relative;
       width: 100%;
@@ -10743,15 +10766,15 @@ input[type=text]::-ms-clear {
       background: #273753;
       border-right: 1px solid #949d9e; }
       @media (min-width: 767px) {
-        /* line 54, ../scss/pages/_map.scss */
+        /* line 80, ../scss/pages/_map.scss */
         .page-projekt-map .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget {
           width: 50%; } }
       @media (min-width: 1025px) {
-        /* line 54, ../scss/pages/_map.scss */
+        /* line 80, ../scss/pages/_map.scss */
         .page-projekt-map .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget {
           width: 22%;
           height: 49px; } }
-      /* line 69, ../scss/pages/_map.scss */
+      /* line 95, ../scss/pages/_map.scss */
       .page-projekt-map .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget:before {
         content: "\f107";
         font-family: FontAwesome;
@@ -10761,43 +10784,43 @@ input[type=text]::-ms-clear {
         right: 25px;
         top: 50%;
         margin-top: -10px; }
-      /* line 80, ../scss/pages/_map.scss */
+      /* line 106, ../scss/pages/_map.scss */
       .page-projekt-map .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget.selColor {
         background: #3c506e; }
-      /* line 90, ../scss/pages/_map.scss */
+      /* line 116, ../scss/pages/_map.scss */
       .page-projekt-map .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .views-widget .form-item {
         padding: 0;
         position: relative;
         display: block; }
-        /* line 95, ../scss/pages/_map.scss */
+        /* line 121, ../scss/pages/_map.scss */
         .page-projekt-map .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .views-widget .form-item .select2-container--default .select2-selection--single {
           background: 0;
           border: 0;
           border-radius: 0; }
-          /* line 100, ../scss/pages/_map.scss */
+          /* line 126, ../scss/pages/_map.scss */
           .page-projekt-map .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .views-widget .form-item .select2-container--default .select2-selection--single .select2-selection__rendered {
             color: #ffffff;
             padding-left: 20px; }
-          /* line 105, ../scss/pages/_map.scss */
+          /* line 131, ../scss/pages/_map.scss */
           .page-projekt-map .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .views-widget .form-item .select2-container--default .select2-selection--single .select2-selection__arrow {
             display: none; }
-        /* line 110, ../scss/pages/_map.scss */
+        /* line 136, ../scss/pages/_map.scss */
         .page-projekt-map .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget .views-widget .form-item .select2-container + .select2-container {
           top: 38px !important;
           left: 0px !important;
           position: absolute; }
-    /* line 118, ../scss/pages/_map.scss */
+    /* line 144, ../scss/pages/_map.scss */
     .page-projekt-map .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget:nth-child(4) {
       width: 34%; }
-      /* line 121, ../scss/pages/_map.scss */
+      /* line 147, ../scss/pages/_map.scss */
       .page-projekt-map .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget:nth-child(4):before {
         display: none; }
-      /* line 125, ../scss/pages/_map.scss */
+      /* line 151, ../scss/pages/_map.scss */
       .page-projekt-map .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget:nth-child(4) input.form-control {
         background: 0;
         border: 0;
         padding-left: 60px; }
-        /* line 130, ../scss/pages/_map.scss */
+        /* line 156, ../scss/pages/_map.scss */
         .page-projekt-map .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget:nth-child(4) input.form-control::before {
           font-family: "icomoon";
           font-family: FontAwesome;
@@ -10807,20 +10830,20 @@ input[type=text]::-ms-clear {
           top: 23px;
           display: inline-block;
           position: absolute; }
-    /* line 143, ../scss/pages/_map.scss */
+    /* line 169, ../scss/pages/_map.scss */
     .page-projekt-map .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget:nth-child(5) {
       background: 0;
       border: 0; }
-    /* line 148, ../scss/pages/_map.scss */
+    /* line 174, ../scss/pages/_map.scss */
     .page-projekt-map .view-filters .views-exposed-form .views-exposed-widgets .views-reset-button {
       display: none; }
-    /* line 152, ../scss/pages/_map.scss */
+    /* line 178, ../scss/pages/_map.scss */
     .page-projekt-map .view-filters .views-exposed-form .views-exposed-widgets .views-submit-button {
       position: absolute;
       right: 7px;
       top: -5px;
       width: auto; }
-      /* line 158, ../scss/pages/_map.scss */
+      /* line 184, ../scss/pages/_map.scss */
       .page-projekt-map .view-filters .views-exposed-form .views-exposed-widgets .views-submit-button .btn {
         margin-top: 0;
         border-radius: 0;
@@ -10830,7 +10853,7 @@ input[type=text]::-ms-clear {
         border: none;
         background: #ffffff;
         font-weight: bold; }
-        /* line 168, ../scss/pages/_map.scss */
+        /* line 194, ../scss/pages/_map.scss */
         .page-projekt-map .view-filters .views-exposed-form .views-exposed-widgets .views-submit-button .btn::before {
           font-family: "icomoon";
           content: "\e90e";
@@ -10840,10 +10863,10 @@ input[type=text]::-ms-clear {
           font-size: 12px;
           display: inline-block;
           position: absolute; }
-  /* line 182, ../scss/pages/_map.scss */
+  /* line 208, ../scss/pages/_map.scss */
   .page-projekt-map .view-filters .views-exposed-form #map_list_link {
     text-align: right; }
-    /* line 187, ../scss/pages/_map.scss */
+    /* line 213, ../scss/pages/_map.scss */
     .page-projekt-map .view-filters .views-exposed-form #map_list_link a {
       text-decoration: none;
       padding-bottom: 4px;
@@ -10852,7 +10875,7 @@ input[type=text]::-ms-clear {
       font-weight: bold;
       position: relative;
       margin-left: 30px; }
-      /* line 196, ../scss/pages/_map.scss */
+      /* line 222, ../scss/pages/_map.scss */
       .page-projekt-map .view-filters .views-exposed-form #map_list_link a:before {
         content: '\e949';
         font-family: "icomoon";
@@ -10862,10 +10885,10 @@ input[type=text]::-ms-clear {
         left: -25px;
         top: 9px;
         display: inline-block; }
-    /* line 207, ../scss/pages/_map.scss */
+    /* line 234, ../scss/pages/_map.scss */
     .page-projekt-map .view-filters .views-exposed-form #map_list_link .map-sub-title {
       float: left; }
-  /* line 212, ../scss/pages/_map.scss */
+  /* line 239, ../scss/pages/_map.scss */
   .page-projekt-map .view-filters .views-exposed-form #footer_map {
     padding-top: 50px; }
 

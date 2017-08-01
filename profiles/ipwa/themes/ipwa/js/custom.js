@@ -380,6 +380,10 @@ jQuery('.tb-megamenu-submenu.dropdown-menu').attr('style','display:none !importa
 } 
 	jQuery(".page-projekt-map .map-sub-title" ).appendTo(".page-projekt-map #map_list_link");
 	
+	jQuery(".page-projekt-map .paragraphs-item-topic-teaser-paragraph").parent().wrapAll("<div class='map-wrap'></div>");
+	
+	jQuery(".page-projekt-map .group-page-info .page-title , .page-projekt-map .group-page-info .field-name-field-kurztext").wrapAll("<div class='project-map-wrapper'></div>");
+	
 	
 });
 

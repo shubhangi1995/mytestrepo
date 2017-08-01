@@ -1,4 +1,25 @@
 .page-projekt-map {
+    .node-doorpage .group-page-info {
+        width:1170px !important;
+		max-width:1170px;
+		overflow:hidden;
+
+
+        .field-name-field-projekt-map {
+            width: 30%;
+            float: left;
+			img{
+			  margin:0 auto;
+			  text-align:center;
+			}
+        }
+
+        .project-map-wrapper {
+            width: 70%;
+            float: left;
+        }
+    }
+
     .view-neueste-informationen {
         background: $header-dropdown-menu;
 
@@ -31,18 +52,23 @@
         }
     }
 
-    .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items {
+    .map-wrap {
         padding-top: 30px;
-        padding-bottom: 0;
+        padding-bottom: 30px;
+        background: $color-white;
 
-        .field-item {
-            margin: 0;
+        .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items {
+            padding-top: 30px;
+            padding-bottom: 0;
+
+            .field-item {
+                margin: 0;
+            }
         }
     }
-	
-	
-	 .view-filters {
-        padding-top: 70px;
+
+    .view-filters {
+        
 
         .views-exposed-form {
             .views-exposed-widgets {
@@ -121,15 +147,15 @@
                     &:before {
                         display: none;
                     }
-										
-                    input.form-control{
+
+                    input.form-control {
                         background: 0;
                         border: 0;
                         padding-left: 60px;
 
-                        &::before{
+                        &::before {
                             font-family: "icomoon";
-							 font-family: FontAwesome;
+                            font-family: FontAwesome;
                             content: "\e94e";
                             color: $color-white;
                             left: 15px;
@@ -204,17 +230,15 @@
                         display: inline-block;
                     }
                 }
-				.map-sub-title{
-				float:left;
-				}
+
+                .map-sub-title {
+                    float: left;
+                }
             }
 
             #footer_map {
                 padding-top: 50px;
             }
         }
-		
-		
     }
-	
 }
