@@ -1,13 +1,18 @@
 .page-projekt-map {
     .node-doorpage .group-page-info {
-        width:1170px !important;
-		max-width:1170px;
+        width:1170px ;
+		max-width:100%;
 		overflow:hidden;
 
 
         .field-name-field-projekt-map {
-            width: 30%;
+            width: 100%;
             float: left;
+			  @include devicebreak(x-large) {
+                width: 30%;
+            
+			 }
+			 
 			img{
 			  width:126px;
 			  height:126px;
@@ -17,8 +22,13 @@
         }
 
         .project-map-wrapper {
-            width: 70%;
-            float: left;
+             float: left;
+            width: 100%;
+            padding-top: 25px;
+
+            @include devicebreak(x-large) {
+                width: 70%;
+            }
 			
 			.page-title{
 			 padding-bottom:30px;
@@ -68,7 +78,17 @@
             padding-bottom: 0;
 
             .field-item {
-                margin: 0;
+			 margin:0;
+			 &.odd{
+                margin-top:30px;
+				}
+				
+				@include devicebreak(medium){
+				margin: 0;
+				&.odd{
+                margin-top:0;
+				}
+				}
             }
         }
     }
