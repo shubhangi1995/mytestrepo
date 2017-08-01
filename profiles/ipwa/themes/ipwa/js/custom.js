@@ -350,6 +350,7 @@ jQuery('.tb-megamenu-submenu.dropdown-menu').attr('style','display:none !importa
 	// Calendar tool tip appearacnce work for responsive
 	if(jQuery(window).innerWidth() <= 768){
 		jQuery(".trigger").click(function(){
+				jQuery(this).mouseover();
 				jQuery(this).next().show();
 				jQuery(this).parents(".item, td, tr").siblings().find(".trigger + .views-row").hide();
 				jQuery('.calendar-calendar').animate({
