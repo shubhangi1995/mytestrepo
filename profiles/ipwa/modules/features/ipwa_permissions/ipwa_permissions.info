@@ -24,6 +24,7 @@ features[user_permission][] = administer path breadcrumbs
 features[user_permission][] = administer simplenews subscriptions
 features[user_permission][] = administer taxonomy
 features[user_permission][] = administer url aliases
+features[user_permission][] = bypass node access
 features[user_permission][] = create article content
 features[user_permission][] = create bild content
 features[user_permission][] = create document content

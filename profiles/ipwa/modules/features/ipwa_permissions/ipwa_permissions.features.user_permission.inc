@@ -127,6 +127,13 @@ function ipwa_permissions_user_default_permissions() {
     'module' => 'path',
   );
 
+  // Exported permission: 'bypass node access'.
+  $permissions['bypass node access'] = array(
+    'name' => 'bypass node access',
+    'roles' => array(),
+    'module' => 'node',
+  );
+
   // Exported permission: 'create article content'.
   $permissions['create article content'] = array(
     'name' => 'create article content',
