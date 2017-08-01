@@ -2116,28 +2116,6 @@ Publikation|Publikationen'),
   $handler->display->display_options['filters']['field_themenzuweisung_1']['table'] = 'search_api_index_ipwa_solr_index';
   $handler->display->display_options['filters']['field_themenzuweisung_1']['field'] = 'field_themenzuweisung';
   $handler->display->display_options['filters']['field_themenzuweisung_1']['value'] = array(
-    11 => '11',
-    20 => '20',
-    17 => '17',
-    19 => '19',
-    15 => '15',
-    12 => '12',
-    23 => '23',
-    22 => '22',
-    21 => '21',
-    14 => '14',
-    16 => '16',
-    1 => '1',
-    47 => '47',
-    2 => '2',
-    8 => '8',
-    5 => '5',
-    4 => '4',
-    6 => '6',
-    10 => '10',
-    7 => '7',
-    9 => '9',
-    3 => '3',
     34 => '34',
     38 => '38',
     41 => '41',
@@ -2169,7 +2147,7 @@ Publikation|Publikationen'),
     4 => 0,
     5 => 0,
   );
-  $handler->display->display_options['filters']['field_themenzuweisung_1']['expose']['reduce'] = 0;
+  $handler->display->display_options['filters']['field_themenzuweisung_1']['expose']['reduce'] = 1;
   /* Filter criterion: Indexed Beitrag: PLZ */
   $handler->display->display_options['filters']['field_plz']['id'] = 'field_plz';
   $handler->display->display_options['filters']['field_plz']['table'] = 'search_api_index_ipwa_solr_index';
