@@ -783,7 +783,10 @@ input[type=text]::-ms-clear {
                             &:hover {
                                 a {
                                     & + .views-row {
-                                        display: block;
+                                        display: none;
+										@include devicebreak(x-medium) {  
+											display:block;
+										}
                                     }
                                 }
                             }

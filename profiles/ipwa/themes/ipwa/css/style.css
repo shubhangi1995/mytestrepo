@@ -8621,14 +8621,19 @@ input[type=text]::-ms-clear {
                       right: 35px; }
               /* line 785, ../scss/pages/_common.scss */
               .page-calendar .view-content .calendar-calendar .inner .item .calendar span:hover a + .views-row {
-                display: block; }
-      /* line 795, ../scss/pages/_common.scss */
+                display: none;
+                /* Tablet design */ }
+                @media (min-width: 767px) {
+                  /* line 785, ../scss/pages/_common.scss */
+                  .page-calendar .view-content .calendar-calendar .inner .item .calendar span:hover a + .views-row {
+                    display: block; } }
+      /* line 798, ../scss/pages/_common.scss */
       .page-calendar .view-content .calendar-calendar table {
         border-collapse: inherit; }
-        /* line 799, ../scss/pages/_common.scss */
+        /* line 802, ../scss/pages/_common.scss */
         .page-calendar .view-content .calendar-calendar table thead th {
           position: relative; }
-          /* line 802, ../scss/pages/_common.scss */
+          /* line 805, ../scss/pages/_common.scss */
           .page-calendar .view-content .calendar-calendar table thead th::before {
             background: #e74712;
             bottom: 12px;
@@ -8637,33 +8642,33 @@ input[type=text]::-ms-clear {
             position: absolute;
             left: 0;
             right: 0; }
-        /* line 815, ../scss/pages/_common.scss */
+        /* line 818, ../scss/pages/_common.scss */
         .page-calendar .view-content .calendar-calendar table thead tr {
           background: none; }
-          /* line 818, ../scss/pages/_common.scss */
+          /* line 821, ../scss/pages/_common.scss */
           .page-calendar .view-content .calendar-calendar table thead tr th {
             background: none;
             border: none;
             font-weight: normal;
             text-align: right;
             padding-bottom: 25px; }
-        /* line 833, ../scss/pages/_common.scss */
+        /* line 836, ../scss/pages/_common.scss */
         .page-calendar .view-content .calendar-calendar table tbody tr td {
           border: 5px solid #eff2f7; }
-          /* line 836, ../scss/pages/_common.scss */
+          /* line 839, ../scss/pages/_common.scss */
           .page-calendar .view-content .calendar-calendar table tbody tr td:first-child {
             border-left-width: 0; }
-          /* line 840, ../scss/pages/_common.scss */
+          /* line 843, ../scss/pages/_common.scss */
           .page-calendar .view-content .calendar-calendar table tbody tr td:last-child {
             border-right-width: 0; }
-        /* line 856, ../scss/pages/_common.scss */
+        /* line 859, ../scss/pages/_common.scss */
         .page-calendar .view-content .calendar-calendar table tr td.today {
           border-color: #e74712 !important; }
-        /* line 860, ../scss/pages/_common.scss */
+        /* line 863, ../scss/pages/_common.scss */
         .page-calendar .view-content .calendar-calendar table tr td.greyHover {
           background: #eff2f7;
           position: relative; }
-          /* line 866, ../scss/pages/_common.scss */
+          /* line 869, ../scss/pages/_common.scss */
           .page-calendar .view-content .calendar-calendar table tr td.greyHover::after {
             border: 1px solid #dbdfe3;
             bottom: -1px;
@@ -8672,11 +8677,11 @@ input[type=text]::-ms-clear {
             position: absolute;
             right: -1px;
             top: -1px; }
-        /* line 877, ../scss/pages/_common.scss */
+        /* line 880, ../scss/pages/_common.scss */
         .page-calendar .view-content .calendar-calendar table tr td.redHover {
           background: #fdede7;
           position: relative; }
-          /* line 881, ../scss/pages/_common.scss */
+          /* line 884, ../scss/pages/_common.scss */
           .page-calendar .view-content .calendar-calendar table tr td.redHover::after {
             border: 1px solid #e74712;
             bottom: -1px;
@@ -8685,105 +8690,105 @@ input[type=text]::-ms-clear {
             position: absolute;
             right: -1px;
             top: -1px; }
-        /* line 896, ../scss/pages/_common.scss */
+        /* line 899, ../scss/pages/_common.scss */
         .page-calendar .view-content .calendar-calendar table tr.date-box td.greyHover::after {
           border-bottom: none; }
-        /* line 902, ../scss/pages/_common.scss */
+        /* line 905, ../scss/pages/_common.scss */
         .page-calendar .view-content .calendar-calendar table tr.date-box td.redHover::after {
           border-bottom: none; }
-        /* line 912, ../scss/pages/_common.scss */
+        /* line 915, ../scss/pages/_common.scss */
         .page-calendar .view-content .calendar-calendar table tr.single-day td.greyHover::after {
           border-top: none; }
-        /* line 918, ../scss/pages/_common.scss */
+        /* line 921, ../scss/pages/_common.scss */
         .page-calendar .view-content .calendar-calendar table tr.single-day td.redHover::after {
           border-top: none; }
-        /* line 924, ../scss/pages/_common.scss */
+        /* line 927, ../scss/pages/_common.scss */
         .page-calendar .view-content .calendar-calendar table tr.single-day .no-entry .inner {
           min-height: 155px;
           height: 155px !important; }
-      /* line 933, ../scss/pages/_common.scss */
+      /* line 936, ../scss/pages/_common.scss */
       .page-calendar .view-content .calendar-calendar .date-box .inner {
         min-height: inherit;
         height: auto !important;
         display: inline-block; }
-  /* line 942, ../scss/pages/_common.scss */
+  /* line 945, ../scss/pages/_common.scss */
   .page-calendar .view-event-on-calendar {
     display: none; }
-  /* line 946, ../scss/pages/_common.scss */
+  /* line 949, ../scss/pages/_common.scss */
   .page-calendar .date-views-pager {
     float: left;
     width: 100%;
     /* Over Desktop design */ }
     @media (min-width: 1025px) {
-      /* line 946, ../scss/pages/_common.scss */
+      /* line 949, ../scss/pages/_common.scss */
       .page-calendar .date-views-pager {
         width: 60%; } }
-    /* line 955, ../scss/pages/_common.scss */
+    /* line 958, ../scss/pages/_common.scss */
     .page-calendar .date-views-pager .pull-right {
       float: none !important;
       margin: 0 auto;
       display: table;
       /* Over Desktop design */ }
       @media (min-width: 1025px) {
-        /* line 955, ../scss/pages/_common.scss */
+        /* line 958, ../scss/pages/_common.scss */
         .page-calendar .date-views-pager .pull-right {
           float: right !important;
           display: inline-block;
           margin: 20px 0; } }
-    /* line 968, ../scss/pages/_common.scss */
+    /* line 971, ../scss/pages/_common.scss */
     .page-calendar .date-views-pager .pagination .monthText {
       text-transform: capitalize;
       font-size: 22px;
       font-weight: bold; }
-    /* line 974, ../scss/pages/_common.scss */
+    /* line 977, ../scss/pages/_common.scss */
     .page-calendar .date-views-pager .pagination li {
       float: left;
       margin-right: 20px;
       /* Over Desktop design */ }
       @media (min-width: 1025px) {
-        /* line 974, ../scss/pages/_common.scss */
+        /* line 977, ../scss/pages/_common.scss */
         .page-calendar .date-views-pager .pagination li {
           margin-right: 50px; } }
-      /* line 983, ../scss/pages/_common.scss */
+      /* line 986, ../scss/pages/_common.scss */
       .page-calendar .date-views-pager .pagination li:last-child {
         margin-right: 0; }
-      /* line 987, ../scss/pages/_common.scss */
+      /* line 990, ../scss/pages/_common.scss */
       .page-calendar .date-views-pager .pagination li a {
         font-size: 0;
         padding: 3px 12px;
         color: #273753;
         background: none;
         border: none; }
-        /* line 995, ../scss/pages/_common.scss */
+        /* line 998, ../scss/pages/_common.scss */
         .page-calendar .date-views-pager .pagination li a::before {
           font-family: "icomoon";
           font-size: 18px; }
-      /* line 1003, ../scss/pages/_common.scss */
+      /* line 1006, ../scss/pages/_common.scss */
       .page-calendar .date-views-pager .pagination li.prev a::before {
         content: "\e901"; }
-      /* line 1011, ../scss/pages/_common.scss */
+      /* line 1014, ../scss/pages/_common.scss */
       .page-calendar .date-views-pager .pagination li.next a::before {
         content: "\e902"; }
-    /* line 1019, ../scss/pages/_common.scss */
+    /* line 1022, ../scss/pages/_common.scss */
     .page-calendar .date-views-pager h3 {
       display: none; }
 
-/* line 1032, ../scss/pages/_common.scss */
+/* line 1035, ../scss/pages/_common.scss */
 .page-calendar .page-header {
   padding-left: 30px; }
-/* line 1037, ../scss/pages/_common.scss */
+/* line 1040, ../scss/pages/_common.scss */
 .page-calendar .view-event-calendar > .view-sub-wrapper {
   padding: 0; }
 
-/* line 1044, ../scss/pages/_common.scss */
+/* line 1047, ../scss/pages/_common.scss */
 .page-termine .view-header {
   padding-left: 0; }
 
-/* line 1050, ../scss/pages/_common.scss */
+/* line 1053, ../scss/pages/_common.scss */
 .page-calendar .page-header, .page-termine .page-header {
   position: relative;
   /* Over Desktop design */ }
-  /* line 1053, ../scss/pages/_common.scss */
+  /* line 1056, ../scss/pages/_common.scss */
   .page-calendar .page-header::before, .page-termine .page-header::before {
     content: "\e941";
     font-family: "icomoon";
@@ -8791,67 +8796,67 @@ input[type=text]::-ms-clear {
     font-size: 120px;
     margin-bottom: 30px; }
   @media (min-width: 1025px) {
-    /* line 1050, ../scss/pages/_common.scss */
+    /* line 1053, ../scss/pages/_common.scss */
     .page-calendar .page-header, .page-termine .page-header {
       padding-left: 85px; }
-      /* line 1064, ../scss/pages/_common.scss */
+      /* line 1067, ../scss/pages/_common.scss */
       .page-calendar .page-header::before, .page-termine .page-header::before {
         left: -100px;
         top: 40px;
         position: absolute;
         margin-bottom: 0; } }
-/* line 1074, ../scss/pages/_common.scss */
+/* line 1077, ../scss/pages/_common.scss */
 .page-calendar .main-container .view-header, .page-termine .main-container .view-header {
   /* Over Desktop design */ }
   @media (min-width: 1025px) {
-    /* line 1074, ../scss/pages/_common.scss */
+    /* line 1077, ../scss/pages/_common.scss */
     .page-calendar .main-container .view-header, .page-termine .main-container .view-header {
       padding-left: 90px; } }
-/* line 1081, ../scss/pages/_common.scss */
+/* line 1084, ../scss/pages/_common.scss */
 .page-calendar #block-ipwa-newsletter-newsletter-subscription-block, .page-termine #block-ipwa-newsletter-newsletter-subscription-block {
   margin-top: 25px; }
 
-/* line 1087, ../scss/pages/_common.scss */
+/* line 1090, ../scss/pages/_common.scss */
 .page-node-67 .page-title {
   padding-bottom: 30px; }
 
-/* line 1092, ../scss/pages/_common.scss */
+/* line 1095, ../scss/pages/_common.scss */
 .page-aktuelles #block-ipwa-newsletter-newsletter-subscription-block, .node-type-doorpage #block-ipwa-newsletter-newsletter-subscription-block {
   margin-top: 25px; }
 
-/* line 1104, ../scss/pages/_common.scss */
+/* line 1107, ../scss/pages/_common.scss */
 .page-newsletter-confirm .col-sm-12 .page-header {
   padding-bottom: 10px; }
-/* line 1108, ../scss/pages/_common.scss */
+/* line 1111, ../scss/pages/_common.scss */
 .page-newsletter-confirm .col-sm-12 #edit-submit {
   border: none;
   margin-left: 20px; }
-  /* line 1114, ../scss/pages/_common.scss */
+  /* line 1117, ../scss/pages/_common.scss */
   .page-newsletter-confirm .col-sm-12 #edit-submit::before {
     top: 10px;
     left: -12px; }
-  /* line 1119, ../scss/pages/_common.scss */
+  /* line 1122, ../scss/pages/_common.scss */
   .page-newsletter-confirm .col-sm-12 #edit-submit:hover {
     background: none; }
-/* line 1124, ../scss/pages/_common.scss */
+/* line 1127, ../scss/pages/_common.scss */
 .page-newsletter-confirm .col-sm-12 #edit-cancel {
   font-size: 17px;
   color: #e74712;
   position: relative;
   top: 3px; }
-/* line 1131, ../scss/pages/_common.scss */
+/* line 1134, ../scss/pages/_common.scss */
 .page-newsletter-confirm .col-sm-12 p {
   font-size: 18px; }
 
-/* line 1142, ../scss/pages/_common.scss */
+/* line 1145, ../scss/pages/_common.scss */
 .page-node-done .page-header {
   padding-bottom: 10px; }
-/* line 1146, ../scss/pages/_common.scss */
+/* line 1149, ../scss/pages/_common.scss */
 .page-node-done .links a {
   font-size: 17px;
   color: #e74712; }
 
-/* line 1153, ../scss/pages/_common.scss */
+/* line 1156, ../scss/pages/_common.scss */
 #backtotop {
   background: #e74712;
   bottom: 20px;
@@ -8863,7 +8868,7 @@ input[type=text]::-ms-clear {
   width: 50px;
   border-radius: 25px;
   text-indent: 0; }
-  /* line 1165, ../scss/pages/_common.scss */
+  /* line 1168, ../scss/pages/_common.scss */
   #backtotop::before {
     font-family: "icomoon";
     content: "\e950";
@@ -8874,33 +8879,33 @@ input[type=text]::-ms-clear {
     top: 16px;
     left: 17px; }
 
-/* line 1177, ../scss/pages/_common.scss */
+/* line 1180, ../scss/pages/_common.scss */
 .group-page-info {
   position: relative; }
-  /* line 1179, ../scss/pages/_common.scss */
+  /* line 1182, ../scss/pages/_common.scss */
   .group-page-info .main_content_blocks {
     /* Over Desktop design */ }
     @media (min-width: 1025px) {
-      /* line 1179, ../scss/pages/_common.scss */
+      /* line 1182, ../scss/pages/_common.scss */
       .group-page-info .main_content_blocks {
         position: absolute;
         left: -65px;
         top: 115px; } }
-    /* line 1188, ../scss/pages/_common.scss */
+    /* line 1191, ../scss/pages/_common.scss */
     .group-page-info .main_content_blocks section {
       display: inline-block;
       /* Over Desktop design */ }
       @media (min-width: 1025px) {
-        /* line 1188, ../scss/pages/_common.scss */
+        /* line 1191, ../scss/pages/_common.scss */
         .group-page-info .main_content_blocks section {
           display: block; } }
-    /* line 1199, ../scss/pages/_common.scss */
+    /* line 1202, ../scss/pages/_common.scss */
     .group-page-info .main_content_blocks #footer_print_icon #page_print {
       font-size: 0;
       border: 0;
       background: 0;
       padding-left: 0; }
-      /* line 1204, ../scss/pages/_common.scss */
+      /* line 1207, ../scss/pages/_common.scss */
       .group-page-info .main_content_blocks #footer_print_icon #page_print:before {
         font-family: "icomoon";
         content: "\e94c";
@@ -8910,7 +8915,7 @@ input[type=text]::-ms-clear {
         padding: 10px;
         padding-left: 0;
         cursor: pointer; }
-    /* line 1218, ../scss/pages/_common.scss */
+    /* line 1221, ../scss/pages/_common.scss */
     .group-page-info .main_content_blocks .block-addthis a:before {
       font-family: "icomoon";
       content: "\e94f";
@@ -8919,7 +8924,7 @@ input[type=text]::-ms-clear {
       display: inline-block;
       padding: 10px;
       padding-left: 0; }
-    /* line 1228, ../scss/pages/_common.scss */
+    /* line 1231, ../scss/pages/_common.scss */
     .group-page-info .main_content_blocks .block-addthis a img {
       display: none; }
 
