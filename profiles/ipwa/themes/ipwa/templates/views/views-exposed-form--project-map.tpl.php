@@ -79,6 +79,7 @@
   </div>
   <div id="map_list_link"><a href="/projekt-list">zur Listensicht</a></div>
   <div id="footer_map" class="footer_map">
+    <div class="project-webform"><a href="schaufenster-digitales-nrw/projekt-vorschlagen">PROJEKT VORSCHLAGEN</a></div>
 	<div class="map-popup" role="dialog">
 		<div class="map-btn-close"><span></span></div>
 		<div class="map-popup-content"></div>
