@@ -135,31 +135,6 @@ jQuery('.tb-megamenu-submenu.dropdown-menu').attr('style','display:none !importa
 	
 	// Calendar view work
 	
-	// Calendar tool tip appearacnce work for responsive
-	if(jQuery(window).innerWidth() <= 768){
-		jQuery(".trigger").click(function(){
-				jQuery(this).next().show();
-				jQuery(this).parents(".item, td, tr").siblings().find(".trigger + .views-row").hide();
-				jQuery('.calendar-calendar').animate({
-					scrollLeft: 0
-				}, 0);
-				if(jQuery(this).parents("tr").is(":last-child, :nth-last-child(2)")){
-					jQuery('.calendar-calendar').animate({
-						scrollTop: jQuery(this).offset().top - 200,
-						scrollLeft: jQuery(this).offset().left - 150
-					}, 500);	
-				}
-				else{
-					jQuery('html, body').animate({
-						scrollTop: jQuery(this).offset().top - 200,
-					}, 500);
-					jQuery('.calendar-calendar').animate({
-						scrollLeft: jQuery(this).offset().left - 150
-					}, 500);	
-				}
-		});
-	}
-	
 	jQuery(".date-display-recurring").parent().addClass("recurring");
 	jQuery(".date-display-single").parent().addClass("single");
 	
@@ -372,6 +347,31 @@ jQuery('.tb-megamenu-submenu.dropdown-menu').attr('style','display:none !importa
 		}
 	});
 	
+	// Calendar tool tip appearacnce work for responsive
+	if(jQuery(window).innerWidth() <= 768){
+		jQuery(".trigger").mouseover(function(e){
+				e.stopPropagation();
+				jQuery(this).next().show();
+				jQuery(this).parents(".item, td, tr").siblings().find(".trigger + .views-row").hide();
+				jQuery('.calendar-calendar').animate({
+					scrollLeft: 0
+				}, 0);
+				if(jQuery(this).parents("tr").is(":last-child, :nth-last-child(2)")){
+					jQuery('.calendar-calendar').animate({
+						scrollTop: jQuery(this).offset().top - 200,
+						scrollLeft: jQuery(this).offset().left - 150
+					}, 500);	
+				}
+				else{
+					jQuery('html, body').animate({
+						scrollTop: jQuery(this).offset().top - 200,
+					}, 500);
+					jQuery('.calendar-calendar').animate({
+						scrollLeft: jQuery(this).offset().left - 150
+					}, 500);	
+				}
+		});
+	}
 	
 	//page-projekt-map
 	
