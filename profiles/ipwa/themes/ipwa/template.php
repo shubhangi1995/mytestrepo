@@ -52,14 +52,14 @@ function ipwa_preprocess_node(&$variables)
       }
     }
 
-    // replace of 'to' with'-' for field 'datum' in CT terminprint_r
+    // replace of 'to' with'-' for field 'datum' in CT 'termin'
     if(!empty($variables['content']['group_page_info']['group_top_wrapper']['group_left_top_wrapper']['group_middle_wrapper']['field_event_datum'])){
       if (strpos($variables['content']['group_page_info']['group_top_wrapper']['group_left_top_wrapper']['group_middle_wrapper']['field_event_datum'][0]['#markup'], 'to') !== false) {
         $variables['content']['group_page_info']['group_top_wrapper']['group_left_top_wrapper']['group_middle_wrapper']['field_event_datum'][0]['#markup'] = str_replace('to','-',$variables['content']['group_page_info']['group_top_wrapper']['group_left_top_wrapper']['group_middle_wrapper']['field_event_datum'][0]['#markup']);
       }
     }
   }
-/** for puuting content of field 'descrition to field 'copyright' and to hide field 'descrition' */
+/** for putting content of field 'descrition to field 'copyright' and to hide field 'description' */
   if ($variables['type'] == 'bild') {
     if((isset($variables['content']['field_bildbeschreibung']) && !(empty($variables['content']['field_bildbeschreibung']))) || (!empty($variables['content']['field_copyright']))) {
       $variables['content']['field_copyright'][0]['#markup'] = $variables['content']['field_bildbeschreibung'][0]['#markup'] . ' <span class ="copyright">' . $variables['content']['field_copyright']['#title'] . ':  ' . $variables['content']['field_copyright'][0]['#markup'] . '</span>';

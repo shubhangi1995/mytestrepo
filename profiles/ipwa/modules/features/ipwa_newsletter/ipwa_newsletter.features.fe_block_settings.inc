@@ -29,7 +29,8 @@ aktuelles
 infos-fuer-beschaeftigte
 calendar
 alle-themen
-schaufenster-digitales-nrw',
+schaufenster-digitales-nrw
+projekt-list-page',
     'roles' => array(),
     'themes' => array(
       'bartik' => array(
