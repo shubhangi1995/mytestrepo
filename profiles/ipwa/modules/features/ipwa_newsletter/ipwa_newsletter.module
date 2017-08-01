@@ -65,7 +65,7 @@ function ipwa_newsletter_custom_form_submit($form, &$form_state){
 function ipwa_newsletter_form_alter(&$form, &$form_state, $form_id) {
   if($form_id == 'webform_client_form_125'){
     global $base_url;
-    $form['submitted']['datenschutzhinweise']['#options'][0] = '<div class="privacy-policy-title">Ich habe die <a href="'.$base_url.'/" target="_blank">Datenschutzhinweise</a> gelesen und stimme ihnen zu.*';
+    $form['submitted']['datenschutzhinweise']['#options'][0] = '<div class="privacy-policy-title">Ich habe die <a href="'.$base_url.'/artikel/datenschutzhinweise" target="_blank">Datenschutzhinweise</a> gelesen und stimme ihnen zu.*';
     if(isset($_REQUEST['subscription-e-mail'])){
       $form['submitted']['ihre_e_mail_address']['#default_value'] = $_REQUEST['subscription-e-mail'];
     }
