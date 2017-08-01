@@ -9,6 +9,8 @@
             width: 30%;
             float: left;
 			img{
+			  width:126px;
+			  height:126px;
 			  margin:0 auto;
 			  text-align:center;
 			}
@@ -17,6 +19,10 @@
         .project-map-wrapper {
             width: 70%;
             float: left;
+			
+			.page-title{
+			 padding-bottom:30px;
+			}
         }
     }
 
