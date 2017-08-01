@@ -350,15 +350,36 @@ jQuery('.tb-megamenu-submenu.dropdown-menu').attr('style','display:none !importa
 	// Calendar tool tip appearacnce work for responsive
 	if(jQuery(window).innerWidth() <= 768){
 		jQuery(".trigger").click(function(){
+				jQuery(this).mouseover();
+				jQuery(this).next().show();
+				jQuery(this).parents(".item, td, tr").siblings().find(".trigger + .views-row").hide();
 				jQuery('.calendar-calendar').animate({
 					scrollLeft: 0
 				}, 0);
-				jQuery('.calendar-calendar').animate({
-					scrollTop: jQuery(this).offset().top,
-					scrollLeft: jQuery(this).offset().left - 150
-				}, 500);				
+				if(jQuery(this).parents("tr").is(":last-child, :nth-last-child(2)")){
+					jQuery('.calendar-calendar').animate({
+						scrollTop: jQuery(this).offset().top - 200,
+						scrollLeft: jQuery(this).offset().left - 150
+					}, 500);	
+				}
+				else{
+					jQuery('html, body').animate({
+						scrollTop: jQuery(this).offset().top - 200,
+					}, 500);
+					jQuery('.calendar-calendar').animate({
+						scrollLeft: jQuery(this).offset().left - 150
+					}, 500);	
+				}
 		});
 	}
+	
+	//page-projekt-map
+	
+	if(jQuery(".view-projekt-map").length > 0){
+	jQuery(document.body).addClass("page-projekt-map");
+} 
+	
+	
 	
 });
 
