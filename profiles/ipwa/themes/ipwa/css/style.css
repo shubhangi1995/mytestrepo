@@ -10685,4 +10685,8 @@ input[type=text]::-ms-clear {
           position: absolute;
           top: 6px; }
 
+/* line 3, ../scss/pages/_map.scss */
+.page-projekt-map .region-content .node-doorpage .view-neueste-informationen {
+  background: #3c506e !important; }
+
 /*# sourceMappingURL=style.css.map */

@@ -360,6 +360,14 @@ jQuery('.tb-megamenu-submenu.dropdown-menu').attr('style','display:none !importa
 		});
 	}
 	
+	//page-projekt-map
+	
+	if(jQuery(".view-projekt-map").length > 0){
+	jQuery(document.body).addClass("page-projekt-map");
+} 
+	
+	
+	
 });
 
 
