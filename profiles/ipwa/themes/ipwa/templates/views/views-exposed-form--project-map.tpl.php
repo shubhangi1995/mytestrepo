@@ -77,6 +77,7 @@
       </div>
     <?php endif; ?>
   </div>
+  <?php print_r($)?>
   <div id="map_list_link"><a href="/projekt-list">zur Listensicht</a></div>
   <div id="footer_map" class="footer_map">
 	<div class="map-popup" role="dialog">

@@ -5,3 +5,24 @@
  */
 
 include_once 'ipwa_topic.features.inc';
+
+//function ipwa_topic_menu() {
+//  $items['admin/structure/taxonomy'] = array(
+//    'title' => 'Taxonomy',
+//    'page callback' => 'admin/structure/taxonomy',
+//    'access callback' => TRUE,
+//    'type' => MENU_NORMAL_ITEM,
+//  );
+//  return $items;
+//}
+
+function ipwa_topic_menu() {
+  $items['shubhangi'] = array(
+    'page callback' => 'ipwa_topic_abc_view',
+  );
+  return $items;
+}
+
+function ipwa_topic_abc_view() {
+  print_r("hello i am shubhangi");
+}
