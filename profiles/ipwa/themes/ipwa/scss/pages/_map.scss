@@ -1,7 +1,220 @@
-.page-projekt-map {   
-    	
-	.region-content .node-doorpage .view-neueste-informationen{
-	  background:$header-dropdown-menu !important;
-			}
-}
+.page-projekt-map {
+    .view-neueste-informationen {
+        background: $header-dropdown-menu;
 
+        .view-sub-wrapper {
+            > .view-content .views-row > a .row-container {
+                background: $main-color;
+                border: 1px solid $main-color;
+
+                &:hover {
+                    background: $color-light-blue !important;
+                    border: 1px solid $color-light-blue !important;
+
+                    .views-field-title .field-content {
+                        color: $main-color;
+                    }
+                }
+
+                .views-field-title .field-content {
+                    color: $color-white;
+                }
+            }
+
+            .view-header .pane-title {
+                color: $color-white;
+            }
+
+            .view-footer a {
+                color: $color-white !important;
+            }
+        }
+    }
+
+    .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items {
+        padding-top: 30px;
+        padding-bottom: 0;
+
+        .field-item {
+            margin: 0;
+        }
+    }
+	
+	
+	 .view-filters {
+        padding-top: 70px;
+
+        .views-exposed-form {
+            .views-exposed-widgets {
+                @extend .container;
+
+                position: relative;
+                padding-bottom: 40px;
+
+                .views-exposed-widget {
+                    position: relative;
+                    width: 100%;
+
+                    @include devicebreak(x-medium) {
+                        width: 50%;
+                    }
+
+
+                    @include devicebreak(x-large) {
+                        width: 22%;
+                        height: 49px;
+                    }
+
+
+                    &:before {
+                        content: "\f107";
+                        font-family: FontAwesome;
+                        color: $color-white;
+                        position: absolute;
+                        float: right;
+                        right: 25px;
+                        top: 50%;
+                        margin-top: -10px;
+                    }
+
+                    &.selColor {
+                        background: $header-dropdown-menu;
+                    }
+
+                    float: left;
+                    padding: 10px 0;
+                    margin-bottom: 10px;
+                    background: $main-color;
+                    border-right: 1px solid $color-light-grey;
+
+                    .views-widget .form-item {
+                        padding: 0;
+                        position: relative;
+                        display: block;
+
+                        .select2-container--default .select2-selection--single {
+                            background: 0;
+                            border: 0;
+                            border-radius: 0;
+
+                            .select2-selection__rendered {
+                                color: $color-white;
+                                padding-left: 20px;
+                            }
+
+                            .select2-selection__arrow {
+                                display: none;
+                            }
+                        }
+
+                        .select2-container + .select2-container {
+                            top: 38px !important;
+                            left: 0px !important;
+                            position: absolute;
+                        }
+                    }
+                }
+
+                .views-exposed-widget:nth-child(4) {
+                    width: 34%;
+
+                    &:before {
+                        display: none;
+                    }
+										
+                    input.form-control{
+                        background: 0;
+                        border: 0;
+                        padding-left: 60px;
+
+                        &::before{
+                            font-family: "icomoon";
+							 font-family: FontAwesome;
+                            content: "\e94e";
+                            color: $color-white;
+                            left: 15px;
+                            top: 23px;
+                            display: inline-block;
+                            position: absolute;
+                        }
+                    }
+                }
+
+                .views-exposed-widget:nth-child(5) {
+                    background: 0;
+                    border: 0;
+                }
+
+                .views-reset-button {
+                    display: none;
+                }
+
+                .views-submit-button {
+                    position: absolute;
+                    right: 7px;
+                    top: -5px;
+                    width: auto;
+
+                    .btn {
+                        margin-top: 0;
+                        border-radius: 0;
+                        height: 40px;
+                        color: $main-color;
+                        padding: 6px 40px;
+                        border: none;
+                        background: $color-white;
+                        font-weight: bold;
+
+                        &::before {
+                            font-family: "icomoon";
+                            content: "\e90e";
+                            color: $active-menu;
+                            left: 10px;
+                            top: 20px;
+                            font-size: 12px;
+                            display: inline-block;
+                            position: absolute;
+                        }
+                    }
+                }
+            }
+
+            #map_list_link {
+                @extend .container;
+
+                text-align: right;
+
+                a {
+                    text-decoration: none;
+                    padding-bottom: 4px;
+                    border-bottom: 2px solid $color-light-grey;
+                    color: $main-color;
+                    font-weight: bold;
+                    position: relative;
+                    margin-left: 30px;
+
+                    &:before {
+                        content: '\e949';
+                        font-family: "icomoon";
+                        color: #e74712;
+                        font-size: 14px;
+                        position: absolute;
+                        left: -25px;
+                        top: 9px;
+                        display: inline-block;
+                    }
+                }
+				.map-sub-title{
+				float:left;
+				}
+            }
+
+            #footer_map {
+                padding-top: 50px;
+            }
+        }
+		
+		
+    }
+	
+}

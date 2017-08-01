@@ -378,7 +378,7 @@ jQuery('.tb-megamenu-submenu.dropdown-menu').attr('style','display:none !importa
 	if(jQuery(".view-projekt-map").length > 0){
 	jQuery(document.body).addClass("page-projekt-map");
 } 
-	
+	jQuery(".page-projekt-map .map-sub-title" ).appendTo(".page-projekt-map #map_list_link");
 	
 	
 });
