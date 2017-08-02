@@ -1,38 +1,39 @@
 .page-projekt-map {
     .node-doorpage .group-page-info {
-        width:1170px ;
-		max-width:100%;
-		overflow:hidden;
-
+        width: 1170px;
+        max-width: 100%;
+        overflow: hidden;
 
         .field-name-field-projekt-map {
             width: 100%;
             float: left;
-			  @include devicebreak(x-large) {
+
+            @include devicebreak(x-large) {
                 width: 30%;
-            
-			 }
-			 
-			img{
-			  width:126px;
-			  height:126px;
-			  margin:0 auto;
-			  text-align:center;
-			}
+            }
+
+
+            img {
+                width: 126px;
+                height: 126px;
+                margin: 0 auto;
+                text-align: center;
+            }
         }
 
         .project-map-wrapper {
-             float: left;
+            float: left;
             width: 100%;
             padding-top: 25px;
 
             @include devicebreak(x-large) {
                 width: 70%;
             }
-			
-			.page-title{
-			 padding-bottom:30px;
-			}
+
+
+            .page-title {
+                padding-bottom: 30px;
+            }
         }
     }
 
@@ -78,24 +79,24 @@
             padding-bottom: 0;
 
             .field-item {
-			 margin:0;
-			 &.odd{
-                margin-top:30px;
-				}
-				
-				@include devicebreak(medium){
-				margin: 0;
-				&.odd{
-                margin-top:0;
-				}
-				}
+                margin: 0;
+
+                &.odd {
+                    margin-top: 30px;
+                }
+
+                @include devicebreak(medium) {
+                    margin: 0;
+
+                    &.odd {
+                        margin-top: 0;
+                    }
+                }
             }
         }
     }
 
     .view-filters {
-        
-
         .views-exposed-form {
             .views-exposed-widgets {
                 @extend .container;
@@ -152,6 +153,7 @@
                             .select2-selection__rendered {
                                 color: $color-white;
                                 padding-left: 20px;
+								width: 240px;
                             }
 
                             .select2-selection__arrow {
@@ -262,8 +264,36 @@
                 }
             }
 
-            #footer_map {
+            .footer_map {
                 padding-top: 50px;
+                position:relative;
+
+                .project-webform {
+				  position:absolute;
+				  z-index:9999;
+				  top:100px;
+				  left:70px;
+				
+                    a {
+					      position: relative;
+                        background: $color-white;
+                        padding: 14px 40px 14px 55px;
+						text-decoration:none;
+						color:$main-color;
+
+                        &:before {
+                            font-family: "icomoon";
+                            content: "\e93f";
+                            color: $active-menu;
+                            font-size: 14px;
+                            position: absolute;
+                           left: 25px;
+top: 17px;
+
+                            display: inline-block;
+                        }
+                    }
+                }
             }
         }
     }
