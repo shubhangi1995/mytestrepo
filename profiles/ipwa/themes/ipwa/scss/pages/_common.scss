@@ -1185,7 +1185,7 @@ position:relative;
 
 @include devicebreak(x-large){
       position:absolute;
-	  left:-65px;
+	  left:-70px;
 	  top:115px;
 }
 
@@ -1208,7 +1208,7 @@ position:relative;
 			&:before {
             font-family: $icomoon;
             content: "\e94c";
-            color: $color-light-black;
+            color: $main-color;
             font-size: 20px;
             display: inline-block;
             padding: 10px;
@@ -1222,7 +1222,7 @@ position:relative;
             &:before {
                 font-family: $icomoon;
                 content:"\e94f";
-                color: $color-light-black;
+                color: $main-color;
                 font-size: 20px;
                 display: inline-block;
                 padding: 10px;
