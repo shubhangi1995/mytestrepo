@@ -87,7 +87,7 @@
                     margin-top: 30px;
                 }
 
-                @include devicebreak(medium) {
+                @include devicebreak(x-large) {
                     margin: 0;
 
                     &.odd {
@@ -172,7 +172,18 @@
                 }
 
                 .views-exposed-widget:nth-child(4) {
-                    width: 34%;
+                    width: 100%;
+                    height: 49px;
+
+                    @include devicebreak(x-medium) {
+                        width: 50%;
+                    }
+
+
+                    @include devicebreak(x-large) {
+                        width: 34%;
+                    }
+
 
                     &:before {
                         display: none;
@@ -210,10 +221,14 @@
                 }
 
                 .views-submit-button {
-                    position: absolute;
                     right: 7px;
                     top: -5px;
                     width: auto;
+
+                    @include devicebreak(x-large) {
+                        position: absolute;
+                    }
+
 
                     .btn {
                         margin-top: 0;
@@ -287,7 +302,7 @@
                         color: $main-color;
                         left: 70px;
                         bottom: 100px;
-						z-index:9999;
+                        z-index: 9999;
 
                         &:before {
                             font-family: "icomoon";
