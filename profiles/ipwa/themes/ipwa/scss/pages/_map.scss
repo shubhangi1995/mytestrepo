@@ -1,28 +1,41 @@
 .page-projekt-map {
     .node-doorpage .group-page-info {
-        width:1170px !important;
-		max-width:1170px;
-		overflow:hidden;
-
+        width: 1170px;
+        max-width: 100%;
+        overflow: hidden;
 
         .field-name-field-projekt-map {
-            width: 30%;
+            width: 100%;
             float: left;
-			img{
-			  width:126px;
-			  height:126px;
-			  margin:0 auto;
-			  text-align:center;
-			}
+
+            @include devicebreak(x-large) {
+                width: 30%;
+            }
+
+
+            img {
+                width: 126px;
+                height: 126px;
+
+                @include devicebreak(x-large) {
+                    margin: 0 auto;
+                }
+            }
         }
 
         .project-map-wrapper {
-            width: 70%;
             float: left;
-			
-			.page-title{
-			 padding-bottom:30px;
-			}
+            width: 100%;
+            padding-top: 25px;
+
+            @include devicebreak(x-large) {
+                width: 70%;
+            }
+
+
+            .page-title {
+                padding-bottom: 30px;
+            }
         }
     }
 
@@ -69,13 +82,23 @@
 
             .field-item {
                 margin: 0;
+
+                &.odd {
+                    margin-top: 30px;
+                }
+
+                @include devicebreak(x-large) {
+                    margin: 0;
+
+                    &.odd {
+                        margin-top: 0;
+                    }
+                }
             }
         }
     }
 
     .view-filters {
-        
-
         .views-exposed-form {
             .views-exposed-widgets {
                 @extend .container;
@@ -132,6 +155,7 @@
                             .select2-selection__rendered {
                                 color: $color-white;
                                 padding-left: 20px;
+                                width: 240px;
                             }
 
                             .select2-selection__arrow {
@@ -148,26 +172,41 @@
                 }
 
                 .views-exposed-widget:nth-child(4) {
-                    width: 34%;
+                    width: 100%;
+                    height: 49px;
+
+                    @include devicebreak(x-medium) {
+                        width: 50%;
+                    }
+
+
+                    @include devicebreak(x-large) {
+                        width: 34%;
+                    }
+
 
                     &:before {
                         display: none;
                     }
 
-                    input.form-control {
-                        background: 0;
-                        border: 0;
-                        padding-left: 60px;
-
-                        &::before {
+                    .form-item {
+                        &:before {
                             font-family: "icomoon";
-                            font-family: FontAwesome;
                             content: "\e94e";
                             color: $color-white;
-                            left: 15px;
-                            top: 23px;
+                            left: 20px;
+                            top: 4px;
                             display: inline-block;
                             position: absolute;
+                        }
+
+                        input.form-control {
+                            background: 0;
+                            border: 0;
+                            padding-left: 60px;
+                            color: $color-white;
+                            padding-right: 150px;
+                            box-shadow: none;
                         }
                     }
                 }
@@ -182,10 +221,14 @@
                 }
 
                 .views-submit-button {
-                    position: absolute;
                     right: 7px;
                     top: -5px;
                     width: auto;
+
+                    @include devicebreak(x-large) {
+                        position: absolute;
+                    }
+
 
                     .btn {
                         margin-top: 0;
@@ -242,8 +285,42 @@
                 }
             }
 
-            #footer_map {
+            .footer_map {
                 padding-top: 50px;
+                position: relative;
+
+                .project-webform {
+                    width: 1170px;
+                    margin: 0 auto;
+                    z-index: 999;
+
+                    a {
+                        position: absolute;
+                        background: $color-white;
+                        padding: 14px 40px 14px 55px;
+                        text-decoration: none;
+                        color: $main-color;
+                        left: 70px;
+                        bottom: 100px;
+                        z-index: 9999;
+						font-size:15px;
+						  @include devicebreak(medium) {
+						      font-size:20px;
+						  }
+						
+
+                        &:before {
+                            font-family: "icomoon";
+                            content: "\e93f";
+                            color: $active-menu;
+                            font-size: 14px;
+                            position: absolute;
+                            left: 25px;
+                            top: 17px;
+                            display: inline-block;
+                        }
+                    }
+                }
             }
         }
     }
