@@ -303,6 +303,11 @@
                         left: 70px;
                         bottom: 100px;
                         z-index: 9999;
+						font-size:15px;
+						  @include devicebreak(medium) {
+						      font-size:20px;
+						  }
+						
 
                         &:before {
                             font-family: "icomoon";

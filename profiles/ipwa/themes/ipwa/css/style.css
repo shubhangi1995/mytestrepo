@@ -10951,8 +10951,14 @@ input[type=text]::-ms-clear {
       color: #273753;
       left: 70px;
       bottom: 100px;
-      z-index: 9999; }
-      /* line 307, ../scss/pages/_map.scss */
+      z-index: 9999;
+      font-size: 15px;
+      /* Tablet design */ }
+      @media (min-width: 520px) {
+        /* line 297, ../scss/pages/_map.scss */
+        .page-projekt-map .view-filters .views-exposed-form .footer_map .project-webform a {
+          font-size: 20px; } }
+      /* line 312, ../scss/pages/_map.scss */
       .page-projekt-map .view-filters .views-exposed-form .footer_map .project-webform a:before {
         font-family: "icomoon";
         content: "\e93f";
