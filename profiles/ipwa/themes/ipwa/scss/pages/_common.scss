@@ -217,6 +217,7 @@ h1 {
         border: 0;
         background: $header-dropdown-menu;
         border-radius: 0;
+		z-index:99999;
 
         .select2-results {
             height: 200px;

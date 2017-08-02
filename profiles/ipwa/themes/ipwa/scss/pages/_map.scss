@@ -16,8 +16,10 @@
             img {
                 width: 126px;
                 height: 126px;
-                margin: 0 auto;
-                text-align: center;
+
+                @include devicebreak(x-large) {
+                    margin: 0 auto;
+                }
             }
         }
 
@@ -153,7 +155,7 @@
                             .select2-selection__rendered {
                                 color: $color-white;
                                 padding-left: 20px;
-								width: 240px;
+                                width: 240px;
                             }
 
                             .select2-selection__arrow {
@@ -176,20 +178,25 @@
                         display: none;
                     }
 
-                    input.form-control {
-                        background: 0;
-                        border: 0;
-                        padding-left: 60px;
-
-                        &::before {
-                            font-family: "icomoon";
-                            font-family: FontAwesome;
+                    .form-item {
+                        &:before {
+                            font-family:"icomoon";
+                           
                             content: "\e94e";
                             color: $color-white;
-                            left: 15px;
-                            top: 23px;
+                            left: 20px;
+                            top: 4px;
                             display: inline-block;
                             position: absolute;
+                        }
+
+                        input.form-control {
+                            background: 0;
+                            border: 0;
+                            padding-left: 60px;
+                            color: $color-white;
+                            padding-right: 150px;
+                            box-shadow: none;
                         }
                     }
                 }
@@ -266,20 +273,22 @@
 
             .footer_map {
                 padding-top: 50px;
-                position:relative;
+                position: relative;
 
                 .project-webform {
-				  position:absolute;
-				  z-index:9999;
-				  top:100px;
-				  left:70px;
-				
+                    position: absolute;
+                    left: 70px;
+                    width: 1170px;
+                    margin: 0 auto;
+                    bottom: 100px;
+                    z-index: 999;
+
                     a {
-					      position: relative;
+                        position: relative;
                         background: $color-white;
                         padding: 14px 40px 14px 55px;
-						text-decoration:none;
-						color:$main-color;
+                        text-decoration: none;
+                        color: $main-color;
 
                         &:before {
                             font-family: "icomoon";
@@ -287,9 +296,8 @@
                             color: $active-menu;
                             font-size: 14px;
                             position: absolute;
-                           left: 25px;
-top: 17px;
-
+                            left: 25px;
+                            top: 17px;
                             display: inline-block;
                         }
                     }
