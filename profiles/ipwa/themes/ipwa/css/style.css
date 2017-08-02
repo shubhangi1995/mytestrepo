@@ -10846,14 +10846,13 @@ input[type=text]::-ms-clear {
     /* line 182, ../scss/pages/_map.scss */
     .page-projekt-map .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget:nth-child(4) .form-item:before {
       font-family: "icomoon";
-      font-family: FontAwesome;
       content: "\e94e";
       color: #ffffff;
-      left: 15px;
+      left: 20px;
       top: 4px;
       display: inline-block;
       position: absolute; }
-    /* line 193, ../scss/pages/_map.scss */
+    /* line 192, ../scss/pages/_map.scss */
     .page-projekt-map .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget:nth-child(4) .form-item input.form-control {
       background: 0;
       border: 0;
@@ -10861,20 +10860,20 @@ input[type=text]::-ms-clear {
       color: #ffffff;
       padding-right: 150px;
       box-shadow: none; }
-  /* line 204, ../scss/pages/_map.scss */
+  /* line 203, ../scss/pages/_map.scss */
   .page-projekt-map .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget:nth-child(5) {
     background: 0;
     border: 0; }
-  /* line 209, ../scss/pages/_map.scss */
+  /* line 208, ../scss/pages/_map.scss */
   .page-projekt-map .view-filters .views-exposed-form .views-exposed-widgets .views-reset-button {
     display: none; }
-  /* line 213, ../scss/pages/_map.scss */
+  /* line 212, ../scss/pages/_map.scss */
   .page-projekt-map .view-filters .views-exposed-form .views-exposed-widgets .views-submit-button {
     position: absolute;
     right: 7px;
     top: -5px;
     width: auto; }
-    /* line 219, ../scss/pages/_map.scss */
+    /* line 218, ../scss/pages/_map.scss */
     .page-projekt-map .view-filters .views-exposed-form .views-exposed-widgets .views-submit-button .btn {
       margin-top: 0;
       border-radius: 0;
@@ -10884,7 +10883,7 @@ input[type=text]::-ms-clear {
       border: none;
       background: #ffffff;
       font-weight: bold; }
-      /* line 229, ../scss/pages/_map.scss */
+      /* line 228, ../scss/pages/_map.scss */
       .page-projekt-map .view-filters .views-exposed-form .views-exposed-widgets .views-submit-button .btn::before {
         font-family: "icomoon";
         content: "\e90e";
@@ -10894,10 +10893,10 @@ input[type=text]::-ms-clear {
         font-size: 12px;
         display: inline-block;
         position: absolute; }
-/* line 243, ../scss/pages/_map.scss */
+/* line 242, ../scss/pages/_map.scss */
 .page-projekt-map .view-filters .views-exposed-form #map_list_link {
   text-align: right; }
-  /* line 248, ../scss/pages/_map.scss */
+  /* line 247, ../scss/pages/_map.scss */
   .page-projekt-map .view-filters .views-exposed-form #map_list_link a {
     text-decoration: none;
     padding-bottom: 4px;
@@ -10906,7 +10905,7 @@ input[type=text]::-ms-clear {
     font-weight: bold;
     position: relative;
     margin-left: 30px; }
-    /* line 257, ../scss/pages/_map.scss */
+    /* line 256, ../scss/pages/_map.scss */
     .page-projekt-map .view-filters .views-exposed-form #map_list_link a:before {
       content: '\e949';
       font-family: "icomoon";
@@ -10916,29 +10915,29 @@ input[type=text]::-ms-clear {
       left: -25px;
       top: 9px;
       display: inline-block; }
-  /* line 269, ../scss/pages/_map.scss */
+  /* line 268, ../scss/pages/_map.scss */
   .page-projekt-map .view-filters .views-exposed-form #map_list_link .map-sub-title {
     float: left; }
-/* line 274, ../scss/pages/_map.scss */
+/* line 273, ../scss/pages/_map.scss */
 .page-projekt-map .view-filters .views-exposed-form .footer_map {
   padding-top: 50px;
   position: relative; }
-  /* line 278, ../scss/pages/_map.scss */
+  /* line 277, ../scss/pages/_map.scss */
   .page-projekt-map .view-filters .views-exposed-form .footer_map .project-webform {
-    position: absolute;
-    left: 70px;
     width: 1170px;
     margin: 0 auto;
-    bottom: 100px;
     z-index: 999; }
-    /* line 286, ../scss/pages/_map.scss */
+    /* line 282, ../scss/pages/_map.scss */
     .page-projekt-map .view-filters .views-exposed-form .footer_map .project-webform a {
-      position: relative;
+      position: absolute;
       background: #ffffff;
       padding: 14px 40px 14px 55px;
       text-decoration: none;
-      color: #273753; }
-      /* line 293, ../scss/pages/_map.scss */
+      color: #273753;
+      left: 70px;
+      bottom: 100px;
+      z-index: 9999; }
+      /* line 292, ../scss/pages/_map.scss */
       .page-projekt-map .view-filters .views-exposed-form .footer_map .project-webform a:before {
         font-family: "icomoon";
         content: "\e93f";
