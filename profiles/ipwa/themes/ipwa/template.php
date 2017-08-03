@@ -150,6 +150,10 @@ $view = $vars['view'];
   foreach($view->result as $id => $value) {
     $vars['solr_id'][$id]= $value->entity;
   }
+  $view = $vars['view'];
+  foreach($view->result as $id => $value) {
+    $vars['solr_type'][$id]=$value->_entity_properties['type'];
+  }
 }
 
 

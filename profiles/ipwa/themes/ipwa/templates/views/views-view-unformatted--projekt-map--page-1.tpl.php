@@ -14,7 +14,7 @@
   <?php $path = drupal_get_path_alias("node/" . $solr_id[$id]); ?>
   <div<?php if ($classes_array[$id]) { print ' class="' . $classes_array[$id] .'"';  } ?>>
     <a href="<?php print $base_url . '/' . $path; ?>" >
-    <div class="row-container <?php if (isset($node_type)) {print ($node_type[$id] == 'projekt') ? 'project-blue' : '' ; }?>">
+    <div class="row-container <?php if (isset($solr_type)) {print ($solr_type[$id] == 'projekt') ? 'project-blue' : '' ; }?>">
        <?php print $row; ?>
     </div>
     </a>
