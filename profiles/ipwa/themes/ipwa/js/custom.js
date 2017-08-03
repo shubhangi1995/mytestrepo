@@ -387,8 +387,20 @@ jQuery('.tb-megamenu-submenu.dropdown-menu').attr('style','display:none !importa
 	
 	jQuery(".page-projekt-map .paragraphs-item-topic-teaser-paragraph").parent().wrapAll("<div class='map-wrap'></div>");
 	
+	
 	jQuery(".page-projekt-map .group-page-info .page-title , .page-projekt-map .group-page-info .field-name-body").wrapAll("<div class='project-map-wrapper'></div>");
 	
+	jQuery(".view-display-id-project_map .view-filters .views-submit-button").appendTo(".view-display-id-project_map .view-filters .views-widget-filter-field_plz");
+	
+	
+	jQuery(document).on('mouseup', '.select2-container--open .select2-results__option', function (e) {
+		if(jQuery(this).html() == "Akteur"){
+			jQuery(".views-widget-filter-field_akteurstyp").addClass("active");
+		}
+		else{
+			jQuery(".views-widget-filter-field_akteurstyp").removeClass("active");
+		}
+	});
 	
 });
 
