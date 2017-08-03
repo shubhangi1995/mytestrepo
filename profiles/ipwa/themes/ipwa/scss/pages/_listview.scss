@@ -146,7 +146,7 @@
 
 //termine and aktuelles and search//
 
-.page-termine, .page-aktuelles, .page-calendar {
+.page-termine, .page-aktuelles, .page-calendar,.page-projekt-list{
     background: $color-light-blue;
 
     .page-header {
@@ -165,7 +165,7 @@
     }
 }
 
-.view-aktuelles, .view-termin, .view-search-list, .view-event-calendar {
+.view-aktuelles, .view-termin, .view-search-list, .view-event-calendar,.view-display-id-page_1 {
     > .view-sub-wrapper {
         @extend .container;
 

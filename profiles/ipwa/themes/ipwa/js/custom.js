@@ -35,6 +35,11 @@ window.addEventListener('orientationchange', function () {
 		minimumResultsForSearch: Infinity
 	});
 	
+	jQuery("#views-exposed-form-projekt-map-page-1 select").select2({
+		
+		minimumResultsForSearch: Infinity
+	});
+	
 	
 	jQuery("input:radio").each(function(){
   if(jQuery(this).is(':checked'))
@@ -375,7 +380,7 @@ jQuery('.tb-megamenu-submenu.dropdown-menu').attr('style','display:none !importa
 	
 	//page-projekt-map
 	
-	if(jQuery(".view-projekt-map").length > 0){
+	if(jQuery(".view-display-id-project_map").length > 0){
 	jQuery(document.body).addClass("page-projekt-map");
 } 
 	jQuery(".page-projekt-map .map-sub-title" ).appendTo(".page-projekt-map #map_list_link");

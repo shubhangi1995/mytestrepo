@@ -98,7 +98,12 @@
         }
     }
 
-    .view-filters {
+   
+}
+
+
+.view-display-id-project_map,.view-display-id-page_1{
+ .view-filters {
         .views-exposed-form {
             .views-exposed-widgets {
                 @extend .container;
