@@ -146,7 +146,13 @@ function ipwa_preprocess_views_view_unformatted(&$vars) {
   foreach($view->result as $id => $value) {
   $vars['node_type'][$id] = $value->node_type;
   }
+$view = $vars['view'];
+  foreach($view->result as $id => $value) {
+    $vars['solr_id'][$id]= $value->entity;
+  }
 }
+
+
 /**
  * Implements theme_preprocess_views_view().
  *
