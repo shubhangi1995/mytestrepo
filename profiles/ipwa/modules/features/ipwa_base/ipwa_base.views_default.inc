@@ -2305,18 +2305,24 @@ Publikation|Publikationen'),
   $handler->display->display_options['pager']['options']['tags']['next'] = 'nächste Seite ›';
   $handler->display->display_options['pager']['options']['tags']['last'] = 'letzte Seite »';
   $handler->display->display_options['defaults']['header'] = FALSE;
+  /* Kopfbereich: Global: Unfiltered text */
+  $handler->display->display_options['header']['area_text_custom_1']['id'] = 'area_text_custom_1';
+  $handler->display->display_options['header']['area_text_custom_1']['table'] = 'views';
+  $handler->display->display_options['header']['area_text_custom_1']['field'] = 'area_text_custom';
+  $handler->display->display_options['header']['area_text_custom_1']['empty'] = TRUE;
+  $handler->display->display_options['header']['area_text_custom_1']['content'] = '  <div class="project-webform"><a href="schaufenster-digitales-nrw/projekt-vorschlagen">PROJEKT VORSCHLAGEN</a></div>';
   /* Kopfbereich: Global: Result summary */
   $handler->display->display_options['header']['result']['id'] = 'result';
   $handler->display->display_options['header']['result']['table'] = 'views';
   $handler->display->display_options['header']['result']['field'] = 'result';
   $handler->display->display_options['header']['result']['content'] = '<div class="map_node_count">
- @total
+ @total Treffer
 </div>';
   /* Kopfbereich: Global: Unfiltered text */
   $handler->display->display_options['header']['area_text_custom']['id'] = 'area_text_custom';
   $handler->display->display_options['header']['area_text_custom']['table'] = 'views';
   $handler->display->display_options['header']['area_text_custom']['field'] = 'area_text_custom';
-  $handler->display->display_options['header']['area_text_custom']['content'] = '<a href="/schaufenster-digitales-nrw">zur Map</a>';
+  $handler->display->display_options['header']['area_text_custom']['content'] = '<a href="/schaufenster-digitales-nrw">Zur Kartensicht</a>';
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Feld: Indexed Beitrag: Node ID */
   $handler->display->display_options['fields']['nid']['id'] = 'nid';
@@ -2332,7 +2338,7 @@ Publikation|Publikationen'),
   $handler->display->display_options['fields']['field_themenzuweisung']['field'] = 'field_themenzuweisung';
   $handler->display->display_options['fields']['field_themenzuweisung']['label'] = '';
   $handler->display->display_options['fields']['field_themenzuweisung']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['field_themenzuweisung']['alter']['text'] = '<img src="[field_themenzuweisung]">';
+  $handler->display->display_options['fields']['field_themenzuweisung']['alter']['text'] = '<img src="[field_themenzuweisung]" width="36" height="36">';
   $handler->display->display_options['fields']['field_themenzuweisung']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_themenzuweisung']['link_to_entity'] = 0;
   $handler->display->display_options['fields']['field_themenzuweisung']['view_mode'] = 'full';
@@ -2587,11 +2593,12 @@ Publikation|Publikationen'),
     t(','),
     t('Project map'),
     t('Project list'),
+    t('  <div class="project-webform"><a href="schaufenster-digitales-nrw/projekt-vorschlagen">PROJEKT VORSCHLAGEN</a></div>'),
     t('<div class="map_node_count">
- @total
+ @total Treffer
 </div>'),
-    t('<a href="/schaufenster-digitales-nrw">zur Map</a>'),
-    t('<img src="[field_themenzuweisung]">'),
+    t('<a href="/schaufenster-digitales-nrw">Zur Kartensicht</a>'),
+    t('<img src="[field_themenzuweisung]" width="36" height="36">'),
     t('A-Z'),
     t('neueste zuerst'),
     t('Feed'),
