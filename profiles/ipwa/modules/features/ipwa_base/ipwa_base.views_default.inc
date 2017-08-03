@@ -1533,9 +1533,32 @@ Publikation|Publikationen'),
   $handler->display->display_options['fields']['type']['table'] = 'search_api_index_ipwa_solr_index';
   $handler->display->display_options['fields']['type']['field'] = 'type';
   $handler->display->display_options['fields']['type']['label'] = '';
+  $handler->display->display_options['fields']['type']['exclude'] = TRUE;
   $handler->display->display_options['fields']['type']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['type']['link_to_entity'] = 0;
   $handler->display->display_options['fields']['type']['format_name'] = 1;
+  /* Feld: Indexed Beitrag: Akteurstyp */
+  $handler->display->display_options['fields']['field_akteurstyp']['id'] = 'field_akteurstyp';
+  $handler->display->display_options['fields']['field_akteurstyp']['table'] = 'search_api_index_ipwa_solr_index';
+  $handler->display->display_options['fields']['field_akteurstyp']['field'] = 'field_akteurstyp';
+  $handler->display->display_options['fields']['field_akteurstyp']['label'] = '';
+  $handler->display->display_options['fields']['field_akteurstyp']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_akteurstyp']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_akteurstyp']['link_to_entity'] = 0;
+  $handler->display->display_options['fields']['field_akteurstyp']['view_mode'] = 'full';
+  $handler->display->display_options['fields']['field_akteurstyp']['bypass_access'] = 0;
+  /* Feld: Views: Views Conditional */
+  $handler->display->display_options['fields']['views_conditional_1']['id'] = 'views_conditional_1';
+  $handler->display->display_options['fields']['views_conditional_1']['table'] = 'views_conditional';
+  $handler->display->display_options['fields']['views_conditional_1']['field'] = 'views_conditional';
+  $handler->display->display_options['fields']['views_conditional_1']['label'] = '';
+  $handler->display->display_options['fields']['views_conditional_1']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['views_conditional_1']['if'] = 'type';
+  $handler->display->display_options['fields']['views_conditional_1']['condition'] = '1';
+  $handler->display->display_options['fields']['views_conditional_1']['equalto'] = 'Projekt';
+  $handler->display->display_options['fields']['views_conditional_1']['then'] = 'Projekt';
+  $handler->display->display_options['fields']['views_conditional_1']['or'] = '[field_akteurstyp]';
+  $handler->display->display_options['fields']['views_conditional_1']['strip_tags'] = 0;
   /* Feld: Indexed Beitrag: Titel */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'search_api_index_ipwa_solr_index';
@@ -1603,18 +1626,6 @@ Publikation|Publikationen'),
   $handler->display->display_options['fields']['field_ort']['label'] = '';
   $handler->display->display_options['fields']['field_ort']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_ort']['element_label_colon'] = FALSE;
-  /* Feld: Indexed Beitrag: Longitude */
-  $handler->display->display_options['fields']['field_longitude']['id'] = 'field_longitude';
-  $handler->display->display_options['fields']['field_longitude']['table'] = 'search_api_index_ipwa_solr_index';
-  $handler->display->display_options['fields']['field_longitude']['field'] = 'field_longitude';
-  $handler->display->display_options['fields']['field_longitude']['label'] = '';
-  $handler->display->display_options['fields']['field_longitude']['element_label_colon'] = FALSE;
-  /* Feld: Indexed Beitrag: Latitude */
-  $handler->display->display_options['fields']['field_latitude']['id'] = 'field_latitude';
-  $handler->display->display_options['fields']['field_latitude']['table'] = 'search_api_index_ipwa_solr_index';
-  $handler->display->display_options['fields']['field_latitude']['field'] = 'field_latitude';
-  $handler->display->display_options['fields']['field_latitude']['label'] = '';
-  $handler->display->display_options['fields']['field_latitude']['element_label_colon'] = FALSE;
   /* Feld: Views: Views Conditional */
   $handler->display->display_options['fields']['views_conditional']['id'] = 'views_conditional';
   $handler->display->display_options['fields']['views_conditional']['table'] = 'views_conditional';
@@ -1627,6 +1638,18 @@ Publikation|Publikationen'),
   $handler->display->display_options['fields']['views_conditional']['then'] = '[field_ort]';
   $handler->display->display_options['fields']['views_conditional']['or'] = '[field_datum]';
   $handler->display->display_options['fields']['views_conditional']['strip_tags'] = 0;
+  /* Feld: Indexed Beitrag: Longitude */
+  $handler->display->display_options['fields']['field_longitude']['id'] = 'field_longitude';
+  $handler->display->display_options['fields']['field_longitude']['table'] = 'search_api_index_ipwa_solr_index';
+  $handler->display->display_options['fields']['field_longitude']['field'] = 'field_longitude';
+  $handler->display->display_options['fields']['field_longitude']['label'] = '';
+  $handler->display->display_options['fields']['field_longitude']['element_label_colon'] = FALSE;
+  /* Feld: Indexed Beitrag: Latitude */
+  $handler->display->display_options['fields']['field_latitude']['id'] = 'field_latitude';
+  $handler->display->display_options['fields']['field_latitude']['table'] = 'search_api_index_ipwa_solr_index';
+  $handler->display->display_options['fields']['field_latitude']['field'] = 'field_latitude';
+  $handler->display->display_options['fields']['field_latitude']['label'] = '';
+  $handler->display->display_options['fields']['field_latitude']['element_label_colon'] = FALSE;
   /* Feld: Indexed Beitrag: PLZ */
   $handler->display->display_options['fields']['field_plz']['id'] = 'field_plz';
   $handler->display->display_options['fields']['field_plz']['table'] = 'search_api_index_ipwa_solr_index';
@@ -1937,6 +1960,13 @@ Publikation|Publikationen'),
   $handler->display->display_options['fields']['field_plz']['label'] = '';
   $handler->display->display_options['fields']['field_plz']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_plz']['element_label_colon'] = FALSE;
+  /* Contextual filter: Indexed Beitrag: Node ID */
+  $handler->display->display_options['arguments']['nid']['id'] = 'nid';
+  $handler->display->display_options['arguments']['nid']['table'] = 'search_api_index_ipwa_solr_index';
+  $handler->display->display_options['arguments']['nid']['field'] = 'nid';
+  $handler->display->display_options['arguments']['nid']['exception']['title'] = 'Alle';
+  $handler->display->display_options['arguments']['nid']['default_argument_type'] = 'fixed';
+  $handler->display->display_options['arguments']['nid']['summary']['format'] = 'default_summary';
   /* Filter criterion: Indexed Beitrag: Inhaltstyp */
   $handler->display->display_options['filters']['type']['id'] = 'type';
   $handler->display->display_options['filters']['type']['table'] = 'search_api_index_ipwa_solr_index';
@@ -1953,8 +1983,11 @@ Publikation|Publikationen'),
   $handler->display->display_options['filters']['type']['expose']['remember_roles'] = array(
     2 => '2',
     1 => 0,
+    3 => 0,
+    4 => 0,
+    5 => 0,
   );
-  $handler->display->display_options['filters']['type']['expose']['reduce'] = 0;
+  $handler->display->display_options['filters']['type']['expose']['reduce'] = 1;
   /* Filter criterion: Indexed Beitrag: Akteurstyp */
   $handler->display->display_options['filters']['field_akteurstyp']['id'] = 'field_akteurstyp';
   $handler->display->display_options['filters']['field_akteurstyp']['table'] = 'search_api_index_ipwa_solr_index';
@@ -2296,10 +2329,10 @@ Publikation|Publikationen'),
   $handler = $view->new_display('page', 'Project list', 'page_1');
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'full';
-  $handler->display->display_options['pager']['options']['items_per_page'] = '10';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '9';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['pager']['options']['id'] = '0';
-  $handler->display->display_options['pager']['options']['quantity'] = '15';
+  $handler->display->display_options['pager']['options']['quantity'] = '10';
   $handler->display->display_options['pager']['options']['tags']['first'] = '« erste Seite';
   $handler->display->display_options['pager']['options']['tags']['previous'] = '‹ vorherige Seite';
   $handler->display->display_options['pager']['options']['tags']['next'] = 'nächste Seite ›';
@@ -2311,18 +2344,14 @@ Publikation|Publikationen'),
   $handler->display->display_options['header']['area_text_custom_1']['field'] = 'area_text_custom';
   $handler->display->display_options['header']['area_text_custom_1']['empty'] = TRUE;
   $handler->display->display_options['header']['area_text_custom_1']['content'] = '  <div class="project-webform"><a href="schaufenster-digitales-nrw/projekt-vorschlagen">PROJEKT VORSCHLAGEN</a></div>';
-  /* Kopfbereich: Global: Result summary */
-  $handler->display->display_options['header']['result']['id'] = 'result';
-  $handler->display->display_options['header']['result']['table'] = 'views';
-  $handler->display->display_options['header']['result']['field'] = 'result';
-  $handler->display->display_options['header']['result']['content'] = '<div class="map_node_count">
- @total Treffer
-</div>';
   /* Kopfbereich: Global: Unfiltered text */
   $handler->display->display_options['header']['area_text_custom']['id'] = 'area_text_custom';
   $handler->display->display_options['header']['area_text_custom']['table'] = 'views';
   $handler->display->display_options['header']['area_text_custom']['field'] = 'area_text_custom';
-  $handler->display->display_options['header']['area_text_custom']['content'] = '<a href="/schaufenster-digitales-nrw">Zur Kartensicht</a>';
+  $handler->display->display_options['header']['area_text_custom']['empty'] = TRUE;
+  $handler->display->display_options['header']['area_text_custom']['content'] = '<div class = "map-link">
+<a href="/schaufenster-digitales-nrw">Zur Kartensicht</a>
+</div>';
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Feld: Indexed Beitrag: Node ID */
   $handler->display->display_options['fields']['nid']['id'] = 'nid';
@@ -2380,7 +2409,7 @@ Publikation|Publikationen'),
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['title']['link_to_entity'] = 1;
+  $handler->display->display_options['fields']['title']['link_to_entity'] = 0;
   /* Feld: Indexed Beitrag: Datum */
   $handler->display->display_options['fields']['field_datum']['id'] = 'field_datum';
   $handler->display->display_options['fields']['field_datum']['table'] = 'search_api_index_ipwa_solr_index';
@@ -2488,6 +2517,7 @@ Publikation|Publikationen'),
   $handler->display->display_options['sorts']['field_datum']['order'] = 'DESC';
   $handler->display->display_options['sorts']['field_datum']['exposed'] = TRUE;
   $handler->display->display_options['sorts']['field_datum']['expose']['label'] = 'neueste zuerst';
+  $handler->display->display_options['defaults']['arguments'] = FALSE;
   $handler->display->display_options['path'] = 'projekt-list';
 
   /* Display: Feed */
