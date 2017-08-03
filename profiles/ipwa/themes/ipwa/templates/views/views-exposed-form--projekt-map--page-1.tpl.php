@@ -28,7 +28,7 @@
 <?php endif; ?>
 <div class="views-exposed-form">
   <div class="views-exposed-widgets clearfix">
-    <div class="list-flter">
+    <div class="categories-filter">
     <?php foreach ($widgets as $id => $widget): ?>
       <div id="<?php print $widget->id; ?>-wrapper" class="views-exposed-widget views-widget-<?php print $id; ?>">
         <?php if (!empty($widget->label)): ?>
