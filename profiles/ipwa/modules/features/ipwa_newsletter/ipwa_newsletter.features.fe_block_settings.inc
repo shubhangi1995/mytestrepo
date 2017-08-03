@@ -30,7 +30,7 @@ infos-fuer-beschaeftigte
 calendar
 alle-themen
 schaufenster-digitales-nrw
-projekt-list-page',
+schaufenster-digitales-nrw-liste',
     'roles' => array(),
     'themes' => array(
       'bartik' => array(
