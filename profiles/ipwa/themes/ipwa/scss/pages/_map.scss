@@ -224,8 +224,8 @@
                     right: 7px;
                     top: -5px;
                     width: auto;
-					background:0;
-					border:0;
+                    background: 0;
+                    border: 0;
 
                     @include devicebreak(x-large) {
                         position: absolute;
@@ -254,12 +254,14 @@
                         }
                     }
                 }
-				.views-widget-filter-field_akteurstyp{
-				  display:none;
-				}
-				.views-widget-filter-field_akteurstyp.active{
-				 display:block;
-				}
+
+                .views-widget-filter-field_akteurstyp {
+                    display: none;
+                }
+
+                .views-widget-filter-field_akteurstyp.active {
+                    display: block;
+                }
             }
 
             #map_list_link {
@@ -338,8 +340,53 @@
 .view-display-id-page_1 {
     .view-sub-wrapper {
         @extend .container;
+		
+		
+		.attachment-before {
+                .view-result-count {
+                    width: auto;
+                    float: left;
+                    padding: 30px 0;
+                    font-size: 20px;
+                    font-weight: bold;
+                    margin-top: 0;
+
+                    @include devicebreak(medium) {
+                        width: 50%;
+                        font-size: 22px;
+                    }
+                }
+
+                .map-link {
+                    text-align: right;
+
+                    a {
+                        text-decoration: none;
+                        padding-bottom: 4px;
+                        border-bottom: 2px solid $color-light-grey;
+                        color: $main-color;
+                        font-weight: bold;
+                        position: relative;
+                        margin-left: 30px;
+
+                        &:before {
+                            content: '\e949';
+                            font-family: "icomoon";
+                            color: #e74712;
+                            font-size: 14px;
+                            position: absolute;
+                            left: -25px;
+                            top: 9px;
+                            display: inline-block;
+                        }
+                    }
+                }
+            }
+		
 
         .view-filters {
+            
+
             .views-exposed-form {
                 .views-exposed-widgets {
                     @extend .container;
@@ -452,16 +499,15 @@
                         }
                     }
 
-                    
-
                     .views-reset-button {
                         display: none;
                     }
 
                     .views-submit-button {
-                        right:7px;
+                        right: 0;
                         top: -5px;
-                        width:auto;
+                        padding: 10px 8px;
+                        width: auto !important;
 
                         @include devicebreak(x-large) {
                             position: absolute;

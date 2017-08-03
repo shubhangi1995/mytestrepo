@@ -60,6 +60,11 @@ jQuery('.page-projekt-map select').select2().on("select2:open", function(){
  jQuery('.page-projekt-map .select2-results').simplebar();
 });
 
+jQuery('.view-display-id-page_1 select').select2().on("select2:open", function(){
+ jQuery('.view-display-id-page_1 .select2-results').addClass("simplebar");
+ jQuery('.view-display-id-page_1 .select2-results').simplebar();
+});
+
 
 jQuery(window).click(function(event){
 		jQuery(".views-exposed-widget").removeClass("selColor");
