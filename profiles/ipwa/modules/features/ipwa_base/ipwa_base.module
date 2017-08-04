@@ -23,8 +23,8 @@ function ipwa_base_views_pre_render(&$view) {
 
 
 
-    // for embedding icons in map pop-up
-  if(isset($view->plugin_name) && $view->name == 'project_single_view'|| ($view->name == 'projekt_map' && $view->current_display=='page_1') ) {
+  //for embedding icon in map-popup
+  if((isset($view->plugin_name) && $view->name == 'project_single_view')) {
     foreach ($view->result as $result) {
       $parent_ids = array();
       //to get the node  being used...
@@ -46,7 +46,7 @@ function ipwa_base_views_pre_render(&$view) {
               $parent_ids[] = $parent_term->tid;
               if (!empty($parent_term->field_bild)) {
                 // Show Icon of parent term
-                $term->name = file_create_url($parent_term->field_bild['und'][0]['uri']);
+                $term->name = file_create_url($term->field_bild['und'][0]['uri']);
               }
             }
           }
@@ -54,9 +54,52 @@ function ipwa_base_views_pre_render(&$view) {
         else {
           //for nodes having parent taxonomies selected
           //replacing the name of taxonomy with the url of icon related to it..
-      $term->name= file_create_url($term->field_bild['und'][0]['uri']);
-              }
+          $term->name= file_create_url($term->field_bild['und'][0]['uri']);
+        }
 
+      }
+    }
+
+  }
+
+    // for embedding icons in map pop-up
+  if($view->name == 'projekt_map' && $view->current_display=='page_1')  {
+    foreach ($view->result as $key => $result) {
+      $parent_ids = array();
+      //to get the node  being used...
+      $node_id = $result->_entity_properties['search_api_id'];
+      //to fetch the node id of the node fetched earlier...
+      $node = node_load($node_id);
+      $result->_entity_properties['map_term_icon'] = array();
+      //to get taxonomy present in the node...
+      foreach ($node->field_themenzuweisung['und'] as $key => $val) {
+        $tid = $node->field_themenzuweisung['und'][$key]['tid'];
+        $term = taxonomy_term_load($tid);
+        $parent = taxonomy_get_parents($tid);
+
+        if (!empty($parent)) {
+          foreach ($parent as $pid => $parent_term) {
+            //if this term is also child of same parent as previous one,
+            // there is no point of showing same icon, in that case remove the term
+            if (in_array($parent_term->tid, $parent_ids)) {
+              unset($node->field_themenzuweisung['und'][$key]);
+            } else {
+              $parent_ids[] = $parent_term->tid;
+              if (!empty($parent_term->field_bild)) {
+                // Show Icon of parent term
+                $derivative_uri = image_style_path(themen_icon_36x36, $parent_term->field_bild['und'][0]['uri']);
+                $term->icon = file_create_url( $derivative_uri);
+                $result->_entity_properties['map_term_icon'][] = $term->icon;
+              }
+            }
+          }
+        } else {
+          //for nodes having parent taxonomies selected
+          //replacing the name of taxonomy with the url of icon related to it..
+          $derivative_uri = image_style_path(themen_icon_36x36, $term->field_bild['und'][0]['uri']);
+          $term->icon = file_create_url( $derivative_uri);
+          $result->_entity_properties['map_term_icon'][] = $term->icon;
+        }
       }
     }
 
