@@ -330,7 +330,7 @@
                             font-size: 14px;
                             position: absolute;
                             left: 25px;
-                            top: 17px;
+                            top: 6px;
                             display: inline-block;
                         }
                     }
@@ -348,11 +348,32 @@
             .project-webform {
                 display: inline-block;
                 padding-bottom: 40px;
+				position:relative;
 
-                a {
-                    text-decoration: none;
-                    color: $main-color;
-                }
+                 a {
+                        background: $color-white;
+                        padding: 14px 40px 14px 55px;
+                        text-decoration: none;
+                        color: $main-color;
+                        z-index: 9999;
+                        font-size: 15px;
+
+                        @include devicebreak(medium) {
+                            font-size: 20px;
+                        }
+
+
+                        &:before {
+                            font-family: "icomoon";
+                            content: "\e93f";
+                            color: $active-menu;
+                            font-size: 14px;
+                            position: absolute;
+                            left: 25px;
+                            top: 6px;
+                            display: inline-block;
+                        }
+                    }
             }
 
             .map-link {

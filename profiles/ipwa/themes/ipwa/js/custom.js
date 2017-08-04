@@ -88,11 +88,7 @@ jQuery(".select2").on("click", function(event){
 		jQuery(".field-name-field-videounterschrift .field-item").append("<span class='copyright'> " + copyText + "</span>");
 		jQuery(".field-name-field-videoquelle").hide();
 	}
-
-
 	
-
-
 	// header-mobile-menu
 	
 	if(jQuery(window).innerWidth() < 1025){
