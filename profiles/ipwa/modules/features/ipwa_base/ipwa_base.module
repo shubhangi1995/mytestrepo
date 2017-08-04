@@ -46,7 +46,7 @@ function ipwa_base_views_pre_render(&$view) {
               $parent_ids[] = $parent_term->tid;
               if (!empty($parent_term->field_bild)) {
                 // Show Icon of parent term
-                $term->name = file_create_url($term->field_bild['und'][0]['uri']);
+                $term->name = file_create_url($parent_term->field_bild['und'][0]['uri']);
               }
             }
           }
