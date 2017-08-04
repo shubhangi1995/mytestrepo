@@ -50,7 +50,7 @@
                 Font-size: 44px;
 
                 // color: $active-menu;
-                padding-bottom: 30px;
+                padding-bottom: 15px;
             }
 
             p {
@@ -146,7 +146,7 @@
 
 //termine and aktuelles and search//
 
-.page-termine, .page-aktuelles, .page-calendar{
+.page-termine, .page-aktuelles, .page-calendar {
     background: $color-light-blue;
 
     .page-header {
@@ -165,7 +165,7 @@
     }
 }
 
-.view-aktuelles, .view-termin, .view-search-list, .view-event-calendar{
+.view-aktuelles, .view-termin, .view-search-list, .view-event-calendar {
     > .view-sub-wrapper {
         @extend .container;
 
@@ -235,7 +235,7 @@
 
                                 &.active {
                                     border-bottom: 2px solid $active-menu;
-									padding-bottom:12px;
+                                    padding-bottom: 12px;
                                 }
                             }
                         }
@@ -436,7 +436,7 @@
 
                             &.active {
                                 border-bottom: 2px solid $active-menu;
-								padding-bottom:12px;
+                                padding-bottom: 12px;
                             }
                         }
                     }
@@ -820,16 +820,14 @@
 
     .view-sub-wrapper {
         .view-content {
-		  width:100%;
-		  float: left;
+            width: 100%;
+            float: left;
             margin: 0;
-		
-		
-		 @include devicebreak(x-large){
-            width: 65%;
-			
-			}
-            
+
+            @include devicebreak(x-large) {
+                width: 65%;
+            }
+
 
             .views-row {
                 width: 100%;
@@ -843,8 +841,6 @@
                     padding: 30px;
                     border: none;
 
-					
-					
                     @include devicebreak(x-large) {
                         padding: 45px 150px 45px 50px;
                     }
@@ -885,13 +881,13 @@
         }
 
         .view-footer {
-		   width:100%;
-		    float: left;
-		   @include devicebreak(x-large){
-		
-            width: 35%;
-           
-        }}
+            width: 100%;
+            float: left;
+
+            @include devicebreak(x-large) {
+                width: 35%;
+            }
+        }
     }
 }
 
