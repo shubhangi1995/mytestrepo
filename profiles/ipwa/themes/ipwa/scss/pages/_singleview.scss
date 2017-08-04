@@ -2,7 +2,7 @@
     //padding-top: 20px;
     //padding-bottom: 40px;
     display: inline-block;
-    margin: 60px 0 40px;
+    margin: 50px 0 40px;
     width: 100%;
 
     .field-label {
@@ -35,16 +35,16 @@
             color: $main-color;
             display: inline-block;
             width: 80%;
-			
-			&:hover{
-			  border-bottom:1px solid $active-menu;
-			}
+
+            &:hover {
+                border-bottom: 1px solid $active-menu;
+            }
         }
 
         img {
             float: left;
-            width: 33px;
-            height: 33px;
+            width: 30px;
+            height: 30px;
             margin-right: 10px;
         }
     }
@@ -430,13 +430,11 @@
 
         iframe {
             width: 100%;
-            height:auto;
-			
-			@include devicebreak(x-medium){
-			 height:489px;
-			}
-            
-       
+            height: auto;
+
+            @include devicebreak(x-medium) {
+                height: 489px;
+            }
         }
     }
 
@@ -805,7 +803,8 @@
 
             @include devicebreak(x-medium) {
                 padding: 30px;
-            }          
+            }
+
 
             @include devicebreak(x-large) {
                 width: 66.66%;
@@ -851,12 +850,13 @@
                 @include devicebreak(large) {
                     width: 50%;
                     float: left;
-					padding-right:0;
-                    
+                    padding-right: 0;
                 }
-				@include devicebreak(x-large){
-				    padding:0 10px;
-				}
+
+
+                @include devicebreak(x-large) {
+                    padding: 0 10px;
+                }
 
 
                 .view-sub-wrapper {
@@ -867,7 +867,7 @@
             .inner-wrapper, > .view-latest-content-doorpage {
                 .view-content .views-row a {
                     text-decoration: none;
-					color:inherit !important;
+                    color: inherit !important;
 
                     &:focus {
                         outline: 1px dotted $main-color !important;
@@ -943,7 +943,6 @@
             padding: 15px;
 
             @include devicebreak(x-medium) {
-			   
                 width: 50%;
                 float: left;
                 padding: 30px;
@@ -977,7 +976,7 @@
 
                 .view-content .views-row a {
                     text-decoration: none;
-					color:inherit !important;
+                    color: inherit !important;
 
                     &:focus {
                         outline: 1px dotted $main-color !important;
