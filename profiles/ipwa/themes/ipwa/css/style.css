@@ -8316,18 +8316,24 @@ h1 {
         .view-neueste-informationen .view-sub-wrapper > .view-content .views-row > a .row-container .views-field-title .field-content, .view-termin .view-sub-wrapper > .view-content .views-row > a .row-container .views-field-title .field-content, .view-aktuelles .view-sub-wrapper > .view-content .views-row > a .row-container .views-field-title .field-content, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row > a .row-container .views-field-title .field-content, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row > a .row-container .views-field-title .field-content, .view-display-id-page_1 .view-sub-wrapper > .view-content .views-row > a .row-container .views-field-title .field-content {
           font-size: 22px;
           color: #273753; }
-      /* line 372, ../scss/pages/_common.scss */
+      /* line 371, ../scss/pages/_common.scss */
+      .view-neueste-informationen .view-sub-wrapper > .view-content .views-row > a .row-container .views-field-type, .view-termin .view-sub-wrapper > .view-content .views-row > a .row-container .views-field-type, .view-aktuelles .view-sub-wrapper > .view-content .views-row > a .row-container .views-field-type, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row > a .row-container .views-field-type, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row > a .row-container .views-field-type, .view-display-id-page_1 .view-sub-wrapper > .view-content .views-row > a .row-container .views-field-type {
+        padding-bottom: 20px;
+        font-weight: bold;
+        color: #e74712;
+        font-size: 22px; }
+      /* line 379, ../scss/pages/_common.scss */
       .view-neueste-informationen .view-sub-wrapper > .view-content .views-row > a .row-container .views-field-field-ort .field-content, .view-neueste-informationen .view-sub-wrapper > .view-content .views-row > a .row-container div[class*='views-field-views-conditional-'] .field-content, .view-termin .view-sub-wrapper > .view-content .views-row > a .row-container .views-field-field-ort .field-content, .view-termin .view-sub-wrapper > .view-content .views-row > a .row-container div[class*='views-field-views-conditional-'] .field-content, .view-aktuelles .view-sub-wrapper > .view-content .views-row > a .row-container .views-field-field-ort .field-content, .view-aktuelles .view-sub-wrapper > .view-content .views-row > a .row-container div[class*='views-field-views-conditional-'] .field-content, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row > a .row-container .views-field-field-ort .field-content, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row > a .row-container div[class*='views-field-views-conditional-'] .field-content, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row > a .row-container .views-field-field-ort .field-content, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row > a .row-container div[class*='views-field-views-conditional-'] .field-content, .view-display-id-page_1 .view-sub-wrapper > .view-content .views-row > a .row-container .views-field-field-ort .field-content, .view-display-id-page_1 .view-sub-wrapper > .view-content .views-row > a .row-container div[class*='views-field-views-conditional-'] .field-content {
         font-size: 20px;
         color: #949d9e;
         /* Tablet design */ }
         @media (min-width: 520px) {
-          /* line 372, ../scss/pages/_common.scss */
+          /* line 379, ../scss/pages/_common.scss */
           .view-neueste-informationen .view-sub-wrapper > .view-content .views-row > a .row-container .views-field-field-ort .field-content, .view-neueste-informationen .view-sub-wrapper > .view-content .views-row > a .row-container div[class*='views-field-views-conditional-'] .field-content, .view-termin .view-sub-wrapper > .view-content .views-row > a .row-container .views-field-field-ort .field-content, .view-termin .view-sub-wrapper > .view-content .views-row > a .row-container div[class*='views-field-views-conditional-'] .field-content, .view-aktuelles .view-sub-wrapper > .view-content .views-row > a .row-container .views-field-field-ort .field-content, .view-aktuelles .view-sub-wrapper > .view-content .views-row > a .row-container div[class*='views-field-views-conditional-'] .field-content, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row > a .row-container .views-field-field-ort .field-content, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row > a .row-container div[class*='views-field-views-conditional-'] .field-content, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row > a .row-container .views-field-field-ort .field-content, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row > a .row-container div[class*='views-field-views-conditional-'] .field-content, .view-display-id-page_1 .view-sub-wrapper > .view-content .views-row > a .row-container .views-field-field-ort .field-content, .view-display-id-page_1 .view-sub-wrapper > .view-content .views-row > a .row-container div[class*='views-field-views-conditional-'] .field-content {
             position: absolute;
             bottom: 30px; } }
 
-/* line 391, ../scss/pages/_common.scss */
+/* line 398, ../scss/pages/_common.scss */
 .common-button, footer .region-footer .block-ipwa-newsletter .btn-default:before, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col .panel-col-first .inside .pane-paragraphs-item-field-quellenangabe a, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col .panel-col-last .view-right-front-map-teaser .views-row .views-field-view-node a, .front .view-termin .view-sub-wrapper .view-footer .link-outer-block .link-inner-block-1 a, .view-neueste-informationen .view-sub-wrapper .view-footer .link-outer-block .link-inner-block-1 a, .view-neueste-informationen .view-sub-wrapper .view-footer .link-outer-block .link-inner-block-2 a, .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items > .field-item .field-collection-view .content .field-name-field-quellenangabe a, .page-newsletter-confirm .col-sm-12 #edit-submit, .not-front .node-doorpage .view-alle-themen-teaser .view-sub-wrapper .view-footer a, .view-neueste-digital-projekte .view-sub-wrapper .view-footer a, .view-latest-content-doorpage > .view-sub-wrapper .left-block .view-footer a, .view-latest-content-doorpage > .view-sub-wrapper > .view-latest-content-doorpage .view-sub-wrapper .view-footer a, .field-name-field-link-zur-anmeldung a, .field-name-field-zur-website a, .view-id-related_content.view-display-id-block_3 .views-row .field-content a, .view-wahlen-sie-einen-themenbereich .view-content .views-row .views-field-name-1 a, .view-map-teaser .view-sub-wrapper .view-content .views-row .row-container .views-field-field-quellenangabe a {
   font-size: 20px;
   text-decoration: none;
@@ -8335,7 +8341,7 @@ h1 {
   padding-bottom: 4px;
   border-bottom: 2px solid #949d9e;
   position: relative; }
-  /* line 399, ../scss/pages/_common.scss */
+  /* line 406, ../scss/pages/_common.scss */
   .common-button:before, footer .region-footer .block-ipwa-newsletter .btn-default:before, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col .panel-col-first .inside .pane-paragraphs-item-field-quellenangabe a:before, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col .panel-col-last .view-right-front-map-teaser .views-row .views-field-view-node a:before, .front .view-termin .view-sub-wrapper .view-footer .link-outer-block .link-inner-block-1 a:before, .view-neueste-informationen .view-sub-wrapper .view-footer .link-outer-block .link-inner-block-1 a:before, .view-neueste-informationen .view-sub-wrapper .view-footer .link-outer-block .link-inner-block-2 a:before, .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items > .field-item .field-collection-view .content .field-name-field-quellenangabe a:before, .page-newsletter-confirm .col-sm-12 #edit-submit:before, .not-front .node-doorpage .view-alle-themen-teaser .view-sub-wrapper .view-footer a:before, .view-neueste-digital-projekte .view-sub-wrapper .view-footer a:before, .view-latest-content-doorpage > .view-sub-wrapper .left-block .view-footer a:before, .view-latest-content-doorpage > .view-sub-wrapper > .view-latest-content-doorpage .view-sub-wrapper .view-footer a:before, .field-name-field-link-zur-anmeldung a:before, .field-name-field-zur-website a:before, .view-id-related_content.view-display-id-block_3 .views-row .field-content a:before, .view-wahlen-sie-einen-themenbereich .view-content .views-row .views-field-name-1 a:before, .view-map-teaser .view-sub-wrapper .view-content .views-row .row-container .views-field-field-quellenangabe a:before {
     font-family: "icomoon";
     content: "\e93f";
@@ -8345,62 +8351,62 @@ h1 {
     left: -30px;
     top: 6px;
     display: inline-block; }
-  /* line 410, ../scss/pages/_common.scss */
+  /* line 417, ../scss/pages/_common.scss */
   .common-button:hover, footer .region-footer .block-ipwa-newsletter .btn-default:hover:before, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col .panel-col-first .inside .pane-paragraphs-item-field-quellenangabe a:hover, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col .panel-col-last .view-right-front-map-teaser .views-row .views-field-view-node a:hover, .front .view-termin .view-sub-wrapper .view-footer .link-outer-block .link-inner-block-1 a:hover, .view-neueste-informationen .view-sub-wrapper .view-footer .link-outer-block .link-inner-block-1 a:hover, .view-neueste-informationen .view-sub-wrapper .view-footer .link-outer-block .link-inner-block-2 a:hover, .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items > .field-item .field-collection-view .content .field-name-field-quellenangabe a:hover, .page-newsletter-confirm .col-sm-12 #edit-submit:hover, .not-front .node-doorpage .view-alle-themen-teaser .view-sub-wrapper .view-footer a:hover, .view-neueste-digital-projekte .view-sub-wrapper .view-footer a:hover, .view-latest-content-doorpage > .view-sub-wrapper .left-block .view-footer a:hover, .view-latest-content-doorpage > .view-sub-wrapper > .view-latest-content-doorpage .view-sub-wrapper .view-footer a:hover, .field-name-field-link-zur-anmeldung a:hover, .field-name-field-zur-website a:hover, .view-id-related_content.view-display-id-block_3 .views-row .field-content a:hover, .view-wahlen-sie-einen-themenbereich .view-content .views-row .views-field-name-1 a:hover, .view-map-teaser .view-sub-wrapper .view-content .views-row .row-container .views-field-field-quellenangabe a:hover {
     border-color: #e74712; }
 
-/* line 418, ../scss/pages/_common.scss */
+/* line 425, ../scss/pages/_common.scss */
 .node-type-webform .node-webform {
   width: 100%;
   padding: 15px;
   /* Desktop design */ }
   @media (min-width: 960px) {
-    /* line 418, ../scss/pages/_common.scss */
+    /* line 425, ../scss/pages/_common.scss */
     .node-type-webform .node-webform {
       width: 765px;
       margin: 0 auto; } }
-  /* line 428, ../scss/pages/_common.scss */
+  /* line 435, ../scss/pages/_common.scss */
   .node-type-webform .node-webform .field-name-field-untertitel {
     color: #e74712;
     font-size: 26px;
     padding: 30px 0; }
-  /* line 435, ../scss/pages/_common.scss */
+  /* line 442, ../scss/pages/_common.scss */
   .node-type-webform .node-webform .field-name-field-pflichtfeldhinweis h3 {
     font-size: 20px;
     color: #e74712; }
-  /* line 441, ../scss/pages/_common.scss */
+  /* line 448, ../scss/pages/_common.scss */
   .node-type-webform .node-webform .webform-client-form {
     padding-top: 40px;
     width: 100%;
     /* Tablet design */ }
     @media (min-width: 520px) {
-      /* line 441, ../scss/pages/_common.scss */
+      /* line 448, ../scss/pages/_common.scss */
       .node-type-webform .node-webform .webform-client-form {
         width: 65%; } }
-    /* line 450, ../scss/pages/_common.scss */
+    /* line 457, ../scss/pages/_common.scss */
     .node-type-webform .node-webform .webform-client-form .webform-component-fieldset {
       border: none;
       border-radius: 0;
       box-shadow: none; }
-      /* line 455, ../scss/pages/_common.scss */
+      /* line 462, ../scss/pages/_common.scss */
       .node-type-webform .node-webform .webform-client-form .webform-component-fieldset .panel-heading {
         display: none; }
-      /* line 459, ../scss/pages/_common.scss */
+      /* line 466, ../scss/pages/_common.scss */
       .node-type-webform .node-webform .webform-client-form .webform-component-fieldset .panel-body {
         padding: 0; }
-        /* line 462, ../scss/pages/_common.scss */
+        /* line 469, ../scss/pages/_common.scss */
         .node-type-webform .node-webform .webform-client-form .webform-component-fieldset .panel-body .form-group {
           margin-bottom: 40px; }
-          /* line 465, ../scss/pages/_common.scss */
+          /* line 472, ../scss/pages/_common.scss */
           .node-type-webform .node-webform .webform-client-form .webform-component-fieldset .panel-body .form-group:nth-last-child(2) {
             margin-bottom: 20px; }
-          /* line 469, ../scss/pages/_common.scss */
+          /* line 476, ../scss/pages/_common.scss */
           .node-type-webform .node-webform .webform-client-form .webform-component-fieldset .panel-body .form-group label {
             font-size: 15px; }
-            /* line 472, ../scss/pages/_common.scss */
+            /* line 479, ../scss/pages/_common.scss */
             .node-type-webform .node-webform .webform-client-form .webform-component-fieldset .panel-body .form-group label .form-required {
               color: #e74712; }
-          /* line 477, ../scss/pages/_common.scss */
+          /* line 484, ../scss/pages/_common.scss */
           .node-type-webform .node-webform .webform-client-form .webform-component-fieldset .panel-body .form-group .form-control {
             height: 42px;
             border-bottom-color: #bfcbd5;
@@ -8409,14 +8415,14 @@ h1 {
             border-top-color: #cfd8df;
             box-shadow: 0 -1px 1px 0 #eff2f4;
             border-radius: 3px; }
-          /* line 488, ../scss/pages/_common.scss */
+          /* line 495, ../scss/pages/_common.scss */
           .node-type-webform .node-webform .webform-client-form .webform-component-fieldset .panel-body .form-group p a {
             text-decoration: none;
             color: #e74712; }
-          /* line 494, ../scss/pages/_common.scss */
+          /* line 501, ../scss/pages/_common.scss */
           .node-type-webform .node-webform .webform-client-form .webform-component-fieldset .panel-body .form-group:nth-last-child(3) .form-control {
             height: auto; }
-    /* line 501, ../scss/pages/_common.scss */
+    /* line 508, ../scss/pages/_common.scss */
     .node-type-webform .node-webform .webform-client-form .webform-submit {
       background: #e74712;
       color: #ffffff;
@@ -8426,7 +8432,7 @@ h1 {
       cursor: pointer;
       position: relative;
       font-size: 20px; }
-      /* line 511, ../scss/pages/_common.scss */
+      /* line 518, ../scss/pages/_common.scss */
       .node-type-webform .node-webform .webform-client-form .webform-submit:before {
         font-family: "icomoon";
         content: "\e93f";
@@ -8435,66 +8441,66 @@ h1 {
         position: absolute;
         left: 15px;
         top: 14px; }
-    /* line 522, ../scss/pages/_common.scss */
+    /* line 529, ../scss/pages/_common.scss */
     .node-type-webform .node-webform .webform-client-form #edit-submitted-kontakdaten-datenschutz, .node-type-webform .node-webform .webform-client-form #edit-submitted-kontakt-datenschutz {
       float: left; }
-  /* line 527, ../scss/pages/_common.scss */
+  /* line 534, ../scss/pages/_common.scss */
   .node-type-webform .node-webform input[type="radio"] {
     margin: 2px 0 0;
     left: 0;
     /* Tablet design */ }
     @media (min-width: 520px) {
-      /* line 527, ../scss/pages/_common.scss */
+      /* line 534, ../scss/pages/_common.scss */
       .node-type-webform .node-webform input[type="radio"] {
         margin: 3px 0 0; } }
-  /* line 536, ../scss/pages/_common.scss */
+  /* line 543, ../scss/pages/_common.scss */
   .node-type-webform .node-webform input[type="checkbox"] {
     margin: 8px 0 0;
     left: 0;
     /* Tablet design */ }
     @media (min-width: 520px) {
-      /* line 536, ../scss/pages/_common.scss */
+      /* line 543, ../scss/pages/_common.scss */
       .node-type-webform .node-webform input[type="checkbox"] {
         margin: 4px 0 0; } }
 
-/* line 549, ../scss/pages/_common.scss */
+/* line 556, ../scss/pages/_common.scss */
 input[type=text]::-ms-clear {
   display: none; }
 
-/* line 557, ../scss/pages/_common.scss */
+/* line 564, ../scss/pages/_common.scss */
 .page-node-67 article > .group-page-info {
   max-width: 765px; }
 
-/* line 565, ../scss/pages/_common.scss */
+/* line 572, ../scss/pages/_common.scss */
 .page-user .page-header {
   border: 0; }
 
-/* line 578, ../scss/pages/_common.scss */
+/* line 585, ../scss/pages/_common.scss */
 .page-calendar {
   /* .view-map-teaser{
     margin-bottom:30px;
     overflow:hidden;
   } */ }
-  /* line 583, ../scss/pages/_common.scss */
+  /* line 590, ../scss/pages/_common.scss */
   .page-calendar .view-content {
     margin: 40px 0; }
-    /* line 586, ../scss/pages/_common.scss */
+    /* line 593, ../scss/pages/_common.scss */
     .page-calendar .view-content .calendar-calendar {
       overflow: scroll;
       /* Tablet design */ }
       @media (min-width: 767px) {
-        /* line 586, ../scss/pages/_common.scss */
+        /* line 593, ../scss/pages/_common.scss */
         .page-calendar .view-content .calendar-calendar {
           overflow: inherit; } }
-      /* line 594, ../scss/pages/_common.scss */
+      /* line 601, ../scss/pages/_common.scss */
       .page-calendar .view-content .calendar-calendar .month-view {
         width: 900px;
         /* Tablet design */ }
         @media (min-width: 767px) {
-          /* line 594, ../scss/pages/_common.scss */
+          /* line 601, ../scss/pages/_common.scss */
           .page-calendar .view-content .calendar-calendar .month-view {
             width: auto; } }
-      /* line 602, ../scss/pages/_common.scss */
+      /* line 609, ../scss/pages/_common.scss */
       .page-calendar .view-content .calendar-calendar .inner {
         display: table-cell;
         vertical-align: bottom;
@@ -8502,18 +8508,18 @@ input[type=text]::-ms-clear {
         padding: 10px;
         height: 155px !important;
         min-height: 155px; }
-        /* line 610, ../scss/pages/_common.scss */
+        /* line 617, ../scss/pages/_common.scss */
         .page-calendar .view-content .calendar-calendar .inner .item {
           float: right;
           line-height: 26px; }
-          /* line 615, ../scss/pages/_common.scss */
+          /* line 622, ../scss/pages/_common.scss */
           .page-calendar .view-content .calendar-calendar .inner .item .calendar {
             background: none;
             overflow: visible; }
-            /* line 619, ../scss/pages/_common.scss */
+            /* line 626, ../scss/pages/_common.scss */
             .page-calendar .view-content .calendar-calendar .inner .item .calendar span {
               position: relative; }
-              /* line 622, ../scss/pages/_common.scss */
+              /* line 629, ../scss/pages/_common.scss */
               .page-calendar .view-content .calendar-calendar .inner .item .calendar span a {
                 font-size: 0;
                 text-decoration: none;
@@ -8524,10 +8530,10 @@ input[type=text]::-ms-clear {
                    display:block;  
                  }
                 } */ }
-                /* line 628, ../scss/pages/_common.scss */
+                /* line 635, ../scss/pages/_common.scss */
                 .page-calendar .view-content .calendar-calendar .inner .item .calendar span a div {
                   display: none; }
-                /* line 632, ../scss/pages/_common.scss */
+                /* line 639, ../scss/pages/_common.scss */
                 .page-calendar .view-content .calendar-calendar .inner .item .calendar span a.single {
                   border: 2px solid #e74712 !important;
                   border-radius: 50%;
@@ -8535,17 +8541,17 @@ input[type=text]::-ms-clear {
                   height: 25px;
                   width: 25px;
                   margin: 0 4px; }
-                  /* line 640, ../scss/pages/_common.scss */
+                  /* line 647, ../scss/pages/_common.scss */
                   .page-calendar .view-content .calendar-calendar .inner .item .calendar span a.single + .views-row {
                     top: 40px; }
-                /* line 646, ../scss/pages/_common.scss */
+                /* line 653, ../scss/pages/_common.scss */
                 .page-calendar .view-content .calendar-calendar .inner .item .calendar span a.recurring::before {
                   color: #e74712;
                   content: "\e94d";
                   font-family: "icomoon";
                   font-size: 25px;
                   font-weight: normal; }
-                /* line 655, ../scss/pages/_common.scss */
+                /* line 662, ../scss/pages/_common.scss */
                 .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row {
                   position: absolute;
                   display: none;
@@ -8555,10 +8561,10 @@ input[type=text]::-ms-clear {
                   left: -39px;
                   top: 30px; }
                   @media (min-width: 767px) {
-                    /* line 655, ../scss/pages/_common.scss */
+                    /* line 662, ../scss/pages/_common.scss */
                     .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row {
                       width: 370px; } }
-                  /* line 671, ../scss/pages/_common.scss */
+                  /* line 678, ../scss/pages/_common.scss */
                   .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row > .row-container {
                     background: #eff2f7;
                     padding: 30px;
@@ -8569,44 +8575,44 @@ input[type=text]::-ms-clear {
                     transition: all 0.5s ease;
                     height: auto;
                     /* Tablet design */ }
-                    /* line 686, ../scss/pages/_common.scss */
+                    /* line 693, ../scss/pages/_common.scss */
                     .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row > .row-container.project-blue {
                       background: #273753; }
-                      /* line 689, ../scss/pages/_common.scss */
+                      /* line 696, ../scss/pages/_common.scss */
                       .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row > .row-container.project-blue .views-field-title a {
                         color: #ffffff; }
-                      /* line 694, ../scss/pages/_common.scss */
+                      /* line 701, ../scss/pages/_common.scss */
                       .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row > .row-container.project-blue:hover .views-field-title a {
                         color: #273753; }
-                    /* line 705, ../scss/pages/_common.scss */
+                    /* line 712, ../scss/pages/_common.scss */
                     .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row > .row-container .views-field-field-themenzuweisung {
                       padding-bottom: 30px; }
-                      /* line 708, ../scss/pages/_common.scss */
+                      /* line 715, ../scss/pages/_common.scss */
                       .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row > .row-container .views-field-field-themenzuweisung img {
                         display: inline-block;
                         margin-right: 10px; }
-                    /* line 714, ../scss/pages/_common.scss */
+                    /* line 721, ../scss/pages/_common.scss */
                     .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row > .row-container .views-field-field-event-datum {
                       padding-bottom: 20px;
                       font-weight: bold;
                       color: #e74712;
                       font-size: 22px; }
-                    /* line 721, ../scss/pages/_common.scss */
+                    /* line 728, ../scss/pages/_common.scss */
                     .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row > .row-container .views-field-title {
                       padding-bottom: 20px; }
-                      /* line 724, ../scss/pages/_common.scss */
+                      /* line 731, ../scss/pages/_common.scss */
                       .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row > .row-container .views-field-title a {
                         text-decoration: none;
                         font-size: 22px;
                         color: #273753; }
-                    /* line 732, ../scss/pages/_common.scss */
+                    /* line 739, ../scss/pages/_common.scss */
                     .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row > .row-container .views-field-field-ort .field-content, .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row > .row-container div[class*='views-field-views-conditional-'] .field-content {
                       font-size: 20px;
                       color: #949d9e; }
-                    /* line 742, ../scss/pages/_common.scss */
+                    /* line 749, ../scss/pages/_common.scss */
                     .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row > .row-container .pop-up {
                       display: block !important; }
-                  /* line 747, ../scss/pages/_common.scss */
+                  /* line 754, ../scss/pages/_common.scss */
                   .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row::before, .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row::after {
                     border-color: transparent transparent #eff2f7;
                     border-style: solid;
@@ -8618,34 +8624,34 @@ input[type=text]::-ms-clear {
                     left: 42px;
                     width: 0;
                     z-index: 9; }
-                  /* line 760, ../scss/pages/_common.scss */
+                  /* line 767, ../scss/pages/_common.scss */
                   .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row::after {
                     border-bottom-color: #dbdfe3;
                     top: -24px;
                     z-index: 8; }
-                  /* line 766, ../scss/pages/_common.scss */
+                  /* line 773, ../scss/pages/_common.scss */
                   .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row.rightBorder {
                     left: auto;
                     right: -31px; }
-                    /* line 770, ../scss/pages/_common.scss */
+                    /* line 777, ../scss/pages/_common.scss */
                     .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row.rightBorder::before, .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row.rightBorder::after {
                       left: auto;
                       right: 35px; }
-              /* line 786, ../scss/pages/_common.scss */
+              /* line 793, ../scss/pages/_common.scss */
               .page-calendar .view-content .calendar-calendar .inner .item .calendar span:hover a + .views-row {
                 display: none;
                 /* Tablet design */ }
                 @media (min-width: 767px) {
-                  /* line 786, ../scss/pages/_common.scss */
+                  /* line 793, ../scss/pages/_common.scss */
                   .page-calendar .view-content .calendar-calendar .inner .item .calendar span:hover a + .views-row {
                     display: block; } }
-      /* line 799, ../scss/pages/_common.scss */
+      /* line 806, ../scss/pages/_common.scss */
       .page-calendar .view-content .calendar-calendar table {
         border-collapse: inherit; }
-        /* line 803, ../scss/pages/_common.scss */
+        /* line 810, ../scss/pages/_common.scss */
         .page-calendar .view-content .calendar-calendar table thead th {
           position: relative; }
-          /* line 806, ../scss/pages/_common.scss */
+          /* line 813, ../scss/pages/_common.scss */
           .page-calendar .view-content .calendar-calendar table thead th::before {
             background: #e74712;
             bottom: 12px;
@@ -8654,33 +8660,33 @@ input[type=text]::-ms-clear {
             position: absolute;
             left: 0;
             right: 0; }
-        /* line 819, ../scss/pages/_common.scss */
+        /* line 826, ../scss/pages/_common.scss */
         .page-calendar .view-content .calendar-calendar table thead tr {
           background: none; }
-          /* line 822, ../scss/pages/_common.scss */
+          /* line 829, ../scss/pages/_common.scss */
           .page-calendar .view-content .calendar-calendar table thead tr th {
             background: none;
             border: none;
             font-weight: normal;
             text-align: right;
             padding-bottom: 25px; }
-        /* line 837, ../scss/pages/_common.scss */
+        /* line 844, ../scss/pages/_common.scss */
         .page-calendar .view-content .calendar-calendar table tbody tr td {
           border: 5px solid #eff2f7; }
-          /* line 840, ../scss/pages/_common.scss */
+          /* line 847, ../scss/pages/_common.scss */
           .page-calendar .view-content .calendar-calendar table tbody tr td:first-child {
             border-left-width: 0; }
-          /* line 844, ../scss/pages/_common.scss */
+          /* line 851, ../scss/pages/_common.scss */
           .page-calendar .view-content .calendar-calendar table tbody tr td:last-child {
             border-right-width: 0; }
-        /* line 860, ../scss/pages/_common.scss */
+        /* line 867, ../scss/pages/_common.scss */
         .page-calendar .view-content .calendar-calendar table tr td.today {
           border-color: #e74712 !important; }
-        /* line 864, ../scss/pages/_common.scss */
+        /* line 871, ../scss/pages/_common.scss */
         .page-calendar .view-content .calendar-calendar table tr td.greyHover {
           background: #eff2f7;
           position: relative; }
-          /* line 870, ../scss/pages/_common.scss */
+          /* line 877, ../scss/pages/_common.scss */
           .page-calendar .view-content .calendar-calendar table tr td.greyHover::after {
             border: 1px solid #dbdfe3;
             bottom: -1px;
@@ -8689,11 +8695,11 @@ input[type=text]::-ms-clear {
             position: absolute;
             right: -1px;
             top: -1px; }
-        /* line 881, ../scss/pages/_common.scss */
+        /* line 888, ../scss/pages/_common.scss */
         .page-calendar .view-content .calendar-calendar table tr td.redHover {
           background: #fdede7;
           position: relative; }
-          /* line 885, ../scss/pages/_common.scss */
+          /* line 892, ../scss/pages/_common.scss */
           .page-calendar .view-content .calendar-calendar table tr td.redHover::after {
             border: 1px solid #e74712;
             bottom: -1px;
@@ -8702,105 +8708,105 @@ input[type=text]::-ms-clear {
             position: absolute;
             right: -1px;
             top: -1px; }
-        /* line 900, ../scss/pages/_common.scss */
+        /* line 907, ../scss/pages/_common.scss */
         .page-calendar .view-content .calendar-calendar table tr.date-box td.greyHover::after {
           border-bottom: none; }
-        /* line 906, ../scss/pages/_common.scss */
+        /* line 913, ../scss/pages/_common.scss */
         .page-calendar .view-content .calendar-calendar table tr.date-box td.redHover::after {
           border-bottom: none; }
-        /* line 916, ../scss/pages/_common.scss */
+        /* line 923, ../scss/pages/_common.scss */
         .page-calendar .view-content .calendar-calendar table tr.single-day td.greyHover::after {
           border-top: none; }
-        /* line 922, ../scss/pages/_common.scss */
+        /* line 929, ../scss/pages/_common.scss */
         .page-calendar .view-content .calendar-calendar table tr.single-day td.redHover::after {
           border-top: none; }
-        /* line 928, ../scss/pages/_common.scss */
+        /* line 935, ../scss/pages/_common.scss */
         .page-calendar .view-content .calendar-calendar table tr.single-day .no-entry .inner {
           min-height: 155px;
           height: 155px !important; }
-      /* line 937, ../scss/pages/_common.scss */
+      /* line 944, ../scss/pages/_common.scss */
       .page-calendar .view-content .calendar-calendar .date-box .inner {
         min-height: inherit;
         height: auto !important;
         display: inline-block; }
-  /* line 946, ../scss/pages/_common.scss */
+  /* line 953, ../scss/pages/_common.scss */
   .page-calendar .view-event-on-calendar {
     display: none; }
-  /* line 950, ../scss/pages/_common.scss */
+  /* line 957, ../scss/pages/_common.scss */
   .page-calendar .date-views-pager {
     float: left;
     width: 100%;
     /* Over Desktop design */ }
     @media (min-width: 1025px) {
-      /* line 950, ../scss/pages/_common.scss */
+      /* line 957, ../scss/pages/_common.scss */
       .page-calendar .date-views-pager {
         width: 60%; } }
-    /* line 959, ../scss/pages/_common.scss */
+    /* line 966, ../scss/pages/_common.scss */
     .page-calendar .date-views-pager .pull-right {
       float: none !important;
       margin: 0 auto;
       display: table;
       /* Over Desktop design */ }
       @media (min-width: 1025px) {
-        /* line 959, ../scss/pages/_common.scss */
+        /* line 966, ../scss/pages/_common.scss */
         .page-calendar .date-views-pager .pull-right {
           float: right !important;
           display: inline-block;
           margin: 20px 0; } }
-    /* line 972, ../scss/pages/_common.scss */
+    /* line 979, ../scss/pages/_common.scss */
     .page-calendar .date-views-pager .pagination .monthText {
       text-transform: capitalize;
       font-size: 22px;
       font-weight: bold; }
-    /* line 978, ../scss/pages/_common.scss */
+    /* line 985, ../scss/pages/_common.scss */
     .page-calendar .date-views-pager .pagination li {
       float: left;
       margin-right: 20px;
       /* Over Desktop design */ }
       @media (min-width: 1025px) {
-        /* line 978, ../scss/pages/_common.scss */
+        /* line 985, ../scss/pages/_common.scss */
         .page-calendar .date-views-pager .pagination li {
           margin-right: 50px; } }
-      /* line 987, ../scss/pages/_common.scss */
+      /* line 994, ../scss/pages/_common.scss */
       .page-calendar .date-views-pager .pagination li:last-child {
         margin-right: 0; }
-      /* line 991, ../scss/pages/_common.scss */
+      /* line 998, ../scss/pages/_common.scss */
       .page-calendar .date-views-pager .pagination li a {
         font-size: 0;
         padding: 3px 12px;
         color: #273753;
         background: none;
         border: none; }
-        /* line 999, ../scss/pages/_common.scss */
+        /* line 1006, ../scss/pages/_common.scss */
         .page-calendar .date-views-pager .pagination li a::before {
           font-family: "icomoon";
           font-size: 18px; }
-      /* line 1007, ../scss/pages/_common.scss */
+      /* line 1014, ../scss/pages/_common.scss */
       .page-calendar .date-views-pager .pagination li.prev a::before {
         content: "\e901"; }
-      /* line 1015, ../scss/pages/_common.scss */
+      /* line 1022, ../scss/pages/_common.scss */
       .page-calendar .date-views-pager .pagination li.next a::before {
         content: "\e902"; }
-    /* line 1023, ../scss/pages/_common.scss */
+    /* line 1030, ../scss/pages/_common.scss */
     .page-calendar .date-views-pager h3 {
       display: none; }
 
-/* line 1036, ../scss/pages/_common.scss */
+/* line 1043, ../scss/pages/_common.scss */
 .page-calendar .page-header {
   padding-left: 30px; }
-/* line 1041, ../scss/pages/_common.scss */
+/* line 1048, ../scss/pages/_common.scss */
 .page-calendar .view-event-calendar > .view-sub-wrapper {
   padding: 0; }
 
-/* line 1048, ../scss/pages/_common.scss */
+/* line 1055, ../scss/pages/_common.scss */
 .page-termine .view-header {
   padding-left: 0; }
 
-/* line 1054, ../scss/pages/_common.scss */
+/* line 1061, ../scss/pages/_common.scss */
 .page-calendar .page-header, .page-termine .page-header {
   position: relative;
   /* Over Desktop design */ }
-  /* line 1057, ../scss/pages/_common.scss */
+  /* line 1064, ../scss/pages/_common.scss */
   .page-calendar .page-header::before, .page-termine .page-header::before {
     content: "\e941";
     font-family: "icomoon";
@@ -8808,67 +8814,67 @@ input[type=text]::-ms-clear {
     font-size: 120px;
     margin-bottom: 30px; }
   @media (min-width: 1025px) {
-    /* line 1054, ../scss/pages/_common.scss */
+    /* line 1061, ../scss/pages/_common.scss */
     .page-calendar .page-header, .page-termine .page-header {
       padding-left: 85px; }
-      /* line 1068, ../scss/pages/_common.scss */
+      /* line 1075, ../scss/pages/_common.scss */
       .page-calendar .page-header::before, .page-termine .page-header::before {
         left: -100px;
         top: 40px;
         position: absolute;
         margin-bottom: 0; } }
-/* line 1078, ../scss/pages/_common.scss */
+/* line 1085, ../scss/pages/_common.scss */
 .page-calendar .main-container .view-header, .page-termine .main-container .view-header {
   /* Over Desktop design */ }
   @media (min-width: 1025px) {
-    /* line 1078, ../scss/pages/_common.scss */
+    /* line 1085, ../scss/pages/_common.scss */
     .page-calendar .main-container .view-header, .page-termine .main-container .view-header {
       padding-left: 90px; } }
-/* line 1085, ../scss/pages/_common.scss */
+/* line 1092, ../scss/pages/_common.scss */
 .page-calendar #block-ipwa-newsletter-newsletter-subscription-block, .page-termine #block-ipwa-newsletter-newsletter-subscription-block {
   margin-top: 25px; }
 
-/* line 1091, ../scss/pages/_common.scss */
+/* line 1098, ../scss/pages/_common.scss */
 .page-node-67 .page-title {
   padding-bottom: 30px; }
 
-/* line 1096, ../scss/pages/_common.scss */
+/* line 1103, ../scss/pages/_common.scss */
 .page-aktuelles #block-ipwa-newsletter-newsletter-subscription-block, .node-type-doorpage #block-ipwa-newsletter-newsletter-subscription-block {
   margin-top: 25px; }
 
-/* line 1108, ../scss/pages/_common.scss */
+/* line 1115, ../scss/pages/_common.scss */
 .page-newsletter-confirm .col-sm-12 .page-header {
   padding-bottom: 10px; }
-/* line 1112, ../scss/pages/_common.scss */
+/* line 1119, ../scss/pages/_common.scss */
 .page-newsletter-confirm .col-sm-12 #edit-submit {
   border: none;
   margin-left: 20px; }
-  /* line 1118, ../scss/pages/_common.scss */
+  /* line 1125, ../scss/pages/_common.scss */
   .page-newsletter-confirm .col-sm-12 #edit-submit::before {
     top: 10px;
     left: -12px; }
-  /* line 1123, ../scss/pages/_common.scss */
+  /* line 1130, ../scss/pages/_common.scss */
   .page-newsletter-confirm .col-sm-12 #edit-submit:hover {
     background: none; }
-/* line 1128, ../scss/pages/_common.scss */
+/* line 1135, ../scss/pages/_common.scss */
 .page-newsletter-confirm .col-sm-12 #edit-cancel {
   font-size: 17px;
   color: #e74712;
   position: relative;
   top: 3px; }
-/* line 1135, ../scss/pages/_common.scss */
+/* line 1142, ../scss/pages/_common.scss */
 .page-newsletter-confirm .col-sm-12 p {
   font-size: 18px; }
 
-/* line 1146, ../scss/pages/_common.scss */
+/* line 1153, ../scss/pages/_common.scss */
 .page-node-done .page-header {
   padding-bottom: 10px; }
-/* line 1150, ../scss/pages/_common.scss */
+/* line 1157, ../scss/pages/_common.scss */
 .page-node-done .links a {
   font-size: 17px;
   color: #e74712; }
 
-/* line 1157, ../scss/pages/_common.scss */
+/* line 1164, ../scss/pages/_common.scss */
 #backtotop {
   background: #e74712;
   bottom: 20px;
@@ -8880,7 +8886,7 @@ input[type=text]::-ms-clear {
   width: 50px;
   border-radius: 25px;
   text-indent: 0; }
-  /* line 1169, ../scss/pages/_common.scss */
+  /* line 1176, ../scss/pages/_common.scss */
   #backtotop::before {
     font-family: "icomoon";
     content: "\e950";
@@ -8891,33 +8897,33 @@ input[type=text]::-ms-clear {
     top: 16px;
     left: 17px; }
 
-/* line 1181, ../scss/pages/_common.scss */
+/* line 1188, ../scss/pages/_common.scss */
 .group-page-info {
   position: relative; }
-  /* line 1183, ../scss/pages/_common.scss */
+  /* line 1190, ../scss/pages/_common.scss */
   .group-page-info .main_content_blocks {
     /* Over Desktop design */ }
     @media (min-width: 1025px) {
-      /* line 1183, ../scss/pages/_common.scss */
+      /* line 1190, ../scss/pages/_common.scss */
       .group-page-info .main_content_blocks {
         position: absolute;
         left: -70px;
         top: 115px; } }
-    /* line 1192, ../scss/pages/_common.scss */
+    /* line 1199, ../scss/pages/_common.scss */
     .group-page-info .main_content_blocks section {
       display: inline-block;
       /* Over Desktop design */ }
       @media (min-width: 1025px) {
-        /* line 1192, ../scss/pages/_common.scss */
+        /* line 1199, ../scss/pages/_common.scss */
         .group-page-info .main_content_blocks section {
           display: block; } }
-    /* line 1203, ../scss/pages/_common.scss */
+    /* line 1210, ../scss/pages/_common.scss */
     .group-page-info .main_content_blocks #footer_print_icon #page_print {
       font-size: 0;
       border: 0;
       background: 0;
       padding-left: 0; }
-      /* line 1208, ../scss/pages/_common.scss */
+      /* line 1215, ../scss/pages/_common.scss */
       .group-page-info .main_content_blocks #footer_print_icon #page_print:before {
         font-family: "icomoon";
         content: "\e94c";
@@ -8927,7 +8933,7 @@ input[type=text]::-ms-clear {
         padding: 10px;
         padding-left: 0;
         cursor: pointer; }
-    /* line 1222, ../scss/pages/_common.scss */
+    /* line 1229, ../scss/pages/_common.scss */
     .group-page-info .main_content_blocks .block-addthis a:before {
       font-family: "icomoon";
       content: "\e94f";
@@ -8936,7 +8942,7 @@ input[type=text]::-ms-clear {
       display: inline-block;
       padding: 10px;
       padding-left: 0; }
-    /* line 1232, ../scss/pages/_common.scss */
+    /* line 1239, ../scss/pages/_common.scss */
     .group-page-info .main_content_blocks .block-addthis a img {
       display: none; }
 
@@ -10169,26 +10175,16 @@ input[type=text]::-ms-clear {
       .view-aktuelles > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .form-group .select2-container, .view-termin > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .form-group .select2-container, .view-search-list > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .form-group .select2-container, .view-event-calendar > .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .form-group .select2-container {
         display: none; }
 
-/* line 258, ../scss/pages/_listview.scss */
-.page-aktuelles .view-aktuelles .view-sub-wrapper .view-content .views-row .row-container .views-field-type {
-  padding-bottom: 20px;
-  font-weight: bold;
-  color: #e74712;
-  font-size: 22px; }
-/* line 266, ../scss/pages/_listview.scss */
-.page-aktuelles .view-aktuelles .view-sub-wrapper .view-content .views-row .row-container .views-field-field-datum .field-content {
-  position: absolute;
-  bottom: 30px;
-  font-size: 20px;
-  color: #949d9e; }
-/* line 277, ../scss/pages/_listview.scss */
-.page-aktuelles .view-aktuelles .view-filters .categories-filter {
+/* line 259, ../scss/pages/_listview.scss */
+.page-aktuelles .view-aktuelles
+.view-sub-wrapper .view-filters .categories-filter {
   clear: both;
   width: 100%;
   height: 49px;
   margin-top: 15px; }
-  /* line 283, ../scss/pages/_listview.scss */
-  .page-aktuelles .view-aktuelles .view-filters .categories-filter .views-exposed-widget {
+  /* line 265, ../scss/pages/_listview.scss */
+  .page-aktuelles .view-aktuelles
+  .view-sub-wrapper .view-filters .categories-filter .views-exposed-widget {
     position: relative;
     width: 100%;
     /* Tablet design */
@@ -10199,16 +10195,19 @@ input[type=text]::-ms-clear {
     background: #273753;
     border-right: 1px solid #949d9e; }
     @media (min-width: 767px) {
-      /* line 283, ../scss/pages/_listview.scss */
-      .page-aktuelles .view-aktuelles .view-filters .categories-filter .views-exposed-widget {
+      /* line 265, ../scss/pages/_listview.scss */
+      .page-aktuelles .view-aktuelles
+      .view-sub-wrapper .view-filters .categories-filter .views-exposed-widget {
         width: 50%; } }
     @media (min-width: 1025px) {
-      /* line 283, ../scss/pages/_listview.scss */
-      .page-aktuelles .view-aktuelles .view-filters .categories-filter .views-exposed-widget {
+      /* line 265, ../scss/pages/_listview.scss */
+      .page-aktuelles .view-aktuelles
+      .view-sub-wrapper .view-filters .categories-filter .views-exposed-widget {
         width: 25%;
         height: 49px; } }
-    /* line 298, ../scss/pages/_listview.scss */
-    .page-aktuelles .view-aktuelles .view-filters .categories-filter .views-exposed-widget:before {
+    /* line 280, ../scss/pages/_listview.scss */
+    .page-aktuelles .view-aktuelles
+    .view-sub-wrapper .view-filters .categories-filter .views-exposed-widget:before {
       content: "\f107";
       font-family: FontAwesome;
       color: #ffffff;
@@ -10217,49 +10216,56 @@ input[type=text]::-ms-clear {
       right: 25px;
       top: 50%;
       margin-top: -10px; }
-    /* line 309, ../scss/pages/_listview.scss */
-    .page-aktuelles .view-aktuelles .view-filters .categories-filter .views-exposed-widget.selColor {
+    /* line 291, ../scss/pages/_listview.scss */
+    .page-aktuelles .view-aktuelles
+    .view-sub-wrapper .view-filters .categories-filter .views-exposed-widget.selColor {
       background: #3c506e; }
-    /* line 319, ../scss/pages/_listview.scss */
-    .page-aktuelles .view-aktuelles .view-filters .categories-filter .views-exposed-widget .views-widget .form-item {
+    /* line 301, ../scss/pages/_listview.scss */
+    .page-aktuelles .view-aktuelles
+    .view-sub-wrapper .view-filters .categories-filter .views-exposed-widget .views-widget .form-item {
       padding: 0;
       position: relative;
       display: block; }
-      /* line 324, ../scss/pages/_listview.scss */
-      .page-aktuelles .view-aktuelles .view-filters .categories-filter .views-exposed-widget .views-widget .form-item .select2-container--default .select2-selection--single {
+      /* line 306, ../scss/pages/_listview.scss */
+      .page-aktuelles .view-aktuelles
+      .view-sub-wrapper .view-filters .categories-filter .views-exposed-widget .views-widget .form-item .select2-container--default .select2-selection--single {
         background: 0;
         border: 0;
         border-radius: 0; }
-        /* line 329, ../scss/pages/_listview.scss */
-        .page-aktuelles .view-aktuelles .view-filters .categories-filter .views-exposed-widget .views-widget .form-item .select2-container--default .select2-selection--single .select2-selection__rendered {
+        /* line 311, ../scss/pages/_listview.scss */
+        .page-aktuelles .view-aktuelles
+        .view-sub-wrapper .view-filters .categories-filter .views-exposed-widget .views-widget .form-item .select2-container--default .select2-selection--single .select2-selection__rendered {
           color: #ffffff;
           padding-left: 20px; }
-        /* line 334, ../scss/pages/_listview.scss */
-        .page-aktuelles .view-aktuelles .view-filters .categories-filter .views-exposed-widget .views-widget .form-item .select2-container--default .select2-selection--single .select2-selection__arrow {
+        /* line 316, ../scss/pages/_listview.scss */
+        .page-aktuelles .view-aktuelles
+        .view-sub-wrapper .view-filters .categories-filter .views-exposed-widget .views-widget .form-item .select2-container--default .select2-selection--single .select2-selection__arrow {
           display: none; }
-      /* line 339, ../scss/pages/_listview.scss */
-      .page-aktuelles .view-aktuelles .view-filters .categories-filter .views-exposed-widget .views-widget .form-item .select2-container + .select2-container {
+      /* line 321, ../scss/pages/_listview.scss */
+      .page-aktuelles .view-aktuelles
+      .view-sub-wrapper .view-filters .categories-filter .views-exposed-widget .views-widget .form-item .select2-container + .select2-container {
         top: 38px !important;
         left: 0px !important;
         position: absolute; }
-/* line 349, ../scss/pages/_listview.scss */
-.page-aktuelles .view-aktuelles .views-submit-button {
+/* line 331, ../scss/pages/_listview.scss */
+.page-aktuelles .view-aktuelles
+.view-sub-wrapper .views-submit-button {
   display: none; }
 
-/* line 359, ../scss/pages/_listview.scss */
+/* line 341, ../scss/pages/_listview.scss */
 .view-termin .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets #edit-term-node-tid-depth-wrapper, .view-event-calendar .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets #edit-term-node-tid-depth-wrapper {
   width: 100%;
   float: left;
   padding: 0;
   /* Desktop design */ }
   @media (min-width: 960px) {
-    /* line 359, ../scss/pages/_listview.scss */
+    /* line 341, ../scss/pages/_listview.scss */
     .view-termin .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets #edit-term-node-tid-depth-wrapper, .view-event-calendar .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets #edit-term-node-tid-depth-wrapper {
       width: 75%; } }
-  /* line 369, ../scss/pages/_listview.scss */
+  /* line 351, ../scss/pages/_listview.scss */
   .view-termin .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets #edit-term-node-tid-depth-wrapper .form-item, .view-event-calendar .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets #edit-term-node-tid-depth-wrapper .form-item {
     padding-right: 0; }
-    /* line 373, ../scss/pages/_listview.scss */
+    /* line 355, ../scss/pages/_listview.scss */
     .view-termin .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets #edit-term-node-tid-depth-wrapper .form-item .form-type-bef-link a, .view-event-calendar .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets #edit-term-node-tid-depth-wrapper .form-item .form-type-bef-link a {
       display: inline-block;
       float: left;
@@ -10267,16 +10273,16 @@ input[type=text]::-ms-clear {
       color: #273753;
       padding-bottom: 12px;
       margin-right: 60px; }
-      /* line 381, ../scss/pages/_listview.scss */
+      /* line 363, ../scss/pages/_listview.scss */
       .view-termin .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets #edit-term-node-tid-depth-wrapper .form-item .form-type-bef-link a.active, .view-event-calendar .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets #edit-term-node-tid-depth-wrapper .form-item .form-type-bef-link a.active {
         border-bottom: 2px Solid #e74712; }
-/* line 389, ../scss/pages/_listview.scss */
+/* line 371, ../scss/pages/_listview.scss */
 .view-termin .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-submit-button, .view-event-calendar .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-submit-button {
   display: none; }
-/* line 393, ../scss/pages/_listview.scss */
+/* line 375, ../scss/pages/_listview.scss */
 .view-termin .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .select2-container--default .select2-selection--single, .view-event-calendar .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .select2-container--default .select2-selection--single {
   display: none; }
-/* line 400, ../scss/pages/_listview.scss */
+/* line 382, ../scss/pages/_listview.scss */
 .view-termin .view-sub-wrapper .attachment-before .view-result-count, .view-event-calendar .view-sub-wrapper .attachment-before .view-result-count {
   width: auto;
   float: left;
@@ -10286,54 +10292,54 @@ input[type=text]::-ms-clear {
   margin-top: 0;
   /* Tablet design */ }
   @media (min-width: 520px) {
-    /* line 400, ../scss/pages/_listview.scss */
+    /* line 382, ../scss/pages/_listview.scss */
     .view-termin .view-sub-wrapper .attachment-before .view-result-count, .view-event-calendar .view-sub-wrapper .attachment-before .view-result-count {
       width: 50%;
       font-size: 22px; } }
-/* line 414, ../scss/pages/_listview.scss */
+/* line 396, ../scss/pages/_listview.scss */
 .view-termin .view-sub-wrapper .attachment-before .views-widget-sort-by, .view-event-calendar .view-sub-wrapper .attachment-before .views-widget-sort-by {
   padding: 30px 0;
   font-size: 18px;
   text-align: right;
   /* Tablet design */ }
   @media (min-width: 520px) {
-    /* line 414, ../scss/pages/_listview.scss */
+    /* line 396, ../scss/pages/_listview.scss */
     .view-termin .view-sub-wrapper .attachment-before .views-widget-sort-by, .view-event-calendar .view-sub-wrapper .attachment-before .views-widget-sort-by {
       width: 50%;
       float: left;
       font-size: 20px; } }
-  /* line 426, ../scss/pages/_listview.scss */
+  /* line 408, ../scss/pages/_listview.scss */
   .view-termin .view-sub-wrapper .attachment-before .views-widget-sort-by .form-group, .view-event-calendar .view-sub-wrapper .attachment-before .views-widget-sort-by .form-group {
     margin-bottom: 0; }
-    /* line 429, ../scss/pages/_listview.scss */
+    /* line 411, ../scss/pages/_listview.scss */
     .view-termin .view-sub-wrapper .attachment-before .views-widget-sort-by .form-group .bef-select-as-links .form-type-bef-link, .view-event-calendar .view-sub-wrapper .attachment-before .views-widget-sort-by .form-group .bef-select-as-links .form-type-bef-link {
       display: inline-block;
       padding-left: 15px; }
-      /* line 433, ../scss/pages/_listview.scss */
+      /* line 415, ../scss/pages/_listview.scss */
       .view-termin .view-sub-wrapper .attachment-before .views-widget-sort-by .form-group .bef-select-as-links .form-type-bef-link a, .view-event-calendar .view-sub-wrapper .attachment-before .views-widget-sort-by .form-group .bef-select-as-links .form-type-bef-link a {
         text-decoration: none;
         color: #273753; }
-        /* line 437, ../scss/pages/_listview.scss */
+        /* line 419, ../scss/pages/_listview.scss */
         .view-termin .view-sub-wrapper .attachment-before .views-widget-sort-by .form-group .bef-select-as-links .form-type-bef-link a.active, .view-event-calendar .view-sub-wrapper .attachment-before .views-widget-sort-by .form-group .bef-select-as-links .form-type-bef-link a.active {
           border-bottom: 2px solid #e74712;
           padding-bottom: 12px; }
-    /* line 444, ../scss/pages/_listview.scss */
+    /* line 426, ../scss/pages/_listview.scss */
     .view-termin .view-sub-wrapper .attachment-before .views-widget-sort-by .form-group .select2-container, .view-event-calendar .view-sub-wrapper .attachment-before .views-widget-sort-by .form-group .select2-container {
       display: none; }
 
-/* line 455, ../scss/pages/_listview.scss */
+/* line 437, ../scss/pages/_listview.scss */
 .calendar-link {
   width: 100%;
   float: left;
   margin-bottom: 30px;
   /* Desktop design */ }
   @media (min-width: 960px) {
-    /* line 455, ../scss/pages/_listview.scss */
+    /* line 437, ../scss/pages/_listview.scss */
     .calendar-link {
       width: 25%;
       float: left;
       text-align: right; } }
-  /* line 467, ../scss/pages/_listview.scss */
+  /* line 449, ../scss/pages/_listview.scss */
   .calendar-link a {
     text-decoration: none;
     padding-bottom: 4px;
@@ -10342,7 +10348,7 @@ input[type=text]::-ms-clear {
     font-weight: bold;
     position: relative;
     margin-left: 30px; }
-    /* line 476, ../scss/pages/_listview.scss */
+    /* line 458, ../scss/pages/_listview.scss */
     .calendar-link a:before {
       content: '\e949';
       font-family: "icomoon";
@@ -10353,10 +10359,10 @@ input[type=text]::-ms-clear {
       top: 9px;
       display: inline-block; }
 
-/* line 490, ../scss/pages/_listview.scss */
+/* line 472, ../scss/pages/_listview.scss */
 .page-suche {
   background: #eff2f7; }
-  /* line 493, ../scss/pages/_listview.scss */
+  /* line 475, ../scss/pages/_listview.scss */
   .page-suche .page-header {
     border: none;
     font-weight: normal;
@@ -10364,34 +10370,34 @@ input[type=text]::-ms-clear {
     padding-top: 55px;
     padding-bottom: 40px; }
 
-/* line 505, ../scss/pages/_listview.scss */
+/* line 487, ../scss/pages/_listview.scss */
 .view-search-list .view-filters {
   position: relative; }
-  /* line 508, ../scss/pages/_listview.scss */
+  /* line 490, ../scss/pages/_listview.scss */
   .view-search-list .view-filters .views-widget-filter-search_api_views_fulltext {
     width: 100%;
     /* Desktop design */ }
     @media (min-width: 960px) {
-      /* line 508, ../scss/pages/_listview.scss */
+      /* line 490, ../scss/pages/_listview.scss */
       .view-search-list .view-filters .views-widget-filter-search_api_views_fulltext {
         width: 50%; } }
-  /* line 516, ../scss/pages/_listview.scss */
+  /* line 498, ../scss/pages/_listview.scss */
   .view-search-list .view-filters .views-widget-filter-field_ort {
     width: 100%;
     /* Desktop design */ }
     @media (min-width: 960px) {
-      /* line 516, ../scss/pages/_listview.scss */
+      /* line 498, ../scss/pages/_listview.scss */
       .view-search-list .view-filters .views-widget-filter-field_ort {
         width: 50%; } }
-  /* line 524, ../scss/pages/_listview.scss */
+  /* line 506, ../scss/pages/_listview.scss */
   .view-search-list .view-filters .views-widget-filter-search_api_views_fulltext, .view-search-list .view-filters .views-widget-filter-field_ort {
     position: relative;
     padding: 0; }
-    /* line 528, ../scss/pages/_listview.scss */
+    /* line 510, ../scss/pages/_listview.scss */
     .view-search-list .view-filters .views-widget-filter-search_api_views_fulltext .views-widget .form-item, .view-search-list .view-filters .views-widget-filter-field_ort .views-widget .form-item {
       width: 100%;
       padding-right: 0px !important; }
-      /* line 532, ../scss/pages/_listview.scss */
+      /* line 514, ../scss/pages/_listview.scss */
       .view-search-list .view-filters .views-widget-filter-search_api_views_fulltext .views-widget .form-item .form-control, .view-search-list .view-filters .views-widget-filter-field_ort .views-widget .form-item .form-control {
         height: 70px;
         border-radius: 0;
@@ -10399,12 +10405,12 @@ input[type=text]::-ms-clear {
         padding-left: 50px;
         font-size: 16px;
         box-shadow: none; }
-        /* line 540, ../scss/pages/_listview.scss */
+        /* line 522, ../scss/pages/_listview.scss */
         .view-search-list .view-filters .views-widget-filter-search_api_views_fulltext .views-widget .form-item .form-control:focus, .view-search-list .view-filters .views-widget-filter-field_ort .views-widget .form-item .form-control:focus {
           box-shadow: none;
           outline: none;
           transition: none; }
-    /* line 548, ../scss/pages/_listview.scss */
+    /* line 530, ../scss/pages/_listview.scss */
     .view-search-list .view-filters .views-widget-filter-search_api_views_fulltext:before, .view-search-list .view-filters .views-widget-filter-field_ort:before {
       font-family: "icomoon";
       content: "\e94e";
@@ -10413,13 +10419,13 @@ input[type=text]::-ms-clear {
       top: 23px;
       display: inline-block;
       position: absolute; }
-  /* line 559, ../scss/pages/_listview.scss */
+  /* line 541, ../scss/pages/_listview.scss */
   .view-search-list .view-filters .views-widget-filter-type_1 {
     margin-top: 30px; }
-    /* line 562, ../scss/pages/_listview.scss */
+    /* line 544, ../scss/pages/_listview.scss */
     .view-search-list .view-filters .views-widget-filter-type_1 .views-widget .form-item {
       margin-bottom: 15px; }
-  /* line 567, ../scss/pages/_listview.scss */
+  /* line 549, ../scss/pages/_listview.scss */
   .view-search-list .view-filters .views-submit-button {
     position: absolute;
     top: 170px;
@@ -10427,11 +10433,11 @@ input[type=text]::-ms-clear {
     padding: 0;
     /* Desktop design */ }
     @media (min-width: 960px) {
-      /* line 567, ../scss/pages/_listview.scss */
+      /* line 549, ../scss/pages/_listview.scss */
       .view-search-list .view-filters .views-submit-button {
         top: 10px;
         right: 10px; } }
-    /* line 579, ../scss/pages/_listview.scss */
+    /* line 561, ../scss/pages/_listview.scss */
     .view-search-list .view-filters .views-submit-button .btn {
       margin-top: 0;
       border-radius: 0;
@@ -10441,7 +10447,7 @@ input[type=text]::-ms-clear {
       border: none;
       background: #3c506e;
       font-weight: bold; }
-      /* line 589, ../scss/pages/_listview.scss */
+      /* line 571, ../scss/pages/_listview.scss */
       .view-search-list .view-filters .views-submit-button .btn::before {
         font-family: "icomoon";
         content: "\e90e";
@@ -10451,64 +10457,64 @@ input[type=text]::-ms-clear {
         font-size: 12px;
         display: inline-block;
         position: absolute; }
-/* line 604, ../scss/pages/_listview.scss */
+/* line 586, ../scss/pages/_listview.scss */
 .view-search-list .view-content .views-row {
   border-top: 1px solid #949d9e;
   padding: 30px;
   cursor: pointer; }
-  /* line 609, ../scss/pages/_listview.scss */
+  /* line 591, ../scss/pages/_listview.scss */
   .view-search-list .view-content .views-row.views-row-last {
     border-bottom: 1px solid #949d9e; }
-  /* line 614, ../scss/pages/_listview.scss */
+  /* line 596, ../scss/pages/_listview.scss */
   .view-search-list .view-content .views-row .row-container > * {
     padding-bottom: 15px; }
-    /* line 617, ../scss/pages/_listview.scss */
+    /* line 599, ../scss/pages/_listview.scss */
     .view-search-list .view-content .views-row .row-container > * a {
       text-decoration: none;
       color: #273753; }
-    /* line 622, ../scss/pages/_listview.scss */
+    /* line 604, ../scss/pages/_listview.scss */
     .view-search-list .view-content .views-row .row-container > *.views-field:last-child {
       padding-bottom: 0; }
-  /* line 628, ../scss/pages/_listview.scss */
+  /* line 610, ../scss/pages/_listview.scss */
   .view-search-list .view-content .views-row .views-field-type {
     color: #949d9e;
     padding-bottom: 5px;
     font-size: 18px; }
-  /* line 634, ../scss/pages/_listview.scss */
+  /* line 616, ../scss/pages/_listview.scss */
   .view-search-list .view-content .views-row .views-field-field-event-datum {
     color: #e74712; }
-  /* line 639, ../scss/pages/_listview.scss */
+  /* line 621, ../scss/pages/_listview.scss */
   .view-search-list .view-content .views-row div[class*='views-field-views-conditional-'] .search-condition.field-content {
     color: #e74712; }
-  /* line 643, ../scss/pages/_listview.scss */
+  /* line 625, ../scss/pages/_listview.scss */
   .view-search-list .view-content .views-row div[class*='views-field-views-conditional-'] .date-display-single {
     color: #e74712; }
-  /* line 647, ../scss/pages/_listview.scss */
+  /* line 629, ../scss/pages/_listview.scss */
   .view-search-list .view-content .views-row div[class*='views-field-views-conditional-'] .search-condition.field-content.single {
     color: #e74712; }
-  /* line 653, ../scss/pages/_listview.scss */
+  /* line 635, ../scss/pages/_listview.scss */
   .view-search-list .view-content .views-row .views-field-field-ver-ffentlichungsdatum .date-display-single {
     color: #e74712; }
 
-/* line 662, ../scss/pages/_listview.scss */
+/* line 644, ../scss/pages/_listview.scss */
 .view-wahlen-sie-einen-themenbereich {
   background: #273753; }
-  /* line 665, ../scss/pages/_listview.scss */
+  /* line 647, ../scss/pages/_listview.scss */
   .view-wahlen-sie-einen-themenbereich .view-sub-wrapper {
     position: relative; }
-  /* line 671, ../scss/pages/_listview.scss */
+  /* line 653, ../scss/pages/_listview.scss */
   .view-wahlen-sie-einen-themenbereich .view-header {
     color: #ffffff;
     padding: 40px 0;
     /* Mobile design */ }
     @media (min-width: 320px) {
-      /* line 671, ../scss/pages/_listview.scss */
+      /* line 653, ../scss/pages/_listview.scss */
       .view-wahlen-sie-einen-themenbereich .view-header {
         padding-right: 90px; } }
-  /* line 680, ../scss/pages/_listview.scss */
+  /* line 662, ../scss/pages/_listview.scss */
   .view-wahlen-sie-einen-themenbereich .view-content {
     padding-bottom: 90px; }
-    /* line 683, ../scss/pages/_listview.scss */
+    /* line 665, ../scss/pages/_listview.scss */
     .view-wahlen-sie-einen-themenbereich .view-content .views_slideshow_controls_text {
       float: right;
       display: inline-block;
@@ -10533,16 +10539,16 @@ input[type=text]::-ms-clear {
                 }
             } */ }
       @media (min-width: 320px) {
-        /* line 683, ../scss/pages/_listview.scss */
+        /* line 665, ../scss/pages/_listview.scss */
         .view-wahlen-sie-einen-themenbereich .view-content .views_slideshow_controls_text {
           right: 25px; } }
-      /* line 713, ../scss/pages/_listview.scss */
+      /* line 695, ../scss/pages/_listview.scss */
       .view-wahlen-sie-einen-themenbereich .view-content .views_slideshow_controls_text .views-slideshow-controls-text-previous a, .view-wahlen-sie-einen-themenbereich .view-content .views_slideshow_controls_text .views-slideshow-controls-text-status-pause a, .view-wahlen-sie-einen-themenbereich .view-content .views_slideshow_controls_text .views-slideshow-controls-text-status-play a, .view-wahlen-sie-einen-themenbereich .view-content .views_slideshow_controls_text .views_slideshow_controls_text_next a {
         font-size: 0; }
-        /* line 716, ../scss/pages/_listview.scss */
+        /* line 698, ../scss/pages/_listview.scss */
         .view-wahlen-sie-einen-themenbereich .view-content .views_slideshow_controls_text .views-slideshow-controls-text-previous a:focus, .view-wahlen-sie-einen-themenbereich .view-content .views_slideshow_controls_text .views-slideshow-controls-text-status-pause a:focus, .view-wahlen-sie-einen-themenbereich .view-content .views_slideshow_controls_text .views-slideshow-controls-text-status-play a:focus, .view-wahlen-sie-einen-themenbereich .view-content .views_slideshow_controls_text .views_slideshow_controls_text_next a:focus {
           outline: 1px dotted #ffffff !important; }
-        /* line 720, ../scss/pages/_listview.scss */
+        /* line 702, ../scss/pages/_listview.scss */
         .view-wahlen-sie-einen-themenbereich .view-content .views_slideshow_controls_text .views-slideshow-controls-text-previous a::before, .view-wahlen-sie-einen-themenbereich .view-content .views_slideshow_controls_text .views-slideshow-controls-text-status-pause a::before, .view-wahlen-sie-einen-themenbereich .view-content .views_slideshow_controls_text .views-slideshow-controls-text-status-play a::before, .view-wahlen-sie-einen-themenbereich .view-content .views_slideshow_controls_text .views_slideshow_controls_text_next a::before {
           font-family: "icomoon";
           content: "\e908";
@@ -10550,17 +10556,17 @@ input[type=text]::-ms-clear {
           font-size: 18px;
           display: inline-block;
           margin-right: 5px; }
-      /* line 733, ../scss/pages/_listview.scss */
+      /* line 715, ../scss/pages/_listview.scss */
       .view-wahlen-sie-einen-themenbereich .view-content .views_slideshow_controls_text .views-slideshow-controls-text-status-play a::before {
         content: "\e90a"; }
-      /* line 741, ../scss/pages/_listview.scss */
+      /* line 723, ../scss/pages/_listview.scss */
       .view-wahlen-sie-einen-themenbereich .view-content .views_slideshow_controls_text .views_slideshow_controls_text_next a:before {
         content: "\e93f";
         margin-right: 0; }
-      /* line 750, ../scss/pages/_listview.scss */
+      /* line 732, ../scss/pages/_listview.scss */
       .view-wahlen-sie-einen-themenbereich .view-content .views_slideshow_controls_text .views-slideshow-controls-text-previous a:before {
         content: "\e93e"; }
-    /* line 757, ../scss/pages/_listview.scss */
+    /* line 739, ../scss/pages/_listview.scss */
     .view-wahlen-sie-einen-themenbereich .view-content .views-row {
       background-color: #ffffff;
       padding: 30px;
@@ -10572,63 +10578,63 @@ input[type=text]::-ms-clear {
       /* Tablet design */
       /* Desktop design */ }
       @media (min-width: 520px) {
-        /* line 757, ../scss/pages/_listview.scss */
+        /* line 739, ../scss/pages/_listview.scss */
         .view-wahlen-sie-einen-themenbereich .view-content .views-row {
           height: 330px; } }
       @media (min-width: 960px) {
-        /* line 757, ../scss/pages/_listview.scss */
+        /* line 739, ../scss/pages/_listview.scss */
         .view-wahlen-sie-einen-themenbereich .view-content .views-row {
           width: 47%;
           height: 286px;
           margin-right: 30px;
           float: left;
           margin-left: 10px; } }
-      /* line 780, ../scss/pages/_listview.scss */
+      /* line 762, ../scss/pages/_listview.scss */
       .view-wahlen-sie-einen-themenbereich .view-content .views-row:nth-child(2), .view-wahlen-sie-einen-themenbereich .view-content .views-row:last-child {
         /* Desktop design */ }
         @media (min-width: 960px) {
-          /* line 780, ../scss/pages/_listview.scss */
+          /* line 762, ../scss/pages/_listview.scss */
           .view-wahlen-sie-einen-themenbereich .view-content .views-row:nth-child(2), .view-wahlen-sie-einen-themenbereich .view-content .views-row:last-child {
             margin-right: 0; } }
-      /* line 786, ../scss/pages/_listview.scss */
+      /* line 768, ../scss/pages/_listview.scss */
       .view-wahlen-sie-einen-themenbereich .view-content .views-row .views-field-name {
         padding-bottom: 30px; }
-        /* line 789, ../scss/pages/_listview.scss */
+        /* line 771, ../scss/pages/_listview.scss */
         .view-wahlen-sie-einen-themenbereich .view-content .views-row .views-field-name a {
           color: #e74712;
           text-decoration: none;
           font-weight: bold;
           padding-bottom: 30px; }
-      /* line 798, ../scss/pages/_listview.scss */
+      /* line 780, ../scss/pages/_listview.scss */
       .view-wahlen-sie-einen-themenbereich .view-content .views-row .views-field-name-1 a {
         color: #273753;
         position: absolute;
         bottom: 30px; }
-      /* line 807, ../scss/pages/_listview.scss */
+      /* line 789, ../scss/pages/_listview.scss */
       .view-wahlen-sie-einen-themenbereich .view-content .views-row .views-field-field-kurztext {
         padding-bottom: 40px; }
 
-/* line 816, ../scss/pages/_listview.scss */
+/* line 798, ../scss/pages/_listview.scss */
 .view-map-teaser {
   clear: both;
   margin-bottom: 30px;
   overflow: hidden; }
-  /* line 822, ../scss/pages/_listview.scss */
+  /* line 804, ../scss/pages/_listview.scss */
   .view-map-teaser .view-sub-wrapper .view-content {
     width: 100%;
     float: left;
     margin: 0;
     /* Over Desktop design */ }
     @media (min-width: 1025px) {
-      /* line 822, ../scss/pages/_listview.scss */
+      /* line 804, ../scss/pages/_listview.scss */
       .view-map-teaser .view-sub-wrapper .view-content {
         width: 65%; } }
-    /* line 832, ../scss/pages/_listview.scss */
+    /* line 814, ../scss/pages/_listview.scss */
     .view-map-teaser .view-sub-wrapper .view-content .views-row {
       width: 100%;
       padding: 0;
       background: #273753; }
-      /* line 837, ../scss/pages/_listview.scss */
+      /* line 819, ../scss/pages/_listview.scss */
       .view-map-teaser .view-sub-wrapper .view-content .views-row .row-container {
         background: none;
         height: auto;
@@ -10637,43 +10643,43 @@ input[type=text]::-ms-clear {
         border: none;
         /* Over Desktop design */ }
         @media (min-width: 1025px) {
-          /* line 837, ../scss/pages/_listview.scss */
+          /* line 819, ../scss/pages/_listview.scss */
           .view-map-teaser .view-sub-wrapper .view-content .views-row .row-container {
             padding: 45px 150px 45px 50px; } }
-        /* line 849, ../scss/pages/_listview.scss */
+        /* line 831, ../scss/pages/_listview.scss */
         .view-map-teaser .view-sub-wrapper .view-content .views-row .row-container:hover {
           background: none;
           border: none; }
-        /* line 854, ../scss/pages/_listview.scss */
+        /* line 836, ../scss/pages/_listview.scss */
         .view-map-teaser .view-sub-wrapper .view-content .views-row .row-container .views-field-field-bild {
           padding-bottom: 20px; }
-          /* line 857, ../scss/pages/_listview.scss */
+          /* line 839, ../scss/pages/_listview.scss */
           .view-map-teaser .view-sub-wrapper .view-content .views-row .row-container .views-field-field-bild img {
             color: #e74712; }
-        /* line 862, ../scss/pages/_listview.scss */
+        /* line 844, ../scss/pages/_listview.scss */
         .view-map-teaser .view-sub-wrapper .view-content .views-row .row-container .views-field-field-paragraph-title {
           color: #ffffff;
           font-size: 36px;
           font-weight: bold;
           padding-bottom: 20px; }
-        /* line 869, ../scss/pages/_listview.scss */
+        /* line 851, ../scss/pages/_listview.scss */
         .view-map-teaser .view-sub-wrapper .view-content .views-row .row-container .views-field-field-flie-text-bereich {
           color: #ffffff;
           padding-bottom: 30px; }
-        /* line 874, ../scss/pages/_listview.scss */
+        /* line 856, ../scss/pages/_listview.scss */
         .view-map-teaser .view-sub-wrapper .view-content .views-row .row-container .views-field-field-quellenangabe a {
           color: #ffffff; }
-  /* line 883, ../scss/pages/_listview.scss */
+  /* line 865, ../scss/pages/_listview.scss */
   .view-map-teaser .view-sub-wrapper .view-footer {
     width: 100%;
     float: left;
     /* Over Desktop design */ }
     @media (min-width: 1025px) {
-      /* line 883, ../scss/pages/_listview.scss */
+      /* line 865, ../scss/pages/_listview.scss */
       .view-map-teaser .view-sub-wrapper .view-footer {
         width: 35%; } }
 
-/* line 894, ../scss/pages/_listview.scss */
+/* line 876, ../scss/pages/_listview.scss */
 .page-taxonomy-term-1 > .footer.container, footer .page-taxonomy-term-1 > .footer.region-footer, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .page-taxonomy-term-1 > .footer.panel-2col, .view-neueste-informationen .page-taxonomy-term-1 > .footer.view-sub-wrapper, .paragraphs-item-topic-teaser-paragraph .field-collection-container .page-taxonomy-term-1 > .footer.field-name-field-topic-teaser, .page-taxonomy-term-1 > .footer.tabs--primary, .page-taxonomy-term-1 > .footer.breadcrumb, .page-user .page-taxonomy-term-1 > .footer.page-header, .page-user .page-taxonomy-term-1 > .footer.region-content, .page-calendar .page-taxonomy-term-1 > .footer.region-content, .page-newsletter-confirm .col-sm-12 .page-taxonomy-term-1 > .footer.page-header, .page-newsletter-confirm .col-sm-12 .page-taxonomy-term-1 > .page-header + .footer.region-content, .page-node-done .page-taxonomy-term-1 > .footer.page-header, .page-node-done .page-taxonomy-term-1 > .page-header + .footer.region-content, .not-front .node-doorpage .view-alle-themen-teaser .page-taxonomy-term-1 > .footer.view-sub-wrapper, .view-neueste-digital-projekte .page-taxonomy-term-1 > .footer.view-sub-wrapper, .view-latest-content-doorpage.page-taxonomy-term-1 > .footer.view-sub-wrapper, .page-taxonomy-term .page-taxonomy-term-1 > .footer.view-title, .page-taxonomy-term .page-taxonomy-term-1 > .footer.group-page-info, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .page-taxonomy-term-1 > .footer.paragraphs-item-flie-text-mit-bild-links, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .page-taxonomy-term-1 > .footer.paragraphs-item-flie-text-bereich, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .page-taxonomy-term-1 > .footer.paragraphs-item-flie-text-mit-bild-rechts, .page-taxonomy-term .view-alles-zum-thema .page-taxonomy-term-1 > .footer.view-sub-wrapper, .page-termine .page-taxonomy-term-1 > .footer.page-header, .page-aktuelles .page-taxonomy-term-1 > .footer.page-header, .page-calendar .page-taxonomy-term-1 > .footer.page-header, .view-aktuelles.page-taxonomy-term-1 > .footer.view-sub-wrapper, .view-termin.page-taxonomy-term-1 > .footer.view-sub-wrapper, .view-search-list.page-taxonomy-term-1 > .footer.view-sub-wrapper, .view-event-calendar.page-taxonomy-term-1 > .footer.view-sub-wrapper, .page-suche .page-taxonomy-term-1 > .footer.page-header, .view-wahlen-sie-einen-themenbereich .page-taxonomy-term-1 > .footer.view-sub-wrapper, .page-sitemap .page-taxonomy-term-1 > .footer.page-header, .page-sitemap .page-taxonomy-term-1 > .footer#site-map, .page-projekt-map .view-filters .views-exposed-form .page-taxonomy-term-1 > .footer.views-exposed-widgets, .page-projekt-map .view-filters .views-exposed-form .page-taxonomy-term-1 > .footer#map_list_link, .view-display-id-page_1 .page-taxonomy-term-1 > .footer.view-sub-wrapper, .view-display-id-page_1 .view-sub-wrapper .view-filters .views-exposed-form .page-taxonomy-term-1 > .footer.views-exposed-widgets {
   padding-top: 30px; }
 
@@ -11054,33 +11060,11 @@ input[type=text]::-ms-clear {
     .view-display-id-page_1 .view-sub-wrapper .attachment-before .view-result-count {
       width: 50%;
       font-size: 22px; } }
-/* line 422, ../scss/pages/_map.scss */
-.view-display-id-page_1 .view-sub-wrapper .attachment-before .map-link {
-  text-align: right; }
-  /* line 425, ../scss/pages/_map.scss */
-  .view-display-id-page_1 .view-sub-wrapper .attachment-before .map-link a {
-    text-decoration: none;
-    padding-bottom: 4px;
-    border-bottom: 2px solid #949d9e;
-    color: #273753;
-    font-weight: bold;
-    position: relative;
-    margin-left: 30px; }
-    /* line 434, ../scss/pages/_map.scss */
-    .view-display-id-page_1 .view-sub-wrapper .attachment-before .map-link a:before {
-      content: '\e949';
-      font-family: "icomoon";
-      color: #e74712;
-      font-size: 14px;
-      position: absolute;
-      left: -25px;
-      top: 9px;
-      display: inline-block; }
-/* line 450, ../scss/pages/_map.scss */
+/* line 427, ../scss/pages/_map.scss */
 .view-display-id-page_1 .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets {
   position: relative;
   margin: 0; }
-  /* line 456, ../scss/pages/_map.scss */
+  /* line 433, ../scss/pages/_map.scss */
   .view-display-id-page_1 .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .categories-filter .views-exposed-widget {
     position: relative;
     width: 100%;
@@ -11093,15 +11077,15 @@ input[type=text]::-ms-clear {
     background: #273753;
     border-right: 1px solid #949d9e; }
     @media (min-width: 767px) {
-      /* line 456, ../scss/pages/_map.scss */
+      /* line 433, ../scss/pages/_map.scss */
       .view-display-id-page_1 .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .categories-filter .views-exposed-widget {
         width: 50%; } }
     @media (min-width: 1025px) {
-      /* line 456, ../scss/pages/_map.scss */
+      /* line 433, ../scss/pages/_map.scss */
       .view-display-id-page_1 .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .categories-filter .views-exposed-widget {
         width: 22%;
         height: 49px; } }
-    /* line 472, ../scss/pages/_map.scss */
+    /* line 449, ../scss/pages/_map.scss */
     .view-display-id-page_1 .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .categories-filter .views-exposed-widget:before {
       content: "\f107";
       font-family: FontAwesome;
@@ -11111,50 +11095,50 @@ input[type=text]::-ms-clear {
       right: 25px;
       top: 50%;
       margin-top: -10px; }
-    /* line 483, ../scss/pages/_map.scss */
+    /* line 460, ../scss/pages/_map.scss */
     .view-display-id-page_1 .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .categories-filter .views-exposed-widget.selColor {
       background: #3c506e; }
-    /* line 493, ../scss/pages/_map.scss */
+    /* line 470, ../scss/pages/_map.scss */
     .view-display-id-page_1 .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .categories-filter .views-exposed-widget .views-widget .form-item {
       padding: 0;
       position: relative;
       display: block; }
-      /* line 498, ../scss/pages/_map.scss */
+      /* line 475, ../scss/pages/_map.scss */
       .view-display-id-page_1 .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .categories-filter .views-exposed-widget .views-widget .form-item .select2-container--default .select2-selection--single {
         background: 0;
         border: 0;
         border-radius: 0; }
-        /* line 503, ../scss/pages/_map.scss */
+        /* line 480, ../scss/pages/_map.scss */
         .view-display-id-page_1 .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .categories-filter .views-exposed-widget .views-widget .form-item .select2-container--default .select2-selection--single .select2-selection__rendered {
           color: #ffffff;
           padding-left: 20px;
           width: 240px; }
-        /* line 509, ../scss/pages/_map.scss */
+        /* line 486, ../scss/pages/_map.scss */
         .view-display-id-page_1 .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .categories-filter .views-exposed-widget .views-widget .form-item .select2-container--default .select2-selection--single .select2-selection__arrow {
           display: none; }
-      /* line 514, ../scss/pages/_map.scss */
+      /* line 491, ../scss/pages/_map.scss */
       .view-display-id-page_1 .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .categories-filter .views-exposed-widget .views-widget .form-item .select2-container + .select2-container {
         top: 38px !important;
         left: 0px !important;
         position: absolute; }
-  /* line 522, ../scss/pages/_map.scss */
+  /* line 499, ../scss/pages/_map.scss */
   .view-display-id-page_1 .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget:nth-child(4) {
     width: 100%;
     height: 49px;
     /* Tablet design */
     /* Over Desktop design */ }
     @media (min-width: 767px) {
-      /* line 522, ../scss/pages/_map.scss */
+      /* line 499, ../scss/pages/_map.scss */
       .view-display-id-page_1 .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget:nth-child(4) {
         width: 50%; } }
     @media (min-width: 1025px) {
-      /* line 522, ../scss/pages/_map.scss */
+      /* line 499, ../scss/pages/_map.scss */
       .view-display-id-page_1 .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget:nth-child(4) {
         width: 34%; } }
-    /* line 536, ../scss/pages/_map.scss */
+    /* line 513, ../scss/pages/_map.scss */
     .view-display-id-page_1 .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget:nth-child(4):before {
       display: none; }
-    /* line 541, ../scss/pages/_map.scss */
+    /* line 518, ../scss/pages/_map.scss */
     .view-display-id-page_1 .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget:nth-child(4) .form-item:before {
       font-family: "icomoon";
       content: "\e94e";
@@ -11163,7 +11147,7 @@ input[type=text]::-ms-clear {
       top: 4px;
       display: inline-block;
       position: absolute; }
-    /* line 551, ../scss/pages/_map.scss */
+    /* line 528, ../scss/pages/_map.scss */
     .view-display-id-page_1 .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-exposed-widget:nth-child(4) .form-item input.form-control {
       background: 0;
       border: 0;
@@ -11171,10 +11155,10 @@ input[type=text]::-ms-clear {
       color: #ffffff;
       padding-right: 150px;
       box-shadow: none; }
-  /* line 562, ../scss/pages/_map.scss */
+  /* line 539, ../scss/pages/_map.scss */
   .view-display-id-page_1 .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-reset-button {
     display: none; }
-  /* line 566, ../scss/pages/_map.scss */
+  /* line 543, ../scss/pages/_map.scss */
   .view-display-id-page_1 .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-submit-button {
     right: 0;
     top: -5px;
@@ -11182,10 +11166,10 @@ input[type=text]::-ms-clear {
     width: auto !important;
     /* Over Desktop design */ }
     @media (min-width: 1025px) {
-      /* line 566, ../scss/pages/_map.scss */
+      /* line 543, ../scss/pages/_map.scss */
       .view-display-id-page_1 .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-submit-button {
         position: absolute; } }
-    /* line 577, ../scss/pages/_map.scss */
+    /* line 554, ../scss/pages/_map.scss */
     .view-display-id-page_1 .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-submit-button .btn {
       margin-top: 0;
       border-radius: 0;
@@ -11195,7 +11179,7 @@ input[type=text]::-ms-clear {
       border: none;
       background: #ffffff;
       font-weight: bold; }
-      /* line 587, ../scss/pages/_map.scss */
+      /* line 564, ../scss/pages/_map.scss */
       .view-display-id-page_1 .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-submit-button .btn::before {
         font-family: "icomoon";
         content: "\e90e";
@@ -11205,26 +11189,26 @@ input[type=text]::-ms-clear {
         font-size: 12px;
         display: inline-block;
         position: absolute; }
-  /* line 600, ../scss/pages/_map.scss */
+  /* line 577, ../scss/pages/_map.scss */
   .view-display-id-page_1 .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by {
     padding: 30px 0;
     float: right; }
-    /* line 604, ../scss/pages/_map.scss */
+    /* line 581, ../scss/pages/_map.scss */
     .view-display-id-page_1 .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .form-group {
       margin-bottom: 0; }
-      /* line 607, ../scss/pages/_map.scss */
+      /* line 584, ../scss/pages/_map.scss */
       .view-display-id-page_1 .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .form-group .bef-select-as-links .form-type-bef-link {
         display: inline-block;
         padding-left: 15px; }
-        /* line 611, ../scss/pages/_map.scss */
+        /* line 588, ../scss/pages/_map.scss */
         .view-display-id-page_1 .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .form-group .bef-select-as-links .form-type-bef-link a {
           text-decoration: none;
           color: #273753; }
-          /* line 615, ../scss/pages/_map.scss */
+          /* line 592, ../scss/pages/_map.scss */
           .view-display-id-page_1 .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .form-group .bef-select-as-links .form-type-bef-link a.active {
             border-bottom: 2px solid #e74712;
             padding-bottom: 12px; }
-      /* line 622, ../scss/pages/_map.scss */
+      /* line 599, ../scss/pages/_map.scss */
       .view-display-id-page_1 .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by .form-group .select2-container {
         display: none; }
 

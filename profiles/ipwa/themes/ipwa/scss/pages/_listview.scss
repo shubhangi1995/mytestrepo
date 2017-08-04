@@ -252,26 +252,8 @@
 
 //only-aktuelles//
 
-.page-aktuelles .view-aktuelles {
-    .view-sub-wrapper .view-content {
-        .views-row .row-container {
-            .views-field-type {
-                padding-bottom: 20px;
-                font-weight: bold;
-                color: $active-menu;
-                font-size: 22px;
-            }
-
-            .views-field-field-datum {
-                .field-content {
-                    position: absolute;
-                    bottom: 30px;
-                    font-size: 20px;
-                    color: $color-light-grey;
-                }
-            }
-        }
-    }
+.page-aktuelles .view-aktuelles 
+    .view-sub-wrapper {
 
     .view-filters {
         .categories-filter {
