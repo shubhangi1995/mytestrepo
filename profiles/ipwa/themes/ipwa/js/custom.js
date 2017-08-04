@@ -60,9 +60,9 @@ jQuery('.page-projekt-map select').select2().on("select2:open", function(){
  jQuery('.page-projekt-map .select2-results').simplebar();
 });
 
-jQuery('.view-display-id-page_1 select').select2().on("select2:open", function(){
- jQuery('.view-display-id-page_1 .select2-results').addClass("simplebar");
- jQuery('.view-display-id-page_1 .select2-results').simplebar();
+jQuery('.page-projekt-map-list select').select2().on("select2:open", function(){
+ jQuery('.page-projekt-map-list .select2-results').addClass("simplebar");
+ jQuery('.page-projekt-map-list .select2-results').simplebar();
 });
 
 
@@ -406,6 +406,15 @@ jQuery('.tb-megamenu-submenu.dropdown-menu').attr('style','display:none !importa
 			jQuery(".views-widget-filter-field_akteurstyp").removeClass("active");
 		}
 	});
+	
+	if(jQuery(".view-display-id-page_1").length > 0){
+	jQuery(document.body).addClass("page-projekt-map-list");
+} 
+
+jQuery(".page-projekt-map-list .group-page-info .page-title , .page-projekt-map-list .group-page-info .field-name-field-kurztext").wrapAll("<div class='project-map-wrapper'></div>");
+
+jQuery(".page-projekt-map-list .paragraphs-item-topic-teaser-paragraph").parent().wrapAll("<div class='map-wrap'></div>");
+
 	
 });
 

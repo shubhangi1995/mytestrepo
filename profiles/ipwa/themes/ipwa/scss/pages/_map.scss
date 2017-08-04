@@ -1,4 +1,4 @@
-.page-projekt-map {
+.page-projekt-map, .page-projekt-map-list {
     .node-doorpage .group-page-info {
         width: 1170px;
         max-width: 100%;
@@ -39,6 +39,35 @@
         }
     }
 
+    .map-wrap {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        background: $color-white;
+
+        .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items {
+            padding-top: 30px;
+            padding-bottom: 0;
+
+            .field-item {
+                margin: 0;
+
+                &.odd {
+                    margin-top: 30px;
+                }
+
+                @include devicebreak(x-large) {
+                    margin: 0;
+
+                    &.odd {
+                        margin-top: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.page-projekt-map {
     .view-neueste-informationen {
         background: $header-dropdown-menu;
 
@@ -67,33 +96,6 @@
 
             .view-footer a {
                 color: $color-white !important;
-            }
-        }
-    }
-
-    .map-wrap {
-        padding-top: 30px;
-        padding-bottom: 30px;
-        background: $color-white;
-
-        .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items {
-            padding-top: 30px;
-            padding-bottom: 0;
-
-            .field-item {
-                margin: 0;
-
-                &.odd {
-                    margin-top: 30px;
-                }
-
-                @include devicebreak(x-large) {
-                    margin: 0;
-
-                    &.odd {
-                        margin-top: 0;
-                    }
-                }
             }
         }
     }
@@ -342,6 +344,45 @@
     .view-sub-wrapper {
         @extend .container;
 
+        .view-header {
+            .project-webform {
+                display: inline-block;
+                padding-bottom: 40px;
+
+                a {
+                    text-decoration: none;
+                    color: $main-color;
+                }
+            }
+
+            .map-link {
+                display: inline-block;
+                float: right;
+                padding-bottom: 40px;
+
+                a {
+                    text-decoration: none;
+                    padding-bottom: 4px;
+                    border-bottom: 2px solid $color-light-grey;
+                    color: $main-color;
+                    font-weight: bold;
+                    position: relative;
+                    margin-left: 30px;
+
+                    &:before {
+                        content: '\e949';
+                        font-family: "icomoon";
+                        color: #e74712;
+                        font-size: 14px;
+                        position: absolute;
+                        left: -25px;
+                        top: 9px;
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+
         .attachment-before {
             .view-result-count {
                 width: auto;
@@ -349,7 +390,7 @@
                 padding: 30px 0;
                 font-size: 20px;
                 font-weight: bold;
-                margin-top: 0;
+                margin-top: -88px;
 
                 @include devicebreak(medium) {
                     width: 50%;
@@ -389,11 +430,12 @@
                     @extend .container;
 
                     position: relative;
-                    padding-bottom: 40px;
+                    margin: 0;
 
                     .categories-filter .views-exposed-widget {
                         position: relative;
                         width: 100%;
+                        margin: 0;
 
                         @include devicebreak(x-medium) {
                             width: 50%;
