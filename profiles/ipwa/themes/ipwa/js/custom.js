@@ -49,10 +49,6 @@ window.addEventListener('orientationchange', function () {
 }); 
 
 
-
-
-
-
 jQuery(window).click(function(event){
 		jQuery(".views-exposed-widget").removeClass("selColor");
 });
