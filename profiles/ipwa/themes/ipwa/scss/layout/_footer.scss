@@ -39,6 +39,9 @@ footer {
                     width: 83%;
                     height: 40px;
                     display: inline-block;
+					   &:focus{
+					    border:none;
+					   }
 
                     @include devicebreak(medium) {
                         width: 50%;

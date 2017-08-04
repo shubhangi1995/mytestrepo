@@ -6950,11 +6950,14 @@ footer .region-footer .block-ipwa-newsletter {
     height: 40px;
     display: inline-block;
     /* Tablet design */ }
+    /* line 42, ../scss/layout/_footer.scss */
+    footer .region-footer .block-ipwa-newsletter .form-item-newsletter .form-control:focus {
+      border: none; }
     @media (min-width: 520px) {
       /* line 37, ../scss/layout/_footer.scss */
       footer .region-footer .block-ipwa-newsletter .form-item-newsletter .form-control {
         width: 50%; } }
-  /* line 49, ../scss/layout/_footer.scss */
+  /* line 52, ../scss/layout/_footer.scss */
   footer .region-footer .block-ipwa-newsletter .btn-default {
     font-size: 0;
     background: #e74712;
@@ -6965,13 +6968,13 @@ footer .region-footer .block-ipwa-newsletter {
     padding-right: 18px;
     /* Tablet design */ }
     @media (min-width: 520px) {
-      /* line 49, ../scss/layout/_footer.scss */
+      /* line 52, ../scss/layout/_footer.scss */
       footer .region-footer .block-ipwa-newsletter .btn-default {
         color: #ffffff;
         padding: 10px 30px;
         display: inline-block;
         font-size: 14px; } }
-    /* line 66, ../scss/layout/_footer.scss */
+    /* line 69, ../scss/layout/_footer.scss */
     footer .region-footer .block-ipwa-newsletter .btn-default:before {
       color: #273753 !important;
       border-bottom: 0 !important;
@@ -6980,49 +6983,49 @@ footer .region-footer .block-ipwa-newsletter {
       margin-left: 30px !important;
       /* Tablet design */ }
       @media (min-width: 520px) {
-        /* line 66, ../scss/layout/_footer.scss */
+        /* line 69, ../scss/layout/_footer.scss */
         footer .region-footer .block-ipwa-newsletter .btn-default:before {
           left: -30px; } }
-  /* line 80, ../scss/layout/_footer.scss */
+  /* line 83, ../scss/layout/_footer.scss */
   footer .region-footer .block-ipwa-newsletter .error {
     font-size: 14px;
     color: #ffffff;
     margin-top: 10px; }
-/* line 87, ../scss/layout/_footer.scss */
+/* line 90, ../scss/layout/_footer.scss */
 footer .region-footer .block-ipwa-base {
   padding-top: 30px; }
-  /* line 90, ../scss/layout/_footer.scss */
+  /* line 93, ../scss/layout/_footer.scss */
   footer .region-footer .block-ipwa-base h3 {
     font-size: 20px;
     color: #273753;
     font-weight: normal; }
-  /* line 96, ../scss/layout/_footer.scss */
+  /* line 99, ../scss/layout/_footer.scss */
   footer .region-footer .block-ipwa-base #footer-icons-images {
     padding: 40px 0; }
-    /* line 99, ../scss/layout/_footer.scss */
+    /* line 102, ../scss/layout/_footer.scss */
     footer .region-footer .block-ipwa-base #footer-icons-images div {
       display: inline-block;
       padding-right: 30px;
       padding-bottom: 30px; }
-/* line 107, ../scss/layout/_footer.scss */
+/* line 110, ../scss/layout/_footer.scss */
 footer .region-footer #block-menu-menu-footer-navigation {
   width: 100%;
   /* Tablet design */ }
   @media (min-width: 767px) {
-    /* line 107, ../scss/layout/_footer.scss */
+    /* line 110, ../scss/layout/_footer.scss */
     footer .region-footer #block-menu-menu-footer-navigation {
       width: 75%;
       float: left; } }
-  /* line 116, ../scss/layout/_footer.scss */
+  /* line 119, ../scss/layout/_footer.scss */
   footer .region-footer #block-menu-menu-footer-navigation ul {
     margin-left: -15px;
     margin-right: -15px;
     /* Tablet design */ }
     @media (min-width: 520px) {
-      /* line 116, ../scss/layout/_footer.scss */
+      /* line 119, ../scss/layout/_footer.scss */
       footer .region-footer #block-menu-menu-footer-navigation ul {
         margin: 0; } }
-    /* line 125, ../scss/layout/_footer.scss */
+    /* line 128, ../scss/layout/_footer.scss */
     footer .region-footer #block-menu-menu-footer-navigation ul li {
       display: block;
       padding: 20px;
@@ -7030,53 +7033,53 @@ footer .region-footer #block-menu-menu-footer-navigation {
       border-bottom: 1px solid #eff2f7;
       /* Tablet design */ }
       @media (min-width: 520px) {
-        /* line 125, ../scss/layout/_footer.scss */
+        /* line 128, ../scss/layout/_footer.scss */
         footer .region-footer #block-menu-menu-footer-navigation ul li {
           display: inline-block;
           border-bottom: 0;
           width: auto;
           padding-left: 0;
           padding-bottom: 0; } }
-      /* line 140, ../scss/layout/_footer.scss */
+      /* line 143, ../scss/layout/_footer.scss */
       footer .region-footer #block-menu-menu-footer-navigation ul li a {
         color: #273753;
         padding: 0;
         font-size: 18px; }
-        /* line 145, ../scss/layout/_footer.scss */
+        /* line 148, ../scss/layout/_footer.scss */
         footer .region-footer #block-menu-menu-footer-navigation ul li a:hover, footer .region-footer #block-menu-menu-footer-navigation ul li a:focus {
           background: none;
           outline: none;
           outline-offset: none; }
-        /* line 152, ../scss/layout/_footer.scss */
+        /* line 155, ../scss/layout/_footer.scss */
         footer .region-footer #block-menu-menu-footer-navigation ul li a:hover {
           color: #e74712; }
-      /* line 158, ../scss/layout/_footer.scss */
+      /* line 161, ../scss/layout/_footer.scss */
       footer .region-footer #block-menu-menu-footer-navigation ul li .open a {
         background: none;
         border: none; }
-        /* line 162, ../scss/layout/_footer.scss */
+        /* line 165, ../scss/layout/_footer.scss */
         footer .region-footer #block-menu-menu-footer-navigation ul li .open a:hover, footer .region-footer #block-menu-menu-footer-navigation ul li .open a:focus {
           background: none;
           border: none; }
-/* line 173, ../scss/layout/_footer.scss */
+/* line 176, ../scss/layout/_footer.scss */
 footer .region-footer .footer_blocks {
   width: 100%;
   text-align: left;
   /* Tablet design */ }
   @media (min-width: 767px) {
-    /* line 173, ../scss/layout/_footer.scss */
+    /* line 176, ../scss/layout/_footer.scss */
     footer .region-footer .footer_blocks {
       width: 25%;
       float: left;
       padding-top: 10px;
       text-align: right; } }
-  /* line 185, ../scss/layout/_footer.scss */
+  /* line 188, ../scss/layout/_footer.scss */
   footer .region-footer .footer_blocks .block-views {
     display: inline-block; }
-    /* line 189, ../scss/layout/_footer.scss */
+    /* line 192, ../scss/layout/_footer.scss */
     footer .region-footer .footer_blocks .block-views .feed-icon img {
       display: none; }
-    /* line 194, ../scss/layout/_footer.scss */
+    /* line 197, ../scss/layout/_footer.scss */
     footer .region-footer .footer_blocks .block-views .feed-icon a:before {
       font-family: "icomoon";
       content: "\e911";
@@ -7084,17 +7087,17 @@ footer .region-footer .footer_blocks {
       font-size: 20px;
       display: inline-block;
       padding: 10px; }
-  /* line 206, ../scss/layout/_footer.scss */
+  /* line 209, ../scss/layout/_footer.scss */
   footer .region-footer .footer_blocks .block-ipwa-base {
     display: inline-block;
     padding-top: 0; }
-    /* line 210, ../scss/layout/_footer.scss */
+    /* line 213, ../scss/layout/_footer.scss */
     footer .region-footer .footer_blocks .block-ipwa-base #page_print {
       font-size: 0;
       background: none;
       border: none;
       padding: 0; }
-      /* line 216, ../scss/layout/_footer.scss */
+      /* line 219, ../scss/layout/_footer.scss */
       footer .region-footer .footer_blocks .block-ipwa-base #page_print:before {
         font-family: "icomoon";
         content: "\e94c";
@@ -7102,13 +7105,13 @@ footer .region-footer .footer_blocks {
         font-size: 20px;
         display: inline-block;
         padding: 10px; }
-  /* line 227, ../scss/layout/_footer.scss */
+  /* line 230, ../scss/layout/_footer.scss */
   footer .region-footer .footer_blocks .block-addthis {
     display: inline-block; }
-    /* line 230, ../scss/layout/_footer.scss */
+    /* line 233, ../scss/layout/_footer.scss */
     footer .region-footer .footer_blocks .block-addthis .addthis_button {
       font-size: 0; }
-      /* line 233, ../scss/layout/_footer.scss */
+      /* line 236, ../scss/layout/_footer.scss */
       footer .region-footer .footer_blocks .block-addthis .addthis_button:before {
         font-family: "icomoon";
         content: "\e94f";
@@ -7116,14 +7119,14 @@ footer .region-footer .footer_blocks {
         font-size: 20px;
         display: inline-block;
         padding: 10px; }
-      /* line 242, ../scss/layout/_footer.scss */
+      /* line 245, ../scss/layout/_footer.scss */
       footer .region-footer .footer_blocks .block-addthis .addthis_button img {
         display: none; }
-/* line 251, ../scss/layout/_footer.scss */
+/* line 254, ../scss/layout/_footer.scss */
 footer .footer-copyright {
   font-size: 18px;
   color: #273753; }
-/* line 256, ../scss/layout/_footer.scss */
+/* line 259, ../scss/layout/_footer.scss */
 footer .nav .open > a, footer .nav .open > a:hover, footer .nav .open > a:focus {
   background: none; }
 
@@ -9170,7 +9173,7 @@ input[type=text]::-ms-clear {
     @media (min-width: 1025px) {
       /* line 294, ../scss/pages/_singleview.scss */
       .node-type-article .group-page-info, .node-type-article .group-page-bottom, .node-type-protagonist .group-page-info, .node-type-protagonist .group-page-bottom, .node-type-nachricht .group-page-info, .node-type-nachricht .group-page-bottom, .node-type-termin .group-page-info, .node-type-termin .group-page-bottom, .node-type-projekt .group-page-info, .node-type-projekt .group-page-bottom, .node-type-publikation .group-page-info, .node-type-publikation .group-page-bottom, .node-type-f-rderbekanntmachung .group-page-info, .node-type-f-rderbekanntmachung .group-page-bottom, .node-type-doorpage .group-page-info, .node-type-doorpage .group-page-bottom {
-        padding: 60px 0;
+        padding: 50px 0;
         max-width: 875px;
         margin: 0 auto; } }
 
@@ -9186,7 +9189,7 @@ input[type=text]::-ms-clear {
 /* line 328, ../scss/pages/_singleview.scss */
 .group-body-container {
   background-color: #ffffff;
-  padding: 60px 20px 45px;
+  padding: 50px 20px 45px;
   /* Over Desktop design */
   overflow: hidden;
   /* h4 {
