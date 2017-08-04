@@ -26,9 +26,19 @@ window.addEventListener('orientationchange', function () {
     });
 	
 	
-	jQuery('#views-exposed-form-aktuelles-page select, #views-exposed-form-projekt-map-project-map select, .#views-exposed-form-projekt-map-page-1 select ').select2({
+	jQuery('#views-exposed-form-aktuelles-page select').select2({
         minimumResultsForSearch: Infinity
 	}); 
+	
+	jQuery("#views-exposed-form-projekt-map-project-map select").select2({
+		
+		minimumResultsForSearch: Infinity
+	});
+	
+	jQuery("#views-exposed-form-projekt-map-page-1 select").select2({
+		
+		minimumResultsForSearch: Infinity
+	});
 	
 	
 	jQuery("input:radio").each(function(){
@@ -37,6 +47,11 @@ window.addEventListener('orientationchange', function () {
 	jQuery(this).parent("label").css('border-bottom', '2px solid #e74712');
   }
 }); 
+
+
+
+
+
 
 jQuery(window).click(function(event){
 		jQuery(".views-exposed-widget").removeClass("selColor");
