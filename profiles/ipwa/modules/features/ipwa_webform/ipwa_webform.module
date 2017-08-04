@@ -13,6 +13,6 @@ function ipwa_webform_form_alter(&$form, &$form_state, $form_id) {
   if($form_id == 'webform_client_form_125') {
     $form['#node']->content['field_pflichtfeldhinweis']['0']['#markup'] ='<span class="required-hint">'.'Die mit * markierten Felder sind verpflichtend und müssen ausgefüllt werden.'.'</span>';
   }else{
-    $form['#node']->content['field_pflichtfeldhinweis']['0']['#markup'] = '<span class="required-hint"><h3>' . 'Die mit * markierten Felder des E-Mail-Formulars sind Pflichtfelder.' . '</h3></span>';
+    $form['#node']->content['field_pflichtfeldhinweis']['0']['#markup'] = '<h3><span class="required-hint">' . 'Die mit * markierten Felder des E-Mail-Formulars sind Pflichtfelder.' . '</span></h3>';
   }
 }
