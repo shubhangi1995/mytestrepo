@@ -46,7 +46,7 @@ function ipwa_base_views_pre_render(&$view) {
               $parent_ids[] = $parent_term->tid;
               if (!empty($parent_term->field_bild)) {
                 // Show Icon of parent term
-                $term->name = file_create_url($term->field_bild['und'][0]['uri']);
+                $term->name = file_create_url($parent_term->field_bild['und'][0]['uri']);
               }
             }
           }
@@ -72,8 +72,8 @@ function ipwa_base_views_pre_render(&$view) {
       $node = node_load($node_id);
       $result->_entity_properties['map_term_icon'] = array();
       //to get taxonomy present in the node...
-      foreach ($node->field_themenzuweisung['und'] as $key => $val) {
-        $tid = $node->field_themenzuweisung['und'][$key]['tid'];
+      foreach ($node->field_themenzuweisung['und'] as $key_term => $val) {
+        $tid = $node->field_themenzuweisung['und'][$key_term]['tid'];
         $term = taxonomy_term_load($tid);
         $parent = taxonomy_get_parents($tid);
 
@@ -82,7 +82,7 @@ function ipwa_base_views_pre_render(&$view) {
             //if this term is also child of same parent as previous one,
             // there is no point of showing same icon, in that case remove the term
             if (in_array($parent_term->tid, $parent_ids)) {
-              unset($node->field_themenzuweisung['und'][$key]);
+              unset($node->field_themenzuweisung['und'][$key_term]);
             } else {
               $parent_ids[] = $parent_term->tid;
               if (!empty($parent_term->field_bild)) {
@@ -241,7 +241,6 @@ function ipwa_base_block_view($delta = '') {
       $block['subject'] ='<h3>Gefördert durch</h3>';
       $block['content'] = show_footer_block_icons();
       break;
-      $block['#action'] = $base_url;
     case 'footer_print':
       $block['subject'] = '';
       $block['content'] = show_footer_print();
