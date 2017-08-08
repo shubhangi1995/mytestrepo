@@ -48,30 +48,47 @@ function ipwa_search_default_search_api_index() {
         "field_ort" : { "type" : "string" },
         "field_plz" : { "type" : "text" },
         "field_themenzuweisung" : { "type" : "list\\u003Cinteger\\u003E", "entity_type" : "taxonomy_term" },
+        "field_themenzuweisung:name" : { "type" : "list\\u003Ctext\\u003E" },
+        "field_themenzuweisung:parent" : {
+          "type" : "list\\u003Clist\\u003Cinteger\\u003E\\u003E",
+          "entity_type" : "taxonomy_term"
+        },
+        "field_themenzuweisung:parents_all" : {
+          "type" : "list\\u003Clist\\u003Cinteger\\u003E\\u003E",
+          "entity_type" : "taxonomy_term"
+        },
+        "field_themenzuweisung:vocabulary" : {
+          "type" : "list\\u003Cinteger\\u003E",
+          "entity_type" : "taxonomy_vocabulary"
+        },
         "field_ver_ffentlichungsdatum" : { "type" : "date" },
         "nid" : { "type" : "integer" },
+        "search_api_access_node" : { "type" : "list\\u003Cstring\\u003E" },
         "search_api_aggregation_1" : { "type" : "text", "boost" : "5.0" },
         "search_api_language" : { "type" : "string" },
-        "status" : { "type" : "integer" },
+        "search_api_panelizer_content" : { "type" : "text" },
+        "search_api_panelizer_title" : { "type" : "text" },
+        "search_api_url" : { "type" : "uri" },
+        "status" : { "type" : "boolean" },
         "title" : { "type" : "string", "boost" : "5.0" },
         "type" : { "type" : "string" }
       },
       "data_alter_callbacks" : {
         "search_api_alter_bundle_filter" : {
-          "status" : 0,
+          "status" : 1,
           "weight" : "-10",
           "settings" : { "default" : "1", "bundles" : [] }
         },
-        "search_api_alter_node_access" : { "status" : 0, "weight" : "0", "settings" : [] },
+        "search_api_alter_node_access" : { "status" : 1, "weight" : "0", "settings" : [] },
         "search_api_alter_node_status" : { "status" : 1, "weight" : "0", "settings" : [] },
-        "panelizer" : { "status" : 0, "weight" : "0", "settings" : [] },
+        "panelizer" : { "status" : 1, "weight" : "0", "settings" : [] },
         "search_api_alter_language_control" : {
-          "status" : 0,
+          "status" : 1,
           "weight" : "0",
           "settings" : { "lang_field" : "", "languages" : [] }
         },
-        "search_api_alter_add_hierarchy" : { "status" : 0, "weight" : "0", "settings" : { "fields" : [] } },
-        "search_api_alter_add_url" : { "status" : 0, "weight" : "0", "settings" : [] },
+        "search_api_alter_add_hierarchy" : { "status" : 1, "weight" : "0", "settings" : { "fields" : [] } },
+        "search_api_alter_add_url" : { "status" : 1, "weight" : "0", "settings" : [] },
         "search_api_alter_add_aggregation" : {
           "status" : 1,
           "weight" : "0",
