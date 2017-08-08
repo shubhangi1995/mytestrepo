@@ -378,10 +378,10 @@ jQuery('.tb-megamenu-submenu.dropdown-menu').attr('style','display:none !importa
 	
 	
 	jQuery(document).on('mouseup', '.select2-container--open .select2-results__option', function (e) {
-		if(jQuery(this).html() == "Akteur"){
+		if(jQuery('#edit-type-wrapper .select2-selection .select2-selection__rendered').html() == "Akteur"){
 			jQuery(".views-widget-filter-field_akteurstyp").addClass("active");
 		}
-		else{
+		else if (jQuery('#edit-type-wrapper .select2-selection .select2-selection__rendered').html() !== "Akteur"){
 			jQuery(".views-widget-filter-field_akteurstyp").removeClass("active");
 		}
 	});
