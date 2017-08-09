@@ -214,14 +214,13 @@
 
             .map-link {
                 display: inline-block;
-                float:left;
+                float: left;
                 padding-bottom: 40px;
-				
-				@include devicebreak(medium){
-				float:right;
-				
-				}
-				
+
+                @include devicebreak(medium) {
+                    float: right;
+                }
+
 
                 a {
                     text-decoration: none;
@@ -263,7 +262,15 @@
 
         .views-widget-sort-by {
             padding: 30px 0;
-            float: right;
+            font-size: 18px;
+            text-align: right;
+
+            @include devicebreak(medium) {
+                width: 50%;
+                float: left;
+                font-size: 20px;
+            }
+
 
             .form-group {
                 margin-bottom: 0;
@@ -299,13 +306,12 @@
 
                 position: relative;
                 margin: 0 auto;
-				
 
                 .categories-filter .views-exposed-widget {
                     position: relative;
                     width: 100%;
                     margin-bottom: 0;
-					
+                    padding: 0;
 
                     @include devicebreak(x-medium) {
                         width: 50%;
@@ -368,13 +374,14 @@
                     }
                 }
 
-				.views-widget-sort-order{
-				display:none;
-				}
-				
+                .views-widget-sort-order {
+                    display: none;
+                }
+
                 .views-exposed-widget:nth-child(4) {
                     width: 100%;
                     height: 49px;
+                    padding: 0;
 
                     @include devicebreak(x-medium) {
                         width: 50%;
@@ -412,52 +419,56 @@
                     }
 
                     > .views-submit-button {
-                        border: 0;
                         background: 0;
-                        right:0;
                         width: auto;
-                        top: 5px;
-                        padding:10px 0;
+                        border: 0;
 
                         @include devicebreak(x-large) {
                             position: absolute;
-							padding:0;
-							right:4px;
-                        }
-
-
-                        .btn {
-                            margin-top: 0;
-                            border-radius: 0;
-                            height: 40px;
-                            color: $main-color;
-                            padding: 6px 40px;
-                            border: none;
-                            background: $color-white;
-                            font-weight: bold;
-
-                            &::before {
-                                font-family: "icomoon";
-                                content: "\e90e";
-                                color: $active-menu;
-                                left: 11px;
-                                top: 15px;
-                                font-size: 12px;
-                                display: inline-block;
-                                position: absolute;
-                            }
+                            padding: 0;
+                            right: 4px;
                         }
                     }
                 }
 
-                .views-reset-button {                 
-                    
+                .views-reset-button {
                     .form-submit {
                         margin: 0;
                         background: 0;
                         color: $main-color;
                         border: 0;
-						font-size:20px;
+                        font-size: 20px;
+                    }
+                }
+
+                .views-submit-button {
+                    border: 0;
+                    background: 0;
+                    right: 0;
+                    width: auto;
+                    top: 5px;
+                    position: relative;
+
+                    .btn {
+                        margin-top: 0;
+                        border-radius: 0;
+                        height: 40px;
+                        color: $main-color;
+                        padding: 6px 40px;
+                        border: none;
+                        background: $color-white;
+                        font-weight: bold;
+
+                        &::before {
+                            font-family: "icomoon";
+                            content: "\e90e";
+                            color: $active-menu;
+                            left: 11px;
+                            top: 15px;
+                            font-size: 12px;
+                            display: inline-block;
+                            position: absolute;
+                        }
                     }
                 }
 
@@ -472,6 +483,7 @@
         }
     }
 }
-.view-display-id-page_1 .view-filters .views-exposed-form .views-exposed-widgets{
-padding:0;
+
+.view-display-id-page_1 .view-filters .views-exposed-form .views-exposed-widgets {
+    padding: 0;
 }
