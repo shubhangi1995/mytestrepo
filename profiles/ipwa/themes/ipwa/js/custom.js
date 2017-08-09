@@ -49,18 +49,6 @@ window.addEventListener('orientationchange', function () {
 }); 
 
 
-jQuery(window).click(function(event){
-		jQuery(".views-exposed-widget").removeClass("selColor");
-});
-
-jQuery(".select2").on("click", function(event){
-	event.stopPropagation();
-	jQuery(this).parents(".views-exposed-widget").addClass("selColor").siblings().removeClass("selColor");
-	if(!jQuery(this).next().is(".select2-container")){
-		jQuery(this).parent().append(jQuery(".select2-dropdown").parent());
-		jQuery(this).next().attr("style","top:29px !important;left:0 !important;");		
-	}	
-});
 	
 //search
 	
@@ -401,12 +389,26 @@ jQuery(".page-projekt-map-list .paragraphs-item-topic-teaser-paragraph").parent(
 
 jQuery(".view-display-id-page_1 .view-filters .views-submit-button").appendTo(".view-display-id-page_1 .view-filters .views-widget-filter-field_plz");
 
-// scrollbar
+	// scrollbar
 
-jQuery('.page-aktuelles select, .page-projekt-map select, .page-projekt-map-list select').select2().on("select2:open", function(){
- jQuery('.page-aktuelles .select2-results, .page-projekt-map .select2-results, .page-projekt-map-list .select2-results').addClass("simplebar");
- jQuery('.page-aktuelles .select2-results, .page-projekt-map .select2-results, .page-projekt-map-list .select2-results').simplebar();
-});
+	jQuery('.page-aktuelles select, .page-projekt-map select, .page-projekt-map-list select').select2().on("select2:open", function(){
+	 jQuery('.page-aktuelles .select2-results, .page-projekt-map .select2-results, .page-projekt-map-list .select2-results').addClass("simplebar");
+	 jQuery('.page-aktuelles .select2-results, .page-projekt-map .select2-results, .page-projekt-map-list .select2-results').simplebar();
+	});
+
+	jQuery(window).click(function(event){
+			jQuery(".views-exposed-widget").removeClass("selColor");
+	});
+
+	jQuery(".select2").on("click", function(event){
+		// alert("hiee");
+		event.stopPropagation();
+		jQuery(this).parents(".views-exposed-widget").addClass("selColor").siblings().removeClass("selColor");
+		if(!jQuery(this).next().is(".select2-container")){
+			jQuery(this).parent().append(jQuery(".select2-dropdown").parent());
+			jQuery(this).next().attr("style","top:29px !important;left:0 !important;");		
+		}	
+	});
 
 	
 });
