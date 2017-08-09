@@ -102,15 +102,204 @@
 
     .view-filters {
         .views-exposed-form {
+            #map_list_link {
+                @extend .container;
+
+                text-align: right;
+
+                a {
+                    text-decoration: none;
+                    padding-bottom: 4px;
+                    border-bottom: 2px solid $color-light-grey;
+                    color: $main-color;
+                    font-weight: bold;
+                    position: relative;
+                    margin-left: 30px;
+
+                    &:before {
+                        content: '\e949';
+                        font-family: "icomoon";
+                        color: #e74712;
+                        font-size: 14px;
+                        position: absolute;
+                        left: -25px;
+                        top: 9px;
+                        display: inline-block;
+                    }
+                }
+
+                .map-sub-title {
+                    float: left;
+                }
+            }
+
+            .footer_map {
+                padding-top: 50px;
+                position: relative;
+
+                .project-webform {
+                    width: 1170px;
+                    margin: 0 auto;
+                    z-index: 999;
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    bottom: 200px;
+
+                    a {
+                        background: $color-white;
+                        padding: 14px 40px 14px 55px;
+                        text-decoration: none;
+                        color: $main-color;
+                        z-index: 9999;
+                        font-size: 15px;
+
+                        @include devicebreak(medium) {
+                            font-size: 20px;
+                        }
+
+
+                        &:before {
+                            font-family: "icomoon";
+                            content: "\e93f";
+                            color: $active-menu;
+                            font-size: 14px;
+                            position: absolute;
+                            left: 25px;
+                            top: 6px;
+                            display: inline-block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.view-display-id-page_1 {
+    .view-sub-wrapper {
+        @extend .container;
+
+        .view-header {
+            .project-webform {
+                display: inline-block;
+                padding-bottom: 40px;
+                position: relative;
+
+                a {
+                    background: $color-white;
+                    padding: 14px 40px 14px 55px;
+                    text-decoration: none;
+                    color: $main-color;
+                    z-index: 9999;
+                    font-size: 15px;
+
+                    @include devicebreak(medium) {
+                        font-size: 20px;
+                    }
+
+
+                    &:before {
+                        font-family: "icomoon";
+                        content: "\e93f";
+                        color: $active-menu;
+                        font-size: 14px;
+                        position: absolute;
+                        left: 25px;
+                        top: 6px;
+                        display: inline-block;
+                    }
+                }
+            }
+
+            .map-link {
+                display: inline-block;
+                float: right;
+                padding-bottom: 40px;
+
+                a {
+                    text-decoration: none;
+                    padding-bottom: 4px;
+                    border-bottom: 2px solid $color-light-grey;
+                    color: $main-color;
+                    font-weight: bold;
+                    position: relative;
+                    margin-left: 30px;
+
+                    &:before {
+                        content: '\e949';
+                        font-family: "icomoon";
+                        color: #e74712;
+                        font-size: 14px;
+                        position: absolute;
+                        left: -25px;
+                        top: 9px;
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+
+        .attachment-before {
+            .view-result-count {
+                width: auto;
+                float: left;
+                padding: 30px 0;
+                font-size: 20px;
+                font-weight: bold;
+               
+
+                @include devicebreak(medium) {
+                    width: 50%;
+                    font-size: 22px;
+                }
+            }
+        }
+
+        .views-widget-sort-by {
+            padding: 30px 0;
+            float: right;
+
+            .form-group {
+                margin-bottom: 0;
+
+                .bef-select-as-links .form-type-bef-link {
+                    display: inline-block;
+                    padding-left: 15px;
+
+                    a {
+                        text-decoration: none;
+                        color: $main-color;
+
+                        &.active {
+                            border-bottom: 2px solid $active-menu;
+                            padding-bottom: 12px;
+                        }
+                    }
+                }
+
+                .select2-container {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+.view-display-id-page_1, .view-display-id-project_map {
+    .view-filters {
+	 height:49px;
+        .views-exposed-form {
             .views-exposed-widgets {
                 @extend .container;
 
                 position: relative;
-                padding-bottom: 40px;
+                margin: 0 auto;
 
-                .views-exposed-widget {
+                .categories-filter .views-exposed-widget {
                     position: relative;
                     width: 100%;
+                    margin: 0;
 
                     @include devicebreak(x-medium) {
                         width: 50%;
@@ -211,340 +400,14 @@
                             box-shadow: none;
                         }
                     }
-                }
 
-                .views-exposed-widget:nth-child(5) {
-                    background: 0;
-                    border: 0;
-                }
-
-                .views-reset-button {
-                    display: none;
-                }
-
-                .views-submit-button {
-                    right: 7px;
-                    top: -5px;
-                    width: auto;
-                    background: 0;
-                    border: 0;
-
-                    @include devicebreak(x-large) {
-                        position: absolute;
-                    }
-
-
-                    .btn {
-                        margin-top: 0;
-                        border-radius: 0;
-                        height: 40px;
-                        color: $main-color;
-                        padding: 6px 40px;
-                        border: none;
-                        background: $color-white;
-                        font-weight: bold;
-
-                        &::before {
-                            font-family: "icomoon";
-                            content: "\e90e";
-                            color: $active-menu;
-                            left: 10px;
-                            top: 23px;
-                            font-size: 12px;
-                            display: inline-block;
-                            position: absolute;
-                        }
-                    }
-                }
-
-                .views-widget-filter-field_akteurstyp {
-                    display: none;
-                }
-
-                .views-widget-filter-field_akteurstyp.active {
-                    display: block;
-                }
-            }
-
-            #map_list_link {
-                @extend .container;
-
-                text-align: right;
-
-                a {
-                    text-decoration: none;
-                    padding-bottom: 4px;
-                    border-bottom: 2px solid $color-light-grey;
-                    color: $main-color;
-                    font-weight: bold;
-                    position: relative;
-                    margin-left: 30px;
-
-                    &:before {
-                        content: '\e949';
-                        font-family: "icomoon";
-                        color: #e74712;
-                        font-size: 14px;
-                        position: absolute;
-                        left: -25px;
-                        top: 9px;
-                        display: inline-block;
-                    }
-                }
-
-                .map-sub-title {
-                    float: left;
-                }
-            }
-
-            .footer_map {
-                padding-top: 50px;
-                position: relative;
-
-                .project-webform {
-                    width: 1170px;
-                    margin: 0 auto;
-                    z-index: 999;
-                    position: absolute;
-                    left: 0;
-                    right: 0;
-                    bottom: 200px;
-
-                    a {
-                        background: $color-white;
-                        padding: 14px 40px 14px 55px;
-                        text-decoration: none;
-                        color: $main-color;
-                        z-index: 9999;
-                        font-size: 15px;
-
-                        @include devicebreak(medium) {
-                            font-size: 20px;
-                        }
-
-
-                        &:before {
-                            font-family: "icomoon";
-                            content: "\e93f";
-                            color: $active-menu;
-                            font-size: 14px;
-                            position: absolute;
-                            left: 25px;
-                            top: 6px;
-                            display: inline-block;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
-.view-display-id-page_1 {
-    .view-sub-wrapper {
-        @extend .container;
-
-        .view-header {
-            .project-webform {
-                display: inline-block;
-                padding-bottom: 40px;
-				position:relative;
-
-                 a {
-                        background: $color-white;
-                        padding: 14px 40px 14px 55px;
-                        text-decoration: none;
-                        color: $main-color;
-                        z-index: 9999;
-                        font-size: 15px;
-
-                        @include devicebreak(medium) {
-                            font-size: 20px;
-                        }
-
-
-                        &:before {
-                            font-family: "icomoon";
-                            content: "\e93f";
-                            color: $active-menu;
-                            font-size: 14px;
-                            position: absolute;
-                            left: 25px;
-                            top: 6px;
-                            display: inline-block;
-                        }
-                    }
-            }
-
-            .map-link {
-                display: inline-block;
-                float: right;
-                padding-bottom: 40px;
-
-                a {
-                    text-decoration: none;
-                    padding-bottom: 4px;
-                    border-bottom: 2px solid $color-light-grey;
-                    color: $main-color;
-                    font-weight: bold;
-                    position: relative;
-                    margin-left: 30px;
-
-                    &:before {
-                        content: '\e949';
-                        font-family: "icomoon";
-                        color: #e74712;
-                        font-size: 14px;
-                        position: absolute;
-                        left: -25px;
-                        top: 9px;
-                        display: inline-block;
-                    }
-                }
-            }
-        }
-
-        .attachment-before {
-            .view-result-count {
-                width: auto;
-                float: left;
-                padding: 30px 0;
-                font-size: 20px;
-                font-weight: bold;
-                margin-top: -88px;
-
-                @include devicebreak(medium) {
-                    width: 50%;
-                    font-size: 22px;
-                }
-            }
-
-           
-        }
-
-        .view-filters {
-            .views-exposed-form {
-                .views-exposed-widgets {
-                    @extend .container;
-
-                    position: relative;
-                    margin: 0;
-
-                    .categories-filter .views-exposed-widget {
-                        position: relative;
-                        width: 100%;
-                        margin: 0;
-
-                        @include devicebreak(x-medium) {
-                            width: 50%;
-                        }
-
-
-                        @include devicebreak(x-large) {
-                            width: 22%;
-                            height: 49px;
-                        }
-
-
-                        &:before {
-                            content: "\f107";
-                            font-family: FontAwesome;
-                            color: $color-white;
-                            position: absolute;
-                            float: right;
-                            right: 25px;
-                            top: 50%;
-                            margin-top: -10px;
-                        }
-
-                        &.selColor {
-                            background: $header-dropdown-menu;
-                        }
-
-                        float: left;
-                        padding: 10px 0;
-                        margin-bottom: 10px;
-                        background: $main-color;
-                        border-right: 1px solid $color-light-grey;
-
-                        .views-widget .form-item {
-                            padding: 0;
-                            position: relative;
-                            display: block;
-
-                            .select2-container--default .select2-selection--single {
-                                background: 0;
-                                border: 0;
-                                border-radius: 0;
-
-                                .select2-selection__rendered {
-                                    color: $color-white;
-                                    padding-left: 20px;
-                                    width: 240px;
-                                }
-
-                                .select2-selection__arrow {
-                                    display: none;
-                                }
-                            }
-
-                            .select2-container + .select2-container {
-                                top: 38px !important;
-                                left: 0px !important;
-                                position: absolute;
-                            }
-                        }
-                    }
-
-                    .views-exposed-widget:nth-child(4) {
-                        width: 100%;
-                        height: 49px;
-
-                        @include devicebreak(x-medium) {
-                            width: 50%;
-                        }
-
-
-                        @include devicebreak(x-large) {
-                            width: 34%;
-                        }
-
-
-                        &:before {
-                            display: none;
-                        }
-
-                        .form-item {
-                            &:before {
-                                font-family: "icomoon";
-                                content: "\e94e";
-                                color: $color-white;
-                                left: 20px;
-                                top: 4px;
-                                display: inline-block;
-                                position: absolute;
-                            }
-
-                            input.form-control {
-                                background: 0;
-                                border: 0;
-                                padding-left: 60px;
-                                color: $color-white;
-                                padding-right: 150px;
-                                box-shadow: none;
-                            }
-                        }
-                    }
-
-                    .views-reset-button {
-                        display: none;
-                    }
-
-                    .views-submit-button {
-                        right: 0;
-                        top: -5px;
-                        padding: 10px 8px;
-                        width: auto !important;
+                    > .views-submit-button {
+                        border: 0;
+                        background: 0;
+                        right: 4px;
+                        width: auto;
+                        top: 5px;
+                        padding: 0;
 
                         @include devicebreak(x-large) {
                             position: absolute;
@@ -565,42 +428,26 @@
                                 font-family: "icomoon";
                                 content: "\e90e";
                                 color: $active-menu;
-                                left: 17px;
-                                top: 23px;
+                                left: 11px;
+                                top: 15px;
                                 font-size: 12px;
                                 display: inline-block;
                                 position: absolute;
                             }
                         }
                     }
+                }
 
-                    .views-widget-sort-by {
-                        padding: 30px 0;
-                        float: right;
+                .views-reset-button {
+                    display: none;
+                }
 
-                        .form-group {
-                            margin-bottom: 0;
+                .views-widget-filter-field_akteurstyp {
+                    display: none;
+                }
 
-                            .bef-select-as-links .form-type-bef-link {
-                                display: inline-block;
-                                padding-left: 15px;
-
-                                a {
-                                    text-decoration: none;
-                                    color: $main-color;
-
-                                    &.active {
-                                        border-bottom: 2px solid $active-menu;
-                                        padding-bottom: 12px;
-                                    }
-                                }
-                            }
-
-                            .select2-container {
-                                display: none;
-                            }
-                        }
-                    }
+                .views-widget-filter-field_akteurstyp.active {
+                    display: block;
                 }
             }
         }

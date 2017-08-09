@@ -386,6 +386,8 @@ jQuery('.tb-megamenu-submenu.dropdown-menu').attr('style','display:none !importa
 		}
 	});
 	
+	jQuery(".view-display-id-page_1 .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by").appendTo(".view-display-id-page_1 .attachment-before");
+	
 	//page-projekt-map-list
 	
 	if(jQuery(".view-display-id-page_1").length > 0){
@@ -396,6 +398,8 @@ jQuery(".page-projekt-map-list .group-page-info .page-title , .page-projekt-map-
 
 jQuery(".page-projekt-map-list .paragraphs-item-topic-teaser-paragraph").parent().wrapAll("<div class='map-wrap'></div>");
 
+
+jQuery(".view-display-id-page_1 .view-filters .views-submit-button").appendTo(".view-display-id-page_1 .view-filters .views-widget-filter-field_plz");
 
 // scrollbar
 
