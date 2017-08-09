@@ -362,8 +362,9 @@ jQuery('.tb-megamenu-submenu.dropdown-menu').attr('style','display:none !importa
 	
 	jQuery(".page-projekt-map .group-page-info .page-title , .page-projekt-map .group-page-info .field-name-body").wrapAll("<div class='project-map-wrapper'></div>");
 	
+	if(jQuery(window).innerWidth() >= 1024){
 	jQuery(".view-display-id-project_map .view-filters .views-submit-button").appendTo(".view-display-id-project_map .view-filters .views-widget-filter-field_plz");
-	
+	}
 	
 	jQuery(document).on('mouseup', '.select2-container--open .select2-results__option', function (e) {
 		if(jQuery('#edit-type-wrapper .select2-selection .select2-selection__rendered').html() == "Akteur"){
@@ -386,9 +387,9 @@ jQuery(".page-projekt-map-list .group-page-info .page-title , .page-projekt-map-
 
 jQuery(".page-projekt-map-list .paragraphs-item-topic-teaser-paragraph").parent().wrapAll("<div class='map-wrap'></div>");
 
-
+if(jQuery(window).innerWidth() >= 1024){
 jQuery(".view-display-id-page_1 .view-filters .views-submit-button").appendTo(".view-display-id-page_1 .view-filters .views-widget-filter-field_plz");
-
+}
 	// scrollbar
 
 	jQuery('.page-aktuelles select, .page-projekt-map select, .page-projekt-map-list select').select2().on("select2:open", function(){
