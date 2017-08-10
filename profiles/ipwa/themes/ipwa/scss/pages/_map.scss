@@ -217,9 +217,11 @@
                 display: inline-block;
                 float: left;
                 padding-bottom: 40px;
+				width:100%;
 
                 @include devicebreak(medium) {
                     float: right;
+					width:auto;
                 }
 
 

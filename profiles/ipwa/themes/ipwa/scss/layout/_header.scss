@@ -395,6 +395,11 @@ header {
 											 padding-top:60px;
 											  a{
 											  border-bottom:2px solid $color-white;
+											  padding-left:0;
+											  margin-left:25px;
+											  &:before{
+											   margin-left:-25px;
+											  }
 											
 											  }
 											}
