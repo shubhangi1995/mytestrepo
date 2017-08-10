@@ -79,7 +79,7 @@
       </div>
     <?php endif; ?>
   </div>
-  <div id="map_list_link"><a href="schaufenster-digitales-nrw-liste">zur Listensicht</a></div>
+  <div id="map_list_link"><a href="schaufenster-digitales-nrw-listenansicht">zur Listensicht</a></div>
   <div id="footer_map" class="footer_map">
     <div class="project-webform"><a href="schaufenster-digitales-nrw/projekt-vorschlagen">PROJEKT VORSCHLAGEN</a></div>
 	<div class="map-popup" role="dialog">
