@@ -37,7 +37,9 @@ function ipwa_projekt__form_alter(&$form, &$form_state, $form_id) {
 }
 
 function ipwa_projekt__node_validate($node, $form, &$form_state) {
-  if(empty($node->field_latitude['und'][0]['value']) && empty($node->field_longitude['und'][0]['value'])) {
-    form_set_error('PLZ', t('Please enter a valid PLZ.'));
-  }
+  print_r($node);
+  exit();
+//  if(empty($node->field_latitude['und'][0]['value']) && empty($node->field_longitude['und'][0]['value'])) {
+//    form_set_error('PLZ', t('Please enter a valid PLZ.'));
+//  }
 }
