@@ -362,7 +362,7 @@ jQuery('.tb-megamenu-submenu.dropdown-menu').attr('style','display:none !importa
 	
 	jQuery(".page-projekt-map .group-page-info .page-title , .page-projekt-map .group-page-info .field-name-body").wrapAll("<div class='project-map-wrapper'></div>");
 	
-	if(jQuery(window).innerWidth() >= 1024){
+	if(jQuery(window).innerWidth() > 1024){
 	jQuery(".view-display-id-project_map .view-filters .views-submit-button").appendTo(".view-display-id-project_map .view-filters .views-widget-filter-field_plz");
 	}
 	
@@ -387,7 +387,7 @@ jQuery(".page-projekt-map-list .group-page-info .page-title , .page-projekt-map-
 
 jQuery(".page-projekt-map-list .paragraphs-item-topic-teaser-paragraph").parent().wrapAll("<div class='map-wrap'></div>");
 
-if(jQuery(window).innerWidth() >= 1024){
+if(jQuery(window).innerWidth() > 1024){
 jQuery(".view-display-id-page_1 .view-filters .views-submit-button").appendTo(".view-display-id-page_1 .view-filters .views-widget-filter-field_plz");
 }
 	// scrollbar
@@ -411,6 +411,8 @@ jQuery(".view-display-id-page_1 .view-filters .views-submit-button").appendTo(".
 		}	
 	});
 
+	
+	
 	
 });
 
