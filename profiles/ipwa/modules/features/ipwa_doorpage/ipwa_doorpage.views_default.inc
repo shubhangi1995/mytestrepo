@@ -1242,8 +1242,8 @@ function ipwa_doorpage_views_default_views() {
   $handler->display->display_options['style_options']['widgets']['bottom']['views_slideshow_slide_counter']['weight'] = '1';
   $handler->display->display_options['style_options']['views_slideshow_cycle']['effect'] = 'scrollHorz';
   $handler->display->display_options['style_options']['views_slideshow_cycle']['transition_advanced'] = 1;
-  $handler->display->display_options['style_options']['views_slideshow_cycle']['timeout'] = '2000';
-  $handler->display->display_options['style_options']['views_slideshow_cycle']['speed'] = '600';
+  $handler->display->display_options['style_options']['views_slideshow_cycle']['timeout'] = '4000';
+  $handler->display->display_options['style_options']['views_slideshow_cycle']['speed'] = '900';
   $handler->display->display_options['style_options']['views_slideshow_cycle']['delay'] = '0';
   $handler->display->display_options['style_options']['views_slideshow_cycle']['pause'] = 0;
   $handler->display->display_options['style_options']['views_slideshow_cycle']['action_advanced'] = 1;
