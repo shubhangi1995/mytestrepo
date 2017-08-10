@@ -389,12 +389,15 @@ header {
                                                 margin: 0;
                                                 top: 3px;
                                             }
-											&.homelink{
-											 padding-top:60px;
-											 border-bottom:2px solid $color-white;
 											
-											}
                                         }
+										&.homelink{
+											 padding-top:60px;
+											  a{
+											  border-bottom:2px solid $color-white;
+											
+											  }
+											}
                                     }
                                 }
                             }
