@@ -412,7 +412,8 @@ jQuery(".view-display-id-page_1 .view-filters .views-submit-button").appendTo(".
 	});
 
 	
-	
+
+	jQuery('.tb-megamenu ul.tb-megamenu-nav li .mega-dropdown-inner .tb-submenu-left ul li a:contains(Übersicht)').addClass("homelink");
 	
 });
 
