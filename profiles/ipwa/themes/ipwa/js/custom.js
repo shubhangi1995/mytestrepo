@@ -383,7 +383,7 @@ jQuery('.tb-megamenu-submenu.dropdown-menu').attr('style','display:none !importa
 	jQuery(document.body).addClass("page-projekt-map-list");
 } 
 
-jQuery(".page-projekt-map-list .group-page-info .page-title , .page-projekt-map-list .group-page-info .field-name-field-kurztext").wrapAll("<div class='project-map-wrapper'></div>");
+jQuery(".page-projekt-map-list .group-page-info .page-title , .page-projekt-map-list .group-page-info .field-type-text-with-summary").wrapAll("<div class='project-map-wrapper'></div>");
 
 jQuery(".page-projekt-map-list .paragraphs-item-topic-teaser-paragraph").parent().wrapAll("<div class='map-wrap'></div>");
 
