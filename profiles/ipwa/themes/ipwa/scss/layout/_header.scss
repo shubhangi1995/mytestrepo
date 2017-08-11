@@ -330,6 +330,9 @@ header {
                                 .view-header {
                                     color: $color-white;
                                     font-size: 18px;
+									p{
+									line-height:normal;
+									}
                                 }
 
                                 .view-content .views-row {
@@ -339,7 +342,7 @@ header {
                                     a {
                                         background: $main-color;
                                         font-size: 16px;
-                                        padding: 10px;
+                                        padding: 14px;
 
                                         &:hover {
                                             background: $active-menu;
