@@ -45,7 +45,7 @@
 			margin:0;
 			padding:0;
 		}
-		p{
+		p, ul, ol{
 			font-size:15px !important;
 			line-height:25px;
 		}
@@ -71,7 +71,7 @@
 			color:#273753 !important;
 			text-decoration:none !important;
 		}
-		.more_link{
+		.more_link, .more_link a{
 			color:#e74712 !important;
 		}
 		br{
@@ -166,7 +166,7 @@
 
                   <?php //Following code is for print Title of Group. ?>
                   <?php foreach($field_data[$items['value']]->field_group_heading['und'] as $group_title): ?>
-                    <h2 style="font-size:22px;background:#eff2f7;padding:20px 0;text-align:center;border-bottom:20px solid #fff;border-top:20px solid #fff; color:#273753s"><a href="<?php print $group_title['url']; ?>" ><?php print $group_title['title']; ?></a></h2>
+                    <h2 style="font-size:22px;background:#eff2f7;padding:20px 0;text-align:center;border-bottom:20px solid #fff;border-top:20px solid #fff; color:#273753;margin-top:30px;margin-bottom:-10px;"><a href="<?php print $group_title['url']; ?>" ><?php print $group_title['title']; ?></a></h2>
 					<table style="font-family:Arial,Helvetica, sans-serif;margin:0 auto; font-size:16px;color:#273753;width:720px; width = "720">
 					<tr>
 					<td style="padding:20px 20px; background:#eff2f7;color:#273753">
@@ -270,9 +270,9 @@
 				<tr style="background:#eff2f7;">
 				<td style="color:#273753;padding:20px;font-size:12px !important;">
 					<div style="margin-bottom:25px;color:#273753;font-size:12px !important;line-height:22px;">Redaktionell verantwortlich im Sinne § 5 TMG bzw. § 55 RStV: Dr. Thomas König
-            Redaktion: Dr. Jan Christopher Brandt, VDI Technologiezentrum GmbH, VDI-Platz 1, 40468 Düsseldorf, E-Mail: nrw40-redaktion@vdi.de
+            Redaktion: Dr. Jan Christopher Brandt, VDI Technologiezentrum GmbH, VDI-Platz 1, 40468 Düsseldorf, E-Mail: <span class="more_link">nrw40-redaktion@vdi.de</span>
           </div>
-					<div style="margin-bottom:25px;color:#273753;font-size:12px !important;line-height:22px;">Sie können diesen Newsletter <a href= "<?php print token_replace('[simplenews-subscriber:unsubscribe-url]', array('sanitize' => FALSE)); ?>">hier abbestellen.</a></div>
+					<div style="margin-bottom:25px;color:#273753;font-size:12px !important;line-height:22px;">Sie können diesen Newsletter <a class="more_link" href= "<?php print token_replace('[simplenews-subscriber:unsubscribe-url]', array('sanitize' => FALSE)); ?>">hier abbestellen.</a></div>
 					<div style="color:#273753;font-size:12px !important;line-height:22px;">© 2017  Ministerium für Wirtschaft, Energie, Industrie, Mittelstand und  Handwerk des Lands Nordrhein-Westfalen</div>
 				</td>
 				</tr>
