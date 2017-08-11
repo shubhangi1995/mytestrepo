@@ -217,9 +217,11 @@
                 display: inline-block;
                 float: left;
                 padding-bottom: 40px;
+				width:100%;
 
                 @include devicebreak(medium) {
                     float: right;
+					width:auto;
                 }
 
 
@@ -379,7 +381,7 @@
                     display: none;
                 }
 
-                .views-exposed-widget:nth-child(4) {
+               .categories-filter .views-exposed-widget:nth-child(4) {
                     width: 100%;
                     height: 49px;
 
