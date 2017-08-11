@@ -30,7 +30,7 @@
             float: left;
 
             @include devicebreak(x-large) {
-                width: 30%;
+                width: 28%;
             }
         }
 
@@ -40,7 +40,7 @@
             padding-top: 25px;
 
             @include devicebreak(x-large) {
-                width: 70%;
+                width: 72%;
             }
 
 
@@ -184,13 +184,59 @@
 
         .attachment-before {
             .view-result-count {
+                width: auto;
+                float: left;
                 padding: 30px 0;
-                font-size: 22px;
+                font-size: 20px;
                 font-weight: bold;
-                margin-top: -88px;
+                margin-top: 0;
+
+                @include devicebreak(medium) {
+                    width: 50%;
+                    font-size: 22px;
+                }
+            }
+
+            .views-widget-sort-by {
+                padding: 30px 0;
+                font-size: 18px;
+                text-align: right;
+
+                @include devicebreak(medium) {
+                    width: 50%;
+                    float: left;
+                    font-size: 20px;
+                }
+
+
+                .form-group {
+                    margin-bottom: 0;
+
+                    .bef-select-as-links .form-type-bef-link {
+                        display: inline-block;
+                        padding-left: 15px;
+
+                        a {
+                            text-decoration: none;
+                            color: $main-color;
+
+                            &.active {
+                                border-bottom: 2px solid $active-menu;
+                                padding-bottom: 12px;
+                            }
+                        }
+                    }
+
+                    .select2-container {
+                        display: none;
+                    }
+                }
             }
         }
 
+		.views-widget-sort-order{
+		  display:none;
+		}
         .view-filters {
             .views-exposed-form .views-exposed-widgets {
                 margin-bottom: 0;
@@ -218,33 +264,7 @@
                     }
                 }
 
-                .views-widget-sort-by {
-                    padding: 30px 0;
-                    float: right;
-
-                    .form-group {
-                        margin-bottom: 0;
-
-                        .bef-select-as-links .form-type-bef-link {
-                            display: inline-block;
-                            padding-left: 15px;
-
-                            a {
-                                text-decoration: none;
-                                color: $main-color;
-
-                                &.active {
-                                    border-bottom: 2px solid $active-menu;
-                                    padding-bottom: 12px;
-                                }
-                            }
-                        }
-
-                        .select2-container {
-                            display: none;
-                        }
-                    }
-                }
+                
             }
         }
     }
@@ -326,6 +346,28 @@
                 }
             }
         }
+		
+		.views-reset-button {
+                    .form-submit {
+                        margin: 0;
+                        background: 0;
+                        color: $main-color;
+                        border: 0;
+                        font-size: 20px;
+						padding-left:25px;
+						position:relative;
+
+                        &:before {
+                            font-family: "icomoon";
+                            content: "\e912";
+                            color:$active-menu;
+                            left:0px;
+                            top:5px;
+                            display: inline-block;
+                            position: absolute;
+                        }
+                    }
+                }
     }
 
     .views-submit-button {
@@ -378,57 +420,7 @@
             }
         }
 
-        .attachment-before {
-            .view-result-count {
-                width: auto;
-                float: left;
-                padding: 30px 0;
-                font-size: 20px;
-                font-weight: bold;
-                margin-top: 0;
-
-                @include devicebreak(medium) {
-                    width: 50%;
-                    font-size: 22px;
-                }
-            }
-
-            .views-widget-sort-by {
-                padding: 30px 0;
-                font-size: 18px;
-                text-align: right;
-
-                @include devicebreak(medium) {
-                    width: 50%;
-                    float: left;
-                    font-size: 20px;
-                }
-
-
-                .form-group {
-                    margin-bottom: 0;
-
-                    .bef-select-as-links .form-type-bef-link {
-                        display: inline-block;
-                        padding-left: 15px;
-
-                        a {
-                            text-decoration: none;
-                            color: $main-color;
-
-                            &.active {
-                                border-bottom: 2px solid $active-menu;
-                                padding-bottom: 12px;
-                            }
-                        }
-                    }
-
-                    .select2-container {
-                        display: none;
-                    }
-                }
-            }
-        }
+        
     }
 }
 
