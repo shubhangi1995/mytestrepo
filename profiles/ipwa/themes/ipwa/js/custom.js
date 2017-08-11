@@ -254,6 +254,8 @@ jQuery('.tb-megamenu-submenu.dropdown-menu').attr('style','display:none !importa
 	//view-aktuelles
 	jQuery(".view-aktuelles .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by").appendTo(".view-aktuelles .attachment-before");
 	
+	//view-search-list
+	jQuery(".view-search-list .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by").appendTo(".view-search-list .attachment-before");
 	
 	
 	// Share link tab indexing
