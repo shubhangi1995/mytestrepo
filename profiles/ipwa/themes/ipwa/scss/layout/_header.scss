@@ -314,7 +314,7 @@ header {
                             border: none;
                             width: 100%;
                             padding-top: 40px;
-                            padding-bottom: 40px;
+                            padding-bottom:60px;
 
                             a {
                                 color: $color-white;
@@ -330,16 +330,20 @@ header {
                                 .view-header {
                                     color: $color-white;
                                     font-size: 18px;
+									p{
+									line-height:normal;
+									}
                                 }
 
                                 .view-content .views-row {
                                     display: inline-block;
-                                    padding: 5px;
+                                    padding:3px;
+									padding-right:0;
 
                                     a {
                                         background: $main-color;
                                         font-size: 16px;
-                                        padding: 10px;
+                                        padding: 14px;
 
                                         &:hover {
                                             background: $active-menu;
@@ -356,6 +360,9 @@ header {
                             .tb-submenu-left {
                                 width: 30%;
                                 float: left;
+								
+								.mega-inner{
+								padding-left:0;
 
                                 .block-title {
                                     font-size: 18px !important;
@@ -413,7 +420,7 @@ header {
                                 margin: 0;
                             }
                         }
-                    }
+                    }}
                 }
             }
         }

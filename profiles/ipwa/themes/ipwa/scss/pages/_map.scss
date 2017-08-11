@@ -217,11 +217,11 @@
                 display: inline-block;
                 float: left;
                 padding-bottom: 40px;
-				width:100%;
+                width: 100%;
 
                 @include devicebreak(medium) {
                     float: right;
-					width:auto;
+                    width: auto;
                 }
 
 
@@ -381,7 +381,7 @@
                     display: none;
                 }
 
-               .categories-filter .views-exposed-widget:nth-child(4) {
+                .categories-filter .views-exposed-widget:nth-child(4) {
                     width: 100%;
                     height: 49px;
 
@@ -440,6 +440,18 @@
                         color: $main-color;
                         border: 0;
                         font-size: 20px;
+						padding-left:25px;
+						position:relative;
+
+                        &:before {
+                            font-family: "icomoon";
+                            content: "\e912";
+                            color:$active-menu;
+                            left:0px;
+                            top:5px;
+                            display: inline-block;
+                            position: absolute;
+                        }
                     }
                 }
 
