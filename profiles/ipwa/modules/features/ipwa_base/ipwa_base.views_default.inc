@@ -28,7 +28,8 @@ function ipwa_base_views_default_views() {
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'better_exposed_filters';
-  $handler->display->display_options['exposed_form']['options']['reset_button_label'] = 'Zurücksetzen';
+  $handler->display->display_options['exposed_form']['options']['reset_button'] = TRUE;
+  $handler->display->display_options['exposed_form']['options']['reset_button_label'] = 'Alle Filtern Zurücksetzen';
   $handler->display->display_options['exposed_form']['options']['exposed_sorts_label'] = '<keine>';
   $handler->display->display_options['exposed_form']['options']['expose_sort_order'] = FALSE;
   $handler->display->display_options['exposed_form']['options']['bef'] = array(
@@ -610,7 +611,7 @@ Publikation|Publikationen',
     t('Aktuelles'),
     t('more'),
     t('Apply'),
-    t('Zurücksetzen'),
+    t('Alle Filtern Zurücksetzen'),
     t('<keine>'),
     t('Asc'),
     t('Desc'),
@@ -1049,7 +1050,7 @@ Publikation|Publikationen'),
   $handler->display->display_options['footer']['area_text_custom']['table'] = 'views';
   $handler->display->display_options['footer']['area_text_custom']['field'] = 'area_text_custom';
   $handler->display->display_options['footer']['area_text_custom']['content'] = '<a href ="/schaufenster-digitales-nrw">Karte öffnen</a>';
-  /* Feld: Inhalt: Dieser Akteur gehört zu */
+  /* Feld: Inhalt: Dieses Projekt gehört zu  */
   $handler->display->display_options['fields']['field_themenzuweisung']['id'] = 'field_themenzuweisung';
   $handler->display->display_options['fields']['field_themenzuweisung']['table'] = 'field_data_field_themenzuweisung';
   $handler->display->display_options['fields']['field_themenzuweisung']['field'] = 'field_themenzuweisung';
@@ -1093,7 +1094,7 @@ Publikation|Publikationen'),
   /* Display: Block */
   $handler = $view->new_display('block', 'Block', 'block');
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Feld: Inhalt: Dieser Akteur gehört zu */
+  /* Feld: Inhalt: Dieses Projekt gehört zu  */
   $handler->display->display_options['fields']['field_themenzuweisung']['id'] = 'field_themenzuweisung';
   $handler->display->display_options['fields']['field_themenzuweisung']['table'] = 'field_data_field_themenzuweisung';
   $handler->display->display_options['fields']['field_themenzuweisung']['field'] = 'field_themenzuweisung';
@@ -1203,7 +1204,7 @@ Publikation|Publikationen'),
 </div>';
   $handler->display->display_options['footer']['area']['format'] = 'wysiwyg';
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Feld: Inhalt: Dieser Akteur gehört zu */
+  /* Feld: Inhalt: Dieses Projekt gehört zu  */
   $handler->display->display_options['fields']['field_themenzuweisung']['id'] = 'field_themenzuweisung';
   $handler->display->display_options['fields']['field_themenzuweisung']['table'] = 'field_data_field_themenzuweisung';
   $handler->display->display_options['fields']['field_themenzuweisung']['field'] = 'field_themenzuweisung';
