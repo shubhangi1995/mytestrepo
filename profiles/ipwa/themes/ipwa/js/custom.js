@@ -416,11 +416,11 @@ jQuery(".view-display-id-page_1 .view-filters .views-submit-button").appendTo(".
 			jQuery(this).next().attr("style","top:29px !important;left:0 !important;");		
 		}	
 	});
-
 	
-
+if(jQuery(window).innerWidth() > 1024){
 	jQuery('.tb-megamenu ul.tb-megamenu-nav li .mega-dropdown-inner .tb-submenu-left ul li:contains(Übersicht)').addClass("homelink");
-	
+}
+
 });
 
 

@@ -10042,7 +10042,7 @@ input[type=text]::-ms-clear {
       /* line 10, ../scss/pages/_listview.scss */
       .page-taxonomy-term .group-page-info {
         padding: 0;
-        padding-top: 85px;
+        padding-top: 60px;
         padding-bottom: 50px; } }
     /* line 28, ../scss/pages/_listview.scss */
     .page-taxonomy-term .group-page-info .field-name-field-bild {
