@@ -7,52 +7,33 @@
 include_once 'ipwa_projekt_.features.inc';
 
 
-//function ipwa_projekt__node_presave($node)
-//{
-//  if ($node->type == 'projekt' || $node->type == 'protagonist') {
-//    if (!empty($node->field_plz['und'][0]['value'])) {
-//      $param[] = $node->field_plz['und'][0]['value'];
-//
-//      // for providing longitude and latitude according to the plz given
-//      $query_param = implode(" ", $param);
-//      $val_new = 'https://sg.geodatenzentrum.de/gdz_geokodierung__dfd29c5f-7f34-dcfb-2000-42062cfa13d6/geosearch.json?query=' . $query_param . '&filter=typ:haus&count=1';
-//      $json = file_get_contents($val_new);
-//      $json = json_decode($json);
-//      $lng = $json->features[0]->geometry->coordinates[0];
-//      $lat = $json->features[0]->geometry->coordinates[1];
-//      $node->field_longitude['und'][0]['value'] = $lng;
-//      $node->field_latitude['und'][0]['value'] = $lat;
-//    }
-//
-//
-//  }
-//}
-
 //for hiding longitude and latitude in the backend
-//function ipwa_projekt__form_alter(&$form, &$form_state, $form_id) {
-//  if($form_id == 'protagonist_node_form' || $form_id == 'projekt_node_form') {
-//    $form['field_latitude']['#access'] = 0;
-//    $form['field_longitude']['#access'] = 0;
-//  }
-//}
-//
-//function ipwa_projekt__node_validate($node, $form, &$form_state) {
-//  if ($node->type == 'projekt' || $node->type == 'protagonist') {
-//    if (!empty($node->field_plz['und'][0]['value'])) {
-//      $param[] = $node->field_plz['und'][0]['value'];
-//
-//      // for providing longitude and latitude according to the plz given
-//      $query_param = implode(" ", $param);
-//      $val_new = 'https://sg.geodatenzentrum.de/gdz_geokodierung__dfd29c5f-7f34-dcfb-2000-42062cfa13d6/geosearch.json?query=' . $query_param . '&filter=typ:haus&count=1';
-//      $json = file_get_contents($val_new);
-//      $json = json_decode($json);
-//      $lng = $json->features[0]->geometry->coordinates[0];
-//      $lat = $json->features[0]->geometry->coordinates[1];
-//      $node->field_longitude['und'][0]['value'] = $lng;
-//      $node->field_latitude['und'][0]['value'] = $lat;
-//    }
-//  }
-//  if(empty($node->field_latitude['und'][0]['value']) && empty($node->field_longitude['und'][0]['value'])) {
-//    form_set_error('PLZ', t('Please enter a valid PLZ.'));
-//  }
-//}
+function ipwa_projekt__form_alter(&$form, &$form_state, $form_id) {
+  if($form_id == 'protagonist_node_form' || $form_id == 'projekt_node_form') {
+    $form['field_latitude']['#access'] = 0;
+    $form['field_longitude']['#access'] = 0;
+  }
+}
+
+function ipwa_projekt__node_validate($node, $form, &$form_state) {
+  if ($node->type == 'projekt' || $node->type == 'protagonist') {
+    if (!empty($node->field_plz['und'][0]['value'])) {
+      $param[] = $node->field_plz['und'][0]['value'];
+
+      // for providing longitude and latitude according to the plz given
+      $query_param = implode(" ", $param);
+      $val_new ='https://sg.geodatenzentrum.de/gdz_geokodierung__13dd535b-273e-b0f5-d42f-f2fa2cfa13d6/geosearch.json?query=' . $query_param .'&filter=typ:haus&count=1';
+      $json = file_get_contents($val_new);
+      $json = json_decode($json);
+      $lng = $json->features[0]->geometry->coordinates[0];
+      $lat = $json->features[0]->geometry->coordinates[1];
+      $node->field_longitude['und'][0]['value'] = $lng;
+      $node->field_latitude['und'][0]['value'] = $lat;
+      print_r($node);
+      exit();
+    }
+  }
+  if(empty($node->field_latitude['und'][0]['value']) && empty($node->field_longitude['und'][0]['value'])) {
+    form_set_error('PLZ', t('Please enter a valid PLZ.'));
+  }
+}
