@@ -8,6 +8,10 @@
   height: 800px;
   position: relative;
 
+  @media screen and (max-width: 370px) {
+    height: 500px;
+  }
+
   .map-warning {
     .modal-footer {
       text-align: center;

@@ -47,12 +47,15 @@ IPWA_MAP.filter = {
 
   buildStrParameters: function () {
     var _form = jQuery('#views-exposed-form-projekt-map-project-map');
-    var _filter = [_form.find('#edit-type'), // search
-      _form.find('#edit-field-themenzuweisung'), // Inhaltstyp
-      _form.find('#edit-field-akteurstyp'), // Dieser Artikel gehört zu
+    var _editType = _form.find('#edit-type');
+    // console.log('_editType:  =====>>> ', _editType, _editType.val());
+    var _filter = [_editType, // Inhaltstyp (Akteur or Projekt)
       _form.find('#edit-field-plz'), // plz
       _form.find('#edit-field-themenzuweisung-1') // Alle Themen
     ];
+    if (_editType.val() === 'protagonist') {
+      _filter.push(_form.find('#edit-field-akteurstyp')); // Dieser Artikel gehört zu
+    }
 
     // build the string for the ajax request
     var _str = '';

@@ -75,12 +75,10 @@ IPWA_MAP.Map.popup = {
             var _coordinates = features[0].getGeometry().getFirstCoordinate();
 
             _this.$popup.show();
-            var _popupLeft = 120;
-            _this.$popup.css('left', _popupLeft);
             features[0].set('type', 'selected');
             _this.selFeature = features[0];
 
-            _this.centerSelPoi(_coordinates, _popupLeft);
+            _this.centerSelPoi(_coordinates);
           }
         },
         error: function (e) {
@@ -161,11 +159,11 @@ IPWA_MAP.Map.popup = {
     }
   },
 
-  centerSelPoi: function (coordinates, popupLeft) {
+  centerSelPoi: function (coordinates) {
     var _this = this;
     setTimeout(function () {
       var _centerPx = _this.parentMap.getPixelFromCoordinate(coordinates);
-      var _center = _this.parentMap.getCoordinateFromPixel([_centerPx[0] + 50, _centerPx[1] + 100]);
+      var _center = _this.parentMap.getCoordinateFromPixel([_centerPx[0], _centerPx[1]]);
       var _view = _this.parentMap.getView();
       _view.animate(
         { zoom: _view.getZoom(), center: _center }
@@ -240,7 +238,7 @@ IPWA_MAP.Map.popup = {
     var features = [];
     var clusters = this.getClusterAt(pixel);
     // Only use first found feature/cluster, which always overlaps all other
-    // "lower" features on map
+    // 'lower' features on map
     if (clusters.length > 0) {
       var cluster = clusters[0];
       features = cluster.get('features');

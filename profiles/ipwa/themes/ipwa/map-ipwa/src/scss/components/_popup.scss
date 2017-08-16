@@ -10,10 +10,22 @@
     color: $light-gray;
     border: 0;
     position: absolute;
-    top: 160px;
+    top: 220px;
+    left: 100px;
     z-index: 101;
     width: 370px;
     font-size: 17px;
+    
+    @media screen and (max-width: 1024px) {
+      left: calc(50% - 185px);
+      top: 115px;
+    }
+    
+    @media screen and (max-width: 370px) {
+      width: 100%;
+      left: 0;
+      top: -15px;
+    }
   }
 
   .map-btn-close {

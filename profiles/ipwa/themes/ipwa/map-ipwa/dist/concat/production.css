@@ -16,21 +16,27 @@
   height: 800px;
   position: relative;
 }
-/* line 12, ../../src/scss/components/_mapView.scss */
+@media screen and (max-width: 370px) {
+  /* line 6, ../../src/scss/components/_mapView.scss */
+  .footer_map {
+    height: 500px;
+  }
+}
+/* line 16, ../../src/scss/components/_mapView.scss */
 .footer_map .map-warning .modal-footer {
   text-align: center;
 }
-/* line 16, ../../src/scss/components/_mapView.scss */
+/* line 20, ../../src/scss/components/_mapView.scss */
 .footer_map .map-warning .map-warning-content {
   font-size: 16px;
 }
-/* line 20, ../../src/scss/components/_mapView.scss */
+/* line 24, ../../src/scss/components/_mapView.scss */
 .footer_map .map-warning .btn-default {
   border: 2px solid #ebebeb;
   font-size: 16px;
 }
 
-/* line 29, ../../src/scss/components/_mapView.scss */
+/* line 33, ../../src/scss/components/_mapView.scss */
 .footer_map .ol-control {
   top: auto;
   left: auto;
@@ -41,13 +47,13 @@
   display: block;
 }
 @media only all and (max-width: 1024px) {
-  /* line 29, ../../src/scss/components/_mapView.scss */
+  /* line 33, ../../src/scss/components/_mapView.scss */
   .footer_map .ol-control {
     bottom: 10px;
     right: 10px;
   }
 }
-/* line 43, ../../src/scss/components/_mapView.scss */
+/* line 47, ../../src/scss/components/_mapView.scss */
 .footer_map .ol-control button {
   display: block;
   width: 48px;
@@ -61,17 +67,17 @@
   font-size: 1.3em;
   margin-top: 2px;
 }
-/* line 57, ../../src/scss/components/_mapView.scss */
+/* line 61, ../../src/scss/components/_mapView.scss */
 .footer_map .ol-control button:hover {
   cursor: pointer;
 }
-/* line 62, ../../src/scss/components/_mapView.scss */
+/* line 66, ../../src/scss/components/_mapView.scss */
 .footer_map .attribution {
   position: absolute;
   bottom: 2px;
   left: 5px;
 }
-/* line 67, ../../src/scss/components/_mapView.scss */
+/* line 71, ../../src/scss/components/_mapView.scss */
 .footer_map .attribution a {
   font-size: 14px;
 }
@@ -91,12 +97,28 @@
   color: #dbdde0;
   border: 0;
   position: absolute;
-  top: 160px;
+  top: 220px;
+  left: 100px;
   z-index: 101;
   width: 370px;
   font-size: 17px;
 }
-/* line 19, ../../src/scss/components/_popup.scss */
+@media screen and (max-width: 1024px) {
+  /* line 7, ../../src/scss/components/_popup.scss */
+  .footer_map .map-popup {
+    left: calc(50% - 185px);
+    top: 115px;
+  }
+}
+@media screen and (max-width: 370px) {
+  /* line 7, ../../src/scss/components/_popup.scss */
+  .footer_map .map-popup {
+    width: 100%;
+    left: 0;
+    top: -15px;
+  }
+}
+/* line 31, ../../src/scss/components/_popup.scss */
 .footer_map .map-btn-close {
   position: absolute;
   top: 0;
@@ -105,26 +127,26 @@
   vertical-align: middle;
   color: #dbdde0;
 }
-/* line 28, ../../src/scss/components/_popup.scss */
+/* line 40, ../../src/scss/components/_popup.scss */
 .footer_map .map-btn-close {
   font-size: 26px;
   padding-top: 6px;
 }
-/* line 32, ../../src/scss/components/_popup.scss */
+/* line 44, ../../src/scss/components/_popup.scss */
 .footer_map .map-btn-close span::after {
   content: '\00d7';
 }
-/* line 37, ../../src/scss/components/_popup.scss */
+/* line 49, ../../src/scss/components/_popup.scss */
 .footer_map .map-popup-content {
   padding: 30px;
   border: none;
 }
-/* line 42, ../../src/scss/components/_popup.scss */
+/* line 54, ../../src/scss/components/_popup.scss */
 .footer_map h2 {
   color: #e74712;
   font-size: 18px;
 }
-/* line 48, ../../src/scss/components/_popup.scss */
+/* line 60, ../../src/scss/components/_popup.scss */
 .footer_map .arrow-nav {
   font-size: 17px;
   position: absolute;
@@ -132,23 +154,23 @@
   right: 43px;
   text-align: right;
 }
-/* line 56, ../../src/scss/components/_popup.scss */
+/* line 68, ../../src/scss/components/_popup.scss */
 .footer_map .btn-go-backward,
 .footer_map .btn-go-forward {
   background-color: transparent;
   margin-left: 10px;
   border: 0;
 }
-/* line 62, ../../src/scss/components/_popup.scss */
+/* line 74, ../../src/scss/components/_popup.scss */
 .footer_map .btn-go-backward.disabled,
 .footer_map .btn-go-forward.disabled {
   color: #777673;
 }
-/* line 67, ../../src/scss/components/_popup.scss */
+/* line 79, ../../src/scss/components/_popup.scss */
 .footer_map .div-topic > img {
   width: 40px;
 }
-/* line 71, ../../src/scss/components/_popup.scss */
+/* line 83, ../../src/scss/components/_popup.scss */
 .footer_map .txtf-desc {
   margin-bottom: 50px;
 }

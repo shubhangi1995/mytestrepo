@@ -44,3 +44,4 @@ IPWA_MAP.Map.countryLayer = {
     this.parentMap.addLayer(this.layer);
   }
 };
+
