@@ -117,6 +117,8 @@ h1 {
         > li > span {
             border: none;
             color: $main-color;
+			//font-weight:normal;
+			//font-family:$font-family-bold;
         }
 
         > li > a {
@@ -124,6 +126,8 @@ h1 {
             background: none;
             border: none;
             font-size: 26px;
+			//font-weight:normal;
+			//font-family:$font-family-bold; 
 
             &.progress-disabled {
                 float: left;
@@ -354,9 +358,10 @@ h1 {
 
                         .views-field-field-event-datum {
                             padding-bottom: 20px;
-                            font-weight: bold;
+                            font-weight: normal;
                             color: $active-menu;
                             font-size: 22px;
+							font-family:$font-family-bold;
                         }
 
                         .views-field-title {
@@ -370,9 +375,10 @@ h1 {
 						
 						.views-field-type {
                 padding-bottom: 20px;
-                font-weight: bold;
+                font-weight: normal;
                 color: $active-menu;
                 font-size: 22px;
+				font-family:$font-family-bold;
             }
 
                         .views-field-field-ort, div[class*='views-field-views-conditional-'] {
@@ -402,6 +408,7 @@ h1 {
     padding-bottom: 4px;
     border-bottom: 2px solid $color-light-grey;
     position: relative;
+	font-family:$font-family-bold;
 
     &:before {
         font-family: $icomoon;
@@ -514,7 +521,8 @@ h1 {
                 cursor: pointer;
                 position: relative;
                 font-size: 20px;
-
+				font-weight:normal;
+				font-family:$font-family-bold;
                 &:before {
                     font-family: $icomoon;
                     content: "\e93f";
@@ -979,7 +987,8 @@ input[type=text]::-ms-clear {
             .monthText {
                 text-transform: capitalize;
                 font-size: 22px;
-                font-weight: bold;
+                font-weight: normal;
+				font-family:$font-family-bold;
             }
 
             li {
@@ -1242,3 +1251,10 @@ position:relative;
         }
     }
 }}
+
+.node-webform, .page-sitemap{
+	.page-title, .page-header{
+		font-weight:normal;
+		font-family:$font-family-bold;
+	}
+}

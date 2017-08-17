@@ -130,6 +130,8 @@
     .page-title {
         border: none;
         margin: 0;
+		font-family:$font-family-bold;
+		font-weight:normal;
     }
 
     .field-name-field-untertitel .field-item {
@@ -159,6 +161,8 @@
                     font-size: 28px;
                     padding-bottom: 40px;
                     padding-top: 40px;
+					font-weight:normal;
+					font-family:$font-family-bold;
                 }
 
                 p {
@@ -234,6 +238,8 @@
                 color: $color-white;
                 font-size: 28px;
                 padding-bottom: 40px;
+				font-weight:normal;
+				font-family:$font-family-bold;
             }
         }
 
@@ -314,6 +320,8 @@
         font-size: 30px !important;
         color: $active-menu;
         margin-bottom: 60px;
+		font-weight:normal;
+		//font-family:$font-family-bold;
     }
 
     .field:first-child {
@@ -323,6 +331,10 @@
             }
         }
     }
+	.page-title{
+		font-weight:normal;
+		font-family:$font-family-bold;
+	}
 }
 
 .group-body-container {
@@ -482,6 +494,8 @@
 
     h2, h3, h4, h5, h6 {
         color: $active-menu !important;
+		font-weight:normal;
+		font-family:$font-family-bold;
     }
 
     h2 {
@@ -611,7 +625,8 @@
         }
 
 
-        font-weight: bold;
+        font-weight: normal;
+		font-family:$font-family-bold;
         margin-bottom: 30px;
     }
 
@@ -774,14 +789,16 @@
 
                         * {
                             color: $active-menu;
-                            font-weight: bold;
+                            font-weight: normal;
+							font-family:$font-family-bold;
                         }
                     }
 
                     .date-display-single {
                         color: $active-menu;
                         margin-right: 8px;
-                        font-weight: bold;
+                        font-weight: normal;
+						font-family:$font-family-bold; 
                     }
                 }
             }
@@ -818,6 +835,10 @@
             .view-header {
                 padding-bottom: 30px;
                 font-size: 28px;
+				.pane-title{
+					font-weight:normal;
+					font-family:$font-family-bold;
+				}
             }
 
             .inner-wrapper {
@@ -900,8 +921,9 @@
 
                         .views-field-type {
                             color: $active-menu;
-                            font-weight: bold;
+                            font-weight: normal;
                             padding-bottom: 15px;
+							font-family:$font-family-bold;
                         }
 
                         .views-field-title {
@@ -936,6 +958,12 @@
                     color: $main-color;
                 }
             }
+			& + .view-latest-content-doorpage{
+				.pane-title{
+					font-weight:normal;
+					font-family:$font-family-bold;
+				}
+			}
         }
 
         > .view-latest-content-doorpage {
@@ -1009,8 +1037,9 @@
 
                         .views-field-field-event-datum {
                             color: $active-menu;
-                            font-weight: bold;
+                            font-weight: normal;
                             padding-bottom: 15px;
+							font-family:$font-family-bold;
                         }
 
                         .views-field-title {
@@ -1164,7 +1193,8 @@
                 background: none;
                 box-shadow: none;
                 color: $main-color;
-                font-weight: bold;
+                font-weight: normal;
+				font-family:$font-family-bold;
                 padding: 0;
                 margin-top: 8px;
                 position: relative;

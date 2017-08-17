@@ -24,6 +24,9 @@ footer {
             .block-title {
                 color: $active-menu;
                 margin-top: 0;
+				font-weight:normal;
+				font-family:$font-family-bold;
+				font-weight:normal;
             }
 
             .form-item-newsletter {
@@ -96,6 +99,7 @@ footer {
                 font-size: 20px;
                 color: $main-color;
                 font-weight: normal;
+				font-family:$font-family-bold;
             }
 
             #footer-icons-images {
@@ -265,4 +269,11 @@ footer {
     .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
         background: none;
     }
+	
+	#block-block-5{
+		strong{
+			font-weight:normal;
+			font-family:$font-family-bold;
+		}
+	}
 }

@@ -222,8 +222,9 @@ header {
                             margin-bottom: 20px;
                             margin-left: 55px;
                             position: relative;
-                            width: 60%;
-                            font-weight: bold;
+                            width: 62%;
+                            font-weight: normal;
+							font-family:$font-family-bold;
                             border-bottom: 2px solid transparent;
                             padding-bottom: 2px;
 
@@ -332,6 +333,8 @@ header {
                                     font-size: 18px;
 									p{
 									line-height:normal;
+									font-weight:normal;
+									font-family:$font-family-bold;
 									}
                                 }
 
@@ -371,6 +374,7 @@ header {
                                     color: $color-white !important;
                                     margin: 0;
                                     padding-bottom: 30px;
+									font-family:$font-family-bold;
                                 }
 
                                 ul {

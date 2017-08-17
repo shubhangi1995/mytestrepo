@@ -3,7 +3,8 @@
 
     .view-title {
         @extend .container;
-
+		font-weight:normal;
+		font-family:$font-family-bold;
         font-size: 28px;
     }
 
@@ -51,6 +52,8 @@
 
                 // color: $active-menu;
                 padding-bottom: 15px;
+				font-weight:normal;
+				font-family:$font-family-bold;
             }
 
             p {
@@ -79,7 +82,8 @@
                 margin-top: -88px;
                 padding: 30px 0;
                 font-size: 22px;
-                font-weight: bold;
+				font-weight: normal;
+				font-family:$font-family-bold;
             }
 
             .view-content .views-row .row-container {
@@ -154,6 +158,7 @@
 
         border: none;
         font-weight: normal;
+		font-family:$font-family-bold;
         margin: 0 auto;
         padding-top: 55px;
 
@@ -175,7 +180,8 @@
             padding-bottom: 60px;
             width: auto;
             margin: 0 auto;
-            font-weight: bold;
+			font-weight: normal;
+			// font-family:$font-family-bold;
 
             @include devicebreak(x-large) {
                 width: 765px;
@@ -188,7 +194,8 @@
                 float: left;
                 padding: 30px 0;
                 font-size: 20px;
-                font-weight: bold;
+                font-weight: normal;
+				font-family:$font-family-bold;
                 margin-top: 0;
 
                 @include devicebreak(medium) {
@@ -356,6 +363,8 @@
                         font-size: 20px;
 						padding-left:25px;
 						position:relative;
+						font-weight:normal;
+						font-family:$font-family-bold;
 
                         &:before {
                             font-family: "icomoon";
@@ -443,7 +452,8 @@
         padding-bottom: 4px;
         border-bottom: 2px solid $color-light-grey;
         color: $main-color;
-        font-weight: bold;
+		font-weight:normal;
+		font-family:$font-family-bold;
         position: relative;
         margin-left: 30px;
 
@@ -469,6 +479,7 @@
 
         border: none;
         font-weight: normal;
+		font-family:$font-family-bold;
         margin: 0 auto;
         padding-top: 55px;
         padding-bottom: 40px;
@@ -558,7 +569,8 @@
                 padding: 6px 40px;
                 border: none;
                 background: $header-dropdown-menu;
-                font-weight: bold;
+                font-weight: normal;
+				font-family:$font-family-bold;
 
                 &::before {
                     font-family: $icomoon;
@@ -647,6 +659,8 @@
     .view-header {
         color: $color-white;
         padding: 40px 0;
+		font-weight:normal;
+		font-family:$font-family-bold;
 
         @include devicebreak(small) {
             padding-right: 90px;
@@ -765,7 +779,8 @@
                 a {
                     color: $active-menu;
                     text-decoration: none;
-                    font-weight: bold;
+                    font-weight: normal;
+					font-family:$font-family-bold;
                     
                 }
             }
@@ -838,7 +853,8 @@
                     .views-field-field-paragraph-title {
                         color: $color-white;
                         font-size: 36px;
-                        font-weight: bold;
+                        font-weight: normal;
+						font-family:$font-family-bold;
                         padding-bottom: 20px;
                     }
 
