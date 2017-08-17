@@ -654,7 +654,7 @@
     }
 
     .view-content {
-        padding-bottom: 90px;
+        padding-bottom:60px;
 
         .views_slideshow_controls_text {
             float: right;
@@ -732,7 +732,7 @@
 
         .views-row {
             background-color: $color-white;
-            padding: 30px;
+            padding: 36px;
             margin: 0 auto;
             margin-bottom: 30px;
             height: auto;
@@ -760,13 +760,13 @@
             }
 
             .views-field-name {
-                padding-bottom: 30px;
+                padding-bottom: 20px;
 
                 a {
                     color: $active-menu;
                     text-decoration: none;
                     font-weight: bold;
-                    padding-bottom: 30px;
+                    
                 }
             }
 

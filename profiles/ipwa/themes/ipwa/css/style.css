@@ -10546,7 +10546,7 @@ input[type=text]::-ms-clear {
         padding-right: 90px; } }
   /* line 656, ../scss/pages/_listview.scss */
   .view-wahlen-sie-einen-themenbereich .view-content {
-    padding-bottom: 90px; }
+    padding-bottom: 60px; }
     /* line 659, ../scss/pages/_listview.scss */
     .view-wahlen-sie-einen-themenbereich .view-content .views_slideshow_controls_text {
       float: right;
@@ -10602,7 +10602,7 @@ input[type=text]::-ms-clear {
     /* line 733, ../scss/pages/_listview.scss */
     .view-wahlen-sie-einen-themenbereich .view-content .views-row {
       background-color: #ffffff;
-      padding: 30px;
+      padding: 36px;
       margin: 0 auto;
       margin-bottom: 30px;
       height: auto;
@@ -10631,13 +10631,12 @@ input[type=text]::-ms-clear {
             margin-right: 0; } }
       /* line 762, ../scss/pages/_listview.scss */
       .view-wahlen-sie-einen-themenbereich .view-content .views-row .views-field-name {
-        padding-bottom: 30px; }
+        padding-bottom: 20px; }
         /* line 765, ../scss/pages/_listview.scss */
         .view-wahlen-sie-einen-themenbereich .view-content .views-row .views-field-name a {
           color: #e74712;
           text-decoration: none;
-          font-weight: bold;
-          padding-bottom: 30px; }
+          font-weight: bold; }
       /* line 774, ../scss/pages/_listview.scss */
       .view-wahlen-sie-einen-themenbereich .view-content .views-row .views-field-name-1 a {
         color: #273753;
