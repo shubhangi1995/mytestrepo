@@ -422,9 +422,9 @@ if(jQuery(window).innerWidth() > 1024){
 }
 
 if(jQuery(window).innerWidth() < 1024){
-	if(jQuery('.tb-megamenu ul.tb-megamenu-nav li .mega-dropdown-inner .tb-submenu-left ul li').html() == "Übersicht"){
-	 jQuery(this).prepandTO('.tb-megamenu ul.tb-megamenu-nav li .mega-dropdown-inner .tb-submenu-left ul');
-}
+	jQuery(".tb-megamenu-column-inner ul").each(function(index, element){
+		jQuery(element).prepend(jQuery(element).find("li:contains(Übersicht)"));
+	});
 }  
 
 });
