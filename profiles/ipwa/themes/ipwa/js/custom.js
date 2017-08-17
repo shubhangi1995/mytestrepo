@@ -421,6 +421,12 @@ if(jQuery(window).innerWidth() > 1024){
 	jQuery('.tb-megamenu ul.tb-megamenu-nav li .mega-dropdown-inner .tb-submenu-left ul li:contains(Übersicht)').addClass("homelink");
 }
 
+if(jQuery(window).innerWidth() < 1024){
+	if(jQuery('.tb-megamenu ul.tb-megamenu-nav li .mega-dropdown-inner .tb-submenu-left ul li').html() == "Übersicht"){
+	 jQuery(this).prepandTO('.tb-megamenu ul.tb-megamenu-nav li .mega-dropdown-inner .tb-submenu-left ul');
+}
+}  
+
 });
 
 
