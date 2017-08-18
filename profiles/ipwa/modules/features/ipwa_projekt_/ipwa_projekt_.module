@@ -36,7 +36,7 @@ function ipwa_projekt__form_alter(&$form, &$form_state, $form_id) {
   }
 }
 
-function ipwa_projekt__node_presave($node, $form, &$form_state)
+function ipwa_projekt__node_presave($node)
 {
   if ($node->type == 'projekt' || $node->type == 'protagonist') {
     if (!empty($node->field_plz['und'][0]['value'])) {
