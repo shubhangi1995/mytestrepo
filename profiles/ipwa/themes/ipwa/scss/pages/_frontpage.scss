@@ -8,7 +8,7 @@
 
 
         @include devicebreak(x-large) {
-            padding: 120px 0 70px;
+            padding: 100px 0 70px;
             min-height: 523px;
         }
 
@@ -40,10 +40,11 @@
                 @include devicebreak(x-large) {
                     width: 65%;
                     float: left;
-                    border-right: 1px solid rgba(255, 255, 255, 0.2);
+                    border-right: 1px solid rgba(255, 255, 255, 0.5);
                     padding-right: 100px;
                     border-bottom: none;
                     height: auto;
+                    padding-bottom: 88px;
                 }
 
 
@@ -67,7 +68,7 @@
 
                         // padding-bottom: 25px;
                         //  font-weight: bold;
-						font-family:$font-family-bold; 
+                        font-family: $font-family-bold;
                     }
 
                     .pane-paragraphs-item-field-flie-text-bereich {
@@ -79,8 +80,8 @@
                         color: $color-white;
 
                         @extend .common-button;
-
                         position: absolute !important;
+						font-size:18px !important;
                     }
                 }
 
@@ -120,8 +121,9 @@
                     .views-field-type {
                         color: $active-menu;
                         font-size: 22px;
+
                         //font-weight: bold;
-						font-family:$font-family-bold;
+                        font-family: $font-family-bold;
 
                         // padding-bottom: 15px;
                    
@@ -215,7 +217,7 @@
             .pane-title {
                 font-size: 28px;
                 font-weight: normal;
-				font-family:$font-family-bold;
+                font-family: $font-family-bold;
             }
         }
 
@@ -290,9 +292,9 @@
                         .content {
                             padding: 30px;
                             padding-top: 35px;
-							padding-bottom:40px;
+                            padding-bottom: 40px;
                             height: auto;
-							line-height:26px;
+                            line-height: 26px;
 
                             @include devicebreak(medium) {
                                 padding-right: 50px;
@@ -306,7 +308,7 @@
 
 
                             .field-type-file {
-                                padding-bottom:25px;
+                                padding-bottom: 25px;
                                 margin-bottom: 0;
                             }
 
@@ -314,8 +316,8 @@
                                 font-size: 26px;
                                 color: $active-menu;
                                 padding-bottom: 15px;
-                                font-weight: normal; 
-								font-family:$font-family-bold;
+                                font-weight: normal;
+                                font-family: $font-family-bold;
                             }
 
                             .field-name-field-quellenangabe {
@@ -349,8 +351,8 @@
     }
 }
 
-@media (max-width: 350px){
-.paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items > .field-item .field-collection-view .content .field-name-field-quellenangabe a {
-margin-left:15px !important;
-}
+@media (max-width: 350px) {
+    .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items > .field-item .field-collection-view .content .field-name-field-quellenangabe a {
+        margin-left: 15px !important;
+    }
 }
