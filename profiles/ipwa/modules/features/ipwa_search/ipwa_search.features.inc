@@ -45,6 +45,8 @@ function ipwa_search_default_search_api_index() {
         "field_bis_auf_weiteres" : { "type" : "date" },
         "field_datum" : { "type" : "date" },
         "field_f_rderbekanntmachungen" : { "type" : "list\\u003Cinteger\\u003E", "entity_type" : "node" },
+        "field_latitude" : { "type" : "text" },
+        "field_longitude" : { "type" : "text" },
         "field_ort" : { "type" : "string" },
         "field_plz" : { "type" : "text" },
         "field_themenzuweisung" : { "type" : "list\\u003Cinteger\\u003E", "entity_type" : "taxonomy_term" },
