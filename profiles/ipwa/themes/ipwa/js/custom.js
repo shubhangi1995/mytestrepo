@@ -372,14 +372,24 @@ jQuery('.tb-megamenu-submenu.dropdown-menu').attr('style','display:none !importa
 	jQuery(".view-display-id-project_map .view-filters .views-submit-button").appendTo(".view-display-id-project_map .view-filters .views-widget-filter-field_plz");
 	}
 	
+	// Akteur field display
 	jQuery(document).on('mouseup', '.select2-container--open .select2-results__option', function (e) {
 		if(jQuery('#edit-type-wrapper .select2-selection .select2-selection__rendered').html() == "Akteur"){
 			jQuery(".views-widget-filter-field_akteurstyp").addClass("active");
 		}
 		else if (jQuery('#edit-type-wrapper .select2-selection .select2-selection__rendered').html() !== "Akteur"){
 			jQuery(".views-widget-filter-field_akteurstyp").removeClass("active");
+			jQuery("#edit-field-akteurstyp option").removeAttr('selected');
 		}
 	});
+	
+	// Akteur if selected
+	if(jQuery("#edit-type option:selected").html() == "Akteur"){
+		jQuery("#edit-field-akteurstyp-wrapper").addClass("active");
+	}
+	else if (!jQuery("#edit-field-akteurstyp option:selected").val() == "All") {
+		jQuery("#edit-field-akteurstyp-wrapper").addClass("active");
+	}
 	
 	jQuery(".view-display-id-page_1 .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by").appendTo(".view-display-id-page_1 .attachment-before");
 	
