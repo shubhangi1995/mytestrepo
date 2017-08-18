@@ -380,6 +380,7 @@ jQuery('.tb-megamenu-submenu.dropdown-menu').attr('style','display:none !importa
 		else if (jQuery('#edit-type-wrapper .select2-selection .select2-selection__rendered').html() !== "Akteur"){
 			jQuery(".views-widget-filter-field_akteurstyp").removeClass("active");
 			jQuery("#edit-field-akteurstyp option").removeAttr('selected');
+			jQuery("#edit-field-akteurstyp-wrapper .select2-selection__rendered").text("Akteur");
 		}
 	});
 	
