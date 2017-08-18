@@ -117,6 +117,7 @@ h1 {
         > li > span {
             border: none;
             color: $main-color;
+			padding:6px;
 			//font-weight:normal;
 			//font-family:$font-family-bold;
         }
@@ -126,6 +127,7 @@ h1 {
             background: none;
             border: none;
             font-size: 26px;
+			padding:6px;
 			//font-weight:normal;
 			//font-family:$font-family-bold; 
 
@@ -374,7 +376,7 @@ h1 {
                         }
 						
 						.views-field-type {
-                padding-bottom: 20px;
+                padding-bottom: 15px;
                 font-weight: normal;
                 color: $active-menu;
                 font-size: 22px;
