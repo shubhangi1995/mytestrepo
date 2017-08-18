@@ -820,6 +820,9 @@
 
             @include devicebreak(x-medium) {
                 padding: 30px;
+				clear: both;
+float: left;
+width: 100%;
             }
 
 
