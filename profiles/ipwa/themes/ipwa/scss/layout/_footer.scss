@@ -40,7 +40,7 @@ footer {
                 .form-control {
                     border-radius: 0;
                     width: 83%;
-                    height: 40px;
+                    height: 55px;
                     display: inline-block;
 
                     &:focus {
@@ -58,13 +58,13 @@ footer {
                 background: $active-menu;
                 position: absolute;
                 border: none;
-                padding: 20px;
+                padding: 28px;
                 border-radius: 0;
-                padding-right: 18px;
+                padding-right: 14px;
 
                 @include devicebreak(medium) {
                     color: $color-white;
-                    padding: 10px 30px;
+                    padding: 18px 30px;
                     display: inline-block;
                     font-size: 14px;
                 }
@@ -75,7 +75,7 @@ footer {
 
                     color: $main-color !important;
                     border-bottom: 0 !important;
-                    top: 10px !important;
+                    top: 18px !important;
                     left: -23px !important;
                     margin-left: 30px !important;
 
@@ -104,6 +104,7 @@ footer {
 
             #footer-icons-images {
                 padding: 40px 0;
+				padding-top:30px;
 
                 div {
                     display: inline-block;

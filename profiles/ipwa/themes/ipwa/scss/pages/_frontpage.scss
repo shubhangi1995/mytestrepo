@@ -292,6 +292,7 @@
                             padding-top: 35px;
 							padding-bottom:40px;
                             height: auto;
+							line-height:26px;
 
                             @include devicebreak(medium) {
                                 padding-right: 50px;
