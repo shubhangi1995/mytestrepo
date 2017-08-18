@@ -181,7 +181,9 @@
             width: auto;
             margin: 0 auto;
 			font-weight: normal;
-			// font-family:$font-family-bold;
+			.pane-title{
+				font-family:$font-family-bold;
+			}
 
             @include devicebreak(x-large) {
                 width: 765px;
