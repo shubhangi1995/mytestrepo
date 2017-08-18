@@ -29,8 +29,6 @@ function ipwa_projekt__node_validate($node, $form, &$form_state) {
       $lat = $json->features[0]->geometry->coordinates[1];
       $node->field_longitude['und'][0]['value'] = $lng;
       $node->field_latitude['und'][0]['value'] = $lat;
-      print_r($node);
-      exit();
     }
   }
   if(empty($node->field_latitude['und'][0]['value']) && empty($node->field_longitude['und'][0]['value'])) {

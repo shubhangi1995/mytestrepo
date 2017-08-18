@@ -128,7 +128,7 @@ function ipwa_projekt__field_group_info() {
       0 => 'field_quellenangabe',
       1 => 'field_themenzuweisung',
       2 => 'field_untertitel',
-      3 => 'field_datum',
+      3 => 'field_ort',
       4 => 'group_title',
     ),
     'format_type' => 'html-element',
@@ -157,7 +157,7 @@ function ipwa_projekt__field_group_info() {
   $field_group->parent_name = 'group_page_info';
   $field_group->data = array(
     'label' => 'title',
-    'weight' => '7',
+    'weight' => '6',
     'children' => array(),
     'format_type' => 'html-element',
     'format_settings' => array(

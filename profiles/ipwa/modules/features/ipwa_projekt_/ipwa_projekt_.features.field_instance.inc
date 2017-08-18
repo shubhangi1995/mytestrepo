@@ -184,55 +184,9 @@ function ipwa_projekt__field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'hidden',
-        'module' => 'date',
-        'settings' => array(
-          'addtocalendar_settings' => array(
-            'atc_date_end' => array(
-              'field' => 'token',
-              'tokenized' => '',
-            ),
-            'atc_description' => array(
-              'field' => 'token',
-              'tokenized' => '',
-            ),
-            'atc_location' => array(
-              'field' => 'token',
-              'tokenized' => '',
-            ),
-            'atc_organizer' => array(
-              'field' => 'token',
-              'tokenized' => '',
-            ),
-            'atc_organizer_email' => array(
-              'field' => 'token',
-              'tokenized' => '',
-            ),
-            'atc_privacy' => 'public',
-            'atc_title' => array(
-              'field' => 'token',
-              'tokenized' => '',
-            ),
-            'data_calendars' => array(
-              'Google Calendar' => 0,
-              'Outlook' => 0,
-              'Outlook Online' => 0,
-              'Yahoo! Calendar' => 0,
-              'iCalendar' => 0,
-            ),
-            'data_secure' => 'auto',
-            'style' => 'blue',
-          ),
-          'addtocalendar_show' => 0,
-          'format_type' => 'short',
-          'fromto' => 'both',
-          'multiple_from' => '',
-          'multiple_number' => '',
-          'multiple_to' => '',
-          'show_remaining_days' => 0,
-          'show_repeat_rule' => 'show',
-        ),
-        'type' => 'date_default',
-        'weight' => 6,
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 3,
       ),
       'paragraph' => array(
         'label' => 'above',
@@ -519,7 +473,7 @@ function ipwa_projekt__field_default_field_instances() {
         'label' => 'above',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 3,
+        'weight' => 4,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -604,9 +558,10 @@ function ipwa_projekt__field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
+        'module' => 'text',
         'settings' => array(),
-        'type' => 'hidden',
+        'type' => 'text_default',
         'weight' => 4,
       ),
       'teaser' => array(
@@ -735,7 +690,7 @@ function ipwa_projekt__field_default_field_instances() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 10,
+        'weight' => 9,
       ),
       'paragraph' => array(
         'label' => 'above',
@@ -798,7 +753,7 @@ function ipwa_projekt__field_default_field_instances() {
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_plain',
-        'weight' => 9,
+        'weight' => 8,
       ),
       'paragraph' => array(
         'label' => 'above',
@@ -841,7 +796,7 @@ function ipwa_projekt__field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 8,
+        'weight' => 7,
       ),
       'paragraph' => array(
         'label' => 'above',
