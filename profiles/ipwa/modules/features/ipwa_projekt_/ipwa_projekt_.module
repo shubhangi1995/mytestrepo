@@ -24,11 +24,10 @@ function ipwa_projekt__node_validate($node, $form, &$form_state)
       // for providing longitude and latitude according to the plz given
       $query_param = implode(" ", $param);
       $val_new = 'https://sg.geodatenzentrum.de/gdz_geokodierung__13dd535b-273e-b0f5-d42f-f2fa2cfa13d6/geosearch.json?query=' . $query_param . '&filter=typ:haus&count=1';
-      print_r($val_new);
-      print_r("hello");
-      exit();
       $json = file_get_contents($val_new);
       $json = json_decode($json);
+      print_r($json);
+      exit();
       $lng = $json->features[0]->geometry->coordinates[0];
       $lat = $json->features[0]->geometry->coordinates[1];
       $node->field_longitude['und'][0]['value'] = $lng;
