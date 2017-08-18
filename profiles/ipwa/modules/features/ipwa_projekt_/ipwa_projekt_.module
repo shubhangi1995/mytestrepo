@@ -28,13 +28,13 @@ include_once 'ipwa_projekt_.features.inc';
 //  }
 //}
 
-//for hiding longitude and latitude in the backend
-function ipwa_projekt__form_alter(&$form, &$form_state, $form_id) {
-  if($form_id == 'protagonist_node_form' || $form_id == 'projekt_node_form') {
-    $form['field_latitude']['#access'] = 0;
-    $form['field_longitude']['#access'] = 0;
-  }
-}
+////for hiding longitude and latitude in the backend
+//function ipwa_projekt__form_alter(&$form, &$form_state, $form_id) {
+//  if($form_id == 'protagonist_node_form' || $form_id == 'projekt_node_form') {
+//    $form['field_latitude']['#access'] = 0;
+//    $form['field_longitude']['#access'] = 0;
+//  }
+//}
 
 function ipwa_projekt__node_presave($node)
 {
