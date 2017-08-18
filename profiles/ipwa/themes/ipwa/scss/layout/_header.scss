@@ -24,6 +24,12 @@ header {
                 padding-right: 15px;
             }
 
+			
+			a {
+                .big {
+                    padding-top: 10px;
+                }
+            }
 
             .navbar-brand {
                 display: none;
@@ -35,6 +41,7 @@ header {
                 margin-top: 8px;
                 margin-bottom: 8px;
                 float: left;
+				padding-top:10px;
 
                 img {
                     width: 290px;

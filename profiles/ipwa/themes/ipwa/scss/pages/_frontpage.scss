@@ -21,7 +21,7 @@
 
             @include devicebreak(medium) {
                 position: relative;
-                background: rgba(39, 55, 83, 0.9);
+                background: rgba(39, 55, 83, 0.94);
             }
 
 
@@ -305,14 +305,14 @@
 
 
                             .field-type-file {
-                                padding-bottom: 30px;
+                                padding-bottom:25px;
                                 margin-bottom: 0;
                             }
 
                             .field-name-field-paragraph-title {
                                 font-size: 26px;
                                 color: $active-menu;
-                                padding-bottom: 25px;
+                                padding-bottom: 15px;
                                 font-weight: normal; 
 								font-family:$font-family-bold;
                             }
