@@ -8062,6 +8062,10 @@ footer #block-block-5 strong {
                 font-size: 20px;
                 color: #273753; }
 
+@media (max-width: 350px) {
+  /* line 352, ../scss/pages/_frontpage.scss */
+  .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items > .field-item .field-collection-view .content .field-name-field-quellenangabe a {
+    margin-left: 15px !important; } }
 /* line 1, ../scss/pages/_common.scss */
 body {
   overflow-x: hidden;

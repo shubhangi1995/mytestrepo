@@ -347,3 +347,9 @@
         }
     }
 }
+
+@media (max-width: 350px){
+.paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items > .field-item .field-collection-view .content .field-name-field-quellenangabe a {
+margin-left:15px !important;
+}
+}
