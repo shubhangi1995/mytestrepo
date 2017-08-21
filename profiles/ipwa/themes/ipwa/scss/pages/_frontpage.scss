@@ -26,7 +26,7 @@
 
 
             @include devicebreak(x-large) {
-                height: 400px;
+                height: 370px;
                 padding: 45px !important;
             }
 
@@ -44,7 +44,7 @@
                     padding-right: 100px;
                     border-bottom: none;
                     height: auto;
-                    padding-bottom: 88px;
+                    padding-bottom: 58px;
                 }
 
 
@@ -78,12 +78,15 @@
 
                     .pane-paragraphs-item-field-quellenangabe a {
                         color: $color-white;
+
                         @extend .common-button;
+
                         position: absolute !important;
-						
-						&:before{
-						font-size:18px !important;
-						}
+
+                        &:before {
+                            font-size: 18px !important;
+                            left: -31px !important;
+                        }
                     }
                 }
 
@@ -123,7 +126,8 @@
                     .views-field-type {
                         color: $active-menu;
                         font-size: 22px;
-                         margin-bottom:10px;
+                        margin-bottom: 10px;
+
                         //font-weight: bold;
                         font-family: $font-family-bold;
 
@@ -149,6 +153,8 @@
 
                         &:before {
                             content: "\e94a" !important;
+                            font-size: 18px !important;
+                            left: -31px !important;
                         }
                     }
                 }
@@ -274,8 +280,8 @@
             @extend .container;
 
             > .field-items {
-                padding-top:50px;
-				padding-bottom:25px;
+                padding-top: 50px;
+                padding-bottom: 25px;
                 float: left;
                 margin-left: -15px;
                 margin-right: -15px;
@@ -283,7 +289,7 @@
                 > .field-item {
                     @extend .col-md-6;
 
-                    margin-bottom:0;
+                    margin-bottom: 0;
 
                     .field-collection-view {
                         margin: 0;

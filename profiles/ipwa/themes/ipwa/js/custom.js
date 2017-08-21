@@ -406,7 +406,7 @@ jQuery(document).ready(function(){
 	if(jQuery(window).innerWidth() > 1024){
 	jQuery(".view-display-id-page_1 .view-filters .views-submit-button").appendTo(".view-display-id-page_1 .view-filters .views-widget-filter-field_plz");
 	}
-	// scrollbar
+	// scrollbar for page-aktuelles
 
 	jQuery('.page-aktuelles select, .page-projekt-map select, .page-projekt-map-list select').select2().on("select2:open", function(){
 	 jQuery('.page-aktuelles .select2-results, .page-projekt-map .select2-results, .page-projekt-map-list .select2-results').addClass("simplebar");
@@ -427,10 +427,12 @@ jQuery(document).ready(function(){
 		}	
 	});
 	
+	//header flyout ubersicht link
 	if(jQuery(window).innerWidth() > 1024){
 		jQuery('.tb-megamenu ul.tb-megamenu-nav li .mega-dropdown-inner .tb-submenu-left ul li:contains(Übersicht)').addClass("homelink");
 	}
 
+	//header flyout ubersicht for responsive view
 	if(jQuery(window).innerWidth() < 1024){
 		jQuery(".tb-megamenu-column-inner ul").each(function(index, element){
 			jQuery(element).prepend(jQuery(element).find("li:contains(Übersicht)"));
