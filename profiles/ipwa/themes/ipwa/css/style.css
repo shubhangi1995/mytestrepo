@@ -6959,45 +6959,46 @@ header .container, header footer .region-footer, footer header .region-footer, h
 /* line 2, ../scss/layout/_footer.scss */
 footer.container, footer footer.region-footer, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode footer.panel-2col, .view-neueste-informationen footer.view-sub-wrapper, .paragraphs-item-topic-teaser-paragraph .field-collection-container footer.field-name-field-topic-teaser, footer.tabs--primary, footer.breadcrumb, .page-user footer.page-header, .page-user footer.region-content, .page-calendar footer.region-content, .page-newsletter-confirm .col-sm-12 footer.page-header, .page-newsletter-confirm .col-sm-12 .page-header + footer.region-content, .page-node-done footer.page-header, .page-node-done .page-header + footer.region-content, .not-front .node-doorpage .view-alle-themen-teaser footer.view-sub-wrapper, .view-neueste-digital-projekte footer.view-sub-wrapper, .view-latest-content-doorpage > footer.view-sub-wrapper, .page-taxonomy-term footer.view-title, .page-taxonomy-term footer.group-page-info, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule footer.paragraphs-item-flie-text-mit-bild-links, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule footer.paragraphs-item-flie-text-bereich, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule footer.paragraphs-item-flie-text-mit-bild-rechts, .page-taxonomy-term .view-alles-zum-thema footer.view-sub-wrapper, .page-termine footer.page-header, .page-aktuelles footer.page-header, .page-calendar footer.page-header, .view-aktuelles > footer.view-sub-wrapper, .view-termin > footer.view-sub-wrapper, .view-search-list > footer.view-sub-wrapper, .view-event-calendar > footer.view-sub-wrapper, .page-suche footer.page-header, .view-wahlen-sie-einen-themenbereich footer.view-sub-wrapper, .page-sitemap footer.page-header, .page-sitemap footer#site-map, .page-projekt-map .view-filters .views-exposed-form footer#map_list_link, .view-display-id-page_1 footer.view-sub-wrapper, .view-display-id-page_1 .view-filters .views-exposed-form footer.views-exposed-widgets, .view-display-id-project_map .view-filters .views-exposed-form footer.views-exposed-widgets {
   width: 100%;
-  background-color: #ffffff; }
-/* line 14, ../scss/layout/_footer.scss */
+  background-color: #ffffff;
+  padding-bottom: 55px; }
+/* line 15, ../scss/layout/_footer.scss */
 footer .region-footer .block-ipwa-newsletter {
   background: #273753;
   padding: 30px;
   position: relative;
   /* Over Desktop design */ }
   @media (min-width: 1025px) {
-    /* line 14, ../scss/layout/_footer.scss */
+    /* line 15, ../scss/layout/_footer.scss */
     footer .region-footer .block-ipwa-newsletter {
       padding: 50px !important; } }
-  /* line 24, ../scss/layout/_footer.scss */
+  /* line 25, ../scss/layout/_footer.scss */
   footer .region-footer .block-ipwa-newsletter .block-title {
     color: #e74712;
     margin-top: 0;
     font-weight: normal;
     font-family: "BentonSans-Bold";
     font-weight: normal; }
-  /* line 33, ../scss/layout/_footer.scss */
+  /* line 34, ../scss/layout/_footer.scss */
   footer .region-footer .block-ipwa-newsletter .form-item-newsletter .control-label {
     color: #ffffff;
     padding-bottom: 30px;
     clear: both;
     width: 100%; }
-  /* line 40, ../scss/layout/_footer.scss */
+  /* line 41, ../scss/layout/_footer.scss */
   footer .region-footer .block-ipwa-newsletter .form-item-newsletter .form-control {
     border-radius: 0;
     width: 83%;
     height: 55px;
     display: inline-block;
     /* Tablet design */ }
-    /* line 46, ../scss/layout/_footer.scss */
+    /* line 47, ../scss/layout/_footer.scss */
     footer .region-footer .block-ipwa-newsletter .form-item-newsletter .form-control:focus {
       border: none; }
     @media (min-width: 520px) {
-      /* line 40, ../scss/layout/_footer.scss */
+      /* line 41, ../scss/layout/_footer.scss */
       footer .region-footer .block-ipwa-newsletter .form-item-newsletter .form-control {
         width: 50%; } }
-  /* line 56, ../scss/layout/_footer.scss */
+  /* line 57, ../scss/layout/_footer.scss */
   footer .region-footer .block-ipwa-newsletter .btn-default {
     font-size: 0;
     background: #e74712;
@@ -7008,13 +7009,13 @@ footer .region-footer .block-ipwa-newsletter {
     padding-right: 14px;
     /* Tablet design */ }
     @media (min-width: 520px) {
-      /* line 56, ../scss/layout/_footer.scss */
+      /* line 57, ../scss/layout/_footer.scss */
       footer .region-footer .block-ipwa-newsletter .btn-default {
         color: #ffffff;
         padding: 18px 30px;
         display: inline-block;
         font-size: 14px; } }
-    /* line 73, ../scss/layout/_footer.scss */
+    /* line 74, ../scss/layout/_footer.scss */
     footer .region-footer .block-ipwa-newsletter .btn-default:before {
       color: #273753 !important;
       border-bottom: 0 !important;
@@ -7023,51 +7024,54 @@ footer .region-footer .block-ipwa-newsletter {
       margin-left: 30px !important;
       /* Tablet design */ }
       @media (min-width: 520px) {
-        /* line 73, ../scss/layout/_footer.scss */
+        /* line 74, ../scss/layout/_footer.scss */
         footer .region-footer .block-ipwa-newsletter .btn-default:before {
           left: -30px; } }
-  /* line 88, ../scss/layout/_footer.scss */
+  /* line 89, ../scss/layout/_footer.scss */
   footer .region-footer .block-ipwa-newsletter .error {
     font-size: 14px;
     color: #ffffff;
     margin-top: 10px; }
-/* line 95, ../scss/layout/_footer.scss */
+/* line 96, ../scss/layout/_footer.scss */
 footer .region-footer .block-ipwa-base {
   padding-top: 30px; }
-  /* line 98, ../scss/layout/_footer.scss */
+  /* line 99, ../scss/layout/_footer.scss */
+  footer .region-footer .block-ipwa-base h2.block-title {
+    display: none; }
+  /* line 103, ../scss/layout/_footer.scss */
   footer .region-footer .block-ipwa-base h3 {
     font-size: 20px;
     color: #273753;
     font-weight: normal;
     font-family: "BentonSans-Bold"; }
-  /* line 105, ../scss/layout/_footer.scss */
+  /* line 110, ../scss/layout/_footer.scss */
   footer .region-footer .block-ipwa-base #footer-icons-images {
     padding: 40px 0;
     padding-top: 30px; }
-    /* line 109, ../scss/layout/_footer.scss */
+    /* line 114, ../scss/layout/_footer.scss */
     footer .region-footer .block-ipwa-base #footer-icons-images div {
       display: inline-block;
       padding-right: 30px;
       padding-bottom: 30px; }
-/* line 117, ../scss/layout/_footer.scss */
+/* line 122, ../scss/layout/_footer.scss */
 footer .region-footer #block-menu-menu-footer-navigation {
   width: 100%;
   /* Desktop design */ }
   @media (min-width: 960px) {
-    /* line 117, ../scss/layout/_footer.scss */
+    /* line 122, ../scss/layout/_footer.scss */
     footer .region-footer #block-menu-menu-footer-navigation {
       width: 75%;
       float: left; } }
-  /* line 126, ../scss/layout/_footer.scss */
+  /* line 131, ../scss/layout/_footer.scss */
   footer .region-footer #block-menu-menu-footer-navigation ul {
     margin-left: -15px;
     margin-right: -15px;
     /* Tablet design */ }
     @media (min-width: 520px) {
-      /* line 126, ../scss/layout/_footer.scss */
+      /* line 131, ../scss/layout/_footer.scss */
       footer .region-footer #block-menu-menu-footer-navigation ul {
         margin: 0; } }
-    /* line 135, ../scss/layout/_footer.scss */
+    /* line 140, ../scss/layout/_footer.scss */
     footer .region-footer #block-menu-menu-footer-navigation ul li {
       display: block;
       padding: 20px;
@@ -7075,53 +7079,53 @@ footer .region-footer #block-menu-menu-footer-navigation {
       border-bottom: 1px solid #eff2f7;
       /* Tablet design */ }
       @media (min-width: 520px) {
-        /* line 135, ../scss/layout/_footer.scss */
+        /* line 140, ../scss/layout/_footer.scss */
         footer .region-footer #block-menu-menu-footer-navigation ul li {
           display: inline-block;
           border-bottom: 0;
           width: auto;
           padding-left: 0;
           padding-bottom: 0; } }
-      /* line 150, ../scss/layout/_footer.scss */
+      /* line 155, ../scss/layout/_footer.scss */
       footer .region-footer #block-menu-menu-footer-navigation ul li a {
         color: #273753;
         padding: 0;
         font-size: 18px; }
-        /* line 155, ../scss/layout/_footer.scss */
+        /* line 160, ../scss/layout/_footer.scss */
         footer .region-footer #block-menu-menu-footer-navigation ul li a:hover, footer .region-footer #block-menu-menu-footer-navigation ul li a:focus {
           background: none;
           outline: none;
           outline-offset: none; }
-        /* line 161, ../scss/layout/_footer.scss */
+        /* line 166, ../scss/layout/_footer.scss */
         footer .region-footer #block-menu-menu-footer-navigation ul li a:hover {
           color: #e74712; }
-      /* line 167, ../scss/layout/_footer.scss */
+      /* line 172, ../scss/layout/_footer.scss */
       footer .region-footer #block-menu-menu-footer-navigation ul li .open a {
         background: none;
         border: none; }
-        /* line 171, ../scss/layout/_footer.scss */
+        /* line 176, ../scss/layout/_footer.scss */
         footer .region-footer #block-menu-menu-footer-navigation ul li .open a:hover, footer .region-footer #block-menu-menu-footer-navigation ul li .open a:focus {
           background: none;
           border: none; }
-/* line 181, ../scss/layout/_footer.scss */
+/* line 186, ../scss/layout/_footer.scss */
 footer .region-footer .footer_blocks {
   width: 100%;
   text-align: left;
   /* Desktop design */ }
   @media (min-width: 960px) {
-    /* line 181, ../scss/layout/_footer.scss */
+    /* line 186, ../scss/layout/_footer.scss */
     footer .region-footer .footer_blocks {
       width: 25%;
       float: left;
       padding-top: 10px;
       text-align: right; } }
-  /* line 193, ../scss/layout/_footer.scss */
+  /* line 198, ../scss/layout/_footer.scss */
   footer .region-footer .footer_blocks .block-views {
     display: inline-block; }
-    /* line 197, ../scss/layout/_footer.scss */
+    /* line 202, ../scss/layout/_footer.scss */
     footer .region-footer .footer_blocks .block-views .feed-icon img {
       display: none; }
-    /* line 202, ../scss/layout/_footer.scss */
+    /* line 207, ../scss/layout/_footer.scss */
     footer .region-footer .footer_blocks .block-views .feed-icon a:before {
       font-family: "icomoon";
       content: "\e911";
@@ -7131,20 +7135,20 @@ footer .region-footer .footer_blocks {
       padding: 10px;
       /* Tablet design */ }
       @media (min-width: 520px) {
-        /* line 202, ../scss/layout/_footer.scss */
+        /* line 207, ../scss/layout/_footer.scss */
         footer .region-footer .footer_blocks .block-views .feed-icon a:before {
           padding-left: 0; } }
-  /* line 219, ../scss/layout/_footer.scss */
+  /* line 224, ../scss/layout/_footer.scss */
   footer .region-footer .footer_blocks .block-ipwa-base {
     display: inline-block;
     padding-top: 0; }
-    /* line 223, ../scss/layout/_footer.scss */
+    /* line 228, ../scss/layout/_footer.scss */
     footer .region-footer .footer_blocks .block-ipwa-base #page_print {
       font-size: 0;
       background: none;
       border: none;
       padding: 0; }
-      /* line 229, ../scss/layout/_footer.scss */
+      /* line 234, ../scss/layout/_footer.scss */
       footer .region-footer .footer_blocks .block-ipwa-base #page_print:before {
         font-family: "icomoon";
         content: "\e94c";
@@ -7152,13 +7156,13 @@ footer .region-footer .footer_blocks {
         font-size: 20px;
         display: inline-block;
         padding: 10px; }
-  /* line 240, ../scss/layout/_footer.scss */
+  /* line 245, ../scss/layout/_footer.scss */
   footer .region-footer .footer_blocks .block-addthis {
     display: inline-block; }
-    /* line 243, ../scss/layout/_footer.scss */
+    /* line 248, ../scss/layout/_footer.scss */
     footer .region-footer .footer_blocks .block-addthis .addthis_button {
       font-size: 0; }
-      /* line 246, ../scss/layout/_footer.scss */
+      /* line 251, ../scss/layout/_footer.scss */
       footer .region-footer .footer_blocks .block-addthis .addthis_button:before {
         font-family: "icomoon";
         content: "\e94f";
@@ -7166,17 +7170,17 @@ footer .region-footer .footer_blocks {
         font-size: 20px;
         display: inline-block;
         padding: 10px; }
-      /* line 255, ../scss/layout/_footer.scss */
+      /* line 260, ../scss/layout/_footer.scss */
       footer .region-footer .footer_blocks .block-addthis .addthis_button img {
         display: none; }
-/* line 265, ../scss/layout/_footer.scss */
+/* line 270, ../scss/layout/_footer.scss */
 footer .footer-copyright {
   font-size: 18px;
   color: #273753; }
-/* line 270, ../scss/layout/_footer.scss */
+/* line 275, ../scss/layout/_footer.scss */
 footer .nav .open > a, footer .nav .open > a:hover, footer .nav .open > a:focus {
   background: none; }
-/* line 275, ../scss/layout/_footer.scss */
+/* line 280, ../scss/layout/_footer.scss */
 footer #block-block-5 strong {
   font-weight: normal;
   font-family: "BentonSans-Bold"; }

@@ -2,6 +2,7 @@ footer {
     &.container {
         width: 100%;
         background-color: $color-white;
+		padding-bottom:55px;
 
         //  margin-top:30px;
    
@@ -94,6 +95,10 @@ footer {
 
         .block-ipwa-base {
             padding-top: 30px;
+			
+			h2.block-title{
+			 display:none;
+			}
 
             h3 {
                 font-size: 20px;
