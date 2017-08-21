@@ -12,15 +12,8 @@ function ipwa_projekt__form_alter(&$form, &$form_state, $form_id) {
   if($form_id == 'protagonist_node_form' || $form_id == 'projekt_node_form') {
     $form['field_latitude']['#access'] = 0;
     $form['field_longitude']['#access'] = 0;
-    if(empty($form['#node']->field_longitude['und'][0]['value']) && empty($form['#node']->field_latitude['und'][0]['value']))
-    $form['actions']['submit']['#submit'][0] = 'ipwa_projekt__submit_handler';
   }
  }
-    function ipwa_projekt__submit_handler($form, &$form_state){
-     form_set_error('changed',t('try'));
-    }
-
-
 function ipwa_projekt__node_presave($node)
 {
   if ($node->type == 'projekt' || $node->type == 'protagonist') {
@@ -36,6 +29,14 @@ function ipwa_projekt__node_presave($node)
       $lat = $json->features[0]->geometry->coordinates[1];
       $node->field_longitude['und'][0]['value'] = $lng;
       $node->field_latitude['und'][0]['value'] = $lat;
+      $node->field_longitude['und'][0]['value'] = 7.53453;
+      $node->field_latitude['und'][0]['value'] = 51.3345345;
+      //node validation for valid longitude and latitude
+      if(empty($node->field_latitude['und'][0]['value']) && empty($node->field_longitude['und'][0]['value'])){
+        drupal_set_message('Please enter a valid PLZ.','error');
+      # cancel saving
+      throw new \Exception(t('Please enter a valid PLZ'));
+        }
 
     }
   }
