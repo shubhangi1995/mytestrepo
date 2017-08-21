@@ -5,9 +5,9 @@ jQuery(document).ready(function(){
 
 //orientation changes for slider
 
-window.addEventListener('orientationchange', function () {
-   window.location.reload();
-  });
+	window.addEventListener('orientationchange', function () {
+	   window.location.reload();
+	  });
   
 
     //Detection for external links
@@ -42,15 +42,14 @@ window.addEventListener('orientationchange', function () {
 	
 	
 	jQuery("input:radio").each(function(){
-  if(jQuery(this).is(':checked'))
-  {
-	jQuery(this).parent("label").css('border-bottom', '2px solid #e74712');
-  }
-}); 
+	  if(jQuery(this).is(':checked')){
+		jQuery(this).parent("label").css('border-bottom', '2px solid #e74712');
+	  }
+	}); 
 
 
 	
-//search
+	//search
 	
     //open popup
     jQuery('.search-icon').on('click', function(event){
@@ -88,7 +87,7 @@ window.addEventListener('orientationchange', function () {
 		
 		
 		jQuery(".navbar-nav").insertAfter(".region-navigation");
-jQuery('.tb-megamenu-submenu.dropdown-menu').attr('style','display:none !important');		
+		jQuery('.tb-megamenu-submenu.dropdown-menu').attr('style','display:none !important');		
 		 jQuery("ul.tb-megamenu-nav li a").click(function(){	
 			 jQuery(this).next(".tb-megamenu-submenu").attr('style','display:block !important');
 			jQuery(this).parent().siblings().find(".tb-megamenu-submenu").attr('style','display:none !important');
@@ -359,8 +358,8 @@ jQuery('.tb-megamenu-submenu.dropdown-menu').attr('style','display:none !importa
 	//page-projekt-map
 	
 	if(jQuery(".view-display-id-project_map").length > 0){
-	jQuery(document.body).addClass("page-projekt-map");
-} 
+		jQuery(document.body).addClass("page-projekt-map");
+	} 
 	jQuery(".page-projekt-map .map-sub-title" ).appendTo(".page-projekt-map #map_list_link");
 	
 	jQuery(".page-projekt-map .paragraphs-item-topic-teaser-paragraph").parent().wrapAll("<div class='map-wrap'></div>");
@@ -397,16 +396,16 @@ jQuery('.tb-megamenu-submenu.dropdown-menu').attr('style','display:none !importa
 	//page-projekt-map-list
 	
 	if(jQuery(".view-display-id-page_1").length > 0){
-	jQuery(document.body).addClass("page-projekt-map-list");
-} 
+		jQuery(document.body).addClass("page-projekt-map-list");
+	} 
 
-jQuery(".page-projekt-map-list .group-page-info .page-title , .page-projekt-map-list .group-page-info .field-type-text-with-summary").wrapAll("<div class='project-map-wrapper'></div>");
+	jQuery(".page-projekt-map-list .group-page-info .page-title , .page-projekt-map-list .group-page-info .field-type-text-with-summary").wrapAll("<div class='project-map-wrapper'></div>");
 
-jQuery(".page-projekt-map-list .paragraphs-item-topic-teaser-paragraph").parent().wrapAll("<div class='map-wrap'></div>");
+	jQuery(".page-projekt-map-list .paragraphs-item-topic-teaser-paragraph").parent().wrapAll("<div class='map-wrap'></div>");
 
-if(jQuery(window).innerWidth() > 1024){
-jQuery(".view-display-id-page_1 .view-filters .views-submit-button").appendTo(".view-display-id-page_1 .view-filters .views-widget-filter-field_plz");
-}
+	if(jQuery(window).innerWidth() > 1024){
+	jQuery(".view-display-id-page_1 .view-filters .views-submit-button").appendTo(".view-display-id-page_1 .view-filters .views-widget-filter-field_plz");
+	}
 	// scrollbar
 
 	jQuery('.page-aktuelles select, .page-projekt-map select, .page-projekt-map-list select').select2().on("select2:open", function(){
@@ -428,15 +427,15 @@ jQuery(".view-display-id-page_1 .view-filters .views-submit-button").appendTo(".
 		}	
 	});
 	
-if(jQuery(window).innerWidth() > 1024){
-	jQuery('.tb-megamenu ul.tb-megamenu-nav li .mega-dropdown-inner .tb-submenu-left ul li:contains(Übersicht)').addClass("homelink");
-}
+	if(jQuery(window).innerWidth() > 1024){
+		jQuery('.tb-megamenu ul.tb-megamenu-nav li .mega-dropdown-inner .tb-submenu-left ul li:contains(Übersicht)').addClass("homelink");
+	}
 
-if(jQuery(window).innerWidth() < 1024){
-	jQuery(".tb-megamenu-column-inner ul").each(function(index, element){
-		jQuery(element).prepend(jQuery(element).find("li:contains(Übersicht)"));
-	});
-}  
+	if(jQuery(window).innerWidth() < 1024){
+		jQuery(".tb-megamenu-column-inner ul").each(function(index, element){
+			jQuery(element).prepend(jQuery(element).find("li:contains(Übersicht)"));
+		});
+	}  
 
 });
 
