@@ -41,7 +41,7 @@ function ipwa_menu_default_fe_block_boxes() {
   $fe_block_boxes->body = '<ul>
 	<li><a href="schaufenster-digitales-nrw-listenansicht?type=projekt&amp;field_akteurstyp=All&amp;field_themenzuweisung_1=24&amp;field_plz=&amp;sort_by=title&amp;sort_by=title">Projekte</a></li>
 	<li><a href="schaufenster-digitales-nrw-listenansicht?type=protagonist&amp;field_akteurstyp=43&amp;field_themenzuweisung_1=24&amp;field_plz=&amp;sort_by=title&amp;sort_by=title">Beratung</a></li>
-	<li><a href="/aktuelles?type=f_rderbekanntmachung&amp;term_node_tid_depth_2=24">&nbsp;Förderung</a></li>
+	<li><a href="/aktuelles?type=f_rderbekanntmachung&amp;term_node_tid_depth_2=24">Förderung</a></li>
 	<li><a href="schaufenster-digitales-nrw-listenansicht?type=protagonist&amp;field_akteurstyp=44&amp;field_themenzuweisung_1=24&amp;field_plz=">Unternehmen als Partner finden</a></li>
 	<li><a href="schaufenster-digitales-nrw-listenansicht?type=protagonist&amp;field_akteurstyp=45&amp;field_themenzuweisung_1=24&amp;field_plz=">FuE-Einrichtungen als Partner finden</a></li>
 	<li><a href="/infos-fuer-unternehmen">Übersicht </a></li>
