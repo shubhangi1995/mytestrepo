@@ -29,8 +29,7 @@ function ipwa_projekt__node_presave($node)
       $lat = $json->features[0]->geometry->coordinates[1];
       $node->field_longitude['und'][0]['value'] = $lng;
       $node->field_latitude['und'][0]['value'] = $lat;
-      $node->field_longitude['und'][0]['value'] = 7.53453;
-      $node->field_latitude['und'][0]['value'] = 51.3345345;
+
       //node validation for valid longitude and latitude
       if(empty($node->field_latitude['und'][0]['value']) && empty($node->field_longitude['und'][0]['value'])){
         drupal_set_message('Please enter a valid PLZ.','error');
