@@ -24,9 +24,9 @@ function ipwa_menu_default_fe_block_boxes() {
   $fe_block_boxes->format = 'wysiwyg';
   $fe_block_boxes->machine_name = 'infos_fur_beschaftigte';
   $fe_block_boxes->body = '<ul>
-	<li><a href="schaufenster-digitales-nrw-listenansicht?type=projekt&amp;field_akteurstyp=All&amp;field_themenzuweisung_1=34&amp;field_plz=&amp;sort_by=title&amp;sort_by=title">Projekte&nbsp;</a></li>
+	<li><a href="schaufenster-digitales-nrw-listenansicht?type=projekt&amp;field_akteurstyp=All&amp;field_themenzuweisung_1=34&amp;field_plz=&amp;sort_by=title&amp;sort_by=title">Projekte</a></li>
 	<li><a href="schaufenster-digitales-nrw-listenansicht?type=protagonist&amp;field_akteurstyp=43&amp;field_themenzuweisung_1=34&amp;field_plz=">Beratung</a></li>
-	<li><a href="/aktuelles?type=f_rderbekanntmachung&amp;term_node_tid_depth_3=34">Förderung&nbsp;</a></li>
+	<li><a href="/aktuelles?type=f_rderbekanntmachung&amp;term_node_tid_depth_3=34">Förderung</a></li>
 	<li><a href="schaufenster-digitales-nrw-listenansicht?type=protagonist&amp;field_akteurstyp=46&amp;field_themenzuweisung_1=34&amp;field_plz=">Perspektiven finden</a></li>
 	<li><a href="/infos-fuer-beschaeftigte">Übersicht </a></li>
 </ul>
