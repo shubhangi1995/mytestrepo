@@ -449,10 +449,12 @@ h1 {
 
         .field-name-field-pflichtfeldhinweis {
             h3 {
-                font-size: 20px;
+                font-size: 15px;
                 color: $active-menu;
             }
         }
+		
+		
 
         .webform-client-form {
             padding-top: 40px;
@@ -511,6 +513,11 @@ h1 {
                             height: auto;
                         }
                     }
+					.webform-component--allgemeine-projektangaben--description-note{
+		  p{
+		     font-size:15px;
+		  }
+		}
                 }
             }
 
