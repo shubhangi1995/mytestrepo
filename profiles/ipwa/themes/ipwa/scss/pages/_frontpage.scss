@@ -274,7 +274,7 @@
             @extend .container;
 
             > .field-items {
-                padding: 40px 0;
+                padding: 50px 0;
                 float: left;
                 margin-left: -15px;
                 margin-right: -15px;
@@ -282,7 +282,7 @@
                 > .field-item {
                     @extend .col-md-6;
 
-                    margin-bottom: 30px;
+                    margin-bottom:0;
 
                     .field-collection-view {
                         margin: 0;

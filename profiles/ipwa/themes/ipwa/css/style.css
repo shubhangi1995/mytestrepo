@@ -7012,7 +7012,7 @@ footer .region-footer .block-ipwa-newsletter {
       /* line 57, ../scss/layout/_footer.scss */
       footer .region-footer .block-ipwa-newsletter .btn-default {
         color: #ffffff;
-        padding: 18px 30px;
+        padding: 18px 40px;
         display: inline-block;
         font-size: 14px; } }
     /* line 74, ../scss/layout/_footer.scss */
@@ -7020,7 +7020,7 @@ footer .region-footer .block-ipwa-newsletter {
       color: #273753 !important;
       border-bottom: 0 !important;
       top: 18px !important;
-      left: -23px !important;
+      left: -18px !important;
       margin-left: 30px !important;
       /* Tablet design */ }
       @media (min-width: 520px) {
@@ -8013,13 +8013,13 @@ footer #block-block-5 strong {
     margin-bottom: 0; }
     /* line 276, ../scss/pages/_frontpage.scss */
     .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items {
-      padding: 40px 0;
+      padding: 50px 0;
       float: left;
       margin-left: -15px;
       margin-right: -15px; }
       /* line 282, ../scss/pages/_frontpage.scss */
       .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items > .field-item {
-        margin-bottom: 30px; }
+        margin-bottom: 0; }
         /* line 287, ../scss/pages/_frontpage.scss */
         .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items > .field-item .field-collection-view {
           margin: 0;
@@ -8918,43 +8918,39 @@ input[type=text]::-ms-clear {
 .page-node-67 .page-title {
   padding-bottom: 30px; }
 
-/* line 1121, ../scss/pages/_common.scss */
-.page-aktuelles #block-ipwa-newsletter-newsletter-subscription-block, .node-type-doorpage #block-ipwa-newsletter-newsletter-subscription-block {
-  margin-top: 25px; }
-
-/* line 1133, ../scss/pages/_common.scss */
+/* line 1131, ../scss/pages/_common.scss */
 .page-newsletter-confirm .col-sm-12 .page-header {
   padding-bottom: 10px; }
-/* line 1137, ../scss/pages/_common.scss */
+/* line 1135, ../scss/pages/_common.scss */
 .page-newsletter-confirm .col-sm-12 #edit-submit {
   border: none;
   margin-left: 20px; }
-  /* line 1143, ../scss/pages/_common.scss */
+  /* line 1141, ../scss/pages/_common.scss */
   .page-newsletter-confirm .col-sm-12 #edit-submit::before {
     top: 10px;
     left: -12px; }
-  /* line 1148, ../scss/pages/_common.scss */
+  /* line 1146, ../scss/pages/_common.scss */
   .page-newsletter-confirm .col-sm-12 #edit-submit:hover {
     background: none; }
-/* line 1153, ../scss/pages/_common.scss */
+/* line 1151, ../scss/pages/_common.scss */
 .page-newsletter-confirm .col-sm-12 #edit-cancel {
   font-size: 17px;
   color: #e74712;
   position: relative;
   top: 3px; }
-/* line 1160, ../scss/pages/_common.scss */
+/* line 1158, ../scss/pages/_common.scss */
 .page-newsletter-confirm .col-sm-12 p {
   font-size: 18px; }
 
-/* line 1171, ../scss/pages/_common.scss */
+/* line 1169, ../scss/pages/_common.scss */
 .page-node-done .page-header {
   padding-bottom: 10px; }
-/* line 1175, ../scss/pages/_common.scss */
+/* line 1173, ../scss/pages/_common.scss */
 .page-node-done .links a {
   font-size: 17px;
   color: #e74712; }
 
-/* line 1182, ../scss/pages/_common.scss */
+/* line 1180, ../scss/pages/_common.scss */
 #backtotop {
   background: #e74712;
   bottom: 20px;
@@ -8966,7 +8962,7 @@ input[type=text]::-ms-clear {
   width: 50px;
   border-radius: 25px;
   text-indent: 0; }
-  /* line 1194, ../scss/pages/_common.scss */
+  /* line 1192, ../scss/pages/_common.scss */
   #backtotop::before {
     font-family: "icomoon";
     content: "\e950";
@@ -8977,33 +8973,33 @@ input[type=text]::-ms-clear {
     top: 16px;
     left: 17px; }
 
-/* line 1206, ../scss/pages/_common.scss */
+/* line 1204, ../scss/pages/_common.scss */
 .group-page-info {
   position: relative; }
-  /* line 1208, ../scss/pages/_common.scss */
+  /* line 1206, ../scss/pages/_common.scss */
   .group-page-info .main_content_blocks {
     /* Over Desktop design */ }
     @media (min-width: 1025px) {
-      /* line 1208, ../scss/pages/_common.scss */
+      /* line 1206, ../scss/pages/_common.scss */
       .group-page-info .main_content_blocks {
         position: absolute;
         left: -70px;
         top: 115px; } }
-    /* line 1217, ../scss/pages/_common.scss */
+    /* line 1215, ../scss/pages/_common.scss */
     .group-page-info .main_content_blocks section {
       display: inline-block;
       /* Over Desktop design */ }
       @media (min-width: 1025px) {
-        /* line 1217, ../scss/pages/_common.scss */
+        /* line 1215, ../scss/pages/_common.scss */
         .group-page-info .main_content_blocks section {
           display: block; } }
-    /* line 1228, ../scss/pages/_common.scss */
+    /* line 1226, ../scss/pages/_common.scss */
     .group-page-info .main_content_blocks #footer_print_icon #page_print {
       font-size: 0;
       border: 0;
       background: 0;
       padding-left: 0; }
-      /* line 1233, ../scss/pages/_common.scss */
+      /* line 1231, ../scss/pages/_common.scss */
       .group-page-info .main_content_blocks #footer_print_icon #page_print:before {
         font-family: "icomoon";
         content: "\e94c";
@@ -9013,7 +9009,7 @@ input[type=text]::-ms-clear {
         padding: 10px;
         padding-left: 0;
         cursor: pointer; }
-    /* line 1247, ../scss/pages/_common.scss */
+    /* line 1245, ../scss/pages/_common.scss */
     .group-page-info .main_content_blocks .block-addthis a:before {
       font-family: "icomoon";
       content: "\e94f";
@@ -9022,11 +9018,11 @@ input[type=text]::-ms-clear {
       display: inline-block;
       padding: 10px;
       padding-left: 0; }
-    /* line 1257, ../scss/pages/_common.scss */
+    /* line 1255, ../scss/pages/_common.scss */
     .group-page-info .main_content_blocks .block-addthis a img {
       display: none; }
 
-/* line 1265, ../scss/pages/_common.scss */
+/* line 1263, ../scss/pages/_common.scss */
 .node-webform .page-title, .node-webform .page-header, .page-sitemap .page-title, .page-sitemap .page-header {
   font-weight: normal;
   font-family: "BentonSans-Bold"; }
