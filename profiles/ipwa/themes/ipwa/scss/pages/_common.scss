@@ -315,12 +315,10 @@ h1 {
                         display: inline-block;
                         width: 100%;
 
-                        @include devicebreak(medium) {
-                            height: 465px;
-                        }
+                        
 
 
-                        @include devicebreak(medium) {
+                        @include devicebreak(x-medium) {
                             height: 480px;
                         }
 
@@ -1120,7 +1118,9 @@ input[type=text]::-ms-clear {
     }
 }
 
-.page-aktuelles #block-ipwa-newsletter-newsletter-subscription-block, .node-type-doorpage #block-ipwa-newsletter-newsletter-subscription-block {
+.page-aktuelles #block-ipwa-newsletter-newsletter-subscription-block, .node-type-doorpage #block-ipwa-newsletter-newsletter-subscription-block,
+.page-taxonomy #block-ipwa-newsletter-newsletter-subscription-block
+ {
     margin-top: 25px;
 }
 
