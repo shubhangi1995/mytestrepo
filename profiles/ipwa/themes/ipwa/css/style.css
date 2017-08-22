@@ -323,7 +323,7 @@ th {
 /* line 22, ../scss/bootstrap-sass/bootstrap/_scaffolding.scss */
 html {
   font-size: 10px;
-  -webkit-tap-highlight-color: transparent; }
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
 
 /* line 27, ../scss/bootstrap-sass/bootstrap/_scaffolding.scss */
 body {
@@ -2123,38 +2123,29 @@ input[type="search"] {
   input[type="time"].input-sm,
   .input-group-sm > input[type="time"].form-control,
   .input-group-sm > input[type="time"].input-group-addon,
-  .input-group-sm > .input-group-btn > input[type="time"].btn, .input-group-sm
-  input[type="time"],
+  .input-group-sm > .input-group-btn > input[type="time"].btn,
+  .input-group-sm input[type="time"],
   input[type="datetime-local"].input-sm,
   .input-group-sm > input[type="datetime-local"].form-control,
   .input-group-sm > input[type="datetime-local"].input-group-addon,
-  .input-group-sm > .input-group-btn > input[type="datetime-local"].btn, .input-group-sm
-  input[type="datetime-local"],
+  .input-group-sm > .input-group-btn > input[type="datetime-local"].btn,
+  .input-group-sm input[type="datetime-local"],
   input[type="month"].input-sm,
   .input-group-sm > input[type="month"].form-control,
   .input-group-sm > input[type="month"].input-group-addon,
-  .input-group-sm > .input-group-btn > input[type="month"].btn, .input-group-sm
-  input[type="month"] {
+  .input-group-sm > .input-group-btn > input[type="month"].btn,
+  .input-group-sm input[type="month"] {
     line-height: 30px; }
   /* line 202, ../scss/bootstrap-sass/bootstrap/_forms.scss */
   input[type="date"].input-lg, .input-group-lg > input[type="date"].form-control,
   .input-group-lg > input[type="date"].input-group-addon,
-  .input-group-lg > .input-group-btn > input[type="date"].btn, .input-group-lg input[type="date"],
-  input[type="time"].input-lg,
-  .input-group-lg > input[type="time"].form-control,
+  .input-group-lg > .input-group-btn > input[type="date"].btn, .input-group-lg input[type="date"], input[type="time"].input-lg, .input-group-lg > input[type="time"].form-control,
   .input-group-lg > input[type="time"].input-group-addon,
-  .input-group-lg > .input-group-btn > input[type="time"].btn, .input-group-lg
-  input[type="time"],
-  input[type="datetime-local"].input-lg,
-  .input-group-lg > input[type="datetime-local"].form-control,
+  .input-group-lg > .input-group-btn > input[type="time"].btn, .input-group-lg input[type="time"], input[type="datetime-local"].input-lg, .input-group-lg > input[type="datetime-local"].form-control,
   .input-group-lg > input[type="datetime-local"].input-group-addon,
-  .input-group-lg > .input-group-btn > input[type="datetime-local"].btn, .input-group-lg
-  input[type="datetime-local"],
-  input[type="month"].input-lg,
-  .input-group-lg > input[type="month"].form-control,
+  .input-group-lg > .input-group-btn > input[type="datetime-local"].btn, .input-group-lg input[type="datetime-local"], input[type="month"].input-lg, .input-group-lg > input[type="month"].form-control,
   .input-group-lg > input[type="month"].input-group-addon,
-  .input-group-lg > .input-group-btn > input[type="month"].btn, .input-group-lg
-  input[type="month"] {
+  .input-group-lg > .input-group-btn > input[type="month"].btn, .input-group-lg input[type="month"] {
     line-height: 46px; } }
 /* line 215, ../scss/bootstrap-sass/bootstrap/_forms.scss */
 .form-group {
@@ -2210,20 +2201,20 @@ input[type="search"] {
 /* line 276, ../scss/bootstrap-sass/bootstrap/_forms.scss */
 input[type="radio"][disabled], input[type="radio"].disabled, fieldset[disabled] input[type="radio"],
 input[type="checkbox"][disabled],
-input[type="checkbox"].disabled, fieldset[disabled]
-input[type="checkbox"] {
+input[type="checkbox"].disabled,
+fieldset[disabled] input[type="checkbox"] {
   cursor: not-allowed; }
 
 /* line 285, ../scss/bootstrap-sass/bootstrap/_forms.scss */
 .radio-inline.disabled, fieldset[disabled] .radio-inline,
-.checkbox-inline.disabled, fieldset[disabled]
-.checkbox-inline {
+.checkbox-inline.disabled,
+fieldset[disabled] .checkbox-inline {
   cursor: not-allowed; }
 
 /* line 295, ../scss/bootstrap-sass/bootstrap/_forms.scss */
 .radio.disabled label, fieldset[disabled] .radio label,
-.checkbox.disabled label, fieldset[disabled]
-.checkbox label {
+.checkbox.disabled label,
+fieldset[disabled] .checkbox label {
   cursor: not-allowed; }
 
 /* line 307, ../scss/bootstrap-sass/bootstrap/_forms.scss */
@@ -5772,7 +5763,7 @@ button.close {
   color: #fff;
   text-align: center;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
-  background-color: transparent; }
+  background-color: rgba(0, 0, 0, 0); }
   /* line 109, ../scss/bootstrap-sass/bootstrap/_carousel.scss */
   .carousel-control.left {
     background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
@@ -5852,7 +5843,7 @@ button.close {
     border-radius: 10px;
     cursor: pointer;
     background-color: #000 \9;
-    background-color: transparent; }
+    background-color: rgba(0, 0, 0, 0); }
   /* line 207, ../scss/bootstrap-sass/bootstrap/_carousel.scss */
   .carousel-indicators .active {
     margin: 0;
@@ -10741,6 +10732,7 @@ input[type=text]::-ms-clear {
       height: auto;
       width: 90%;
       position: relative;
+      word-wrap: break-word;
       /* Tablet design */
       /* Desktop design */ }
       @media (min-width: 520px) {
@@ -10755,52 +10747,52 @@ input[type=text]::-ms-clear {
           margin-right: 30px;
           float: left;
           margin-left: 10px; } }
-      /* line 772, ../scss/pages/_listview.scss */
+      /* line 773, ../scss/pages/_listview.scss */
       .view-wahlen-sie-einen-themenbereich .view-content .views-row:nth-child(2), .view-wahlen-sie-einen-themenbereich .view-content .views-row:last-child {
         /* Desktop design */ }
         @media (min-width: 960px) {
-          /* line 772, ../scss/pages/_listview.scss */
+          /* line 773, ../scss/pages/_listview.scss */
           .view-wahlen-sie-einen-themenbereich .view-content .views-row:nth-child(2), .view-wahlen-sie-einen-themenbereich .view-content .views-row:last-child {
             margin-right: 0; } }
-      /* line 778, ../scss/pages/_listview.scss */
+      /* line 779, ../scss/pages/_listview.scss */
       .view-wahlen-sie-einen-themenbereich .view-content .views-row .views-field-name {
         padding-bottom: 20px; }
-        /* line 781, ../scss/pages/_listview.scss */
+        /* line 782, ../scss/pages/_listview.scss */
         .view-wahlen-sie-einen-themenbereich .view-content .views-row .views-field-name a {
           color: #e74712;
           text-decoration: none;
           font-weight: normal;
           font-family: "BentonSans-Bold"; }
-      /* line 791, ../scss/pages/_listview.scss */
+      /* line 792, ../scss/pages/_listview.scss */
       .view-wahlen-sie-einen-themenbereich .view-content .views-row .views-field-name-1 a {
         color: #273753;
         position: absolute;
         bottom: 30px; }
-      /* line 800, ../scss/pages/_listview.scss */
+      /* line 801, ../scss/pages/_listview.scss */
       .view-wahlen-sie-einen-themenbereich .view-content .views-row .views-field-field-kurztext {
         padding-bottom: 40px; }
 
-/* line 809, ../scss/pages/_listview.scss */
+/* line 810, ../scss/pages/_listview.scss */
 .view-map-teaser {
   clear: both;
   margin-bottom: 30px;
   overflow: hidden; }
-  /* line 815, ../scss/pages/_listview.scss */
+  /* line 816, ../scss/pages/_listview.scss */
   .view-map-teaser .view-sub-wrapper .view-content {
     width: 100%;
     float: left;
     margin: 0;
     /* Over Desktop design */ }
     @media (min-width: 1025px) {
-      /* line 815, ../scss/pages/_listview.scss */
+      /* line 816, ../scss/pages/_listview.scss */
       .view-map-teaser .view-sub-wrapper .view-content {
         width: 65%; } }
-    /* line 825, ../scss/pages/_listview.scss */
+    /* line 826, ../scss/pages/_listview.scss */
     .view-map-teaser .view-sub-wrapper .view-content .views-row {
       width: 100%;
       padding: 0;
       background: #273753; }
-      /* line 830, ../scss/pages/_listview.scss */
+      /* line 831, ../scss/pages/_listview.scss */
       .view-map-teaser .view-sub-wrapper .view-content .views-row .row-container {
         background: none;
         height: auto;
@@ -10809,44 +10801,44 @@ input[type=text]::-ms-clear {
         border: none;
         /* Over Desktop design */ }
         @media (min-width: 1025px) {
-          /* line 830, ../scss/pages/_listview.scss */
+          /* line 831, ../scss/pages/_listview.scss */
           .view-map-teaser .view-sub-wrapper .view-content .views-row .row-container {
             padding: 45px 150px 45px 50px; } }
-        /* line 842, ../scss/pages/_listview.scss */
+        /* line 843, ../scss/pages/_listview.scss */
         .view-map-teaser .view-sub-wrapper .view-content .views-row .row-container:hover {
           background: none;
           border: none; }
-        /* line 847, ../scss/pages/_listview.scss */
+        /* line 848, ../scss/pages/_listview.scss */
         .view-map-teaser .view-sub-wrapper .view-content .views-row .row-container .views-field-field-bild {
           padding-bottom: 20px; }
-          /* line 850, ../scss/pages/_listview.scss */
+          /* line 851, ../scss/pages/_listview.scss */
           .view-map-teaser .view-sub-wrapper .view-content .views-row .row-container .views-field-field-bild img {
             color: #e74712; }
-        /* line 855, ../scss/pages/_listview.scss */
+        /* line 856, ../scss/pages/_listview.scss */
         .view-map-teaser .view-sub-wrapper .view-content .views-row .row-container .views-field-field-paragraph-title {
           color: #ffffff;
           font-size: 36px;
           font-weight: normal;
           font-family: "BentonSans-Bold";
           padding-bottom: 20px; }
-        /* line 863, ../scss/pages/_listview.scss */
+        /* line 864, ../scss/pages/_listview.scss */
         .view-map-teaser .view-sub-wrapper .view-content .views-row .row-container .views-field-field-flie-text-bereich {
           color: #ffffff;
           padding-bottom: 30px; }
-        /* line 868, ../scss/pages/_listview.scss */
+        /* line 869, ../scss/pages/_listview.scss */
         .view-map-teaser .view-sub-wrapper .view-content .views-row .row-container .views-field-field-quellenangabe a {
           color: #ffffff; }
-  /* line 877, ../scss/pages/_listview.scss */
+  /* line 878, ../scss/pages/_listview.scss */
   .view-map-teaser .view-sub-wrapper .view-footer {
     width: 100%;
     float: left;
     /* Over Desktop design */ }
     @media (min-width: 1025px) {
-      /* line 877, ../scss/pages/_listview.scss */
+      /* line 878, ../scss/pages/_listview.scss */
       .view-map-teaser .view-sub-wrapper .view-footer {
         width: 35%; } }
 
-/* line 888, ../scss/pages/_listview.scss */
+/* line 889, ../scss/pages/_listview.scss */
 .page-taxonomy-term-1 > .footer.container, footer .page-taxonomy-term-1 > .footer.region-footer, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .page-taxonomy-term-1 > .footer.panel-2col, .view-neueste-informationen .page-taxonomy-term-1 > .footer.view-sub-wrapper, .paragraphs-item-topic-teaser-paragraph .field-collection-container .page-taxonomy-term-1 > .footer.field-name-field-topic-teaser, .page-taxonomy-term-1 > .footer.tabs--primary, .page-taxonomy-term-1 > .footer.breadcrumb, .page-user .page-taxonomy-term-1 > .footer.page-header, .page-user .page-taxonomy-term-1 > .footer.region-content, .page-calendar .page-taxonomy-term-1 > .footer.region-content, .page-newsletter-confirm .col-sm-12 .page-taxonomy-term-1 > .footer.page-header, .page-newsletter-confirm .col-sm-12 .page-taxonomy-term-1 > .page-header + .footer.region-content, .page-node-done .page-taxonomy-term-1 > .footer.page-header, .page-node-done .page-taxonomy-term-1 > .page-header + .footer.region-content, .not-front .node-doorpage .view-alle-themen-teaser .page-taxonomy-term-1 > .footer.view-sub-wrapper, .view-neueste-digital-projekte .page-taxonomy-term-1 > .footer.view-sub-wrapper, .view-latest-content-doorpage.page-taxonomy-term-1 > .footer.view-sub-wrapper, .page-taxonomy-term .page-taxonomy-term-1 > .footer.view-title, .page-taxonomy-term .page-taxonomy-term-1 > .footer.group-page-info, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .page-taxonomy-term-1 > .footer.paragraphs-item-flie-text-mit-bild-links, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .page-taxonomy-term-1 > .footer.paragraphs-item-flie-text-bereich, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .page-taxonomy-term-1 > .footer.paragraphs-item-flie-text-mit-bild-rechts, .page-taxonomy-term .view-alles-zum-thema .page-taxonomy-term-1 > .footer.view-sub-wrapper, .page-termine .page-taxonomy-term-1 > .footer.page-header, .page-aktuelles .page-taxonomy-term-1 > .footer.page-header, .page-calendar .page-taxonomy-term-1 > .footer.page-header, .view-aktuelles.page-taxonomy-term-1 > .footer.view-sub-wrapper, .view-termin.page-taxonomy-term-1 > .footer.view-sub-wrapper, .view-search-list.page-taxonomy-term-1 > .footer.view-sub-wrapper, .view-event-calendar.page-taxonomy-term-1 > .footer.view-sub-wrapper, .page-suche .page-taxonomy-term-1 > .footer.page-header, .view-wahlen-sie-einen-themenbereich .page-taxonomy-term-1 > .footer.view-sub-wrapper, .page-sitemap .page-taxonomy-term-1 > .footer.page-header, .page-sitemap .page-taxonomy-term-1 > .footer#site-map, .page-projekt-map .view-filters .views-exposed-form .page-taxonomy-term-1 > .footer#map_list_link, .view-display-id-page_1 .page-taxonomy-term-1 > .footer.view-sub-wrapper, .view-display-id-page_1 .view-filters .views-exposed-form .page-taxonomy-term-1 > .footer.views-exposed-widgets, .view-display-id-project_map .view-filters .views-exposed-form .page-taxonomy-term-1 > .footer.views-exposed-widgets {
   padding-top: 30px; }
 
