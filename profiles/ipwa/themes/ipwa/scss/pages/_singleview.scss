@@ -130,8 +130,8 @@
     .page-title {
         border: none;
         margin: 0;
-		font-family:$font-family-bold;
-		font-weight:normal;
+        font-family: $font-family-bold;
+        font-weight: normal;
     }
 
     .field-name-field-untertitel .field-item {
@@ -161,8 +161,8 @@
                     font-size: 28px;
                     padding-bottom: 40px;
                     padding-top: 40px;
-					font-weight:normal;
-					font-family:$font-family-bold;
+                    font-weight: normal;
+                    font-family: $font-family-bold;
                 }
 
                 p {
@@ -238,8 +238,8 @@
                 color: $color-white;
                 font-size: 28px;
                 padding-bottom: 40px;
-				font-weight:normal;
-				font-family:$font-family-bold;
+                font-weight: normal;
+                font-family: $font-family-bold;
             }
         }
 
@@ -320,8 +320,10 @@
         font-size: 30px !important;
         color: $active-menu;
         margin-bottom: 60px;
-		font-weight:normal;
-		//font-family:$font-family-bold;
+        font-weight: normal;
+
+        //font-family:$font-family-bold;
+   
     }
 
     .field:first-child {
@@ -331,10 +333,11 @@
             }
         }
     }
-	.page-title{
-		font-weight:normal;
-		font-family:$font-family-bold;
-	}
+
+    .page-title {
+        font-weight: normal;
+        font-family: $font-family-bold;
+    }
 }
 
 .group-body-container {
@@ -494,8 +497,8 @@
 
     h2, h3, h4, h5, h6 {
         color: $active-menu !important;
-		font-weight:normal;
-		font-family:$font-family-bold;
+        font-weight: normal;
+        font-family: $font-family-bold;
     }
 
     h2 {
@@ -626,7 +629,7 @@
 
 
         font-weight: normal;
-		font-family:$font-family-bold;
+        font-family: $font-family-bold;
         margin-bottom: 30px;
     }
 
@@ -790,7 +793,7 @@
                         * {
                             color: $active-menu;
                             font-weight: normal;
-							font-family:$font-family-bold;
+                            font-family: $font-family-bold;
                         }
                     }
 
@@ -798,7 +801,7 @@
                         color: $active-menu;
                         margin-right: 8px;
                         font-weight: normal;
-						font-family:$font-family-bold; 
+                        font-family: $font-family-bold;
                     }
                 }
             }
@@ -817,12 +820,14 @@
         .left-block {
             width: 100%;
             padding: 15px;
+            padding-bottom: 0;
 
             @include devicebreak(x-medium) {
                 padding: 30px;
-				clear: both;
-float: left;
-width: 100%;
+                clear: both;
+                float: left;
+                width: 100%;
+                padding-bottom: 0;
             }
 
 
@@ -838,10 +843,11 @@ width: 100%;
             .view-header {
                 padding-bottom: 30px;
                 font-size: 28px;
-				.pane-title{
-					font-weight:normal;
-					font-family:$font-family-bold;
-				}
+
+                .pane-title {
+                    font-weight: normal;
+                    font-family: $font-family-bold;
+                }
             }
 
             .inner-wrapper {
@@ -899,7 +905,7 @@ width: 100%;
 
                     .row-container {
                         background: $color-white;
-                        height: 410px;
+                        height: auto;
                         padding: 30px;
                         position: relative;
                         border: 1px solid $color-white;
@@ -907,6 +913,16 @@ width: 100%;
                         transition: all 0.5s ease;
                         display: inline-block;
                         width: 100%;
+
+                        @include devicebreak(x-medium) {
+                            height: 430px;
+                        }
+
+
+                        @include devicebreak(x-large) {
+                            height: 410px;
+                        }
+
 
                         &:hover {
                             background: $color-light-blue;
@@ -926,7 +942,7 @@ width: 100%;
                             color: $active-menu;
                             font-weight: normal;
                             padding-bottom: 15px;
-							font-family:$font-family-bold;
+                            font-family: $font-family-bold;
                         }
 
                         .views-field-title {
@@ -961,22 +977,25 @@ width: 100%;
                     color: $main-color;
                 }
             }
-			& + .view-latest-content-doorpage{
-				.pane-title{
-					font-weight:normal;
-					font-family:$font-family-bold;
-				}
-			}
+
+            & + .view-latest-content-doorpage {
+                .pane-title {
+                    font-weight: normal;
+                    font-family: $font-family-bold;
+                }
+            }
         }
 
         > .view-latest-content-doorpage {
             width: 100%;
             padding: 15px;
+            padding-top: 0;
 
             @include devicebreak(x-medium) {
                 width: 50%;
                 float: left;
                 padding: 30px;
+                padding-top: 0;
             }
 
 
@@ -1015,7 +1034,7 @@ width: 100%;
 
                     .row-container {
                         background: $color-white;
-                        height: 410px;
+                        height: auto;
                         padding: 30px;
                         position: relative;
                         border: 1px solid $color-white;
@@ -1023,6 +1042,16 @@ width: 100%;
                         transition: all 0.5s ease;
                         display: inline-block;
                         width: 100%;
+
+                        @include devicebreak(x-medium) {
+                            height: 430px;
+                        }
+
+
+                        @include devicebreak(x-large) {
+                            height: 410px;
+                        }
+
 
                         &:hover {
                             background: $color-light-blue;
@@ -1042,7 +1071,7 @@ width: 100%;
                             color: $active-menu;
                             font-weight: normal;
                             padding-bottom: 15px;
-							font-family:$font-family-bold;
+                            font-family: $font-family-bold;
                         }
 
                         .views-field-title {
@@ -1085,6 +1114,7 @@ width: 100%;
 
 .group-top-wrapper {
     margin-bottom: 40px;
+
     //  overflow: hidden;
 
     .group-left-top-wrapper {
@@ -1197,7 +1227,7 @@ width: 100%;
                 box-shadow: none;
                 color: $main-color;
                 font-weight: normal;
-				font-family:$font-family-bold;
+                font-family: $font-family-bold;
                 padding: 0;
                 margin-top: 8px;
                 position: relative;
