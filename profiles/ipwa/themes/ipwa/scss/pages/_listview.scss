@@ -754,6 +754,7 @@
             height: auto;
             width: 90%;
             position: relative;
+			word-wrap:break-word;
 
             @include devicebreak(medium) {
                 height: 330px;
