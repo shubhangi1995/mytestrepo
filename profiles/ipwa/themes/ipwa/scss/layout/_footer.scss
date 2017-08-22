@@ -2,7 +2,11 @@ footer {
     &.container {
         width: 100%;
         background-color: $color-white;
-		padding-bottom:55px;
+		padding-bottom:0px;
+		
+		@include devicebreak(large){
+		 padding-bottom:55px;
+		}
 
         //  margin-top:30px;
    
@@ -186,6 +190,7 @@ footer {
         .footer_blocks {
             width: 100%;
             text-align: left;
+			padding:10px 0;
 
             @include devicebreak(large) {
                 width: 25%;

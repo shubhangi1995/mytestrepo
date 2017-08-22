@@ -1192,6 +1192,7 @@ input[type=text]::-ms-clear {
     width: 50px;
     border-radius: 25px;
     text-indent: 0;
+	z-index:99999;
 
     &::before {
         font-family: $icomoon;
