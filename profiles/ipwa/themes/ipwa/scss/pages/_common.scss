@@ -315,12 +315,10 @@ h1 {
                         display: inline-block;
                         width: 100%;
 
-                        @include devicebreak(medium) {
-                            height: 465px;
-                        }
+                        
 
 
-                        @include devicebreak(medium) {
+                        @include devicebreak(x-medium) {
                             height: 480px;
                         }
 

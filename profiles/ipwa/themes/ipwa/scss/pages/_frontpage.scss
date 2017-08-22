@@ -18,11 +18,12 @@
 
             background: rgba(39, 55, 83, 1);
             padding-top: 45px;
-			 padding-bottom:45px;
+            padding-bottom: 45px;
 
             @include devicebreak(medium) {
                 position: relative;
                 background: rgba(39, 55, 83, 0.94);
+                padding: 45px 30px;
             }
 
 
@@ -48,6 +49,7 @@
                     height: auto;
                     padding-bottom: 18px;
                 }
+
 
                 .inside {
                     margin: 0;
@@ -99,7 +101,6 @@
                 height: auto;
                 padding-top: 30px;
                 position: relative;
-               
 
                 .inside {
                     margin: 0;
@@ -309,7 +310,7 @@
                             height: auto;
                             line-height: 26px;
 
-                            @include devicebreak(medium) {
+                            @include devicebreak(x-medium) {
                                 padding-right: 50px;
                                 height: 400px;
                             }
