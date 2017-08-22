@@ -2110,9 +2110,32 @@ Publikation|Publikationen'),
   $handler->display->display_options['fields']['type']['table'] = 'search_api_index_ipwa_solr_index';
   $handler->display->display_options['fields']['type']['field'] = 'type';
   $handler->display->display_options['fields']['type']['label'] = '';
+  $handler->display->display_options['fields']['type']['exclude'] = TRUE;
   $handler->display->display_options['fields']['type']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['type']['link_to_entity'] = 0;
   $handler->display->display_options['fields']['type']['format_name'] = 1;
+  /* Feld: Indexed Beitrag: Akteurstyp */
+  $handler->display->display_options['fields']['field_akteurstyp']['id'] = 'field_akteurstyp';
+  $handler->display->display_options['fields']['field_akteurstyp']['table'] = 'search_api_index_ipwa_solr_index';
+  $handler->display->display_options['fields']['field_akteurstyp']['field'] = 'field_akteurstyp';
+  $handler->display->display_options['fields']['field_akteurstyp']['label'] = '';
+  $handler->display->display_options['fields']['field_akteurstyp']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_akteurstyp']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_akteurstyp']['link_to_entity'] = 0;
+  $handler->display->display_options['fields']['field_akteurstyp']['view_mode'] = 'full';
+  $handler->display->display_options['fields']['field_akteurstyp']['bypass_access'] = 0;
+  /* Feld: Views: Views Conditional */
+  $handler->display->display_options['fields']['views_conditional_1']['id'] = 'views_conditional_1';
+  $handler->display->display_options['fields']['views_conditional_1']['table'] = 'views_conditional';
+  $handler->display->display_options['fields']['views_conditional_1']['field'] = 'views_conditional';
+  $handler->display->display_options['fields']['views_conditional_1']['label'] = '';
+  $handler->display->display_options['fields']['views_conditional_1']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['views_conditional_1']['if'] = 'type';
+  $handler->display->display_options['fields']['views_conditional_1']['condition'] = '1';
+  $handler->display->display_options['fields']['views_conditional_1']['equalto'] = 'Akteur';
+  $handler->display->display_options['fields']['views_conditional_1']['then'] = '[field_akteurstyp]';
+  $handler->display->display_options['fields']['views_conditional_1']['or'] = '[type]';
+  $handler->display->display_options['fields']['views_conditional_1']['strip_tags'] = 0;
   /* Feld: Indexed Beitrag: Titel */
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'search_api_index_ipwa_solr_index';
