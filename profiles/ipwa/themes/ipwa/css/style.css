@@ -8928,42 +8928,43 @@ input[type=text]::-ms-clear {
   padding-bottom: 30px; }
 
 /* line 1123, ../scss/pages/_common.scss */
-.page-aktuelles #block-ipwa-newsletter-newsletter-subscription-block, .node-type-doorpage #block-ipwa-newsletter-newsletter-subscription-block {
+.page-aktuelles #block-ipwa-newsletter-newsletter-subscription-block, .node-type-doorpage #block-ipwa-newsletter-newsletter-subscription-block,
+.page-taxonomy #block-ipwa-newsletter-newsletter-subscription-block {
   margin-top: 25px; }
 
-/* line 1135, ../scss/pages/_common.scss */
+/* line 1137, ../scss/pages/_common.scss */
 .page-newsletter-confirm .col-sm-12 .page-header {
   padding-bottom: 10px; }
-/* line 1139, ../scss/pages/_common.scss */
+/* line 1141, ../scss/pages/_common.scss */
 .page-newsletter-confirm .col-sm-12 #edit-submit {
   border: none;
   margin-left: 20px; }
-  /* line 1145, ../scss/pages/_common.scss */
+  /* line 1147, ../scss/pages/_common.scss */
   .page-newsletter-confirm .col-sm-12 #edit-submit::before {
     top: 10px;
     left: -12px; }
-  /* line 1150, ../scss/pages/_common.scss */
+  /* line 1152, ../scss/pages/_common.scss */
   .page-newsletter-confirm .col-sm-12 #edit-submit:hover {
     background: none; }
-/* line 1155, ../scss/pages/_common.scss */
+/* line 1157, ../scss/pages/_common.scss */
 .page-newsletter-confirm .col-sm-12 #edit-cancel {
   font-size: 17px;
   color: #e74712;
   position: relative;
   top: 3px; }
-/* line 1162, ../scss/pages/_common.scss */
+/* line 1164, ../scss/pages/_common.scss */
 .page-newsletter-confirm .col-sm-12 p {
   font-size: 18px; }
 
-/* line 1173, ../scss/pages/_common.scss */
+/* line 1175, ../scss/pages/_common.scss */
 .page-node-done .page-header {
   padding-bottom: 10px; }
-/* line 1177, ../scss/pages/_common.scss */
+/* line 1179, ../scss/pages/_common.scss */
 .page-node-done .links a {
   font-size: 17px;
   color: #e74712; }
 
-/* line 1184, ../scss/pages/_common.scss */
+/* line 1186, ../scss/pages/_common.scss */
 #backtotop {
   background: #e74712;
   bottom: 52px;
@@ -8975,7 +8976,7 @@ input[type=text]::-ms-clear {
   width: 50px;
   border-radius: 25px;
   text-indent: 0; }
-  /* line 1196, ../scss/pages/_common.scss */
+  /* line 1198, ../scss/pages/_common.scss */
   #backtotop::before {
     font-family: "icomoon";
     content: "\e950";
@@ -8986,33 +8987,33 @@ input[type=text]::-ms-clear {
     top: 16px;
     left: 17px; }
 
-/* line 1208, ../scss/pages/_common.scss */
+/* line 1210, ../scss/pages/_common.scss */
 .group-page-info {
   position: relative; }
-  /* line 1211, ../scss/pages/_common.scss */
+  /* line 1213, ../scss/pages/_common.scss */
   .group-page-info .main_content_blocks {
     /* Over Desktop design */ }
     @media (min-width: 1025px) {
-      /* line 1211, ../scss/pages/_common.scss */
+      /* line 1213, ../scss/pages/_common.scss */
       .group-page-info .main_content_blocks {
         position: absolute;
         left: -70px;
         top: 115px; } }
-    /* line 1219, ../scss/pages/_common.scss */
+    /* line 1221, ../scss/pages/_common.scss */
     .group-page-info .main_content_blocks section {
       display: inline-block;
       /* Over Desktop design */ }
       @media (min-width: 1025px) {
-        /* line 1219, ../scss/pages/_common.scss */
+        /* line 1221, ../scss/pages/_common.scss */
         .group-page-info .main_content_blocks section {
           display: block; } }
-    /* line 1228, ../scss/pages/_common.scss */
+    /* line 1230, ../scss/pages/_common.scss */
     .group-page-info .main_content_blocks #footer_print_icon #page_print {
       font-size: 0;
       border: 0;
       background: 0;
       padding-left: 0; }
-      /* line 1234, ../scss/pages/_common.scss */
+      /* line 1236, ../scss/pages/_common.scss */
       .group-page-info .main_content_blocks #footer_print_icon #page_print:before {
         font-family: "icomoon";
         content: "\e94c";
@@ -9022,7 +9023,7 @@ input[type=text]::-ms-clear {
         padding: 10px;
         padding-left: 0;
         cursor: pointer; }
-    /* line 1249, ../scss/pages/_common.scss */
+    /* line 1251, ../scss/pages/_common.scss */
     .group-page-info .main_content_blocks .block-addthis a:before {
       font-family: "icomoon";
       content: "\e94f";
@@ -9031,11 +9032,11 @@ input[type=text]::-ms-clear {
       display: inline-block;
       padding: 10px;
       padding-left: 0; }
-    /* line 1259, ../scss/pages/_common.scss */
+    /* line 1261, ../scss/pages/_common.scss */
     .group-page-info .main_content_blocks .block-addthis a img {
       display: none; }
 
-/* line 1268, ../scss/pages/_common.scss */
+/* line 1270, ../scss/pages/_common.scss */
 .node-webform .page-title, .node-webform .page-header, .page-sitemap .page-title, .page-sitemap .page-header {
   font-weight: normal;
   font-family: "BentonSans-Bold"; }
