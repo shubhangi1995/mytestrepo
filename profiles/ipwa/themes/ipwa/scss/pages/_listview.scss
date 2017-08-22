@@ -74,64 +74,7 @@
         }
     }
 
-    .view-alles-zum-thema {
-        .view-sub-wrapper {
-            @extend .container;
-
-            .attachment-before .view-result-count {
-                margin-top: -88px;
-                padding: 30px 0;
-                font-size: 22px;
-				font-weight: normal;
-				font-family:$font-family-bold;
-            }
-
-            .view-content .views-row .row-container {
-                .views-field-type {
-                    color: $active-menu;
-                    font-weight: bold;
-                    padding-bottom: 20px;
-                }
-
-                .views-field-views-conditional {
-                    position: absolute;
-                    bottom: 30px;
-                    font-size: 17px;
-                    color: $color-light-grey;
-                }
-            }
-
-            .view-filters {
-                .views-submit-button {
-                    display: none;
-                }
-
-                .views-exposed-form .views-exposed-widgets .views-widget-sort-by {
-                    float: right;
-                    padding: 30px 0;
-
-                    .bef-select-as-links .form-type-bef-link {
-                        display: inline-block;
-                        font-size: 20px;
-                        padding-left: 15px;
-
-                        a {
-                            color: $main-color;
-                            text-decoration: none;
-
-                            &.active {
-                                border-bottom: 2px solid $active-menu;
-                            }
-                        }
-
-                        &.active a {
-                            border-bottom: 2px solid $active-menu;
-                        }
-                    }
-                }
-            }
-        }
-    }
+   
 
     .field-name-field-kurztext {
         font-size: 22px;
@@ -170,7 +113,7 @@
     }
 }
 
-.view-aktuelles, .view-termin, .view-search-list, .view-event-calendar {
+.view-aktuelles, .view-termin, .view-search-list, .view-event-calendar, .view-alles-zum-thema  {
     > .view-sub-wrapper {
         @extend .container;
 
@@ -195,7 +138,7 @@
                 width: auto;
                 float: left;
                 padding: 30px 0;
-                font-size: 20px;
+                font-size: 18px;
                 font-weight: normal;
 				font-family:$font-family-bold;
                 margin-top: 0;
@@ -244,6 +187,9 @@
         }
 
 		.views-widget-sort-order{
+		  display:none;
+		}
+		.views-submit-button{
 		  display:none;
 		}
         .view-filters {
