@@ -48,7 +48,7 @@
             .page-header {
                 border-bottom: none;
                 margin: 0;
-                
+                font-size:44px;
 
                 // color: $active-menu;
                 padding-bottom: 15px;
@@ -98,7 +98,7 @@
 
     .page-header {
         @extend .container;
-
+         font-size:44px;
         border: none;
         font-weight: normal;
 		font-family:$font-family-bold;
@@ -824,9 +824,11 @@
         .view-footer {
             width: 100%;
             float: left;
+			margin-top:30px;
 
             @include devicebreak(x-large) {
                 width: 35%;
+				margin-top:0;
             }
         }
     }
