@@ -256,6 +256,9 @@ jQuery(document).ready(function(){
 	//view-search-list
 	jQuery(".view-search-list .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by").appendTo(".view-search-list .attachment-before");
 	
+	//view-alles-zum-thema
+	
+	jQuery(".view-alles-zum-thema .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by").appendTo(".view-alles-zum-thema .attachment-before");
 	
 	// Share link tab indexing
 	
