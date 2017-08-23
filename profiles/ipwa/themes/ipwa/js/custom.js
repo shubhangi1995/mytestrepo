@@ -440,7 +440,13 @@ jQuery(document).ready(function(){
 		jQuery(".tb-megamenu-column-inner ul").each(function(index, element){
 			jQuery(element).prepend(jQuery(element).find("li:contains(Übersicht)"));
 		});
-	}  
+	} 
+
+	// Page termine and calendar view
+	jQuery(".page-calendar .page-header, .page-termine .page-header").before("<div class='calendar-icon'></div>");
+	jQuery(".page-calendar .page-header, .page-termine .page-header").after(jQuery(".view-termin > .view-sub-wrapper > .view-header, .view-event-calendar > .view-sub-wrapper > .view-header"));
+	jQuery(".page-calendar .page-header, .page-termine .page-header, .calendar-icon, .page-header + .view-header").wrapAll("<div class='container-new'></div>");
+	jQuery(".calendar-icon").nextAll().wrapAll("<div class ='calendar-right'></div>");
 
 });
 

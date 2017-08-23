@@ -1085,7 +1085,7 @@ input[type=text]::-ms-clear {
 }
 
 .page-calendar, .page-termine {
-    .page-header {
+    /* .page-header {
         position: relative;
 
         &::before {
@@ -1106,12 +1106,48 @@ input[type=text]::-ms-clear {
                 margin-bottom: 0;
             }
         }
-    }
+    } */
+	
+        .calendar-icon{
+			width:100%;
+			@include devicebreak(x-large) {
+				float:left;
+				width:25%;
+				text-align:center; 
+			}
+			&::before {
+				content: "\e941";
+				font-family: $icomoon;
+				color: $calendar-color;
+				font-size: 120px;
+				margin-bottom: 30px;
+			}
+		}
+		.calendar-right{
+			@include devicebreak(x-large) {
+				float:left;
+			}
+		}
+		.container-new{
+			@extend .container;
+			margin-bottom:70px; 
+			margin-top:60px;
+			.page-header {
+				padding-left:0;
+				padding-right:0;
+				@include devicebreak(x-large) {
+					// padding-left: 85px;
+					padding-top:0; 
+				}
+			}
+		}	
 
     .main-container {
         .view-header {
+			color:$active-menu;
+			font-size:30px;
             @include devicebreak(x-large) {
-                padding-left: 90px;
+                padding-left: 5px;
             }
         }
     }
