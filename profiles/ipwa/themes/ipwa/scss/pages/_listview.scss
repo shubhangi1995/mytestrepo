@@ -3,8 +3,9 @@
 
     .view-title {
         @extend .container;
-		font-weight:normal;
-		font-family:$font-family-bold;
+
+        font-weight: normal;
+        font-family: $font-family-bold;
         font-size: 28px;
     }
 
@@ -21,7 +22,7 @@
 
         @include devicebreak(x-large) {
             padding: 0;
-            padding-top:60px;
+            padding-top: 60px;
             padding-bottom: 50px;
         }
 
@@ -48,12 +49,12 @@
             .page-header {
                 border-bottom: none;
                 margin: 0;
-                font-size:44px;
+                font-size: 44px;
 
                 // color: $active-menu;
                 padding-bottom: 15px;
-				font-weight:normal;
-				font-family:$font-family-bold;
+                font-weight: normal;
+                font-family: $font-family-bold;
             }
 
             p {
@@ -73,8 +74,6 @@
             @extend .container;
         }
     }
-
-   
 
     .field-name-field-kurztext {
         font-size: 22px;
@@ -98,10 +97,11 @@
 
     .page-header {
         @extend .container;
-         font-size:44px;
+
+        font-size: 44px;
         border: none;
         font-weight: normal;
-		font-family:$font-family-bold;
+        font-family: $font-family-bold;
         margin: 0 auto;
         padding-top: 55px;
 
@@ -113,11 +113,11 @@
     }
 }
 
-.view-alles-zum-thema > .view-sub-wrapper .views-submit-button{
-display:none;
+.view-alles-zum-thema > .view-sub-wrapper .views-submit-button {
+    display: none;
 }
 
-.view-aktuelles, .view-termin, .view-search-list, .view-event-calendar, .view-alles-zum-thema  {
+.view-aktuelles, .view-termin, .view-search-list, .view-event-calendar, .view-alles-zum-thema {
     > .view-sub-wrapper {
         @extend .container;
 
@@ -127,10 +127,11 @@ display:none;
             padding-bottom: 60px;
             width: auto;
             margin: 0 auto;
-			font-weight: normal;
-			.pane-title{
-				font-family:$font-family-bold;
-			}
+            font-weight: normal;
+
+            .pane-title {
+                font-family: $font-family-bold;
+            }
 
             @include devicebreak(x-large) {
                 width: 765px;
@@ -144,7 +145,7 @@ display:none;
                 padding: 30px 0;
                 font-size: 18px;
                 font-weight: normal;
-				font-family:$font-family-bold;
+                font-family: $font-family-bold;
                 margin-top: 0;
 
                 @include devicebreak(medium) {
@@ -190,10 +191,10 @@ display:none;
             }
         }
 
-		.views-widget-sort-order{
-		  display:none;
-		}
-		
+        .views-widget-sort-order {
+            display: none;
+        }
+
         .view-filters {
             .views-exposed-form .views-exposed-widgets {
                 margin-bottom: 0;
@@ -220,8 +221,6 @@ display:none;
                         }
                     }
                 }
-
-                
             }
         }
     }
@@ -229,9 +228,8 @@ display:none;
 
 //only-aktuelles//
 
-.page-aktuelles .view-aktuelles 
-    .view-sub-wrapper {
-
+.page-aktuelles .view-aktuelles
+.view-sub-wrapper {
     .view-filters {
         .categories-filter {
             clear: both;
@@ -303,34 +301,34 @@ display:none;
                 }
             }
         }
-		
-		.views-reset-button {
-                    .form-submit {
-                        margin: 0;
-                        background: 0;
-                        color: $main-color;
-                        border: 0;
-                        font-size: 20px;
-						padding-left:25px;
-						position:relative;
-						font-weight:normal;
-						font-family:$font-family-bold;
 
-                        &:before {
-                            font-family: "icomoon";
-                            content: "\e912";
-                            color:$active-menu;
-                            left:0px;
-                            top:5px;
-                            display: inline-block;
-                            position: absolute;
-                        }
-						
-						&:hover{
-						 color:$active-menu;
-						}
-                    }
+        .views-reset-button {
+            .form-submit {
+                margin: 0;
+                background: 0;
+                color: $main-color;
+                border: 0;
+                font-size: 20px;
+                padding-left: 25px;
+                position: relative;
+                font-weight: normal;
+                font-family: $font-family-bold;
+
+                &:before {
+                    font-family: "icomoon";
+                    content: "\e912";
+                    color: $active-menu;
+                    left: 0px;
+                    top: 5px;
+                    display: inline-block;
+                    position: absolute;
                 }
+
+                &:hover {
+                    color: $active-menu;
+                }
+            }
+        }
     }
 
     .views-submit-button {
@@ -382,8 +380,6 @@ display:none;
                 }
             }
         }
-
-        
     }
 }
 
@@ -406,8 +402,8 @@ display:none;
         padding-bottom: 4px;
         border-bottom: 2px solid $color-light-grey;
         color: $main-color;
-		font-weight:normal;
-		font-family:$font-family-bold;
+        font-weight: normal;
+        font-family: $font-family-bold;
         position: relative;
         margin-left: 30px;
 
@@ -418,13 +414,13 @@ display:none;
             font-size: 14px;
             position: absolute;
             left: -25px;
-            top: 9px;
+            top: 5px;
             display: inline-block;
         }
-		
-		&:hover{
-		border-color:$active-menu;
-		}
+
+        &:hover {
+            border-color: $active-menu;
+        }
     }
 }
 
@@ -437,7 +433,7 @@ display:none;
 
         border: none;
         font-weight: normal;
-		font-family:$font-family-bold;
+        font-family: $font-family-bold;
         margin: 0 auto;
         padding-top: 55px;
         padding-bottom: 40px;
@@ -528,7 +524,7 @@ display:none;
                 border: none;
                 background: $header-dropdown-menu;
                 font-weight: normal;
-				font-family:$font-family-bold;
+                font-family: $font-family-bold;
 
                 &::before {
                     font-family: $icomoon;
@@ -540,20 +536,21 @@ display:none;
                     display: inline-block;
                     position: absolute;
                 }
-				&:hover{
-				  color:$active-menu;
-				}
-				
-				&:hover::before{
-				   color:$active-menu;
-				}
+
+                &:hover {
+                    color: $active-menu;
+                }
+
+                &:hover::before {
+                    color: $active-menu;
+                }
             }
         }
     }
 
     .view-content {
-	 clear:both;
-	 
+        clear: both;
+
         .views-row {
             border-top: 1px solid $color-light-grey;
             padding: 30px;
@@ -624,8 +621,8 @@ display:none;
     .view-header {
         color: $color-white;
         padding: 40px 0;
-		font-weight:normal;
-		font-family:$font-family-bold;
+        font-weight: normal;
+        font-family: $font-family-bold;
 
         @include devicebreak(small) {
             padding-right: 90px;
@@ -633,7 +630,7 @@ display:none;
     }
 
     .view-content {
-        padding-bottom:60px;
+        padding-bottom: 60px;
 
         .views_slideshow_controls_text {
             float: right;
@@ -717,7 +714,7 @@ display:none;
             height: auto;
             width: 90%;
             position: relative;
-			word-wrap:break-word;
+            word-wrap: break-word;
 
             @include devicebreak(medium) {
                 height: 330px;
@@ -746,8 +743,7 @@ display:none;
                     color: $active-menu;
                     text-decoration: none;
                     font-weight: normal;
-					font-family:$font-family-bold;
-                    
+                    font-family: $font-family-bold;
                 }
             }
 
@@ -820,7 +816,7 @@ display:none;
                         color: $color-white;
                         font-size: 36px;
                         font-weight: normal;
-						font-family:$font-family-bold;
+                        font-family: $font-family-bold;
                         padding-bottom: 20px;
                     }
 
@@ -841,11 +837,11 @@ display:none;
         .view-footer {
             width: 100%;
             float: left;
-			margin-top:30px;
+            margin-top: 30px;
 
             @include devicebreak(x-large) {
                 width: 35%;
-				margin-top:0;
+                margin-top: 0;
             }
         }
     }
