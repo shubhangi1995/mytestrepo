@@ -451,6 +451,8 @@ h1 {
             h3 {
                 font-size: 15px;
                 color: $active-menu;
+				font-family:$font-family-bold;
+				font-weight:normal;
             }
         }
 
@@ -482,9 +484,9 @@ h1 {
                             margin-bottom: 20px;
                         }
 
-                        label {
+                        > label {
                             font-size: 15px;
-
+							font-family:$font-family-bold;
                             .form-required {
                                 color: $active-menu;
                             }
@@ -504,6 +506,7 @@ h1 {
                             a {
                                 text-decoration: none;
                                 color: $active-menu;
+								font-family:$font-family-bold;
                             }
                         }
 
@@ -518,6 +521,11 @@ h1 {
                         }
                     }
                 }
+				.form-item{
+					label{
+						font-size:14px;
+					}
+				}
             }
 
             .webform-submit {
@@ -1270,4 +1278,12 @@ input[type=text]::-ms-clear {
         font-weight: normal;
         font-family: $font-family-bold;
     }
+}
+
+strong{
+	font-weight:normal !important;
+	font-family:$font-family-bold !important; 
+}
+caption{
+	color:$main-color;
 }
