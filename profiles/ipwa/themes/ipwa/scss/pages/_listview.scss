@@ -323,6 +323,10 @@
                             display: inline-block;
                             position: absolute;
                         }
+						
+						&:hover{
+						 color:$active-menu;
+						}
                     }
                 }
     }
@@ -415,6 +419,10 @@
             top: 9px;
             display: inline-block;
         }
+		
+		&:hover{
+		color:$active-menu;
+		}
     }
 }
 

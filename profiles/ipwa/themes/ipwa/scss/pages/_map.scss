@@ -114,7 +114,7 @@
                     border-bottom: 2px solid $color-light-grey;
                     color: $main-color;
                     font-weight: normal;
-					font-family:$font-family-bold;
+                    font-family: $font-family-bold;
                     position: relative;
                     margin-left: 30px;
 
@@ -127,6 +127,10 @@
                         left: -25px;
                         top: 9px;
                         display: inline-block;
+                    }
+
+                    &:hover {
+                        border-color: $active-menu;
                     }
                 }
 
@@ -155,8 +159,8 @@
                         color: $main-color;
                         z-index: 9999;
                         font-size: 15px;
-						font-weight:normal;
-						font-family:$font-family-bold;
+                        font-weight: normal;
+                        font-family: $font-family-bold;
 
                         @include devicebreak(medium) {
                             font-size: 20px;
@@ -172,6 +176,10 @@
                             left: 25px;
                             top: 6px;
                             display: inline-block;
+                        }
+
+                        &:hover {
+                            color: $active-menu;
                         }
                     }
                 }
@@ -197,8 +205,9 @@
                     color: $main-color;
                     z-index: 9999;
                     font-size: 15px;
-					font-weight:normal;
-					font-family:$font-family-bold;
+                    font-weight: normal;
+                    font-family: $font-family-bold;
+
                     @include devicebreak(medium) {
                         font-size: 20px;
                     }
@@ -235,7 +244,7 @@
                     border-bottom: 2px solid $color-light-grey;
                     color: $main-color;
                     font-weight: normal;
-					font-family:$font-family-bold;
+                    font-family: $font-family-bold;
                     position: relative;
                     margin-left: 30px;
 
@@ -260,7 +269,7 @@
                 padding: 30px 0;
                 font-size: 20px;
                 font-weight: normal;
-				font-family:$font-family-bold;
+                font-family: $font-family-bold;
 
                 @include devicebreak(medium) {
                     width: 50%;
@@ -446,17 +455,17 @@
                         color: $main-color;
                         border: 0;
                         font-size: 20px;
-						padding-left:25px;
-						position:relative;
-						font-weight:normal;
-						font-family:$font-family-bold;
+                        padding-left: 25px;
+                        position: relative;
+                        font-weight: normal;
+                        font-family: $font-family-bold;
 
                         &:before {
                             font-family: "icomoon";
                             content: "\e912";
-                            color:$active-menu;
-                            left:0px;
-                            top:5px;
+                            color: $active-menu;
+                            left: 0px;
+                            top: 5px;
                             display: inline-block;
                             position: absolute;
                         }
@@ -487,7 +496,7 @@
                         border: none;
                         background: $color-white;
                         font-weight: normal;
-						font-family:$font-family-bold;
+                        font-family: $font-family-bold;
 
                         &::before {
                             font-family: "icomoon";
@@ -499,6 +508,9 @@
                             display: inline-block;
                             position: absolute;
                         }
+						&:hover {
+                color: $active-menu;
+            }
                     }
                 }
 
