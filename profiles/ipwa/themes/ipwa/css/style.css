@@ -7144,17 +7144,20 @@ footer .region-footer .footer_blocks {
         /* line 212, ../scss/layout/_footer.scss */
         footer .region-footer .footer_blocks .block-views .feed-icon a:before {
           padding-left: 0; } }
-  /* line 229, ../scss/layout/_footer.scss */
+    /* line 226, ../scss/layout/_footer.scss */
+    footer .region-footer .footer_blocks .block-views .feed-icon a:hover {
+      color: #e74712; }
+  /* line 233, ../scss/layout/_footer.scss */
   footer .region-footer .footer_blocks .block-ipwa-base {
     display: inline-block;
     padding-top: 0; }
-    /* line 233, ../scss/layout/_footer.scss */
+    /* line 237, ../scss/layout/_footer.scss */
     footer .region-footer .footer_blocks .block-ipwa-base #page_print {
       font-size: 0;
       background: none;
       border: none;
       padding: 0; }
-      /* line 239, ../scss/layout/_footer.scss */
+      /* line 243, ../scss/layout/_footer.scss */
       footer .region-footer .footer_blocks .block-ipwa-base #page_print:before {
         font-family: "icomoon";
         content: "\e94c";
@@ -7162,13 +7165,13 @@ footer .region-footer .footer_blocks {
         font-size: 20px;
         display: inline-block;
         padding: 10px; }
-  /* line 250, ../scss/layout/_footer.scss */
+  /* line 254, ../scss/layout/_footer.scss */
   footer .region-footer .footer_blocks .block-addthis {
     display: inline-block; }
-    /* line 253, ../scss/layout/_footer.scss */
+    /* line 257, ../scss/layout/_footer.scss */
     footer .region-footer .footer_blocks .block-addthis .addthis_button {
       font-size: 0; }
-      /* line 256, ../scss/layout/_footer.scss */
+      /* line 260, ../scss/layout/_footer.scss */
       footer .region-footer .footer_blocks .block-addthis .addthis_button:before {
         font-family: "icomoon";
         content: "\e94f";
@@ -7176,17 +7179,17 @@ footer .region-footer .footer_blocks {
         font-size: 20px;
         display: inline-block;
         padding: 10px; }
-      /* line 265, ../scss/layout/_footer.scss */
+      /* line 269, ../scss/layout/_footer.scss */
       footer .region-footer .footer_blocks .block-addthis .addthis_button img {
         display: none; }
-/* line 275, ../scss/layout/_footer.scss */
+/* line 279, ../scss/layout/_footer.scss */
 footer .footer-copyright {
   font-size: 18px;
   color: #273753; }
-/* line 280, ../scss/layout/_footer.scss */
+/* line 284, ../scss/layout/_footer.scss */
 footer .nav .open > a, footer .nav .open > a:hover, footer .nav .open > a:focus {
   background: none; }
-/* line 285, ../scss/layout/_footer.scss */
+/* line 289, ../scss/layout/_footer.scss */
 footer #block-block-5 strong {
   font-weight: normal;
   font-family: "BentonSans-Bold"; }
@@ -10416,25 +10419,29 @@ input[type=text]::-ms-clear {
     top: 5px;
     display: inline-block;
     position: absolute; }
-/* line 330, ../scss/pages/_listview.scss */
+  /* line 327, ../scss/pages/_listview.scss */
+  .page-aktuelles .view-aktuelles
+  .view-sub-wrapper .view-filters .views-reset-button .form-submit:hover {
+    color: #e74712; }
+/* line 334, ../scss/pages/_listview.scss */
 .page-aktuelles .view-aktuelles
 .view-sub-wrapper .views-submit-button {
   display: none; }
 
-/* line 340, ../scss/pages/_listview.scss */
+/* line 344, ../scss/pages/_listview.scss */
 .view-termin .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets #edit-term-node-tid-depth-wrapper, .view-event-calendar .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets #edit-term-node-tid-depth-wrapper {
   width: 100%;
   float: left;
   padding: 0;
   /* Desktop design */ }
   @media (min-width: 960px) {
-    /* line 340, ../scss/pages/_listview.scss */
+    /* line 344, ../scss/pages/_listview.scss */
     .view-termin .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets #edit-term-node-tid-depth-wrapper, .view-event-calendar .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets #edit-term-node-tid-depth-wrapper {
       width: 75%; } }
-  /* line 350, ../scss/pages/_listview.scss */
+  /* line 354, ../scss/pages/_listview.scss */
   .view-termin .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets #edit-term-node-tid-depth-wrapper .form-item, .view-event-calendar .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets #edit-term-node-tid-depth-wrapper .form-item {
     padding-right: 0; }
-    /* line 354, ../scss/pages/_listview.scss */
+    /* line 358, ../scss/pages/_listview.scss */
     .view-termin .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets #edit-term-node-tid-depth-wrapper .form-item .form-type-bef-link a, .view-event-calendar .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets #edit-term-node-tid-depth-wrapper .form-item .form-type-bef-link a {
       display: inline-block;
       float: left;
@@ -10442,29 +10449,29 @@ input[type=text]::-ms-clear {
       color: #273753;
       padding-bottom: 12px;
       margin-right: 60px; }
-      /* line 362, ../scss/pages/_listview.scss */
+      /* line 366, ../scss/pages/_listview.scss */
       .view-termin .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets #edit-term-node-tid-depth-wrapper .form-item .form-type-bef-link a.active, .view-event-calendar .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets #edit-term-node-tid-depth-wrapper .form-item .form-type-bef-link a.active {
         border-bottom: 2px Solid #e74712; }
-/* line 370, ../scss/pages/_listview.scss */
+/* line 374, ../scss/pages/_listview.scss */
 .view-termin .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-submit-button, .view-event-calendar .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .views-submit-button {
   display: none; }
-/* line 374, ../scss/pages/_listview.scss */
+/* line 378, ../scss/pages/_listview.scss */
 .view-termin .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .select2-container--default .select2-selection--single, .view-event-calendar .view-sub-wrapper .view-filters .views-exposed-form .views-exposed-widgets .select2-container--default .select2-selection--single {
   display: none; }
 
-/* line 386, ../scss/pages/_listview.scss */
+/* line 390, ../scss/pages/_listview.scss */
 .calendar-link {
   width: 100%;
   float: left;
   margin-bottom: 30px;
   /* Desktop design */ }
   @media (min-width: 960px) {
-    /* line 386, ../scss/pages/_listview.scss */
+    /* line 390, ../scss/pages/_listview.scss */
     .calendar-link {
       width: 25%;
       float: left;
       text-align: right; } }
-  /* line 398, ../scss/pages/_listview.scss */
+  /* line 402, ../scss/pages/_listview.scss */
   .calendar-link a {
     text-decoration: none;
     padding-bottom: 4px;
@@ -10474,7 +10481,7 @@ input[type=text]::-ms-clear {
     font-family: "BentonSans-Bold";
     position: relative;
     margin-left: 30px; }
-    /* line 408, ../scss/pages/_listview.scss */
+    /* line 412, ../scss/pages/_listview.scss */
     .calendar-link a:before {
       content: '\e949';
       font-family: "icomoon";
@@ -10484,11 +10491,14 @@ input[type=text]::-ms-clear {
       left: -25px;
       top: 9px;
       display: inline-block; }
+    /* line 423, ../scss/pages/_listview.scss */
+    .calendar-link a:hover {
+      color: #e74712; }
 
-/* line 422, ../scss/pages/_listview.scss */
+/* line 430, ../scss/pages/_listview.scss */
 .page-suche {
   background: #eff2f7; }
-  /* line 425, ../scss/pages/_listview.scss */
+  /* line 433, ../scss/pages/_listview.scss */
   .page-suche .page-header {
     border: none;
     font-weight: normal;
@@ -10497,34 +10507,34 @@ input[type=text]::-ms-clear {
     padding-top: 55px;
     padding-bottom: 40px; }
 
-/* line 438, ../scss/pages/_listview.scss */
+/* line 446, ../scss/pages/_listview.scss */
 .view-search-list .view-filters {
   position: relative; }
-  /* line 441, ../scss/pages/_listview.scss */
+  /* line 449, ../scss/pages/_listview.scss */
   .view-search-list .view-filters .views-widget-filter-search_api_views_fulltext {
     width: 100%;
     /* Desktop design */ }
     @media (min-width: 960px) {
-      /* line 441, ../scss/pages/_listview.scss */
+      /* line 449, ../scss/pages/_listview.scss */
       .view-search-list .view-filters .views-widget-filter-search_api_views_fulltext {
         width: 50%; } }
-  /* line 449, ../scss/pages/_listview.scss */
+  /* line 457, ../scss/pages/_listview.scss */
   .view-search-list .view-filters .views-widget-filter-field_ort {
     width: 100%;
     /* Desktop design */ }
     @media (min-width: 960px) {
-      /* line 449, ../scss/pages/_listview.scss */
+      /* line 457, ../scss/pages/_listview.scss */
       .view-search-list .view-filters .views-widget-filter-field_ort {
         width: 50%; } }
-  /* line 457, ../scss/pages/_listview.scss */
+  /* line 465, ../scss/pages/_listview.scss */
   .view-search-list .view-filters .views-widget-filter-search_api_views_fulltext, .view-search-list .view-filters .views-widget-filter-field_ort {
     position: relative;
     padding: 0; }
-    /* line 461, ../scss/pages/_listview.scss */
+    /* line 469, ../scss/pages/_listview.scss */
     .view-search-list .view-filters .views-widget-filter-search_api_views_fulltext .views-widget .form-item, .view-search-list .view-filters .views-widget-filter-field_ort .views-widget .form-item {
       width: 100%;
       padding-right: 0px !important; }
-      /* line 465, ../scss/pages/_listview.scss */
+      /* line 473, ../scss/pages/_listview.scss */
       .view-search-list .view-filters .views-widget-filter-search_api_views_fulltext .views-widget .form-item .form-control, .view-search-list .view-filters .views-widget-filter-field_ort .views-widget .form-item .form-control {
         height: 70px;
         border-radius: 0;
@@ -10532,12 +10542,12 @@ input[type=text]::-ms-clear {
         padding-left: 50px;
         font-size: 16px;
         box-shadow: none; }
-        /* line 473, ../scss/pages/_listview.scss */
+        /* line 481, ../scss/pages/_listview.scss */
         .view-search-list .view-filters .views-widget-filter-search_api_views_fulltext .views-widget .form-item .form-control:focus, .view-search-list .view-filters .views-widget-filter-field_ort .views-widget .form-item .form-control:focus {
           box-shadow: none;
           outline: none;
           transition: none; }
-    /* line 481, ../scss/pages/_listview.scss */
+    /* line 489, ../scss/pages/_listview.scss */
     .view-search-list .view-filters .views-widget-filter-search_api_views_fulltext:before, .view-search-list .view-filters .views-widget-filter-field_ort:before {
       font-family: "icomoon";
       content: "\e94e";
@@ -10546,13 +10556,13 @@ input[type=text]::-ms-clear {
       top: 23px;
       display: inline-block;
       position: absolute; }
-  /* line 492, ../scss/pages/_listview.scss */
+  /* line 500, ../scss/pages/_listview.scss */
   .view-search-list .view-filters .views-widget-filter-type_1 {
     margin-top: 30px; }
-    /* line 495, ../scss/pages/_listview.scss */
+    /* line 503, ../scss/pages/_listview.scss */
     .view-search-list .view-filters .views-widget-filter-type_1 .views-widget .form-item {
       margin-bottom: 15px; }
-  /* line 500, ../scss/pages/_listview.scss */
+  /* line 508, ../scss/pages/_listview.scss */
   .view-search-list .view-filters .views-submit-button {
     position: absolute;
     top: 170px;
@@ -10560,11 +10570,11 @@ input[type=text]::-ms-clear {
     padding: 0;
     /* Desktop design */ }
     @media (min-width: 960px) {
-      /* line 500, ../scss/pages/_listview.scss */
+      /* line 508, ../scss/pages/_listview.scss */
       .view-search-list .view-filters .views-submit-button {
         top: 10px;
         right: 10px; } }
-    /* line 512, ../scss/pages/_listview.scss */
+    /* line 520, ../scss/pages/_listview.scss */
     .view-search-list .view-filters .views-submit-button .btn {
       margin-top: 0;
       border-radius: 0;
@@ -10575,7 +10585,7 @@ input[type=text]::-ms-clear {
       background: #3c506e;
       font-weight: normal;
       font-family: "BentonSans-Bold"; }
-      /* line 523, ../scss/pages/_listview.scss */
+      /* line 531, ../scss/pages/_listview.scss */
       .view-search-list .view-filters .views-submit-button .btn::before {
         font-family: "icomoon";
         content: "\e90e";
@@ -10585,55 +10595,55 @@ input[type=text]::-ms-clear {
         font-size: 12px;
         display: inline-block;
         position: absolute; }
-/* line 537, ../scss/pages/_listview.scss */
+/* line 545, ../scss/pages/_listview.scss */
 .view-search-list .view-content {
   clear: both; }
-  /* line 540, ../scss/pages/_listview.scss */
+  /* line 548, ../scss/pages/_listview.scss */
   .view-search-list .view-content .views-row {
     border-top: 1px solid #949d9e;
     padding: 30px;
     cursor: pointer; }
-    /* line 545, ../scss/pages/_listview.scss */
+    /* line 553, ../scss/pages/_listview.scss */
     .view-search-list .view-content .views-row.views-row-last {
       border-bottom: 1px solid #949d9e; }
-    /* line 550, ../scss/pages/_listview.scss */
+    /* line 558, ../scss/pages/_listview.scss */
     .view-search-list .view-content .views-row .row-container > * {
       padding-bottom: 15px; }
-      /* line 553, ../scss/pages/_listview.scss */
+      /* line 561, ../scss/pages/_listview.scss */
       .view-search-list .view-content .views-row .row-container > * a {
         text-decoration: none;
         color: #273753; }
-      /* line 558, ../scss/pages/_listview.scss */
+      /* line 566, ../scss/pages/_listview.scss */
       .view-search-list .view-content .views-row .row-container > *.views-field:last-child {
         padding-bottom: 0; }
-    /* line 564, ../scss/pages/_listview.scss */
+    /* line 572, ../scss/pages/_listview.scss */
     .view-search-list .view-content .views-row .views-field-type {
       color: #949d9e;
       padding-bottom: 5px;
       font-size: 18px; }
-    /* line 570, ../scss/pages/_listview.scss */
+    /* line 578, ../scss/pages/_listview.scss */
     .view-search-list .view-content .views-row .views-field-field-event-datum {
       color: #e74712; }
-    /* line 575, ../scss/pages/_listview.scss */
+    /* line 583, ../scss/pages/_listview.scss */
     .view-search-list .view-content .views-row div[class*='views-field-views-conditional-'] .search-condition.field-content {
       color: #e74712; }
-    /* line 579, ../scss/pages/_listview.scss */
+    /* line 587, ../scss/pages/_listview.scss */
     .view-search-list .view-content .views-row div[class*='views-field-views-conditional-'] .date-display-single {
       color: #e74712; }
-    /* line 583, ../scss/pages/_listview.scss */
+    /* line 591, ../scss/pages/_listview.scss */
     .view-search-list .view-content .views-row div[class*='views-field-views-conditional-'] .search-condition.field-content.single {
       color: #e74712; }
-    /* line 589, ../scss/pages/_listview.scss */
+    /* line 597, ../scss/pages/_listview.scss */
     .view-search-list .view-content .views-row .views-field-field-ver-ffentlichungsdatum .date-display-single {
       color: #e74712; }
 
-/* line 598, ../scss/pages/_listview.scss */
+/* line 606, ../scss/pages/_listview.scss */
 .view-wahlen-sie-einen-themenbereich {
   background: #273753; }
-  /* line 601, ../scss/pages/_listview.scss */
+  /* line 609, ../scss/pages/_listview.scss */
   .view-wahlen-sie-einen-themenbereich .view-sub-wrapper {
     position: relative; }
-  /* line 607, ../scss/pages/_listview.scss */
+  /* line 615, ../scss/pages/_listview.scss */
   .view-wahlen-sie-einen-themenbereich .view-header {
     color: #ffffff;
     padding: 40px 0;
@@ -10641,13 +10651,13 @@ input[type=text]::-ms-clear {
     font-family: "BentonSans-Bold";
     /* Mobile design */ }
     @media (min-width: 320px) {
-      /* line 607, ../scss/pages/_listview.scss */
+      /* line 615, ../scss/pages/_listview.scss */
       .view-wahlen-sie-einen-themenbereich .view-header {
         padding-right: 90px; } }
-  /* line 618, ../scss/pages/_listview.scss */
+  /* line 626, ../scss/pages/_listview.scss */
   .view-wahlen-sie-einen-themenbereich .view-content {
     padding-bottom: 60px; }
-    /* line 621, ../scss/pages/_listview.scss */
+    /* line 629, ../scss/pages/_listview.scss */
     .view-wahlen-sie-einen-themenbereich .view-content .views_slideshow_controls_text {
       float: right;
       display: inline-block;
@@ -10672,16 +10682,16 @@ input[type=text]::-ms-clear {
                 }
             } */ }
       @media (min-width: 320px) {
-        /* line 621, ../scss/pages/_listview.scss */
+        /* line 629, ../scss/pages/_listview.scss */
         .view-wahlen-sie-einen-themenbereich .view-content .views_slideshow_controls_text {
           right: 25px; } }
-      /* line 651, ../scss/pages/_listview.scss */
+      /* line 659, ../scss/pages/_listview.scss */
       .view-wahlen-sie-einen-themenbereich .view-content .views_slideshow_controls_text .views-slideshow-controls-text-previous a, .view-wahlen-sie-einen-themenbereich .view-content .views_slideshow_controls_text .views-slideshow-controls-text-status-pause a, .view-wahlen-sie-einen-themenbereich .view-content .views_slideshow_controls_text .views-slideshow-controls-text-status-play a, .view-wahlen-sie-einen-themenbereich .view-content .views_slideshow_controls_text .views_slideshow_controls_text_next a {
         font-size: 0; }
-        /* line 654, ../scss/pages/_listview.scss */
+        /* line 662, ../scss/pages/_listview.scss */
         .view-wahlen-sie-einen-themenbereich .view-content .views_slideshow_controls_text .views-slideshow-controls-text-previous a:focus, .view-wahlen-sie-einen-themenbereich .view-content .views_slideshow_controls_text .views-slideshow-controls-text-status-pause a:focus, .view-wahlen-sie-einen-themenbereich .view-content .views_slideshow_controls_text .views-slideshow-controls-text-status-play a:focus, .view-wahlen-sie-einen-themenbereich .view-content .views_slideshow_controls_text .views_slideshow_controls_text_next a:focus {
           outline: 1px dotted #ffffff !important; }
-        /* line 658, ../scss/pages/_listview.scss */
+        /* line 666, ../scss/pages/_listview.scss */
         .view-wahlen-sie-einen-themenbereich .view-content .views_slideshow_controls_text .views-slideshow-controls-text-previous a::before, .view-wahlen-sie-einen-themenbereich .view-content .views_slideshow_controls_text .views-slideshow-controls-text-status-pause a::before, .view-wahlen-sie-einen-themenbereich .view-content .views_slideshow_controls_text .views-slideshow-controls-text-status-play a::before, .view-wahlen-sie-einen-themenbereich .view-content .views_slideshow_controls_text .views_slideshow_controls_text_next a::before {
           font-family: "icomoon";
           content: "\e908";
@@ -10689,17 +10699,17 @@ input[type=text]::-ms-clear {
           font-size: 18px;
           display: inline-block;
           margin-right: 5px; }
-      /* line 671, ../scss/pages/_listview.scss */
+      /* line 679, ../scss/pages/_listview.scss */
       .view-wahlen-sie-einen-themenbereich .view-content .views_slideshow_controls_text .views-slideshow-controls-text-status-play a::before {
         content: "\e90a"; }
-      /* line 679, ../scss/pages/_listview.scss */
+      /* line 687, ../scss/pages/_listview.scss */
       .view-wahlen-sie-einen-themenbereich .view-content .views_slideshow_controls_text .views_slideshow_controls_text_next a:before {
         content: "\e93f";
         margin-right: 0; }
-      /* line 688, ../scss/pages/_listview.scss */
+      /* line 696, ../scss/pages/_listview.scss */
       .view-wahlen-sie-einen-themenbereich .view-content .views_slideshow_controls_text .views-slideshow-controls-text-previous a:before {
         content: "\e93e"; }
-    /* line 695, ../scss/pages/_listview.scss */
+    /* line 703, ../scss/pages/_listview.scss */
     .view-wahlen-sie-einen-themenbereich .view-content .views-row {
       background-color: #ffffff;
       padding: 36px;
@@ -10712,63 +10722,63 @@ input[type=text]::-ms-clear {
       /* Tablet design */
       /* Desktop design */ }
       @media (min-width: 520px) {
-        /* line 695, ../scss/pages/_listview.scss */
+        /* line 703, ../scss/pages/_listview.scss */
         .view-wahlen-sie-einen-themenbereich .view-content .views-row {
           height: 330px; } }
       @media (min-width: 960px) {
-        /* line 695, ../scss/pages/_listview.scss */
+        /* line 703, ../scss/pages/_listview.scss */
         .view-wahlen-sie-einen-themenbereich .view-content .views-row {
           width: 47%;
           height: 286px;
           margin-right: 30px;
           float: left;
           margin-left: 10px; } }
-      /* line 719, ../scss/pages/_listview.scss */
+      /* line 727, ../scss/pages/_listview.scss */
       .view-wahlen-sie-einen-themenbereich .view-content .views-row:nth-child(2), .view-wahlen-sie-einen-themenbereich .view-content .views-row:last-child {
         /* Desktop design */ }
         @media (min-width: 960px) {
-          /* line 719, ../scss/pages/_listview.scss */
+          /* line 727, ../scss/pages/_listview.scss */
           .view-wahlen-sie-einen-themenbereich .view-content .views-row:nth-child(2), .view-wahlen-sie-einen-themenbereich .view-content .views-row:last-child {
             margin-right: 0; } }
-      /* line 725, ../scss/pages/_listview.scss */
+      /* line 733, ../scss/pages/_listview.scss */
       .view-wahlen-sie-einen-themenbereich .view-content .views-row .views-field-name {
         padding-bottom: 20px; }
-        /* line 728, ../scss/pages/_listview.scss */
+        /* line 736, ../scss/pages/_listview.scss */
         .view-wahlen-sie-einen-themenbereich .view-content .views-row .views-field-name a {
           color: #e74712;
           text-decoration: none;
           font-weight: normal;
           font-family: "BentonSans-Bold"; }
-      /* line 738, ../scss/pages/_listview.scss */
+      /* line 746, ../scss/pages/_listview.scss */
       .view-wahlen-sie-einen-themenbereich .view-content .views-row .views-field-name-1 a {
         color: #273753;
         position: absolute;
         bottom: 30px; }
-      /* line 747, ../scss/pages/_listview.scss */
+      /* line 755, ../scss/pages/_listview.scss */
       .view-wahlen-sie-einen-themenbereich .view-content .views-row .views-field-field-kurztext {
         padding-bottom: 40px; }
 
-/* line 756, ../scss/pages/_listview.scss */
+/* line 764, ../scss/pages/_listview.scss */
 .view-map-teaser {
   clear: both;
   margin-bottom: 30px;
   overflow: hidden; }
-  /* line 762, ../scss/pages/_listview.scss */
+  /* line 770, ../scss/pages/_listview.scss */
   .view-map-teaser .view-sub-wrapper .view-content {
     width: 100%;
     float: left;
     margin: 0;
     /* Over Desktop design */ }
     @media (min-width: 1025px) {
-      /* line 762, ../scss/pages/_listview.scss */
+      /* line 770, ../scss/pages/_listview.scss */
       .view-map-teaser .view-sub-wrapper .view-content {
         width: 65%; } }
-    /* line 772, ../scss/pages/_listview.scss */
+    /* line 780, ../scss/pages/_listview.scss */
     .view-map-teaser .view-sub-wrapper .view-content .views-row {
       width: 100%;
       padding: 0;
       background: #273753; }
-      /* line 777, ../scss/pages/_listview.scss */
+      /* line 785, ../scss/pages/_listview.scss */
       .view-map-teaser .view-sub-wrapper .view-content .views-row .row-container {
         background: none;
         height: auto;
@@ -10777,46 +10787,46 @@ input[type=text]::-ms-clear {
         border: none;
         /* Over Desktop design */ }
         @media (min-width: 1025px) {
-          /* line 777, ../scss/pages/_listview.scss */
+          /* line 785, ../scss/pages/_listview.scss */
           .view-map-teaser .view-sub-wrapper .view-content .views-row .row-container {
             padding: 45px 150px 45px 50px; } }
-        /* line 789, ../scss/pages/_listview.scss */
+        /* line 797, ../scss/pages/_listview.scss */
         .view-map-teaser .view-sub-wrapper .view-content .views-row .row-container:hover {
           background: none;
           border: none; }
-        /* line 794, ../scss/pages/_listview.scss */
+        /* line 802, ../scss/pages/_listview.scss */
         .view-map-teaser .view-sub-wrapper .view-content .views-row .row-container .views-field-field-bild {
           padding-bottom: 20px; }
-          /* line 797, ../scss/pages/_listview.scss */
+          /* line 805, ../scss/pages/_listview.scss */
           .view-map-teaser .view-sub-wrapper .view-content .views-row .row-container .views-field-field-bild img {
             color: #e74712; }
-        /* line 802, ../scss/pages/_listview.scss */
+        /* line 810, ../scss/pages/_listview.scss */
         .view-map-teaser .view-sub-wrapper .view-content .views-row .row-container .views-field-field-paragraph-title {
           color: #ffffff;
           font-size: 36px;
           font-weight: normal;
           font-family: "BentonSans-Bold";
           padding-bottom: 20px; }
-        /* line 810, ../scss/pages/_listview.scss */
+        /* line 818, ../scss/pages/_listview.scss */
         .view-map-teaser .view-sub-wrapper .view-content .views-row .row-container .views-field-field-flie-text-bereich {
           color: #ffffff;
           padding-bottom: 30px; }
-        /* line 815, ../scss/pages/_listview.scss */
+        /* line 823, ../scss/pages/_listview.scss */
         .view-map-teaser .view-sub-wrapper .view-content .views-row .row-container .views-field-field-quellenangabe a {
           color: #ffffff; }
-  /* line 824, ../scss/pages/_listview.scss */
+  /* line 832, ../scss/pages/_listview.scss */
   .view-map-teaser .view-sub-wrapper .view-footer {
     width: 100%;
     float: left;
     margin-top: 30px;
     /* Over Desktop design */ }
     @media (min-width: 1025px) {
-      /* line 824, ../scss/pages/_listview.scss */
+      /* line 832, ../scss/pages/_listview.scss */
       .view-map-teaser .view-sub-wrapper .view-footer {
         width: 35%;
         margin-top: 0; } }
 
-/* line 837, ../scss/pages/_listview.scss */
+/* line 845, ../scss/pages/_listview.scss */
 .page-taxonomy-term-1 > .footer.container, footer .page-taxonomy-term-1 > .footer.region-footer, .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .page-taxonomy-term-1 > .footer.panel-2col, .view-neueste-informationen .page-taxonomy-term-1 > .footer.view-sub-wrapper, .paragraphs-item-topic-teaser-paragraph .field-collection-container .page-taxonomy-term-1 > .footer.field-name-field-topic-teaser, .page-taxonomy-term-1 > .footer.tabs--primary, .page-taxonomy-term-1 > .footer.breadcrumb, .page-user .page-taxonomy-term-1 > .footer.page-header, .page-user .page-taxonomy-term-1 > .footer.region-content, .page-calendar .page-taxonomy-term-1 > .footer.region-content, .page-newsletter-confirm .col-sm-12 .page-taxonomy-term-1 > .footer.page-header, .page-newsletter-confirm .col-sm-12 .page-taxonomy-term-1 > .page-header + .footer.region-content, .page-node-done .page-taxonomy-term-1 > .footer.page-header, .page-node-done .page-taxonomy-term-1 > .page-header + .footer.region-content, .not-front .node-doorpage .view-alle-themen-teaser .page-taxonomy-term-1 > .footer.view-sub-wrapper, .view-neueste-digital-projekte .page-taxonomy-term-1 > .footer.view-sub-wrapper, .view-latest-content-doorpage.page-taxonomy-term-1 > .footer.view-sub-wrapper, .page-taxonomy-term .page-taxonomy-term-1 > .footer.view-title, .page-taxonomy-term .page-taxonomy-term-1 > .footer.group-page-info, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .page-taxonomy-term-1 > .footer.paragraphs-item-flie-text-mit-bild-links, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .page-taxonomy-term-1 > .footer.paragraphs-item-flie-text-bereich, .page-taxonomy-term .paragraphs-items-field-anzuzeigende-seitenmodule .page-taxonomy-term-1 > .footer.paragraphs-item-flie-text-mit-bild-rechts, .page-termine .page-taxonomy-term-1 > .footer.page-header, .page-aktuelles .page-taxonomy-term-1 > .footer.page-header, .page-calendar .page-taxonomy-term-1 > .footer.page-header, .view-aktuelles.page-taxonomy-term-1 > .footer.view-sub-wrapper, .view-termin.page-taxonomy-term-1 > .footer.view-sub-wrapper, .view-search-list.page-taxonomy-term-1 > .footer.view-sub-wrapper, .view-event-calendar.page-taxonomy-term-1 > .footer.view-sub-wrapper, .view-alles-zum-thema.page-taxonomy-term-1 > .footer.view-sub-wrapper, .page-suche .page-taxonomy-term-1 > .footer.page-header, .view-wahlen-sie-einen-themenbereich .page-taxonomy-term-1 > .footer.view-sub-wrapper, .page-sitemap .page-taxonomy-term-1 > .footer.page-header, .page-sitemap .page-taxonomy-term-1 > .footer#site-map, .page-projekt-map .view-filters .views-exposed-form .page-taxonomy-term-1 > .footer#map_list_link, .view-display-id-page_1 .page-taxonomy-term-1 > .footer.view-sub-wrapper, .view-display-id-page_1 .view-filters .views-exposed-form .page-taxonomy-term-1 > .footer.views-exposed-widgets, .view-display-id-project_map .view-filters .views-exposed-form .page-taxonomy-term-1 > .footer.views-exposed-widgets {
   padding-top: 30px; }
 
@@ -10954,14 +10964,17 @@ input[type=text]::-ms-clear {
       left: -25px;
       top: 9px;
       display: inline-block; }
-  /* line 133, ../scss/pages/_map.scss */
+    /* line 132, ../scss/pages/_map.scss */
+    .page-projekt-map .view-filters .views-exposed-form #map_list_link a:hover {
+      border-color: #e74712; }
+  /* line 137, ../scss/pages/_map.scss */
   .page-projekt-map .view-filters .views-exposed-form #map_list_link .map-sub-title {
     float: left; }
-/* line 138, ../scss/pages/_map.scss */
+/* line 142, ../scss/pages/_map.scss */
 .page-projekt-map .view-filters .views-exposed-form .footer_map {
   padding-top: 50px;
   position: relative; }
-  /* line 142, ../scss/pages/_map.scss */
+  /* line 146, ../scss/pages/_map.scss */
   .page-projekt-map .view-filters .views-exposed-form .footer_map .project-webform {
     width: 1170px;
     margin: 0 auto;
@@ -10970,7 +10983,7 @@ input[type=text]::-ms-clear {
     left: 0;
     right: 0;
     bottom: 200px; }
-    /* line 151, ../scss/pages/_map.scss */
+    /* line 155, ../scss/pages/_map.scss */
     .page-projekt-map .view-filters .views-exposed-form .footer_map .project-webform a {
       background: #ffffff;
       padding: 14px 40px 14px 55px;
@@ -10982,10 +10995,10 @@ input[type=text]::-ms-clear {
       font-family: "BentonSans-Bold";
       /* Tablet design */ }
       @media (min-width: 520px) {
-        /* line 151, ../scss/pages/_map.scss */
+        /* line 155, ../scss/pages/_map.scss */
         .page-projekt-map .view-filters .views-exposed-form .footer_map .project-webform a {
           font-size: 20px; } }
-      /* line 166, ../scss/pages/_map.scss */
+      /* line 170, ../scss/pages/_map.scss */
       .page-projekt-map .view-filters .views-exposed-form .footer_map .project-webform a:before {
         font-family: "icomoon";
         content: "\e93f";
@@ -10995,13 +11008,16 @@ input[type=text]::-ms-clear {
         left: 25px;
         top: 6px;
         display: inline-block; }
+      /* line 181, ../scss/pages/_map.scss */
+      .page-projekt-map .view-filters .views-exposed-form .footer_map .project-webform a:hover {
+        color: #e74712; }
 
-/* line 188, ../scss/pages/_map.scss */
+/* line 196, ../scss/pages/_map.scss */
 .view-display-id-page_1 .view-sub-wrapper .view-header .project-webform {
   display: inline-block;
   padding-bottom: 40px;
   position: relative; }
-  /* line 193, ../scss/pages/_map.scss */
+  /* line 201, ../scss/pages/_map.scss */
   .view-display-id-page_1 .view-sub-wrapper .view-header .project-webform a {
     background: #ffffff;
     padding: 14px 40px 14px 55px;
@@ -11013,10 +11029,10 @@ input[type=text]::-ms-clear {
     font-family: "BentonSans-Bold";
     /* Tablet design */ }
     @media (min-width: 520px) {
-      /* line 193, ../scss/pages/_map.scss */
+      /* line 201, ../scss/pages/_map.scss */
       .view-display-id-page_1 .view-sub-wrapper .view-header .project-webform a {
         font-size: 20px; } }
-    /* line 207, ../scss/pages/_map.scss */
+    /* line 216, ../scss/pages/_map.scss */
     .view-display-id-page_1 .view-sub-wrapper .view-header .project-webform a:before {
       font-family: "icomoon";
       content: "\e93f";
@@ -11026,7 +11042,7 @@ input[type=text]::-ms-clear {
       left: 25px;
       top: 6px;
       display: inline-block; }
-/* line 220, ../scss/pages/_map.scss */
+/* line 229, ../scss/pages/_map.scss */
 .view-display-id-page_1 .view-sub-wrapper .view-header .map-link {
   display: inline-block;
   float: left;
@@ -11034,11 +11050,11 @@ input[type=text]::-ms-clear {
   width: 100%;
   /* Tablet design */ }
   @media (min-width: 520px) {
-    /* line 220, ../scss/pages/_map.scss */
+    /* line 229, ../scss/pages/_map.scss */
     .view-display-id-page_1 .view-sub-wrapper .view-header .map-link {
       float: right;
       width: auto; } }
-  /* line 232, ../scss/pages/_map.scss */
+  /* line 241, ../scss/pages/_map.scss */
   .view-display-id-page_1 .view-sub-wrapper .view-header .map-link a {
     text-decoration: none;
     padding-bottom: 4px;
@@ -11048,7 +11064,7 @@ input[type=text]::-ms-clear {
     font-family: "BentonSans-Bold";
     position: relative;
     margin-left: 30px; }
-    /* line 242, ../scss/pages/_map.scss */
+    /* line 251, ../scss/pages/_map.scss */
     .view-display-id-page_1 .view-sub-wrapper .view-header .map-link a:before {
       content: '\e949';
       font-family: "icomoon";
@@ -11058,7 +11074,7 @@ input[type=text]::-ms-clear {
       left: -25px;
       top: 9px;
       display: inline-block; }
-/* line 257, ../scss/pages/_map.scss */
+/* line 266, ../scss/pages/_map.scss */
 .view-display-id-page_1 .view-sub-wrapper .attachment-before .view-result-count {
   width: auto;
   float: left;
@@ -11068,46 +11084,46 @@ input[type=text]::-ms-clear {
   font-family: "BentonSans-Bold";
   /* Tablet design */ }
   @media (min-width: 520px) {
-    /* line 257, ../scss/pages/_map.scss */
+    /* line 266, ../scss/pages/_map.scss */
     .view-display-id-page_1 .view-sub-wrapper .attachment-before .view-result-count {
       width: 50%;
       font-size: 22px; } }
-/* line 272, ../scss/pages/_map.scss */
+/* line 281, ../scss/pages/_map.scss */
 .view-display-id-page_1 .view-sub-wrapper .views-widget-sort-by {
   padding: 30px 0;
   font-size: 18px;
   text-align: right;
   /* Tablet design */ }
   @media (min-width: 520px) {
-    /* line 272, ../scss/pages/_map.scss */
+    /* line 281, ../scss/pages/_map.scss */
     .view-display-id-page_1 .view-sub-wrapper .views-widget-sort-by {
       width: 50%;
       float: left;
       font-size: 20px; } }
-  /* line 284, ../scss/pages/_map.scss */
+  /* line 293, ../scss/pages/_map.scss */
   .view-display-id-page_1 .view-sub-wrapper .views-widget-sort-by .form-group {
     margin-bottom: 0; }
-    /* line 287, ../scss/pages/_map.scss */
+    /* line 296, ../scss/pages/_map.scss */
     .view-display-id-page_1 .view-sub-wrapper .views-widget-sort-by .form-group .bef-select-as-links .form-type-bef-link {
       display: inline-block;
       padding-left: 15px; }
-      /* line 291, ../scss/pages/_map.scss */
+      /* line 300, ../scss/pages/_map.scss */
       .view-display-id-page_1 .view-sub-wrapper .views-widget-sort-by .form-group .bef-select-as-links .form-type-bef-link a {
         text-decoration: none;
         color: #273753; }
-        /* line 295, ../scss/pages/_map.scss */
+        /* line 304, ../scss/pages/_map.scss */
         .view-display-id-page_1 .view-sub-wrapper .views-widget-sort-by .form-group .bef-select-as-links .form-type-bef-link a.active {
           border-bottom: 2px solid #e74712;
           padding-bottom: 12px; }
-    /* line 302, ../scss/pages/_map.scss */
+    /* line 311, ../scss/pages/_map.scss */
     .view-display-id-page_1 .view-sub-wrapper .views-widget-sort-by .form-group .select2-container {
       display: none; }
 
-/* line 313, ../scss/pages/_map.scss */
+/* line 322, ../scss/pages/_map.scss */
 .view-display-id-page_1 .view-filters .views-exposed-form .views-exposed-widgets, .view-display-id-project_map .view-filters .views-exposed-form .views-exposed-widgets {
   position: relative;
   margin: 0 auto; }
-  /* line 319, ../scss/pages/_map.scss */
+  /* line 328, ../scss/pages/_map.scss */
   .view-display-id-page_1 .view-filters .views-exposed-form .views-exposed-widgets .categories-filter .views-exposed-widget, .view-display-id-project_map .view-filters .views-exposed-form .views-exposed-widgets .categories-filter .views-exposed-widget {
     position: relative;
     width: 100%;
@@ -11121,15 +11137,15 @@ input[type=text]::-ms-clear {
     background: #273753;
     border-right: 1px solid #949d9e; }
     @media (min-width: 767px) {
-      /* line 319, ../scss/pages/_map.scss */
+      /* line 328, ../scss/pages/_map.scss */
       .view-display-id-page_1 .view-filters .views-exposed-form .views-exposed-widgets .categories-filter .views-exposed-widget, .view-display-id-project_map .view-filters .views-exposed-form .views-exposed-widgets .categories-filter .views-exposed-widget {
         width: 50%; } }
     @media (min-width: 1025px) {
-      /* line 319, ../scss/pages/_map.scss */
+      /* line 328, ../scss/pages/_map.scss */
       .view-display-id-page_1 .view-filters .views-exposed-form .views-exposed-widgets .categories-filter .views-exposed-widget, .view-display-id-project_map .view-filters .views-exposed-form .views-exposed-widgets .categories-filter .views-exposed-widget {
         width: 22%;
         height: 49px; } }
-    /* line 336, ../scss/pages/_map.scss */
+    /* line 345, ../scss/pages/_map.scss */
     .view-display-id-page_1 .view-filters .views-exposed-form .views-exposed-widgets .categories-filter .views-exposed-widget:before, .view-display-id-project_map .view-filters .views-exposed-form .views-exposed-widgets .categories-filter .views-exposed-widget:before {
       content: "\f107";
       font-family: FontAwesome;
@@ -11139,53 +11155,53 @@ input[type=text]::-ms-clear {
       right: 25px;
       top: 50%;
       margin-top: -10px; }
-    /* line 347, ../scss/pages/_map.scss */
+    /* line 356, ../scss/pages/_map.scss */
     .view-display-id-page_1 .view-filters .views-exposed-form .views-exposed-widgets .categories-filter .views-exposed-widget.selColor, .view-display-id-project_map .view-filters .views-exposed-form .views-exposed-widgets .categories-filter .views-exposed-widget.selColor {
       background: #3c506e; }
-    /* line 357, ../scss/pages/_map.scss */
+    /* line 366, ../scss/pages/_map.scss */
     .view-display-id-page_1 .view-filters .views-exposed-form .views-exposed-widgets .categories-filter .views-exposed-widget .views-widget .form-item, .view-display-id-project_map .view-filters .views-exposed-form .views-exposed-widgets .categories-filter .views-exposed-widget .views-widget .form-item {
       padding: 0;
       position: relative;
       display: block; }
-      /* line 362, ../scss/pages/_map.scss */
+      /* line 371, ../scss/pages/_map.scss */
       .view-display-id-page_1 .view-filters .views-exposed-form .views-exposed-widgets .categories-filter .views-exposed-widget .views-widget .form-item .select2-container--default .select2-selection--single, .view-display-id-project_map .view-filters .views-exposed-form .views-exposed-widgets .categories-filter .views-exposed-widget .views-widget .form-item .select2-container--default .select2-selection--single {
         background: 0;
         border: 0;
         border-radius: 0; }
-        /* line 367, ../scss/pages/_map.scss */
+        /* line 376, ../scss/pages/_map.scss */
         .view-display-id-page_1 .view-filters .views-exposed-form .views-exposed-widgets .categories-filter .views-exposed-widget .views-widget .form-item .select2-container--default .select2-selection--single .select2-selection__rendered, .view-display-id-project_map .view-filters .views-exposed-form .views-exposed-widgets .categories-filter .views-exposed-widget .views-widget .form-item .select2-container--default .select2-selection--single .select2-selection__rendered {
           color: #ffffff;
           padding-left: 20px;
           width: 240px; }
-        /* line 373, ../scss/pages/_map.scss */
+        /* line 382, ../scss/pages/_map.scss */
         .view-display-id-page_1 .view-filters .views-exposed-form .views-exposed-widgets .categories-filter .views-exposed-widget .views-widget .form-item .select2-container--default .select2-selection--single .select2-selection__arrow, .view-display-id-project_map .view-filters .views-exposed-form .views-exposed-widgets .categories-filter .views-exposed-widget .views-widget .form-item .select2-container--default .select2-selection--single .select2-selection__arrow {
           display: none; }
-      /* line 378, ../scss/pages/_map.scss */
+      /* line 387, ../scss/pages/_map.scss */
       .view-display-id-page_1 .view-filters .views-exposed-form .views-exposed-widgets .categories-filter .views-exposed-widget .views-widget .form-item .select2-container + .select2-container, .view-display-id-project_map .view-filters .views-exposed-form .views-exposed-widgets .categories-filter .views-exposed-widget .views-widget .form-item .select2-container + .select2-container {
         top: 38px !important;
         left: 0px !important;
         position: absolute; }
-  /* line 386, ../scss/pages/_map.scss */
+  /* line 395, ../scss/pages/_map.scss */
   .view-display-id-page_1 .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-order, .view-display-id-project_map .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-order {
     display: none; }
-  /* line 390, ../scss/pages/_map.scss */
+  /* line 399, ../scss/pages/_map.scss */
   .view-display-id-page_1 .view-filters .views-exposed-form .views-exposed-widgets .categories-filter .views-exposed-widget:nth-child(4), .view-display-id-project_map .view-filters .views-exposed-form .views-exposed-widgets .categories-filter .views-exposed-widget:nth-child(4) {
     width: 100%;
     height: 49px;
     /* Tablet design */
     /* Over Desktop design */ }
     @media (min-width: 767px) {
-      /* line 390, ../scss/pages/_map.scss */
+      /* line 399, ../scss/pages/_map.scss */
       .view-display-id-page_1 .view-filters .views-exposed-form .views-exposed-widgets .categories-filter .views-exposed-widget:nth-child(4), .view-display-id-project_map .view-filters .views-exposed-form .views-exposed-widgets .categories-filter .views-exposed-widget:nth-child(4) {
         width: 50%; } }
     @media (min-width: 1025px) {
-      /* line 390, ../scss/pages/_map.scss */
+      /* line 399, ../scss/pages/_map.scss */
       .view-display-id-page_1 .view-filters .views-exposed-form .views-exposed-widgets .categories-filter .views-exposed-widget:nth-child(4), .view-display-id-project_map .view-filters .views-exposed-form .views-exposed-widgets .categories-filter .views-exposed-widget:nth-child(4) {
         width: 34%; } }
-    /* line 404, ../scss/pages/_map.scss */
+    /* line 413, ../scss/pages/_map.scss */
     .view-display-id-page_1 .view-filters .views-exposed-form .views-exposed-widgets .categories-filter .views-exposed-widget:nth-child(4):before, .view-display-id-project_map .view-filters .views-exposed-form .views-exposed-widgets .categories-filter .views-exposed-widget:nth-child(4):before {
       display: none; }
-    /* line 409, ../scss/pages/_map.scss */
+    /* line 418, ../scss/pages/_map.scss */
     .view-display-id-page_1 .view-filters .views-exposed-form .views-exposed-widgets .categories-filter .views-exposed-widget:nth-child(4) .form-item:before, .view-display-id-project_map .view-filters .views-exposed-form .views-exposed-widgets .categories-filter .views-exposed-widget:nth-child(4) .form-item:before {
       font-family: "icomoon";
       content: "\e94e";
@@ -11194,7 +11210,7 @@ input[type=text]::-ms-clear {
       top: 4px;
       display: inline-block;
       position: absolute; }
-    /* line 419, ../scss/pages/_map.scss */
+    /* line 428, ../scss/pages/_map.scss */
     .view-display-id-page_1 .view-filters .views-exposed-form .views-exposed-widgets .categories-filter .views-exposed-widget:nth-child(4) .form-item input.form-control, .view-display-id-project_map .view-filters .views-exposed-form .views-exposed-widgets .categories-filter .views-exposed-widget:nth-child(4) .form-item input.form-control {
       background: 0;
       border: 0;
@@ -11202,19 +11218,19 @@ input[type=text]::-ms-clear {
       color: #ffffff;
       padding-right: 150px;
       box-shadow: none; }
-    /* line 429, ../scss/pages/_map.scss */
+    /* line 438, ../scss/pages/_map.scss */
     .view-display-id-page_1 .view-filters .views-exposed-form .views-exposed-widgets .categories-filter .views-exposed-widget:nth-child(4) > .views-submit-button, .view-display-id-project_map .view-filters .views-exposed-form .views-exposed-widgets .categories-filter .views-exposed-widget:nth-child(4) > .views-submit-button {
       background: 0;
       width: auto;
       border: 0;
       /* Over Desktop design */ }
       @media (min-width: 1025px) {
-        /* line 429, ../scss/pages/_map.scss */
+        /* line 438, ../scss/pages/_map.scss */
         .view-display-id-page_1 .view-filters .views-exposed-form .views-exposed-widgets .categories-filter .views-exposed-widget:nth-child(4) > .views-submit-button, .view-display-id-project_map .view-filters .views-exposed-form .views-exposed-widgets .categories-filter .views-exposed-widget:nth-child(4) > .views-submit-button {
           position: absolute;
           padding: 0;
           right: 4px; } }
-  /* line 443, ../scss/pages/_map.scss */
+  /* line 452, ../scss/pages/_map.scss */
   .view-display-id-page_1 .view-filters .views-exposed-form .views-exposed-widgets .views-reset-button .form-submit, .view-display-id-project_map .view-filters .views-exposed-form .views-exposed-widgets .views-reset-button .form-submit {
     margin: 0;
     background: 0;
@@ -11225,7 +11241,7 @@ input[type=text]::-ms-clear {
     position: relative;
     font-weight: normal;
     font-family: "BentonSans-Bold"; }
-    /* line 454, ../scss/pages/_map.scss */
+    /* line 463, ../scss/pages/_map.scss */
     .view-display-id-page_1 .view-filters .views-exposed-form .views-exposed-widgets .views-reset-button .form-submit:before, .view-display-id-project_map .view-filters .views-exposed-form .views-exposed-widgets .views-reset-button .form-submit:before {
       font-family: "icomoon";
       content: "\e912";
@@ -11234,7 +11250,7 @@ input[type=text]::-ms-clear {
       top: 5px;
       display: inline-block;
       position: absolute; }
-  /* line 466, ../scss/pages/_map.scss */
+  /* line 475, ../scss/pages/_map.scss */
   .view-display-id-page_1 .view-filters .views-exposed-form .views-exposed-widgets .views-submit-button, .view-display-id-project_map .view-filters .views-exposed-form .views-exposed-widgets .views-submit-button {
     border: 0;
     background: 0;
@@ -11245,11 +11261,11 @@ input[type=text]::-ms-clear {
     padding: 0;
     /* Tablet design */ }
     @media (min-width: 767px) {
-      /* line 466, ../scss/pages/_map.scss */
+      /* line 475, ../scss/pages/_map.scss */
       .view-display-id-page_1 .view-filters .views-exposed-form .views-exposed-widgets .views-submit-button, .view-display-id-project_map .view-filters .views-exposed-form .views-exposed-widgets .views-submit-button {
         width: 100%;
         display: block; } }
-    /* line 481, ../scss/pages/_map.scss */
+    /* line 490, ../scss/pages/_map.scss */
     .view-display-id-page_1 .view-filters .views-exposed-form .views-exposed-widgets .views-submit-button .btn, .view-display-id-project_map .view-filters .views-exposed-form .views-exposed-widgets .views-submit-button .btn {
       margin-top: 0;
       border-radius: 0;
@@ -11260,7 +11276,7 @@ input[type=text]::-ms-clear {
       background: #ffffff;
       font-weight: normal;
       font-family: "BentonSans-Bold"; }
-      /* line 492, ../scss/pages/_map.scss */
+      /* line 501, ../scss/pages/_map.scss */
       .view-display-id-page_1 .view-filters .views-exposed-form .views-exposed-widgets .views-submit-button .btn::before, .view-display-id-project_map .view-filters .views-exposed-form .views-exposed-widgets .views-submit-button .btn::before {
         font-family: "icomoon";
         content: "\e90e";
@@ -11270,14 +11286,17 @@ input[type=text]::-ms-clear {
         font-size: 12px;
         display: inline-block;
         position: absolute; }
-  /* line 505, ../scss/pages/_map.scss */
+      /* line 511, ../scss/pages/_map.scss */
+      .view-display-id-page_1 .view-filters .views-exposed-form .views-exposed-widgets .views-submit-button .btn:hover, .view-display-id-project_map .view-filters .views-exposed-form .views-exposed-widgets .views-submit-button .btn:hover {
+        color: #e74712; }
+  /* line 517, ../scss/pages/_map.scss */
   .view-display-id-page_1 .view-filters .views-exposed-form .views-exposed-widgets .views-widget-filter-field_akteurstyp, .view-display-id-project_map .view-filters .views-exposed-form .views-exposed-widgets .views-widget-filter-field_akteurstyp {
     display: none; }
-  /* line 509, ../scss/pages/_map.scss */
+  /* line 521, ../scss/pages/_map.scss */
   .view-display-id-page_1 .view-filters .views-exposed-form .views-exposed-widgets .views-widget-filter-field_akteurstyp.active, .view-display-id-project_map .view-filters .views-exposed-form .views-exposed-widgets .views-widget-filter-field_akteurstyp.active {
     display: block; }
 
-/* line 517, ../scss/pages/_map.scss */
+/* line 529, ../scss/pages/_map.scss */
 .view-display-id-page_1 .view-filters .views-exposed-form .views-exposed-widgets {
   padding: 0; }
 

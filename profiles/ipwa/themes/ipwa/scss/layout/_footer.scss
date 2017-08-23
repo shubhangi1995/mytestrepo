@@ -222,6 +222,10 @@ footer {
 							 padding-left:0;
 							}
                         }
+						
+						&:hover{
+						 color:$active-menu;
+						}
                     }
                 }
             }
