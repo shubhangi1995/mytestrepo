@@ -10942,11 +10942,11 @@ caption {
     /* line 51, ../scss/pages/_map.scss */
     .page-projekt-map .map-wrap .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items .field-item, .page-projekt-map-list .map-wrap .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items .field-item {
       margin: 0;
-      /* Tablet design */ }
+      /* Desktop design */ }
       /* line 54, ../scss/pages/_map.scss */
       .page-projekt-map .map-wrap .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items .field-item.odd, .page-projekt-map-list .map-wrap .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items .field-item.odd {
         margin-top: 30px; }
-      @media (min-width: 767px) {
+      @media (min-width: 960px) {
         /* line 51, ../scss/pages/_map.scss */
         .page-projekt-map .map-wrap .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items .field-item, .page-projekt-map-list .map-wrap .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items .field-item {
           margin: 0; }
