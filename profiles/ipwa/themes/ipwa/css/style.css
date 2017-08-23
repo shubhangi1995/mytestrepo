@@ -8049,7 +8049,6 @@ footer #block-block-5 strong {
             padding-top: 35px;
             padding-bottom: 40px;
             height: auto;
-            line-height: 26px;
             /* Tablet design */
             /* Over Desktop design */ }
             @media (min-width: 767px) {
@@ -8071,26 +8070,27 @@ footer #block-block-5 strong {
               color: #e74712;
               padding-bottom: 15px;
               font-weight: normal;
-              font-family: "BentonSans-Bold"; }
-            /* line 338, ../scss/pages/_frontpage.scss */
+              font-family: "BentonSans-Bold";
+              line-height: 26px; }
+            /* line 339, ../scss/pages/_frontpage.scss */
             .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items > .field-item .field-collection-view .content .field-name-field-quellenangabe a {
               border-color: #949d9e !important;
               color: #273753;
               position: absolute !important;
               bottom: 30px; }
-              /* line 346, ../scss/pages/_frontpage.scss */
+              /* line 347, ../scss/pages/_frontpage.scss */
               .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items > .field-item .field-collection-view .content .field-name-field-quellenangabe a:hover {
                 border-color: #e74712 !important; }
-            /* line 352, ../scss/pages/_frontpage.scss */
+            /* line 353, ../scss/pages/_frontpage.scss */
             .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items > .field-item .field-collection-view .content .field-name-field-flie-text-bereich {
               padding-bottom: 50px; }
-              /* line 355, ../scss/pages/_frontpage.scss */
+              /* line 356, ../scss/pages/_frontpage.scss */
               .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items > .field-item .field-collection-view .content .field-name-field-flie-text-bereich .field-item p {
                 font-size: 20px;
                 color: #273753; }
 
 @media (max-width: 350px) {
-  /* line 369, ../scss/pages/_frontpage.scss */
+  /* line 370, ../scss/pages/_frontpage.scss */
   .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items > .field-item .field-collection-view .content .field-name-field-quellenangabe a {
     margin-left: 15px !important; } }
 /* line 1, ../scss/pages/_common.scss */

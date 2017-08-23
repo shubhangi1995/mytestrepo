@@ -308,7 +308,6 @@
                             padding-top: 35px;
                             padding-bottom: 40px;
                             height: auto;
-                            line-height: 26px;
 
                             @include devicebreak(x-medium) {
                                 padding-right: 50px;
@@ -332,6 +331,7 @@
                                 padding-bottom: 15px;
                                 font-weight: normal;
                                 font-family: $font-family-bold;
+                                line-height: 26px;
                             }
 
                             .field-name-field-quellenangabe {
