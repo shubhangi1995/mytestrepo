@@ -422,6 +422,9 @@ header {
                                                     &:before {
                                                         margin-left: -25px;
                                                     }
+													&:hover{
+													   border-color:$active-menu;
+													}
                                                 }
                                             }
                                         }
