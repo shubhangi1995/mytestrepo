@@ -108,7 +108,7 @@ function ipwa_termin__views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title']['hide_alter_empty'] = FALSE;
-  /* Feld: Inhalt: Dieser Akteur gehört zu */
+  /* Feld: Inhalt: Dieses Projekt gehört zu  */
   $handler->display->display_options['fields']['field_themenzuweisung']['id'] = 'field_themenzuweisung';
   $handler->display->display_options['fields']['field_themenzuweisung']['table'] = 'field_data_field_themenzuweisung';
   $handler->display->display_options['fields']['field_themenzuweisung']['field'] = 'field_themenzuweisung';
@@ -167,7 +167,7 @@ function ipwa_termin__views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'termin' => 'termin',
   );
-  /* Filter criterion: Inhalt: Dieser Akteur gehört zu (field_themenzuweisung) */
+  /* Filter criterion: Inhalt: Dieses Projekt gehört zu  (field_themenzuweisung) */
   $handler->display->display_options['filters']['field_themenzuweisung_tid']['id'] = 'field_themenzuweisung_tid';
   $handler->display->display_options['filters']['field_themenzuweisung_tid']['table'] = 'field_data_field_themenzuweisung';
   $handler->display->display_options['filters']['field_themenzuweisung_tid']['field'] = 'field_themenzuweisung_tid';
@@ -273,7 +273,8 @@ function ipwa_termin__views_default_views() {
   $handler->display->display_options['header']['area']['id'] = 'area';
   $handler->display->display_options['header']['area']['table'] = 'views';
   $handler->display->display_options['header']['area']['field'] = 'area';
-  $handler->display->display_options['header']['area']['content'] = '<h2>[subheadline]</h2>
+  $handler->display->display_options['header']['area']['empty'] = TRUE;
+  $handler->display->display_options['header']['area']['content'] = '<h2>Alle Veranstaltungen auf einen Blick</h2>
 <div class="calendar-link">
 <a href="/termine">zur Listensicht</a>
 </div>';
@@ -296,7 +297,7 @@ function ipwa_termin__views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title']['hide_alter_empty'] = FALSE;
-  /* Feld: Inhalt: Dieser Akteur gehört zu */
+  /* Feld: Inhalt: Dieses Projekt gehört zu  */
   $handler->display->display_options['fields']['field_themenzuweisung']['id'] = 'field_themenzuweisung';
   $handler->display->display_options['fields']['field_themenzuweisung']['table'] = 'field_data_field_themenzuweisung';
   $handler->display->display_options['fields']['field_themenzuweisung']['field'] = 'field_themenzuweisung';
@@ -639,7 +640,7 @@ function ipwa_termin__views_default_views() {
     t('Termine'),
     t('<keine>'),
     t('Alles anzeigen'),
-    t('<h2>[subheadline]</h2>
+    t('<h2>Alle Veranstaltungen auf einen Blick</h2>
 <div class="calendar-link">
 <a href="/termine">zur Listensicht</a>
 </div>'),
@@ -767,7 +768,7 @@ function ipwa_termin__views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['max_length'] = '140';
   $handler->display->display_options['fields']['title']['alter']['trim'] = TRUE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
-  /* Feld: Inhalt: Dieser Akteur gehört zu */
+  /* Feld: Inhalt: Dieses Projekt gehört zu  */
   $handler->display->display_options['fields']['field_themenzuweisung']['id'] = 'field_themenzuweisung';
   $handler->display->display_options['fields']['field_themenzuweisung']['table'] = 'field_data_field_themenzuweisung';
   $handler->display->display_options['fields']['field_themenzuweisung']['field'] = 'field_themenzuweisung';
@@ -991,7 +992,7 @@ function ipwa_termin__views_default_views() {
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
-  /* Feld: Inhalt: Dieser Akteur gehört zu */
+  /* Feld: Inhalt: Dieses Projekt gehört zu  */
   $handler->display->display_options['fields']['field_themenzuweisung']['id'] = 'field_themenzuweisung';
   $handler->display->display_options['fields']['field_themenzuweisung']['table'] = 'field_data_field_themenzuweisung';
   $handler->display->display_options['fields']['field_themenzuweisung']['field'] = 'field_themenzuweisung';
@@ -1109,7 +1110,7 @@ function ipwa_termin__views_default_views() {
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Feld: Inhalt: Dieser Akteur gehört zu */
+  /* Feld: Inhalt: Dieses Projekt gehört zu  */
   $handler->display->display_options['fields']['field_themenzuweisung']['id'] = 'field_themenzuweisung';
   $handler->display->display_options['fields']['field_themenzuweisung']['table'] = 'field_data_field_themenzuweisung';
   $handler->display->display_options['fields']['field_themenzuweisung']['field'] = 'field_themenzuweisung';
@@ -1342,7 +1343,7 @@ function ipwa_termin__views_default_views() {
 </div>';
   $handler->display->display_options['footer']['area']['format'] = 'wysiwyg';
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Feld: Inhalt: Dieser Akteur gehört zu */
+  /* Feld: Inhalt: Dieses Projekt gehört zu  */
   $handler->display->display_options['fields']['field_themenzuweisung']['id'] = 'field_themenzuweisung';
   $handler->display->display_options['fields']['field_themenzuweisung']['table'] = 'field_data_field_themenzuweisung';
   $handler->display->display_options['fields']['field_themenzuweisung']['field'] = 'field_themenzuweisung';
@@ -1434,7 +1435,7 @@ function ipwa_termin__views_default_views() {
     t('letzte Seite »'),
     t('<h2>Alle Veranstaltungen auf einen Blick</h2>
 '),
-    t('Dieser Akteur gehört zu'),
+    t('Dieses Projekt gehört zu '),
     t('Datum'),
     t('Alle'),
     t('<keine>'),
