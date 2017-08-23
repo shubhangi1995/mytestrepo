@@ -12,7 +12,7 @@ function ipwa_projekt__form_alter(&$form, &$form_state, $form_id) {
   if($form_id == 'protagonist_node_form' || $form_id == 'projekt_node_form') {
    $form['field_latitude']['#access'] = 0;
    $form['field_longitude']['#access'] = 0;
-   $form['#validate'][] = 'protagonist_node_form_validate';
+
 
   }
  }
@@ -42,7 +42,4 @@ function ipwa_projekt__node_presave($node) {
   }
 }
 
-function protagonist_node_form_validate($form, &$form_state) {
-  if(is_null($form['#node']->field_longitude['und'][0]['value']) && is_null($form['#node']->field_latitude['und'][0]['value']))
-  form_set_error('plz', t('Error a valid PLZ please'));
-}
+
