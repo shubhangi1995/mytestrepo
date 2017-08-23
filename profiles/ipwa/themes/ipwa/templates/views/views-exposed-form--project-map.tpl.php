@@ -97,8 +97,8 @@
 		<button class="btn-go-backward" >&#10094;</button>
 		<button class="btn-go-forward" >&#10095;</button>
 	</div>
-    <h2>{{{contentType}}}</h2>
-	<div class="txtf-desc">{{{title}}}</div>
-	<div >{{{date}}}</div>
+	<div class="txtf-conditional1">{{{conditional1}}}</div>
+    <div class="txtf-desc">{{{title}}}</div>
+	<div >{{{conditional}}}</div>
 </script>
 </div>

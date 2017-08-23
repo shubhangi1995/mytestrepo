@@ -167,12 +167,20 @@
   color: #777673;
 }
 /* line 79, ../../src/scss/components/_popup.scss */
+.footer_map .div-topic {
+  margin-bottom: 20px;
+}
+/* line 83, ../../src/scss/components/_popup.scss */
 .footer_map .div-topic > img {
   width: 40px;
 }
-/* line 83, ../../src/scss/components/_popup.scss */
+/* line 87, ../../src/scss/components/_popup.scss */
+.footer_map .txtf-conditional1 {
+  color: #e74712;
+}
+/* line 91, ../../src/scss/components/_popup.scss */
 .footer_map .txtf-desc {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 /*# sourceMappingURL=main.css.map */

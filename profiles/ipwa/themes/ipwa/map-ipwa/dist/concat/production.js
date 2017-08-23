@@ -608,10 +608,10 @@ IPWA_MAP.Map.popup = {
     }
 
     var _olPopupHtml = this.olPopupTemplate({
-      contentType: _properties?_properties.type:'',
       title: _properties?_properties.title:'',
       topics: _topics,
-      date: _properties?_properties.views_conditional:''
+      conditional: _properties?_properties.views_conditional:'',
+      conditional1: _properties?_properties.views_conditional_1:''
     });
     this.$popupContent.html(_olPopupHtml);
     this.addPagingToPopup(olFeatures, index);

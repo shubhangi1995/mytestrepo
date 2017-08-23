@@ -76,11 +76,19 @@
     }
   }
 
+  .div-topic {
+    margin-bottom: 20px;
+  }
+
   .div-topic > img {
     width: 40px;
   }
   
+  .txtf-conditional1 {
+    color: $orange;
+  }
+  
   .txtf-desc {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
   }
 }
