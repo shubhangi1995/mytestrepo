@@ -184,7 +184,7 @@ Publikation|Publikationen',
   $handler->display->display_options['header']['area']['id'] = 'area';
   $handler->display->display_options['header']['area']['table'] = 'views';
   $handler->display->display_options['header']['area']['field'] = 'area';
-  $handler->display->display_options['header']['area']['content'] = '<h2>[headline] this needs to be carified, about its content</h2>';
+  $handler->display->display_options['header']['area']['content'] = '<h2>Alle Veranstaltungen auf einen Blick</h2>';
   $handler->display->display_options['header']['area']['format'] = 'wysiwyg';
   /* Feld: Inhalt: Dieser Akteur gehört zu */
   $handler->display->display_options['fields']['field_themenzuweisung']['id'] = 'field_themenzuweisung';
@@ -633,7 +633,7 @@ Publikation|Publikationen'),
     t('‹ vorherige Seite'),
     t('nächste Seite ›'),
     t('letzte Seite »'),
-    t('<h2>[headline] this needs to be carified, about its content</h2>'),
+    t('<h2>Alle Veranstaltungen auf einen Blick</h2>'),
     t('neueste zuerst'),
     t('A-Z'),
     t('politik'),
