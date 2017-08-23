@@ -113,6 +113,10 @@
     }
 }
 
+.view-alles-zum-thema > .view-sub-wrapper .views-submit-button{
+display:none;
+}
+
 .view-aktuelles, .view-termin, .view-search-list, .view-event-calendar, .view-alles-zum-thema  {
     > .view-sub-wrapper {
         @extend .container;
@@ -189,9 +193,7 @@
 		.views-widget-sort-order{
 		  display:none;
 		}
-		.views-submit-button{
-		  display:none;
-		}
+		
         .view-filters {
             .views-exposed-form .views-exposed-widgets {
                 margin-bottom: 0;
@@ -421,7 +423,7 @@
         }
 		
 		&:hover{
-		color:$active-menu;
+		border-color:$active-menu;
 		}
     }
 }
@@ -538,6 +540,13 @@
                     display: inline-block;
                     position: absolute;
                 }
+				&:hover{
+				  color:$active-menu;
+				}
+				
+				&:hover::before{
+				   color:$active-menu;
+				}
             }
         }
     }

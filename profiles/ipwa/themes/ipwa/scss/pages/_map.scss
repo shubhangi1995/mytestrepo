@@ -469,6 +469,9 @@
                             display: inline-block;
                             position: absolute;
                         }
+						&:hover{
+						 color:$active-menu;
+						}
                     }
                 }
 
