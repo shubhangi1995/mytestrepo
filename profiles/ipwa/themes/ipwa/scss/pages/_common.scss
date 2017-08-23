@@ -179,6 +179,10 @@ h1 {
             font-size: 18px;
             border-bottom: 1px solid $color-light-grey;
             padding-bottom: 4px;
+
+            &:hover {
+                border-color: $active-menu;
+            }
         }
 
         &.last {
@@ -314,9 +318,6 @@ h1 {
                         word-wrap: break-word;
                         display: inline-block;
                         width: 100%;
-
-                        
-
 
                         @include devicebreak(x-medium) {
                             height: 480px;
@@ -1119,8 +1120,7 @@ input[type=text]::-ms-clear {
 }
 
 .page-aktuelles #block-ipwa-newsletter-newsletter-subscription-block, .node-type-doorpage #block-ipwa-newsletter-newsletter-subscription-block,
-.page-taxonomy #block-ipwa-newsletter-newsletter-subscription-block
- {
+.page-taxonomy #block-ipwa-newsletter-newsletter-subscription-block {
     margin-top: 25px;
 }
 
@@ -1192,7 +1192,7 @@ input[type=text]::-ms-clear {
     width: 50px;
     border-radius: 25px;
     text-indent: 0;
-	z-index:99999;
+    z-index: 99999;
 
     &::before {
         font-family: $icomoon;
