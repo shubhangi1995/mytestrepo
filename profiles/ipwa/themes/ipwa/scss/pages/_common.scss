@@ -391,10 +391,12 @@ h1 {
                             .field-content {
                                 font-size: 20px;
                                 color: $color-light-grey;
+								padding-bottom:10px;
 
                                 @include devicebreak(x-medium) {
                                     position: absolute;
                                     bottom: 30px;
+									padding-bottom:0;
                                 }
                             }
                         }
