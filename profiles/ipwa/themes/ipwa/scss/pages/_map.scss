@@ -136,9 +136,7 @@
 
                 .map-sub-title {
                     float: left;
-					
-					   font-family:$font-family-bold;
-					
+                    font-family: $font-family-bold;
                 }
             }
 
@@ -226,9 +224,10 @@
                         top: 5px;
                         display: inline-block;
                     }
-					&:hover{
-					   color:$active-menu;
-					}
+
+                    &:hover {
+                        color: $active-menu;
+                    }
                 }
             }
 
@@ -263,6 +262,10 @@
                         left: -25px;
                         top: 5px;
                         display: inline-block;
+                    }
+
+                    &:hover {
+                        border-color: $active-menu;
                     }
                 }
             }
@@ -475,9 +478,10 @@
                             display: inline-block;
                             position: absolute;
                         }
-						&:hover{
-						 color:$active-menu;
-						}
+
+                        &:hover {
+                            color: $active-menu;
+                        }
                     }
                 }
 
@@ -489,12 +493,12 @@
                     top: 5px;
                     position: relative;
                     padding: 0;
-					margin-right:20px;
+                    margin-right: 20px;
 
                     @include devicebreak(x-medium) {
                         width: 100%;
                         display: block;
-						margin-right:0;
+                        margin-right: 0;
                     }
 
 
@@ -519,9 +523,10 @@
                             display: inline-block;
                             position: absolute;
                         }
-						&:hover {
-                color: $active-menu;
-            }
+
+                        &:hover {
+                            color: $active-menu;
+                        }
                     }
                 }
 

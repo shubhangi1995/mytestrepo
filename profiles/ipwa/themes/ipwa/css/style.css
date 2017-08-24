@@ -323,7 +323,7 @@ th {
 /* line 22, ../scss/bootstrap-sass/bootstrap/_scaffolding.scss */
 html {
   font-size: 10px;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+  -webkit-tap-highlight-color: transparent; }
 
 /* line 27, ../scss/bootstrap-sass/bootstrap/_scaffolding.scss */
 body {
@@ -2123,29 +2123,38 @@ input[type="search"] {
   input[type="time"].input-sm,
   .input-group-sm > input[type="time"].form-control,
   .input-group-sm > input[type="time"].input-group-addon,
-  .input-group-sm > .input-group-btn > input[type="time"].btn,
-  .input-group-sm input[type="time"],
+  .input-group-sm > .input-group-btn > input[type="time"].btn, .input-group-sm
+  input[type="time"],
   input[type="datetime-local"].input-sm,
   .input-group-sm > input[type="datetime-local"].form-control,
   .input-group-sm > input[type="datetime-local"].input-group-addon,
-  .input-group-sm > .input-group-btn > input[type="datetime-local"].btn,
-  .input-group-sm input[type="datetime-local"],
+  .input-group-sm > .input-group-btn > input[type="datetime-local"].btn, .input-group-sm
+  input[type="datetime-local"],
   input[type="month"].input-sm,
   .input-group-sm > input[type="month"].form-control,
   .input-group-sm > input[type="month"].input-group-addon,
-  .input-group-sm > .input-group-btn > input[type="month"].btn,
-  .input-group-sm input[type="month"] {
+  .input-group-sm > .input-group-btn > input[type="month"].btn, .input-group-sm
+  input[type="month"] {
     line-height: 30px; }
   /* line 202, ../scss/bootstrap-sass/bootstrap/_forms.scss */
   input[type="date"].input-lg, .input-group-lg > input[type="date"].form-control,
   .input-group-lg > input[type="date"].input-group-addon,
-  .input-group-lg > .input-group-btn > input[type="date"].btn, .input-group-lg input[type="date"], input[type="time"].input-lg, .input-group-lg > input[type="time"].form-control,
+  .input-group-lg > .input-group-btn > input[type="date"].btn, .input-group-lg input[type="date"],
+  input[type="time"].input-lg,
+  .input-group-lg > input[type="time"].form-control,
   .input-group-lg > input[type="time"].input-group-addon,
-  .input-group-lg > .input-group-btn > input[type="time"].btn, .input-group-lg input[type="time"], input[type="datetime-local"].input-lg, .input-group-lg > input[type="datetime-local"].form-control,
+  .input-group-lg > .input-group-btn > input[type="time"].btn, .input-group-lg
+  input[type="time"],
+  input[type="datetime-local"].input-lg,
+  .input-group-lg > input[type="datetime-local"].form-control,
   .input-group-lg > input[type="datetime-local"].input-group-addon,
-  .input-group-lg > .input-group-btn > input[type="datetime-local"].btn, .input-group-lg input[type="datetime-local"], input[type="month"].input-lg, .input-group-lg > input[type="month"].form-control,
+  .input-group-lg > .input-group-btn > input[type="datetime-local"].btn, .input-group-lg
+  input[type="datetime-local"],
+  input[type="month"].input-lg,
+  .input-group-lg > input[type="month"].form-control,
   .input-group-lg > input[type="month"].input-group-addon,
-  .input-group-lg > .input-group-btn > input[type="month"].btn, .input-group-lg input[type="month"] {
+  .input-group-lg > .input-group-btn > input[type="month"].btn, .input-group-lg
+  input[type="month"] {
     line-height: 46px; } }
 /* line 215, ../scss/bootstrap-sass/bootstrap/_forms.scss */
 .form-group {
@@ -2201,20 +2210,20 @@ input[type="search"] {
 /* line 276, ../scss/bootstrap-sass/bootstrap/_forms.scss */
 input[type="radio"][disabled], input[type="radio"].disabled, fieldset[disabled] input[type="radio"],
 input[type="checkbox"][disabled],
-input[type="checkbox"].disabled,
-fieldset[disabled] input[type="checkbox"] {
+input[type="checkbox"].disabled, fieldset[disabled]
+input[type="checkbox"] {
   cursor: not-allowed; }
 
 /* line 285, ../scss/bootstrap-sass/bootstrap/_forms.scss */
 .radio-inline.disabled, fieldset[disabled] .radio-inline,
-.checkbox-inline.disabled,
-fieldset[disabled] .checkbox-inline {
+.checkbox-inline.disabled, fieldset[disabled]
+.checkbox-inline {
   cursor: not-allowed; }
 
 /* line 295, ../scss/bootstrap-sass/bootstrap/_forms.scss */
 .radio.disabled label, fieldset[disabled] .radio label,
-.checkbox.disabled label,
-fieldset[disabled] .checkbox label {
+.checkbox.disabled label, fieldset[disabled]
+.checkbox label {
   cursor: not-allowed; }
 
 /* line 307, ../scss/bootstrap-sass/bootstrap/_forms.scss */
@@ -5767,7 +5776,7 @@ button.close {
   color: #fff;
   text-align: center;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
-  background-color: rgba(0, 0, 0, 0); }
+  background-color: transparent; }
   /* line 109, ../scss/bootstrap-sass/bootstrap/_carousel.scss */
   .carousel-control.left {
     background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
@@ -5847,7 +5856,7 @@ button.close {
     border-radius: 10px;
     cursor: pointer;
     background-color: #000 \9;
-    background-color: rgba(0, 0, 0, 0); }
+    background-color: transparent; }
   /* line 207, ../scss/bootstrap-sass/bootstrap/_carousel.scss */
   .carousel-indicators .active {
     margin: 0;
@@ -11057,11 +11066,11 @@ caption {
   .page-projekt-map .view-filters .views-exposed-form #map_list_link .map-sub-title {
     float: left;
     font-family: "BentonSans-Bold"; }
-/* line 145, ../scss/pages/_map.scss */
+/* line 143, ../scss/pages/_map.scss */
 .page-projekt-map .view-filters .views-exposed-form .footer_map {
   padding-top: 50px;
   position: relative; }
-  /* line 149, ../scss/pages/_map.scss */
+  /* line 147, ../scss/pages/_map.scss */
   .page-projekt-map .view-filters .views-exposed-form .footer_map .project-webform {
     width: 1170px;
     margin: 0 auto;
@@ -11070,7 +11079,7 @@ caption {
     left: 0;
     right: 0;
     bottom: 200px; }
-    /* line 158, ../scss/pages/_map.scss */
+    /* line 156, ../scss/pages/_map.scss */
     .page-projekt-map .view-filters .views-exposed-form .footer_map .project-webform a {
       background: #ffffff;
       padding: 14px 40px 14px 55px;
@@ -11082,10 +11091,10 @@ caption {
       font-family: "BentonSans-Bold";
       /* Tablet design */ }
       @media (min-width: 520px) {
-        /* line 158, ../scss/pages/_map.scss */
+        /* line 156, ../scss/pages/_map.scss */
         .page-projekt-map .view-filters .views-exposed-form .footer_map .project-webform a {
           font-size: 20px; } }
-      /* line 173, ../scss/pages/_map.scss */
+      /* line 171, ../scss/pages/_map.scss */
       .page-projekt-map .view-filters .views-exposed-form .footer_map .project-webform a:before {
         font-family: "icomoon";
         content: "\e93f";
@@ -11095,16 +11104,16 @@ caption {
         left: 25px;
         top: 5px;
         display: inline-block; }
-      /* line 184, ../scss/pages/_map.scss */
+      /* line 182, ../scss/pages/_map.scss */
       .page-projekt-map .view-filters .views-exposed-form .footer_map .project-webform a:hover {
         color: #e74712; }
 
-/* line 199, ../scss/pages/_map.scss */
+/* line 197, ../scss/pages/_map.scss */
 .view-display-id-page_1 .view-sub-wrapper .view-header .project-webform {
   display: inline-block;
   padding-bottom: 40px;
   position: relative; }
-  /* line 204, ../scss/pages/_map.scss */
+  /* line 202, ../scss/pages/_map.scss */
   .view-display-id-page_1 .view-sub-wrapper .view-header .project-webform a {
     background: #ffffff;
     padding: 14px 40px 14px 55px;
@@ -11116,10 +11125,10 @@ caption {
     font-family: "BentonSans-Bold";
     /* Tablet design */ }
     @media (min-width: 520px) {
-      /* line 204, ../scss/pages/_map.scss */
+      /* line 202, ../scss/pages/_map.scss */
       .view-display-id-page_1 .view-sub-wrapper .view-header .project-webform a {
         font-size: 20px; } }
-    /* line 219, ../scss/pages/_map.scss */
+    /* line 217, ../scss/pages/_map.scss */
     .view-display-id-page_1 .view-sub-wrapper .view-header .project-webform a:before {
       font-family: "icomoon";
       content: "\e93f";
@@ -11129,10 +11138,10 @@ caption {
       left: 25px;
       top: 5px;
       display: inline-block; }
-    /* line 229, ../scss/pages/_map.scss */
+    /* line 228, ../scss/pages/_map.scss */
     .view-display-id-page_1 .view-sub-wrapper .view-header .project-webform a:hover {
       color: #e74712; }
-/* line 235, ../scss/pages/_map.scss */
+/* line 234, ../scss/pages/_map.scss */
 .view-display-id-page_1 .view-sub-wrapper .view-header .map-link {
   display: inline-block;
   float: left;
@@ -11140,11 +11149,11 @@ caption {
   width: 100%;
   /* Tablet design */ }
   @media (min-width: 520px) {
-    /* line 235, ../scss/pages/_map.scss */
+    /* line 234, ../scss/pages/_map.scss */
     .view-display-id-page_1 .view-sub-wrapper .view-header .map-link {
       float: right;
       width: auto; } }
-  /* line 247, ../scss/pages/_map.scss */
+  /* line 246, ../scss/pages/_map.scss */
   .view-display-id-page_1 .view-sub-wrapper .view-header .map-link a {
     text-decoration: none;
     padding-bottom: 4px;
@@ -11154,7 +11163,7 @@ caption {
     font-family: "BentonSans-Bold";
     position: relative;
     margin-left: 30px; }
-    /* line 257, ../scss/pages/_map.scss */
+    /* line 256, ../scss/pages/_map.scss */
     .view-display-id-page_1 .view-sub-wrapper .view-header .map-link a:before {
       content: '\e949';
       font-family: "icomoon";
@@ -11164,7 +11173,10 @@ caption {
       left: -25px;
       top: 5px;
       display: inline-block; }
-/* line 272, ../scss/pages/_map.scss */
+    /* line 267, ../scss/pages/_map.scss */
+    .view-display-id-page_1 .view-sub-wrapper .view-header .map-link a:hover {
+      border-color: #e74712; }
+/* line 275, ../scss/pages/_map.scss */
 .view-display-id-page_1 .view-sub-wrapper .attachment-before .view-result-count {
   width: auto;
   float: left;
@@ -11174,46 +11186,46 @@ caption {
   font-family: "BentonSans-Bold";
   /* Tablet design */ }
   @media (min-width: 520px) {
-    /* line 272, ../scss/pages/_map.scss */
+    /* line 275, ../scss/pages/_map.scss */
     .view-display-id-page_1 .view-sub-wrapper .attachment-before .view-result-count {
       width: 50%;
       font-size: 22px; } }
-/* line 287, ../scss/pages/_map.scss */
+/* line 290, ../scss/pages/_map.scss */
 .view-display-id-page_1 .view-sub-wrapper .views-widget-sort-by {
   padding: 30px 0;
   font-size: 18px;
   text-align: right;
   /* Tablet design */ }
   @media (min-width: 520px) {
-    /* line 287, ../scss/pages/_map.scss */
+    /* line 290, ../scss/pages/_map.scss */
     .view-display-id-page_1 .view-sub-wrapper .views-widget-sort-by {
       width: 50%;
       float: left;
       font-size: 20px; } }
-  /* line 299, ../scss/pages/_map.scss */
+  /* line 302, ../scss/pages/_map.scss */
   .view-display-id-page_1 .view-sub-wrapper .views-widget-sort-by .form-group {
     margin-bottom: 0; }
-    /* line 302, ../scss/pages/_map.scss */
+    /* line 305, ../scss/pages/_map.scss */
     .view-display-id-page_1 .view-sub-wrapper .views-widget-sort-by .form-group .bef-select-as-links .form-type-bef-link {
       display: inline-block;
       padding-left: 15px; }
-      /* line 306, ../scss/pages/_map.scss */
+      /* line 309, ../scss/pages/_map.scss */
       .view-display-id-page_1 .view-sub-wrapper .views-widget-sort-by .form-group .bef-select-as-links .form-type-bef-link a {
         text-decoration: none;
         color: #273753; }
-        /* line 310, ../scss/pages/_map.scss */
+        /* line 313, ../scss/pages/_map.scss */
         .view-display-id-page_1 .view-sub-wrapper .views-widget-sort-by .form-group .bef-select-as-links .form-type-bef-link a.active {
           border-bottom: 2px solid #e74712;
           padding-bottom: 12px; }
-    /* line 317, ../scss/pages/_map.scss */
+    /* line 320, ../scss/pages/_map.scss */
     .view-display-id-page_1 .view-sub-wrapper .views-widget-sort-by .form-group .select2-container {
       display: none; }
 
-/* line 328, ../scss/pages/_map.scss */
+/* line 331, ../scss/pages/_map.scss */
 .view-display-id-page_1 .view-filters .views-exposed-form .views-exposed-widgets, .view-display-id-project_map .view-filters .views-exposed-form .views-exposed-widgets {
   position: relative;
   margin: 0 auto; }
-  /* line 334, ../scss/pages/_map.scss */
+  /* line 337, ../scss/pages/_map.scss */
   .view-display-id-page_1 .view-filters .views-exposed-form .views-exposed-widgets .categories-filter .views-exposed-widget, .view-display-id-project_map .view-filters .views-exposed-form .views-exposed-widgets .categories-filter .views-exposed-widget {
     position: relative;
     width: 100%;
@@ -11227,15 +11239,15 @@ caption {
     background: #273753;
     border-right: 1px solid #949d9e; }
     @media (min-width: 767px) {
-      /* line 334, ../scss/pages/_map.scss */
+      /* line 337, ../scss/pages/_map.scss */
       .view-display-id-page_1 .view-filters .views-exposed-form .views-exposed-widgets .categories-filter .views-exposed-widget, .view-display-id-project_map .view-filters .views-exposed-form .views-exposed-widgets .categories-filter .views-exposed-widget {
         width: 50%; } }
     @media (min-width: 1025px) {
-      /* line 334, ../scss/pages/_map.scss */
+      /* line 337, ../scss/pages/_map.scss */
       .view-display-id-page_1 .view-filters .views-exposed-form .views-exposed-widgets .categories-filter .views-exposed-widget, .view-display-id-project_map .view-filters .views-exposed-form .views-exposed-widgets .categories-filter .views-exposed-widget {
         width: 22%;
         height: 49px; } }
-    /* line 351, ../scss/pages/_map.scss */
+    /* line 354, ../scss/pages/_map.scss */
     .view-display-id-page_1 .view-filters .views-exposed-form .views-exposed-widgets .categories-filter .views-exposed-widget:before, .view-display-id-project_map .view-filters .views-exposed-form .views-exposed-widgets .categories-filter .views-exposed-widget:before {
       content: "\f107";
       font-family: FontAwesome;
@@ -11245,53 +11257,53 @@ caption {
       right: 25px;
       top: 50%;
       margin-top: -10px; }
-    /* line 362, ../scss/pages/_map.scss */
+    /* line 365, ../scss/pages/_map.scss */
     .view-display-id-page_1 .view-filters .views-exposed-form .views-exposed-widgets .categories-filter .views-exposed-widget.selColor, .view-display-id-project_map .view-filters .views-exposed-form .views-exposed-widgets .categories-filter .views-exposed-widget.selColor {
       background: #3c506e; }
-    /* line 372, ../scss/pages/_map.scss */
+    /* line 375, ../scss/pages/_map.scss */
     .view-display-id-page_1 .view-filters .views-exposed-form .views-exposed-widgets .categories-filter .views-exposed-widget .views-widget .form-item, .view-display-id-project_map .view-filters .views-exposed-form .views-exposed-widgets .categories-filter .views-exposed-widget .views-widget .form-item {
       padding: 0;
       position: relative;
       display: block; }
-      /* line 377, ../scss/pages/_map.scss */
+      /* line 380, ../scss/pages/_map.scss */
       .view-display-id-page_1 .view-filters .views-exposed-form .views-exposed-widgets .categories-filter .views-exposed-widget .views-widget .form-item .select2-container--default .select2-selection--single, .view-display-id-project_map .view-filters .views-exposed-form .views-exposed-widgets .categories-filter .views-exposed-widget .views-widget .form-item .select2-container--default .select2-selection--single {
         background: 0;
         border: 0;
         border-radius: 0; }
-        /* line 382, ../scss/pages/_map.scss */
+        /* line 385, ../scss/pages/_map.scss */
         .view-display-id-page_1 .view-filters .views-exposed-form .views-exposed-widgets .categories-filter .views-exposed-widget .views-widget .form-item .select2-container--default .select2-selection--single .select2-selection__rendered, .view-display-id-project_map .view-filters .views-exposed-form .views-exposed-widgets .categories-filter .views-exposed-widget .views-widget .form-item .select2-container--default .select2-selection--single .select2-selection__rendered {
           color: #ffffff;
           padding-left: 20px;
           width: 240px; }
-        /* line 388, ../scss/pages/_map.scss */
+        /* line 391, ../scss/pages/_map.scss */
         .view-display-id-page_1 .view-filters .views-exposed-form .views-exposed-widgets .categories-filter .views-exposed-widget .views-widget .form-item .select2-container--default .select2-selection--single .select2-selection__arrow, .view-display-id-project_map .view-filters .views-exposed-form .views-exposed-widgets .categories-filter .views-exposed-widget .views-widget .form-item .select2-container--default .select2-selection--single .select2-selection__arrow {
           display: none; }
-      /* line 393, ../scss/pages/_map.scss */
+      /* line 396, ../scss/pages/_map.scss */
       .view-display-id-page_1 .view-filters .views-exposed-form .views-exposed-widgets .categories-filter .views-exposed-widget .views-widget .form-item .select2-container + .select2-container, .view-display-id-project_map .view-filters .views-exposed-form .views-exposed-widgets .categories-filter .views-exposed-widget .views-widget .form-item .select2-container + .select2-container {
         top: 38px !important;
         left: 0px !important;
         position: absolute; }
-  /* line 401, ../scss/pages/_map.scss */
+  /* line 404, ../scss/pages/_map.scss */
   .view-display-id-page_1 .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-order, .view-display-id-project_map .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-order {
     display: none; }
-  /* line 405, ../scss/pages/_map.scss */
+  /* line 408, ../scss/pages/_map.scss */
   .view-display-id-page_1 .view-filters .views-exposed-form .views-exposed-widgets .categories-filter .views-exposed-widget:nth-child(4), .view-display-id-project_map .view-filters .views-exposed-form .views-exposed-widgets .categories-filter .views-exposed-widget:nth-child(4) {
     width: 100%;
     height: 49px;
     /* Tablet design */
     /* Over Desktop design */ }
     @media (min-width: 767px) {
-      /* line 405, ../scss/pages/_map.scss */
+      /* line 408, ../scss/pages/_map.scss */
       .view-display-id-page_1 .view-filters .views-exposed-form .views-exposed-widgets .categories-filter .views-exposed-widget:nth-child(4), .view-display-id-project_map .view-filters .views-exposed-form .views-exposed-widgets .categories-filter .views-exposed-widget:nth-child(4) {
         width: 50%; } }
     @media (min-width: 1025px) {
-      /* line 405, ../scss/pages/_map.scss */
+      /* line 408, ../scss/pages/_map.scss */
       .view-display-id-page_1 .view-filters .views-exposed-form .views-exposed-widgets .categories-filter .views-exposed-widget:nth-child(4), .view-display-id-project_map .view-filters .views-exposed-form .views-exposed-widgets .categories-filter .views-exposed-widget:nth-child(4) {
         width: 34%; } }
-    /* line 419, ../scss/pages/_map.scss */
+    /* line 422, ../scss/pages/_map.scss */
     .view-display-id-page_1 .view-filters .views-exposed-form .views-exposed-widgets .categories-filter .views-exposed-widget:nth-child(4):before, .view-display-id-project_map .view-filters .views-exposed-form .views-exposed-widgets .categories-filter .views-exposed-widget:nth-child(4):before {
       display: none; }
-    /* line 424, ../scss/pages/_map.scss */
+    /* line 427, ../scss/pages/_map.scss */
     .view-display-id-page_1 .view-filters .views-exposed-form .views-exposed-widgets .categories-filter .views-exposed-widget:nth-child(4) .form-item:before, .view-display-id-project_map .view-filters .views-exposed-form .views-exposed-widgets .categories-filter .views-exposed-widget:nth-child(4) .form-item:before {
       font-family: "icomoon";
       content: "\e94e";
@@ -11300,7 +11312,7 @@ caption {
       top: 4px;
       display: inline-block;
       position: absolute; }
-    /* line 434, ../scss/pages/_map.scss */
+    /* line 437, ../scss/pages/_map.scss */
     .view-display-id-page_1 .view-filters .views-exposed-form .views-exposed-widgets .categories-filter .views-exposed-widget:nth-child(4) .form-item input.form-control, .view-display-id-project_map .view-filters .views-exposed-form .views-exposed-widgets .categories-filter .views-exposed-widget:nth-child(4) .form-item input.form-control {
       background: 0;
       border: 0;
@@ -11308,19 +11320,19 @@ caption {
       color: #ffffff;
       padding-right: 150px;
       box-shadow: none; }
-    /* line 444, ../scss/pages/_map.scss */
+    /* line 447, ../scss/pages/_map.scss */
     .view-display-id-page_1 .view-filters .views-exposed-form .views-exposed-widgets .categories-filter .views-exposed-widget:nth-child(4) > .views-submit-button, .view-display-id-project_map .view-filters .views-exposed-form .views-exposed-widgets .categories-filter .views-exposed-widget:nth-child(4) > .views-submit-button {
       background: 0;
       width: auto;
       border: 0;
       /* Over Desktop design */ }
       @media (min-width: 1025px) {
-        /* line 444, ../scss/pages/_map.scss */
+        /* line 447, ../scss/pages/_map.scss */
         .view-display-id-page_1 .view-filters .views-exposed-form .views-exposed-widgets .categories-filter .views-exposed-widget:nth-child(4) > .views-submit-button, .view-display-id-project_map .view-filters .views-exposed-form .views-exposed-widgets .categories-filter .views-exposed-widget:nth-child(4) > .views-submit-button {
           position: absolute;
           padding: 0;
           right: 4px; } }
-  /* line 458, ../scss/pages/_map.scss */
+  /* line 461, ../scss/pages/_map.scss */
   .view-display-id-page_1 .view-filters .views-exposed-form .views-exposed-widgets .views-reset-button .form-submit, .view-display-id-project_map .view-filters .views-exposed-form .views-exposed-widgets .views-reset-button .form-submit {
     margin: 0;
     background: 0;
@@ -11331,7 +11343,7 @@ caption {
     position: relative;
     font-weight: normal;
     font-family: "BentonSans-Bold"; }
-    /* line 469, ../scss/pages/_map.scss */
+    /* line 472, ../scss/pages/_map.scss */
     .view-display-id-page_1 .view-filters .views-exposed-form .views-exposed-widgets .views-reset-button .form-submit:before, .view-display-id-project_map .view-filters .views-exposed-form .views-exposed-widgets .views-reset-button .form-submit:before {
       font-family: "icomoon";
       content: "\e912";
@@ -11340,10 +11352,10 @@ caption {
       top: 5px;
       display: inline-block;
       position: absolute; }
-    /* line 478, ../scss/pages/_map.scss */
+    /* line 482, ../scss/pages/_map.scss */
     .view-display-id-page_1 .view-filters .views-exposed-form .views-exposed-widgets .views-reset-button .form-submit:hover, .view-display-id-project_map .view-filters .views-exposed-form .views-exposed-widgets .views-reset-button .form-submit:hover {
       color: #e74712; }
-  /* line 484, ../scss/pages/_map.scss */
+  /* line 488, ../scss/pages/_map.scss */
   .view-display-id-page_1 .view-filters .views-exposed-form .views-exposed-widgets .views-submit-button, .view-display-id-project_map .view-filters .views-exposed-form .views-exposed-widgets .views-submit-button {
     border: 0;
     background: 0;
@@ -11355,12 +11367,12 @@ caption {
     margin-right: 20px;
     /* Tablet design */ }
     @media (min-width: 767px) {
-      /* line 484, ../scss/pages/_map.scss */
+      /* line 488, ../scss/pages/_map.scss */
       .view-display-id-page_1 .view-filters .views-exposed-form .views-exposed-widgets .views-submit-button, .view-display-id-project_map .view-filters .views-exposed-form .views-exposed-widgets .views-submit-button {
         width: 100%;
         display: block;
         margin-right: 0; } }
-    /* line 501, ../scss/pages/_map.scss */
+    /* line 505, ../scss/pages/_map.scss */
     .view-display-id-page_1 .view-filters .views-exposed-form .views-exposed-widgets .views-submit-button .btn, .view-display-id-project_map .view-filters .views-exposed-form .views-exposed-widgets .views-submit-button .btn {
       margin-top: 0;
       border-radius: 0;
@@ -11371,7 +11383,7 @@ caption {
       background: #ffffff;
       font-weight: normal;
       font-family: "BentonSans-Bold"; }
-      /* line 512, ../scss/pages/_map.scss */
+      /* line 516, ../scss/pages/_map.scss */
       .view-display-id-page_1 .view-filters .views-exposed-form .views-exposed-widgets .views-submit-button .btn::before, .view-display-id-project_map .view-filters .views-exposed-form .views-exposed-widgets .views-submit-button .btn::before {
         font-family: "icomoon";
         content: "\e90e";
@@ -11381,17 +11393,17 @@ caption {
         font-size: 12px;
         display: inline-block;
         position: absolute; }
-      /* line 522, ../scss/pages/_map.scss */
+      /* line 527, ../scss/pages/_map.scss */
       .view-display-id-page_1 .view-filters .views-exposed-form .views-exposed-widgets .views-submit-button .btn:hover, .view-display-id-project_map .view-filters .views-exposed-form .views-exposed-widgets .views-submit-button .btn:hover {
         color: #e74712; }
-  /* line 528, ../scss/pages/_map.scss */
+  /* line 533, ../scss/pages/_map.scss */
   .view-display-id-page_1 .view-filters .views-exposed-form .views-exposed-widgets .views-widget-filter-field_akteurstyp, .view-display-id-project_map .view-filters .views-exposed-form .views-exposed-widgets .views-widget-filter-field_akteurstyp {
     display: none; }
-  /* line 532, ../scss/pages/_map.scss */
+  /* line 537, ../scss/pages/_map.scss */
   .view-display-id-page_1 .view-filters .views-exposed-form .views-exposed-widgets .views-widget-filter-field_akteurstyp.active, .view-display-id-project_map .view-filters .views-exposed-form .views-exposed-widgets .views-widget-filter-field_akteurstyp.active {
     display: block; }
 
-/* line 540, ../scss/pages/_map.scss */
+/* line 545, ../scss/pages/_map.scss */
 .view-display-id-page_1 .view-filters .views-exposed-form .views-exposed-widgets {
   padding: 0; }
 
