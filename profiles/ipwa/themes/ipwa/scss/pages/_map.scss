@@ -125,7 +125,7 @@
                         font-size: 14px;
                         position: absolute;
                         left: -25px;
-                        top: 9px;
+                        top: 5px;
                         display: inline-block;
                     }
 
@@ -177,7 +177,7 @@
                             font-size: 14px;
                             position: absolute;
                             left: 25px;
-                            top: 6px;
+                            top: 5px;
                             display: inline-block;
                         }
 
@@ -223,9 +223,12 @@
                         font-size: 14px;
                         position: absolute;
                         left: 25px;
-                        top: 6px;
+                        top: 5px;
                         display: inline-block;
                     }
+					&:hover{
+					   color:$active-menu;
+					}
                 }
             }
 
@@ -258,7 +261,7 @@
                         font-size: 14px;
                         position: absolute;
                         left: -25px;
-                        top: 9px;
+                        top: 5px;
                         display: inline-block;
                     }
                 }
