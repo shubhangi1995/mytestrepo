@@ -50,7 +50,7 @@ IPWA_MAP.filter = {
     var _editType = _form.find('#edit-type');
     // console.log('_editType:  =====>>> ', _editType, _editType.val());
     var _filter = [_editType, // Inhaltstyp (Akteur or Projekt)
-      _form.find('#edit-field-plz'), // plz
+      _form.find('#edit-search-api-aggregation-2'), // text to search
       _form.find('#edit-field-themenzuweisung-1') // Alle Themen
     ];
     if (_editType.val() === 'protagonist') {
@@ -598,8 +598,8 @@ IPWA_MAP.Map.popup = {
   setDataInPopup: function (data, index, olFeatures) {
     var _properties;
 
-    if (data && data.features && data.features.length > 0 && data.features[index]) {
-      _properties = data.features[index].properties;
+    if (data && data.features && data.features.length > 0) {
+      _properties = data.features[0].properties;
     }
 
     var _topics = [];

@@ -89,6 +89,9 @@
 /* line 6, ../../src/scss/components/_popup.scss */
 .footer_map {
   /* content of the popup *******************************************************/
+  /* .txtf-conditional1 {
+    color: $orange;
+  } */
 }
 /* line 7, ../../src/scss/components/_popup.scss */
 .footer_map .map-popup {
@@ -173,10 +176,6 @@
 /* line 83, ../../src/scss/components/_popup.scss */
 .footer_map .div-topic > img {
   width: 40px;
-}
-/* line 87, ../../src/scss/components/_popup.scss */
-.footer_map .txtf-conditional1 {
-  color: #e74712;
 }
 /* line 91, ../../src/scss/components/_popup.scss */
 .footer_map .txtf-desc {
