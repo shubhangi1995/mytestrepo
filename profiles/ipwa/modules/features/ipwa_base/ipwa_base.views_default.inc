@@ -2043,21 +2043,7 @@ Publikation|Publikationen'),
   );
   $handler->display->display_options['filters']['field_themenzuweisung_1']['expose']['reduce'] = 1;
   /* Filter criterion: Indexed Beitrag: PLZ */
-  $handler->display->display_options['filters']['field_plz']['id'] = 'field_plz';
-  $handler->display->display_options['filters']['field_plz']['table'] = 'search_api_index_ipwa_solr_index';
-  $handler->display->display_options['filters']['field_plz']['field'] = 'field_plz';
-  $handler->display->display_options['filters']['field_plz']['group'] = 1;
-  $handler->display->display_options['filters']['field_plz']['exposed'] = TRUE;
-  $handler->display->display_options['filters']['field_plz']['expose']['operator_id'] = 'field_plz_op';
-  $handler->display->display_options['filters']['field_plz']['expose']['operator'] = 'field_plz_op';
-  $handler->display->display_options['filters']['field_plz']['expose']['identifier'] = 'field_plz';
-  $handler->display->display_options['filters']['field_plz']['expose']['remember_roles'] = array(
-    2 => '2',
-    1 => 0,
-    3 => 0,
-    4 => 0,
-    5 => 0,
-  );
+
   /* Filter criterion: Indexed Beitrag: Status */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'search_api_index_ipwa_solr_index';
@@ -2073,6 +2059,21 @@ Publikation|Publikationen'),
   $handler->display->display_options['filters']['type_1']['value'] = array(
     'protagonist' => 'protagonist',
     'projekt' => 'projekt',
+  );
+  /* Filter criterion: Indexed Node: combinational filter */
+  $handler->display->display_options['filters']['search_api_aggregation_2']['id'] = 'search_api_aggregation_2';
+  $handler->display->display_options['filters']['search_api_aggregation_2']['table'] = 'search_api_index_ipwa_solr_index';
+  $handler->display->display_options['filters']['search_api_aggregation_2']['field'] = 'search_api_aggregation_2';
+  $handler->display->display_options['filters']['search_api_aggregation_2']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['search_api_aggregation_2']['expose']['operator_id'] = 'search_api_aggregation_2_op';
+  $handler->display->display_options['filters']['search_api_aggregation_2']['expose']['operator'] = 'search_api_aggregation_2_op';
+  $handler->display->display_options['filters']['search_api_aggregation_2']['expose']['identifier'] = 'search_api_aggregation_2';
+  $handler->display->display_options['filters']['search_api_aggregation_2']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+    3 => 0,
+    4 => 0,
+    5 => 0,
   );
 
   /* Display: Project map */
@@ -2332,16 +2333,15 @@ Publikation|Publikationen'),
     5 => 0,
   );
   $handler->display->display_options['filters']['field_themenzuweisung_1']['expose']['reduce'] = 1;
-  /* Filter criterion: Indexed Beitrag: PLZ */
-  $handler->display->display_options['filters']['field_plz']['id'] = 'field_plz';
-  $handler->display->display_options['filters']['field_plz']['table'] = 'search_api_index_ipwa_solr_index';
-  $handler->display->display_options['filters']['field_plz']['field'] = 'field_plz';
-  $handler->display->display_options['filters']['field_plz']['group'] = 1;
-  $handler->display->display_options['filters']['field_plz']['exposed'] = TRUE;
-  $handler->display->display_options['filters']['field_plz']['expose']['operator_id'] = 'field_plz_op';
-  $handler->display->display_options['filters']['field_plz']['expose']['operator'] = 'field_plz_op';
-  $handler->display->display_options['filters']['field_plz']['expose']['identifier'] = 'field_plz';
-  $handler->display->display_options['filters']['field_plz']['expose']['remember_roles'] = array(
+  /* Filter criterion: Indexed Node: combinational filter */
+  $handler->display->display_options['filters']['search_api_aggregation_2']['id'] = 'search_api_aggregation_2';
+  $handler->display->display_options['filters']['search_api_aggregation_2']['table'] = 'search_api_index_ipwa_solr_index';
+  $handler->display->display_options['filters']['search_api_aggregation_2']['field'] = 'search_api_aggregation_2';
+  $handler->display->display_options['filters']['search_api_aggregation_2']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['search_api_aggregation_2']['expose']['operator_id'] = 'search_api_aggregation_2_op';
+  $handler->display->display_options['filters']['search_api_aggregation_2']['expose']['operator'] = 'search_api_aggregation_2_op';
+  $handler->display->display_options['filters']['search_api_aggregation_2']['expose']['identifier'] = 'search_api_aggregation_2';
+  $handler->display->display_options['filters']['search_api_aggregation_2']['expose']['remember_roles'] = array(
     2 => '2',
     1 => 0,
     3 => 0,
