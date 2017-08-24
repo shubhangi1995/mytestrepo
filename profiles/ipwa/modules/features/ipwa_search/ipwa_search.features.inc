@@ -67,6 +67,7 @@ function ipwa_search_default_search_api_index() {
         "nid" : { "type" : "integer" },
         "search_api_access_node" : { "type" : "list\\u003Cstring\\u003E" },
         "search_api_aggregation_1" : { "type" : "text", "boost" : "5.0" },
+        "search_api_aggregation_2" : { "type" : "text" },
         "search_api_language" : { "type" : "string" },
         "search_api_panelizer_content" : { "type" : "text" },
         "search_api_panelizer_title" : { "type" : "text" },
@@ -102,11 +103,18 @@ function ipwa_search_default_search_api_index() {
         "search_api_alter_add_aggregation" : {
           "status" : 1,
           "weight" : "0",
-          "settings" : { "fields" : { "search_api_aggregation_1" : {
+          "settings" : { "fields" : {
+              "search_api_aggregation_1" : {
                 "name" : "Title-content",
                 "type" : "fulltext",
                 "fields" : [ "title" ],
-                "description" : "A Fulltext aggregation of the following fields: Titel."
+                "description" : "A Fulltext aggregation of the following fields: Title."
+              },
+              "search_api_aggregation_2" : {
+                "name" : "combinational filter",
+                "type" : "fulltext",
+                "fields" : [ "field_ort", "field_plz" ],
+                "description" : "A Fulltext aggregation of the following fields: Ort, PLZ."
               }
             }
           }
