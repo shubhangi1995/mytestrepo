@@ -392,7 +392,7 @@ h1 {
                                 font-size: 20px;
                                 color: $color-light-grey;
 
-                                @include devicebreak(large) {
+                                @include devicebreak(x-medium) {
                                     position: absolute;
                                     bottom: 30px;
                                 }
