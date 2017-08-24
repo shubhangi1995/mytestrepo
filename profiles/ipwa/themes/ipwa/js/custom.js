@@ -3,11 +3,13 @@
 
 jQuery(document).ready(function(){
 
-//orientation changes for slider
-
-	window.addEventListener('orientationchange', function () {
-	   window.location.reload();
-	  });
+//orientation changes for slider page only
+	if(jQuery(".view-wahlen-sie-einen-themenbereich").length){
+		console.log("right track");
+		window.addEventListener('orientationchange', function () {
+		   window.location.reload();
+		});
+	}
   
 
     //Detection for external links
