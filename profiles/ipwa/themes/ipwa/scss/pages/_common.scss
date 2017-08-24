@@ -1091,7 +1091,6 @@ input[type=text]::-ms-clear {
 .page-calendar, .page-termine {
     /* .page-header {
         position: relative;
-
         &::before {
             content: "\e941";
             font-family: $icomoon;
@@ -1111,7 +1110,6 @@ input[type=text]::-ms-clear {
             }
         }
     } */
-	
         .calendar-icon{
 			width:100%;
 			@include devicebreak(x-large) {
@@ -1128,8 +1126,13 @@ input[type=text]::-ms-clear {
 			}
 		}
 		.calendar-right{
+			width:100%;
 			@include devicebreak(x-large) {
 				float:left;
+				width:75%;
+			}
+			.page-header{
+				width:auto;
 			}
 		}
 		.container-new{

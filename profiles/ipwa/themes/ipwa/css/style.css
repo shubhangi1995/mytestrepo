@@ -323,7 +323,7 @@ th {
 /* line 22, ../scss/bootstrap-sass/bootstrap/_scaffolding.scss */
 html {
   font-size: 10px;
-  -webkit-tap-highlight-color: transparent; }
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
 
 /* line 27, ../scss/bootstrap-sass/bootstrap/_scaffolding.scss */
 body {
@@ -2123,38 +2123,29 @@ input[type="search"] {
   input[type="time"].input-sm,
   .input-group-sm > input[type="time"].form-control,
   .input-group-sm > input[type="time"].input-group-addon,
-  .input-group-sm > .input-group-btn > input[type="time"].btn, .input-group-sm
-  input[type="time"],
+  .input-group-sm > .input-group-btn > input[type="time"].btn,
+  .input-group-sm input[type="time"],
   input[type="datetime-local"].input-sm,
   .input-group-sm > input[type="datetime-local"].form-control,
   .input-group-sm > input[type="datetime-local"].input-group-addon,
-  .input-group-sm > .input-group-btn > input[type="datetime-local"].btn, .input-group-sm
-  input[type="datetime-local"],
+  .input-group-sm > .input-group-btn > input[type="datetime-local"].btn,
+  .input-group-sm input[type="datetime-local"],
   input[type="month"].input-sm,
   .input-group-sm > input[type="month"].form-control,
   .input-group-sm > input[type="month"].input-group-addon,
-  .input-group-sm > .input-group-btn > input[type="month"].btn, .input-group-sm
-  input[type="month"] {
+  .input-group-sm > .input-group-btn > input[type="month"].btn,
+  .input-group-sm input[type="month"] {
     line-height: 30px; }
   /* line 202, ../scss/bootstrap-sass/bootstrap/_forms.scss */
   input[type="date"].input-lg, .input-group-lg > input[type="date"].form-control,
   .input-group-lg > input[type="date"].input-group-addon,
-  .input-group-lg > .input-group-btn > input[type="date"].btn, .input-group-lg input[type="date"],
-  input[type="time"].input-lg,
-  .input-group-lg > input[type="time"].form-control,
+  .input-group-lg > .input-group-btn > input[type="date"].btn, .input-group-lg input[type="date"], input[type="time"].input-lg, .input-group-lg > input[type="time"].form-control,
   .input-group-lg > input[type="time"].input-group-addon,
-  .input-group-lg > .input-group-btn > input[type="time"].btn, .input-group-lg
-  input[type="time"],
-  input[type="datetime-local"].input-lg,
-  .input-group-lg > input[type="datetime-local"].form-control,
+  .input-group-lg > .input-group-btn > input[type="time"].btn, .input-group-lg input[type="time"], input[type="datetime-local"].input-lg, .input-group-lg > input[type="datetime-local"].form-control,
   .input-group-lg > input[type="datetime-local"].input-group-addon,
-  .input-group-lg > .input-group-btn > input[type="datetime-local"].btn, .input-group-lg
-  input[type="datetime-local"],
-  input[type="month"].input-lg,
-  .input-group-lg > input[type="month"].form-control,
+  .input-group-lg > .input-group-btn > input[type="datetime-local"].btn, .input-group-lg input[type="datetime-local"], input[type="month"].input-lg, .input-group-lg > input[type="month"].form-control,
   .input-group-lg > input[type="month"].input-group-addon,
-  .input-group-lg > .input-group-btn > input[type="month"].btn, .input-group-lg
-  input[type="month"] {
+  .input-group-lg > .input-group-btn > input[type="month"].btn, .input-group-lg input[type="month"] {
     line-height: 46px; } }
 /* line 215, ../scss/bootstrap-sass/bootstrap/_forms.scss */
 .form-group {
@@ -2210,20 +2201,20 @@ input[type="search"] {
 /* line 276, ../scss/bootstrap-sass/bootstrap/_forms.scss */
 input[type="radio"][disabled], input[type="radio"].disabled, fieldset[disabled] input[type="radio"],
 input[type="checkbox"][disabled],
-input[type="checkbox"].disabled, fieldset[disabled]
-input[type="checkbox"] {
+input[type="checkbox"].disabled,
+fieldset[disabled] input[type="checkbox"] {
   cursor: not-allowed; }
 
 /* line 285, ../scss/bootstrap-sass/bootstrap/_forms.scss */
 .radio-inline.disabled, fieldset[disabled] .radio-inline,
-.checkbox-inline.disabled, fieldset[disabled]
-.checkbox-inline {
+.checkbox-inline.disabled,
+fieldset[disabled] .checkbox-inline {
   cursor: not-allowed; }
 
 /* line 295, ../scss/bootstrap-sass/bootstrap/_forms.scss */
 .radio.disabled label, fieldset[disabled] .radio label,
-.checkbox.disabled label, fieldset[disabled]
-.checkbox label {
+.checkbox.disabled label,
+fieldset[disabled] .checkbox label {
   cursor: not-allowed; }
 
 /* line 307, ../scss/bootstrap-sass/bootstrap/_forms.scss */
@@ -5776,7 +5767,7 @@ button.close {
   color: #fff;
   text-align: center;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
-  background-color: transparent; }
+  background-color: rgba(0, 0, 0, 0); }
   /* line 109, ../scss/bootstrap-sass/bootstrap/_carousel.scss */
   .carousel-control.left {
     background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
@@ -5856,7 +5847,7 @@ button.close {
     border-radius: 10px;
     cursor: pointer;
     background-color: #000 \9;
-    background-color: transparent; }
+    background-color: rgba(0, 0, 0, 0); }
   /* line 207, ../scss/bootstrap-sass/bootstrap/_carousel.scss */
   .carousel-indicators .active {
     margin: 0;
@@ -8921,7 +8912,6 @@ input[type=text]::-ms-clear {
 .page-calendar, .page-termine {
     /* .page-header {
         position: relative;
-
         &::before {
             content: "\e941";
             font-family: $icomoon;
@@ -8941,98 +8931,103 @@ input[type=text]::-ms-clear {
             }
         }
     } */ }
-  /* line 1115, ../scss/pages/_common.scss */
+  /* line 1113, ../scss/pages/_common.scss */
   .page-calendar .calendar-icon, .page-termine .calendar-icon {
     width: 100%;
     /* Over Desktop design */ }
     @media (min-width: 1025px) {
-      /* line 1115, ../scss/pages/_common.scss */
+      /* line 1113, ../scss/pages/_common.scss */
       .page-calendar .calendar-icon, .page-termine .calendar-icon {
         float: left;
         width: 25%;
         text-align: center; } }
-    /* line 1122, ../scss/pages/_common.scss */
+    /* line 1120, ../scss/pages/_common.scss */
     .page-calendar .calendar-icon::before, .page-termine .calendar-icon::before {
       content: "\e941";
       font-family: "icomoon";
       color: #a0a9b7;
       font-size: 120px;
       margin-bottom: 30px; }
-  /* line 1130, ../scss/pages/_common.scss */
+  /* line 1128, ../scss/pages/_common.scss */
   .page-calendar .calendar-right, .page-termine .calendar-right {
+    width: 100%;
     /* Over Desktop design */ }
     @media (min-width: 1025px) {
-      /* line 1130, ../scss/pages/_common.scss */
+      /* line 1128, ../scss/pages/_common.scss */
       .page-calendar .calendar-right, .page-termine .calendar-right {
-        float: left; } }
-  /* line 1135, ../scss/pages/_common.scss */
+        float: left;
+        width: 75%; } }
+    /* line 1134, ../scss/pages/_common.scss */
+    .page-calendar .calendar-right .page-header, .page-termine .calendar-right .page-header {
+      width: auto; }
+  /* line 1138, ../scss/pages/_common.scss */
   .page-calendar .container-new, .page-termine .container-new {
     margin-bottom: 70px;
     margin-top: 60px; }
-    /* line 1139, ../scss/pages/_common.scss */
+    /* line 1142, ../scss/pages/_common.scss */
     .page-calendar .container-new .page-header, .page-termine .container-new .page-header {
       padding-left: 0;
       padding-right: 0;
       /* Over Desktop design */ }
       @media (min-width: 1025px) {
-        /* line 1139, ../scss/pages/_common.scss */
+        /* line 1142, ../scss/pages/_common.scss */
         .page-calendar .container-new .page-header, .page-termine .container-new .page-header {
           padding-top: 0; } }
-  /* line 1150, ../scss/pages/_common.scss */
+  /* line 1153, ../scss/pages/_common.scss */
   .page-calendar .main-container .view-header, .page-termine .main-container .view-header {
     color: #e74712;
     font-size: 30px;
     /* Over Desktop design */ }
     @media (min-width: 1025px) {
-      /* line 1150, ../scss/pages/_common.scss */
+      /* line 1153, ../scss/pages/_common.scss */
       .page-calendar .main-container .view-header, .page-termine .main-container .view-header {
         padding-left: 5px; } }
-  /* line 1159, ../scss/pages/_common.scss */
+  /* line 1162, ../scss/pages/_common.scss */
   .page-calendar #block-ipwa-newsletter-newsletter-subscription-block, .page-termine #block-ipwa-newsletter-newsletter-subscription-block {
     margin-top: 25px; }
 
-/* line 1165, ../scss/pages/_common.scss */
+/* line 1168, ../scss/pages/_common.scss */
 .page-node-67 .page-title {
   padding-bottom: 30px; }
 
-/* line 1170, ../scss/pages/_common.scss */
+/* line 1173, ../scss/pages/_common.scss */
 .page-aktuelles #block-ipwa-newsletter-newsletter-subscription-block, .node-type-doorpage #block-ipwa-newsletter-newsletter-subscription-block,
 .page-taxonomy #block-ipwa-newsletter-newsletter-subscription-block {
   margin-top: 25px; }
 
-/* line 1183, ../scss/pages/_common.scss */
+/* line 1186, ../scss/pages/_common.scss */
 .page-newsletter-confirm .col-sm-12 .page-header {
   padding-bottom: 10px; }
-/* line 1187, ../scss/pages/_common.scss */
+/* line 1190, ../scss/pages/_common.scss */
 .page-newsletter-confirm .col-sm-12 #edit-submit {
   border: none;
   margin-left: 20px; }
-  /* line 1193, ../scss/pages/_common.scss */
+  /* line 1196, ../scss/pages/_common.scss */
   .page-newsletter-confirm .col-sm-12 #edit-submit::before {
     top: 10px;
     left: -12px; }
-  /* line 1198, ../scss/pages/_common.scss */
+  /* line 1201, ../scss/pages/_common.scss */
   .page-newsletter-confirm .col-sm-12 #edit-submit:hover {
     background: none; }
-/* line 1203, ../scss/pages/_common.scss */
+/* line 1206, ../scss/pages/_common.scss */
 .page-newsletter-confirm .col-sm-12 #edit-cancel {
   font-size: 17px;
   color: #e74712;
   position: relative;
   top: 3px; }
-/* line 1210, ../scss/pages/_common.scss */
+/* line 1213, ../scss/pages/_common.scss */
 .page-newsletter-confirm .col-sm-12 p {
   font-size: 18px; }
 
-/* line 1221, ../scss/pages/_common.scss */
+/* line 1224, ../scss/pages/_common.scss */
 .page-node-done .page-header {
   padding-bottom: 10px; }
-/* line 1225, ../scss/pages/_common.scss */
+/* line 1228, ../scss/pages/_common.scss */
 .page-node-done .links a {
   font-size: 17px;
   color: #e74712; }
 
-/* line 1232, ../scss/pages/_common.scss */
+/* line 1235, ../scss/pages/_common.scss */
 #backtotop {
   background: #e74712;
   bottom: 52px;
@@ -9045,7 +9040,7 @@ input[type=text]::-ms-clear {
   border-radius: 25px;
   text-indent: 0;
   z-index: 99999; }
-  /* line 1245, ../scss/pages/_common.scss */
+  /* line 1248, ../scss/pages/_common.scss */
   #backtotop::before {
     font-family: "icomoon";
     content: "\e950";
@@ -9056,33 +9051,33 @@ input[type=text]::-ms-clear {
     top: 16px;
     left: 17px; }
 
-/* line 1257, ../scss/pages/_common.scss */
+/* line 1260, ../scss/pages/_common.scss */
 .group-page-info {
   position: relative; }
-  /* line 1260, ../scss/pages/_common.scss */
+  /* line 1263, ../scss/pages/_common.scss */
   .group-page-info .main_content_blocks {
     /* Over Desktop design */ }
     @media (min-width: 1025px) {
-      /* line 1260, ../scss/pages/_common.scss */
+      /* line 1263, ../scss/pages/_common.scss */
       .group-page-info .main_content_blocks {
         position: absolute;
         left: -70px;
         top: 115px; } }
-    /* line 1268, ../scss/pages/_common.scss */
+    /* line 1271, ../scss/pages/_common.scss */
     .group-page-info .main_content_blocks section {
       display: inline-block;
       /* Over Desktop design */ }
       @media (min-width: 1025px) {
-        /* line 1268, ../scss/pages/_common.scss */
+        /* line 1271, ../scss/pages/_common.scss */
         .group-page-info .main_content_blocks section {
           display: block; } }
-    /* line 1277, ../scss/pages/_common.scss */
+    /* line 1280, ../scss/pages/_common.scss */
     .group-page-info .main_content_blocks #footer_print_icon #page_print {
       font-size: 0;
       border: 0;
       background: 0;
       padding-left: 0; }
-      /* line 1283, ../scss/pages/_common.scss */
+      /* line 1286, ../scss/pages/_common.scss */
       .group-page-info .main_content_blocks #footer_print_icon #page_print:before {
         font-family: "icomoon";
         content: "\e94c";
@@ -9092,10 +9087,10 @@ input[type=text]::-ms-clear {
         padding: 10px;
         padding-left: 0;
         cursor: pointer; }
-      /* line 1293, ../scss/pages/_common.scss */
+      /* line 1296, ../scss/pages/_common.scss */
       .group-page-info .main_content_blocks #footer_print_icon #page_print:hover::before {
         color: #e74712; }
-    /* line 1301, ../scss/pages/_common.scss */
+    /* line 1304, ../scss/pages/_common.scss */
     .group-page-info .main_content_blocks .block-addthis a:before {
       font-family: "icomoon";
       content: "\e94f";
@@ -9104,24 +9099,24 @@ input[type=text]::-ms-clear {
       display: inline-block;
       padding: 10px;
       padding-left: 0; }
-    /* line 1311, ../scss/pages/_common.scss */
+    /* line 1314, ../scss/pages/_common.scss */
     .group-page-info .main_content_blocks .block-addthis a img {
       display: none; }
-    /* line 1314, ../scss/pages/_common.scss */
+    /* line 1317, ../scss/pages/_common.scss */
     .group-page-info .main_content_blocks .block-addthis a:hover::before {
       color: #e74712; }
 
-/* line 1323, ../scss/pages/_common.scss */
+/* line 1326, ../scss/pages/_common.scss */
 .node-webform .page-title, .node-webform .page-header, .page-sitemap .page-title, .page-sitemap .page-header {
   font-weight: normal;
   font-family: "BentonSans-Bold"; }
 
-/* line 1329, ../scss/pages/_common.scss */
+/* line 1332, ../scss/pages/_common.scss */
 strong {
   font-weight: normal !important;
   font-family: "BentonSans-Bold" !important; }
 
-/* line 1333, ../scss/pages/_common.scss */
+/* line 1336, ../scss/pages/_common.scss */
 caption {
   color: #273753; }
 
