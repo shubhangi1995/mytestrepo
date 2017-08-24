@@ -87,10 +87,10 @@ h1 {
         li.pager-first, li.pager-last {
             display: none;
         }
-		
-		li.pager-ellipsis span{
-		 background:none;
-		}
+
+        li.pager-ellipsis span {
+            background: none;
+        }
 
         li.prev a {
             font-size: 0;
@@ -387,17 +387,16 @@ h1 {
                             font-family: $font-family-bold;
                         }
 
-                        .views-field-field-ort, div[class*='views-field-views-conditional-'],.views-field-views-conditional {
-						padding-bottom:10px;
+                        .views-field-field-ort, div[class*='views-field-views-conditional-'], .views-field-views-conditional {
+                            padding-bottom: 10px;
+
                             .field-content {
                                 font-size: 20px;
                                 color: $color-light-grey;
-								
 
                                 @include devicebreak(x-medium) {
                                     position: absolute;
                                     bottom: 30px;
-									
                                 }
                             }
                         }
@@ -458,8 +457,8 @@ h1 {
             h3 {
                 font-size: 15px;
                 color: $active-menu;
-				font-family:$font-family-bold;
-				font-weight:normal;
+                font-family: $font-family-bold;
+                font-weight: normal;
             }
         }
 
@@ -493,7 +492,8 @@ h1 {
 
                         > label {
                             font-size: 15px;
-							font-family:$font-family-bold;
+                            font-family: $font-family-bold;
+
                             .form-required {
                                 color: $active-menu;
                             }
@@ -513,7 +513,7 @@ h1 {
                             a {
                                 text-decoration: none;
                                 color: $active-menu;
-								font-family:$font-family-bold;
+                                font-family: $font-family-bold;
                             }
                         }
 
@@ -528,11 +528,12 @@ h1 {
                         }
                     }
                 }
-				.form-item{
-					label{
-						font-size:14px;
-					}
-				}
+
+                .form-item {
+                    label {
+                        font-size: 14px;
+                    }
+                }
             }
 
             .webform-submit {
@@ -1113,49 +1114,61 @@ input[type=text]::-ms-clear {
             }
         }
     } */
-        .calendar-icon{
-			width:100%;
-			@include devicebreak(x-large) {
-				float:left;
-				width:25%;
-				text-align:center; 
-			}
-			&::before {
-				content: "\e941";
-				font-family: $icomoon;
-				color: $calendar-color;
-				font-size: 120px;
-				margin-bottom: 30px;
-			}
-		}
-		.calendar-right{
-			width:100%;
-			@include devicebreak(x-large) {
-				float:left;
-				width:75%;
-			}
-			.page-header{
-				width:auto;
-			}
-		}
-		.container-new{
-			@extend .container;
-			margin-bottom:70px; 
-			margin-top:60px;
-			.page-header {
-				padding-left:0;
-				padding-right:0;
-				@include devicebreak(x-large) {
-					// padding-left: 85px;
-					padding-top:0; 
-				}
-			}
-		}	
+    .calendar-icon {
+        width: 100%;
+
+        @include devicebreak(x-large) {
+            float: left;
+            width: 25%;
+            text-align: center;
+        }
+
+
+        &::before {
+            content: "\e941";
+            font-family: $icomoon;
+            color: $calendar-color;
+            font-size: 120px;
+            margin-bottom: 30px;
+        }
+    }
+
+    .calendar-right {
+        width: 100%;
+
+        @include devicebreak(x-large) {
+            float: left;
+            width: 75%;
+        }
+
+
+        .page-header {
+            width: auto;
+        }
+    }
+
+    .container-new {
+        @extend .container;
+
+        margin-bottom: 70px;
+        margin-top: 60px;
+
+        .page-header {
+            padding-left: 0;
+            padding-right: 0;
+
+            @include devicebreak(x-large) {
+                // padding-left: 85px;
+                padding-top: 0;
+            }
+        }
+    }
 
     .main-container {
         .view-header {
-			color:$active-menu;
-			font-size:30px;
+            color: $active-menu;
+            font-size: 30px;
+
             @include devicebreak(x-large) {
                 padding-left: 5px;
             }
@@ -1296,9 +1309,10 @@ input[type=text]::-ms-clear {
                     padding-left: 0;
                     cursor: pointer;
                 }
-				&:hover::before{
-				 color:$active-menu;
-				}
+
+                &:hover::before {
+                    color: $active-menu;
+                }
             }
         }
 
@@ -1317,9 +1331,10 @@ input[type=text]::-ms-clear {
                 img {
                     display: none;
                 }
-				&:hover::before{
-				 color:$active-menu;
-				}
+
+                &:hover::before {
+                    color: $active-menu;
+                }
             }
         }
     }
@@ -1332,10 +1347,11 @@ input[type=text]::-ms-clear {
     }
 }
 
-strong{
-	font-weight:normal !important;
-	font-family:$font-family-bold !important; 
+strong {
+    font-weight: normal !important;
+    font-family: $font-family-bold !important;
 }
-caption{
-	color:$main-color;
+
+caption {
+    color: $main-color;
 }
