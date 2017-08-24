@@ -186,6 +186,9 @@
                             &:focus {
                                 outline: 1px dotted $main-color !important;
                             }
+							&:hover{
+							  background:$active-menu;
+							}
                         }
                     }
                 }
@@ -337,6 +340,7 @@
     .page-title {
         font-weight: normal;
         font-family: $font-family-bold;
+		font-size:44px;
     }
 }
 
