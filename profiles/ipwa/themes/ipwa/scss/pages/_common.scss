@@ -87,6 +87,10 @@ h1 {
         li.pager-first, li.pager-last {
             display: none;
         }
+		
+		li.pager-ellipsis span{
+		 background:none;
+		}
 
         li.prev a {
             font-size: 0;
