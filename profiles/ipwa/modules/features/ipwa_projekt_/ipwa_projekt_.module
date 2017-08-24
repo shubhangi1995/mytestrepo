@@ -18,32 +18,6 @@ function ipwa_projekt__form_alter(&$form, &$form_state, $form_id) {
 
   }
  }
-//function ipwa_projekt__node_presave($node) {
-//  if ($node->type == 'projekt' || $node->type == 'protagonist') {
-//    if (!empty($node->field_plz['und'][0]['value'])) {
-//      $param[] = $node->field_plz['und'][0]['value'];
-//
-//     //  for providing longitude and latitude according to the plz given
-////      $query_param = implode(" ", $param);
-////      $val_new = 'https://sg.geodatenzentrum.de/gdz_geokodierung__13dd535b-273e-b0f5-d42f-f2fa2cfa13d6/geosearch.json?query=' . $query_param . '&filter=typ:haus&count=1';
-////      $json = file_get_contents($val_new);
-////      $json = json_decode($json);
-////      $lng = $json->features[0]->geometry->coordinates[0];
-////      $lat = $json->features[0]->geometry->coordinates[1];
-////      $node->field_longitude['und'][0]['value'] = $lng;
-////      $node->field_latitude['und'][0]['value'] = $lat;
-//
-//      //node validation for valid longitude and latitude
-//      if(empty($node->field_latitude['und'][0]['value']) && empty($node->field_longitude['und'][0]['value'])){
-//        drupal_set_message('Please enter a valid PLZ.','error');
-//      # cancel saving
-//      throw new \Exception(t('Please enter a valid PLZ'));
-//
-//        }
-//
-//   }
-//  }
-//}
 
 function ipwa_projekt__node_form_validate($form, &$form_state)
 {
