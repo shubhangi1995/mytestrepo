@@ -105,7 +105,7 @@
 
     <div class="nrw-eu-logo">
       <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
-        <img src="<?php echo $base_url . '/' . drupal_get_path('theme', 'ipwa'); ?>/images/Eu_Logo_Header.svg">
+        <img src="<?php echo $base_url . '/' . drupal_get_path('theme', 'ipwa'); ?>/images/Eu_Logo_Header.svg" alt="<?php print t('Home'); ?>">
       </a>
     </div>
 
