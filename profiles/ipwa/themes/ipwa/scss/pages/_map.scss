@@ -145,13 +145,20 @@
                 position: relative;
 
                 .project-webform {
-                    width: 1170px;
+                    @extend .container;
+
                     margin: 0 auto;
                     z-index: 999;
-                    position: absolute;
                     left: 0;
                     right: 0;
-                    bottom: 200px;
+                    bottom: 0;
+                    position: relative;
+
+                    @include devicebreak(x-large) {
+                        position: absolute;
+                        bottom: 200px;
+                    }
+
 
                     a {
                         background: $color-white;
@@ -162,8 +169,11 @@
                         font-size: 15px;
                         font-weight: normal;
                         font-family: $font-family-bold;
+                        float: left;
+                        clear: both;
+                        margin-bottom: 30px;
 
-                        @include devicebreak(medium) {
+                        @include devicebreak(x-large) {
                             font-size: 20px;
                         }
 
@@ -174,9 +184,14 @@
                             color: $active-menu;
                             font-size: 14px;
                             position: absolute;
-                            left: 25px;
-                            top: 5px;
+                            left: 40px;
+                            top: 16px;
                             display: inline-block;
+
+                            @include devicebreak(x-large) {
+                                top: 16px;
+                                left: 25px;
+                            }
                         }
 
                         &:hover {
