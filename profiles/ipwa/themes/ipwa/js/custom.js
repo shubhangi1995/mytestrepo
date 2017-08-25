@@ -373,7 +373,7 @@ jQuery(document).ready(function(){
 	jQuery(".page-projekt-map .group-page-info .page-title , .page-projekt-map .group-page-info .field-name-body").wrapAll("<div class='project-map-wrapper'></div>");
 	
 	if(jQuery(window).innerWidth() > 1024){
-	jQuery(".view-display-id-project_map .view-filters .views-submit-button").appendTo(".view-display-id-project_map .view-filters .views-widget-filter-field_plz");
+	jQuery(".view-display-id-project_map .view-filters .views-submit-button").appendTo(".view-display-id-project_map .view-filters .categories-filter .views-widget-filter-search_api_aggregation_2");
 	}
 	
 	// Akteur field display
@@ -409,7 +409,7 @@ jQuery(document).ready(function(){
 	jQuery(".page-projekt-map-list .paragraphs-item-topic-teaser-paragraph").parent().wrapAll("<div class='map-wrap'></div>");
 
 	if(jQuery(window).innerWidth() > 1024){
-	jQuery(".view-display-id-page_1 .view-filters .views-submit-button").appendTo(".view-display-id-page_1 .view-filters .views-widget-filter-field_plz");
+	jQuery(".view-display-id-page_1 .view-filters .views-submit-button").appendTo(".view-display-id-page_1 .view-filters .categories-filter .views-widget-filter-search_api_aggregation_2");
 	}
 	// scrollbar for page-aktuelles
 
