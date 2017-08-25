@@ -77,6 +77,7 @@
 <?php global $base_url;?>
 <header id="navbar" role="banner" class="<?php print $navbar_classes; ?>">
   <div class="<?php print $container_class; ?>">
+    <h1 class="element-invisible">Navigation</h1>
     <div class="navbar-header">
       <?php if ($logo): ?>
         <a class="logo navbar-btn pull-left" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
@@ -113,13 +114,16 @@
       <div class="navbar-collapse collapse" id="navbar-collapse">
         <nav role="navigation">
           <?php if (!empty($primary_nav)): ?>
+            <h2 class="element-invisible">Service Menu</h2>
             <?php print render($primary_nav); ?>
           <?php endif; ?>
+            <h2 class="element-invisible">Suche</h2>
             <div class="search-icon">Suche</div>
           <?php if (!empty($secondary_nav)): ?>
             <?php print render($secondary_nav); ?>
           <?php endif; ?>
           <?php if (!empty($page['navigation'])): ?>
+            <h2 class="element-invisible">Main Menu</h2>
             <?php print render($page['navigation']); ?>
           <?php endif; ?>
         </nav>
@@ -181,6 +185,7 @@
 
 <?php if (!empty($page['footer'])): ?>
   <footer class="footer <?php print $container_class; ?>">
+    <h1 class="element-invisible">Footer</h1>
     <?php print render($page['footer']); ?>
     <div class="footer_blocks">
     <?php $block1 = block_load("views","rss-block_1");?>

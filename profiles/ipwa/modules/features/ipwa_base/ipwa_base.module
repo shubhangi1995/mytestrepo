@@ -238,7 +238,7 @@ function ipwa_base_block_view($delta = '') {
   $block = array();
   switch ($delta) {
     case 'footer_block_icons':
-      $block['subject'] ='<h3>Gefördert durch</h3>';
+      $block['subject'] ='Gefördert durch';
       $block['content'] = show_footer_block_icons();
       break;
     case 'footer_print':
