@@ -175,6 +175,10 @@
 //--------view-termin----------//
 
 .front {
+
+h1.page-title{
+  display:none;
+}
     .view-termin {
         background: $main-color;
 
