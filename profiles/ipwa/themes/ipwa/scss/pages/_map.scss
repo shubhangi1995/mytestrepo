@@ -140,65 +140,66 @@
                 }
             }
 
-            .footer_map {
-                padding-top: 50px;
-                position: relative;
+            .project-webform {
+                @extend .container;
 
-                .project-webform {
-                    @extend .container;
+                margin: 0 auto;
+                z-index: 999;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                position: static;
 
-                    margin: 0 auto;
-                    z-index: 999;
-                    left: 0;
-                    right: 0;
-                    bottom: 0;
+                @include devicebreak(x-large) {
+                    position: absolute;
+                    bottom: 200px;
+                }
+
+
+                a {
+                    background: $color-white;
+                    padding: 14px 40px 14px 55px;
+                    text-decoration: none;
+                    color: $main-color;
+                    z-index: 9999;
+                    font-size: 15px;
+                    font-weight: normal;
+                    font-family: $font-family-bold;
+                    float: left;
+                    clear: both;
+                    margin-top: 30px;
                     position: relative;
 
                     @include devicebreak(x-large) {
-                        position: absolute;
-                        bottom: 200px;
+                        font-size: 20px;
                     }
 
 
-                    a {
-                        background: $color-white;
-                        padding: 14px 40px 14px 55px;
-                        text-decoration: none;
-                        color: $main-color;
-                        z-index: 9999;
-                        font-size: 15px;
-                        font-weight: normal;
-                        font-family: $font-family-bold;
-                        float: left;
-                        clear: both;
-                        margin-bottom: 30px;
+                    &:before {
+                        font-family: "icomoon";
+                        content: "\e93f";
+                        color: $active-menu;
+                        font-size: 14px;
+                        position: absolute;
+                        left: 25px;
+                        top: 14px;
+                        display: inline-block;
 
                         @include devicebreak(x-large) {
-                            font-size: 20px;
-                        }
-
-
-                        &:before {
-                            font-family: "icomoon";
-                            content: "\e93f";
-                            color: $active-menu;
-                            font-size: 14px;
-                            position: absolute;
-                            left: 40px;
                             top: 16px;
-                            display: inline-block;
-
-                            @include devicebreak(x-large) {
-                                top: 16px;
-                                left: 25px;
-                            }
-                        }
-
-                        &:hover {
-                            color: $active-menu;
+                            left: 25px;
                         }
                     }
+
+                    &:hover {
+                        color: $active-menu;
+                    }
                 }
+            }
+
+            .footer_map {
+                padding-top: 50px;
+                position: relative;
             }
         }
     }

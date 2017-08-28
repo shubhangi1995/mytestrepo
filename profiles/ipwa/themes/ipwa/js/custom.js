@@ -471,6 +471,14 @@ jQuery(document).ready(function(){
 		jQuery(".views-slideshow-cycle-main-frame").css({width:viewWidth, height:1440});
 	}); */
 
+	
+	if(jQuery(window).innerWidth() < 1024){
+		jQuery(".view-display-id-project_map .project-webform").insertAfter(".view-display-id-project_map  #map_list_link");
+		
+		
+	}
+	
+	
 });
 
 
