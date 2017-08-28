@@ -4,12 +4,12 @@
 jQuery(document).ready(function(){
 
 //orientation changes for slider page only
-	if(jQuery(".view-wahlen-sie-einen-themenbereich").length){
+	 if(jQuery(".view-wahlen-sie-einen-themenbereich").length){
 		//console.log("right track");
 		window.addEventListener('orientationchange', function () {
 		   window.location.reload();
 		});
-	}
+	} 
   
 
     //Detection for external links
@@ -449,6 +449,27 @@ jQuery(document).ready(function(){
 	jQuery(".page-calendar .page-header, .page-termine .page-header").after(jQuery(".view-termin > .view-sub-wrapper > .view-header, .view-event-calendar > .view-sub-wrapper > .view-header"));
 	jQuery(".page-calendar .page-header, .page-termine .page-header, .calendar-icon, .page-header + .view-header").wrapAll("<div class='container-new'></div>");
 	jQuery(".calendar-icon").nextAll().wrapAll("<div class ='calendar-right'></div>");
+	
+	// customization in views slider for responsiveness
+	
+	/* jQuery(window).resize(function(){
+		var totalHeight, viewSingleHeight;
+		var viewWidth = jQuery(window).innerWidth() - 40;
+		alert(viewWidth);
+		jQuery(".views-slideshow-cycle-main-frame-row").each(function(index, element){
+			if(jQuery(element).children().length  == 4){
+				alert("i am four");
+				jQuery(element).children().each(function(index, element){
+					viewSingleHeight = jQuery(element).innerHeight();
+					alert(viewSingleHeight);
+					totalHeight += viewSingleHeight;
+				});
+				alert(totalHeight);
+				
+			}
+		});
+		jQuery(".views-slideshow-cycle-main-frame").css({width:viewWidth, height:1440});
+	}); */
 
 });
 
