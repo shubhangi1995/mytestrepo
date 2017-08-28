@@ -9400,9 +9400,10 @@ caption {
 .group-page-info .page-title {
   font-weight: normal;
   font-family: "BentonSans-Bold";
-  font-size: 44px; }
+  font-size: 44px;
+  word-wrap: break-word; }
 
-/* line 347, ../scss/pages/_singleview.scss */
+/* line 348, ../scss/pages/_singleview.scss */
 .group-body-container {
   background-color: #ffffff;
   padding: 50px 20px 45px;
@@ -9413,44 +9414,44 @@ caption {
       color: $active-menu;
   } */ }
   @media (min-width: 1025px) {
-    /* line 347, ../scss/pages/_singleview.scss */
+    /* line 348, ../scss/pages/_singleview.scss */
     .group-body-container {
       padding-left: 0;
       padding-right: 0; } }
-  /* line 359, ../scss/pages/_singleview.scss */
+  /* line 360, ../scss/pages/_singleview.scss */
   .group-body-container p, .group-body-container h3, .group-body-container h4, .group-body-container h5, .group-body-container h6, .group-body-container .field-name-field-kurztext .field-item, .group-body-container .view-id-related_content.view-display-id-block_3 .views-row {
     margin: 0 0 40px 0;
     line-height: 30px; }
-  /* line 364, ../scss/pages/_singleview.scss */
+  /* line 365, ../scss/pages/_singleview.scss */
   .group-body-container h1, .group-body-container h2 {
     display: none; }
-  /* line 368, ../scss/pages/_singleview.scss */
+  /* line 369, ../scss/pages/_singleview.scss */
   .group-body-container h3, .group-body-container h4, .group-body-container h5, .group-body-container h6 {
     font-size: 20px;
     color: #e74712; }
-  /* line 378, ../scss/pages/_singleview.scss */
+  /* line 379, ../scss/pages/_singleview.scss */
   .group-body-container a {
     color: #273753;
     text-decoration: underline;
     margin: 0 7px 0 5px;
     text-transform: capitalize;
     display: inline-block; }
-    /* line 387, ../scss/pages/_singleview.scss */
+    /* line 388, ../scss/pages/_singleview.scss */
     .group-body-container a:hover {
       color: #e74712; }
-  /* line 396, ../scss/pages/_singleview.scss */
+  /* line 397, ../scss/pages/_singleview.scss */
   .group-body-container .view-id-related_content.view-display-id-block_3 .views-row a {
     margin-left: 0; }
-  /* line 401, ../scss/pages/_singleview.scss */
+  /* line 402, ../scss/pages/_singleview.scss */
   .group-body-container ul, .group-body-container ol {
     list-style: none;
     padding-left: 55px;
     line-height: 35px;
     margin-bottom: 40px; }
-  /* line 409, ../scss/pages/_singleview.scss */
+  /* line 410, ../scss/pages/_singleview.scss */
   .group-body-container ul li, .group-body-container ol li {
     position: relative; }
-    /* line 412, ../scss/pages/_singleview.scss */
+    /* line 413, ../scss/pages/_singleview.scss */
     .group-body-container ul li::before, .group-body-container ol li::before {
       content: "\002022";
       color: #e74712;
@@ -9459,51 +9460,51 @@ caption {
       left: -25px;
       position: absolute;
       top: 0px; }
-  /* line 425, ../scss/pages/_singleview.scss */
+  /* line 426, ../scss/pages/_singleview.scss */
   .group-body-container ol li {
     counter-increment: list; }
-    /* line 428, ../scss/pages/_singleview.scss */
+    /* line 429, ../scss/pages/_singleview.scss */
     .group-body-container ol li::before {
       content: counter(list) ".";
       font-size: 19px; }
 
-/* line 437, ../scss/pages/_singleview.scss */
+/* line 438, ../scss/pages/_singleview.scss */
 .group-body-container > * {
   margin-bottom: 15px; }
-/* line 443, ../scss/pages/_singleview.scss */
+/* line 444, ../scss/pages/_singleview.scss */
 .group-body-container .field-name-field-bild-ref, .group-body-container .field-name-field-youtube-url {
   margin: 70px 0; }
-/* line 447, ../scss/pages/_singleview.scss */
+/* line 448, ../scss/pages/_singleview.scss */
 .group-body-container .field-name-field-youtube-url {
   margin-bottom: 25px; }
-  /* line 450, ../scss/pages/_singleview.scss */
+  /* line 451, ../scss/pages/_singleview.scss */
   .group-body-container .field-name-field-youtube-url iframe {
     width: 100%;
     height: auto;
     /* Tablet design */ }
     @media (min-width: 767px) {
-      /* line 450, ../scss/pages/_singleview.scss */
+      /* line 451, ../scss/pages/_singleview.scss */
       .group-body-container .field-name-field-youtube-url iframe {
         height: 489px; } }
-/* line 460, ../scss/pages/_singleview.scss */
+/* line 461, ../scss/pages/_singleview.scss */
 .group-body-container .field-name-field-bildbeschreibung, .group-body-container .field-name-field-videounterschrift {
   float: left;
   margin-right: 5px; }
-  /* line 464, ../scss/pages/_singleview.scss */
+  /* line 465, ../scss/pages/_singleview.scss */
   .group-body-container .field-name-field-bildbeschreibung .field-item, .group-body-container .field-name-field-videounterschrift .field-item {
     font-size: 18px; }
-/* line 471, ../scss/pages/_singleview.scss */
+/* line 472, ../scss/pages/_singleview.scss */
 .group-body-container .external-link {
   color: #273753;
   text-decoration: underline;
   padding: 0; }
-  /* line 476, ../scss/pages/_singleview.scss */
+  /* line 477, ../scss/pages/_singleview.scss */
   .group-body-container .external-link::before {
     content: none; }
-  /* line 480, ../scss/pages/_singleview.scss */
+  /* line 481, ../scss/pages/_singleview.scss */
   .group-body-container .external-link .ext {
     display: inline-block; }
-    /* line 483, ../scss/pages/_singleview.scss */
+    /* line 484, ../scss/pages/_singleview.scss */
     .group-body-container .external-link .ext::after {
       font-family: "icomoon";
       content: "\e948";
@@ -9511,71 +9512,71 @@ caption {
       font-size: 16px;
       margin-left: 7px;
       display: inline-block; }
-  /* line 495, ../scss/pages/_singleview.scss */
+  /* line 496, ../scss/pages/_singleview.scss */
   .group-body-container .external-link:hover .ext::after {
     color: #e74712; }
-/* line 502, ../scss/pages/_singleview.scss */
+/* line 503, ../scss/pages/_singleview.scss */
 .group-body-container h2, .group-body-container h3, .group-body-container h4, .group-body-container h5, .group-body-container h6 {
   color: #e74712 !important;
   font-weight: normal;
   font-family: "BentonSans-Bold"; }
-/* line 508, ../scss/pages/_singleview.scss */
+/* line 509, ../scss/pages/_singleview.scss */
 .group-body-container h2 {
   font-size: 22px !important;
   /* Over Desktop design */ }
   @media (min-width: 1025px) {
-    /* line 508, ../scss/pages/_singleview.scss */
+    /* line 509, ../scss/pages/_singleview.scss */
     .group-body-container h2 {
       font-size: 30px !important; } }
-/* line 516, ../scss/pages/_singleview.scss */
+/* line 517, ../scss/pages/_singleview.scss */
 .group-body-container h3 {
   font-size: 20px !important;
   /* Over Desktop design */ }
   @media (min-width: 1025px) {
-    /* line 516, ../scss/pages/_singleview.scss */
+    /* line 517, ../scss/pages/_singleview.scss */
     .group-body-container h3 {
       font-size: 28px !important; } }
-/* line 524, ../scss/pages/_singleview.scss */
+/* line 525, ../scss/pages/_singleview.scss */
 .group-body-container h4 {
   font-size: 18px !important;
   /* Over Desktop design */ }
   @media (min-width: 1025px) {
-    /* line 524, ../scss/pages/_singleview.scss */
+    /* line 525, ../scss/pages/_singleview.scss */
     .group-body-container h4 {
       font-size: 22px !important; } }
-/* line 532, ../scss/pages/_singleview.scss */
+/* line 533, ../scss/pages/_singleview.scss */
 .group-body-container h5, .group-body-container h6 {
   font-size: 18px !important;
   /* Over Desktop design */ }
   @media (min-width: 1025px) {
-    /* line 532, ../scss/pages/_singleview.scss */
+    /* line 533, ../scss/pages/_singleview.scss */
     .group-body-container h5, .group-body-container h6 {
       font-size: 20px !important; } }
 
-/* line 541, ../scss/pages/_singleview.scss */
+/* line 542, ../scss/pages/_singleview.scss */
 .field-name-field-bild {
   margin-bottom: 25px; }
 
-/* line 554, ../scss/pages/_singleview.scss */
+/* line 555, ../scss/pages/_singleview.scss */
 .paragraphs-item-flie-text-mit-bild-links, .paragraphs-item-flie-text-mit-bild-rechts {
   margin: 40px 0;
   overflow: hidden; }
-  /* line 558, ../scss/pages/_singleview.scss */
+  /* line 559, ../scss/pages/_singleview.scss */
   .paragraphs-item-flie-text-mit-bild-links .field-name-field-bild-ref, .paragraphs-item-flie-text-mit-bild-rechts .field-name-field-bild-ref {
     margin: 0;
     /* Desktop design */ }
     @media (min-width: 960px) {
-      /* line 558, ../scss/pages/_singleview.scss */
+      /* line 559, ../scss/pages/_singleview.scss */
       .paragraphs-item-flie-text-mit-bild-links .field-name-field-bild-ref, .paragraphs-item-flie-text-mit-bild-rechts .field-name-field-bild-ref {
         padding-right: 30px; } }
-  /* line 567, ../scss/pages/_singleview.scss */
+  /* line 568, ../scss/pages/_singleview.scss */
   .paragraphs-item-flie-text-mit-bild-links .content .field-name-field-bild-ref, .paragraphs-item-flie-text-mit-bild-rechts .content .field-name-field-bild-ref {
     display: inline-block;
     float: left;
     width: 100%;
     /* Desktop design */ }
     @media (min-width: 960px) {
-      /* line 567, ../scss/pages/_singleview.scss */
+      /* line 568, ../scss/pages/_singleview.scss */
       .paragraphs-item-flie-text-mit-bild-links .content .field-name-field-bild-ref, .paragraphs-item-flie-text-mit-bild-rechts .content .field-name-field-bild-ref {
         width: 50%; } }
 
@@ -9584,25 +9585,25 @@ caption {
     padding:0;
   }
 } */
-/* line 587, ../scss/pages/_singleview.scss */
+/* line 588, ../scss/pages/_singleview.scss */
 .paragraphs-item-flie-text-mit-bild-rechts .content .field-name-field-bild-ref {
   /* Desktop design */
   padding-right: 0;
   float: right; }
   @media (min-width: 960px) {
-    /* line 587, ../scss/pages/_singleview.scss */
+    /* line 588, ../scss/pages/_singleview.scss */
     .paragraphs-item-flie-text-mit-bild-rechts .content .field-name-field-bild-ref {
       padding-left: 30px; } }
 
-/* line 599, ../scss/pages/_singleview.scss */
+/* line 600, ../scss/pages/_singleview.scss */
 .field .field-label {
   font-weight: normal; }
 
-/* line 603, ../scss/pages/_singleview.scss */
+/* line 604, ../scss/pages/_singleview.scss */
 .field-name-field-copyright, .field-name-field-videoquelle {
   font-size: 18px; }
 
-/* line 607, ../scss/pages/_singleview.scss */
+/* line 608, ../scss/pages/_singleview.scss */
 .copyright, .field-name-field-videoquelle .field-item, .field-name-field-videoquelle .field-label {
   font-size: 16px;
   color: #919BAA; }
@@ -9611,14 +9612,14 @@ caption {
     display: inline-block;
     margin-top: 2px;
 } */
-/* line 617, ../scss/pages/_singleview.scss */
+/* line 618, ../scss/pages/_singleview.scss */
 .field-name-field-videounterschrift, .field-name-field-videoquelle {
   margin-bottom: 0; }
 
-/* line 622, ../scss/pages/_singleview.scss */
+/* line 623, ../scss/pages/_singleview.scss */
 .group-page-bottom > * {
   margin-bottom: 80px; }
-/* line 626, ../scss/pages/_singleview.scss */
+/* line 627, ../scss/pages/_singleview.scss */
 .group-page-bottom .view-title, .group-page-bottom .field-label {
   font-size: 20px;
   word-wrap: break-word;
@@ -9627,39 +9628,39 @@ caption {
   font-family: "BentonSans-Bold";
   margin-bottom: 30px; }
   @media (min-width: 767px) {
-    /* line 626, ../scss/pages/_singleview.scss */
+    /* line 627, ../scss/pages/_singleview.scss */
     .group-page-bottom .view-title, .group-page-bottom .field-label {
       font-size: 24px; } }
-/* line 640, ../scss/pages/_singleview.scss */
+/* line 641, ../scss/pages/_singleview.scss */
 .group-page-bottom a {
   color: #273753;
   text-decoration: none; }
-/* line 646, ../scss/pages/_singleview.scss */
+/* line 647, ../scss/pages/_singleview.scss */
 .group-page-bottom .view-sub-wrapper .views-row {
   border-bottom: 1px solid #d2d6dc;
   padding-bottom: 15px;
   margin-bottom: 15px; }
-  /* line 651, ../scss/pages/_singleview.scss */
+  /* line 652, ../scss/pages/_singleview.scss */
   .group-page-bottom .view-sub-wrapper .views-row:last-child {
     border: none;
     padding-bottom: 0;
     margin-bottom: 0; }
-  /* line 659, ../scss/pages/_singleview.scss */
+  /* line 660, ../scss/pages/_singleview.scss */
   .group-page-bottom .view-sub-wrapper .views-row .views-field:last-child .field-content {
     font-size: 16px;
     color: #3c506e; }
-/* line 670, ../scss/pages/_singleview.scss */
+/* line 671, ../scss/pages/_singleview.scss */
 .group-page-bottom > .field .field-items .field-item {
   border-bottom: 1px solid #d2d6dc;
   padding-bottom: 15px;
   margin-bottom: 15px; }
-  /* line 675, ../scss/pages/_singleview.scss */
+  /* line 676, ../scss/pages/_singleview.scss */
   .group-page-bottom > .field .field-items .field-item:last-child {
     border: none;
     padding-bottom: 0;
     margin-bottom: 0; }
 
-/* line 692, ../scss/pages/_singleview.scss */
+/* line 693, ../scss/pages/_singleview.scss */
 .view-id-related_content.view-display-id-block_2 .views-row .row-container .views-field .field-content a {
   padding-left: 35px;
   position: relative;
@@ -9668,10 +9669,10 @@ caption {
   font-size: 18px;
   /* Tablet design */ }
   @media (min-width: 767px) {
-    /* line 692, ../scss/pages/_singleview.scss */
+    /* line 693, ../scss/pages/_singleview.scss */
     .view-id-related_content.view-display-id-block_2 .views-row .row-container .views-field .field-content a {
       font-size: 20px; } }
-  /* line 704, ../scss/pages/_singleview.scss */
+  /* line 705, ../scss/pages/_singleview.scss */
   .view-id-related_content.view-display-id-block_2 .views-row .row-container .views-field .field-content a::before {
     font-family: "icomoon";
     content: "\e944";
@@ -9680,11 +9681,11 @@ caption {
     left: 0;
     position: absolute;
     top: 6px; }
-/* line 716, ../scss/pages/_singleview.scss */
+/* line 717, ../scss/pages/_singleview.scss */
 .view-id-related_content.view-display-id-block_2 .views-row .row-container .views-field:last-child {
   padding-left: 35px; }
 
-/* line 731, ../scss/pages/_singleview.scss */
+/* line 732, ../scss/pages/_singleview.scss */
 .field-name-field-meldungen-zum-thema .field-items .field-item a:not(.external-link), .field-name-field-initiatoren-zum-thema .field-items .field-item a:not(.external-link), .field-name-field-projekte-zum-thema .field-items .field-item a:not(.external-link), .field-name-field-f-rderbekanntmachungen .field-items .field-item a:not(.external-link), .field-name-field-weiterf-hrende-links .field-items .field-item a:not(.external-link) {
   position: relative;
   display: inline-block;
@@ -9692,10 +9693,10 @@ caption {
   font-size: 18px;
   /* Tablet design */ }
   @media (min-width: 767px) {
-    /* line 731, ../scss/pages/_singleview.scss */
+    /* line 732, ../scss/pages/_singleview.scss */
     .field-name-field-meldungen-zum-thema .field-items .field-item a:not(.external-link), .field-name-field-initiatoren-zum-thema .field-items .field-item a:not(.external-link), .field-name-field-projekte-zum-thema .field-items .field-item a:not(.external-link), .field-name-field-f-rderbekanntmachungen .field-items .field-item a:not(.external-link), .field-name-field-weiterf-hrende-links .field-items .field-item a:not(.external-link) {
       font-size: 20px; } }
-  /* line 742, ../scss/pages/_singleview.scss */
+  /* line 743, ../scss/pages/_singleview.scss */
   .field-name-field-meldungen-zum-thema .field-items .field-item a:not(.external-link)::before, .field-name-field-initiatoren-zum-thema .field-items .field-item a:not(.external-link)::before, .field-name-field-projekte-zum-thema .field-items .field-item a:not(.external-link)::before, .field-name-field-f-rderbekanntmachungen .field-items .field-item a:not(.external-link)::before, .field-name-field-weiterf-hrende-links .field-items .field-item a:not(.external-link)::before {
     font-family: "icomoon";
     content: "\e93f";
@@ -9705,11 +9706,11 @@ caption {
     position: absolute;
     top: 4px; }
 
-/* line 759, ../scss/pages/_singleview.scss */
+/* line 760, ../scss/pages/_singleview.scss */
 .field-name-field-weiterf-hrende-links .field-item a {
   font-size: 18px !important; }
 
-/* line 771, ../scss/pages/_singleview.scss */
+/* line 772, ../scss/pages/_singleview.scss */
 .view-id-related_content.view-display-id-block_1 .views-row .row-container .views-field {
                     /* &.views-field-field-event-datum {
                         float: left;
@@ -9720,34 +9721,34 @@ caption {
                             font-weight: bold;
                         }
                     }  */ }
-  /* line 783, ../scss/pages/_singleview.scss */
+  /* line 784, ../scss/pages/_singleview.scss */
   .view-id-related_content.view-display-id-block_1 .views-row .row-container .views-field .field-content {
     font-size: 18px;
     /* Tablet design */ }
     @media (min-width: 767px) {
-      /* line 783, ../scss/pages/_singleview.scss */
+      /* line 784, ../scss/pages/_singleview.scss */
       .view-id-related_content.view-display-id-block_1 .views-row .row-container .views-field .field-content {
         font-size: 22px; } }
-  /* line 792, ../scss/pages/_singleview.scss */
+  /* line 793, ../scss/pages/_singleview.scss */
   .view-id-related_content.view-display-id-block_1 .views-row .row-container .views-field .field-event-datum .date-display-range {
     float: left;
     margin-right: 8px; }
-  /* line 797, ../scss/pages/_singleview.scss */
+  /* line 798, ../scss/pages/_singleview.scss */
   .view-id-related_content.view-display-id-block_1 .views-row .row-container .views-field .field-event-datum * {
     color: #e74712;
     font-weight: normal;
     font-family: "BentonSans-Bold"; }
-  /* line 804, ../scss/pages/_singleview.scss */
+  /* line 805, ../scss/pages/_singleview.scss */
   .view-id-related_content.view-display-id-block_1 .views-row .row-container .views-field .date-display-single {
     color: #e74712;
     margin-right: 8px;
     font-weight: normal;
     font-family: "BentonSans-Bold"; }
 
-/* line 819, ../scss/pages/_singleview.scss */
+/* line 820, ../scss/pages/_singleview.scss */
 .view-latest-content-doorpage > .view-sub-wrapper {
   padding: 0; }
-  /* line 824, ../scss/pages/_singleview.scss */
+  /* line 825, ../scss/pages/_singleview.scss */
   .view-latest-content-doorpage > .view-sub-wrapper .left-block {
     width: 100%;
     padding: 15px;
@@ -9755,7 +9756,7 @@ caption {
     /* Tablet design */
     /* Over Desktop design */ }
     @media (min-width: 767px) {
-      /* line 824, ../scss/pages/_singleview.scss */
+      /* line 825, ../scss/pages/_singleview.scss */
       .view-latest-content-doorpage > .view-sub-wrapper .left-block {
         padding: 30px;
         clear: both;
@@ -9763,71 +9764,71 @@ caption {
         width: 100%;
         padding-bottom: 0; } }
     @media (min-width: 1025px) {
-      /* line 824, ../scss/pages/_singleview.scss */
+      /* line 825, ../scss/pages/_singleview.scss */
       .view-latest-content-doorpage > .view-sub-wrapper .left-block {
         width: 66.66%;
         float: left;
         padding-right: 0;
         padding-top: 0;
         padding-left: 0; } }
-    /* line 847, ../scss/pages/_singleview.scss */
+    /* line 848, ../scss/pages/_singleview.scss */
     .view-latest-content-doorpage > .view-sub-wrapper .left-block .view-header {
       padding-bottom: 30px;
       font-size: 28px; }
-      /* line 851, ../scss/pages/_singleview.scss */
+      /* line 852, ../scss/pages/_singleview.scss */
       .view-latest-content-doorpage > .view-sub-wrapper .left-block .view-header .pane-title {
         font-weight: normal;
         font-family: "BentonSans-Bold"; }
-    /* line 857, ../scss/pages/_singleview.scss */
+    /* line 858, ../scss/pages/_singleview.scss */
     .view-latest-content-doorpage > .view-sub-wrapper .left-block .inner-wrapper {
       width: 100%;
       /* Tablet design */
       /* Over Desktop design */ }
       @media (min-width: 767px) {
-        /* line 857, ../scss/pages/_singleview.scss */
+        /* line 858, ../scss/pages/_singleview.scss */
         .view-latest-content-doorpage > .view-sub-wrapper .left-block .inner-wrapper {
           width: 50%;
           float: left;
           padding-right: 20px; } }
       @media (min-width: 1025px) {
-        /* line 857, ../scss/pages/_singleview.scss */
+        /* line 858, ../scss/pages/_singleview.scss */
         .view-latest-content-doorpage > .view-sub-wrapper .left-block .inner-wrapper {
           width: 50%;
           float: left;
           padding-right: 20px; } }
-    /* line 874, ../scss/pages/_singleview.scss */
+    /* line 875, ../scss/pages/_singleview.scss */
     .view-latest-content-doorpage > .view-sub-wrapper .left-block > .view-latest-content-doorpage {
       width: 100%;
       /* Tablet design */
       /* Desktop design */
       /* Over Desktop design */ }
       @media (min-width: 767px) {
-        /* line 874, ../scss/pages/_singleview.scss */
+        /* line 875, ../scss/pages/_singleview.scss */
         .view-latest-content-doorpage > .view-sub-wrapper .left-block > .view-latest-content-doorpage {
           width: 50%;
           float: left;
           padding-left: 15px; } }
       @media (min-width: 960px) {
-        /* line 874, ../scss/pages/_singleview.scss */
+        /* line 875, ../scss/pages/_singleview.scss */
         .view-latest-content-doorpage > .view-sub-wrapper .left-block > .view-latest-content-doorpage {
           width: 50%;
           float: left;
           padding-right: 0; } }
       @media (min-width: 1025px) {
-        /* line 874, ../scss/pages/_singleview.scss */
+        /* line 875, ../scss/pages/_singleview.scss */
         .view-latest-content-doorpage > .view-sub-wrapper .left-block > .view-latest-content-doorpage {
           padding: 0 10px; } }
-      /* line 896, ../scss/pages/_singleview.scss */
+      /* line 897, ../scss/pages/_singleview.scss */
       .view-latest-content-doorpage > .view-sub-wrapper .left-block > .view-latest-content-doorpage .view-sub-wrapper {
         width: auto; }
-    /* line 902, ../scss/pages/_singleview.scss */
+    /* line 903, ../scss/pages/_singleview.scss */
     .view-latest-content-doorpage > .view-sub-wrapper .left-block .inner-wrapper .view-content .views-row a, .view-latest-content-doorpage > .view-sub-wrapper .left-block > .view-latest-content-doorpage .view-content .views-row a {
       text-decoration: none;
       color: inherit !important; }
-      /* line 906, ../scss/pages/_singleview.scss */
+      /* line 907, ../scss/pages/_singleview.scss */
       .view-latest-content-doorpage > .view-sub-wrapper .left-block .inner-wrapper .view-content .views-row a:focus, .view-latest-content-doorpage > .view-sub-wrapper .left-block > .view-latest-content-doorpage .view-content .views-row a:focus {
         outline: 1px dotted #273753 !important; }
-      /* line 910, ../scss/pages/_singleview.scss */
+      /* line 911, ../scss/pages/_singleview.scss */
       .view-latest-content-doorpage > .view-sub-wrapper .left-block .inner-wrapper .view-content .views-row a .row-container, .view-latest-content-doorpage > .view-sub-wrapper .left-block > .view-latest-content-doorpage .view-content .views-row a .row-container {
         background: #ffffff;
         height: auto;
@@ -9841,57 +9842,57 @@ caption {
         /* Tablet design */
         /* Over Desktop design */ }
         @media (min-width: 767px) {
-          /* line 910, ../scss/pages/_singleview.scss */
+          /* line 911, ../scss/pages/_singleview.scss */
           .view-latest-content-doorpage > .view-sub-wrapper .left-block .inner-wrapper .view-content .views-row a .row-container, .view-latest-content-doorpage > .view-sub-wrapper .left-block > .view-latest-content-doorpage .view-content .views-row a .row-container {
             height: 430px; } }
         @media (min-width: 1025px) {
-          /* line 910, ../scss/pages/_singleview.scss */
+          /* line 911, ../scss/pages/_singleview.scss */
           .view-latest-content-doorpage > .view-sub-wrapper .left-block .inner-wrapper .view-content .views-row a .row-container, .view-latest-content-doorpage > .view-sub-wrapper .left-block > .view-latest-content-doorpage .view-content .views-row a .row-container {
             height: 410px; } }
-        /* line 931, ../scss/pages/_singleview.scss */
+        /* line 932, ../scss/pages/_singleview.scss */
         .view-latest-content-doorpage > .view-sub-wrapper .left-block .inner-wrapper .view-content .views-row a .row-container:hover, .view-latest-content-doorpage > .view-sub-wrapper .left-block > .view-latest-content-doorpage .view-content .views-row a .row-container:hover {
           background: #eff2f7;
           border: 1px solid #dbdfe3; }
-        /* line 936, ../scss/pages/_singleview.scss */
+        /* line 937, ../scss/pages/_singleview.scss */
         .view-latest-content-doorpage > .view-sub-wrapper .left-block .inner-wrapper .view-content .views-row a .row-container .views-field-field-themenzuweisung, .view-latest-content-doorpage > .view-sub-wrapper .left-block > .view-latest-content-doorpage .view-content .views-row a .row-container .views-field-field-themenzuweisung {
           margin-bottom: 30px; }
-          /* line 939, ../scss/pages/_singleview.scss */
+          /* line 940, ../scss/pages/_singleview.scss */
           .view-latest-content-doorpage > .view-sub-wrapper .left-block .inner-wrapper .view-content .views-row a .row-container .views-field-field-themenzuweisung img, .view-latest-content-doorpage > .view-sub-wrapper .left-block > .view-latest-content-doorpage .view-content .views-row a .row-container .views-field-field-themenzuweisung img {
             display: inline-block;
             margin-right: 10px; }
-        /* line 945, ../scss/pages/_singleview.scss */
+        /* line 946, ../scss/pages/_singleview.scss */
         .view-latest-content-doorpage > .view-sub-wrapper .left-block .inner-wrapper .view-content .views-row a .row-container .views-field-type, .view-latest-content-doorpage > .view-sub-wrapper .left-block > .view-latest-content-doorpage .view-content .views-row a .row-container .views-field-type {
           color: #e74712;
           font-weight: normal;
           padding-bottom: 15px;
           font-family: "BentonSans-Bold"; }
-        /* line 952, ../scss/pages/_singleview.scss */
+        /* line 953, ../scss/pages/_singleview.scss */
         .view-latest-content-doorpage > .view-sub-wrapper .left-block .inner-wrapper .view-content .views-row a .row-container .views-field-title, .view-latest-content-doorpage > .view-sub-wrapper .left-block > .view-latest-content-doorpage .view-content .views-row a .row-container .views-field-title {
           padding-bottom: 70px; }
-          /* line 955, ../scss/pages/_singleview.scss */
+          /* line 956, ../scss/pages/_singleview.scss */
           .view-latest-content-doorpage > .view-sub-wrapper .left-block .inner-wrapper .view-content .views-row a .row-container .views-field-title .field-content, .view-latest-content-doorpage > .view-sub-wrapper .left-block > .view-latest-content-doorpage .view-content .views-row a .row-container .views-field-title .field-content {
             color: #273753; }
-        /* line 960, ../scss/pages/_singleview.scss */
+        /* line 961, ../scss/pages/_singleview.scss */
         .view-latest-content-doorpage > .view-sub-wrapper .left-block .inner-wrapper .view-content .views-row a .row-container .views-field-field-datum, .view-latest-content-doorpage > .view-sub-wrapper .left-block > .view-latest-content-doorpage .view-content .views-row a .row-container .views-field-field-datum {
           position: absolute;
           bottom: 30px; }
-          /* line 964, ../scss/pages/_singleview.scss */
+          /* line 965, ../scss/pages/_singleview.scss */
           .view-latest-content-doorpage > .view-sub-wrapper .left-block .inner-wrapper .view-content .views-row a .row-container .views-field-field-datum .date-display-single, .view-latest-content-doorpage > .view-sub-wrapper .left-block > .view-latest-content-doorpage .view-content .views-row a .row-container .views-field-field-datum .date-display-single {
             font-size: 17px;
             color: #949d9e; }
-    /* line 973, ../scss/pages/_singleview.scss */
+    /* line 974, ../scss/pages/_singleview.scss */
     .view-latest-content-doorpage > .view-sub-wrapper .left-block .view-footer {
       padding-top: 30px;
       padding-bottom: 60px;
       position: relative; }
-      /* line 978, ../scss/pages/_singleview.scss */
+      /* line 979, ../scss/pages/_singleview.scss */
       .view-latest-content-doorpage > .view-sub-wrapper .left-block .view-footer a {
         color: #273753; }
-    /* line 986, ../scss/pages/_singleview.scss */
+    /* line 987, ../scss/pages/_singleview.scss */
     .view-latest-content-doorpage > .view-sub-wrapper .left-block + .view-latest-content-doorpage .pane-title {
       font-weight: normal;
       font-family: "BentonSans-Bold"; }
-  /* line 993, ../scss/pages/_singleview.scss */
+  /* line 994, ../scss/pages/_singleview.scss */
   .view-latest-content-doorpage > .view-sub-wrapper > .view-latest-content-doorpage {
     width: 100%;
     padding: 15px;
@@ -9900,42 +9901,42 @@ caption {
     /* Desktop design */
     /* Over Desktop design */ }
     @media (min-width: 767px) {
-      /* line 993, ../scss/pages/_singleview.scss */
+      /* line 994, ../scss/pages/_singleview.scss */
       .view-latest-content-doorpage > .view-sub-wrapper > .view-latest-content-doorpage {
         width: 50%;
         float: left;
         padding: 30px;
         padding-top: 0; } }
     @media (min-width: 960px) {
-      /* line 993, ../scss/pages/_singleview.scss */
+      /* line 994, ../scss/pages/_singleview.scss */
       .view-latest-content-doorpage > .view-sub-wrapper > .view-latest-content-doorpage {
         width: 50%;
         float: left;
         padding-right: 30px;
         padding-left: 30px; } }
     @media (min-width: 1025px) {
-      /* line 993, ../scss/pages/_singleview.scss */
+      /* line 994, ../scss/pages/_singleview.scss */
       .view-latest-content-doorpage > .view-sub-wrapper > .view-latest-content-doorpage {
         width: 33.33%;
         float: left;
         padding-left: 20px;
         padding-top: 0;
         padding-right: 0; } }
-    /* line 1023, ../scss/pages/_singleview.scss */
+    /* line 1024, ../scss/pages/_singleview.scss */
     .view-latest-content-doorpage > .view-sub-wrapper > .view-latest-content-doorpage .view-sub-wrapper {
       width: auto; }
-      /* line 1026, ../scss/pages/_singleview.scss */
+      /* line 1027, ../scss/pages/_singleview.scss */
       .view-latest-content-doorpage > .view-sub-wrapper > .view-latest-content-doorpage .view-sub-wrapper .view-header {
         padding-bottom: 30px;
         font-size: 28px; }
-      /* line 1031, ../scss/pages/_singleview.scss */
+      /* line 1032, ../scss/pages/_singleview.scss */
       .view-latest-content-doorpage > .view-sub-wrapper > .view-latest-content-doorpage .view-sub-wrapper .view-content .views-row a {
         text-decoration: none;
         color: inherit !important; }
-        /* line 1035, ../scss/pages/_singleview.scss */
+        /* line 1036, ../scss/pages/_singleview.scss */
         .view-latest-content-doorpage > .view-sub-wrapper > .view-latest-content-doorpage .view-sub-wrapper .view-content .views-row a:focus {
           outline: 1px dotted #273753 !important; }
-        /* line 1039, ../scss/pages/_singleview.scss */
+        /* line 1040, ../scss/pages/_singleview.scss */
         .view-latest-content-doorpage > .view-sub-wrapper > .view-latest-content-doorpage .view-sub-wrapper .view-content .views-row a .row-container {
           background: #ffffff;
           height: auto;
@@ -9949,91 +9950,91 @@ caption {
           /* Tablet design */
           /* Over Desktop design */ }
           @media (min-width: 767px) {
-            /* line 1039, ../scss/pages/_singleview.scss */
+            /* line 1040, ../scss/pages/_singleview.scss */
             .view-latest-content-doorpage > .view-sub-wrapper > .view-latest-content-doorpage .view-sub-wrapper .view-content .views-row a .row-container {
               height: 430px; } }
           @media (min-width: 1025px) {
-            /* line 1039, ../scss/pages/_singleview.scss */
+            /* line 1040, ../scss/pages/_singleview.scss */
             .view-latest-content-doorpage > .view-sub-wrapper > .view-latest-content-doorpage .view-sub-wrapper .view-content .views-row a .row-container {
               height: 410px; } }
-          /* line 1060, ../scss/pages/_singleview.scss */
+          /* line 1061, ../scss/pages/_singleview.scss */
           .view-latest-content-doorpage > .view-sub-wrapper > .view-latest-content-doorpage .view-sub-wrapper .view-content .views-row a .row-container:hover {
             background: #eff2f7;
             border: 1px solid #dbdfe3; }
-          /* line 1065, ../scss/pages/_singleview.scss */
+          /* line 1066, ../scss/pages/_singleview.scss */
           .view-latest-content-doorpage > .view-sub-wrapper > .view-latest-content-doorpage .view-sub-wrapper .view-content .views-row a .row-container .views-field-field-themenzuweisung {
             margin-bottom: 30px; }
-            /* line 1068, ../scss/pages/_singleview.scss */
+            /* line 1069, ../scss/pages/_singleview.scss */
             .view-latest-content-doorpage > .view-sub-wrapper > .view-latest-content-doorpage .view-sub-wrapper .view-content .views-row a .row-container .views-field-field-themenzuweisung img {
               display: inline-block;
               margin-right: 10px; }
-          /* line 1074, ../scss/pages/_singleview.scss */
+          /* line 1075, ../scss/pages/_singleview.scss */
           .view-latest-content-doorpage > .view-sub-wrapper > .view-latest-content-doorpage .view-sub-wrapper .view-content .views-row a .row-container .views-field-field-event-datum {
             color: #e74712;
             font-weight: normal;
             padding-bottom: 15px;
             font-family: "BentonSans-Bold"; }
-          /* line 1081, ../scss/pages/_singleview.scss */
+          /* line 1082, ../scss/pages/_singleview.scss */
           .view-latest-content-doorpage > .view-sub-wrapper > .view-latest-content-doorpage .view-sub-wrapper .view-content .views-row a .row-container .views-field-title {
             padding-bottom: 70px; }
-            /* line 1084, ../scss/pages/_singleview.scss */
+            /* line 1085, ../scss/pages/_singleview.scss */
             .view-latest-content-doorpage > .view-sub-wrapper > .view-latest-content-doorpage .view-sub-wrapper .view-content .views-row a .row-container .views-field-title .field-content {
               color: #273753; }
-          /* line 1089, ../scss/pages/_singleview.scss */
+          /* line 1090, ../scss/pages/_singleview.scss */
           .view-latest-content-doorpage > .view-sub-wrapper > .view-latest-content-doorpage .view-sub-wrapper .view-content .views-row a .row-container .views-field-field-ort {
             position: absolute;
             bottom: 30px; }
-            /* line 1093, ../scss/pages/_singleview.scss */
+            /* line 1094, ../scss/pages/_singleview.scss */
             .view-latest-content-doorpage > .view-sub-wrapper > .view-latest-content-doorpage .view-sub-wrapper .view-content .views-row a .row-container .views-field-field-ort .field-content {
               font-size: 17px;
               color: #949d9e; }
-      /* line 1101, ../scss/pages/_singleview.scss */
+      /* line 1102, ../scss/pages/_singleview.scss */
       .view-latest-content-doorpage > .view-sub-wrapper > .view-latest-content-doorpage .view-sub-wrapper .view-footer {
         padding-top: 30px;
         padding-bottom: 60px;
         position: relative; }
-        /* line 1106, ../scss/pages/_singleview.scss */
+        /* line 1107, ../scss/pages/_singleview.scss */
         .view-latest-content-doorpage > .view-sub-wrapper > .view-latest-content-doorpage .view-sub-wrapper .view-footer a {
           color: #273753; }
 
-/* line 1119, ../scss/pages/_singleview.scss */
+/* line 1120, ../scss/pages/_singleview.scss */
 .group-top-wrapper {
   margin-bottom: 40px; }
-  /* line 1127, ../scss/pages/_singleview.scss */
+  /* line 1128, ../scss/pages/_singleview.scss */
   .group-top-wrapper .group-left-top-wrapper > * {
     margin-bottom: 10px; }
-    /* line 1130, ../scss/pages/_singleview.scss */
+    /* line 1131, ../scss/pages/_singleview.scss */
     .group-top-wrapper .group-left-top-wrapper > *:last-child {
       margin: 0; }
-  /* line 1141, ../scss/pages/_singleview.scss */
+  /* line 1142, ../scss/pages/_singleview.scss */
   .group-top-wrapper .group-middle-wrapper, .group-top-wrapper .field-name-field-zeit, .group-top-wrapper .field-name-field-ort {
     border-bottom: 1px solid #c5cbd5;
     padding-bottom: 15px;
     margin-bottom: 15px; }
-  /* line 1147, ../scss/pages/_singleview.scss */
+  /* line 1148, ../scss/pages/_singleview.scss */
   .group-top-wrapper .group-middle-wrapper {
     display: inline-block;
     width: 100%; }
-    /* line 1153, ../scss/pages/_singleview.scss */
+    /* line 1154, ../scss/pages/_singleview.scss */
     .group-top-wrapper .group-middle-wrapper .view-id-termin.view-display-id-block_1 {
       margin: 10px 0;
       clear: both;
       float: left;
       /* Tablet design */ }
       @media (min-width: 767px) {
-        /* line 1153, ../scss/pages/_singleview.scss */
+        /* line 1154, ../scss/pages/_singleview.scss */
         .group-top-wrapper .group-middle-wrapper .view-id-termin.view-display-id-block_1 {
           clear: none;
           float: right;
           margin: 5px 0 0; } }
-      /* line 1165, ../scss/pages/_singleview.scss */
+      /* line 1166, ../scss/pages/_singleview.scss */
       .group-top-wrapper .group-middle-wrapper .view-id-termin.view-display-id-block_1 .view-content {
         display: none; }
-      /* line 1169, ../scss/pages/_singleview.scss */
+      /* line 1170, ../scss/pages/_singleview.scss */
       .group-top-wrapper .group-middle-wrapper .view-id-termin.view-display-id-block_1 .view-sub-wrapper, .group-top-wrapper .group-middle-wrapper .view-id-termin.view-display-id-block_1 .feed-icon {
         width: auto;
         float: right; }
-        /* line 1173, ../scss/pages/_singleview.scss */
+        /* line 1174, ../scss/pages/_singleview.scss */
         .group-top-wrapper .group-middle-wrapper .view-id-termin.view-display-id-block_1 .view-sub-wrapper .view-header, .group-top-wrapper .group-middle-wrapper .view-id-termin.view-display-id-block_1 .feed-icon .view-header {
           width: auto;
           margin: 0;
@@ -10041,45 +10042,45 @@ caption {
           color: #273753;
           font-size: 16px;
           font-weight: bold; }
-          /* line 1181, ../scss/pages/_singleview.scss */
+          /* line 1182, ../scss/pages/_singleview.scss */
           .group-top-wrapper .group-middle-wrapper .view-id-termin.view-display-id-block_1 .view-sub-wrapper .view-header p, .group-top-wrapper .group-middle-wrapper .view-id-termin.view-display-id-block_1 .feed-icon .view-header p {
             margin: 0; }
-      /* line 1188, ../scss/pages/_singleview.scss */
+      /* line 1189, ../scss/pages/_singleview.scss */
       .group-top-wrapper .group-middle-wrapper .view-id-termin.view-display-id-block_1 .feed-icon .ical-icon {
         text-decoration: none; }
-        /* line 1191, ../scss/pages/_singleview.scss */
+        /* line 1192, ../scss/pages/_singleview.scss */
         .group-top-wrapper .group-middle-wrapper .view-id-termin.view-display-id-block_1 .feed-icon .ical-icon::before {
           content: "\e900";
           font-family: "icomoon";
           color: #e74712;
           margin: 3px 10px 0 0;
           display: inline-block; }
-        /* line 1199, ../scss/pages/_singleview.scss */
+        /* line 1200, ../scss/pages/_singleview.scss */
         .group-top-wrapper .group-middle-wrapper .view-id-termin.view-display-id-block_1 .feed-icon .ical-icon img {
           display: none; }
-    /* line 1207, ../scss/pages/_singleview.scss */
+    /* line 1208, ../scss/pages/_singleview.scss */
     .group-top-wrapper .group-middle-wrapper .field-name-field-event-datum {
       clear: both;
       float: left;
       /* Tablet design */ }
       @media (min-width: 767px) {
-        /* line 1207, ../scss/pages/_singleview.scss */
+        /* line 1208, ../scss/pages/_singleview.scss */
         .group-top-wrapper .group-middle-wrapper .field-name-field-event-datum {
           clear: none;
           float: left; } }
-    /* line 1217, ../scss/pages/_singleview.scss */
+    /* line 1218, ../scss/pages/_singleview.scss */
     .group-top-wrapper .group-middle-wrapper .addtocalendar {
       float: left;
       clear: both;
       margin: 15px 0;
       /* Tablet design */ }
       @media (min-width: 767px) {
-        /* line 1217, ../scss/pages/_singleview.scss */
+        /* line 1218, ../scss/pages/_singleview.scss */
         .group-top-wrapper .group-middle-wrapper .addtocalendar {
           clear: none;
           float: right;
           margin: 0; } }
-      /* line 1229, ../scss/pages/_singleview.scss */
+      /* line 1230, ../scss/pages/_singleview.scss */
       .group-top-wrapper .group-middle-wrapper .addtocalendar > a {
         background: none;
         box-shadow: none;
@@ -10090,7 +10091,7 @@ caption {
         margin-top: 8px;
         position: relative;
         top: 0px !important; }
-        /* line 1240, ../scss/pages/_singleview.scss */
+        /* line 1241, ../scss/pages/_singleview.scss */
         .group-top-wrapper .group-middle-wrapper .addtocalendar > a::before {
           content: "\e900";
           font-family: "icomoon";
@@ -10099,25 +10100,25 @@ caption {
           margin-right: 10px;
           margin-top: 1px;
           float: left; }
-        /* line 1250, ../scss/pages/_singleview.scss */
+        /* line 1251, ../scss/pages/_singleview.scss */
         .group-top-wrapper .group-middle-wrapper .addtocalendar > a + .atcb-list {
           width: 190px; }
-          /* line 1255, ../scss/pages/_singleview.scss */
+          /* line 1256, ../scss/pages/_singleview.scss */
           .group-top-wrapper .group-middle-wrapper .addtocalendar > a + .atcb-list li a:hover {
             background: #e74712; }
-  /* line 1265, ../scss/pages/_singleview.scss */
+  /* line 1266, ../scss/pages/_singleview.scss */
   .group-top-wrapper .field-name-field-ort {
     border: none; }
-  /* line 1269, ../scss/pages/_singleview.scss */
+  /* line 1270, ../scss/pages/_singleview.scss */
   .group-top-wrapper .field-name-field-event-datum {
     font-size: 28px;
     color: #e74712;
     font-weight: bold; }
-    /* line 1274, ../scss/pages/_singleview.scss */
+    /* line 1275, ../scss/pages/_singleview.scss */
     .group-top-wrapper .field-name-field-event-datum .field-label {
       font-weight: bold; }
 
-/* line 1281, ../scss/pages/_singleview.scss */
+/* line 1282, ../scss/pages/_singleview.scss */
 .field-name-field-link-zur-anmeldung a, .field-name-field-zur-website a {
   position: relative;
   bottom: auto;
@@ -10126,75 +10127,75 @@ caption {
   padding: 14px 40px 14px 55px;
   margin: 26px 0 0;
   float: left; }
-  /* line 1292, ../scss/pages/_singleview.scss */
+  /* line 1293, ../scss/pages/_singleview.scss */
   .field-name-field-link-zur-anmeldung a::before, .field-name-field-zur-website a::before {
     left: 24px;
     top: 19px; }
-  /* line 1297, ../scss/pages/_singleview.scss */
+  /* line 1298, ../scss/pages/_singleview.scss */
   .field-name-field-link-zur-anmeldung a:hover, .field-name-field-zur-website a:hover {
     color: #e74712; }
 
-/* line 1304, ../scss/pages/_singleview.scss */
+/* line 1305, ../scss/pages/_singleview.scss */
 .field-name-field-zur-website a {
   margin: 26px 0 45px; }
 
-/* line 1311, ../scss/pages/_singleview.scss */
+/* line 1312, ../scss/pages/_singleview.scss */
 .field-name-field-bis-auf-weiteres, .field-name-field-stichtag {
   font-size: 28px;
   color: #e74712;
   border-bottom: 1px solid #c5cbd5;
   padding-bottom: 15px;
   margin-bottom: 15px; }
-  /* line 1318, ../scss/pages/_singleview.scss */
+  /* line 1319, ../scss/pages/_singleview.scss */
   .field-name-field-bis-auf-weiteres .field-label, .field-name-field-stichtag .field-label {
     font-weight: normal;
     font-family: "BentonSans-Bold"; }
 
-/* line 1324, ../scss/pages/_singleview.scss */
+/* line 1325, ../scss/pages/_singleview.scss */
 .field-name-field-ausschreibende-stelle {
   margin-bottom: 45px;
   font-size: 22px; }
-  /* line 1328, ../scss/pages/_singleview.scss */
+  /* line 1329, ../scss/pages/_singleview.scss */
   .field-name-field-ausschreibende-stelle .external-link {
     padding-left: 5px;
     padding-right: 35px;
     font-size: 22px; }
-    /* line 1333, ../scss/pages/_singleview.scss */
+    /* line 1334, ../scss/pages/_singleview.scss */
     .field-name-field-ausschreibende-stelle .external-link::before {
       left: auto;
       right: 0;
       top: 5px; }
 
-/* line 1343, ../scss/pages/_singleview.scss */
+/* line 1344, ../scss/pages/_singleview.scss */
 .field-name-field-herausgeber {
   border-bottom: 1px solid #c5cbd5;
   padding-bottom: 15px;
   margin-bottom: 15px; }
-  /* line 1349, ../scss/pages/_singleview.scss */
+  /* line 1350, ../scss/pages/_singleview.scss */
   .field-name-field-herausgeber .field-label::before {
     content: "\e90f"; }
 
-/* line 1355, ../scss/pages/_singleview.scss */
+/* line 1356, ../scss/pages/_singleview.scss */
 .field-name-field-herausgeber, .field-name-field-ver-ffentlichungsdatum {
   font-size: 18px; }
-  /* line 1359, ../scss/pages/_singleview.scss */
+  /* line 1360, ../scss/pages/_singleview.scss */
   .field-name-field-herausgeber .field-label::before, .field-name-field-ver-ffentlichungsdatum .field-label::before {
     font-family: "icomoon";
     color: #a0a9b7;
     margin-right: 10px; }
 
-/* line 1367, ../scss/pages/_singleview.scss */
+/* line 1368, ../scss/pages/_singleview.scss */
 .field-name-field-ver-ffentlichungsdatum {
   margin-bottom: 45px; }
-  /* line 1371, ../scss/pages/_singleview.scss */
+  /* line 1372, ../scss/pages/_singleview.scss */
   .field-name-field-ver-ffentlichungsdatum .field-label::before {
     content: "\e90b"; }
 
-/* line 1379, ../scss/pages/_singleview.scss */
+/* line 1380, ../scss/pages/_singleview.scss */
 .node-unpublished {
   background: none; }
 
-/* line 1389, ../scss/pages/_singleview.scss */
+/* line 1390, ../scss/pages/_singleview.scss */
 .view-id-related_content.view-display-id-block_3 .views-row .field-content a {
   background: #e74712;
   border: none;
@@ -10204,24 +10205,24 @@ caption {
   font-size: 16px;
   /* Tablet design */ }
   @media (min-width: 520px) {
-    /* line 1389, ../scss/pages/_singleview.scss */
+    /* line 1390, ../scss/pages/_singleview.scss */
     .view-id-related_content.view-display-id-block_3 .views-row .field-content a {
       font-size: 20px; } }
-  /* line 1404, ../scss/pages/_singleview.scss */
+  /* line 1405, ../scss/pages/_singleview.scss */
   .view-id-related_content.view-display-id-block_3 .views-row .field-content a::before {
     color: #ffffff;
     float: right;
     margin-left: 10px;
     position: static; }
 
-/* line 1418, ../scss/pages/_singleview.scss */
+/* line 1419, ../scss/pages/_singleview.scss */
 .field-name-field-ansprechpartner-kontaktdat, .field-name-field-weitere-details {
   border-bottom: 1px solid #c5cbd5;
   padding-bottom: 15px;
   margin-bottom: 15px;
   font-size: 18px; }
 
-/* line 1426, ../scss/pages/_singleview.scss */
+/* line 1427, ../scss/pages/_singleview.scss */
 .field-name-field-weitere-details::before {
   content: "\e907";
   font-family: "icomoon";
@@ -10229,7 +10230,7 @@ caption {
   float: left;
   color: #a0a9b7; }
 
-/* line 1436, ../scss/pages/_singleview.scss */
+/* line 1437, ../scss/pages/_singleview.scss */
 .external-link {
   color: #273753;
   padding-left: 34px;
@@ -10237,7 +10238,7 @@ caption {
   font-size: 18px;
   position: relative;
   display: inline-block; }
-  /* line 1444, ../scss/pages/_singleview.scss */
+  /* line 1445, ../scss/pages/_singleview.scss */
   .external-link::before {
     left: 0;
     position: absolute;
@@ -10246,7 +10247,7 @@ caption {
     content: "\e948";
     color: #919BAA;
     font-size: 16px; }
-  /* line 1454, ../scss/pages/_singleview.scss */
+  /* line 1455, ../scss/pages/_singleview.scss */
   .external-link .ext {
     display: none; }
 
