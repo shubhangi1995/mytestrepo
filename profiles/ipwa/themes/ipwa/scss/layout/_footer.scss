@@ -162,7 +162,7 @@ footer {
                         &:hover, &:focus {
                             background: none;
                             outline: none;
-                            outline-offset: none;
+                            outline-offset:0;
                         }
 
                         &:hover {
