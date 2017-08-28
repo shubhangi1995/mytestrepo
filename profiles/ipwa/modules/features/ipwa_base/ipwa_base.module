@@ -12,6 +12,7 @@ include_once 'ipwa_base.features.inc';
 
 // code for rendering icons at place of child taxonomy terms in projekt-map node popup in map
 function ipwa_base_views_pre_render(&$view) {
+
   if ($view->name == 'aktuelles' && $view->current_display == 'page' ||
     $view->name == 'search_list' && $view->current_display == 'page' ||
     $view->name ==   'projekt_map'&& $view->current_display == 'page_1' ) {
@@ -194,7 +195,10 @@ function ipwa_base_views_pre_render(&$view) {
 }
 
 function ipwa_base_form_alter(&$form, &$form_state, $form_id) {
+    // for giving a name to submit button related to bitv validation
   if ($form['#id'] == 'views-exposed-form-aktuelles-page') {
+    $form['submit']['#name'] = "submit";
+    // for filters customization.
     $form['term_node_tid_depth']['#options'][0]->option[1] = $form['term_node_tid_depth_1']['#options'][11]->option[11] =
     $form['term_node_tid_depth_2']['#options'][22]->option[24] = $form['term_node_tid_depth_3']['#options'][32]->option[34] = 'Alle Themen';
 
