@@ -117,13 +117,11 @@
             <h2 class="element-invisible">Service Menu</h2>
             <?php print render($primary_nav); ?>
           <?php endif; ?>
-          <h2 class="element-invisible">Service Menu</h2>
           <div class="search-icon">Suche</div>
           <?php if (!empty($secondary_nav)): ?>
             <?php print render($secondary_nav); ?>
           <?php endif; ?>
           <?php if (!empty($page['navigation'])): ?>
-            <h2 class="element-invisible">Service Menu</h2>
             <?php print render($page['navigation']); ?>
           <?php endif; ?>
         </nav>
