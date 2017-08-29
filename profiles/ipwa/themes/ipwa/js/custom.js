@@ -7,7 +7,7 @@ jQuery(document).ready(function(){
 	 if(jQuery(".view-wahlen-sie-einen-themenbereich").length){
 		//console.log("right track");
 		window.addEventListener('orientationchange', function () {
-		   window.location.reload();
+		   window.location.reload(true);
 		});
 	} 
   
