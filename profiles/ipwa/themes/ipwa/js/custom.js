@@ -268,7 +268,7 @@ jQuery(document).ready(function(){
 	
 	// Label tabs
 	
-	jQuery(".form-type-radio label, .search-icon").attr("tabindex", "0");
+	jQuery(".form-type-radio label, .search-icon, #backtotop").attr("tabindex", "0");
 	
 	// On enter key press
 	jQuery(".form-type-radio label, .search-icon").keypress(function (e) {
@@ -279,6 +279,15 @@ jQuery(document).ready(function(){
 			// Search input
 			jQuery("#edit-search-text").focus();
 			return false;  
+		  }
+	});
+	
+	// On enter key press upon back to top
+	jQuery("#backtotop").keypress(function (e) {
+		 var key = e.which;
+		 if(key == 13)  // the enter key code
+		  {
+			jQuery("html, body").animate({scrollTop: 0}, 600); 
 		  }
 	});
 	
@@ -471,6 +480,12 @@ jQuery(document).ready(function(){
 		jQuery(".views-slideshow-cycle-main-frame").css({width:viewWidth, height:1440});
 	}); */
 
+	//project-webform link on map
+	if(jQuery(window).innerWidth() <= 1024){
+		jQuery(".view-display-id-project_map .project-webform").insertAfter(".view-display-id-project_map  #map_list_link");	
+	}
+	
+	
 });
 
 
