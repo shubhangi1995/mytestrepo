@@ -23,5 +23,5 @@
  */
 ?>
 <?php foreach ($row->_entity_properties['map_term_icon'] as $key => $img): ?>
-  <img src="<?php print $img; ?>">
+  <img src="<?php print $img; ?>" alt="Themenzuweisung_icon">
 <?php endforeach; ?>
