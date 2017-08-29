@@ -57,7 +57,7 @@ function ipwa_search_block_form($form, &$form_state) {
 
   $form['search_close'] = array(
     '#type' => 'markup',
-    '#markup' => '<div class="cross-link" > <a href="javascript:null(0)">Schliessen</a></div>'
+    '#markup' => '<div class="cross-link" > <a href="">Schliessen</a></div>'
   );
 
   $form['submit'] = array(

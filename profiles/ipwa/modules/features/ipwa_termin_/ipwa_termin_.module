@@ -112,3 +112,7 @@ function ipwa_termin__node_view($node, $view_mode, $langcode) {
     }
   }
 }
+
+function ipwa_termin__form_alter(&$form, &$form_state, $form_id)  {
+  $form['submit']['#name'] = "Submit";
+}
