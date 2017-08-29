@@ -159,8 +159,8 @@
                 .term-title {
                     color: $main-color;
                     font-size: 28px;
-                    padding-bottom: 40px;
-                    padding-top: 40px;
+                    padding-bottom:30px;
+                    padding-top: 30px;
                     font-weight: normal;
                     font-family: $font-family-bold;
                 }
@@ -171,8 +171,9 @@
 
                 .views-row {
                     display: inline-block;
-                    padding: 10px;
+                    padding: 5px;
                     padding-left: 0;
+					padding-bottom:0;
 
                     .row-container {
                         .views-field-name a {
@@ -195,7 +196,7 @@
             }
 
             .view-footer {
-                padding-top: 40px;
+                padding-top: 30px;
                 clear: both;
                 padding-bottom: 20px;
                 position: relative;
