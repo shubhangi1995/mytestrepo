@@ -1,0 +1,16 @@
+Index: profiles/ipwa/modules/contrib/youtube/youtube.theme.inc
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- profiles/ipwa/modules/contrib/youtube/youtube.theme.inc	(revision 0a1dfeece456cc2efb330857fa737e2ce09924db)
++++ profiles/ipwa/modules/contrib/youtube/youtube.theme.inc	(revision )
+@@ -93,7 +93,7 @@
+ 
+   $output = '<iframe id="' . drupal_html_id($player_class) . '" class="' . $player_class . '"
+     width="' . $dimensions['width'] . '" height="' . $dimensions['height'] . '"
+-    src="' . $src . '" title="' . $player_title . '" frameborder="0"
++    src="' . $src . '" title="' . $player_title . '" style="border:none;"
+     allowfullscreen>' . $alternative_content . '</iframe>';
+ 
+   if ($size == 'responsive') {
