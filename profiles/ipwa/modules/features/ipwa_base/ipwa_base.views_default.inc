@@ -381,7 +381,7 @@ Publikation|Publikationen',
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Feld: Inhalt: Dieser Akteur gehört zu */
+  /* Feld: Inhalt: Dieses Projekt gehört zu  */
   $handler->display->display_options['fields']['field_themenzuweisung']['id'] = 'field_themenzuweisung';
   $handler->display->display_options['fields']['field_themenzuweisung']['table'] = 'field_data_field_themenzuweisung';
   $handler->display->display_options['fields']['field_themenzuweisung']['field'] = 'field_themenzuweisung';
@@ -1050,7 +1050,7 @@ Publikation|Publikationen'),
   $handler->display->display_options['footer']['area_text_custom']['table'] = 'views';
   $handler->display->display_options['footer']['area_text_custom']['field'] = 'area_text_custom';
   $handler->display->display_options['footer']['area_text_custom']['content'] = '<a href ="/schaufenster-digitales-nrw">Karte öffnen</a>';
-  /* Feld: Inhalt: Dieser Akteur gehört zu */
+  /* Feld: Inhalt: Dieses Projekt gehört zu  */
   $handler->display->display_options['fields']['field_themenzuweisung']['id'] = 'field_themenzuweisung';
   $handler->display->display_options['fields']['field_themenzuweisung']['table'] = 'field_data_field_themenzuweisung';
   $handler->display->display_options['fields']['field_themenzuweisung']['field'] = 'field_themenzuweisung';
@@ -1094,7 +1094,7 @@ Publikation|Publikationen'),
   /* Display: Block */
   $handler = $view->new_display('block', 'Block', 'block');
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Feld: Inhalt: Dieser Akteur gehört zu */
+  /* Feld: Inhalt: Dieses Projekt gehört zu  */
   $handler->display->display_options['fields']['field_themenzuweisung']['id'] = 'field_themenzuweisung';
   $handler->display->display_options['fields']['field_themenzuweisung']['table'] = 'field_data_field_themenzuweisung';
   $handler->display->display_options['fields']['field_themenzuweisung']['field'] = 'field_themenzuweisung';
@@ -1204,7 +1204,7 @@ Publikation|Publikationen'),
 </div>';
   $handler->display->display_options['footer']['area']['format'] = 'wysiwyg';
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Feld: Inhalt: Dieser Akteur gehört zu */
+  /* Feld: Inhalt: Dieses Projekt gehört zu  */
   $handler->display->display_options['fields']['field_themenzuweisung']['id'] = 'field_themenzuweisung';
   $handler->display->display_options['fields']['field_themenzuweisung']['table'] = 'field_data_field_themenzuweisung';
   $handler->display->display_options['fields']['field_themenzuweisung']['field'] = 'field_themenzuweisung';
@@ -2042,8 +2042,6 @@ Publikation|Publikationen'),
     5 => 0,
   );
   $handler->display->display_options['filters']['field_themenzuweisung_1']['expose']['reduce'] = 1;
-  /* Filter criterion: Indexed Beitrag: PLZ */
-
   /* Filter criterion: Indexed Beitrag: Status */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'search_api_index_ipwa_solr_index';
@@ -2060,7 +2058,7 @@ Publikation|Publikationen'),
     'protagonist' => 'protagonist',
     'projekt' => 'projekt',
   );
-  /* Filter criterion: Indexed Node: combinational filter */
+  /* Filter criterion: Indexed Beitrag: combinational filter */
   $handler->display->display_options['filters']['search_api_aggregation_2']['id'] = 'search_api_aggregation_2';
   $handler->display->display_options['filters']['search_api_aggregation_2']['table'] = 'search_api_index_ipwa_solr_index';
   $handler->display->display_options['filters']['search_api_aggregation_2']['field'] = 'search_api_aggregation_2';
@@ -2333,7 +2331,7 @@ Publikation|Publikationen'),
     5 => 0,
   );
   $handler->display->display_options['filters']['field_themenzuweisung_1']['expose']['reduce'] = 1;
-  /* Filter criterion: Indexed Node: combinational filter */
+  /* Filter criterion: Indexed Beitrag: combinational filter */
   $handler->display->display_options['filters']['search_api_aggregation_2']['id'] = 'search_api_aggregation_2';
   $handler->display->display_options['filters']['search_api_aggregation_2']['table'] = 'search_api_index_ipwa_solr_index';
   $handler->display->display_options['filters']['search_api_aggregation_2']['field'] = 'search_api_aggregation_2';
@@ -2804,6 +2802,7 @@ Publikation|Publikationen'),
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['alter']['alter_text'] = TRUE;
   $handler->display->display_options['fields']['title']['alter']['text'] = '[field_event_datum]<a href="[path]">[title]</a>';
+  $handler->display->display_options['fields']['title']['element_type'] = '0';
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
   /* Feld: Inhalt: Ort */
