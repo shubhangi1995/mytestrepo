@@ -487,18 +487,20 @@ jQuery(document).ready(function(){
 
 
 //ical for iphone and ipad
-	
+
 	jQuery(window).click(function(event){
 			jQuery(".atcb-list").hide();
 	});
 	
-	jQuery(".atcb-list").hide();
-	jQuery(".addtocalendar").click(function(event){
-			event.stopPropagation();
-	});
-	
-	jQuery(".addtocalendar .atcb-link").click(function(){
-			jQuery(".atcb-list").toggle();
+	jQuery(window).load(function(){
+		
+		jQuery(".atcb-list").hide();
+		
+		jQuery(".atcb-link").click(function(event){
+				// alert("hie");
+				event.stopPropagation();
+				jQuery(".atcb-list").toggle();
+		});
 	});
 		
 	

@@ -339,14 +339,18 @@
                 }
             }
         }
+		
+		.view-filters{
+		clear:both;
+		float:left;
+		}
     }
 }
 
 .view-display-id-page_1, .view-display-id-project_map {
     .view-filters {
 	
-	clear:both;
-	float:left;
+	
         .views-exposed-form {
             .views-exposed-widgets {
                 @extend .container;
@@ -550,6 +554,10 @@
                         &:hover {
                             color: $active-menu;
                         }
+						
+						&:active{
+						 box-shadow:none;
+						}
                     }
                 }
 
