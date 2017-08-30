@@ -93,7 +93,7 @@ function theme_youtube_video($variables) {
 
   $output = '<iframe id="' . drupal_html_id($player_class) . '" class="' . $player_class . '"
     width="' . $dimensions['width'] . '" height="' . $dimensions['height'] . '"
-    src="' . $src . '" title="' . $player_title . '" frameborder="0"
+    src="' . $src . '" title="' . $player_title . '" style="border:0;"
     allowfullscreen>' . $alternative_content . '</iframe>';
 
   if ($size == 'responsive') {
