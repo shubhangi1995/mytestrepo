@@ -11443,14 +11443,17 @@ caption {
       /* line 554, ../scss/pages/_map.scss */
       .view-display-id-page_1 .view-filters .views-exposed-form .views-exposed-widgets .views-submit-button .btn:hover, .view-display-id-project_map .view-filters .views-exposed-form .views-exposed-widgets .views-submit-button .btn:hover {
         color: #e74712; }
-  /* line 560, ../scss/pages/_map.scss */
+      /* line 558, ../scss/pages/_map.scss */
+      .view-display-id-page_1 .view-filters .views-exposed-form .views-exposed-widgets .views-submit-button .btn:active, .view-display-id-project_map .view-filters .views-exposed-form .views-exposed-widgets .views-submit-button .btn:active {
+        box-shadow: none; }
+  /* line 564, ../scss/pages/_map.scss */
   .view-display-id-page_1 .view-filters .views-exposed-form .views-exposed-widgets .views-widget-filter-field_akteurstyp, .view-display-id-project_map .view-filters .views-exposed-form .views-exposed-widgets .views-widget-filter-field_akteurstyp {
     display: none; }
-  /* line 564, ../scss/pages/_map.scss */
+  /* line 568, ../scss/pages/_map.scss */
   .view-display-id-page_1 .view-filters .views-exposed-form .views-exposed-widgets .views-widget-filter-field_akteurstyp.active, .view-display-id-project_map .view-filters .views-exposed-form .views-exposed-widgets .views-widget-filter-field_akteurstyp.active {
     display: block; }
 
-/* line 572, ../scss/pages/_map.scss */
+/* line 576, ../scss/pages/_map.scss */
 .view-display-id-page_1 .view-filters .views-exposed-form .views-exposed-widgets {
   padding: 0; }
 
