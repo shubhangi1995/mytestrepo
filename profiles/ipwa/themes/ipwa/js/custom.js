@@ -484,7 +484,23 @@ jQuery(document).ready(function(){
 	if(jQuery(window).innerWidth() <= 1024){
 		jQuery(".view-display-id-project_map .project-webform").insertAfter(".view-display-id-project_map  #map_list_link");	
 	}
+
+
+//ical for iphone and ipad
 	
+	jQuery(window).click(function(event){
+			jQuery(".atcb-list").hide();
+	});
+	
+	jQuery(".atcb-list").hide();
+	jQuery(".addtocalendar").click(function(event){
+			event.stopPropagation();
+	});
+	
+	jQuery(".addtocalendar .atcb-link").click(function(){
+			jQuery(".atcb-list").toggle();
+	});
+		
 	
 });
 
