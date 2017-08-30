@@ -486,19 +486,20 @@ jQuery(document).ready(function(){
 	}
 
 
-//ical for iphone and ipad
+	//ical for iphone and ipad
 
-	jQuery(window).click(function(event){
-			jQuery(".atcb-list").hide();
-	});
 	
 	jQuery(window).load(function(){
+		jQuery(window).click(function(event){
+				//alert("Hie");
+				jQuery(".atcb-list").hide();
+		});
 		
 		jQuery(".atcb-list").hide();
 		
 		jQuery(".atcb-link").click(function(event){
-				// alert("hie");
 				event.stopPropagation();
+				// alert("not hie");
 				jQuery(".atcb-list").toggle();
 		});
 	});
