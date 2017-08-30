@@ -498,6 +498,9 @@
                         &:hover {
                             color: $active-menu;
                         }
+						&:active{
+						  box-shadow:none;
+						}
                     }
                 }
 
