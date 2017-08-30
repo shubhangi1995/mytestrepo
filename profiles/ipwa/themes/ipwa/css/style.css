@@ -10932,9 +10932,10 @@ caption {
 @media only screen and (max-width: 380px) {
   /* line 860, ../scss/pages/_listview.scss */
   .views-slideshow-cycle-main-frame.views_slideshow_cycle_teaser_section, .views-slideshow-cycle-main-frame-row.views_slideshow_cycle_slide {
-    width: 290px !important; }
+    width: 290px !important;
+    margin: 0 auto; }
 
-  /* line 863, ../scss/pages/_listview.scss */
+  /* line 864, ../scss/pages/_listview.scss */
   .view-wahlen-sie-einen-themenbereich .view-content .views-row {
     height: 410px !important; } }
 /* line 1, ../scss/pages/_sitemap.scss */
