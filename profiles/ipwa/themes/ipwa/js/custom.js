@@ -494,21 +494,22 @@ jQuery(document).ready(function(){
 
 	//ical for iphone and ipad
 
-	
-	setTimeout(function(){
-		jQuery(window).click(function(event){
-				//alert("Hie");
-				jQuery(".atcb-list").hide();
-		});
-		
-		jQuery(".atcb-list").hide();
-		
-		jQuery(".atcb-link").click(function(event){
-				event.stopPropagation();
-				// alert("not hie");
-				jQuery(".atcb-list").toggle();
-		});
-	}, 1000);
+	jQuery(window).load(function(){
+		setTimeout(function(){
+			jQuery(window).click(function(event){
+					//alert("Hie");
+					jQuery(".atcb-list").hide();
+			});
+			
+			jQuery(".atcb-list").hide();
+			
+			jQuery(".atcb-link").click(function(event){
+					event.stopPropagation();
+					// alert("not hie");
+					jQuery(".atcb-list").toggle();
+			});
+		}, 2000);
+	});
 		
 	
 	
