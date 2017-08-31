@@ -68,6 +68,12 @@ jQuery(document).ready(function(){
 		
 	});
 	
+	//preventDefault
+	
+	jQuery(".block-ipwa-search #ipwa-search-block-form .cross-link a").click(function(event){
+    event.preventDefault();
+});
+	
 	// Copyright for video block single view
 	
 	if(jQuery(document).find(".field-name-field-videounterschrift").length > 0){
@@ -504,6 +510,7 @@ jQuery(document).ready(function(){
 		});
 	});
 		
+	
 	
 });
 
