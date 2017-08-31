@@ -502,26 +502,22 @@ jQuery(document).ready(function(){
 			jQuery(".atcb-list").hide();
 			var userAgent = navigator.userAgent || navigator.vendor || window.opera;
 			if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-				alert("on mac");
 				jQuery(window).on("touchstart", function(event){
-						//alert("Hie");
 						jQuery(".atcb-list").hide();
 				});
-				jQuery(".atcb-link").on("click", function(event){
+				jQuery(".addtocalendar").on("touchstart", function(event){
 						event.stopPropagation();
-						// alert("not hie");
+				});
+				jQuery(".atcb-link").on("touchstart", function(event){
 						jQuery(".atcb-list").toggle();
 				});
 			}
 			else{
-				alert("on widnows");
 				jQuery(window).on("click", function(event){
-						//alert("Hie");
 						jQuery(".atcb-list").hide();
 				});
 				jQuery(".atcb-link").on("click", function(event){
 						event.stopPropagation();
-						// alert("not hie");
 						jQuery(".atcb-list").toggle();
 				});
 			}
