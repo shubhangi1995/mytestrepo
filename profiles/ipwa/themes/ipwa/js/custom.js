@@ -499,18 +499,32 @@ jQuery(document).ready(function(){
 	//ical for iphone and ipad
 
 	jQuery(window).load(function(){
-			jQuery(window).on("click touchstart", function(event){
-					//alert("Hie");
-					jQuery(".atcb-list").hide();
-			});
-			
 			jQuery(".atcb-list").hide();
-			
-			jQuery(".atcb-link").on("click touchstart", function(event){
-					event.stopPropagation();
-					// alert("not hie");
-					jQuery(".atcb-list").toggle();
-			});
+			var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+			if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+				alert("on mac");
+				jQuery(window).on("touchstart", function(event){
+						//alert("Hie");
+						jQuery(".atcb-list").hide();
+				});
+				jQuery(".atcb-link").on("touchstart", function(event){
+						event.stopPropagation();
+						// alert("not hie");
+						jQuery(".atcb-list").toggle();
+				});
+			}
+			else{
+				alert("on widnows");
+				jQuery(window).on("click", function(event){
+						//alert("Hie");
+						jQuery(".atcb-list").hide();
+				});
+				jQuery(".atcb-link").on("click", function(event){
+						event.stopPropagation();
+						// alert("not hie");
+						jQuery(".atcb-list").toggle();
+				});
+			}
 	});
 		
 	
