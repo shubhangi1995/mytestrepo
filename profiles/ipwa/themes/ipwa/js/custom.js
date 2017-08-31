@@ -18,16 +18,20 @@ jQuery(document).ready(function(){
     jQuery('a[href]').each(function(){
         // Store current link's url
         var url = jQuery(this).prop("href");
-
         // Test if current host (domain) is in it
         if(!hostname.test(url)){
+
             // a link that does not contain the current host i.e external link
             jQuery(this).addClass('external-link').append("<span class='ext'></span>");
             jQuery(this).attr('target', '_blank');
         }
     });
 	
-	
+	if(jQuery("#admin-menu-wrapper")) {
+		jQuery('.external-link').removeClass('external-link');
+
+	}
+
 	jQuery('#views-exposed-form-aktuelles-page select').select2({
         minimumResultsForSearch: Infinity
 	}); 
