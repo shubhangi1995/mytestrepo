@@ -495,7 +495,7 @@ jQuery(document).ready(function(){
 	//ical for iphone and ipad
 
 	
-	jQuery(window).load(function(){
+	setTimeout(function(){
 		jQuery(window).click(function(event){
 				//alert("Hie");
 				jQuery(".atcb-list").hide();
@@ -508,7 +508,7 @@ jQuery(document).ready(function(){
 				// alert("not hie");
 				jQuery(".atcb-list").toggle();
 		});
-	});
+	}, 1000);
 		
 	
 	
