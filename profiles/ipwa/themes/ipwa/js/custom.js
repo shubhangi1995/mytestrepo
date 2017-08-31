@@ -506,7 +506,7 @@ jQuery(document).ready(function(){
 			
 			jQuery(".atcb-list").hide();
 			
-			jQuery(".atcb-link").click(function(event){
+			jQuery(".atcb-link").on("click touchstart", function(event){
 					event.stopPropagation();
 					// alert("not hie");
 					jQuery(".atcb-list").toggle();
