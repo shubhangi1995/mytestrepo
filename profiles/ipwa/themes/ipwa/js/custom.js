@@ -72,6 +72,12 @@ jQuery(document).ready(function(){
 		
 	});
 	
+	//preventDefault
+	
+	jQuery(".block-ipwa-search #ipwa-search-block-form .cross-link a").click(function(event){
+    event.preventDefault();
+});
+	
 	// Copyright for video block single view
 	
 	if(jQuery(document).find(".field-name-field-videounterschrift").length > 0){
@@ -490,23 +496,24 @@ jQuery(document).ready(function(){
 	}
 
 
-//ical for iphone and ipad
+	//ical for iphone and ipad
 
-	jQuery(window).click(function(event){
-			jQuery(".atcb-list").hide();
-	});
-	
 	jQuery(window).load(function(){
-		
-		jQuery(".atcb-list").hide();
-		
-		jQuery(".atcb-link").click(function(event){
-				// alert("hie");
-				event.stopPropagation();
-				jQuery(".atcb-list").toggle();
-		});
+			jQuery(window).on("click touchstart", function(event){
+					//alert("Hie");
+					jQuery(".atcb-list").hide();
+			});
+			
+			jQuery(".atcb-list").hide();
+			
+			jQuery(".atcb-link").click(function(event){
+					event.stopPropagation();
+					// alert("not hie");
+					jQuery(".atcb-list").toggle();
+			});
 	});
 		
+	
 	
 });
 
