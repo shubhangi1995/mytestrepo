@@ -507,7 +507,7 @@ jQuery(document).ready(function(){
 						//alert("Hie");
 						jQuery(".atcb-list").hide();
 				});
-				jQuery(".atcb-link").on("touchstart", function(event){
+				jQuery(".atcb-link").on("click", function(event){
 						event.stopPropagation();
 						// alert("not hie");
 						jQuery(".atcb-list").toggle();
