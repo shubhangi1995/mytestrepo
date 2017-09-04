@@ -218,8 +218,6 @@ h1 {
     span {
         display: inline-block;
         margin-bottom: 10px;
-
-        
     }
 }
 
@@ -398,15 +396,15 @@ h1 {
                                 }
                             }
                         }
-				.views-field-views-conditional{
-				padding-bottom: 10px;
+
+                        .views-field-views-conditional {
+                            padding-bottom: 10px;
 
                             .field-content {
                                 font-size: 20px;
                                 color: $color-light-grey;
-				
-				}}
-						
+                            }
+                        }
                     }
                 }
             }
@@ -492,7 +490,6 @@ h1 {
 
                     .form-group {
                         margin-bottom: 40px;
-						
 
                         &:nth-last-child(2) {
                             margin-bottom: 20px;
@@ -515,7 +512,7 @@ h1 {
                             border-top-color: #cfd8df;
                             box-shadow: 0 -1px 1px 0 #eff2f4;
                             border-radius: 3px;
-							font-size:16px;
+                            font-size: 16px;
                         }
 
                         p {
@@ -604,7 +601,7 @@ input[type=text]::-ms-clear {
 .page-node-67 {
     article {
         > .group-page-info {
-            max-width: 765px;
+            max-width: 680px;
         }
     }
 }
