@@ -184,37 +184,3 @@ function ipwa_search_default_search_api_index() {
   }');
   return $items;
 }
-
-/**
- * Implements hook_default_search_api_server().
- */
-function ipwa_search_default_search_api_server() {
-  $items = array();
-  $items['ipwa_solr_server'] = entity_import('search_api_server', '{
-    "name" : "IPWA solr server",
-    "machine_name" : "ipwa_solr_server",
-    "description" : "",
-    "class" : "search_api_solr_service",
-    "options" : {
-      "clean_ids" : true,
-      "site_hash" : true,
-      "scheme" : "http",
-      "host" : "nrw-ipwa1.dev.init",
-      "port" : "8983",
-      "path" : "\\/solr\\/drupal",
-      "http_user" : "",
-      "http_pass" : "",
-      "excerpt" : 0,
-      "retrieve_data" : 0,
-      "highlight_data" : 0,
-      "skip_schema_check" : 0,
-      "solr_version" : "",
-      "http_method" : "AUTO",
-      "log_query" : 0,
-      "log_response" : 0,
-      "commits_disabled" : 0
-    },
-    "enabled" : "1"
-  }');
-  return $items;
-}
