@@ -14,7 +14,7 @@ function ipwa_menu_default_fe_block_boxes() {
   $fe_block_boxes->info = 'Footer copyright';
   $fe_block_boxes->format = 'wysiwyg';
   $fe_block_boxes->machine_name = 'footer_copyright';
-  $fe_block_boxes->body = '<p>© 2017 &nbsp;<strong>Ministerium&nbsp;für Wirtschaft, Energie, Industrie,&nbsp;Mittelstand und &nbsp;Handwerk des Landes Nordrhein-Westfalen</strong></p>
+  $fe_block_boxes->body = '<p>© 2017 &nbsp;<strong>Ministerium&nbsp;für Wirtschaft, Innovation, Digitalisierung und Energie des Landes Nordrhein-Westfalen</strong></p>
 ';
 
   $export['footer_copyright'] = $fe_block_boxes;
@@ -61,7 +61,7 @@ function ipwa_menu_default_fe_block_boxes() {
 <ul>
 	<li><a href="/aktuelles?type=nachricht&amp;term_node_tid_depth=1">Nachrichten</a></li>
 	<li><a href="/termine?term_node_tid_depth=1">Termine</a></li>
-	<li><a href="/aktuelles?type=publikation&amp;term_node_tid_depth=1">Publikation</a></li>
+	<li><a href="/aktuelles?type=publikation&amp;term_node_tid_depth=1">Publikationen</a></li>
 	<li><a href="/politik-gesellschaft">Übersicht</a></li>
 </ul>
 ';
@@ -73,10 +73,11 @@ function ipwa_menu_default_fe_block_boxes() {
   $fe_block_boxes->format = 'wysiwyg';
   $fe_block_boxes->machine_name = 'wirtschaft_arbeit_left_block';
   $fe_block_boxes->body = '<h3 class="block-title">Immer gut informiert</h3>
+
 <ul>
 	<li><a href="/aktuelles?type=nachricht&amp;term_node_tid_depth_1=11">Nachrichten&nbsp;</a></li>
 	<li><a href="/termine?term_node_tid_depth=11">Termine</a></li>
-	<li><a href="/aktuelles?type=publikation&amp;term_node_tid_depth_1=11">Publikation</a></li>
+	<li><a href="/aktuelles?type=publikation&amp;term_node_tid_depth_1=11">Publikatioen</a></li>
 	<li><a href="/wirtschaft-arbeit">Übersicht</a></li>
 </ul>
 ';
