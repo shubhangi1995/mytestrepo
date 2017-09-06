@@ -205,7 +205,14 @@ function ipwa_topic_views_default_views() {
   $handler->display->display_options['fields']['field_bis_auf_weiteres']['label'] = '';
   $handler->display->display_options['fields']['field_bis_auf_weiteres']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_bis_auf_weiteres']['element_label_colon'] = FALSE;
-  /* Field: Views: Views Conditional */
+  /* Feld: Inhalt: Ort */
+  $handler->display->display_options['fields']['field_ort']['id'] = 'field_ort';
+  $handler->display->display_options['fields']['field_ort']['table'] = 'field_data_field_ort';
+  $handler->display->display_options['fields']['field_ort']['field'] = 'field_ort';
+  $handler->display->display_options['fields']['field_ort']['label'] = '';
+  $handler->display->display_options['fields']['field_ort']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_ort']['element_label_colon'] = FALSE;
+  /* Feld: Views: Views Conditional */
   $handler->display->display_options['fields']['views_conditional']['id'] = 'views_conditional';
   $handler->display->display_options['fields']['views_conditional']['table'] = 'views_conditional';
   $handler->display->display_options['fields']['views_conditional']['field'] = 'views_conditional';
