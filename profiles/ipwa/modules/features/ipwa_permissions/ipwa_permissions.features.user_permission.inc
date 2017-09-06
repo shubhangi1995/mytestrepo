@@ -160,7 +160,7 @@ function ipwa_permissions_user_default_permissions() {
     'name' => 'create document content',
     'roles' => array(
       'Chefredakteur' => 'Chefredakteur',
-      'Redakteur (ext.)' => 'Redakteur (ext.)',
+      'Redakteur (int.)' => 'Redakteur (int.)',
     ),
     'module' => 'node',
   );
@@ -205,6 +205,57 @@ function ipwa_permissions_user_default_permissions() {
       'Redakteur (int.)' => 'Redakteur (int.)',
     ),
     'module' => 'node',
+  );
+
+  // Exported permission: 'create paragraph content flie_text_bereich'.
+  $permissions['create paragraph content flie_text_bereich'] = array(
+    'name' => 'create paragraph content flie_text_bereich',
+    'roles' => array(
+      'Administrator' => 'Administrator',
+      'anonymous user' => 'anonymous user',
+      'authenticated user' => 'authenticated user',
+    ),
+    'module' => 'paragraphs_bundle_permissions',
+  );
+
+  // Exported permission: 'create paragraph content flie_text_mit_bild_links'.
+  $permissions['create paragraph content flie_text_mit_bild_links'] = array(
+    'name' => 'create paragraph content flie_text_mit_bild_links',
+    'roles' => array(
+      'Administrator' => 'Administrator',
+      'authenticated user' => 'authenticated user',
+    ),
+    'module' => 'paragraphs_bundle_permissions',
+  );
+
+  // Exported permission: 'create paragraph content flie_text_mit_bild_rechts'.
+  $permissions['create paragraph content flie_text_mit_bild_rechts'] = array(
+    'name' => 'create paragraph content flie_text_mit_bild_rechts',
+    'roles' => array(
+      'Administrator' => 'Administrator',
+      'authenticated user' => 'authenticated user',
+    ),
+    'module' => 'paragraphs_bundle_permissions',
+  );
+
+  // Exported permission: 'create paragraph content frontpage_map_teaser_paragraph'.
+  $permissions['create paragraph content frontpage_map_teaser_paragraph'] = array(
+    'name' => 'create paragraph content frontpage_map_teaser_paragraph',
+    'roles' => array(
+      'Administrator' => 'Administrator',
+      'authenticated user' => 'authenticated user',
+    ),
+    'module' => 'paragraphs_bundle_permissions',
+  );
+
+  // Exported permission: 'create paragraph content topic_teaser_paragraph'.
+  $permissions['create paragraph content topic_teaser_paragraph'] = array(
+    'name' => 'create paragraph content topic_teaser_paragraph',
+    'roles' => array(
+      'Administrator' => 'Administrator',
+      'authenticated user' => 'authenticated user',
+    ),
+    'module' => 'paragraphs_bundle_permissions',
   );
 
   // Exported permission: 'create projekt content'.
@@ -293,6 +344,7 @@ function ipwa_permissions_user_default_permissions() {
     'name' => 'delete any bild content',
     'roles' => array(
       'Chefredakteur' => 'Chefredakteur',
+      'Redakteur (int.)' => 'Redakteur (int.)',
     ),
     'module' => 'node',
   );
@@ -419,7 +471,6 @@ function ipwa_permissions_user_default_permissions() {
     'name' => 'delete own bild content',
     'roles' => array(
       'Chefredakteur' => 'Chefredakteur',
-      'Redakteur (ext.)' => 'Redakteur (ext.)',
     ),
     'module' => 'node',
   );
@@ -429,7 +480,6 @@ function ipwa_permissions_user_default_permissions() {
     'name' => 'delete own document content',
     'roles' => array(
       'Chefredakteur' => 'Chefredakteur',
-      'Redakteur (ext.)' => 'Redakteur (ext.)',
     ),
     'module' => 'node',
   );
@@ -528,6 +578,56 @@ function ipwa_permissions_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'delete paragraph content flie_text_bereich'.
+  $permissions['delete paragraph content flie_text_bereich'] = array(
+    'name' => 'delete paragraph content flie_text_bereich',
+    'roles' => array(
+      'Administrator' => 'Administrator',
+      'anonymous user' => 'anonymous user',
+      'authenticated user' => 'authenticated user',
+    ),
+    'module' => 'paragraphs_bundle_permissions',
+  );
+
+  // Exported permission: 'delete paragraph content flie_text_mit_bild_links'.
+  $permissions['delete paragraph content flie_text_mit_bild_links'] = array(
+    'name' => 'delete paragraph content flie_text_mit_bild_links',
+    'roles' => array(
+      'Administrator' => 'Administrator',
+    ),
+    'module' => 'paragraphs_bundle_permissions',
+  );
+
+  // Exported permission: 'delete paragraph content flie_text_mit_bild_rechts'.
+  $permissions['delete paragraph content flie_text_mit_bild_rechts'] = array(
+    'name' => 'delete paragraph content flie_text_mit_bild_rechts',
+    'roles' => array(
+      'Administrator' => 'Administrator',
+      'authenticated user' => 'authenticated user',
+    ),
+    'module' => 'paragraphs_bundle_permissions',
+  );
+
+  // Exported permission: 'delete paragraph content frontpage_map_teaser_paragraph'.
+  $permissions['delete paragraph content frontpage_map_teaser_paragraph'] = array(
+    'name' => 'delete paragraph content frontpage_map_teaser_paragraph',
+    'roles' => array(
+      'Administrator' => 'Administrator',
+      'authenticated user' => 'authenticated user',
+    ),
+    'module' => 'paragraphs_bundle_permissions',
+  );
+
+  // Exported permission: 'delete paragraph content topic_teaser_paragraph'.
+  $permissions['delete paragraph content topic_teaser_paragraph'] = array(
+    'name' => 'delete paragraph content topic_teaser_paragraph',
+    'roles' => array(
+      'Administrator' => 'Administrator',
+      'authenticated user' => 'authenticated user',
+    ),
+    'module' => 'paragraphs_bundle_permissions',
+  );
+
   // Exported permission: 'edit any article content'.
   $permissions['edit any article content'] = array(
     'name' => 'edit any article content',
@@ -543,6 +643,7 @@ function ipwa_permissions_user_default_permissions() {
     'name' => 'edit any bild content',
     'roles' => array(
       'Chefredakteur' => 'Chefredakteur',
+      'Redakteur (int.)' => 'Redakteur (int.)',
     ),
     'module' => 'node',
   );
@@ -552,6 +653,7 @@ function ipwa_permissions_user_default_permissions() {
     'name' => 'edit any document content',
     'roles' => array(
       'Chefredakteur' => 'Chefredakteur',
+      'Redakteur (int.)' => 'Redakteur (int.)',
     ),
     'module' => 'node',
   );
@@ -677,7 +779,6 @@ function ipwa_permissions_user_default_permissions() {
     'name' => 'edit own bild content',
     'roles' => array(
       'Chefredakteur' => 'Chefredakteur',
-      'Redakteur (ext.)' => 'Redakteur (ext.)',
     ),
     'module' => 'node',
   );
@@ -687,7 +788,6 @@ function ipwa_permissions_user_default_permissions() {
     'name' => 'edit own document content',
     'roles' => array(
       'Chefredakteur' => 'Chefredakteur',
-      'Redakteur (ext.)' => 'Redakteur (ext.)',
     ),
     'module' => 'node',
   );
@@ -802,6 +902,57 @@ function ipwa_permissions_user_default_permissions() {
       'authenticated user' => 'authenticated user',
     ),
     'module' => 'simplenews',
+  );
+
+  // Exported permission: 'update paragraph content flie_text_bereich'.
+  $permissions['update paragraph content flie_text_bereich'] = array(
+    'name' => 'update paragraph content flie_text_bereich',
+    'roles' => array(
+      'Administrator' => 'Administrator',
+      'anonymous user' => 'anonymous user',
+      'authenticated user' => 'authenticated user',
+    ),
+    'module' => 'paragraphs_bundle_permissions',
+  );
+
+  // Exported permission: 'update paragraph content flie_text_mit_bild_links'.
+  $permissions['update paragraph content flie_text_mit_bild_links'] = array(
+    'name' => 'update paragraph content flie_text_mit_bild_links',
+    'roles' => array(
+      'Administrator' => 'Administrator',
+      'authenticated user' => 'authenticated user',
+    ),
+    'module' => 'paragraphs_bundle_permissions',
+  );
+
+  // Exported permission: 'update paragraph content flie_text_mit_bild_rechts'.
+  $permissions['update paragraph content flie_text_mit_bild_rechts'] = array(
+    'name' => 'update paragraph content flie_text_mit_bild_rechts',
+    'roles' => array(
+      'Administrator' => 'Administrator',
+      'authenticated user' => 'authenticated user',
+    ),
+    'module' => 'paragraphs_bundle_permissions',
+  );
+
+  // Exported permission: 'update paragraph content frontpage_map_teaser_paragraph'.
+  $permissions['update paragraph content frontpage_map_teaser_paragraph'] = array(
+    'name' => 'update paragraph content frontpage_map_teaser_paragraph',
+    'roles' => array(
+      'Administrator' => 'Administrator',
+      'authenticated user' => 'authenticated user',
+    ),
+    'module' => 'paragraphs_bundle_permissions',
+  );
+
+  // Exported permission: 'update paragraph content topic_teaser_paragraph'.
+  $permissions['update paragraph content topic_teaser_paragraph'] = array(
+    'name' => 'update paragraph content topic_teaser_paragraph',
+    'roles' => array(
+      'Administrator' => 'Administrator',
+      'authenticated user' => 'authenticated user',
+    ),
+    'module' => 'paragraphs_bundle_permissions',
   );
 
   // Exported permission: 'view own unpublished content'.
