@@ -1117,6 +1117,12 @@ Publikation|Publikationen'),
   $handler->display->display_options['fields']['title']['alter']['trim'] = TRUE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
+  /* Feld: Inhalt: Ort */
+  $handler->display->display_options['fields']['field_ort']['id'] = 'field_ort';
+  $handler->display->display_options['fields']['field_ort']['table'] = 'field_data_field_ort';
+  $handler->display->display_options['fields']['field_ort']['field'] = 'field_ort';
+  $handler->display->display_options['fields']['field_ort']['label'] = '';
+  $handler->display->display_options['fields']['field_ort']['element_label_colon'] = FALSE;
   $translatables['neueste_digital_projekte'] = array(
     t('Master'),
     t('more'),

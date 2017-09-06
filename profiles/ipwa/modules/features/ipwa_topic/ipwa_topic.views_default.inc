@@ -276,7 +276,7 @@ function ipwa_topic_views_default_views() {
   $handler->display->display_options['fields']['views_conditional_4']['if'] = 'type';
   $handler->display->display_options['fields']['views_conditional_4']['condition'] = '1';
   $handler->display->display_options['fields']['views_conditional_4']['equalto'] = 'Projekt';
-  $handler->display->display_options['fields']['views_conditional_4']['then'] = '<none>';
+  $handler->display->display_options['fields']['views_conditional_4']['then'] = '[field_ort]';
   $handler->display->display_options['fields']['views_conditional_4']['or'] = '[views_conditional_3]';
   $handler->display->display_options['fields']['views_conditional_4']['strip_tags'] = 0;
   $handler->display->display_options['defaults']['sorts'] = FALSE;
