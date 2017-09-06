@@ -12,7 +12,7 @@ include_once 'ipwa_search.features.inc';
 function ipwa_search_form_views_exposed_form_alter(&$form, $form_state, $form_id) {
   if($form['#id'] == 'views-exposed-form-search-list-page') {
     $form['search_api_views_fulltext']['#attributes']['placeholder'] = t('Suchbegriff eingeben');
-    $form['field_ort']['#attributes']['placeholder'] = t('PLZ oder Ort eingeben');
+    $form['search_api_aggregation_2']['#attributes']['placeholder'] = t('PLZ oder Ort eingeben');
   }
 }
 
