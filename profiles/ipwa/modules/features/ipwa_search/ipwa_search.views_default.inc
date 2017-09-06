@@ -473,16 +473,16 @@ Document|Dokumente',
     2 => '2',
     1 => 0,
   );
-  /* Filter criterion: Indexed Beitrag: Ort */
-  $handler->display->display_options['filters']['field_ort']['id'] = 'field_ort';
-  $handler->display->display_options['filters']['field_ort']['table'] = 'search_api_index_ipwa_solr_index';
-  $handler->display->display_options['filters']['field_ort']['field'] = 'field_ort';
-  $handler->display->display_options['filters']['field_ort']['group'] = 1;
-  $handler->display->display_options['filters']['field_ort']['exposed'] = TRUE;
-  $handler->display->display_options['filters']['field_ort']['expose']['operator_id'] = 'field_ort_op';
-  $handler->display->display_options['filters']['field_ort']['expose']['operator'] = 'field_ort_op';
-  $handler->display->display_options['filters']['field_ort']['expose']['identifier'] = 'field_ort';
-  $handler->display->display_options['filters']['field_ort']['expose']['remember_roles'] = array(
+  /* Filter criterion: Indexed Beitrag: combinational filter */
+  $handler->display->display_options['filters']['search_api_aggregation_2']['id'] = 'search_api_aggregation_2';
+  $handler->display->display_options['filters']['search_api_aggregation_2']['table'] = 'search_api_index_ipwa_solr_index';
+  $handler->display->display_options['filters']['search_api_aggregation_2']['field'] = 'search_api_aggregation_2';
+  $handler->display->display_options['filters']['search_api_aggregation_2']['group'] = 1;
+  $handler->display->display_options['filters']['search_api_aggregation_2']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['search_api_aggregation_2']['expose']['operator_id'] = 'search_api_aggregation_2_op';
+  $handler->display->display_options['filters']['search_api_aggregation_2']['expose']['operator'] = 'search_api_aggregation_2_op';
+  $handler->display->display_options['filters']['search_api_aggregation_2']['expose']['identifier'] = 'search_api_aggregation_2';
+  $handler->display->display_options['filters']['search_api_aggregation_2']['expose']['remember_roles'] = array(
     2 => '2',
     1 => 0,
   );
