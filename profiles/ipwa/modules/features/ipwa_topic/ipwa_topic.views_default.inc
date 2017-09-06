@@ -42,7 +42,7 @@ function ipwa_topic_views_default_views() {
         ),
       ),
       'allow_secondary' => 0,
-      'secondary_label' => 'Advanced options',
+      'secondary_label' => 'Erweiterte Optionen',
       'secondary_collapse_override' => '0',
     ),
     'sort' => array(
@@ -65,6 +65,10 @@ function ipwa_topic_views_default_views() {
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['pager']['options']['id'] = '0';
   $handler->display->display_options['pager']['options']['quantity'] = '9';
+  $handler->display->display_options['pager']['options']['tags']['first'] = '« erste Seite';
+  $handler->display->display_options['pager']['options']['tags']['previous'] = '‹ vorherige Seite';
+  $handler->display->display_options['pager']['options']['tags']['next'] = 'nächste Seite ›';
+  $handler->display->display_options['pager']['options']['tags']['last'] = 'letzte Seite »';
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['row_plugin'] = 'fields';
   /* Field: Content: Dieser Artikel gehört zu */
@@ -126,6 +130,7 @@ function ipwa_topic_views_default_views() {
   $handler->display->display_options['arguments']['tid']['id'] = 'tid';
   $handler->display->display_options['arguments']['tid']['table'] = 'taxonomy_index';
   $handler->display->display_options['arguments']['tid']['field'] = 'tid';
+  $handler->display->display_options['arguments']['tid']['exception']['title'] = 'Alle';
   $handler->display->display_options['arguments']['tid']['default_argument_type'] = 'fixed';
   $handler->display->display_options['arguments']['tid']['summary']['number_of_records'] = '0';
   $handler->display->display_options['arguments']['tid']['summary']['format'] = 'default_summary';
@@ -294,21 +299,21 @@ function ipwa_topic_views_default_views() {
     t('Alles Zum Thema'),
     t('more'),
     t('Apply'),
-    t('Reset'),
-    t('<none>'),
+    t('Zurücksetzen'),
+    t('<keine>'),
     t('Asc'),
     t('Desc'),
     t('Select any filter and click on Apply to see results'),
-    t('Advanced options'),
+    t('Erweiterte Optionen'),
     t('Sort options'),
     t('Items per page'),
     t('- All -'),
     t('Offset'),
-    t('« first'),
-    t('‹ previous'),
-    t('next ›'),
-    t('last »'),
-    t('All'),
+    t('« erste Seite'),
+    t('‹ vorherige Seite'),
+    t('nächste Seite ›'),
+    t('letzte Seite »'),
+    t('Alle'),
     t('neueste zuerst'),
     t('A-Z'),
   );
