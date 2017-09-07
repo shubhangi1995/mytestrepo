@@ -50,7 +50,7 @@ IPWA_MAP.filter = {
     var _editType = _form.find('#edit-type');
     // console.log('_editType:  =====>>> ', _editType, _editType.val());
     var _filter = [_editType, // Inhaltstyp (Akteur or Projekt)
-      _form.find('#edit-field-plz'), // plz
+      _form.find('#edit-search-api-aggregation-2'), // text to search
       _form.find('#edit-field-themenzuweisung-1') // Alle Themen
     ];
     if (_editType.val() === 'protagonist') {
