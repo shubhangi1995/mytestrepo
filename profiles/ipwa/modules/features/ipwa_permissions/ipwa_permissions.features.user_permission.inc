@@ -101,6 +101,15 @@ function ipwa_permissions_user_default_permissions() {
     'module' => 'path_breadcrumbs_ui',
   );
 
+  // Exported permission: 'administer permissions'.
+  $permissions['administer permissions'] = array(
+    'name' => 'administer permissions',
+    'roles' => array(
+      'Administrator' => 'Administrator',
+    ),
+    'module' => 'user',
+  );
+
   // Exported permission: 'administer simplenews subscriptions'.
   $permissions['administer simplenews subscriptions'] = array(
     'name' => 'administer simplenews subscriptions',
@@ -125,6 +134,16 @@ function ipwa_permissions_user_default_permissions() {
       'Redakteur (int.)' => 'Redakteur (int.)',
     ),
     'module' => 'path',
+  );
+
+  // Exported permission: 'administer users'.
+  $permissions['administer users'] = array(
+    'name' => 'administer users',
+    'roles' => array(
+      'Administrator' => 'Administrator',
+      'Chefredakteur' => 'Chefredakteur',
+    ),
+    'module' => 'user',
   );
 
   // Exported permission: 'bypass node access'.
