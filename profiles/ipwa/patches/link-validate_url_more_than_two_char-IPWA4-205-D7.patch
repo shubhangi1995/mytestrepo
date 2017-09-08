@@ -1,0 +1,72 @@
+Index: profiles/ipwa/modules/contrib/link/tests/link.validate.test
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- profiles/ipwa/modules/contrib/link/tests/link.validate.test	(revision 84694dd4490214573c64db577c30fdd2d66a7604)
++++ profiles/ipwa/modules/contrib/link/tests/link.validate.test	(revision )
+@@ -482,10 +482,6 @@
+       //$valid2 = valid_url($link, TRUE);
+       //$this->assertEqual(TRUE, $valid2, "Using valid_url() on $link.");
+     }
+-    // Test if we can make a tld valid:
+-    variable_set('link_extra_domains', array('frog'));
+-    $valid = link_validate_url('http://www.example.frog');
+-    $this->assertEqual(LINK_EXTERNAL, $valid, "Testing that http://www.example.frog is a valid external link if we've added 'frog' to the list of valid domains.");
+   }
+ 
+   function testInvalidExternalLinks() {
+@@ -495,7 +491,7 @@
+       'http://4827.0.0.2/',
+       '//www.example.com/',
+       'http://www.testﬂ.com/', // ﬂ not allowed in domain names!
+-      'http://www.example.frog/', // Bad TLD
++      'http://.www.foo.bar./', // Bad TLD.
+       //'http://www.-fudge.com/', // domains can't have sections starting with a dash.
+       'http://example.com/index.php?page=this\that',
+       'example@example.com',
+Index: profiles/ipwa/modules/contrib/link/link.module
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- profiles/ipwa/modules/contrib/link/link.module	(revision 84694dd4490214573c64db577c30fdd2d66a7604)
++++ profiles/ipwa/modules/contrib/link/link.module	(revision )
+@@ -10,7 +10,6 @@
+ define('LINK_FRONT', 'front');
+ define('LINK_EMAIL', 'email');
+ define('LINK_NEWS', 'news');
+-define('LINK_DOMAINS', 'aero|arpa|asia|biz|build|com|cat|ceo|coop|edu|gov|info|int|jobs|mil|museum|name|nato|net|org|post|pro|tel|travel|mobi|local|xxx');
+ 
+ define('LINK_TARGET_DEFAULT', 'default');
+ define('LINK_TARGET_NEW_WINDOW', '_blank');
+@@ -1372,6 +1371,9 @@
+   if (preg_match($internal_pattern . $end, $text)) {
+     return LINK_INTERNAL;
+   }
++  if (drupal_valid_path($text) && url_is_external($text) == FALSE) {
++    return LINK_INTERNAL;
++  }
+   if (preg_match($external_pattern . $end, $text)) {
+     return LINK_EXTERNAL;
+   }
+@@ -1383,11 +1385,16 @@
+ }
+ 
+ /**
+- * Returns the list of allowed domains, including domains added by admins via variable_set/$config.
++ * Returns the list of allowed domains.
++ *
++ * If the variable link_allowed_domains is set, restrict allowed domains to the
++ * strings in that array. If the variable link_allowed_domains is not set, allow
++ * all domains between 2 and 63 characters in length.
++ * See https://tools.ietf.org/html/rfc1034.
+  */
+ function _link_domains() {
+-  $link_extra_domains = variable_get('link_extra_domains', array());
+-  return empty($link_extra_domains) ? LINK_DOMAINS : LINK_DOMAINS . '|' . implode('|', $link_extra_domains);
++  $link_allowed_domains = variable_get('link_allowed_domains', array());
++  return empty($link_allowed_domains) ? '[a-z][a-z0-9-]{1,62}' : implode('|', $link_allowed_domains);
+ }
+ 
+ /**
