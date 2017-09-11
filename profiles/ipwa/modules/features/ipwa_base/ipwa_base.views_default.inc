@@ -184,7 +184,7 @@ Publikation|Publikationen',
   $handler->display->display_options['header']['area']['id'] = 'area';
   $handler->display->display_options['header']['area']['table'] = 'views';
   $handler->display->display_options['header']['area']['field'] = 'area';
-  $handler->display->display_options['header']['area']['content'] = '<h2> </h2>';
+  $handler->display->display_options['header']['area']['content'] = '<h2></h2>';
   $handler->display->display_options['header']['area']['format'] = 'wysiwyg';
   /* Feld: Inhalt: Dieser Akteur gehört zu */
   $handler->display->display_options['fields']['field_themenzuweisung']['id'] = 'field_themenzuweisung';
@@ -381,7 +381,7 @@ Publikation|Publikationen',
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Feld: Inhalt: Dieser Akteur gehört zu */
+  /* Feld: Inhalt: Dieses Projekt gehört zu  */
   $handler->display->display_options['fields']['field_themenzuweisung']['id'] = 'field_themenzuweisung';
   $handler->display->display_options['fields']['field_themenzuweisung']['table'] = 'field_data_field_themenzuweisung';
   $handler->display->display_options['fields']['field_themenzuweisung']['field'] = 'field_themenzuweisung';
@@ -633,7 +633,7 @@ Publikation|Publikationen'),
     t('‹ vorherige Seite'),
     t('nächste Seite ›'),
     t('letzte Seite »'),
-    t('<h2> </h2>'),
+    t('<h2></h2>'),
     t('neueste zuerst'),
     t('A-Z'),
     t('politik'),
@@ -1050,7 +1050,7 @@ Publikation|Publikationen'),
   $handler->display->display_options['footer']['area_text_custom']['table'] = 'views';
   $handler->display->display_options['footer']['area_text_custom']['field'] = 'area_text_custom';
   $handler->display->display_options['footer']['area_text_custom']['content'] = '<a href ="/schaufenster-digitales-nrw">Karte öffnen</a>';
-  /* Feld: Inhalt: Dieser Akteur gehört zu */
+  /* Feld: Inhalt: Dieses Projekt gehört zu  */
   $handler->display->display_options['fields']['field_themenzuweisung']['id'] = 'field_themenzuweisung';
   $handler->display->display_options['fields']['field_themenzuweisung']['table'] = 'field_data_field_themenzuweisung';
   $handler->display->display_options['fields']['field_themenzuweisung']['field'] = 'field_themenzuweisung';
@@ -1094,7 +1094,7 @@ Publikation|Publikationen'),
   /* Display: Block */
   $handler = $view->new_display('block', 'Block', 'block');
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Feld: Inhalt: Dieser Akteur gehört zu */
+  /* Feld: Inhalt: Dieses Projekt gehört zu  */
   $handler->display->display_options['fields']['field_themenzuweisung']['id'] = 'field_themenzuweisung';
   $handler->display->display_options['fields']['field_themenzuweisung']['table'] = 'field_data_field_themenzuweisung';
   $handler->display->display_options['fields']['field_themenzuweisung']['field'] = 'field_themenzuweisung';
@@ -1117,6 +1117,12 @@ Publikation|Publikationen'),
   $handler->display->display_options['fields']['title']['alter']['trim'] = TRUE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
+  /* Feld: Inhalt: Ort */
+  $handler->display->display_options['fields']['field_ort']['id'] = 'field_ort';
+  $handler->display->display_options['fields']['field_ort']['table'] = 'field_data_field_ort';
+  $handler->display->display_options['fields']['field_ort']['field'] = 'field_ort';
+  $handler->display->display_options['fields']['field_ort']['label'] = '';
+  $handler->display->display_options['fields']['field_ort']['element_label_colon'] = FALSE;
   $translatables['neueste_digital_projekte'] = array(
     t('Master'),
     t('more'),
@@ -1204,7 +1210,7 @@ Publikation|Publikationen'),
 </div>';
   $handler->display->display_options['footer']['area']['format'] = 'wysiwyg';
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Feld: Inhalt: Dieser Akteur gehört zu */
+  /* Feld: Inhalt: Dieses Projekt gehört zu  */
   $handler->display->display_options['fields']['field_themenzuweisung']['id'] = 'field_themenzuweisung';
   $handler->display->display_options['fields']['field_themenzuweisung']['table'] = 'field_data_field_themenzuweisung';
   $handler->display->display_options['fields']['field_themenzuweisung']['field'] = 'field_themenzuweisung';

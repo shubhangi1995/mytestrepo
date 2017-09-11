@@ -14,6 +14,7 @@ function ipwa_permissions_user_default_permissions() {
   $permissions['access administration menu'] = array(
     'name' => 'access administration menu',
     'roles' => array(
+      'Administrator' => 'Administrator',
       'Chefredakteur' => 'Chefredakteur',
       'Redakteur (ext.)' => 'Redakteur (ext.)',
       'Redakteur (int.)' => 'Redakteur (int.)',
@@ -25,6 +26,7 @@ function ipwa_permissions_user_default_permissions() {
   $permissions['access administration pages'] = array(
     'name' => 'access administration pages',
     'roles' => array(
+      'Administrator' => 'Administrator',
       'Chefredakteur' => 'Chefredakteur',
       'Redakteur (ext.)' => 'Redakteur (ext.)',
       'Redakteur (int.)' => 'Redakteur (int.)',
@@ -36,6 +38,7 @@ function ipwa_permissions_user_default_permissions() {
   $permissions['access broken links report'] = array(
     'name' => 'access broken links report',
     'roles' => array(
+      'Administrator' => 'Administrator',
       'Chefredakteur' => 'Chefredakteur',
     ),
     'module' => 'linkchecker',
@@ -45,6 +48,7 @@ function ipwa_permissions_user_default_permissions() {
   $permissions['access content'] = array(
     'name' => 'access content',
     'roles' => array(
+      'Administrator' => 'Administrator',
       'Chefredakteur' => 'Chefredakteur',
       'Redakteur (ext.)' => 'Redakteur (ext.)',
       'Redakteur (int.)' => 'Redakteur (int.)',
@@ -57,6 +61,7 @@ function ipwa_permissions_user_default_permissions() {
   $permissions['access content overview'] = array(
     'name' => 'access content overview',
     'roles' => array(
+      'Administrator' => 'Administrator',
       'Chefredakteur' => 'Chefredakteur',
       'Redakteur (ext.)' => 'Redakteur (ext.)',
       'Redakteur (int.)' => 'Redakteur (int.)',
@@ -86,6 +91,7 @@ function ipwa_permissions_user_default_permissions() {
   $permissions['administer nodes'] = array(
     'name' => 'administer nodes',
     'roles' => array(
+      'Administrator' => 'Administrator',
       'Chefredakteur' => 'Chefredakteur',
     ),
     'module' => 'node',
@@ -99,15 +105,6 @@ function ipwa_permissions_user_default_permissions() {
       'Redakteur (int.)' => 'Redakteur (int.)',
     ),
     'module' => 'path_breadcrumbs_ui',
-  );
-
-  // Exported permission: 'administer permissions'.
-  $permissions['administer permissions'] = array(
-    'name' => 'administer permissions',
-    'roles' => array(
-      'Administrator' => 'Administrator',
-    ),
-    'module' => 'user',
   );
 
   // Exported permission: 'administer simplenews subscriptions'.
@@ -136,20 +133,14 @@ function ipwa_permissions_user_default_permissions() {
     'module' => 'path',
   );
 
-  // Exported permission: 'administer users'.
-  $permissions['administer users'] = array(
-    'name' => 'administer users',
-    'roles' => array(
-      'Administrator' => 'Administrator',
-      'Chefredakteur' => 'Chefredakteur',
-    ),
-    'module' => 'user',
-  );
-
   // Exported permission: 'bypass node access'.
   $permissions['bypass node access'] = array(
     'name' => 'bypass node access',
-    'roles' => array(),
+    'roles' => array(
+      'Administrator' => 'Administrator',
+      'Chefredakteur' => 'Chefredakteur',
+      'Redakteur (int.)' => 'Redakteur (int.)',
+    ),
     'module' => 'node',
   );
 
@@ -157,6 +148,7 @@ function ipwa_permissions_user_default_permissions() {
   $permissions['create article content'] = array(
     'name' => 'create article content',
     'roles' => array(
+      'Administrator' => 'Administrator',
       'Chefredakteur' => 'Chefredakteur',
       'Redakteur (ext.)' => 'Redakteur (ext.)',
       'Redakteur (int.)' => 'Redakteur (int.)',
@@ -168,8 +160,9 @@ function ipwa_permissions_user_default_permissions() {
   $permissions['create bild content'] = array(
     'name' => 'create bild content',
     'roles' => array(
+      'Administrator' => 'Administrator',
       'Chefredakteur' => 'Chefredakteur',
-      'Redakteur (ext.)' => 'Redakteur (ext.)',
+      'Redakteur (int.)' => 'Redakteur (int.)',
     ),
     'module' => 'node',
   );
@@ -178,6 +171,7 @@ function ipwa_permissions_user_default_permissions() {
   $permissions['create document content'] = array(
     'name' => 'create document content',
     'roles' => array(
+      'Administrator' => 'Administrator',
       'Chefredakteur' => 'Chefredakteur',
       'Redakteur (int.)' => 'Redakteur (int.)',
     ),
@@ -188,6 +182,7 @@ function ipwa_permissions_user_default_permissions() {
   $permissions['create doorpage content'] = array(
     'name' => 'create doorpage content',
     'roles' => array(
+      'Administrator' => 'Administrator',
       'Chefredakteur' => 'Chefredakteur',
       'Redakteur (ext.)' => 'Redakteur (ext.)',
       'Redakteur (int.)' => 'Redakteur (int.)',
@@ -199,6 +194,7 @@ function ipwa_permissions_user_default_permissions() {
   $permissions['create f_rderbekanntmachung content'] = array(
     'name' => 'create f_rderbekanntmachung content',
     'roles' => array(
+      'Administrator' => 'Administrator',
       'Chefredakteur' => 'Chefredakteur',
       'Redakteur (ext.)' => 'Redakteur (ext.)',
       'Redakteur (int.)' => 'Redakteur (int.)',
@@ -219,6 +215,7 @@ function ipwa_permissions_user_default_permissions() {
   $permissions['create nachricht content'] = array(
     'name' => 'create nachricht content',
     'roles' => array(
+      'Administrator' => 'Administrator',
       'Chefredakteur' => 'Chefredakteur',
       'Redakteur (ext.)' => 'Redakteur (ext.)',
       'Redakteur (int.)' => 'Redakteur (int.)',
@@ -226,61 +223,11 @@ function ipwa_permissions_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: 'create paragraph content flie_text_bereich'.
-  $permissions['create paragraph content flie_text_bereich'] = array(
-    'name' => 'create paragraph content flie_text_bereich',
-    'roles' => array(
-      'Administrator' => 'Administrator',
-      'anonymous user' => 'anonymous user',
-      'authenticated user' => 'authenticated user',
-    ),
-    'module' => 'paragraphs_bundle_permissions',
-  );
-
-  // Exported permission: 'create paragraph content flie_text_mit_bild_links'.
-  $permissions['create paragraph content flie_text_mit_bild_links'] = array(
-    'name' => 'create paragraph content flie_text_mit_bild_links',
-    'roles' => array(
-      'Administrator' => 'Administrator',
-      'authenticated user' => 'authenticated user',
-    ),
-    'module' => 'paragraphs_bundle_permissions',
-  );
-
-  // Exported permission: 'create paragraph content flie_text_mit_bild_rechts'.
-  $permissions['create paragraph content flie_text_mit_bild_rechts'] = array(
-    'name' => 'create paragraph content flie_text_mit_bild_rechts',
-    'roles' => array(
-      'Administrator' => 'Administrator',
-      'authenticated user' => 'authenticated user',
-    ),
-    'module' => 'paragraphs_bundle_permissions',
-  );
-
-  // Exported permission: 'create paragraph content frontpage_map_teaser_paragraph'.
-  $permissions['create paragraph content frontpage_map_teaser_paragraph'] = array(
-    'name' => 'create paragraph content frontpage_map_teaser_paragraph',
-    'roles' => array(
-      'Administrator' => 'Administrator',
-      'authenticated user' => 'authenticated user',
-    ),
-    'module' => 'paragraphs_bundle_permissions',
-  );
-
-  // Exported permission: 'create paragraph content topic_teaser_paragraph'.
-  $permissions['create paragraph content topic_teaser_paragraph'] = array(
-    'name' => 'create paragraph content topic_teaser_paragraph',
-    'roles' => array(
-      'Administrator' => 'Administrator',
-      'authenticated user' => 'authenticated user',
-    ),
-    'module' => 'paragraphs_bundle_permissions',
-  );
-
   // Exported permission: 'create projekt content'.
   $permissions['create projekt content'] = array(
     'name' => 'create projekt content',
     'roles' => array(
+      'Administrator' => 'Administrator',
       'Chefredakteur' => 'Chefredakteur',
       'Redakteur (ext.)' => 'Redakteur (ext.)',
       'Redakteur (int.)' => 'Redakteur (int.)',
@@ -292,6 +239,7 @@ function ipwa_permissions_user_default_permissions() {
   $permissions['create protagonist content'] = array(
     'name' => 'create protagonist content',
     'roles' => array(
+      'Administrator' => 'Administrator',
       'Chefredakteur' => 'Chefredakteur',
       'Redakteur (ext.)' => 'Redakteur (ext.)',
       'Redakteur (int.)' => 'Redakteur (int.)',
@@ -303,6 +251,7 @@ function ipwa_permissions_user_default_permissions() {
   $permissions['create publikation content'] = array(
     'name' => 'create publikation content',
     'roles' => array(
+      'Administrator' => 'Administrator',
       'Chefredakteur' => 'Chefredakteur',
       'Redakteur (ext.)' => 'Redakteur (ext.)',
       'Redakteur (int.)' => 'Redakteur (int.)',
@@ -314,6 +263,7 @@ function ipwa_permissions_user_default_permissions() {
   $permissions['create simplenews content'] = array(
     'name' => 'create simplenews content',
     'roles' => array(
+      'Administrator' => 'Administrator',
       'Chefredakteur' => 'Chefredakteur',
       'Redakteur (int.)' => 'Redakteur (int.)',
     ),
@@ -324,6 +274,7 @@ function ipwa_permissions_user_default_permissions() {
   $permissions['create termin content'] = array(
     'name' => 'create termin content',
     'roles' => array(
+      'Administrator' => 'Administrator',
       'Chefredakteur' => 'Chefredakteur',
       'Redakteur (ext.)' => 'Redakteur (ext.)',
       'Redakteur (int.)' => 'Redakteur (int.)',
@@ -344,7 +295,9 @@ function ipwa_permissions_user_default_permissions() {
   // Exported permission: 'create webform content'.
   $permissions['create webform content'] = array(
     'name' => 'create webform content',
-    'roles' => array(),
+    'roles' => array(
+      'Administrator' => 'Administrator',
+    ),
     'module' => 'node',
   );
 
@@ -352,6 +305,7 @@ function ipwa_permissions_user_default_permissions() {
   $permissions['delete any article content'] = array(
     'name' => 'delete any article content',
     'roles' => array(
+      'Administrator' => 'Administrator',
       'Chefredakteur' => 'Chefredakteur',
       'Redakteur (int.)' => 'Redakteur (int.)',
     ),
@@ -362,6 +316,7 @@ function ipwa_permissions_user_default_permissions() {
   $permissions['delete any bild content'] = array(
     'name' => 'delete any bild content',
     'roles' => array(
+      'Administrator' => 'Administrator',
       'Chefredakteur' => 'Chefredakteur',
       'Redakteur (int.)' => 'Redakteur (int.)',
     ),
@@ -372,6 +327,7 @@ function ipwa_permissions_user_default_permissions() {
   $permissions['delete any document content'] = array(
     'name' => 'delete any document content',
     'roles' => array(
+      'Administrator' => 'Administrator',
       'Chefredakteur' => 'Chefredakteur',
       'Redakteur (int.)' => 'Redakteur (int.)',
     ),
@@ -391,6 +347,7 @@ function ipwa_permissions_user_default_permissions() {
   $permissions['delete any doorpage content'] = array(
     'name' => 'delete any doorpage content',
     'roles' => array(
+      'Administrator' => 'Administrator',
       'Chefredakteur' => 'Chefredakteur',
       'Redakteur (int.)' => 'Redakteur (int.)',
     ),
@@ -401,6 +358,7 @@ function ipwa_permissions_user_default_permissions() {
   $permissions['delete any f_rderbekanntmachung content'] = array(
     'name' => 'delete any f_rderbekanntmachung content',
     'roles' => array(
+      'Administrator' => 'Administrator',
       'Chefredakteur' => 'Chefredakteur',
       'Redakteur (int.)' => 'Redakteur (int.)',
     ),
@@ -411,6 +369,7 @@ function ipwa_permissions_user_default_permissions() {
   $permissions['delete any nachricht content'] = array(
     'name' => 'delete any nachricht content',
     'roles' => array(
+      'Administrator' => 'Administrator',
       'Chefredakteur' => 'Chefredakteur',
       'Redakteur (int.)' => 'Redakteur (int.)',
     ),
@@ -421,6 +380,7 @@ function ipwa_permissions_user_default_permissions() {
   $permissions['delete any projekt content'] = array(
     'name' => 'delete any projekt content',
     'roles' => array(
+      'Administrator' => 'Administrator',
       'Chefredakteur' => 'Chefredakteur',
       'Redakteur (int.)' => 'Redakteur (int.)',
     ),
@@ -431,6 +391,7 @@ function ipwa_permissions_user_default_permissions() {
   $permissions['delete any protagonist content'] = array(
     'name' => 'delete any protagonist content',
     'roles' => array(
+      'Administrator' => 'Administrator',
       'Chefredakteur' => 'Chefredakteur',
       'Redakteur (int.)' => 'Redakteur (int.)',
     ),
@@ -441,6 +402,7 @@ function ipwa_permissions_user_default_permissions() {
   $permissions['delete any publikation content'] = array(
     'name' => 'delete any publikation content',
     'roles' => array(
+      'Administrator' => 'Administrator',
       'Chefredakteur' => 'Chefredakteur',
       'Redakteur (int.)' => 'Redakteur (int.)',
     ),
@@ -451,6 +413,7 @@ function ipwa_permissions_user_default_permissions() {
   $permissions['delete any simplenews content'] = array(
     'name' => 'delete any simplenews content',
     'roles' => array(
+      'Administrator' => 'Administrator',
       'Chefredakteur' => 'Chefredakteur',
       'Redakteur (int.)' => 'Redakteur (int.)',
     ),
@@ -461,6 +424,7 @@ function ipwa_permissions_user_default_permissions() {
   $permissions['delete any termin content'] = array(
     'name' => 'delete any termin content',
     'roles' => array(
+      'Administrator' => 'Administrator',
       'Chefredakteur' => 'Chefredakteur',
       'Redakteur (int.)' => 'Redakteur (int.)',
     ),
@@ -470,7 +434,9 @@ function ipwa_permissions_user_default_permissions() {
   // Exported permission: 'delete any webform content'.
   $permissions['delete any webform content'] = array(
     'name' => 'delete any webform content',
-    'roles' => array(),
+    'roles' => array(
+      'Administrator' => 'Administrator',
+    ),
     'module' => 'node',
   );
 
@@ -478,6 +444,7 @@ function ipwa_permissions_user_default_permissions() {
   $permissions['delete own article content'] = array(
     'name' => 'delete own article content',
     'roles' => array(
+      'Administrator' => 'Administrator',
       'Chefredakteur' => 'Chefredakteur',
       'Redakteur (ext.)' => 'Redakteur (ext.)',
       'Redakteur (int.)' => 'Redakteur (int.)',
@@ -498,6 +465,7 @@ function ipwa_permissions_user_default_permissions() {
   $permissions['delete own document content'] = array(
     'name' => 'delete own document content',
     'roles' => array(
+      'Administrator' => 'Administrator',
       'Chefredakteur' => 'Chefredakteur',
     ),
     'module' => 'node',
@@ -507,6 +475,7 @@ function ipwa_permissions_user_default_permissions() {
   $permissions['delete own doorpage content'] = array(
     'name' => 'delete own doorpage content',
     'roles' => array(
+      'Administrator' => 'Administrator',
       'Chefredakteur' => 'Chefredakteur',
       'Redakteur (ext.)' => 'Redakteur (ext.)',
       'Redakteur (int.)' => 'Redakteur (int.)',
@@ -518,6 +487,7 @@ function ipwa_permissions_user_default_permissions() {
   $permissions['delete own f_rderbekanntmachung content'] = array(
     'name' => 'delete own f_rderbekanntmachung content',
     'roles' => array(
+      'Administrator' => 'Administrator',
       'Chefredakteur' => 'Chefredakteur',
       'Redakteur (ext.)' => 'Redakteur (ext.)',
       'Redakteur (int.)' => 'Redakteur (int.)',
@@ -529,6 +499,7 @@ function ipwa_permissions_user_default_permissions() {
   $permissions['delete own nachricht content'] = array(
     'name' => 'delete own nachricht content',
     'roles' => array(
+      'Administrator' => 'Administrator',
       'Chefredakteur' => 'Chefredakteur',
       'Redakteur (ext.)' => 'Redakteur (ext.)',
       'Redakteur (int.)' => 'Redakteur (int.)',
@@ -540,6 +511,7 @@ function ipwa_permissions_user_default_permissions() {
   $permissions['delete own projekt content'] = array(
     'name' => 'delete own projekt content',
     'roles' => array(
+      'Administrator' => 'Administrator',
       'Chefredakteur' => 'Chefredakteur',
       'Redakteur (ext.)' => 'Redakteur (ext.)',
       'Redakteur (int.)' => 'Redakteur (int.)',
@@ -551,6 +523,7 @@ function ipwa_permissions_user_default_permissions() {
   $permissions['delete own protagonist content'] = array(
     'name' => 'delete own protagonist content',
     'roles' => array(
+      'Administrator' => 'Administrator',
       'Chefredakteur' => 'Chefredakteur',
       'Redakteur (ext.)' => 'Redakteur (ext.)',
       'Redakteur (int.)' => 'Redakteur (int.)',
@@ -562,6 +535,7 @@ function ipwa_permissions_user_default_permissions() {
   $permissions['delete own publikation content'] = array(
     'name' => 'delete own publikation content',
     'roles' => array(
+      'Administrator' => 'Administrator',
       'Chefredakteur' => 'Chefredakteur',
       'Redakteur (ext.)' => 'Redakteur (ext.)',
       'Redakteur (int.)' => 'Redakteur (int.)',
@@ -573,6 +547,7 @@ function ipwa_permissions_user_default_permissions() {
   $permissions['delete own simplenews content'] = array(
     'name' => 'delete own simplenews content',
     'roles' => array(
+      'Administrator' => 'Administrator',
       'Chefredakteur' => 'Chefredakteur',
       'Redakteur (int.)' => 'Redakteur (int.)',
     ),
@@ -583,6 +558,7 @@ function ipwa_permissions_user_default_permissions() {
   $permissions['delete own termin content'] = array(
     'name' => 'delete own termin content',
     'roles' => array(
+      'Administrator' => 'Administrator',
       'Chefredakteur' => 'Chefredakteur',
       'Redakteur (ext.)' => 'Redakteur (ext.)',
       'Redakteur (int.)' => 'Redakteur (int.)',
@@ -593,64 +569,17 @@ function ipwa_permissions_user_default_permissions() {
   // Exported permission: 'delete own webform content'.
   $permissions['delete own webform content'] = array(
     'name' => 'delete own webform content',
-    'roles' => array(),
+    'roles' => array(
+      'Administrator' => 'Administrator',
+    ),
     'module' => 'node',
-  );
-
-  // Exported permission: 'delete paragraph content flie_text_bereich'.
-  $permissions['delete paragraph content flie_text_bereich'] = array(
-    'name' => 'delete paragraph content flie_text_bereich',
-    'roles' => array(
-      'Administrator' => 'Administrator',
-      'anonymous user' => 'anonymous user',
-      'authenticated user' => 'authenticated user',
-    ),
-    'module' => 'paragraphs_bundle_permissions',
-  );
-
-  // Exported permission: 'delete paragraph content flie_text_mit_bild_links'.
-  $permissions['delete paragraph content flie_text_mit_bild_links'] = array(
-    'name' => 'delete paragraph content flie_text_mit_bild_links',
-    'roles' => array(
-      'Administrator' => 'Administrator',
-    ),
-    'module' => 'paragraphs_bundle_permissions',
-  );
-
-  // Exported permission: 'delete paragraph content flie_text_mit_bild_rechts'.
-  $permissions['delete paragraph content flie_text_mit_bild_rechts'] = array(
-    'name' => 'delete paragraph content flie_text_mit_bild_rechts',
-    'roles' => array(
-      'Administrator' => 'Administrator',
-      'authenticated user' => 'authenticated user',
-    ),
-    'module' => 'paragraphs_bundle_permissions',
-  );
-
-  // Exported permission: 'delete paragraph content frontpage_map_teaser_paragraph'.
-  $permissions['delete paragraph content frontpage_map_teaser_paragraph'] = array(
-    'name' => 'delete paragraph content frontpage_map_teaser_paragraph',
-    'roles' => array(
-      'Administrator' => 'Administrator',
-      'authenticated user' => 'authenticated user',
-    ),
-    'module' => 'paragraphs_bundle_permissions',
-  );
-
-  // Exported permission: 'delete paragraph content topic_teaser_paragraph'.
-  $permissions['delete paragraph content topic_teaser_paragraph'] = array(
-    'name' => 'delete paragraph content topic_teaser_paragraph',
-    'roles' => array(
-      'Administrator' => 'Administrator',
-      'authenticated user' => 'authenticated user',
-    ),
-    'module' => 'paragraphs_bundle_permissions',
   );
 
   // Exported permission: 'edit any article content'.
   $permissions['edit any article content'] = array(
     'name' => 'edit any article content',
     'roles' => array(
+      'Administrator' => 'Administrator',
       'Chefredakteur' => 'Chefredakteur',
       'Redakteur (int.)' => 'Redakteur (int.)',
     ),
@@ -661,6 +590,7 @@ function ipwa_permissions_user_default_permissions() {
   $permissions['edit any bild content'] = array(
     'name' => 'edit any bild content',
     'roles' => array(
+      'Administrator' => 'Administrator',
       'Chefredakteur' => 'Chefredakteur',
       'Redakteur (int.)' => 'Redakteur (int.)',
     ),
@@ -671,6 +601,7 @@ function ipwa_permissions_user_default_permissions() {
   $permissions['edit any document content'] = array(
     'name' => 'edit any document content',
     'roles' => array(
+      'Administrator' => 'Administrator',
       'Chefredakteur' => 'Chefredakteur',
       'Redakteur (int.)' => 'Redakteur (int.)',
     ),
@@ -681,6 +612,7 @@ function ipwa_permissions_user_default_permissions() {
   $permissions['edit any document files'] = array(
     'name' => 'edit any document files',
     'roles' => array(
+      'Administrator' => 'Administrator',
       'Chefredakteur' => 'Chefredakteur',
     ),
     'module' => 'file_entity',
@@ -690,6 +622,7 @@ function ipwa_permissions_user_default_permissions() {
   $permissions['edit any doorpage content'] = array(
     'name' => 'edit any doorpage content',
     'roles' => array(
+      'Administrator' => 'Administrator',
       'Chefredakteur' => 'Chefredakteur',
       'Redakteur (int.)' => 'Redakteur (int.)',
     ),
@@ -700,6 +633,7 @@ function ipwa_permissions_user_default_permissions() {
   $permissions['edit any f_rderbekanntmachung content'] = array(
     'name' => 'edit any f_rderbekanntmachung content',
     'roles' => array(
+      'Administrator' => 'Administrator',
       'Chefredakteur' => 'Chefredakteur',
       'Redakteur (int.)' => 'Redakteur (int.)',
     ),
@@ -710,6 +644,7 @@ function ipwa_permissions_user_default_permissions() {
   $permissions['edit any image files'] = array(
     'name' => 'edit any image files',
     'roles' => array(
+      'Administrator' => 'Administrator',
       'Chefredakteur' => 'Chefredakteur',
     ),
     'module' => 'file_entity',
@@ -719,6 +654,7 @@ function ipwa_permissions_user_default_permissions() {
   $permissions['edit any nachricht content'] = array(
     'name' => 'edit any nachricht content',
     'roles' => array(
+      'Administrator' => 'Administrator',
       'Chefredakteur' => 'Chefredakteur',
       'Redakteur (int.)' => 'Redakteur (int.)',
     ),
@@ -729,6 +665,7 @@ function ipwa_permissions_user_default_permissions() {
   $permissions['edit any projekt content'] = array(
     'name' => 'edit any projekt content',
     'roles' => array(
+      'Administrator' => 'Administrator',
       'Chefredakteur' => 'Chefredakteur',
       'Redakteur (int.)' => 'Redakteur (int.)',
     ),
@@ -739,6 +676,7 @@ function ipwa_permissions_user_default_permissions() {
   $permissions['edit any protagonist content'] = array(
     'name' => 'edit any protagonist content',
     'roles' => array(
+      'Administrator' => 'Administrator',
       'Chefredakteur' => 'Chefredakteur',
       'Redakteur (int.)' => 'Redakteur (int.)',
     ),
@@ -749,6 +687,7 @@ function ipwa_permissions_user_default_permissions() {
   $permissions['edit any publikation content'] = array(
     'name' => 'edit any publikation content',
     'roles' => array(
+      'Administrator' => 'Administrator',
       'Chefredakteur' => 'Chefredakteur',
       'Redakteur (int.)' => 'Redakteur (int.)',
     ),
@@ -759,6 +698,7 @@ function ipwa_permissions_user_default_permissions() {
   $permissions['edit any simplenews content'] = array(
     'name' => 'edit any simplenews content',
     'roles' => array(
+      'Administrator' => 'Administrator',
       'Chefredakteur' => 'Chefredakteur',
       'Redakteur (int.)' => 'Redakteur (int.)',
     ),
@@ -769,6 +709,7 @@ function ipwa_permissions_user_default_permissions() {
   $permissions['edit any termin content'] = array(
     'name' => 'edit any termin content',
     'roles' => array(
+      'Administrator' => 'Administrator',
       'Chefredakteur' => 'Chefredakteur',
       'Redakteur (int.)' => 'Redakteur (int.)',
     ),
@@ -778,7 +719,9 @@ function ipwa_permissions_user_default_permissions() {
   // Exported permission: 'edit any webform content'.
   $permissions['edit any webform content'] = array(
     'name' => 'edit any webform content',
-    'roles' => array(),
+    'roles' => array(
+      'Administrator' => 'Administrator',
+    ),
     'module' => 'node',
   );
 
@@ -815,6 +758,7 @@ function ipwa_permissions_user_default_permissions() {
   $permissions['edit own doorpage content'] = array(
     'name' => 'edit own doorpage content',
     'roles' => array(
+      'Administrator' => 'Administrator',
       'Chefredakteur' => 'Chefredakteur',
       'Redakteur (ext.)' => 'Redakteur (ext.)',
       'Redakteur (int.)' => 'Redakteur (int.)',
@@ -826,6 +770,7 @@ function ipwa_permissions_user_default_permissions() {
   $permissions['edit own f_rderbekanntmachung content'] = array(
     'name' => 'edit own f_rderbekanntmachung content',
     'roles' => array(
+      'Administrator' => 'Administrator',
       'Chefredakteur' => 'Chefredakteur',
       'Redakteur (ext.)' => 'Redakteur (ext.)',
       'Redakteur (int.)' => 'Redakteur (int.)',
@@ -847,6 +792,7 @@ function ipwa_permissions_user_default_permissions() {
   $permissions['edit own projekt content'] = array(
     'name' => 'edit own projekt content',
     'roles' => array(
+      'Administrator' => 'Administrator',
       'Chefredakteur' => 'Chefredakteur',
       'Redakteur (ext.)' => 'Redakteur (ext.)',
       'Redakteur (int.)' => 'Redakteur (int.)',
@@ -858,6 +804,7 @@ function ipwa_permissions_user_default_permissions() {
   $permissions['edit own protagonist content'] = array(
     'name' => 'edit own protagonist content',
     'roles' => array(
+      'Administrator' => 'Administrator',
       'Chefredakteur' => 'Chefredakteur',
       'Redakteur (ext.)' => 'Redakteur (ext.)',
       'Redakteur (int.)' => 'Redakteur (int.)',
@@ -869,6 +816,7 @@ function ipwa_permissions_user_default_permissions() {
   $permissions['edit own publikation content'] = array(
     'name' => 'edit own publikation content',
     'roles' => array(
+      'Administrator' => 'Administrator',
       'Chefredakteur' => 'Chefredakteur',
       'Redakteur (ext.)' => 'Redakteur (ext.)',
       'Redakteur (int.)' => 'Redakteur (int.)',
@@ -880,6 +828,7 @@ function ipwa_permissions_user_default_permissions() {
   $permissions['edit own simplenews content'] = array(
     'name' => 'edit own simplenews content',
     'roles' => array(
+      'Administrator' => 'Administrator',
       'Chefredakteur' => 'Chefredakteur',
       'Redakteur (int.)' => 'Redakteur (int.)',
     ),
@@ -890,6 +839,7 @@ function ipwa_permissions_user_default_permissions() {
   $permissions['edit own termin content'] = array(
     'name' => 'edit own termin content',
     'roles' => array(
+      'Administrator' => 'Administrator',
       'Chefredakteur' => 'Chefredakteur',
       'Redakteur (ext.)' => 'Redakteur (ext.)',
       'Redakteur (int.)' => 'Redakteur (int.)',
@@ -900,7 +850,9 @@ function ipwa_permissions_user_default_permissions() {
   // Exported permission: 'edit own webform content'.
   $permissions['edit own webform content'] = array(
     'name' => 'edit own webform content',
-    'roles' => array(),
+    'roles' => array(
+      'Administrator' => 'Administrator',
+    ),
     'module' => 'node',
   );
 
@@ -923,61 +875,11 @@ function ipwa_permissions_user_default_permissions() {
     'module' => 'simplenews',
   );
 
-  // Exported permission: 'update paragraph content flie_text_bereich'.
-  $permissions['update paragraph content flie_text_bereich'] = array(
-    'name' => 'update paragraph content flie_text_bereich',
-    'roles' => array(
-      'Administrator' => 'Administrator',
-      'anonymous user' => 'anonymous user',
-      'authenticated user' => 'authenticated user',
-    ),
-    'module' => 'paragraphs_bundle_permissions',
-  );
-
-  // Exported permission: 'update paragraph content flie_text_mit_bild_links'.
-  $permissions['update paragraph content flie_text_mit_bild_links'] = array(
-    'name' => 'update paragraph content flie_text_mit_bild_links',
-    'roles' => array(
-      'Administrator' => 'Administrator',
-      'authenticated user' => 'authenticated user',
-    ),
-    'module' => 'paragraphs_bundle_permissions',
-  );
-
-  // Exported permission: 'update paragraph content flie_text_mit_bild_rechts'.
-  $permissions['update paragraph content flie_text_mit_bild_rechts'] = array(
-    'name' => 'update paragraph content flie_text_mit_bild_rechts',
-    'roles' => array(
-      'Administrator' => 'Administrator',
-      'authenticated user' => 'authenticated user',
-    ),
-    'module' => 'paragraphs_bundle_permissions',
-  );
-
-  // Exported permission: 'update paragraph content frontpage_map_teaser_paragraph'.
-  $permissions['update paragraph content frontpage_map_teaser_paragraph'] = array(
-    'name' => 'update paragraph content frontpage_map_teaser_paragraph',
-    'roles' => array(
-      'Administrator' => 'Administrator',
-      'authenticated user' => 'authenticated user',
-    ),
-    'module' => 'paragraphs_bundle_permissions',
-  );
-
-  // Exported permission: 'update paragraph content topic_teaser_paragraph'.
-  $permissions['update paragraph content topic_teaser_paragraph'] = array(
-    'name' => 'update paragraph content topic_teaser_paragraph',
-    'roles' => array(
-      'Administrator' => 'Administrator',
-      'authenticated user' => 'authenticated user',
-    ),
-    'module' => 'paragraphs_bundle_permissions',
-  );
-
   // Exported permission: 'view own unpublished content'.
   $permissions['view own unpublished content'] = array(
     'name' => 'view own unpublished content',
     'roles' => array(
+      'Administrator' => 'Administrator',
       'Chefredakteur' => 'Chefredakteur',
       'Redakteur (ext.)' => 'Redakteur (ext.)',
       'Redakteur (int.)' => 'Redakteur (int.)',
