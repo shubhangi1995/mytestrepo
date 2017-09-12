@@ -405,6 +405,9 @@
         padding-left: 55px;
         line-height: 35px;
         margin-bottom: 40px;
+		ul, ol{
+			margin-bottom:0;
+		}
     }
 
     ul, ol {
@@ -430,6 +433,7 @@
             &::before {
                 content: counter(list) ".";
                 font-size: 19px;
+				left:-32px; 
             }
         }
     }
