@@ -27,10 +27,9 @@ jQuery(document).ready(function(){
         }
     });
 	
-	if(jQuery("#admin-menu-wrapper")) {
-		jQuery('.external-link').removeClass('external-link');
+	// Removed external link class from admin menu top
+	jQuery("#admin-menu-wrapper").find('.external-link').removeClass('external-link');
 
-	}
 
 	jQuery('#views-exposed-form-aktuelles-page select').select2({
         minimumResultsForSearch: Infinity
