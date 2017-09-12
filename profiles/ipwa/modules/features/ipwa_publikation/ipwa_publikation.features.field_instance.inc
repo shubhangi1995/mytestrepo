@@ -287,6 +287,7 @@ function ipwa_publikation_field_default_field_instances() {
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -342,7 +343,8 @@ function ipwa_publikation_field_default_field_instances() {
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
-          'link' => FALSE,
+          'bypass_access' => 0,
+          'link' => 1,
         ),
         'type' => 'entityreference_label',
         'weight' => 10,
@@ -455,7 +457,8 @@ function ipwa_publikation_field_default_field_instances() {
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
-          'link' => FALSE,
+          'bypass_access' => 0,
+          'link' => 1,
         ),
         'type' => 'entityreference_label',
         'weight' => 8,
@@ -567,7 +570,8 @@ function ipwa_publikation_field_default_field_instances() {
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
-          'link' => FALSE,
+          'bypass_access' => 0,
+          'link' => 1,
         ),
         'type' => 'entityreference_label',
         'weight' => 7,
@@ -626,7 +630,8 @@ function ipwa_publikation_field_default_field_instances() {
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
-          'link' => FALSE,
+          'bypass_access' => 0,
+          'link' => 1,
         ),
         'type' => 'entityreference_label',
         'weight' => 9,
@@ -685,6 +690,7 @@ function ipwa_publikation_field_default_field_instances() {
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -999,6 +1005,7 @@ function ipwa_publikation_field_default_field_instances() {
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
