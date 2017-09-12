@@ -262,7 +262,7 @@ function show_footer_block_icons() {
                      <img src="'.$base_path.'profiles/ipwa/themes/ipwa/images/EFRE.NRW.svg" alt="Ziel2NRW_RGB_1809">
                    </div>
                    <div>
-                     <img src="'.$base_path.'profiles/ipwa/themes/ipwa/images/NRW_MWIDE_RGB.svg" alt="NRW_MWEIMH_RGB">
+                     <img src="'.$base_path.'profiles/ipwa/themes/ipwa/images/NRW.svg" alt="NRW_MWEIMH_RGB">
                    </div>
                  </div>';
 
