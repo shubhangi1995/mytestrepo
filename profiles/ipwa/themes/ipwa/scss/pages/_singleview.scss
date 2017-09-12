@@ -440,9 +440,29 @@
 				counter-increment: section;
 				content: counters(section,".") " ";
                 font-size: 19px;
-				position:static;
-				margin: 0 8px 0 0;
+				left:-32px;
             }
+			ol{
+				 > li{
+					&::before{
+						left:-45px;
+					}
+					ol{
+						 > li{
+							&::before{
+								left:-60px;
+							}
+							ol{
+								> li{
+									&::before{
+									left:-70px;
+									}
+								}
+							}
+						 }
+					}
+				 }
+			}
         }
     }
 }
