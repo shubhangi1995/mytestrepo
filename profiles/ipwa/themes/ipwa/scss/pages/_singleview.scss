@@ -382,7 +382,7 @@
         text-decoration: underline;
 
         //border-bottom:1px solid $body-link-border-color;
-        margin: 0 7px 0 5px;
+        // margin: 0 7px 0 5px;
         // text-transform: capitalize;
         display: inline-block;
 
@@ -392,6 +392,10 @@
             //border-color:$active-menu;
        
         }
+		&.external-link{
+			 margin: 0 4px 0 0; 
+			 font-size:20px;
+		}
     }
 
     .view-id-related_content.view-display-id-block_3 .views-row {
