@@ -92,7 +92,7 @@
 						<img src="<?php print file_create_url(drupal_get_path('theme', 'ipwa')); ?>/images/NRW_4_d.png" alt="Logo1" style="width:200px;height:90px;"/>
 				</td>
 				<td align="right" style="padding:20px 10px;">
-						<img src="<?php print file_create_url(drupal_get_path('theme', 'ipwa')); ?>/images/EU-Logo.png" alt="Logo2" style = "width:180px;height:90px;"/>
+						<img src="<?php print file_create_url(drupal_get_path('theme', 'ipwa')); ?>/images/EU_Logo.svg" alt="Logo2" style = "width:180px;height:90px;"/>
 				</td>
 			</tr>
 		</table>
@@ -260,11 +260,11 @@
                 </tr>
                 <tr style="padding:20px 20px;">
                     <td align="left" style="color:#273753;">
-                        <img src="<?php print file_create_url(drupal_get_path('theme', 'ipwa')); ?>/images/EU_Logo.png" alt = "footer_logo1" width="190"/>
+                        <img src="<?php print file_create_url(drupal_get_path('theme', 'ipwa')); ?>/images/EU_Logo.svg" alt = "footer_logo1" width="190"/>
                         <span style="color:#eff2f7;font-size:8px;">12</span>
-                        <img src="<?php print file_create_url(drupal_get_path('theme', 'ipwa')); ?>/images/EFRE.NRW.png" alt = "footer_logo2" width="190"/>
+                        <img src="<?php print file_create_url(drupal_get_path('theme', 'ipwa')); ?>/images/EFRE.NRW.svg" alt = "footer_logo2" width="190"/>
                         <span style="color:#eff2f7;font-size:8px;">12</span>
-                        <img src="<?php print file_create_url(drupal_get_path('theme', 'ipwa')); ?>/images/MWEI.png" alt = "footer_logo3" width="190"/>
+                        <img src="<?php print file_create_url(drupal_get_path('theme', 'ipwa')); ?>/images/NRW_MWIDE.svg" alt = "footer_logo3" width="190"/>
                     </td>
                 </tr>
 				<tr style="background:#eff2f7;">
