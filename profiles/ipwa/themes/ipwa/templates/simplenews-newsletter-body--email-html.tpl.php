@@ -264,7 +264,7 @@
                         <span style="color:#eff2f7;font-size:8px;">12</span>
                         <img src="<?php print file_create_url(drupal_get_path('theme', 'ipwa')); ?>/images/EFRE.NRW.png" alt = "footer_logo2" width="190"/>
                         <span style="color:#eff2f7;font-size:8px;">12</span>
-                        <img src="<?php print file_create_url(drupal_get_path('theme', 'ipwa')); ?>/images/MWEI.png" alt = "footer_logo3" width="190"/>
+                        <img src="<?php print file_create_url(drupal_get_path('theme', 'ipwa')); ?>/images/NRW_MWIDE_RGB.png" alt = "footer_logo3" width="190"/>
                     </td>
                 </tr>
 				<tr style="background:#eff2f7;">
