@@ -2401,11 +2401,24 @@ Publikation|Publikationen'),
   $handler->display->display_options['fields']['field_themenzuweisung']['link_to_entity'] = 0;
   $handler->display->display_options['fields']['field_themenzuweisung']['view_mode'] = 'full';
   $handler->display->display_options['fields']['field_themenzuweisung']['bypass_access'] = 0;
+  /* Feld: Indexed Beitrag: Akteurstyp */
+  $handler->display->display_options['fields']['field_akteurstyp']['id'] = 'field_akteurstyp';
+  $handler->display->display_options['fields']['field_akteurstyp']['table'] = 'search_api_index_ipwa_solr_index';
+  $handler->display->display_options['fields']['field_akteurstyp']['field'] = 'field_akteurstyp';
+  $handler->display->display_options['fields']['field_akteurstyp']['label'] = '';
+  $handler->display->display_options['fields']['field_akteurstyp']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_akteurstyp']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_akteurstyp']['empty'] = 'Projekt';
+  $handler->display->display_options['fields']['field_akteurstyp']['link_to_entity'] = 0;
+  $handler->display->display_options['fields']['field_akteurstyp']['view_mode'] = 'full';
+  $handler->display->display_options['fields']['field_akteurstyp']['bypass_access'] = 0;
   /* Feld: Indexed Beitrag: Inhaltstyp */
   $handler->display->display_options['fields']['type']['id'] = 'type';
   $handler->display->display_options['fields']['type']['table'] = 'search_api_index_ipwa_solr_index';
   $handler->display->display_options['fields']['type']['field'] = 'type';
   $handler->display->display_options['fields']['type']['label'] = '';
+  $handler->display->display_options['fields']['type']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['type']['alter']['text'] = '[field_akteurstyp]';
   $handler->display->display_options['fields']['type']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['type']['link_to_entity'] = 0;
   $handler->display->display_options['fields']['type']['format_name'] = 1;
@@ -2418,27 +2431,6 @@ Publikation|Publikationen'),
   $handler->display->display_options['fields']['title']['alter']['trim'] = TRUE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title']['link_to_entity'] = 0;
-  /* Feld: Indexed Beitrag: Akteurstyp */
-  $handler->display->display_options['fields']['field_akteurstyp']['id'] = 'field_akteurstyp';
-  $handler->display->display_options['fields']['field_akteurstyp']['table'] = 'search_api_index_ipwa_solr_index';
-  $handler->display->display_options['fields']['field_akteurstyp']['field'] = 'field_akteurstyp';
-  $handler->display->display_options['fields']['field_akteurstyp']['label'] = '';
-  $handler->display->display_options['fields']['field_akteurstyp']['exclude'] = TRUE;
-  $handler->display->display_options['fields']['field_akteurstyp']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_akteurstyp']['link_to_entity'] = 0;
-  $handler->display->display_options['fields']['field_akteurstyp']['view_mode'] = 'full';
-  $handler->display->display_options['fields']['field_akteurstyp']['bypass_access'] = 0;
-  /* Feld: Views: Views Conditional */
-  $handler->display->display_options['fields']['views_conditional']['id'] = 'views_conditional';
-  $handler->display->display_options['fields']['views_conditional']['table'] = 'views_conditional';
-  $handler->display->display_options['fields']['views_conditional']['field'] = 'views_conditional';
-  $handler->display->display_options['fields']['views_conditional']['label'] = '';
-  $handler->display->display_options['fields']['views_conditional']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['views_conditional']['if'] = 'type';
-  $handler->display->display_options['fields']['views_conditional']['condition'] = '1';
-  $handler->display->display_options['fields']['views_conditional']['equalto'] = 'Akteur';
-  $handler->display->display_options['fields']['views_conditional']['then'] = '[field_akteurstyp]';
-  $handler->display->display_options['fields']['views_conditional']['strip_tags'] = 0;
   /* Feld: Indexed Beitrag: Longitude */
   $handler->display->display_options['fields']['field_longitude']['id'] = 'field_longitude';
   $handler->display->display_options['fields']['field_longitude']['table'] = 'search_api_index_ipwa_solr_index';
@@ -2658,6 +2650,8 @@ Publikation|Publikationen'),
 <a href="/schaufenster-digitales-nrw">Zur Kartensicht</a>
 </div>'),
     t('<img src="[field_themenzuweisung]" width="36" height="36">'),
+    t('Projekt'),
+    t('[field_akteurstyp]'),
     t('A-Z'),
     t('neueste zuerst'),
     t('Feed'),
