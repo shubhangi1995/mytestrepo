@@ -89,8 +89,8 @@ function ipwa_termin__field_group_info() {
     'label' => 'Left top wrapper',
     'weight' => '19',
     'children' => array(
-      0 => 'field_ort',
-      1 => 'field_zeit',
+      0 => 'field_zeit',
+      1 => 'field_zus_tzliche_informationen',
       2 => 'group_middle_wrapper',
     ),
     'format_type' => 'html-element',
@@ -189,11 +189,12 @@ function ipwa_termin__field_group_info() {
     'label' => 'Page info',
     'weight' => '0',
     'children' => array(
-      0 => 'field_quellenangabe',
-      1 => 'field_themenzuweisung',
-      2 => 'field_untertitel',
-      3 => 'group_title',
-      4 => 'group_top_wrapper',
+      0 => 'field_ort',
+      1 => 'field_quellenangabe',
+      2 => 'field_themenzuweisung',
+      3 => 'field_untertitel',
+      4 => 'group_title',
+      5 => 'group_top_wrapper',
     ),
     'format_type' => 'html-element',
     'format_settings' => array(
@@ -307,7 +308,7 @@ function ipwa_termin__field_group_info() {
   $field_group->parent_name = 'group_page_info';
   $field_group->data = array(
     'label' => 'title',
-    'weight' => '2',
+    'weight' => '32',
     'children' => array(),
     'format_type' => 'html-element',
     'format_settings' => array(
@@ -335,7 +336,7 @@ function ipwa_termin__field_group_info() {
   $field_group->parent_name = 'group_page_info';
   $field_group->data = array(
     'label' => 'top wrapper',
-    'weight' => '4',
+    'weight' => '34',
     'children' => array(
       0 => 'group_left_top_wrapper',
       1 => 'group_right_top_wrapper',

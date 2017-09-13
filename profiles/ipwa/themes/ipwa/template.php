@@ -46,10 +46,6 @@ function ipwa_preprocess_node(&$variables)
       $variables['content']['group_page_info']['rel_ort']['#markup'] = $variables['content']['group_page_info']['group_top_wrapper']['group_left_top_wrapper']['field_ort'][0]['#markup'];
       $variables['content']['group_page_info']['rel_ort']['#weight'] = isset($variables['elements']['#fieldgroups']['group_related_ort']) ? $variables['elements']['#fieldgroups']['group_related_ort']->weight : -1;
 
-      // show field 'Ort' appended with value of  field 'Zusätzliche Informationen zum Ort' if provided
-      if (!empty($variables['field_zus_tzliche_informationen'])) {
-        $variables['content']['group_page_info']['group_top_wrapper']['group_left_top_wrapper']['field_ort'][0]['#markup'] = $variables['content']['group_page_info']['group_top_wrapper']['group_left_top_wrapper']['field_ort'][0]['#markup'] . ' ' . $variables['field_zus_tzliche_informationen']['und'][0]['value'];
-      }
     }
 
     // replace of 'to' with'-' for field 'datum' in CT 'termin'

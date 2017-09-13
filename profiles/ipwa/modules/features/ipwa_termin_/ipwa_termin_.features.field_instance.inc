@@ -272,6 +272,7 @@ function ipwa_termin__field_default_field_instances() {
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -861,7 +862,7 @@ function ipwa_termin__field_default_field_instances() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 6,
+        'weight' => 36,
       ),
       'ical' => array(
         'label' => 'inline',
@@ -931,7 +932,7 @@ function ipwa_termin__field_default_field_instances() {
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_plain',
-        'weight' => 5,
+        'weight' => 35,
       ),
       'ical' => array(
         'label' => 'above',
@@ -981,7 +982,7 @@ function ipwa_termin__field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 3,
+        'weight' => 33,
       ),
       'ical' => array(
         'label' => 'hidden',
@@ -1387,9 +1388,10 @@ Schema für externe Links: http://www…',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
+        'module' => 'text',
         'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 13,
+        'type' => 'text_default',
+        'weight' => 32,
       ),
       'ical' => array(
         'label' => 'above',
