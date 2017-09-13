@@ -443,19 +443,38 @@
 				left:-32px;
             }
 			ol{
+				padding-left:72px;
 				 > li{
 					&::before{
 						left:-45px;
 					}
 					ol{
+						padding-left:90px;
 						 > li{
 							&::before{
 								left:-60px;
 							}
 							ol{
+								padding-left:105px;
 								> li{
 									&::before{
-									left:-70px;
+									left:-75px;
+									}
+									ol{
+										padding-left:125px; 
+										> li{
+											&::before{
+											left:-90px;
+											}
+											ol{
+												padding-left:140px; 
+												> li{
+													&::before{
+													left:-110px;
+													}
+												}
+											}
+										}
 									}
 								}
 							}
