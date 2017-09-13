@@ -544,6 +544,7 @@
         }
 
         &:hover {
+			text-decoration:underline; 
             .ext {
                 &::after {
                     color: $active-menu;
@@ -693,6 +694,9 @@
     a {
         color: $main-color;
         text-decoration: none;
+		&:hover{
+			color:$active-menu;
+		}
     }
 
     .view-sub-wrapper {
@@ -763,6 +767,12 @@
                                 position: absolute;
                                 top: 6px;
                             }
+							&:hover{
+								color:$active-menu;
+								&::before{
+									color:$active-menu;
+								}
+							}
                         }
                     }
 
@@ -801,6 +811,12 @@
                         position: absolute;
                         top: 4px;
                     }
+					&:hover{
+						color:$active-menu;
+						&:before{
+							color:$active-menu;
+						}
+					}
                 }
             }
         }
@@ -1507,6 +1523,13 @@
     .ext {
         display: none;
     }
+	&:hover{
+		color: $active-menu;
+		text-decoration:none;
+		&::before{
+			color: $active-menu;
+		}
+	}
 }
 
 //}
