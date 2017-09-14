@@ -90,19 +90,16 @@ jQuery(document).ready(function(){
 	// header-mobile-menu
 	
 	if(jQuery(window).innerWidth() < 1025){
-	
-	jQuery(".navbar-toggle").click(function(){
-		jQuery(this).toggleClass("active");
-		jQuery(".navbar-collapse").toggle();	
-			});
-		
-		
+		jQuery(".navbar-toggle").click(function(){
+				jQuery(this).toggleClass("active");
+				jQuery(".navbar-collapse").toggle();	
+		});
 		jQuery(".navbar-nav").insertAfter(".region-navigation");
 		jQuery('.tb-megamenu-submenu.dropdown-menu').attr('style','display:none !important');		
 		 jQuery("ul.tb-megamenu-nav li a").click(function(){
-                 jQuery(this).parent().addClass("active");	
-                 jQuery(this).parent().siblings().removeClass("active");				 
-			 jQuery(this).next(".tb-megamenu-submenu").attr('style','display:block !important');
+			jQuery(this).parent().addClass("active");	
+			jQuery(this).parent().siblings().removeClass("active");				 
+			jQuery(this).next(".tb-megamenu-submenu").attr('style','display:block !important');
 			jQuery(this).parent().siblings().find(".tb-megamenu-submenu").attr('style','display:none !important');
 			jQuery(this).parent().siblings().removeClass("open");
 		}); 
