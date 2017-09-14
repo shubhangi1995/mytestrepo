@@ -138,6 +138,11 @@
                                 > li.active > a {
                                     border-bottom: 0;
                                     padding-bottom: 20px;
+									border-left:4px Solid $active-menu;
+									
+									&:before{
+									  left:16px;
+									}
                                 }
 
                                 > li {
