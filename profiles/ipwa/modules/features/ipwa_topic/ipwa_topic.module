@@ -4,25 +4,21 @@
  * Drupal needs this blank file.
  */
 
+
 include_once 'ipwa_topic.features.inc';
 
-//function ipwa_topic_menu() {
-//  $items['admin/structure/taxonomy'] = array(
-//    'title' => 'Taxonomy',
-//    'page callback' => 'admin/structure/taxonomy',
-//    'access callback' => TRUE,
-//    'type' => MENU_NORMAL_ITEM,
-//  );
-//  return $items;
-//}
+// function for making term pages of taxonomy 'akteurstypen' make visible only for admin or user with administrator role.
+// see@ https://issues.init.de/browse/IPWA4-208
+function ipwa_topic_init () {
+ global $user;
 
-function ipwa_topic_menu() {
-  $items['shubhangi'] = array(
-    'page callback' => 'ipwa_topic_abc_view',
-  );
-  return $items;
-}
+ // getting the vocabulary id of the taxonomy term whose page is accessing.
+ $vid = taxonomy_term_load(arg(2))->vid;
 
-function ipwa_topic_abc_view() {
-  print_r("hello i am shubhangi");
+ // getting the roles of user who is logged in .
+ $userrole = $user->roles;
+ if (arg(0) == 'taxonomy' && arg(1) == 'term' && is_numeric(arg(2)) && $vid == '2' && (!(in_array( 'Administrator' , $userrole) || $user->uid == '1'))) {
+    drupal_access_denied();
+    drupal_page_footer();
+ }
 }
