@@ -1187,11 +1187,19 @@ input[type=text]::-ms-clear {
     .main-container {
         .view-header {
             color: $active-menu;
-            font-size: 30px;
+            
 
             @include devicebreak(x-large) {
                 padding-left: 5px;
             }
+			 h2{
+			     font-size:24px ;
+				  @include devicebreak(x-medium){
+				     font-size:30px;
+				  }
+				
+			 
+			 }
         }
     }
 
