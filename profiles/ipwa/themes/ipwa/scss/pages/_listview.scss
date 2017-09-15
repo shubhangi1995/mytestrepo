@@ -98,7 +98,7 @@
     .page-header {
         @extend .container;
 
-        font-size: 44px;
+        font-size: 38px;
         border: none;
         font-weight: normal;
         font-family: $font-family-bold;
@@ -107,6 +107,10 @@
 
         // padding-bottom: 40px;
 
+		@include devicebreak(x-medium){
+		  font-size:44px;
+		}
+		
         @include devicebreak(x-large) {
             width: 680px;
         }
@@ -810,10 +814,14 @@
 
                     .views-field-field-paragraph-title {
                         color: $color-white;
-                        font-size: 36px;
+                        font-size:30px;
                         font-weight: normal;
                         font-family: $font-family-bold;
                         padding-bottom: 20px;
+						
+						@include devicebreak(x-medium){
+						   font-size:36px;
+						}
                     }
 
                     .views-field-field-flie-text-bereich {
