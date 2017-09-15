@@ -67,11 +67,17 @@
                     }
 
                     .pane-paragraphs-item-field-paragraph-title {
-                        font-size: 38px;
+                        font-size:28px;
 
                         // padding-bottom: 25px;
                         //  font-weight: bold;
                         font-family: $font-family-bold;
+						
+						 @include devicebreak (x-medium){
+			
+				   font-size:38px;
+				  
+				}
                     }
 
                     .pane-paragraphs-item-field-flie-text-bereich {
@@ -227,9 +233,15 @@ h1.page-title{
             padding-bottom: 30px;
 
             .pane-title {
-                font-size: 28px;
+                font-size: 24px;
                 font-weight: normal;
                 font-family: $font-family-bold;
+		
+				 @include devicebreak (x-medium){
+			
+				   font-size:30px;
+				  
+				}
             }
         }
 
@@ -330,12 +342,16 @@ h1.page-title{
                             }
 
                             .field-name-field-paragraph-title {
-                                font-size: 26px;
+                                font-size: 24px;
                                 color: $active-menu;
                                 padding-bottom: 15px;
                                 font-weight: normal;
                                 font-family: $font-family-bold;
                                 line-height: 26px;
+								
+								@include devicebreak(x-medium){
+								   font-size:26px;
+								}
                             }
 
                             .field-name-field-quellenangabe {

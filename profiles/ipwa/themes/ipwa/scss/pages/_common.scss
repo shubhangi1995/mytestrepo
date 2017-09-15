@@ -290,6 +290,20 @@ h1 {
 
 .view-neueste-informationen, .view-termin, .view-aktuelles, .view-neueste-digital-projekte, .view-alles-zum-thema, .view-display-id-page_1 {
     .view-sub-wrapper {
+	    > .view-header {
+		       h2{
+			      font-size:24px;
+				   margin-top:10px;
+			   
+		     @include devicebreak (x-medium){
+			 font-size:30px;
+			 margin-top:20px;
+				   
+				}
+			 
+			 }
+		}
+	
         > .view-content {
             clear: both;
             margin-left: -15px;
