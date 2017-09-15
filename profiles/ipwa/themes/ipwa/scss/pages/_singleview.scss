@@ -240,10 +240,14 @@
         .view-header {
             .pane-title {
                 color: $color-white;
-                font-size: 28px;
+                font-size: 24px;
                 padding-bottom: 40px;
                 font-weight: normal;
                 font-family: $font-family-bold;
+				
+				@include devicebreak(x-medium){
+				   font-size:30px;
+				}
             }
         }
 
@@ -341,8 +345,12 @@
     .page-title {
         font-weight: normal;
         font-family: $font-family-bold;
-		font-size:44px;
+		font-size:38px;
 		word-wrap: break-word;
+		
+		@include devicebreak(x-medium){
+		    font-size:44px;
+		}
     }
 }
 
