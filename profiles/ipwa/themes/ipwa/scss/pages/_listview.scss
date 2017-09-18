@@ -55,6 +55,7 @@
                 padding-bottom: 15px;
                 font-weight: normal;
                 font-family: $font-family-bold;
+				word-wrap:break-word;
 				
 				@include devicebreak(x-medium){
 				  font-size:44px;
@@ -634,10 +635,20 @@
         padding: 40px 0;
         font-weight: normal;
         font-family: $font-family-bold;
-
+       
+		
+		
         @include devicebreak(small) {
             padding-right: 90px;
         }
+		
+		h2{
+		    font-size:24px;
+			
+			@include devicebreak(x-medium){
+			  font-size:30px;
+			}
+		}
     }
 
     .view-content {

@@ -143,8 +143,12 @@
     }
 
     .field-name-field-kurztext .field-item, .field-type-text-with-summary {
-        font-size: 22px;
+        font-size: 20px;
         padding-bottom: 30px;
+		
+		@include devicebreak(x-medium){
+		   font-size:22px;
+		}
     }
 
     .field-name-body {}
