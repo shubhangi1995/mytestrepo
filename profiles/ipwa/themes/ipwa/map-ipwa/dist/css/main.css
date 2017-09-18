@@ -124,27 +124,28 @@
   text-align: center;
   vertical-align: middle;
   color: #dbdde0;
+  cursor: pointer;
 }
-/* line 40, ../../src/scss/components/_popup.scss */
+/* line 41, ../../src/scss/components/_popup.scss */
 .footer_map .map-btn-close {
   font-size: 26px;
   padding-top: 6px;
 }
-/* line 44, ../../src/scss/components/_popup.scss */
+/* line 45, ../../src/scss/components/_popup.scss */
 .footer_map .map-btn-close span::after {
   content: '\00d7';
 }
-/* line 49, ../../src/scss/components/_popup.scss */
+/* line 50, ../../src/scss/components/_popup.scss */
 .footer_map .map-popup-content {
   padding: 30px;
   border: none;
 }
-/* line 54, ../../src/scss/components/_popup.scss */
+/* line 55, ../../src/scss/components/_popup.scss */
 .footer_map h2 {
   color: #e74712;
   font-size: 18px;
 }
-/* line 60, ../../src/scss/components/_popup.scss */
+/* line 61, ../../src/scss/components/_popup.scss */
 .footer_map .arrow-nav {
   font-size: 17px;
   position: absolute;
@@ -152,39 +153,39 @@
   right: 43px;
   text-align: right;
 }
-/* line 68, ../../src/scss/components/_popup.scss */
+/* line 69, ../../src/scss/components/_popup.scss */
 .footer_map .btn-go-backward,
 .footer_map .btn-go-forward {
   background-color: transparent;
   margin-left: 10px;
   border: 0;
 }
-/* line 74, ../../src/scss/components/_popup.scss */
+/* line 75, ../../src/scss/components/_popup.scss */
 .footer_map .btn-go-backward.disabled,
 .footer_map .btn-go-forward.disabled {
   color: #777673;
 }
-/* line 79, ../../src/scss/components/_popup.scss */
+/* line 80, ../../src/scss/components/_popup.scss */
 .footer_map .div-topic {
   margin-bottom: 20px;
 }
-/* line 83, ../../src/scss/components/_popup.scss */
+/* line 84, ../../src/scss/components/_popup.scss */
 .footer_map .div-topic > img {
   width: 40px;
 }
-/* line 87, ../../src/scss/components/_popup.scss */
+/* line 88, ../../src/scss/components/_popup.scss */
 .footer_map .txtf-conditional1 {
   color: #e74712;
 }
-/* line 91, ../../src/scss/components/_popup.scss */
+/* line 92, ../../src/scss/components/_popup.scss */
 .footer_map .txtf-desc {
   margin-bottom: 40px;
 }
-/* line 93, ../../src/scss/components/_popup.scss */
+/* line 94, ../../src/scss/components/_popup.scss */
 .footer_map .txtf-desc a {
   color: #fff;
 }
-/* line 95, ../../src/scss/components/_popup.scss */
+/* line 96, ../../src/scss/components/_popup.scss */
 .footer_map .txtf-desc a:hover {
   color: #fff;
 }
