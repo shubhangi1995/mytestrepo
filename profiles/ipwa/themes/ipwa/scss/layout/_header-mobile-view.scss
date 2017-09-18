@@ -76,7 +76,12 @@
                         width: 100%;
                         text-align: left;
                         border-bottom: 1px solid $color-light-grey;
-                        background-color: $color-light-blue;
+                       
+						
+						&:active{
+					     background-color: $color-search-background;
+						   color:$color-white;
+						}
                     }
 
                     ul.navbar-nav {
