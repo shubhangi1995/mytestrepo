@@ -51,7 +51,7 @@
             .page-header {
                 border-bottom: none;
                 margin: 0;
-                font-size: 38px;
+                font-size: 32px;
 
                 // color: $active-menu;
                 padding-bottom: 15px;
@@ -112,7 +112,7 @@
     .page-header {
         @extend .container;
 
-        font-size: 38px;
+        font-size: 32px;
         border: none;
         font-weight: normal;
         font-family: $font-family-bold;
@@ -327,11 +327,14 @@
                 background: 0;
                 color: $main-color;
                 border: 0;
-                font-size: 20px;
+                font-size: 16px;
                 padding-left: 25px;
                 position: relative;
                 font-weight: normal;
                 font-family: $font-family-bold;
+				@include devicebreak(x-medium){
+					font-size: 20px;
+				}
 
                 &:before {
                     font-family: "icomoon";

@@ -333,6 +333,7 @@
 
 .group-page-info {
     // @extend .container;
+	word-wrap:break-word;
     h2 {
         font-size: 24px;
         color: $active-menu;
@@ -357,7 +358,7 @@
     .page-title {
         font-weight: normal;
         font-family: $font-family-bold;
-        font-size: 38px;
+        font-size: 32px;
         word-wrap: break-word;
 
         @include devicebreak(x-medium) {
@@ -644,10 +645,11 @@
     overflow: hidden;
 
     .field-name-field-bild-ref {
-        margin: 0;
-
+        margin: 0 0 20px;
+		
         @include devicebreak(large) {
             padding-right: 30px;
+			margin:0;
         }
     }
 
@@ -1391,11 +1393,13 @@
     }
 
     .field-name-field-event-datum {
-        font-size: 28px;
+        font-size: 22px;
         color: $active-menu;
         font-weight: bold;
-
-        .field-label {
+		@include devicebreak(x-medium){
+			font-size:28px;
+		}
+		.field-label {
             font-weight: bold;
         }
     }
@@ -1433,11 +1437,14 @@
 // Funding annoucements
 
 .field-name-field-bis-auf-weiteres, .field-name-field-stichtag {
-    font-size: 28px;
+    font-size: 22px;
     color: $active-menu;
     border-bottom: 1px solid $single-border-color;
     padding-bottom: 15px;
     margin-bottom: 15px;
+	@include devicebreak(x-medium){
+		font-size:28px;
+	}
 
     .field-label {
         font-weight: normal;
@@ -1590,3 +1597,15 @@
 }
 
 //}
+
+// Custom media query for lists in single views body field
+
+@media only screen and (max-width:600px){
+	.group-body-container ul, .group-body-container ol{
+		padding-left:0 !important;
+	}
+	.group-body-container ul li::before, .group-body-container ol li::before{
+		position:static;
+		margin-right:18px;
+	}
+}

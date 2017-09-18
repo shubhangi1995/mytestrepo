@@ -1013,9 +1013,10 @@ input[type=text]::-ms-clear {
     .date-views-pager {
         float: left;
         width: 100%;
-
+		margin-bottom:25px;
         @include devicebreak(x-large) {
             width: 60%;
+			margin-bottom:0;
         }
 
 
@@ -1034,9 +1035,12 @@ input[type=text]::-ms-clear {
         .pagination {
             .monthText {
                 text-transform: capitalize;
-                font-size: 22px;
+                font-size: 20px;
                 font-weight: normal;
                 font-family: $font-family-bold;
+				@include devicebreak(x-medium){
+					font-size: 22px;
+				}
             }
 
             li {
