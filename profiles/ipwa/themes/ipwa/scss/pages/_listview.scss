@@ -3,10 +3,12 @@
 
     .view-title {
         @extend .container;
-
+          font-size:24px;
         font-weight: normal;
         font-family: $font-family-bold;
-        font-size: 28px;
+       @include devicebreak(x-medium){
+	     font-size:30px;
+	   }
     }
 
     .group-page-info {
