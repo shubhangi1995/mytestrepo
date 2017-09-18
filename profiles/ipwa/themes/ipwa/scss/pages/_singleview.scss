@@ -145,10 +145,10 @@
     .field-name-field-kurztext .field-item, .field-type-text-with-summary {
         font-size: 20px;
         padding-bottom: 30px;
-		
-		@include devicebreak(x-medium){
-		   font-size:22px;
-		}
+
+        @include devicebreak(x-medium) {
+            font-size: 22px;
+        }
     }
 
     .field-name-body {}
@@ -162,11 +162,15 @@
             .view-content {
                 .term-title {
                     color: $main-color;
-                    font-size: 28px;
+                    font-size: 24px;
                     padding-bottom: 30px;
                     padding-top: 30px;
                     font-weight: normal;
                     font-family: $font-family-bold;
+
+                    @include devicebreak(x-medium) {
+                        font-size: 28px;
+                    }
                 }
 
                 p {
@@ -1094,7 +1098,7 @@
                 .pane-title {
                     font-weight: normal;
                     font-family: $font-family-bold;
-					font-size: 24px;
+                    font-size: 24px;
 
                     @include devicebreak(x-medium) {
                         font-size: 30px;
@@ -1138,13 +1142,14 @@
 
                 .view-header {
                     padding-bottom: 30px;
-                    .pane-title{
-					  font-size: 24px;
 
-                    @include devicebreak(x-medium) {
-                        font-size: 30px;
+                    .pane-title {
+                        font-size: 24px;
+
+                        @include devicebreak(x-medium) {
+                            font-size: 30px;
+                        }
                     }
-					}
                 }
 
                 .view-content .views-row a {

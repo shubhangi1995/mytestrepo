@@ -290,20 +290,18 @@ h1 {
 
 .view-neueste-informationen, .view-termin, .view-aktuelles, .view-neueste-digital-projekte, .view-alles-zum-thema, .view-display-id-page_1 {
     .view-sub-wrapper {
-	    > .view-header {
-		       h2{
-			      font-size:24px;
-				   margin-top:10px;
-			   
-		     @include devicebreak (x-medium){
-			 font-size:30px;
-			 margin-top:20px;
-				   
-				}
-			 
-			 }
-		}
-	
+        > .view-header {
+            h2 {
+                font-size: 24px;
+                margin-top: 10px;
+
+                @include devicebreak(x-medium) {
+                    font-size: 30px;
+                    margin-top: 20px;
+                }
+            }
+        }
+
         > .view-content {
             clear: both;
             margin-left: -15px;
@@ -384,8 +382,12 @@ h1 {
                             padding-bottom: 40px;
 
                             .field-content {
-                                font-size: 22px;
+                                font-size: 20px;
                                 color: $main-color;
+
+                                @include devicebreak(x-medium) {
+                                    font-size: 22px;
+                                }
                             }
                         }
 
@@ -1187,19 +1189,19 @@ input[type=text]::-ms-clear {
     .main-container {
         .view-header {
             color: $active-menu;
-            
 
             @include devicebreak(x-large) {
                 padding-left: 5px;
             }
-			 h2{
-			     font-size:24px ;
-				  @include devicebreak(x-medium){
-				     font-size:30px;
-				  }
-				
-			 
-			 }
+
+
+            h2 {
+                font-size: 24px;
+
+                @include devicebreak(x-medium) {
+                    font-size: 30px;
+                }
+            }
         }
     }
 
