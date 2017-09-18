@@ -49,16 +49,24 @@
             .page-header {
                 border-bottom: none;
                 margin: 0;
-                font-size: 44px;
+                font-size: 38px;
 
                 // color: $active-menu;
                 padding-bottom: 15px;
                 font-weight: normal;
                 font-family: $font-family-bold;
+				
+				@include devicebreak(x-medium){
+				  font-size:44px;
+				}
             }
 
             p {
-                font-size: 22px;
+                  font-size:20px;
+		  
+	@include devicebreak(x-medium){
+        font-size: 22px;
+    }
             }
 
             .field-name-field-untertitel {
@@ -76,9 +84,12 @@
     }
 
     .field-name-field-kurztext {
+	        font-size:20px;
+		  
+	@include devicebreak(x-medium){
         font-size: 22px;
     }
-
+}
     .group-page-info {
         .field-name-field-bild {
             img {
