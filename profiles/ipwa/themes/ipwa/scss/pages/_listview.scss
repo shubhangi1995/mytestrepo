@@ -88,6 +88,7 @@
 
     .field-name-field-kurztext {
 	        font-size:20px;
+			line-height:30px;
 		  
 	@include devicebreak(x-medium){
         font-size: 22px;
@@ -884,6 +885,33 @@
 }
 
 // Media query for slideshow
+
+@media only screen and (max-width: 580px){
+	html body{
+		font-size:18px;
+	}
+	.group-page-info .page-title, .page-taxonomy-term .group-page-info .themenzuweisung-right-block .page-header, .page-termine .page-header, .page-aktuelles .page-header, .page-calendar .page-header, .page-suche .page-header, .node-webform .page-title, .node-webform .page-header, .page-sitemap .page-title, .page-sitemap .page-header, .view-map-teaser .view-sub-wrapper .view-content .views-row .row-container .views-field-field-paragraph-title{
+		font-size:26px;
+		line-height:32px;
+	}
+	.view-neueste-informationen .view-sub-wrapper > .view-header h2, .view-termin .view-sub-wrapper > .view-header h2, .view-aktuelles .view-sub-wrapper > .view-header h2, .view-neueste-digital-projekte .view-sub-wrapper > .view-header h2, .view-alles-zum-thema .view-sub-wrapper > .view-header h2, .view-display-id-page_1 .view-sub-wrapper > .view-header h2, .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items > .field-item .field-collection-view .content .field-name-field-paragraph-title, footer .region-footer .block-ipwa-newsletter .block-title, .view-latest-content-doorpage > .view-sub-wrapper .left-block .view-header .pane-title, .view-latest-content-doorpage > .view-sub-wrapper > .view-latest-content-doorpage .view-sub-wrapper .view-header .pane-title, .view-wahlen-sie-einen-themenbereich .view-header h2, .view-neueste-digital-projekte .view-sub-wrapper .view-header .pane-title, .page-taxonomy-term .view-title, .not-front .node-doorpage .view-alle-themen-teaser .view-sub-wrapper .view-content .term-title, .page-calendar .main-container .view-header h2, .page-termine .main-container .view-header h2{
+		font-size:22px !important;
+		line-height:32px;
+	}
+	.view-neueste-informationen .view-sub-wrapper > .view-content .views-row > a .row-container .views-field-field-event-datum, .view-termin .view-sub-wrapper > .view-content .views-row > a .row-container .views-field-field-event-datum, .view-aktuelles .view-sub-wrapper > .view-content .views-row > a .row-container .views-field-field-event-datum, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row > a .row-container .views-field-field-event-datum, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row > a .row-container .views-field-field-event-datum, .view-display-id-page_1 .view-sub-wrapper > .view-content .views-row > a .row-container .views-field-field-event-datum, .view-neueste-informationen .view-sub-wrapper > .view-content .views-row > a .row-container .views-field-type, .view-termin .view-sub-wrapper > .view-content .views-row > a .row-container .views-field-type, .view-aktuelles .view-sub-wrapper > .view-content .views-row > a .row-container .views-field-type, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row > a .row-container .views-field-type, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row > a .row-container .views-field-type, .view-display-id-page_1 .view-sub-wrapper > .view-content .views-row > a .row-container .views-field-type, .group-top-wrapper .field-name-field-event-datum, .field-name-field-ausschreibende-stelle, .field-name-field-ausschreibende-stelle .external-link{
+		font-size:20px; 
+	}
+	#block-block-5 strong, .page-taxonomy-term .field-name-field-kurztext, .page-taxonomy-term .group-page-info .themenzuweisung-right-block p, .view-neueste-informationen .view-sub-wrapper > .view-content .views-row > a .row-container .views-field-title .field-content, .view-termin .view-sub-wrapper > .view-content .views-row > a .row-container .views-field-title .field-content, .view-aktuelles .view-sub-wrapper > .view-content .views-row > a .row-container .views-field-title .field-content, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row > a .row-container .views-field-title .field-content, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row > a .row-container .views-field-title .field-content, .view-display-id-page_1 .view-sub-wrapper > .view-content .views-row > a .row-container .views-field-title .field-content, .not-front .node-doorpage .field-name-field-kurztext .field-item, .not-front .node-doorpage .field-type-text-with-summary, .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items > .field-item .field-collection-view .content .field-name-field-flie-text-bereich .field-item p, .group-body-container a.external-link, .node-type-webform .node-webform .webform-client-form .webform-submit{ 
+		font-size:18px !important;
+	}
+	.group-page-info h2{
+		font-size:22px;
+		line-height:30px; 
+	}
+	.text-center ul.pagination > li > a, .text-center ul.pagination > li > span, .text-center ul.pagination > .active > a, .text-center ul.pagination > .active > a:hover, .text-center ul.pagination > .active > a:focus, .text-center ul.pagination > .active > span, .text-center ul.pagination > .active > span:hover, .text-center ul.pagination > .active > span:focus{ 
+		font-size:22px;
+	}
+}
 
 @media only screen and (max-width: 380px) {
     .views-slideshow-cycle-main-frame.views_slideshow_cycle_teaser_section, .views-slideshow-cycle-main-frame-row.views_slideshow_cycle_slide {

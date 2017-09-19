@@ -431,14 +431,16 @@ h1 {
 //arrow-forward
 
 .common-button {
-    font-size: 20px;
+    font-size: 18px;
     text-decoration: none;
     margin-left: 32px;
     padding-bottom: 4px;
     border-bottom: 2px solid $color-light-grey;
     position: relative;
     font-family: $font-family-bold;
-
+	@include devicebreak(x-medium) {
+		font-size:20px;
+	}
     &:before {
         font-family: $icomoon;
         content: "\e93f";
@@ -736,7 +738,7 @@ input[type=text]::-ms-clear {
                                         margin-bottom: 30px;
                                         position: relative;
                                         border: 1px solid $color-border;
-                                        cursor: pointer;
+                                        // cursor: pointer;
                                         transition: all 0.5s ease;
                                         height: auto;
 
