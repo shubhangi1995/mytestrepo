@@ -162,7 +162,7 @@
             .view-content {
                 .term-title {
                     color: $main-color;
-                    font-size: 24px;
+                    font-size: 26px;
                     padding-bottom: 30px;
                     padding-top: 30px;
                     font-weight: normal;
@@ -249,7 +249,7 @@
         .view-header {
             .pane-title {
                 color: $color-white;
-                font-size: 24px;
+                font-size: 26px;
                 padding-bottom: 40px;
                 font-weight: normal;
                 font-family: $font-family-bold;
@@ -960,7 +960,7 @@
                 .pane-title {
                     font-weight: normal;
                     font-family: $font-family-bold;
-                    font-size: 24px;
+                    font-size: 26px;
 
                     @include devicebreak(x-medium) {
                         font-size: 30px;
@@ -1146,7 +1146,7 @@
                     padding-bottom: 30px;
 
                     .pane-title {
-                        font-size: 24px;
+                        font-size: 26px;
 
                         @include devicebreak(x-medium) {
                             font-size: 30px;
