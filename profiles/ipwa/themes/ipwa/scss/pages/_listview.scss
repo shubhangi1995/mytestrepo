@@ -921,6 +921,9 @@
 }
 
 @media only screen and (max-width: 380px) {
+	.tb-megamenu .nav-collapse .nav > li > a, .tb-megamenu .nav-collapse .dropdown-menu a{
+		font-size:16px !important;
+	}
     .views-slideshow-cycle-main-frame.views_slideshow_cycle_teaser_section, .views-slideshow-cycle-main-frame-row.views_slideshow_cycle_slide {
         width: 290px !important;
         margin: 0 auto;

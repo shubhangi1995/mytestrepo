@@ -11254,15 +11254,19 @@ caption {
     font-size: 22px; } }
 @media only screen and (max-width: 380px) {
   /* line 924, ../scss/pages/_listview.scss */
+  .tb-megamenu .nav-collapse .nav > li > a, .tb-megamenu .nav-collapse .dropdown-menu a {
+    font-size: 16px !important; }
+
+  /* line 927, ../scss/pages/_listview.scss */
   .views-slideshow-cycle-main-frame.views_slideshow_cycle_teaser_section, .views-slideshow-cycle-main-frame-row.views_slideshow_cycle_slide {
     width: 290px !important;
     margin: 0 auto; }
 
-  /* line 928, ../scss/pages/_listview.scss */
+  /* line 931, ../scss/pages/_listview.scss */
   .field-name-field-anzuzeigende-seitenmodule .panelizer-view-mode .panel-2col .panel-col-first .inside .pane-paragraphs-item-field-paragraph-title {
     font-size: 24px; }
 
-  /* line 931, ../scss/pages/_listview.scss */
+  /* line 934, ../scss/pages/_listview.scss */
   .view-wahlen-sie-einen-themenbereich .view-content .views-row {
     height: 410px !important; } }
 /* line 1, ../scss/pages/_sitemap.scss */
