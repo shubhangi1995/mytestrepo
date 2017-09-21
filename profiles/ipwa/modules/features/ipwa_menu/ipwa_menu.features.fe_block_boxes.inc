@@ -24,9 +24,11 @@ function ipwa_menu_default_fe_block_boxes() {
   $fe_block_boxes->format = 'wysiwyg';
   $fe_block_boxes->machine_name = 'infos_fur_beschaftigte';
   $fe_block_boxes->body = '<h3 class="block-title">Immer gut informiert</h3>
+
 <ul>
-	<li><a href="schaufenster-digitales-nrw-listenansicht?type=projekt&amp;field_akteurstyp=All&amp;field_themenzuweisung_1=34&amp;field_plz=&amp;sort_by=title&amp;sort_by=title">Projekte</a></li>
-	<li><a href="schaufenster-digitales-nrw-listenansicht?type=protagonist&amp;field_akteurstyp=43&amp;field_themenzuweisung_1=34&amp;field_plz=">Beratung</a></li>
+	<li><a href="schaufenster-digitales-nrw-listenansicht?type=protagonist&amp;field_akteurstyp=43&amp;field_themenzuweisung_1=34&amp;field_plz=">Beispiele guter Praxis </a></li>
+	<li><a href="schaufenster-digitales-nrw-listenansicht?type=protagonist&amp;field_akteurstyp=43&amp;field_themenzuweisung_1=34&amp;field_plz=">Vorher: Beratung</a></li>
+	<li><a href="schaufenster-digitales-nrw-listenansicht?type=protagonist&amp;field_akteurstyp=43&amp;field_themenzuweisung_1=24&amp;field_plz=&amp;sort_by=title&amp;sort_by=title">Neu: Beratung</a></li>
 	<li><a href="/aktuelles?type=f_rderbekanntmachung&amp;term_node_tid_depth_3=34">Förderung</a></li>
 	<li><a href="schaufenster-digitales-nrw-listenansicht?type=protagonist&amp;field_akteurstyp=46&amp;field_themenzuweisung_1=34&amp;field_plz=">Perspektiven finden</a></li>
 	<li><a href="/infos-fuer-beschaeftigte">Übersicht </a></li>
@@ -40,12 +42,13 @@ function ipwa_menu_default_fe_block_boxes() {
   $fe_block_boxes->format = 'wysiwyg';
   $fe_block_boxes->machine_name = 'infos_fur_unternehmen_left_menu';
   $fe_block_boxes->body = '<h3 class="block-title">Immer gut informiert</h3>
+
 <ul>
-	<li><a href="schaufenster-digitales-nrw-listenansicht?type=projekt&amp;field_akteurstyp=All&amp;field_themenzuweisung_1=24&amp;field_plz=&amp;sort_by=title&amp;sort_by=title">Projekte</a></li>
+	<li><a href="schaufenster-digitales-nrw-listenansicht?type=protagonist&amp;field_akteurstyp=43&amp;field_themenzuweisung_1=24&amp;field_plz=&amp;sort_by=title&amp;sort_by=title">Beispiele guter Praxis </a></li>
 	<li><a href="schaufenster-digitales-nrw-listenansicht?type=protagonist&amp;field_akteurstyp=43&amp;field_themenzuweisung_1=24&amp;field_plz=&amp;sort_by=title&amp;sort_by=title">Beratung</a></li>
 	<li><a href="/aktuelles?type=f_rderbekanntmachung&amp;term_node_tid_depth_2=24">Förderung</a></li>
-	<li><a href="schaufenster-digitales-nrw-listenansicht?type=protagonist&amp;field_akteurstyp=44&amp;field_themenzuweisung_1=24&amp;field_plz=">Unternehmen als Partner finden</a></li>
-	<li><a href="schaufenster-digitales-nrw-listenansicht?type=protagonist&amp;field_akteurstyp=45&amp;field_themenzuweisung_1=24&amp;field_plz=">FuE-Einrichtungen als Partner finden</a></li>
+	<li><a href="schaufenster-digitales-nrw-listenansicht?type=protagonist&amp;field_akteurstyp=44&amp;field_themenzuweisung_1=24&amp;field_plz=">Unternehmenspartner finden</a></li>
+	<li><a href="schaufenster-digitales-nrw-listenansicht?type=protagonist&amp;field_akteurstyp=45&amp;field_themenzuweisung_1=24&amp;field_plz=">FuE-Partner finden</a></li>
 	<li><a href="/infos-fuer-unternehmen">Übersicht </a></li>
 </ul>
 ';
@@ -60,8 +63,8 @@ function ipwa_menu_default_fe_block_boxes() {
 
 <ul>
 	<li><a href="/aktuelles?type=nachricht&amp;term_node_tid_depth=1">Nachrichten</a></li>
-	<li><a href="/termine?term_node_tid_depth=1">Termine</a></li>
 	<li><a href="/aktuelles?type=publikation&amp;term_node_tid_depth=1">Publikationen</a></li>
+	<li><a href="/termine?term_node_tid_depth=1">Termine</a></li>
 	<li><a href="/politik-gesellschaft">Übersicht</a></li>
 </ul>
 ';
@@ -76,8 +79,8 @@ function ipwa_menu_default_fe_block_boxes() {
 
 <ul>
 	<li><a href="/aktuelles?type=nachricht&amp;term_node_tid_depth_1=11">Nachrichten&nbsp;</a></li>
+	<li><a href="/aktuelles?type=publikation&amp;term_node_tid_depth_1=11">Publikationen</a></li>
 	<li><a href="/termine?term_node_tid_depth=11">Termine</a></li>
-	<li><a href="/aktuelles?type=publikation&amp;term_node_tid_depth_1=11">Publikatioen</a></li>
 	<li><a href="/wirtschaft-arbeit">Übersicht</a></li>
 </ul>
 ';
