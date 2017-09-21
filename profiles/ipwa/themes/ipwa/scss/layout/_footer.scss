@@ -31,7 +31,11 @@ footer {
                 margin-top: 0;
 				font-weight:normal;
 				font-family:$font-family-bold;
-				font-weight:normal;
+				font-size:24px;
+				
+				@include devicebreak(x-medium){
+				  font-size:30px;
+				}
             }
 
             .form-item-newsletter {
@@ -40,6 +44,10 @@ footer {
                     padding-bottom: 30px;
                     clear: both;
                     width: 100%;
+					font-size:18px;
+					@include devicebreak(x-medium){
+					  font-size:20px;
+					}
                 }
 
                 .form-control {
@@ -101,10 +109,13 @@ footer {
             padding-top: 30px;
 			
 			h2.block-title{
-			font-size: 20px;
+				font-size: 18px;
                 color: $main-color;
                 font-weight: normal;
 				font-family:$font-family-bold;
+				@include devicebreak(x-medium) {
+					font-size:20px;
+				}
             }
 			
                 
@@ -286,9 +297,16 @@ footer {
     }
 	
 	#block-block-5{
+		p{
+			font-size:18px;
+			@include devicebreak(x-medium){
+				font-size:20px;
+			}
+		}
 		strong{
 			font-weight:normal;
 			font-family:$font-family-bold;
+			
 		}
 	}
 }

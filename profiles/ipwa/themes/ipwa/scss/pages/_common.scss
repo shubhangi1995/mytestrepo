@@ -290,6 +290,18 @@ h1 {
 
 .view-neueste-informationen, .view-termin, .view-aktuelles, .view-neueste-digital-projekte, .view-alles-zum-thema, .view-display-id-page_1 {
     .view-sub-wrapper {
+        > .view-header {
+            h2 {
+                font-size: 26px;
+                margin-top: 10px;
+
+                @include devicebreak(x-medium) {
+                    font-size: 30px;
+                    margin-top: 20px;
+                }
+            }
+        }
+
         > .view-content {
             clear: both;
             margin-left: -15px;
@@ -362,7 +374,10 @@ h1 {
                             padding-bottom: 20px;
                             font-weight: normal;
                             color: $active-menu;
-                            font-size: 22px;
+							font-size:20px;
+                                @include devicebreak(x-medium) {
+                                    font-size: 22px;
+                                }
                             font-family: $font-family-bold;
                         }
 
@@ -370,8 +385,12 @@ h1 {
                             padding-bottom: 40px;
 
                             .field-content {
-                                font-size: 22px;
+                                font-size: 20px;
                                 color: $main-color;
+
+                                @include devicebreak(x-medium) {
+                                    font-size: 22px;
+                                }
                             }
                         }
 
@@ -379,7 +398,10 @@ h1 {
                             padding-bottom: 15px;
                             font-weight: normal;
                             color: $active-menu;
-                            font-size: 22px;
+                            font-size: 20px;
+							@include devicebreak(x-medium) {
+								font-size: 22px;
+							}
                             font-family: $font-family-bold;
                         }
 
@@ -387,12 +409,13 @@ h1 {
                             padding-bottom: 10px;
 
                             .field-content {
-                                font-size: 20px;
+                                font-size: 17px;
                                 color: $color-light-grey;
 
                                 @include devicebreak(x-medium) {
                                     position: absolute;
                                     bottom: 30px;
+									font-size:20px;
                                 }
                             }
                         }
@@ -415,14 +438,16 @@ h1 {
 //arrow-forward
 
 .common-button {
-    font-size: 20px;
+    font-size: 18px;
     text-decoration: none;
     margin-left: 32px;
     padding-bottom: 4px;
     border-bottom: 2px solid $color-light-grey;
     position: relative;
     font-family: $font-family-bold;
-
+	@include devicebreak(x-medium) {
+		font-size:20px;
+	}
     &:before {
         font-family: $icomoon;
         content: "\e93f";
@@ -720,7 +745,7 @@ input[type=text]::-ms-clear {
                                         margin-bottom: 30px;
                                         position: relative;
                                         border: 1px solid $color-border;
-                                        cursor: pointer;
+                                        // cursor: pointer;
                                         transition: all 0.5s ease;
                                         height: auto;
 
@@ -997,9 +1022,10 @@ input[type=text]::-ms-clear {
     .date-views-pager {
         float: left;
         width: 100%;
-
+		margin-bottom:25px;
         @include devicebreak(x-large) {
             width: 60%;
+			margin-bottom:0;
         }
 
 
@@ -1018,9 +1044,12 @@ input[type=text]::-ms-clear {
         .pagination {
             .monthText {
                 text-transform: capitalize;
-                font-size: 22px;
+                font-size: 20px;
                 font-weight: normal;
                 font-family: $font-family-bold;
+				@include devicebreak(x-medium){
+					font-size: 22px;
+				}
             }
 
             li {
@@ -1173,10 +1202,18 @@ input[type=text]::-ms-clear {
     .main-container {
         .view-header {
             color: $active-menu;
-            font-size: 30px;
 
             @include devicebreak(x-large) {
                 padding-left: 5px;
+            }
+
+
+            h2 {
+                font-size: 24px;
+
+                @include devicebreak(x-medium) {
+                    font-size: 30px;
+                }
             }
         }
     }

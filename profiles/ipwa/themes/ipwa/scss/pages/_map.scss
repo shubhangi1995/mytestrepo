@@ -125,7 +125,7 @@
                         font-size: 14px;
                         position: absolute;
                         left: -25px;
-                        top: 5px;
+                        top: 8px;
                         display: inline-block;
                     }
 
@@ -137,6 +137,11 @@
                 .map-sub-title {
                     float: left;
                     font-family: $font-family-bold;
+					font-size:20px;
+					
+					@include devicebreak(x-medium){ 
+						font-size:22px;
+					}
                 }
             }
 
@@ -170,7 +175,7 @@
                     margin-top: 30px;
                     position: relative;
 
-                    @include devicebreak(x-large) {
+                    @include devicebreak(x-medium) {
                         font-size: 20px;
                     }
 
@@ -225,7 +230,7 @@
                     font-weight: normal;
                     font-family: $font-family-bold;
 
-                    @include devicebreak(medium) {
+                    @include devicebreak(x-medium) { 
                         font-size: 20px;
                     }
 
@@ -410,6 +415,7 @@
                                 color: $color-white;
                                 padding-left: 20px;
                                 width: 240px;
+								padding-right:32px;
                             }
 
                             .select2-selection__arrow {
@@ -487,12 +493,14 @@
                         background: 0;
                         color: $main-color;
                         border: 0;
-                        font-size: 20px;
+                        font-size: 16px;
                         padding-left: 25px;
                         position: relative;
                         font-weight: normal;
                         font-family: $font-family-bold;
-
+						@include devicebreak(x-medium){
+							font-size: 20px;
+						}
                         &:before {
                             font-family: "icomoon";
                             content: "\e912";

@@ -111,7 +111,7 @@ header {
                 }
 
                 &.active {
-                    background: #6d7c98;
+                    background: $color-search-background;
                     color: $color-white;
 
                     &:before {
@@ -138,7 +138,7 @@ header {
                     -webkit-transition: opacity 0.3s 0s, visibility 0s 0.3s;
                     -moz-transition: opacity 0.3s 0s, visibility 0s 0.3s;
                     transition: opacity 0.3s 0s, visibility 0s 0.3s;
-                    z-index: 999;
+                    z-index: 9999;
 
                     &.is-visible {
                         opacity: 1;
@@ -284,7 +284,7 @@ header {
 
                         &.menu-beschaftigte > a {
                             &:before {
-                                content: "\e905";
+                                content: "\e913";
                             }
                         }
 
