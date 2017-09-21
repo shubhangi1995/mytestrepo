@@ -269,8 +269,9 @@
                 </tr>
 				<tr style="background:#eff2f7;">
 				<td style="color:#273753;padding:20px;font-size:12px !important;">
-					<div style="margin-bottom:25px;color:#273753;font-size:12px !important;line-height:22px;">Redaktionell verantwortlich im Sinne § 5 TMG bzw. § 55 RStV: Dr. Thomas König
-            Redaktion: Dr. Jan Christopher Brandt, VDI Technologiezentrum GmbH, VDI-Platz 1, 40468 Düsseldorf, E-Mail: <span class="more_link">nrw40-redaktion@vdi.de</span>
+					<div style="margin-bottom:25px;color:#273753;font-size:12px !important;line-height:22px;"><div>Redaktionell verantwortlich im Sinne § 5 TMG bzw. § 55 RStV: Dr. Thomas König</div>
+            <div>Redaktion: Dr. Jan Christopher Brandt, VDI Technologiezentrum GmbH, VDI-Platz 1, 40468 Düsseldorf</div>
+			<div>E-Mail: <span class="more_link">nrw40-redaktion@vdi.de</span></div>
           </div>
 					<div style="margin-bottom:25px;color:#273753;font-size:12px !important;line-height:22px;">Sie können diesen Newsletter <a class="more_link" href= "<?php print token_replace('[simplenews-subscriber:unsubscribe-url]', array('sanitize' => FALSE)); ?>">hier abbestellen.</a></div>
 					<div style="color:#273753;font-size:12px !important;line-height:22px;">© 2017 Ministerium für Wirtschaft, Innovation, Digitalisierung und Energie des Landes Nordrhein-Westfalen</div>
