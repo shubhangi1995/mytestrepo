@@ -6211,8 +6211,8 @@ button.close {
   src: local("Material Icons"), local("MaterialIcons-Regular"), url("../fonts/MaterialIcons-Regular.woff2") format("woff2"), url("../fonts/MaterialIcons-Regular.woff") format("woff"), url("../fonts/MaterialIcons-Regular.ttf") format("truetype"); }
 @font-face {
   font-family: 'icomoon';
-  src: url("../icomoon/icomoon.eot?w1fdtd");
-  src: url("../icomoon/icomoon.eot?w1fdtd#iefix") format("embedded-opentype"), url("../icomoon/icomoon.ttf?w1fdtd") format("truetype"), url("../icomoon/icomoon.woff?w1fdtd") format("woff"), url("../icomoon/icomoon.svg?w1fdtd#icomoon") format("svg");
+  src: url("../icomoon/icomoon.eot?8z151g");
+  src: url("../icomoon/icomoon.eot?8z151g#iefix") format("embedded-opentype"), url("../icomoon/icomoon.ttf?8z151g") format("truetype"), url("../icomoon/icomoon.woff?8z151g") format("woff"), url("../icomoon/icomoon.svg?8z151g#icomoon") format("svg");
   font-weight: normal;
   font-style: normal; }
 /* line 12, ../scss/base/_icomoon.scss */
@@ -11157,7 +11157,8 @@ caption {
     .view-map-teaser .view-sub-wrapper .view-content .views-row {
       width: 100%;
       padding: 0;
-      background: #273753; }
+      background: #273753;
+      min-height: 354px; }
       /* line 819, ../scss/pages/_listview.scss */
       .view-map-teaser .view-sub-wrapper .view-content .views-row .row-container {
         background: none;
