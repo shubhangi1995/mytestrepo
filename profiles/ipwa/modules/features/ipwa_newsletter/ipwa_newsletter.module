@@ -37,7 +37,7 @@ function ipwa_newsletter_block_view($delta = '') {
 function ipwa_newsletter_block_form($form, &$form_state) {
   global $base_url;
   $form['newsletter'] = array(
-    '#title' => 'Lorem ipsum ist ein ipsum ist ein ipsum ist ein.',
+    '#title' => '  ',
     '#type' => 'textfield',
     '#required' => False,
     '#attributes' => array('placeholder'=> 'E-Mail Adresse eintragen'),
