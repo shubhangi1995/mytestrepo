@@ -64,13 +64,13 @@ function ipwa_f_rderbekanntmachung_field_default_field_bases() {
     'type' => 'list_boolean',
   );
 
-  // Exported field_base: 'field_stichtag'.
-  $field_bases['field_stichtag'] = array(
+  // Exported field_base: 'field_stichtag1'.
+  $field_bases['field_stichtag1'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_stichtag',
+    'field_name' => 'field_stichtag1',
     'indexes' => array(),
     'locked' => 0,
     'module' => 'date',

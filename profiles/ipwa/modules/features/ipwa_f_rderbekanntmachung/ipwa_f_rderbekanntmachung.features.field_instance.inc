@@ -147,7 +147,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 22,
+        'weight' => 23,
       ),
       'paragraph' => array(
         'label' => 'above',
@@ -283,7 +283,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 21,
+        'weight' => 22,
       ),
       'paragraph' => array(
         'label' => 'above',
@@ -379,7 +379,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
           'show_repeat_rule' => 'show',
         ),
         'type' => 'date_default',
-        'weight' => 20,
+        'weight' => 21,
       ),
       'paragraph' => array(
         'label' => 'above',
@@ -806,7 +806,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 24,
+        'weight' => 25,
       ),
       'paragraph' => array(
         'label' => 'above',
@@ -864,8 +864,8 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-f_rderbekanntmachung-field_stichtag'.
-  $field_instances['node-f_rderbekanntmachung-field_stichtag'] = array(
+  // Exported field_instance: 'node-f_rderbekanntmachung-field_stichtag1'.
+  $field_instances['node-f_rderbekanntmachung-field_stichtag1'] = array(
     'bundle' => 'f_rderbekanntmachung',
     'deleted' => 0,
     'description' => 'Dieses Datum entspricht dem Veröffentlichungsdatum und wir über dem Titel angezeigt.',
@@ -920,7 +920,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
           'show_repeat_rule' => 'show',
         ),
         'type' => 'date_default',
-        'weight' => 17,
+        'weight' => 18,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -930,7 +930,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_stichtag',
+    'field_name' => 'field_stichtag1',
     'label' => 'Stichtag',
     'required' => 0,
     'settings' => array(
@@ -941,7 +941,6 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
       'user_register_form' => FALSE,
     ),
     'widget' => array(
-      'active' => 1,
       'module' => 'date',
       'settings' => array(
         'increment' => 15,
