@@ -147,7 +147,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 19,
+        'weight' => 22,
       ),
       'paragraph' => array(
         'label' => 'above',
@@ -279,11 +279,11 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'inline',
+        'label' => 'hidden',
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 18,
+        'weight' => 21,
       ),
       'paragraph' => array(
         'label' => 'above',
@@ -327,7 +327,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
   $field_instances['node-f_rderbekanntmachung-field_datum'] = array(
     'bundle' => 'f_rderbekanntmachung',
     'deleted' => 0,
-    'description' => 'Dieses Datum erscheint im Frontend.',
+    'description' => 'Geben Sie das Datum des Stichtags an.',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -356,18 +356,18 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
             ),
             'atc_privacy' => 'public',
             'atc_title' => array(
-              'field' => 'field_datum',
-              'tokenized' => 'Stichtag Speichern',
+              'field' => 'token',
+              'tokenized' => '',
             ),
             'data_calendars' => array(
-              'Google Calendar' => 'Google Calendar',
-              'Outlook' => 'Outlook',
-              'Outlook Online' => 'Outlook Online',
+              'Google Calendar' => 0,
+              'Outlook' => 0,
+              'Outlook Online' => 0,
               'Yahoo! Calendar' => 0,
-              'iCalendar' => 'iCalendar',
+              'iCalendar' => 0,
             ),
             'data_secure' => 'auto',
-            'style' => 'glow_orange',
+            'style' => 'blue',
           ),
           'addtocalendar_show' => 0,
           'format_type' => 'short',
@@ -379,7 +379,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
           'show_repeat_rule' => 'show',
         ),
         'type' => 'date_default',
-        'weight' => 14,
+        'weight' => 20,
       ),
       'paragraph' => array(
         'label' => 'above',
@@ -414,7 +414,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_datum',
     'label' => 'Date',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'default_value' => 'now',
       'default_value2' => 'same',
@@ -436,7 +436,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
         'year_range' => '-7:2030',
       ),
       'type' => 'date_popup',
-      'weight' => 2,
+      'weight' => 5,
     ),
   );
 
@@ -806,7 +806,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 21,
+        'weight' => 24,
       ),
       'paragraph' => array(
         'label' => 'above',
@@ -868,10 +868,10 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
   $field_instances['node-f_rderbekanntmachung-field_stichtag'] = array(
     'bundle' => 'f_rderbekanntmachung',
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Dieses Datum entspricht dem Veröffentlichungsdatum und wir über dem Titel angezeigt.',
     'display' => array(
       'default' => array(
-        'label' => 'inline',
+        'label' => 'hidden',
         'module' => 'date',
         'settings' => array(
           'addtocalendar_settings' => array(
@@ -954,7 +954,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
         'year_range' => '-7:2030',
       ),
       'type' => 'date_popup',
-      'weight' => 5,
+      'weight' => 2,
     ),
   );
 
@@ -971,7 +971,7 @@ Quelle',
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_plain',
-        'weight' => 20,
+        'weight' => 23,
       ),
       'paragraph' => array(
         'label' => 'above',
@@ -1021,7 +1021,7 @@ Quelle',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 16,
+        'weight' => 19,
       ),
       'paragraph' => array(
         'label' => 'above',
@@ -1073,6 +1073,7 @@ Quelle',
         'label' => 'above',
         'module' => 'entityreference',
         'settings' => array(
+          'bypass_access' => FALSE,
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
@@ -1374,13 +1375,14 @@ Schema für externe Links: http://www…',
   t('Bis auf Weiteres');
   t('Date');
   t('Diese Förderbekanntmachung gehört zu');
-  t('Dieses Datum erscheint im Frontend.');
+  t('Dieses Datum entspricht dem Veröffentlichungsdatum und wir über dem Titel angezeigt.');
   t('Dokumente und Publikationen');
   t('Drücken Sie die "Strg"-Taste um mehrere Themen auszuwählen. Maximale Anzahl zuzuordnender Themen: 3. Wählen Sie eine der vier Oberkategorien aus, sind deren zugeordnete Unterkategorien nicht auswählbar.
 Quelle');
   t('Fließtext');
   t('Förderbekanntmachungen');
   t('Fügen Sie die YouTube URL ein. Erlaubte Formate: https://www.youtube.com/watch?v=wM73y2Iu8pU oder https://youtu.be/wM73y2Iu8pU');
+  t('Geben Sie das Datum des Stichtags an.');
   t('Initiatoren zum Thema');
   t('Kommende Veranstaltungen');
   t('Kurztext');

@@ -160,7 +160,7 @@ function ipwa_f_rderbekanntmachung_field_group_info() {
   $field_group->parent_name = 'group_page_info';
   $field_group->data = array(
     'label' => 'title',
-    'weight' => '15',
+    'weight' => '18',
     'children' => array(),
     'format_type' => 'html-element',
     'format_settings' => array(
