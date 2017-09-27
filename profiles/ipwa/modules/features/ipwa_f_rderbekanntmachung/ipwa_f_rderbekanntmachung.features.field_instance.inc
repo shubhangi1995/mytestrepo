@@ -868,7 +868,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
   $field_instances['node-f_rderbekanntmachung-field_stichtag1'] = array(
     'bundle' => 'f_rderbekanntmachung',
     'deleted' => 0,
-    'description' => 'Dieses Datum entspricht dem Veröffentlichungsdatum und wir über dem Titel angezeigt.',
+    'description' => 'Dieses Datum entspricht dem Veröffentlichungsdatum und wird über dem Titel angezeigt',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -1375,7 +1375,7 @@ Schema für externe Links: http://www…',
   t('Bis auf Weiteres');
   t('Datum');
   t('Diese Förderbekanntmachung gehört zu');
-  t('Dieses Datum entspricht dem Veröffentlichungsdatum und wir über dem Titel angezeigt.');
+  t('Dieses Datum entspricht dem Veröffentlichungsdatum und wird über dem Titel angezeigt');
   t('Dokumente und Publikationen');
   t('Drücken Sie die "Strg"-Taste um mehrere Themen auszuwählen. Maximale Anzahl zuzuordnender Themen: 3. Wählen Sie eine der vier Oberkategorien aus, sind deren zugeordnete Unterkategorien nicht auswählbar.
 Quelle');
