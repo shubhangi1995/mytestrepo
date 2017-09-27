@@ -280,10 +280,10 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'hidden',
-        'module' => 'i18n_field',
+        'module' => 'list',
         'settings' => array(),
-        'type' => 'i18n_list_default',
-        'weight' => 7,
+        'type' => 'list_default',
+        'weight' => 10,
       ),
       'paragraph' => array(
         'label' => 'above',
@@ -319,7 +319,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
         'display_label' => 1,
       ),
       'type' => 'options_onoff',
-      'weight' => 6,
+      'weight' => 7,
     ),
   );
 
@@ -379,7 +379,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
           'show_repeat_rule' => 'show',
         ),
         'type' => 'date_default',
-        'weight' => 8,
+        'weight' => 9,
       ),
       'paragraph' => array(
         'label' => 'above',
@@ -413,7 +413,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_datum',
-    'label' => 'Date',
+    'label' => 'Stichtag',
     'required' => 1,
     'settings' => array(
       'default_value' => 'now',
@@ -931,7 +931,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_stichtag',
-    'label' => 'Stichtag',
+    'label' => 'Datum',
     'required' => 1,
     'settings' => array(
       'default_value' => 'now',
@@ -1373,7 +1373,7 @@ Schema für externe Links: http://www…',
   t('Ausschreibende Stelle');
   t('Bild');
   t('Bis auf Weiteres');
-  t('Date');
+  t('Datum');
   t('Diese Förderbekanntmachung gehört zu');
   t('Dieses Datum entspricht dem Veröffentlichungsdatum und wird über dem Titel angezeigt');
   t('Dokumente und Publikationen');
