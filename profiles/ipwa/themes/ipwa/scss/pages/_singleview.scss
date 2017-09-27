@@ -1436,7 +1436,8 @@
 
 // Funding annoucements
 
-.field-name-field-bis-auf-weiteres, .field-name-field-stichtag {
+.field-name-field-bis-auf-weiteres//, .field-name-field-stichtag 
+	{
     font-size: 22px;
     color: $active-menu;
     border-bottom: 1px solid $single-border-color;
@@ -1450,6 +1451,9 @@
         font-weight: normal;
         font-family: $font-family-bold;
     }
+}
+.field-name-field-stichtag{
+	margin-bottom:20px;
 }
 
 .field-name-field-ausschreibende-stelle {

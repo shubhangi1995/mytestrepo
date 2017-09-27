@@ -10354,7 +10354,7 @@ caption {
   margin: 26px 0 45px; }
 
 /* line 1439, ../scss/pages/_singleview.scss */
-.field-name-field-bis-auf-weiteres, .field-name-field-stichtag {
+.field-name-field-bis-auf-weiteres {
   font-size: 22px;
   color: #e74712;
   border-bottom: 1px solid #c5cbd5;
@@ -10363,58 +10363,62 @@ caption {
   /* Tablet design */ }
   @media (min-width: 767px) {
     /* line 1439, ../scss/pages/_singleview.scss */
-    .field-name-field-bis-auf-weiteres, .field-name-field-stichtag {
+    .field-name-field-bis-auf-weiteres {
       font-size: 28px; } }
-  /* line 1449, ../scss/pages/_singleview.scss */
-  .field-name-field-bis-auf-weiteres .field-label, .field-name-field-stichtag .field-label {
+  /* line 1450, ../scss/pages/_singleview.scss */
+  .field-name-field-bis-auf-weiteres .field-label {
     font-weight: normal;
     font-family: "BentonSans-Bold"; }
 
 /* line 1455, ../scss/pages/_singleview.scss */
+.field-name-field-stichtag {
+  margin-bottom: 20px; }
+
+/* line 1459, ../scss/pages/_singleview.scss */
 .field-name-field-ausschreibende-stelle {
   margin-bottom: 45px;
   font-size: 22px; }
-  /* line 1459, ../scss/pages/_singleview.scss */
+  /* line 1463, ../scss/pages/_singleview.scss */
   .field-name-field-ausschreibende-stelle .external-link {
     padding-left: 5px;
     padding-right: 35px;
     font-size: 22px; }
-    /* line 1464, ../scss/pages/_singleview.scss */
+    /* line 1468, ../scss/pages/_singleview.scss */
     .field-name-field-ausschreibende-stelle .external-link::before {
       left: auto;
       right: 0;
       top: 5px; }
 
-/* line 1474, ../scss/pages/_singleview.scss */
+/* line 1478, ../scss/pages/_singleview.scss */
 .field-name-field-herausgeber {
   border-bottom: 1px solid #c5cbd5;
   padding-bottom: 15px;
   margin-bottom: 15px; }
-  /* line 1480, ../scss/pages/_singleview.scss */
+  /* line 1484, ../scss/pages/_singleview.scss */
   .field-name-field-herausgeber .field-label::before {
     content: "\e90f"; }
 
-/* line 1486, ../scss/pages/_singleview.scss */
+/* line 1490, ../scss/pages/_singleview.scss */
 .field-name-field-herausgeber, .field-name-field-ver-ffentlichungsdatum {
   font-size: 18px; }
-  /* line 1490, ../scss/pages/_singleview.scss */
+  /* line 1494, ../scss/pages/_singleview.scss */
   .field-name-field-herausgeber .field-label::before, .field-name-field-ver-ffentlichungsdatum .field-label::before {
     font-family: "icomoon";
     color: #a0a9b7;
     margin-right: 10px; }
 
-/* line 1498, ../scss/pages/_singleview.scss */
+/* line 1502, ../scss/pages/_singleview.scss */
 .field-name-field-ver-ffentlichungsdatum {
   margin-bottom: 45px; }
-  /* line 1502, ../scss/pages/_singleview.scss */
+  /* line 1506, ../scss/pages/_singleview.scss */
   .field-name-field-ver-ffentlichungsdatum .field-label::before {
     content: "\e90b"; }
 
-/* line 1510, ../scss/pages/_singleview.scss */
+/* line 1514, ../scss/pages/_singleview.scss */
 .node-unpublished {
   background: none; }
 
-/* line 1520, ../scss/pages/_singleview.scss */
+/* line 1524, ../scss/pages/_singleview.scss */
 .view-id-related_content.view-display-id-block_3 .views-row .field-content a {
   background: #e74712;
   border: none;
@@ -10424,24 +10428,24 @@ caption {
   font-size: 16px;
   /* Tablet design */ }
   @media (min-width: 520px) {
-    /* line 1520, ../scss/pages/_singleview.scss */
+    /* line 1524, ../scss/pages/_singleview.scss */
     .view-id-related_content.view-display-id-block_3 .views-row .field-content a {
       font-size: 20px; } }
-  /* line 1535, ../scss/pages/_singleview.scss */
+  /* line 1539, ../scss/pages/_singleview.scss */
   .view-id-related_content.view-display-id-block_3 .views-row .field-content a::before {
     color: #ffffff;
     float: right;
     margin-left: 10px;
     position: static; }
 
-/* line 1549, ../scss/pages/_singleview.scss */
+/* line 1553, ../scss/pages/_singleview.scss */
 .field-name-field-ansprechpartner-kontaktdat, .field-name-field-weitere-details {
   border-bottom: 1px solid #c5cbd5;
   padding-bottom: 15px;
   margin-bottom: 15px;
   font-size: 18px; }
 
-/* line 1557, ../scss/pages/_singleview.scss */
+/* line 1561, ../scss/pages/_singleview.scss */
 .field-name-field-weitere-details::before {
   content: "\e907";
   font-family: "icomoon";
@@ -10449,7 +10453,7 @@ caption {
   float: left;
   color: #a0a9b7; }
 
-/* line 1567, ../scss/pages/_singleview.scss */
+/* line 1571, ../scss/pages/_singleview.scss */
 .external-link {
   color: #273753;
   padding-left: 34px;
@@ -10457,7 +10461,7 @@ caption {
   font-size: 18px;
   position: relative;
   display: inline-block; }
-  /* line 1575, ../scss/pages/_singleview.scss */
+  /* line 1579, ../scss/pages/_singleview.scss */
   .external-link::before {
     left: 0;
     position: absolute;
@@ -10466,23 +10470,23 @@ caption {
     content: "\e948";
     color: #919BAA;
     font-size: 16px; }
-  /* line 1585, ../scss/pages/_singleview.scss */
+  /* line 1589, ../scss/pages/_singleview.scss */
   .external-link .ext {
     display: none; }
-  /* line 1589, ../scss/pages/_singleview.scss */
+  /* line 1593, ../scss/pages/_singleview.scss */
   .external-link:hover {
     color: #e74712;
     text-decoration: none; }
-    /* line 1593, ../scss/pages/_singleview.scss */
+    /* line 1597, ../scss/pages/_singleview.scss */
     .external-link:hover::before {
       color: #e74712; }
 
 @media only screen and (max-width: 600px) {
-  /* line 1604, ../scss/pages/_singleview.scss */
+  /* line 1608, ../scss/pages/_singleview.scss */
   .group-body-container ul, .group-body-container ol {
     padding-left: 0 !important; }
 
-  /* line 1607, ../scss/pages/_singleview.scss */
+  /* line 1611, ../scss/pages/_singleview.scss */
   .group-body-container ul li::before, .group-body-container ol li::before {
     position: static;
     margin-right: 18px; } }
