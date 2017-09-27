@@ -131,7 +131,7 @@ function ipwa_f_rderbekanntmachung_field_group_info() {
       3 => 'field_themenzuweisung',
       4 => 'field_untertitel',
       5 => 'field_bis_auf_weiteres',
-      6 => 'field_stichtag1',
+      6 => 'field_stichtag',
       7 => 'group_title',
     ),
     'format_type' => 'html-element',
@@ -160,7 +160,7 @@ function ipwa_f_rderbekanntmachung_field_group_info() {
   $field_group->parent_name = 'group_page_info';
   $field_group->data = array(
     'label' => 'title',
-    'weight' => '5',
+    'weight' => '7',
     'children' => array(),
     'format_type' => 'html-element',
     'format_settings' => array(

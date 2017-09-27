@@ -64,7 +64,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 10,
+      'weight' => 11,
     ),
   );
 
@@ -130,7 +130,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
       'module' => 'paragraphs',
       'settings' => array(),
       'type' => 'paragraphs_embed',
-      'weight' => 11,
+      'weight' => 12,
     ),
   );
 
@@ -147,7 +147,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 9,
+        'weight' => 11,
       ),
       'paragraph' => array(
         'label' => 'above',
@@ -201,7 +201,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 7,
+      'weight' => 8,
     ),
   );
 
@@ -262,7 +262,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 9,
+      'weight' => 10,
     ),
   );
 
@@ -413,7 +413,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_datum',
-    'label' => 'Stichtag',
+    'label' => 'Date',
     'required' => 1,
     'settings' => array(
       'default_value' => 'now',
@@ -436,7 +436,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
         'year_range' => '-7:2030',
       ),
       'type' => 'date_popup',
-      'weight' => 5,
+      'weight' => 6,
     ),
   );
 
@@ -493,7 +493,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 15,
+      'weight' => 16,
     ),
   );
 
@@ -554,7 +554,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 20,
+      'weight' => 21,
     ),
   );
 
@@ -615,7 +615,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 18,
+      'weight' => 19,
     ),
   );
 
@@ -668,7 +668,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 3,
+      'weight' => 4,
     ),
   );
 
@@ -729,7 +729,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 17,
+      'weight' => 18,
     ),
   );
 
@@ -790,7 +790,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 19,
+      'weight' => 20,
     ),
   );
 
@@ -806,7 +806,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 11,
+        'weight' => 13,
       ),
       'paragraph' => array(
         'label' => 'above',
@@ -860,12 +860,12 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 8,
+      'weight' => 9,
     ),
   );
 
-  // Exported field_instance: 'node-f_rderbekanntmachung-field_stichtag1'.
-  $field_instances['node-f_rderbekanntmachung-field_stichtag1'] = array(
+  // Exported field_instance: 'node-f_rderbekanntmachung-field_stichtag'.
+  $field_instances['node-f_rderbekanntmachung-field_stichtag'] = array(
     'bundle' => 'f_rderbekanntmachung',
     'deleted' => 0,
     'description' => 'Dieses Datum entspricht dem Veröffentlichungsdatum und wird über dem Titel angezeigt',
@@ -908,7 +908,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
               'iCalendar' => 0,
             ),
             'data_secure' => 'auto',
-            'style' => 'glow_orange',
+            'style' => 'blue',
           ),
           'addtocalendar_show' => 0,
           'format_type' => 'short',
@@ -920,7 +920,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
           'show_repeat_rule' => 'show',
         ),
         'type' => 'date_default',
-        'weight' => 3,
+        'weight' => 6,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -930,8 +930,8 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_stichtag1',
-    'label' => 'Datum',
+    'field_name' => 'field_stichtag',
+    'label' => 'Stichtag',
     'required' => 1,
     'settings' => array(
       'default_value' => 'now',
@@ -954,7 +954,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
         'year_range' => '-7:2030',
       ),
       'type' => 'date_popup',
-      'weight' => 2,
+      'weight' => 3,
     ),
   );
 
@@ -971,7 +971,7 @@ Quelle',
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_plain',
-        'weight' => 10,
+        'weight' => 12,
       ),
       'paragraph' => array(
         'label' => 'above',
@@ -1005,7 +1005,7 @@ Quelle',
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 4,
+      'weight' => 5,
     ),
   );
 
@@ -1021,7 +1021,7 @@ Quelle',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 6,
+        'weight' => 8,
       ),
       'paragraph' => array(
         'label' => 'above',
@@ -1114,7 +1114,7 @@ Quelle',
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 16,
+      'weight' => 17,
     ),
   );
 
@@ -1167,7 +1167,7 @@ Quelle',
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 14,
+      'weight' => 15,
     ),
   );
 
@@ -1221,7 +1221,7 @@ Quelle',
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 13,
+      'weight' => 14,
     ),
   );
 
@@ -1293,7 +1293,7 @@ Schema für externe Links: http://www…',
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 21,
+      'weight' => 22,
     ),
   );
 
@@ -1363,7 +1363,7 @@ Schema für externe Links: http://www…',
       'module' => 'youtube',
       'settings' => array(),
       'type' => 'youtube',
-      'weight' => 12,
+      'weight' => 13,
     ),
   );
 
@@ -1373,7 +1373,7 @@ Schema für externe Links: http://www…',
   t('Ausschreibende Stelle');
   t('Bild');
   t('Bis auf Weiteres');
-  t('Datum');
+  t('Date');
   t('Diese Förderbekanntmachung gehört zu');
   t('Dieses Datum entspricht dem Veröffentlichungsdatum und wird über dem Titel angezeigt');
   t('Dokumente und Publikationen');
