@@ -147,7 +147,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 23,
+        'weight' => 9,
       ),
       'paragraph' => array(
         'label' => 'above',
@@ -280,10 +280,10 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'hidden',
-        'module' => 'list',
+        'module' => 'i18n_field',
         'settings' => array(),
-        'type' => 'list_default',
-        'weight' => 22,
+        'type' => 'i18n_list_default',
+        'weight' => 7,
       ),
       'paragraph' => array(
         'label' => 'above',
@@ -379,7 +379,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
           'show_repeat_rule' => 'show',
         ),
         'type' => 'date_default',
-        'weight' => 21,
+        'weight' => 8,
       ),
       'paragraph' => array(
         'label' => 'above',
@@ -413,7 +413,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_datum',
-    'label' => 'Date',
+    'label' => 'Stichtag',
     'required' => 1,
     'settings' => array(
       'default_value' => 'now',
@@ -806,7 +806,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 25,
+        'weight' => 11,
       ),
       'paragraph' => array(
         'label' => 'above',
@@ -920,7 +920,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
           'show_repeat_rule' => 'show',
         ),
         'type' => 'date_default',
-        'weight' => 18,
+        'weight' => 3,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -931,8 +931,8 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_stichtag1',
-    'label' => 'Stichtag',
-    'required' => 0,
+    'label' => 'Datum',
+    'required' => 1,
     'settings' => array(
       'default_value' => 'now',
       'default_value2' => 'same',
@@ -941,6 +941,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
       'user_register_form' => FALSE,
     ),
     'widget' => array(
+      'active' => 1,
       'module' => 'date',
       'settings' => array(
         'increment' => 15,
@@ -970,7 +971,7 @@ Quelle',
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_plain',
-        'weight' => 23,
+        'weight' => 10,
       ),
       'paragraph' => array(
         'label' => 'above',
@@ -1020,7 +1021,7 @@ Quelle',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 19,
+        'weight' => 6,
       ),
       'paragraph' => array(
         'label' => 'above',
@@ -1372,7 +1373,7 @@ Schema für externe Links: http://www…',
   t('Ausschreibende Stelle');
   t('Bild');
   t('Bis auf Weiteres');
-  t('Date');
+  t('Datum');
   t('Diese Förderbekanntmachung gehört zu');
   t('Dieses Datum entspricht dem Veröffentlichungsdatum und wir über dem Titel angezeigt.');
   t('Dokumente und Publikationen');
