@@ -913,7 +913,7 @@ pre {
     clear: both; }
 
 /* line 11, ../scss/bootstrap-sass/bootstrap/mixins/_grid-framework.scss */
-.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .view-neueste-informationen .view-sub-wrapper > .view-content .views-row, .view-termin .view-sub-wrapper > .view-content .views-row, .view-aktuelles .view-sub-wrapper > .view-content .views-row, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row, .view-display-id-page_1 .view-sub-wrapper > .view-content .views-row, .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row, .field-name-field-themenzuweisung .field-items .field-item, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .view-neueste-informationen .view-sub-wrapper > .view-content .views-row, .view-termin .view-sub-wrapper > .view-content .views-row, .view-aktuelles .view-sub-wrapper > .view-content .views-row, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row, .view-display-id-page_1 .view-sub-wrapper > .view-content .views-row, .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row, .col-md-6, .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items > .field-item, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .view-neueste-informationen .view-sub-wrapper > .view-content .views-row, .view-termin .view-sub-wrapper > .view-content .views-row, .view-aktuelles .view-sub-wrapper > .view-content .views-row, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row, .view-display-id-page_1 .view-sub-wrapper > .view-content .views-row, .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .view-neueste-informationen .view-sub-wrapper > .view-content .views-row, .view-termin .view-sub-wrapper > .view-content .views-row, .view-aktuelles .view-sub-wrapper > .view-content .views-row, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row, .view-display-id-page_1 .view-sub-wrapper > .view-content .views-row, .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row, .col-md-6, .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items > .field-item, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
@@ -1337,7 +1337,7 @@ pre {
     margin-left: 100%; } }
 @media (min-width: 992px) {
   /* line 27, ../scss/bootstrap-sass/bootstrap/mixins/_grid-framework.scss */
-  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .view-neueste-informationen .view-sub-wrapper > .view-content .views-row, .view-termin .view-sub-wrapper > .view-content .views-row, .view-aktuelles .view-sub-wrapper > .view-content .views-row, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row, .view-display-id-page_1 .view-sub-wrapper > .view-content .views-row, .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row, .field-name-field-themenzuweisung .field-items .field-item, .col-md-5, .col-md-6, .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items > .field-item, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .view-neueste-informationen .view-sub-wrapper > .view-content .views-row, .view-termin .view-sub-wrapper > .view-content .views-row, .view-aktuelles .view-sub-wrapper > .view-content .views-row, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row, .view-display-id-page_1 .view-sub-wrapper > .view-content .views-row, .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row, .col-md-5, .col-md-6, .paragraphs-item-topic-teaser-paragraph .field-collection-container .field-name-field-topic-teaser > .field-items > .field-item, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
     float: left; }
 
   /* line 35, ../scss/bootstrap-sass/bootstrap/mixins/_grid-framework.scss */
@@ -1353,7 +1353,7 @@ pre {
     width: 25%; }
 
   /* line 35, ../scss/bootstrap-sass/bootstrap/mixins/_grid-framework.scss */
-  .col-md-4, .view-neueste-informationen .view-sub-wrapper > .view-content .views-row, .view-termin .view-sub-wrapper > .view-content .views-row, .view-aktuelles .view-sub-wrapper > .view-content .views-row, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row, .view-display-id-page_1 .view-sub-wrapper > .view-content .views-row, .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row, .field-name-field-themenzuweisung .field-items .field-item {
+  .col-md-4, .view-neueste-informationen .view-sub-wrapper > .view-content .views-row, .view-termin .view-sub-wrapper > .view-content .views-row, .view-aktuelles .view-sub-wrapper > .view-content .views-row, .view-neueste-digital-projekte .view-sub-wrapper > .view-content .views-row, .view-alles-zum-thema .view-sub-wrapper > .view-content .views-row, .view-display-id-page_1 .view-sub-wrapper > .view-content .views-row, .page-calendar .view-content .calendar-calendar .inner .item .calendar span a + .views-row {
     width: 33.33333333%; }
 
   /* line 35, ../scss/bootstrap-sass/bootstrap/mixins/_grid-framework.scss */
@@ -9255,6 +9255,7 @@ caption {
     margin-bottom: 15px; }
   /* line 14, ../scss/pages/_singleview.scss */
   .field-name-field-themenzuweisung .field-items .field-item {
+    display: inline-block;
     margin-bottom: 15px;
     /* Over Desktop design */
     padding-left: 0; }
@@ -9262,7 +9263,7 @@ caption {
       /* line 14, ../scss/pages/_singleview.scss */
       .field-name-field-themenzuweisung .field-items .field-item {
         padding-right: 45px;
-        margin-bottom: 0; } }
+        margin-bottom: 12px; } }
     /* line 25, ../scss/pages/_singleview.scss */
     .field-name-field-themenzuweisung .field-items .field-item:last-child {
       padding-right: 0; }
@@ -9272,8 +9273,7 @@ caption {
       border-bottom: 1px solid #c5cbd5;
       padding-bottom: 5px;
       color: #273753;
-      display: inline-block;
-      width: 80%; }
+      display: table; }
       /* line 39, ../scss/pages/_singleview.scss */
       .field-name-field-themenzuweisung .field-items .field-item a:hover {
         border-bottom: 1px solid #e74712; }
