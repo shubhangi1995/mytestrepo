@@ -27,8 +27,7 @@ function ipwa_menu_default_fe_block_boxes() {
 
 <ul>
 	<li><a href="schaufenster-digitales-nrw-listenansicht?type=protagonist&amp;field_akteurstyp=43&amp;field_themenzuweisung_1=34&amp;field_plz=">Beispiele guter Praxis </a></li>
-	<li><a href="schaufenster-digitales-nrw-listenansicht?type=protagonist&amp;field_akteurstyp=43&amp;field_themenzuweisung_1=34&amp;field_plz=">Vorher: Beratung</a></li>
-	<li><a href="schaufenster-digitales-nrw-listenansicht?type=protagonist&amp;field_akteurstyp=43&amp;field_themenzuweisung_1=24&amp;field_plz=&amp;sort_by=title&amp;sort_by=title">Neu: Beratung</a></li>
+	<li><a href="schaufenster-digitales-nrw-listenansicht?type=protagonist&amp;field_akteurstyp=43&amp;field_themenzuweisung_1=24&amp;field_plz=&amp;sort_by=title&amp;sort_by=title">Beratung</a></li>
 	<li><a href="/aktuelles?type=f_rderbekanntmachung&amp;term_node_tid_depth_3=34">Förderung</a></li>
 	<li><a href="schaufenster-digitales-nrw-listenansicht?type=protagonist&amp;field_akteurstyp=46&amp;field_themenzuweisung_1=34&amp;field_plz=">Perspektiven finden</a></li>
 	<li><a href="/infos-fuer-beschaeftigte">Übersicht </a></li>
