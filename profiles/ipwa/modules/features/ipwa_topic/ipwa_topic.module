@@ -9,16 +9,19 @@ include_once 'ipwa_topic.features.inc';
 
 // function for making term pages of taxonomy 'akteurstypen' make visible only for admin or user with administrator role.
 // see@ https://issues.init.de/browse/IPWA4-208
-function ipwa_topic_init () {
- global $user;
+function ipwa_topic_init ()
+{
+  global $user;
 
- // getting the vocabulary id of the taxonomy term whose page is accessing.
- $vid = taxonomy_term_load(arg(2))->vid;
-
- // getting the roles of user who is logged in .
- $userrole = $user->roles;
- if (arg(0) == 'taxonomy' && arg(1) == 'term' && is_numeric(arg(2)) && $vid == '2' && (!(in_array( 'Administrator' , $userrole) || $user->uid == '1'))) {
-    drupal_access_denied();
-    drupal_page_footer();
- }
+  // getting the vocabulary id of the taxonomy term whose page is accessing.
+  $term = taxonomy_term_load(arg(2));
+  if (isset($term) && !empty($term)) {
+    $vid = $term->vid;
+  // getting the roles of user who is logged in .
+    $userrole = $user->roles;
+    if (arg(0) == 'taxonomy' && arg(1) == 'term' && is_numeric(arg(2)) && $vid == '2' && (!(in_array('Administrator', $userrole) || $user->uid == '1'))) {
+      drupal_access_denied();
+      drupal_page_footer();
+    }
+  }
 }
