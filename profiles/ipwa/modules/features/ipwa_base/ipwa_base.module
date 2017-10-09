@@ -199,8 +199,8 @@ function ipwa_base_form_alter(&$form, &$form_state, $form_id) {
   if ($form['#id'] == 'views-exposed-form-aktuelles-page') {
     $form['submit']['#name'] = "submit";
     // for filters customization.
-    $form['term_node_tid_depth']['#options'][0]->option[1] = $form['term_node_tid_depth_1']['#options'][11]->option[11] =
-    $form['term_node_tid_depth_2']['#options'][22]->option[24] = $form['term_node_tid_depth_3']['#options'][32]->option[34] = 'Alle Themen';
+    $form['term_node_tid_depth']['#options'][12]->option[1] = $form['term_node_tid_depth_1']['#options'][0]->option[11] =
+    $form['term_node_tid_depth_2']['#options'][31]->option[24] = $form['term_node_tid_depth_3']['#options'][23]->option[34] = 'Alle Themen';
 
     $filters = array('term_node_tid_depth', 'term_node_tid_depth_1', 'term_node_tid_depth_2', 'term_node_tid_depth_3');
     foreach ($filters as $filter) {
