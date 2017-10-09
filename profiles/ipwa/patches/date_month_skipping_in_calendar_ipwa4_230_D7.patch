@@ -1,0 +1,38 @@
+Index: profiles/ipwa/modules/contrib/date/date_views/includes/date_views_plugin_pager.inc
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- profiles/ipwa/modules/contrib/date/date_views/includes/date_views_plugin_pager.inc	(revision e8382da8222b914a6dd776a0287fc12d23177c55)
++++ profiles/ipwa/modules/contrib/date/date_views/includes/date_views_plugin_pager.inc	(revision )
+@@ -279,9 +279,11 @@
+           $this->view->date_info->next_date = $nextdate ? new DateObject($nextdate, NULL, $format) : NULL;
+         }
+         else {
+-          $this->view->date_info->prev_date = clone($argument->min_date);
++          // following the lead of the skip_empty_pages code above
++          $this->view->date_info->prev_date = new DateObject($argument->argument, NULL, $format);
+           date_modify($this->view->date_info->prev_date, '-1 ' . $argument->date_handler->granularity);
+-          $this->view->date_info->next_date = clone($argument->max_date);
++          date_modify($this->view->date_info->prev_date, '-1 ' . $argument->date_handler->granularity);
++          $this->view->date_info->next_date = new DateObject($argument->argument, NULL, $format);
+           date_modify($this->view->date_info->next_date, '+1 ' . $argument->date_handler->granularity);
+         }
+         // Write the date_info properties that depend on the current value.
+Index: profiles/ipwa/themes/ipwa/template.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- profiles/ipwa/themes/ipwa/template.php	(revision e8382da8222b914a6dd776a0287fc12d23177c55)
++++ profiles/ipwa/themes/ipwa/template.php	(revision )
+@@ -12,8 +12,7 @@
+  * @params $variables
+  *
+  */
+-function ipwa_preprocess_node(&$variables)
+-{
++function ipwa_preprocess_node(&$variables) {
+   //For CT 'Bild' or frontpage don't show title
+   if ($variables['type'] == 'bild') {
+     // Don't show title
