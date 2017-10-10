@@ -79,7 +79,7 @@
 		}
 	</style>
 </head>
-<center>
+<!--center-->
 <body>
 
 <table  width="720" align="center" border="0" cellpadding="0" cellspacing="0" id="bodyTable" style="font-family:Arial,Helvetica, sans-serif; font-size:16px; color:#273753; width:720px;">
@@ -89,10 +89,10 @@
 		<table width="720" align="center">
 			<tr style="padding:10px 0; background:#eff2f7;">
 				<td align="left" style="padding:20px 10px;">
-						<img src="<?php print file_create_url(drupal_get_path('theme', 'ipwa')); ?>/images/NRW_4_d.png" alt="Logo1" style="width:200px;height:90px;"/>
+						<img src="<?php print file_create_url(drupal_get_path('theme', 'ipwa')); ?>/images/NRW_4_d.png" alt="Logo1" style="width:200px;"/>
 				</td>
 				<td align="right" style="padding:20px 10px;">
-						<img src="<?php print file_create_url(drupal_get_path('theme', 'ipwa')); ?>/images/EU-Logo.png" alt="Logo2" style = "width:180px;height:90px;"/>
+						<img src="<?php print file_create_url(drupal_get_path('theme', 'ipwa')); ?>/images/EU-Logo.png" alt="Logo2" style = "width:180px;"/>
 				</td>
 			</tr>
 		</table>
@@ -282,5 +282,5 @@
    </tr>
 </table>
 </body>
-</center>
+<!--/center-->
 </html>

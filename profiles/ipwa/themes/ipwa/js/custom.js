@@ -520,7 +520,12 @@ jQuery(document).ready(function(){
 				});
 			}
 	});
-		
+	
+	// Hide alert messages from entire website
+	
+	jQuery(".alert .close").click(function(){
+		jQuery(this).parent().hide();
+	});
 	
 	
 });
