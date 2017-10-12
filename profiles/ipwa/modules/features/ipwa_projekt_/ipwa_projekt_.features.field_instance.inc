@@ -431,7 +431,7 @@ function ipwa_projekt__field_default_field_instances() {
     'bundle' => 'projekt',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Geben Sie ein, falls der Wert bekannt ist, der sonst leer ist, gemäß PLZ.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -470,7 +470,7 @@ function ipwa_projekt__field_default_field_instances() {
     'bundle' => 'projekt',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => '',
+    'description' => 'Geben Sie ein, falls der Wert bekannt ist, der sonst leer ist, gemäß PLZ.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -1105,6 +1105,7 @@ Schema für externe Links: http://www…',
   t('Fließtext');
   t('Förderbekanntmachungen');
   t('Fügen Sie die YouTube URL ein. Erlaubte Formate: https://www.youtube.com/watch?v=wM73y2Iu8pU oder https://youtu.be/wM73y2Iu8pU');
+  t('Geben Sie ein, falls der Wert bekannt ist, der sonst leer ist, gemäß PLZ.');
   t('Initiatoren zum Thema');
   t('Kommende Veranstaltungen');
   t('Kurztext');

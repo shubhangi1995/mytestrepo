@@ -10,19 +10,14 @@ include_once 'ipwa_projekt_.features.inc';
 //for hiding longitude and latitude in the backend
 function ipwa_projekt__form_alter(&$form, &$form_state, $form_id) {
   if($form_id == 'protagonist_node_form' || $form_id == 'projekt_node_form') {
-   $form['field_latitude']['#access'] = 0;
-   $form['field_longitude']['#access'] = 0;
    $form['#validate'][0] = 'ipwa_projekt__node_form_validate';
-
-
-
   }
  }
 
 function ipwa_projekt__node_form_validate($form, &$form_state)
 {
   if($form_state['node']->type == 'protagonist' || $form_state['node']->type == 'projekt') {
-    if(!empty($form_state['values']['field_plz']['und'][0]['value'])) {
+    if(!empty($form_state['values']['field_plz']['und'][0]['value']) && (empty($form_state['values']['field_longitude']['und'][0]['value']) && empty($form_state['values']['field_latitude']['und'][0]['value']))) {
       $lat = NULL;
       $lng = NULL;
 
