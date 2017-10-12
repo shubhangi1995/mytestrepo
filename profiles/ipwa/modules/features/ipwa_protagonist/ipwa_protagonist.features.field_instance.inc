@@ -550,7 +550,7 @@ Zeile 6 (bspw. E-Mail-Adresse)',
     'bundle' => 'protagonist',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Geben Sie ein, falls der Wert bekannt ist, der sonst leer ist, gemäß PLZ.',
+    'description' => 'Geben Sie an, ob der genaue Wert bekannt ist, sonst wird automatisch nach PLZ eingestellt.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -589,7 +589,7 @@ Zeile 6 (bspw. E-Mail-Adresse)',
     'bundle' => 'protagonist',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Geben Sie ein, falls der Wert bekannt ist, der sonst leer ist, gemäß PLZ.',
+    'description' => 'Geben Sie an, ob der genaue Wert bekannt ist, sonst wird automatisch nach PLZ eingestellt.',
     'display' => array(
       'default' => array(
         'label' => 'above',
@@ -1368,7 +1368,7 @@ Zeile 6 (bspw. E-Mail-Adresse)');
   t('Fließtext');
   t('Förderbekanntmachungen');
   t('Fügen Sie die YouTube URL ein. Erlaubte Formate: https://www.youtube.com/watch?v=wM73y2Iu8pU oder https://youtu.be/wM73y2Iu8pU');
-  t('Geben Sie ein, falls der Wert bekannt ist, der sonst leer ist, gemäß PLZ.');
+  t('Geben Sie an, ob der genaue Wert bekannt ist, sonst wird automatisch nach PLZ eingestellt.');
   t('Initiatoren zum Thema');
   t('Kommende Veranstaltungen');
   t('Kurztext');
