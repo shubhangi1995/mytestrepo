@@ -80,6 +80,13 @@ IPWA_MAP.Map.mapView = {
 
     var markerLabel = '';
     IPWA_MAP.Map.popup.init(this.map, markerLabel, this.conf.maxZoom);
+
+    var _this = this;
+    this.map.on('pointermove', function (evt) {
+      console.log('halli hallo!!!!');
+      _this.map.getTargetElement().style.cursor =
+          _this.map.hasFeatureAtPixel(evt.pixel) ? 'pointer' : '';
+    });
   },
 
   /**
