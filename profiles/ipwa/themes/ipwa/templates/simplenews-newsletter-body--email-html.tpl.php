@@ -33,17 +33,23 @@
  */
 ?>
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?=$title;?></title>
-	<style>
+	<link rel="stylesheet" href="<?php print $base_url.'/' ?>profiles/ipwa/themes/ipwa/css/style1.css" media="all">
+	<style type="text/css">
 		* {
 			margin:0;
 			padding:0;
+		}
+		table{
+			/*max-width:720px;
+			width:100%;*/
 		}
 		p, ul, ol{
 			font-size:15px !important;
@@ -77,16 +83,31 @@
 		br{
 			display:none;
 		}
+		#center{
+			/*max-width:720px;*/
+			margin:0 auto;
+			display:block;
+		}
+		.bodyTable{
+			/*max-width:720px;
+			width:100%;
+			margin:0 auto;*/
+		}
+		.container{
+			width:100%;
+		}
+		 
+		 
 	</style>
 </head>
 <!--center-->
 <body>
-
-<table  width="720" align="center" border="0" cellpadding="0" cellspacing="0" id="bodyTable" style="font-family:Arial,Helvetica, sans-serif; font-size:16px; color:#273753; width:720px;">
+	
+<table  align="center" width="90%" border="0" cellpadding="0" cellspacing="0" class="bodyTable"  style="max-width: 600px; font-family:Arial,Helvetica, sans-serif; font-size:16px; color:#273753;">
   
 	<tr style="margin-bottom:15px;">
-	<td width="720" align="center"  style="color:#273753;">
-		<table width="720" align="center">
+	<td  align="center"  style="color:#273753;">
+		<table  align="left" style="" class="container">
 			<tr style="padding:10px 0; background:#eff2f7;">
 				<td align="left" style="padding:20px 10px;">
 						<img src="<?php print file_create_url(drupal_get_path('theme', 'ipwa')); ?>/images/NRW_4_d.png" alt="Logo1" style="width:200px;"/>
@@ -99,8 +120,8 @@
 	</td>
 	</tr>
     <tr>
-	<td  style="width:720px;" style="color:#273753">
-	<table style="font-family:Arial,Helvetica, sans-serif; font-size:16px; color:#273753; width:720px;">
+	<td  style="" style="color:#273753">
+	<table style="font-family:Arial,Helvetica, sans-serif; font-size:16px; color:#273753;" class="container">
 	<tr>
 	 <td align="left" style = "font-weight:bold;color:#273753">
           <?php
@@ -129,12 +150,13 @@
        
     </tr>
     <tr>
-        <td  style="width:720px;color:#273753">
+        <td  style="color:#273753">
           <?php
             /**
             * Following code is for print the Title of Newsletter
             */
             ?>
+		<div>
           <?php if(isset($title)) : ?>
             <h1 style="font-size:27px;margin:30px 0 20px;"><?php  print $title; ?></h1>
           <?php endif; ?>
@@ -148,16 +170,18 @@
                   <p style="margin:5px 0;"><?php  print $build['body'][0]['#markup']; ?></p>
             <?php  endif; ?>
           <?php endif; ?>
+		  </div>
         </td>
     </tr>
     <tr>
-        <td  style="width:720px;color:#273753">
+        <td  style="color:#273753">
 
           <?php
           /**
            * Following code is for print the Node referred in Newsletter
            */
           ?>
+		  <div>
           <?php if(isset($build)) : ?>
             <?php if(!empty($build['#node']->field_newsletter_group)) : ?>
               <?php foreach($build['#node']->field_newsletter_group['und'] as $items): ?>
@@ -167,10 +191,10 @@
                   <?php //Following code is for print Title of Group. ?>
                   <?php foreach($field_data[$items['value']]->field_group_heading['und'] as $group_title): ?>
                     <h2 style="font-size:22px;background:#eff2f7;padding:20px 0;text-align:center;border-bottom:20px solid #fff;border-top:20px solid #fff; color:#273753;margin-top:30px;margin-bottom:-10px;"><a href="<?php print $group_title['url']; ?>" ><?php print $group_title['title']; ?></a></h2>
-					<table style="font-family:Arial,Helvetica, sans-serif;margin:0 auto; font-size:16px;color:#273753;width:720px; width = "720">
+					<table style="font-family:Arial,Helvetica, sans-serif;margin:0 auto; font-size:16px;color:#273753;" class="container">
 					<tr>
 					<td style="padding:20px 20px; background:#eff2f7;color:#273753">
-					<span style="background:#eff2f7; padding:30px 20px; color:#273753">
+					<span style="background:#eff2f7; color:#273753">
 					<?php foreach ($field_data[$items['value']]->field_newsletter_content_types['und'] as $node_data): ?>
                       <?php // look up the alias from the url_alias table ?>
                       <?php $source = 'node/' .$node_data['entity']->nid; ?>
@@ -240,11 +264,12 @@
               <?php endforeach; ?>
             <?php  endif; ?>
           <?php endif; ?>
+		  </div>
         </td>
     </tr>
    <tr>
 		<td>
-			<table style="font-family:Arial,Helvetica, sans-serif; font-size:16px; color:#273753; width:720px;">
+			<table style="font-family:Arial,Helvetica, sans-serif; font-size:16px; color:#273753;" class="container">
                 <tr style="padding:20px 20px; background:#eff2f7;">
                     <!--td align="left" style="color:#273753;">
                         <span style="font-weight:bold;color:#273753">Folden sie uns auf :</span>
