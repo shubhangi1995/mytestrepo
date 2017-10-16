@@ -61,6 +61,45 @@ function ipwa_projekt__field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'node-projekt-field_address'.
+  $field_instances['node-projekt-field_address'] = array(
+    'bundle' => 'projekt',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 20,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_address',
+    'label' => 'Straße',
+    'required' => 0,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'text',
+      'settings' => array(
+        'size' => 60,
+      ),
+      'type' => 'text_textfield',
+      'weight' => 23,
+    ),
+  );
+
   // Exported field_instance: 'node-projekt-field_anzuzeigende_seitenmodule'.
   $field_instances['node-projekt-field_anzuzeigende_seitenmodule'] = array(
     'bundle' => 'projekt',
@@ -1125,6 +1164,7 @@ Schema für externe Links: http://www…');
   t('Sie können hier Inhalte vom Typ \'Nachricht\' hinzufügen.');
   t('Sie können hier Inhalte vom Typ \'Projekt\' hinzufügen.');
   t('Sie können hier Inhalte vom Typ \'Termin\' hinzufügen.');
+  t('Straße');
   t('Untertitel');
   t('Videounterschrift');
   t('Weiterführende Links');
