@@ -26,11 +26,11 @@ function ipwa_menu_default_fe_block_boxes() {
   $fe_block_boxes->body = '<h4 class="block-title">Immer gut informiert</h4>
 
 <ul>
-	<li><a href="schaufenster-digitales-nrw-listenansicht?type=projekt&amp;&amp;search_api_aggregation_2=&amp;Submit=Suchen">Beispiele guter Praxis </a></li>
-	<li><a href="schaufenster-digitales-nrw-listenansicht?type=protagonist&amp;field_akteurstyp=43&amp;field_themenzuweisung_1=24&amp;field_plz=&amp;sort_by=title&amp;sort_by=title&amp;Submit=Suchen">Beratung</a></li>
-	<li><a href="schaufenster-digitales-nrw-listenansicht?type=protagonist&amp;field_akteurstyp=46&amp;field_themenzuweisung_1=34&amp;field_plz=&amp;Submit=Suchen">Perspektiven finden</a></li>
+	<li><a href="/schaufenster-digitales-nrw-listenansicht?type=projekt&amp;&amp;search_api_aggregation_2=&amp;Submit=Suchen">Beispiele guter Praxis </a></li>
+	<li><a href="/schaufenster-digitales-nrw-listenansicht?type=protagonist&amp;field_akteurstyp=43&amp;field_themenzuweisung_1=24&amp;field_plz=&amp;sort_by=title&amp;sort_by=title&amp;Submit=Suchen">Beratung</a></li>
+	<li><a href="/schaufenster-digitales-nrw-listenansicht?type=protagonist&amp;field_akteurstyp=46&amp;field_themenzuweisung_1=34&amp;field_plz=&amp;Submit=Suchen">Qualifizierungsanbieter</a></li>
 	<li><a href="/aktuelles?type=f_rderbekanntmachung&amp;term_node_tid_depth_3=34">Förderung</a></li>
-	<li><a href="infos-fuer-beschaeftigte">Übersicht</a></li>
+	<li><a href="/infos-fuer-beschaeftigte">Übersicht</a></li>
 </ul>
 ';
 
@@ -43,11 +43,11 @@ function ipwa_menu_default_fe_block_boxes() {
   $fe_block_boxes->body = '<h3 class="block-title">Immer gut informiert</h3>
 
 <ul>
-	<li><a href="schaufenster-digitales-nrw-listenansicht?type=projekt&amp;field_plz=&amp;sort_by=title&amp;Submit=Suchen">Beispiele guter Praxis </a></li>
-	<li><a href="schaufenster-digitales-nrw-listenansicht?type=protagonist&amp;field_akteurstyp=43&amp;field_themenzuweisung_1=24&amp;field_plz=&amp;sort_by=title&amp;sort_by=title&amp;Submit=Suchen">Beratung</a></li>
+	<li><a href="/schaufenster-digitales-nrw-listenansicht?type=projekt&amp;field_plz=&amp;sort_by=title&amp;Submit=Suchen">Beispiele guter Praxis </a></li>
+	<li><a href="/schaufenster-digitales-nrw-listenansicht?type=protagonist&amp;field_akteurstyp=43&amp;field_themenzuweisung_1=24&amp;field_plz=&amp;sort_by=title&amp;sort_by=title&amp;Submit=Suchen">Beratung</a></li>
 	<li><a href="/aktuelles?type=f_rderbekanntmachung&amp;term_node_tid_depth_2=24">Förderung</a></li>
-	<li><a href="schaufenster-digitales-nrw-listenansicht?type=protagonist&amp;field_akteurstyp=44&amp;field_themenzuweisung_1=24&amp;field_plz=&amp;Submit=Suchen">Unternehmenspartner finden</a></li>
-	<li><a href="schaufenster-digitales-nrw-listenansicht?type=protagonist&amp;field_akteurstyp=45&amp;field_themenzuweisung_1=24&amp;field_plz=&amp;Submit=Suchen">FuE-Partner finden</a></li>
+	<li><a href="/schaufenster-digitales-nrw-listenansicht?type=protagonist&amp;field_akteurstyp=44&amp;field_plz=&amp;Submit=Suchen">Unternehmenspartner</a></li>
+	<li><a href="/schaufenster-digitales-nrw-listenansicht?type=protagonist&amp;field_akteurstyp=45&amp;field_plz=&amp;Submit=Suchen">FuE-Partner</a></li>
 	<li><a href="/infos-fuer-unternehmen">Übersicht </a></li>
 </ul>
 ';
