@@ -51,6 +51,7 @@ features[fe_block_settings][] = views-neueste_digital_projekte-block
 features[fe_block_settings][] = views-rss-block_1
 features[features_api][] = api:2
 features[field_base][] = body
+features[field_base][] = field_address
 features[field_base][] = field_anzuzeigende_seitenmodule
 features[field_base][] = field_bild
 features[field_base][] = field_bild_ref
