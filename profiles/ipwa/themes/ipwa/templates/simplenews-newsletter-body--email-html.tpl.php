@@ -41,79 +41,21 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?=$title;?></title>
-	<link rel="stylesheet" href="<?php print $base_url.'/' ?>profiles/ipwa/themes/ipwa/css/style1.css" media="all">
-	<style type="text/css">
-		* {
-			margin:0;
-			padding:0;
-		}
-		table{
-			/*max-width:720px;
-			width:100%;*/
-		}
-		p, ul, ol{
-			font-size:15px !important;
-			line-height:25px;
-		}
-		p span{
-			font-size:17px !important;
-			background-color:transparent !important;
-			line-height:22px;
-		}
-		p span span{
-			font-size:17px !important;
-			background-color:transparent !important;
-		}
-		table tr td table{
-			font-family:Arial,Helvetica, sans-serif; font-size:16px; color:#273753;
-		}
-		table tr td table th{
-			background:#eff2f7;
-		}
-		table tr td table th, table tr td table td{
-			padding:10px;
-		}
-		a{
-			color:#273753 !important;
-			text-decoration:none !important;
-		}
-		.more_link, .more_link a{
-			color:#e74712 !important;
-		}
-		br{
-			display:none;
-		}
-		#center{
-			/*max-width:720px;*/
-			margin:0 auto;
-			display:block;
-		}
-		.bodyTable{
-			/*max-width:720px;
-			width:100%;
-			margin:0 auto;*/
-		}
-		.container{
-			width:100%;
-		}
-		 
-		 
-	</style>
 </head>
 <!--center-->
 <body>
 	
-<table  align="center" width="90%" border="0" cellpadding="0" cellspacing="0" class="bodyTable"  style="max-width: 600px; font-family:Arial,Helvetica, sans-serif; font-size:16px; color:#273753;">
+<table  align="center" border="0" cellpadding="0" cellspacing="0" class="bodyTable"  style=" font-family:Arial,Helvetica, sans-serif; font-size:16px; color:#273753;">
   
 	<tr style="margin-bottom:15px;">
 	<td  align="center"  style="color:#273753;">
 		<table  align="left" style="" class="container">
 			<tr style="padding:10px 0; background:#eff2f7;">
 				<td align="left" style="padding:20px 10px;">
-						<img src="<?php print file_create_url(drupal_get_path('theme', 'ipwa')); ?>/images/NRW_4_d.png" alt="Logo1" style="width:200px;"/>
+						<img src="<?php print file_create_url(drupal_get_path('theme', 'ipwa')); ?>/images/NRW_4_d.png" alt="Logo1" style="width:200px;" class="logo1"/>
 				</td>
 				<td align="right" style="padding:20px 10px;">
-						<img src="<?php print file_create_url(drupal_get_path('theme', 'ipwa')); ?>/images/EU-Logo.png" alt="Logo2" style = "width:180px;"/>
+						<img src="<?php print file_create_url(drupal_get_path('theme', 'ipwa')); ?>/images/EU-Logo.png" alt="Logo2" style = "width:180px;" class="logo2"/>
 				</td>
 			</tr>
 		</table>
@@ -156,7 +98,7 @@
             * Following code is for print the Title of Newsletter
             */
             ?>
-		<div>
+		<div class="editor_content">
           <?php if(isset($title)) : ?>
             <h1 style="font-size:27px;margin:30px 0 20px;"><?php  print $title; ?></h1>
           <?php endif; ?>
@@ -285,21 +227,21 @@
                 </tr>
                 <tr style="padding:20px 20px;">
                     <td align="left" style="color:#273753;">
-                        <img src="<?php print file_create_url(drupal_get_path('theme', 'ipwa')); ?>/images/EU_Logo.png" alt = "footer_logo1" width="190"/>
+                        <img src="<?php print file_create_url(drupal_get_path('theme', 'ipwa')); ?>/images/EU_Logo.png" alt = "footer_logo1" width="190" class="footer_image1"/>
                         <span style="color:#eff2f7;font-size:8px;">12</span>
-                        <img src="<?php print file_create_url(drupal_get_path('theme', 'ipwa')); ?>/images/EFRE.NRW.png" alt = "footer_logo2" width="190"/>
+                        <img src="<?php print file_create_url(drupal_get_path('theme', 'ipwa')); ?>/images/EFRE.NRW.png" alt = "footer_logo2" width="190" class="footer_image2"/>
                         <span style="color:#eff2f7;font-size:8px;">12</span>
-                        <img src="<?php print file_create_url(drupal_get_path('theme', 'ipwa')); ?>/images/NRW_MWIDE_RGB.png" alt = "footer_logo3" width="190"/>
+                        <img src="<?php print file_create_url(drupal_get_path('theme', 'ipwa')); ?>/images/NRW_MWIDE_RGB.png" alt = "footer_logo3" width="190" class="footer_image3"/>
                     </td>
                 </tr>
 				<tr style="background:#eff2f7;">
-				<td style="color:#273753;padding:20px;font-size:12px !important;">
-					<div style="margin-bottom:25px;color:#273753;font-size:12px !important;line-height:22px;"><div>Redaktionell verantwortlich im Sinne § 5 TMG bzw. § 55 RStV: Dr. Thomas König</div>
-            <div>Redaktion: Dr. Jan Christopher Brandt, VDI Technologiezentrum GmbH, VDI-Platz 1, 40468 Düsseldorf</div>
-			<div>E-Mail: <span class="more_link">nrw40-redaktion@vdi.de</span></div>
+				<td style="color:#273753;padding:20px;">
+					<div style="margin-bottom:25px;color:#273753;line-height:22px;"><div class="small-font">Redaktionell verantwortlich im Sinne § 5 TMG bzw. § 55 RStV: Dr. Thomas König</div>
+            <div class="small-font">Redaktion: Dr. Jan Christopher Brandt, VDI Technologiezentrum GmbH, VDI-Platz 1, 40468 Düsseldorf</div>
+			<div class="small-font">E-Mail: <span class="more_link">nrw40-redaktion@vdi.de</span></div>
           </div>
-					<div style="margin-bottom:25px;color:#273753;font-size:12px !important;line-height:22px;">Sie können diesen Newsletter <a class="more_link" href= "<?php print token_replace('[simplenews-subscriber:unsubscribe-url]', array('sanitize' => FALSE)); ?>">hier abbestellen.</a></div>
-					<div style="color:#273753;font-size:12px !important;line-height:22px;">© 2017 Ministerium für Wirtschaft, Innovation, Digitalisierung und Energie des Landes Nordrhein-Westfalen</div>
+					<div style="margin-bottom:25px;color:#273753;line-height:22px;" class="small-font">Sie können diesen Newsletter <a class="more_link" href= "<?php print token_replace('[simplenews-subscriber:unsubscribe-url]', array('sanitize' => FALSE)); ?>">hier abbestellen.</a></div>
+					<div style="color:#273753;line-height:22px;" class="small-font">© 2017 Ministerium für Wirtschaft, Innovation, Digitalisierung und Energie des Landes Nordrhein-Westfalen</div>
 				</td>
 				</tr>
 			</table>
