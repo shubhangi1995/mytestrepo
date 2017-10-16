@@ -38,6 +38,7 @@ features[variable][] = language_content_type_simplenews
 features[variable][] = menu_options_simplenews
 features[variable][] = menu_parent_simplenews
 features[variable][] = mimemail_format
+features[variable][] = mimemail_sitestyle
 features[variable][] = node_options_simplenews
 features[variable][] = node_preview_simplenews
 features[variable][] = node_submitted_simplenews

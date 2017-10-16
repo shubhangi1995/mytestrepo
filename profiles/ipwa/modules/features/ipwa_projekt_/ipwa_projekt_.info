@@ -65,4 +65,5 @@ features_exclude[dependencies][youtube] = youtube
 features_exclude[dependencies][ipwa_protagonist] = ipwa_protagonist
 features_exclude[field_base][field_anzuzeigende_seitenmodule_] = field_anzuzeigende_seitenmodule_
 features_exclude[field_base][field_anzuzeigende_seitenmodule] = field_anzuzeigende_seitenmodule
+features_exclude[field_base][field_plz] = field_plz
 features_exclude[field_instance][node-projekt-field_anzuzeigende_seitenmodule_] = node-projekt-field_anzuzeigende_seitenmodule_
