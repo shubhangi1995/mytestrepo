@@ -30,9 +30,9 @@ function ipwa_projekt__node_form_validate($form, &$form_state)
       $query_param = implode(" ", $param);
       $query_param2 = implode(" ", $location);
       if(!empty($form_state['values']['field_address']['und'][0]['value'])) {
-      $val_new = str_replace(" ","%20",'https://sg.geodatenzentrum.de/gdz_geokodierung__13dd535b-273e-b0f5-d42f-f2fa2cfa13d6/geosearch.json?query=' . $query_param .' '. $query_param2 . '&filter=typ:haus&count=1');}
+      $val_new = 'https://sg.geodatenzentrum.de/gdz_geokodierung__13dd535b-273e-b0f5-d42f-f2fa2cfa13d6/geosearch.json?query=' . $query_param .' '. urlencode($query_param2) . '&filter=typ:haus&count=1';}
       else
-      $val_new = 'https://sg.geodatenzentrum.de/gdz_geokodierung__13dd535b-273e-b0f5-d42f-f2fa2cfa13d6/geosearch.json?query=' . $query_param . '&filter=typ:haus&count=1';
+      {$val_new = 'https://sg.geodatenzentrum.de/gdz_geokodierung__13dd535b-273e-b0f5-d42f-f2fa2cfa13d6/geosearch.json?query=' . $query_param . '&filter=typ:haus&count=1';}
       $json = file_get_contents($val_new);
       $json = json_decode($json);
       $lng = $json->features[0]->geometry->coordinates[0];
