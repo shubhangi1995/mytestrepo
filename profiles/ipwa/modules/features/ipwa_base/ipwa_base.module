@@ -220,7 +220,7 @@ function ipwa_base_form_alter(&$form, &$form_state, $form_id) {
   }
 
 if ($form['#id'] == "views-exposed-form-projekt-map-project-map" || $form['#id'] == "views-exposed-form-projekt-map-page-1") {
-  $form['search_api_aggregation_2']['#attributes']['placeholder']="PLZ/Ort";
+  $form['search_api_aggregation_2']['#attributes']['placeholder']="Ort oder PLZ eingeben";
 }
 }
 
