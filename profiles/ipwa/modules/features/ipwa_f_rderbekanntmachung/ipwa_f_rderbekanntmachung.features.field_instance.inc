@@ -379,7 +379,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
           'show_repeat_rule' => 'show',
         ),
         'type' => 'date_default',
-        'weight' => 7,
+        'weight' => 3,
       ),
       'paragraph' => array(
         'label' => 'above',
