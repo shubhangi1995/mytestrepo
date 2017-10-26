@@ -22,14 +22,14 @@ function ipwa_f_rderbekanntmachung_node_view($node, $view_mode, $langcode)
   if ($node->type == 'f_rderbekanntmachung' && !empty($node->content['field_bis_auf_weiteres'])) {
     if ($node->content['field_bis_auf_weiteres']['#items'][0]['value'] == 1) {
       $node->content['field_bis_auf_weiteres']['#title'] = "Stichtag:";
-      $node->content['field_bis_auf_weiteres'][0]['#markup'] = '<div class="field field-name-field-datum field-type-datetime field-label-inline clearfix"><div class="field-label">Stichtag:</div>&nbsp;Bis auf Weiteres</div>';
+      $node->content['field_bis_auf_weiteres'][0]['#markup'] = '<div class="field field-name-field-stichtag field-type-datetime field-label-inline clearfix"><div class="field-label">Stichtag:</div>&nbsp;Bis auf Weiteres</div>';
 
     }
     if ($node->content['field_bis_auf_weiteres']['#items'][0]['value'] == 0) {
       $node->content['field_bis_auf_weiteres']['#title'] = "Stichtag:";
-      $node->content['field_bis_auf_weiteres'][0]['#markup'] ='<div class="field field-name-field-datum field-type-datetime field-label-inline clearfix"><div class="field-label">Stichtag:</div>&nbsp;'.$node->content['field_datum'][0]['#markup'].'</div>';
+      $node->content['field_bis_auf_weiteres'][0]['#markup'] ='<div class="field field-name-field-stichtag field-type-datetime field-label-inline clearfix"><div class="field-label">Stichtag:</div>&nbsp;'.$node->content['field_stichtag'][0]['#markup'].'</div>';
 
     }
-    $node->content['field_datum']['#access'] = 0;
+    $node->content['field_stichtag']['#access'] = 0;
   }
 }

@@ -423,6 +423,59 @@ Publikation|Publikationen',
     'show_repeat_rule' => 'show',
   );
   $handler->display->display_options['fields']['field_datum']['group_column'] = 'entity_id';
+  /* Feld: Inhalt: Stichtag */
+  $handler->display->display_options['fields']['field_stichtag']['id'] = 'field_stichtag';
+  $handler->display->display_options['fields']['field_stichtag']['table'] = 'field_data_field_stichtag';
+  $handler->display->display_options['fields']['field_stichtag']['field'] = 'field_stichtag';
+  $handler->display->display_options['fields']['field_stichtag']['label'] = '';
+  $handler->display->display_options['fields']['field_stichtag']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_stichtag']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_stichtag']['settings'] = array(
+    'format_type' => 'short',
+    'fromto' => 'both',
+    'multiple_number' => '',
+    'multiple_from' => '',
+    'multiple_to' => '',
+    'show_remaining_days' => 0,
+    'show_repeat_rule' => 'show',
+    'addtocalendar_show' => 0,
+    'addtocalendar_settings' => array(
+      'style' => 'blue',
+      'atc_title' => array(
+        'field' => 'token',
+        'tokenized' => '',
+      ),
+      'atc_description' => array(
+        'field' => 'token',
+        'tokenized' => '',
+      ),
+      'atc_location' => array(
+        'field' => 'token',
+        'tokenized' => '',
+      ),
+      'atc_organizer' => array(
+        'field' => 'token',
+        'tokenized' => '',
+      ),
+      'atc_organizer_email' => array(
+        'field' => 'token',
+        'tokenized' => '',
+      ),
+      'atc_date_end' => array(
+        'field' => 'token',
+        'tokenized' => '',
+      ),
+      'atc_privacy' => 'public',
+      'data_secure' => 'auto',
+      'data_calendars' => array(
+        'iCalendar' => 0,
+        'Google Calendar' => 0,
+        'Outlook' => 0,
+        'Outlook Online' => 0,
+        'Yahoo! Calendar' => 0,
+      ),
+    ),
+  );
   /* Feld: Inhalt: Bis auf Weiteres */
   $handler->display->display_options['fields']['field_bis_auf_weiteres']['id'] = 'field_bis_auf_weiteres';
   $handler->display->display_options['fields']['field_bis_auf_weiteres']['table'] = 'field_data_field_bis_auf_weiteres';
@@ -441,7 +494,7 @@ Publikation|Publikationen',
   $handler->display->display_options['fields']['views_conditional']['condition'] = '1';
   $handler->display->display_options['fields']['views_conditional']['equalto'] = '1';
   $handler->display->display_options['fields']['views_conditional']['then'] = 'Stichtag: Bis auf Weiteres';
-  $handler->display->display_options['fields']['views_conditional']['or'] = 'Stichtag: [field_datum]';
+  $handler->display->display_options['fields']['views_conditional']['or'] = 'Stichtag: [field_stichtag]';
   $handler->display->display_options['fields']['views_conditional']['strip_tags'] = 0;
   /* Feld: Views: Views Conditional */
   $handler->display->display_options['fields']['views_conditional_1']['id'] = 'views_conditional_1';
@@ -1251,6 +1304,59 @@ Publikation|Publikationen'),
     'show_remaining_days' => 0,
     'show_repeat_rule' => 'show',
   );
+  /* Feld: Inhalt: Stichtag */
+  $handler->display->display_options['fields']['field_stichtag']['id'] = 'field_stichtag';
+  $handler->display->display_options['fields']['field_stichtag']['table'] = 'field_data_field_stichtag';
+  $handler->display->display_options['fields']['field_stichtag']['field'] = 'field_stichtag';
+  $handler->display->display_options['fields']['field_stichtag']['label'] = '';
+  $handler->display->display_options['fields']['field_stichtag']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_stichtag']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_stichtag']['settings'] = array(
+    'format_type' => 'short',
+    'fromto' => 'both',
+    'multiple_number' => '',
+    'multiple_from' => '',
+    'multiple_to' => '',
+    'show_remaining_days' => 0,
+    'show_repeat_rule' => 'show',
+    'addtocalendar_show' => 0,
+    'addtocalendar_settings' => array(
+      'style' => 'blue',
+      'atc_title' => array(
+        'field' => 'token',
+        'tokenized' => '',
+      ),
+      'atc_description' => array(
+        'field' => 'token',
+        'tokenized' => '',
+      ),
+      'atc_location' => array(
+        'field' => 'token',
+        'tokenized' => '',
+      ),
+      'atc_organizer' => array(
+        'field' => 'token',
+        'tokenized' => '',
+      ),
+      'atc_organizer_email' => array(
+        'field' => 'token',
+        'tokenized' => '',
+      ),
+      'atc_date_end' => array(
+        'field' => 'token',
+        'tokenized' => '',
+      ),
+      'atc_privacy' => 'public',
+      'data_secure' => 'auto',
+      'data_calendars' => array(
+        'iCalendar' => 0,
+        'Google Calendar' => 0,
+        'Outlook' => 0,
+        'Outlook Online' => 0,
+        'Yahoo! Calendar' => 0,
+      ),
+    ),
+  );
   /* Feld: Inhalt: Bis auf Weiteres */
   $handler->display->display_options['fields']['field_bis_auf_weiteres']['id'] = 'field_bis_auf_weiteres';
   $handler->display->display_options['fields']['field_bis_auf_weiteres']['table'] = 'field_data_field_bis_auf_weiteres';
@@ -1269,7 +1375,7 @@ Publikation|Publikationen'),
   $handler->display->display_options['fields']['views_conditional']['condition'] = '1';
   $handler->display->display_options['fields']['views_conditional']['equalto'] = '1';
   $handler->display->display_options['fields']['views_conditional']['then'] = 'Stichtag: Bis auf Weiteres';
-  $handler->display->display_options['fields']['views_conditional']['or'] = 'Stichtag: [field_datum]';
+  $handler->display->display_options['fields']['views_conditional']['or'] = 'Stichtag: [field_stichtag]';
   $handler->display->display_options['fields']['views_conditional']['strip_tags'] = 0;
   /* Feld: Views: Views Conditional */
   $handler->display->display_options['fields']['views_conditional_1']['id'] = 'views_conditional_1';

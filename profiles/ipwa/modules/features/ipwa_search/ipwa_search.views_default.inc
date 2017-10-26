@@ -307,7 +307,60 @@ Document|Dokumente',
   $handler->display->display_options['fields']['field_herausgeber']['alter']['alter_text'] = TRUE;
   $handler->display->display_options['fields']['field_herausgeber']['alter']['text'] = 'Herausgeber: [field_herausgeber]';
   $handler->display->display_options['fields']['field_herausgeber']['element_label_colon'] = FALSE;
-  /* Field: Indexed Beitrag: Veröffentlichungsdatum */
+  /* Feld: Indexed Beitrag: Stichtag */
+  $handler->display->display_options['fields']['field_stichtag_1']['id'] = 'field_stichtag_1';
+  $handler->display->display_options['fields']['field_stichtag_1']['table'] = 'search_api_index_ipwa_solr_index';
+  $handler->display->display_options['fields']['field_stichtag_1']['field'] = 'field_stichtag';
+  $handler->display->display_options['fields']['field_stichtag_1']['label'] = '';
+  $handler->display->display_options['fields']['field_stichtag_1']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_stichtag_1']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_stichtag_1']['settings'] = array(
+    'format_type' => 'short',
+    'fromto' => 'both',
+    'multiple_number' => '',
+    'multiple_from' => '',
+    'multiple_to' => '',
+    'show_remaining_days' => 0,
+    'show_repeat_rule' => 'show',
+    'addtocalendar_show' => 0,
+    'addtocalendar_settings' => array(
+      'style' => 'blue',
+      'atc_title' => array(
+        'field' => 'token',
+        'tokenized' => '',
+      ),
+      'atc_description' => array(
+        'field' => 'token',
+        'tokenized' => '',
+      ),
+      'atc_location' => array(
+        'field' => 'token',
+        'tokenized' => '',
+      ),
+      'atc_organizer' => array(
+        'field' => 'token',
+        'tokenized' => '',
+      ),
+      'atc_organizer_email' => array(
+        'field' => 'token',
+        'tokenized' => '',
+      ),
+      'atc_date_end' => array(
+        'field' => 'token',
+        'tokenized' => '',
+      ),
+      'atc_privacy' => 'public',
+      'data_secure' => 'auto',
+      'data_calendars' => array(
+        'iCalendar' => 0,
+        'Google Calendar' => 0,
+        'Outlook' => 0,
+        'Outlook Online' => 0,
+        'Yahoo! Calendar' => 0,
+      ),
+    ),
+  );
+  /* Feld: Indexed Beitrag: Veröffentlichungsdatum */
   $handler->display->display_options['fields']['field_ver_ffentlichungsdatum']['id'] = 'field_ver_ffentlichungsdatum';
   $handler->display->display_options['fields']['field_ver_ffentlichungsdatum']['table'] = 'search_api_index_ipwa_solr_index';
   $handler->display->display_options['fields']['field_ver_ffentlichungsdatum']['field'] = 'field_ver_ffentlichungsdatum';
@@ -334,7 +387,7 @@ Document|Dokumente',
   $handler->display->display_options['fields']['views_conditional_6']['condition'] = '1';
   $handler->display->display_options['fields']['views_conditional_6']['equalto'] = '1';
   $handler->display->display_options['fields']['views_conditional_6']['then'] = 'Bis auf Weiteres';
-  $handler->display->display_options['fields']['views_conditional_6']['or'] = '[field_datum_1]';
+  $handler->display->display_options['fields']['views_conditional_6']['or'] = '[field_stichtag_1]';
   $handler->display->display_options['fields']['views_conditional_6']['strip_tags'] = 0;
   /* Field: Views: Views Conditional */
   $handler->display->display_options['fields']['views_conditional_7']['id'] = 'views_conditional_7';
@@ -485,6 +538,10 @@ Document|Dokumente',
   $handler->display->display_options['filters']['search_api_aggregation_2']['expose']['remember_roles'] = array(
     2 => '2',
     1 => 0,
+    3 => 0,
+    4 => 0,
+    5 => 0,
+    6 => 0,
   );
   /* Filter criterion: Indexed Beitrag: Content type */
   $handler->display->display_options['filters']['type_1']['id'] = 'type_1';

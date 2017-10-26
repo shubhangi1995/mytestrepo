@@ -64,7 +64,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 11,
+      'weight' => 10,
     ),
   );
 
@@ -130,7 +130,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
       'module' => 'paragraphs',
       'settings' => array(),
       'type' => 'paragraphs_embed',
-      'weight' => 12,
+      'weight' => 11,
     ),
   );
 
@@ -147,7 +147,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 11,
+        'weight' => 12,
       ),
       'paragraph' => array(
         'label' => 'above',
@@ -201,7 +201,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 8,
+      'weight' => 7,
     ),
   );
 
@@ -262,7 +262,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 10,
+      'weight' => 9,
     ),
   );
 
@@ -283,7 +283,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
         'module' => 'list',
         'settings' => array(),
         'type' => 'list_default',
-        'weight' => 10,
+        'weight' => 11,
       ),
       'paragraph' => array(
         'label' => 'above',
@@ -319,7 +319,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
         'display_label' => 1,
       ),
       'type' => 'options_onoff',
-      'weight' => 7,
+      'weight' => 6,
     ),
   );
 
@@ -327,7 +327,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
   $field_instances['node-f_rderbekanntmachung-field_datum'] = array(
     'bundle' => 'f_rderbekanntmachung',
     'deleted' => 0,
-    'description' => 'Geben Sie das Datum des Stichtags an.',
+    'description' => 'Dieses Datum entspricht dem Veröffentlichungsdatum und wird über dem Titel angezeigt.',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -379,7 +379,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
           'show_repeat_rule' => 'show',
         ),
         'type' => 'date_default',
-        'weight' => 9,
+        'weight' => 7,
       ),
       'paragraph' => array(
         'label' => 'above',
@@ -413,7 +413,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_datum',
-    'label' => 'Stichtag',
+    'label' => 'Datum',
     'required' => 1,
     'settings' => array(
       'default_value' => 'now',
@@ -436,7 +436,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
         'year_range' => '-7:2030',
       ),
       'type' => 'date_popup',
-      'weight' => 6,
+      'weight' => 2,
     ),
   );
 
@@ -493,7 +493,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 16,
+      'weight' => 15,
     ),
   );
 
@@ -554,7 +554,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 21,
+      'weight' => 20,
     ),
   );
 
@@ -615,7 +615,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 19,
+      'weight' => 18,
     ),
   );
 
@@ -668,7 +668,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
         'rows' => 5,
       ),
       'type' => 'text_textarea',
-      'weight' => 4,
+      'weight' => 3,
     ),
   );
 
@@ -729,7 +729,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 18,
+      'weight' => 17,
     ),
   );
 
@@ -790,7 +790,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 20,
+      'weight' => 19,
     ),
   );
 
@@ -806,7 +806,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 13,
+        'weight' => 14,
       ),
       'paragraph' => array(
         'label' => 'above',
@@ -860,7 +860,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 9,
+      'weight' => 8,
     ),
   );
 
@@ -868,7 +868,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
   $field_instances['node-f_rderbekanntmachung-field_stichtag'] = array(
     'bundle' => 'f_rderbekanntmachung',
     'deleted' => 0,
-    'description' => 'Dieses Datum entspricht dem Veröffentlichungsdatum und wird über dem Titel angezeigt',
+    'description' => 'Geben Sie das Datum des Stichtags an.',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -920,7 +920,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
           'show_repeat_rule' => 'show',
         ),
         'type' => 'date_default',
-        'weight' => 6,
+        'weight' => 10,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -931,7 +931,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'field_stichtag',
-    'label' => 'Datum',
+    'label' => 'Stichtag',
     'required' => 1,
     'settings' => array(
       'default_value' => 'now',
@@ -954,7 +954,7 @@ function ipwa_f_rderbekanntmachung_field_default_field_instances() {
         'year_range' => '-7:2030',
       ),
       'type' => 'date_popup',
-      'weight' => 3,
+      'weight' => 5,
     ),
   );
 
@@ -971,7 +971,7 @@ Quelle',
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_plain',
-        'weight' => 12,
+        'weight' => 13,
       ),
       'paragraph' => array(
         'label' => 'above',
@@ -1005,7 +1005,7 @@ Quelle',
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 5,
+      'weight' => 4,
     ),
   );
 
@@ -1021,7 +1021,7 @@ Quelle',
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 8,
+        'weight' => 9,
       ),
       'paragraph' => array(
         'label' => 'above',
@@ -1114,7 +1114,7 @@ Quelle',
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 17,
+      'weight' => 16,
     ),
   );
 
@@ -1167,7 +1167,7 @@ Quelle',
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 15,
+      'weight' => 14,
     ),
   );
 
@@ -1221,7 +1221,7 @@ Quelle',
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 14,
+      'weight' => 13,
     ),
   );
 
@@ -1293,7 +1293,7 @@ Schema für externe Links: http://www…',
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 22,
+      'weight' => 21,
     ),
   );
 
@@ -1363,7 +1363,7 @@ Schema für externe Links: http://www…',
       'module' => 'youtube',
       'settings' => array(),
       'type' => 'youtube',
-      'weight' => 13,
+      'weight' => 12,
     ),
   );
 
@@ -1375,7 +1375,7 @@ Schema für externe Links: http://www…',
   t('Bis auf Weiteres');
   t('Datum');
   t('Diese Förderbekanntmachung gehört zu');
-  t('Dieses Datum entspricht dem Veröffentlichungsdatum und wird über dem Titel angezeigt');
+  t('Dieses Datum entspricht dem Veröffentlichungsdatum und wird über dem Titel angezeigt.');
   t('Dokumente und Publikationen');
   t('Drücken Sie die "Strg"-Taste um mehrere Themen auszuwählen. Maximale Anzahl zuzuordnender Themen: 3. Wählen Sie eine der vier Oberkategorien aus, sind deren zugeordnete Unterkategorien nicht auswählbar.
 Quelle');
