@@ -207,6 +207,7 @@ function ipwa_permissions_user_default_permissions() {
     'name' => 'create files',
     'roles' => array(
       'Chefredakteur' => 'Chefredakteur',
+      'Redakteur (int.)' => 'Redakteur (int.)',
     ),
     'module' => 'file_entity',
   );
