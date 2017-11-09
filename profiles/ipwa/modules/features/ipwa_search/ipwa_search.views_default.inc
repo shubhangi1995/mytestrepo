@@ -502,6 +502,7 @@ Document|Dokumente',
   $handler->display->display_options['sorts']['field_datum']['id'] = 'field_datum';
   $handler->display->display_options['sorts']['field_datum']['table'] = 'search_api_index_ipwa_solr_index';
   $handler->display->display_options['sorts']['field_datum']['field'] = 'field_datum';
+  $handler->display->display_options['sorts']['field_datum']['order'] = 'DESC';
   $handler->display->display_options['sorts']['field_datum']['exposed'] = TRUE;
   $handler->display->display_options['sorts']['field_datum']['expose']['label'] = 'Neueste zuerst';
   /* Sort criterion: Indexed Beitrag: Title */
