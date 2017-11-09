@@ -549,8 +549,6 @@ Document|Dokumente',
   $handler->display->display_options['filters']['type_1']['field'] = 'type';
   $handler->display->display_options['filters']['type_1']['value'] = array(
     'protagonist' => 'protagonist',
-    'article' => 'article',
-    'document' => 'document',
     'f_rderbekanntmachung' => 'f_rderbekanntmachung',
     'nachricht' => 'nachricht',
     'projekt' => 'projekt',
@@ -565,6 +563,10 @@ Document|Dokumente',
   $handler->display->display_options['filters']['type_1']['expose']['remember_roles'] = array(
     2 => '2',
     1 => 0,
+    3 => 0,
+    4 => 0,
+    5 => 0,
+    6 => 0,
   );
   $handler->display->display_options['filters']['type_1']['expose']['reduce'] = 1;
   /* Filter criterion: Indexed Beitrag: Content type */
