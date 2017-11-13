@@ -64,7 +64,7 @@ function ipwa_menu_default_fe_block_boxes() {
 	<li><a href="/aktuelles?type=nachricht&amp;term_node_tid_depth=1">Nachrichten</a></li>
 	<li><a href="/aktuelles?type=publikation&amp;term_node_tid_depth=1">Publikationen</a></li>
 	<li><a href="/termine?term_node_tid_depth=1">Termine</a></li>
-	<li><a href="/politik-gesellschaft">Übersicht</a></li>
+	<li><a href="/strategie-internationales">Übersicht</a></li>
 </ul>
 ';
 
