@@ -83,7 +83,9 @@ function ipwa_permissions_user_default_permissions() {
   // Exported permission: 'administer newsletters'.
   $permissions['administer newsletters'] = array(
     'name' => 'administer newsletters',
-    'roles' => array(),
+    'roles' => array(
+      'Administrator' => 'Administrator',
+    ),
     'module' => 'simplenews',
   );
 
@@ -101,6 +103,7 @@ function ipwa_permissions_user_default_permissions() {
   $permissions['administer path breadcrumbs'] = array(
     'name' => 'administer path breadcrumbs',
     'roles' => array(
+      'Administrator' => 'Administrator',
       'Chefredakteur' => 'Chefredakteur',
       'Redakteur (int.)' => 'Redakteur (int.)',
     ),
@@ -110,7 +113,9 @@ function ipwa_permissions_user_default_permissions() {
   // Exported permission: 'administer simplenews subscriptions'.
   $permissions['administer simplenews subscriptions'] = array(
     'name' => 'administer simplenews subscriptions',
-    'roles' => array(),
+    'roles' => array(
+      'Administrator' => 'Administrator',
+    ),
     'module' => 'simplenews',
   );
 
@@ -118,6 +123,7 @@ function ipwa_permissions_user_default_permissions() {
   $permissions['administer taxonomy'] = array(
     'name' => 'administer taxonomy',
     'roles' => array(
+      'Administrator' => 'Administrator',
       'Chefredakteur' => 'Chefredakteur',
     ),
     'module' => 'taxonomy',
@@ -127,6 +133,7 @@ function ipwa_permissions_user_default_permissions() {
   $permissions['administer url aliases'] = array(
     'name' => 'administer url aliases',
     'roles' => array(
+      'Administrator' => 'Administrator',
       'Chefredakteur' => 'Chefredakteur',
       'Redakteur (int.)' => 'Redakteur (int.)',
     ),
@@ -206,6 +213,7 @@ function ipwa_permissions_user_default_permissions() {
   $permissions['create files'] = array(
     'name' => 'create files',
     'roles' => array(
+      'Administrator' => 'Administrator',
       'Chefredakteur' => 'Chefredakteur',
       'Redakteur (int.)' => 'Redakteur (int.)',
     ),
@@ -287,6 +295,7 @@ function ipwa_permissions_user_default_permissions() {
   $permissions['create url aliases'] = array(
     'name' => 'create url aliases',
     'roles' => array(
+      'Administrator' => 'Administrator',
       'Chefredakteur' => 'Chefredakteur',
       'Redakteur (int.)' => 'Redakteur (int.)',
     ),
@@ -339,6 +348,7 @@ function ipwa_permissions_user_default_permissions() {
   $permissions['delete any document files'] = array(
     'name' => 'delete any document files',
     'roles' => array(
+      'Administrator' => 'Administrator',
       'Chefredakteur' => 'Chefredakteur',
     ),
     'module' => 'file_entity',
@@ -457,6 +467,7 @@ function ipwa_permissions_user_default_permissions() {
   $permissions['delete own bild content'] = array(
     'name' => 'delete own bild content',
     'roles' => array(
+      'Administrator' => 'Administrator',
       'Chefredakteur' => 'Chefredakteur',
     ),
     'module' => 'node',
@@ -730,6 +741,7 @@ function ipwa_permissions_user_default_permissions() {
   $permissions['edit own article content'] = array(
     'name' => 'edit own article content',
     'roles' => array(
+      'Administrator' => 'Administrator',
       'Chefredakteur' => 'Chefredakteur',
       'Redakteur (ext.)' => 'Redakteur (ext.)',
       'Redakteur (int.)' => 'Redakteur (int.)',
@@ -741,6 +753,7 @@ function ipwa_permissions_user_default_permissions() {
   $permissions['edit own bild content'] = array(
     'name' => 'edit own bild content',
     'roles' => array(
+      'Administrator' => 'Administrator',
       'Chefredakteur' => 'Chefredakteur',
     ),
     'module' => 'node',
@@ -750,6 +763,7 @@ function ipwa_permissions_user_default_permissions() {
   $permissions['edit own document content'] = array(
     'name' => 'edit own document content',
     'roles' => array(
+      'Administrator' => 'Administrator',
       'Chefredakteur' => 'Chefredakteur',
     ),
     'module' => 'node',
@@ -783,6 +797,7 @@ function ipwa_permissions_user_default_permissions() {
   $permissions['edit own nachricht content'] = array(
     'name' => 'edit own nachricht content',
     'roles' => array(
+      'Administrator' => 'Administrator',
       'Redakteur (ext.)' => 'Redakteur (ext.)',
       'Redakteur (int.)' => 'Redakteur (int.)',
     ),
@@ -861,6 +876,7 @@ function ipwa_permissions_user_default_permissions() {
   $permissions['send newsletter'] = array(
     'name' => 'send newsletter',
     'roles' => array(
+      'Administrator' => 'Administrator',
       'Chefredakteur' => 'Chefredakteur',
     ),
     'module' => 'simplenews',
