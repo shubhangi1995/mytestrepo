@@ -175,6 +175,10 @@ function ipwa_base_path_breadcrumbs_settings_info() {
     'arguments' => array(
       'node' => array(
         'position' => 1,
+        'argument' => 'entity_id:node',
+        'settings' => array(
+          'identifier' => 'Beitrag: ID',
+        ),
       ),
     ),
     'access' => array(
@@ -183,6 +187,16 @@ function ipwa_base_path_breadcrumbs_settings_info() {
           'name' => 'front',
           'settings' => NULL,
           'not' => TRUE,
+        ),
+        1 => array(
+          'name' => 'node_type',
+          'settings' => array(
+            'type' => array(
+              'simplenews' => 'simplenews',
+            ),
+          ),
+          'context' => 'node',
+          'not' => FALSE,
         ),
       ),
       'logic' => 'and',
