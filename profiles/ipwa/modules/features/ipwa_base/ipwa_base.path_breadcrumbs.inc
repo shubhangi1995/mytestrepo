@@ -100,7 +100,7 @@ function ipwa_base_path_breadcrumbs_settings_info() {
   $path_breadcrumb->data = array(
     'titles' => array(
       0 => 'Aktuelles ',
-      1 => 'Förderung',
+      1 => 'Förderbekanntmachungen',
     ),
     'paths' => array(
       0 => 'aktuelles',
