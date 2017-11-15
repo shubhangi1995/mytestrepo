@@ -199,21 +199,20 @@ function ipwa_base_form_alter(&$form, &$form_state, $form_id) {
   if ($form['#id'] == 'views-exposed-form-aktuelles-page') {
     $form['submit']['#name'] = "submit";
     // for filters customization.
-  foreach($form as $filter) {
-    if(isset($filter['#options']) && !empty($filter['#options'])){
-      $option = $filter['#options'];
-      if (isset($option) && !empty($option)) {
+    foreach($form as $filter) {
+      if(isset($filter['#options']) && !empty($filter['#options'])){
+        $option = $filter['#options'];
         foreach ($option as $pos) {
           if (isset($pos->option) && !empty($pos->option)) {
           foreach ($pos as $tid) {
             if (isset($tid) && !empty($tid)) {
               $term_id = key($tid);
-              if ($term_id == '1' || $term_id == '11' || $term_id == '24' || $term_id == '34') {
-                $pos->option[$term_id] = t('Alle Themen');
+              $id = array('1','11','24','34');
+              if (in_array($term_id,$id)) {
+              $pos->option[$term_id] = t('Alle Themen');
               }
             }
           }
-        }
         }
       }
     }
