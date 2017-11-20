@@ -109,6 +109,12 @@ header {
                     margin-right: 10px;
                     display: inline-block;
                 }
+				&.active-trail{
+					 color: $active-menu;
+					&:before {
+                        color: $active-menu;
+                    }
+				}
 
                 &.active {
                     background: $color-search-background;
@@ -357,7 +363,7 @@ header {
                                         font-size: 16px;
                                         padding: 14px;
 
-                                        &:hover {
+                                        &:hover, &.active {
                                             background: $active-menu;
                                         }
                                     }

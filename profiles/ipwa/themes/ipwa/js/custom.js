@@ -527,9 +527,8 @@ jQuery(document).ready(function(){
 		jQuery(this).parent().hide();
 	});
 
-    //Highlighting of main menu according to -@https://issues.init.de/browse/IPWA4-251
+    // Heighlighting main links for all pages
 
-	//for highlighting aktuelles for ct  Förderbekanntmachungen Nachrichten Publikationen
 	if(jQuery("body").filter(".node-type-f-rderbekanntmachung , .node-type-publikation , .node-type-nachricht").length > 0) {
 		jQuery(".navbar-collapse ul li a:contains(Aktuelles)").parent().addClass("active-trail active");
 	}
@@ -537,16 +536,22 @@ jQuery(document).ready(function(){
 	if(jQuery("body").filter(".node-type-termin").length > 0) {
 		jQuery(".navbar-collapse ul li a:contains(Termine)").parent().addClass("active-trail active");
 	}
-	//for highlighting parent taxonomy in main menu
+
 	jQuery(".tb-megamenu ul li .mega-dropdown-inner .tb-submenu-right .view-id-themenzuweisung_flyouts a.active").parents(".tb-megamenu-item").addClass("active active-trail");
 
-	if(jQuery("body").filter(".node-type-protagonist , .node-type-projekt ").length > 0) {
+	if(jQuery("body").filter(".node-type-protagonist , .node-type-projekt").length > 0) {
+		jQuery(".tb-megamenu-nav li.menu-schaufenster").addClass("active active-trail");
+	}
+	
+	if(jQuery(document).find(".view-projekt-map").length > 0) {
 		jQuery(".tb-megamenu-nav li.menu-schaufenster").addClass("active active-trail");
 	}
 
-	if(jQuery(".view-search-list").length>0){
-		jQuery(" .navbar-collapse .search-icon").addClass(" active active-trail");;
+	if(jQuery(".view-search-list").length > 0){
+		jQuery(" .navbar-collapse .search-icon").addClass("active-trail");;
 	}
+	
+	// Heighlighting main links for all pages
 });
 
 
