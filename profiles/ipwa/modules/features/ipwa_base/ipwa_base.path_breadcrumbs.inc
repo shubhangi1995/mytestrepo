@@ -158,6 +158,26 @@ function ipwa_base_path_breadcrumbs_settings_info() {
 
   $path_breadcrumb = new stdClass();
   $path_breadcrumb->api_version = 1;
+  $path_breadcrumb->machine_name = 'map_list_breadcrumb';
+  $path_breadcrumb->name = 'map-list-breadcrumb';
+  $path_breadcrumb->path = 'node/243';
+  $path_breadcrumb->data = array(
+    'titles' => array(
+      0 => 'Schaufenster Digitales NRW',
+    ),
+    'paths' => array(
+      0 => '/node/242',
+    ),
+    'home' => 1,
+    'translatable' => 0,
+    'arguments' => array(),
+    'access' => array(),
+  );
+  $path_breadcrumb->weight = 0;
+  $export['map_list_breadcrumb'] = $path_breadcrumb;
+
+  $path_breadcrumb = new stdClass();
+  $path_breadcrumb->api_version = 1;
   $path_breadcrumb->machine_name = 'nachricht';
   $path_breadcrumb->name = 'Nachricht Single view';
   $path_breadcrumb->path = 'node/%node';
