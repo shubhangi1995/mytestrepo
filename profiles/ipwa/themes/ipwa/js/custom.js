@@ -1,6 +1,3 @@
-
-
-
 jQuery(document).ready(function(){
 
 //orientation changes for slider page only
@@ -74,8 +71,8 @@ jQuery(document).ready(function(){
 	//preventDefault
 	
 	jQuery(".block-ipwa-search #ipwa-search-block-form .cross-link a").click(function(event){
-    event.preventDefault();
-});
+		event.preventDefault();
+	});
 	
 	// Copyright for video block single view
 	
