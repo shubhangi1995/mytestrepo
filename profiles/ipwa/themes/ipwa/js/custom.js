@@ -526,8 +526,27 @@ jQuery(document).ready(function(){
 	jQuery(".alert .close").click(function(){
 		jQuery(this).parent().hide();
 	});
-	
-	
+
+    //Highlighting of main menu according to -@https://issues.init.de/browse/IPWA4-251
+
+	//for highlighting aktuelles for ct  Förderbekanntmachungen Nachrichten Publikationen
+	if(jQuery("body").filter(".node-type-f-rderbekanntmachung , .node-type-publikation , .node-type-nachricht").length > 0) {
+		jQuery(".navbar-collapse ul li a:contains(Aktuelles)").parent().addClass("active-trail active");
+	}
+
+	if(jQuery("body").filter(".node-type-termin").length > 0) {
+		jQuery(".navbar-collapse ul li a:contains(Termine)").parent().addClass("active-trail active");
+	}
+	//for highlighting parent taxonomy in main menu
+	jQuery(".tb-megamenu ul li .mega-dropdown-inner .tb-submenu-right .view-id-themenzuweisung_flyouts a.active").parents(".tb-megamenu-item").addClass("active active-trail");
+
+	if(jQuery("body").filter(".node-type-protagonist , .node-type-projekt ").length > 0) {
+		jQuery(".tb-megamenu-nav li.menu-schaufenster").addClass("active active-trail");
+	}
+
+	if(jQuery(".view-search-list").length>0){
+		jQuery(" .navbar-collapse .search-icon").addClass(" active active-trail");;
+	}
 });
 
 
