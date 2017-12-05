@@ -89,7 +89,7 @@ Publikation|Publikationen',
         'bef_collapsible' => 0,
         'autosubmit' => 1,
         'is_secondary' => 0,
-        'any_label' => 'Politik & Gesellschaft',
+        'any_label' => 'Strategie & Internationales',
         'bef_filter_description' => '',
         'tokens' => array(
           'available' => array(
@@ -675,7 +675,7 @@ Publikation|Publikationen',
     t('Förderbekanntmachung|Förderbekanntmachungen
 Nachricht|Nachrichten
 Publikation|Publikationen'),
-    t('Politik & Gesellschaft'),
+    t('Strategie & Internationales'),
     t('Wirtschaft & Arbeit'),
     t('Infos für Unternehmen'),
     t('Infos für Beschäftigte'),
