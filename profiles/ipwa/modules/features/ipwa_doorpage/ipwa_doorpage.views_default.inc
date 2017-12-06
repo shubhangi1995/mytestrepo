@@ -103,7 +103,7 @@ function ipwa_doorpage_views_default_views() {
   $handler->display->display_options['fields']['name_2']['label'] = '';
   $handler->display->display_options['fields']['name_2']['exclude'] = TRUE;
   $handler->display->display_options['fields']['name_2']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['name_2']['alter']['text'] = 'zu Politik & Gesellschaft';
+  $handler->display->display_options['fields']['name_2']['alter']['text'] = 'zu Strategie & Internationales';
   $handler->display->display_options['fields']['name_2']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['name_2']['link_to_taxonomy'] = TRUE;
   /* Filter criterion: Taxonomie-Begriff: Übergeordneter Begriff */
@@ -347,7 +347,7 @@ function ipwa_doorpage_views_default_views() {
     t('<h2 class="term-title">[name_1]</h2>
 [description]'),
     t('.'),
-    t('zu Politik & Gesellschaft'),
+    t('zu Strategie & Internationales'),
     t('Politik & Gesellschaft'),
     t('Wirtschaft & Arbeit'),
     t('zu Wirtschaft & Arbeit'),
