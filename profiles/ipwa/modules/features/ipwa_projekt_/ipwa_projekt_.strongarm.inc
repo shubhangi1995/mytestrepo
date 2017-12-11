@@ -74,7 +74,7 @@ function ipwa_projekt__strongarm() {
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '24',
+          'weight' => '25',
         ),
       ),
       'display' => array(),

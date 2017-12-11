@@ -129,7 +129,8 @@ function ipwa_projekt__field_group_info() {
       1 => 'field_themenzuweisung',
       2 => 'field_untertitel',
       3 => 'field_ort',
-      4 => 'group_title',
+      4 => 'field_quelle',
+      5 => 'group_title',
     ),
     'format_type' => 'html-element',
     'format_settings' => array(
@@ -149,6 +150,38 @@ function ipwa_projekt__field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_quelle_container|field_collection_item|field_quelle|default';
+  $field_group->group_name = 'group_quelle_container';
+  $field_group->entity_type = 'field_collection_item';
+  $field_group->bundle = 'field_quelle';
+  $field_group->mode = 'default';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'quelle_container',
+    'weight' => '0',
+    'children' => array(
+      0 => 'field_quellenangabe',
+      1 => 'field_logo',
+    ),
+    'format_type' => 'html-element',
+    'format_settings' => array(
+      'formatter' => '',
+      'instance_settings' => array(
+        'element' => 'div',
+        'show_label' => 0,
+        'label_element' => 'div',
+        'classes' => 'group-quelle-container field-group-html-element',
+        'attributes' => '',
+        'required_fields' => 1,
+        'id' => '',
+      ),
+    ),
+  );
+  $field_groups['group_quelle_container|field_collection_item|field_quelle|default'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_title|node|projekt|default';
   $field_group->group_name = 'group_title';
   $field_group->entity_type = 'node';
@@ -157,7 +190,7 @@ function ipwa_projekt__field_group_info() {
   $field_group->parent_name = 'group_page_info';
   $field_group->data = array(
     'label' => 'title',
-    'weight' => '6',
+    'weight' => '5',
     'children' => array(),
     'format_type' => 'html-element',
     'format_settings' => array(
@@ -180,6 +213,7 @@ function ipwa_projekt__field_group_info() {
   t('Body Sub Wrapper');
   t('Page Bottom');
   t('Page info');
+  t('quelle_container');
   t('title');
 
   return $field_groups;

@@ -66,6 +66,65 @@ function ipwa_projekt__field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'field_collection_item-field_quelle-field_logo'.
+  $field_instances['field_collection_item-field_quelle-field_logo'] = array(
+    'bundle' => 'field_quelle',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'file_image_formatters',
+        'settings' => array(
+          'image_link' => '',
+          'image_style' => '',
+        ),
+        'type' => 'file_image_image',
+        'weight' => 2,
+      ),
+    ),
+    'entity_type' => 'field_collection_item',
+    'field_name' => 'field_logo',
+    'label' => 'Logo',
+    'required' => 0,
+    'settings' => array(
+      'description_field' => 0,
+      'epsacrop' => array(
+        'styles' => array(
+          'eb_background_1920_1080' => 0,
+          'main_image_870_489' => 0,
+          'paragraph_image_556_313' => 0,
+        ),
+      ),
+      'file_directory' => '',
+      'file_extensions' => 'png gif jpg jpeg',
+      'max_filesize' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'media',
+      'settings' => array(
+        'allowed_schemes' => array(
+          'public' => 'public',
+        ),
+        'allowed_types' => array(
+          'audio' => 0,
+          'document' => 0,
+          'image' => 'image',
+          'video' => 0,
+        ),
+        'browser_plugins' => array(
+          'media_default--media_browser_1' => 0,
+          'media_default--media_browser_my_files' => 0,
+          'upload' => 0,
+        ),
+      ),
+      'type' => 'media_generic',
+      'weight' => 3,
+    ),
+  );
+
   // Exported field_instance:
   // 'field_collection_item-field_quelle-field_quellenangabe'.
   $field_instances['field_collection_item-field_quelle-field_quellenangabe'] = array(
@@ -165,7 +224,7 @@ function ipwa_projekt__field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 8,
+      'weight' => 9,
     ),
   );
 
@@ -204,7 +263,7 @@ function ipwa_projekt__field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 23,
+      'weight' => 24,
     ),
   );
 
@@ -268,7 +327,7 @@ function ipwa_projekt__field_default_field_instances() {
       'module' => 'paragraphs',
       'settings' => array(),
       'type' => 'paragraphs_embed',
-      'weight' => 9,
+      'weight' => 10,
     ),
   );
 
@@ -319,7 +378,7 @@ function ipwa_projekt__field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 7,
+      'weight' => 8,
     ),
   );
 
@@ -423,7 +482,7 @@ function ipwa_projekt__field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 13,
+      'weight' => 14,
     ),
   );
 
@@ -442,7 +501,7 @@ function ipwa_projekt__field_default_field_instances() {
           'link' => 1,
         ),
         'type' => 'entityreference_label',
-        'weight' => 18,
+        'weight' => 17,
       ),
       'paragraph' => array(
         'label' => 'above',
@@ -473,7 +532,7 @@ function ipwa_projekt__field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 18,
+      'weight' => 19,
     ),
   );
 
@@ -492,7 +551,7 @@ function ipwa_projekt__field_default_field_instances() {
           'link' => 1,
         ),
         'type' => 'entityreference_label',
-        'weight' => 16,
+        'weight' => 14,
       ),
       'paragraph' => array(
         'label' => 'above',
@@ -523,7 +582,7 @@ function ipwa_projekt__field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 16,
+      'weight' => 17,
     ),
   );
 
@@ -608,7 +667,7 @@ function ipwa_projekt__field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 21,
+      'weight' => 22,
     ),
   );
 
@@ -647,7 +706,7 @@ function ipwa_projekt__field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 20,
+      'weight' => 21,
     ),
   );
 
@@ -666,7 +725,7 @@ function ipwa_projekt__field_default_field_instances() {
           'link' => 1,
         ),
         'type' => 'entityreference_label',
-        'weight' => 15,
+        'weight' => 13,
       ),
       'paragraph' => array(
         'label' => 'above',
@@ -697,7 +756,7 @@ function ipwa_projekt__field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 15,
+      'weight' => 16,
     ),
   );
 
@@ -776,7 +835,7 @@ function ipwa_projekt__field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 22,
+      'weight' => 23,
     ),
   );
 
@@ -795,7 +854,7 @@ function ipwa_projekt__field_default_field_instances() {
           'link' => 1,
         ),
         'type' => 'entityreference_label',
-        'weight' => 17,
+        'weight' => 16,
       ),
       'paragraph' => array(
         'label' => 'above',
@@ -826,7 +885,7 @@ function ipwa_projekt__field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 17,
+      'weight' => 18,
     ),
   );
 
@@ -848,7 +907,7 @@ function ipwa_projekt__field_default_field_instances() {
           'view_mode' => 'full',
         ),
         'type' => 'field_collection_view',
-        'weight' => 19,
+        'weight' => 9,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -869,7 +928,7 @@ function ipwa_projekt__field_default_field_instances() {
       'module' => 'field_collection',
       'settings' => array(),
       'type' => 'field_collection_embed',
-      'weight' => 8,
+      'weight' => 7,
     ),
   );
 
@@ -885,7 +944,7 @@ function ipwa_projekt__field_default_field_instances() {
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_plain',
-        'weight' => 8,
+        'weight' => 7,
       ),
       'paragraph' => array(
         'label' => 'above',
@@ -928,7 +987,7 @@ function ipwa_projekt__field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 7,
+        'weight' => 6,
       ),
       'paragraph' => array(
         'label' => 'above',
@@ -977,7 +1036,7 @@ function ipwa_projekt__field_default_field_instances() {
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 13,
+        'weight' => 12,
       ),
       'paragraph' => array(
         'label' => 'above',
@@ -1008,7 +1067,7 @@ function ipwa_projekt__field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'entityreference_autocomplete',
-      'weight' => 14,
+      'weight' => 15,
     ),
   );
 
@@ -1054,7 +1113,7 @@ function ipwa_projekt__field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 12,
+      'weight' => 13,
     ),
   );
 
@@ -1100,7 +1159,7 @@ function ipwa_projekt__field_default_field_instances() {
         'size' => 60,
       ),
       'type' => 'text_textfield',
-      'weight' => 11,
+      'weight' => 12,
     ),
   );
 
@@ -1117,7 +1176,7 @@ Schema für externe Links: http://www…',
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 19,
+        'weight' => 18,
       ),
       'paragraph' => array(
         'label' => 'above',
@@ -1164,7 +1223,7 @@ Schema für externe Links: http://www…',
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 19,
+      'weight' => 20,
     ),
   );
 
@@ -1217,7 +1276,7 @@ Schema für externe Links: http://www…',
       'module' => 'youtube',
       'settings' => array(),
       'type' => 'youtube',
-      'weight' => 10,
+      'weight' => 11,
     ),
   );
 
@@ -1237,6 +1296,7 @@ Schema für externe Links: http://www…',
   t('Kommende Veranstaltungen');
   t('Kurztext');
   t('Latitude');
+  t('Logo');
   t('Longitude');
   t('Meldungen zum Thema');
   t('Ort');
