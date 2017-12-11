@@ -332,7 +332,7 @@ jQuery(document).ready(function(){
 	
 	// Newsletter validations
 	
-	jQuery("#ipwa-newsletter-block-form #edit-submit--2").click(function(){
+	jQuery("#ipwa-newsletter-block-form #edit-submit--2, #ipwa-newsletter-block-form #edit-submit").click(function(){
 		var newsEmail = /^[A-Z0-9._%+-]+@([A-Z0-9-]+\.)+[A-Z]{2,4}$/i, newsValue = jQuery("#edit-newsletter").val();
 		jQuery(this).parent().find(".error").remove();
 		if(newsValue == ""){
