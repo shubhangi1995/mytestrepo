@@ -10,25 +10,30 @@
 function ipwa_projekt__field_default_field_bases() {
   $field_bases = array();
 
-  // Exported field_base: 'field_plz'.
-  $field_bases['field_plz'] = array(
+  // Exported field_base: 'field_quelle'.
+  $field_bases['field_quelle'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_plz',
+    'field_name' => 'field_quelle',
     'indexes' => array(
-      'format' => array(
-        0 => 'format',
+      'revision_id' => array(
+        0 => 'revision_id',
+      ),
+      'value' => array(
+        0 => 'value',
       ),
     ),
     'locked' => 0,
-    'module' => 'text',
+    'module' => 'field_collection',
     'settings' => array(
-      'max_length' => 255,
+      'hide_blank_items' => 1,
+      'hide_initial_item' => 0,
+      'path' => '',
     ),
     'translatable' => 0,
-    'type' => 'text',
+    'type' => 'field_collection',
   );
 
   return $field_bases;

@@ -10,6 +10,114 @@
 function ipwa_projekt__field_default_field_instances() {
   $field_instances = array();
 
+  // Exported field_instance: 'field_collection_item-field_quelle-field_bild'.
+  $field_instances['field_collection_item-field_quelle-field_bild'] = array(
+    'bundle' => 'field_quelle',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'file',
+        'settings' => array(),
+        'type' => 'file_default',
+        'weight' => 1,
+      ),
+    ),
+    'entity_type' => 'field_collection_item',
+    'field_name' => 'field_bild',
+    'label' => 'logo image',
+    'required' => 0,
+    'settings' => array(
+      'description_field' => 0,
+      'epsacrop' => array(
+        'styles' => array(
+          'eb_background_1920_1080' => 0,
+          'main_image_870_489' => 0,
+          'paragraph_image_556_313' => 0,
+        ),
+      ),
+      'file_directory' => '',
+      'file_extensions' => 'jpg png',
+      'max_filesize' => '',
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'media',
+      'settings' => array(
+        'allowed_schemes' => array(
+          'public' => 'public',
+        ),
+        'allowed_types' => array(
+          'audio' => 0,
+          'document' => 0,
+          'image' => 'image',
+          'video' => 0,
+        ),
+        'browser_plugins' => array(
+          'media_default--media_browser_1' => 0,
+          'media_default--media_browser_my_files' => 0,
+          'upload' => 0,
+        ),
+      ),
+      'type' => 'media_generic',
+      'weight' => 4,
+    ),
+  );
+
+  // Exported field_instance:
+  // 'field_collection_item-field_quelle-field_quellenangabe'.
+  $field_instances['field_collection_item-field_quelle-field_quellenangabe'] = array(
+    'bundle' => 'field_quelle',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'link',
+        'settings' => array(),
+        'type' => 'link_default',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'field_collection_item',
+    'field_name' => 'field_quellenangabe',
+    'label' => 'Quelle',
+    'required' => 0,
+    'settings' => array(
+      'absolute_url' => 1,
+      'attributes' => array(
+        'class' => '',
+        'configurable_class' => 0,
+        'configurable_title' => 0,
+        'rel' => '',
+        'target' => 'default',
+        'title' => '',
+      ),
+      'display' => array(
+        'url_cutoff' => 80,
+      ),
+      'enable_tokens' => 1,
+      'rel_remove' => 'default',
+      'title' => 'optional',
+      'title_label_use_field_label' => 0,
+      'title_maxlength' => 128,
+      'title_value' => '',
+      'url' => 0,
+      'user_register_form' => FALSE,
+      'validate_url' => 1,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'link',
+      'settings' => array(),
+      'type' => 'link_field',
+      'weight' => 2,
+    ),
+  );
+
   // Exported field_instance: 'node-projekt-body'.
   $field_instances['node-projekt-body'] = array(
     'bundle' => 'projekt',
@@ -722,25 +830,25 @@ function ipwa_projekt__field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'node-projekt-field_quellenangabe'.
-  $field_instances['node-projekt-field_quellenangabe'] = array(
+  // Exported field_instance: 'node-projekt-field_quelle'.
+  $field_instances['node-projekt-field_quelle'] = array(
     'bundle' => 'projekt',
     'default_value' => NULL,
     'deleted' => 0,
-    'description' => 'Schema für Links: http://example.com',
+    'description' => '',
     'display' => array(
       'default' => array(
         'label' => 'inline',
-        'module' => 'link',
-        'settings' => array(),
-        'type' => 'link_default',
-        'weight' => 9,
-      ),
-      'paragraph' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
+        'module' => 'field_collection',
+        'settings' => array(
+          'add' => 'Hinzufügen',
+          'delete' => 'Löschen',
+          'description' => TRUE,
+          'edit' => 'Bearbeiten',
+          'view_mode' => 'full',
+        ),
+        'type' => 'field_collection_view',
+        'weight' => 19,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -750,38 +858,18 @@ function ipwa_projekt__field_default_field_instances() {
       ),
     ),
     'entity_type' => 'node',
-    'field_name' => 'field_quellenangabe',
+    'field_name' => 'field_quelle',
     'label' => 'Quelle',
     'required' => 0,
     'settings' => array(
-      'absolute_url' => 1,
-      'attributes' => array(
-        'class' => '',
-        'configurable_class' => 0,
-        'configurable_title' => 0,
-        'rel' => '',
-        'target' => 'default',
-        'title' => '',
-      ),
-      'display' => array(
-        'url_cutoff' => 80,
-      ),
-      'enable_tokens' => 1,
-      'rel_remove' => 'default',
-      'title' => 'optional',
-      'title_label_use_field_label' => 0,
-      'title_maxlength' => 128,
-      'title_value' => '',
-      'url' => 0,
       'user_register_form' => FALSE,
-      'validate_url' => 1,
     ),
     'widget' => array(
       'active' => 0,
-      'module' => 'link',
+      'module' => 'field_collection',
       'settings' => array(),
-      'type' => 'link_field',
-      'weight' => 6,
+      'type' => 'field_collection_embed',
+      'weight' => 8,
     ),
   );
 
@@ -1155,7 +1243,6 @@ Schema für externe Links: http://www…',
   t('PLZ');
   t('Projekte zum Thema');
   t('Quelle');
-  t('Schema für Links: http://example.com');
   t('Schema für interne Links: /node/id bzw. relativer Pfad bei Listenansichten z.B. /aktuelle-beitraege. 
 Schema für externe Links: http://www…');
   t('Sie können hier Inhalte vom Typ \'Akteur\' hinzufügen.');
@@ -1169,6 +1256,7 @@ Schema für externe Links: http://www…');
   t('Videounterschrift');
   t('Weiterführende Links');
   t('YouTube URL');
+  t('logo image');
   t('© Videoquelle');
 
   return $field_instances;
