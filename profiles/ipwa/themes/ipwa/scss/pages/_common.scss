@@ -1398,3 +1398,75 @@ strong {
 caption {
     color: $main-color;
 }
+
+// New change request work
+
+.group-contact-container{
+	.field-name-field-ansprechpartner-kontaktdat{
+		float:left;
+		margin-bottom:10px;  
+		@include devicebreak(x-large) {
+			width:40%;
+			margin-bottom:0;
+		}
+	}
+	.field-name-field-bild{
+		margin-bottom:0;
+		@include devicebreak(x-large) {
+			float:right;
+			width:50%;
+		}
+		margin-top:5px;
+	}
+}
+
+.node-type-projekt{
+	.field-collection-container{
+		border-bottom:none;
+		margin-bottom:0;
+	}
+	.field-name-field-quelle{
+		.field-label{
+			color: $active-menu;
+			font-weight: normal;
+			margin-bottom: 10px;
+			width:100%;
+		}
+		.field-items {
+			width: 100%;
+			clear: both;
+			.field-item{
+				margin:0;
+				.field-collection-view{
+					margin:0;
+					padding:0; 
+				}
+			}
+		}
+		.external-link{
+			&:hover{
+				color: $active-menu !important;  
+			}
+		}
+		.group-quelle-container{
+			overflow:hidden;
+			width:100%;
+			.field-name-field-quellenangabe{
+				float:left;
+				width:100%;
+				@include devicebreak(x-medium) {
+					margin-right:30px; 
+					width:auto;
+				}
+			}
+			.field-name-field-bild{
+				float:left;
+				margin-bottom:0;   
+				margin-top:15px;
+				@include devicebreak(x-medium) {
+					margin-top:5px;
+				}
+			}
+		}
+	}
+}
