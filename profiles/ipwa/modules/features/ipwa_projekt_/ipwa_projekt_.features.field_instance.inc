@@ -17,10 +17,13 @@ function ipwa_projekt__field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
-        'module' => 'file',
-        'settings' => array(),
-        'type' => 'file_default',
+        'label' => 'hidden',
+        'module' => 'file_image_formatters',
+        'settings' => array(
+          'image_link' => '',
+          'image_style' => '',
+        ),
+        'type' => 'file_image_image',
         'weight' => 1,
       ),
     ),
@@ -66,65 +69,6 @@ function ipwa_projekt__field_default_field_instances() {
     ),
   );
 
-  // Exported field_instance: 'field_collection_item-field_quelle-field_logo'.
-  $field_instances['field_collection_item-field_quelle-field_logo'] = array(
-    'bundle' => 'field_quelle',
-    'deleted' => 0,
-    'description' => '',
-    'display' => array(
-      'default' => array(
-        'label' => 'hidden',
-        'module' => 'file_image_formatters',
-        'settings' => array(
-          'image_link' => '',
-          'image_style' => '',
-        ),
-        'type' => 'file_image_image',
-        'weight' => 2,
-      ),
-    ),
-    'entity_type' => 'field_collection_item',
-    'field_name' => 'field_logo',
-    'label' => 'Logo',
-    'required' => 0,
-    'settings' => array(
-      'description_field' => 0,
-      'epsacrop' => array(
-        'styles' => array(
-          'eb_background_1920_1080' => 0,
-          'main_image_870_489' => 0,
-          'paragraph_image_556_313' => 0,
-        ),
-      ),
-      'file_directory' => '',
-      'file_extensions' => 'png gif jpg jpeg',
-      'max_filesize' => '',
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'media',
-      'settings' => array(
-        'allowed_schemes' => array(
-          'public' => 'public',
-        ),
-        'allowed_types' => array(
-          'audio' => 0,
-          'document' => 0,
-          'image' => 'image',
-          'video' => 0,
-        ),
-        'browser_plugins' => array(
-          'media_default--media_browser_1' => 0,
-          'media_default--media_browser_my_files' => 0,
-          'upload' => 0,
-        ),
-      ),
-      'type' => 'media_generic',
-      'weight' => 3,
-    ),
-  );
-
   // Exported field_instance:
   // 'field_collection_item-field_quelle-field_quellenangabe'.
   $field_instances['field_collection_item-field_quelle-field_quellenangabe'] = array(
@@ -134,7 +78,7 @@ function ipwa_projekt__field_default_field_instances() {
     'description' => '',
     'display' => array(
       'default' => array(
-        'label' => 'above',
+        'label' => 'hidden',
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
@@ -501,7 +445,7 @@ function ipwa_projekt__field_default_field_instances() {
           'link' => 1,
         ),
         'type' => 'entityreference_label',
-        'weight' => 17,
+        'weight' => 18,
       ),
       'paragraph' => array(
         'label' => 'above',
@@ -551,7 +495,7 @@ function ipwa_projekt__field_default_field_instances() {
           'link' => 1,
         ),
         'type' => 'entityreference_label',
-        'weight' => 14,
+        'weight' => 16,
       ),
       'paragraph' => array(
         'label' => 'above',
@@ -725,7 +669,7 @@ function ipwa_projekt__field_default_field_instances() {
           'link' => 1,
         ),
         'type' => 'entityreference_label',
-        'weight' => 13,
+        'weight' => 15,
       ),
       'paragraph' => array(
         'label' => 'above',
@@ -854,7 +798,7 @@ function ipwa_projekt__field_default_field_instances() {
           'link' => 1,
         ),
         'type' => 'entityreference_label',
-        'weight' => 16,
+        'weight' => 17,
       ),
       'paragraph' => array(
         'label' => 'above',
@@ -900,14 +844,14 @@ function ipwa_projekt__field_default_field_instances() {
         'label' => 'inline',
         'module' => 'field_collection',
         'settings' => array(
-          'add' => 'Hinzufügen',
-          'delete' => 'Löschen',
-          'description' => TRUE,
-          'edit' => 'Bearbeiten',
+          'add' => '',
+          'delete' => '',
+          'description' => 1,
+          'edit' => '',
           'view_mode' => 'full',
         ),
         'type' => 'field_collection_view',
-        'weight' => 9,
+        'weight' => 19,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -944,7 +888,7 @@ function ipwa_projekt__field_default_field_instances() {
         'module' => 'taxonomy',
         'settings' => array(),
         'type' => 'taxonomy_term_reference_plain',
-        'weight' => 7,
+        'weight' => 8,
       ),
       'paragraph' => array(
         'label' => 'above',
@@ -987,7 +931,7 @@ function ipwa_projekt__field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 6,
+        'weight' => 7,
       ),
       'paragraph' => array(
         'label' => 'above',
@@ -1036,7 +980,7 @@ function ipwa_projekt__field_default_field_instances() {
           'link' => FALSE,
         ),
         'type' => 'entityreference_label',
-        'weight' => 12,
+        'weight' => 13,
       ),
       'paragraph' => array(
         'label' => 'above',
@@ -1176,7 +1120,7 @@ Schema für externe Links: http://www…',
         'module' => 'link',
         'settings' => array(),
         'type' => 'link_default',
-        'weight' => 18,
+        'weight' => 19,
       ),
       'paragraph' => array(
         'label' => 'above',
@@ -1296,7 +1240,6 @@ Schema für externe Links: http://www…',
   t('Kommende Veranstaltungen');
   t('Kurztext');
   t('Latitude');
-  t('Logo');
   t('Longitude');
   t('Meldungen zum Thema');
   t('Ort');

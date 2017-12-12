@@ -51,7 +51,7 @@ function ipwa_protagonist_field_group_info() {
   $field_group->parent_name = 'group_body_container';
   $field_group->data = array(
     'label' => 'Body Sub Wrapper',
-    'weight' => '12',
+    'weight' => '24',
     'children' => array(
       0 => 'body',
       1 => 'field_bild_ref',
@@ -75,6 +75,38 @@ function ipwa_protagonist_field_group_info() {
     ),
   );
   $field_groups['group_body_sub_wrapper|node|protagonist|default'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_contact_container|node|protagonist|default';
+  $field_group->group_name = 'group_contact_container';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'protagonist';
+  $field_group->mode = 'default';
+  $field_group->parent_name = 'group_page_info';
+  $field_group->data = array(
+    'label' => 'contact container',
+    'weight' => '4',
+    'children' => array(
+      0 => 'field_ansprechpartner_kontaktdat',
+      1 => 'field_bild',
+    ),
+    'format_type' => 'html-element',
+    'format_settings' => array(
+      'formatter' => '',
+      'instance_settings' => array(
+        'element' => 'div',
+        'show_label' => 0,
+        'label_element' => 'div',
+        'classes' => 'group-contact-container field-group-html-element',
+        'attributes' => '',
+        'required_fields' => 1,
+        'id' => '',
+      ),
+    ),
+  );
+  $field_groups['group_contact_container|node|protagonist|default'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = TRUE; /* Edit this to true to make a default field_group disabled initially */
@@ -116,7 +148,7 @@ function ipwa_protagonist_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Page Bottom',
-    'weight' => '2',
+    'weight' => '3',
     'children' => array(
       0 => 'field_dokumente_und_publikatione',
       1 => 'field_f_rderbekanntmachungen',
@@ -158,10 +190,10 @@ function ipwa_protagonist_field_group_info() {
       1 => 'field_themenzuweisung',
       2 => 'field_untertitel',
       3 => 'field_akteurstyp',
-      4 => 'field_ansprechpartner_kontaktdat',
-      5 => 'field_weitere_details',
-      6 => 'field_zur_website',
-      7 => 'group_title',
+      4 => 'field_weitere_details',
+      5 => 'field_zur_website',
+      6 => 'group_title',
+      7 => 'group_contact_container',
     ),
     'format_type' => 'html-element',
     'format_settings' => array(
@@ -217,7 +249,7 @@ function ipwa_protagonist_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Weitere Details',
-    'weight' => '8',
+    'weight' => '9',
     'children' => array(
       0 => 'field_weitere_details',
       1 => 'field_zur_website',
@@ -243,6 +275,7 @@ function ipwa_protagonist_field_group_info() {
   t('Page info');
   t('Weitere Details');
   t('contact');
+  t('contact container');
   t('title');
 
   return $field_groups;

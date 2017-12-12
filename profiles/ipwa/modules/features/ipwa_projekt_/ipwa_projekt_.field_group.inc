@@ -125,12 +125,11 @@ function ipwa_projekt__field_group_info() {
     'label' => 'Page info',
     'weight' => '0',
     'children' => array(
-      0 => 'field_quellenangabe',
-      1 => 'field_themenzuweisung',
-      2 => 'field_untertitel',
-      3 => 'field_ort',
-      4 => 'field_quelle',
-      5 => 'group_title',
+      0 => 'field_themenzuweisung',
+      1 => 'field_untertitel',
+      2 => 'field_ort',
+      3 => 'field_quelle',
+      4 => 'group_title',
     ),
     'format_type' => 'html-element',
     'format_settings' => array(
@@ -161,7 +160,7 @@ function ipwa_projekt__field_group_info() {
     'weight' => '0',
     'children' => array(
       0 => 'field_quellenangabe',
-      1 => 'field_logo',
+      1 => 'field_bild',
     ),
     'format_type' => 'html-element',
     'format_settings' => array(
