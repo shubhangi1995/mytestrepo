@@ -1550,11 +1550,16 @@
 
 // protagonist view
 
-.field-name-field-ansprechpartner-kontaktdat, .field-name-field-weitere-details {
+.group-contact-container, .field-name-field-weitere-details {
     border-bottom: 1px solid $single-border-color;
     padding-bottom: 15px;
     margin-bottom: 15px;
     font-size: 18px;
+	overflow:hidden;
+}
+
+.group-contact-container{
+	padding-bottom:25px;
 }
 
 .field-name-field-weitere-details {

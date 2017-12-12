@@ -9249,6 +9249,76 @@ strong {
 caption {
   color: #273753; }
 
+/* line 1405, ../scss/pages/_common.scss */
+.group-contact-container .field-name-field-ansprechpartner-kontaktdat {
+  float: left;
+  margin-bottom: 10px;
+  /* Over Desktop design */ }
+  @media (min-width: 1025px) {
+    /* line 1405, ../scss/pages/_common.scss */
+    .group-contact-container .field-name-field-ansprechpartner-kontaktdat {
+      width: 40%;
+      margin-bottom: 0; } }
+/* line 1413, ../scss/pages/_common.scss */
+.group-contact-container .field-name-field-bild {
+  margin-bottom: 0;
+  /* Over Desktop design */
+  margin-top: 5px; }
+  @media (min-width: 1025px) {
+    /* line 1413, ../scss/pages/_common.scss */
+    .group-contact-container .field-name-field-bild {
+      float: right;
+      width: 50%; } }
+
+/* line 1424, ../scss/pages/_common.scss */
+.node-type-projekt .field-collection-container {
+  border-bottom: none;
+  margin-bottom: 0; }
+/* line 1429, ../scss/pages/_common.scss */
+.node-type-projekt .field-name-field-quelle .field-label {
+  color: #e74712;
+  font-weight: normal;
+  margin-bottom: 10px;
+  width: 100%; }
+/* line 1435, ../scss/pages/_common.scss */
+.node-type-projekt .field-name-field-quelle .field-items {
+  width: 100%;
+  clear: both; }
+  /* line 1438, ../scss/pages/_common.scss */
+  .node-type-projekt .field-name-field-quelle .field-items .field-item {
+    margin: 0; }
+    /* line 1440, ../scss/pages/_common.scss */
+    .node-type-projekt .field-name-field-quelle .field-items .field-item .field-collection-view {
+      margin: 0;
+      padding: 0; }
+/* line 1447, ../scss/pages/_common.scss */
+.node-type-projekt .field-name-field-quelle .external-link:hover {
+  color: #e74712 !important; }
+/* line 1451, ../scss/pages/_common.scss */
+.node-type-projekt .field-name-field-quelle .group-quelle-container {
+  overflow: hidden;
+  width: 100%; }
+  /* line 1454, ../scss/pages/_common.scss */
+  .node-type-projekt .field-name-field-quelle .group-quelle-container .field-name-field-quellenangabe {
+    float: left;
+    width: 100%;
+    /* Tablet design */ }
+    @media (min-width: 767px) {
+      /* line 1454, ../scss/pages/_common.scss */
+      .node-type-projekt .field-name-field-quelle .group-quelle-container .field-name-field-quellenangabe {
+        margin-right: 30px;
+        width: auto; } }
+  /* line 1462, ../scss/pages/_common.scss */
+  .node-type-projekt .field-name-field-quelle .group-quelle-container .field-name-field-bild {
+    float: left;
+    margin-bottom: 0;
+    margin-top: 15px;
+    /* Tablet design */ }
+    @media (min-width: 767px) {
+      /* line 1462, ../scss/pages/_common.scss */
+      .node-type-projekt .field-name-field-quelle .group-quelle-container .field-name-field-bild {
+        margin-top: 5px; } }
+
 /* line 1, ../scss/pages/_singleview.scss */
 .field-name-field-themenzuweisung {
   display: inline-block;
@@ -10445,13 +10515,18 @@ caption {
     position: static; }
 
 /* line 1553, ../scss/pages/_singleview.scss */
-.field-name-field-ansprechpartner-kontaktdat, .field-name-field-weitere-details {
+.group-contact-container, .field-name-field-weitere-details {
   border-bottom: 1px solid #c5cbd5;
   padding-bottom: 15px;
   margin-bottom: 15px;
-  font-size: 18px; }
+  font-size: 18px;
+  overflow: hidden; }
 
 /* line 1561, ../scss/pages/_singleview.scss */
+.group-contact-container {
+  padding-bottom: 25px; }
+
+/* line 1566, ../scss/pages/_singleview.scss */
 .field-name-field-weitere-details::before {
   content: "\e907";
   font-family: "icomoon";
@@ -10459,7 +10534,7 @@ caption {
   float: left;
   color: #a0a9b7; }
 
-/* line 1571, ../scss/pages/_singleview.scss */
+/* line 1576, ../scss/pages/_singleview.scss */
 .external-link {
   color: #273753;
   padding-left: 34px;
@@ -10467,7 +10542,7 @@ caption {
   font-size: 18px;
   position: relative;
   display: inline-block; }
-  /* line 1579, ../scss/pages/_singleview.scss */
+  /* line 1584, ../scss/pages/_singleview.scss */
   .external-link::before {
     left: 0;
     position: absolute;
@@ -10476,23 +10551,23 @@ caption {
     content: "\e948";
     color: #919BAA;
     font-size: 16px; }
-  /* line 1589, ../scss/pages/_singleview.scss */
+  /* line 1594, ../scss/pages/_singleview.scss */
   .external-link .ext {
     display: none; }
-  /* line 1593, ../scss/pages/_singleview.scss */
+  /* line 1598, ../scss/pages/_singleview.scss */
   .external-link:hover {
     color: #e74712;
     text-decoration: none; }
-    /* line 1597, ../scss/pages/_singleview.scss */
+    /* line 1602, ../scss/pages/_singleview.scss */
     .external-link:hover::before {
       color: #e74712; }
 
 @media only screen and (max-width: 600px) {
-  /* line 1608, ../scss/pages/_singleview.scss */
+  /* line 1613, ../scss/pages/_singleview.scss */
   .group-body-container ul, .group-body-container ol {
     padding-left: 0 !important; }
 
-  /* line 1611, ../scss/pages/_singleview.scss */
+  /* line 1616, ../scss/pages/_singleview.scss */
   .group-body-container ul li::before, .group-body-container ol li::before {
     position: static;
     margin-right: 18px; } }
