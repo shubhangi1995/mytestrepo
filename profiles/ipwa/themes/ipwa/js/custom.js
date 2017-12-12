@@ -265,7 +265,13 @@ jQuery(document).ready(function(){
 	
 	//view-alles-zum-thema
 	
-	jQuery(".view-alles-zum-thema .view-filters .views-exposed-form .views-exposed-widgets .views-widget-sort-by").appendTo(".view-alles-zum-thema .attachment-before");
+	jQuery(".view-alles-zum-thema .view-filters").appendTo(".view-alles-zum-thema .attachment-before");
+	
+	// On ajax complete 
+	
+	jQuery(document).ajaxComplete(function(event,xhr,options){
+		jQuery(".view-alles-zum-thema .view-filters").appendTo(".view-alles-zum-thema .attachment-before");
+	});
 	
 	// Share link tab indexing
 	
