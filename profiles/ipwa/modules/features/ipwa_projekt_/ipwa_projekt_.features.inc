@@ -26,19 +26,12 @@ function ipwa_projekt__image_default_styles() {
   $styles['project_logo'] = array(
     'label' => 'Project logo',
     'effects' => array(
-      14 => array(
-        'name' => 'epsacrop_crop',
+      10 => array(
+        'name' => 'image_scale',
         'data' => array(
           'width' => 180,
           'height' => 101,
-          'anchor' => 'center-center',
-          'disable_scale' => 0,
-          'jcrop_settings' => array(
-            'aspect_ratio' => '',
-            'bgcolor' => 'black',
-            'bgopacity' => 0.6,
-            'fallback' => 0,
-          ),
+          'upscale' => 0,
         ),
         'weight' => 1,
       ),
