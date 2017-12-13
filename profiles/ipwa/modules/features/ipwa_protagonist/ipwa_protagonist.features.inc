@@ -26,13 +26,21 @@ function ipwa_protagonist_image_default_styles() {
   $styles['akteur_logo'] = array(
     'label' => 'Akteur logo',
     'effects' => array(
-      7 => array(
-        'name' => 'image_resize',
+      12 => array(
+        'name' => 'epsacrop_crop',
         'data' => array(
           'width' => 750,
           'height' => 422,
+          'anchor' => 'center-center',
+          'disable_scale' => 0,
+          'jcrop_settings' => array(
+            'aspect_ratio' => '',
+            'bgcolor' => 'black',
+            'bgopacity' => 0.6,
+            'fallback' => 0,
+          ),
         ),
-        'weight' => 1,
+        'weight' => 3,
       ),
     ),
   );
