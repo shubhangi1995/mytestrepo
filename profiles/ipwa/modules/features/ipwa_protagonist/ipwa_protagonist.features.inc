@@ -17,6 +17,30 @@ function ipwa_protagonist_ctools_plugin_api($module = NULL, $api = NULL) {
 }
 
 /**
+ * Implements hook_image_default_styles().
+ */
+function ipwa_protagonist_image_default_styles() {
+  $styles = array();
+
+  // Exported image style: akteur_logo.
+  $styles['akteur_logo'] = array(
+    'label' => 'Akteur logo',
+    'effects' => array(
+      7 => array(
+        'name' => 'image_resize',
+        'data' => array(
+          'width' => 750,
+          'height' => 422,
+        ),
+        'weight' => 1,
+      ),
+    ),
+  );
+
+  return $styles;
+}
+
+/**
  * Implements hook_node_info().
  */
 function ipwa_protagonist_node_info() {

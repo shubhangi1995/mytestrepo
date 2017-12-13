@@ -44,6 +44,7 @@ features[field_instance][] = node-projekt-field_videoquelle
 features[field_instance][] = node-projekt-field_videounterschrift
 features[field_instance][] = node-projekt-field_weiterf_hrende_links
 features[field_instance][] = node-projekt-field_youtube_url
+features[image][] = project_logo
 features[node][] = projekt
 features[variable][] = diff_enable_revisions_page_node_projekt
 features[variable][] = diff_show_preview_changes_node_projekt

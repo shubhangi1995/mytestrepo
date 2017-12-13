@@ -50,6 +50,7 @@ features[field_instance][] = node-protagonist-field_weitere_details
 features[field_instance][] = node-protagonist-field_weiterf_hrende_links
 features[field_instance][] = node-protagonist-field_youtube_url
 features[field_instance][] = node-protagonist-field_zur_website
+features[image][] = akteur_logo
 features[node][] = protagonist
 features[taxonomy][] = akteurstypen
 features[variable][] = diff_enable_revisions_page_node_protagonist

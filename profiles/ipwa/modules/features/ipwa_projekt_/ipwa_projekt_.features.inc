@@ -17,6 +17,30 @@ function ipwa_projekt__ctools_plugin_api($module = NULL, $api = NULL) {
 }
 
 /**
+ * Implements hook_image_default_styles().
+ */
+function ipwa_projekt__image_default_styles() {
+  $styles = array();
+
+  // Exported image style: project_logo.
+  $styles['project_logo'] = array(
+    'label' => 'Project logo',
+    'effects' => array(
+      8 => array(
+        'name' => 'image_resize',
+        'data' => array(
+          'width' => 180,
+          'height' => 101,
+        ),
+        'weight' => 1,
+      ),
+    ),
+  );
+
+  return $styles;
+}
+
+/**
  * Implements hook_node_info().
  */
 function ipwa_projekt__node_info() {

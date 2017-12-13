@@ -279,7 +279,7 @@ Zeile 6 (bspw. E-Mail-Adresse)',
         'module' => 'file_image_formatters',
         'settings' => array(
           'image_link' => '',
-          'image_style' => '',
+          'image_style' => 'akteur_logo',
         ),
         'type' => 'file_image_image',
         'weight' => 7,

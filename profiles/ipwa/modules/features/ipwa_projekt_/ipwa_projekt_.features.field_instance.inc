@@ -21,7 +21,7 @@ function ipwa_projekt__field_default_field_instances() {
         'module' => 'file_image_formatters',
         'settings' => array(
           'image_link' => '',
-          'image_style' => '',
+          'image_style' => 'project_logo',
         ),
         'type' => 'file_image_image',
         'weight' => 1,
