@@ -1415,6 +1415,12 @@ caption {
 	.field-name-field-bild{
 		margin-bottom:0;
 		width:100%;
+		img{
+			// float:none;  
+			@include devicebreak(x-large) {
+				float:right;
+			}
+		}
 		@include devicebreak(x-large) {
 			float:right;
 			width:60%;

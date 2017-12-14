@@ -9267,58 +9267,65 @@ caption {
   width: 100%;
   /* Over Desktop design */
   margin-top: 5px; }
+  /* line 1418, ../scss/pages/_common.scss */
+  .group-contact-container .field-name-field-bild img {
+    /* Over Desktop design */ }
+    @media (min-width: 1025px) {
+      /* line 1418, ../scss/pages/_common.scss */
+      .group-contact-container .field-name-field-bild img {
+        float: right; } }
   @media (min-width: 1025px) {
     /* line 1415, ../scss/pages/_common.scss */
     .group-contact-container .field-name-field-bild {
       float: right;
       width: 60%; } }
 
-/* line 1427, ../scss/pages/_common.scss */
+/* line 1433, ../scss/pages/_common.scss */
 .node-type-projekt .field-collection-container {
   border-bottom: none;
   margin-bottom: 0; }
-/* line 1432, ../scss/pages/_common.scss */
+/* line 1438, ../scss/pages/_common.scss */
 .node-type-projekt .field-name-field-quelle .field-label {
   color: #e74712;
   font-weight: normal;
   margin-bottom: 10px;
   width: 100%; }
-/* line 1438, ../scss/pages/_common.scss */
+/* line 1444, ../scss/pages/_common.scss */
 .node-type-projekt .field-name-field-quelle .field-items {
   width: 100%;
   clear: both; }
-  /* line 1441, ../scss/pages/_common.scss */
+  /* line 1447, ../scss/pages/_common.scss */
   .node-type-projekt .field-name-field-quelle .field-items .field-item {
     margin: 0; }
-    /* line 1443, ../scss/pages/_common.scss */
+    /* line 1449, ../scss/pages/_common.scss */
     .node-type-projekt .field-name-field-quelle .field-items .field-item .field-collection-view {
       margin: 0;
       padding: 0; }
-/* line 1450, ../scss/pages/_common.scss */
+/* line 1456, ../scss/pages/_common.scss */
 .node-type-projekt .field-name-field-quelle .external-link:hover {
   color: #e74712 !important; }
-/* line 1454, ../scss/pages/_common.scss */
+/* line 1460, ../scss/pages/_common.scss */
 .node-type-projekt .field-name-field-quelle .group-quelle-container {
   overflow: hidden;
   width: 100%; }
-  /* line 1457, ../scss/pages/_common.scss */
+  /* line 1463, ../scss/pages/_common.scss */
   .node-type-projekt .field-name-field-quelle .group-quelle-container .field-name-field-quellenangabe {
     float: left;
     width: 100%;
     /* Tablet design */ }
     @media (min-width: 767px) {
-      /* line 1457, ../scss/pages/_common.scss */
+      /* line 1463, ../scss/pages/_common.scss */
       .node-type-projekt .field-name-field-quelle .group-quelle-container .field-name-field-quellenangabe {
         margin-right: 30px;
         width: auto; } }
-  /* line 1465, ../scss/pages/_common.scss */
+  /* line 1471, ../scss/pages/_common.scss */
   .node-type-projekt .field-name-field-quelle .group-quelle-container .field-name-field-bild {
     float: left;
     margin-bottom: 0;
     margin-top: 15px;
     /* Tablet design */ }
     @media (min-width: 767px) {
-      /* line 1465, ../scss/pages/_common.scss */
+      /* line 1471, ../scss/pages/_common.scss */
       .node-type-projekt .field-name-field-quelle .group-quelle-container .field-name-field-bild {
         margin-top: 5px; } }
 
