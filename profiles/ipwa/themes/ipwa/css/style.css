@@ -9253,69 +9253,72 @@ caption {
 .group-contact-container .field-name-field-ansprechpartner-kontaktdat {
   float: left;
   margin-bottom: 10px;
+  width: 100%;
   /* Over Desktop design */ }
   @media (min-width: 1025px) {
     /* line 1405, ../scss/pages/_common.scss */
     .group-contact-container .field-name-field-ansprechpartner-kontaktdat {
       width: 40%;
-      margin-bottom: 0; } }
-/* line 1413, ../scss/pages/_common.scss */
+      margin-bottom: 0;
+      padding-right: 50px; } }
+/* line 1415, ../scss/pages/_common.scss */
 .group-contact-container .field-name-field-bild {
   margin-bottom: 0;
+  width: 100%;
   /* Over Desktop design */
   margin-top: 5px; }
   @media (min-width: 1025px) {
-    /* line 1413, ../scss/pages/_common.scss */
+    /* line 1415, ../scss/pages/_common.scss */
     .group-contact-container .field-name-field-bild {
       float: right;
-      width: 50%; } }
+      width: 60%; } }
 
-/* line 1424, ../scss/pages/_common.scss */
+/* line 1427, ../scss/pages/_common.scss */
 .node-type-projekt .field-collection-container {
   border-bottom: none;
   margin-bottom: 0; }
-/* line 1429, ../scss/pages/_common.scss */
+/* line 1432, ../scss/pages/_common.scss */
 .node-type-projekt .field-name-field-quelle .field-label {
   color: #e74712;
   font-weight: normal;
   margin-bottom: 10px;
   width: 100%; }
-/* line 1435, ../scss/pages/_common.scss */
+/* line 1438, ../scss/pages/_common.scss */
 .node-type-projekt .field-name-field-quelle .field-items {
   width: 100%;
   clear: both; }
-  /* line 1438, ../scss/pages/_common.scss */
+  /* line 1441, ../scss/pages/_common.scss */
   .node-type-projekt .field-name-field-quelle .field-items .field-item {
     margin: 0; }
-    /* line 1440, ../scss/pages/_common.scss */
+    /* line 1443, ../scss/pages/_common.scss */
     .node-type-projekt .field-name-field-quelle .field-items .field-item .field-collection-view {
       margin: 0;
       padding: 0; }
-/* line 1447, ../scss/pages/_common.scss */
+/* line 1450, ../scss/pages/_common.scss */
 .node-type-projekt .field-name-field-quelle .external-link:hover {
   color: #e74712 !important; }
-/* line 1451, ../scss/pages/_common.scss */
+/* line 1454, ../scss/pages/_common.scss */
 .node-type-projekt .field-name-field-quelle .group-quelle-container {
   overflow: hidden;
   width: 100%; }
-  /* line 1454, ../scss/pages/_common.scss */
+  /* line 1457, ../scss/pages/_common.scss */
   .node-type-projekt .field-name-field-quelle .group-quelle-container .field-name-field-quellenangabe {
     float: left;
     width: 100%;
     /* Tablet design */ }
     @media (min-width: 767px) {
-      /* line 1454, ../scss/pages/_common.scss */
+      /* line 1457, ../scss/pages/_common.scss */
       .node-type-projekt .field-name-field-quelle .group-quelle-container .field-name-field-quellenangabe {
         margin-right: 30px;
         width: auto; } }
-  /* line 1462, ../scss/pages/_common.scss */
+  /* line 1465, ../scss/pages/_common.scss */
   .node-type-projekt .field-name-field-quelle .group-quelle-container .field-name-field-bild {
     float: left;
     margin-bottom: 0;
     margin-top: 15px;
     /* Tablet design */ }
     @media (min-width: 767px) {
-      /* line 1462, ../scss/pages/_common.scss */
+      /* line 1465, ../scss/pages/_common.scss */
       .node-type-projekt .field-name-field-quelle .group-quelle-container .field-name-field-bild {
         margin-top: 5px; } }
 

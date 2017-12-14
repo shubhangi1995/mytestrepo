@@ -1404,17 +1404,20 @@ caption {
 .group-contact-container{
 	.field-name-field-ansprechpartner-kontaktdat{
 		float:left;
-		margin-bottom:10px;  
+		margin-bottom:10px;
+		width:100%; 
 		@include devicebreak(x-large) {
 			width:40%;
 			margin-bottom:0;
+			padding-right:50px; 
 		}
 	}
 	.field-name-field-bild{
 		margin-bottom:0;
+		width:100%;
 		@include devicebreak(x-large) {
 			float:right;
-			width:50%;
+			width:60%;
 		}
 		margin-top:5px;
 	}
