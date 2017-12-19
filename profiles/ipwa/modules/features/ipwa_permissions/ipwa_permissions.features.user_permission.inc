@@ -69,6 +69,18 @@ function ipwa_permissions_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'access media browser'.
+  $permissions['access media browser'] = array(
+    'name' => 'access media browser',
+    'roles' => array(
+      'Administrator' => 'Administrator',
+      'Chefredakteur' => 'Chefredakteur',
+      'Redakteur (ext.)' => 'Redakteur (ext.)',
+      'Redakteur (int.)' => 'Redakteur (int.)',
+    ),
+    'module' => 'media',
+  );
+
   // Exported permission: 'access site map'.
   $permissions['access site map'] = array(
     'name' => 'access site map',
@@ -215,6 +227,7 @@ function ipwa_permissions_user_default_permissions() {
     'roles' => array(
       'Administrator' => 'Administrator',
       'Chefredakteur' => 'Chefredakteur',
+      'Redakteur (ext.)' => 'Redakteur (ext.)',
       'Redakteur (int.)' => 'Redakteur (int.)',
     ),
     'module' => 'file_entity',
@@ -890,6 +903,30 @@ function ipwa_permissions_user_default_permissions() {
       'authenticated user' => 'authenticated user',
     ),
     'module' => 'simplenews',
+  );
+
+  // Exported permission: 'view files'.
+  $permissions['view files'] = array(
+    'name' => 'view files',
+    'roles' => array(
+      'Administrator' => 'Administrator',
+      'Chefredakteur' => 'Chefredakteur',
+      'Redakteur (ext.)' => 'Redakteur (ext.)',
+      'Redakteur (int.)' => 'Redakteur (int.)',
+    ),
+    'module' => 'file_entity',
+  );
+
+  // Exported permission: 'view own files'.
+  $permissions['view own files'] = array(
+    'name' => 'view own files',
+    'roles' => array(
+      'Administrator' => 'Administrator',
+      'Chefredakteur' => 'Chefredakteur',
+      'Redakteur (ext.)' => 'Redakteur (ext.)',
+      'Redakteur (int.)' => 'Redakteur (int.)',
+    ),
+    'module' => 'file_entity',
   );
 
   // Exported permission: 'view own unpublished content'.
