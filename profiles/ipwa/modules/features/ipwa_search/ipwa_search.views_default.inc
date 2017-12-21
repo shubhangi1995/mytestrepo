@@ -498,7 +498,12 @@ Document|Dokumente',
   $handler->display->display_options['fields']['views_conditional_10']['then'] = '[views_conditional_8]';
   $handler->display->display_options['fields']['views_conditional_10']['strip_tags'] = 0;
   $handler->display->display_options['defaults']['sorts'] = FALSE;
-  /* Sort criterion: Indexed Beitrag: Datum */
+  /* Sort criterion: Suche: Relevance */
+  $handler->display->display_options['sorts']['search_api_relevance']['id'] = 'search_api_relevance';
+  $handler->display->display_options['sorts']['search_api_relevance']['table'] = 'search_api_index_ipwa_solr_index';
+  $handler->display->display_options['sorts']['search_api_relevance']['field'] = 'search_api_relevance';
+  $handler->display->display_options['sorts']['search_api_relevance']['order'] = 'DESC';
+  /* Sort criterion: Indexed Inhalt: Datum */
   $handler->display->display_options['sorts']['field_datum']['id'] = 'field_datum';
   $handler->display->display_options['sorts']['field_datum']['table'] = 'search_api_index_ipwa_solr_index';
   $handler->display->display_options['sorts']['field_datum']['field'] = 'field_datum';
