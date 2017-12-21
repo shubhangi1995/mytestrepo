@@ -811,6 +811,7 @@ function ipwa_permissions_user_default_permissions() {
     'name' => 'edit own nachricht content',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Chefredakteur' => 'Chefredakteur',
       'Redakteur (ext.)' => 'Redakteur (ext.)',
       'Redakteur (int.)' => 'Redakteur (int.)',
     ),
