@@ -45,9 +45,9 @@ stylesheets[all][] = map-ipwa/dist/concat/production.css
 ; scripts[] = 'bootstrap/js/scrollspy.js'
 ; scripts[] = 'bootstrap/js/tab.js'
 ; scripts[] = 'bootstrap/js/transition.js'
-scripts[]='js/select2.min.js'
-scripts[] = 'js/simplebar.js'
-scripts[] = 'js/custom.js'
+;;scripts[]='js/select2.min.js'
+;;scripts[] = 'js/simplebar.js'
+;;scripts[] = 'js/custom.js'
 scripts[] = 'map-ipwa/dist/concat/vendors.js'
 scripts[] = 'map-ipwa/dist/concat/production.js'
 
