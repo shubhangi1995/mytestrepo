@@ -194,9 +194,3 @@
   </footer>
 <?php endif; ?>
 
-<?php 
-	$theme_path = drupal_get_path('theme', 'ipwa');
-	drupal_add_js($theme_path.'/js/select2.min.js', array('type' => 'file', 'scope' => 'footer'));
-	drupal_add_js($theme_path.'/js/simplebar.js', array('type' => 'file', 'scope' => 'footer'));
-	drupal_add_js($theme_path.'/js/custom.js', array('type' => 'file', 'scope' => 'footer'));
-?>
