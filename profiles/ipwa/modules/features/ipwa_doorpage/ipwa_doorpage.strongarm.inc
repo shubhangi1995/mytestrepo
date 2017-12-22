@@ -84,6 +84,15 @@ function ipwa_doorpage_strongarm() {
       'paragraph' => array(
         'custom_settings' => TRUE,
       ),
+      'email_plain' => array(
+        'custom_settings' => FALSE,
+      ),
+      'email_html' => array(
+        'custom_settings' => FALSE,
+      ),
+      'email_textalt' => array(
+        'custom_settings' => FALSE,
+      ),
     ),
     'extra_fields' => array(
       'form' => array(

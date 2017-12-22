@@ -14,7 +14,6 @@ dependencies[] = media
 dependencies[] = panelizer
 dependencies[] = paragraphs_id
 dependencies[] = views_content
-dependencies[] = views_slideshow
 dependencies[] = views_slideshow_cycle
 dependencies[] = views_slideshow_simple_pager
 features[ctools][] = field_group:field_group:1
