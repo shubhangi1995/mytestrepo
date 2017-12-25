@@ -184,5 +184,12 @@ function ipwa_preprocess_views_view(&$vars) {
     }
 
   }
+//
+  if($vars['view']->name == 'projekt_map') {
+  drupal_add_css(drupal_get_path('theme','ipwa').'/map-ipwa/dist/concat/production.css');
+  drupal_add_js(drupal_get_path('theme','ipwa') .'/map-ipwa/dist/concat/vendors.js');
+  drupal_add_js(drupal_get_path('theme','ipwa') .'/map-ipwa/dist/concat/production.js');
+  }
+
 }
 

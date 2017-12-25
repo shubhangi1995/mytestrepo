@@ -551,8 +551,13 @@ jQuery(document).ready(function(){
 	}
 
 	if(jQuery(".view-search-list").length > 0){
-		jQuery(" .navbar-collapse .search-icon").addClass("active-trail");;
+		jQuery(" .navbar-collapse .search-icon").addClass("active-trail");
 	}
+
+	//for removing external link from attribution in map
+	if(jQuery(" .footer_map").length > 0){
+		jQuery(".attribution a.external-link").removeClass("external-link");
+	};
 	
 	// Heighlighting main links for all pages
 });

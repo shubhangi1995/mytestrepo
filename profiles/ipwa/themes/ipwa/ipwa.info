@@ -26,7 +26,7 @@ regions[page_bottom]    = 'Page bottom'
 
 stylesheets[all][] = css/style.css
 stylesheets[all][] = css/simplebar.css
-stylesheets[all][] = map-ipwa/dist/concat/production.css
+;stylesheets[all][] = map-ipwa/dist/concat/production.css
 
 
 ;;;;;;;;;;;;;;;;;;;;;
@@ -48,8 +48,8 @@ stylesheets[all][] = map-ipwa/dist/concat/production.css
 scripts[]='js/select2.min.js'
 scripts[] = 'js/simplebar.js'
 scripts[] = 'js/custom.js'
-scripts[] = 'map-ipwa/dist/concat/vendors.js'
-scripts[] = 'map-ipwa/dist/concat/production.js'
+;scripts[] = 'map-ipwa/dist/concat/vendors.js'
+;scripts[] = 'map-ipwa/dist/concat/production.js'
 
 
 
