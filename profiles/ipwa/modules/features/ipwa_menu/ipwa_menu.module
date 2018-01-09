@@ -6,3 +6,4 @@
 /**
  * Implements hook_block_info(). footer blocks genrated in code
  */
+include_once 'ipwa_menu.features.inc';
