@@ -88,7 +88,7 @@ function ipwa_base_views_pre_render(&$view) {
               $parent_ids[] = $parent_term->tid;
               if (!empty($parent_term->field_bild)) {
                 // Show Icon of parent term
-                $derivative_uri = image_style_path(themen_icon_36x36, $parent_term->field_bild['und'][0]['uri']);
+                $derivative_uri = image_style_path('themen_icon_36x36', $parent_term->field_bild['und'][0]['uri']);
                 $term->icon = file_create_url( $derivative_uri);
                 $result->_entity_properties['map_term_icon'][] = $term->icon;
               }
@@ -97,7 +97,7 @@ function ipwa_base_views_pre_render(&$view) {
         } else {
           //for nodes having parent taxonomies selected
           //replacing the name of taxonomy with the url of icon related to it..
-          $derivative_uri = image_style_path(themen_icon_36x36, $term->field_bild['und'][0]['uri']);
+          $derivative_uri = image_style_path('themen_icon_36x36', $term->field_bild['und'][0]['uri']);
           $term->icon = file_create_url( $derivative_uri);
           $result->_entity_properties['map_term_icon'][] = $term->icon;
         }

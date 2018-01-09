@@ -76,7 +76,9 @@ function ipwa_preprocess_field(&$variables) {
   if (in_array($variables['element']['#field_name'], $fields)) {
     foreach ($variables['items'] as $key => $item) {
       // alter field value to link to respective node.
-      $variables['items'][$key]['#markup'] = l($item['#markup'], 'node/' . $variables['element']['#items'][$key]['target_id']);
+      if(isset($item['#markup']) && !empty($item['#markup'])) {
+        $variables['items'][$key]['#markup'] = l($item['#markup'], 'node/' . $variables['element']['#items'][$key]['target_id']);
+      }
     }
   }
 
@@ -132,23 +134,23 @@ function ipwa_preprocess_views_view_unformatted(&$vars) {
     $function_name($vars);
   }
   $view = $vars['view'];
-  foreach($view->result as $id => $value) {
-    $vars['node_nid'][$id] = $value->nid;
-  }
   $vars['name'] = $view->name;
   $vars['display_id'] = $view->current_display;
-
-  $view = $vars['view'];
-  foreach($view->result as $id => $value) {
-  $vars['node_type'][$id] = $value->node_type;
-  }
-$view = $vars['view'];
-  foreach($view->result as $id => $value) {
-    $vars['solr_id'][$id]= $value->entity;
-  }
-  $view = $vars['view'];
-  foreach($view->result as $id => $value) {
-    $vars['solr_type'][$id]=$value->_entity_properties['type'];
+  if (!empty($view->result)) {
+    foreach($view->result as $id => $value) {
+      if (isset($value->nid) && $value->nid) {
+        $vars['node_nid'][$id] = $value->nid;
+      }
+      if (isset($value->node_type) && $value->node_type) {
+        $vars['node_type'][$id] = $value->node_type;
+      }
+      if (isset($value->entity) && $value->entity) {
+        $vars['solr_id'][$id]= $value->entity;
+      }
+      if (isset($value->_entity_properties['type']) && $value->_entity_properties['type']) {
+        $vars['solr_type'][$id]=$value->_entity_properties['type'];
+      }
+    }
   }
 }
 
@@ -184,7 +186,7 @@ function ipwa_preprocess_views_view(&$vars) {
     }
 
   }
-//
+// adding map js and css on map pages only
   if($vars['view']->name == 'projekt_map') {
   drupal_add_css(drupal_get_path('theme','ipwa').'/map-ipwa/dist/concat/production.css');
   drupal_add_js(drupal_get_path('theme','ipwa') .'/map-ipwa/dist/concat/vendors.js');
