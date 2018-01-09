@@ -25,4 +25,7 @@ features[features_api][] = api:2
 features[menu_custom][] = main-menu
 features[menu_custom][] = menu-footer-navigation
 features[menu_custom][] = menu-meta-navigation
+features[variable][] = xmlsitemap_settings_menu_link_main-menu
+features[variable][] = xmlsitemap_settings_menu_link_menu-footer-navigation
+features[variable][] = xmlsitemap_settings_menu_link_menu-meta-navigation
 features_exclude[dependencies][ipwa_base] = ipwa_base
