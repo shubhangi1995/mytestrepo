@@ -241,7 +241,7 @@
 			<div class="small-font">E-Mail: <span class="more_link">nrw40-redaktion@vdi.de</span></div>
           </div>
 					<div style="margin-bottom:25px;color:#273753;line-height:22px;" class="small-font">Sie können diesen Newsletter <a class="more_link" href= "<?php print token_replace('[simplenews-subscriber:unsubscribe-url]', array('sanitize' => FALSE)); ?>">hier abbestellen.</a></div>
-					<div style="color:#273753;line-height:22px;" class="small-font">© 2017 Ministerium für Wirtschaft, Innovation, Digitalisierung und Energie des Landes Nordrhein-Westfalen</div>
+					<div style="color:#273753;line-height:22px;" class="small-font">© 2018 Ministerium für Wirtschaft, Innovation, Digitalisierung und Energie des Landes Nordrhein-Westfalen</div>
 				</td>
 				</tr>
 			</table>
