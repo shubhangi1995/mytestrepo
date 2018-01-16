@@ -241,8 +241,8 @@
     <h1 class="element-invisible">Footer</h1>
     <?php print render($page['footer']); ?>
     <div class="footer_blocks">
-      <?php $block1 = block_load("views","rss-block_1");?>
-      <?php  print render(_block_get_renderable_array( _block_render_blocks(array($block1))));?>
+      <?php $block1 = _block_get_renderable_array( _block_render_blocks(array(block_load("views","rss-block_1"))));?>
+      <?php print render($block1);?>
     </div>
   </footer>
 <?php endif; ?>

@@ -44,13 +44,13 @@ function ipwa_projekt__node_form_validate($form, &$form_state)
       $form['field_latitude']['#parents'] = array('field_latitude', 'und', '0', 'value');
       form_set_value($form['field_latitude'], $lat, $form_state);
 
-    }
+
       //validating if longitude and latitude is present or not
       if(is_null($lat) && is_null($lng)) {
         form_set_error('plz',t('Please enter a valid plz'));
       }
+
     }
 
-
-
+  }
 }
