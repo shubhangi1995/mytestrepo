@@ -34,6 +34,17 @@ function ipwa_permissions_user_default_permissions() {
     'module' => 'system',
   );
 
+  // Exported permission: 'access all webform results'.
+  $permissions['access all webform results'] = array(
+    'name' => 'access all webform results',
+    'roles' => array(
+      'Administrator' => 'Administrator',
+      'Chefredakteur' => 'Chefredakteur',
+      'Redakteur (int.)' => 'Redakteur (int.)',
+    ),
+    'module' => 'webform',
+  );
+
   // Exported permission: 'access broken links report'.
   $permissions['access broken links report'] = array(
     'name' => 'access broken links report',
@@ -127,6 +138,8 @@ function ipwa_permissions_user_default_permissions() {
     'name' => 'administer simplenews subscriptions',
     'roles' => array(
       'Administrator' => 'Administrator',
+      'Chefredakteur' => 'Chefredakteur',
+      'Redakteur (int.)' => 'Redakteur (int.)',
     ),
     'module' => 'simplenews',
   );

@@ -14,6 +14,7 @@ features[menu_custom][] = management
 features[menu_custom][] = menu-taxonomy
 features[user_permission][] = access administration menu
 features[user_permission][] = access administration pages
+features[user_permission][] = access all webform results
 features[user_permission][] = access broken links report
 features[user_permission][] = access content
 features[user_permission][] = access content overview
