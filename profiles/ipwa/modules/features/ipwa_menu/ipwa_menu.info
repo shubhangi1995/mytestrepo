@@ -29,6 +29,6 @@ features[features_api][] = api:2
 features[menu_custom][] = main-menu
 features[menu_custom][] = menu-footer-navigation
 features[menu_custom][] = menu-meta-navigation
-features[menu_links][] = management_:admin/config/content/formats/%
+features[menu_links][] = management_:admin/structure/views/nojs/preview/%/%
 features_exclude[dependencies][ipwa_base] = ipwa_base
 features_exclude[dependencies][ipwa_seo] = ipwa_seo
