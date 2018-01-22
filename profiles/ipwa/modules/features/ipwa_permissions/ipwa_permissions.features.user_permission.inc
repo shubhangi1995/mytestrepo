@@ -337,6 +337,16 @@ function ipwa_permissions_user_default_permissions() {
     'module' => 'node',
   );
 
+  // Exported permission: 'delete all webform submissions'.
+  $permissions['delete all webform submissions'] = array(
+    'name' => 'delete all webform submissions',
+    'roles' => array(
+      'Administrator' => 'Administrator',
+      'Chefredakteur' => 'Chefredakteur',
+    ),
+    'module' => 'webform',
+  );
+
   // Exported permission: 'delete any article content'.
   $permissions['delete any article content'] = array(
     'name' => 'delete any article content',
@@ -611,6 +621,16 @@ function ipwa_permissions_user_default_permissions() {
       'Administrator' => 'Administrator',
     ),
     'module' => 'node',
+  );
+
+  // Exported permission: 'edit all webform submissions'.
+  $permissions['edit all webform submissions'] = array(
+    'name' => 'edit all webform submissions',
+    'roles' => array(
+      'Administrator' => 'Administrator',
+      'Chefredakteur' => 'Chefredakteur',
+    ),
+    'module' => 'webform',
   );
 
   // Exported permission: 'edit any article content'.
