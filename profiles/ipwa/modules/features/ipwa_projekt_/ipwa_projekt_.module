@@ -20,37 +20,34 @@ function ipwa_projekt__node_form_validate($form, &$form_state)
 {
   if($form_state['node']->type == 'protagonist' || $form_state['node']->type == 'projekt') {
     if(!empty($form_state['values']['field_plz']['und'][0]['value'])) {
-      $lat = NULL;
-      $lng = NULL;
-      $param[] = $form_state['values']['field_plz']['und'][0]['value'];
-      $location[] = $form_state['values']['field_address']['und'][0]['value'];
+       $lat = NULL;
+       $lng = NULL;
+       $param[] = $form_state['values']['field_plz']['und'][0]['value'];
+       $location[] = $form_state['values']['field_address']['und'][0]['value'];
 
+       //  for providing longitude and latitude according to the plz given
+       $query_param = implode(" ", $param);
+       $query_param2 = implode(" ", $location);
+       if(!empty($form_state['values']['field_address']['und'][0]['value'])) {
+        $val_new = str_replace(" ","%20",'https://sg.geodatenzentrum.de/gdz_geokodierung__13dd535b-273e-b0f5-d42f-f2fa2cfa13d6/geosearch.json?query=' . $query_param .' '. urlencode($query_param2) . '&filter=typ:haus&count=1');
+       }
+       else { $val_new = 'https://sg.geodatenzentrum.de/gdz_geokodierung__13dd535b-273e-b0f5-d42f-f2fa2cfa13d6/geosearch.json?query=' . $query_param . '&filter=typ:haus&count=1';
+       }
+       $json = file_get_contents($val_new);
+       $json = json_decode($json);
+       $lng = $json->features[0]->geometry->coordinates[0];
+       $lat = $json->features[0]->geometry->coordinates[1];
 
-      //  for providing longitude and latitude according to the plz given
-      $query_param = implode(" ", $param);
-      $query_param2 = implode(" ", $location);
-      if(!empty($form_state['values']['field_address']['und'][0]['value'])) {
-      $val_new = str_replace(" ","%20",'https://sg.geodatenzentrum.de/gdz_geokodierung__13dd535b-273e-b0f5-d42f-f2fa2cfa13d6/geosearch.json?query=' . $query_param .' '. urlencode($query_param2) . '&filter=typ:haus&count=1');}
-      else
-      {$val_new = 'https://sg.geodatenzentrum.de/gdz_geokodierung__13dd535b-273e-b0f5-d42f-f2fa2cfa13d6/geosearch.json?query=' . $query_param . '&filter=typ:haus&count=1';}
-      $json = file_get_contents($val_new);
-      $json = json_decode($json);
-      $lng = $json->features[0]->geometry->coordinates[0];
-      $lat = $json->features[0]->geometry->coordinates[1];
-
-      //changing the values of latitude and longitude
+       //changing the values of latitude and longitude
       $form['field_longitude']['#parents'] = array('field_longitude', 'und', '0', 'value');
       form_set_value($form['field_longitude'], $lng, $form_state);
       $form['field_latitude']['#parents'] = array('field_latitude', 'und', '0', 'value');
       form_set_value($form['field_latitude'], $lat, $form_state);
 
-
       //validating if longitude and latitude is present or not
       if(is_null($lat) && is_null($lng)) {
         form_set_error('plz',t('Please enter a valid plz'));
       }
-
     }
-
   }
 }

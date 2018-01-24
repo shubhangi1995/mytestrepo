@@ -213,14 +213,6 @@
 		<td>
 			<table style="font-family:Arial,Helvetica, sans-serif; font-size:16px; color:#273753;" class="container">
                 <tr style="padding:20px 20px; background:#eff2f7;">
-                    <!--td align="left" style="color:#273753;">
-                        <span style="font-weight:bold;color:#273753">Folden sie uns auf :</span>
-                        <span><a href="#"><img src = "<?php print file_create_url(drupal_get_path('theme', 'ipwa')); ?>/images/fb.png" alt="FB" style="margin-right:5px;"/></a></span>
-                        <span style="color:#eff2f7;font-size:8px;">12</span>
-                        <span><a href="#"><img src = "<?php print file_create_url(drupal_get_path('theme', 'ipwa')); ?>/images/twitter.png" alt="Twitter" style="margin-right:5px;"/></a></span>
-                        <span style="color:#eff2f7;font-size:8px;">12</span>
-                        <span><a href="#"><img src = "<?php print file_create_url(drupal_get_path('theme', 'ipwa')); ?>/images/linkedin.png" alt="LinkedIn" style="margin-right:5px;"/></a></span>
-                    </td-->
                     <td align="right" style="color:#273753;">
                         <a href="<?php print $base_url . '/artikel/impressum'; ?>">Impressum</a><span style="color:#eff2f7;font-size:8px;">12</span><a href="<?php print $base_url.'/content/kontakt'; ?>">Kontakt</a>
                     </td>
