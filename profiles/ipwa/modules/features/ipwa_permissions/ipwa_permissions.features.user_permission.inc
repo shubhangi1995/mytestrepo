@@ -343,6 +343,7 @@ function ipwa_permissions_user_default_permissions() {
     'roles' => array(
       'Administrator' => 'Administrator',
       'Chefredakteur' => 'Chefredakteur',
+      'Redakteur (int.)' => 'Redakteur (int.)',
     ),
     'module' => 'webform',
   );
@@ -629,6 +630,7 @@ function ipwa_permissions_user_default_permissions() {
     'roles' => array(
       'Administrator' => 'Administrator',
       'Chefredakteur' => 'Chefredakteur',
+      'Redakteur (int.)' => 'Redakteur (int.)',
     ),
     'module' => 'webform',
   );
