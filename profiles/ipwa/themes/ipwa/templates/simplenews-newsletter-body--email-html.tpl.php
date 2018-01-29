@@ -52,10 +52,10 @@
 		<table  align="left" style="" class="container">
 			<tr style="padding:10px 0; background:#eff2f7;">
 				<td align="left" style="padding:20px 10px;">
-						<img src="<?php print file_create_url(drupal_get_path('theme', 'ipwa')); ?>/images/NRW_4_d.png" alt="Logo1" style="width:200px;" class="logo1"/>
+						<img src="/sites/default/files/newsletter_logos/NRW_4_d.png" alt="Logo NRW 4.0 Wirtschaft und Arbeit 4.0" style="width:200px;" class="logo1"/>
 				</td>
 				<td align="right" style="padding:20px 10px;">
-						<img src="<?php print file_create_url(drupal_get_path('theme', 'ipwa')); ?>/images/EU-Logo.png" alt="Logo2" style = "width:180px;" class="logo2"/>
+						<img src="/sites/default/files/newsletter_logos/EU-Logo.png" alt="Logo des Europäischen Fonds für regionale Entwicklung der Europäischen Union" style = "width:180px;" class="logo2"/>
 				</td>
 			</tr>
 		</table>
@@ -219,11 +219,11 @@
                 </tr>
                 <tr style="padding:20px 20px;">
                     <td align="left" style="color:#273753;">
-                        <img src="<?php print file_create_url(drupal_get_path('theme', 'ipwa')); ?>/images/EU_Logo.png" alt = "footer_logo1" width="190" class="footer_image1"/>
+                        <img src="/sites/default/files/newsletter_logos/EU_Logo.png" alt = "Logo des Europäischen Fonds für regionale Entwicklung der Europäischen Union" width="190" class="footer_image1"/>
                         <span style="color:#eff2f7;font-size:8px;">12</span>
-                        <img src="<?php print file_create_url(drupal_get_path('theme', 'ipwa')); ?>/images/EFRE.NRW.png" alt = "footer_logo2" width="190" class="footer_image2"/>
+                        <img src="/sites/default/files/newsletter_logos/EFRE.NRW.png" alt = "EFRE.NRW - Investitionen in Wachstum und Beschäftigung" width="190" class="footer_image2"/>
                         <span style="color:#eff2f7;font-size:8px;">12</span>
-                        <img src="<?php print file_create_url(drupal_get_path('theme', 'ipwa')); ?>/images/NRW_MWIDE_RGB.png" alt = "footer_logo3" width="190" class="footer_image3"/>
+                        <img src="/sites/default/files/newsletter_logos/NRW_MWIDE_RGB.png" alt = "Logo des Ministeriums für Wirtschaft, Innovation, Digitalisierung und Energie des Landes Nordrhein-Westphalen" width="190" class="footer_image3"/>
                     </td>
                 </tr>
 				<tr style="background:#eff2f7;">
