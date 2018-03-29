@@ -2,8 +2,199 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="405802e0-b19c-4daf-b836-bac58a1573eb" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/LICENSE.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/legacy/lib/FinderPlugin/CheckIncludePath.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/legacy/lib/FinderPlugin/Interface.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/legacy/lib/InjectedAPI/hookXautoload.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/lib/Drupal/xautoload/Tests/EnvironmentSnapshotMaker.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/lib/Drupal/xautoload/Tests/XAutoloadUnitTestCase.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/lib/Drupal/xautoload/Tests/XAutoloadWebTestCase.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/phpunit.xml.dist" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/src/Adapter/ClassFinderAdapter.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/src/Adapter/ClassFinderAdapterInterface.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/src/Adapter/DrupalExtensionAdapter.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/src/Adapter/LocalDirectoryAdapter.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/src/CacheManager/CacheManager.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/src/CacheManager/CacheManagerObserverInterface.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/src/CacheMissObserver/CacheMissLoaderSetFinder.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/src/CacheMissObserver/CacheMissObserverInterface.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/src/ClassFinder/ClassFinder.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/src/ClassFinder/ClassFinderInterface.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/src/ClassFinder/CommonRegistrationInterface.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/src/ClassFinder/ExtendedClassFinderInterface.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/src/ClassFinder/GenericPrefixMap.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/src/ClassFinder/InjectedApi/AbstractInjectedApi.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/src/ClassFinder/InjectedApi/CollectFilesInjectedApi.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/src/ClassFinder/InjectedApi/FindFileInjectedApi.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/src/ClassFinder/InjectedApi/InjectedApiInterface.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/src/ClassFinder/InjectedApi/LoadClassGetFileInjectedApi.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/src/ClassFinder/InjectedApi/LoadClassInjectedAPI.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/src/ClassFinder/Plugin/DrupalCoreRegistryPlugin.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/src/ClassFinder/Plugin/DrupalExtensionNamespaceFinderPlugin.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/src/ClassFinder/Plugin/DrupalExtensionUnderscoreFinderPlugin.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/src/ClassFinder/Plugin/FinderPluginInterface.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/src/ClassFinder/Plugin/Psr4FinderPlugin.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/src/ClassFinder/ProxyClassFinder.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/src/ClassLoader/AbstractCachedClassLoader.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/src/ClassLoader/AbstractClassLoader.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/src/ClassLoader/AbstractClassLoaderDecorator.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/src/ClassLoader/AbstractQueuedCachedClassLoader.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/src/ClassLoader/ApcClassLoader.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/src/ClassLoader/ApcuClassLoader.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/src/ClassLoader/ApcuQueuedCachedClassLoader.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/src/ClassLoader/CacheNotSupportedException.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/src/ClassLoader/ClassLoaderInterface.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/src/ClassLoader/DbCacheClassLoader.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/src/ClassLoader/WinCacheClassLoader.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/src/ClassLoader/XCacheClassLoader.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/src/DIC/ServiceContainer.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/src/DIC/ServiceContainerInterface.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/src/DIC/ServiceFactory.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/src/DirectoryBehavior/DefaultDirectoryBehavior.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/src/DirectoryBehavior/DirectoryBehaviorInterface.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/src/DirectoryBehavior/Psr0DirectoryBehavior.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/src/Discovery/CachedClassMapGenerator.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/src/Discovery/ClassMapGenerator.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/src/Discovery/ClassMapGeneratorInterface.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/src/Discovery/ComposerDir.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/src/Discovery/ComposerJson.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/src/Discovery/ComposerJsonTargetDir.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/src/Discovery/FileInspector.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/src/Discovery/WildcardFileFinder.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/src/DrupalSystem/DrupalSystem.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/src/DrupalSystem/DrupalSystemInterface.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/src/Libraries/LibrariesFinderPlugin.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/src/Libraries/LibrariesInfoAlter.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/src/Libraries/LibrariesOnInit.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/src/Libraries/LibrariesPreLoadCallback.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/src/Libraries/LibraryCacheMissObserver.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/src/Libraries/SerializableClosureWrapper.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/src/Main.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/src/Phases/DrupalCoreRegistryRegistrator.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/src/Phases/DrupalPhaseControl.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/src/Phases/ExtensionNamespaces.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/src/Phases/HookXautoload.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/src/Phases/HookXautoloadEarly.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/src/Phases/PhaseObserverInterface.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/src/Util.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/tests/bootstrap.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/tests/fixtures/.libraries/ComposerTargetDirTestLib/Foo.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/tests/fixtures/.libraries/ComposerTargetDirTestLib/composer.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/tests/fixtures/.libraries/ComposerTestLib/composer.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/tests/fixtures/.libraries/ComposerTestLib/other/Foo.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/tests/fixtures/.libraries/ComposerTestLib/psr4/Foo.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/tests/fixtures/.libraries/testlib/src/Foo.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/tests/fixtures/.modules/libraries/libraries.module" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/tests/fixtures/.modules/system/system.module" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/tests/fixtures/.modules/testmod/psr4/Foo.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/tests/fixtures/.modules/testmod/testmod.install" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/tests/fixtures/.modules/testmod/testmod.module" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/tests/fixtures/.modules/testmod_pearflat/lib/Foo.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/tests/fixtures/.modules/testmod_pearflat/testmod_pearflat.install" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/tests/fixtures/.modules/testmod_pearflat/testmod_pearflat.module" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/tests/fixtures/.modules/testmod_psr0_lib/lib/Drupal/testmod_psr0_lib/Foo.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/tests/fixtures/.modules/testmod_psr0_lib/testmod_psr0_lib.install" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/tests/fixtures/.modules/testmod_psr0_lib/testmod_psr0_lib.module" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/tests/fixtures/.modules/testmod_psr4_custom/psr4/Foo.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/tests/fixtures/.modules/testmod_psr4_custom/testmod_psr4_custom.install" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/tests/fixtures/.modules/testmod_psr4_custom/testmod_psr4_custom.module" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/tests/fixtures/.modules/testmod_psr4_src/src/Foo.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/tests/fixtures/.modules/testmod_psr4_src/testmod_psr4_src.install" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/tests/fixtures/.modules/testmod_psr4_src/testmod_psr4_src.module" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/tests/fixtures/WildcardFileFinder/handlers/bar.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/tests/fixtures/WildcardFileFinder/handlers/bar.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/tests/fixtures/WildcardFileFinder/handlers/foo.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/tests/fixtures/WildcardFileFinder/handlers/sub/foo.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/tests/fixtures/WildcardFileFinder/misc/abc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/tests/fixtures/WildcardFileFinder/misc/foo.bar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/tests/fixtures/WildcardFileFinder/misc/sub/xyz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/tests/fixtures/WildcardFileFinder/modules/foo.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/tests/fixtures/WildcardFileFinder/modules/sub/foo.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/tests/fixtures/WildcardFileFinder/modules/sub/sub/foo.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/tests/fixtures/WildcardFileFinder/modules/sub/sub/sub/foo.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/tests/fixtures/WildcardFileFinder/tests/foo.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/tests/fixtures/WildcardFileFinder/tests/foo.test" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/tests/fixtures/WildcardFileFinder/tests/sub/foo.test" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/tests/fixtures/WildcardFileFinder/tests/sub/sub/foo.test" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/tests/fixtures/WildcardFileFinder/tests/sub/sub/sub/foo.test" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/tests/scripts/drupal-apc.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/tests/src/BasicIntegrityTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/tests/src/ClassFinderAdapterTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/tests/src/ClassLoaderTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/tests/src/ComposerJsonTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/tests/src/DiscoveryTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/tests/src/DrupalBootTest/AbstractDrupalBootTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/tests/src/DrupalBootTest/DrupalBootHookTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/tests/src/DrupalBootTest/DrupalBootTest.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/tests/src/Example/AbstractExampleModules.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/tests/src/Example/ExampleModules.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/tests/src/Example/HookTestExampleModules.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/tests/src/Filesystem/StreamWrapper.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/tests/src/Filesystem/VirtualFilesystem.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/tests/src/Mock/MockDrupalSystem.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/tests/src/Util/CallLog.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/tests/src/Util/HackyLog.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/tests/src/Util/StaticCallLog.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/tests/src/VirtualDrupal/Cache.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/tests/src/VirtualDrupal/DrupalBootstrap.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/tests/src/VirtualDrupal/DrupalComponentContainer.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/tests/src/VirtualDrupal/DrupalEnvironment.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/tests/src/VirtualDrupal/DrupalGetFilename.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/tests/src/VirtualDrupal/DrupalLoad.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/tests/src/VirtualDrupal/DrupalStatic.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/tests/src/VirtualDrupal/ExampleModulesInterface.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/tests/src/VirtualDrupal/HookSystem.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/tests/src/VirtualDrupal/LibrariesInfo.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/tests/src/VirtualDrupal/LibrariesLoad.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/tests/src/VirtualDrupal/ModuleBuildDependencies.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/tests/src/VirtualDrupal/ModuleEnable.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/tests/src/VirtualDrupal/ModuleImplements.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/tests/src/VirtualDrupal/ModuleList.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/tests/src/VirtualDrupal/PureFunctions.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/tests/src/VirtualDrupal/SystemBuildModuleData.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/tests/src/VirtualDrupal/SystemList.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/tests/src/VirtualDrupal/SystemListLoader.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/tests/src/VirtualDrupal/SystemListReset.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/tests/src/VirtualDrupal/SystemRebuildModuleData.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/tests/src/VirtualDrupal/SystemTable.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/tests/src/VirtualDrupal/SystemUpdateBootstrapStatus.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/tests/test_1/lib/Drupal/xautoload_test_1/ExampleClass.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/tests/test_1/xautoload_test_1.info" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/tests/test_1/xautoload_test_1.module" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/tests/test_2/lib/ExampleClass.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/tests/test_2/xautoload_test_2.info" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/tests/test_2/xautoload_test_2.module" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/tests/test_3/lib/ExampleClass.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/tests/test_3/xautoload_test_3.info" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/tests/test_3/xautoload_test_3.module" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/tests/test_4/testlib/src/TestClass.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/tests/test_4/xautoload_test_4.info" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/tests/test_4/xautoload_test_4.install" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/tests/test_4/xautoload_test_4.module" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/tests/test_5/src/FooNamespace/Foo_Class.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/tests/test_5/xautoload_test_5.info" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/tests/test_5/xautoload_test_5.install" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/tests/test_5/xautoload_test_5.module" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/xautoload.api.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/xautoload.early.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/xautoload.early.lib.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/xautoload.emulate.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/xautoload.info" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/xautoload.install" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/xautoload.libraries.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/xautoload.module" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/xautoload.system.inc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/profiles/ipwa/modules/contrib/xautoload/xautoload.ui.inc" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/backup_migrate/backup_migrate.info" afterPath="$PROJECT_DIR$/sites/all/modules/backup_migrate/backup_migrate.info" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/backup_migrate/backup_migrate.install" afterPath="$PROJECT_DIR$/sites/all/modules/backup_migrate/backup_migrate.install" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/backup_migrate/backup_migrate.module" afterPath="$PROJECT_DIR$/sites/all/modules/backup_migrate/backup_migrate.module" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/backup_migrate/includes/destinations.file.inc" afterPath="$PROJECT_DIR$/sites/all/modules/backup_migrate/includes/destinations.file.inc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/backup_migrate/includes/files.inc" afterPath="$PROJECT_DIR$/sites/all/modules/backup_migrate/includes/files.inc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/backup_migrate/includes/profiles.inc" afterPath="$PROJECT_DIR$/sites/all/modules/backup_migrate/includes/profiles.inc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sites/all/modules/backup_migrate/includes/sources.archivesource.inc" afterPath="$PROJECT_DIR$/sites/all/modules/backup_migrate/includes/sources.archivesource.inc" />
     </list>
     <ignored path="IPWA4.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,12 +215,12 @@
     <favorites_list name="IPWA4" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="settings.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/sites/default/settings.php">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file leaf-file-name="backup_migrate.info" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sites/all/modules/backup_migrate/backup_migrate.info">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+            <state vertical-scroll-proportion="-0.81755596">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -56,7 +247,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-9" />
     <option name="y" value="-9" />
-    <option name="width" value="1938" />
+    <option name="width" value="1932" />
     <option name="height" value="1048" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -84,7 +275,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -131,17 +322,161 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="default" />
+              <option name="myItemId" value="all" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IPWA4" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mytestrepo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sites" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="all" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IPWA4" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mytestrepo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sites" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="all" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="backup_migrate" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IPWA4" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mytestrepo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="profiles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IPWA4" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mytestrepo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="profiles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ipwa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IPWA4" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mytestrepo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="profiles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ipwa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IPWA4" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mytestrepo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="profiles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ipwa" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="contrib" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="214" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="247" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="247" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="1154" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="226" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="243" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="243" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="1150" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -164,6 +499,11 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -184,24 +524,24 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <frame x="-9" y="-9" width="1932" height="1048" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24973877" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32896176" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -214,10 +554,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/sites/default/settings.php">
+    <entry file="file://$PROJECT_DIR$/sites/all/modules/backup_migrate/backup_migrate.info">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        <state vertical-scroll-proportion="-0.81755596">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
